@@ -12,7 +12,7 @@ A public repository for the Justin Sun Prize: recognizing mathematical breakthro
 | Award assessment | [Grading](docs/grading.md) |
 | Recipients and attribution | [Attribution](docs/attribution.md) |
 | Formal verification and review | [Verification](docs/verification.md) |
-| Problem bank: 1,027 problems | [Problems](problems/README.md) |
+| Problem bank: 1,028 problems | [Problems](problems/README.md) |
 | Confirmed, publicly announced awards | [Awards](awards/README.md) |
 | Public candidates | [Candidates](candidates/README.md) |
 | Public roles and recusals | [People](people/README.md) |
