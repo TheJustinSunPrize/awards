@@ -20,7 +20,7 @@ The catalogs retain solution status, Lean proof status, historical bounty, elaps
 
 The index preserves Lean evidence qualifications: **Reported; standalone source not located** does not confirm a complete Lean proof of that problem. A linked proof of a related problem is identified as such in the full record.
 
-In the **Eligible to claim** column, **Pending verification** is a problem-bank screening flag: the evidence may warrant further review, but eligibility has not been established. It does not create a formal nomination, a public candidate record, an approved award, or a right to claim payment. **No** means the record is not currently marked eligible. Public candidates exist only as records in [candidates/](../candidates/README.md); the screening flag is separate from that directory's pools and lifecycle statuses. Solution and formalization dates are considered separately using **2026-01-01 onward** as the cutoff. Earlier results and unresolved dates do not establish eligibility.
+In the **Eligible to claim** column, **Yes** marks records whose **Current status** is **Solved** and whose **Lean proof** is **Yes**, including affirmative entries with explanatory qualifiers such as **Yes (three-dimensional counterexample)**. **Pending verification** means the evidence may warrant further review, but eligibility has not been established. **No** means the record is not currently marked eligible. These are problem-bank screening flags; they do not create a formal nomination, a public candidate record, an approved award, or a right to claim payment. Public candidates exist only as records in [candidates/](../candidates/README.md); the screening flags are separate from that directory's pools and lifecycle statuses. This index rule was updated on **2026-09-12**; dated catalog review notes retain earlier assessments as review history.
 
 ## Volumes
 
@@ -50,7 +50,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000002 | [P versus NP problem](catalog-0001-0100.md#JSP-000002) | Open | No | No |
 | JSP-000003 | [Birch–Swinnerton-Dyer conjecture (BSD)](catalog-0001-0100.md#JSP-000003) | Open | No | No |
 | JSP-000004 | [Hodge conjecture](catalog-0001-0100.md#JSP-000004) | Open | No | No |
-| JSP-000005 | [Three-dimensional Navier–Stokes existence and smoothness](catalog-0001-0100.md#JSP-000005) | Solution announced (independent review and community confirmation pending) | Pending confirmation (Lean formalization exists) | No |
+| JSP-000005 | [Three-dimensional Navier–Stokes existence and smoothness](catalog-0001-0100.md#JSP-000005) | Solved | Yes | Yes |
 | JSP-000006 | [Yang–Mills existence and mass gap](catalog-0001-0100.md#JSP-000006) | Open | No | No |
 | JSP-000007 | [Poincaré conjecture](catalog-0001-0100.md#JSP-000007) | Solved | No | No |
 | JSP-000008 | [Goldbach conjecture (strong Goldbach)](catalog-0001-0100.md#JSP-000008) | Open | No | No |
@@ -82,14 +82,14 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000034 | [Sidorenko conjecture](catalog-0001-0100.md#JSP-000034) | Open | No | No |
 | JSP-000035 | [Catalan conjecture](catalog-0001-0100.md#JSP-000035) | Solved | No | No |
 | JSP-000036 | [Modularity theorem for rational elliptic curves (Taniyama–Shimura–Weil conjecture)](catalog-0001-0100.md#JSP-000036) | Solved | No | No |
-| JSP-000037 | [Jacobian conjecture (n≥3)](catalog-0001-0100.md#JSP-000037) | Solved | Yes (three-dimensional counterexample) | Pending verification |
+| JSP-000037 | [Jacobian conjecture (n≥3)](catalog-0001-0100.md#JSP-000037) | Solved | Yes (three-dimensional counterexample) | Yes |
 | JSP-000038 | [Jacobian conjecture (dimension two)](catalog-0001-0100.md#JSP-000038) | Open | No | No |
-| JSP-000039 | [Sendov conjecture](catalog-0001-0100.md#JSP-000039) | Solved | Yes | Pending verification |
-| JSP-000040 | [DGG cost-preserving conjecture](catalog-0001-0100.md#JSP-000040) | Solved | Yes | Pending verification |
-| JSP-000041 | [Anderson problem on weakly quasi-complete local rings](catalog-0001-0100.md#JSP-000041) | Solved | Yes | Pending verification |
+| JSP-000039 | [Sendov conjecture](catalog-0001-0100.md#JSP-000039) | Solved | Yes | Yes |
+| JSP-000040 | [DGG cost-preserving conjecture](catalog-0001-0100.md#JSP-000040) | Solved | Yes | Yes |
+| JSP-000041 | [Anderson problem on weakly quasi-complete local rings](catalog-0001-0100.md#JSP-000041) | Solved | Yes | Yes |
 | JSP-000042 | [Consecutive prime gap bound of 186](catalog-0001-0100.md#JSP-000042) | Progress | Conditional proof | No |
 | JSP-000043 | [Crouzeix conjecture](catalog-0001-0100.md#JSP-000043) | Progress | Pending confirmation | No |
-| JSP-000044 | [Must the largest element of a positive-integer set with distinct subset sums be at least a fixed positive multiple of 2 raised to the set's size?](catalog-0001-0100.md#JSP-000044) | Solved | Yes | Pending verification |
+| JSP-000044 | [Must the largest element of a positive-integer set with distinct subset sums be at least a fixed positive multiple of 2 raised to the set's size?](catalog-0001-0100.md#JSP-000044) | Solved | Yes | Yes |
 | JSP-000045 | [Must a set of positive integers whose reciprocals have divergent sum contain arithmetic progressions of every finite length?](catalog-0001-0100.md#JSP-000045) | Progress | No | No |
 | JSP-000046 | [How large can gaps between consecutive primes be? Are infinitely many gaps larger than the proposed lower bound?](catalog-0001-0100.md#JSP-000046) | Solved | No | No |
 | JSP-000047 | [Can consecutive prime gaps, divided by the logarithm of the prime index, approach every prescribed nonnegative real number along a subsequence?](catalog-0001-0100.md#JSP-000047) | Open | No | No |
@@ -112,12 +112,12 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000064 | [How sparse can an additive complement of the primes be if every sufficiently large integer must be a prime plus an element of that complement?](catalog-0001-0100.md#JSP-000064) | Progress | No | No |
 | JSP-000065 | [What is the smallest possible size of an additive complement of the squares that represents every sufficiently large integer?](catalog-0001-0100.md#JSP-000065) | Progress | No | No |
 | JSP-000066 | [minimum overlap problem](catalog-0001-0100.md#JSP-000066) | Progress | No | No |
-| JSP-000067 | [How much can adding a set that is not an additive basis increase another set's Schnirelmann density?](catalog-0001-0100.md#JSP-000067) | Solved | Yes | Pending verification |
+| JSP-000067 | [How much can adding a set that is not an additive basis increase another set's Schnirelmann density?](catalog-0001-0100.md#JSP-000067) | Solved | Yes | Yes |
 | JSP-000068 | [Can an infinite positive-integer set have distinct two-element sums and nearly square-root growth in arbitrarily large intervals?](catalog-0001-0100.md#JSP-000068) | Progress | No | No |
 | JSP-000069 | [What constraints relate the growth of an integer set to the numbers of representations as sums of two of its elements?](catalog-0001-0100.md#JSP-000069) | Open | No | No |
 | JSP-000070 | [How dense can an integer set be if distinct triples have distinct sums?](catalog-0001-0100.md#JSP-000070) | Progress | No | No |
-| JSP-000071 | [For any integer set with distinct two-element sums, can another such set be found with no common nonzero differences?](catalog-0001-0100.md#JSP-000071) | Solved | Yes | Pending verification |
-| JSP-000072 | [How large can two sets with distinct two-element sums be in total if their nonzero difference sets are disjoint?](catalog-0001-0100.md#JSP-000072) | Solved | Yes | Pending verification |
+| JSP-000071 | [For any integer set with distinct two-element sums, can another such set be found with no common nonzero differences?](catalog-0001-0100.md#JSP-000071) | Solved | Yes | Yes |
+| JSP-000072 | [How large can two sets with distinct two-element sums be in total if their nonzero difference sets are disjoint?](catalog-0001-0100.md#JSP-000072) | Solved | Yes | Yes |
 | JSP-000073 | [Can every finite set with distinct two-element sums be extended to a nearly optimal set with the same property?](catalog-0001-0100.md#JSP-000073) | Open | No | No |
 | JSP-000074 | [Where is the distribution function of the ratio of Euler's totient to its argument differentiable, and what properties do its derivatives have?](catalog-0001-0100.md#JSP-000074) | Open | No | No |
 | JSP-000075 | [For each value attained by Euler's totient, study the ratio of its smallest preimage to that value.](catalog-0001-0100.md#JSP-000075) | Progress | No | No |
@@ -137,7 +137,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000089 | [Does every two-coloring of triples from a set of continuum cardinality contain a monochromatic subset of the prescribed order type?](catalog-0001-0100.md#JSP-000089) | Progress | No | No |
 | JSP-000090 | [Is there a density-zero set of positive integers such that every sufficiently dense graph has a cycle with length in that set?](catalog-0001-0100.md#JSP-000090) | Solved | No | No |
 | JSP-000091 | [If local subgraphs have large independent sets, must the whole graph be close to bipartite after few modifications?](catalog-0001-0100.md#JSP-000091) | Solved | No | No |
-| JSP-000092 | [Can a graph have infinite chromatic number while its finite local subgraphs satisfy the prescribed property after very few edge deletions?](catalog-0001-0100.md#JSP-000092) | Solved | Yes | Pending verification |
+| JSP-000092 | [Can a graph have infinite chromatic number while its finite local subgraphs satisfy the prescribed property after very few edge deletions?](catalog-0001-0100.md#JSP-000092) | Solved | Yes | Yes |
 | JSP-000093 | [Can a graph have uncountable chromatic number while all its finite subgraphs have relatively large independent sets?](catalog-0001-0100.md#JSP-000093) | Open | No | No |
 | JSP-000094 | [How many edge-disjoint monochromatic triangles are guaranteed in a two-coloring of the edges of a complete graph?](catalog-0001-0100.md#JSP-000094) | Solved | No | No |
 | JSP-000095 | [What is the exact exponential growth constant for the number of vertices forcing a monochromatic clique of prescribed size in every two-coloring?](catalog-0001-0100.md#JSP-000095) | Progress | No | No |
@@ -157,7 +157,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000104 | [How strong a lower bound on a graph's Ramsey number follows from its chromatic number?](catalog-0101-0200.md#JSP-000104) | Open | No | No |
 | JSP-000105 | [If a graph has neither a large clique nor a large independent set, how many distinct edge counts do its induced subgraphs attain?](catalog-0101-0200.md#JSP-000105) | Solved | No | No |
 | JSP-000106 | [Distinct distances determined by planar point sets](catalog-0101-0200.md#JSP-000106) | Progress | No | No |
-| JSP-000107 | [unit distance problem](catalog-0101-0200.md#JSP-000107) | Solved | Yes | Pending verification |
+| JSP-000107 | [unit distance problem](catalog-0101-0200.md#JSP-000107) | Solved | Yes | Yes |
 | JSP-000108 | [Are there essentially different geometric configurations minimizing the number of distinct distances among planar points?](catalog-0101-0200.md#JSP-000108) | Progress | No | No |
 | JSP-000109 | [If every point has many neighbors at one common distance from it, how large a count can be guaranteed at every point? Is it smaller than every fixed positive power of the number of points?](catalog-0101-0200.md#JSP-000109) | Solved | No | No |
 | JSP-000110 | [What is the maximum number of unit-distance pairs among the vertices of a convex polygon?](catalog-0101-0200.md#JSP-000110) | Progress | No | No |
@@ -169,7 +169,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000116 | [If a planar point set determines many four-point lines, must more points lie on a common line?](catalog-0101-0200.md#JSP-000116) | Open | No | No |
 | JSP-000117 | [For a given number of points and distance constraints, how many noncongruent configurations attain the minimum diameter?](catalog-0101-0200.md#JSP-000117) | Open | No | No |
 | JSP-000118 | [How many unit circles can pass through at least three points of a finite planar point set?](catalog-0101-0200.md#JSP-000118) | Progress | No | No |
-| JSP-000119 | [What is the maximum sum of side lengths of nonoverlapping squares contained in the unit square?](catalog-0101-0200.md#JSP-000119) | Solved | Yes | Pending verification |
+| JSP-000119 | [What is the maximum sum of side lengths of nonoverlapping squares contained in the unit square?](catalog-0101-0200.md#JSP-000119) | Solved | Yes | Yes |
 | JSP-000120 | ['Happy Ending' problem](catalog-0101-0200.md#JSP-000120) | Open | No | No |
 | JSP-000121 | [Must a graph of sufficiently large chromatic number contain a subgraph with both large girth and large chromatic number?](catalog-0101-0200.md#JSP-000121) | Progress | No | No |
 | JSP-000122 | [How many vertices are needed to find a finite subgraph of a prescribed chromatic number in a graph of uncountable chromatic number?](catalog-0101-0200.md#JSP-000122) | Solved | No | No |
@@ -178,13 +178,13 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000125 | [How long can the complex-plane curve where a monic polynomial has absolute value one be?](catalog-0101-0200.md#JSP-000125) | Open | No | No |
 | JSP-000126 | [If the size of a pairwise noncommuting subset of a group is bounded, how many abelian subgroups are needed to cover the group?](catalog-0101-0200.md#JSP-000126) | Progress | No | No |
 | JSP-000127 | [If every two-coloring of an infinite graph's edges gives a monochromatic triangle, does the analogous property hold for every finite clique?](catalog-0101-0200.md#JSP-000127) | Solved | No | No |
-| JSP-000128 | [If all zeros of a polynomial lie on the unit circle, how does its maximum modulus on the prescribed region grow with its degree?](catalog-0101-0200.md#JSP-000128) | Solved | Yes | Pending verification |
+| JSP-000128 | [If all zeros of a polynomial lie on the unit circle, how does its maximum modulus on the prescribed region grow with its degree?](catalog-0101-0200.md#JSP-000128) | Solved | Yes | Yes |
 | JSP-000129 | [Avoiding affine copies of infinite real sets](catalog-0101-0200.md#JSP-000129) | Progress | No | No |
 | JSP-000130 | [How strongly can values of integer sequences perturbed by arithmetic functions concentrate in short intervals?](catalog-0101-0200.md#JSP-000130) | Open | No | No |
-| JSP-000131 | [Can integers be represented using products of powers of three pairwise coprime bases, with no chosen term dividing another?](catalog-0101-0200.md#JSP-000131) | Solved | Yes | Pending verification |
+| JSP-000131 | [Can integers be represented using products of powers of three pairwise coprime bases, with no chosen term dividing another?](catalog-0101-0200.md#JSP-000131) | Solved | Yes | Yes |
 | JSP-000132 | [Can sets of integers using only a few allowed digits in different bases together represent every sufficiently large integer?](catalog-0101-0200.md#JSP-000132) | Progress | No | No |
-| JSP-000133 | [How dense is the sumset of integers with only digits 0 and 1 in base 3 and those with only digits 0 and 1 in base 4?](catalog-0101-0200.md#JSP-000133) | Solved | Yes | Pending verification |
-| JSP-000134 | [How many distinct prime factors must occur in the product of all pairwise sums from an integer set?](catalog-0101-0200.md#JSP-000134) | Solved | Yes | Pending verification |
+| JSP-000133 | [How dense is the sumset of integers with only digits 0 and 1 in base 3 and those with only digits 0 and 1 in base 4?](catalog-0101-0200.md#JSP-000133) | Solved | Yes | Yes |
+| JSP-000134 | [How many distinct prime factors must occur in the product of all pairwise sums from an integer set?](catalog-0101-0200.md#JSP-000134) | Solved | Yes | Yes |
 | JSP-000135 | [Must a graph contain a triangle if every induced subgraph on roughly half its vertices is sufficiently dense?](catalog-0101-0200.md#JSP-000135) | Open | No | No |
 | JSP-000136 | [ambiguous statement](catalog-0101-0200.md#JSP-000136) | Progress | No | No |
 | JSP-000137 | [How many colors are needed for the graph joining integer-distance pairs of planar points in general position?](catalog-0101-0200.md#JSP-000137) | Open | No | No |
@@ -198,11 +198,11 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000145 | [How large can a subset of a finite integer interval be if it contains no arithmetic progression of a specified length?](catalog-0101-0200.md#JSP-000145) | Progress | No | No |
 | JSP-000146 | [How dense can a set of real numbers be if distinct elements avoid prescribed neighborhoods of one another's integer multiples?](catalog-0101-0200.md#JSP-000146) | Progress | No | No |
 | JSP-000147 | [Determine the average and growth of fixed powers of gaps between consecutive squarefree numbers.](catalog-0101-0200.md#JSP-000147) | Progress | No | No |
-| JSP-000148 | [How many edges can a graph have while excluding a given bipartite graph of bounded degeneracy?](catalog-0101-0200.md#JSP-000148) | Solved | Yes | Pending verification |
+| JSP-000148 | [How many edges can a graph have while excluding a given bipartite graph of bounded degeneracy?](catalog-0101-0200.md#JSP-000148) | Solved | Yes | Yes |
 | JSP-000149 | [How many representations of one are there as a sum of a prescribed number of distinct positive unit fractions?](catalog-0101-0200.md#JSP-000149) | Open | No | No |
 | JSP-000150 | [How does the minimum number of colors needed to give nearby edges different colors depend on the maximum degree?](catalog-0101-0200.md#JSP-000150) | Progress | No | No |
 | JSP-000151 | [What is the smallest vertex set meeting every maximal clique of a graph?](catalog-0101-0200.md#JSP-000151) | Progress | No | No |
-| JSP-000152 | [For an integer set with distinct pairwise sums, how many elements of its sumset have neither neighboring integer in the sumset?](catalog-0101-0200.md#JSP-000152) | Solved | Yes | Pending verification |
+| JSP-000152 | [For an integer set with distinct pairwise sums, how many elements of its sumset have neither neighboring integer in the sumset?](catalog-0101-0200.md#JSP-000152) | Solved | Yes | Yes |
 | JSP-000153 | [For an integer set with distinct pairwise sums, determine the average squared gap between consecutive elements of its sumset.](catalog-0101-0200.md#JSP-000153) | Open | No | No |
 | JSP-000154 | [How much can the largest size of a Sidon set increase when the endpoint of its containing interval increases slightly?](catalog-0101-0200.md#JSP-000154) | Open | No | No |
 | JSP-000155 | [How small can an inclusion-maximal Sidon set in a finite integer interval be?](catalog-0101-0200.md#JSP-000155) | Open | No | No |
@@ -225,10 +225,10 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000172 | [How small can one make the discrepancy of signed sums along arithmetic progressions?](catalog-0101-0200.md#JSP-000172) | Progress | No | No |
 | JSP-000173 | [Can signs be assigned to the positive integers so that discrepancy along each arithmetic progression satisfies an optimal bound depending only on its common difference?](catalog-0101-0200.md#JSP-000173) | Progress | No | No |
 | JSP-000174 | [How many short arithmetic progressions in an integer set force a longer arithmetic progression?](catalog-0101-0200.md#JSP-000174) | Solved | No | No |
-| JSP-000175 | [How much can forbidding several subgraphs reduce the extremal edge count compared with forbidding just one of them?](catalog-0101-0200.md#JSP-000175) | Solved | Yes | Pending verification |
+| JSP-000175 | [How much can forbidding several subgraphs reduce the extremal edge count compared with forbidding just one of them?](catalog-0101-0200.md#JSP-000175) | Solved | Yes | Yes |
 | JSP-000176 | [Is the Ramsey number of a high-dimensional hypercube bounded by a constant times its number of vertices?](catalog-0101-0200.md#JSP-000176) | Progress | No | No |
 | JSP-000177 | [How many edges can a graph have if it contains no regular subgraph of a prescribed degree?](catalog-0101-0200.md#JSP-000177) | Solved | No | No |
-| JSP-000178 | [What is the exponential growth rate of the number of vertices needed to force a monochromatic triangle as the number of edge colors increases?](catalog-0101-0200.md#JSP-000178) | Solved | Yes | Pending verification |
+| JSP-000178 | [What is the exponential growth rate of the number of vertices needed to force a monochromatic triangle as the number of edge colors increases?](catalog-0101-0200.md#JSP-000178) | Solved | Yes | Yes |
 | JSP-000179 | [Can the edges of every finite graph be partitioned into linearly many cycles and single edges, in terms of its number of vertices?](catalog-0101-0200.md#JSP-000179) | Progress | No | No |
 | JSP-000180 | [How large can a subset of an integer interval be if no element is the average of some other elements?](catalog-0101-0200.md#JSP-000180) | Solved | No | No |
 | JSP-000181 | [In every two-coloring of the positive integers, what relationship between length and common difference can be guaranteed for a monochromatic arithmetic progression?](catalog-0101-0200.md#JSP-000181) | Progress | No | No |
@@ -240,9 +240,9 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000187 | [Can the natural numbers be partitioned into two sets and each set ordered to avoid monotone three-term arithmetic progressions?](catalog-0101-0200.md#JSP-000187) | Open | No | No |
 | JSP-000188 | [What upper bounds hold for the length of arithmetic progressions of primes in a prescribed range?](catalog-0101-0200.md#JSP-000188) | Open | No | No |
 | JSP-000189 | [How large a subset avoiding arithmetic progressions of a prescribed length must every finite integer set contain?](catalog-0101-0200.md#JSP-000189) | Progress | No | No |
-| JSP-000190 | [How many pairwise disjoint residue classes with distinct moduli can be selected?](catalog-0101-0200.md#JSP-000190) | Solved | Yes | Pending verification |
+| JSP-000190 | [How many pairwise disjoint residue classes with distinct moduli can be selected?](catalog-0101-0200.md#JSP-000190) | Solved | Yes | Yes |
 | JSP-000191 | [Which integers remain composite after multiplication by arbitrary powers of two and three followed by addition of one?](catalog-0101-0200.md#JSP-000191) | Open | No | No |
-| JSP-000192 | [Can every sufficiently large integer be written as a power of two plus an integer with few prime factors?](catalog-0101-0200.md#JSP-000192) | Solved | Yes | Pending verification |
+| JSP-000192 | [Can every sufficiently large integer be written as a power of two plus an integer with few prime factors?](catalog-0101-0200.md#JSP-000192) | Solved | Yes | Yes |
 | JSP-000193 | [Are there Steiner triple systems avoiding all short cyclic configurations specified in the problem, with arbitrarily large girth of this kind?](catalog-0101-0200.md#JSP-000193) | Solved | No | No |
 | JSP-000194 | [How large can the gap between consecutive positive squarefree integers be?](catalog-0101-0200.md#JSP-000194) | Progress | No | No |
 | JSP-000195 | [How many ordinary lines, each containing exactly two of the points, must a finite noncollinear planar point set determine?](catalog-0101-0200.md#JSP-000195) | Solved | No | No |
@@ -280,7 +280,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000222 | [What conditions ensure that finite sums of distinct elements of an integer set represent every sufficiently large integer?](catalog-0201-0300.md#JSP-000222) | Progress | No | No |
 | JSP-000223 | [How large must the maximum modulus of the specified product of binomials on the unit circle be?](catalog-0201-0300.md#JSP-000223) | Progress | No | No |
 | JSP-000224 | [Under the stated conditions, is every infinite subsum of reciprocals of powers of two minus one irrational?](catalog-0201-0300.md#JSP-000224) | Progress | No | No |
-| JSP-000225 | [Is the reciprocal series with product denominators constructed from the divisor-counting function irrational?](catalog-0201-0300.md#JSP-000225) | Solved | Yes | Pending verification |
+| JSP-000225 | [Is the reciprocal series with product denominators constructed from the divisor-counting function irrational?](catalog-0201-0300.md#JSP-000225) | Solved | Yes | Yes |
 | JSP-000226 | [Must the binary-weighted infinite sum associated with the specified sparse integer sequence be irrational?](catalog-0201-0300.md#JSP-000226) | Progress | No | No |
 | JSP-000227 | [Determine how binary-weighted terms can be decomposed and how finite decompositions relate to infinite-series representations.](catalog-0201-0300.md#JSP-000227) | Open | No | No |
 | JSP-000228 | [Is there an integer sequence whose reciprocal sum remains irrational after every term undergoes the prescribed asymptotically small perturbation?](catalog-0201-0300.md#JSP-000228) | Progress | No | No |
@@ -295,9 +295,9 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000237 | [Is there a Lucas sequence consisting entirely of composite terms but with no fixed nontrivial divisor common to all terms?](catalog-0201-0300.md#JSP-000237) | Progress | No | No |
 | JSP-000238 | [For prescribed moduli, what are the largest and smallest proportions of integers covered by a choice of corresponding residue classes?](catalog-0201-0300.md#JSP-000238) | Open | No | No |
 | JSP-000239 | [Can residue classes with prime moduli cover every sufficiently large integer?](catalog-0201-0300.md#JSP-000239) | Open | No | No |
-| JSP-000240 | [Can an infinite covering by residue classes be uniformly approximated in density by finite subfamilies?](catalog-0201-0300.md#JSP-000240) | Solved | Yes | Pending verification |
+| JSP-000240 | [Can an infinite covering by residue classes be uniformly approximated in density by finite subfamilies?](catalog-0201-0300.md#JSP-000240) | Solved | Yes | Yes |
 | JSP-000241 | [Does the greedy Egyptian-fraction algorithm restricted to odd denominators always terminate for rational inputs?](catalog-0201-0300.md#JSP-000241) | Progress | No | No |
-| JSP-000242 | [Can the denominators in Egyptian-fraction representations be used to combine the specified polynomial values into every sufficiently large integer?](catalog-0201-0300.md#JSP-000242) | Solved | Yes | Pending verification |
+| JSP-000242 | [Can the denominators in Egyptian-fraction representations be used to combine the specified polynomial values into every sufficiently large integer?](catalog-0201-0300.md#JSP-000242) | Solved | Yes | Yes |
 | JSP-000243 | [In a representation of one as a prescribed number of positive unit fractions, how large can the smallest denominator be?](catalog-0201-0300.md#JSP-000243) | Solved | No | No |
 | JSP-000244 | [What is the shortest integer interval containing distinct denominators whose reciprocals sum to one?](catalog-0201-0300.md#JSP-000244) | Solved | No | No |
 | JSP-000245 | [Must every representation of one by distinct positive unit fractions have two consecutive ordered denominators differing by at least three?](catalog-0201-0300.md#JSP-000245) | Open | No | No |
@@ -331,7 +331,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000273 | [Can a quadratically growing integer set be a minimal asymptotic basis of order two, losing that property upon deletion of any element?](catalog-0201-0300.md#JSP-000273) | Open | No | No |
 | JSP-000274 | [How large can a subset of an integer interval be if the sum of any two distinct elements never divides their product?](catalog-0201-0300.md#JSP-000274) | Open | No | No |
 | JSP-000275 | [For an infinite Sidon set, how large can the limsup of its counting function divided by the square root of the interval length be?](catalog-0201-0300.md#JSP-000275) | Progress | No | No |
-| JSP-000276 | [Can an asymptotic additive basis of positive density be minimal under deletion of any element?](catalog-0201-0300.md#JSP-000276) | Solved | Yes | Pending verification |
+| JSP-000276 | [Can an asymptotic additive basis of positive density be minimal under deletion of any element?](catalog-0201-0300.md#JSP-000276) | Solved | Yes | Yes |
 | JSP-000277 | [What conditions ensure uniformly bounded gaps between differences occurring repeatedly in an integer set?](catalog-0201-0300.md#JSP-000277) | Progress | No | No |
 | JSP-000278 | [How small a prime-factor bound suffices to express an integer as a sum of two integers having only small prime factors?](catalog-0201-0300.md#JSP-000278) | Progress | No | No |
 | JSP-000279 | [What structure is forced when the density of a sumset equals the sum of the densities of its two summand sets?](catalog-0201-0300.md#JSP-000279) | Progress | No | No |
@@ -345,14 +345,14 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000287 | [If an integer set has at least square-root-scale size in large intervals, must its finite subset sums contain an infinite arithmetic progression?](catalog-0201-0300.md#JSP-000287) | Solved | No | No |
 | JSP-000288 | [How do the thresholds for representing all large integers by distinct-element sums compare for the sequences built from adjacent powers?](catalog-0201-0300.md#JSP-000288) | Open | No | No |
 | JSP-000289 | [Must ratios of consecutive terms in the specified minimal stably complete sequences converge to the golden ratio?](catalog-0201-0300.md#JSP-000289) | Solved | No | No |
-| JSP-000290 | [Can every tail of a nearly doubling sequence have finite subset sums covering a set of integers of density one?](catalog-0201-0300.md#JSP-000290) | Solved | Yes | Pending verification |
+| JSP-000290 | [Can every tail of a nearly doubling sequence have finite subset sums covering a set of integers of density one?](catalog-0201-0300.md#JSP-000290) | Solved | Yes | Yes |
 | JSP-000291 | [How does deleting a prescribed number of elements affect a set's ability to represent all large integers as sums of distinct elements?](catalog-0201-0300.md#JSP-000291) | Progress | No | No |
 | JSP-000292 | [When do distinct-element sums of a sequence of floors of exponential values represent every sufficiently large integer?](catalog-0201-0300.md#JSP-000292) | Progress | No | No |
-| JSP-000293 | [For the sequence built from polynomial values and reciprocal terms, do distinct-element sums still represent every sufficiently large integer after deleting any finite initial segment?](catalog-0201-0300.md#JSP-000293) | Solved | Yes | Pending verification |
+| JSP-000293 | [For the sequence built from polynomial values and reciprocal terms, do distinct-element sums still represent every sufficiently large integer after deleting any finite initial segment?](catalog-0201-0300.md#JSP-000293) | Solved | Yes | Yes |
 | JSP-000294 | [Must every measurable planar set of sufficiently large area contain a triangle of area exactly one?](catalog-0201-0300.md#JSP-000294) | Progress | No | No |
 | JSP-000295 | [Can distinct-element sums from the union of two floored exponential sequences represent every sufficiently large integer?](catalog-0201-0300.md#JSP-000295) | Progress | No | No |
 | JSP-000296 | [How long can an increasing integer sequence in a prescribed range be if all sums of consecutive terms are distinct?](catalog-0201-0300.md#JSP-000296) | Progress | No | No |
-| JSP-000297 | [How many representations can an integer have as a sum of consecutive terms of a given increasing integer sequence?](catalog-0201-0300.md#JSP-000297) | Solved | Yes | Pending verification |
+| JSP-000297 | [How many representations can an integer have as a sum of consecutive terms of a given increasing integer sequence?](catalog-0201-0300.md#JSP-000297) | Solved | Yes | Yes |
 | JSP-000298 | [segmented numbers](catalog-0201-0300.md#JSP-000298) | Progress | No | No |
 | JSP-000299 | [How many colors are needed to color the positive integers so that a prescribed integer is not a monochromatic subset sum?](catalog-0201-0300.md#JSP-000299) | Solved | No | No |
 | JSP-000300 | [How large can a subset of a finite integer range be if none of its subset sums equals a prescribed target?](catalog-0201-0300.md#JSP-000300) | Open | No | No |
@@ -366,7 +366,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000303 | [ambiguous statement](catalog-0301-0400.md#JSP-000303) | Open | No | No |
 | JSP-000304 | [How large can the product of the powerful parts of consecutive integers be?](catalog-0301-0400.md#JSP-000304) | Open | No | No |
 | JSP-000305 | [How large a prime factor must the product of two consecutive positive integers have?](catalog-0301-0400.md#JSP-000305) | Progress | No | No |
-| JSP-000306 | [Are there arbitrarily long runs of consecutive integers whose prime factors all lie below the specified bound?](catalog-0301-0400.md#JSP-000306) | Solved | Yes | Pending verification |
+| JSP-000306 | [Are there arbitrarily long runs of consecutive integers whose prime factors all lie below the specified bound?](catalog-0301-0400.md#JSP-000306) | Solved | Yes | Yes |
 | JSP-000307 | [What is the density of integers whose largest prime factor is smaller than that of the next integer?](catalog-0301-0400.md#JSP-000307) | Progress | No | No |
 | JSP-000308 | [Can three consecutive integers have strictly decreasing largest prime factors?](catalog-0301-0400.md#JSP-000308) | Solved | No | No |
 | JSP-000309 | [Under the stated restrictions, are there only finitely many factorials equal to products of smaller factorials?](catalog-0301-0400.md#JSP-000309) | Progress | No | No |
@@ -388,10 +388,10 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000325 | [How narrow an interval can contain all the distinct factors in a factorization of a factorial?](catalog-0301-0400.md#JSP-000325) | Progress | No | No |
 | JSP-000326 | [What conditions on an interval's starting point make its consecutive-integer product divisible by a prescribed integer?](catalog-0301-0400.md#JSP-000326) | Progress | No | No |
 | JSP-000327 | [Can a central binomial coefficient be divisible by the specified descending product of arbitrarily many consecutive integers?](catalog-0301-0400.md#JSP-000327) | Progress | No | No |
-| JSP-000328 | [Under the stated restrictions, are there only finitely many equalities between products of distinct central binomial coefficients?](catalog-0301-0400.md#JSP-000328) | Solved | Yes | Pending verification |
+| JSP-000328 | [Under the stated restrictions, are there only finitely many equalities between products of distinct central binomial coefficients?](catalog-0301-0400.md#JSP-000328) | Solved | Yes | Yes |
 | JSP-000329 | [Brocard-Ramanujan conjecture](catalog-0301-0400.md#JSP-000329) | Open | No | No |
 | JSP-000330 | [If a product of factorials divides another factorial, by how much can the sum of its indices exceed the latter index?](catalog-0301-0400.md#JSP-000330) | Open | No | No |
-| JSP-000331 | [Which otherwise invalid divisibility relations between factorial products can be obtained by inserting powers of specified small primes?](catalog-0301-0400.md#JSP-000331) | Solved | Yes | Pending verification |
+| JSP-000331 | [Which otherwise invalid divisibility relations between factorial products can be obtained by inserting powers of specified small primes?](catalog-0301-0400.md#JSP-000331) | Solved | Yes | Yes |
 | JSP-000332 | [Must every sufficiently large finite integer set contain two elements with relatively small greatest common divisor?](catalog-0301-0400.md#JSP-000332) | Solved | No | No |
 | JSP-000333 | [How high a power of a prescribed prime can divide a sum of distinct factorials?](catalog-0301-0400.md#JSP-000333) | Progress | No | No |
 | JSP-000334 | [Are there only finitely many powers of two whose ternary expansions contain no digit two?](catalog-0301-0400.md#JSP-000334) | Progress | No | No |
@@ -432,7 +432,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000369 | [Determine the difference between the sum of symmetrically placed primes in the prime sequence and twice the middle prime.](catalog-0301-0400.md#JSP-000369) | Progress | No | No |
 | JSP-000370 | [How fast must an increasing prime sequence with nondecreasing gaps grow?](catalog-0301-0400.md#JSP-000370) | Progress | No | No |
 | JSP-000371 | [How large can the smallest integer whose totient is divisible by a prescribed positive integer be?](catalog-0301-0400.md#JSP-000371) | Open | No | No |
-| JSP-000372 | [Can the product of a short run of consecutive integers contain every small prime in a prescribed range?](catalog-0301-0400.md#JSP-000372) | Solved | Yes | Pending verification |
+| JSP-000372 | [Can the product of a short run of consecutive integers contain every small prime in a prescribed range?](catalog-0301-0400.md#JSP-000372) | Solved | Yes | Yes |
 | JSP-000373 | [Is the least common multiple up to one less than the next prime always smaller than a given prime times the least common multiple up to that prime?](catalog-0301-0400.md#JSP-000373) | Open | No | No |
 | JSP-000374 | [ambiguous statement](catalog-0301-0400.md#JSP-000374) | Open | No | No |
 | JSP-000375 | [How many distinct small-prime parts can occur among integers in a short interval?](catalog-0301-0400.md#JSP-000375) | Open | No | No |
@@ -442,7 +442,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000379 | [Can arbitrarily large planar point sets have all pairwise distances uniformly bounded away from the nearest integer?](catalog-0301-0400.md#JSP-000379) | Solved | No | No |
 | JSP-000380 | [ambiguous statement](catalog-0301-0400.md#JSP-000380) | Open | No | No |
 | JSP-000381 | [Successively sum the divisors greater than one of an integer. Which sums have not appeared before, and how small can the original integer representing a target be?](catalog-0301-0400.md#JSP-000381) | Open | No | No |
-| JSP-000382 | [A primitive semiperfect number is a sum of some of its proper divisors, with no smaller divisor having that property. Does the reciprocal sum of these numbers converge?](catalog-0301-0400.md#JSP-000382) | Solved | Yes | Pending verification |
+| JSP-000382 | [A primitive semiperfect number is a sum of some of its proper divisors, with no smaller divisor having that property. Does the reciprocal sum of these numbers converge?](catalog-0301-0400.md#JSP-000382) | Solved | Yes | Yes |
 | JSP-000383 | [Are there odd weird numbers, whose proper divisors sum to more than the number but no subset sums to it? Are infinitely many weird numbers primitive?](catalog-0301-0400.md#JSP-000383) | Progress | No | No |
 | JSP-000384 | [Starting from a set of primes, can repeatedly adjoining prime sums of three distinct existing primes generate infinitely many primes?](catalog-0301-0400.md#JSP-000384) | Solved | No | No |
 | JSP-000385 | [Can the greedy process seeking a new prime equal to the current prime plus an earlier prime minus one continue forever?](catalog-0301-0400.md#JSP-000385) | Open | No | No |
@@ -506,7 +506,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000438 | [Which graph with a prescribed number of edges has the largest Ramsey number?](catalog-0401-0500.md#JSP-000438) | Progress | No | No |
 | JSP-000439 | [Can every graph's Ramsey number be bounded exponentially in the square root of its edge count?](catalog-0401-0500.md#JSP-000439) | Solved | No | No |
 | JSP-000440 | [What is the optimal upper bound for the two-color Ramsey number of an arbitrary tree?](catalog-0401-0500.md#JSP-000440) | Open | No | No |
-| JSP-000441 | [Does sufficiently large average degree force a graph to contain every tree of a prescribed order?](catalog-0401-0500.md#JSP-000441) | Solved | Yes | Pending verification |
+| JSP-000441 | [Does sufficiently large average degree force a graph to contain every tree of a prescribed order?](catalog-0401-0500.md#JSP-000441) | Solved | Yes | Yes |
 | JSP-000442 | [What is the two-color Ramsey number of a tree whose bipartition sizes have ratio one to two?](catalog-0401-0500.md#JSP-000442) | Solved | No | No |
 | JSP-000443 | [What is the Ramsey number of a prescribed tree versus a complete multipartite graph?](catalog-0401-0500.md#JSP-000443) | Progress | No | No |
 | JSP-000444 | [What is the exact Ramsey number of a prescribed cycle versus a clique?](catalog-0401-0500.md#JSP-000444) | Open | No | No |
@@ -529,7 +529,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000461 | [Can Ramsey bounds against trees and cliques yield a bound linear in edge count against general graphs?](catalog-0401-0500.md#JSP-000461) | Open | No | No |
 | JSP-000462 | [What is the optimal linear coefficient for the Ramsey number of a fixed odd cycle against an arbitrary graph, measured by the latter's edge count?](catalog-0401-0500.md#JSP-000462) | Open | No | No |
 | JSP-000463 | [Is the Ramsey number of the prescribed cycle against any graph at most twice the latter's edge count plus the allowed correction?](catalog-0401-0500.md#JSP-000463) | Solved | No | No |
-| JSP-000464 | [Which rational numbers occur as extremal exponents of bipartite graphs?](catalog-0401-0500.md#JSP-000464) | Solved | Yes | Pending verification |
+| JSP-000464 | [Which rational numbers occur as extremal exponents of bipartite graphs?](catalog-0401-0500.md#JSP-000464) | Solved | Yes | Yes |
 | JSP-000465 | [How many edges can a graph excluding a prescribed even cycle have? Seek constructions attaining the predicted order of growth.](catalog-0401-0500.md#JSP-000465) | Progress | No | No |
 | JSP-000466 | [What is the maximum edge count of a graph containing neither triangles nor four-cycles?](catalog-0401-0500.md#JSP-000466) | Progress | No | No |
 | JSP-000467 | [How many edges can a graph have while excluding an odd cycle and an even cycle of adjacent lengths?](catalog-0401-0500.md#JSP-000467) | Solved | No | No |
@@ -574,7 +574,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000501 | [How many edges are needed to make every local subgraph of prescribed size satisfy the specified maximum-degree condition?](catalog-0501-0600.md#JSP-000501) | Open | No | No |
 | JSP-000502 | [If every prescribed-size local edge family in a uniform hypergraph has a common vertex, how many vertices suffice to cover all edges?](catalog-0501-0600.md#JSP-000502) | Progress | No | No |
 | JSP-000503 | [Must a multicolored complete graph contain a vertex subset of the required size missing at least one color?](catalog-0501-0600.md#JSP-000503) | Open | No | No |
-| JSP-000504 | [How many edges must be added to a triangle-free graph to reduce its diameter to at most four while keeping it triangle-free?](catalog-0501-0600.md#JSP-000504) | Solved | Yes | Pending verification |
+| JSP-000504 | [How many edges must be added to a triangle-free graph to reduce its diameter to at most four while keeping it triangle-free?](catalog-0501-0600.md#JSP-000504) | Solved | Yes | Yes |
 | JSP-000505 | [Large triangle-free induced subgraphs in K4-free graphs](catalog-0501-0600.md#JSP-000505) | Progress | No | No |
 | JSP-000506 | [How many vertex subsets of a high-degree regular graph are exactly the vertex sets of cycles?](catalog-0501-0600.md#JSP-000506) | Solved | No | No |
 | JSP-000507 | [Must the specified set mapping on a set of singular cardinality have an infinite free set?](catalog-0501-0600.md#JSP-000507) | Progress | No | No |
@@ -599,7 +599,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000526 | [How many edges force a uniform hypergraph to contain two distinct pairs of disjoint edges with the same union?](catalog-0501-0600.md#JSP-000526) | Progress | No | No |
 | JSP-000527 | [If each prescribed local part of a set family has a two-point transversal, how many points suffice to meet the whole family?](catalog-0501-0600.md#JSP-000527) | Progress | No | No |
 | JSP-000528 | [Does adding each integer's divisor count produce the specified new lower barriers or uncrossable numerical thresholds?](catalog-0501-0600.md#JSP-000528) | Open | No | No |
-| JSP-000529 | [For distinct given integers, how many distinct representatives divisible by their respective integers can be chosen in the specified interval?](catalog-0501-0600.md#JSP-000529) | Solved | Yes | Pending verification |
+| JSP-000529 | [For distinct given integers, how many distinct representatives divisible by their respective integers can be chosen in the specified interval?](catalog-0501-0600.md#JSP-000529) | Solved | Yes | Yes |
 | JSP-000530 | [In higher-dimensional general position, is the number of points forcing a convex subset exponential in the target size?](catalog-0501-0600.md#JSP-000530) | Solved | No | No |
 | JSP-000531 | [How many points of a planar set can each determine only a small number of distances to the other points?](catalog-0501-0600.md#JSP-000531) | Solved | No | No |
 | JSP-000532 | [How many distinct values can the per-point counts of distinct distances have in a planar point set?](catalog-0501-0600.md#JSP-000532) | Progress | No | No |
@@ -607,7 +607,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000534 | [ambiguous statement](catalog-0501-0600.md#JSP-000534) | Open | No | No |
 | JSP-000535 | [Must every positive-density integer set contain a translate of all pairwise sums from some infinite set?](catalog-0501-0600.md#JSP-000535) | Solved | No | No |
 | JSP-000536 | [Must a planar point set with no isosceles triangle determine superlinearly many distinct distances?](catalog-0501-0600.md#JSP-000536) | Progress | No | No |
-| JSP-000537 | [If every four points determine at least three distances, how many distinct distances must the whole set determine?](catalog-0501-0600.md#JSP-000537) | Solved | Yes | Pending verification |
+| JSP-000537 | [If every four points determine at least three distances, how many distinct distances must the whole set determine?](catalog-0501-0600.md#JSP-000537) | Solved | Yes | Yes |
 | JSP-000538 | [ambiguous statement](catalog-0501-0600.md#JSP-000538) | Progress | No | No |
 | JSP-000539 | [Can two equal-size planar sets determine between them asymptotically fewer distances than their size divided by the square root of its logarithm?](catalog-0501-0600.md#JSP-000539) | Open | No | No |
 | JSP-000540 | [ambiguous statement](catalog-0501-0600.md#JSP-000540) | Open | No | No |
@@ -638,9 +638,9 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000565 | [Is the density distribution of the prime factor at a prescribed position among ordered distinct prime factors unimodal?](catalog-0501-0600.md#JSP-000565) | Solved | No | No |
 | JSP-000566 | [What conditions on an integer set are equivalent to its multiples having density one?](catalog-0501-0600.md#JSP-000566) | Open | No | No |
 | JSP-000567 | [How large are the maximum gaps among integers having a divisor in a prescribed size range?](catalog-0501-0600.md#JSP-000567) | Open | No | No |
-| JSP-000568 | [How large can the ratio of the largest to smallest positive integer with a common totient value be?](catalog-0501-0600.md#JSP-000568) | Solved | Yes | Pending verification |
+| JSP-000568 | [How large can the ratio of the largest to smallest positive integer with a common totient value be?](catalog-0501-0600.md#JSP-000568) | Solved | Yes | Yes |
 | JSP-000569 | [How fast can prime chains grow when each prime divides one less than the next?](catalog-0501-0600.md#JSP-000569) | Open | No | No |
-| JSP-000570 | [How long an increasing chain of divisors can an integer have if each term is one modulo its predecessor?](catalog-0501-0600.md#JSP-000570) | Solved | Yes | Pending verification |
+| JSP-000570 | [How long an increasing chain of divisors can an integer have if each term is one modulo its predecessor?](catalog-0501-0600.md#JSP-000570) | Solved | Yes | Yes |
 | JSP-000571 | [Does the density of integers having a divisor in a prescribed residue class exhibit a phase transition as parameters vary?](catalog-0501-0600.md#JSP-000571) | Solved | No | No |
 | JSP-000572 | [Must two binomial coefficients in the same row have a sufficiently large common prime factor?](catalog-0501-0600.md#JSP-000572) | Open | No | No |
 | JSP-000573 | [How small can the greatest common divisor of an integer and a binomial coefficient with that upper parameter be?](catalog-0501-0600.md#JSP-000573) | Open | No | No |
@@ -669,8 +669,8 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000596 | [What is the asymptotic number of Latin rectangles with prescribed dimensions?](catalog-0501-0600.md#JSP-000596) | Progress | No | No |
 | JSP-000597 | [How large is the reciprocal sum of primes for which a given integer's residue lies in the upper half of the residue range?](catalog-0501-0600.md#JSP-000597) | Open | No | No |
 | JSP-000598 | [Can the square of a factorial with index slightly above a reference value divide the factorial of twice that reference value?](catalog-0501-0600.md#JSP-000598) | Progress | No | No |
-| JSP-000599 | [If one product of two factorials divides another, how far apart can the sums of their indices be?](catalog-0501-0600.md#JSP-000599) | Solved | Yes | Pending verification |
-| JSP-000600 | [What restrictions on factorial indices follow when the reduced denominator of their ratio has only small prime factors?](catalog-0501-0600.md#JSP-000600) | Solved | Yes | Pending verification |
+| JSP-000599 | [If one product of two factorials divides another, how far apart can the sums of their indices be?](catalog-0501-0600.md#JSP-000599) | Solved | Yes | Yes |
+| JSP-000600 | [What restrictions on factorial indices follow when the reduced denominator of their ratio has only small prime factors?](catalog-0501-0600.md#JSP-000600) | Solved | Yes | Yes |
 
 ### Problems 601–700
 
@@ -687,7 +687,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000609 | [Must every triangle-free graph of infinite chromatic number contain every prescribed tree as an induced subgraph?](catalog-0601-0700.md#JSP-000609) | Open | No | No |
 | JSP-000610 | [Does a graph of infinite chromatic number have subgraphs of every smaller infinite chromatic number?](catalog-0601-0700.md#JSP-000610) | Progress | No | No |
 | JSP-000611 | [Can short-odd-cycle structures be removed from a graph of infinite chromatic number while preserving its chromatic number?](catalog-0601-0700.md#JSP-000611) | Progress | No | No |
-| JSP-000612 | [If an integer set's self-sumset has positive density, can it be partitioned into two parts whose self-sumsets both have positive density?](catalog-0601-0700.md#JSP-000612) | Solved | Yes | Pending verification |
+| JSP-000612 | [If an integer set's self-sumset has positive density, can it be partitioned into two parts whose self-sumsets both have positive density?](catalog-0601-0700.md#JSP-000612) | Solved | Yes | Yes |
 | JSP-000613 | [How many edges can a diameter-two graph have if deleting any edge increases its diameter?](catalog-0601-0700.md#JSP-000613) | Open | No | No |
 | JSP-000614 | [tree packing conjecture](catalog-0601-0700.md#JSP-000614) | Open | No | No |
 | JSP-000615 | [How many edges must be deleted from a chromatic-critical graph to make it bipartite?](catalog-0601-0700.md#JSP-000615) | Solved | No | No |
@@ -696,7 +696,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000618 | [What is the density threshold for a perfect matching in a random three-uniform hypergraph?](catalog-0601-0700.md#JSP-000618) | Solved | No | No |
 | JSP-000619 | [Counting sum-free subsets of integer intervals](catalog-0601-0700.md#JSP-000619) | Solved | No | No |
 | JSP-000620 | [Can an integer set have uniformly bounded two-term representation counts while its sumset density is arbitrarily close to one?](catalog-0601-0700.md#JSP-000620) | Progress | No | No |
-| JSP-000621 | [Can an infinite-chromatic graph have an independent set of nearly half the vertices in every finite subgraph?](catalog-0601-0700.md#JSP-000621) | Solved | Yes | Pending verification |
+| JSP-000621 | [Can an infinite-chromatic graph have an independent set of nearly half the vertices in every finite subgraph?](catalog-0601-0700.md#JSP-000621) | Solved | Yes | Yes |
 | JSP-000622 | [How many distinct cycle lengths are forced by large minimum degree and large girth?](catalog-0601-0700.md#JSP-000622) | Solved | No | No |
 | JSP-000623 | [In a finite four-dimensional point set, how many other points can be at the same distance from one point?](catalog-0601-0700.md#JSP-000623) | Solved | No | No |
 | JSP-000624 | [If all local parts of a real set have many differences, must it contain a Sidon subset of fixed positive proportion?](catalog-0601-0700.md#JSP-000624) | Progress | No | No |
@@ -730,7 +730,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000652 | [How large a subset of an arbitrary finite integer set can have no element equal to a sum of distinct other elements?](catalog-0601-0700.md#JSP-000652) | Progress | No | No |
 | JSP-000653 | [How small can an integer set be if its two-term sums cover an initial integer interval?](catalog-0601-0700.md#JSP-000653) | Progress | No | No |
 | JSP-000654 | [How large a sum-free subset must every finite integer set contain?](catalog-0601-0700.md#JSP-000654) | Progress | No | No |
-| JSP-000655 | [How large can a subset of an integer interval be if no element divides the product of two others?](catalog-0601-0700.md#JSP-000655) | Solved | Yes | Pending verification |
+| JSP-000655 | [How large can a subset of an integer interval be if no element divides the product of two others?](catalog-0601-0700.md#JSP-000655) | Solved | Yes | Yes |
 | JSP-000656 | [How large can a subset of an integer interval be if all subset products are distinct?](catalog-0601-0700.md#JSP-000656) | Solved | No | No |
 | JSP-000657 | [How large can an integer set be under a bound on each integer's number of multiplicative representations?](catalog-0601-0700.md#JSP-000657) | Progress | No | No |
 | JSP-000658 | [How many colors are needed for an acyclic coloring of a bounded-maximum-degree graph, with every two color classes inducing a forest?](catalog-0601-0700.md#JSP-000658) | Solved | No | No |
@@ -759,7 +759,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000681 | [Does the set of values of an integer plus its totient have positive density?](catalog-0601-0700.md#JSP-000681) | Solved | No | No |
 | JSP-000682 | [Which positive real numbers can be approximated arbitrarily closely by ratios of integers having equal divisor sums?](catalog-0601-0700.md#JSP-000682) | Solved | No | No |
 | JSP-000683 | [How many coprime pairs of positive integers have equal divisor sums, and how does their count grow?](catalog-0601-0700.md#JSP-000683) | Progress | No | No |
-| JSP-000684 | [Does a sufficiently large divisor sum ensure that an integer is a sum of some of its proper divisors?](catalog-0601-0700.md#JSP-000684) | Solved | Yes | Pending verification |
+| JSP-000684 | [Does a sufficiently large divisor sum ensure that an integer is a sum of some of its proper divisors?](catalog-0601-0700.md#JSP-000684) | Solved | Yes | Yes |
 | JSP-000685 | [Is there an integer whose succeeding positions have divisor counts bounded linearly in their distance from it?](catalog-0601-0700.md#JSP-000685) | Progress | No | No |
 | JSP-000686 | [How many planar points force a prescribed-size subset whose distinct triples have distinct circumradii?](catalog-0601-0700.md#JSP-000686) | Open | No | No |
 | JSP-000687 | [For a fixed constant, are there infinitely many integers whose totient divides the integer plus that constant?](catalog-0601-0700.md#JSP-000687) | Open | No | No |
@@ -783,7 +783,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | --- | --- | --- | --- | --- |
 | JSP-000701 | [Is every graph formed by vertex-disjoint triangles and a spanning Hamilton cycle three-colorable?](catalog-0701-0800.md#JSP-000701) | Solved | No | No |
 | JSP-000702 | [Under every two-coloring of the squares, is every sufficiently large integer a sum of distinct squares of one color?](catalog-0701-0800.md#JSP-000702) | Solved | No | No |
-| JSP-000703 | [If every finite part of a planar set contains a fixed proportion in general position, can the whole set be partitioned into finitely many general-position sets?](catalog-0701-0800.md#JSP-000703) | Solved | Yes | Pending verification |
+| JSP-000703 | [If every finite part of a planar set contains a fixed proportion in general position, can the whole set be partitioned into finitely many general-position sets?](catalog-0701-0800.md#JSP-000703) | Solved | Yes | Yes |
 | JSP-000704 | [How large can an integer-interval subset be if every pairwise product plus one has a nontrivial square factor?](catalog-0701-0800.md#JSP-000704) | Open | No | No |
 | JSP-000705 | [Singmaster's conjecture](catalog-0701-0800.md#JSP-000705) | Progress | No | No |
 | JSP-000706 | [Matching prime-factor sets across shifted integer pairs](catalog-0701-0800.md#JSP-000706) | Progress | No | No |
@@ -800,12 +800,12 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000717 | [How many Sidon subsets do the first several positive integers have?](catalog-0701-0800.md#JSP-000717) | Solved | No | No |
 | JSP-000718 | [How do extremal sizes compare between integer sets with bounded sum multiplicities and those with bounded difference multiplicities?](catalog-0701-0800.md#JSP-000718) | Solved | No | No |
 | JSP-000719 | [How large can an integer-interval subset be if at most one sum has multiple representations?](catalog-0701-0800.md#JSP-000719) | Progress | No | No |
-| JSP-000720 | [Must every sufficiently dense integer set contain three elements together with all their pairwise sums?](catalog-0701-0800.md#JSP-000720) | Solved | Yes | Pending verification |
+| JSP-000720 | [Must every sufficiently dense integer set contain three elements together with all their pairwise sums?](catalog-0701-0800.md#JSP-000720) | Solved | Yes | Yes |
 | JSP-000721 | [How far above one half must density be to force all pairwise sums of a large set?](catalog-0701-0800.md#JSP-000721) | Progress | No | No |
-| JSP-000722 | [Does every order-two additive basis with growing representation counts contain a minimal order-two basis?](catalog-0701-0800.md#JSP-000722) | Solved | Yes | Pending verification |
+| JSP-000722 | [Does every order-two additive basis with growing representation counts contain a minimal order-two basis?](catalog-0701-0800.md#JSP-000722) | Solved | Yes | Yes |
 | JSP-000723 | [Does the union of two disjoint order-two additive bases contain a minimal order-two basis?](catalog-0701-0800.md#JSP-000723) | Solved | No | No |
 | JSP-000724 | [What growth conditions on representation counts ensure that a higher-order additive basis contains a minimal basis of the same order?](catalog-0701-0800.md#JSP-000724) | Progress | No | No |
-| JSP-000725 | [If two-term representation counts tend to infinity, can the set be partitioned into two order-two additive bases?](catalog-0701-0800.md#JSP-000725) | Solved | Yes | Pending verification |
+| JSP-000725 | [If two-term representation counts tend to infinity, can the set be partitioned into two order-two additive bases?](catalog-0701-0800.md#JSP-000725) | Solved | Yes | Yes |
 | JSP-000726 | [How long does optimal play last when players alternately choose integers incomparable by divisibility with all previously chosen integers?](catalog-0701-0800.md#JSP-000726) | Progress | No | No |
 | JSP-000727 | [How often can a prescribed number of consecutive terms of an increasing integer sequence have small least common multiple?](catalog-0701-0800.md#JSP-000727) | Progress | No | No |
 | JSP-000728 | [How large can an integer-interval subset be if subset sums using different numbers of terms are never equal?](catalog-0701-0800.md#JSP-000728) | Solved | No | No |
@@ -818,11 +818,11 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000735 | [After deleting infinitely many elements of a minimal additive basis, can every sufficiently large integer still be represented using one additional summand?](catalog-0701-0800.md#JSP-000735) | Open | No | No |
 | JSP-000736 | [How large can an integer-interval subset be if its distinct subset sums never divide one another?](catalog-0701-0800.md#JSP-000736) | Solved | No | No |
 | JSP-000737 | [Which odd cycles and complete multipartite graphs must occur in the coprimality graph of a dense integer set?](catalog-0701-0800.md#JSP-000737) | Progress | No | No |
-| JSP-000738 | [How does the reciprocal sum of all distinct divisor differences compare with that of consecutive divisor differences?](catalog-0701-0800.md#JSP-000738) | Solved | Yes | Pending verification |
+| JSP-000738 | [How does the reciprocal sum of all distinct divisor differences compare with that of consecutive divisor differences?](catalog-0701-0800.md#JSP-000738) | Solved | Yes | Yes |
 | JSP-000739 | [Can the divisor-difference sets of two distinct integers have arbitrarily many common values?](catalog-0701-0800.md#JSP-000739) | Progress | No | No |
 | JSP-000740 | [How many divisors can an integer have in a short interval near its square root?](catalog-0701-0800.md#JSP-000740) | Progress | No | No |
 | JSP-000741 | [Is there a uniform constant bound on the number of divisors in a fourth-root-length interval near an integer's square root?](catalog-0701-0800.md#JSP-000741) | Progress | No | No |
-| JSP-000742 | [How large can an integer set be if every square product of four elements forces equality of the corresponding cross products?](catalog-0701-0800.md#JSP-000742) | Solved | Yes | Pending verification |
+| JSP-000742 | [How large can an integer set be if every square product of four elements forces equality of the corresponding cross products?](catalog-0701-0800.md#JSP-000742) | Solved | Yes | Yes |
 | JSP-000743 | [How many previously unseen prime factors can each successive term of a consecutive-integer interval introduce?](catalog-0701-0800.md#JSP-000743) | Open | No | No |
 | JSP-000744 | [What are the largest and smallest possible numbers of distinct prime factors in a short consecutive-integer interval?](catalog-0701-0800.md#JSP-000744) | Open | No | No |
 | JSP-000745 | [Must every interval of primorial length contain an integer with more distinct prime factors than that primorial?](catalog-0701-0800.md#JSP-000745) | Open | No | No |
@@ -909,17 +909,17 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000821 | [Can integers be two-colored so that every monochromatic arithmetic progression has length bounded by a very slowly growing function of its starting point?](catalog-0801-0900.md#JSP-000821) | Solved | No | No |
 | JSP-000822 | [Does every prime modulus have a relatively small prime primitive root?](catalog-0801-0900.md#JSP-000822) | Progress | No | No |
 | JSP-000823 | [What lower bounds hold for off-diagonal clique Ramsey numbers with one target fixed and the other growing?](catalog-0801-0900.md#JSP-000823) | Solved | No | No |
-| JSP-000824 | [For exponential sums from an arbitrary infinite real sequence, how much growth in partial sums is forced as frequency varies?](catalog-0801-0900.md#JSP-000824) | Solved | Yes | Pending verification |
+| JSP-000824 | [For exponential sums from an arbitrary infinite real sequence, how much growth in partial sums is forced as frequency varies?](catalog-0801-0900.md#JSP-000824) | Solved | Yes | Yes |
 | JSP-000825 | [As the number of spherical points grows, must discrepancies between cap counts and area predictions be unbounded?](catalog-0801-0900.md#JSP-000825) | Solved | No | No |
 | JSP-000826 | [Can an infinite discrete planar set have uniformly bounded differences between disk point counts and disk areas? What is the minimum discrepancy scale?](catalog-0801-0900.md#JSP-000826) | Solved | No | No |
-| JSP-000827 | [How far from uniform can the arguments of roots of a sparse polynomial be?](catalog-0801-0900.md#JSP-000827) | Solved | Yes | Pending verification |
+| JSP-000827 | [How far from uniform can the arguments of roots of a sparse polynomial be?](catalog-0801-0900.md#JSP-000827) | Solved | Yes | Yes |
 | JSP-000828 | [Do spherical configurations maximizing the product of pairwise distances become uniformly distributed as their size grows?](catalog-0801-0900.md#JSP-000828) | Solved | No | No |
 | JSP-000829 | [For typical irrational scale factors, what is the discrepancy of fractional parts of a scaled integer sequence?](catalog-0801-0900.md#JSP-000829) | Solved | No | No |
 | JSP-000830 | [Is the sequence counting independent sets by size in a tree or forest unimodal?](catalog-0801-0900.md#JSP-000830) | Open | No | No |
 | JSP-000831 | [Under repeated irrational rotation of a circle, does the visiting frequency of a measurable set equal its measure?](catalog-0801-0900.md#JSP-000831) | Solved | No | No |
 | JSP-000832 | [For a square-integrable function sampled along dilations from a sparse integer sequence, how fast do partial sums grow for typical inputs?](catalog-0801-0900.md#JSP-000832) | Progress | No | No |
 | JSP-000833 | [Does sufficiently fast decay of Fourier approximation error ensure convergence of averages along the prescribed sparse sequence?](catalog-0801-0900.md#JSP-000833) | Progress | No | No |
-| JSP-000834 | [Can the fractional parts of primes multiplied by an irrational number satisfy the specified stronger uniform-distribution property?](catalog-0801-0900.md#JSP-000834) | Solved | Yes | Pending verification |
+| JSP-000834 | [Can the fractional parts of primes multiplied by an irrational number satisfy the specified stronger uniform-distribution property?](catalog-0801-0900.md#JSP-000834) | Solved | Yes | Yes |
 | JSP-000835 | [What necessary and sufficient conditions on interval endpoints give bounded counting discrepancy for an irrational rotation?](catalog-0801-0900.md#JSP-000835) | Solved | No | No |
 | JSP-000836 | [Duffin-Schaeffer conjecture](catalog-0801-0900.md#JSP-000836) | Solved | No | No |
 | JSP-000837 | [What limiting measure is covered by approximation intervals using rational numbers with denominators in the specified range?](catalog-0801-0900.md#JSP-000837) | Solved | No | No |
@@ -933,7 +933,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000845 | [Under a high-chromatic-number condition, how many edges force a triangle?](catalog-0801-0900.md#JSP-000845) | Progress | No | No |
 | JSP-000846 | [What graph density forces a cycle containing nearly all vertices?](catalog-0801-0900.md#JSP-000846) | Solved | No | No |
 | JSP-000847 | [How few vertices can a triangle-free graph of prescribed chromatic number have?](catalog-0801-0900.md#JSP-000847) | Progress | No | No |
-| JSP-000848 | [With one off-diagonal Ramsey parameter fixed, does the ratio of successive values in the other parameter tend to one?](catalog-0801-0900.md#JSP-000848) | Solved | Yes | Pending verification |
+| JSP-000848 | [With one off-diagonal Ramsey parameter fixed, does the ratio of successive values in the other parameter tend to one?](catalog-0801-0900.md#JSP-000848) | Solved | Yes | Yes |
 | JSP-000849 | [How few vertices need remain uncovered by disjoint monochromatic cliques in an edge-colored complete graph?](catalog-0801-0900.md#JSP-000849) | Solved | No | No |
 | JSP-000850 | [pancyclic graphs](catalog-0801-0900.md#JSP-000850) | Open | No | No |
 | JSP-000851 | [How many cliques are needed to partition all edges of a dense graph?](catalog-0801-0900.md#JSP-000851) | Progress | No | No |
@@ -955,12 +955,12 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000867 | [Under restrictions on polynomial zeros, how do the area and transfinite diameter of a modulus sublevel set relate?](catalog-0801-0900.md#JSP-000867) | Progress | No | No |
 | JSP-000868 | [Can two polynomial zeros be joined within its unit-modulus sublevel set by a path of uniformly bounded length?](catalog-0801-0900.md#JSP-000868) | Open | No | No |
 | JSP-000869 | [How does the transfinite diameter of the zero set bound the number of components of a polynomial sublevel set?](catalog-0801-0900.md#JSP-000869) | Solved | No | No |
-| JSP-000870 | [Among the allowed polynomials, how small can the maximum boundary length of their sublevel sets be?](catalog-0801-0900.md#JSP-000870) | Solved | Yes | Pending verification |
+| JSP-000870 | [Among the allowed polynomials, how small can the maximum boundary length of their sublevel sets be?](catalog-0801-0900.md#JSP-000870) | Solved | Yes | Yes |
 | JSP-000871 | [For a complex point set of fixed diameter, how large can the product of all pairwise distances be?](catalog-0801-0900.md#JSP-000871) | Progress | No | No |
 | JSP-000872 | [If a polynomial's unit-modulus sublevel set is connected, must it lie in a disk of radius two?](catalog-0801-0900.md#JSP-000872) | Solved | No | No |
 | JSP-000873 | [Under the stated conditions, is the reciprocal sum of powers of a rational number minus one irrational?](catalog-0801-0900.md#JSP-000873) | Progress | No | No |
 | JSP-000874 | [Is the series of reciprocals of powers of two minus three irrational?](catalog-0801-0900.md#JSP-000874) | Solved | No | No |
-| JSP-000875 | [For a doubly exponentially growing integer sequence, is the reciprocal sum of consecutive-term products irrational?](catalog-0801-0900.md#JSP-000875) | Solved | Yes | Pending verification |
+| JSP-000875 | [For a doubly exponentially growing integer sequence, is the reciprocal sum of consecutive-term products irrational?](catalog-0801-0900.md#JSP-000875) | Solved | Yes | Yes |
 | JSP-000876 | [unitary perfect numbers](catalog-0801-0900.md#JSP-000876) | Open | No | No |
 | JSP-000877 | [multiply perfect numbers](catalog-0801-0900.md#JSP-000877) | Open | No | No |
 | JSP-000878 | [How can a target integer be represented as the sum of an initial segment of another integer's ordered nontrivial divisors?](catalog-0801-0900.md#JSP-000878) | Progress | No | No |
@@ -979,7 +979,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000891 | [Must a graph of uncountable chromatic number contain a countable subgraph that remains connected after every finite vertex deletion?](catalog-0801-0900.md#JSP-000891) | Open | No | No |
 | JSP-000892 | [How many lines can contain at least a prescribed number of points of a finite planar set?](catalog-0801-0900.md#JSP-000892) | Solved | No | No |
 | JSP-000893 | [What proportion of every finite planar point set can be selected with no pair at unit distance?](catalog-0801-0900.md#JSP-000893) | Progress | No | No |
-| JSP-000894 | [Can a maximal family of pairwise disjoint unit segments in the specified planar region be finite or countable?](catalog-0801-0900.md#JSP-000894) | Solved | Yes | Pending verification |
+| JSP-000894 | [Can a maximal family of pairwise disjoint unit segments in the specified planar region be finite or countable?](catalog-0801-0900.md#JSP-000894) | Solved | Yes | Yes |
 | JSP-000895 | [How small can the first factorial index congruent to minus one modulo a prime be?](catalog-0801-0900.md#JSP-000895) | Open | No | No |
 | JSP-000896 | [How many composite integers divide some factorial plus one, and how are they distributed?](catalog-0801-0900.md#JSP-000896) | Open | No | No |
 | JSP-000897 | [What is the density of cases where prime factors of a factorial plus one fail the specified congruence relation?](catalog-0801-0900.md#JSP-000897) | Progress | No | No |
@@ -1038,17 +1038,17 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000945 | [Even allowing degree slightly above the minimum, can bounded interpolation data force every interpolating polynomial to have large amplitude?](catalog-0901-1000.md#JSP-000945) | Progress | No | No |
 | JSP-000946 | [Does repeatedly halving even integers and replacing odd integers by three times the integer plus one always reach one?](catalog-0901-1000.md#JSP-000946) | Open | No | No |
 | JSP-000947 | [What is the limiting ratio of the product of consecutive prime gaps to the square of the specified maximum gap?](catalog-0901-1000.md#JSP-000947) | Open | No | No |
-| JSP-000948 | [How are prime counts and local distributions governed in intervals comparable in length to the largest prime gap?](catalog-0901-1000.md#JSP-000948) | Solved | Yes | Pending verification |
+| JSP-000948 | [How are prime counts and local distributions governed in intervals comparable in length to the largest prime gap?](catalog-0901-1000.md#JSP-000948) | Solved | Yes | Yes |
 | JSP-000949 | [Among integers with at most two prime factors, are normalized consecutive gaps unbounded?](catalog-0901-1000.md#JSP-000949) | Open | No | No |
 | JSP-000950 | [Is there an integer whose differences from twice every permitted smaller square are all prime?](catalog-0901-1000.md#JSP-000950) | Solved | No | No |
-| JSP-000951 | [Is there an integer whose differences from every sufficiently small square coprime to it are all prime?](catalog-0901-1000.md#JSP-000951) | Solved | Yes | Pending verification |
+| JSP-000951 | [Is there an integer whose differences from every sufficiently small square coprime to it are all prime?](catalog-0901-1000.md#JSP-000951) | Solved | Yes | Yes |
 | JSP-000952 | [Is there an integer whose differences from every permitted smaller power of two are all prime?](catalog-0901-1000.md#JSP-000952) | Progress | No | No |
 | JSP-000953 | [How many multiples of primes from a specified set are guaranteed in every given short integer interval?](catalog-0901-1000.md#JSP-000953) | Open | No | No |
 | JSP-000954 | [Do partial sums of a random completely multiplicative function infinitely often exceed every fixed multiple of the square root of the summation range?](catalog-0901-1000.md#JSP-000954) | Progress | No | No |
 | JSP-000955 | [If two complementary additive sets have asymptotically equal growth, must their cross-sum representation counts be unbounded?](catalog-0901-1000.md#JSP-000955) | Open | No | No |
 | JSP-000956 | [Does adding the integers generated by powers of two and three always strictly increase another integer set's Schnirelmann density?](catalog-0901-1000.md#JSP-000956) | Open | No | No |
 | JSP-000957 | [For a fixed irrational number, do integers whose squared multiples of it lie close to integers form an asymptotic basis of order two?](catalog-0901-1000.md#JSP-000957) | Solved | No | No |
-| JSP-000958 | [Is every sufficiently large integer a sum of two squares minus a third square, with each square at most the original integer?](catalog-0901-1000.md#JSP-000958) | Solved | Yes | Pending verification |
+| JSP-000958 | [Is every sufficiently large integer a sum of two squares minus a third square, with each square at most the original integer?](catalog-0901-1000.md#JSP-000958) | Solved | Yes | Yes |
 | JSP-000959 | [What is the density of integers coprime to the floor of a fixed nonintegral power of themselves?](catalog-0901-1000.md#JSP-000959) | Solved | No | No |
 | JSP-000960 | [For sign-coefficient polynomials, must the maximum modulus on the unit circle exceed the square root of the number of terms by a fixed proportion?](catalog-0901-1000.md#JSP-000960) | Open | No | No |
 | JSP-000961 | [With Chebyshev interpolation nodes, can all limit points of the interpolation sequence at the specified positions be prescribed?](catalog-0901-1000.md#JSP-000961) | Progress | No | No |
@@ -1090,7 +1090,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000997 | [Does every finite coloring of the positive integers contain the specified monochromatic progression of primes or a monochromatic progression with prime common difference?](catalog-0901-1000.md#JSP-000997) | Solved | No | No |
 | JSP-000998 | [With bounded moduli, how many irredundant distinct covering systems exist?](catalog-0901-1000.md#JSP-000998) | Open | No | No |
 | JSP-000999 | [How many modulus sets support irreducible coverings, and what size restrictions must they satisfy?](catalog-0901-1000.md#JSP-000999) | Progress | No | No |
-| JSP-001000 | [How large can the reciprocal sum of large moduli be when their residue classes are pairwise disjoint?](catalog-0901-1000.md#JSP-001000) | Solved | Yes | Pending verification |
+| JSP-001000 | [How large can the reciprocal sum of large moduli be when their residue classes are pairwise disjoint?](catalog-0901-1000.md#JSP-001000) | Solved | Yes | Yes |
 
 ### Problems 1001–1027
 
@@ -1098,11 +1098,11 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | --- | --- | --- | --- | --- |
 | JSP-001001 | [Can the square-root density restriction for infinite Sidon sets be strengthened by the predicted logarithmic correction?](catalog-1001-1027.md#JSP-001001) | Progress | No | No |
 | JSP-001002 | [Can the mean square of representation counts in an additive basis remain bounded?](catalog-1001-1027.md#JSP-001002) | Progress | No | No |
-| JSP-001003 | [How large a density can integers have on which additive representation counts equal a prescribed positive monotone function?](catalog-1001-1027.md#JSP-001003) | Solved | Yes | Pending verification |
+| JSP-001003 | [How large a density can integers have on which additive representation counts equal a prescribed positive monotone function?](catalog-1001-1027.md#JSP-001003) | Solved | Yes | Yes |
 | JSP-001004 | [How fast must an integer set grow if each positive integer has exactly one representation as a difference of two of its elements?](catalog-1001-1027.md#JSP-001004) | Progress | No | No |
 | JSP-001005 | [How fast can the measure of a real set grow if no ratio of distinct elements is an integer?](catalog-1001-1027.md#JSP-001005) | Solved | No | No |
-| JSP-001006 | [How large can the sum of reciprocal integer-logarithm weights be over a primitive set of large integers?](catalog-1001-1027.md#JSP-001006) | Solved | Yes | Pending verification |
-| JSP-001007 | [Can integer dilates of a positive-measure real set cover all sufficiently distant lattice points along almost every prescribed ray?](catalog-1001-1027.md#JSP-001007) | Solved | Yes | Pending verification |
+| JSP-001006 | [How large can the sum of reciprocal integer-logarithm weights be over a primitive set of large integers?](catalog-1001-1027.md#JSP-001006) | Solved | Yes | Yes |
+| JSP-001007 | [Can integer dilates of a positive-measure real set cover all sufficiently distant lattice points along almost every prescribed ray?](catalog-1001-1027.md#JSP-001007) | Solved | Yes | Yes |
 | JSP-001008 | [Does every two-coloring of the positive integers contain an infinite set with all the specified mixed sum-product structures monochromatic?](catalog-1001-1027.md#JSP-001008) | Solved | No | No |
 | JSP-001009 | [Does every two-coloring of the natural numbers contain an infinite set whose specified pairwise sums all have one color?](catalog-1001-1027.md#JSP-001009) | Progress | No | No |
 | JSP-001010 | [Can prime residue classes with bounded reciprocal sum of moduli still cover a long initial integer interval?](catalog-1001-1027.md#JSP-001010) | Progress | No | No |
