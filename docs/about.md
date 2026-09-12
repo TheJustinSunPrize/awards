@@ -22,7 +22,7 @@ Verification evidence supports review. A successful build or repository check do
 
 Candidates use the same record layout as awards, with no announced decision until an award is published. Unconfirmed recipient identities use placeholders. The [record guide](records.md) describes the public fields and validation requirements.
 
-The [problem bank](../problems/README.md) is a separate catalog. Its **Pending verification** flag marks an item for possible eligibility review; it does not create a public candidate record, a formal nomination, or an award. Empty generated lists mean no records have been published here.
+The [problem bank](../problems/README.md) is a separate catalog. Its **Eligible to claim** flag is **Yes** for records marked **Solved** with a **Yes** Lean proof status; **Pending verification** marks an item for possible eligibility review. Neither flag creates a public candidate record, a formal nomination, or an award. Empty generated lists mean no records have been published here.
 
 ## Public roles
 

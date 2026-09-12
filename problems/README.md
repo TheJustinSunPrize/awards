@@ -4,7 +4,7 @@
 
 This catalog contains **1,027 mathematical problems**.
 
-Problems are grouped into volumes of 100 records, with a heading, a field table, and any review notes for each problem. **Eligible to claim** appears as a separate column in the index below.
+Problems are grouped into volumes of 100 records, with a heading, a field table, and any review notes for each problem. **Eligible to claim** appears as a separate column in the index below and as a field in every problem’s detail table.
 
 Some dates are explicitly marked as assumptions or pending confirmation. Formal nominations and award records remain in [candidates/](../candidates/README.md) and [awards/](../awards/README.md).
 
@@ -20,7 +20,7 @@ The catalogs retain solution status, Lean proof status, historical bounty, elaps
 
 The index preserves Lean evidence qualifications: **Reported; standalone source not located** does not confirm a complete Lean proof of that problem. A linked proof of a related problem is identified as such in the full record.
 
-In the **Eligible to claim** column, **Yes** marks records whose **Current status** is **Solved** and whose **Lean proof** is **Yes**, including affirmative entries with explanatory qualifiers such as **Yes (three-dimensional counterexample)**. **Pending verification** means the evidence may warrant further review, but eligibility has not been established. **No** means the record is not currently marked eligible. These are problem-bank screening flags; they do not create a formal nomination, a public candidate record, an approved award, or a right to claim payment. Public candidates exist only as records in [candidates/](../candidates/README.md); the screening flags are separate from that directory's pools and lifecycle statuses. This index rule was updated on **2026-09-12**; dated catalog review notes retain earlier assessments as review history.
+In the **Eligible to claim** column, **Yes** marks records whose **Current status** is **Solved** and whose **Lean proof** is **Yes**, including affirmative entries with explanatory qualifiers such as **Yes (three-dimensional counterexample)**. **Pending verification** means the evidence may warrant further review, but eligibility has not been established. **No** means the record is not currently marked eligible. These are problem-bank screening flags; they do not create a formal nomination, a public candidate record, an approved award, or a right to claim payment. Public candidates exist only as records in [candidates/](../candidates/README.md); the screening flags are separate from that directory's pools and lifecycle statuses. Every record displays its current eligibility in both the index and its detail table.
 
 ## Volumes
 

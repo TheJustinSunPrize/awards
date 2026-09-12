@@ -5,7 +5,7 @@
 
 Neither category is an award. Both use the award record layout, including `verification/`. For the formal channel, `statement.yaml` is mandatory even while review is pending.
 
-The **Pending verification** flag in the [problem bank](../problems/README.md) is only a screening marker. It does not create a record in either candidate pool or constitute a formal nomination. Only records published in this directory appear in the public candidate list.
+The **Eligible to claim** flags **Yes** and **Pending verification** in the [problem bank](../problems/README.md) are screening markers. Neither creates a record in either candidate pool or constitutes a formal nomination. Only records published in this directory appear in the public candidate list.
 
 Keep IDs stable when moving entries. An ID can occur only once across candidates and awards.
 

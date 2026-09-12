@@ -21,7 +21,7 @@ candidates/observation/<entry-id>/
 
 The last file layout applies to all three entry locations. A stable ID occurs in exactly one location. `observation` and `verified-pending` are pool names, not status values. The `verified-pending` pool contains formal candidates under active verification or with verification completed but written recipient confirmation still pending. The pool name alone does not establish successful verification; consult the record's status and evidence. An entry awaiting written recipient confirmation stays in candidates until the announcement requirements are met.
 
-The **Pending verification** flag in the [problem bank](../problems/README.md) is a screening marker, separate from these pools and lifecycle statuses. It does not create a formal nomination or public candidate record. A problem enters the public candidate list only when its record is published under `candidates/`.
+The **Eligible to claim** flags **Yes** and **Pending verification** in the [problem bank](../problems/README.md) are screening markers, separate from these pools and lifecycle statuses. Neither creates a formal nomination or public candidate record. A problem enters the public candidate list only when its record is published under `candidates/`.
 
 | Location | Status |
 | --- | --- |
