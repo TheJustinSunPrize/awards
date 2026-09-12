@@ -1,6 +1,6 @@
-# Justin Sun Prize
+# The Justin Sun Prize
 
-A public repository for the Justin Sun Prize: recognizing mathematical breakthroughs and machine-verifiable formal proofs through a problem-list-based academic bounty mechanism.
+A public repository for The Justin Sun Prize: recognizing mathematical breakthroughs and machine-verifiable formal proofs through a problem-list-based academic bounty mechanism.
 
 [About the prize](docs/about.md)
 

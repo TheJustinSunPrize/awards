@@ -2,7 +2,7 @@
 
 These are repository administration notes. These settings have **not** been applied by this repository initialization. The upstream repository is `TheJustinSunPrize/awards`; `Federico2014/awards` is the working fork. Changing repository settings, inviting owners, and enabling Pages are separate platform actions.
 
-- Organization: `TheJustinSunPrize`; proposed display name: `Justin Sun Prize`; repository: `awards`; default branch: `main`.
+- Organization: `TheJustinSunPrize`; proposed display name: `The Justin Sun Prize`; repository: `awards`; default branch: `main`.
 - Confirm at least two organization owners before recording awards. Use an organizational public email and the correct legal entity. Confirm public commit identity and a suitable GitHub noreply address before committing.
 - Enable Issues and Discussions; enable other collaboration features as needed. Pin the [Discussions notice](discussions-notice.md) when Discussions is enabled.
 - Protect `main`: require PRs and at least one approval, require `Schema validation`, `Markdown links`, and `Data consistency`, block force pushes and branch deletion, and apply the rules without administrator bypass. Run the workflows first so these check names are available in GitHub.

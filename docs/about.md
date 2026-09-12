@@ -1,4 +1,4 @@
-# About the Justin Sun Prize
+# About The Justin Sun Prize
 
 [Home](../README.md)
 
