@@ -99,6 +99,31 @@ lake exe cache get
 lake build Erdos882KorskyFinite
 ```
 
+To reproduce the six-theorem export and independent check, use matching
+checker executables identified in [tool provenance](verification/TOOL_PROVENANCE.json).
+The following example applies the recorded macOS network-denial policy:
+
+```sh
+python3 tools/verify.py --project . --module Erdos882KorskyFinite \
+  --theorem Erdos882Korsky.korsky_sum_bound \
+  --theorem Erdos882Korsky.original_upper_bound \
+  --theorem Erdos882Korsky.korsky_deficit_bound \
+  --theorem Erdos882Korsky.korsky_finite_bound \
+  --theorem Erdos882Korsky.original_finite_bound \
+  --theorem Erdos882Korsky.original_threshold_bound \
+  --output verification-reproduced --threads 1 \
+  --lean-bin /path/to/lean-4.34.0/bin \
+  --exporter /path/to/lean4export --nanoda /path/to/nanoda_bin \
+  --deny-network
+lake env lean NegativeControls.lean
+lake env lean ExtensionNegativeControls.lean
+```
+
+The `--deny-network` option requires macOS `sandbox-exec`. On another platform,
+record the actual isolation policy separately; do not claim that this macOS
+policy was applied. The two final commands recheck the explicit counterexamples
+and boundary facts; the recorded control run also denied network access.
+
 The full verification record must identify the exact source snapshot and cover
 all six exported statements, compilation of the local import closure, the fresh
 Lean kernel check, the independent checker, actual axiom dependencies, negative
