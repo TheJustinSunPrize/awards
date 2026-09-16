@@ -1,0 +1,10 @@
+id: "STMT-jsp-000264-f08-square-counterexample-v1-v1"
+problem: "JSP-000264"
+statement_en: "Does every assignment of signs to the specified reciprocal set admit a nonempty zero-sum subset?"
+formal:
+  declaration: "JSP000264.solution"
+  file: "Statement.lean"
+  sha256: "c994ec212b6bb85f7c977a9f5b53dc7498c78d10f4e3e7e2b9e45230997ed0af"
+source:
+  url: "https://www.erdosproblems.com/318"
+  attribution_en: "Original solver and publication credit as recorded in the JSP catalog."
