@@ -475,7 +475,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000384 | [Can the greedy process seeking a new prime equal to the current prime plus an earlier prime minus one continue forever?](catalog-0301-0400.md#JSP-000384) | Open | No | No | Unavailable |
 | JSP-000385 | [Can all natural numbers be permuted so that every adjacent pair has prime sum?](catalog-0301-0400.md#JSP-000385) | Solved | No | No | Unavailable |
 | JSP-000386 | [Can pairs of real numbers be colored so that every uncountable subset realizes all prescribed colors?](catalog-0301-0400.md#JSP-000386) | Progress | No | No | Unavailable |
-| JSP-000387 | [Can the nonzero elements of a finite field be ordered so that all initial partial sums are distinct?](catalog-0301-0400.md#JSP-000387) | Open | No | No | Unavailable |
+| JSP-000387 | [Can the nonzero elements of a finite field be ordered so that all initial partial sums are distinct?](catalog-0301-0400.md#JSP-000387) | Solved (full nonzero set only; arbitrary-subset conjecture remains open) | No | No | Unavailable |
 | JSP-000388 | [Can the integer value set of a polynomial have an additive complement giving each integer exactly one representation?](catalog-0301-0400.md#JSP-000388) | Solved | No | No | Unavailable |
 | JSP-000389 | [How many distinct factorial residues occur modulo a prime?](catalog-0301-0400.md#JSP-000389) | Progress | No | No | Unavailable |
 | JSP-000390 | [For a prescribed remainder, are there infinitely many positive integers whose corresponding powers of two have that remainder upon division by the integer?](catalog-0301-0400.md#JSP-000390) | Progress | No | No | Unavailable |
