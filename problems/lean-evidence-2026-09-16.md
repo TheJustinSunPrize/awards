@@ -361,11 +361,12 @@ Reported; standalone Lean source not located. The reviewed commentary derives th
 
 [Catalog record](catalog-0501-0600.md#JSP-000506) · [Pinned Lean source](https://github.com/SamPetkov/Erdos/blob/824e4b609466d2e26b216a76ecf103184dac2663/625/formalization/Erdos625.lean)
 
-- **Recorded scope:** Erdos625.erdos625: for G(n,1/2), probability tends to one along the full natural-number sequence that χ−ζ ≥ ((ln 2)^2/32) ln(200/153) · n/(ln n)^3.
+- **Recorded scope:** The source declares Erdos625.erdos625: for G(n,1/2), probability tends to one along the full natural-number sequence that χ−ζ ≥ ((ln 2)^2/4) ln(200/153) · n/(ln n)^3.
 - **Mathematical credits reported by the source:** Samuil Petkov.
 - **Formalization credits reported by the source:** Samuil Petkov.
 - **Attribution qualification:** The manuscript explicitly says neither AI system is an author. Samuil Petkov directed, reviewed, and integrated the work; do not list the systems as coauthors.
-- **Limits and review status:** Not independently recompiled during this catalog audit. The /32 conservative constant is formalized; the manuscript’s /4 constant and stronger phase-resolved coefficient are explicitly not claimed as kernel-checked. Published author replay reports were not independently rerun.
+- **Limits and review status:** Not independently recompiled or kernel-replayed during this catalog audit. This entry records the uniform /4 source statement, not the stronger nonconstant phase-resolved coefficient A_4(delta_n). Independent reproduction and review remain pending; published replay reports are version-specific and were not independently rerun.
+- **Coefficient correction:** The formalization note in the pinned manuscript reports /32, but the actual [constant definition](https://github.com/SamPetkov/Erdos/blob/824e4b609466d2e26b216a76ecf103184dac2663/625/formalization/Erdos625/Foundation.lean), [probability target](https://github.com/SamPetkov/Erdos/blob/824e4b609466d2e26b216a76ecf103184dac2663/625/formalization/Erdos625/Target.lean), and [final theorem](https://github.com/SamPetkov/Erdos/blob/824e4b609466d2e26b216a76ecf103184dac2663/625/formalization/Erdos625/Section15FinalInstantiation.lean) at the same source pin use /4. Corrected following [randyxian08's source audit](https://github.com/TheJustinSunPrize/awards/pull/40#issuecomment-5697271091); this acknowledges the source correction, not independent proof verification.
 - **Attribution source:** [Source](https://github.com/SamPetkov/Erdos/blob/824e4b609466d2e26b216a76ecf103184dac2663/625/arxiv/main.tex).
 
 <a id="jsp-000513"></a>
