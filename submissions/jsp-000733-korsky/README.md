@@ -1,133 +1,123 @@
-# JSP-000733: Korsky's constant-error upper bound for primitive subset sums
+# JSP-000733: Korsky's finite upper bounds for primitive subset sums
 
-This package formalizes Samuel Korsky's upper bound for **Erdős Problem 882**.
-Let `F(n)` be the maximum size of a subset of `{1,...,n}` whose distinct nonempty
-subset-sum values never divide one another. For every natural number `n`, the
-final theorem proves
+This package formalizes upper bounds from Samuel Korsky's *Near-Exact Bounds
+for Primitive Subset Sums* (July 26, 2026) for **Erdős Problem 882**. Let `F(n)`
+be the maximum size of a subset of `{1,...,n}` whose distinct nonempty
+subset-sum values never divide one another.
+
+The principal addition is the finite estimate in Theorem 1.1, (1.7)–(1.8).
+For any nonempty admissible set of size `k`, it proves
 
 ```text
-F(n) ≤ Nat.log 2 n + 1.
+(k+1) * 2^(k-1) + (k-1)^2 / 4 ≤ k*n + 1.
 ```
 
-For `n ≥ 1`, `Nat.log 2 n` is `floor(log₂ n)`. At zero the natural-logarithm
-convention is `Nat.log 2 0 = 0`; the extremal definition gives `F(0)=0`.
+Here every quantity is a natural number and `/` is natural-number division,
+so `(k-1)^2 / 4` means `floor((k-1)^2/4)`. The displayed statement is the
+ceiling-free form of (1.8). The previous sum bound and constant additive-error
+endpoint `F(n) ≤ Nat.log 2 n + 1` are retained.
 
-The mathematical source is **Samuel Korsky**, *Near-Exact Bounds for Primitive
-Subset Sums* (July 26, 2026), Proposition 2.2, equation (2.6), equivalently the
-sum inequality (1.6) in Theorem 1.1. The upper-bound consequence appears as
-inequality (3.6) in the proof of Corollary 1.2. The
-[author's manuscript](https://drive.google.com/file/d/1G1kNGljoP7qn32niEu87fCWcGKjQvWk4/view)
-was linked in the [proof-claims thread](https://www.erdosproblems.com/forum/thread/882/proof-claims).
-That listing is not a certification by the website's moderators. See
-[ATTRIBUTION.md](ATTRIBUTION.md) for the author's disclosed AI assistance and
-related formal work.
+The new original-problem threshold theorem gives, for all natural `n,m`,
 
-The proposed contribution is a Lean formalization of this bound using a finite
-modular presentation of the ordered ternary packing argument, with a complete
-bridge to the original finite extremal problem. **It is not a new mathematical
-discovery or an exact formula for `F(n)`.** Lower bounds, a two-value theorem,
-and the manuscript's further balanced-difference estimates are outside the
-submitted formalization's scope.
+```text
+(m+1)*n + 1 < (m+2)*2^m + m^2/4  →  F(n) ≤ m.
+```
 
-## Exact exported statements
+This is an upper-bound contribution. The package does not supply a lower-bound
+construction, a two-value theorem, an exact-value theorem, or a proof of the
+remaining conjecture `F(n) = floor(log₂(n+1))`.
 
-| Theorem in `Erdos882Korsky` | Scope |
+## Exported statements
+
+All theorem names below are in namespace `Erdos882Korsky`.
+
+| Theorem | Statement and hypotheses |
 |---|---|
-| `korsky_sum_bound` | For `k > 0` and positive natural weights with no nonempty subset sum twice another, `k * 2^(k-1) ≤ Σ aᵢ`. |
-| `original_upper_bound` | For every natural `n`, `Erdos882.maximumSize n ≤ Nat.log 2 n + 1`. |
+| `korsky_sum_bound` | For positive natural weights and `k > 0`, `NoDouble a` implies `k * 2^(k-1) ≤ total a`. Retained. |
+| `original_upper_bound` | For every natural `n`, `Erdos882.maximumSize n ≤ Nat.log 2 n + 1`. Retained. |
+| `korsky_deficit_bound` | For `k > 0`, strictly increasing positive natural weights bounded by `n`, and `NoDouble a`, `total a + 2^(k-1) + (k-1)^2/4 ≤ k*n+1`. New; corresponds to (1.7). |
+| `korsky_finite_bound` | Under the same hypotheses, `(k+1)*2^(k-1) + (k-1)^2/4 ≤ k*n+1`. New; corresponds to (1.8). |
+| `original_finite_bound` | The finite bound for every nonempty `Erdos882.Admissible n A`, with `k = A.card`. New. |
+| `original_threshold_bound` | The displayed strict threshold implies `Erdos882.maximumSize n ≤ m`. New. |
 
-The original extremal quantity is independently defined as the maximum of the
-finite set of attainable admissible cardinalities, with a proved attainment
-lemma. The final exported statements have no unproved packing, injectivity,
-counting-bound, or maximum-attainment assumption. The intermediate proof
-parameters are supplied by the final assembly.
+`NoDouble a` forbids a ratio of 2 between any two nonempty index-subset sums;
+the subsets may overlap. It is weaker than the original primitivity condition.
+The original extremal function is the attained maximum of a finite set of
+admissible cardinalities. It is unchanged by this extension. The final exported
+theorems have no unproved counting, packing, or maximum-attainment parameters.
 
 ## Proof structure
 
-- `KorskyDefs.lean`: the no-double subset-sum condition and ordered ternary words.
-- `KorskyCount.lean`: an explicit bijection and induction give the word count
-  `k * 2^(k-1)` for every positive `k`.
-- `KorskyInject.lean`: coefficient cancellation excludes equal weighted values
-  and collisions differing by the total sum.
-- `KorskyModular.lean`: weighted values inject into residue classes modulo their
-  positive total. The constant-2 word, whose residue is zero, is included.
-- `Erdos882Original.lean`: independent definitions of the original subset-sum
-  condition and actual extremal maximum, with maximum attainment.
-- `KorskyEndpoint.lean`: enumeration of an admissible set, the bridge from
-  primitivity to the no-double condition, and the integer logarithm bound.
-- `Erdos882Korsky.lean`: the two final theorem assemblies and axiom reports.
+The original seven production source files are retained byte for byte. They
+implement the original definitions and attained
+maximum, ordered ternary words, coefficient cancellation, modular packing,
+the sum bound, and the original constant-error upper bound. The extension adds
+seven production modules:
 
-The [source-scope review](SCOPE_AUDIT.md) explains statement fidelity and boundary
-cases. It is an automated source review, not a human signature or designated
-organizer verification. [Third-party notices](THIRD_PARTY_NOTICES.md) distinguish
-mathematical attribution from source-code reuse.
+| Module | Contribution |
+|---|---|
+| `KorskyBalancedDefs.lean` | `Balanced w`: an ordered ternary word with coordinate sum `k`. |
+| `KorskyBalancedCount.lean` | A bijection with even Boolean supports gives exactly `2^(k-1)` balanced words for positive `k`. |
+| `KorskyBalancedLower.lean` | For monotone weights, every balanced word has weighted value at least `total a`. The filename refers to an interval endpoint, not a lower bound for `F(n)`. |
+| `KorskyBalancedUpper.lean` | Strictly increasing weights and reversed coordinate ranks give `value a w + floor((k-1)^2/4) ≤ k*n`. |
+| `KorskyBalancedPacking.lean` | The existing collision lemma injects balanced words into a closed integer interval. Its cardinality supplies the deficit bound. |
+| `KorskyFiniteEndpoint.lean` | Sorted enumeration, preservation of admissibility under subsets, and a bridge to the original finite maximum. |
+| `Erdos882KorskyFinite.lean` | Assembles the four new theorems and reports their axiom dependencies. |
 
-## Related submissions
+The all-ones word is retained and has value `total a`. Integer-interval packing
+preserves the final `+1`. The threshold argument takes an admissible subset of
+exactly `m+1` elements; it needs no unproved monotonicity assertion about a
+threshold function. See [SCOPE_AUDIT.md](SCOPE_AUDIT.md).
 
-[PR #31](https://github.com/TheJustinSunPrize/awards/pull/31) formalizes the leading
-asymptotic and excludes the stronger additive-error results. The later
-[PR #264](https://github.com/TheJustinSunPrize/awards/pull/264), reviewed at head
-`1db509ec5ad2c410d9b13232685c343c008f0b1f`, formalizes, for `n ≥ 32`,
+## Mathematical provenance and related work
 
-```text
-F(n) ≤ log₂(n) + (1/2)log₂(log₂(n)) + 3.
-```
+The mathematical strengthening belongs to **Samuel Korsky**. The source is
+[the author's manuscript](https://drive.google.com/file/d/1G1kNGljoP7qn32niEu87fCWcGKjQvWk4/view),
+Theorem 1.1 (1.6)–(1.8), Proposition 2.2, and Section 3. This formalization uses
+a finite modular presentation for (1.6) and direct balanced-word interval
+packing for (1.7)–(1.8). It does not reproduce every intermediate paper lemma.
+Korsky's disclosed GPT-5.6 Pro assistance and the present Codex assistance are
+recorded in [ATTRIBUTION.md](ATTRIBUTION.md).
 
-Its original-condition and maximum-attainment bridges are proved. Those
-contributions are acknowledged. The current constant additive-error endpoint
-is a stronger statement. No proof source from either PR or from the separately
-published lower-construction formalization is incorporated in this package.
+[PR #31](https://github.com/TheJustinSunPrize/awards/pull/31) covers the leading
+asymptotic. [PR #264](https://github.com/TheJustinSunPrize/awards/pull/264), at
+reviewed head `1db509ec5ad2c410d9b13232685c343c008f0b1f`, proves the half-log-log
+upper bound for `n ≥ 32`, with original-condition and maximum-attainment
+bridges. Those contributions are acknowledged. No source code from those PRs
+or the separately published lower-construction formalization is incorporated.
+This bounded comparison does not establish global first-formalization priority.
 
-The prior-work search is bounded. It does not establish globally first
-formalization priority or an award entitlement. The mathematical strengthening
-is credited to Korsky, and recognition of the formalization remains subject to
-review.
-
-## Reproduction
+## Reproduction and evidence
 
 Use Lean **4.34.0**, Mathlib revision
-`5ed2965256430c3649e86755f9576b54eca72435`, and the transitive dependency pins in
-`lake-manifest.json`. Check [source-manifest.json](source-manifest.json) before
-running tools. Prepare dependency sources and caches before denying network
-access.
+`5ed2965256430c3649e86755f9576b54eca72435`, and the transitive pins in
+`lake-manifest.json`. Package version **2.0.0** sets the default build target to
+`Erdos882KorskyFinite`.
 
 ```sh
 lake exe cache get
-lake build Erdos882Korsky
-python3 tools/verify.py \
-  --project . --module Erdos882Korsky \
-  --theorem Erdos882Korsky.korsky_sum_bound \
-  --theorem Erdos882Korsky.original_upper_bound \
-  --lean-bin /path/to/lean-4.34.0/bin \
-  --exporter /path/to/compatible/lean4export \
-  --nanoda /path/to/nanoda_bin \
-  --output verification/local-run --threads 1 --deny-network
+lake build Erdos882KorskyFinite
 ```
 
-The verifier compiles the local import closure serially, runs the matching
-fresh Lean kernel checker, exports the two theorem closures, and runs Nanoda
-with only the three standard allowed axioms. `--deny-network` uses macOS
-`sandbox-exec`; users on other platforms must record their actual isolation
-arrangements. Tool identities and run outcomes belong in the verification
-receipt, not in an assertion inferred from these commands.
+The full verification record must identify the exact source snapshot and cover
+all six exported statements, compilation of the local import closure, the fresh
+Lean kernel check, the independent checker, actual axiom dependencies, negative
+controls, tool identities, isolation arrangements, and artifact hashes. Cached
+dependency objects and any other verification limitations must be stated.
+Prior verification of the smaller package does not verify this extension.
 
-## Evidence and official review
+The expanded-package evidence belongs in `verification/finite-v2/`:
+[verification summary](verification/finite-v2/VERIFICATION.md),
+[run receipt](verification/finite-v2/verification.json),
+[independent-checker record](verification/finite-v2/nanoda.json), and
+[check logs](verification/finite-v2/check-logs.txt). The original records under
+`verification/` are retained as evidence of the earlier scope.
 
-[VERIFICATION.md](verification/VERIFICATION.md) records the actual verification
-run, exit codes, source identities, checker results, and limitations. The local
-workflow denies network access and tests that denial against an accessible
-control. It does not claim filesystem isolation or a full rebuild of all
-Mathlib dependencies; cached dependency objects are used.
+- Final verification: **passed**, run `06568604-a3fd-4fa2-a3d4-831c21267533`; 14 fresh module builds, fresh Lean kernel, and Nanoda (9,132 declarations).
+- Proof export: `39,724,522` bytes; SHA-256 `5a710a3e4fa610606afdbc2fd2171ed1315860d2ae43116010b3da4efdd83bf9`.
+- Both negative-control modules passed a separate network-denied Lean run; see [the receipt](verification/finite-v2/negative-controls-expanded.json).
+- Permanent external archival receipt: **PENDING**.
 
-The archive status, artifact identifiers, hashes, and byte counts must be read
-from that evidence record. Neither a local ZIP nor an ordinary GitHub package
-is represented here as permanent external archival. A reproducible export is
-not, by itself, an archive receipt.
-
-Under the [official rules](https://www.hejustinsun.com/prize/rules), Lean checking
-is an entry prerequisite, followed by designated verification, PR finalization,
-and award assessment. This package requests review of a formalization
-contribution. It changes no recipient, award-allocation, signature, or payment
-record. The rules distinguish mathematical solver and formalizer roles; any
-formalizer allocation is conditional on an award and the organizer's confirmed
-attribution, not a guaranteed payment.
+A local ZIP or ordinary repository upload is not represented as permanent
+external archival. Permanent external archival still requires its own receipt. Submission requests
+review of the formalization; technical checks alone confer no award entitlement.
