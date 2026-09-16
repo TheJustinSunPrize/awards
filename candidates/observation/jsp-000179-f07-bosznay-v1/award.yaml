@@ -1,22 +1,19 @@
 id: jsp-000179-f07-bosznay-v1
 batch: null
 problem:
-  source: https://github.com/TheJustinSunPrize/awards
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000179"
   number: "JSP-000179"
-  title_en: "Bosznay's explicit finite non-averaging construction"
+  title_en: "How large can a subset of an integer interval be if no element is the average of some other elements?"
   posed:
-    year: 2021
-    basis: stated
-    citation: ""
-  resolved:
-    year: 2021
+    year: 1973
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000179"
+  resolved: null
 decision: null
 recipients: []
 verification:
   peer_review: null
-  formal:
-    record: verification/record.yaml
-    statement: verification/statement.yaml
+  formal: null
   independent_review: null
 conflicts: []
 status: under-verification
