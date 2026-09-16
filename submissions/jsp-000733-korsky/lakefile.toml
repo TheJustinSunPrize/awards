@@ -1,6 +1,6 @@
 name = "erdos882korsky"
-version = "1.0.0"
-defaultTargets = ["Erdos882Korsky"]
+version = "2.0.0"
+defaultTargets = ["Erdos882KorskyFinite"]
 
 [[require]]
 name = "mathlib"
@@ -8,5 +8,5 @@ git = "https://github.com/leanprover-community/mathlib4.git"
 rev = "5ed2965256430c3649e86755f9576b54eca72435"
 
 [[lean_lib]]
-name = "Erdos882Korsky"
-roots = ["Erdos882Korsky"]
+name = "Erdos882KorskyFinite"
+roots = ["Erdos882KorskyFinite"]
