@@ -1,0 +1,102 @@
+{
+  "format": "jsp248-public-files-v1",
+  "run_id": "20260916T233129Z-584ab7bd5df6463db463cdbc289b8721",
+  "coverage": "All public package files except ARTIFACTS.json itself; compiled objects and dependencies are not redistributed.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "cc2939e2279f1fa9be7ef177641de1e3c80c01648251bf3dafb0fd435ce73c7a",
+      "bytes": 33
+    },
+    {
+      "path": "Audit.lean",
+      "sha256": "df938edce4e4b34af4f687ba6f422edcc29258570fc7feffb2bf38b7d9eeeb1c",
+      "bytes": 1797
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "e03ba41d7fab20700769fe4118bab50d800cb74f990353a05d2f5fff1c228363",
+      "bytes": 11558
+    },
+    {
+      "path": "PRIOR-WORK.md",
+      "sha256": "33846cf231f3d938e23af05b8c19ae6dde2cd7646109762095a2545dbf8af3c2",
+      "bytes": 4010
+    },
+    {
+      "path": "PrimePowerObstruction.lean",
+      "sha256": "8e0dbd3b549084ee8e03dc55ba4bbe532a7d29ebb21da9e76bf664622a037a6f",
+      "bytes": 7811
+    },
+    {
+      "path": "README.md",
+      "sha256": "982a3723a7516924ffee67f7c9fac6c182735f53d5b23af5928808edda95cda7",
+      "bytes": 6852
+    },
+    {
+      "path": "SmallMultipleObstruction.lean",
+      "sha256": "2fd86c07301f453b1fb9bdb93c0c99351565874a046b4182270d5c4bb83aafa3",
+      "bytes": 7384
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "e106d11a961dc3da127ebf8b20734af7aec8c0b0cfc138c90e879182992c1532",
+      "bytes": 3670
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "c678e4292abdbdbe1484419de775f4b1a0f504c6752bacef9b76fff313abcb60",
+      "bytes": 317
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+      "bytes": 25
+    },
+    {
+      "path": "verification/runs/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721/checker-Audit.log",
+      "sha256": "9e3f841c439c64da5aa8f4ae181c0e163d2a4f11fd24eb64d2397bf1c0a71038",
+      "bytes": 16
+    },
+    {
+      "path": "verification/runs/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721/checker-PrimePowerObstruction.log",
+      "sha256": "518ad1c02069c66ce9bb12e5d46cf0a1f6cec1e2042ec6b3c4436702c588025a",
+      "bytes": 32
+    },
+    {
+      "path": "verification/runs/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721/checker-SmallMultipleObstruction.log",
+      "sha256": "41d17d2841187f6ef33e82b18b28c0a557bfd9db2af525dd2f7fce9c369b184b",
+      "bytes": 35
+    },
+    {
+      "path": "verification/runs/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721/compile-Audit.log",
+      "sha256": "2df69d8b649db0d8f2bfbf1b8d0b6480d17394fa337bddc5d52a304e304055cc",
+      "bytes": 900
+    },
+    {
+      "path": "verification/runs/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721/compile-PrimePowerObstruction.log",
+      "sha256": "7fa00e1a9f027d956718542c5ea3148f35593324fa40b6e743c205c89fae3fa7",
+      "bytes": 635
+    },
+    {
+      "path": "verification/runs/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721/compile-SmallMultipleObstruction.log",
+      "sha256": "dcd24840af3acff2b92f848bf37cb26807c0c434a06c732df167b360c1464387",
+      "bytes": 216
+    },
+    {
+      "path": "verification/runs/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721/summary.json",
+      "sha256": "6dd91133d64cc9a0878138428767282103e70f44dd68b9fff3cadbf9b3179d28",
+      "bytes": 16431
+    },
+    {
+      "path": "verification/summary.json",
+      "sha256": "6dd91133d64cc9a0878138428767282103e70f44dd68b9fff3cadbf9b3179d28",
+      "bytes": 16431
+    },
+    {
+      "path": "verify.py",
+      "sha256": "4304bd33fcc84167eb48da81bf901a2ad6f13a277e5e640e9444ae05619410c4",
+      "bytes": 15121
+    }
+  ]
+}

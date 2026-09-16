@@ -1,0 +1,6 @@
+'JSP248.reciprocalSum_norm_of_unique_max_valuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP248.reciprocalSum_not_integer_of_unique_max_valuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP248.exists_other_large_valuation_of_reciprocalSum_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP248.prime_power_not_largestDenominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP248.exceptional_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP248.one_isLargestDenominator' depends on axioms: [propext, Classical.choice, Quot.sound]

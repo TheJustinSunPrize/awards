@@ -1,0 +1,11 @@
+def JSP248.IsLargestDenominator : ℕ → Prop :=
+fun n => ∃ S ⊆ Finset.Icc 1 n, n ∈ S ∧ JSP248.reciprocalSum S = 1
+def JSP248.reciprocalSum : Finset ℕ → ℚ :=
+fun S => ∑ n ∈ S, 1 / ↑n
+JSP248.small_multiple_prime_power_not_largestDenominator (m p k : ℕ) (hm : 0 < m) (hp : Nat.Prime p)
+  (hsmall : m * m.factorial < p) (hk : 0 < k) : ¬JSP248.IsLargestDenominator (m * p ^ k)
+JSP248.small_multiple_expanded (m p k : ℕ) (hm : 0 < m) (hp : Nat.Prime p) (hsmall : m * m.factorial < p) (hk : 0 < k) :
+  ¬∃ S, (∀ d ∈ S, 1 ≤ d ∧ d ≤ m * p ^ k) ∧ m * p ^ k ∈ S ∧ ∑ d ∈ S, 1 / ↑d = 1
+'JSP248.small_multiple_expanded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP248.two_mul_five_pow_succ_not_largest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP248.two_mul_five_pow_succ_injective' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,438 @@
+{
+  "status": "passed",
+  "run_id": "20260916T233129Z-584ab7bd5df6463db463cdbc289b8721",
+  "run_directory": "verification/runs/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721",
+  "build_directory": "build/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721",
+  "started_at_utc": "2026-09-16T23:31:29.560921+00:00",
+  "operations": [
+    {
+      "mode": "compile",
+      "module": "PrimePowerObstruction",
+      "status": "passed",
+      "launched": true,
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_seconds": 600,
+      "command": [
+        "<toolchain>\\bin\\lean.exe",
+        "-j",
+        "1",
+        "-o",
+        "<package>\\build\\20260916T233129Z-584ab7bd5df6463db463cdbc289b8721\\PrimePowerObstruction.olean",
+        "<package>\\PrimePowerObstruction.lean"
+      ],
+      "objects_before": {},
+      "compiled_baseline": {},
+      "log": "verification/runs/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721/compile-PrimePowerObstruction.log",
+      "log_sha256": "7fa00e1a9f027d956718542c5ea3148f35593324fa40b6e743c205c89fae3fa7",
+      "log_bytes": 635,
+      "captured_output_bytes": 635,
+      "captured_output_sha256": "7fa00e1a9f027d956718542c5ea3148f35593324fa40b6e743c205c89fae3fa7",
+      "objects_after": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        }
+      },
+      "source_unchanged": true,
+      "toolchain_unchanged": true,
+      "elapsed_seconds": 14.781
+    },
+    {
+      "mode": "compile",
+      "module": "SmallMultipleObstruction",
+      "status": "passed",
+      "launched": true,
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_seconds": 600,
+      "command": [
+        "<toolchain>\\bin\\lean.exe",
+        "-j",
+        "1",
+        "-o",
+        "<package>\\build\\20260916T233129Z-584ab7bd5df6463db463cdbc289b8721\\SmallMultipleObstruction.olean",
+        "<package>\\SmallMultipleObstruction.lean"
+      ],
+      "objects_before": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        }
+      },
+      "compiled_baseline": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        }
+      },
+      "log": "verification/runs/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721/compile-SmallMultipleObstruction.log",
+      "log_sha256": "dcd24840af3acff2b92f848bf37cb26807c0c434a06c732df167b360c1464387",
+      "log_bytes": 216,
+      "captured_output_bytes": 216,
+      "captured_output_sha256": "dcd24840af3acff2b92f848bf37cb26807c0c434a06c732df167b360c1464387",
+      "objects_after": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        },
+        "SmallMultipleObstruction.olean": {
+          "sha256": "4f74ca22c6d00435e1367860bb8616b008d9ef28c3e62dd078d0e3b45b8b8448",
+          "bytes": 275192
+        }
+      },
+      "source_unchanged": true,
+      "toolchain_unchanged": true,
+      "elapsed_seconds": 15.219
+    },
+    {
+      "mode": "compile",
+      "module": "Audit",
+      "status": "passed",
+      "launched": true,
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_seconds": 600,
+      "command": [
+        "<toolchain>\\bin\\lean.exe",
+        "-j",
+        "1",
+        "-o",
+        "<package>\\build\\20260916T233129Z-584ab7bd5df6463db463cdbc289b8721\\Audit.olean",
+        "<package>\\Audit.lean"
+      ],
+      "objects_before": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        },
+        "SmallMultipleObstruction.olean": {
+          "sha256": "4f74ca22c6d00435e1367860bb8616b008d9ef28c3e62dd078d0e3b45b8b8448",
+          "bytes": 275192
+        }
+      },
+      "compiled_baseline": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        },
+        "SmallMultipleObstruction.olean": {
+          "sha256": "4f74ca22c6d00435e1367860bb8616b008d9ef28c3e62dd078d0e3b45b8b8448",
+          "bytes": 275192
+        }
+      },
+      "log": "verification/runs/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721/compile-Audit.log",
+      "log_sha256": "2df69d8b649db0d8f2bfbf1b8d0b6480d17394fa337bddc5d52a304e304055cc",
+      "log_bytes": 900,
+      "captured_output_bytes": 900,
+      "captured_output_sha256": "2df69d8b649db0d8f2bfbf1b8d0b6480d17394fa337bddc5d52a304e304055cc",
+      "objects_after": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        },
+        "SmallMultipleObstruction.olean": {
+          "sha256": "4f74ca22c6d00435e1367860bb8616b008d9ef28c3e62dd078d0e3b45b8b8448",
+          "bytes": 275192
+        },
+        "Audit.olean": {
+          "sha256": "2fdcd54446e3cf45afb29812e3b430d2e08ee1dd412085763e567500e614c017",
+          "bytes": 68200
+        }
+      },
+      "source_unchanged": true,
+      "toolchain_unchanged": true,
+      "elapsed_seconds": 14.453
+    },
+    {
+      "mode": "checker",
+      "module": "PrimePowerObstruction",
+      "status": "passed",
+      "launched": true,
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_seconds": 600,
+      "command": [
+        "<toolchain>\\bin\\leanchecker.exe",
+        "PrimePowerObstruction",
+        "--verbose"
+      ],
+      "objects_before": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        },
+        "SmallMultipleObstruction.olean": {
+          "sha256": "4f74ca22c6d00435e1367860bb8616b008d9ef28c3e62dd078d0e3b45b8b8448",
+          "bytes": 275192
+        },
+        "Audit.olean": {
+          "sha256": "2fdcd54446e3cf45afb29812e3b430d2e08ee1dd412085763e567500e614c017",
+          "bytes": 68200
+        }
+      },
+      "compiled_baseline": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        },
+        "SmallMultipleObstruction.olean": {
+          "sha256": "4f74ca22c6d00435e1367860bb8616b008d9ef28c3e62dd078d0e3b45b8b8448",
+          "bytes": 275192
+        },
+        "Audit.olean": {
+          "sha256": "2fdcd54446e3cf45afb29812e3b430d2e08ee1dd412085763e567500e614c017",
+          "bytes": 68200
+        }
+      },
+      "log": "verification/runs/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721/checker-PrimePowerObstruction.log",
+      "log_sha256": "518ad1c02069c66ce9bb12e5d46cf0a1f6cec1e2042ec6b3c4436702c588025a",
+      "log_bytes": 32,
+      "captured_output_bytes": 32,
+      "captured_output_sha256": "518ad1c02069c66ce9bb12e5d46cf0a1f6cec1e2042ec6b3c4436702c588025a",
+      "objects_after": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        },
+        "SmallMultipleObstruction.olean": {
+          "sha256": "4f74ca22c6d00435e1367860bb8616b008d9ef28c3e62dd078d0e3b45b8b8448",
+          "bytes": 275192
+        },
+        "Audit.olean": {
+          "sha256": "2fdcd54446e3cf45afb29812e3b430d2e08ee1dd412085763e567500e614c017",
+          "bytes": 68200
+        }
+      },
+      "source_unchanged": true,
+      "toolchain_unchanged": true,
+      "elapsed_seconds": 13.187
+    },
+    {
+      "mode": "checker",
+      "module": "SmallMultipleObstruction",
+      "status": "passed",
+      "launched": true,
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_seconds": 600,
+      "command": [
+        "<toolchain>\\bin\\leanchecker.exe",
+        "SmallMultipleObstruction",
+        "--verbose"
+      ],
+      "objects_before": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        },
+        "SmallMultipleObstruction.olean": {
+          "sha256": "4f74ca22c6d00435e1367860bb8616b008d9ef28c3e62dd078d0e3b45b8b8448",
+          "bytes": 275192
+        },
+        "Audit.olean": {
+          "sha256": "2fdcd54446e3cf45afb29812e3b430d2e08ee1dd412085763e567500e614c017",
+          "bytes": 68200
+        }
+      },
+      "compiled_baseline": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        },
+        "SmallMultipleObstruction.olean": {
+          "sha256": "4f74ca22c6d00435e1367860bb8616b008d9ef28c3e62dd078d0e3b45b8b8448",
+          "bytes": 275192
+        },
+        "Audit.olean": {
+          "sha256": "2fdcd54446e3cf45afb29812e3b430d2e08ee1dd412085763e567500e614c017",
+          "bytes": 68200
+        }
+      },
+      "log": "verification/runs/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721/checker-SmallMultipleObstruction.log",
+      "log_sha256": "41d17d2841187f6ef33e82b18b28c0a557bfd9db2af525dd2f7fce9c369b184b",
+      "log_bytes": 35,
+      "captured_output_bytes": 35,
+      "captured_output_sha256": "41d17d2841187f6ef33e82b18b28c0a557bfd9db2af525dd2f7fce9c369b184b",
+      "objects_after": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        },
+        "SmallMultipleObstruction.olean": {
+          "sha256": "4f74ca22c6d00435e1367860bb8616b008d9ef28c3e62dd078d0e3b45b8b8448",
+          "bytes": 275192
+        },
+        "Audit.olean": {
+          "sha256": "2fdcd54446e3cf45afb29812e3b430d2e08ee1dd412085763e567500e614c017",
+          "bytes": 68200
+        }
+      },
+      "source_unchanged": true,
+      "toolchain_unchanged": true,
+      "elapsed_seconds": 13.735
+    },
+    {
+      "mode": "checker",
+      "module": "Audit",
+      "status": "passed",
+      "launched": true,
+      "exit_code": 0,
+      "timed_out": false,
+      "timeout_seconds": 600,
+      "command": [
+        "<toolchain>\\bin\\leanchecker.exe",
+        "Audit",
+        "--verbose"
+      ],
+      "objects_before": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        },
+        "SmallMultipleObstruction.olean": {
+          "sha256": "4f74ca22c6d00435e1367860bb8616b008d9ef28c3e62dd078d0e3b45b8b8448",
+          "bytes": 275192
+        },
+        "Audit.olean": {
+          "sha256": "2fdcd54446e3cf45afb29812e3b430d2e08ee1dd412085763e567500e614c017",
+          "bytes": 68200
+        }
+      },
+      "compiled_baseline": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        },
+        "SmallMultipleObstruction.olean": {
+          "sha256": "4f74ca22c6d00435e1367860bb8616b008d9ef28c3e62dd078d0e3b45b8b8448",
+          "bytes": 275192
+        },
+        "Audit.olean": {
+          "sha256": "2fdcd54446e3cf45afb29812e3b430d2e08ee1dd412085763e567500e614c017",
+          "bytes": 68200
+        }
+      },
+      "log": "verification/runs/20260916T233129Z-584ab7bd5df6463db463cdbc289b8721/checker-Audit.log",
+      "log_sha256": "9e3f841c439c64da5aa8f4ae181c0e163d2a4f11fd24eb64d2397bf1c0a71038",
+      "log_bytes": 16,
+      "captured_output_bytes": 16,
+      "captured_output_sha256": "9e3f841c439c64da5aa8f4ae181c0e163d2a4f11fd24eb64d2397bf1c0a71038",
+      "objects_after": {
+        "PrimePowerObstruction.olean": {
+          "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+          "bytes": 151784
+        },
+        "SmallMultipleObstruction.olean": {
+          "sha256": "4f74ca22c6d00435e1367860bb8616b008d9ef28c3e62dd078d0e3b45b8b8448",
+          "bytes": 275192
+        },
+        "Audit.olean": {
+          "sha256": "2fdcd54446e3cf45afb29812e3b430d2e08ee1dd412085763e567500e614c017",
+          "bytes": 68200
+        }
+      },
+      "source_unchanged": true,
+      "toolchain_unchanged": true,
+      "elapsed_seconds": 13.203
+    }
+  ],
+  "axiom_reports": {
+    "JSP248.reciprocalSum_norm_of_unique_max_valuation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP248.reciprocalSum_not_integer_of_unique_max_valuation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP248.exists_other_large_valuation_of_reciprocalSum_eq_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP248.prime_power_not_largestDenominator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP248.exceptional_infinite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP248.one_isLargestDenominator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP248.norm_scaled_reciprocal_lt_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP248.small_multiple_prime_power_not_largestDenominator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP248.small_multiple_expanded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP248.two_mul_five_pow_succ_not_largest": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP248.two_mul_five_pow_succ_injective": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "compiled_objects": {
+    "PrimePowerObstruction.olean": {
+      "sha256": "bff457fefbfc4542675e46310187d0a4bfd37f8d45a35c74929d518dd58f18b3",
+      "bytes": 151784
+    },
+    "SmallMultipleObstruction.olean": {
+      "sha256": "4f74ca22c6d00435e1367860bb8616b008d9ef28c3e62dd078d0e3b45b8b8448",
+      "bytes": 275192
+    },
+    "Audit.olean": {
+      "sha256": "2fdcd54446e3cf45afb29812e3b430d2e08ee1dd412085763e567500e614c017",
+      "bytes": 68200
+    }
+  },
+  "expected_axiom_declarations": [
+    "JSP248.exceptional_infinite",
+    "JSP248.exists_other_large_valuation_of_reciprocalSum_eq_one",
+    "JSP248.norm_scaled_reciprocal_lt_one",
+    "JSP248.one_isLargestDenominator",
+    "JSP248.prime_power_not_largestDenominator",
+    "JSP248.reciprocalSum_norm_of_unique_max_valuation",
+    "JSP248.reciprocalSum_not_integer_of_unique_max_valuation",
+    "JSP248.small_multiple_expanded",
+    "JSP248.small_multiple_prime_power_not_largestDenominator",
+    "JSP248.two_mul_five_pow_succ_injective",
+    "JSP248.two_mul_five_pow_succ_not_largest"
+  ],
+  "log_policy": "Complete merged output, UTF-8 decoded with replacement and known paths redacted. Hash and byte count of captured original bytes are also recorded; unredacted output is not published.",
+  "trust_boundary": "Imported Mathlib and standard library artifacts trusted. leanchecker uses the same Lean kernel implementation; no independent checker or complete dependency rebuild is claimed.",
+  "updated_at_utc": "2026-09-16T23:32:54.236665+00:00",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source_sha256": {
+    "PrimePowerObstruction.lean": "8e0dbd3b549084ee8e03dc55ba4bbe532a7d29ebb21da9e76bf664622a037a6f",
+    "SmallMultipleObstruction.lean": "2fd86c07301f453b1fb9bdb93c0c99351565874a046b4182270d5c4bb83aafa3",
+    "Audit.lean": "df938edce4e4b34af4f687ba6f422edcc29258570fc7feffb2bf38b7d9eeeb1c"
+  },
+  "tool_sha256": {
+    "lean": "dd86e9b24990b1da425ea4af910f016e4db8f9a25c9ddad27bc6bee3690e677f",
+    "leanchecker": "e1ab36b0ea3d0310e3058cda1dce1c072f78c5938303e8596fa3f24267c715ce"
+  },
+  "lean_version": "Lean (version 4.33.0, x86_64-w64-windows-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "checked_at_utc": "2026-09-16T23:32:54.236665+00:00"
+}
