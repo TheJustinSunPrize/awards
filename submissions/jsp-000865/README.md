@@ -22,7 +22,23 @@ The applicability of a license to the pinned upstream 1042 file has not been est
 
 ## Reproduction
 
-Use Lean 4.33.0 and Mathlib commit `db584cd6d46c92f209a44c0f1c829460d327499d`. All dependency revisions are pinned in `lake-manifest.json`.
+The public `reproduce.py` was actually executed on 2026-09-17 (Asia/Shanghai) from a separate package copy with no upstream source or custom compilation outputs. It fetched the immutable raw LF prerequisite (106961 bytes, SHA-256 `bd9cc4a1ffb9f7930e772de7d2917e4b3e3594b83f1495d8ad006805431f74ea`), compiled both modules into fresh outputs, and explicitly replayed both modules. All four process steps passed. The three submitted targets use only `propext`, `Classical.choice` and `Quot.sound`.
+
+Use Lean 4.33.0, commit `d8b18978322de05a8f3dba51ef03cf5461676c17`, and an existing compiled Mathlib checkout at `db584cd6d46c92f209a44c0f1c829460d327499d` with its pinned dependency caches:
+
+```text
+python reproduce.py --lean-bin /path/to/lean-4.33.0/bin --mathlib-dir /path/to/mathlib
+```
+
+Quote paths containing spaces. The helper checks the Lean revision and Mathlib revision/manifest, discards inherited `LEAN_*` and `LAKE_*` variables, fixes the sysroot and thread count, and excludes the package source directory from the module search path. It builds custom modules in a fresh `.reproduction/` directory. It checks source and existing custom-artifact stability at each step and requires each replay log to name exactly the requested module. Coordinate any shared-machine Lean mutex outside the helper.
+
+`bootstrap_upstream.py` checks both the byte count and SHA-256 before use. It refuses an unexpected existing prerequisite instead of overwriting it. Actual negative checks for corrupted existing bytes and a length mismatch are included in the new evidence directory. Downloading the dependency does not establish its license or resolve the uncertainty concerning the adapted proof.
+
+The exact actual run is in [evidence/public-reproduction-2026-09-17/verification.json](evidence/public-reproduction-2026-09-17/verification.json). A post-run contributor check binds source, helper, bootstrap, pin, tool and log identities in [package-integrity.json](evidence/public-reproduction-2026-09-17/package-integrity.json); [source-manifest.json](source-manifest.json) identifies the public package files. The mathematical supplement remains byte-for-byte unchanged from PR28 head `9580441448ff1ba7151d48f2750d029e1ee4b8bc`, SHA-256 `e115cc1e91d3b5093aaade063043c11ac25b32db7af943485559b7edbda36bb5`.
+
+The older `evidence/verification.json` and logs are retained unchanged as historical evidence. Their prerequisite used the Windows CRLF identity `10fb91b2f8e43418adb8bde402e7f1d15d769c5267a72aa813bf42b000e47817`; they are not relabeled as a test of the downloaded LF bytes. Both identities and their normalized equivalence remain in `upstream-pin.json`. The new record above is the fresh end-to-end run of the final public helper. An earlier successful helper trial preceded the environment/search-path tightening; it is not substituted for this final run.
+
+The ordinary Lake route is also configured:
 
 ```text
 python bootstrap_upstream.py
@@ -32,9 +48,7 @@ lake env leanchecker --verbose JSP000865.Upstream
 lake env leanchecker --verbose JSP000865.ZeroCapacity
 ```
 
-The bootstrap fetches the unchanged third-party prerequisite from its immutable public URL and checks its SHA-256. It is not silently relicensed or represented as newly authored source. The tested Windows checkout used CRLF while the Git blob uses LF; both hashes and their normalized equivalence are recorded in `upstream-pin.json`.
-
-The build prints the axioms of all submitted targets. See the accompanying evidence files for the actual local results and exact limitations. `leanchecker` replays declarations with the Lean kernel; it is not a second independently implemented proof checker. The semantic review was performed by another AI agent, not by a designated prize curator or a human verifier.
+Existing Mathlib/dependency binaries remain the imported trust boundary. This isolates custom project outputs; it is not a full dependency rebuild or a network-disabled run. `leanchecker` uses the same Lean kernel, not a second independent implementation. Contributor-side checks and separate AI source reviews are not organizer-appointed verification or human referee attestations.
 
 ## Attribution and review status
 
