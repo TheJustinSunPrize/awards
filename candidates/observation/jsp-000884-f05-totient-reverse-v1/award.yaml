@@ -1,22 +1,19 @@
 id: jsp-000884-f05-totient-reverse-v1
 batch: null
 problem:
-  source: https://github.com/TheJustinSunPrize/awards
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000884"
   number: "JSP-000884"
   title_en: "How does an integer's totient compare with the totient of the integer minus its totient?"
   posed:
-    year: 2021
-    basis: stated
-    citation: ""
-  resolved:
-    year: 2021
+    year: 1980
+    basis: earliest-reference
+    citation: "https://doi.org/10.5486/pmd.2001.2340"
+  resolved: null
 decision: null
 recipients: []
 verification:
   peer_review: null
-  formal:
-    record: verification/record.yaml
-    statement: verification/statement.yaml
+  formal: null
   independent_review: null
 conflicts: []
 status: under-verification

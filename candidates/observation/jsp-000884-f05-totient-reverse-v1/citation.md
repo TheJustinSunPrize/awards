@@ -1,9 +1,9 @@
+# Candidate observation
+
 ## English
 
-Lean 4.33.1 / Mathlib formalization for JSP-JSP-000884: How does an integer's totient compare with the totient of the integer minus its totient?
+This preliminary observation is associated with [JSP-000884 — How does an integer's totient compare with the totient of the integer minus its totient?](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000884). It publishes `Statement.lean` and `Proof.lean` for the reverse-inequality infinitude component: the set of natural numbers `n` satisfying `totient n < totient (n - totient n)` is infinite, as recorded in the public [Erdos Problem #1064](https://www.erdosproblems.com/1064) source. It does not claim the full catalog question or a formalization of every source component.
 
-- Statement: Statement.lean (SHA-256 5fc0b5019da8f528db885594c2c6b1ea3d717d4a6554cd30448441af4290a08c)
-- Proof: Proof.lean (SHA-256 976097ed4cbb63d0573515b1b11ddab9d297fbd09d964dc1981daec6d5091824)
-- Source: 
-- Formalizer: AI-assisted (JSP formalizer f05); no original mathematical discovery claimed.
+A local Lean compilation was run with Lean 4.33.1 and the pinned Mathlib revision. That compiler result is only a reproducibility check; it is not independent verification of statement faithfulness or official JSP verification.
 
+The candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.
