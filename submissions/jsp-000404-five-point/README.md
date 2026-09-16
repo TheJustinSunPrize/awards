@@ -91,9 +91,12 @@ each audited theorem's transitive axiom set must be contained in
 The [verification record](verification/result.json) binds source hashes, dependency
 revisions, exit codes and log hashes. Local checks reuse compiled Mathlib caches;
 they do not rebuild Mathlib from source in an isolated environment. `--trust=0`
-is a same-implementation recheck, not an independent external checker.
-Official statement-fidelity review, isolated verification, independent checking,
-attribution review and any award assessment remain outstanding.
+is a same-implementation recheck. A separate [Nanoda check](INDEPENDENT.md)
+has now checked the final theorem and 18,045 declarations in its dependency
+closure, using only the same three standard axioms. Deliberately invalid proof
+and axiom controls are rejected. This uses an independent implementation, run
+by the submitter. Official statement-fidelity review, isolated verification,
+independent reviewer sign-off, attribution review and any award assessment remain outstanding.
 
 ## Scope still missing
 

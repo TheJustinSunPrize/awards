@@ -1,0 +1,24 @@
+{
+  "export_file_path": "final.ndjson",
+  "use_stdin": false,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unpermitted_axiom_hard_error": true,
+  "unsafe_permit_all_axioms": false,
+  "num_threads": 4,
+  "nat_extension": true,
+  "string_extension": true,
+  "print_axioms": true,
+  "print_success_message": true,
+  "pp_to_stdout": true,
+  "unknown_pp_declar_hard_error": true,
+  "pp_declars": [
+    "SendovFivePointPlane.finite_set_large_angle",
+    "SendovFivePointPlane.Point",
+    "EuclideanGeometry.angle",
+    "InnerProductGeometry.angle"
+  ]
+}

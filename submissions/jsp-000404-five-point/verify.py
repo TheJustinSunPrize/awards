@@ -69,7 +69,8 @@ def main():
                        'log': log.name, 'sha256': digest(log)})
     sources = [m + '.lean' for m in MODULES] + [
         'lakefile.toml', 'lake-manifest.json', 'lean-toolchain', 'verify.py',
-        'generate_five_direction_proof.py', 'SendovFiveDirections.generation.json', 'README.md']
+        'generate_five_direction_proof.py', 'SendovFiveDirections.generation.json', 'README.md',
+        'verify_independent.py', 'INDEPENDENT.md']
     record = {
         'checked_at_utc': datetime.now(timezone.utc).isoformat(),
         'problem': 'JSP-000404 / Erdos 504',
@@ -79,6 +80,7 @@ def main():
         'files': {name: digest(ROOT / name) for name in sources}, 'checks': checks,
         'environment': 'Windows; pinned dependency checkouts and compiled Mathlib caches',
         'network_isolated': False, 'independent_checker': False,
+        'record_scope': 'Lean build/kernel checks; separate external evidence is in independent-result.json',
         'official_review': 'pending', 'priority': 'not asserted',
         'z3_in_verification_trust_chain': False,
     }

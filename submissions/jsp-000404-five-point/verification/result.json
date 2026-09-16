@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-09-16T15:09:07.501585+00:00",
+  "checked_at_utc": "2026-09-16T15:41:14.141369+00:00",
   "problem": "JSP-000404 / Erdos 504",
   "scope": "Every finite Euclidean-plane set of at least five points contains an angle >= 3*pi/5",
   "complete_original_problem": false,
@@ -22,10 +22,12 @@
     "lakefile.toml": "40f73df735d9e5c43af829fea98363fd700f2611e361356910688faff8beca1b",
     "lake-manifest.json": "169bb6647e8a2fcf47c54f4a089eae71a62a9a80d327e2eabae67e3ff3df65dc",
     "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
-    "verify.py": "ed634f5656d03daea3d67849a87f2497e8b3195154491e5f45ac7226c23ea9cf",
+    "verify.py": "0517a35a14e3a8e70d9790612986d86743c1ec9c7183d8295795cbb2346d1535",
     "generate_five_direction_proof.py": "92d3b0b56f349e082d1873b4e8828d0a32156fd4c1e0b98038c4089e7c81beb6",
     "SendovFiveDirections.generation.json": "01566e30f70aae674de33f07e083f1a8d2d7406898bbb59bd58ae6146cb00006",
-    "README.md": "b32852fd0900d7d4e5738bdc56a8e3556f19540c52b8eb6454ff5a0b1ef16da3"
+    "README.md": "a410a65bf6d4cc4197c0e7a32cc1bc27438c30b18ab093020a762c5202be27aa",
+    "verify_independent.py": "dc63821e760ea9db8f347df46b0643a560d139128fd2651135c32bbcc6f8db92",
+    "INDEPENDENT.md": "60824ecef8ecb5490032ea931cd776db0593e46370077527cbcd209e2a531f03"
   },
   "checks": [
     {
@@ -46,7 +48,7 @@
       ],
       "exit_code": 0,
       "log": "build.log",
-      "sha256": "cd1505a50cf9901bc31d4a4dd1af9c4dbd63fa526162446711f2668d207bfcb4"
+      "sha256": "da3e250676894876879dd9f5a6f247d7cf5f217a6582af18193c1eba0ced4ee8"
     },
     {
       "command": [
@@ -88,6 +90,7 @@
   "environment": "Windows; pinned dependency checkouts and compiled Mathlib caches",
   "network_isolated": false,
   "independent_checker": false,
+  "record_scope": "Lean build/kernel checks; separate external evidence is in independent-result.json",
   "official_review": "pending",
   "priority": "not asserted",
   "z3_in_verification_trust_chain": false
