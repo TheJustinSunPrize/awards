@@ -1,0 +1,26 @@
+id: jsp-000110-erdos-97
+batch: null
+problem:
+  source: https://www.erdosproblems.com
+  number: 97
+  title_en: 'Erdos 97: counterexample to bounded repeated distances (JSP-000110)'
+  posed:
+    year: 1946
+    basis: earliest-reference
+    citation: 'Bibliographic upper bound used by the official catalogue (no later than 1946), not an assertion
+      of the exact date the conjecture was first proposed. Official catalogue: https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000110'
+  resolved: null
+decision: null
+recipients:
+- id: RECIPIENT-JSP-000110-A
+  affiliation: ''
+  contribution_en: Proposed submitting team for the joint construction, Lean formalization and exposition.
+    Individual contribution attribution and written recipient confirmation remain pending.
+  confirmation: null
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: draft
+revocation: null
