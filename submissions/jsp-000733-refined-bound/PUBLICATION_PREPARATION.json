@@ -1,0 +1,21 @@
+{
+  "prepared_utc": "2026-09-16T19:27:40.743983+00:00",
+  "scope": "Publication wording and this preparation record only; mathematical source and verification configuration are unchanged. No new Lean run is claimed.",
+  "prior_package_manifest_sha256": "e9e6f4cb7eeca7aaf624673413d625c147e029aac7bf38d17a7fae650effccf2",
+  "proof_verification_run": "4e5e8a02c48f46739006c6dafd238531",
+  "unchanged_source_sha256": {
+    "Audit.lean": "148d9e58aa07ba5b8f0cea6839e812fa898b7a60410d97d388224b283c541f8d",
+    "Counting.lean": "f5a355beb370f2634eaf3b1f16502ef75132e15b19f537d6d0584f570e8161ae",
+    "Energy.lean": "8b99895f7380a0da5bdd6f7b683fa8d846f58a5732c555d4ac7797a8bfc5905d",
+    "lake-manifest.json": "c1d6c2dd5ec9a270d3b9663fcfcf575d7e9873c53658e08c49faacb30469c8c2",
+    "lakefile.toml": "d1de5480f38ab2eb8f972257248ee794343a3fddd1df911fcce56f8e61241b25",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "LogBound.lean": "970d54be31b4ae4c332800894af970bdab8bb4b6d5e6c66442d11c8e14855782",
+    "Maximum.lean": "b64755b8f41d46edce82a63bb6606d88a062755e51d207902232c1a7793f9e80",
+    "Moment.lean": "7113d564c91c76a35f14f167bf9afd2f26cde7213e89f741af930e67ca886906",
+    "Primitive.lean": "37e71d64fcbf922665531faf16ae4e5564fcfed296e914b3ad78117875ef7d20",
+    "test_verify.py": "8cfb2b4f1d81b4990418570091044cecc754d03b26983c4c14c8efc48ffb999b",
+    "verify.py": "32dc631edd12d5c9d1afd9ccaaaf0f57487d701c4ad5dec39a23638e877cf3f3"
+  },
+  "publication_status": "Prepared for review; actual remote publication is tracked by the pull request."
+}

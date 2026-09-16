@@ -1,0 +1,9 @@
+# REDACTED COPY; not unmodified raw output.
+# Record role: final English-source verifier run 4e5e8a02c48f46739006c6dafd238531
+# Known environment paths replaced; see REDACTION.md.
+
+<PROJECT>\verification-tmp\sorry.lean:1:8: warning: declaration uses `sorry`
+'negative' depends on axioms: [sorryAx]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0

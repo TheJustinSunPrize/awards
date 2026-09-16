@@ -1,0 +1,40 @@
+{
+  "scope": "Documentation and comments only; Lean code outside comments is unchanged. Final translated bytes require their own verification run.",
+  "files": {
+    "Audit.lean": {
+      "original_sha256": "6768a80f55461c84ab05e0c02961763b06398268924bded8190ce2ec680ef054",
+      "translated_sha256": "148d9e58aa07ba5b8f0cea6839e812fa898b7a60410d97d388224b283c541f8d",
+      "comment_stripped_equal": true
+    },
+    "Counting.lean": {
+      "original_sha256": "f5a355beb370f2634eaf3b1f16502ef75132e15b19f537d6d0584f570e8161ae",
+      "translated_sha256": "f5a355beb370f2634eaf3b1f16502ef75132e15b19f537d6d0584f570e8161ae",
+      "comment_stripped_equal": true
+    },
+    "Energy.lean": {
+      "original_sha256": "8b99895f7380a0da5bdd6f7b683fa8d846f58a5732c555d4ac7797a8bfc5905d",
+      "translated_sha256": "8b99895f7380a0da5bdd6f7b683fa8d846f58a5732c555d4ac7797a8bfc5905d",
+      "comment_stripped_equal": true
+    },
+    "LogBound.lean": {
+      "original_sha256": "9c2ddc40aeaeac6d6c29eb3faba655c222ca55bece3d5ce2b74782c6f0646b48",
+      "translated_sha256": "970d54be31b4ae4c332800894af970bdab8bb4b6d5e6c66442d11c8e14855782",
+      "comment_stripped_equal": true
+    },
+    "Maximum.lean": {
+      "original_sha256": "1cc6a57108f5d76c52146323286721a4f7921ab4def3b578ed74e956f47c46c0",
+      "translated_sha256": "b64755b8f41d46edce82a63bb6606d88a062755e51d207902232c1a7793f9e80",
+      "comment_stripped_equal": true
+    },
+    "Moment.lean": {
+      "original_sha256": "3eaddecf25a3671c105561411ae98554bc3314a2ba49c3eb5e0b033fb93d8afe",
+      "translated_sha256": "7113d564c91c76a35f14f167bf9afd2f26cde7213e89f741af930e67ca886906",
+      "comment_stripped_equal": true
+    },
+    "Primitive.lean": {
+      "original_sha256": "f87f5cbecfd885888e5bc13d1ba5f12cde591bb142ac2fb4a1904fb6ade80373",
+      "translated_sha256": "37e71d64fcbf922665531faf16ae4e5564fcfed296e914b3ad78117875ef7d20",
+      "comment_stripped_equal": true
+    }
+  }
+}

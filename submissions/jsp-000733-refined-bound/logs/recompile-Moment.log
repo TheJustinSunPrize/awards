@@ -1,0 +1,10 @@
+# REDACTED COPY; not unmodified raw output.
+# Record role: final English-source verifier run 4e5e8a02c48f46739006c6dafd238531
+# Known environment paths replaced; see REDACTION.md.
+
+@powerset_centered_sum_sq : ∀ {α : Type u_1} [DecidableEq α] (A : Finset α) (f : α → ℤ),
+  ∑ S ∈ A.powerset, (2 * ∑ a ∈ S, f a - ∑ a ∈ A, f a) ^ 2 = 2 ^ A.card * ∑ a ∈ A, f a ^ 2
+'Erdos882Trial.powerset_centered_sum_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
