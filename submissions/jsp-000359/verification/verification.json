@@ -1,0 +1,53 @@
+{
+  "checked_at_utc": "2026-09-16T10:45:36.733594+00:00",
+  "problem": "JSP-000359 / Erdos 440",
+  "scope": "O(sqrt x) part only; no sharp liminf or optimal pointwise constant",
+  "lean": "4.19.0",
+  "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "files": {
+    "LcmCounting.lean": "b5931299b305edbdc0a12e8e2bc07d51e919f48fc1e6ca95ead3d680ae2dd7c8",
+    "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "lakefile.toml": "eb1e99c77ac6635d3b1f0ff879551c4c460bcdf6d9703aa2e266e0cc58a28e57",
+    "lake-manifest.json": "169bb6647e8a2fcf47c54f4a089eae71a62a9a80d327e2eabae67e3ff3df65dc",
+    "verify.py": "0d95894bece7626b66ac6e1ab767a716ac2698eec53cfde96801d3e59ab65508"
+  },
+  "checks": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "log": "lean-version.txt",
+      "exit_code": 0,
+      "sha256": "ac45440c370c2409c4fda2e1693aa1f1354989a0bcf1563ee3133bb006806400"
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "log": "lake-build.txt",
+      "exit_code": 0,
+      "sha256": "5ac906102d088bb7636fbd4e22feed41882270dee8bdc561dc4efa11a826d67b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "LcmCounting.lean"
+      ],
+      "log": "lean-trust0.txt",
+      "exit_code": 0,
+      "sha256": "6230821560331d86a9a41ec0251164e42b44a97a0c34d08e538389567ae108af"
+    }
+  ],
+  "environment": "Windows; pinned existing dependency checkouts and compiled cache",
+  "independent_checker": false,
+  "network_isolated": false,
+  "official_review": "not completed",
+  "priority": "not asserted"
+}

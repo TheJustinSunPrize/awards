@@ -1,0 +1,5 @@
+ℹ [831/832] Replayed LcmCounting
+info: .\.\.\.\LcmCounting.lean:123:0: 'JSP000359.mem_goodIndices_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\LcmCounting.lean:124:0: 'JSP000359.counting_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\LcmCounting.lean:125:0: 'JSP000359.counting_bound_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.
