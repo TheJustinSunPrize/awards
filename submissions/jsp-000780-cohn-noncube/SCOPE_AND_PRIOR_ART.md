@@ -88,4 +88,5 @@ These are static source checks, not independent compilation of those projects.
 Detailed responses and source/blob associations remain in the local research
 workspace; `evidence/search-summary.json` gives the shared summary.
 No global priority, organizer eligibility, or payment entitlement is claimed.
-No new PR, comment, or award application has been published for this work.
+The accompanying pull request records the actual publication status and fixed
+source and evidence references.

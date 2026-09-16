@@ -1,7 +1,7 @@
 # Erdős 939 / JSP-000780: Cohn's all-noncube strengthening
 
-Local submission candidate, not yet published. This formalizes a known result
-of Cohn (1998), rather than claiming new mathematics or an award decision.
+This submission formalizes a known result of Cohn (1998). It makes no claim
+to new mathematics or an award decision.
 
 `Erdos939.noncube_triples_infinite` proves that infinitely many natural-number
 triples `(a,b,c)` satisfy all of the following:
