@@ -1,3 +1,5 @@
+# Recipients
+
 ## English
 
-Recipient identity pending user confirmation; no identity or payment claim is made in this observation.
+No recipient is identified in this preliminary observation. It makes no recipient, award, payment, or identity claim.
