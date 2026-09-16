@@ -1,0 +1,163 @@
+Finite-v2 verification command output; local paths redacted.
+Empty streams are explicitly marked. No nonempty output is truncated.
+
+=== compile-Erdos882Korsky.stderr.log ===
+(empty)
+
+=== compile-Erdos882Korsky.stdout.log ===
+'Erdos882Korsky.korsky_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Korsky.original_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== compile-Erdos882KorskyFinite.stderr.log ===
+(empty)
+
+=== compile-Erdos882KorskyFinite.stdout.log ===
+'Erdos882Korsky.korsky_deficit_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Korsky.korsky_finite_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Korsky.original_finite_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Korsky.original_threshold_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+=== compile-Erdos882Original.stderr.log ===
+(empty)
+
+=== compile-Erdos882Original.stdout.log ===
+(empty)
+
+=== compile-KorskyBalancedCount.stderr.log ===
+(empty)
+
+=== compile-KorskyBalancedCount.stdout.log ===
+(empty)
+
+=== compile-KorskyBalancedDefs.stderr.log ===
+(empty)
+
+=== compile-KorskyBalancedDefs.stdout.log ===
+(empty)
+
+=== compile-KorskyBalancedLower.stderr.log ===
+(empty)
+
+=== compile-KorskyBalancedLower.stdout.log ===
+(empty)
+
+=== compile-KorskyBalancedPacking.stderr.log ===
+(empty)
+
+=== compile-KorskyBalancedPacking.stdout.log ===
+(empty)
+
+=== compile-KorskyBalancedUpper.stderr.log ===
+(empty)
+
+=== compile-KorskyBalancedUpper.stdout.log ===
+(empty)
+
+=== compile-KorskyCount.stderr.log ===
+(empty)
+
+=== compile-KorskyCount.stdout.log ===
+(empty)
+
+=== compile-KorskyDefs.stderr.log ===
+(empty)
+
+=== compile-KorskyDefs.stdout.log ===
+(empty)
+
+=== compile-KorskyEndpoint.stderr.log ===
+(empty)
+
+=== compile-KorskyEndpoint.stdout.log ===
+(empty)
+
+=== compile-KorskyFiniteEndpoint.stderr.log ===
+(empty)
+
+=== compile-KorskyFiniteEndpoint.stdout.log ===
+(empty)
+
+=== compile-KorskyInject.stderr.log ===
+(empty)
+
+=== compile-KorskyInject.stdout.log ===
+(empty)
+
+=== compile-KorskyModular.stderr.log ===
+(empty)
+
+=== compile-KorskyModular.stdout.log ===
+(empty)
+
+=== export.stderr.log ===
+(empty)
+
+=== leanchecker.stderr.log ===
+(empty)
+
+=== leanchecker.stdout.log ===
+(empty)
+
+=== nanoda.stderr.log ===
+(empty)
+
+=== nanoda.stdout.log ===
+theorem Erdos882Korsky.korsky_sum_bound :
+  forall {k : Nat} (hk : LT.lt (OfNat.ofNat 0) k) (a : Fin k → Nat),
+  (forall (i : Fin k), LT.lt (OfNat.ofNat 0) (a i)) → Erdos882Korsky.NoDouble a → LE.le
+    (HMul.hMul k (HPow.hPow (OfNat.ofNat 2) (HSub.hSub k (OfNat.ofNat 1)))) (Erdos882Korsky.total a) :=
+  _
+
+theorem Erdos882Korsky.original_upper_bound (n : Nat) :
+  LE.le (Erdos882.maximumSize n) (HAdd.hAdd (Nat.log (OfNat.ofNat 2) n) (OfNat.ofNat 1)) :=
+  _
+
+theorem Erdos882Korsky.korsky_deficit_bound :
+  forall {k n : Nat},
+  LT.lt (OfNat.ofNat 0) k → (forall (a : Fin k → Nat),
+  (forall (i : Fin k), LT.lt (OfNat.ofNat 0) (a i)) → StrictMono a → Erdos882Korsky.NoDouble a → (forall (i :
+        Fin k),
+    LE.le (a i) n) →
+  LE.le
+    (HAdd.hAdd (HAdd.hAdd (Erdos882Korsky.total a) (HPow.hPow (OfNat.ofNat 2) (HSub.hSub k (OfNat.ofNat 1))))
+      (HDiv.hDiv (HPow.hPow (HSub.hSub k (OfNat.ofNat 1)) (OfNat.ofNat 2)) (OfNat.ofNat 4)))
+    (HAdd.hAdd (HMul.hMul k n) (OfNat.ofNat 1))) :=
+  _
+
+theorem Erdos882Korsky.korsky_finite_bound :
+  forall {k n : Nat},
+  LT.lt (OfNat.ofNat 0) k → (forall (a : Fin k → Nat),
+  (forall (i : Fin k), LT.lt (OfNat.ofNat 0) (a i)) → StrictMono a → Erdos882Korsky.NoDouble a → (forall (i :
+        Fin k),
+    LE.le (a i) n) →
+  LE.le
+    (HAdd.hAdd (HMul.hMul (HAdd.hAdd k (OfNat.ofNat 1)) (HPow.hPow (OfNat.ofNat 2) (HSub.hSub k (OfNat.ofNat 1))))
+      (HDiv.hDiv (HPow.hPow (HSub.hSub k (OfNat.ofNat 1)) (OfNat.ofNat 2)) (OfNat.ofNat 4)))
+    (HAdd.hAdd (HMul.hMul k n) (OfNat.ofNat 1))) :=
+  _
+
+theorem Erdos882Korsky.original_finite_bound :
+  forall {n : Nat} {A : Finset Nat},
+  Erdos882.Admissible n A → LT.lt (OfNat.ofNat 0) (Finset.card A) → LE.le
+    (HAdd.hAdd
+      (HMul.hMul (HAdd.hAdd (Finset.card A) (OfNat.ofNat 1))
+        (HPow.hPow (OfNat.ofNat 2) (HSub.hSub (Finset.card A) (OfNat.ofNat 1))))
+      (HDiv.hDiv (HPow.hPow (HSub.hSub (Finset.card A) (OfNat.ofNat 1)) (OfNat.ofNat 2)) (OfNat.ofNat 4)))
+    (HAdd.hAdd (HMul.hMul (Finset.card A) n) (OfNat.ofNat 1)) :=
+  _
+
+theorem Erdos882Korsky.original_threshold_bound (n m : Nat)
+  (hthreshold :
+    LT.lt (HAdd.hAdd (HMul.hMul (HAdd.hAdd m (OfNat.ofNat 1)) n) (OfNat.ofNat 1))
+      (HAdd.hAdd (HMul.hMul (HAdd.hAdd m (OfNat.ofNat 2)) (HPow.hPow (OfNat.ofNat 2) m))
+        (HDiv.hDiv (HPow.hPow m (OfNat.ofNat 2)) (OfNat.ofNat 4)))) :
+  LE.le (Erdos882.maximumSize n) m :=
+  _
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
+Checked 9132 declarations with no errors
