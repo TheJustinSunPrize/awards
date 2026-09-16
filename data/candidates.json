@@ -1,4 +1,37 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000139-f10-moore-bound-v1",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000139",
+          "number": "JSP-000139",
+          "title_en": "How large must the maximum degree of a triangle-free graph of diameter at most two be?",
+          "posed": {
+            "year": 1997,
+            "basis": "earliest-reference",
+            "citation": "https://doi.org/10.1016/S0012-365X(96)00173-2"
+          },
+          "resolved": null
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000139-f10-moore-bound-v1",
+      "citation": "# Candidate observation\n\n## English\n\nThis preliminary observation is associated with [JSP-000139 — How large must the maximum degree of a triangle-free graph of diameter at most two be?](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000139). It publishes `Statement.lean` and `Proof.lean` for a finite Moore-bound component: under a maximum-degree bound `D` and a distance-two covering hypothesis, the vertex count is at most `D^2 + 1`. This is a restricted component, not a formalization or solution of the full catalog question.\n\nA local Lean compilation was run with Lean 4.33.1 and the pinned Mathlib revision. That compiler result is only a reproducibility check; it is not independent verification of statement faithfulness or official JSP verification.\n\nThe candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.\n",
+      "recipients": "# Recipients\n\n## English\n\nNo recipient is identified in this preliminary observation. It makes no recipient, award, payment, or identity claim.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }

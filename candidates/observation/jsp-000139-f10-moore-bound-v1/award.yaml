@@ -1,22 +1,19 @@
 id: jsp-000139-f10-moore-bound-v1
 batch: null
 problem:
-  source: https://github.com/TheJustinSunPrize/awards
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000139"
   number: "JSP-000139"
-  title_en: "Moore-bound component for triangle-free graphs of diameter at most two"
+  title_en: "How large must the maximum degree of a triangle-free graph of diameter at most two be?"
   posed:
-    year: 2021
-    basis: stated
-    citation: "https://web.math.princeton.edu/~nalon/PDFS/remark1901.pdf"
-  resolved:
-    year: 2021
+    year: 1997
+    basis: earliest-reference
+    citation: "https://doi.org/10.1016/S0012-365X(96)00173-2"
+  resolved: null
 decision: null
 recipients: []
 verification:
   peer_review: null
-  formal:
-    record: verification/record.yaml
-    statement: verification/statement.yaml
+  formal: null
   independent_review: null
 conflicts: []
 status: under-verification
