@@ -21,7 +21,7 @@ because the finite maximum is attained.
 
 The construction {2^m-2^i : 0<=i<m} of Erdős, Lev, Rauzy, Sándor and
 Sárközy supplies f(n)>log_2(n)-1. Its existing Lean proof is imported
-verbatim from plby/lean-proofs, pinned at
+from the hash-checked, downloaded plby/lean-proofs dependency, pinned at
 8822f7ddef30fadbd92e1c6ab4ed897af356af5e. This is prior formal work.
 
 Write k=f(n). The lower bound implies k -> infinity. For n>=1 the upper

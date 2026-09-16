@@ -2,8 +2,12 @@
   "repository": "https://github.com/plby/lean-proofs",
   "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
   "path": "src/latest/ErdosProblems/Erdos882.lean",
-  "copied_as": "Erdos882Existing.lean",
   "sha256": "6797aeb572234c660b0990767b814d9cd8065356258085f2ef9a7d5d670c3f35",
   "exact_git_blob": true,
-  "retained_author_header": true
+  "retained_author_header": true,
+  "downloaded_as": "Erdos882Existing.lean",
+  "download_url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos882.lean",
+  "distribution": "not bundled; fetched into fresh verification output",
+  "upstream_copyright_and_license": "not determined by this submission",
+  "historical_vendoring": "Earlier PR commits included the source. This revision does not erase that history or resolve its licensing uncertainty."
 }

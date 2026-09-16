@@ -2,7 +2,7 @@
 
 The target is the leading asymptotic of the maximum cardinality, with the
 same positive-integer domain, nonempty subset-sum **values**, primitivity
-predicate and attained finite maximum as the retained lower-bound source.
+predicate and attained finite maximum as the pinned prior lower-bound source.
 It proves `maximumSize(n) / log₂(n) → 1`. It does not determine the exact
 maximum, the published half-log-log error term, or a bounded additive error.
 
@@ -17,7 +17,8 @@ the injection and counting step, and `n=0,1` do not affect the final limit.
 
 - [plby lower construction](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos882.lean)
   supplies the original definitions, attained maximum and lower bound. It
-  is retained as an exact Git blob with its formal-author header. Its final
+  is downloaded as an exact, hash-checked Git blob with its formal-author header.
+  Its specific copyright and license have not been determined here. Its final
   theorem is a lower bound, rather than the leading limit.
 - [lean-genius conditional counting](https://github.com/rjwalters/lean-genius/blob/dc62f771ed5010abfdb04247dff6143e0e69d3e7/proofs/Proofs/Erdos882ProblemOQ03.lean)
   includes genuine counting results assuming distinct subset sums. That

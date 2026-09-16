@@ -1,0 +1,80 @@
+{
+  "result": "pass",
+  "started_utc": "2026-09-16T23:26:23.169985+00:00",
+  "platform": "Windows",
+  "arch": "AMD64",
+  "verification_kind": "fresh public helper end-to-end with downloaded pinned dependency",
+  "imported_mathlib_cache_used": true,
+  "network_isolation": false,
+  "checker": "bundled leanchecker; same Lean kernel, not independently implemented",
+  "upstream_url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos882.lean",
+  "upstream_sha256": "6797aeb572234c660b0990767b814d9cd8065356258085f2ef9a7d5d670c3f35",
+  "source_hashes": {
+    "Erdos882Existing.lean": "6797aeb572234c660b0990767b814d9cd8065356258085f2ef9a7d5d670c3f35",
+    "Erdos882Upper.lean": "f78432b7638b7e5478768e40c8d069116aab01ac6be2335b030efb3a2d5a4918",
+    "AsymptoticCore.lean": "7c4ec5267a5c8707818df3401541fb5d9a66c9b57a298a3b65666f23c5fcb18f",
+    "Erdos882Asymptotic.lean": "788018d8731922bf6c7adb73d51347bffe862d73961fe27acc39909a6945df34"
+  },
+  "steps": [
+    {
+      "command": "lean -j1 -M4096 -o Erdos882Existing.olean Erdos882Existing.lean",
+      "exit_code": 0,
+      "seconds": 25.217
+    },
+    {
+      "command": "lean -j1 -M4096 -o Erdos882Upper.olean Erdos882Upper.lean",
+      "exit_code": 0,
+      "seconds": 13.923
+    },
+    {
+      "command": "lean -j1 -M4096 -o AsymptoticCore.olean AsymptoticCore.lean",
+      "exit_code": 0,
+      "seconds": 7.382
+    },
+    {
+      "command": "lean -j1 -M4096 -o Erdos882Asymptotic.olean Erdos882Asymptotic.lean",
+      "exit_code": 0,
+      "seconds": 13.769
+    },
+    {
+      "command": "leanchecker --verbose Erdos882Existing",
+      "exit_code": 0,
+      "seconds": 12.982
+    },
+    {
+      "command": "leanchecker --verbose Erdos882Upper",
+      "exit_code": 0,
+      "seconds": 11.997
+    },
+    {
+      "command": "leanchecker --verbose AsymptoticCore",
+      "exit_code": 0,
+      "seconds": 8.71
+    },
+    {
+      "command": "leanchecker --verbose Erdos882Asymptotic",
+      "exit_code": 0,
+      "seconds": 12.584
+    }
+  ],
+  "axiom_reports": [
+    "'Erdos882.subset_sum_injective_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Erdos882.maximumSize_pow_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Erdos882.maximumSize_asymptotic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Erdos882.maximumSize_pow_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Erdos882.erdos_882' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "helper_sha256": "c59fcafc8957e11e50275459b4c7dd11e1d603ddd802df9f04762a2e3499a8a3",
+  "lean": "Lean (version 4.33.0, x86_64-w64-windows-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "lean_sha256": "dd86e9b24990b1da425ea4af910f016e4db8f9a25c9ddad27bc6bee3690e677f",
+  "checker_sha256": "e1ab36b0ea3d0310e3058cda1dce1c072f78c5938303e8596fa3f24267c715ce",
+  "output_hashes": {
+    "AsymptoticCore.olean": "e9ad0509610e8afc68dde06ac09f6356238d59424e170cb50315ac2acf0ec1af",
+    "Erdos882Asymptotic.olean": "818ca16cd44cf3f0bdad5e92a4fa5875191b5ec8a7cc4450e17417ce503cb867",
+    "Erdos882Existing.olean": "c5d98329bef4ad7e81c8b1551f4efea2fa1c091e9f363e08c8360ed7839ad44a",
+    "Erdos882Upper.olean": "f24319620ea34675b87e599f7de7163938267a948cd60b386538d0e56c2c1536"
+  },
+  "finished_utc": "2026-09-16T23:28:10.672349+00:00",
+  "log_sha256": "24bd615b6820c136f5f36f156c6678ca758ab56fe8c47c9c3e73f66bc8b2b1ff"
+}

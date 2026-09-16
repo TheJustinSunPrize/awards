@@ -1,12 +1,21 @@
-Erdos882Existing.lean is copied without modification from plby/lean-proofs
-commit 8822f7ddef30fadbd92e1c6ab4ed897af356af5e. Its author header is retained.
-The upstream src/latest/LICENSE notice is retained as LICENSE.upstream.
-No change to the ownership or licensing of this copied source is asserted.
+The prior definitions and lower-bound formalization are dependencies from
+plby/lean-proofs at commit 8822f7ddef30fadbd92e1c6ab4ed897af356af5e,
+src/latest/ErdosProblems/Erdos882.lean. The current package does not include
+that file. verify.py downloads its exact bytes from the pinned upstream URL
+and checks the SHA-256 in provenance.json before compiling it.
 
-The Apache License in LICENSE applies to the added proof and reproduction
-files supplied by this package. It does not replace any upstream notice.
+We have not determined the copyright or applicable license of that specific
+upstream file. The upstream src/latest/LICENSE contains a general "Some files"
+notice; it does not establish that this particular source is Apache-licensed.
+The Apache LICENSE supplied here covers only our added proof/reproduction
+files and does not grant rights in upstream material. A download URL and hash
+are provenance and integrity controls, not a permission or licensing finding.
+
+Earlier commits of this PR distributed the complete upstream source. This
+ordinary follow-up commit stops bundling it in the current tree, preserves
+Git history, and does not resolve historical licensing uncertainty.
 
 Informal lower construction: Paul Erdos, Vsevolod F. Lev, Gerard Rauzy,
 Csaba Sandor, Andras Sarkozy (1999), as credited by the source header.
-Upstream formal authors, as credited by the source: Codex, GPT-5.6 Sol.
-The added bridge and analytic assembly were produced using Codex.
+Upstream formal authors credited by that header: Codex, GPT-5.6 Sol.
+Our added bridge and analytic assembly were produced using Codex.

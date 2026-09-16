@@ -1,0 +1,31 @@
+Lean (version 4.33.0, x86_64-w64-windows-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)
+Mathlib db584cd6d46c92f209a44c0f1c829460d327499d
+Downloaded pinned upstream; SHA-256 verified: 6797aeb572234c660b0990767b814d9cd8065356258085f2ef9a7d5d670c3f35
+$ lean -j1 -M4096 -o Erdos882Existing.olean Erdos882Existing.lean
+
+exit=0
+$ lean -j1 -M4096 -o Erdos882Upper.olean Erdos882Upper.lean
+'Erdos882.subset_sum_injective_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882.maximumSize_pow_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0
+$ lean -j1 -M4096 -o AsymptoticCore.olean AsymptoticCore.lean
+
+exit=0
+$ lean -j1 -M4096 -o Erdos882Asymptotic.olean Erdos882Asymptotic.lean
+'Erdos882.maximumSize_asymptotic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882.maximumSize_pow_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882.erdos_882' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit=0
+$ leanchecker --verbose Erdos882Existing
+replaying Erdos882Existing
+exit=0
+$ leanchecker --verbose Erdos882Upper
+replaying Erdos882Upper
+exit=0
+$ leanchecker --verbose AsymptoticCore
+replaying AsymptoticCore
+exit=0
+$ leanchecker --verbose Erdos882Asymptotic
+replaying Erdos882Asymptotic
+exit=0
+PASS: pinned download, four compiles, four local-module replays, and axiom checks.
