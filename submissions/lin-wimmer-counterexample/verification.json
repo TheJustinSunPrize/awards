@@ -1,0 +1,74 @@
+{
+  "status": "locally-verified",
+  "lean": "4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source_sha256": "a4f82b4d12ab774fd06a380315758e232f11b4503626c620ff5bb3ea477ec6c0",
+  "compile_exit_code": 0,
+  "compile_seconds": 12.3,
+  "axioms": {
+    "LinWimmer.left_minimum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LinWimmer.right_minimum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LinWimmer.minima_values": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LinWimmer.refutation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "replay": {
+    "command": "leanchecker Proof",
+    "exit_code": 0,
+    "seconds": 18.86,
+    "scope": "Replays declarations of Proof using Lean kernel against imported pinned Mathlib environment; not an independently implemented checker."
+  },
+  "environment": "Existing local Lean and Mathlib cache; no claim of a clean-room build or organizer verification.",
+  "not_proved": "The dimensional-minimality classification in Section 4 of the source paper.",
+  "package_verifier": {
+    "checks": [
+      {
+        "command": [
+          "lake",
+          "build",
+          "Proof"
+        ],
+        "exit_code": 0,
+        "seconds": 13.368
+      },
+      {
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "-j1",
+          "Proof.lean"
+        ],
+        "exit_code": 0,
+        "seconds": 13.589
+      },
+      {
+        "command": [
+          "lake",
+          "env",
+          "leanchecker",
+          "-v",
+          "Proof"
+        ],
+        "exit_code": 0,
+        "seconds": 16.039
+      }
+    ],
+    "note": "Same-kernel replay, not an independent kernel or organizer review."
+  }
+}
