@@ -1,0 +1,12 @@
+name = "erdos82finite"
+version = "1.0.0"
+defaultTargets = ["Erdos82Finite"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "5ed2965256430c3649e86755f9576b54eca72435"
+
+[[lean_lib]]
+name = "Erdos82Finite"
+roots = ["Erdos82Finite", "GraphBridge", "Graph29", "RegularCertificate", "MaskCertificate", "CheckpointCertificate", "CertificateSteps", "HighDegrees", "Degree0", "Degree1", "Degree2", "Degree3", "Degree4", "Degree5", "Degree6", "Degree7", "Degree8", "Degree9", "Degree10", "Degree2Part0", "Degree2Part1", "Degree3Part0", "Degree3Part1", "Degree3Part2", "Degree4Part0", "Degree4Part1", "Degree4Part2", "Degree4Part3", "Degree4Part4", "Degree5Part0", "Degree5Part1", "Degree5Part2", "Degree5Part3", "Degree5Part4", "Degree6Part0", "Degree6Part1", "Degree6Part2", "Degree6Part3", "Degree7Part0", "Degree7Part1"]
