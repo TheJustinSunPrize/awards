@@ -1,0 +1,10 @@
+id: "STMT-jsp-jsp-000840-f02-v1-v1"
+problem: "JSP-000840"
+statement_en: "How many triangles must a graph have once its edge count exceeds the maximum bipartite edge count?"
+formal:
+  declaration: "JSP000840.solution"
+  file: "Statement.lean"
+  sha256: "3a736f9a2cf705ff8e3cf81d8970bff7a06eea0c7ae36dbf324a312f0f50471e"
+source:
+  url: "https://www.renyi.hu/~p_erdos/1964-21.pdf"
+  attribution_en: "Original solver and publication credit as recorded in the JSP catalog."
