@@ -1,11 +1,12 @@
 {
-  "note": "Only absolute local project paths are replaced by transparent placeholders. Check results and theorem text are unchanged. Raw logs retained locally.",
+  "note": "Private absolute project paths are replaced by transparent placeholders. GitHub web upload adds one newline to empty logs; that serialization change is explicitly recorded. Check results and nonempty theorem/log text are otherwise unchanged. Raw logs retained locally.",
   "logs": [
     {
       "file": "compile-Erdos466.stderr.log",
       "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "local_paths_replaced": false
+      "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "local_paths_replaced": false,
+      "empty_log_serialized_as_one_newline": true
     },
     {
       "file": "compile-Erdos466.stdout.log",
@@ -16,26 +17,30 @@
     {
       "file": "export.stderr.log",
       "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "local_paths_replaced": false
+      "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "local_paths_replaced": false,
+      "empty_log_serialized_as_one_newline": true
     },
     {
       "file": "leanchecker.stderr.log",
       "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "local_paths_replaced": false
+      "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "local_paths_replaced": false,
+      "empty_log_serialized_as_one_newline": true
     },
     {
       "file": "leanchecker.stdout.log",
       "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "local_paths_replaced": false
+      "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "local_paths_replaced": false,
+      "empty_log_serialized_as_one_newline": true
     },
     {
       "file": "nanoda.stderr.log",
       "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "local_paths_replaced": false
+      "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "local_paths_replaced": false,
+      "empty_log_serialized_as_one_newline": true
     },
     {
       "file": "nanoda.stdout.log",
