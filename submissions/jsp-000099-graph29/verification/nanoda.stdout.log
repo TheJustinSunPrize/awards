@@ -1,0 +1,22 @@
+theorem Erdos82Finite.graph29_no_regular_induced (T : Finset (Fin (OfNat.ofNat 29)))
+  (hT : LE.le (OfNat.ofNat 7) (Finset.card T)) (d : Nat) :
+  Not (SimpleGraph.IsRegularOfDegree (SimpleGraph.induce (SetLike.coe T) Erdos82Finite.graph) d) :=
+  _
+
+theorem Erdos82Finite.exists_graph29 :
+  Exists
+    (fun (G : SimpleGraph (Fin (OfNat.ofNat 29))) =>
+    Exists
+      (fun (inst : DecidableRel (SimpleGraph.Adj G)) =>
+      forall (T : Finset (Fin (OfNat.ofNat 29))),
+      LE.le (OfNat.ofNat 7) (Finset.card T) → (forall (d : Nat),
+      Not (SimpleGraph.IsRegularOfDegree (SimpleGraph.induce (SetLike.coe T) G) d)))) :=
+  _
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
+Checked 108865 declarations with no errors
