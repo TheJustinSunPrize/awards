@@ -1,0 +1,28 @@
+id: jsp-000513-tonymayixuan
+batch: null
+
+problem:
+  source: https://www.erdosproblems.com/632
+  number: JSP-000513
+  title_en: Does list multicolorability persist when both the available-list size and the required number of colors per vertex are doubled?
+  posed:
+    year: 1980
+    basis: earliest-reference
+    citation: "P. Erdős, A. L. Rubin, H. Taylor, Choosability in graphs, Proceedings of the West Coast Conference on Combinatorics, Graph Theory and Computing (1979), Congressus Numerantium XXVI (1980), 125-157."
+  resolved:
+    year: 2019
+
+decision: null
+recipients: []
+
+verification:
+  peer_review:
+    venue: Advances in Combinatorics
+    identifier: doi:10.19086/aic.10811
+    checked_via: https://doi.org/10.19086/aic.10811
+  formal: null
+  independent_review: null
+
+conflicts: []
+status: under-verification
+revocation: null
