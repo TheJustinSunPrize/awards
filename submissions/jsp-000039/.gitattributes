@@ -1,0 +1,2 @@
+# Preserve exact artifact bytes so SHA256SUMS survives checkout on Windows.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

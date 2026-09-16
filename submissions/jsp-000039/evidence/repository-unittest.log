@@ -1,0 +1,64 @@
+Command: python -m unittest discover -s tests -v
+Exit code: 1
+
+test_alias_and_custom_tag_rejected (test_records.RecordTests.test_alias_and_custom_tag_rejected) ... ok
+test_award_cannot_be_deleted (test_records.RecordTests.test_award_cannot_be_deleted) ... ok
+test_candidate_cannot_publish_award_decision (test_records.RecordTests.test_candidate_cannot_publish_award_decision) ... ok
+test_confirmed_states_need_verification (test_records.RecordTests.test_confirmed_states_need_verification) ... ok
+test_draft_roundtrip_and_drift (test_records.RecordTests.test_draft_roundtrip_and_drift) ... ok
+test_duplicate_entry_ids_rejected (test_records.RecordTests.test_duplicate_entry_ids_rejected) ... ok
+test_duplicate_yaml_keys_rejected (test_records.RecordTests.test_duplicate_yaml_keys_rejected) ... ok
+test_empty_indexes (test_records.RecordTests.test_empty_indexes) ... ok
+test_formal_candidate_needs_statement (test_records.RecordTests.test_formal_candidate_needs_statement) ... ok
+test_internal_record_fields_rejected (test_records.RecordTests.test_internal_record_fields_rejected) ... ok
+test_local_links_and_anchors (test_records.RecordTests.test_local_links_and_anchors) ... ok
+test_nonempty_english_sections (test_records.RecordTests.test_nonempty_english_sections) ... ok
+test_pending_candidate_accepts_incomplete_evidence (test_records.RecordTests.test_pending_candidate_accepts_incomplete_evidence) ... ok
+test_public_award_and_batch_membership (test_records.RecordTests.test_public_award_and_batch_membership) ... ok
+test_published_decision_immutable (test_records.RecordTests.test_published_decision_immutable) ... ok
+test_published_statement_immutable_and_superseded (test_records.RecordTests.test_published_statement_immutable_and_superseded) ... FAIL
+test_revocation_keeps_original_evidence (test_records.RecordTests.test_revocation_keeps_original_evidence) ... ERROR
+test_symlinks_and_misplaced_records_rejected (test_records.RecordTests.test_symlinks_and_misplaced_records_rejected) ... ERROR
+test_unconfirmed_award_rejected (test_records.RecordTests.test_unconfirmed_award_rejected) ... ok
+test_unconfirmed_names_and_duplicate_recipients_rejected (test_records.RecordTests.test_unconfirmed_names_and_duplicate_recipients_rejected) ... ok
+test_unknown_payment_field_rejected (test_records.RecordTests.test_unknown_payment_field_rejected) ... ok
+test_verification_requires_consistent_successful_evidence (test_records.RecordTests.test_verification_requires_consistent_successful_evidence) ... ok
+
+======================================================================
+ERROR: test_revocation_keeps_original_evidence (test_records.RecordTests.test_revocation_keeps_original_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPOSITORY>\tests\test_records.py", line 335, in test_revocation_keeps_original_evidence
+    manage.check_history(self.root, base)
+  File "<REPOSITORY>\scripts\manage.py", line 277, in check_history
+    old_record = yaml.load(git_text(root, base, str(Path(path).parent / "verification/record.yaml")), Loader=RecordLoader)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<REPOSITORY>\scripts\manage.py", line 102, in git_text
+    require(result.returncode == 0, f"Cannot read {path} at {revision}; fetch full Git history")
+  File "<REPOSITORY>\scripts\manage.py", line 53, in require
+    raise InvalidRecord(message)
+manage.InvalidRecord: Cannot read awards\2026-01\example-problem\verification\record.yaml at 6146e6b3518c2bdbe079668b7dc5fca9b946588f; fetch full Git history
+
+======================================================================
+ERROR: test_symlinks_and_misplaced_records_rejected (test_records.RecordTests.test_symlinks_and_misplaced_records_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPOSITORY>\tests\test_records.py", line 120, in test_symlinks_and_misplaced_records_rejected
+    link.symlink_to(ROOT / "README.md")
+  File "<USER_HOME>\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 1386, in symlink_to
+    os.symlink(target, self, target_is_directory)
+OSError: [WinError 1314] A required privilege is not held by the client: '<REPOSITORY>\\README.md' -> '<USER_HOME>\\AppData\\Local\\Temp\\tmp8fjadxha\\candidates\\observation\\example-problem\\outside.yaml'
+
+======================================================================
+FAIL: test_published_statement_immutable_and_superseded (test_records.RecordTests.test_published_statement_immutable_and_superseded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<REPOSITORY>\tests\test_records.py", line 145, in test_published_statement_immutable_and_superseded
+    with self.assertRaisesRegex(manage.InvalidRecord, "immutable"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: InvalidRecord not raised
+
+----------------------------------------------------------------------
+Ran 22 tests in 5.181s
+
+FAILED (failures=1, errors=2)
