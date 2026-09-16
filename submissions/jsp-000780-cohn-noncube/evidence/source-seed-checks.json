@@ -1,0 +1,173 @@
+{
+  "scope": "Source-byte checks and exact integer preflight only; Lean not run.",
+  "upstream_commit": "b5b70857b2d77d6a060e00956beb8e19918b48f9",
+  "verified_upstream_files": [
+    {
+      "path": "upstream/.gitignore",
+      "bytes": 7,
+      "git_blob_sha1": "01f8cdb637da2370fa79960e25efa59dd8cffd6d",
+      "sha256": "fde850d24186b6e99c8c0debd641fb3ab85198b109eb66f71a1fea02bd6ea1b3"
+    },
+    {
+      "path": "upstream/LICENSE",
+      "bytes": 11357,
+      "git_blob_sha1": "8dada3edaf50dbc082c9a125058f25def75e625a",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+    },
+    {
+      "path": "upstream/NOTICE",
+      "bytes": 1023,
+      "git_blob_sha1": "6540b7c961436a84394cbe25ceefcaa55a0cf758",
+      "sha256": "017b5d55f7311c7be2da38ea18aa35c16f2f2ef728bf34f29ff117735033f2d9"
+    },
+    {
+      "path": "upstream/PRIOR_ART.md",
+      "bytes": 3135,
+      "git_blob_sha1": "1651732a256536fa553066d7cff486fb56270028",
+      "sha256": "2cfefdcfd6ce7bd76c83376c1950a6706a1d55d930f5ae2591be017449a78161"
+    },
+    {
+      "path": "upstream/Prize939.lean",
+      "bytes": 7861,
+      "git_blob_sha1": "06af1095a2ff2b245482a572d6e1a5aec15eb00e",
+      "sha256": "f556e09410ff1ea3da2d8d38b84a91e068465181ecc42ebe97ce98a8eb4727fc"
+    },
+    {
+      "path": "upstream/README.md",
+      "bytes": 2571,
+      "git_blob_sha1": "e1f70955f9ea28cf8c4545df5f705fce7f91a62c",
+      "sha256": "edf8a16328442c2f48c17e600a00ac40c3f259ea481bec26da625cc6a7b25cc6"
+    },
+    {
+      "path": "upstream/STATEMENT.md",
+      "bytes": 3011,
+      "git_blob_sha1": "da7f781426a6117398a8bbb326896c77aa4f873e",
+      "sha256": "7ea3431b5937933f3996408496ebef54b8a14632fb0bb18cc95cc841330e13d6"
+    },
+    {
+      "path": "upstream/evidence/axioms.log",
+      "bytes": 184,
+      "git_blob_sha1": "f52b0752abda71238221036c5978d05d68c23f41",
+      "sha256": "1e9747de0cbd02a4de87aa178381bbddaf3cc1311ea58a586a0d8c33b8f16636"
+    },
+    {
+      "path": "upstream/evidence/build.log",
+      "bytes": 315,
+      "git_blob_sha1": "b87d20815895996bb782a8d09848db8926524b72",
+      "sha256": "ab7188b321b1743905c93796b60c0b02e0a5113d6b7a249b23306aa73a20a43d"
+    },
+    {
+      "path": "upstream/evidence/custom_axiom.log",
+      "bytes": 71,
+      "git_blob_sha1": "c3d268a0cebfa13fa3a3929ef862ac42555e9cc2",
+      "sha256": "a28f0f9042a42e5d261e36b70b4b09d1c15f4b6eb46ea7c0fbad2d391e7a1997"
+    },
+    {
+      "path": "upstream/evidence/false_arithmetic.log",
+      "bytes": 96,
+      "git_blob_sha1": "01be027fbe00e7692820cef89d1ac16473c7b6bd",
+      "sha256": "baaa53bfa4c4d64f88f248f738f4e66ed8c06096ec840a8679aa01b2f277c1a5"
+    },
+    {
+      "path": "upstream/evidence/kernel-replay.json",
+      "bytes": 494,
+      "git_blob_sha1": "617690d93ca5831ec1db3652587d49834b926b95",
+      "sha256": "43836c49183339b3aa50ef2f93e81ccb6b43ede91e3c83b3fc4b01262ebed9e9"
+    },
+    {
+      "path": "upstream/evidence/kernel-replay.log",
+      "bytes": 32,
+      "git_blob_sha1": "bbb232b43a8c900177d5878fa4d289c563f2654f",
+      "sha256": "a7151d8415bc9a79ea5e9774c61017f5a18e36cedc7793e9b0781f04d2951901"
+    },
+    {
+      "path": "upstream/evidence/placeholder.log",
+      "bytes": 123,
+      "git_blob_sha1": "61d875f5ad112de965600c9040e7b60ab9a7d5e7",
+      "sha256": "c502208b9c523ec4862586e4e70a436fbe5e1128c731448817edac51f8032106"
+    },
+    {
+      "path": "upstream/evidence/repository-checks.json",
+      "bytes": 818,
+      "git_blob_sha1": "3c7dc8a578b004c926d5877a1077daebf6f701a7",
+      "sha256": "372605bacc68652c9ff688238dc39c0671b7c007e14d5685b8e74fa9fbfd0dec"
+    },
+    {
+      "path": "upstream/evidence/statement-check.json",
+      "bytes": 521,
+      "git_blob_sha1": "27dc2d4699121aed4dfd182b4c83b525a811393c",
+      "sha256": "861fd882d66989c1b6e9376b12e1a7cf685330fa1db6e94eadbd66db16e4ae32"
+    },
+    {
+      "path": "upstream/evidence/submission-screen.json",
+      "bytes": 702,
+      "git_blob_sha1": "d94ef1e784161faa4cd6a0cb1bb8d6be0eb2c456",
+      "sha256": "a6bf65fdd7b77f176b614c327e337261700b3f551b93c1dc8d8b2c2d2991d571"
+    },
+    {
+      "path": "upstream/evidence/verification.json",
+      "bytes": 838,
+      "git_blob_sha1": "8d48dea2be7ca3e4571fab38f28a8567be1a6538",
+      "sha256": "aedf8499ef32d6347533032f0a06c38b4c72e633202302ce6b7eb00a044cf50f"
+    },
+    {
+      "path": "upstream/lake-manifest.json",
+      "bytes": 3204,
+      "git_blob_sha1": "d52e1fc72dc913caa87b49b9cc7946b3dc763b13",
+      "sha256": "ef76392ffb7f36c9191c923f52b103e5b1f2222798feadd28504ebfd632b2e99"
+    },
+    {
+      "path": "upstream/lakefile.toml",
+      "bytes": 236,
+      "git_blob_sha1": "fe888dd7f6f949cb9dfa1c308caf18eac0111e4e",
+      "sha256": "03ff483d89b6a7dba12d1440ad83a840c092e253102a0244b55deedefc7ec9e1"
+    },
+    {
+      "path": "upstream/lean-toolchain",
+      "bytes": 25,
+      "git_blob_sha1": "4c685fa085fa1c66103533e992fc82c014a12142",
+      "sha256": "db7bb24b756d745bbde83fe92718b51bd3625dae3701ba0f598d0eedcd3f3028"
+    },
+    {
+      "path": "upstream/scripts/verify.py",
+      "bytes": 4107,
+      "git_blob_sha1": "fb80679a923d750cad380b472e1cf479ed7d30d9",
+      "sha256": "c1ec6190b0b759b49c826c086ca1421ae3df09caadaecc7d0e8671715dafc49b"
+    }
+  ],
+  "primary_paper": {
+    "url": "https://pub.math.leidenuniv.nl/~smitbde/edu/bachsem/3-powerful_abc-triple.pdf",
+    "sha256": "a7d1263de896b795e4f8f9fedec5f90807e7438405a57ccc48d2fe383acc81cd"
+  },
+  "seed_coordinates": {
+    "X": "9712247684771506604963490444281",
+    "Y": "32295800804958334401937923416351",
+    "Z": "27474621855216870941749052236511"
+  },
+  "seed_triple": {
+    "a": "29316304671550097097673340272695868664971982602682362181105885870573696137993557735568519681312",
+    "b": "1650571162926086023717793346740070827439620846420346368304580245250865493356609750746576419485999",
+    "c": "1679887467597636120815466687012766696104592829023028730485686131121439189494603308482144939167311"
+  },
+  "seed_checks": {
+    "positive": true,
+    "a_plus_b_eq_c": true,
+    "pairwise_gcds": [
+      1,
+      1,
+      1
+    ],
+    "three_divides_product": true,
+    "Y_divisible_by_7": true,
+    "fullness_factorizations": {
+      "a_eq_2pow5_times_Xcube": true,
+      "b_eq_7pow5_times_Ydiv7cube": true,
+      "c_eq_3pow4_times_Zcube": true
+    },
+    "noncube_witness_valuations": {
+      "v2(a)": 5,
+      "v7(b)": 5,
+      "v3(c)": 4
+    }
+  }
+}

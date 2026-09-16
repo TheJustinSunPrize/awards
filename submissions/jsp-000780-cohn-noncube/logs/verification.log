@@ -1,0 +1,324 @@
+RUN ID: 0dcac7b76bd84c479fe61297eefafbe1
+STARTED UTC: 2026-09-16T18:08:29.976933+00:00
+
+$ <LEAN_TOOLCHAIN>\bin\lake.EXE env lean --version
+CWD: <PROJECT_ROOT>
+Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_TOOLCHAIN>\bin\lake.EXE --version
+CWD: <PROJECT_ROOT>
+Lake version 5.0.0-src+819816b (Lean version 4.33.1)
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\mathlib
+0df444a360eaa60ab8c11dca51a86af692955474
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\mathlib
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT_ROOT>\.lake\packages\mathlib
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\plausible
+b7eb3304aeae834b12dda98993a37f6a41f6f0bb
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\plausible
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT_ROOT>\.lake\packages\plausible
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\LeanSearchClient
+5f4d51b81cbd3f6b32b156bfad9056621a040404
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\LeanSearchClient
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT_ROOT>\.lake\packages\LeanSearchClient
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\importGraph
+16f02aa7642864af59f1ff0e384a015994db9118
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\importGraph
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT_ROOT>\.lake\packages\importGraph
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\proofwidgets
+4be2e3d5087eeb272cf5a8853b8f9dd025ef5957
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\proofwidgets
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT_ROOT>\.lake\packages\proofwidgets
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\aesop
+3448c0bcc5ce01b2d1546e483ec3620e32df3d0e
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\aesop
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT_ROOT>\.lake\packages\aesop
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\Qq
+92c15be17b7caf78c2ad767ec40f89052d908d81
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\Qq
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT_ROOT>\.lake\packages\Qq
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\batteries
+4488d40d070b9700d4d5a6aa342f0d40c31b2a2d
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\batteries
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT_ROOT>\.lake\packages\batteries
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\Cli
+6130a47896ce867c6a4a55373441e59e565bad0f
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT_ROOT>\.lake\packages\Cli
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT_ROOT>\.lake\packages\Cli
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_TOOLCHAIN>\bin\lake.EXE build
+CWD: <PROJECT_ROOT>
+ℹ [986/989] Replayed Prize939
+info: Prize939.lean:184:0: 'Erdos939.triples_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Prize939.lean:185:0: 'Erdos939.erdos_939.variants.triples' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [987/989] Replayed CohnNoncube
+info: CohnNoncube.lean:120:0: 'Erdos939.noncube_mul_cube' depends on axioms: [propext, Quot.sound]
+info: CohnNoncube.lean:121:0: 'Erdos939.cohn_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CohnNoncube.lean:122:0: 'Erdos939.noncube_triples_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [988/989] Replayed Audit
+info: Audit.lean:3:0: def Nat.Full : ℕ → ℕ → Prop :=
+fun k n => ∀ p ∈ n.primeFactors, p ^ k ∣ n
+info: Audit.lean:4:0: def Erdos939.Noncube : ℕ → Prop :=
+fun a => ¬∃ r, r ^ 3 = a
+info: Audit.lean:5:0: Erdos939.noncube_triples_infinite : {t |
+    0 < t.1 ∧
+      0 < t.2.1 ∧
+        0 < t.2.2 ∧
+          t.1.Coprime t.2.1 ∧
+            t.1.Coprime t.2.2 ∧
+              t.2.1.Coprime t.2.2 ∧
+                Nat.Full 3 t.1 ∧
+                  Nat.Full 3 t.2.1 ∧
+                    Nat.Full 3 t.2.2 ∧
+                      t.1 + t.2.1 = t.2.2 ∧
+                        Erdos939.Noncube t.1 ∧ Erdos939.Noncube t.2.1 ∧ Erdos939.Noncube t.2.2}.Infinite
+info: Audit.lean:6:0: 'Erdos939.cube_of_mul_cube' depends on axioms: [propext, Quot.sound]
+info: Audit.lean:7:0: 'Erdos939.noncube_mul_cube' depends on axioms: [propext, Quot.sound]
+info: Audit.lean:8:0: 'Erdos939.cohn_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:9:0: 'Erdos939.larger_noncube' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:10:0: 'Erdos939.noncube_triples_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:25:0: 'cohn_noncube_statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (989 jobs).
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_TOOLCHAIN>\bin\lake.EXE env lean -DwarningAsError=true -o .lake/build/lib/lean/Prize939.olean Prize939.lean
+CWD: <PROJECT_ROOT>
+'Erdos939.triples_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos939.erdos_939.variants.triples' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_TOOLCHAIN>\bin\lake.EXE env lean -DwarningAsError=true -o .lake/build/lib/lean/CohnNoncube.olean CohnNoncube.lean
+CWD: <PROJECT_ROOT>
+'Erdos939.noncube_mul_cube' depends on axioms: [propext, Quot.sound]
+'Erdos939.cohn_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos939.noncube_triples_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_TOOLCHAIN>\bin\lake.EXE env lean -DwarningAsError=true -o .lake/build/lib/lean/Audit.olean Audit.lean
+CWD: <PROJECT_ROOT>
+def Nat.Full : ℕ → ℕ → Prop :=
+fun k n => ∀ p ∈ n.primeFactors, p ^ k ∣ n
+def Erdos939.Noncube : ℕ → Prop :=
+fun a => ¬∃ r, r ^ 3 = a
+Erdos939.noncube_triples_infinite : {t |
+    0 < t.1 ∧
+      0 < t.2.1 ∧
+        0 < t.2.2 ∧
+          t.1.Coprime t.2.1 ∧
+            t.1.Coprime t.2.2 ∧
+              t.2.1.Coprime t.2.2 ∧
+                Nat.Full 3 t.1 ∧
+                  Nat.Full 3 t.2.1 ∧
+                    Nat.Full 3 t.2.2 ∧
+                      t.1 + t.2.1 = t.2.2 ∧
+                        Erdos939.Noncube t.1 ∧ Erdos939.Noncube t.2.1 ∧ Erdos939.Noncube t.2.2}.Infinite
+'Erdos939.cube_of_mul_cube' depends on axioms: [propext, Quot.sound]
+'Erdos939.noncube_mul_cube' depends on axioms: [propext, Quot.sound]
+'Erdos939.cohn_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos939.larger_noncube' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos939.noncube_triples_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'cohn_noncube_statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <USER_HOME>\AppData\Local\Programs\Python\Python314\python.exe <PROJECT_ROOT>\verify.py --check-axioms-log <PROJECT_ROOT>\logs\recompile-Audit.log
+CWD: <PROJECT_ROOT>
+{"Erdos939.cube_of_mul_cube": ["Quot.sound", "propext"], "Erdos939.noncube_mul_cube": ["Quot.sound", "propext"], "Erdos939.cohn_seed": ["Classical.choice", "Quot.sound", "propext"], "Erdos939.larger_noncube": ["Classical.choice", "Quot.sound", "propext"], "Erdos939.noncube_triples_infinite": ["Classical.choice", "Quot.sound", "propext"], "cohn_noncube_statement": ["Classical.choice", "Quot.sound", "propext"]}
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_TOOLCHAIN>\bin\lake.EXE env lean <PROJECT_ROOT>\verification-tmp\false-arithmetic.lean
+CWD: <PROJECT_ROOT>
+<PROJECT_ROOT>\verification-tmp\false-arithmetic.lean:1:34: error: Tactic `decide` proved that the proposition
+  2 + 2 = 5
+is false
+
+COMMAND STATUS: COMPLETED
+EXIT: 1
+
+$ <LEAN_TOOLCHAIN>\bin\lake.EXE env lean <PROJECT_ROOT>\verification-tmp\sorry.lean
+CWD: <PROJECT_ROOT>
+<PROJECT_ROOT>\verification-tmp\sorry.lean:1:8: warning: declaration uses `sorry`
+'negative' depends on axioms: [sorryAx]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <USER_HOME>\AppData\Local\Programs\Python\Python314\python.exe <PROJECT_ROOT>\verify.py --check-axioms-log <PROJECT_ROOT>\logs\negative-sorry.log --names negative
+CWD: <PROJECT_ROOT>
+Rejected axioms for negative: ['sorryAx']
+
+COMMAND STATUS: COMPLETED
+EXIT: 2
+
+$ <LEAN_TOOLCHAIN>\bin\lake.EXE env lean <PROJECT_ROOT>\verification-tmp\custom-axiom.lean
+CWD: <PROJECT_ROOT>
+'negative' depends on axioms: [unapproved]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <USER_HOME>\AppData\Local\Programs\Python\Python314\python.exe <PROJECT_ROOT>\verify.py --check-axioms-log <PROJECT_ROOT>\logs\negative-custom-axiom.log --names negative
+CWD: <PROJECT_ROOT>
+Rejected axioms for negative: ['unapproved']
+
+COMMAND STATUS: COMPLETED
+EXIT: 2
+
+$ <LEAN_TOOLCHAIN>\bin\lake.EXE env leanchecker --fresh -v Audit
+CWD: <PROJECT_ROOT>
+replaying Audit with --fresh
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+FINAL STATUS: PASS
+FINISHED UTC: 2026-09-16T18:10:40.461049+00:00

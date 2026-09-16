@@ -1,0 +1,14 @@
+⚠ [986/988] Built Prize939 (4.9s)
+warning: Prize939.lean:153:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: Prize939.lean:183:0: 'Erdos939.triples_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Prize939.lean:184:0: 'Erdos939.erdos_939.variants.triples' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [987/988] Built CohnNoncube (4.6s)
+warning: CohnNoncube.lean:81:77: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: CohnNoncube.lean:120:0: 'Erdos939.noncube_mul_cube' depends on axioms: [propext, Quot.sound]
+info: CohnNoncube.lean:121:0: 'Erdos939.cohn_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CohnNoncube.lean:122:0: 'Erdos939.noncube_triples_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (988 jobs).

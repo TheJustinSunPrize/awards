@@ -1,0 +1,5 @@
+<PROJECT_ROOT>\verification-tmp\sorry.lean:1:8: warning: declaration uses `sorry`
+'negative' depends on axioms: [sorryAx]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0

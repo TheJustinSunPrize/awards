@@ -1,0 +1,1234 @@
+[
+  {
+    "response_file": "search-final-780.json",
+    "response_sha256": "c9938edecb99d754b2d039ac9eec320a94c769b6a6417921e2dcbef9e2fe01a0",
+    "total_count": 0,
+    "returned_count": 0,
+    "incomplete_results": false,
+    "items": []
+  },
+  {
+    "response_file": "search-final-939.json",
+    "response_sha256": "2e677201eda4b711df70e5a00ccbd778c01846dcb40c212a2370ac6501655e75",
+    "total_count": 1,
+    "returned_count": 1,
+    "incomplete_results": false,
+    "items": [
+      {
+        "url": "https://github.com/TheJustinSunPrize/awards/pull/65",
+        "title": "JSP-000780: Lean formalization of infinitely many 3-powerful triples (Erdos 939)",
+        "path": null
+      }
+    ]
+  },
+  {
+    "response_file": "search-final-Cohn.json",
+    "response_sha256": "2e677201eda4b711df70e5a00ccbd778c01846dcb40c212a2370ac6501655e75",
+    "total_count": 1,
+    "returned_count": 1,
+    "incomplete_results": false,
+    "items": [
+      {
+        "url": "https://github.com/TheJustinSunPrize/awards/pull/65",
+        "title": "JSP-000780: Lean formalization of infinitely many 3-powerful triples (Erdos 939)",
+        "path": null
+      }
+    ]
+  },
+  {
+    "response_file": "search-final-cohn939.json",
+    "response_sha256": "fe3b79f6f0b44ba6707425b4f3db4bd4bb488614c7669badf04d4ef8ca28cd9b",
+    "total_count": 6,
+    "returned_count": 6,
+    "incomplete_results": false,
+    "items": [
+      {
+        "url": "https://github.com/google-deepmind/formal-conjectures/blob/40e7c98697de6f66b8cbdbf641749ab39ed9c152/FormalConjectures/ErdosProblems/939.lean",
+        "title": null,
+        "path": "FormalConjectures/ErdosProblems/939.lean"
+      },
+      {
+        "url": "https://github.com/AndreiPiterbarg/sidon-autocorrelation/blob/1ed5889100617ee086db1ce3456b75c1f8e5f6be/archive/cohn_elkies/v3_v4_w11/_cohn_elkies_128_v3_sweepbest_coeffs.lean",
+        "title": null,
+        "path": "archive/cohn_elkies/v3_v4_w11/_cohn_elkies_128_v3_sweepbest_coeffs.lean"
+      },
+      {
+        "url": "https://github.com/elementalcollision/leibniz-daemon/blob/67737a4f8fdd9b1bf2a9d1c021a274edc220320b/docs/crt/kissing19.lean",
+        "title": null,
+        "path": "docs/crt/kissing19.lean"
+      },
+      {
+        "url": "https://github.com/Vilin97/lean-pool/blob/749a5ba654ec0e8f666a389f3e2db92cdd9888d7/LeanPool/SpherePacking/Conclusion.lean",
+        "title": null,
+        "path": "LeanPool/SpherePacking/Conclusion.lean"
+      },
+      {
+        "url": "https://github.com/FractalDevTeam/Principia-Fractalis/blob/a9868a7834aefb71410dae2a69b68160140cc724/PF_Lean4_Code/PF/NumberTheory/SmaleProblemsFrameworkAttack.lean",
+        "title": null,
+        "path": "PF_Lean4_Code/PF/NumberTheory/SmaleProblemsFrameworkAttack.lean"
+      },
+      {
+        "url": "https://github.com/AndreiPiterbarg/sidon-autocorrelation/blob/1ed5889100617ee086db1ce3456b75c1f8e5f6be/archive/lean/Sidon/MultiScaleRigorous.lean",
+        "title": null,
+        "path": "archive/lean/Sidon/MultiScaleRigorous.lean"
+      }
+    ]
+  },
+  {
+    "response_file": "search-final-global-cohn-lean.json",
+    "response_sha256": "6dc4a09466645828c74736b49ea9b00201db7a8ecf787ac3f1ab1dc587ea1604",
+    "total_count": 240,
+    "returned_count": 100,
+    "incomplete_results": false,
+    "items": [
+      {
+        "url": "https://github.com/leanprover-community/mathlib4/blob/09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68/Mathlib/FieldTheory/RatFunc/Luroth.lean",
+        "title": null,
+        "path": "Mathlib/FieldTheory/RatFunc/Luroth.lean"
+      },
+      {
+        "url": "https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/9b2ddfc66330f9da18cc8feb0dca2dc01bfa0a85/SpherePacking/CohnElkies/Prereqs.lean",
+        "title": null,
+        "path": "SpherePacking/CohnElkies/Prereqs.lean"
+      },
+      {
+        "url": "https://github.com/google-deepmind/formal-conjectures/blob/40e7c98697de6f66b8cbdbf641749ab39ed9c152/FormalConjectures/GreensOpenProblems/42.lean",
+        "title": null,
+        "path": "FormalConjectures/GreensOpenProblems/42.lean"
+      },
+      {
+        "url": "https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/9b2ddfc66330f9da18cc8feb0dca2dc01bfa0a85/SpherePacking/CohnElkies/LPBound.lean",
+        "title": null,
+        "path": "SpherePacking/CohnElkies/LPBound.lean"
+      },
+      {
+        "url": "https://github.com/google-deepmind/formal-conjectures/blob/40e7c98697de6f66b8cbdbf641749ab39ed9c152/FormalConjectures/ErdosProblems/939.lean",
+        "title": null,
+        "path": "FormalConjectures/ErdosProblems/939.lean"
+      },
+      {
+        "url": "https://github.com/google-deepmind/formal-conjectures/blob/40e7c98697de6f66b8cbdbf641749ab39ed9c152/FormalConjectures/GreensOpenProblems/36.lean",
+        "title": null,
+        "path": "FormalConjectures/GreensOpenProblems/36.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/mathlib4/blob/09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68/Mathlib/LinearAlgebra/Dimension/Localization.lean",
+        "title": null,
+        "path": "Mathlib/LinearAlgebra/Dimension/Localization.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/mathlib4/blob/09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68/Mathlib/MeasureTheory/Measure/SeparableMeasure.lean",
+        "title": null,
+        "path": "Mathlib/MeasureTheory/Measure/SeparableMeasure.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/mathlib4/blob/09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68/Mathlib/Probability/Kernel/IonescuTulcea/Traj.lean",
+        "title": null,
+        "path": "Mathlib/Probability/Kernel/IonescuTulcea/Traj.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies.lean",
+        "title": null,
+        "path": "CohnElkies.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/ComparatorChallenges/CohnElkies.lean",
+        "title": null,
+        "path": "ComparatorChallenges/CohnElkies.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/physlib/blob/de0d13b29fd20ec775d7bca4938bef1d5956a458/PhyslibAlpha/AlgebraicFramework/JordanOrderUnit/FreeSpecialTwo.lean",
+        "title": null,
+        "path": "PhyslibAlpha/AlgebraicFramework/JordanOrderUnit/FreeSpecialTwo.lean"
+      },
+      {
+        "url": "https://github.com/grame-cncm/faustlibraries/blob/271228a08981fa10b07732f0861421d1e20d4022/formalisation/tf2s-stability-formal-spec.lean",
+        "title": null,
+        "path": "formalisation/tf2s-stability-formal-spec.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkiesBlueprint/Chapters/CohnElkiesBound.lean",
+        "title": null,
+        "path": "CohnElkiesBlueprint/Chapters/CohnElkiesBound.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/physlib/blob/de0d13b29fd20ec775d7bca4938bef1d5956a458/PhyslibAlpha/AlgebraicFramework/JordanOrderUnit/Compatibility.lean",
+        "title": null,
+        "path": "PhyslibAlpha/AlgebraicFramework/JordanOrderUnit/Compatibility.lean"
+      },
+      {
+        "url": "https://github.com/hawkrobe/linglib/blob/9530aed9b1c0633d2fe96f0abae15564f3490779/Linglib/Studies/CohnGordonEtAl2019.lean",
+        "title": null,
+        "path": "Linglib/Studies/CohnGordonEtAl2019.lean"
+      },
+      {
+        "url": "https://github.com/attila-ac/hyperlocal/blob/d5b049cb0cb6c80094be6c4bd6fd63bdb7fb195a/formalisation/Hyperlocal/Cancellation/SchurCohn.lean",
+        "title": null,
+        "path": "formalisation/Hyperlocal/Cancellation/SchurCohn.lean"
+      },
+      {
+        "url": "https://github.com/attila-ac/hyperlocal/blob/d5b049cb0cb6c80094be6c4bd6fd63bdb7fb195a/formalisation_v3.3/Hyperlocal/Cancellation/SchurCohn.lean",
+        "title": null,
+        "path": "formalisation_v3.3/Hyperlocal/Cancellation/SchurCohn.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/physlib/blob/de0d13b29fd20ec775d7bca4938bef1d5956a458/PhyslibAlpha/AlgebraicFramework/JordanOrderUnit/Power/Generated.lean",
+        "title": null,
+        "path": "PhyslibAlpha/AlgebraicFramework/JordanOrderUnit/Power/Generated.lean"
+      },
+      {
+        "url": "https://github.com/AndreiPiterbarg/sidon-autocorrelation/blob/1ed5889100617ee086db1ce3456b75c1f8e5f6be/archive/cohn_elkies/v3_v4_w11/_cohn_elkies_128_v3_sweepbest_coeffs.lean",
+        "title": null,
+        "path": "archive/cohn_elkies/v3_v4_w11/_cohn_elkies_128_v3_sweepbest_coeffs.lean"
+      },
+      {
+        "url": "https://github.com/CheyLoveday/erdos-364-shifted-squares/blob/5094ae2a06268cfc3f2eb972956b276cdbebf566/Erdos364/SquareMiddle/QuarticPellCohn.lean",
+        "title": null,
+        "path": "Erdos364/SquareMiddle/QuarticPellCohn.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies/Basic.lean",
+        "title": null,
+        "path": "CohnElkies/Basic.lean"
+      },
+      {
+        "url": "https://github.com/grame-cncm/faustlibraries/blob/271228a08981fa10b07732f0861421d1e20d4022/formalisation/mathlib/JuryRoots.lean",
+        "title": null,
+        "path": "formalisation/mathlib/JuryRoots.lean"
+      },
+      {
+        "url": "https://github.com/leanprover/lean-eval/blob/e8eb893903723ec730c84e55b8eceb75916cf2f3/LeanEval/Analysis/CKMRVInterpolation.lean",
+        "title": null,
+        "path": "LeanEval/Analysis/CKMRVInterpolation.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies/Manuscript.lean",
+        "title": null,
+        "path": "CohnElkies/Manuscript.lean"
+      },
+      {
+        "url": "https://github.com/AndreiPiterbarg/sidon-autocorrelation/blob/1ed5889100617ee086db1ce3456b75c1f8e5f6be/archive/lean/Sidon/CohnElkies125.lean",
+        "title": null,
+        "path": "archive/lean/Sidon/CohnElkies125.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies/PackingBound.lean",
+        "title": null,
+        "path": "CohnElkies/PackingBound.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies/SpherePacking/CohnElkiesBound.lean",
+        "title": null,
+        "path": "CohnElkies/SpherePacking/CohnElkiesBound.lean"
+      },
+      {
+        "url": "https://github.com/bridgekat/numlib-auto/blob/d975de7c60a6d8c3ba872313068f3e9f810ceae6/Numlib/RingTheory/Polynomial/SchurCohn.lean",
+        "title": null,
+        "path": "Numlib/RingTheory/Polynomial/SchurCohn.lean"
+      },
+      {
+        "url": "https://github.com/the-omega-institute/automath/blob/60ce0a1548858b977dd8719efb939ceb3e87effe/lean4/Omega/Zeta/XiToeplitzSchurCohnInertiaAlignment.lean",
+        "title": null,
+        "path": "lean4/Omega/Zeta/XiToeplitzSchurCohnInertiaAlignment.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkiesBlueprint/Blueprint.lean",
+        "title": null,
+        "path": "CohnElkiesBlueprint/Blueprint.lean"
+      },
+      {
+        "url": "https://github.com/ejgallego/verso-sphere-packing/blob/11d240eb335173ad5b7bcec57f41c5a73455cafd/SpherePackingBlueprint/Chapters/CohnElkies.lean",
+        "title": null,
+        "path": "SpherePackingBlueprint/Chapters/CohnElkies.lean"
+      },
+      {
+        "url": "https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/9b2ddfc66330f9da18cc8feb0dca2dc01bfa0a85/SpherePacking/Basic/PeriodicPacking.lean",
+        "title": null,
+        "path": "SpherePacking/Basic/PeriodicPacking.lean"
+      },
+      {
+        "url": "https://github.com/the-omega-institute/automath/blob/60ce0a1548858b977dd8719efb939ceb3e87effe/lean4/Omega/Zeta/XiToeplitzPsdMinimalFailureSchurCohnRootEscape.lean",
+        "title": null,
+        "path": "lean4/Omega/Zeta/XiToeplitzPsdMinimalFailureSchurCohnRootEscape.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies/UpperBound/Signs.lean",
+        "title": null,
+        "path": "CohnElkies/UpperBound/Signs.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies/Asymptotics/Main.lean",
+        "title": null,
+        "path": "CohnElkies/Asymptotics/Main.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies/Admissible/Nonempty.lean",
+        "title": null,
+        "path": "CohnElkies/Admissible/Nonempty.lean"
+      },
+      {
+        "url": "https://github.com/hawkrobe/linglib/blob/9530aed9b1c0633d2fe96f0abae15564f3490779/Linglib/Pragmatics/RSA/Incremental.lean",
+        "title": null,
+        "path": "Linglib/Pragmatics/RSA/Incremental.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies/Asymptotics/Stirling.lean",
+        "title": null,
+        "path": "CohnElkies/Asymptotics/Stirling.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies/SignUncertainty/Basic.lean",
+        "title": null,
+        "path": "CohnElkies/SignUncertainty/Basic.lean"
+      },
+      {
+        "url": "https://github.com/leanprover/lean-eval/blob/e8eb893903723ec730c84e55b8eceb75916cf2f3/generated/ckmrv_fourier_interpolation/ChallengeDeps.lean",
+        "title": null,
+        "path": "generated/ckmrv_fourier_interpolation/ChallengeDeps.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies/Admissible/Radialization.lean",
+        "title": null,
+        "path": "CohnElkies/Admissible/Radialization.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies/SignUncertainty/Finiteness.lean",
+        "title": null,
+        "path": "CohnElkies/SignUncertainty/Finiteness.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkiesBlueprint/Chapters/AppendixA.lean",
+        "title": null,
+        "path": "CohnElkiesBlueprint/Chapters/AppendixA.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies/Radialization.lean",
+        "title": null,
+        "path": "CohnElkies/Radialization.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkiesBlueprint/Chapters/Introduction.lean",
+        "title": null,
+        "path": "CohnElkiesBlueprint/Chapters/Introduction.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies/SignUncertainty/OriginCorrection.lean",
+        "title": null,
+        "path": "CohnElkies/SignUncertainty/OriginCorrection.lean"
+      },
+      {
+        "url": "https://github.com/Vilin97/lean-pool/blob/749a5ba654ec0e8f666a389f3e2db92cdd9888d7/LeanPool/SpherePacking/Conclusion.lean",
+        "title": null,
+        "path": "LeanPool/SpherePacking/Conclusion.lean"
+      },
+      {
+        "url": "https://github.com/TauCetiProject/TauCeti/blob/7700e543d98644b790b88b942d32f01a27c56c94/TauCeti/NumberTheory/NumberField/Units/Signature/Surjective.lean",
+        "title": null,
+        "path": "TauCeti/NumberTheory/NumberField/Units/Signature/Surjective.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkiesBlueprint/Chapters/Preliminaries.lean",
+        "title": null,
+        "path": "CohnElkiesBlueprint/Chapters/Preliminaries.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkiesBlueprint/Chapters/Differences.lean",
+        "title": null,
+        "path": "CohnElkiesBlueprint/Chapters/Differences.lean"
+      },
+      {
+        "url": "https://github.com/gaearon/conway-refinement/blob/264445c93b78554c408e99e4e7f663693b4e91ab/ConwayRefinement/Algebra/Divisibility/Refinement.lean",
+        "title": null,
+        "path": "ConwayRefinement/Algebra/Divisibility/Refinement.lean"
+      },
+      {
+        "url": "https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/9b2ddfc66330f9da18cc8feb0dca2dc01bfa0a85/SpherePacking.lean",
+        "title": null,
+        "path": "SpherePacking.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkiesBlueprint/Chapters/LowerBound.lean",
+        "title": null,
+        "path": "CohnElkiesBlueprint/Chapters/LowerBound.lean"
+      },
+      {
+        "url": "https://github.com/attila-ac/hyperlocal/blob/d5b049cb0cb6c80094be6c4bd6fd63bdb7fb195a/formalisation_v3.3/Hyperlocal/Manuscript.lean",
+        "title": null,
+        "path": "formalisation_v3.3/Hyperlocal/Manuscript.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkies/SignUncertainty/AppendixA.lean",
+        "title": null,
+        "path": "CohnElkies/SignUncertainty/AppendixA.lean"
+      },
+      {
+        "url": "https://github.com/hawkrobe/linglib/blob/9530aed9b1c0633d2fe96f0abae15564f3490779/Linglib/Studies/WaldonDegen2021.lean",
+        "title": null,
+        "path": "Linglib/Studies/WaldonDegen2021.lean"
+      },
+      {
+        "url": "https://github.com/hawkrobe/linglib/blob/9530aed9b1c0633d2fe96f0abae15564f3490779/Linglib/Studies/Benua1997.lean",
+        "title": null,
+        "path": "Linglib/Studies/Benua1997.lean"
+      },
+      {
+        "url": "https://github.com/AadamHaq/MA4N1-Theorem-Proving-with-Lean/blob/f15c3e43048c05ea0778ec81f1827a951236fc59/Project/Drafts/old.lean",
+        "title": null,
+        "path": "Project/Drafts/old.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkiesBlueprint.lean",
+        "title": null,
+        "path": "CohnElkiesBlueprint.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkiesForMathlib.lean",
+        "title": null,
+        "path": "CohnElkiesForMathlib.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkiesBlueprintMain.lean",
+        "title": null,
+        "path": "CohnElkiesBlueprintMain.lean"
+      },
+      {
+        "url": "https://github.com/hawkrobe/linglib/blob/9530aed9b1c0633d2fe96f0abae15564f3490779/Linglib/Studies/SchlotterbeckWang2023.lean",
+        "title": null,
+        "path": "Linglib/Studies/SchlotterbeckWang2023.lean"
+      },
+      {
+        "url": "https://github.com/AndreiPiterbarg/sidon-autocorrelation/blob/1ed5889100617ee086db1ce3456b75c1f8e5f6be/archive/lean/Sidon/Cascade128.lean",
+        "title": null,
+        "path": "archive/lean/Sidon/Cascade128.lean"
+      },
+      {
+        "url": "https://github.com/AndreiPiterbarg/sidon-autocorrelation/blob/1ed5889100617ee086db1ce3456b75c1f8e5f6be/archive/lean/Sidon/Cascade129.lean",
+        "title": null,
+        "path": "archive/lean/Sidon/Cascade129.lean"
+      },
+      {
+        "url": "https://github.com/AndreiPiterbarg/sidon-autocorrelation/blob/1ed5889100617ee086db1ce3456b75c1f8e5f6be/archive/lean/Sidon/Cascade127.lean",
+        "title": null,
+        "path": "archive/lean/Sidon/Cascade127.lean"
+      },
+      {
+        "url": "https://github.com/leanprover/lean-eval-leaderboard/blob/8165f8d7745fae5c5e531a0d81b8f30971844655/benchmark-snapshot/BenchmarkProblems/ProblemCkmrvFourierInterpolation.lean",
+        "title": null,
+        "path": "benchmark-snapshot/BenchmarkProblems/ProblemCkmrvFourierInterpolation.lean"
+      },
+      {
+        "url": "https://github.com/openai/ten-proofs/blob/94bc0feb6a9ff12c7d31d6de640a725c9d43d2b6/ComparatorChallenges/A_SpherePacking.lean",
+        "title": null,
+        "path": "ComparatorChallenges/A_SpherePacking.lean"
+      },
+      {
+        "url": "https://github.com/Axiomatic-AI/mathlib4/blob/fdd194a8087ad4ae0f6ddd737e06af1ffde55efb/Mathlib/FieldTheory/RatFunc/Luroth.lean",
+        "title": null,
+        "path": "Mathlib/FieldTheory/RatFunc/Luroth.lean"
+      },
+      {
+        "url": "https://github.com/kavanaghpatrick/aristotle-math-problems/blob/2425339a625bf9e9edef22efee04471db6562bcb/submissions/algo_matrix_mult_v2.lean",
+        "title": null,
+        "path": "submissions/algo_matrix_mult_v2.lean"
+      },
+      {
+        "url": "https://github.com/attila-ac/hyperlocal/blob/d5b049cb0cb6c80094be6c4bd6fd63bdb7fb195a/formalisation_v3.3/Hyperlocal/Cancellation/InstabilityK1_Mid.lean",
+        "title": null,
+        "path": "formalisation_v3.3/Hyperlocal/Cancellation/InstabilityK1_Mid.lean"
+      },
+      {
+        "url": "https://github.com/leanprover/downstream-lean4/blob/330a6498b785c117b476d585939de2f7b675c63f/mathlib4/Mathlib/FieldTheory/RatFunc/Luroth.lean",
+        "title": null,
+        "path": "mathlib4/Mathlib/FieldTheory/RatFunc/Luroth.lean"
+      },
+      {
+        "url": "https://github.com/ejgallego/verso-sphere-packing/blob/11d240eb335173ad5b7bcec57f41c5a73455cafd/SpherePackingBlueprint/Bibliography.lean",
+        "title": null,
+        "path": "SpherePackingBlueprint/Bibliography.lean"
+      },
+      {
+        "url": "https://github.com/kavanaghpatrick/aristotle-math-problems/blob/2425339a625bf9e9edef22efee04471db6562bcb/submissions/algo_matrix_mult_improvement.lean",
+        "title": null,
+        "path": "submissions/algo_matrix_mult_improvement.lean"
+      },
+      {
+        "url": "https://github.com/MarceloClaro/OpenCode_Ecosystem/blob/5f83911ebb203d7070e973cff3de065170ea9cea/aletheia-superhuman-validation/raw_data/formal-conjectures/GreensOpenProblems/36.lean",
+        "title": null,
+        "path": "aletheia-superhuman-validation/raw_data/formal-conjectures/GreensOpenProblems/36.lean"
+      },
+      {
+        "url": "https://github.com/briangmilnes/ScottLean4/blob/b85e7f9f18e00c954f59909f0ecd366bdd0b1b7f/mathlib/Mathlib/FieldTheory/RatFunc/Luroth.lean",
+        "title": null,
+        "path": "mathlib/Mathlib/FieldTheory/RatFunc/Luroth.lean"
+      },
+      {
+        "url": "https://github.com/rjwalters/lean-genius/blob/dc62f771ed5010abfdb04247dff6143e0e69d3e7/proofs/Proofs/ETranscendentalOQ03OQ01.lean",
+        "title": null,
+        "path": "proofs/Proofs/ETranscendentalOQ03OQ01.lean"
+      },
+      {
+        "url": "https://github.com/rjwalters/lean-genius/blob/dc62f771ed5010abfdb04247dff6143e0e69d3e7/proofs/Proofs/KeplerConjectureOQ01.lean",
+        "title": null,
+        "path": "proofs/Proofs/KeplerConjectureOQ01.lean"
+      },
+      {
+        "url": "https://github.com/seewoo5/cohn-elkies-refactor/blob/5edb1991b9496c42c8cc843c7b5d1a2c1d758b65/CohnElkiesForMathlib/Analysis/Fourier/EigenfunctionConcentration.lean",
+        "title": null,
+        "path": "CohnElkiesForMathlib/Analysis/Fourier/EigenfunctionConcentration.lean"
+      },
+      {
+        "url": "https://github.com/elementalcollision/leibniz-daemon/blob/67737a4f8fdd9b1bf2a9d1c021a274edc220320b/docs/crt/kissing19.lean",
+        "title": null,
+        "path": "docs/crt/kissing19.lean"
+      },
+      {
+        "url": "https://github.com/tcosmo/Knight2026_lean/blob/a535cd1db48e2bd62790a8efed24e91120b1e2ff/Knight2026/HighCycle.lean",
+        "title": null,
+        "path": "Knight2026/HighCycle.lean"
+      },
+      {
+        "url": "https://github.com/Morten-Ness/Leaner/blob/72e0c5afcc06c757b92ab9c3e26349fbc20574fa/Mathlib/FieldTheory/RatFunc/Luroth.lean",
+        "title": null,
+        "path": "Mathlib/FieldTheory/RatFunc/Luroth.lean"
+      },
+      {
+        "url": "https://github.com/AadamHaq/MA4N1-Theorem-Proving-with-Lean/blob/f15c3e43048c05ea0778ec81f1827a951236fc59/Project/Drafts/lusin_ameer.lean",
+        "title": null,
+        "path": "Project/Drafts/lusin_ameer.lean"
+      },
+      {
+        "url": "https://github.com/AadamHaq/MA4N1-Theorem-Proving-with-Lean/blob/f15c3e43048c05ea0778ec81f1827a951236fc59/Project/Drafts/lusin_old.lean",
+        "title": null,
+        "path": "Project/Drafts/lusin_old.lean"
+      },
+      {
+        "url": "https://github.com/ejgallego/verso-sphere-packing/blob/11d240eb335173ad5b7bcec57f41c5a73455cafd/SpherePackingBlueprint/Chapters/SpherePackings.lean",
+        "title": null,
+        "path": "SpherePackingBlueprint/Chapters/SpherePackings.lean"
+      },
+      {
+        "url": "https://github.com/rjwalters/lean-genius/blob/dc62f771ed5010abfdb04247dff6143e0e69d3e7/proofs/Proofs/EulerPolyhedralOQ02OQ01.lean",
+        "title": null,
+        "path": "proofs/Proofs/EulerPolyhedralOQ02OQ01.lean"
+      },
+      {
+        "url": "https://github.com/yhx-12243/Sidon3/blob/e066537a13c915d1af83b9c8248308316e8302ac/Sidon3/KeySystem.lean",
+        "title": null,
+        "path": "Sidon3/KeySystem.lean"
+      },
+      {
+        "url": "https://github.com/andyprevalsky/auto-math/blob/4ce8c22b2de6f13d4464a25eaeddd86297d61b10/inspiration/mathlib4/Mathlib/FieldTheory/RatFunc/Luroth.lean",
+        "title": null,
+        "path": "inspiration/mathlib4/Mathlib/FieldTheory/RatFunc/Luroth.lean"
+      },
+      {
+        "url": "https://github.com/jmg2027/Dynamic-Resolution-Lattice-Theory-/blob/fa0a8e1e12f7b75e78736179ce5c8ea1b6b0d174/lean/E213/Lib/Math/NumberSystems/Real213/Markov/ContinuantMarkov.lean",
+        "title": null,
+        "path": "lean/E213/Lib/Math/NumberSystems/Real213/Markov/ContinuantMarkov.lean"
+      },
+      {
+        "url": "https://github.com/rjwalters/lean-genius/blob/dc62f771ed5010abfdb04247dff6143e0e69d3e7/proofs/Proofs/ChineseRemainderNonCoprimeOQ02OQ01.lean",
+        "title": null,
+        "path": "proofs/Proofs/ChineseRemainderNonCoprimeOQ02OQ01.lean"
+      },
+      {
+        "url": "https://github.com/jmg2027/Dynamic-Resolution-Lattice-Theory-/blob/fa0a8e1e12f7b75e78736179ce5c8ea1b6b0d174/lean/E213/Lib/Math/NumberSystems/Real213/ContinuedFraction/Continuant.lean",
+        "title": null,
+        "path": "lean/E213/Lib/Math/NumberSystems/Real213/ContinuedFraction/Continuant.lean"
+      },
+      {
+        "url": "https://github.com/Theophilus1030/NeoMathlib/blob/a49fe074238f9c6b38e0c4b25c3fb93c80f605ee/Mathlib/LinearAlgebra/Dimension/Localization.lean",
+        "title": null,
+        "path": "Mathlib/LinearAlgebra/Dimension/Localization.lean"
+      },
+      {
+        "url": "https://github.com/bridgekat/numlib-auto/blob/d975de7c60a6d8c3ba872313068f3e9f810ceae6/Numlib/ODE/Multistep.lean",
+        "title": null,
+        "path": "Numlib/ODE/Multistep.lean"
+      },
+      {
+        "url": "https://github.com/AadamHaq/MA4N1-Theorem-Proving-with-Lean/blob/f15c3e43048c05ea0778ec81f1827a951236fc59/Project/Drafts/lusin_original.lean",
+        "title": null,
+        "path": "Project/Drafts/lusin_original.lean"
+      },
+      {
+        "url": "https://github.com/JobPetrovcic/mathlib-archive/blob/29dcec074de168ac2bf835a77ef68bbe069194c5/Mathlib/LinearAlgebra/Dimension/Localization.lean",
+        "title": null,
+        "path": "Mathlib/LinearAlgebra/Dimension/Localization.lean"
+      },
+      {
+        "url": "https://github.com/AndreiPiterbarg/sidon-autocorrelation/blob/1ed5889100617ee086db1ce3456b75c1f8e5f6be/lean/Sidon/MultiScale.lean",
+        "title": null,
+        "path": "lean/Sidon/MultiScale.lean"
+      },
+      {
+        "url": "https://github.com/shivensinha4/mathlib4/blob/c51c75fc5fb00ba7a4120082fed4050844e3fd18/Mathlib/LinearAlgebra/Dimension/Localization.lean",
+        "title": null,
+        "path": "Mathlib/LinearAlgebra/Dimension/Localization.lean"
+      },
+      {
+        "url": "https://github.com/FractalDevTeam/Principia-Fractalis/blob/a9868a7834aefb71410dae2a69b68160140cc724/PF_Lean4_Code/PF/NumberTheory/SmaleProblemsFrameworkAttack.lean",
+        "title": null,
+        "path": "PF_Lean4_Code/PF/NumberTheory/SmaleProblemsFrameworkAttack.lean"
+      },
+      {
+        "url": "https://github.com/nwsrnbr/mathlib4/blob/9cd52a35fa4de2c3644bb302c38848229d58c9a7/Mathlib/LinearAlgebra/Dimension/Localization.lean",
+        "title": null,
+        "path": "Mathlib/LinearAlgebra/Dimension/Localization.lean"
+      },
+      {
+        "url": "https://github.com/AndreiPiterbarg/sidon-autocorrelation/blob/1ed5889100617ee086db1ce3456b75c1f8e5f6be/archive/lean/Sidon/MultiScale.lean",
+        "title": null,
+        "path": "archive/lean/Sidon/MultiScale.lean"
+      }
+    ]
+  },
+  {
+    "response_file": "search-final-global-erdos939-lean.json",
+    "response_sha256": "0eee931718fff38df039282c7a4e752b4f0bb548cdc3cdc2e72eb77842fc05cc",
+    "total_count": 67,
+    "returned_count": 67,
+    "incomplete_results": false,
+    "items": [
+      {
+        "url": "https://github.com/google-deepmind/formal-conjectures/blob/40e7c98697de6f66b8cbdbf641749ab39ed9c152/FormalConjectures/ErdosProblems/939.lean",
+        "title": null,
+        "path": "FormalConjectures/ErdosProblems/939.lean"
+      },
+      {
+        "url": "https://github.com/daedalus/alphaproof-nexus/blob/4e65a6ca81655f090a3c8dcf9f56e4a38c984f4c/problems/erdos/939/Erdos939.lean",
+        "title": null,
+        "path": "problems/erdos/939/Erdos939.lean"
+      },
+      {
+        "url": "https://github.com/kavanaghpatrick/aristotle-math-problems/blob/2425339a625bf9e9edef22efee04471db6562bcb/archive/old-submissions/batch_dec14/erdos939_open.lean",
+        "title": null,
+        "path": "archive/old-submissions/batch_dec14/erdos939_open.lean"
+      },
+      {
+        "url": "https://github.com/kavanaghpatrick/aristotle-math-problems/blob/2425339a625bf9e9edef22efee04471db6562bcb/archive/old-submissions/batch_dec14_precise/erdos939_precise.lean",
+        "title": null,
+        "path": "archive/old-submissions/batch_dec14_precise/erdos939_precise.lean"
+      },
+      {
+        "url": "https://github.com/rjwalters/lean-genius/blob/dc62f771ed5010abfdb04247dff6143e0e69d3e7/proofs/Proofs/Erdos939Problem.lean",
+        "title": null,
+        "path": "proofs/Proofs/Erdos939Problem.lean"
+      },
+      {
+        "url": "https://github.com/kavanaghpatrick/aristotle-math-problems/blob/2425339a625bf9e9edef22efee04471db6562bcb/submissions/erdos939_boris.lean",
+        "title": null,
+        "path": "submissions/erdos939_boris.lean"
+      },
+      {
+        "url": "https://github.com/kavanaghpatrick/aristotle-math-problems/blob/2425339a625bf9e9edef22efee04471db6562bcb/archive/old-submissions/batch_dec14_precise/erdos939_v2.lean",
+        "title": null,
+        "path": "archive/old-submissions/batch_dec14_precise/erdos939_v2.lean"
+      },
+      {
+        "url": "https://github.com/MarceloClaro/OpenCode_Ecosystem/blob/5f83911ebb203d7070e973cff3de065170ea9cea/aletheia-superhuman-validation/raw_data/formal-conjectures/ErdosProblems/939.lean",
+        "title": null,
+        "path": "aletheia-superhuman-validation/raw_data/formal-conjectures/ErdosProblems/939.lean"
+      },
+      {
+        "url": "https://github.com/kavanaghpatrick/aristotle-math-problems/blob/2425339a625bf9e9edef22efee04471db6562bcb/submissions/erdos/tier6/erdos_939_erdos_939.lean",
+        "title": null,
+        "path": "submissions/erdos/tier6/erdos_939_erdos_939.lean"
+      },
+      {
+        "url": "https://github.com/kavanaghpatrick/aristotle-math-problems/blob/2425339a625bf9e9edef22efee04471db6562bcb/submissions/erdos/tier5/erdos_939_erdos_939.lean",
+        "title": null,
+        "path": "submissions/erdos/tier5/erdos_939_erdos_939.lean"
+      },
+      {
+        "url": "https://github.com/daedalus/alphaproof-nexus/blob/4e65a6ca81655f090a3c8dcf9f56e4a38c984f4c/problems/erdos/939/population/member_01_gen1_initial_stub.lean",
+        "title": null,
+        "path": "problems/erdos/939/population/member_01_gen1_initial_stub.lean"
+      },
+      {
+        "url": "https://github.com/kavanaghpatrick/aristotle-math-problems/blob/2425339a625bf9e9edef22efee04471db6562bcb/submissions/erdos/tier6/erdos_939_erdos_939_variants_eight.lean",
+        "title": null,
+        "path": "submissions/erdos/tier6/erdos_939_erdos_939_variants_eight.lean"
+      },
+      {
+        "url": "https://github.com/kavanaghpatrick/aristotle-math-problems/blob/2425339a625bf9e9edef22efee04471db6562bcb/submissions/erdos/tier6/erdos_939_erdos_939_variants_seven.lean",
+        "title": null,
+        "path": "submissions/erdos/tier6/erdos_939_erdos_939_variants_seven.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-seven/environment/data/checker/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-seven/environment/data/checker/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-euler/environment/data/checker/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-euler/environment/data/checker/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-eight/environment/data/checker/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-eight/environment/data/checker/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/kavanaghpatrick/aristotle-math-problems/blob/2425339a625bf9e9edef22efee04471db6562bcb/submissions/erdos/tier5/erdos_939_erdos_939_variants_infinite.lean",
+        "title": null,
+        "path": "submissions/erdos/tier5/erdos_939_erdos_939_variants_infinite.lean"
+      },
+      {
+        "url": "https://github.com/kavanaghpatrick/aristotle-math-problems/blob/2425339a625bf9e9edef22efee04471db6562bcb/submissions/erdos/tier6/erdos_939_erdos_939_variants_infinite.lean",
+        "title": null,
+        "path": "submissions/erdos/tier6/erdos_939_erdos_939_variants_infinite.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-examples/environment/data/checker/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-examples/environment/data/checker/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-triples-prove/environment/data/checker/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-triples-prove/environment/data/checker/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-triples-refute/environment/data/checker/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-triples-refute/environment/data/checker/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-infinite-prove/environment/data/checker/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-infinite-prove/environment/data/checker/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-seven/environment/data/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-seven/environment/data/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-euler/environment/data/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-euler/environment/data/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-eight/environment/data/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-eight/environment/data/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-erdos-939-prove/environment/data/checker/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-erdos-939-prove/environment/data/checker/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-infinite-refute/environment/data/checker/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-infinite-refute/environment/data/checker/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-erdos-939-refute/environment/data/checker/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-erdos-939-refute/environment/data/checker/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-examples/environment/data/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-examples/environment/data/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-triples-prove/environment/data/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-triples-prove/environment/data/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-infinite-prove/environment/data/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-infinite-prove/environment/data/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-triples-refute/environment/data/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-triples-refute/environment/data/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-infinite-refute/environment/data/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-infinite-refute/environment/data/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-erdos-939-prove/environment/data/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-erdos-939-prove/environment/data/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-erdos-939-refute/environment/data/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-erdos-939-refute/environment/data/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-eight/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-eight/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-euler/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-euler/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-seven/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-seven/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-examples/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-examples/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-triples-prove/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-triples-prove/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-infinite-prove/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-infinite-prove/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-triples-refute/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-triples-refute/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-infinite-refute/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-infinite-refute/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-erdos-939-prove/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-erdos-939-prove/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-erdos-939-refute/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-erdos-939-refute/environment/data/checker/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/rjwalters/lean-genius/blob/dc62f771ed5010abfdb04247dff6143e0e69d3e7/proofs/Proofs/AngleTrisectionOQ02OQ01OQ02Incomplete01Aristotle.lean",
+        "title": null,
+        "path": "proofs/Proofs/AngleTrisectionOQ02OQ01OQ02Incomplete01Aristotle.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-eight/tests/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-eight/tests/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-seven/tests/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-seven/tests/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-euler/tests/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-euler/tests/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-examples/tests/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-examples/tests/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-triples-prove/tests/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-triples-prove/tests/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-infinite-prove/tests/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-infinite-prove/tests/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-triples-refute/tests/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-triples-refute/tests/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-erdos-939-prove/tests/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-erdos-939-prove/tests/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-infinite-refute/tests/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-infinite-refute/tests/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-erdos-939-refute/tests/GoldenCheck.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-erdos-939-refute/tests/GoldenCheck.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-euler/tests/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-euler/tests/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-seven/tests/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-seven/tests/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-eight/tests/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-eight/tests/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-examples/tests/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-examples/tests/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-triples-prove/tests/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-triples-prove/tests/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-infinite-prove/tests/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-infinite-prove/tests/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-triples-refute/tests/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-triples-refute/tests/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-infinite-refute/tests/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-infinite-refute/tests/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-erdos-939-prove/tests/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-erdos-939-prove/tests/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/AllenGrahamHart/FormalConjectures-Bench/blob/0d031f7212150df788f4fa38c26cfc3fc729f3d0/tasks-v2/erdosproblems-939-erdos-939-refute/tests/golden_env/FormalConjecturesBench/Target.lean",
+        "title": null,
+        "path": "tasks-v2/erdosproblems-939-erdos-939-refute/tests/golden_env/FormalConjecturesBench/Target.lean"
+      },
+      {
+        "url": "https://github.com/Workofarttattoo/echo_prime/blob/e40c8505566b82914c6ad3cae80633ee1b2245b3/external/formal_conjectures/FormalConjectures/ErdosProblems/939.lean",
+        "title": null,
+        "path": "external/formal_conjectures/FormalConjectures/ErdosProblems/939.lean"
+      }
+    ]
+  },
+  {
+    "response_file": "search-final-global-noncube-lean.json",
+    "response_sha256": "a23910de1f6b507906bac7a2b6d4666fb391b4abf99a2bce44cfd163a79f7cf8",
+    "total_count": 47,
+    "returned_count": 47,
+    "incomplete_results": false,
+    "items": [
+      {
+        "url": "https://github.com/dcposch/jc2-lean/blob/b0b60f5292a49a30f982538411b79439cbcebb23/gcd3-69-noncube/Challenge.lean",
+        "title": null,
+        "path": "gcd3-69-noncube/Challenge.lean"
+      },
+      {
+        "url": "https://github.com/dcposch/jc2-lean/blob/b0b60f5292a49a30f982538411b79439cbcebb23/gcd3-69-noncube/Solution.lean",
+        "title": null,
+        "path": "gcd3-69-noncube/Solution.lean"
+      },
+      {
+        "url": "https://github.com/dcposch/jc2-lean/blob/b0b60f5292a49a30f982538411b79439cbcebb23/gcd3-69-noncube/SolutionSpeedTPart00Scratch.lean",
+        "title": null,
+        "path": "gcd3-69-noncube/SolutionSpeedTPart00Scratch.lean"
+      },
+      {
+        "url": "https://github.com/daira/CompElliptic/blob/2c0444035a84db957f27f06433715058d1e890ad/CompElliptic/Fields/Residue.lean",
+        "title": null,
+        "path": "CompElliptic/Fields/Residue.lean"
+      },
+      {
+        "url": "https://github.com/dcposch/jc2-lean/blob/b0b60f5292a49a30f982538411b79439cbcebb23/max11-package/Max11Assembly.lean",
+        "title": null,
+        "path": "max11-package/Max11Assembly.lean"
+      },
+      {
+        "url": "https://github.com/dcposch/jc2-lean/blob/b0b60f5292a49a30f982538411b79439cbcebb23/max11-partial-y/Max11Assembly.lean",
+        "title": null,
+        "path": "max11-partial-y/Max11Assembly.lean"
+      },
+      {
+        "url": "https://github.com/CheyLoveday/erdos-364-shifted-squares/blob/5094ae2a06268cfc3f2eb972956b276cdbebf566/Erdos364/Global/RootSplit.lean",
+        "title": null,
+        "path": "Erdos364/Global/RootSplit.lean"
+      },
+      {
+        "url": "https://github.com/dcposch/jc2-lean/blob/b0b60f5292a49a30f982538411b79439cbcebb23/gcd3-69-composition/GCD369DivisibleChallenge.lean",
+        "title": null,
+        "path": "gcd3-69-composition/GCD369DivisibleChallenge.lean"
+      },
+      {
+        "url": "https://github.com/dcposch/jc2-lean/blob/b0b60f5292a49a30f982538411b79439cbcebb23/max11-package/GCD369DivisibleSourceExclusion.lean",
+        "title": null,
+        "path": "max11-package/GCD369DivisibleSourceExclusion.lean"
+      },
+      {
+        "url": "https://github.com/dcposch/jc2-lean/blob/b0b60f5292a49a30f982538411b79439cbcebb23/gcd3-69-composition/GCD369DivisibleSourceExclusion.lean",
+        "title": null,
+        "path": "gcd3-69-composition/GCD369DivisibleSourceExclusion.lean"
+      },
+      {
+        "url": "https://github.com/dcposch/jc2-lean/blob/b0b60f5292a49a30f982538411b79439cbcebb23/max11-package/Max11Challenge.lean",
+        "title": null,
+        "path": "max11-package/Max11Challenge.lean"
+      },
+      {
+        "url": "https://github.com/dcposch/jc2-lean/blob/b0b60f5292a49a30f982538411b79439cbcebb23/max11-partial-y/Max11Challenge.lean",
+        "title": null,
+        "path": "max11-partial-y/Max11Challenge.lean"
+      },
+      {
+        "url": "https://github.com/dcposch/jc2-lean/blob/b0b60f5292a49a30f982538411b79439cbcebb23/max11-package/DegreeRoutes.lean",
+        "title": null,
+        "path": "max11-package/DegreeRoutes.lean"
+      },
+      {
+        "url": "https://github.com/dcposch/jc2-lean/blob/b0b60f5292a49a30f982538411b79439cbcebb23/max11-partial-y/DegreeRoutes.lean",
+        "title": null,
+        "path": "max11-partial-y/DegreeRoutes.lean"
+      },
+      {
+        "url": "https://github.com/daira/CompElliptic/blob/2c0444035a84db957f27f06433715058d1e890ad/CompElliptic/Hashing/PastaSSWU.lean",
+        "title": null,
+        "path": "CompElliptic/Hashing/PastaSSWU.lean"
+      },
+      {
+        "url": "https://github.com/dcposch/jc2-lean/blob/b0b60f5292a49a30f982538411b79439cbcebb23/max11-package/Solution.lean",
+        "title": null,
+        "path": "max11-package/Solution.lean"
+      },
+      {
+        "url": "https://github.com/dcposch/jc2-lean/blob/b0b60f5292a49a30f982538411b79439cbcebb23/gcd3-69-composition/Solution.lean",
+        "title": null,
+        "path": "gcd3-69-composition/Solution.lean"
+      },
+      {
+        "url": "https://github.com/sneakyweasel/btlab/blob/2443d07cca2cff14d94d1451248c25afffcd8038/formal/Problems/Juggler/Preimages.lean",
+        "title": null,
+        "path": "formal/Problems/Juggler/Preimages.lean"
+      },
+      {
+        "url": "https://github.com/CheyLoveday/erdos-364-shifted-squares/blob/5094ae2a06268cfc3f2eb972956b276cdbebf566/Erdos364/SquareMiddle/Sm2LowerSquareAllocation.lean",
+        "title": null,
+        "path": "Erdos364/SquareMiddle/Sm2LowerSquareAllocation.lean"
+      },
+      {
+        "url": "https://github.com/epoch-research/LeanOpenProblems-results/blob/fd09021e79869476ef83cda231312f1a2a89c8d7/runs/erdos-ultima-alpha-1000usd-t4aijzkukl7718bm-reruns/Erdos714.erdos_714/Submission/SidonFiberGluing.lean",
+        "title": null,
+        "path": "runs/erdos-ultima-alpha-1000usd-t4aijzkukl7718bm-reruns/Erdos714.erdos_714/Submission/SidonFiberGluing.lean"
+      },
+      {
+        "url": "https://github.com/royvanrijn/jacobian-research/blob/caf5685db1099cb90e608556d4b8d825734f29cb/research/archive/non-elliptic/formal/finite-etale-keller/FiniteEtaleKeller/FixedHasseArithmetic.lean",
+        "title": null,
+        "path": "research/archive/non-elliptic/formal/finite-etale-keller/FiniteEtaleKeller/FixedHasseArithmetic.lean"
+      },
+      {
+        "url": "https://github.com/epoch-research/LeanOpenProblems-results/blob/fd09021e79869476ef83cda231312f1a2a89c8d7/runs/erdos-ultima-alpha-1000usd-t4aijzkukl7718bm/Erdos713.erdos_713.parts.ii/Submission/C8ThirdPotential.lean",
+        "title": null,
+        "path": "runs/erdos-ultima-alpha-1000usd-t4aijzkukl7718bm/Erdos713.erdos_713.parts.ii/Submission/C8ThirdPotential.lean"
+      },
+      {
+        "url": "https://github.com/epoch-research/LeanOpenProblems-results/blob/fd09021e79869476ef83cda231312f1a2a89c8d7/runs/erdos-ultima-alpha-1000usd-t4aijzkukl7718bm-reruns/Erdos714.erdos_714/Submission/BinarySemilinearPencil.lean",
+        "title": null,
+        "path": "runs/erdos-ultima-alpha-1000usd-t4aijzkukl7718bm-reruns/Erdos714.erdos_714/Submission/BinarySemilinearPencil.lean"
+      },
+      {
+        "url": "https://github.com/emberian/dregg/blob/436c2a865a0a0e6b8222050ef27464750a0471d7/metatheory/Dregg2/Circuit/Emit/MinaFixtureEmit.lean",
+        "title": null,
+        "path": "metatheory/Dregg2/Circuit/Emit/MinaFixtureEmit.lean"
+      },
+      {
+        "url": "https://github.com/scottnarmstrong/CoarseGraining/blob/28ca42c02fd286c8f63a45be3344f6f82d026db3/Homogenization/Book/Ch05/Theorems/Section53/JUpperBoundWeakNorms/Product/Identity.lean",
+        "title": null,
+        "path": "Homogenization/Book/Ch05/Theorems/Section53/JUpperBoundWeakNorms/Product/Identity.lean"
+      },
+      {
+        "url": "https://github.com/scottnarmstrong/CoarseGraining/blob/28ca42c02fd286c8f63a45be3344f6f82d026db3/Homogenization/Book/Ch05/Theorems/Section53/JUpperBoundWeakNorms/CanonicalFields.lean",
+        "title": null,
+        "path": "Homogenization/Book/Ch05/Theorems/Section53/JUpperBoundWeakNorms/CanonicalFields.lean"
+      },
+      {
+        "url": "https://github.com/epoch-research/LeanOpenProblems-results/blob/fd09021e79869476ef83cda231312f1a2a89c8d7/runs/erdos-ultima-alpha-1000usd-t4aijzkukl7718bm-reruns/Erdos714.erdos_714/Submission/PureFourUpper.lean",
+        "title": null,
+        "path": "runs/erdos-ultima-alpha-1000usd-t4aijzkukl7718bm-reruns/Erdos714.erdos_714/Submission/PureFourUpper.lean"
+      },
+      {
+        "url": "https://github.com/scottnarmstrong/CoarseGraining/blob/28ca42c02fd286c8f63a45be3344f6f82d026db3/Homogenization/Sobolev/Foundations/CubeNeumannW22CZ/WeakInteriorDQ/NeumannInterior.lean",
+        "title": null,
+        "path": "Homogenization/Sobolev/Foundations/CubeNeumannW22CZ/WeakInteriorDQ/NeumannInterior.lean"
+      },
+      {
+        "url": "https://github.com/scottnarmstrong/CoarseGraining/blob/28ca42c02fd286c8f63a45be3344f6f82d026db3/Homogenization/Book/Ch05/Theorems/Section53/JUpperBoundWeakNorms/Additivity/Densities.lean",
+        "title": null,
+        "path": "Homogenization/Book/Ch05/Theorems/Section53/JUpperBoundWeakNorms/Additivity/Densities.lean"
+      },
+      {
+        "url": "https://github.com/scottnarmstrong/CoarseGraining/blob/28ca42c02fd286c8f63a45be3344f6f82d026db3/Homogenization/Book/Ch05/Theorems/Section53/JUpperBoundWeakNorms/Additivity/ParentRestriction.lean",
+        "title": null,
+        "path": "Homogenization/Book/Ch05/Theorems/Section53/JUpperBoundWeakNorms/Additivity/ParentRestriction.lean"
+      },
+      {
+        "url": "https://github.com/epoch-research/LeanOpenProblems-results/blob/fd09021e79869476ef83cda231312f1a2a89c8d7/runs/erdos-ultima-alpha-1000usd-t4aijzkukl7718bm-reruns/Erdos714.erdos_714/Submission/SL2KummerProjection.lean",
+        "title": null,
+        "path": "runs/erdos-ultima-alpha-1000usd-t4aijzkukl7718bm-reruns/Erdos714.erdos_714/Submission/SL2KummerProjection.lean"
+      },
+      {
+        "url": "https://github.com/epoch-research/LeanOpenProblems-results/blob/fd09021e79869476ef83cda231312f1a2a89c8d7/runs/erdos-ultima-alpha-1000usd-t4aijzkukl7718bm-reruns/Erdos714.erdos_714/Submission/RobustPureFour.lean",
+        "title": null,
+        "path": "runs/erdos-ultima-alpha-1000usd-t4aijzkukl7718bm-reruns/Erdos714.erdos_714/Submission/RobustPureFour.lean"
+      },
+      {
+        "url": "https://github.com/scottnarmstrong/CoarseGraining/blob/28ca42c02fd286c8f63a45be3344f6f82d026db3/Homogenization/Sobolev/Foundations/CubeNeumannW22CZ/WeakInterior.lean",
+        "title": null,
+        "path": "Homogenization/Sobolev/Foundations/CubeNeumannW22CZ/WeakInterior.lean"
+      },
+      {
+        "url": "https://github.com/scottnarmstrong/CoarseGraining/blob/28ca42c02fd286c8f63a45be3344f6f82d026db3/Homogenization/Book/Ch05/Theorems/Section53/JUpperBoundWeakNorms/EnergyDensities.lean",
+        "title": null,
+        "path": "Homogenization/Book/Ch05/Theorems/Section53/JUpperBoundWeakNorms/EnergyDensities.lean"
+      },
+      {
+        "url": "https://github.com/scottnarmstrong/Superdiffusion/blob/6d5b0c9bf43d7e2700d89b747292df64f865df82/Algsuperdiff/Section3/Provider/Besov/JBoundByBesov.lean",
+        "title": null,
+        "path": "Algsuperdiff/Section3/Provider/Besov/JBoundByBesov.lean"
+      },
+      {
+        "url": "https://github.com/scottnarmstrong/CoarseGraining/blob/28ca42c02fd286c8f63a45be3344f6f82d026db3/Homogenization/Book/Ch05/Theorems/Section53/WeakNormsMaximizer/EnergyDefect.lean",
+        "title": null,
+        "path": "Homogenization/Book/Ch05/Theorems/Section53/WeakNormsMaximizer/EnergyDefect.lean"
+      },
+      {
+        "url": "https://github.com/scottnarmstrong/Superdiffusion/blob/6d5b0c9bf43d7e2700d89b747292df64f865df82/Algsuperdiff/Section3/Provider/Besov/SmallScaleTail.lean",
+        "title": null,
+        "path": "Algsuperdiff/Section3/Provider/Besov/SmallScaleTail.lean"
+      },
+      {
+        "url": "https://github.com/scottnarmstrong/CoarseGraining/blob/28ca42c02fd286c8f63a45be3344f6f82d026db3/Homogenization/Sobolev/Foundations/CubeNeumannW22CZ/FoldedAndWeakScalar.lean",
+        "title": null,
+        "path": "Homogenization/Sobolev/Foundations/CubeNeumannW22CZ/FoldedAndWeakScalar.lean"
+      },
+      {
+        "url": "https://github.com/royvanrijn/jacobian-research/blob/caf5685db1099cb90e608556d4b8d825734f29cb/research/archive/non-elliptic/formal/finite-etale-keller/FiniteEtaleKeller/FixedHassePaperCertificate.lean",
+        "title": null,
+        "path": "research/archive/non-elliptic/formal/finite-etale-keller/FiniteEtaleKeller/FixedHassePaperCertificate.lean"
+      },
+      {
+        "url": "https://github.com/LFDT-Nightstream/Nightstream/blob/4696e82167218bdbca33bb1a3f93634907c62cab/formal/deprecated/opening-convergence-lean/OpeningConvergence/SuperNeoPhase1SumcheckBridgeInterface.lean",
+        "title": null,
+        "path": "formal/deprecated/opening-convergence-lean/OpeningConvergence/SuperNeoPhase1SumcheckBridgeInterface.lean"
+      },
+      {
+        "url": "https://github.com/royvanrijn/jacobian-research/blob/caf5685db1099cb90e608556d4b8d825734f29cb/research/archive/non-elliptic/formal/finite-etale-keller/FiniteEtaleKeller/FixedHasseLocal.lean",
+        "title": null,
+        "path": "research/archive/non-elliptic/formal/finite-etale-keller/FiniteEtaleKeller/FixedHasseLocal.lean"
+      },
+      {
+        "url": "https://github.com/scottnarmstrong/CoarseGraining/blob/28ca42c02fd286c8f63a45be3344f6f82d026db3/Homogenization/Book/Ch05/Theorems/Section53/JUpperBoundWeakNorms/Additivity/AnalyticInequalities.lean",
+        "title": null,
+        "path": "Homogenization/Book/Ch05/Theorems/Section53/JUpperBoundWeakNorms/Additivity/AnalyticInequalities.lean"
+      },
+      {
+        "url": "https://github.com/scottnarmstrong/CoarseGraining/blob/28ca42c02fd286c8f63a45be3344f6f82d026db3/Homogenization/Sobolev/Foundations/CubeNeumannW22CZ/VectorFieldAndApex/ReflectedEqCellSlab.lean",
+        "title": null,
+        "path": "Homogenization/Sobolev/Foundations/CubeNeumannW22CZ/VectorFieldAndApex/ReflectedEqCellSlab.lean"
+      },
+      {
+        "url": "https://github.com/royvanrijn/jacobian-research/blob/caf5685db1099cb90e608556d4b8d825734f29cb/research/archive/non-elliptic/formal/finite-etale-keller/FiniteEtaleKeller/FixedHasseHeight.lean",
+        "title": null,
+        "path": "research/archive/non-elliptic/formal/finite-etale-keller/FiniteEtaleKeller/FixedHasseHeight.lean"
+      },
+      {
+        "url": "https://github.com/royvanrijn/jacobian-research/blob/caf5685db1099cb90e608556d4b8d825734f29cb/research/archive/non-elliptic/formal/finite-etale-keller/FiniteEtaleKeller/FixedHasseMap.lean",
+        "title": null,
+        "path": "research/archive/non-elliptic/formal/finite-etale-keller/FiniteEtaleKeller/FixedHasseMap.lean"
+      },
+      {
+        "url": "https://github.com/alvovich/RNT-LIGHT/blob/db2a296f6ef853bbe250fe3136a0d1a35d7607ba/RNT/V2/Physics/StarCanaries.lean",
+        "title": null,
+        "path": "RNT/V2/Physics/StarCanaries.lean"
+      },
+      {
+        "url": "https://github.com/epoch-research/LeanOpenProblems-results/blob/fd09021e79869476ef83cda231312f1a2a89c8d7/runs/erdos-ultima-alpha-1000usd-t4aijzkukl7718bm/Erdos713.erdos_713.parts.ii/Submission/C8ThirdSquareGeneral.lean",
+        "title": null,
+        "path": "runs/erdos-ultima-alpha-1000usd-t4aijzkukl7718bm/Erdos713.erdos_713.parts.ii/Submission/C8ThirdSquareGeneral.lean"
+      }
+    ]
+  },
+  {
+    "response_file": "search-final-JSP-000780.json",
+    "response_sha256": "0ee47c60642f449cfc7a9ccd05a03f9caea4f5608d667bf1cb96483fd5d0ab68",
+    "total_count": 2,
+    "returned_count": 2,
+    "incomplete_results": false,
+    "items": [
+      {
+        "url": "https://github.com/TheJustinSunPrize/awards/pull/65",
+        "title": "JSP-000780: Lean formalization of infinitely many 3-powerful triples (Erdos 939)",
+        "path": null
+      },
+      {
+        "url": "https://github.com/TheJustinSunPrize/awards/pull/7",
+        "title": "docs: explain problem sources and restore catalog evidence links",
+        "path": null
+      }
+    ]
+  },
+  {
+    "response_file": "search-final-non-cube.json",
+    "response_sha256": "c9938edecb99d754b2d039ac9eec320a94c769b6a6417921e2dcbef9e2fe01a0",
+    "total_count": 0,
+    "returned_count": 0,
+    "incomplete_results": false,
+    "items": []
+  },
+  {
+    "response_file": "search-final-noncube-powerful.json",
+    "response_sha256": "bb0cdbb10eefad51ef44e405914d7917b360b7d1cccd936762b79d6c19762eee",
+    "total_count": 2,
+    "returned_count": 2,
+    "incomplete_results": false,
+    "items": [
+      {
+        "url": "https://github.com/CheyLoveday/erdos-364-shifted-squares/blob/5094ae2a06268cfc3f2eb972956b276cdbebf566/Erdos364/SquareMiddle/Sm2LowerSquareAllocation.lean",
+        "title": null,
+        "path": "Erdos364/SquareMiddle/Sm2LowerSquareAllocation.lean"
+      },
+      {
+        "url": "https://github.com/CheyLoveday/erdos-364-shifted-squares/blob/5094ae2a06268cfc3f2eb972956b276cdbebf566/Erdos364/Global/RootSplit.lean",
+        "title": null,
+        "path": "Erdos364/Global/RootSplit.lean"
+      }
+    ]
+  },
+  {
+    "response_file": "search-final-noncube.json",
+    "response_sha256": "2e677201eda4b711df70e5a00ccbd778c01846dcb40c212a2370ac6501655e75",
+    "total_count": 1,
+    "returned_count": 1,
+    "incomplete_results": false,
+    "items": [
+      {
+        "url": "https://github.com/TheJustinSunPrize/awards/pull/65",
+        "title": "JSP-000780: Lean formalization of infinitely many 3-powerful triples (Erdos 939)",
+        "path": null
+      }
+    ]
+  }
+]

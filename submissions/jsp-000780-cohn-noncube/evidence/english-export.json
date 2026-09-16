@@ -1,0 +1,35 @@
+{
+  "scope": "English documentation-only local public candidate; not published",
+  "source_package_sha256": "2689c03ce1ec6c5731ff78a5aec9ee469e0a69e89f7603111f4278e61f3db7b3",
+  "verification_run": "0dcac7b76bd84c479fe61297eefafbe1",
+  "checked_source_files_identical": {
+    "Audit.lean": "061c225334ab476d4b792394c9f43b37d21de19547d25123e8c1ccd49c06d7f4",
+    "CohnNoncube.lean": "e7391c04a02619a2203476055cae929a0214ec2519a7ad296f5c54664b21020f",
+    "lake-manifest.json": "11100b3a05cb7c68fffb6b2f4f2db5ad1eaed331721537e24d81054c3cbfaf56",
+    "lakefile.toml": "4f29c8f1318964b623a1c39c7cd3e0411819823219cb37eeeb0f348e0fee7529",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "Prize939.lean": "6059bca78e7b5cdc2ecd01c027206f220d4574c82d2347d8eb4ca19308c5a602",
+    "test_verify.py": "d430081affd506f920648795ce907ad8ac6054d36ddc7a1f6b1599ab95ec706c",
+    "verify.py": "4084dd79fd5680b3051cfe8efde8b87c7114c129194ec6a2751525806ecc79ab"
+  },
+  "translated_documents": {
+    "README.md": {
+      "original_sha256": "9c4dc700793beb1adbb62ba6a1f2e498984dab0832e75e3f2bdc7acd8e4b22c1",
+      "english_sha256": "dbe54e1330e73be21bc863412ed8dec44006b617c03cf201e1378fbec7f571c4"
+    },
+    "SCOPE_AND_PRIOR_ART.md": {
+      "original_sha256": "38f8e0a4baf26ba1b14658c9a5f7f9ac43189a77ae10e02a7fb81664c0e3fdbe",
+      "english_sha256": "ccfcc15ac1c1411d6bfb9345dbe0be4913ef3b19f7935e3ef6273d817c926ac8"
+    },
+    "REDACTION.md": {
+      "original_sha256": "4297c2dfb9f7a88992f6d94bd480dd919d5dc2f369a7fcb4da2dc4f0a97d45a8",
+      "english_sha256": "67271cba5d81743f356a21108160ee201b85ffd08313ca1e88b9e9cb887381d0"
+    }
+  },
+  "added_files": [
+    "PR_DRAFT.md",
+    "evidence/english-export.json"
+  ],
+  "new_lean_compilation": false,
+  "reason": "All checked source and configuration bytes are unchanged."
+}

@@ -1,0 +1,5 @@
+'Erdos939.triples_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos939.erdos_939.variants.triples' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
