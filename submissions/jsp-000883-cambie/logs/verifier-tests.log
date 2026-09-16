@@ -1,0 +1,15 @@
+# REDACTED PUBLIC COPY; this is not unmodified raw output.
+# Record role: verifier regression tests; no Lean compilation
+# Known environment paths were replaced; see logs/REDACTION.md.
+
+test_atomic_replace_uses_complete_sibling_and_preserves_old_on_failure (test_verify.VerificationRecordTests.test_atomic_replace_uses_complete_sibling_and_preserves_old_on_failure) ... ok
+test_command_launch_error_updates_final_and_command_records (test_verify.VerificationRecordTests.test_command_launch_error_updates_final_and_command_records) ... ok
+test_initialization_error_is_recorded_before_tool_discovery (test_verify.VerificationRecordTests.test_initialization_error_is_recorded_before_tool_discovery) ... ok
+test_missing_lake_replaces_old_pass_and_preserves_original_logs (test_verify.VerificationRecordTests.test_missing_lake_replaces_old_pass_and_preserves_original_logs) ... ok
+test_running_record_is_visible_before_command_completes (test_verify.VerificationRecordTests.test_running_record_is_visible_before_command_completes) ... ok
+test_timeout_is_a_new_failed_run_with_command_evidence (test_verify.VerificationRecordTests.test_timeout_is_a_new_failed_run_with_command_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.629s
+
+OK

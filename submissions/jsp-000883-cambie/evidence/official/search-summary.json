@@ -1,0 +1,81 @@
+{
+  "checked_at_utc": "2026-09-16T16:01:32.778Z",
+  "pr56_head": "40446d5328cd5b23d4f7ac0569931deca13b6bcd",
+  "searches": [
+    {
+      "query": "repo:TheJustinSunPrize/awards is:issue (1063 OR JSP-000883 OR Erdos1063 OR cambie_upper_bound) in:title,body,comments",
+      "url": "https://api.github.com/search/issues?q=repo%3ATheJustinSunPrize%2Fawards%20is%3Aissue%20(1063%20OR%20JSP-000883%20OR%20Erdos1063%20OR%20cambie_upper_bound)%20in%3Atitle%2Cbody%2Ccomments&per_page=100&page=1",
+      "total_count": 0,
+      "incomplete_results": false,
+      "per_page": 100,
+      "page": 1,
+      "items": []
+    },
+    {
+      "query": "repo:TheJustinSunPrize/awards is:pull-request (1063 OR JSP-000883 OR Erdos1063 OR cambie_upper_bound) in:title,body,comments",
+      "url": "https://api.github.com/search/issues?q=repo%3ATheJustinSunPrize%2Fawards%20is%3Apull-request%20(1063%20OR%20JSP-000883%20OR%20Erdos1063%20OR%20cambie_upper_bound)%20in%3Atitle%2Cbody%2Ccomments&per_page=100&page=1",
+      "total_count": 1,
+      "incomplete_results": false,
+      "per_page": 100,
+      "page": 1,
+      "items": [
+        {
+          "number": 56,
+          "title": "JSP-000883: formalize Monier’s factorial upper bound",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/56",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "query": "repo:TheJustinSunPrize/awards is:issue (Cambie OR lcm OR \"least common multiple\") in:title,body,comments",
+      "url": "https://api.github.com/search/issues?q=repo%3ATheJustinSunPrize%2Fawards%20is%3Aissue%20(Cambie%20OR%20lcm%20OR%20%22least%20common%20multiple%22)%20in%3Atitle%2Cbody%2Ccomments&per_page=100&page=1",
+      "total_count": 4,
+      "incomplete_results": false,
+      "per_page": 100,
+      "page": 1,
+      "items": [
+        {
+          "number": 22,
+          "title": "[Correction] Batch 1: register existing public Lean proof evidence",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/issues/22",
+          "state": "open"
+        },
+        {
+          "number": 44,
+          "title": "[Correction] Further verification evidence for existing Lean proofs (batch 2, part 2)",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/issues/44",
+          "state": "open"
+        },
+        {
+          "number": 24,
+          "title": "[Correction] Batch 4: register reproduced existing Lean proof evidence",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/issues/24",
+          "state": "open"
+        },
+        {
+          "number": 16,
+          "title": "[Correction] Verification evidence for eighteen existing Lean proofs (batch 2)",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/issues/16",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "query": "repo:TheJustinSunPrize/awards is:pull-request (Cambie OR lcm OR \"least common multiple\") in:title,body,comments",
+      "url": "https://api.github.com/search/issues?q=repo%3ATheJustinSunPrize%2Fawards%20is%3Apull-request%20(Cambie%20OR%20lcm%20OR%20%22least%20common%20multiple%22)%20in%3Atitle%2Cbody%2Ccomments&per_page=100&page=1",
+      "total_count": 1,
+      "incomplete_results": false,
+      "per_page": 100,
+      "page": 1,
+      "items": [
+        {
+          "number": 56,
+          "title": "JSP-000883: formalize Monier’s factorial upper bound",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/56",
+          "state": "open"
+        }
+      ]
+    }
+  ]
+}

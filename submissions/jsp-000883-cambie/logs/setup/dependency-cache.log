@@ -1,0 +1,202 @@
+# REDACTED PUBLIC COPY; this is not unmodified raw output.
+# Record role: original dependency setup attempt
+# Known environment paths were replaced; see logs/REDACTION.md.
+
+✔ [1/5] Built Cache.Cli (632ms)
+✔ [2/5] Built Cache.Lean (715ms)
+✔ [6/26] Built Cache.Cli:c.o (405ms)
+✔ [7/26] Built Cache.Lean:c.o (409ms)
+✔ [8/26] Built Cache.Infra (720ms)
+✔ [9/26] Built Cache.Infra:c.o (147ms)
+✔ [10/26] Built Batteries.Tactic.OpenPrivate (1.2s)
+✔ [11/26] Built Cache.IO (1.6s)
+✔ [12/26] Built Batteries.Tactic.OpenPrivate:c.o (1.5s)
+✔ [13/26] Built Cache.Hashing (1.3s)
+✔ [14/26] Built Cache.IO:c.o (1.3s)
+✔ [15/26] Built Cache.Requests (1.0s)
+✔ [16/26] Built Cache.Hashing:c.o (1.9s)
+✔ [17/26] Built Cache.Marker (1.3s)
+✔ [18/26] Built Cache.Requests:c.o (1.8s)
+✔ [19/26] Built Cache.Marker:c.o (1.2s)
+✔ [20/26] Built Cache.Query (1.2s)
+✔ [21/26] Built Cache.Query:c.o (1.1s)
+✔ [22/26] Built Cache.Warning (1.2s)
+✔ [23/26] Built Cache.Warning:c.o (1.4s)
+✔ [24/26] Built Cache.Main (1.4s)
+✔ [25/26] Built Cache.Main:c.o (508ms)
+✔ [26/26] Built cache:exe (1.1s)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Attempting to download 877 file(s) from leanprover-community/mathlib4 cache at https://lakecache.blob.core.windows.net/mathlib4-master
+
+Downloaded: 1 file(s) [attempted 1/877 = 0%, 12 KB/s], Decompressed: 0[K
+Downloaded: 3 file(s) [attempted 3/877 = 0%, 3 KB/s], Decompressed: 1[K
+Downloaded: 4 file(s) [attempted 4/877 = 0%, 33 KB/s], Decompressed: 3[K
+Downloaded: 7 file(s) [attempted 7/877 = 0%, 7 KB/s], Decompressed: 6[K
+Downloaded: 9 file(s) [attempted 9/877 = 1%, 5 KB/s], Decompressed: 8[K
+Downloaded: 10 file(s) [attempted 10/877 = 1%, 2 KB/s], Decompressed: 9[K
+Downloaded: 15 file(s) [attempted 15/877 = 1%, 7 KB/s], Decompressed: 10[K
+Downloaded: 20 file(s) [attempted 20/877 = 2%, 6 KB/s], Decompressed: 12[K
+Downloaded: 26 file(s) [attempted 26/877 = 2%, 33 KB/s], Decompressed: 25[K
+Downloaded: 28 file(s) [attempted 28/877 = 3%, 25 KB/s], Decompressed: 26[K
+Downloaded: 32 file(s) [attempted 32/877 = 3%, 36 KB/s], Decompressed: 28[K
+Downloaded: 35 file(s) [attempted 35/877 = 3%, 0 KB/s], Decompressed: 32[K
+Downloaded: 38 file(s) [attempted 38/877 = 4%, 68 KB/s], Decompressed: 37[K
+Downloaded: 43 file(s) [attempted 43/877 = 4%, 6 KB/s], Decompressed: 41[K
+Downloaded: 48 file(s) [attempted 48/877 = 5%, 28 KB/s], Decompressed: 43[K
+Downloaded: 54 file(s) [attempted 54/877 = 6%, 41 KB/s], Decompressed: 49[K
+Downloaded: 59 file(s) [attempted 59/877 = 6%, 41 KB/s], Decompressed: 56[K
+Downloaded: 67 file(s) [attempted 67/877 = 7%, 6 KB/s], Decompressed: 59[K
+Downloaded: 77 file(s) [attempted 77/877 = 8%, 83 KB/s], Decompressed: 71[K
+Downloaded: 84 file(s) [attempted 84/877 = 9%, 12 KB/s], Decompressed: 82[K
+Downloaded: 88 file(s) [attempted 88/877 = 10%, 82 KB/s], Decompressed: 84[K
+Downloaded: 97 file(s) [attempted 97/877 = 11%, 48 KB/s], Decompressed: 88[K
+Downloaded: 102 file(s) [attempted 102/877 = 11%, 65 KB/s], Decompressed: 100[K
+Downloaded: 106 file(s) [attempted 106/877 = 12%, 66 KB/s], Decompressed: 104[K
+Downloaded: 115 file(s) [attempted 115/877 = 13%, 92 KB/s], Decompressed: 113[K
+Downloaded: 119 file(s) [attempted 120/877 = 13%, 45 KB/s], Decompressed: 117, 1 download failed[K
+Downloaded: 128 file(s) [attempted 129/877 = 14%, 78 KB/s], Decompressed: 119, 1 download failed[K
+Downloaded: 133 file(s) [attempted 134/877 = 15%, 26 KB/s], Decompressed: 132, 1 download failed[K
+Downloaded: 136 file(s) [attempted 137/877 = 15%, 48 KB/s], Decompressed: 135, 1 download failed[K
+Downloaded: 142 file(s) [attempted 143/877 = 16%, 166 KB/s], Decompressed: 138, 1 download failed[K
+Downloaded: 148 file(s) [attempted 149/877 = 16%, 119 KB/s], Decompressed: 142, 1 download failed[K
+Downloaded: 154 file(s) [attempted 155/877 = 17%, 65 KB/s], Decompressed: 152, 1 download failed[K
+Downloaded: 159 file(s) [attempted 160/877 = 18%, 148 KB/s], Decompressed: 157, 1 download failed[K
+Downloaded: 162 file(s) [attempted 163/877 = 18%, 4 KB/s], Decompressed: 161, 1 download failed[K
+Downloaded: 164 file(s) [attempted 165/877 = 18%, 64 KB/s], Decompressed: 162, 1 download failed[K
+Downloaded: 169 file(s) [attempted 170/877 = 19%, 148 KB/s], Decompressed: 168, 1 download failed[K
+Downloaded: 175 file(s) [attempted 176/877 = 20%, 135 KB/s], Decompressed: 171, 1 download failed[K
+Downloaded: 182 file(s) [attempted 183/877 = 20%, 78 KB/s], Decompressed: 175, 1 download failed[K
+Downloaded: 189 file(s) [attempted 190/877 = 21%, 11 KB/s], Decompressed: 184, 1 download failed[K
+Downloaded: 193 file(s) [attempted 194/877 = 22%, 73 KB/s], Decompressed: 191, 1 download failed[K
+Downloaded: 200 file(s) [attempted 201/877 = 22%, 133 KB/s], Decompressed: 198, 1 download failed[K
+Downloaded: 207 file(s) [attempted 208/877 = 23%, 26 KB/s], Decompressed: 202, 1 download failed[K
+Downloaded: 214 file(s) [attempted 215/877 = 24%, 56 KB/s], Decompressed: 205, 1 download failed[K
+Downloaded: 220 file(s) [attempted 221/877 = 25%, 16 KB/s], Decompressed: 216, 1 download failed[K
+Downloaded: 225 file(s) [attempted 226/877 = 25%, 64 KB/s], Decompressed: 220, 1 download failed[K
+Downloaded: 234 file(s) [attempted 235/877 = 26%, 58 KB/s], Decompressed: 227, 1 download failed[K
+Downloaded: 238 file(s) [attempted 239/877 = 27%, 30 KB/s], Decompressed: 234, 1 download failed[K
+Downloaded: 241 file(s) [attempted 242/877 = 27%, 7 KB/s], Decompressed: 238, 1 download failed[K
+Downloaded: 245 file(s) [attempted 246/877 = 28%, 46 KB/s], Decompressed: 243, 1 download failed[K
+Downloaded: 255 file(s) [attempted 256/877 = 29%, 38 KB/s], Decompressed: 248, 1 download failed[K
+Downloaded: 264 file(s) [attempted 265/877 = 30%, 98 KB/s], Decompressed: 255, 1 download failed[K
+Downloaded: 270 file(s) [attempted 271/877 = 30%, 78 KB/s], Decompressed: 268, 1 download failed[K
+Downloaded: 280 file(s) [attempted 281/877 = 32%, 73 KB/s], Decompressed: 278, 1 download failed[K
+Downloaded: 285 file(s) [attempted 286/877 = 32%, 20 KB/s], Decompressed: 282, 1 download failed[K
+Downloaded: 289 file(s) [attempted 290/877 = 33%, 164 KB/s], Decompressed: 285, 1 download failed[K
+Downloaded: 296 file(s) [attempted 297/877 = 33%, 122 KB/s], Decompressed: 294, 1 download failed[K
+Downloaded: 298 file(s) [attempted 299/877 = 34%, 75 KB/s], Decompressed: 296, 1 download failed[K
+Downloaded: 305 file(s) [attempted 306/877 = 34%, 37 KB/s], Decompressed: 303, 1 download failed[K
+Downloaded: 309 file(s) [attempted 310/877 = 35%, 58 KB/s], Decompressed: 307, 1 download failed[K
+Downloaded: 316 file(s) [attempted 317/877 = 36%, 133 KB/s], Decompressed: 314, 1 download failed[K
+Downloaded: 323 file(s) [attempted 324/877 = 36%, 66 KB/s], Decompressed: 321, 1 download failed[K
+Downloaded: 327 file(s) [attempted 328/877 = 37%, 20 KB/s], Decompressed: 325, 1 download failed[K
+Downloaded: 336 file(s) [attempted 337/877 = 38%, 97 KB/s], Decompressed: 330, 1 download failed[K
+Downloaded: 341 file(s) [attempted 342/877 = 38%, 85 KB/s], Decompressed: 334, 1 download failed[K
+Downloaded: 345 file(s) [attempted 346/877 = 39%, 49 KB/s], Decompressed: 339, 1 download failed[K
+Downloaded: 354 file(s) [attempted 355/877 = 40%, 42 KB/s], Decompressed: 350, 1 download failed[K
+Downloaded: 364 file(s) [attempted 365/877 = 41%, 282 KB/s], Decompressed: 360, 1 download failed[K
+Downloaded: 366 file(s) [attempted 367/877 = 41%, 96 KB/s], Decompressed: 364, 1 download failed[K
+Downloaded: 371 file(s) [attempted 372/877 = 42%, 13 KB/s], Decompressed: 369, 1 download failed[K
+Downloaded: 382 file(s) [attempted 383/877 = 43%, 143 KB/s], Decompressed: 375, 1 download failed[K
+Downloaded: 391 file(s) [attempted 392/877 = 44%, 45 KB/s], Decompressed: 387, 1 download failed[K
+Downloaded: 400 file(s) [attempted 401/877 = 45%, 61 KB/s], Decompressed: 396, 1 download failed[K
+Downloaded: 402 file(s) [attempted 403/877 = 45%, 95 KB/s], Decompressed: 400, 1 download failed[K
+Downloaded: 409 file(s) [attempted 410/877 = 46%, 32 KB/s], Decompressed: 405, 1 download failed[K
+Downloaded: 420 file(s) [attempted 421/877 = 48%, 25 KB/s], Decompressed: 416, 1 download failed[K
+Downloaded: 429 file(s) [attempted 430/877 = 49%, 84 KB/s], Decompressed: 427, 1 download failed[K
+Downloaded: 436 file(s) [attempted 437/877 = 49%, 123 KB/s], Decompressed: 429, 1 download failed[K
+Downloaded: 445 file(s) [attempted 446/877 = 50%, 101 KB/s], Decompressed: 438, 1 download failed[K
+Downloaded: 452 file(s) [attempted 453/877 = 51%, 45 KB/s], Decompressed: 445, 1 download failed[K
+Downloaded: 459 file(s) [attempted 460/877 = 52%, 19 KB/s], Decompressed: 456, 1 download failed[K
+Downloaded: 465 file(s) [attempted 466/877 = 53%, 45 KB/s], Decompressed: 459, 1 download failed[K
+Downloaded: 472 file(s) [attempted 473/877 = 53%, 68 KB/s], Decompressed: 463, 1 download failed[K
+Downloaded: 477 file(s) [attempted 478/877 = 54%, 72 KB/s], Decompressed: 474, 1 download failed[K
+Downloaded: 483 file(s) [attempted 484/877 = 55%, 66 KB/s], Decompressed: 481, 1 download failed[K
+Downloaded: 490 file(s) [attempted 491/877 = 55%, 85 KB/s], Decompressed: 486, 1 download failed[K
+Downloaded: 497 file(s) [attempted 498/877 = 56%, 56 KB/s], Decompressed: 495, 1 download failed[K
+Downloaded: 501 file(s) [attempted 502/877 = 57%, 5 KB/s], Decompressed: 497, 1 download failed[K
+Downloaded: 508 file(s) [attempted 509/877 = 58%, 78 KB/s], Decompressed: 506, 1 download failed[K
+Downloaded: 510 file(s) [attempted 511/877 = 58%, 12 KB/s], Decompressed: 508, 1 download failed[K
+Downloaded: 517 file(s) [attempted 518/877 = 59%, 54 KB/s], Decompressed: 510, 1 download failed[K
+Downloaded: 526 file(s) [attempted 527/877 = 60%, 55 KB/s], Decompressed: 515, 1 download failed[K
+Downloaded: 535 file(s) [attempted 536/877 = 61%, 109 KB/s], Decompressed: 528, 1 download failed[K
+Downloaded: 540 file(s) [attempted 541/877 = 61%, 30 KB/s], Decompressed: 537, 1 download failed[K
+Downloaded: 542 file(s) [attempted 543/877 = 61%, 49 KB/s], Decompressed: 540, 1 download failed[K
+Downloaded: 546 file(s) [attempted 547/877 = 62%, 52 KB/s], Decompressed: 544, 1 download failed[K
+Downloaded: 552 file(s) [attempted 553/877 = 63%, 60 KB/s], Decompressed: 549, 1 download failed[K
+Downloaded: 553 file(s) [attempted 554/877 = 63%, 58 KB/s], Decompressed: 551, 1 download failed[K
+Downloaded: 560 file(s) [attempted 561/877 = 63%, 64 KB/s], Decompressed: 555, 1 download failed[K
+Downloaded: 564 file(s) [attempted 565/877 = 64%, 22 KB/s], Decompressed: 560, 1 download failed[K
+Downloaded: 569 file(s) [attempted 570/877 = 64%, 79 KB/s], Decompressed: 564, 1 download failed[K
+Downloaded: 573 file(s) [attempted 574/877 = 65%, 15 KB/s], Decompressed: 569, 1 download failed[K
+Downloaded: 578 file(s) [attempted 579/877 = 66%, 70 KB/s], Decompressed: 573, 1 download failed[K
+Downloaded: 580 file(s) [attempted 581/877 = 66%, 6 KB/s], Decompressed: 578, 1 download failed[K
+Downloaded: 587 file(s) [attempted 588/877 = 67%, 52 KB/s], Decompressed: 582, 1 download failed[K
+Downloaded: 594 file(s) [attempted 595/877 = 67%, 23 KB/s], Decompressed: 587, 1 download failed[K
+Downloaded: 600 file(s) [attempted 601/877 = 68%, 81 KB/s], Decompressed: 596, 1 download failed[K
+Downloaded: 607 file(s) [attempted 608/877 = 69%, 25 KB/s], Decompressed: 603, 1 download failed[K
+Downloaded: 612 file(s) [attempted 613/877 = 69%, 60 KB/s], Decompressed: 609, 1 download failed[K
+Downloaded: 618 file(s) [attempted 619/877 = 70%, 58 KB/s], Decompressed: 616, 1 download failed[K
+Downloaded: 627 file(s) [attempted 628/877 = 71%, 107 KB/s], Decompressed: 623, 1 download failed[K
+Downloaded: 636 file(s) [attempted 637/877 = 72%, 93 KB/s], Decompressed: 630, 1 download failed[K
+Downloaded: 641 file(s) [attempted 642/877 = 73%, 51 KB/s], Decompressed: 636, 1 download failed[K
+Downloaded: 648 file(s) [attempted 649/877 = 74%, 60 KB/s], Decompressed: 645, 1 download failed[K
+Downloaded: 654 file(s) [attempted 655/877 = 74%, 14 KB/s], Decompressed: 652, 1 download failed[K
+Downloaded: 659 file(s) [attempted 660/877 = 75%, 92 KB/s], Decompressed: 654, 1 download failed[K
+Downloaded: 663 file(s) [attempted 664/877 = 75%, 49 KB/s], Decompressed: 659, 1 download failed[K
+Downloaded: 670 file(s) [attempted 671/877 = 76%, 107 KB/s], Decompressed: 666, 1 download failed[K
+Downloaded: 675 file(s) [attempted 676/877 = 77%, 61 KB/s], Decompressed: 672, 1 download failed[K
+Downloaded: 681 file(s) [attempted 682/877 = 77%, 20 KB/s], Decompressed: 675, 1 download failed[K
+Downloaded: 686 file(s) [attempted 687/877 = 78%, 18 KB/s], Decompressed: 681, 1 download failed[K
+Downloaded: 690 file(s) [attempted 691/877 = 78%, 49 KB/s], Decompressed: 686, 1 download failed[K
+Downloaded: 699 file(s) [attempted 700/877 = 79%, 64 KB/s], Decompressed: 695, 1 download failed[K
+Downloaded: 706 file(s) [attempted 707/877 = 80%, 79 KB/s], Decompressed: 702, 1 download failed[K
+Downloaded: 713 file(s) [attempted 714/877 = 81%, 44 KB/s], Decompressed: 711, 1 download failed[K
+Downloaded: 717 file(s) [attempted 718/877 = 81%, 86 KB/s], Decompressed: 715, 1 download failed[K
+Downloaded: 726 file(s) [attempted 727/877 = 82%, 93 KB/s], Decompressed: 724, 1 download failed[K
+Downloaded: 733 file(s) [attempted 734/877 = 83%, 59 KB/s], Decompressed: 731, 1 download failed[K
+Downloaded: 738 file(s) [attempted 739/877 = 84%, 43 KB/s], Decompressed: 735, 1 download failed[K
+Downloaded: 742 file(s) [attempted 743/877 = 84%, 13 KB/s], Decompressed: 740, 1 download failed[K
+Downloaded: 749 file(s) [attempted 750/877 = 85%, 29 KB/s], Decompressed: 744, 1 download failed[K
+Downloaded: 753 file(s) [attempted 754/877 = 85%, 24 KB/s], Decompressed: 749, 1 download failed[K
+Downloaded: 760 file(s) [attempted 761/877 = 86%, 46 KB/s], Decompressed: 756, 1 download failed[K
+Downloaded: 769 file(s) [attempted 770/877 = 87%, 4 KB/s], Decompressed: 765, 1 download failed[K
+Downloaded: 776 file(s) [attempted 777/877 = 88%, 23 KB/s], Decompressed: 771, 1 download failed[K
+Downloaded: 780 file(s) [attempted 781/877 = 89%, 52 KB/s], Decompressed: 776, 1 download failed[K
+Downloaded: 787 file(s) [attempted 788/877 = 89%, 30 KB/s], Decompressed: 785, 1 download failed[K
+Downloaded: 789 file(s) [attempted 790/877 = 90%, 21 KB/s], Decompressed: 787, 1 download failed[K
+Downloaded: 798 file(s) [attempted 799/877 = 91%, 34 KB/s], Decompressed: 794, 1 download failed[K
+Downloaded: 805 file(s) [attempted 806/877 = 91%, 13 KB/s], Decompressed: 798, 1 download failed[K
+Downloaded: 812 file(s) [attempted 813/877 = 92%, 138 KB/s], Decompressed: 807, 1 download failed[K
+Downloaded: 819 file(s) [attempted 820/877 = 93%, 18 KB/s], Decompressed: 816, 1 download failed[K
+Downloaded: 825 file(s) [attempted 826/877 = 94%, 63 KB/s], Decompressed: 823, 1 download failed[K
+Downloaded: 834 file(s) [attempted 835/877 = 95%, 129 KB/s], Decompressed: 830, 1 download failed[K
+Downloaded: 841 file(s) [attempted 842/877 = 96%, 28 KB/s], Decompressed: 837, 1 download failed[K
+Downloaded: 848 file(s) [attempted 849/877 = 96%, 90 KB/s], Decompressed: 846, 1 download failed[K
+Downloaded: 852 file(s) [attempted 853/877 = 97%, 71 KB/s], Decompressed: 850, 1 download failed[K
+Downloaded: 857 file(s) [attempted 858/877 = 97%, 37 KB/s], Decompressed: 852, 1 download failed[K
+Downloaded: 861 file(s) [attempted 862/877 = 98%, 80 KB/s], Decompressed: 859, 1 download failed[K
+Downloaded: 864 file(s) [attempted 865/877 = 98%, 38 KB/s], Decompressed: 861, 1 download failed[K
+Downloaded: 866 file(s) [attempted 867/877 = 98%, 29 KB/s], Decompressed: 864, 1 download failed[K
+Downloaded: 868 file(s) [attempted 869/877 = 99%, 24 KB/s], Decompressed: 866, 1 download failed[K
+Downloaded: 870 file(s) [attempted 871/877 = 99%, 35 KB/s], Decompressed: 868, 1 download failed[K
+Downloaded: 873 file(s) [attempted 874/877 = 99%, 46 KB/s], Decompressed: 870, 1 download failed[K
+Downloaded: 875 file(s) [attempted 876/877 = 99%, 94 KB/s], Decompressed: 873, 1 download failed[K
+Downloaded: 876 file(s) [attempted 877/877 = 100%, 94 KB/s], Decompressed: 873, 1 download failed[K
+<WORKSPACE>\work\mathlib-cache\4af6fb9b553e9db7.ltar.part: Transfer failed (error code: 0): schannel: failed to receive handshake, SSL/TLS connection failed
+Attempting to download 1 file(s) from leanprover-community/mathlib4 cache at https://lakecache.blob.core.windows.net/mathlib4
+
+Downloaded: 0 file(s) [attempted 1/1 = 100%, 0 KB/s], Decompressed: 873[K
+Downloaded: 0 file(s) [attempted 1/1 = 100%, 0 KB/s], Decompressed: 873[K
+Warning: some files were not found in the cache.
+This usually means that your local checkout of mathlib4 has diverged from upstream.
+
+  * If you push your commits to a PR to the mathlib4 repository
+    (use a draft PR if it is not ready for review),
+    then CI will build the oleans and they will be available later.
+  * If you have already opened a PR, this may mean
+    the CI build has failed part-way through building.
+Decompressed 876 file(s)
+1 download(s) failed
+Downloading 1 files failed

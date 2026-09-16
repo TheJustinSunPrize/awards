@@ -1,0 +1,16 @@
+This project formalizes a known mathematical upper bound due to Stijn Cambie.
+No new mathematical bound or solution of the full Erdős 1063 problem is claimed.
+
+Statement.lean reproduces the definition Erdos1063.n from:
+Copyright 2026 The Formal Conjectures Authors.
+https://github.com/google-deepmind/formal-conjectures/blob/40e7c98697de6f66b8cbdbf641749ab39ed9c152/FormalConjectures/ErdosProblems/1063.lean
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+The copied definition is separated from its original file and imported through
+the minimal Mathlib modules; none of the original unproved theorems are imported.
+
+Cambie.lean and the local audit/verification files were written for this project
+with Codex assistance. They do not reuse the Monier proof from awards PR #56.
+Project code is distributed under the Apache License, Version 2.0.
+Applicant identity and any public submission attribution remain for the user.
+
+Mathlib and its transitive dependencies retain their own licenses and authorship.

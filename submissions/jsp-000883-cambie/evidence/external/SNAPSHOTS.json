@@ -1,0 +1,406 @@
+[
+  {
+    "repository": "google-deepmind/formal-conjectures",
+    "url": "https://github.com/google-deepmind/formal-conjectures",
+    "branch": "main",
+    "commit": "40e7c98697de6f66b8cbdbf641749ab39ed9c152",
+    "commit_date": "2026-09-16T08:15:01Z",
+    "tree_sha": "b6d59e9e1b2671ebcfeed4b9dbb8761dcf3e1873",
+    "api_license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "tree_truncated": false,
+    "tree_entries": 1739,
+    "relevant_paths": [
+      {
+        "path": "FormalConjectures/ErdosProblems/1063.lean",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bda13fc03989bb240293a164c7d70c75dfcc86f9",
+        "size": 5168,
+        "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/git/blobs/bda13fc03989bb240293a164c7d70c75dfcc86f9"
+      },
+      {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "size": 11358,
+        "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+      }
+    ],
+    "checked_at_utc": "2026-09-16T16:02:19Z"
+  },
+  {
+    "repository": "plby/lean-proofs",
+    "url": "https://github.com/plby/lean-proofs",
+    "branch": "main",
+    "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+    "commit_date": "2026-09-15T20:59:44Z",
+    "tree_sha": "58dcfe3878b60e662aa813bd6f41f865e476fc06",
+    "api_license": null,
+    "tree_truncated": false,
+    "tree_entries": 46486,
+    "relevant_paths": [
+      {
+        "path": "src/latest/ErdosProblems/Erdos1/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "size": 11357,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos1002/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7f750c77ac1763bf9c6991d5c6df06734b3337d3",
+        "size": 1070,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/7f750c77ac1763bf9c6991d5c6df06734b3337d3"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos1038/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7f750c77ac1763bf9c6991d5c6df06734b3337d3",
+        "size": 1070,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/7f750c77ac1763bf9c6991d5c6df06734b3337d3"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos1112/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c8328cf077f1e8f8cf27ee7bd70b9051d0325023",
+        "size": 11340,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/c8328cf077f1e8f8cf27ee7bd70b9051d0325023"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos1134/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4de78fa8d7c7fe37a7a6446426a8c83a4f4b61db",
+        "size": 1068,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/4de78fa8d7c7fe37a7a6446426a8c83a4f4b61db"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos1177/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "size": 11358,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos146/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "size": 11357,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos180/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "size": 11357,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos183/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "size": 11357,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos260/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9b9f36dc7ff3ce5d60aebfa3740ca5f901f29ebe",
+        "size": 1065,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/9b9f36dc7ff3ce5d60aebfa3740ca5f901f29ebe"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos327/External/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8dada3edaf50dbc082c9a125058f25def75e625a",
+        "size": 11357,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/8dada3edaf50dbc082c9a125058f25def75e625a"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos486/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7f750c77ac1763bf9c6991d5c6df06734b3337d3",
+        "size": 1070,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/7f750c77ac1763bf9c6991d5c6df06734b3337d3"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos501/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "size": 11357,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos520/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "size": 11357,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos593/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "10fabd90118f7ce38bb2e4753e105e744442a429",
+        "size": 18658,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/10fabd90118f7ce38bb2e4753e105e744442a429"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos608/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "size": 11358,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos730/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0ae26471c376abf9661206490a47146681e847ef",
+        "size": 1067,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/0ae26471c376abf9661206490a47146681e847ef"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos768/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "size": 11358,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos788/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7f750c77ac1763bf9c6991d5c6df06734b3337d3",
+        "size": 1070,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/7f750c77ac1763bf9c6991d5c6df06734b3337d3"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos796/External/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "size": 11357,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos796/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8dada3edaf50dbc082c9a125058f25def75e625a",
+        "size": 11357,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/8dada3edaf50dbc082c9a125058f25def75e625a"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos865/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "size": 11357,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos884/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "size": 11358,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      {
+        "path": "src/latest/ErdosProblems/Erdos927/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "size": 11357,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+      },
+      {
+        "path": "src/latest/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "28334966307b373f23c1e929e128c84c5980066e",
+        "size": 202,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/28334966307b373f23c1e929e128c84c5980066e"
+      },
+      {
+        "path": "src/latest/Util/IncidenceGeometry/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bba6ec2f4ae7653b08bb1ee7e0add59c2cb9f7f5",
+        "size": 11343,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/bba6ec2f4ae7653b08bb1ee7e0add59c2cb9f7f5"
+      },
+      {
+        "path": "src/latest/Wikipedia/NoExoticSixSphere/Topology/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8dada3edaf50dbc082c9a125058f25def75e625a",
+        "size": 11357,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/8dada3edaf50dbc082c9a125058f25def75e625a"
+      },
+      {
+        "path": "src/v4.29.1/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "28334966307b373f23c1e929e128c84c5980066e",
+        "size": 202,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/28334966307b373f23c1e929e128c84c5980066e"
+      },
+      {
+        "path": "src/v4.30.0/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "28334966307b373f23c1e929e128c84c5980066e",
+        "size": 202,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/28334966307b373f23c1e929e128c84c5980066e"
+      },
+      {
+        "path": "src/v4.32.0/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "28334966307b373f23c1e929e128c84c5980066e",
+        "size": 202,
+        "url": "https://api.github.com/repos/plby/lean-proofs/git/blobs/28334966307b373f23c1e929e128c84c5980066e"
+      }
+    ],
+    "checked_at_utc": "2026-09-16T16:02:19Z"
+  },
+  {
+    "repository": "Paul-Lez/fc100",
+    "url": "https://github.com/Paul-Lez/fc100",
+    "branch": "main",
+    "commit": "4b48458754b42299b09af16590db56abe9ace268",
+    "commit_date": "2026-08-01T12:28:50Z",
+    "tree_sha": "afbc9819c68dc99b363863eaf79eea206c9e1dfa",
+    "api_license": null,
+    "tree_truncated": false,
+    "tree_entries": 211,
+    "relevant_paths": [
+      {
+        "path": "FC100Solved/ErdosProblems/1063.lean",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3f8e08b199f550cc8d2aca59eb422ed58d85005c",
+        "size": 3086,
+        "url": "https://api.github.com/repos/Paul-Lez/fc100/git/blobs/3f8e08b199f550cc8d2aca59eb422ed58d85005c"
+      }
+    ],
+    "checked_at_utc": "2026-09-16T16:02:19Z"
+  },
+  {
+    "repository": "rjwalters/lean-genius",
+    "url": "https://github.com/rjwalters/lean-genius",
+    "branch": "main",
+    "commit": "dc62f771ed5010abfdb04247dff6143e0e69d3e7",
+    "commit_date": "2026-09-09T02:30:28Z",
+    "tree_sha": "cdd7052250f9e7b8c0cb695fb047e81662c70b74",
+    "api_license": null,
+    "tree_truncated": false,
+    "tree_entries": 39168,
+    "relevant_paths": [
+      {
+        "path": "proofs/Proofs/Erdos1063Problem.lean",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6e7b9578cea95cedd938fb573288db208b99c3d8",
+        "size": 5936,
+        "url": "https://api.github.com/repos/rjwalters/lean-genius/git/blobs/6e7b9578cea95cedd938fb573288db208b99c3d8"
+      },
+      {
+        "path": "research/problems/erdos-1063",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "573503ce78fc5c04eb8037a2b00881e8b740add8",
+        "url": "https://api.github.com/repos/rjwalters/lean-genius/git/trees/573503ce78fc5c04eb8037a2b00881e8b740add8"
+      },
+      {
+        "path": "research/problems/erdos-1063/knowledge.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "170067f7b397c3ea2c739ebb084cb940cafd6e55",
+        "size": 3507,
+        "url": "https://api.github.com/repos/rjwalters/lean-genius/git/blobs/170067f7b397c3ea2c739ebb084cb940cafd6e55"
+      },
+      {
+        "path": "research/problems/erdos-1063/problem.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9b979fd9fc57759279d81d026ed8a267b3f027c2",
+        "size": 2454,
+        "url": "https://api.github.com/repos/rjwalters/lean-genius/git/blobs/9b979fd9fc57759279d81d026ed8a267b3f027c2"
+      },
+      {
+        "path": "research/problems/erdos-1063/state.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6bad4e08fe590566a2cedc384f46e37e60feeecc",
+        "size": 1662,
+        "url": "https://api.github.com/repos/rjwalters/lean-genius/git/blobs/6bad4e08fe590566a2cedc384f46e37e60feeecc"
+      },
+      {
+        "path": "src/data/proofs/erdos-1063",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "d32551536e577aca1b4e58287321a23473d8acf6",
+        "url": "https://api.github.com/repos/rjwalters/lean-genius/git/trees/d32551536e577aca1b4e58287321a23473d8acf6"
+      },
+      {
+        "path": "src/data/proofs/erdos-1063/annotations.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4bc5a2ae5706aeb592f882286209fb06b5665583",
+        "size": 11558,
+        "url": "https://api.github.com/repos/rjwalters/lean-genius/git/blobs/4bc5a2ae5706aeb592f882286209fb06b5665583"
+      },
+      {
+        "path": "src/data/proofs/erdos-1063/meta.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ece6c8d2205907b2f2e859adb5b929e3240da896",
+        "size": 19995,
+        "url": "https://api.github.com/repos/rjwalters/lean-genius/git/blobs/ece6c8d2205907b2f2e859adb5b929e3240da896"
+      },
+      {
+        "path": "src/data/research/problems/erdos-1063-oq-01.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "48baeb10acf8a04f9b4a5cf9b4513f1336ee34cb",
+        "size": 2766,
+        "url": "https://api.github.com/repos/rjwalters/lean-genius/git/blobs/48baeb10acf8a04f9b4a5cf9b4513f1336ee34cb"
+      },
+      {
+        "path": "src/data/research/problems/erdos-1063.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d9760f2e0aefb4ba7d5420bfeb96294337166033",
+        "size": 7252,
+        "url": "https://api.github.com/repos/rjwalters/lean-genius/git/blobs/d9760f2e0aefb4ba7d5420bfeb96294337166033"
+      }
+    ],
+    "checked_at_utc": "2026-09-16T16:02:19Z"
+  }
+]
