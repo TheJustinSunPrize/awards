@@ -1,0 +1,10 @@
+id: "STMT-jsp-000248-f03-prime-power-v1-v1"
+problem: "JSP-000248"
+statement_en: "Which positive integers can be the largest denominator in a representation of one by distinct unit fractions?"
+formal:
+  declaration: "JSP000248.prime_power_not_largest"
+  file: "Statement.lean"
+  sha256: "69fba5a9655f63e5274c13f2dd71bf51098018b2f92f07dbe1e7e5566ff06d73"
+source:
+  url: ""
+  attribution_en: "Original solver and publication credit as recorded in the JSP catalog."

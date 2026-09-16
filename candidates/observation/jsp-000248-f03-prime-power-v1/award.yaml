@@ -1,0 +1,23 @@
+id: jsp-000248-f03-prime-power-v1
+batch: null
+problem:
+  source: https://github.com/TheJustinSunPrize/awards
+  number: "JSP-000248"
+  title_en: "Which positive integers can be the largest denominator in a representation of one by distinct unit fractions?"
+  posed:
+    year: 2021
+    basis: stated
+    citation: ""
+  resolved:
+    year: 2021
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
