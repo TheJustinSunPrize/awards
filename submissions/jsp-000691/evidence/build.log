@@ -1,0 +1,5 @@
+ℹ [1539/1540] Built Prize835 (5.9s)
+info: Prize835.lean:254:0: 'Erdos835.property_successor_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Prize835.lean:255:0: 'Erdos835.not_property_of_composite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Prize835.lean:256:0: 'Erdos835.not_property_fourteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1540 jobs).

@@ -1,0 +1,3 @@
+'Erdos835.property_successor_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos835.not_property_of_composite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos835.not_property_fourteen' depends on axioms: [propext, Classical.choice, Quot.sound]

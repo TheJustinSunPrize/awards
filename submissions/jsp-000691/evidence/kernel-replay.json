@@ -1,0 +1,10 @@
+{
+  "command": "lake env leanchecker --verbose --fresh Prize835",
+  "exit_code": 0,
+  "source_sha256": "89214d1de52fff8c5d8ffbbcc13df125a51510859ba992a14c731d5f5530f1e0",
+  "log_sha256": "2701f49aa570d61378f7ed215bb15037ed58348ced5c919eba507bb39772e1f5",
+  "scope": "Replay imported and local declarations in a fresh Lean kernel environment",
+  "checker": "bundled Lean kernel, not an independently implemented checker",
+  "toolchain": "leanprover/lean4:v4.28.0",
+  "platform": "macOS arm64"
+}
