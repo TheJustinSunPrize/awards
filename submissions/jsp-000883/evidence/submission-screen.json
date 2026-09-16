@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-09-16T12:49:52.717559+00:00",
+  "repository": "TheJustinSunPrize/awards",
+  "endpoint": "issues?state=all&per_page=100",
+  "records": 55,
+  "newest_number": 55,
+  "matches": [],
+  "scope": "issue/PR titles and bodies, not every review comment",
+  "priority_established": false
+}
