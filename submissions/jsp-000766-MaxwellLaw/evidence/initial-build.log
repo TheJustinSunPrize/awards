@@ -1,0 +1,4 @@
+✔ [8706/8707] Built Jsp000766.Compactness (6.5s)
+ℹ [8707/8707] Built ErdosProblems.Erdos922 (120s)
+info: ErdosProblems/Erdos922.lean:5605:0: 'Erdos922.erdos_922' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8707 jobs).

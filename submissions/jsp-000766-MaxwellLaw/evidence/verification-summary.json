@@ -1,0 +1,122 @@
+{
+  "completed_utc": "2026-09-16T16:59:06.024498+00:00",
+  "platform": "Darwin 25.4.0 arm64",
+  "lean": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "replayed_module_count": 4,
+  "replayed_declaration_count": 633,
+  "axioms": {
+    "Jsp000766.colorable_of_finite_induced": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Jsp000766.local_independence_induce": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos922.erdos_922": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Jsp000766.erdos_922_colorable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Jsp000766.erdos_922": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Jsp000766.finite_subgraphs_iff_finsets": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Jsp000766.erdos_922_of_finite_subgraphs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "commands": [
+    {
+      "stage": "sources",
+      "command": [
+        "python3",
+        "fetch_source.py"
+      ],
+      "started_utc": "2026-09-16T16:55:50.430210+00:00",
+      "duration_seconds": 0.072,
+      "exit_code": 0
+    },
+    {
+      "stage": "toolchain",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "started_utc": "2026-09-16T16:55:50.502924+00:00",
+      "duration_seconds": 4.941,
+      "exit_code": 0
+    },
+    {
+      "stage": "build",
+      "command": [
+        "lake",
+        "build"
+      ],
+      "started_utc": "2026-09-16T16:55:55.444550+00:00",
+      "duration_seconds": 13.515,
+      "exit_code": 0
+    },
+    {
+      "stage": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "started_utc": "2026-09-16T16:56:08.960676+00:00",
+      "duration_seconds": 115.614,
+      "exit_code": 0
+    },
+    {
+      "stage": "replay",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "ReplayBatch.lean",
+        "ErdosProblems.Erdos922",
+        "Jsp000766.Compactness",
+        "Jsp000766.General",
+        "Jsp000766"
+      ],
+      "started_utc": "2026-09-16T16:58:04.575408+00:00",
+      "duration_seconds": 61.441,
+      "exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "Audit.lean": "9ffb9eac8f6f2368f58f9599d4d12b13172e6ace9d5670ec82982f3f8ccde659",
+    "ErdosProblems/Erdos922.lean": "0bc22004ecbe76ab3cc3f263c29c76994b39017828ea835d987139fa324b9971",
+    "Jsp000766/Compactness.lean": "1a7948ca36223103261af1f0d38476e25d721b992a23c4da5c3c147494a4b878",
+    "Jsp000766/General.lean": "dd775e8a7dea4d4cca1bff86ae14e19281857cb8f1609b7ac74f192c2dcc309c",
+    "Jsp000766.lean": "a72b446625b93476ea81243af82bde9c50a005a194cdc4ff64e6942ad54a0d6c",
+    "ReplayBatch.lean": "0ff295a3780e93a6ccd0142d4de9c438a996b162021c79d762d30f22204e3e82",
+    "fetch_source.py": "da2aeb97b56bd71a8c3f9d2ac056bce4a1f9e25cfe1b0dc77063fef4f1fe3485",
+    "lake-manifest.json": "fc400d7c23a94a22565aaad6c7a9ec6dea7cb56d951729d0893d0b1356db3440",
+    "lakefile.toml": "2fd1d6713602c2c9bf400d7bf817d719413ba6f73e4acf4c2fcb9fc91092d813",
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "source-manifest.json": "80dc0e882b4f6a7939cf4a2b9283dc9e5efd08f276f9280eb94f090fd01bd409",
+    "verify.py": "af2f99bf82bbf7838137279c825fa8d044bfd3cddf33a6fc50f44fbb377c3159"
+  },
+  "scope": "The pinned external finite proof and submitted mathematical modules compiled from source; all custom declarations replayed into a Mathlib-only environment using the same Lean kernel; official dependency caches used; not a full fresh replay of Mathlib or an independently implemented verifier."
+}

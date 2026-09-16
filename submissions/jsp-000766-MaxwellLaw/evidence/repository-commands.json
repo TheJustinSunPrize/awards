@@ -1,0 +1,74 @@
+[
+  {
+    "stage": "awards-tests",
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "started_utc": "2026-09-16T16:53:14.454147+00:00",
+    "duration_seconds": 2.533,
+    "exit_code": 0
+  },
+  {
+    "stage": "awards-validate",
+    "command": [
+      ".venv/bin/python",
+      "scripts/manage.py",
+      "validate"
+    ],
+    "started_utc": "2026-09-16T16:53:16.988338+00:00",
+    "duration_seconds": 0.139,
+    "exit_code": 0
+  },
+  {
+    "stage": "awards-build",
+    "command": [
+      ".venv/bin/python",
+      "scripts/manage.py",
+      "build"
+    ],
+    "started_utc": "2026-09-16T16:53:17.127323+00:00",
+    "duration_seconds": 0.141,
+    "exit_code": 0
+  },
+  {
+    "stage": "awards-check",
+    "command": [
+      ".venv/bin/python",
+      "scripts/manage.py",
+      "check"
+    ],
+    "started_utc": "2026-09-16T16:53:17.268300+00:00",
+    "duration_seconds": 0.122,
+    "exit_code": 0
+  },
+  {
+    "stage": "awards-history",
+    "command": [
+      ".venv/bin/python",
+      "scripts/manage.py",
+      "history",
+      "--base",
+      "f4e7173d89dfe91022a185427d63452c8ffbf6ae"
+    ],
+    "started_utc": "2026-09-16T16:53:17.390226+00:00",
+    "duration_seconds": 0.139,
+    "exit_code": 0
+  },
+  {
+    "stage": "awards-links",
+    "command": [
+      ".venv/bin/python",
+      "scripts/manage.py",
+      "links"
+    ],
+    "started_utc": "2026-09-16T17:00:55.850789+00:00",
+    "duration_seconds": 0.768,
+    "exit_code": 0
+  }
+]

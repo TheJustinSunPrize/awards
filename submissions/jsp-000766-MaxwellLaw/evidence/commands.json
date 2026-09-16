@@ -1,0 +1,63 @@
+[
+  {
+    "stage": "sources",
+    "command": [
+      "python3",
+      "fetch_source.py"
+    ],
+    "started_utc": "2026-09-16T16:55:50.430210+00:00",
+    "duration_seconds": 0.072,
+    "exit_code": 0
+  },
+  {
+    "stage": "toolchain",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "started_utc": "2026-09-16T16:55:50.502924+00:00",
+    "duration_seconds": 4.941,
+    "exit_code": 0
+  },
+  {
+    "stage": "build",
+    "command": [
+      "lake",
+      "build"
+    ],
+    "started_utc": "2026-09-16T16:55:55.444550+00:00",
+    "duration_seconds": 13.515,
+    "exit_code": 0
+  },
+  {
+    "stage": "axioms",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "Audit.lean"
+    ],
+    "started_utc": "2026-09-16T16:56:08.960676+00:00",
+    "duration_seconds": 115.614,
+    "exit_code": 0
+  },
+  {
+    "stage": "replay",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--run",
+      "ReplayBatch.lean",
+      "ErdosProblems.Erdos922",
+      "Jsp000766.Compactness",
+      "Jsp000766.General",
+      "Jsp000766"
+    ],
+    "started_utc": "2026-09-16T16:58:04.575408+00:00",
+    "duration_seconds": 61.441,
+    "exit_code": 0
+  }
+]
