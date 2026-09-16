@@ -1,0 +1,716 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-09-16T11:55:52.902250+00:00",
+  "lean_version": "4.34.0",
+  "lean_commit": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+  "mathlib_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+  "audited_theorem_count": 137,
+  "clean_requested": true,
+  "elapsed_seconds": 66.703,
+  "axioms": {
+    "JSP404.mem_angleValues": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.maxAngle_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.angle_le_maxAngle": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.maxAngle_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.maxAngle_le_pi": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.hasLargeAngle_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.hasLargeAngle_maxAngle": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.hasLargeAngle_iff_le_maxAngle": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.hasLargeAngle_mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.maxAngle_mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.guaranteed_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.guaranteed_le_pi": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.guaranteed_bddAbove": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_le_pi": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.le_alpha": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_le_of_configuration": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_le_maxAngle": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.guaranteed_mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.guaranteed_alpha": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.guaranteed_iff_le_alpha": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.configurationMaxima_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.configurationMaxima_bddBelow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_eq_sInf": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.exists_configuration_maxAngle_lt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_eq_of_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.hasLargeAngle_pi_div_three": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.guaranteed_pi_div_three": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.pi_div_three_le_alpha": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.realDigit_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.realDigit_sub_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.realDigit_sub_eq_sign": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.realDigit_sub_same_base": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.exists_first_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.binaryProjection_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.binaryProjection_sub_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.binaryResidual_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.tendsto_binaryResidual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.eventually_injective_binaryProjection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.tendsto_binaryProjection_angle": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_two_pow_le_of_signed_directions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.sum_free_binary_coordinates_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.card_le_two_pow_of_binary_separation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.bipartite_cover_weighted_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.card_le_two_pow_of_bipartite_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_le_two_pow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.szekeres_upper_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_le_szekeres_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.szekeres_lower_bound_alpha": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.classical_bounds_between_powers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_le_self_index_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_lt_pi": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.tendsto_binaryProjection_direction_angle": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.eventually_binaryProjection_angle_lt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.eventually_injective_center_cluster": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.clusterWord_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_sum_two_pow_le_of_cluster_directions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.angle_le_three_pi_div_four_of_inner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.housePoint_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.housePoint_angle_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.house_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.house_angle_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_pi_div_four_lt_four_pi_div_five": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_five_le_three_pi_div_four": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_five_lt_four_pi_div_five": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_five_ne_four_pi_div_five": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.not_guaranteed_five_four_pi_div_five": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.angle_lower_bound_of_two_cone_edges": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.not_two_cone_edges": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.coneGraph_colorable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.card_le_two_pow_of_cone_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.cone_cover_weighted_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.finset_card_le_two_pow_of_direction_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.hasLargeAngle_of_direction_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.guaranteed_of_direction_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.norm_circleDirection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.angle_circleDirection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.angle_circleDirection_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.circleDirection_pi": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.exists_polar_of_second_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.exists_near_grid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.equally_spaced_direction_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.szekeres_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.angle_grid_directions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.grid_direction_angle_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.signed_grid_direction_angle_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.signed_grid_direction_angle_le_real": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.five_in_lower_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.transcribed_branch_at_three": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.source_branch_at_three": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.not_transcribed_lower_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.source_branch_lt_transcribed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.perturb_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.perturb_sub_of_same_center": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.tendsto_perturb_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.eventually_injective_perturb": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.perturb_angle_same_cluster": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.tendsto_angle_affine": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.tendsto_perturb_angle": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.exists_configuration_of_cluster_angles": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_le_of_cluster_angles": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.mul_le_sub_one_of_normalized_cap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.floor_pair_exponent_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.centerExponent_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_powers_le_two_pow_of_at_most_one_high": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_powers_le_five_of_not_all_high": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_centers_not_two_high": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_centers_not_all_high": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_center_bound_small_delta": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_center_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.signed_circleDirection_angle_le_of_separation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterPhi_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterPhi_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterPhi_lt_half_pi": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterPhi_cos_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterCenters_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterDirections_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_center_sub_10": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_center_sub_20": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_center_sub_21": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterArgument_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterArgument_coarse_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterDirections_internal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_center_angle_A": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_center_angle_B": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_center_angle_C": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterCenters_angle_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeCluster_direction_center_separation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeCenter_difference_direction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterDirections_cross": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeCluster_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.sendov_intermediate_upper_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_le_sendov_intermediate_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_five_le_three_pi_div_five": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeCluster_cutoff_eq_source": [
+      "propext",
+      "Quot.sound"
+    ],
+    "JSP404.sendov_piecewise_upper_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_sha256": {
+    "JSP404/Basic.lean": "66139ff767d890b886600be68e80970421a6d7c5c885f06a63474c3caa1bfd10",
+    "JSP404/BinaryConstruction.lean": "e2ec0ebd0cf6cbee23ae97f795afcc821beadb0e9b3e0b71038c4b17c72f9d56",
+    "JSP404/BinaryEncoding.lean": "1d28f98b3163dd4233cf50cd0d4a081b2680f921661f5e81dcc42b21b6d3aac7",
+    "JSP404/ClassicalBounds.lean": "8743c526c6a40a30e4c73ae4ae3bf3e12b556e97af529196ba6ae9f200907ec5",
+    "JSP404/ClusterConstruction.lean": "3fda928692b59c02cb96667fdb53c91cbcb985b4c1c3d77afdcec8e2bf4e68f3",
+    "JSP404/Counterexample.lean": "84b8161743fb280f86660a86be691b0a52f5badd01800b64ef5afe1f4809c3fd",
+    "JSP404/DirectionalCover.lean": "55f7ada7352b76668cad7945e763ef7e7fab4cb92ce587a0a5fbff299ed515a3",
+    "JSP404/EquallySpacedDirections.lean": "4b89b320f05c11f859e9646ac6bb94883e62bcfab718d7d5fc8aa333c03d7cb2",
+    "JSP404/FormulaCorrection.lean": "c069b886a6fede78859d618cdb5cb385355edc9f42e5e25a989bec2c4205c6e3",
+    "JSP404/HierarchicalConstruction.lean": "b11dab9b61d3100dc68a304656f3fe897ab642caa9f021b00a69c6b5e2d6c29b",
+    "JSP404/ThreeCenterBound.lean": "161b2206e0c7cec2f8499813589950eed7cfcf61d81765d1f4407419aad2c22f",
+    "JSP404/ThreeClusterGeometry.lean": "4c228a5adfe16478a7b1f07d672615f11df98573014a1a110bad48bc1d575582",
+    "JSP404.lean": "08dd3a48a4b2230c7f776496eede373b359b1f1181762a888651df762e99f936",
+    "Audit.lean": "d5a6a3ab42004faba17c735768f9ee8b46787920415728ec3fd60dc0de23436a",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "lakefile.toml": "2acce6724db390d41df6d5b239120d004adc1b2d316d58af063365ce72cd92ad",
+    "lake-manifest.json": "7c78c154ebcb8a304cdf594f42f2f3b8d59013b152cb4c84397fe3832771b590",
+    "scripts/verify.py": "dd88232d40344e45e876934926edc854d99368662ee8bb0f4f39f52db37e78a7"
+  }
+}

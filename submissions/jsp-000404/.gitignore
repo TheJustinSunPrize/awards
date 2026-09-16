@@ -1,0 +1,6 @@
+.lake/
+.tools/
+source/*.pdf
+source/*.png
+source/*.txt
+scratch/
