@@ -1,0 +1,26 @@
+{
+  "export_file_path": "verification/finite-v2/proof.ndjson",
+  "use_stdin": false,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unpermitted_axiom_hard_error": true,
+  "unsafe_permit_all_axioms": false,
+  "unknown_pp_declar_hard_error": true,
+  "nat_extension": true,
+  "string_extension": true,
+  "num_threads": 1,
+  "pp_to_stdout": true,
+  "pp_declars": [
+    "Erdos882Korsky.korsky_sum_bound",
+    "Erdos882Korsky.original_upper_bound",
+    "Erdos882Korsky.korsky_deficit_bound",
+    "Erdos882Korsky.korsky_finite_bound",
+    "Erdos882Korsky.original_finite_bound",
+    "Erdos882Korsky.original_threshold_bound"
+  ],
+  "print_axioms": true,
+  "print_success_message": true
+}
