@@ -1,0 +1,5 @@
+'JSP001007.counterexample_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.primeCount_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.clustering' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.green44_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.not_green44_conjecture' depends on axioms: [propext, Classical.choice, Quot.sound]

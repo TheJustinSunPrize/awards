@@ -1,0 +1,10 @@
+name = "jsp-001007"
+defaultTargets = ["Jsp"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "96f4f6ca6e9dcdb26fec36ec10fa90c7f424e94d"
+
+[[lean_lib]]
+name = "Jsp"
