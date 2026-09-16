@@ -9,17 +9,26 @@ import Mathlib.LinearAlgebra.Matrix.HadamardMatrix
 open scoped BigOperators
 namespace Hadamard716
 
-theorem matrix716_isHadamard : Matrix.IsHadamard matrix716 := by
+private theorem isHadamard_of_rows
+    (H : Matrix (Fin 716) (Fin 716) ℤ)
+    (hs : ∀ i j, H i j = -1 ∨ H i j = 1)
+    (hn : ∀ i, ∑ j, H i j * H i j = 716)
+    (ho : ∀ {i j}, i ≠ j → ∑ k, H i k * H j k = 0) :
+    Matrix.IsHadamard H := by
   apply Matrix.IsHadamard.of_mul_conjTranspose
   · intro i j
-    rcases matrix716_entry_sign i j with h | h <;> simp [h, Unitary.mem_iff]
+    rcases hs i j with h | h <;> simp [h, Unitary.mem_iff]
   · ext i j
     by_cases hij : i = j
     · subst j
-      simpa [Matrix.mul_apply, Matrix.conjTranspose_apply] using matrix716_row_norm i
+      simpa [Matrix.mul_apply, Matrix.conjTranspose_apply] using hn i
     · simpa [Matrix.mul_apply, Matrix.conjTranspose_apply, Matrix.one_apply, hij]
-        using matrix716_row_orthogonal hij
+        using ho hij
   · norm_num [isRegular_iff_ne_zero]
+
+theorem matrix716_isHadamard : Matrix.IsHadamard matrix716 :=
+  isHadamard_of_rows matrix716 matrix716_entry_sign matrix716_row_norm
+    (fun {_ _} h => matrix716_row_orthogonal h)
 
 theorem hadamard_716_exists_standard :
     ∃ H : Matrix (Fin 716) (Fin 716) ℤ, Matrix.IsHadamard H :=
