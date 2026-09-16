@@ -1,0 +1,10 @@
+id: "STMT-jsp-000194-f01-three-point-v1-v1"
+problem: "JSP-000194"
+statement_en: "Three distinct non-collinear planar points determine three ordinary lines"
+formal:
+  declaration: "solution"
+  file: "Statement.lean"
+  sha256: ""
+source:
+  url: "https://doi.org/10.1090/S0002-9947-1951-0041447-9"
+  attribution_en: "Original solver and publication credit as recorded in the JSP catalog."

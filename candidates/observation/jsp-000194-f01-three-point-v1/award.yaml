@@ -1,0 +1,23 @@
+id: jsp-000194-f01-three-point-v1
+batch: null
+problem:
+  source: https://github.com/TheJustinSunPrize/awards
+  number: "JSP-000194"
+  title_en: "Three distinct non-collinear planar points determine three ordinary lines"
+  posed:
+    year: 2021
+    basis: stated
+    citation: "https://doi.org/10.1090/S0002-9947-1951-0041447-9"
+  resolved:
+    year: 2021
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
