@@ -1,5 +1,5 @@
 {
-  "scope": "Proof sources, negative controls, pinned environment, and verification script",
+  "scope": "All production proof sources, negative controls, pinned environment and verification script for finite-bound extension v2",
   "files": [
     {
       "path": "Erdos882Korsky.lean",
@@ -7,9 +7,44 @@
       "sha256": "d1a4946b8147a0f336710cb91a21b75772169c4b5595945abb476ecd208738d5"
     },
     {
+      "path": "Erdos882KorskyFinite.lean",
+      "bytes": 2649,
+      "sha256": "6178662e8f02d47f047acd686db77f4bc172ad1262ed70fd6fada3f5dc54497c"
+    },
+    {
       "path": "Erdos882Original.lean",
       "bytes": 2741,
       "sha256": "a7d71df4cd28981cf040b9464ab63b027b4efc19d0153b134fd19b95c6a014dc"
+    },
+    {
+      "path": "ExtensionNegativeControls.lean",
+      "bytes": 2642,
+      "sha256": "d6e3df27961311ddb17f0f0c061b657df818c8c60831fe89a3b278a5d35197ca"
+    },
+    {
+      "path": "KorskyBalancedCount.lean",
+      "bytes": 9397,
+      "sha256": "b952a14f5eb0599aa6ed6c96b9fd29cbe0d16bd62e62969f3e8f3e4985ddf2d4"
+    },
+    {
+      "path": "KorskyBalancedDefs.lean",
+      "bytes": 489,
+      "sha256": "ab485038e9566bfb747447b8e7894af7fa371cb80f5fbfba062dc2b348b987ff"
+    },
+    {
+      "path": "KorskyBalancedLower.lean",
+      "bytes": 3664,
+      "sha256": "cf6b1c713d136387e6dd1e5f57018cbf0aa706b6191be7ab8aa3b4980f10d23d"
+    },
+    {
+      "path": "KorskyBalancedPacking.lean",
+      "bytes": 2330,
+      "sha256": "0575b54001e1a1d0f5632ebd60b07e27849f8aa5ea35f46e77930ed19ce18b70"
+    },
+    {
+      "path": "KorskyBalancedUpper.lean",
+      "bytes": 5471,
+      "sha256": "4010954fe236299734e836f404be1a49b5e7af9e434520b87fe17d63380e8460"
     },
     {
       "path": "KorskyCount.lean",
@@ -25,6 +60,11 @@
       "path": "KorskyEndpoint.lean",
       "bytes": 3135,
       "sha256": "a92d2236ce73a8b30325cae902cf5efd01eefb7011a73b57f189d624aec99919"
+    },
+    {
+      "path": "KorskyFiniteEndpoint.lean",
+      "bytes": 3840,
+      "sha256": "cb91f115ea56dcfb245af45288206b591eb91a105cea0ddb4cf3f57533054875"
     },
     {
       "path": "KorskyInject.lean",
@@ -48,8 +88,8 @@
     },
     {
       "path": "lakefile.toml",
-      "bytes": 283,
-      "sha256": "de2bc40c94df6c4b143592919761ce11c123ff8cc00a4c41b094524dda5a7e06"
+      "bytes": 301,
+      "sha256": "b216da880b672614c4529c91890e3413a4aedf2234263530fd63dc30c7ef1d60"
     },
     {
       "path": "lean-toolchain",
