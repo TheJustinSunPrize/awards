@@ -1,4 +1,44 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000092-near-linear",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000092",
+          "number": "JSP-000092",
+          "title_en": "JSP-000092 near-linear variant: submitted Lean 4 formalization",
+          "posed": {
+            "year": 1982,
+            "basis": "earliest-reference",
+            "citation": "The JSP-000092 catalog records no later than 1982 on bibliographic evidence. Erdős, Hajnal and Szemerédi, On almost bipartite large chromatic graphs (1982), Problem 2, states the stronger linear question. This draft concerns only the near-linear variant; 1982 is the catalog's reference year, not a newly established first date for that variant."
+          },
+          "resolved": null
+        },
+        "decision": null,
+        "recipients": [
+          {
+            "id": "RECIPIENT-JSP-000092-LEAN-A",
+            "affiliation": "",
+            "contribution_en": "Submitted an AI-assisted Lean 4 formalization of the near-linear proposition, with pinned source, dependency lockfile, reproduction instructions, and local build and axiom reports. Mathematical sources are credited separately. Attribution and external verification are pending.",
+            "confirmation": null
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "draft",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000092-near-linear",
+      "citation": "# JSP-000092 near-linear formalization: draft intake\n\n## English\n\nThis is a **draft observation candidate awaiting intake review**. It records\nsubmitted public evidence, with no published decision and no activated formal\nverification record. The related discussion is\n[issue #110](https://github.com/TheJustinSunPrize/awards/issues/110); the\n[formalization submission](https://github.com/TheJustinSunPrize/awards/issues/110#issuecomment-5702779062)\nsupplements that issue's mathematical note.\n\n### Scope and attribution\n\nThe submitted theorem is `JSP092.erdos75_near_linear`. It concerns a graph with\nboth vertex cardinality and chromatic cardinality aleph-one. For every positive\nreal epsilon, a threshold uniform over all finite subgraphs yields an ambient\nindependent set of size strictly greater than `n^(1-epsilon)`.\n\nThe target is the affirmative right-hand proposition in the\n[pinned Formal Conjectures Erdős 75 statement](https://github.com/google-deepmind/formal-conjectures/blob/40e7c98697de6f66b8cbdbf641749ab39ed9c152/FormalConjectures/ErdosProblems/75.lean).\nThe stronger fixed-linear question is outside this submission. The problem\nbank's solution and eligibility fields are unchanged, and this draft records\nno resolution date for the full problem.\n\nThe mathematical route follows Sections 2–5 of the\n[note attached to issue #110](https://github.com/user-attachments/files/32296106/JSP-000092_submission.md):\nthe Specker triple graph, nested unbounded color fibers, recursive dyadic\ncoloring, finite coordinate ranking, and logarithm-versus-power asymptotics.\nEarlier mathematical sources are credited in the\n[implementation's statement contract](https://github.com/SphereDonout/lean-proofs/blob/e868aa77b273d3b0fd598eff499731ea105a29ef/jsp-000092/docs/statement-contract.md).\nThis submission offers formalization work for review and makes no mathematical\ndiscovery-priority claim.\n\n### Pinned source and submitted local evidence\n\n- [Proof project](https://github.com/SphereDonout/lean-proofs/tree/e868aa77b273d3b0fd598eff499731ea105a29ef/jsp-000092),\n  commit `e868aa77b273d3b0fd598eff499731ea105a29ef`.\n- [Top-level theorem](https://github.com/SphereDonout/lean-proofs/blob/e868aa77b273d3b0fd598eff499731ea105a29ef/jsp-000092/JSP092/Main.lean).\n- [Reproduction instructions](https://github.com/SphereDonout/lean-proofs/blob/e868aa77b273d3b0fd598eff499731ea105a29ef/jsp-000092/README.md).\n- [Submitted verification report](https://github.com/SphereDonout/lean-proofs/blob/e868aa77b273d3b0fd598eff499731ea105a29ef/jsp-000092/docs/final-verification.md).\n\nThe submitted environment pins Lean `leanprover/lean4:v4.33.1`, Mathlib\n`0df444a360eaa60ab8c11dca51a86af692955474`, and Formal Conjectures\n`40e7c98697de6f66b8cbdbf641749ab39ed9c152`. The proof imports the coloring\nsupport module without importing the admitted Erdős 75 theorem.\n\nThe submitted local run rebuilt project outputs with warnings treated as\nerrors and retained upstream dependency caches. It checked an exact target\ntranscription and 25 transitive axiom reports. The final theorem's reported\naxioms are `propext`, `Classical.choice`, and `Quot.sound`. The separate AI-agent\nsemantic reviews are internal development reviews, not external human or\nprize-authorized verification. No independent proof-kernel rerun or fully\nisolated, cache-free dependency rebuild is claimed.\n\n### External artifacts\n\nThe [GitHub release](https://github.com/SphereDonout/lean-proofs/releases/tag/jsp-000092-e868aa7)\nhas release ID `390180843` and tag `jsp-000092-e868aa7`, targeting the proof\ncommit above. These are versioned GitHub-hosted artifacts, not a DOI archive;\nthe hashes identify the exact submitted bytes.\n\n| Artifact | Asset ID | SHA-256 | Bytes |\n| --- | --- | --- | ---: |\n| [Source archive](https://github.com/SphereDonout/lean-proofs/releases/download/jsp-000092-e868aa7/jsp-000092-e868aa7.tar.gz) | `568567733` | `fb798cf4f6e0ba9d07daaa46bfd386407be5f7d5c653da2413694fb2cb8ed2ee` | 34320 |\n| [Build log](https://github.com/SphereDonout/lean-proofs/releases/download/jsp-000092-e868aa7/build-clean.txt) | `568567732` | `9441368d7388cf6c2587d4b9c35dd6408597a5079b2d8d84af06e05c5eb3a98d` | 1070 |\n| [Axiom report](https://github.com/SphereDonout/lean-proofs/releases/download/jsp-000092-e868aa7/axioms.txt) | `568567726` | `62df5499dcc51e1b2781d911c56da0f2f920c18d6c36a439dd5604b6724dd937` | 6480 |\n\nThe release's [checksum file](https://github.com/SphereDonout/lean-proofs/releases/download/jsp-000092-e868aa7/SHA256SUMS)\nlists the same artifact hashes. Large source and log artifacts remain external\nto this awards repository.\n\n### Review stage requested\n\nThis preliminary intake uses the observation draft template. The structured\nverification fields and `verification/record.yaml` remain null. Before entering\nthe formal channel, maintainers must arrange an actually issued statement with\nregistered curator signatories and suitable verifier evidence, as required by\nthe repository's statement schema and record guide. No signatories, verifier\nprofiles, attestations, or review decisions are fabricated by this draft.\n\nRequested review covers the near-linear scope, original-problem correspondence,\nproof reproduction, mathematical attribution, and the submitted formalization\ncontribution. This draft does not constitute an award announcement.\n",
+      "recipients": "# Proposed formalization attribution\n\n## English\n\n**RECIPIENT-JSP-000092-LEAN-A** is the placeholder for the submitted Lean\nformalization contribution. Recipient identity and attribution await review\nand confirmation. No affiliation or private contact information is recorded.\n\nThe contribution offered for review is the AI-assisted implementation of\n`JSP092.erdos75_near_linear`, including the shared graph definition, finite\ncoloring argument, ordinal construction, asymptotic estimate, exact-statement\nadapter, and reproducible local checks.\n\nThe mathematical proof follows the near-linear argument attached to\n[issue #110](https://github.com/TheJustinSunPrize/awards/issues/110).\nIts existing mathematical attribution is preserved. The implementation's\n[source contract](https://github.com/SphereDonout/lean-proofs/blob/e868aa77b273d3b0fd598eff499731ea105a29ef/jsp-000092/docs/statement-contract.md)\nalso credits earlier Specker-graph work and the public near-linear note.\nThis draft does not assign mathematical discovery credit to the formalizer.\n\nThe submitted semantic reviews were internal reviews by separate AI agents.\nNo external reviewer independence, prize-verifier authority, recipient\nconfirmation, or award decision is asserted by this record.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }

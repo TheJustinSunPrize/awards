@@ -11,4 +11,6 @@ Keep IDs stable when moving entries. An ID can occur only once across candidates
 
 See [records](../docs/records.md).
 
-No candidate records are currently published in this directory.
+## Draft observation entries
+
+- [JSP-000092 near-linear formalization](observation/jsp-000092-near-linear/citation.md): submitted public proof evidence awaiting intake review; formal verification records remain pending.
