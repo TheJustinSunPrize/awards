@@ -1,0 +1,12 @@
+Lean (version 4.34.0, x86_64-w64-windows-gnu, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)
+Main.lean SHA-256: c584af6d7e471ae3fe78d055502cb4a27c65c227297c6343fb0206356f800918
+Compile and audit:
+'JSP690.jsp_000690' depends on axioms: [propext, Quot.sound]
+'JSP690.no_fewer_colors' depends on axioms: [propext, Quot.sound]
+'JSP690.proper_subgraph_colorable' depends on axioms: [propext]
+'JSP690.proper_iff_nonmonochromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP690.vertex_deletion_restricted' depends on axioms: [propext]
+'JSP690.deletion_chromatic_number_two' depends on axioms: [propext, Quot.sound]
+Replay Main declarations using the bundled kernel:
+replaying Main
+PASS: fresh compilation, six axiom reports, and bundled-kernel replay.
