@@ -1,0 +1,23 @@
+id: jsp-000264-f08-square-counterexample-v1
+batch: null
+problem:
+  source: https://github.com/TheJustinSunPrize/awards
+  number: "JSP-000264"
+  title_en: "Does every assignment of signs to the specified reciprocal set admit a nonempty zero-sum subset?"
+  posed:
+    year: 2021
+    basis: stated
+    citation: "https://www.erdosproblems.com/318"
+  resolved:
+    year: 2021
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
