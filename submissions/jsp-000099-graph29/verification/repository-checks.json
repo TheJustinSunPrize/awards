@@ -1,0 +1,70 @@
+{
+  "base_commit": "f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "exit_code": 0,
+      "seconds": 0.204,
+      "stdout": "validate: OK\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "links"
+      ],
+      "exit_code": 0,
+      "seconds": 1.268,
+      "stdout": "links: OK\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "build"
+      ],
+      "exit_code": 0,
+      "seconds": 0.143,
+      "stdout": "build: OK\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.138,
+      "stdout": "check: OK\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "history",
+        "--base",
+        "f4e7173d89dfe91022a185427d63452c8ffbf6ae"
+      ],
+      "exit_code": 0,
+      "seconds": 0.24,
+      "stdout": "history: OK\n",
+      "stderr": ""
+    }
+  ],
+  "generated_indexes_unchanged": true,
+  "official_unit_tests": {
+    "tests": 22,
+    "seconds": 3.131,
+    "result": "OK",
+    "note": "Executed on the unchanged official test suite during preparation."
+  },
+  "scope": "Repository checks validate records and links, not mathematical correctness or award eligibility."
+}
