@@ -1,0 +1,4 @@
+ℹ [962/963] Built Prize939 (9.8s)
+info: Prize939.lean:180:0: 'Erdos939.triples_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Prize939.lean:181:0: 'Erdos939.erdos_939.variants.triples' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (963 jobs).

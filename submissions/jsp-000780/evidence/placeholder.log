@@ -1,0 +1,2 @@
+placeholder.lean:1:8: warning: declaration uses `sorry`
+'Erdos939.erdos_939.variants.triples' depends on axioms: [sorryAx]

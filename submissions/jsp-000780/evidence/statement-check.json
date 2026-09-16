@@ -1,0 +1,11 @@
+{
+  "upstream_commit": "40e7c98697de6f66b8cbdbf641749ab39ed9c152",
+  "upstream_path": "FormalConjectures/ErdosProblems/939.lean",
+  "target_type_match_after_answer_true_reduction": true,
+  "full_predicate_body_match": true,
+  "finset_coprime_definition_match": true,
+  "proof_source_sha256": "f556e09410ff1ea3da2d8d38b84a91e068465181ecc42ebe97ce98a8eb4727fc",
+  "source_placeholder_and_execution_token_scan": "passed",
+  "package_markdown_local_links": "passed",
+  "all_local_dependency_revisions_match_manifest": true
+}

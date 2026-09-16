@@ -1,0 +1,19 @@
+{
+  "checked_date": "2026-09-16",
+  "source": "https://api.github.com/repos/TheJustinSunPrize/awards/issues?state=all&per_page=100",
+  "snapshot_sha256": "a13ae7dab453e90e0182fb17630acada5767702400be82ecef25edd8b57a182c",
+  "records_inspected": 59,
+  "max_number": 59,
+  "matching_records": [
+    {
+      "number": 7,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/7",
+      "scope": "bibliographic identifier correction, not a proof submission"
+    }
+  ],
+  "no_competing_triples_submission_found": true,
+  "global_priority_established": false,
+  "catalogue_revision": "f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+  "catalogue_lean_proof": "No",
+  "catalogue_eligible_to_claim": "No"
+}
