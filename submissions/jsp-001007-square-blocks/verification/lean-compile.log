@@ -1,0 +1,5 @@
+'JSP001007.counterexamples' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.not_uniform_tenth_sieve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.not_erdos_uniform_sieve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.not_erdos_eventual_uniform_sieve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.fixed_1000_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]

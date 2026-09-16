@@ -1,0 +1,88 @@
+{
+  "status": "PASS: source hygiene only",
+  "lean_kernel_status": "NOT_CHECKED_BY_THIS_SCRIPT",
+  "files": [
+    {
+      "file": "JSP001007.lean",
+      "passed": true,
+      "source_sha256": "258fcbd7b0f3f80940e2f2d165882ea8d98cbdd3412d74889c15fc3ba9fac76d",
+      "line_count": 281,
+      "theorem_and_lemma_count": 10,
+      "forbidden_active_tokens": [],
+      "imports": [
+        "Mathlib",
+        "JSP001007.Arithmetic",
+        "JSP001007.PrimeBlocks"
+      ],
+      "requested_axiom_reports": [
+        "JSP001007.counterexamples",
+        "JSP001007.not_uniform_tenth_sieve",
+        "JSP001007.not_erdos_uniform_sieve",
+        "JSP001007.not_erdos_eventual_uniform_sieve",
+        "JSP001007.fixed_1000_counterexample"
+      ]
+    },
+    {
+      "file": "Arithmetic.lean",
+      "passed": true,
+      "source_sha256": "4171b188e090c7e75e3e77a1f4dd155e7d5824fa235256f6c1f46f49b658b304",
+      "line_count": 170,
+      "theorem_and_lemma_count": 12,
+      "forbidden_active_tokens": [],
+      "imports": [
+        "Lean"
+      ],
+      "requested_axiom_reports": [
+        "JSP001007.Arithmetic.window_point_mod",
+        "JSP001007.Arithmetic.window_point_in_interval",
+        "JSP001007.Arithmetic.window_points_injective",
+        "JSP001007.Arithmetic.window_density",
+        "JSP001007.Arithmetic.cluster_conditions",
+        "JSP001007.Arithmetic.cluster_cutoff_four",
+        "JSP001007.Arithmetic.cutoff_ten"
+      ]
+    },
+    {
+      "file": "PrimeBlocks.lean",
+      "passed": true,
+      "source_sha256": "6b5b5d694623049993760f803003b607beb2a9375f89a4fbae43e44397c3c26f",
+      "line_count": 127,
+      "theorem_and_lemma_count": 5,
+      "forbidden_active_tokens": [],
+      "imports": [
+        "Mathlib"
+      ],
+      "requested_axiom_reports": [
+        "JSP001007.primeBlock_card_unbounded",
+        "JSP001007.large_primeBlock"
+      ]
+    },
+    {
+      "file": "JSP001007Standalone.lean",
+      "passed": true,
+      "source_sha256": "9f35f481180022370e1505790339f3c085c5991bda259a1d9863ca0bdc2cbf01",
+      "line_count": 589,
+      "theorem_and_lemma_count": 27,
+      "forbidden_active_tokens": [],
+      "imports": [
+        "Mathlib"
+      ],
+      "requested_axiom_reports": [
+        "JSP001007.Arithmetic.window_point_mod",
+        "JSP001007.Arithmetic.window_point_in_interval",
+        "JSP001007.Arithmetic.window_points_injective",
+        "JSP001007.Arithmetic.window_density",
+        "JSP001007.Arithmetic.cluster_conditions",
+        "JSP001007.Arithmetic.cluster_cutoff_four",
+        "JSP001007.Arithmetic.cutoff_ten",
+        "JSP001007.primeBlock_card_unbounded",
+        "JSP001007.large_primeBlock",
+        "JSP001007.counterexamples",
+        "JSP001007.not_uniform_tenth_sieve",
+        "JSP001007.not_erdos_uniform_sieve",
+        "JSP001007.not_erdos_eventual_uniform_sieve",
+        "JSP001007.fixed_1000_counterexample"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "PASS: expected transitive axiom reports use only standard permitted axioms",
+  "reports": {
+    "JSP001007.counterexamples": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP001007.fixed_1000_counterexample": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP001007.not_erdos_eventual_uniform_sieve": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP001007.not_erdos_uniform_sieve": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP001007.not_uniform_tenth_sieve": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "wasm_completion_status_checked": false,
+  "precondition": "The same compiler invocation must have exited with code 0"
+}

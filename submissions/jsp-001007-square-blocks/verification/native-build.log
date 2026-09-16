@@ -1,0 +1,47 @@
+ℹ [2/2] Built JSP001007.Arithmetic (3.8s)
+info: JSP001007/Arithmetic.lean:164:0: 'JSP001007.Arithmetic.window_point_mod' depends on axioms: [propext, Quot.sound]
+info: JSP001007/Arithmetic.lean:165:0: 'JSP001007.Arithmetic.window_point_in_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: JSP001007/Arithmetic.lean:166:0: 'JSP001007.Arithmetic.window_points_injective' depends on axioms: [propext, Quot.sound]
+info: JSP001007/Arithmetic.lean:167:0: 'JSP001007.Arithmetic.window_density' depends on axioms: [propext, Quot.sound]
+info: JSP001007/Arithmetic.lean:168:0: 'JSP001007.Arithmetic.cluster_conditions' depends on axioms: [propext, Quot.sound]
+info: JSP001007/Arithmetic.lean:169:0: 'JSP001007.Arithmetic.cluster_cutoff_four' depends on axioms: [propext, Quot.sound]
+info: JSP001007/Arithmetic.lean:170:0: 'JSP001007.Arithmetic.cutoff_ten' depends on axioms: [propext, Quot.sound]
+Build completed successfully (2 jobs).
+⚠ [8706/8706] Built JSP001007.PrimeBlocks (22s)
+warning: JSP001007/PrimeBlocks.lean:60:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP001007/PrimeBlocks.lean:87:41: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+info: JSP001007/PrimeBlocks.lean:124:0: 'JSP001007.primeBlock_card_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: JSP001007/PrimeBlocks.lean:125:0: 'JSP001007.large_primeBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8706 jobs).
+ℹ [1/635] Replayed JSP001007.Arithmetic
+info: JSP001007/Arithmetic.lean:164:0: 'JSP001007.Arithmetic.window_point_mod' depends on axioms: [propext, Quot.sound]
+info: JSP001007/Arithmetic.lean:165:0: 'JSP001007.Arithmetic.window_point_in_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: JSP001007/Arithmetic.lean:166:0: 'JSP001007.Arithmetic.window_points_injective' depends on axioms: [propext, Quot.sound]
+info: JSP001007/Arithmetic.lean:167:0: 'JSP001007.Arithmetic.window_density' depends on axioms: [propext, Quot.sound]
+info: JSP001007/Arithmetic.lean:168:0: 'JSP001007.Arithmetic.cluster_conditions' depends on axioms: [propext, Quot.sound]
+info: JSP001007/Arithmetic.lean:169:0: 'JSP001007.Arithmetic.cluster_cutoff_four' depends on axioms: [propext, Quot.sound]
+info: JSP001007/Arithmetic.lean:170:0: 'JSP001007.Arithmetic.cutoff_ten' depends on axioms: [propext, Quot.sound]
+⚠ [8707/8709] Replayed JSP001007.PrimeBlocks
+warning: JSP001007/PrimeBlocks.lean:60:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP001007/PrimeBlocks.lean:87:41: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+info: JSP001007/PrimeBlocks.lean:124:0: 'JSP001007.primeBlock_card_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: JSP001007/PrimeBlocks.lean:125:0: 'JSP001007.large_primeBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8708/8709] Built JSP001007 (3.9s)
+info: JSP001007.lean:275:0: 'JSP001007.counterexamples' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: JSP001007.lean:276:0: 'JSP001007.not_uniform_tenth_sieve' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: JSP001007.lean:277:0: 'JSP001007.not_erdos_uniform_sieve' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: JSP001007.lean:278:0: 'JSP001007.not_erdos_eventual_uniform_sieve' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: JSP001007.lean:279:0: 'JSP001007.fixed_1000_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8709 jobs).

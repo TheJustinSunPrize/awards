@@ -1,0 +1,170 @@
+import Lean
+
+/-!
+Arithmetic components of the half-residue sieve counterexample.
+These declarations use only Lean's core library, not Mathlib.
+The accompanying verification report records the exact compiler environment.
+-/
+
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 4096
+
+public section
+
+namespace JSP001007.Arithmetic
+
+
+theorem window_point_mod
+    (M J H p j s : Nat)
+    (hM : 64 ≤ M) (hH : 8 * H ≤ M) (hD : 8 * J * H ≤ M)
+    (hpL : M ≤ p) (hpU : p ≤ M + H)
+    (hj : j < J) (hs : s < M / 4) :
+    p / 2 ≤ (j * M + 3 * (M / 4) + s) % p := by
+  let T := M / 4
+  let x := j * M + 3 * T + s
+  have hTlo : 4 * T ≤ M := by dsimp [T]; omega
+  have hThi : M ≤ 4 * T + 3 := by dsimp [T]; omega
+  have hsT : s < T := hs
+  have hhalf : 2 * (p / 2) ≤ p := by omega
+  have hD' : 8 * (J * H) ≤ M := by simpa only [Nat.mul_assoc] using hD
+  have hbuffer : J * H + p / 2 ≤ 3 * T := by omega
+  have hjp : j * p ≤ j * M + J * H := by
+    calc
+      j * p ≤ j * (M + H) := Nat.mul_le_mul_left j hpU
+      _ = j * M + j * H := Nat.mul_add _ _ _
+      _ ≤ j * M + J * H :=
+        Nat.add_le_add_left (Nat.mul_le_mul_right H (Nat.le_of_lt hj)) _
+  have hxL : j * p + p / 2 ≤ x := by dsimp [x]; omega
+  have hjbase : j * M ≤ j * p := Nat.mul_le_mul_left j hpL
+  have ht : 3 * T + s < M := by omega
+  have hxU : x < j * p + p := by dsimp [x]; omega
+  have hrU : x - j * p < p := by omega
+  have hdecomp : j * p + (x - j * p) = x := by omega
+  have hmod : x % p = x - j * p := by
+    calc
+      x % p = (j * p + (x - j * p)) % p := by simp only [hdecomp]
+      _ = x - j * p := by simp [Nat.add_mod, Nat.mod_eq_of_lt hrU]
+  change p / 2 ≤ x % p
+  rw [hmod]
+  omega
+
+theorem window_point_in_interval (M J j s : Nat)
+    (hM : 64 ≤ M) (hj : j < J) (hs : s < M / 4) :
+    1 ≤ j * M + 3 * (M / 4) + s ∧
+    j * M + 3 * (M / 4) + s ≤ J * M := by
+  have hTlo : 4 * (M / 4) ≤ M := by omega
+  have hTpos : 0 < M / 4 := by omega
+  have hlast : (j + 1) * M ≤ J * M :=
+    Nat.mul_le_mul_right M (by omega : j + 1 ≤ J)
+  simp only [Nat.add_mul, Nat.one_mul] at hlast
+  omega
+
+theorem window_points_injective (M j k s t : Nat)
+    (hM : 64 ≤ M) (hs : s < M / 4) (ht : t < M / 4)
+    (he : j * M + 3 * (M / 4) + s = k * M + 3 * (M / 4) + t) :
+    j = k ∧ s = t := by
+  have hTlo : 4 * (M / 4) ≤ M := by omega
+  have hds : 3 * (M / 4) + s < M := by omega
+  have hdt : 3 * (M / 4) + t < M := by omega
+  have he' : j * M + (3 * (M / 4) + s) =
+      k * M + (3 * (M / 4) + t) := by omega
+  have hm := congrArg (fun n : Nat => n % M) he'
+  have hd : 3 * (M / 4) + s = 3 * (M / 4) + t := by
+    simpa [Nat.add_mod, Nat.mod_eq_of_lt hds, Nat.mod_eq_of_lt hdt] using hm
+  have hst : s = t := by omega
+  have hjk : j * M = k * M := by omega
+  exact ⟨Nat.eq_of_mul_eq_mul_right (by omega : 0 < M) hjk, hst⟩
+
+theorem window_density (M : Nat) (hM : 64 ≤ M) : M < 10 * (M / 4) := by
+  omega
+
+private theorem pow_two (q : Nat) : Nat.pow q 2 = q * q := Nat.pow_two q
+private theorem mul_pow (a b n : Nat) :
+    Nat.pow (a * b) n = Nat.pow a n * Nat.pow b n := Nat.mul_pow a b n
+private theorem pow_mul (a m n : Nat) :
+    Nat.pow a (m * n) = Nat.pow (Nat.pow a m) n := Nat.pow_mul a m n
+private theorem pow_add (a m n : Nat) :
+    Nat.pow a (m + n) = Nat.pow a m * Nat.pow a n := Nat.pow_add a m n
+private theorem pow_succ (a n : Nat) :
+    Nat.pow a (n + 1) = Nat.pow a n * a := Nat.pow_succ a n
+
+theorem cluster_conditions (q : Nat) (hq : 1000000000000 ≤ q) :
+    64 ≤ Nat.pow q 2 ∧ 0 < q / 100 ∧
+    8 * (2 * q + 1) ≤ Nat.pow q 2 ∧
+    8 * (q / 100) * (2 * q + 1) ≤ Nat.pow q 2 ∧ q ≤ Nat.pow q 2 := by
+  let J := q / 100
+  have hqM : q ≤ Nat.pow q 2 := by
+    rw [pow_two]
+    exact Nat.le_mul_self q
+  have hM : 64 ≤ Nat.pow q 2 := by omega
+  have hJ : 0 < J := by dsimp [J]; omega
+  have hJbound : 100 * J ≤ q := by dsimp [J]; omega
+  have hq17 : 17 * q ≤ q * q :=
+    Nat.mul_le_mul_right q (by omega : 17 ≤ q)
+  have hH : 8 * (2 * q + 1) ≤ Nat.pow q 2 := by
+    rw [pow_two]
+    omega
+  have h100 : 100 * (J * q) ≤ q * q := by
+    simpa only [Nat.mul_assoc] using Nat.mul_le_mul_right q hJbound
+  have hJq : J ≤ J * q := by
+    simpa only [Nat.mul_one] using
+      Nat.mul_le_mul_left J (by omega : 1 ≤ q)
+  have hcoef : 8 * J * 2 = 16 * J := by omega
+  have hid : 8 * J * (2 * q + 1) = 16 * (J * q) + 8 * J := by
+    rw [Nat.mul_add, ← Nat.mul_assoc, hcoef, Nat.mul_one, Nat.mul_assoc] <;> rfl
+  have hD : 8 * J * (2 * q + 1) ≤ Nat.pow q 2 := by
+    rw [hid, pow_two]
+    omega
+  exact ⟨hM, hJ, hH, hD, hqM⟩
+
+theorem cluster_cutoff_four {q p : Nat}
+    (hq : 1000000000000 ≤ q) (hp : p ≤ Nat.pow (q + 1) 2) :
+    Nat.pow p 4 < Nat.pow ((q / 100) * Nat.pow q 2) 3 := by
+  let J := q / 100
+  have hJpos : 0 < J := by dsimp [J]; omega
+  have hJlarge : 10240000 < J := by dsimp [J]; omega
+  have hqJ : q ≤ 200 * J := by dsimp [J]; omega
+  have hcore : 256 * Nat.pow q 2 < Nat.pow J 3 := by
+    calc
+      256 * Nat.pow q 2 ≤ 256 * Nat.pow (200 * J) 2 :=
+        Nat.mul_le_mul_left 256 (Nat.pow_le_pow_left hqJ 2)
+      _ = 10240000 * Nat.pow J 2 := by
+        rw [mul_pow, ← Nat.mul_assoc] <;> rfl
+      _ < J * Nat.pow J 2 :=
+        Nat.mul_lt_mul_of_pos_right hJlarge (Nat.pow_pos hJpos)
+      _ = Nat.pow J 3 :=
+        (Nat.mul_comm J (Nat.pow J 2)).trans (pow_succ J 2).symm
+  have hsquare : Nat.pow (q + 1) 2 ≤ 4 * Nat.pow q 2 := by
+    have hh := Nat.pow_le_pow_left (by omega : q + 1 ≤ 2 * q) 2
+    calc
+      Nat.pow (q + 1) 2 ≤ Nat.pow (2 * q) 2 := hh
+      _ = 4 * Nat.pow q 2 := by rw [mul_pow] <;> rfl
+  have hp' : p ≤ 4 * Nat.pow q 2 := Nat.le_trans hp hsquare
+  calc
+    Nat.pow p 4 ≤ Nat.pow (4 * Nat.pow q 2) 4 := Nat.pow_le_pow_left hp' 4
+    _ = 256 * Nat.pow q 8 := by rw [mul_pow, ← pow_mul] <;> rfl
+    _ = (256 * Nat.pow q 2) * Nat.pow q 6 := by
+      rw [Nat.mul_assoc, ← pow_add] <;> rfl
+    _ < Nat.pow J 3 * Nat.pow q 6 :=
+      Nat.mul_lt_mul_of_pos_right hcore (Nat.pow_pos (by omega : 0 < q))
+    _ = Nat.pow (J * Nat.pow q 2) 3 := by rw [mul_pow, ← pow_mul] <;> rfl
+
+theorem cutoff_ten {p N : Nat} (hp : 1 ≤ p)
+    (h : Nat.pow p 4 < Nat.pow N 3) : Nat.pow p 10 < Nat.pow N 9 := by
+  have h12 : Nat.pow p 12 < Nat.pow N 9 := by
+    calc
+      Nat.pow p 12 = Nat.pow (Nat.pow p 4) 3 := pow_mul p 4 3
+      _ < Nat.pow (Nat.pow N 3) 3 := Nat.pow_lt_pow_left h (by decide : (3 : Nat) ≠ 0)
+      _ = Nat.pow N 9 := (pow_mul N 3 3).symm
+  exact Nat.lt_of_le_of_lt
+    (Nat.pow_le_pow_right (by omega : 0 < p) (by decide : (10 : Nat) ≤ 12)) h12
+
+end JSP001007.Arithmetic
+
+#print axioms JSP001007.Arithmetic.window_point_mod
+#print axioms JSP001007.Arithmetic.window_point_in_interval
+#print axioms JSP001007.Arithmetic.window_points_injective
+#print axioms JSP001007.Arithmetic.window_density
+#print axioms JSP001007.Arithmetic.cluster_conditions
+#print axioms JSP001007.Arithmetic.cluster_cutoff_four
+#print axioms JSP001007.Arithmetic.cutoff_ten

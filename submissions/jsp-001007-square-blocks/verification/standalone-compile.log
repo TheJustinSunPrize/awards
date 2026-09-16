@@ -1,0 +1,58 @@
+JSP001007Standalone.lean:119:77: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+JSP001007Standalone.lean:119:77: warning: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+JSP001007Standalone.lean:137:42: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+JSP001007Standalone.lean:146:49: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+JSP001007Standalone.lean:150:60: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+JSP001007Standalone.lean:152:40: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+JSP001007Standalone.lean:155:70: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+JSP001007Standalone.lean:137:42: warning: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+JSP001007Standalone.lean:146:49: warning: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+JSP001007Standalone.lean:150:60: warning: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+JSP001007Standalone.lean:152:40: warning: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+JSP001007Standalone.lean:155:70: warning: Unused tactic linter: `rfl` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'JSP001007.Arithmetic.window_point_mod' depends on axioms: [propext, Quot.sound]
+'JSP001007.Arithmetic.window_point_in_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.Arithmetic.window_points_injective' depends on axioms: [propext, Quot.sound]
+'JSP001007.Arithmetic.window_density' depends on axioms: [propext, Quot.sound]
+'JSP001007.Arithmetic.cluster_conditions' depends on axioms: [propext, Quot.sound]
+'JSP001007.Arithmetic.cluster_cutoff_four' depends on axioms: [propext, Quot.sound]
+'JSP001007.Arithmetic.cutoff_ten' depends on axioms: [propext, Quot.sound]
+JSP001007Standalone.lean:238:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+JSP001007Standalone.lean:265:41: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+'JSP001007.primeBlock_card_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.large_primeBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.counterexamples' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.not_uniform_tenth_sieve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.not_erdos_uniform_sieve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.not_erdos_eventual_uniform_sieve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP001007.fixed_1000_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,21 @@
+{
+  "status": "PASS: exact-arithmetic finite-witness checks",
+  "lean_kernel_status": "NOT_RUN: this program does not invoke Lean",
+  "universal_theorem_status": "NOT_VERIFIED_BY_THIS_PROGRAM",
+  "witness_sha256": "a4d1bb5aa2135b03459c4804933d7ebaedb81cb80317d7bb7a842ce2480241f4",
+  "primality_method": "deterministic trial division through floor(sqrt(p))",
+  "q": 10000,
+  "number_of_selected_primes": 1000,
+  "number_of_primes_in_full_block": 1081,
+  "smallest_selected_prime": 100000007,
+  "largest_selected_prime": 100018621,
+  "N": 10000000000,
+  "surviving_subset_cardinality": 2500000000,
+  "surviving_subset_density": "1/4",
+  "strict_density_margin_10_card_minus_N": 15000000000,
+  "strict_cutoff_margin_N9_minus_pmax10": "999999999899813633888756182941843603986632737877497095993397153187176324316596559014755799",
+  "minimum_residue_margin_above_removed_half": 23147211,
+  "first_surviving_subset_point": 75000000,
+  "last_surviving_subset_point": 9999999999,
+  "quantifier_scope": "one specific k=1000 witness only"
+}
