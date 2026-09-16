@@ -1,9 +1,10 @@
 {
-  "archive_id": "github:randyxian08/awards:release:jsp001007-square-blocks-v1",
-  "url": "https://github.com/randyxian08/awards/releases/download/jsp001007-square-blocks-v1/JSP001007_square_blocks_submission.zip",
-  "sha256": "f6f18da0fd387463cff74936c87f2e9ad8e60d003503b2bb53347fb0d9a15a8f",
-  "bytes": 51533,
+  "archive_id": "github:randyxian08/awards:release:jsp001007-square-blocks-v2",
+  "url": "https://github.com/randyxian08/awards/releases/download/jsp001007-square-blocks-v2/JSP001007_square_blocks_submission_v2.zip",
+  "sha256": "b1a10f42600a15d19a54aac24cf2fcc170c8220a151312c0d56db45bb2cd1ea4",
+  "bytes": 51284,
   "repository": "https://github.com/randyxian08/awards",
-  "commit": "03a800cfb04068b0888ef6e91c69ea0eb5fac26c",
-  "directory": "submissions/jsp-001007-square-blocks"
+  "commit": "a646fcebecd47b2030417b17952bab9693d590ee",
+  "directory": "submissions/jsp-001007-square-blocks",
+  "scope": "Verified proof sources and native evidence; external archive coordinates omitted from archive to avoid self-hash dependency."
 }
