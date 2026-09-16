@@ -1,0 +1,17 @@
+<project>/Erdos466.lean:15:0: warning: 
+'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Real.Basic
+'Erdos466General.parabola_distance_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos466General.sixDistanceGramDet_ne_zero_of_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos466General.sixDistanceGramDet_plane' depends on axioms: [propext, Classical.choice, Quot.sound]
+<project>/Erdos466.lean:307:27: warning: Variable name `hd0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hd0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Erdos466General.infinite_configuration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos466General.N_tendsto_infinity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos466General.erdos_466_parameter_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos466General.erdos_466' depends on axioms: [propext, Classical.choice, Quot.sound]
