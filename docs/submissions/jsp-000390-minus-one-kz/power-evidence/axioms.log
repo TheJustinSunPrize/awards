@@ -1,0 +1,5 @@
+'JSP000390.three_pow_succ_dvd' depends on axioms: [propext, Quot.sound]
+'JSP000390.three_pow_is_solution' depends on axioms: [propext, Quot.sound]
+'JSP000390.minus_one_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000390.minus_one_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000390.minus_one_infinite_unrestricted' depends on axioms: [propext, Classical.choice, Quot.sound]

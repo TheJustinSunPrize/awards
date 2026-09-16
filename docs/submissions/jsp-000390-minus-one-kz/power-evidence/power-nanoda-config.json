@@ -1,0 +1,21 @@
+{
+  "export_file_path": "evidence/power-export.ndjson",
+  "use_stdin": false,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unpermitted_axiom_hard_error": true,
+  "nat_extension": true,
+  "string_extension": true,
+  "pp_declars": [
+    "JSP000390.Solutions",
+    "JSP000390Power.power_residue_infinite",
+    "JSP000390Power.powers_of_two_infinite",
+    "JSP000390Power.combined_known_families"
+  ],
+  "pp_output_path": "evidence/power-nanoda-statements.txt",
+  "pp_to_stdout": false,
+  "print_success_message": true
+}
