@@ -1,0 +1,10 @@
+id: "STMT-jsp-000179-f07-bosznay-v1-v1"
+problem: "JSP-000179"
+statement_en: "Bosznay's explicit finite non-averaging construction"
+formal:
+  declaration: "JSP000179.bosznay_construction"
+  file: "Statement.lean"
+  sha256: "63b1f8274d2027bb99519be6b4773e8f8081b49e95cf9096599e96c65e7b74b2"
+source:
+  url: ""
+  attribution_en: "Original solver and publication credit as recorded in the JSP catalog."

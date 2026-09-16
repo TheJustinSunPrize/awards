@@ -1,0 +1,23 @@
+id: jsp-000179-f07-bosznay-v1
+batch: null
+problem:
+  source: https://github.com/TheJustinSunPrize/awards
+  number: "JSP-000179"
+  title_en: "Bosznay's explicit finite non-averaging construction"
+  posed:
+    year: 2021
+    basis: stated
+    citation: ""
+  resolved:
+    year: 2021
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
