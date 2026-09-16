@@ -1,0 +1,25 @@
+Order-716 Hadamard certificate formalization
+
+The mathematical matrix is credited to Levent Alpoge, Philippe Voinov,
+Saul Reynolds-Haertle and their disclosed AI assistance, announced 12 August 2026.
+No discovery credit for this matrix or for the general Hadamard conjecture is claimed here.
+
+The proof framework is adapted, under Apache-2.0, from:
+Arthur Freitas Ramos, David Barros Hulak, Ruy J. G. B. de Queiroz,
+Arthur742Ramos/hadamard-668-lean,
+commit 78fbae8d69b6fdb66705b662469692d60e346ef0.
+https://github.com/Arthur742Ramos/hadamard-668-lean/tree/78fbae8d69b6fdb66705b662469692d60e346ef0
+
+The upstream development already certifies order 668. That result is prior art.
+This adaptation changes the target to order 716, reconstructs different compact
+certificate data from the public matrix, recomputes and kernel-checks the
+correlation certificates, and adds a bridge to Mathlib's Matrix.IsHadamard.
+The adapting applicant used OpenAI Codex. No first-ever formalization or exclusive
+entitlement is asserted. The distinct scope and credit allocation require review.
+
+The mathematical matrix was retrieved from the public hoa64 data mirror:
+https://github.com/bbeartheancient/hoa64/blob/d825201089123126ce792d4921cba4ae1b8977a3/matrices/hadamard_716.csv.gz
+The CSV is data, not a proof trusted by Lean. All reconstructed entries and all
+255970 distinct row pairs are independently checked by verify_certificate.py.
+
+Mathlib and Lean retain their own licenses and contributor attributions.

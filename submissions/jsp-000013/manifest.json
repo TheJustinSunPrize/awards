@@ -1,0 +1,94 @@
+{
+  "LICENSE": {
+    "sha256": "17603fed6c2a3c50bf9422d1745a39bc8ccc22212932b4bafc3f8e469cf8eda9",
+    "bytes": 11350
+  },
+  "NOTICE": {
+    "sha256": "77eada35ab5b22cb65fcefa801c4653aafca034fcf96e27aa99e394e9325ce35",
+    "bytes": 1495
+  },
+  "README.md": {
+    "sha256": "2e762288a82d3049f74a688003e8307851c9f330dbb64f4f016f804e5aee09dc",
+    "bytes": 4898
+  },
+  "compiler-output.json": {
+    "sha256": "f6003451a9c62353176d4470bc44f0a349b670b4f7b53fe036f66d50571a1aef",
+    "bytes": 678
+  },
+  "dedup-report.json": {
+    "sha256": "ab93860ab3d895cb3a4bf42330629506c5ae81b2aefbdf816e7174f09a0c7823",
+    "bytes": 50628
+  },
+  "hadamard_716.csv.gz": {
+    "sha256": "158b04b0b7dfe3145e4438de4217e4aefe4ba057e70fb868ed256f0ac91d8d97",
+    "bytes": 90698
+  },
+  "independent-verification.json": {
+    "sha256": "9c44131fea7f535599408d54d841c1ace4d1dbfe9124db908aef9ea616e3eede",
+    "bytes": 563
+  },
+  "lakefile.toml": {
+    "sha256": "40fee763e5dfcc558b508ac4042f7c23157a5d4dfaccafdbb935d71692a94549",
+    "bytes": 371
+  },
+  "lean-toolchain": {
+    "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "bytes": 25
+  },
+  "src/Hadamard716/CertificateData.lean": {
+    "sha256": "5d92be36788a9f769811178bb5e2999fab90767511bfc36ca1da2c13b21cfccd",
+    "bytes": 20456
+  },
+  "src/Hadamard716/CompactDistanceProof.lean": {
+    "sha256": "10213fa4f50c292ceee591b82ee3cddac83887b71a8d5a14a348540ba81eb168",
+    "bytes": 1468
+  },
+  "src/Hadamard716/CorrelationData.lean": {
+    "sha256": "dafae81d12b6e9239dcd3c55f2e28756c414aa195e02c327a8e3d7a4c75931f4",
+    "bytes": 138804
+  },
+  "src/Hadamard716/ListCompactCertificate.lean": {
+    "sha256": "1da48c6dea4c274ab61d34a1e9e69ceafb49b9946f301a1fddf6de76696ee0a8",
+    "bytes": 12475
+  },
+  "src/Hadamard716/ListCorrelationProof.lean": {
+    "sha256": "dd970294197bf013813fbc455d943a650fc55406ff5f7aa8c06f0c29a625b162",
+    "bytes": 21914
+  },
+  "src/Hadamard716/MatrixProof.lean": {
+    "sha256": "bd053f7d329250261a4142a8ee53854030a46a0e27036395b4b004604ac70196",
+    "bytes": 24734
+  },
+  "src/Hadamard716/README.md": {
+    "sha256": "85de938fa11f1c09575d74c96cb916aa09cbe30c78d3de2c4fedfdb5304ff939",
+    "bytes": 326
+  },
+  "src/Hadamard716.lean": {
+    "sha256": "591a8096d95ab1684866925d0f5fb59caf2df5a0664f830b610909b9d4b0cd62",
+    "bytes": 31
+  },
+  "src/Solution.lean": {
+    "sha256": "1756341047c6e69c8d21e52ccd356e597b67b2f8aafc5aad3a22c36d696902a5",
+    "bytes": 1044
+  },
+  "src/StandardStatement.lean": {
+    "sha256": "7b3e68c314003a287e710eb72852d6f414c82bb16794723eb9e7325c5742e000",
+    "bytes": 1331
+  },
+  "upstream-source-hashes.json": {
+    "sha256": "ee1757f33e49d749458f94540bae02c19a177e9ceec3cd26382032aa0a8a620d",
+    "bytes": 608
+  },
+  "verification.log": {
+    "sha256": "8b6b761c13dbd50f9d6737b2eaf81eba4184c1187e61fa01fc849bd30670908b",
+    "bytes": 2165
+  },
+  "verify.sh": {
+    "sha256": "aba26a9a5588a940df09729262ef1229389aae6eac74467e21f732a1418a7481",
+    "bytes": 165
+  },
+  "verify_certificate.py": {
+    "sha256": "39c960c744c52856938497e742d17c288060f45901e44f8475233672edf822e7",
+    "bytes": 2659
+  }
+}
