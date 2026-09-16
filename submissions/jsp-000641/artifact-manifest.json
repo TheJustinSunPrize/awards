@@ -1,0 +1,49 @@
+{
+  "problem": "JSP-000641",
+  "scope": "Explicit 133-point coloring with no 12-term monochromatic descending wave",
+  "lean_version": "4.24.0",
+  "compiler_exit_status": 0,
+  "independent_archive": false,
+  "files": [
+    {
+      "path": "DescendingWaves.lean",
+      "bytes": 47367,
+      "sha256": "1b66af142ac5cf0292b866bf45d9ead33ae125af27b944f9ea31124d37c5c8c0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6736,
+      "sha256": "52e40d588aeb58a625445d78b93c71cff20da696a606cb1ac193ab953f212dbd"
+    },
+    {
+      "path": "coloring.json",
+      "bytes": 254,
+      "sha256": "a11b3aef0cfba9b8b46bbf96e688c92fd8c3bb12cd2a0f750c2fb2d63db12023"
+    },
+    {
+      "path": "finite-checks.json",
+      "bytes": 537,
+      "sha256": "2e558bfadc4bcf7f89489b721df289c7013a9ab401fd210fdf4d02964373bf6f"
+    },
+    {
+      "path": "independent_check.py",
+      "bytes": 1386,
+      "sha256": "11fe95b1f68fde3a2f549c36845095ca71d3dfc512fbb1dbb927e3cf1b795568"
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434"
+    },
+    {
+      "path": "verification.log",
+      "bytes": 756,
+      "sha256": "bd08bb945893bf08f555c3a1ead283ba53f2ff8899801d348d3b29f71a02db72"
+    },
+    {
+      "path": "verify.sh",
+      "bytes": 279,
+      "sha256": "dbdb373f7104e8b26055505b38a156c26892c5e0f964d8f6c07a931693c4f945"
+    }
+  ]
+}
