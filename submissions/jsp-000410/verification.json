@@ -1,0 +1,59 @@
+{
+  "status": "verified",
+  "verified_utc": "2026-09-16T10:29:26.8260984Z",
+  "theorems": [
+    {
+      "name": "JSP410Closed.arbitrarily_many_large_closed_components",
+      "statement": "forall N : Nat, exists p : Polynomial Complex, p.Monic and HasLargeClosedComponents p (6/5 : Real) N",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "JSP410Closed.not_uniformly_bounded_closed_components",
+      "statement": "not (forall d : Real, 1 < d -> exists B : Nat, forall p : Polynomial Complex, p.Monic -> not HasLargeClosedComponents p d (B+1))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "closed_definition": "closedLemniscate p = { z | norm(p.eval z) <= 1 }",
+  "component_definition": "Exists injective C : Fin N -> Set Complex, every C i is an ambient connected component of closedLemniscate p and d < Metric.diam (C i)",
+  "bridge_sha256": "926bc1f3128bd1704b8a92bf67c444d88e8e213073abc5de0eb04ad35e73c2ae",
+  "bridge_size_bytes": 6440,
+  "upstream_commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+  "lean_toolchain": "leanprover/lean4:v4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "compile_commands": [
+    "lean -j1 -M8192 -o ErdosProblems/Erdos229.olean ErdosProblems/Erdos229.lean",
+    "lean -j1 -M8192 -o ErdosProblems/Erdos511.olean ErdosProblems/Erdos511.lean",
+    "lean -j1 -M8192 -o JSP410ClosedBridge.olean JSP410ClosedBridge.lean"
+  ],
+  "replay_command": "leanchecker --verbose JSP410ClosedBridge",
+  "scope": "All three original/new modules compiled. leanchecker replay checked the bridge module with imported environment, not --fresh replay of all imports.",
+  "source": "JSP410ClosedBridge.lean",
+  "source_manifest": "upstream.json",
+  "line_endings": "LF",
+  "final_compile_exit_code": 0,
+  "target_replay_exit_code": 0,
+  "logs": [
+    {
+      "file": "validation-logs/dependency-build-first-attempt.log",
+      "sha256": "ab105cff1d9eaa47d03b3716325e801ea8df0e3127b5262c118430bd229761da",
+      "size_bytes": 364,
+      "note": "Unedited initial build log: both unchanged dependencies succeeded; the initial bridge import-order error shown here was fixed before final verification."
+    },
+    {
+      "file": "validation-logs/bridge-final-lf.log",
+      "sha256": "12b8a16c6f284a05ffabe3a01f246f7b1d7219562a5edc35f6f72e304041560c",
+      "size_bytes": 313,
+      "note": "Unedited final LF bridge compilation and target-module replay output; wrapper exit code 0."
+    }
+  ],
+  "reproduction_helper_status": "The portable verify.py recipe has been statically reviewed; local verification used the same pinned source bytes and compiler against an isolated output directory with a read-only Mathlib cache. A new end-to-end fresh-checkout run of verify.py is not claimed.",
+  "review_scope": "Target-module replay uses Lean's own kernel against imported libraries. This is neither a fresh replay of every import, an independently implemented checker, nor an independent human referee report."
+}

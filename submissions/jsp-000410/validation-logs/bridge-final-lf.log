@@ -1,0 +1,5 @@
+Compile JSP410ClosedBridge
+'JSP410Closed.arbitrarily_many_large_closed_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP410Closed.not_uniformly_bounded_closed_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+Replay JSP410ClosedBridge
+replaying JSP410ClosedBridge

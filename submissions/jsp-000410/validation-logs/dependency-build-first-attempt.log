@@ -1,0 +1,6 @@
+Compile ErdosProblems/Erdos229
+'Erdos229.erdos_229' depends on axioms: [propext, Classical.choice, Quot.sound]
+Compile ErdosProblems/Erdos511
+'Erdos511.not_erdos_511' depends on axioms: [propext, Classical.choice, Quot.sound]
+Compile JSP410ClosedBridge
+JSP410ClosedBridge.lean:14:0: error: invalid 'import' command, it must be used in the beginning of the file
