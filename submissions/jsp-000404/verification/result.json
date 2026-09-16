@@ -1,12 +1,12 @@
 {
   "status": "passed",
-  "verified_at_utc": "2026-09-16T11:48:50.016868+00:00",
+  "verified_at_utc": "2026-09-16T11:55:52.902250+00:00",
   "lean_version": "4.34.0",
   "lean_commit": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
   "mathlib_commit": "5ed2965256430c3649e86755f9576b54eca72435",
-  "audited_theorem_count": 111,
+  "audited_theorem_count": 137,
   "clean_requested": true,
-  "elapsed_seconds": 202.948,
+  "elapsed_seconds": 66.703,
   "axioms": {
     "JSP404.mem_angleValues": [
       "propext",
@@ -562,6 +562,135 @@
       "propext",
       "Classical.choice",
       "Quot.sound"
+    ],
+    "JSP404.signed_circleDirection_angle_le_of_separation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterPhi_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterPhi_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterPhi_lt_half_pi": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterPhi_cos_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterCenters_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterDirections_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_center_sub_10": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_center_sub_20": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_center_sub_21": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterArgument_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterArgument_coarse_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterDirections_internal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_center_angle_A": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_center_angle_B": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.three_center_angle_C": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterCenters_angle_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeCluster_direction_center_separation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeCenter_difference_direction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeClusterDirections_cross": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeCluster_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.sendov_intermediate_upper_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_le_sendov_intermediate_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.alpha_five_le_three_pi_div_five": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP404.threeCluster_cutoff_eq_source": [
+      "propext",
+      "Quot.sound"
+    ],
+    "JSP404.sendov_piecewise_upper_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
     ]
   },
   "source_sha256": {
@@ -576,11 +705,12 @@
     "JSP404/FormulaCorrection.lean": "c069b886a6fede78859d618cdb5cb385355edc9f42e5e25a989bec2c4205c6e3",
     "JSP404/HierarchicalConstruction.lean": "b11dab9b61d3100dc68a304656f3fe897ab642caa9f021b00a69c6b5e2d6c29b",
     "JSP404/ThreeCenterBound.lean": "161b2206e0c7cec2f8499813589950eed7cfcf61d81765d1f4407419aad2c22f",
-    "JSP404.lean": "61895cd1942b47c58a5e38c77e64371ca06477744a555abb2f165319a8d84d8e",
-    "Audit.lean": "c52ce52a47de46cabe7763a72daeec39020cc58de5d56a36ab5fc08e86bff130",
+    "JSP404/ThreeClusterGeometry.lean": "4c228a5adfe16478a7b1f07d672615f11df98573014a1a110bad48bc1d575582",
+    "JSP404.lean": "08dd3a48a4b2230c7f776496eede373b359b1f1181762a888651df762e99f936",
+    "Audit.lean": "d5a6a3ab42004faba17c735768f9ee8b46787920415728ec3fd60dc0de23436a",
     "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
     "lakefile.toml": "2acce6724db390d41df6d5b239120d004adc1b2d316d58af063365ce72cd92ad",
     "lake-manifest.json": "7c78c154ebcb8a304cdf594f42f2f3b8d59013b152cb4c84397fe3832771b590",
-    "scripts/verify.py": "7ceb3c964f0d22e28d99748c2c2cb3ab3efd984692b4cbbbce7695ed8a45bf1d"
+    "scripts/verify.py": "dd88232d40344e45e876934926edc854d99368662ee8bb0f4f39f52db37e78a7"
   }
 }

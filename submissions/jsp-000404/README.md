@@ -16,7 +16,7 @@ The independently checked counterexample is the set
 {(-1,-1), (1,-1), (1,1), (0,2), (-1,1)}.
 ```
 
-Every angle in it is at most `3π/4 < 4π/5`. In particular, `JSP404.not_transcribed_lower_formula` disproves the stated lower-interval formula using genuine Euclidean points. This counterexample does not by itself compute `alpha(5)` exactly.
+Every angle in it is at most `3π/4 < 4π/5`. In particular, `JSP404.not_transcribed_lower_formula` disproves the stated lower-interval formula using genuine Euclidean points. This counterexample does not by itself compute `alpha(5)` exactly. The separate cluster construction also proves the stronger upper bound `alpha(5) ≤ 3π/5`; the matching lower bound is not formalized here.
 
 | Module | Proven scope |
 | --- | --- |
@@ -25,7 +25,8 @@ Every angle in it is at most `3π/4 < 4π/5`. In particular, `JSP404.not_transcr
 | [BinaryEncoding](JSP404/BinaryEncoding.lean) | Binary separation and weighted counting for bipartite graph covers. |
 | [DirectionalCover](JSP404/DirectionalCover.lean), [EquallySpacedDirections](JSP404/EquallySpacedDirections.lean) | Geometric cone coloring and an actual equally spaced direction cover; if k ≥ 2 and N > 2^k, every N-point set has an angle at least `(1−1/k)π`. |
 | [BinaryConstruction](JSP404/BinaryConstruction.lean), [ClassicalBounds](JSP404/ClassicalBounds.lean) | Binary configurations built at successively smaller scales; the unconditional classical upper bound `alpha(2^k) ≤ (1−1/k)π` for k ≥ 2 and its cardinality consequences. |
-| [HierarchicalConstruction](JSP404/HierarchicalConstruction.lean), [ClusterConstruction](JSP404/ClusterConstruction.lean) | Finite cluster contraction and binary-cluster upper bounds under explicitly stated directional hypotheses. These are reusable construction theorems, not the completed sharp construction for every interval. |
+| [HierarchicalConstruction](JSP404/HierarchicalConstruction.lean), [ClusterConstruction](JSP404/ClusterConstruction.lean) | Finite cluster contraction and binary-cluster upper bounds under explicitly stated directional hypotheses. The explicit instantiation is supplied in ThreeClusterGeometry. |
+| [ThreeClusterGeometry](JSP404/ThreeClusterGeometry.lean) | Explicit three-center construction and unconditional upper bounds for both branches of Sendov's corrected formula, for `n ≥ 2` and `2^n < N ≤ 2^(n+1)`. In particular, `alpha(5) ≤ 3π/5`. These are upper bounds, not equality theorems. |
 | [ThreeCenterBound](JSP404/ThreeCenterBound.lean) | The three-variable floor/exponent capacity inequalities under normalized angle hypotheses. The reduction of arbitrary planar configurations to these hypotheses is not claimed. |
 
 ## Reproduce
@@ -45,4 +46,4 @@ The permitted axiom dependencies are `propext`, `Quot.sound`, and `Classical.cho
 
 ## Remaining work
 
-The complete classification needs the sharp general-center geometric counting argument, its bridge from arbitrary configurations, and the specialized three-center construction for the intermediate interval. The classical binary construction already supplies the other upper-bound branch. The present three-center arithmetic and conditional construction interfaces do not establish the missing general reduction. Subsequent work can extend these modules without assuming Sendov's main theorem as an axiom.
+The complete classification still needs the sharp general-center geometric counting argument and its bridge from arbitrary configurations to the universal lower bounds. The binary and three-center constructions now supply the upper-bound direction of both corrected branches for N ≥ 5. The present three-center arithmetic does not establish the missing general reduction. In particular, `alpha(5) ≤ 3π/5` has been proved, but `alpha(5) = 3π/5` has not. Subsequent work can extend these modules without assuming Sendov's main theorem as an axiom.

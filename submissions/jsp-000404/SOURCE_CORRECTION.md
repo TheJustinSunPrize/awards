@@ -49,6 +49,6 @@ Our Lean result proves the sufficient, weaker bound
 It uses the five distinct rational-coordinate points
 \((-1,-1),(1,-1),(1,1),(0,2),(-1,1)\), and checks that every angle they determine is at most \(3\pi/4\). This is a geometric counterexample, independent of assuming Sendov's formula.
 
-The relevant declarations are `JSP404.alpha_five_le_three_pi_div_four`, `JSP404.alpha_five_lt_four_pi_div_five`, and `JSP404.not_transcribed_lower_formula`. The arithmetic theorem `JSP404.source_branch_at_three` evaluates the corrected expression; **it is not a proof that \(\alpha_5=3\pi/5\)**. Neither that exact value nor Sendov's complete classification is claimed as formalized by this submission.
+The relevant declarations are `JSP404.alpha_five_le_three_pi_div_four`, `JSP404.alpha_five_lt_four_pi_div_five`, and `JSP404.not_transcribed_lower_formula`. The arithmetic theorem `JSP404.source_branch_at_three` evaluates the corrected expression; **it is not a proof that \(\alpha_5=3\pi/5\)**. The separate `ThreeClusterGeometry` module additionally proves the stronger upper bound `JSP404.alpha_five_le_three_pi_div_five` and the upper-bound direction of both corrected formula branches for N ≥ 5. Neither the exact value (which also requires a matching lower bound) nor Sendov's complete classification is claimed as formalized by this submission.
 
-The original mathematical classification is due to **Blagovest Sendov**. Completing the general geometric counting argument and connecting it with the available construction lemmas remain part of the formalization work.
+The original mathematical classification is due to **Blagovest Sendov**. Completing the general geometric counting argument and the matching universal lower bounds remain part of the formalization work.

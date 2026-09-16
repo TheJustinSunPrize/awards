@@ -23,6 +23,7 @@ ALLOWED_AXIOMS = {"propext", "Quot.sound", "Classical.choice"}
 EXPECTED_THEOREMS = {
     'JSP404.alpha_eq_of_bounds',
     'JSP404.alpha_eq_sInf',
+    'JSP404.alpha_five_le_three_pi_div_five',
     'JSP404.alpha_five_le_three_pi_div_four',
     'JSP404.alpha_five_lt_four_pi_div_five',
     'JSP404.alpha_five_ne_four_pi_div_five',
@@ -31,6 +32,7 @@ EXPECTED_THEOREMS = {
     'JSP404.alpha_le_of_configuration',
     'JSP404.alpha_le_pi',
     'JSP404.alpha_le_self_index_upper',
+    'JSP404.alpha_le_sendov_intermediate_upper',
     'JSP404.alpha_le_szekeres_upper',
     'JSP404.alpha_lt_pi',
     'JSP404.alpha_mono',
@@ -109,6 +111,9 @@ EXPECTED_THEOREMS = {
     'JSP404.realDigit_sub_eq_sign',
     'JSP404.realDigit_sub_ne_zero',
     'JSP404.realDigit_sub_same_base',
+    'JSP404.sendov_intermediate_upper_bound',
+    'JSP404.sendov_piecewise_upper_bound',
+    'JSP404.signed_circleDirection_angle_le_of_separation',
     'JSP404.signed_grid_direction_angle_le',
     'JSP404.signed_grid_direction_angle_le_real',
     'JSP404.source_branch_at_three',
@@ -123,8 +128,29 @@ EXPECTED_THEOREMS = {
     'JSP404.tendsto_binaryResidual',
     'JSP404.tendsto_perturb_angle',
     'JSP404.tendsto_perturb_sub',
+    'JSP404.threeCenter_difference_direction',
+    'JSP404.threeClusterArgument_bounds',
+    'JSP404.threeClusterArgument_coarse_bounds',
+    'JSP404.threeClusterCenters_angle_le',
+    'JSP404.threeClusterCenters_injective',
+    'JSP404.threeClusterDirections_cross',
+    'JSP404.threeClusterDirections_internal',
+    'JSP404.threeClusterDirections_ne_zero',
+    'JSP404.threeClusterPhi_cos_pos',
+    'JSP404.threeClusterPhi_lt_half_pi',
+    'JSP404.threeClusterPhi_mul',
+    'JSP404.threeClusterPhi_pos',
+    'JSP404.threeCluster_cardinality',
+    'JSP404.threeCluster_cutoff_eq_source',
+    'JSP404.threeCluster_direction_center_separation',
+    'JSP404.three_center_angle_A',
+    'JSP404.three_center_angle_B',
+    'JSP404.three_center_angle_C',
     'JSP404.three_center_bound',
     'JSP404.three_center_bound_small_delta',
+    'JSP404.three_center_sub_10',
+    'JSP404.three_center_sub_20',
+    'JSP404.three_center_sub_21',
     'JSP404.three_centers_not_all_high',
     'JSP404.three_centers_not_two_high',
     'JSP404.three_le_two_pow',
@@ -216,8 +242,8 @@ def main():
             "source_sha256": hashes,
         }
         (out / "result.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-        print("PASS: build and all 111 theorem axiom audits succeeded.", flush=True)
-        log.write("PASS: build and all 111 theorem axiom audits succeeded.\n")
+        print("PASS: build and all 137 theorem axiom audits succeeded.", flush=True)
+        log.write("PASS: build and all 137 theorem axiom audits succeeded.\n")
 
 
 if __name__ == "__main__":

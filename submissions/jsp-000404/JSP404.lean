@@ -9,3 +9,4 @@ import JSP404.EquallySpacedDirections
 import JSP404.FormulaCorrection
 import JSP404.HierarchicalConstruction
 import JSP404.ThreeCenterBound
+import JSP404.ThreeClusterGeometry
