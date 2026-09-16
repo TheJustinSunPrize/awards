@@ -1,0 +1,63 @@
+✔ [993/999] Built JSP000689.Counting (5.2s)
+✔ [994/999] Built JSP000689.Growth (6.9s)
+✔ [995/999] Built JSP000689.Colorable (9.9s)
+✔ [996/999] Built JSP000689.Main (7.4s)
+✔ [997/999] Built JSP000689.Sanity (5.7s)
+✔ [998/999] Built JSP000689 (4.5s)
+Build completed successfully (999 jobs).
+'JSP000689.extension_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000689.colorable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000689.erdos833_rat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000689.erdos833' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000689.triangle_not_two_colorable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000689.prize_statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem JSP000689.erdos833.{u_1} : ∀ {V : Type u_1} [Fintype V] [inst : DecidableEq V] (H : Finset (Finset V)) (r : ℕ),
+  2 ≤ r → (∀ e ∈ H, e.card = r) → JSP000689.NotTwoColorable H → ∃ v, (1 + 1 / 8) ^ r ≤ ↑(JSP000689.degree H v) :=
+fun {V} [Fintype V] [DecidableEq V] H r hr hu hn =>
+  Exists.casesOn (JSP000689.erdos833_rat H r hr hu hn) fun v hv =>
+    Exists.intro v
+      (have hc :=
+        Mathlib.Meta.NormNum.isNNRat_eq_true
+          (Mathlib.Meta.NormNum.isNNRat_add (Eq.refl HAdd.hAdd)
+            (Mathlib.Meta.NormNum.IsNat.to_isNNRat (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one))
+            (Mathlib.Meta.NormNum.isNNRat_div
+              (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+                (Mathlib.Meta.NormNum.IsNat.to_isNNRat (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one))
+                (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                  (Mathlib.Meta.NormNum.IsNat.to_isNNRat (Mathlib.Meta.NormNum.isNat_ofNat ℝ (Eq.refl 8))))
+                (Eq.refl (Nat.mul 1 1)) (Eq.refl 8)))
+            (Eq.refl 9) (Eq.refl 8))
+          (Mathlib.Meta.NormNum.isNNRat_div
+            (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+              (Mathlib.Meta.NormNum.IsNat.to_isNNRat (Mathlib.Meta.NormNum.isNat_ofNat ℝ (Eq.refl 9)))
+              (Mathlib.Meta.NormNum.isNNRat_inv_pos
+                (Mathlib.Meta.NormNum.IsNat.to_isNNRat (Mathlib.Meta.NormNum.isNat_ofNat ℝ (Eq.refl 8))))
+              (Eq.refl (Nat.mul 9 1)) (Eq.refl 8)));
+      Eq.mpr (id (congrArg (fun _a => _a ^ r ≤ ↑(JSP000689.degree H v)) hc))
+        (have hcast := Rat.cast_le.mpr hv;
+        Eq.mp
+          (congr
+            (congrArg LE.le
+              (Eq.trans (Rat.cast_pow (9 / 8) r)
+                (congrFun'
+                  (congrArg HPow.hPow
+                    (Eq.trans (Rat.cast_div 9 8) (congr (congrArg HDiv.hDiv (Rat.cast_ofNat 9)) (Rat.cast_ofNat 8))))
+                  r)))
+            (Rat.cast_natCast (JSP000689.degree H v)))
+          hcast))
+def JSP000689.NotTwoColorable.{u_1} : {V : Type u_1} → Finset (Finset V) → Prop :=
+fun {V} H => ¬∃ c, ∀ e ∈ H, ¬JSP000689.Mono e c
+def JSP000689.Mono.{u_1} : {V : Type u_1} → Finset V → (V → Bool) → Prop :=
+fun {V} e c => ∀ x ∈ e, ∀ y ∈ e, c x = c y
+def JSP000689.degree.{u_1} : {V : Type u_1} → [DecidableEq V] → Finset (Finset V) → V → ℕ :=
+fun {V} [DecidableEq V] H v => {e ∈ H | v ∈ e}.card
+Audit.lean: OK
+JSP000689/Colorable.lean: OK
+JSP000689/Counting.lean: OK
+JSP000689/Growth.lean: OK
+JSP000689/Main.lean: OK
+JSP000689/Sanity.lean: OK
+JSP000689.lean: OK
+lake-manifest.json: OK
+lakefile.toml: OK
+lean-toolchain: OK
