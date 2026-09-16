@@ -1,4 +1,44 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000854-cronrpc",
+        "batch": null,
+        "problem": {
+          "source": "erdosproblems.com",
+          "number": 1027,
+          "title_en": "Erdos problem 1027 / JSP-000854: a positive proportion of splitting subsets",
+          "posed": {
+            "year": 1964,
+            "basis": "earliest-reference",
+            "citation": "The prize catalogue records 'No later than 1964 (bibliographic evidence)': https://github.com/TheJustinSunPrize/awards/blob/f4e7173d89dfe91022a185427d63452c8ffbf6ae/problems/catalog-0801-0900.md#JSP-000854. This is a bibliographic upper bound, not an asserted exact first-posed date."
+          },
+          "resolved": null
+        },
+        "decision": null,
+        "recipients": [
+          {
+            "id": "RECIPIENT-JSP-000854-CRONRPC-A",
+            "affiliation": "",
+            "contribution_en": "Proposed contribution: AI-assisted Lean 4 formalization of the complete Erdos 1027 counting theorem via random partial colorings. Contribution attribution and recipient identity await confirmation; no priority or award is asserted.",
+            "confirmation": null
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000854-cronrpc",
+      "citation": "# Candidate review: JSP-000854 / Erdos problem 1027\n\n## English\n\nThis is an **under-verification candidate**, not an award or a completed independent verification record. The `verified-pending` pool is the repository's location convention; its name does not establish successful verification.\n\nThe proposed contribution is an AI-assisted Lean 4 formalization of the full positive-proportion theorem. For each real c > 0 there are delta > 0 and N, depending only on c, such that for every finite vertex type V, every natural n >= N, and every family F of n-element subsets of V with at most c * 2^n members, at least delta * 2^|V| subsets B of V have both A intersect B nonempty and A minus B nonempty for every A in F. No degree or intersection restriction is imposed. An equivalent Boolean-coloring theorem is included.\n\nThe original problem is [Erdos 1027](https://www.erdosproblems.com/1027); the corresponding prize entry is [JSP-000854](https://github.com/TheJustinSunPrize/awards/blob/f4e7173d89dfe91022a185427d63452c8ffbf6ae/problems/catalog-0801-0900.md#JSP-000854). The existing mathematical solution by Koishi Chan is credited in the [public discussion](https://www.erdosproblems.com/forum/thread/1027). This candidate concerns formalization and does not claim to solve a previously unsolved problem. The reconstructed partial-coloring argument is not asserted to be novel, and formalization priority has not been established. The mathematical resolution year remains null pending an appropriate reviewed dated source; this does not dispute the catalogue's solved status.\n\nThe immutable proof source is [0f0f63749b77195cbd6c1b7f7ef2b11c777663c6](https://github.com/cronrpc/erdos1027-lean/tree/0f0f63749b77195cbd6c1b7f7ef2b11c777663c6). Review [the complete theorem declarations](https://github.com/cronrpc/erdos1027-lean/blob/0f0f63749b77195cbd6c1b7f7ef2b11c777663c6/Erdos1027Main.lean), [the proof route](https://github.com/cronrpc/erdos1027-lean/blob/0f0f63749b77195cbd6c1b7f7ef2b11c777663c6/PROOF.md), [dependency pins](https://github.com/cronrpc/erdos1027-lean/blob/0f0f63749b77195cbd6c1b7f7ef2b11c777663c6/lake-manifest.json), and [the repository instructions](https://github.com/cronrpc/erdos1027-lean/blob/0f0f63749b77195cbd6c1b7f7ef2b11c777663c6/README.md). The project specifies `leanprover/lean4:v4.19.0` and mathlib commit `c44e0c8ee63ca166450922a373c7409c5d26b00b`. These versions are reported exactly, without asserting that they satisfy any current minimum safe-version policy.\n\nThe bundled local [build log](https://github.com/cronrpc/erdos1027-lean/blob/0f0f63749b77195cbd6c1b7f7ef2b11c777663c6/verification/lake-build.log) and [axiom-audit log](https://github.com/cronrpc/erdos1027-lean/blob/0f0f63749b77195cbd6c1b7f7ef2b11c777663c6/verification/axioms.log) are submitter-provided evidence. They are not a completed independent review or evidence of two independent checker implementations. Reviewers must fetch the pinned source, reproduce the build, compare the theorem to the original question, and inspect the actual axiom dependencies.\n\nThe [unsigned proposed statement](verification/proposed-statement.md) records every quantifier and the relevant definitions. `verification.formal` and [the verification record](verification/record.yaml) are null. The current upstream schema requires at least two real curator signatories before an active `statement.yaml` can be supplied. No signatures, profile confirmations, independent checkers, sandbox guarantees, or organizer conclusions have been invented.\n\nSubmitter account: @cronrpc. This identifies the submitting account, not a confirmed recipient. The submitter is involved in this recommendation; the submission is not an independent endorsement. No additional professional relationship or conflict is asserted; further disclosures remain subject to review. [Related issue](https://github.com/TheJustinSunPrize/awards/issues/141)\n",
+      "recipients": "# Candidate attribution\n\n## English\n\n`RECIPIENT-JSP-000854-CRONRPC-A` is the sole unconfirmed recipient placeholder. It does not identify a person or establish eligibility, a share of an award, or a payment claim. No recipient name, affiliation, confirmation, private contact information, or payment information is included.\n\nThe proposed contribution is an AI-assisted Lean 4 formalization and a finite-probability proof of the complete statement of Erdos problem 1027. Attribution is to be reviewed against [the immutable source](https://github.com/cronrpc/erdos1027-lean/tree/0f0f63749b77195cbd6c1b7f7ef2b11c777663c6) and its contribution history before any recipient identity is associated with this record.\n\nThe pre-existing mathematical solution is credited to Koishi Chan in the [original public discussion](https://www.erdosproblems.com/forum/thread/1027). That scholarly credit is not a nomination of the prior solver as a recipient of this submission. Neither the argument's novelty nor first-formalization priority is asserted.\n\nThe submitting account @cronrpc is not treated as a confirmed recipient. A recipient identity may replace the placeholder only after the confirmation and authorized public-profile requirements of this repository are met. Independent verification and attribution review remain pending.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }

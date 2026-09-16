@@ -1,0 +1,32 @@
+{
+  "id": "jsp-000854-cronrpc",
+  "batch": null,
+  "problem": {
+    "source": "erdosproblems.com",
+    "number": 1027,
+    "title_en": "Erdos problem 1027 / JSP-000854: a positive proportion of splitting subsets",
+    "posed": {
+      "year": 1964,
+      "basis": "earliest-reference",
+      "citation": "The prize catalogue records 'No later than 1964 (bibliographic evidence)': https://github.com/TheJustinSunPrize/awards/blob/f4e7173d89dfe91022a185427d63452c8ffbf6ae/problems/catalog-0801-0900.md#JSP-000854. This is a bibliographic upper bound, not an asserted exact first-posed date."
+    },
+    "resolved": null
+  },
+  "decision": null,
+  "recipients": [
+    {
+      "id": "RECIPIENT-JSP-000854-CRONRPC-A",
+      "affiliation": "",
+      "contribution_en": "Proposed contribution: AI-assisted Lean 4 formalization of the complete Erdos 1027 counting theorem via random partial colorings. Contribution attribution and recipient identity await confirmation; no priority or award is asserted.",
+      "confirmation": null
+    }
+  ],
+  "verification": {
+    "peer_review": null,
+    "formal": null,
+    "independent_review": null
+  },
+  "conflicts": [],
+  "status": "under-verification",
+  "revocation": null
+}
