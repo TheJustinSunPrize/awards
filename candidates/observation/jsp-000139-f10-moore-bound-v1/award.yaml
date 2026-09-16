@@ -1,0 +1,23 @@
+id: jsp-000139-f10-moore-bound-v1
+batch: null
+problem:
+  source: https://github.com/TheJustinSunPrize/awards
+  number: "JSP-000139"
+  title_en: "Moore-bound component for triangle-free graphs of diameter at most two"
+  posed:
+    year: 2021
+    basis: stated
+    citation: "https://web.math.princeton.edu/~nalon/PDFS/remark1901.pdf"
+  resolved:
+    year: 2021
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
