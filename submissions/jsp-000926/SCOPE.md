@@ -1,8 +1,8 @@
 # Scope of JSP-000926 / Erdős 1115
 
-**Classification: Partial Progress. Verification status: pending.**
+**Classification: Partial Progress. Contributor verification passed; official review remains pending.**
 
-This document describes the statements in the proposed source. It does not certify that the source has compiled or passed kernel replay.
+This document describes the statements in the submitted source. Actual contributor-run compilation and replay results are recorded in `evidence/verification.json`; they are not official certification.
 
 ## Quantifiers of the proposed terminal theorem
 
