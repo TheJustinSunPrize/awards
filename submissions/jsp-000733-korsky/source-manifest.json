@@ -1,0 +1,65 @@
+{
+  "scope": "Proof sources, negative controls, pinned environment, and verification script",
+  "files": [
+    {
+      "path": "Erdos882Korsky.lean",
+      "bytes": 1267,
+      "sha256": "d1a4946b8147a0f336710cb91a21b75772169c4b5595945abb476ecd208738d5"
+    },
+    {
+      "path": "Erdos882Original.lean",
+      "bytes": 2741,
+      "sha256": "a7d71df4cd28981cf040b9464ab63b027b4efc19d0153b134fd19b95c6a014dc"
+    },
+    {
+      "path": "KorskyCount.lean",
+      "bytes": 4751,
+      "sha256": "2649f1f1f17b7f2ae802515c5b8b81d78d1a2650d4b251e365059a53ab9f1131"
+    },
+    {
+      "path": "KorskyDefs.lean",
+      "bytes": 1139,
+      "sha256": "3ed04ab8dc23987738a017d0d7192a269d06c8c72ec01e1e171f154720981bfa"
+    },
+    {
+      "path": "KorskyEndpoint.lean",
+      "bytes": 3135,
+      "sha256": "a92d2236ce73a8b30325cae902cf5efd01eefb7011a73b57f189d624aec99919"
+    },
+    {
+      "path": "KorskyInject.lean",
+      "bytes": 6290,
+      "sha256": "8ca0ea1111a50a1f6fe4a3e4afaad085410800bfaa2d5c60d063dbd52fe3f083"
+    },
+    {
+      "path": "KorskyModular.lean",
+      "bytes": 3032,
+      "sha256": "a98f8711db09393265a63ac27c517aa2c528692efc7b4dc468a083b8b5abd9bf"
+    },
+    {
+      "path": "NegativeControls.lean",
+      "bytes": 1073,
+      "sha256": "07fb6e94a078cd1e460512bd970fa32af2a23252411fe92de8673a7597b56b07"
+    },
+    {
+      "path": "lake-manifest.json",
+      "bytes": 3548,
+      "sha256": "2a4ac093ff9e6f16d731b27021cbfcc6623a3da0a4ffb1777eab435de1f84d66"
+    },
+    {
+      "path": "lakefile.toml",
+      "bytes": 283,
+      "sha256": "de2bc40c94df6c4b143592919761ce11c123ff8cc00a4c41b094524dda5a7e06"
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632"
+    },
+    {
+      "path": "tools/verify.py",
+      "bytes": 12725,
+      "sha256": "677a8960ae534b2b4f9fa819a05e519a206ca5fc34e67c7c27208a4b93633caf"
+    }
+  ]
+}
