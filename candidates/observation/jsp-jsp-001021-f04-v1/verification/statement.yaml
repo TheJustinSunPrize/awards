@@ -1,0 +1,10 @@
+id: "STMT-jsp-jsp-001021-f04-v1-v1"
+problem: "JSP-001021"
+statement_en: "How large a transitive subtournament must every tournament of prescribed order contain?"
+formal:
+  declaration: "JSP001021.solution"
+  file: "Statement.lean"
+  sha256: "5cbef441da0e7d2b3dd82601050e36cdcbc8a7bdd4e1bb5ba1aa5fccc02f76aa"
+source:
+  url: "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/5D7CCBE66AB07BB3F90F771D1CD3CD08/S0008439500052875a.pdf/on-subtournaments-of-a-tournament.pdf"
+  attribution_en: "Original solver and publication credit as recorded in the JSP catalog."
