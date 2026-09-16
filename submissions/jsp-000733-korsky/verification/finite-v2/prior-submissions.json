@@ -1,0 +1,29 @@
+{
+  "checked_at_utc": "2026-09-16 21:38 UTC",
+  "timestamp_precision": "minute",
+  "all_issues_and_pr_count": 287,
+  "max_number": 288,
+  "snapshot_precedes_finite_extension_submission": true,
+  "scope": "Complete official issue/PR listing scan and pinned source-scope comparison, reported by two task agents.",
+  "relevant": [
+    {
+      "number": 31,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/31",
+      "head_sha": "83f20bbe58d116a9a290c86821fa4ee1a29dd3eb",
+      "scope": "Leading asymptotic; its scope statement excludes stronger additive-error results."
+    },
+    {
+      "number": 264,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/264",
+      "head_sha": "1db509ec5ad2c410d9b13232685c343c008f0b1f",
+      "scope": "Half-log-log upper bound for n >= 32 and eventual variant, with original-condition and maximum-attainment bridges."
+    },
+    {
+      "number": 276,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/276",
+      "head_sha": "c8748f17a1d1d963a396c50dc76d193bf9ee48b6",
+      "scope": "This submitter's earlier Korsky sum bound and constant-error upper bound. Snapshot is before the finite extension; it is not the final publication head."
+    }
+  ],
+  "limits": "Bounded public-source comparison as of the stated minute; not a global first-formalization certification or an award entitlement. Final publication identity is recorded separately."
+}
