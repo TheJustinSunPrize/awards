@@ -63,3 +63,14 @@ versions and export hashes in `evidence/metadata.json`. Only `propext`,
 `Classical.choice`, and `Quot.sound` are permitted by the checker configuration.
 The submitter ran these automated checks; independent human statement review
 remains pending.
+
+## 6. Archived proof evidence
+
+[Release](https://github.com/tester-lean/awards/releases/tag/jsp-001007-v1), pinned
+to source commit `f26433803cfbd924569aebbdcc1c39321ecb9971`.
+
+- [Archive](https://github.com/tester-lean/awards/releases/download/jsp-001007-v1/jsp-001007-evidence.tar.gz).
+- SHA-256: `4a9d722b7f54898aeee4a5e9ac15916471505d07a065c9fa664d909f97b40125`.
+- Bytes: 42470298.
+
+This documentation update does not change the pinned Lean proof sources.
