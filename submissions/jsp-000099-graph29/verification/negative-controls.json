@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "seconds": 11.384,
+  "source_sha256": "2cd556e92e946c246f94ef238cd7621b87752f7557a5b8d3a12cd8c659255861",
+  "network_denied": true,
+  "rejected": [
+    "false cardinality cutoff",
+    "forged possible-state checkpoint",
+    "forged selected-state checkpoint"
+  ]
+}
