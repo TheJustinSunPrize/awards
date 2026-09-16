@@ -1,0 +1,20 @@
+id: jsp-001021-f04-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001021"
+  number: "JSP-001021"
+  title_en: "How large a transitive subtournament must every tournament of prescribed order contain?"
+  posed:
+    year: 1964
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001021"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null

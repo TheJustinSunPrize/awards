@@ -1,4 +1,37 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-001021-f04-v1",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001021",
+          "number": "JSP-001021",
+          "title_en": "How large a transitive subtournament must every tournament of prescribed order contain?",
+          "posed": {
+            "year": 1964,
+            "basis": "earliest-reference",
+            "citation": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001021"
+          },
+          "resolved": null
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-001021-f04-v1",
+      "citation": "# Candidate observation\n\n## English\n\nThis preliminary observation is associated with [JSP-001021 — How large a transitive subtournament must every tournament of prescribed order contain?](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001021). It publishes `Statement.lean` and `Proof.lean` for the power-of-two tournament existence component: every tournament with `2^k` vertices contains a transitive subtournament with `k + 1` vertices, based on the public source [On Subtournaments of a Tournament](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/5D7CCBE66AB07BB3F90F771D1CD3CD08/S0008439500052875a.pdf/on-subtournaments-of-a-tournament.pdf). It does not claim the full extremal catalog question.\n\nA local Lean compilation was run with Lean 4.33.1 and the pinned Mathlib revision. That compiler result is only a reproducibility check; it is not independent verification of statement faithfulness or official JSP verification.\n\nThe candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.\n",
+      "recipients": "# Recipients\n\n## English\n\nNo recipient is identified in this preliminary observation. It makes no recipient, award, payment, or identity claim.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }
