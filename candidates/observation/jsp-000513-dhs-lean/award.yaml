@@ -1,0 +1,25 @@
+id: jsp-000513-dhs-lean
+batch: null
+problem:
+  source: The Justin Sun Prize problem bank; Dvorak-Hu-Sereni, DOI 10.19086/aic.10811
+  number: JSP-000513
+  title_en: A finite 4-choosable graph that is not (8:2)-choosable — additional Lean formalization
+  posed:
+    year: 1980
+    basis: earliest-reference
+    citation: Erdos, Rubin and Taylor, Choosability in graphs (1980), pages 125–157; proposed-year upper bound as recorded in catalog-0501-0600.md.
+  resolved:
+    year: 2019
+decision: null
+recipients:
+  - id: RECIPIENT-JSP-000513-LEAN-A
+    affiliation: ""
+    contribution_en: Submitted an additional complete Lean formalization of the published Dvorak-Hu-Sereni construction, with reproducible build and axiom-audit evidence. Developed with Codex assistance. No mathematical discovery or first-formalization priority is claimed.
+    confirmation: null
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: draft
+revocation: null
