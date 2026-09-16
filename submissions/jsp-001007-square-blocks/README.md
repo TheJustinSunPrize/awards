@@ -32,11 +32,9 @@ The generated standalone file imports only Mathlib and includes the exact declar
 
 See [VERIFICATION.md](VERIFICATION.md) for limitations, native logs, and the distinction between submitter reproduction and independent prize verification.
 
-## Attribution and related submissions
+## Attribution
 
 The prize catalog and [Erdős problem page](https://www.erdosproblems.com/1202) already attribute the negative mathematical answer to Liam Price and GPT-5.4 Pro. That attribution is preserved. This submission does not establish a new negative answer, priority, or award eligibility, and it does not claim to have compared every step with the original Overleaf proof.
-
-The earlier [PR #107](https://github.com/TheJustinSunPrize/awards/pull/107) and [recipient recommendation #104](https://github.com/TheJustinSunPrize/awards/issues/104) concern a different submitter. They are explicitly disclosed for duplicate and attribution review. The present contribution was provided as a separate local source package; it is not an update to that submitter's PR. No code from that PR has been copied into this package.
 
 The proposed formalization recipient remains `RECIPIENT-JSP001007-SQUAREBLOCKS-A`, pending written confirmation and curator review. The submitter ran the automated verification with AI assistance; this is not an independent human review signature. Independent checker review, statement review, and the committee's eligibility decision remain pending.
 
