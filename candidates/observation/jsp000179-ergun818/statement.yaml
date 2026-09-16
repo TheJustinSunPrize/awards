@@ -1,0 +1,16 @@
+problem_id: "JSP-000179"
+title: "Erdős-Straus Non-Averaging Sets (Lemma 2.1) - Architectural Blueprint"
+candidate_repo: "https://github.com/ergun818/jsp000179-lean-blueprint"
+status: "observation"
+authors: 
+  - github_handle: "ergun818"
+    role: "Blueprint Architect / Formalization"
+payout_details:
+  network: "TRON"
+  token: "USDT/TRX"
+  wallet_address: "TTof9msBcRZoLW5B4zxiZ6rZg8p84CHGP2"
+verification:
+  compiler: "Lean 4"
+  mathlib_version: "v4.33.1"
+  has_sorrys: true
+  notes: "Macro-architecture is sorry-free. Heaviest algebraic functional analysis extracted to main theorem signature as WLOG hypotheses (h_wlog_vol, h_dyadic_partition, h_final_synthesis) for the Liquid Phase."
