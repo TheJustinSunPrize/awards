@@ -1,0 +1,4 @@
+import JSP000895.FiveThreeUpper
+
+#print axioms Erdos1076Upper.five_mul_card_le_two_choose
+#print axioms Erdos1076Upper.five_mul_extremalNumber_five_le_two_choose

@@ -1,0 +1,17 @@
+JSP-000895 finite (5,3)-free upper bound, 2026.
+Prepared with OpenAI Codex assistance; recipient confirmation is pending.
+
+The mathematics is Stefan Glock's known finite upper bound, Lemma 4 in
+"Triple systems with no three triples spanning at most five points".
+No mathematical discovery priority is claimed.
+
+Six minimal definitions are adapted from the pinned source in source-origin.json.
+Original notice: Copyright (c) 2026 Boris Alexeev. All rights reserved.
+Released under Apache 2.0. Authors: Boris Alexeev, Codex.
+The same source identifies Codex and GPT-5.6 Sol as formal authors.
+The definitions retain their original semantics in a separate namespace.
+The source header identifies this adaptation; all new upper-bound proofs are
+separate from the upstream lower-bound construction.
+
+Mathlib and its contributors provide the imported finite-set infrastructure,
+under Apache 2.0, pinned in lake-manifest.json. See LICENSE.
