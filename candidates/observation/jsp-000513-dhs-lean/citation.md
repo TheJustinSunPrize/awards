@@ -72,3 +72,14 @@ or current-release compliance is asserted. Contributor-prepared logs are separat
 from independent review. Permanent archival confirmation and any further isolation
 requirements remain for review. The candidate can advance only through the normal
 verification and attribution process.
+
+### Additional fresh-environment replay
+
+A separate run of `lean4checker --fresh JSP000513.Uniformization` also completed
+with exit 0, replaying the final module and all imported constants into an empty
+Lean environment. The proof source bytes are unchanged from the pinned commit.
+[Fresh-replay evidence package](https://github.com/MoringSatr/jsp-prize-000513/releases/download/proof-v1/jsp-prize-000513-fresh-replay.tar.gz):
+1,228 bytes; SHA-256 `ed8df0a54ee1eece28ab6598d7c391c03669db637afb1596e660f23987bd8a42`.
+Its metadata records the exact command, checker revision, toolchain and source
+manifest hash. This is still the same kernel implementation, not an independent
+implementation or organizer approval.
