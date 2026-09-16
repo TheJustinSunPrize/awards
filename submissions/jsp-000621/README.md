@@ -12,7 +12,7 @@ remains open. This project does not claim mathematical discovery, a proof of
 the lower bound, or a completed award review.
 
 The formal statement concerns all finite sets of real numbers.
-Sidon sums include repeated summands `x + x`. The integer certificate must
+Sidon sums include repeated summands `x + x`. The integer certificate
 is connected by proved cast, cardinality and difference-set lemmas to that
 real-number statement. The exact scope is recorded in [STATEMENT.md](STATEMENT.md).
 
@@ -63,6 +63,14 @@ depending on a custom axiom even though Lean permits declared axioms.
 
 For a quick rerun, `python3 verify.py --skip-replay` explicitly records
 that the fresh replay was omitted from that invocation.
+
+Validation gates use explicit exceptions and remain enabled under `python3 -O`.
+The black-box regression tests inject failed build/audit/replay results and
+invalid negative-control outcomes into an optimized Python process:
+
+```sh
+python3 -m unittest discover -s tests -v
+```
 
 ## Verification limits
 

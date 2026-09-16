@@ -7,6 +7,7 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 import tempfile
 import time
 
@@ -20,6 +21,12 @@ REQUIRED_AUDITS = {
     "SunPrize621.realBase_has_eight",
     "SunPrize621.admissible_le_four_sevenths",
 }
+
+
+def require(condition, detail):
+    """Validation must remain active when Python is run with -O."""
+    if not condition:
+        raise RuntimeError(f"Verification failed: {detail}")
 
 
 def execute(args):
@@ -48,22 +55,23 @@ def main():
     evidence = ROOT / "evidence"
     evidence.mkdir(exist_ok=True)
     result = {"checked_at_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-              "award_confirmed": False, "organizer_verification": "pending"}
+              "award_confirmed": False, "organizer_verification": "pending",
+              "python_optimization_level": sys.flags.optimize}
     forbidden = r"\b(sorry|admit|axiom|native_decide|unsafe|run_tac|run_elab|initialize)\b"
     for name in PROOF_FILES:
-        assert not re.search(forbidden, (ROOT / name).read_text()), name
+        require(not re.search(forbidden, (ROOT / name).read_text()), name)
     result["proof_source_policy"] = "pass"
 
     version = execute(["lake", "env", "lean", "--version"])
-    assert version["exit_code"] == 0 and "version 4.34.0," in version["output"], version
+    require(version["exit_code"] == 0 and "version 4.34.0," in version["output"], version)
     result["toolchain"] = version
     build = execute(["lake", "build"])
-    assert build["exit_code"] == 0, build
+    require(build["exit_code"] == 0, build)
     result["build"] = build
     audit = execute(["lake", "env", "lean", "-DwarningAsError=true", "Audit.lean"])
-    assert audit["exit_code"] == 0, audit
+    require(audit["exit_code"] == 0, audit)
     records = axiom_records(audit["output"])
-    assert REQUIRED_AUDITS <= records.keys() and permitted(records), audit
+    require(REQUIRED_AUDITS <= records.keys() and permitted(records), audit)
     result["axiom_audit"] = audit
     result["axiom_dependencies"] = {n: sorted(v) for n, v in records.items()}
 
@@ -84,10 +92,10 @@ def main():
                            str(file.relative_to(ROOT))])
             if name == "custom_axiom":
                 dependencies = axiom_records(run["output"])
-                assert run["exit_code"] == 0 and dependencies and not permitted(dependencies), run
+                require(run["exit_code"] == 0 and dependencies and not permitted(dependencies), run)
                 outcomes[name] = "rejected by the axiom allowlist"
             else:
-                assert run["exit_code"] != 0, run
+                require(run["exit_code"] != 0, run)
                 outcomes[name] = "rejected by Lean with warnings as errors"
         result["negative_controls"] = outcomes
 
@@ -95,14 +103,15 @@ def main():
         result["fresh_kernel_replay"] = "not run in this invocation"
     else:
         replay = execute(["lake", "env", "leanchecker", "--verbose", "--fresh", "SunPrize621"])
-        assert replay["exit_code"] == 0, replay
+        require(replay["exit_code"] == 0, replay)
         result["fresh_kernel_replay"] = replay
     result["checker_limitation"] = (
         "leanchecker uses the bundled Lean kernel, not an independently implemented checker; "
         "upstream cached library artifacts were used, not a full source rebuild of all imports."
     )
     result["source_files"] = {}
-    for name in (*PROOF_FILES, "Audit.lean", "lakefile.toml", "lake-manifest.json", "lean-toolchain"):
+    for name in (*PROOF_FILES, "Audit.lean", "lakefile.toml", "lake-manifest.json", "lean-toolchain",
+                 "verify.py"):
         data = (ROOT / name).read_bytes()
         result["source_files"][name] = {"sha256": hashlib.sha256(data).hexdigest(), "bytes": len(data)}
     result["local_validation"] = "pass"
