@@ -1,0 +1,814 @@
+{
+  "run_id": "04b30cb9-91b0-4adb-81fa-1cbe93402bd8",
+  "started_at": "2026-09-16T18:04:31.353303+00:00",
+  "phase": "complete",
+  "local_checks_passed": true,
+  "official_acceptance": false,
+  "module": "Erdos82Finite",
+  "theorems": [
+    "Erdos82Finite.graph29_no_regular_induced",
+    "Erdos82Finite.exists_graph29"
+  ],
+  "source_sha256": "92db846ccc1b5ccc44f3d6bcb8b7b9f78c39bf321388942b66d190b22951c1a7",
+  "source_bytes": 3144,
+  "local_sources": [
+    {
+      "module": "RegularCertificate",
+      "path": "<project>/RegularCertificate.lean",
+      "sha256": "49603135797aee37c2a4847f3c7f2d0a70ec80b4e538d580226e92ab9819fa38"
+    },
+    {
+      "module": "Graph29",
+      "path": "<project>/Graph29.lean",
+      "sha256": "3a8b86700f40086d710a4a37a996505c957908df3c349571cf0ace4cdef2e841"
+    },
+    {
+      "module": "GraphBridge",
+      "path": "<project>/GraphBridge.lean",
+      "sha256": "1219e50440aa0cfc540229353176383662ea6bca4311e28ca533bb472c8ba29a"
+    },
+    {
+      "module": "MaskCertificate",
+      "path": "<project>/MaskCertificate.lean",
+      "sha256": "268c60f09f518a7c295b8083bd10680eb62801684f045ff0a75328b7f510dd00"
+    },
+    {
+      "module": "CheckpointCertificate",
+      "path": "<project>/CheckpointCertificate.lean",
+      "sha256": "ef16b038d21d8e2674cf4a8851bc47d0d1cabdc6bf412204265182ae9a85c056"
+    },
+    {
+      "module": "CertificateSteps",
+      "path": "<project>/CertificateSteps.lean",
+      "sha256": "ccb9b70fca55ae4bddc0f505848c8f42d05e43dd5214b21b7d557885b3634a48"
+    },
+    {
+      "module": "Degree0",
+      "path": "<project>/Degree0.lean",
+      "sha256": "88d84311af45aac70624ebc13851c4aa09c32a89e72228938c49c05a7bc1ca1a"
+    },
+    {
+      "module": "Degree1",
+      "path": "<project>/Degree1.lean",
+      "sha256": "373e37b43b355fe8fccc8fc7e59c4ff382b3a076a752ca487387a464131aab73"
+    },
+    {
+      "module": "Degree2Part0",
+      "path": "<project>/Degree2Part0.lean",
+      "sha256": "7c6a635540d7a9a4f00c986486cfc737c24d6ca836fa8eb45f3ad8b66df758d9"
+    },
+    {
+      "module": "Degree2Part1",
+      "path": "<project>/Degree2Part1.lean",
+      "sha256": "b8a24edb278da422459f485a354a12eeea17fc32743a2eec39ab3822bf1e7bb5"
+    },
+    {
+      "module": "Degree2",
+      "path": "<project>/Degree2.lean",
+      "sha256": "4e19150b2d9a8b76ccc333af92ffd98848146975ab7c375d0c79c3039d477d5a"
+    },
+    {
+      "module": "Degree3Part0",
+      "path": "<project>/Degree3Part0.lean",
+      "sha256": "16471f18573d405807f69e1ddbfd73100d65fed2b0a22ef398a0805eb127af4e"
+    },
+    {
+      "module": "Degree3Part1",
+      "path": "<project>/Degree3Part1.lean",
+      "sha256": "0d0b913f5fccf8e45b27e54bf3d68e8299a7bf45b022c1f9b5012fd2fdfe2f8f"
+    },
+    {
+      "module": "Degree3Part2",
+      "path": "<project>/Degree3Part2.lean",
+      "sha256": "a74993864544c803d1698a1fe21921df54b657664b11c870c51ad254cd6727e6"
+    },
+    {
+      "module": "Degree3",
+      "path": "<project>/Degree3.lean",
+      "sha256": "afe8629d45ae452b659a0a913b8e8bfb7687b07eca5cefa51fac8d2deb569df9"
+    },
+    {
+      "module": "Degree4Part0",
+      "path": "<project>/Degree4Part0.lean",
+      "sha256": "44019c4e230ea20081bd340fe56020b25097c3a8997f605b46be2b35a481b02e"
+    },
+    {
+      "module": "Degree4Part1",
+      "path": "<project>/Degree4Part1.lean",
+      "sha256": "9c82ef632d7c3e75cf89ea3803cb708a26120b379087b93940d756e4ce8f7e2d"
+    },
+    {
+      "module": "Degree4Part2",
+      "path": "<project>/Degree4Part2.lean",
+      "sha256": "4586248ad0477c278f39cb99e1f26b4e228004464398f0f34ae65c0478c4f15b"
+    },
+    {
+      "module": "Degree4Part3",
+      "path": "<project>/Degree4Part3.lean",
+      "sha256": "0c57ab6b740d4a8cf6d84a6c3c6ff9a6b0824c1d5177181f7254db29d653e22e"
+    },
+    {
+      "module": "Degree4Part4",
+      "path": "<project>/Degree4Part4.lean",
+      "sha256": "97a5fc6285387bba104da899b59a090def83dfac9f1f533a160f533d68c2370e"
+    },
+    {
+      "module": "Degree4",
+      "path": "<project>/Degree4.lean",
+      "sha256": "ce9408c10065a2f9cb4073791a2c21391ecf3042cc197c4edba60cbbeac095ca"
+    },
+    {
+      "module": "Degree5Part0",
+      "path": "<project>/Degree5Part0.lean",
+      "sha256": "78a63fa1165cebdba6ba67d5ce2bbf4e95f81bf3775e9478bba7f9a351be124b"
+    },
+    {
+      "module": "Degree5Part1",
+      "path": "<project>/Degree5Part1.lean",
+      "sha256": "2103ca5d2fc3f28c141ae56c9834bc5e7424e856fd572748b1de8d3b19461240"
+    },
+    {
+      "module": "Degree5Part2",
+      "path": "<project>/Degree5Part2.lean",
+      "sha256": "c79cf4f5e9d23b0fa8884d2bb370340c44c07ae99a4940dac1c7b7b97edc06b7"
+    },
+    {
+      "module": "Degree5Part3",
+      "path": "<project>/Degree5Part3.lean",
+      "sha256": "7612ce6ae84fd5d42b18471cdf6b7719747d889090c551961e051f027e0eb25c"
+    },
+    {
+      "module": "Degree5Part4",
+      "path": "<project>/Degree5Part4.lean",
+      "sha256": "3fe3f6392e39cba487a84d81bd2ac019c147da88d089db9d517f53ff215f76ff"
+    },
+    {
+      "module": "Degree5",
+      "path": "<project>/Degree5.lean",
+      "sha256": "6668dba9a3ebf67bd78dfc1179b05f5d09446b1509e5acb9c4739e43114da877"
+    },
+    {
+      "module": "Degree6Part0",
+      "path": "<project>/Degree6Part0.lean",
+      "sha256": "cbb67f0897e0cbd8104ee7e0fd97a8320e2fbd8a9b47c5b5484afafef7e64fc4"
+    },
+    {
+      "module": "Degree6Part1",
+      "path": "<project>/Degree6Part1.lean",
+      "sha256": "3b69f5f5cac2a9984f2fbf09f6418aa4e040da4e8df75f99cc797af9c4bf1608"
+    },
+    {
+      "module": "Degree6Part2",
+      "path": "<project>/Degree6Part2.lean",
+      "sha256": "d147375580fb619cf71fda79db8f05856916cf0b532afd4a4c79379ddfc6e1ab"
+    },
+    {
+      "module": "Degree6Part3",
+      "path": "<project>/Degree6Part3.lean",
+      "sha256": "4aa4df54d71955789ef028f412592edd1de8019c28584fe9b402866488298c52"
+    },
+    {
+      "module": "Degree6",
+      "path": "<project>/Degree6.lean",
+      "sha256": "95dff813918fc2ec8d9801fa84a17bc4d5575f9c4b915a2caf8efb31fc336a2b"
+    },
+    {
+      "module": "Degree7Part0",
+      "path": "<project>/Degree7Part0.lean",
+      "sha256": "dc93ff1a1414183833ab9dad4672a5fce07457c00476f6c5ca7aa38868c24041"
+    },
+    {
+      "module": "Degree7Part1",
+      "path": "<project>/Degree7Part1.lean",
+      "sha256": "cbaa15e307120bc75e5238d218e4372095d1eb483915675612ba8a94d62c33a6"
+    },
+    {
+      "module": "Degree7",
+      "path": "<project>/Degree7.lean",
+      "sha256": "abd53d636883a34085999b637b171853742da7b09634a766850195db497e75cb"
+    },
+    {
+      "module": "Degree8",
+      "path": "<project>/Degree8.lean",
+      "sha256": "1c74606fd7ea2f83be78cbb2a8dbf972dfd6e0a857630f25a8addc3ac757cfc0"
+    },
+    {
+      "module": "Degree9",
+      "path": "<project>/Degree9.lean",
+      "sha256": "f3aa9fbf1cd4660c475cea5ec1727f1ebc3bda8d4250f3e92d7fd2e3b55d7f63"
+    },
+    {
+      "module": "Degree10",
+      "path": "<project>/Degree10.lean",
+      "sha256": "0814f934eb0dd6117fc4cba6f8e7d9c615753723cf15b5a8de82aa511ca094ca"
+    },
+    {
+      "module": "HighDegrees",
+      "path": "<project>/HighDegrees.lean",
+      "sha256": "80297efaef0da803a3d20f4a9a8aee91b83b280a9a6d48f2027fa6aef6165cfe"
+    },
+    {
+      "module": "Erdos82Finite",
+      "path": "<project>/Erdos82Finite.lean",
+      "sha256": "92db846ccc1b5ccc44f3d6bcb8b7b9f78c39bf321388942b66d190b22951c1a7"
+    }
+  ],
+  "toolchain": "Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)",
+  "project_lean_toolchain": "leanprover/lean4:v4.34.0",
+  "verification_script_sha256": "677a8960ae534b2b4f9fa819a05e519a206ca5fc34e67c7c27208a4b93633caf",
+  "lean_bin": "<lean-bin>",
+  "lean_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "nanoda_path": "<nanoda>",
+  "nanoda_sha256": "cfd89798e7f5f984f852e2410694e8c4efe1463b613f75e85c8dc904b499e146",
+  "exporter_path": "<exporter>",
+  "exporter_sha256": "ad235f7ce3177ea0de2b66316f06361aff890683264c94cb31e91a46eeda60a2",
+  "commands": [
+    {
+      "name": "leanchecker",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "Erdos82Finite"
+      ],
+      "exit_code": 0,
+      "seconds": 435.108
+    },
+    {
+      "name": "export",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "<exporter>",
+        "Erdos82Finite",
+        "--",
+        "Erdos82Finite.graph29_no_regular_induced",
+        "Erdos82Finite.exists_graph29"
+      ],
+      "exit_code": 0,
+      "seconds": 34.433
+    },
+    {
+      "name": "nanoda",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<nanoda>",
+        "<verification-output>/nanoda.json"
+      ],
+      "exit_code": 0,
+      "seconds": 207.524
+    }
+  ],
+  "network_access_denied_for_check_commands": true,
+  "network_policy": "(version 1)(allow default)(deny network*)",
+  "network_policy_control_probe": [
+    {
+      "name": "control",
+      "exit_code": 0,
+      "stdout": "NETWORK_ACCESSIBLE\n",
+      "stderr": ""
+    },
+    {
+      "name": "denied",
+      "exit_code": 73,
+      "stdout": "NETWORK_DENIED 1\n",
+      "stderr": ""
+    }
+  ],
+  "filesystem_isolated": false,
+  "dependencies_rebuilt_from_source": false,
+  "precompiled_dependencies_used": true,
+  "lake_manifest_sha256": "38a7d5897fb6d1d7eae432a6b6a24c4c87d272081f0eca9674740197e212cc73",
+  "lake_manifest": {
+    "version": "1.2.0",
+    "packagesDir": ".lake/packages",
+    "packages": [
+      {
+        "url": "https://github.com/leanprover-community/mathlib4.git",
+        "type": "git",
+        "subDir": null,
+        "scope": "",
+        "rev": "5ed2965256430c3649e86755f9576b54eca72435",
+        "name": "mathlib",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "5ed2965256430c3649e86755f9576b54eca72435",
+        "inherited": false,
+        "configFile": "lakefile.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/plausible",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+        "name": "plausible",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/LeanSearchClient",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+        "name": "LeanSearchClient",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/import-graph",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "e928b72544873815af278d38681b31c0293588e3",
+        "name": "importGraph",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/ProofWidgets4",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+        "name": "proofwidgets",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/aesop",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+        "name": "aesop",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "master",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/quote4",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+        "name": "Qq",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "master",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/batteries",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+        "name": "batteries",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover/lean4-cli",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover",
+        "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+        "name": "Cli",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "v4.34.0",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      }
+    ],
+    "name": "erdos82finite",
+    "lakeDir": ".lake",
+    "fixedToolchain": false
+  },
+  "reused_build_receipt_sha256": "05ece52aeaafba0427f4e861fa907b07236ec848f13f43b3b5607747be2bf09f",
+  "reused_compiled_modules": [
+    {
+      "module": "RegularCertificate",
+      "exit_code": 0,
+      "seconds": 24.128,
+      "source_sha256": "49603135797aee37c2a4847f3c7f2d0a70ec80b4e538d580226e92ab9819fa38",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "28fcf87f38b363e4058a6cabc4177fda5e8ec2e4bb8820d50492317ac8bcd6ef"
+    },
+    {
+      "module": "Graph29",
+      "exit_code": 0,
+      "seconds": 15.192,
+      "source_sha256": "3a8b86700f40086d710a4a37a996505c957908df3c349571cf0ace4cdef2e841",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "4d711ecbbeb60306526d8ab4057ee59c73bbaa148a3fd87898e3661e1db37719"
+    },
+    {
+      "module": "GraphBridge",
+      "exit_code": 0,
+      "seconds": 15.04,
+      "source_sha256": "1219e50440aa0cfc540229353176383662ea6bca4311e28ca533bb472c8ba29a",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "c7e83778e4a868f3bbd74148d067414dc3ef01e0125baa9961409956b84c047e"
+    },
+    {
+      "module": "MaskCertificate",
+      "exit_code": 0,
+      "seconds": 8.195,
+      "source_sha256": "268c60f09f518a7c295b8083bd10680eb62801684f045ff0a75328b7f510dd00",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "338deaf4ff38e05277ec3a72f24484665830304ab52ece00b41cf7b6d7a870ce"
+    },
+    {
+      "module": "CheckpointCertificate",
+      "exit_code": 0,
+      "seconds": 9.179,
+      "source_sha256": "ef16b038d21d8e2674cf4a8851bc47d0d1cabdc6bf412204265182ae9a85c056",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "ef3c93b4b4f31831533fe435ee3fa98d0f10c425d37354317a32414b274f73bc"
+    },
+    {
+      "module": "CertificateSteps",
+      "exit_code": 0,
+      "seconds": 4.46,
+      "source_sha256": "ccb9b70fca55ae4bddc0f505848c8f42d05e43dd5214b21b7d557885b3634a48",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "85bdf7d8a0c69f65887212152cb13b2a848647eabc82fe33b5d6dc22fab8fb54"
+    },
+    {
+      "module": "Degree0",
+      "exit_code": 0,
+      "seconds": 7.961,
+      "source_sha256": "88d84311af45aac70624ebc13851c4aa09c32a89e72228938c49c05a7bc1ca1a",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "b97d45439d45645fca8b8c3b86041ef3b036b0b96af8ce40a3de75ded70b0e4d"
+    },
+    {
+      "module": "Degree1",
+      "exit_code": 0,
+      "seconds": 18.204,
+      "source_sha256": "373e37b43b355fe8fccc8fc7e59c4ff382b3a076a752ca487387a464131aab73",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "770950b213afce1cc47b1f2b0808f05a747e2041fc1071134595bed9f8e6b1c4"
+    },
+    {
+      "module": "Degree2Part0",
+      "exit_code": 0,
+      "seconds": 24.765,
+      "source_sha256": "7c6a635540d7a9a4f00c986486cfc737c24d6ca836fa8eb45f3ad8b66df758d9",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "a9c0f0a5e12e99ea19ab7a9e4cc535462d88d7b2d1509c08fc0bd011fc13f47d"
+    },
+    {
+      "module": "Degree2Part1",
+      "exit_code": 0,
+      "seconds": 20.262,
+      "source_sha256": "b8a24edb278da422459f485a354a12eeea17fc32743a2eec39ab3822bf1e7bb5",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "969064e6478444f0f3e15b0f496ceb7e4d3a4f845ee1b4d3fe5ba7ba49e9c001"
+    },
+    {
+      "module": "Degree2",
+      "exit_code": 0,
+      "seconds": 8.714,
+      "source_sha256": "4e19150b2d9a8b76ccc333af92ffd98848146975ab7c375d0c79c3039d477d5a",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "fd58a675dd3eff181c66ea0376ac32d377e30c04d641d089dd54f7c1114a0df9"
+    },
+    {
+      "module": "Degree3Part0",
+      "exit_code": 0,
+      "seconds": 24.101,
+      "source_sha256": "16471f18573d405807f69e1ddbfd73100d65fed2b0a22ef398a0805eb127af4e",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "3978d946d20cabe4092f3420923b56536a7fedfb7910b751457f111023707227"
+    },
+    {
+      "module": "Degree3Part1",
+      "exit_code": 0,
+      "seconds": 25.235,
+      "source_sha256": "0d0b913f5fccf8e45b27e54bf3d68e8299a7bf45b022c1f9b5012fd2fdfe2f8f",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "e216e450674e4490b7c73d79ad717df53edcfa6d8991d62da6ac80ab66ef9295"
+    },
+    {
+      "module": "Degree3Part2",
+      "exit_code": 0,
+      "seconds": 34.753,
+      "source_sha256": "a74993864544c803d1698a1fe21921df54b657664b11c870c51ad254cd6727e6",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "e1b78981ec6f10fa6768167dbefb94f1a8e8b449e9e52ab672985af7704b15cf"
+    },
+    {
+      "module": "Degree3",
+      "exit_code": 0,
+      "seconds": 15.316,
+      "source_sha256": "afe8629d45ae452b659a0a913b8e8bfb7687b07eca5cefa51fac8d2deb569df9",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "ed58f8fc590bc67f603b3e239f214294175230d8433d9e0cbac3eac2a1f0517d"
+    },
+    {
+      "module": "Degree4Part0",
+      "exit_code": 0,
+      "seconds": 42.033,
+      "source_sha256": "44019c4e230ea20081bd340fe56020b25097c3a8997f605b46be2b35a481b02e",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "7d55dbea8caa216c108b78a3cadfe2cbd6a5167c97933a11e72c576c46ebd5dd"
+    },
+    {
+      "module": "Degree4Part1",
+      "exit_code": 0,
+      "seconds": 38.41,
+      "source_sha256": "9c82ef632d7c3e75cf89ea3803cb708a26120b379087b93940d756e4ce8f7e2d",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "50ee5838ddb7e7784e250131dd07284be9f62b7f9bbf11489c29340acb4b2535"
+    },
+    {
+      "module": "Degree4Part2",
+      "exit_code": 0,
+      "seconds": 29.118,
+      "source_sha256": "4586248ad0477c278f39cb99e1f26b4e228004464398f0f34ae65c0478c4f15b",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "8db7bfd4dc912b1b8a213fd47029c1841a5385bf6fc5ae20e098944e6706d679"
+    },
+    {
+      "module": "Degree4Part3",
+      "exit_code": 0,
+      "seconds": 26.528,
+      "source_sha256": "0c57ab6b740d4a8cf6d84a6c3c6ff9a6b0824c1d5177181f7254db29d653e22e",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "685a818f815ecec7067891b00650c95f6fd9eb4e2ccd6e3fd9c020fec33d794f"
+    },
+    {
+      "module": "Degree4Part4",
+      "exit_code": 0,
+      "seconds": 12.885,
+      "source_sha256": "97a5fc6285387bba104da899b59a090def83dfac9f1f533a160f533d68c2370e",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "eb1408092de34dcbd681e481bfc10a67d7efd9585dd8b4d81434e3cdd313d34b"
+    },
+    {
+      "module": "Degree4",
+      "exit_code": 0,
+      "seconds": 60.139,
+      "source_sha256": "ce9408c10065a2f9cb4073791a2c21391ecf3042cc197c4edba60cbbeac095ca",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "602dc45caf5b0840dc6837997232efcde55211bb8b540359df9be88a6090b8e0"
+    },
+    {
+      "module": "Degree5Part0",
+      "exit_code": 0,
+      "seconds": 25.016,
+      "source_sha256": "78a63fa1165cebdba6ba67d5ce2bbf4e95f81bf3775e9478bba7f9a351be124b",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "0631e5e4ba8a84b21a0862f5663fc27ae301fbe91efa4b039cd595d1e51ce0bf"
+    },
+    {
+      "module": "Degree5Part1",
+      "exit_code": 0,
+      "seconds": 28.124,
+      "source_sha256": "2103ca5d2fc3f28c141ae56c9834bc5e7424e856fd572748b1de8d3b19461240",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "6dcbd05c4a34369e8e8732d8ea8b0d1fade08fbd6f5e0b823b7a6752832afd75"
+    },
+    {
+      "module": "Degree5Part2",
+      "exit_code": 0,
+      "seconds": 24.484,
+      "source_sha256": "c79cf4f5e9d23b0fa8884d2bb370340c44c07ae99a4940dac1c7b7b97edc06b7",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "d9cd5151a25b96a91c6c4b49729b548c84a167664de4a9524b9912dff356c784"
+    },
+    {
+      "module": "Degree5Part3",
+      "exit_code": 0,
+      "seconds": 45.364,
+      "source_sha256": "7612ce6ae84fd5d42b18471cdf6b7719747d889090c551961e051f027e0eb25c",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "62e4bfad2b1a4e588ac387746fa3454a40b9178f51c735cf530f0c9c19c5a633"
+    },
+    {
+      "module": "Degree5Part4",
+      "exit_code": 0,
+      "seconds": 20.168,
+      "source_sha256": "3fe3f6392e39cba487a84d81bd2ac019c147da88d089db9d517f53ff215f76ff",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "94fd024d1922cffde0ddddca33b6db86d3fd27dfb5284e7dca9bb13fed030bbd"
+    },
+    {
+      "module": "Degree5",
+      "exit_code": 0,
+      "seconds": 7.432,
+      "source_sha256": "6668dba9a3ebf67bd78dfc1179b05f5d09446b1509e5acb9c4739e43114da877",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "cdc94b294dba2c9f2fb6a6e370a45487c9100b84d293795ab4bcb29efe836cfb"
+    },
+    {
+      "module": "Degree6Part0",
+      "exit_code": 0,
+      "seconds": 18.962,
+      "source_sha256": "cbb67f0897e0cbd8104ee7e0fd97a8320e2fbd8a9b47c5b5484afafef7e64fc4",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "b4af8cb872c68f23d2596f2e38af8e9a0b881c4190478ddb9f26ec23076a308b"
+    },
+    {
+      "module": "Degree6Part1",
+      "exit_code": 0,
+      "seconds": 47.033,
+      "source_sha256": "3b69f5f5cac2a9984f2fbf09f6418aa4e040da4e8df75f99cc797af9c4bf1608",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "5f9f112e15cfd2f90cb0e235892a2f7fa70e7da9c8cea446211699eaa5d0beb7"
+    },
+    {
+      "module": "Degree6Part2",
+      "exit_code": 0,
+      "seconds": 37.984,
+      "source_sha256": "d147375580fb619cf71fda79db8f05856916cf0b532afd4a4c79379ddfc6e1ab",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "41057d0e5747b0546eba5f1b2cd1bfce42e05e86db75c002be2815c856b40ac8"
+    },
+    {
+      "module": "Degree6Part3",
+      "exit_code": 0,
+      "seconds": 20.164,
+      "source_sha256": "4aa4df54d71955789ef028f412592edd1de8019c28584fe9b402866488298c52",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "a5d36c632af80113ed21ab70097637081531f513836236d84a74db926abf89ff"
+    },
+    {
+      "module": "Degree6",
+      "exit_code": 0,
+      "seconds": 13.911,
+      "source_sha256": "95dff813918fc2ec8d9801fa84a17bc4d5575f9c4b915a2caf8efb31fc336a2b",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "d8f51da1826606141baafc34c34b11e3b25a860210bd73c66f1a1e5d13a15dfe"
+    },
+    {
+      "module": "Degree7Part0",
+      "exit_code": 0,
+      "seconds": 43.245,
+      "source_sha256": "dc93ff1a1414183833ab9dad4672a5fce07457c00476f6c5ca7aa38868c24041",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "8fbb8f19380a5bf186f4dd5a7cd02e7ffeb4eda57e0b014688735b338b3dea59"
+    },
+    {
+      "module": "Degree7Part1",
+      "exit_code": 0,
+      "seconds": 24.31,
+      "source_sha256": "cbaa15e307120bc75e5238d218e4372095d1eb483915675612ba8a94d62c33a6",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "12ba131a5564fe7bb4395220f06e08aaaad77e961fb9ef7440c5a49956835509"
+    },
+    {
+      "module": "Degree7",
+      "exit_code": 0,
+      "seconds": 18.166,
+      "source_sha256": "abd53d636883a34085999b637b171853742da7b09634a766850195db497e75cb",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "ab8601466b859dbc5d6564be9b71e4945a57ca899c504176c7d107dbe141f29d"
+    },
+    {
+      "module": "Degree8",
+      "exit_code": 0,
+      "seconds": 26.993,
+      "source_sha256": "1c74606fd7ea2f83be78cbb2a8dbf972dfd6e0a857630f25a8addc3ac757cfc0",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "4c6cbe54dbab206c73c619ddfb25b7f8235b22b607ee2ce8d8ca4a9eb40306b9"
+    },
+    {
+      "module": "Degree9",
+      "exit_code": 0,
+      "seconds": 11.942,
+      "source_sha256": "f3aa9fbf1cd4660c475cea5ec1727f1ebc3bda8d4250f3e92d7fd2e3b55d7f63",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "c2e4c19f4ea1b62a17390caf9a30cb5c6fac0df6e8bcb0137445ab9163c468b5"
+    },
+    {
+      "module": "Degree10",
+      "exit_code": 0,
+      "seconds": 18.333,
+      "source_sha256": "0814f934eb0dd6117fc4cba6f8e7d9c615753723cf15b5a8de82aa511ca094ca",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "7c6d9191957abdc3552758ddc0faab91fe1400a1184f5333807321d5c6b7a941"
+    },
+    {
+      "module": "HighDegrees",
+      "exit_code": 0,
+      "seconds": 16.172,
+      "source_sha256": "80297efaef0da803a3d20f4a9a8aee91b83b280a9a6d48f2027fa6aef6165cfe",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "bdbfc81483f2ec3b48ac3af4b2d331e5ede79c95b3d10f2e319edb17900f1357"
+    },
+    {
+      "module": "Erdos82Finite",
+      "exit_code": 0,
+      "seconds": 16.358,
+      "source_sha256": "92db846ccc1b5ccc44f3d6bcb8b7b9f78c39bf321388942b66d190b22951c1a7",
+      "source_unchanged": true,
+      "network_denied": true,
+      "filesystem_isolated": false,
+      "olean_sha256": "882f1308e98d801899a65d63a8d01c4ff897912951c946c6b6114663b67ce089"
+    }
+  ],
+  "export_sha256": "d59a72d39ddff64256307a275acdabb24082fa6b7a2cfe9467d4dea5f3be3089",
+  "export_bytes": 198732937,
+  "paths_redacted_for_publication": true
+}
