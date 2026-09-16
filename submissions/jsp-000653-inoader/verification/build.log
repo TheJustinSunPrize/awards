@@ -1,0 +1,5 @@
+ℹ [2/3] Built JSP653 (5.2s)
+info: JSP653.lean:191:0: 'JSP653.exact_formula_false' depends on axioms: [propext, Quot.sound]
+info: JSP653.lean:192:0: 'JSP653.finite_counterexample' depends on axioms: [propext, Quot.sound]
+info: JSP653.lean:193:0: 'JSP653.witness_arbitrary_subsets' depends on axioms: [propext, Quot.sound]
+Build completed successfully (3 jobs).
