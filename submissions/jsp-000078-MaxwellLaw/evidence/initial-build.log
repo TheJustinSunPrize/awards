@@ -1,0 +1,55 @@
+✔ [1066/1075] Built Jsp000078.CycleLengths (3.2s)
+✔ [1073/1076] Built Jsp000078.Compactness (5.0s)
+✔ [1074/1152] Built ErdosProblems.Erdos58.Basic (1.0s)
+✔ [2334/2418] Built ErdosProblems.Erdos58.Bipartite (2.0s)
+✔ [8709/8714] Built ErdosProblems.Erdos58.Critical (38s)
+✔ [8710/8714] Built ErdosProblems.Erdos58.DFSUpper (130s)
+✔ [8711/8716] Built ErdosProblems.Erdos58.Linkage (147s)
+✔ [8712/8716] Built ErdosProblems.Erdos58.MainReduction (129s)
+✔ [8713/8719] Built ErdosProblems.Erdos58.Structural.ConnectivityBridge (155s)
+✔ [8714/8720] Built ErdosProblems.Erdos58.Boundary (24s)
+✔ [8715/8722] Built ErdosProblems.Erdos58.Arithmetic (120s)
+ℹ [8716/8722] Built ErdosProblems.Erdos58.EndpointCount (33s)
+info: ErdosProblems/Erdos58/EndpointCount.lean:330:0: 'Erdos58.EndpointCount.endpoint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8717/8724] Built ErdosProblems.Erdos58.AlternativeSharp (127s)
+✔ [8718/8724] Built ErdosProblems.Erdos58.Fan (120s)
+ℹ [8719/8726] Built ErdosProblems.Erdos58.Structural.EndpointApplication (15s)
+info: ErdosProblems/Erdos58/Structural/EndpointApplication.lean:1383:0: 'Erdos58.Structural.EndpointApplication.EndpointConfiguration.endpoint_count_from_configuration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [8720/8726] Built ErdosProblems.Erdos58.Structural.BoundaryApplication (15s)
+✔ [8721/8726] Built ErdosProblems.Erdos58.Independent (7.6s)
+✔ [8722/8726] Built ErdosProblems.Erdos58.Structural.LongestPath (3.0s)
+✔ [8723/8727] Built ErdosProblems.Erdos58.Structural.LongestCycleBridge (26s)
+✔ [8724/8732] Built ErdosProblems.Erdos58.CycleArcs (3.7s)
+✔ [8725/8733] Built ErdosProblems.Erdos58.Structural.FanApplication (118s)
+✔ [8726/8733] Built ErdosProblems.Erdos58.Structural.TwoLinkage (123s)
+✔ [8727/8735] Built ErdosProblems.Erdos58.Structural.OutsideCycle (99s)
+✔ [8728/8735] Built ErdosProblems.Erdos58.Structural.CaseAssembly (105s)
+✔ [8729/8739] Built ErdosProblems.Erdos58.Structural.K1Boundary (109s)
+✔ [8731/8745] Built ErdosProblems.Erdos58.Menger (107s)
+✔ [8732/8745] Built ErdosProblems.Erdos58.Structural.LongestCycle (30s)
+✔ [8733/8745] Built ErdosProblems.Erdos58.StructuralAlt (103s)
+✔ [8734/8745] Built ErdosProblems.Erdos58.Structural.SpliceConstruction (122s)
+✔ [8735/8745] Built ErdosProblems.Erdos58.Structural.HamiltonianBranch (139s)
+✔ [8736/8745] Built ErdosProblems.Erdos58.Structural.FanLinkage (109s)
+✔ [8737/8745] Built ErdosProblems.Erdos58.Structural.Setup (130s)
+✔ [8738/8745] Built ErdosProblems.Erdos58.Structural.IndependentGap (130s)
+✔ [8739/8745] Built ErdosProblems.Erdos58.Structural.SingletonFan (142s)
+✔ [8740/8745] Built ErdosProblems.Erdos58.Structural.CaseConclusion (123s)
+ℹ [8741/8745] Built ErdosProblems.Erdos58.Structural (94s)
+info: ErdosProblems/Erdos58/Structural.lean:188:0: 'Erdos58.Structural.gyarfas_structural' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8742/8745] Built ErdosProblems.Erdos58 (123s)
+info: ErdosProblems/Erdos58.lean:65:0: 'Erdos58.erdos_58' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [8743/8745] Building Jsp000078.General (129s)
+trace: .> LEAN_PATH=<WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/.lake/packages/Cli/.lake/build/lib/lean:<WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/.lake/packages/batteries/.lake/build/lib/lean:<WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/.lake/packages/Qq/.lake/build/lib/lean:<WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/.lake/packages/aesop/.lake/build/lib/lean:<WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/.lake/packages/proofwidgets/.lake/build/lib/lean:<WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/.lake/packages/importGraph/.lake/build/lib/lean:<WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/.lake/packages/plausible/.lake/build/lib/lean:<WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/.lake/packages/mathlib/.lake/build/lib/lean:<WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/.lake/build/lib/lean <WORKSPACE>/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean <WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/Jsp000078/General.lean -o <WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/.lake/build/lib/lean/Jsp000078/General.olean -i <WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/.lake/build/lib/lean/Jsp000078/General.ilean -c <WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/.lake/build/ir/Jsp000078/General.c --setup <WORKSPACE>/awards/submissions/jsp-000078-MaxwellLaw/.lake/build/ir/Jsp000078/General.setup.json --json
+error: Jsp000078/General.lean:56:6: Type mismatch: After simplification, term
+  hlt
+ has type
+  @LT.lt ℕ∞ CompleteLattice.toCompletePartialOrder.toLT (SimpleGraph.induce (↑s) G).chromaticNumber (2 * ↑k + 2)
+but is expected to have type
+  @LT.lt ℕ∞ instLTENat (SimpleGraph.induce (↑s) G).chromaticNumber (2 * ↑k + (1 + 1))
+error: Lean exited with code 1
+Some required targets logged failures:
+- Jsp000078.General
+error: build failed

@@ -1,0 +1,10 @@
+@Jsp000078.erdos_58 : ∀ {V : Type u_1} (G : SimpleGraph V) (k : ℕ),
+  G.oddCycleLengths.Finite →
+    G.oddCycleLengths.ncard ≤ k →
+      G.chromaticNumber ≤ 2 * ↑k + 2 ∧
+        (G.chromaticNumber = 2 * ↑k + 2 ↔ (SimpleGraph.completeGraph (Fin (2 * k + 2))).IsContained G)
+'Jsp000078.colorable_of_finite_induced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Jsp000078.oddCycleLengths_eq' depends on axioms: [propext, Quot.sound]
+'Erdos58.erdos_58' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Jsp000078.erdos_58_encard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Jsp000078.erdos_58' depends on axioms: [propext, Classical.choice, Quot.sound]

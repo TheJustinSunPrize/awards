@@ -1,0 +1,98 @@
+[
+  {
+    "stage": "sources",
+    "command": [
+      "python3",
+      "verify_sources.py"
+    ],
+    "started_utc": "2026-09-16T15:40:28.929790+00:00",
+    "duration_seconds": 0.035,
+    "exit_code": 0
+  },
+  {
+    "stage": "toolchain",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "started_utc": "2026-09-16T15:40:28.965142+00:00",
+    "duration_seconds": 4.732,
+    "exit_code": 0
+  },
+  {
+    "stage": "build",
+    "command": [
+      "lake",
+      "build"
+    ],
+    "started_utc": "2026-09-16T15:40:33.697523+00:00",
+    "duration_seconds": 14.739,
+    "exit_code": 0
+  },
+  {
+    "stage": "axioms",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "Audit.lean"
+    ],
+    "started_utc": "2026-09-16T15:40:48.437177+00:00",
+    "duration_seconds": 112.622,
+    "exit_code": 0
+  },
+  {
+    "stage": "replay",
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--run",
+      "ReplayBatch.lean",
+      "ErdosProblems.Erdos58",
+      "ErdosProblems.Erdos58.AlternativeSharp",
+      "ErdosProblems.Erdos58.Arithmetic",
+      "ErdosProblems.Erdos58.Basic",
+      "ErdosProblems.Erdos58.Bipartite",
+      "ErdosProblems.Erdos58.Boundary",
+      "ErdosProblems.Erdos58.Critical",
+      "ErdosProblems.Erdos58.CycleArcs",
+      "ErdosProblems.Erdos58.DFSUpper",
+      "ErdosProblems.Erdos58.EndpointCount",
+      "ErdosProblems.Erdos58.Fan",
+      "ErdosProblems.Erdos58.Independent",
+      "ErdosProblems.Erdos58.Linkage",
+      "ErdosProblems.Erdos58.MainReduction",
+      "ErdosProblems.Erdos58.Menger",
+      "ErdosProblems.Erdos58.Structural",
+      "ErdosProblems.Erdos58.Structural.BoundaryApplication",
+      "ErdosProblems.Erdos58.Structural.CaseAssembly",
+      "ErdosProblems.Erdos58.Structural.CaseConclusion",
+      "ErdosProblems.Erdos58.Structural.ConnectivityBridge",
+      "ErdosProblems.Erdos58.Structural.EndpointApplication",
+      "ErdosProblems.Erdos58.Structural.FanApplication",
+      "ErdosProblems.Erdos58.Structural.FanLinkage",
+      "ErdosProblems.Erdos58.Structural.HamiltonianBranch",
+      "ErdosProblems.Erdos58.Structural.IndependentGap",
+      "ErdosProblems.Erdos58.Structural.K1Boundary",
+      "ErdosProblems.Erdos58.Structural.LongestCycle",
+      "ErdosProblems.Erdos58.Structural.LongestCycleBridge",
+      "ErdosProblems.Erdos58.Structural.LongestPath",
+      "ErdosProblems.Erdos58.Structural.OutsideCycle",
+      "ErdosProblems.Erdos58.Structural.Setup",
+      "ErdosProblems.Erdos58.Structural.SingletonFan",
+      "ErdosProblems.Erdos58.Structural.SpliceConstruction",
+      "ErdosProblems.Erdos58.Structural.TwoLinkage",
+      "ErdosProblems.Erdos58.StructuralAlt",
+      "Jsp000078.CycleLengths",
+      "Jsp000078.Compactness",
+      "Jsp000078.General",
+      "Jsp000078"
+    ],
+    "started_utc": "2026-09-16T15:42:41.062128+00:00",
+    "duration_seconds": 104.05,
+    "exit_code": 0
+  }
+]
