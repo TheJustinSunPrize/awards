@@ -1,0 +1,35 @@
+$ lake env lean --version
+Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)
+$ lake clean
+$ lake build
+✔ [2/10] Built JSP690.Definitions (329ms)
+✔ [3/10] Built JSP690.Encoding (318ms)
+✔ [4/10] Built JSP690.Witness (336ms)
+✔ [5/10] Built JSP690.Subgraph (339ms)
+✔ [6/10] Built JSP690.NonColorable (2.4s)
+✔ [7/10] Built JSP690.Certificates (19s)
+✔ [8/10] Built JSP690.Result (302ms)
+✔ [9/10] Built JSP690 (265ms)
+Build completed successfully (10 jobs).
+$ lake env lean Audit.lean
+'JSP690.not_bool_colorable' depends on axioms: [propext, Quot.sound]
+'JSP690.not_colorable_of_lt_three' depends on axioms: [propext, Quot.sound]
+'JSP690.edgeDeletionColor_proper' depends on axioms: [propext, Quot.sound]
+'JSP690.vertexDeletionColor_proper' depends on axioms: [propext, Quot.sound]
+'JSP690.edge_eq_iff_vertices' depends on axioms: [propext, Quot.sound]
+'JSP690.strictSubgraphOn_colorable_of_deletions' depends on axioms: [propext, Quot.sound]
+'JSP690.witness_chromatic_critical' depends on axioms: [propext, Quot.sound]
+'JSP690.jsp_000690_nine_vertices' depends on axioms: [propext, Quot.sound]
+'JSP690.jsp_000690' depends on axioms: [propext, Quot.sound]
+JSP690.jsp_000690 :
+  ∃ n H,
+    0 < n ∧
+      JSP690.Simple H ∧
+        JSP690.Uniform H 3 ∧ JSP690.ChromaticCritical H 3 ∧ ∀ (v : JSP690.Vertex n), 7 ≤ JSP690.degree H v
+JSP690.jsp_000690_nine_vertices :
+  ∃ H,
+    JSP690.Simple H ∧
+      List.length H = 22 ∧
+        JSP690.Uniform H 3 ∧
+          JSP690.ChromaticCritical H 3 ∧ (∀ (v : JSP690.Vertex 9), 7 ≤ JSP690.degree H v) ∧ ∃ v, JSP690.degree H v = 7
+PASS: build and all nine theorem axiom audits succeeded.

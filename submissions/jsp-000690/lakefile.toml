@@ -1,0 +1,6 @@
+name = "jsp_000690"
+version = "1.0.0"
+defaultTargets = ["JSP690"]
+
+[[lean_lib]]
+name = "JSP690"
