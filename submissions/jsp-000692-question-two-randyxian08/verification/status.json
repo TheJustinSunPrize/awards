@@ -1,0 +1,72 @@
+{
+  "checked_at_utc": "2026-09-16T14:44:24.550820+00:00",
+  "status": "PASSED_LOCAL_LEAN_BUILD_AND_AXIOM_AUDIT",
+  "scope": "JSP-000692 / Erdos 836 question 2 only, all finite hypergraphs",
+  "lean_compiled": true,
+  "standalone_compiled": true,
+  "kernel_axioms_checked": true,
+  "lean_version": "Lean (version 4.19.0, arm64-apple-darwin23.6.0, commit 6caaee842e94, Release)",
+  "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "source_sha256": {
+    "Audit.lean": "b6b115790c1edf343ff453422ef3e17d34d6594df503587b3521d55992ff516a",
+    "JSP692.lean": "cd9d7ba01a0c5f47c8c6269d7da200b12ba4608938e0f41627c41524bbb0b349",
+    "JSP000692.lean": "5ded8124e31500a71b2502019187bb87601158bc2f2dbba3f176258dfcab177c",
+    "JSP692/Hypergraph.lean": "b8d0efcadb4a3a5c4370dcef6bf76cd187339148d24b990f6ba7d5829dc71555",
+    "JSP692/LinearIntersection.lean": "e3d5b27495845c28ac08c6e834e99f24cf89443ec83ac284f922d1940ce7710a"
+  },
+  "source_modified": false,
+  "axiom_dependencies": {
+    "JSP692.transversal_contains_edge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP692.square_matrix_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP692.exists_maximal_only_edge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP692.edge_disjoint_of_independent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP692.edge_meets_only_set_at_point": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP692.rank_le_twice_intersection_bound_add_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP692.large_intersection_nat": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP692.large_intersection_one_third": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "JSP692.jsp000692_question_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "warnings": [
+    "Unused Fintype section variable in edge_disjoint_of_independent; no admitted-proof warning"
+  ],
+  "first_question_formalized_in_this_package": false,
+  "independent_second_checker_run": false,
+  "external_submission_performed": false,
+  "novelty_or_priority_established": false
+}

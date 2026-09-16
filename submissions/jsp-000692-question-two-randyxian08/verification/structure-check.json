@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "kind": "FINITE_SANITY_CHECK_NOT_A_PROOF",
+  "cases": [
+    {
+      "family": "Fano",
+      "rank": 3,
+      "max_intersection": 1,
+      "base_edge_pivot_tests": 21,
+      "extremal_colouring_witnesses_valid": true,
+      "matrix_counts_valid": true
+    },
+    {
+      "family": "Alon r=2",
+      "rank": 2,
+      "max_intersection": 1,
+      "base_edge_pivot_tests": 6,
+      "extremal_colouring_witnesses_valid": true,
+      "matrix_counts_valid": true
+    },
+    {
+      "family": "Alon r=3",
+      "rank": 3,
+      "max_intersection": 2,
+      "base_edge_pivot_tests": 30,
+      "extremal_colouring_witnesses_valid": true,
+      "matrix_counts_valid": true
+    },
+    {
+      "family": "Alon r=4",
+      "rank": 4,
+      "max_intersection": 3,
+      "base_edge_pivot_tests": 140,
+      "extremal_colouring_witnesses_valid": true,
+      "matrix_counts_valid": true
+    },
+    {
+      "family": "Alon r=5",
+      "rank": 5,
+      "max_intersection": 4,
+      "base_edge_pivot_tests": 630,
+      "extremal_colouring_witnesses_valid": true,
+      "matrix_counts_valid": true
+    }
+  ]
+}
