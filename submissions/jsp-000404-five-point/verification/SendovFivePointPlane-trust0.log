@@ -1,0 +1,2 @@
+'SendovFivePointPlane.five_points_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovFivePointPlane.finite_set_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]

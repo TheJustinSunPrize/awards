@@ -1,0 +1,6 @@
+'SendovDirectionGeometry.middle_angle_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovDirectionGeometry.arg_between' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovDirectionGeometry.triangle_labels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovDirectionGeometry.five_ordered_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovDirectionGeometry.five_point_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovDirectionGeometry.five_points_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]

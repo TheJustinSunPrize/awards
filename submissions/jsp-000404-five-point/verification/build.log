@@ -1,0 +1,15 @@
+⚠ [743/1029] Replayed SendovFiveDirections
+warning: .\.\.\.\SendovFiveDirections.lean:25:5: unused variable `r04`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+info: .\.\.\.\SendovFiveDirections.lean:406:0: 'SendovFiveDirections.five_halves_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2202/2205] Replayed SendovDirectionGeometry
+info: .\.\.\.\SendovDirectionGeometry.lean:285:0: 'SendovDirectionGeometry.middle_angle_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\SendovDirectionGeometry.lean:286:0: 'SendovDirectionGeometry.arg_between' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\SendovDirectionGeometry.lean:287:0: 'SendovDirectionGeometry.triangle_labels' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\SendovDirectionGeometry.lean:288:0: 'SendovDirectionGeometry.five_ordered_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\SendovDirectionGeometry.lean:289:0: 'SendovDirectionGeometry.five_point_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\SendovDirectionGeometry.lean:290:0: 'SendovDirectionGeometry.five_points_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2204/2205] Replayed SendovFivePointPlane
+info: .\.\.\.\SendovFivePointPlane.lean:41:0: 'SendovFivePointPlane.five_points_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\SendovFivePointPlane.lean:42:0: 'SendovFivePointPlane.finite_set_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.

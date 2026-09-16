@@ -1,0 +1,94 @@
+{
+  "checked_at_utc": "2026-09-16T15:09:07.501585+00:00",
+  "problem": "JSP-000404 / Erdos 504",
+  "scope": "Every finite Euclidean-plane set of at least five points contains an angle >= 3*pi/5",
+  "complete_original_problem": false,
+  "lean": "4.19.0",
+  "dependencies": {
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0"
+  },
+  "files": {
+    "SendovFiveDirections.lean": "ec39ea957c20a34a7c98a4cbca082f396a589106e868fc8dae821f4043b88e2f",
+    "SendovDirectionGeometry.lean": "455d4c07a3a4bfa5c79d0ee9ba9ee4a3549fbf604d65aaa3bb950dde56f5bff1",
+    "SendovFivePointPlane.lean": "258e1c6ab1f40d804a6127facaca6b716ee3f79591a7bb2072096e9bb51a839f",
+    "lakefile.toml": "40f73df735d9e5c43af829fea98363fd700f2611e361356910688faff8beca1b",
+    "lake-manifest.json": "169bb6647e8a2fcf47c54f4a089eae71a62a9a80d327e2eabae67e3ff3df65dc",
+    "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "verify.py": "ed634f5656d03daea3d67849a87f2497e8b3195154491e5f45ac7226c23ea9cf",
+    "generate_five_direction_proof.py": "92d3b0b56f349e082d1873b4e8828d0a32156fd4c1e0b98038c4089e7c81beb6",
+    "SendovFiveDirections.generation.json": "01566e30f70aae674de33f07e083f1a8d2d7406898bbb59bd58ae6146cb00006",
+    "README.md": "b32852fd0900d7d4e5738bdc56a8e3556f19540c52b8eb6454ff5a0b1ef16da3"
+  },
+  "checks": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "version.log",
+      "sha256": "ac45440c370c2409c4fda2e1693aa1f1354989a0bcf1563ee3133bb006806400"
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "log": "build.log",
+      "sha256": "cd1505a50cf9901bc31d4a4dd1af9c4dbd63fa526162446711f2668d207bfcb4"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "SendovFiveDirections.lean"
+      ],
+      "exit_code": 0,
+      "log": "SendovFiveDirections-trust0.log",
+      "sha256": "8762d22097c615b74d4d7bf53109d9db92b0b3ab966a1a3f52af4070f82f2d78"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "SendovDirectionGeometry.lean"
+      ],
+      "exit_code": 0,
+      "log": "SendovDirectionGeometry-trust0.log",
+      "sha256": "4abdc9fb18d9ff609650649242b0f01ba2aacedf1cb857f8180f00695d081b78"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "SendovFivePointPlane.lean"
+      ],
+      "exit_code": 0,
+      "log": "SendovFivePointPlane-trust0.log",
+      "sha256": "059da963a20ca84c3205a46a8a963368ee8d8c9581d8cc93e8764a395f92c538"
+    }
+  ],
+  "environment": "Windows; pinned dependency checkouts and compiled Mathlib caches",
+  "network_isolated": false,
+  "independent_checker": false,
+  "official_review": "pending",
+  "priority": "not asserted",
+  "z3_in_verification_trust_chain": false
+}
