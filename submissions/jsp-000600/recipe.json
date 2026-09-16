@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "jsp": "JSP-000600",
+  "erdos": 732,
+  "source_repository": "https://github.com/plby/lean-proofs",
+  "source_commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "lean_version": "4.33.0",
+  "lean_toolchain": "leanprover/lean4:v4.33.0",
+  "sources": [
+    {
+      "module": "ErdosProblems.Erdos732",
+      "relative_file": "ErdosProblems/Erdos732.lean",
+      "bytes": 26189,
+      "sha256": "752d9a781a713dd96e55b482e584ccc4227cb2b698795f6c0cd474d18945db34",
+      "imports": [
+        "Mathlib"
+      ],
+      "kind": "download",
+      "raw_url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos732.lean",
+      "git_blob_sha1": "244874dd6a25f2659d6d00f1897bf489e930c181",
+      "source_url": "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos732.lean"
+    },
+    {
+      "module": "Contribution732.FinitePlane",
+      "relative_file": "Contribution732/FinitePlane.lean",
+      "bytes": 3326,
+      "sha256": "edf92165b70f170a4f3366f8857cc24d635d152c9f9129feedf527bdb2fa0bdb",
+      "imports": [
+        "ErdosProblems.Erdos732"
+      ],
+      "kind": "included_contribution"
+    },
+    {
+      "module": "Contribution732.Profiles",
+      "relative_file": "Contribution732/Profiles.lean",
+      "bytes": 7904,
+      "sha256": "4e5ee65f20cb5cdfc959f10334f5562b0d909766f21874712dd5aff44f3f8f72",
+      "imports": [
+        "Contribution732.FinitePlane"
+      ],
+      "kind": "included_contribution"
+    },
+    {
+      "module": "Contribution732.Counting",
+      "relative_file": "Contribution732/Counting.lean",
+      "bytes": 3564,
+      "sha256": "6a02f6f866aaa49de397cb80c248a594958876f5aab05f8b2d2d2c0b700ea7f4",
+      "imports": [
+        "Contribution732.Profiles"
+      ],
+      "kind": "included_contribution"
+    },
+    {
+      "module": "Contribution732.PrimePowers",
+      "relative_file": "Contribution732/PrimePowers.lean",
+      "bytes": 3683,
+      "sha256": "0d2e0b86a8719e4ddd516848c8c913997ac4f2f44dd3babc1314fff25e99fd3d",
+      "imports": [
+        "Contribution732.Counting"
+      ],
+      "kind": "included_contribution"
+    }
+  ],
+  "build_order": [
+    "ErdosProblems.Erdos732",
+    "Contribution732.FinitePlane",
+    "Contribution732.Profiles",
+    "Contribution732.Counting",
+    "Contribution732.PrimePowers"
+  ],
+  "axiom_whitelist": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "scope": "Arbitrary complete truncation profiles over every finite field, explicit pair-deficit completion, and an exact constructed family count with prime-power specializations. Not an exact enumeration of all compatible sequences or a new upper bound.",
+  "source_attribution": "Noga Alon supplies the mathematics (Theorem 2.3). The unchanged upstream source credits Codex / GPT-5.6 Sol and the Formal Conjectures Authors. The four separate contribution modules generalize the profile and field interfaces and add the explicit completion/counting bridges.",
+  "audit": {
+    "module": "Audit732Contribution",
+    "file": "Audit732Contribution.lean",
+    "declarations": [
+      "Contribution732.card_PG",
+      "Contribution732.card_linePoints",
+      "Contribution732.exists_compatible_of_profile",
+      "Contribution732.determined_by_primary_profile",
+      "Contribution732.completeProfile_compatible",
+      "Contribution732.profileSizes_injective",
+      "Contribution732.card_profileCode",
+      "Contribution732.complete_profile_family",
+      "Contribution732.card_galoisField",
+      "Contribution732.exists_compatible_of_prime_power_profile",
+      "Contribution732.complete_prime_power_profile_family",
+      "Contribution732.order_four_profile_family",
+      "Contribution732.order_five_profile_family",
+      "Erdos732.erdos_732"
+    ],
+    "definitions_printed": [
+      "Erdos732.PairwiseBalancedDesign",
+      "Erdos732.BlockCompatible",
+      "Erdos732.PairwiseBalancedDesign.blockSizes",
+      "Contribution732.completeProfile",
+      "Contribution732.ProfileCode",
+      "Contribution732.profileSizes"
+    ],
+    "sha256": "b706021431668e1660b7083012180ab2cace094d0380531b2bed39c6222f9193"
+  },
+  "checker_targets": [
+    {
+      "module": "Contribution732",
+      "expected_selected_modules": [
+        "Contribution732.FinitePlane",
+        "Contribution732.Profiles",
+        "Contribution732.Counting",
+        "Contribution732.PrimePowers"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos732",
+      "expected_selected_modules": [
+        "ErdosProblems.Erdos732"
+      ]
+    }
+  ]
+}

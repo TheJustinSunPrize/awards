@@ -1,0 +1,239 @@
+{
+  "status": "mock_tests_passed_not_Lean_verification",
+  "helper_sha256": "0b4d862064551760f9922d04511b5c00321fb79d654c56c9364951b5d575e01d",
+  "checks": [
+    {
+      "name": "metadata_only_no_process_or_network",
+      "pass": true
+    },
+    {
+      "name": "plan_only_no_process_or_network",
+      "pass": true
+    },
+    {
+      "name": "unsafe_path_parent_traversal",
+      "pass": true
+    },
+    {
+      "name": "unsafe_path_absolute_posix_path",
+      "pass": true
+    },
+    {
+      "name": "unsafe_path_repeated_separator",
+      "pass": true
+    },
+    {
+      "name": "unsafe_path_dot_segment",
+      "pass": true
+    },
+    {
+      "name": "unsafe_path_absolute_windows_drive_path",
+      "pass": true
+    },
+    {
+      "name": "unsafe_path_backslash_separator",
+      "pass": true
+    },
+    {
+      "name": "unsafe_path_nul_character",
+      "pass": true
+    },
+    {
+      "name": "wrong_commit",
+      "pass": true
+    },
+    {
+      "name": "wrong_url",
+      "pass": true
+    },
+    {
+      "name": "wrong_upstream_hash",
+      "pass": true
+    },
+    {
+      "name": "wrong_blob",
+      "pass": true
+    },
+    {
+      "name": "omitted_source",
+      "pass": true
+    },
+    {
+      "name": "wrong_order",
+      "pass": true
+    },
+    {
+      "name": "audit_overlap",
+      "pass": true
+    },
+    {
+      "name": "audit_missing_main",
+      "pass": true
+    },
+    {
+      "name": "checker_omits_upstream",
+      "pass": true
+    },
+    {
+      "name": "universe_normalization",
+      "pass": true
+    },
+    {
+      "name": "duplicate_identical_axiom_report",
+      "pass": true
+    },
+    {
+      "name": "missing_axiom_report",
+      "pass": true
+    },
+    {
+      "name": "sorryAx_rejection",
+      "pass": true
+    },
+    {
+      "name": "duplicate_checker_selection",
+      "pass": true
+    },
+    {
+      "name": "missing_definition_print",
+      "pass": true
+    },
+    {
+      "name": "duplicate_definition_print",
+      "pass": true
+    },
+    {
+      "name": "attribute_prefixed_definition",
+      "pass": true
+    },
+    {
+      "name": "real_Lean433_reducible_header_regression",
+      "pass": true
+    },
+    {
+      "name": "existing_output",
+      "pass": true
+    },
+    {
+      "name": "output_inside_mathlib",
+      "pass": true
+    },
+    {
+      "name": "output_inside_runtime",
+      "pass": true
+    },
+    {
+      "name": "output_inside_package",
+      "pass": true
+    },
+    {
+      "name": "all_eight_fresh_mock_stages",
+      "pass": true
+    },
+    {
+      "name": "compile_failure_stops",
+      "pass": true
+    },
+    {
+      "name": "audit_process_failure_stops",
+      "pass": true
+    },
+    {
+      "name": "checker_failure_stops",
+      "pass": true
+    },
+    {
+      "name": "duplicate_axiom_stops_before_checker",
+      "pass": true
+    },
+    {
+      "name": "wrong_checker_selection_stops",
+      "pass": true
+    },
+    {
+      "name": "downloaded_hash_mismatch_stops_before_Lean",
+      "pass": true
+    },
+    {
+      "name": "wrong_actual_Mathlib",
+      "pass": true
+    },
+    {
+      "name": "wrong_actual_Lean",
+      "pass": true
+    },
+    {
+      "name": "published_mock_evidence_raw_log_match_no_process",
+      "pass": true
+    },
+    {
+      "name": "https_source_url_not_private_windows_path",
+      "pass": true
+    },
+    {
+      "name": "false_success_event",
+      "pass": true
+    },
+    {
+      "name": "false_axiom_summary",
+      "pass": true
+    },
+    {
+      "name": "false_checker_summary",
+      "pass": true
+    },
+    {
+      "name": "wrong_recipe_evidence_binding",
+      "pass": true
+    },
+    {
+      "name": "wrong_recorded_threads",
+      "pass": true
+    },
+    {
+      "name": "private_path_in_public_record",
+      "pass": true
+    },
+    {
+      "name": "published_log_tampering",
+      "pass": true
+    },
+    {
+      "name": "included_source_tampering",
+      "pass": true
+    },
+    {
+      "name": "redirect_301",
+      "pass": true
+    },
+    {
+      "name": "redirect_302",
+      "pass": true
+    },
+    {
+      "name": "redirect_303",
+      "pass": true
+    },
+    {
+      "name": "redirect_307",
+      "pass": true
+    },
+    {
+      "name": "redirect_308",
+      "pass": true
+    },
+    {
+      "name": "package_and_shared_cache_unchanged",
+      "pass": true
+    }
+  ],
+  "count": 56,
+  "actual_Lean_or_checker_processes": 0,
+  "actual_network_requests": 0,
+  "actual_wrapper_created": false,
+  "limits": "These 56 helper checks use mock subprocesses and HTTP handlers; they do not establish Lean proof acceptance. The separate verification.json and raw logs record the actual fresh Lean/checker run.",
+  "schema_version": 1,
+  "jsp": "JSP-000600",
+  "original_private_test_report_sha256": "b868148e493a99819c4685fc609742b7a95daff07b6e3b2878df6c7dbfca374f",
+  "privacy_changes": "Replaced seven synthetic rejected-path literals in test labels with descriptive names; no test outcome changed."
+}

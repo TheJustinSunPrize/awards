@@ -1,0 +1,164 @@
+structure Erdos732.PairwiseBalancedDesign.{u} (P : Type u) [Fintype.{u} P] : Type (u + 1)
+number of parameters: 2
+fields:
+  Erdos732.PairwiseBalancedDesign.Block.{u} : Type u
+  Erdos732.PairwiseBalancedDesign.blockFintype.{u} : Fintype.{u} (Erdos732.PairwiseBalancedDesign.Block.{u} self)
+  Erdos732.PairwiseBalancedDesign.block.{u} : Erdos732.PairwiseBalancedDesign.Block.{u} self → Finset.{u} P
+  Erdos732.PairwiseBalancedDesign.two_le_card.{u} : ∀ (i : Erdos732.PairwiseBalancedDesign.Block.{u} self),
+      LE.le.{0} 2 (Finset.card.{u} (Erdos732.PairwiseBalancedDesign.block.{u} self i))
+  Erdos732.PairwiseBalancedDesign.pair_unique.{u} : ∀ ⦃x y : P⦄,
+      Ne.{u + 1} x y →
+        ExistsUnique.{u + 1} fun i =>
+          Membership.mem.{u, u} (Erdos732.PairwiseBalancedDesign.block.{u} self i) x ∧
+            Membership.mem.{u, u} (Erdos732.PairwiseBalancedDesign.block.{u} self i) y
+constructor:
+  Erdos732.PairwiseBalancedDesign.mk.{u} {P : Type u} [Fintype.{u} P] (Block : Type u)
+    (blockFintype : Fintype.{u} Block) (block : Block → Finset.{u} P)
+    (two_le_card : ∀ (i : Block), LE.le.{0} 2 (Finset.card.{u} (block i)))
+    (pair_unique :
+      ∀ ⦃x y : P⦄,
+        Ne.{u + 1} x y →
+          ExistsUnique.{u + 1} fun i => Membership.mem.{u, u} (block i) x ∧ Membership.mem.{u, u} (block i) y) :
+    Erdos732.PairwiseBalancedDesign.{u} P
+def Erdos732.BlockCompatible : ℕ → Multiset.{0} ℕ → Prop :=
+fun n sizes => ∃ D, Eq.{1} (Erdos732.PairwiseBalancedDesign.blockSizes.{0} D) sizes
+def Erdos732.PairwiseBalancedDesign.blockSizes.{u} : {P : Type u} →
+  [inst : Fintype.{u} P] → Erdos732.PairwiseBalancedDesign.{u} P → Multiset.{0} ℕ :=
+fun {P} [Fintype.{u} P] D =>
+  Multiset.map.{0, u} (fun i => Finset.card.{u} (Erdos732.PairwiseBalancedDesign.block.{u} D i))
+    (Finset.val.{u} Finset.univ.{u})
+def Contribution732.completeProfile : ℕ → Multiset.{0} ℕ → Multiset.{0} ℕ :=
+fun n m =>
+  HAdd.hAdd.{0, 0, 0} m
+    (Multiset.replicate.{0}
+      (HSub.hSub.{0, 0, 0} (n.choose 2) (Multiset.sum.{0} (Multiset.map.{0, 0} (fun k => k.choose 2) m))) 2)
+@[reducible] def Contribution732.ProfileCode : ℕ → Type :=
+fun q =>
+  Sym.{0} (Fin (HSub.hSub.{0, 0, 0} q 1)) (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} q 2) q) 1)
+def Contribution732.profileSizes : (q : ℕ) → Contribution732.ProfileCode q → Multiset.{0} ℕ :=
+fun q c => Multiset.map.{0, 0} (fun i => HAdd.hAdd.{0, 0, 0} (↑i) 3) ↑c
+Contribution732.card_PG.{u_1} : ∀ (K : Type u_1) [inst : Field.{u_1} K] [inst_1 : Fintype.{u_1} K],
+  Eq.{1} (Fintype.card.{u_1} (Contribution732.PG.{u_1} K))
+    (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (Fintype.card.{u_1} K) 2) (Fintype.card.{u_1} K)) 1)
+'Contribution732.card_PG' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Contribution732.card_linePoints.{u_1} : ∀ (K : Type u_1) [inst : Field.{u_1} K] [inst_1 : Fintype.{u_1} K]
+  (l : Contribution732.PG.{u_1} K),
+  Eq.{1} (Finset.card.{u_1} (Contribution732.linePoints.{u_1} K l)) (HAdd.hAdd.{0, 0, 0} (Fintype.card.{u_1} K) 1)
+'Contribution732.card_linePoints' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Contribution732.exists_compatible_of_profile.{u_1} : ∀ (K : Type u_1) [Field.{u_1} K] [inst : Fintype.{u_1} K] (n : ℕ),
+  LE.le.{0}
+      (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (Fintype.card.{u_1} K) 2) (Fintype.card.{u_1} K))
+        1)
+      n →
+    ∀ (m : Multiset.{0} ℕ),
+      Eq.{1} (Multiset.card.{0} m)
+          (HAdd.hAdd.{0, 0, 0}
+            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (Fintype.card.{u_1} K) 2) (Fintype.card.{u_1} K)) 1) →
+        (∀ (a : ℕ),
+            Membership.mem.{0, 0} m a → LE.le.{0} 3 a ∧ LE.le.{0} a (HAdd.hAdd.{0, 0, 0} (Fintype.card.{u_1} K) 1)) →
+          ∃ sizes, Erdos732.BlockCompatible n sizes ∧ Eq.{1} (Multiset.filter.{0} (fun a => LE.le.{0} 3 a) sizes) m
+'Contribution732.exists_compatible_of_profile' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+@Contribution732.determined_by_primary_profile : ∀ {n : ℕ} {sizes m : Multiset.{0} ℕ},
+  Erdos732.BlockCompatible n sizes →
+    Eq.{1} (Multiset.filter.{0} (fun a => LE.le.{0} 3 a) sizes) m → Eq.{1} sizes (Contribution732.completeProfile n m)
+'Contribution732.determined_by_primary_profile' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Contribution732.completeProfile_compatible.{u_1} : ∀ (K : Type u_1) [Field.{u_1} K] [inst : Fintype.{u_1} K] (n : ℕ),
+  LE.le.{0}
+      (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (Fintype.card.{u_1} K) 2) (Fintype.card.{u_1} K))
+        1)
+      n →
+    ∀ (m : Multiset.{0} ℕ),
+      Eq.{1} (Multiset.card.{0} m)
+          (HAdd.hAdd.{0, 0, 0}
+            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (Fintype.card.{u_1} K) 2) (Fintype.card.{u_1} K)) 1) →
+        (∀ (a : ℕ),
+            Membership.mem.{0, 0} m a → LE.le.{0} 3 a ∧ LE.le.{0} a (HAdd.hAdd.{0, 0, 0} (Fintype.card.{u_1} K) 1)) →
+          Erdos732.BlockCompatible n (Contribution732.completeProfile n m)
+'Contribution732.completeProfile_compatible' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Contribution732.profileSizes_injective : ∀ (q : ℕ), Function.Injective.{1, 1} (Contribution732.profileSizes q)
+'Contribution732.profileSizes_injective' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Contribution732.card_profileCode : ∀ (q : ℕ),
+  LE.le.{0} 2 q →
+    Eq.{1} (Fintype.card.{0} (Contribution732.ProfileCode q))
+      ((HSub.hSub.{0, 0, 0}
+            (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} q 2) q) 1) q) 2).choose
+        (HSub.hSub.{0, 0, 0} q 2))
+'Contribution732.card_profileCode' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Contribution732.complete_profile_family.{u_1} : ∀ (K : Type u_1) [Field.{u_1} K] [inst : Fintype.{u_1} K] (n : ℕ),
+  LE.le.{0}
+      (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (Fintype.card.{u_1} K) 2) (Fintype.card.{u_1} K))
+        1)
+      n →
+    ∃ S,
+      Eq.{1} (Finset.card.{0} S)
+          ((HSub.hSub.{0, 0, 0}
+                (HAdd.hAdd.{0, 0, 0}
+                  (HAdd.hAdd.{0, 0, 0}
+                    (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (Fintype.card.{u_1} K) 2) (Fintype.card.{u_1} K)) 1)
+                  (Fintype.card.{u_1} K))
+                2).choose
+            (HSub.hSub.{0, 0, 0} (Fintype.card.{u_1} K) 2)) ∧
+        ∀ (sizes : Multiset.{0} ℕ), Membership.mem.{0, 0} S sizes → Erdos732.BlockCompatible n sizes
+'Contribution732.complete_profile_family' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Contribution732.card_galoisField : ∀ (p k : ℕ) [inst : Fact (Nat.Prime p)],
+  LT.lt.{0} 0 k → Eq.{1} (Fintype.card.{0} (GaloisField p k)) (HPow.hPow.{0, 0, 0} p k)
+'Contribution732.card_galoisField' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Contribution732.exists_compatible_of_prime_power_profile : ∀ (p k n : ℕ),
+  Nat.Prime p →
+    LT.lt.{0} 0 k →
+      ∀ (m : Multiset.{0} ℕ),
+        LE.le.{0}
+            (HAdd.hAdd.{0, 0, 0}
+              (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HPow.hPow.{0, 0, 0} p k) 2) (HPow.hPow.{0, 0, 0} p k)) 1)
+            n →
+          Eq.{1} (Multiset.card.{0} m)
+              (HAdd.hAdd.{0, 0, 0}
+                (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HPow.hPow.{0, 0, 0} p k) 2) (HPow.hPow.{0, 0, 0} p k)) 1) →
+            (∀ (a : ℕ),
+                Membership.mem.{0, 0} m a →
+                  LE.le.{0} 3 a ∧ LE.le.{0} a (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} p k) 1)) →
+              ∃ sizes, Erdos732.BlockCompatible n sizes ∧ Eq.{1} (Multiset.filter.{0} (fun a => LE.le.{0} 3 a) sizes) m
+'Contribution732.exists_compatible_of_prime_power_profile' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+Contribution732.complete_prime_power_profile_family : ∀ (p k n : ℕ),
+  Nat.Prime p →
+    LT.lt.{0} 0 k →
+      LE.le.{0}
+          (HAdd.hAdd.{0, 0, 0}
+            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HPow.hPow.{0, 0, 0} p k) 2) (HPow.hPow.{0, 0, 0} p k)) 1)
+          n →
+        ∃ S,
+          Eq.{1} (Finset.card.{0} S)
+              ((HSub.hSub.{0, 0, 0}
+                    (HAdd.hAdd.{0, 0, 0}
+                      (HAdd.hAdd.{0, 0, 0}
+                        (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HPow.hPow.{0, 0, 0} p k) 2)
+                          (HPow.hPow.{0, 0, 0} p k))
+                        1)
+                      (HPow.hPow.{0, 0, 0} p k))
+                    2).choose
+                (HSub.hSub.{0, 0, 0} (HPow.hPow.{0, 0, 0} p k) 2)) ∧
+            ∀ (sizes : Multiset.{0} ℕ), Membership.mem.{0, 0} S sizes → Erdos732.BlockCompatible n sizes
+'Contribution732.complete_prime_power_profile_family' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Contribution732.order_four_profile_family : ∀ (n : ℕ),
+  LE.le.{0} 21 n →
+    ∃ S,
+      Eq.{1} (Finset.card.{0} S) 253 ∧
+        ∀ (sizes : Multiset.{0} ℕ), Membership.mem.{0, 0} S sizes → Erdos732.BlockCompatible n sizes
+'Contribution732.order_four_profile_family' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Contribution732.order_five_profile_family : ∀ (n : ℕ),
+  LE.le.{0} 31 n →
+    ∃ S,
+      Eq.{1} (Finset.card.{0} S) 5984 ∧
+        ∀ (sizes : Multiset.{0} ℕ), Membership.mem.{0, 0} S sizes → Erdos732.BlockCompatible n sizes
+'Contribution732.order_five_profile_family' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Erdos732.erdos_732 : ∃ c,
+  LT.lt.{0} 0 c ∧
+    ∃ N,
+      ∀ (n : ℕ),
+        LE.le.{0} N n →
+          ∃ S,
+            (∀ (sizes : Multiset.{0} ℕ), Membership.mem.{0, 0} S sizes → Erdos732.BlockCompatible n sizes) ∧
+              LE.le.{0} (Real.exp (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} c √↑n) (Real.log ↑n))) ↑(Finset.card.{0} S)
+'Erdos732.erdos_732' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]

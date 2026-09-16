@@ -1,0 +1,4 @@
+# Preserve exact source, recipe, and evidence bytes on every checkout.
+* -text
+# Keep raw compiler diagnostic whitespace without treating it as source style.
+logs/*.log -whitespace
