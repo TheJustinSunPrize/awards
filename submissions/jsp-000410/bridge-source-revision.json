@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "purpose": "Clarify a theorem doc comment without changing mathematical statements or proofs",
+  "original_commit": "3cab1e4b85ef9fa4f73e9e110d2c772750c84ad2",
+  "original_source_url": "https://github.com/zifanersuotang/awards/blob/3cab1e4b85ef9fa4f73e9e110d2c772750c84ad2/submissions/jsp-000410/JSP410ClosedBridge.lean",
+  "original_raw_url": "https://raw.githubusercontent.com/zifanersuotang/awards/3cab1e4b85ef9fa4f73e9e110d2c772750c84ad2/submissions/jsp-000410/JSP410ClosedBridge.lean",
+  "original_sha256": "926bc1f3128bd1704b8a92bf67c444d88e8e213073abc5de0eb04ad35e73c2ae",
+  "original_size_bytes": 6440,
+  "current_sha256": "1463423b274f9971b5f65f896e07be6c121f6d862346abcb7fc37ee2d7b8836a",
+  "current_size_bytes": 6467,
+  "line_endings": "LF",
+  "edit": {
+    "kind": "replace_exact_comment_once",
+    "old_comment": "/-- No degree-independent bound exists for closed components above every threshold d>1. -/",
+    "new_comment": "/-- It is false that every threshold d > 1 admits a degree-independent bound; the counterexample threshold is 6/5. -/"
+  },
+  "mathematical_statements_and_proofs_unchanged": true,
+  "validation_boundary": "verification.json is the historical proof record for original_sha256. The current source differs only by the recorded comment replacement; a fresh helper E2E result is required before claiming current-byte execution."
+}

@@ -37,8 +37,8 @@ The two unchanged upstream dependency files are external references in
 [upstream.json](upstream.json). They are not vendored in this contribution.
 Their source headers do not establish a license we can infer, so this package
 contains only the new bridge, references, verification metadata and helper.
-The helper retrieves exact hash-pinned bytes into the reproducer's dedicated
-checkout. Source attribution remains intact.
+The helper retrieves exact hash-pinned bytes into a fresh reproduction output
+directory. Source attribution remains intact.
 
 ## Exact Lean statements
 
@@ -59,25 +59,31 @@ new review and build.
 
 ## Reproduction
 
-Requires Python 3, Git, and Lean's `elan`/`lake` toolchain management.
-Use a fresh, dedicated Mathlib checkout; the helper rejects existing source
-files whose bytes differ.
+Requires Python 3.10+, Git, installed Lean 4.33.0 binaries, and an already cached
+Mathlib checkout at the recorded commit. The helper reads that checkout without
+writing to it. It does not invoke Lake, install a toolchain, or download a cache.
 
 ```sh
-git clone https://github.com/leanprover-community/mathlib4.git mathlib4-jsp410
-cd mathlib4-jsp410
-git checkout db584cd6d46c92f209a44c0f1c829460d327499d
-lake exe cache get
-cd ..
-python /path/to/this/package/verify.py --mathlib mathlib4-jsp410
+python verify.py --plan --mathlib /path/to/pinned/mathlib --lean-bin /path/to/lean/bin --output /path/to/new-run
+python verify.py --execute --mathlib /path/to/pinned/mathlib --lean-bin /path/to/lean/bin --output /path/to/new-run
 ```
 
-The script checks the Mathlib revision and toolchain, checks the dependency
-hashes, compiles Erdős229, Erdős511, then the bridge, and replays only the
-bridge module with `leanchecker`. Logs and their byte hashes are written to
-`verification/<UTC timestamp>/` in this package. The bridge source prints
-both final theorem axiom reports. Inspect the actual report and exit codes;
-a script existing or an unchecked source file is not verification.
+The output must not exist and must be outside both this package and Mathlib.
+Use quoted Windows paths in PowerShell; the helper detects `.exe` binaries.
+The former `--mathlib`-only command now requires explicit runtime and output
+arguments to prevent writes into a supplied shared cache. Without `--execute`,
+the helper only prints its plan and performs no subprocess or network call.
+
+Execution checks the Mathlib revision, toolchain and actual Lean version,
+downloads both fixed dependency files, and checks their SHA-256 and Git blob
+hashes. It freshly compiles Erdős229, Erdős511, then the bridge into the new
+`build` directory, checks both final theorem axiom reports, and replays only
+the bridge module with `leanchecker`. Its imported environment uses the supplied
+cache read-only. Source snapshots, logs, command/exit records, raw and normalized
+axiom reports, checker selection, and object hashes are saved under the new
+output directory. Each child receives `LEAN_NUM_THREADS=1`; compiler children
+also receive `-j1 -M8192`. The first failure stops the run and preserves evidence.
+Inspect the actual reports and exit codes; a helper file is not verification.
 
 This is Lean's target-module kernel replay against the imported environment,
 not a fresh replay of all Mathlib, an independently implemented checker, or
@@ -85,12 +91,26 @@ an independent human referee report.
 
 ## Verification status
 
-The exact LF source committed here compiled successfully with Lean 4.33.0 and
+The [fresh helper E2E record](e2e-windows-20260917.json) and four [original-byte logs](e2e-logs/02-JSP410ClosedBridge.compile.log) record a real Windows run on 17 September 2026. The revised isolated-output `verify.py` downloaded both pinned dependencies, checked their SHA-256 and Git blob IDs, freshly compiled all three custom modules, and replayed `JSP410ClosedBridge`. All four stages and the observed wrapper exited zero. The two final theorem reports contain only standard axioms. This run covers the current 6467-byte bridge, including the clarified `6/5` doc comment. The shared Mathlib cache was used read-only, and no private compiled objects were reused. The two upstream modules were compiled; only the bridge was selected for kernel replay. No Linux E2E result is claimed.
+
+The historical `verification.json` and two earlier logs remain unchanged and describe the original 6440-byte bridge. The fresh record preserves that distinction and records the current source and helper hashes, actual times, exit codes, axiom reports and replay selection. Only command-path metadata uses neutral placeholders; all four new logs retain their original bytes.
+
+The original LF source recorded in `verification.json` compiled successfully with Lean 4.33.0 and
 the pinned Mathlib revision; target-module `leanchecker` replay exited 0.
 Both final theorem reports contain only `propext`, `Classical.choice`, and
 `Quot.sound`. The unchanged upstream dependencies compiled successfully.
 
-Bridge SHA-256: `926bc1f3128bd1704b8a92bf67c444d88e8e213073abc5de0eb04ad35e73c2ae` (6440 bytes).
+Historical bridge SHA-256: `926bc1f3128bd1704b8a92bf67c444d88e8e213073abc5de0eb04ad35e73c2ae` (6440 bytes).
+
+The current source changes one documentation comment to state the quantifier
+correctly: it refutes a bound for every threshold by using the fixed threshold
+`6/5`. Mathematical declarations and proofs are unchanged. The explicit
+[source revision record](bridge-source-revision.json) pins the original commit
+and both byte hashes. The helper checks that replacing this one comment back
+recovers the full historical source SHA-256. The historical verification record
+has not been relabeled as a run on the edited bytes.
+
+Current bridge SHA-256: `1463423b274f9971b5f65f896e07be6c121f6d862346abcb7fc37ee2d7b8836a` (6467 bytes).
 
 See [verification.json](verification.json), the
 [final compiler and replay output](validation-logs/bridge-final-lf.log), and
@@ -99,7 +119,7 @@ The latter also records an early bridge import-order error, fixed before the
 final successful run; it is retained unedited.
 
 Local verification used an isolated output directory and a pinned read-only
-Mathlib cache. The portable fresh-checkout helper above has been statically
-reviewed; a separate end-to-end run of that helper is not claimed.
+Mathlib cache. The portable helper now supports isolated output with a read-only
+supplied cache. The separate actual Windows helper run described above covers the current source bytes.
 This evidence is submitted for maintainer review and does not determine
 priority, candidate status, eligibility, or an award.

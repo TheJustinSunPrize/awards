@@ -113,7 +113,7 @@ theorem arbitrarily_many_large_closed_components (N : ℕ) :
     rw [distance] at diameter
     linarith
 
-/-- No degree-independent bound exists for closed components above every threshold d>1. -/
+/-- It is false that every threshold d > 1 admits a degree-independent bound; the counterexample threshold is 6/5. -/
 theorem not_uniformly_bounded_closed_components :
     ¬ (∀ d : ℝ, 1 < d → ∃ B : ℕ, ∀ p : Polynomial ℂ, p.Monic →
       ¬ HasLargeClosedComponents p d (B + 1)) := by
