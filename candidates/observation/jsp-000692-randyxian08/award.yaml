@@ -1,0 +1,24 @@
+id: jsp-000692-randyxian08
+batch: null
+problem:
+  source: erdosproblems.com
+  number: 836
+  title_en: "Vertex-count and edge-intersection restrictions in intersecting 3-chromatic uniform hypergraphs"
+  posed:
+    year: 1975
+    basis: earliest-reference
+    citation: "P. Erdos and L. Lovasz, Problems and results on 3-chromatic hypergraphs (1975); erdosproblems.com/836"
+  resolved: null
+decision: null
+recipients:
+  - id: RECIPIENT-JSP-000692-RANDYXIAN08-A
+    affiliation: ""
+    contribution_en: "Lean 4 formalization of both finite-hypergraph answers: arbitrarily large active vertex counts refuting a uniform O(r^2) bound, and a linear bound forcing two distinct edges with r <= 2|E n F| + 1."
+    confirmation: null
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: draft
+revocation: null
