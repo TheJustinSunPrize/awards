@@ -1,0 +1,64 @@
+{
+  "checked_at_utc": "2026-09-16T16:43:58.052629+00:00",
+  "repository": "TheJustinSunPrize/awards",
+  "repository_commit": "f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+  "issue_and_pull_request_records": 145,
+  "highest_record_number": 146,
+  "included_states": [
+    "open",
+    "closed"
+  ],
+  "searched_fields": [
+    "issue and PR titles and bodies",
+    "issue comments",
+    "PR review bodies and inline comments",
+    "PR filenames and patches",
+    "full text of files whose patches GitHub omitted",
+    "problem catalog"
+  ],
+  "historical_pull_requests": 85,
+  "pull_request_file_records": 3299,
+  "available_patches": 3211,
+  "review_bodies": 15,
+  "issue_comments": 12,
+  "inline_review_comments": 2,
+  "supplemental_text_blobs": 60,
+  "supplemental_base_versions": 5,
+  "supplemental_bytes": 6584365,
+  "binary_files_not_text_searched": [
+    {
+      "pull_request": 122,
+      "filename": "submissions/jsp-000013/evidence.zip"
+    },
+    {
+      "pull_request": 122,
+      "filename": "submissions/jsp-000013/hadamard_716.csv.gz"
+    }
+  ],
+  "search_patterns": [
+    "\\bBourque\\b",
+    "\\bLigh\\b",
+    "Haukkanen",
+    "Sillanp",
+    "lcm.{0,30}matri",
+    "least common multiple.{0,30}matri",
+    "gcd[ -]closed",
+    "1\\s*,\\s*2\\s*,\\s*3\\s*,\\s*4\\s*,\\s*5\\s*,\\s*6\\s*,\\s*10\\s*,\\s*45\\s*,\\s*180",
+    "gcd_?closed"
+  ],
+  "matches": [],
+  "api_errors": [],
+  "public_formalization_search": {
+    "github_queries_with_zero_results": [
+      "Bourque extension:lean",
+      "Haukkanen extension:lean",
+      "Bourque extension:thy",
+      "Bourque extension:v"
+    ],
+    "web_queries": [
+      "Bourque Ligh conjecture formal proof Lean Isabelle Coq",
+      "Bourque-Ligh formalization"
+    ],
+    "result": "No existing formal proof of this counterexample was found."
+  }
+}
