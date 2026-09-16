@@ -20,9 +20,11 @@ the credited contributors, already formalizes the corrected construction upper
 bounds, including `alpha(5) <= 3*pi/5`. Its fixed head
 `722cb3caa86710c788296ca0ec954a79e9a0adcc` explicitly lists the matching five-point
 lower bound as unfinished. This package supplies that lower-bound statement.
-It does not copy or import PR #42's Lean source. The two packages currently use
-different toolchains (this package: Lean 4.19; PR #42: Lean 4.34), so no combined
-machine-checked `alpha(5) = 3*pi/5` theorem is claimed here.
+This original Lean 4.19 package does not import PR #42's Lean source. The
+[Lean 4.34 extension](lean434/README.md) ports the lower proof, imports the pinned
+and attributed upper constructions, and proves `alpha(5) = 3*pi/5` together with
+`alpha(N) = 2*pi/3` for `6 <= N <= 8`. It has its own dependency manifest and
+verification records. The original 4.19 evidence below covers only this directory.
 
 The underlying mathematics is historical, not a newly solved conjecture. See
 Sendov, *A minimax problem for point configurations*, Acta Mathematica Hungarica

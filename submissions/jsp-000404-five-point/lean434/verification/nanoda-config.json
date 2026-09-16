@@ -1,0 +1,27 @@
+{
+  "export_file_path": "final.ndjson",
+  "use_stdin": false,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unpermitted_axiom_hard_error": true,
+  "unsafe_permit_all_axioms": false,
+  "num_threads": 4,
+  "nat_extension": true,
+  "string_extension": true,
+  "print_axioms": true,
+  "print_success_message": true,
+  "pp_to_stdout": true,
+  "unknown_pp_declar_hard_error": true,
+  "pp_declars": [
+    "JSP404.small_cases_exact",
+    "JSP404.alpha",
+    "JSP404.Guaranteed",
+    "JSP404.HasLargeAngle",
+    "JSP404.Point",
+    "EuclideanGeometry.angle",
+    "InnerProductGeometry.angle"
+  ]
+}

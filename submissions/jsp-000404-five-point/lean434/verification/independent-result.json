@@ -1,0 +1,66 @@
+{
+  "checked_at_utc": "2026-09-16T16:15:40.663769+00:00",
+  "target": "JSP404.small_cases_exact",
+  "proof_files": {
+    "SendovFiveDirections.lean": "ec39ea957c20a34a7c98a4cbca082f396a589106e868fc8dae821f4043b88e2f",
+    "SendovDirectionGeometry.lean": "2141013c7ad2cdbe1135fd97b6f45daa6688f1fbda3def39e490490f4ad8b64c",
+    "SendovFivePointPlane.lean": "258e1c6ab1f40d804a6127facaca6b716ee3f79591a7bb2072096e9bb51a839f",
+    "FivePointExact.lean": "8b454a30863ad6fd219b167406cf6b967f828ff3d2d147242ee2e18852ed74ff",
+    "SendovDirectionModel.lean": "a600dfa455b15644b4bd29770ac163eedc479620904688da8c096d8cb2117249",
+    "SendovSixDirections.lean": "4f7c39bb32669ef7063ed45354799e32c5d9daa309643b1eee8dfe899997a13a",
+    "SendovSixPointPlane.lean": "23f043becf8ce4120891d117fef31e0497e45ee46e768fdb976506880bce80bf",
+    "SmallCasesExact.lean": "ed948c8957f45750f0087c8c03073939a679dbaecf7361d52727a66f6a6da595"
+  },
+  "export_metadata": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+      "version": "4.34.0"
+    }
+  },
+  "exporter_commit": "076e8e57707e813375e8f9da8bf989799ace9680",
+  "nanoda_commit": "4c544ed4099c8227f07d5de77ad1e69fb0740a27",
+  "exporter_binary_sha256": "5a3975718f04d9ce8c8a79d3d83497b4de70d9224c0e4f4eb89987c39ba37a2f",
+  "nanoda_binary_sha256": "aa463f65bc2551b83f6c14764fb9367388bea921ec5171cb3436cd19bff43b5b",
+  "export_bytes": 126954684,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unsafe_permit_all_axioms": false,
+  "unpermitted_axiom_hard_error": true,
+  "independent_implementation": true,
+  "independent_operator": false,
+  "official_verification": false,
+  "network_isolated": false,
+  "positive": {
+    "exit_code": 0,
+    "declarations": 23550,
+    "log": "nanoda-final.log",
+    "log_sha256": "7c62e9b83f73d1f728d4bd17d7ca0744c4ea6631586da378484580b25bdec689",
+    "input_sha256": "411e3428ef0a45da58b2e460b6dc4c16c6156c3883f6513f762413521a76415e"
+  },
+  "wrong_proof": {
+    "exit_code": 101,
+    "declarations": null,
+    "log": "nanoda-wrong-proof.log",
+    "log_sha256": "61b78af83a508f2bd7862fdc82f40f2e55b5cb5cfedfa71f6e8d36176279a02b",
+    "input_sha256": "a123ad74fae5eab5d8952791bf775d89977f29e962867e0dd33efe32910e101c"
+  },
+  "unpermitted_axiom": {
+    "exit_code": 1,
+    "declarations": null,
+    "log": "nanoda-unpermitted-axiom.log",
+    "log_sha256": "48e8c2dc7343ddebbf02c0710c9209b68b216ec7f9cce9e70988ce28b2555e49",
+    "input_sha256": "4d3b6d896421776a0b19687c0c38c636ed292d0fa2ca3df853c63589af499e3f"
+  },
+  "script_sha256": "9bdd53833d1d2f5d9ecdd46bdaa769be879f1652f940ed382a00624d96969480",
+  "config_sha256": "f36db87caaf28f168c65e94e9fa88db0ecea1a60d2c12096fa992f996555f14e"
+}

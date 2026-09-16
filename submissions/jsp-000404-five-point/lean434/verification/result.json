@@ -1,0 +1,165 @@
+{
+  "checked_at_utc": "2026-09-16T16:13:02.148023+00:00",
+  "problem": "JSP-000404 / Erdos 504",
+  "scope": "Exact alpha(5)=3*pi/5 and alpha(N)=2*pi/3 for 6<=N<=8; general classification remains unproved",
+  "complete_original_problem": false,
+  "lean": "4.34.0",
+  "dependencies": {
+    "jsp_000404": "722cb3caa86710c788296ca0ec954a79e9a0adcc",
+    "mathlib": "5ed2965256430c3649e86755f9576b54eca72435",
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "files": {
+    "SendovFiveDirections.lean": "ec39ea957c20a34a7c98a4cbca082f396a589106e868fc8dae821f4043b88e2f",
+    "SendovDirectionGeometry.lean": "2141013c7ad2cdbe1135fd97b6f45daa6688f1fbda3def39e490490f4ad8b64c",
+    "SendovFivePointPlane.lean": "258e1c6ab1f40d804a6127facaca6b716ee3f79591a7bb2072096e9bb51a839f",
+    "FivePointExact.lean": "8b454a30863ad6fd219b167406cf6b967f828ff3d2d147242ee2e18852ed74ff",
+    "SendovDirectionModel.lean": "a600dfa455b15644b4bd29770ac163eedc479620904688da8c096d8cb2117249",
+    "SendovSixDirections.lean": "4f7c39bb32669ef7063ed45354799e32c5d9daa309643b1eee8dfe899997a13a",
+    "SendovSixPointPlane.lean": "23f043becf8ce4120891d117fef31e0497e45ee46e768fdb976506880bce80bf",
+    "SmallCasesExact.lean": "ed948c8957f45750f0087c8c03073939a679dbaecf7361d52727a66f6a6da595",
+    "lakefile.toml": "3d2cd4a51115939ed0d21664738779e055a1bc16940d8b09de5d4e7dfee8bb30",
+    "lake-manifest.json": "b34c64afbda6ba670c5c4a27f2f666b49ae500958d8ed728dcc3326aaf29020d",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "verify.py": "949538aa4c38df9b30c7e568014b4741e7bf31e1e0f799367d1ec800dd0245b9",
+    "generate_five_direction_proof.py": "d0c87453f3714ff64a9592872eb5a52e510e7c4d0740c17e43173ccb31b49527",
+    "generate_six_direction_proof.py": "f5c015fbd820b624523295fda9b1ba9d285757a2e27edd1c10aac3f4a037cc45",
+    "SendovFiveDirections.generation.json": "01566e30f70aae674de33f07e083f1a8d2d7406898bbb59bd58ae6146cb00006",
+    "SendovSixDirections.generation.json": "abfdee868dadb61c251dbfe3302dde2856b108fdf2f47a7a081d14b829996202",
+    "README.md": "338394736f542256ba24c7bcf8e582712a6297d9fb33af1c4ae05b5d3406f24e",
+    "verify_independent.py": "9bdd53833d1d2f5d9ecdd46bdaa769be879f1652f940ed382a00624d96969480",
+    "INDEPENDENT.md": "3be83ac91c3f8586005e67fa647bb69e75c63d3bd5ce17901ea409f3952fd9f3"
+  },
+  "checks": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "version.log",
+      "sha256": "22b2a7b07d8cf2dd036853226f0f7ec55987cbd55c285e1d7282c8ba4840939b"
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "log": "build.log",
+      "sha256": "eb7e736d60d72a7de9f5bb01e57a85098805dccd78d4269987dd616b459d0a32"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "SendovFiveDirections.lean"
+      ],
+      "exit_code": 0,
+      "log": "SendovFiveDirections-trust0.log",
+      "sha256": "4a947d9229eeae9fae09164fdd98c64d4f043e3c057d20eedaff579d5f699d8d"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "SendovDirectionGeometry.lean"
+      ],
+      "exit_code": 0,
+      "log": "SendovDirectionGeometry-trust0.log",
+      "sha256": "4abdc9fb18d9ff609650649242b0f01ba2aacedf1cb857f8180f00695d081b78"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "SendovFivePointPlane.lean"
+      ],
+      "exit_code": 0,
+      "log": "SendovFivePointPlane-trust0.log",
+      "sha256": "059da963a20ca84c3205a46a8a963368ee8d8c9581d8cc93e8764a395f92c538"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "FivePointExact.lean"
+      ],
+      "exit_code": 0,
+      "log": "FivePointExact-trust0.log",
+      "sha256": "e1ca2672ffe8bd39fef6d84b3689b1f68433ec48306c8dace0663665df3a62cd"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "SendovDirectionModel.lean"
+      ],
+      "exit_code": 0,
+      "log": "SendovDirectionModel-trust0.log",
+      "sha256": "950564967d3fdcd1671e183a61c81c8eac983325432d0b1a8e8700334ce28c91"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "SendovSixDirections.lean"
+      ],
+      "exit_code": 0,
+      "log": "SendovSixDirections-trust0.log",
+      "sha256": "fb323168d58670bd8170bdba6f3c87f01e881d08ce70e9eb42cca9d6e66f3a8e"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "SendovSixPointPlane.lean"
+      ],
+      "exit_code": 0,
+      "log": "SendovSixPointPlane-trust0.log",
+      "sha256": "bc05e497ce030b1b857b55b9995d25a546062e1c7955fbe8aad9cfcdfaa77397"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "SmallCasesExact.lean"
+      ],
+      "exit_code": 0,
+      "log": "SmallCasesExact-trust0.log",
+      "sha256": "a7485b3ccd909b4df6406b3f89a5e18eaed665c965a4d7b1050cb6ee660c531c"
+    }
+  ],
+  "environment": "Windows; pinned dependency checkouts and compiled Mathlib caches",
+  "network_isolated": false,
+  "independent_checker": false,
+  "record_scope": "Lean build/kernel checks; separate external evidence is in independent-result.json",
+  "official_review": "pending",
+  "priority": "not asserted",
+  "z3_in_verification_trust_chain": false
+}

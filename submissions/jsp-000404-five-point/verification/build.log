@@ -1,4 +1,4 @@
-⚠ [743/997] Replayed SendovFiveDirections
+⚠ [743/866] Replayed SendovFiveDirections
 warning: .\.\.\.\SendovFiveDirections.lean:25:5: unused variable `r04`
 note: this linter can be disabled with `set_option linter.unusedVariables false`
 info: .\.\.\.\SendovFiveDirections.lean:406:0: 'SendovFiveDirections.five_halves_le' depends on axioms: [propext, Classical.choice, Quot.sound]

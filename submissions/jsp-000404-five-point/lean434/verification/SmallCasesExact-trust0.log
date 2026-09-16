@@ -1,0 +1,3 @@
+'JSP404.small_cases_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP404.guaranteed_two_pi_div_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP404.alpha_eq_two_pi_div_three' depends on axioms: [propext, Classical.choice, Quot.sound]
