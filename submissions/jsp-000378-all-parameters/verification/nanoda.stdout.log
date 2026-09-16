@@ -1,0 +1,20 @@
+theorem Erdos466General.erdos_466_parameter_classification :
+  forall {δ : Real},
+  LT.lt (OfNat.ofNat 0) δ → Iff (Filter.Tendsto (fun (X : Real) => Erdos466General.N X δ) Filter.atTop Filter.atTop)
+    (LT.lt δ (HDiv.hDiv (OfNat.ofNat 1) (OfNat.ofNat 2))) :=
+  _
+
+theorem Erdos466General.erdos_466 :
+  Exists
+    (fun (δ : Real) =>
+    And (LT.lt (OfNat.ofNat 0) δ)
+      (Filter.Tendsto (fun (X : Real) => Erdos466General.N X δ) Filter.atTop Filter.atTop)) :=
+  _
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
+Checked 27805 declarations with no errors
