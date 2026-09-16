@@ -1,6 +1,6 @@
 # Once coverage for random circle arcs: JSP-000422
 
-Lean bridge sources and evidence for the verified final statements. The original Windows validation completed all compilation, 17-declaration axiom and four kernel-replay gates. Publication and independent acceptance are separate; the portable helper has metadata, negative and mocked-process tests, not an additional end-to-end or Linux replay.
+Lean bridge sources and evidence for the verified final statements. Both the original Windows validation and a fresh end-to-end Windows run of the published helper completed all compilation, 17-declaration axiom and four kernel-replay gates. The new run used real pinned-source downloads and no private compiled objects. Publication and independent acceptance are separate; no Linux end-to-end result is claimed.
 
 The existing fixed-source formalization gives a Shepp criterion for every point being covered infinitely often. This bridge addresses the event that every point is covered at least once. These events must not be silently identified.
 
@@ -29,6 +29,10 @@ The existing formalization's source headers credit L. A. Shepp for the mathemati
 The four upstream source files are represented by immutable URLs and byte hashes in upstream.json; they are not vendored. This package contains only the three new bridge files, audit harness, evidence and reproduction helper. The three bridge files and harness are exact verified bytes, with SHA-256 values checked by the helper.
 
 ## Actual validation and fresh reproduction
+
+The [fresh public-helper E2E record](e2e-windows-20260917.json), with its twelve [original-byte logs](e2e-logs/07-audit-Audit526Bridge.log), records an actual Windows run on 17 September 2026. The unchanged published `verify.py` downloaded and hash-checked four pinned upstream sources, copied the three included bridges and audit, freshly compiled all seven custom modules, compiled the audit, and ran all four target checkers. All twelve verification stages and the wrapper exited zero. The 17 raw axiom reports contain only `propext`, `Classical.choice` and `Quot.sound`; actual structured-name checker selection covered all seven custom modules. This run used the supplied Mathlib cache read-only and did not reuse the private v4/v5 objects. The evidence preserves the original result digest, source and log digests, actual stage times, and neutral placeholders in command metadata; all twelve log files are unchanged bytes.
+
+The earlier v4/v5 chain remains available below. Its `verification.json` and fifteen historical logs are unchanged; the fresh record supplements them rather than rewriting their provenance.
 
 `verification.json` and the fifteen published logs retain the actual successful evidence and three historical failed-attempt logs. All published logs are byte-for-byte identical to their original logs; both original and published SHA-256 values are recorded, and redaction lists are empty. Private local paths have been omitted from metadata and replaced by generic placeholders in recorded command vectors.
 
@@ -60,6 +64,6 @@ python verify.py --execute --mathlib /path/to/mathlib --lean-bin /path/to/lean/b
 
 The output directory must not already exist and must be outside both this package and the Mathlib checkout. Execution downloads the four fixed upstream files, rejects redirects and requires HTTP 200 at each exact pinned raw URL, verifies SHA-256/Git blob IDs and the full import order, copies the three included bridges and audit unchanged, and freshly compiles all seven custom modules. It then compiles the 17-declaration audit and runs all four target checkers: twelve verification subprocesses, plus separate Lean-version and Git-commit probes. It does not consume private cached objects. The first compiler, axiom or checker-selection failure stops the run and leaves its actual logs and result.json in that isolated directory.
 
-`recipe-checks.json` records 29 passing lightweight checks, including changed source/log rejection, unsafe paths, altered downloads, redirect/non-200/changed-URL rejection, thread settings on version probes, missing/nonstandard axiom reports, structural checker scope, output conflicts, a fully mocked twelve-process sequence, failure-stop behavior and unchanged supplied-cache bytes. These are tests of the helper, not another Lean elaboration, kernel execution, or Linux end-to-end result.
+`recipe-checks.json` records 29 passing lightweight checks, including changed source/log rejection, unsafe paths, altered downloads, redirect/non-200/changed-URL rejection, thread settings on version probes, missing/nonstandard axiom reports, structural checker scope, output conflicts, a fully mocked twelve-process sequence, failure-stop behavior and unchanged supplied-cache bytes. These isolate helper behavior. The separate actual Windows elaboration and checker run is linked above; neither record claims a Linux end-to-end result.
 
 These checks use Lean's kernel and an imported Mathlib environment. They are not an independent kernel implementation, a fresh replay of all Mathlib, a human referee attestation or official acceptance.
