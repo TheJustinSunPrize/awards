@@ -7,8 +7,8 @@ import Mathlib.Tactic.Linarith
 /-!
 # JSP-000359 / Erdos 440: an explicit counting bound
 
-This file addresses ONLY the O(sqrt x) part of the original problem.
-It does not establish the sharp liminf or the optimal pointwise constant.
+This module establishes the O(sqrt x) part of the original problem.
+The companion LcmLiminf module establishes the sharp liminf and its attainment.
 The mathematical bound was previously known (Erdos--Szemeredi 1980;
 see also Tao's 2025 comment on https://www.erdosproblems.com/440).
 -/

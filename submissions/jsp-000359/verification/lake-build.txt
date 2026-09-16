@@ -1,5 +1,10 @@
-ℹ [831/832] Replayed LcmCounting
+ℹ [830/1085] Replayed LcmCounting
 info: .\.\.\.\LcmCounting.lean:123:0: 'JSP000359.mem_goodIndices_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: .\.\.\.\LcmCounting.lean:124:0: 'JSP000359.counting_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: .\.\.\.\LcmCounting.lean:125:0: 'JSP000359.counting_bound_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1498/1499] Replayed LcmLiminf
+info: .\.\.\.\LcmLiminf.lean:342:0: 'JSP000359.mem_real_count_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\LcmLiminf.lean:343:0: 'JSP000359.normalized_count_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\LcmLiminf.lean:344:0: 'JSP000359.sharp_liminf' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: .\.\.\.\LcmLiminf.lean:345:0: 'JSP000359.original_problem' depends on axioms: [propext, Classical.choice, Quot.sound]
 Build completed successfully.
