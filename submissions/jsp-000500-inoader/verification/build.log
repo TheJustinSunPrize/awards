@@ -1,0 +1,1921 @@
+✔ [4/69] Built Batteries.Lean.Position (758ms)
+✔ [5/69] Built ImportGraph.Imports.ImportGraph (752ms)
+✔ [6/69] Built ImportGraph.Lean.Environment (692ms)
+✔ [7/69] Built Batteries.Lean.Syntax (667ms)
+✔ [8/69] Built Batteries.Lean.Meta.Inaccessible (808ms)
+✔ [9/75] Built Batteries.Tactic.Unreachable (1.1s)
+✔ [10/76] Built Batteries.Tactic.Lint.Basic (1.4s)
+✔ [11/76] Built Batteries.Util.LibraryNote (1.3s)
+✔ [12/77] Built ImportGraph.Graph.TransitiveClosure (752ms)
+✔ [13/77] Built Batteries.CodeAction.Deprecated (1.6s)
+✔ [14/77] Built ImportGraph.Imports.Redundant (710ms)
+✔ [15/77] Built Mathlib.Tactic.Linter.DirectoryDependency (1.8s)
+✔ [16/77] Built ImportGraph.Imports.RequiredModules (1.1s)
+✔ [17/79] Built ImportGraph.Tools.ImportDiff (1.1s)
+✔ [18/79] Built Batteries.Lean.NameMapAttribute (774ms)
+✔ [19/79] Built Batteries.Tactic.OpenPrivate (1.5s)
+✔ [20/80] Built Batteries.Tactic.Lint.TypeClass (772ms)
+✔ [21/103] Built Batteries.Tactic.Lint.Misc (1.2s)
+✔ [22/103] Built ImportGraph.Tools.RedundantImports (927ms)
+✔ [24/103] Built ImportGraph.Tools.MinImports (861ms)
+✔ [25/103] Built ImportGraph.Tools.FindHome (1.0s)
+✔ [26/103] Built Aesop.Script.Tactic (497ms)
+✔ [27/104] Built Mathlib.Tactic.Linter.Header (1.4s)
+✔ [28/104] Built Batteries.Lean.Meta.Basic (632ms)
+✔ [29/106] Built Batteries.Tactic.Lint.Frontend (1.0s)
+✔ [30/106] Built Batteries.Tactic.Lint.Simp (1.3s)
+✔ [31/106] Built Batteries.Tactic.HelpCmd (2.2s)
+✔ [32/106] Built Batteries.Tactic.Trans (2.3s)
+✔ [33/106] Built Aesop.Script.GoalWithMVars (475ms)
+✔ [34/106] Built Aesop.Nanos (444ms)
+✔ [35/106] Built Batteries.Tactic.Alias (2.1s)
+✔ [36/106] Built ImportGraph.Tools (575ms)
+✔ [37/106] Built Mathlib.Util.CodeActions.BinderPlicity (621ms)
+✔ [38/106] Built Mathlib.Lean.Elab.Tactic.Meta (584ms)
+✔ [39/106] Built Mathlib.Tactic.TypeStar (643ms)
+✔ [40/106] Built Mathlib.Tactic.DeclarationNames (595ms)
+✔ [41/106] Built Mathlib.Util.ParseCommand (673ms)
+✔ [42/106] Built Mathlib.Tactic.Linter.TacticDocumentation (490ms)
+✔ [43/106] Built Mathlib.Tactic.Linter.UnusedTacticExtension (715ms)
+✔ [44/106] Built Mathlib.Tactic.MinImports (1.1s)
+✔ [45/106] Built Mathlib.Lean.Environment (519ms)
+✔ [46/106] Built Mathlib.Tactic.Linter.PrivateModule (680ms)
+✔ [47/106] Built Mathlib.Tactic.Linter.Whitespace (1.1s)
+✔ [48/106] Built Mathlib.Tactic.Linter.OldObtain (671ms)
+✔ [49/106] Built Mathlib.Tactic.Linter.Multigoal (724ms)
+✔ [50/106] Built Mathlib.Tactic.Linter.InternalConstructor (618ms)
+✔ [51/106] Built Mathlib.Tactic.Linter.GlobalAttributeIn (626ms)
+✔ [52/106] Built Mathlib.Tactic.Linter.HaveILetI (775ms)
+✔ [53/106] Built Mathlib.Tactic.Linter.HashCommandLinter (769ms)
+✔ [54/106] Built Mathlib.Lean.Expr.Basic (1.2s)
+✔ [55/109] Built Mathlib.Tactic.Linter.EmptyLine (782ms)
+✔ [56/109] Built Mathlib.Tactic.Lemma (674ms)
+✔ [57/109] Built Mathlib.Tactic.Linter.AuxLemma (723ms)
+✔ [58/109] Built Mathlib.Tactic.Linter.DocString (1.2s)
+✔ [59/109] Built Mathlib.Lean.Linter (683ms)
+✔ [60/109] Built Mathlib.Tactic.Linter.DeprecatedSyntaxLinter (1.1s)
+✔ [61/109] Built Mathlib.Tactic.Linter.FlexibleLinter (1.9s)
+✔ [62/109] Built Batteries.Util.ProofWanted (3.5s)
+✔ [63/109] Built Mathlib.Tactic.Linter.DocPrime (1.3s)
+✔ [64/109] Built Mathlib.Tactic.AdaptationNote (1.0s)
+✔ [65/110] Built Batteries.Tactic.Lint (620ms)
+✔ [66/110] Built Aesop.Script.TacticState (595ms)
+✔ [67/112] Built Mathlib.Util.CodeActions (626ms)
+✔ [68/116] Built Batteries.Logic (810ms)
+✔ [69/116] Built Batteries.Data.Array.Merge (1.3s)
+✔ [70/118] Built Mathlib.Lean.ContextInfo (939ms)
+✔ [71/118] Built Mathlib.Lean.Elab.InfoTree (870ms)
+✔ [72/118] Built Aesop.Index.DiscrTreeConfig (733ms)
+✔ [73/121] Built Batteries.Tactic.PermuteGoals (943ms)
+✔ [74/121] Built Batteries.Lean.MonadBacktrack (641ms)
+✔ [75/121] Built Mathlib.Tactic.Linter.UnusedTactic (1.3s)
+✔ [76/123] Built Mathlib.Tactic.ExtractGoal (1.4s)
+✔ [77/123] Built Aesop.Util.UnorderedArraySet (847ms)
+✔ [78/123] Built Mathlib.Tactic.Linter.Lint (1.1s)
+✔ [79/132] Built Aesop.Check (766ms)
+✔ [80/133] Built Batteries.Lean.Meta.SavedState (526ms)
+✔ [81/133] Built Aesop.Rule.Name (721ms)
+✔ [82/139] Built Mathlib.Tactic.Linter.Style (2.3s)
+✔ [83/139] Built Aesop.Options.Public (790ms)
+✔ [84/140] Built Aesop.Forward.PremiseIndex (423ms)
+✔ [85/141] Built Mathlib.Tactic.TacticAnalysis (1.4s)
+✔ [86/141] Built Aesop.Forward.LevelIndex (566ms)
+✔ [87/146] Built Mathlib.Tactic.Linter.UnusedInstancesInType (1.3s)
+✔ [88/146] Built Aesop.Script.OptimizeSyntax (972ms)
+✔ [89/152] Built Aesop.Percent (720ms)
+✔ [90/155] Built Aesop.Options.Internal (636ms)
+✔ [91/159] Built Aesop.Forward.SlotIndex (670ms)
+✔ [92/161] Built Aesop.Util.UnionFind (751ms)
+✔ [93/163] Built Batteries.Lean.TagAttribute (649ms)
+✔ [94/168] Built Batteries.Linter.UnreachableTactic (1.1s)
+✔ [95/168] Built Aesop.RuleTac.RuleTerm (630ms)
+✔ [96/173] Built Batteries.Lean.AttributeExtra (573ms)
+✔ [97/173] Built Batteries.Tactic.SeqFocus (948ms)
+✔ [98/173] Built Aesop.ElabM (738ms)
+✔ [99/173] Built Batteries.Tactic.Init (1.2s)
+✔ [100/179] Built Aesop.Util.Basic (2.6s)
+✔ [101/179] Built Aesop.Util.Tactic (509ms)
+✔ [102/179] Built Aesop.Util.Unfold (780ms)
+✔ [103/179] Built Batteries.Lean.Meta.UnusedNames (565ms)
+✔ [104/179] Built Aesop.Util.EqualUpToIds (3.6s)
+✔ [105/179] Built Aesop.Constants (422ms)
+✔ [106/182] Built Mathlib.Tactic.Linter.OverlappingInstances (2.0s)
+✔ [107/182] Built Aesop.Util.OrderedHashSet (505ms)
+✔ [108/183] Built Aesop.RuleTac.ElabRuleTerm (857ms)
+✔ [109/183] Built Batteries.Lean.Meta.Expr (461ms)
+✔ [110/186] Built Batteries.Linter.UnnecessarySeqFocus (1.4s)
+✔ [111/186] Built Aesop.RuleTac.Forward.Basic (862ms)
+✔ [112/186] Built Aesop.EMap (1.0s)
+✔ [113/190] Built Aesop.Script.CtorNames (891ms)
+✔ [114/198] Built Aesop.Script.Util (678ms)
+✔ [115/199] Built Mathlib.Tactic.TacticAnalysis.Declarations (3.0s)
+✔ [116/211] Built Aesop.Util.Tactic.Unfold (968ms)
+✔ [117/211] Built Batteries.Lean.PersistentHashMap (558ms)
+✔ [118/219] Built Aesop.Tracing (1.2s)
+✔ [119/219] Built Batteries.Lean.Meta.InstantiateMVars (561ms)
+✔ [120/219] Built Batteries.Lean.PersistentHashSet (521ms)
+✔ [121/219] Built Aesop.Forward.Substitution (1.3s)
+✔ [122/219] Built Batteries.Linter (653ms)
+✔ [123/219] Built Aesop.RuleSet.Name (498ms)
+✔ [124/219] Built Batteries.Lean.HashSet (414ms)
+✔ [125/219] Built Batteries.Lean.Meta.DiscrTree (570ms)
+✔ [126/228] Built Aesop.Search.Expansion.Simp (706ms)
+✔ [127/228] Built Aesop.Exception (686ms)
+✔ [128/244] Built Aesop.RuleSet.Filter (643ms)
+✔ [129/271] Built Mathlib.Init (1.0s)
+✔ [130/271] Built Aesop.RulePattern.Cache (682ms)
+✔ [131/271] Built Aesop.Index.Basic (825ms)
+✔ [132/271] Built Aesop.Util.Tactic.Ext (1.1s)
+✔ [133/271] Built Batteries.Control.ForInStep.Basic (471ms)
+✔ [134/271] Built Batteries.Tactic.Basic (639ms)
+✔ [135/271] Built Aesop.Frontend.Basic (452ms)
+✔ [136/271] Built Aesop.Script.Step (1.3s)
+✔ [137/271] Built Batteries.Lean.Expr (775ms)
+✔ [138/271] Built Aesop.Stats.Basic (1.5s)
+✔ [139/271] Built Mathlib.Basic.Nonempty (996ms)
+✔ [140/271] Built Mathlib.Tactic.OfNat (1.2s)
+✔ [141/271] Built Mathlib.Data.Int.Notation (1.2s)
+✔ [142/271] Built Mathlib.Tactic.Attr.Register (1.6s)
+✔ [143/271] Built Mathlib.Basic.ExistsUnique (1.7s)
+✔ [144/271] Built Mathlib.Data.Nat.Notation (1.4s)
+✔ [145/271] Built Mathlib.Tactic.Push.Attr (1.8s)
+✔ [146/271] Built Mathlib.Data.Nat.BinaryRec (1.6s)
+✔ [147/271] Built Mathlib.Tactic.CrossRefAttribute (2.3s)
+✔ [148/271] Built Mathlib.Tactic.Simps.NotationClass (1.7s)
+✔ [149/271] Built Mathlib.Lean.Name (1.3s)
+✔ [150/271] Built Mathlib.Lean.Meta (1.3s)
+✔ [151/273] Built Mathlib.Data.String.Defs (1.0s)
+✔ [152/273] Built Mathlib.Util.AddRelatedDecl (1.9s)
+✔ [153/273] Built Mathlib.Tactic.Translate.Attributes (1.1s)
+✔ [154/273] Built Mathlib.Tactic.Translate.UnfoldBoundary (1.0s)
+✔ [155/273] Built Mathlib.Tactic.Eqns (1.2s)
+✔ [156/273] Built Batteries.Classes.Order (970ms)
+✔ [157/273] Built Batteries.Util.ExtendedBinder (1.0s)
+✔ [158/273] Built Mathlib.Lean.Meta.Simp (1.2s)
+✔ [159/273] Built Aesop.Script.UScript (789ms)
+✔ [160/273] Built Aesop.Script.SScript (939ms)
+✔ [161/273] Built Aesop.Stats.File (740ms)
+✔ [162/277] Built Aesop.BaseM (699ms)
+✔ [163/277] Built Aesop.Stats.Extension (703ms)
+✔ [164/277] Built Mathlib.Tactic.DepRewrite (4.5s)
+✔ [165/278] Built Mathlib.Basic.Nontrivial.Defs (974ms)
+✔ [166/278] Built Mathlib.Lean.PrettyPrinter.Delaborator (1.1s)
+✔ [167/278] Built Mathlib.Tactic.Translate.GuessName (1.4s)
+✔ [168/278] Built Mathlib.Tactic.Translate.Reorder (3.3s)
+✔ [169/278] Built Aesop.Script.Check (775ms)
+✔ [170/278] Built Batteries.Data.UInt (1.2s)
+✔ [171/278] Built Mathlib.Tactic.MkIffOfInductiveProp (2.0s)
+✔ [172/278] Built Aesop.Script.UScriptToSScript (1.4s)
+✔ [173/283] Built Aesop.Script.ScriptM (924ms)
+✔ [174/283] Built Aesop.Stats.Report (1.2s)
+✔ [175/284] Built Mathlib.Basic.Logic.Basic (2.3s)
+✔ [176/284] Built Aesop.RuleTac.GoalDiff (1.5s)
+✔ [177/284] Built Aesop.RulePattern (2.0s)
+✔ [178/284] Built Mathlib.Logic.Function.Defs (1.7s)
+✔ [179/284] Built Mathlib.Data.Int.Init (2.0s)
+✔ [180/287] Built Aesop.Script.StructureStatic (1.3s)
+✔ [181/287] Built Mathlib.Tactic.SetNotationForOrder (2.0s)
+✔ [182/287] Built Mathlib.Tactic.ExtendDoc (834ms)
+✔ [183/290] Built Aesop.Script.StructureDynamic (1.8s)
+✔ [184/294] Built Aesop.RuleTac.Basic (711ms)
+✔ [185/294] Built Mathlib.Tactic.SimpRw (1.1s)
+✔ [186/294] Built Aesop.Index.RulePattern (827ms)
+✔ [187/295] Built Mathlib.Tactic.Simps.Basic (4.0s)
+✔ [188/295] Built Aesop.Script.SpecificTactics (2.1s)
+✔ [189/297] Built Aesop.Script.Main (798ms)
+✔ [190/297] Built Mathlib.Tactic.Core (1.2s)
+✔ [191/297] Built Aesop.Search.Expansion.Basic (666ms)
+✔ [192/297] Built Mathlib.Tactic.Inhabit (960ms)
+✔ [193/297] Built Mathlib.Basic.IsEmpty.Defs (1.0s)
+✔ [194/297] Built Batteries.Data.BinomialHeap.Basic (5.9s)
+✔ [195/297] Built Batteries.Data.Array.Basic (3.9s)
+✔ [196/297] Built Aesop.RuleTac.Tactic (1.1s)
+✔ [197/301] Built Aesop.RuleTac.Apply (767ms)
+✔ [198/307] Built Mathlib.Tactic.Simps (980ms)
+✔ [199/307] Built Aesop.RuleTac.Preprocess (662ms)
+✔ [201/308] Built Aesop.RuleTac.Cases (903ms)
+✔ [202/312] Built Mathlib.Tactic.Lift (1.3s)
+✔ [203/319] Built Mathlib.Tactic.Subsingleton (1.4s)
+✔ [204/319] Built Mathlib.Tactic.Attr.Core (878ms)
+✔ [205/323] Built Qq.ForLean.ToExpr (436ms)
+✔ [206/323] Built Mathlib.Data.Ordering.Basic (758ms)
+✔ [207/323] Built Qq.ForLean.ReduceEval (634ms)
+✔ [208/327] Built Mathlib.Tactic.SplitIfs (1.0s)
+✔ [209/327] Built Qq.Typ (473ms)
+✔ [210/327] Built Qq.ForLean.Do (523ms)
+✔ [211/328] Built Qq.SortLocalDecls (532ms)
+✔ [212/333] Built Aesop.Forward.RuleInfo (1.4s)
+✔ [213/333] Built Batteries.Lean.Except (446ms)
+✔ [214/339] Built Batteries.Tactic.Exact (564ms)
+✔ [215/339] Built Batteries.Control.Lemmas (377ms)
+✔ [216/347] Built Mathlib.Tactic.Spread (1.0s)
+✔ [217/357] Built Mathlib.Tactic.Relation.Rfl (898ms)
+✔ [218/357] Built Mathlib.Tactic.GCongr.ForwardAttr (912ms)
+✔ [219/357] Built Aesop.Rule.Forward (570ms)
+✔ [220/358] Built Mathlib.Lean.Meta.CongrTheorems (1.6s)
+✔ [221/358] Built Mathlib.Tactic.PPWithUniv (892ms)
+✔ [222/358] Built Mathlib.Tactic.ToExpr (813ms)
+✔ [223/365] Built Batteries.Control.LawfulMonadState (1.2s)
+✔ [224/365] Built Mathlib.Tactic.Coe (944ms)
+✔ [225/365] Built Mathlib.Logic.Relator (913ms)
+✔ [226/365] Built Aesop.Forward.Match.Types (529ms)
+✔ [227/367] Built Mathlib.Tactic.FastInstance (1.4s)
+✔ [228/367] Built Mathlib.Lean.Elab.Term (672ms)
+✔ [229/367] Built Mathlib.Tactic.Use (1.3s)
+✔ [230/371] Built Aesop.RuleTac.Descr (422ms)
+✔ [231/371] Built Batteries.Control.OptionT (531ms)
+✔ [232/373] Built Mathlib.Util.WithWeakNamespace (713ms)
+✔ [233/373] Built Mathlib.Tactic.Basic (1.1s)
+✔ [234/373] Built Aesop.Index.Forward (648ms)
+✔ [235/375] Built Aesop.Rule.Basic (447ms)
+✔ [236/375] Built Mathlib.Logic.Function.ULift (673ms)
+✔ [237/375] Built Mathlib.Tactic.FBinop (1.4s)
+✔ [238/375] Built Batteries.Control.AlternativeMonad (950ms)
+✔ [239/380] Built Mathlib.Util.AtLocation (849ms)
+✔ [240/383] Built Aesop.Rule (780ms)
+✔ [241/383] Built Mathlib.Tactic.Conv (1.4s)
+✔ [242/384] Built Mathlib.Tactic.Translate.Core (8.8s)
+✔ [243/384] Built Mathlib.Tactic.CongrExclamation (2.5s)
+✔ [244/384] Built Aesop.Index (1.0s)
+✔ [245/384] Built Mathlib.Data.SProd (755ms)
+✔ [246/386] Built Qq.Macro (4.0s)
+✔ [247/386] Built Batteries.Data.Nat.Basic (470ms)
+✔ [248/386] Built Batteries.Data.MLList.Basic (899ms)
+✔ [249/386] Built Aesop.RuleSet.Member (554ms)
+✔ [250/386] Built Aesop.Tree.UnsafeQueue (623ms)
+✔ [251/386] Built Batteries.Data.Nat.Lemmas (733ms)
+✔ [252/392] Built Mathlib.Tactic.ScopedNS (2.1s)
+✔ [253/392] Built Mathlib.Tactic.Translate.TagUnfoldBoundary (1.1s)
+✔ [254/396] Built Batteries.Control.Nondet.Basic (641ms)
+✔ [255/398] Built Mathlib.Tactic.Translate.ToAdditive (1.3s)
+✔ [256/398] Built Aesop.Forward.Match (1.5s)
+✔ [257/400] Built Qq.Commands (1.1s)
+✔ [258/400] Built Qq.Delab (1.2s)
+✔ [259/400] Built Aesop.Builder.Basic (840ms)
+✔ [260/400] Built Aesop.Tree.Data.ForwardRuleMatches (705ms)
+✔ [261/400] Built Mathlib.Logic.OpClass (996ms)
+✔ [262/400] Built Mathlib.Tactic.Convert (2.3s)
+✔ [263/400] Built Mathlib.Tactic.Push (2.4s)
+✔ [264/400] Built Mathlib.Tactic.Hint (1.2s)
+✔ [265/400] Built Mathlib.Tactic.Translate.ToDual (1.7s)
+✔ [266/400] Built Mathlib.Tactic.ToAdditive (835ms)
+✔ [267/400] Built Mathlib.Data.Nat.Init (2.1s)
+✔ [268/400] Built Aesop.Builder.Unfold (729ms)
+✔ [269/400] Built Aesop.Builder.Apply (783ms)
+✔ [270/400] Built Qq.MetaM (998ms)
+✔ [271/401] Built Aesop.RuleTac.Forward (1.8s)
+✔ [272/401] Built Aesop.Builder.Tactic (618ms)
+✔ [273/401] Built Aesop.Builder.Constructors (563ms)
+✔ [274/401] Built Aesop.Builder.NormSimp (677ms)
+✔ [275/401] Built Aesop.Builder.Cases (556ms)
+✔ [276/401] Built Aesop.Builder.Forward (1.6s)
+✔ [277/401] Built Mathlib.Tactic.Contrapose (1.0s)
+✔ [278/402] Built Mathlib.Tactic.ByCases (917ms)
+✔ [279/402] Built Mathlib.Tactic.ToDual (974ms)
+✔ [280/402] Built Qq.MatchImpl (532ms)
+✔ [281/405] Built Mathlib.Algebra.Regular.Defs (1.0s)
+✔ [282/405] Built Qq.AssertInstancesCommute (1.0s)
+✔ [283/405] Built Aesop.RuleTac (586ms)
+✔ [284/405] Built Aesop.Builder.Default (578ms)
+✔ [285/405] Built Mathlib.Algebra.Notation.Defs (1.4s)
+✔ [286/405] Built Qq.Simp (646ms)
+✔ [287/410] Built Mathlib.Order.Defs.Prop (707ms)
+✔ [288/410] Built Batteries.Control.ForInStep.Lemmas (356ms)
+✔ [289/410] Built Aesop.RuleSet (2.6s)
+✔ [290/413] Built Mathlib.Data.Set.Defs (1.3s)
+✔ [291/413] Built Mathlib.Order.Defs.PartialOrder (1.4s)
+✔ [292/414] Built Aesop.Frontend.Extension.Init (447ms)
+✔ [293/414] Built Mathlib.Algebra.Notation.Pi.Defs (1.4s)
+✔ [294/414] Built Mathlib.Data.Set.CoeSort (684ms)
+✔ [295/414] Built Mathlib.Algebra.Group.Semigroup (1.7s)
+✔ [296/414] Built Aesop.Forward.State (5.1s)
+✔ [298/414] Built Mathlib.Order.Defs.Unbundled (1.1s)
+✔ [299/416] Built Aesop.Frontend.Extension (721ms)
+✔ [300/416] Built Mathlib.Control.Functor (1.1s)
+✔ [301/416] Built Mathlib.Data.List.Monad (826ms)
+✔ [302/416] Built Aesop.Frontend.RuleExpr (2.5s)
+✔ [303/416] Built Mathlib.Util.Notation3 (6.5s)
+✔ [304/416] Built Mathlib.Order.Defs.LinearOrder (1.6s)
+✔ [305/416] Built Aesop.Forward.State.ApplyGoalDiff (629ms)
+✔ [306/417] Built Aesop.Forward.State.Initial (678ms)
+✔ [307/417] Built Plausible.Random (669ms)
+✔ [308/417] Built Aesop.Tree.Data (1.6s)
+✔ [309/417] Built Qq.Match (3.7s)
+✔ [310/420] Built Aesop.Frontend.Attribute (907ms)
+✔ [311/420] Built Aesop.Frontend.Command (1.3s)
+✔ [312/420] Built Batteries.Data.List.Basic (3.8s)
+✔ [313/420] Built Mathlib.Algebra.Group.Monoid (3.2s)
+✔ [314/420] Built Qq (751ms)
+✔ [315/420] Built Aesop.Frontend.Tactic (1.7s)
+✔ [316/420] Built Mathlib.Logic.Function.Basic (2.9s)
+✔ [317/420] Built Mathlib.Data.Bool.Basic (1.7s)
+✔ [318/420] Built Mathlib.Data.Int.Order.Basic (1.7s)
+✔ [319/421] Built Mathlib.Logic.Relation (2.9s)
+✔ [320/421] Built Plausible.Gen (1.2s)
+✔ [321/421] Built Aesop.Tree.Traversal (593ms)
+✔ [322/421] Built Aesop.Search.Queue.Class (673ms)
+✔ [323/421] Built Aesop.Tree.TreeM (900ms)
+✔ [324/421] Built Aesop.Tree.RunMetaM (640ms)
+✔ [325/421] Built Plausible.Shrinkable (675ms)
+✔ [326/422] Built Aesop.BuiltinRules.Rfl (611ms)
+✔ [327/422] Built Aesop.BuiltinRules.Split (760ms)
+✔ [328/422] Built Aesop.BuiltinRules.Subst (1.0s)
+✔ [329/422] Built Aesop.BuiltinRules.Intros (751ms)
+✔ [330/422] Built Aesop.BuiltinRules.Ext (1.1s)
+✔ [331/422] Built Aesop.BuiltinRules.ApplyHyps (1.1s)
+✔ [332/422] Built Aesop.BuiltinRules.Assumption (1.4s)
+✔ [333/422] Built Aesop.BuiltinRules.DestructProducts (1.5s)
+✔ [334/422] Built Mathlib.Tactic.GCongr.Core (5.3s)
+✔ [335/422] Built Mathlib.Data.Nat.Cast.Defs (1.8s)
+✔ [336/422] Built Mathlib.Algebra.Group.Nat.Defs (1.5s)
+✔ [337/422] Built Mathlib.Data.List.Defs (2.4s)
+✔ [338/422] Built Mathlib.Basic.IsEmpty.Basic (1.6s)
+✔ [339/422] Built Mathlib.Algebra.Group.DivInvMonoid (2.8s)
+✔ [340/423] Built Mathlib.Order.Notation (2.5s)
+✔ [341/423] Built Mathlib.Logic.Pairwise (1.8s)
+✔ [342/423] Built Mathlib.Tactic.Choose (2.6s)
+✔ [343/423] Built Plausible.Arbitrary (993ms)
+✔ [344/423] Built Aesop.Saturate (6.4s)
+✔ [345/423] Built Mathlib.Data.Subtype (2.2s)
+✔ [346/423] Built Aesop.Tree.State (1.4s)
+✔ [347/423] Built Mathlib.Logic.Function.Conjugate (2.0s)
+✔ [348/423] Built Mathlib.Basic.Unique (2.3s)
+✔ [349/423] Built Aesop.Tree.Stats (1.4s)
+✔ [350/423] Built Aesop.Tree.Free (1.2s)
+✔ [351/423] Built Aesop.Forward.State.UpdateGoal (1.1s)
+✔ [352/423] Built Plausible.Attr (618ms)
+✔ [353/423] Built Aesop.Tree.ExtractProof (1.7s)
+✔ [354/423] Built Aesop.Search.Queue (1.2s)
+✔ [355/423] Built Aesop.Tree.ExtractScript (2.4s)
+✔ [356/425] Built Aesop.Search.SearchM (1.3s)
+✔ [357/425] Built Aesop.BuiltinRules (1.1s)
+✔ [358/425] Built Aesop.Tree.Tracing (1.0s)
+✔ [359/425] Built Mathlib.Tactic.GCongr (1.1s)
+✔ [360/425] Built Plausible.Sampleable (893ms)
+✔ [361/427] Built Aesop.Tree.AddRapp (2.7s)
+✔ [362/427] Built Mathlib.Algebra.GroupWithZero.Defs (1.6s)
+✔ [363/428] Built Mathlib.Algebra.Group.Defs (1.5s)
+✔ [364/428] Built Plausible.ArbitraryFueled (454ms)
+✔ [365/428] Built Aesop.Frontend.Saturate (1.4s)
+✔ [366/428] Built Batteries.Data.List.Lemmas (7.4s)
+✔ [367/428] Built Mathlib.Logic.Function.Iterate (1.6s)
+✔ [368/429] Built Aesop.Tree.Check (1.6s)
+✔ [369/429] Built Mathlib.Data.FunLike.Basic (1.4s)
+✔ [370/429] Built Aesop.Search.RuleSelection (981ms)
+✔ [371/429] Built Plausible.Functions (885ms)
+✔ [372/429] Built Mathlib.Data.Nat.Basic (1.4s)
+✔ [373/429] Built Mathlib.Data.Quot (2.4s)
+✔ [374/429] Built Mathlib.Data.Int.Cast.Defs (1.1s)
+✔ [375/429] Built Mathlib.Algebra.Group.IsCommutative (1.2s)
+✔ [376/429] Built Plausible.Testable (2.0s)
+✔ [377/430] Built Mathlib.Algebra.Group.Semiconj.Defs (1.4s)
+✔ [378/430] Built Plausible.DeriveShrinkable (2.1s)
+✔ [379/431] Built Aesop.Frontend (862ms)
+✔ [380/431] Built Batteries.Tactic.Case (1.7s)
+✔ [381/431] Built Batteries.Data.List.Count (1.3s)
+✔ [382/431] Built Mathlib.Tactic.GRewrite.Core (5.5s)
+✔ [383/432] Built Mathlib.Data.FunLike.Embedding (1.4s)
+✔ [384/432] Built Plausible.DeriveArbitrary (2.2s)
+✔ [385/435] Built Mathlib.Data.Prod.Basic (1.8s)
+✔ [386/435] Built Plausible.Tactic (1.4s)
+✔ [387/435] Built Batteries.CodeAction.Attr (1.2s)
+✔ [389/435] Built Mathlib.Tactic.Finiteness.Attr (1.4s)
+✔ [390/435] Built Mathlib.Algebra.Group.Commute.Defs (1.0s)
+✔ [391/435] Built Mathlib.Order.Basic (5.1s)
+✔ [392/435] Built Mathlib.Data.FunLike.Equiv (1.3s)
+✔ [393/436] Built Plausible (780ms)
+✔ [394/437] Built Batteries.Data.List.Perm (2.2s)
+✔ [395/437] Built Batteries.Tactic.GeneralizeProofs (3.8s)
+✔ [396/440] Built Batteries.CodeAction.Basic (1.0s)
+✔ [397/443] Built Mathlib.Tactic.GRewrite.Elab (2.4s)
+✔ [398/443] Built Aesop.Search.Expansion.Norm (3.8s)
+✔ [399/444] Built Mathlib.Algebra.Ring.Defs (3.9s)
+✔ [400/444] Built LeanSearchClient.Basic (524ms)
+✔ [401/445] Built Mathlib.Algebra.Notation.Prod (1.8s)
+✔ [402/445] Built Mathlib.Tactic.ApplyCongr (1.1s)
+✔ [403/446] Built Mathlib.Lean.Meta.Basic (1.1s)
+✔ [404/447] Built Mathlib.Order.ULift (1.6s)
+✔ [405/447] Built Mathlib.Tactic.GRewrite (1.1s)
+✔ [406/447] Built Batteries.CodeAction.Misc (2.5s)
+✔ [407/448] Built Mathlib.Tactic.ApplyWith (1.4s)
+✔ [408/449] Built Mathlib.Tactic.ApplyAt (1.2s)
+✔ [409/449] Built Mathlib.Tactic.ByContra (1.4s)
+✔ [410/449] Built LeanSearchClient.Syntax (2.2s)
+✔ [411/459] Built Mathlib.Tactic.Check (1.4s)
+✔ [412/459] Built Mathlib.Tactic.ClearExclamation (1.0s)
+✔ [420/467] Built Aesop.Search.Expansion (2.5s)
+✔ [421/467] Built Mathlib.Algebra.Order.ZeroLEOne (1.6s)
+✔ [422/467] Built Mathlib.Tactic.CasesM (1.7s)
+✔ [423/474] Built Mathlib.Algebra.Group.Units.Defs (4.2s)
+✔ [424/474] Built Mathlib.Tactic.ClearExcept (1.1s)
+✔ [425/474] Built ProofWidgets.Compat (650ms)
+✔ [426/481] Built ProofWidgets.Util (878ms)
+✔ [427/484] Built Mathlib.Logic.Equiv.Defs (4.1s)
+✔ [428/484] Built Mathlib.Tactic.Clear_ (1.2s)
+✔ [429/487] Built Batteries.CodeAction.Match (1.5s)
+✔ [430/487] Built Mathlib.Tactic.NthRewrite (1.1s)
+✔ [431/487] Built Aesop.Search.ExpandSafePrefix (1.2s)
+✔ [432/490] Built LeanSearchClient.LoogleSyntax (1.6s)
+✔ [433/490] Built Mathlib.Control.Combinators (944ms)
+✔ [434/490] Built ProofWidgets.Component.Basic (1.1s)
+✔ [435/490] Built Mathlib.Lean.FoldEnvironment (1.1s)
+✔ [436/490] Built Batteries.CodeAction (874ms)
+✔ [437/490] Built Mathlib.Lean.Meta.KAbstractPositions (1.1s)
+✔ [438/490] Built Mathlib.Lean.GoalsLocation (1.0s)
+✔ [439/490] Built ProofWidgets.Cancellable (1.1s)
+✔ [440/493] Built Mathlib.Lean.Meta.RefinedDiscrTree.Basic (1.6s)
+✔ [441/493] Built LeanSearchClient (864ms)
+✔ [442/494] Built Mathlib.Order.OrderDual (1.0s)
+✔ [443/494] Built Mathlib.Tactic.Constructor (1.1s)
+✔ [444/494] Built ProofWidgets.Component.Panel.Basic (1.2s)
+✔ [445/494] Built Mathlib.Control.Basic (1.4s)
+✔ [446/494] Built ProofWidgets.Component.MakeEditLink (1.1s)
+✔ [447/495] Built Mathlib.Lean.MessageData.Trace (1.3s)
+✔ [448/495] Built Mathlib.Lean.Meta.RefinedDiscrTree.Encode (1.5s)
+✔ [449/496] Built Mathlib.Lean.Meta.RefinedDiscrTree.Initialize (1.0s)
+✔ [450/496] Built Aesop.Search.Main (3.1s)
+✔ [451/497] Built Mathlib.Tactic.DefEqTransformations (1.9s)
+✔ [452/497] Built Mathlib.Order.Compare (1.9s)
+✔ [453/498] Built Mathlib.Tactic.TermCongr (3.8s)
+✔ [454/498] Built Mathlib.Tactic.DeprecateTo (1.7s)
+✔ [455/498] Built ProofWidgets.Data.Html (3.5s)
+✔ [456/498] Built Mathlib.Tactic.DSimpPercent (1.2s)
+✔ [457/498] Built Mathlib.Order.Max (2.4s)
+✔ [458/498] Built Mathlib.Order.RelClasses (2.8s)
+✔ [459/500] Built Mathlib.Tactic.DefEqAbuse (2.1s)
+✔ [460/500] Built Mathlib.Tactic.ExistsI (1.1s)
+✔ [461/504] Built Mathlib.Tactic.CongrM (1.2s)
+✔ [462/504] Built Mathlib.Tactic.ErwQuestion (1.8s)
+✔ [463/504] Built Mathlib.Lean.Meta.RefinedDiscrTree.Lookup (2.0s)
+✔ [464/507] Built Aesop.Main (1.5s)
+✔ [465/507] Built ProofWidgets.Component.FilterDetails (850ms)
+✔ [466/507] Built ProofWidgets.Component.OfRpcMethod (1.1s)
+✔ [467/508] Built ProofWidgets.Component.RefreshComponent (1.4s)
+✔ [468/511] Built Batteries.Util.Cache (697ms)
+✔ [469/512] Built Mathlib.Tactic.FailIfNoProgress (1.8s)
+✔ [470/514] Built Mathlib.Lean.Meta.RefinedDiscrTree (1.0s)
+✔ [471/514] Built Mathlib.Tactic.FunProp.Mor (1.1s)
+✔ [472/515] Built Aesop (988ms)
+✔ [473/515] Built Mathlib.Tactic.FunProp.Decl (1.6s)
+✔ [474/517] Built Mathlib.Tactic.Find (1.3s)
+✔ [475/517] Built Mathlib.Tactic.InferParam (1.1s)
+✔ [476/518] Built Mathlib.Tactic.FunProp.ToBatteries (2.1s)
+✔ [477/519] Built Mathlib.Tactic.GuardGoalNums (1.1s)
+✔ [478/522] Built Mathlib.Tactic.GrindAttrs (1.3s)
+✔ [479/522] Built Mathlib.Tactic.GuardHypNums (1.2s)
+✔ [480/523] Built Mathlib.Data.Set.Operations (2.4s)
+✔ [481/523] Built Mathlib.Order.BoundedOrder.Basic (2.9s)
+✔ [482/524] Built Mathlib.Util.TermReduce (1.4s)
+✔ [483/525] Built Mathlib.Tactic.HigherOrder (1.8s)
+✔ [484/525] Built Mathlib.Tactic.Linter.HaveLetLinter (1.3s)
+✔ [485/526] Built Mathlib.Tactic.FunProp.FunctionData (1.8s)
+✔ [486/526] Built Mathlib.Tactic.Linter.PPRoundtrip (1.5s)
+✔ [487/528] Built Mathlib.Tactic.ClickSuggestions.Util (3.8s)
+✔ [488/528] Built Mathlib.Tactic.Linter.MinImports (1.8s)
+✔ [489/528] Built Mathlib.Tactic.Linter.UpstreamableDecl (1.6s)
+✔ [490/529] Built Mathlib.Tactic.Observe (1.5s)
+✔ [491/529] Built Mathlib.Tactic.RSuffices (1.2s)
+✔ [492/530] Built Mathlib.Tactic.FunProp.Types (1.3s)
+✔ [493/530] Built Mathlib.Tactic.Recover (1.3s)
+✔ [494/530] Built Mathlib.Tactic.Rename (1.4s)
+✔ [495/533] Built Mathlib.Order.Monotone.Defs (3.0s)
+✔ [496/533] Built Mathlib.Tactic.IrreducibleDef (2.2s)
+✔ [497/536] Built Mathlib.Tactic.ClickSuggestions.Unfold (1.6s)
+✔ [498/536] Built Mathlib.Util.Tactic (1.1s)
+✔ [499/536] Built Mathlib.Tactic.Linter (1.1s)
+✔ [500/536] Built Mathlib.Tactic.ClickSuggestions.SectionState (1.8s)
+✔ [501/537] Built Mathlib.Tactic.Says (1.5s)
+✔ [502/537] Built Mathlib.Tactic.Set (1.6s)
+✔ [503/538] Built Mathlib.Lean.Elab.Tactic.Basic (1.2s)
+✔ [504/538] Built Mathlib.Tactic.RenameBVar (1.2s)
+✔ [505/538] Built Mathlib.Tactic.Substs (1.1s)
+✔ [506/538] Built Mathlib.Tactic.SimpIntro (1.7s)
+✔ [507/539] Built Mathlib.Tactic.FunProp.Theorems (2.1s)
+✔ [508/539] Built Mathlib.Tactic.SuccessIfFailWithMsg (1.4s)
+✔ [509/540] Built Mathlib.Tactic.Simproc.ExistsAndEq (2.5s)
+✔ [510/540] Built Mathlib.Algebra.Group.Basic (7.2s)
+✔ [511/540] Built Mathlib.Tactic.SudoSetOption (1.2s)
+✔ [512/541] Built Mathlib.Tactic.ClickSuggestions.ApplyAt (2.1s)
+✔ [513/541] Built Mathlib.Order.Monotone.Basic (3.2s)
+✔ [514/542] Built Mathlib.Tactic.ClickSuggestions.Apply (2.1s)
+✔ [515/542] Built Mathlib.Tactic.SwapVar (1.2s)
+✔ [516/543] Built Mathlib.Tactic.FunProp.Attr (947ms)
+✔ [517/543] Built Mathlib.Tactic.Setm (1.7s)
+✔ [518/544] Built Mathlib.Tactic.ClickSuggestions.Rewrite (2.3s)
+✔ [519/544] Built Mathlib.Tactic.ClickSuggestions.GRewrite (2.6s)
+✔ [520/547] Built Mathlib.Tactic.ToLevel (979ms)
+✔ [521/548] Built Mathlib.Tactic.ToFun (1.4s)
+✔ [522/552] Built Mathlib.Tactic.Trace (1.1s)
+✔ [523/553] Built Mathlib.Tactic.UnsetOption (1.1s)
+✔ [524/554] Built Mathlib.Tactic.Tauto (2.4s)
+✔ [525/557] Built Mathlib.Algebra.Order.Monoid.Unbundled.Defs (2.4s)
+✔ [526/557] Built Mathlib.Tactic.Widget.SelectInsertParamsClass (1.4s)
+✔ [527/557] Built Mathlib.Tactic.WLOG (1.7s)
+✔ [528/562] Built Mathlib.Util.PrintSorries (1.3s)
+✔ [529/565] Built Mathlib.Algebra.Group.Units.Basic (3.4s)
+✔ [530/565] Built Mathlib.Tactic.Variable (2.9s)
+✔ [531/567] Built Mathlib.Util.TransImports (1.3s)
+✔ [532/567] Built Mathlib.Util.CountHeartbeats (2.2s)
+✔ [533/578] Built Mathlib.Tactic.ClickSuggestions.FindPremises (2.8s)
+✔ [534/580] Built Mathlib.Util.WhatsNew (1.6s)
+✔ [535/586] Built Mathlib.Tactic.Monotonicity.Attr (1.2s)
+✔ [536/586] Built Mathlib.Data.Option.Defs (1.1s)
+✔ [537/588] Built Mathlib.Tactic.Widget.SelectPanelUtils (1.6s)
+✔ [538/590] Built Batteries.Tactic.Congr (1.4s)
+✔ [539/590] Built Mathlib.Tactic.FunProp.Core (5.4s)
+✔ [540/590] Built Mathlib.Util.CompileInductive (2.1s)
+✔ [541/593] Built Mathlib.Control.EquivFunctor (1.4s)
+✔ [542/593] Built Mathlib.Data.Sigma.Basic (1.5s)
+✔ [543/595] Built Mathlib.Tactic.Widget.CongrM (1.2s)
+✔ [544/595] Built Mathlib.Order.GaloisConnection.Defs (2.6s)
+✔ [545/595] Built Mathlib.Order.Lattice (6.2s)
+✔ [546/600] Built Mathlib.Data.Option.Basic (1.9s)
+✔ [547/600] Built Mathlib.Tactic.ClickSuggestions.TryPremises (2.8s)
+✔ [548/600] Built Mathlib.Data.Sum.Basic (1.8s)
+✔ [549/600] Built Mathlib.Tactic.SetLike (1.2s)
+✔ [550/610] Built Mathlib.Data.Prod.PProd (1.0s)
+✔ [551/610] Built Mathlib.Tactic.FunProp.Elab (1.8s)
+✔ [552/613] Built Mathlib.Tactic.Widget.Calc (2.7s)
+✔ [553/618] Built Mathlib.Order.BoundedOrder.Lattice (1.9s)
+✔ [554/618] Built Mathlib.Tactic.Widget.Conv (3.5s)
+✔ [555/624] Built Mathlib.Order.MinMax (2.4s)
+✔ [556/640] Built Mathlib.Tactic.FunProp (1.0s)
+✔ [557/640] Built Mathlib.Tactic.Widget.LibraryRewrite (4.3s)
+✔ [558/640] Built Mathlib.Data.Finset.Attr (1.3s)
+✔ [559/645] Built Batteries.Data.List.Pairwise (1.0s)
+✔ [560/645] Built Mathlib.Logic.Equiv.Option (2.0s)
+✔ [561/647] Built Mathlib.Tactic.ClickSuggestions (2.2s)
+✔ [562/647] Built Mathlib.Util.PPOptions (996ms)
+✔ [563/654] Built Mathlib.Algebra.NeZero (1.2s)
+✔ [564/655] Built Mathlib.Algebra.Order.IsBotOne (1.9s)
+✔ [565/655] Built Mathlib.Order.Interval.Set.Defs (1.5s)
+✔ [566/655] Built Mathlib.Basic.Finite.Defs (1.3s)
+✔ [567/671] Built Mathlib.Data.List.Induction (1.8s)
+✔ [568/674] Built Mathlib.Order.Lex (1.6s)
+✔ [569/679] Built Mathlib.Data.Int.DivMod (1.2s)
+✔ [570/680] Built Mathlib.Order.Disjoint (3.3s)
+✔ [571/681] Built Batteries.Data.Fin.Basic (1.5s)
+✔ [572/681] Built Mathlib.Tactic.Common (2.2s)
+✔ [573/683] Built Mathlib.Data.Nat.Find (1.8s)
+✔ [574/683] Built Mathlib.Basic.Nontrivial.Basic (1.5s)
+✔ [575/683] Built Mathlib.Algebra.Group.SelfInv (1.0s)
+✔ [576/683] Built Batteries.Data.Fin.Lemmas (1.3s)
+✔ [577/683] Built Mathlib.Algebra.BigOperators.Group.List.Defs (1.4s)
+✔ [578/683] Built Mathlib.Order.PropInstances (1.8s)
+✔ [579/683] Built Mathlib.Algebra.Opposites (2.4s)
+✔ [580/683] Built Mathlib.Util.Delaborators (4.7s)
+✔ [581/683] Built Mathlib.Algebra.Group.InjSurj (3.7s)
+✔ [582/685] Built Mathlib.Data.List.InsertIdx (2.2s)
+✔ [583/685] Built Mathlib.Data.List.Count (2.1s)
+✔ [584/685] Built Mathlib.Algebra.Group.Int.Defs (1.5s)
+✔ [585/686] Built Mathlib.Data.Fin.Basic (3.5s)
+✔ [586/686] Built Mathlib.Algebra.Order.Monoid.Unbundled.Basic (6.6s)
+✔ [587/686] Built Mathlib.Data.List.Forall2 (2.0s)
+✔ [588/686] Built Mathlib.Data.List.TakeDrop (3.8s)
+✔ [589/688] Built Mathlib.Algebra.Group.Torsion (2.1s)
+✔ [590/688] Built Mathlib.Tactic.Nontriviality.Core (2.4s)
+✔ [591/688] Built Mathlib.Algebra.Group.Nat.Units (1.9s)
+✔ [592/688] Built Mathlib.Algebra.Group.Hom.Defs (7.7s)
+✔ [593/688] Built Mathlib.Data.List.Flatten (2.1s)
+✔ [594/688] Built Mathlib.Algebra.Order.Sub.Defs (2.8s)
+✔ [595/688] Built Mathlib.Data.List.Basic (6.5s)
+✔ [596/688] Built Mathlib.Data.List.Perm.Basic (3.3s)
+✔ [597/691] Built Mathlib.Algebra.Order.Monoid.Unbundled.ExistsOfLE (2.4s)
+✔ [598/691] Built Mathlib.Data.Set.Basic (5.1s)
+✔ [599/691] Built Mathlib.Algebra.Order.Monoid.Defs (2.7s)
+✔ [600/691] Built Mathlib.Data.List.TFAE (1.2s)
+✔ [601/692] Built Mathlib.Tactic.Nontriviality (1.2s)
+✔ [602/692] Built Mathlib.Logic.Equiv.Prod (16s)
+✔ [603/692] Built Mathlib.Algebra.Group.Opposite (3.5s)
+✔ [604/692] Built Mathlib.Algebra.Group.Int.Units (1.7s)
+✔ [605/692] Built Mathlib.Data.Fin.SuccPred (6.0s)
+✔ [606/692] Built Mathlib.Data.List.Infix (2.3s)
+✔ [607/695] Built Mathlib.Order.Heyting.Basic (7.6s)
+✔ [608/695] Built Mathlib.Data.List.Perm.Subperm (1.0s)
+✔ [609/695] Built Mathlib.Data.List.Lattice (2.7s)
+✔ [610/696] Built Mathlib.Data.Set.Disjoint (2.1s)
+✔ [611/696] Built Mathlib.Data.Set.Inclusion (2.1s)
+✔ [612/696] Built Mathlib.Data.List.Lex (2.6s)
+✔ [613/697] Built Mathlib.Data.SetLike.Basic (2.5s)
+✔ [614/699] Built Mathlib.Algebra.Order.Monoid.Canonical.Defs (2.6s)
+✔ [615/700] Built Mathlib.Data.List.Nodup (4.0s)
+✔ [616/700] Built Mathlib.Logic.Equiv.Sum (2.8s)
+✔ [617/700] Built Mathlib.Algebra.Divisibility.Basic (2.7s)
+✔ [618/700] Built Mathlib.Data.List.ProdSigma (2.1s)
+✔ [619/700] Built Mathlib.Order.BooleanAlgebra.Defs (2.2s)
+✔ [620/703] Built Mathlib.Data.Multiset.Defs (2.7s)
+✔ [621/705] Built Mathlib.Algebra.Order.Group.Nat (1.9s)
+✔ [622/705] Built Mathlib.Data.Set.Insert (2.0s)
+✔ [623/705] Built Mathlib.Data.List.Pairwise (5.1s)
+✔ [624/705] Built Mathlib.Algebra.Group.Hom.Basic (3.5s)
+✔ [625/705] Built Mathlib.Data.List.Perm.Lattice (2.5s)
+✔ [626/707] Built Mathlib.Data.List.Dedup (2.2s)
+✔ [627/707] Built Mathlib.Data.List.Duplicate (2.6s)
+✔ [628/707] Built Mathlib.Data.List.Rotate (3.3s)
+✔ [629/707] Built Mathlib.Algebra.Group.Equiv.Defs (4.9s)
+✔ [630/711] Built Mathlib.Algebra.Order.Sub.Unbundled.Basic (2.4s)
+✔ [631/719] Built Mathlib.Data.Set.Subsingleton (2.5s)
+✔ [632/720] Built Mathlib.Data.Multiset.ZeroCons (4.2s)
+✔ [633/721] Built Mathlib.Data.List.Enum (2.8s)
+✔ [634/721] Built Mathlib.Algebra.BigOperators.Group.List.Basic (5.3s)
+✔ [635/721] Built Mathlib.Order.BooleanAlgebra.Basic (5.5s)
+✔ [636/721] Built Mathlib.Control.ULift (1.6s)
+✔ [637/723] Built Mathlib.Logic.Equiv.Basic (5.9s)
+✔ [638/723] Built Mathlib.Data.List.Chain (4.3s)
+✔ [639/723] Built Mathlib.Algebra.Group.Units.Hom (3.7s)
+✔ [640/723] Built Mathlib.Order.SetNotation (5.3s)
+✔ [641/723] Built Mathlib.Combinatorics.SimpleGraph.Init (1.3s)
+✔ [642/725] Built Mathlib.Data.Multiset.Count (2.2s)
+✔ [643/725] Built Mathlib.Data.Multiset.Basic (2.1s)
+✔ [644/727] Built Mathlib.Data.ULift (1.8s)
+✔ [645/727] Built Mathlib.Data.Nat.Factorial.Basic (4.0s)
+✔ [646/730] Built Mathlib.Data.Fin.Rev (2.3s)
+✔ [647/730] Built Mathlib.Data.List.OffDiag (3.0s)
+✔ [648/733] Built Mathlib.Algebra.Notation.Pi.Basic (1.9s)
+✔ [649/733] Built Mathlib.Logic.Embedding.Basic (2.0s)
+✔ [650/734] Built Mathlib.Order.BooleanAlgebra.Set (4.1s)
+✔ [651/734] Built Mathlib.Data.List.Range (2.6s)
+✔ [652/734] Built Mathlib.Order.Bounds.Defs (1.6s)
+✔ [653/738] Built Mathlib.Order.SymmDiff (4.1s)
+✔ [654/738] Built Mathlib.Data.Multiset.AddSub (3.3s)
+✔ [655/740] Built Mathlib.Data.Nat.Choose.Basic (3.2s)
+✔ [656/740] Built Mathlib.Algebra.Group.Action.Defs (4.5s)
+✔ [657/740] Built Mathlib.Order.BoundedOrder.Monotone (1.0s)
+✔ [658/740] Built Mathlib.Data.Fin.Embedding (2.6s)
+✔ [659/744] Built Mathlib.Algebra.Group.Pi.Basic (3.0s)
+✔ [660/746] Built Mathlib.Algebra.BigOperators.Group.List.Lemmas (2.8s)
+✔ [661/746] Built Mathlib.Data.Set.SymmDiff (1.8s)
+✔ [662/749] Built Mathlib.Algebra.Group.Action.Faithful (1.9s)
+✔ [663/754] Built Mathlib.Data.Multiset.Replicate (2.4s)
+✔ [664/754] Built Mathlib.Control.Applicative (1.5s)
+✔ [665/780] Built Mathlib.Data.Vector.Defs (2.6s)
+✔ [666/780] Built Mathlib.Control.Traversable.Basic (1.6s)
+✔ [667/780] Built Mathlib.Data.Sym.Sym2.Init (1.3s)
+✔ [668/783] Built Mathlib.Algebra.Group.Prod (7.1s)
+✔ [669/785] Built Mathlib.Data.Bool.Set (1.7s)
+✔ [670/788] Built Mathlib.Data.Option.NAry (1.2s)
+✔ [671/788] Built Mathlib.Order.TypeTags (1.5s)
+✔ [672/789] Built Mathlib.Order.RelIso.Basic (5.9s)
+✔ [673/789] Built Mathlib.Lean.Expr.ExtraRecognizers (1.6s)
+✔ [674/789] Built Mathlib.Order.Nat (1.9s)
+✔ [675/789] Built Mathlib.Algebra.GroupWithZero.NeZero (1.5s)
+✔ [676/789] Built Mathlib.Algebra.GroupWithZero.Regular (1.6s)
+✔ [677/794] Built Mathlib.Order.Interval.Set.Basic (7.0s)
+✔ [678/795] Built Mathlib.Data.Set.Notation (2.1s)
+✔ [679/799] Built Mathlib.Algebra.Group.WithOne.Defs (3.6s)
+✔ [680/799] Built Mathlib.Data.Vector.Basic (4.6s)
+✔ [681/802] Built Mathlib.Algebra.GroupWithZero.InjSurj (2.7s)
+✔ [682/802] Built Mathlib.Algebra.CharZero.Defs (1.9s)
+✔ [683/804] Built Mathlib.Algebra.Order.Group.Synonym (5.8s)
+✔ [684/804] Built Mathlib.Data.Set.Image (7.4s)
+✔ [685/805] Built Mathlib.Algebra.GroupWithZero.Basic (3.3s)
+✔ [686/805] Built Mathlib.Algebra.Group.TypeTags.Basic (4.5s)
+✔ [687/805] Built Mathlib.Algebra.Group.WithOne.Map (2.4s)
+✔ [688/805] Built Mathlib.Algebra.Regular.Basic (2.4s)
+✔ [689/805] Built Mathlib.Algebra.Order.Group.Int (1.6s)
+✔ [690/805] Built Mathlib.Algebra.Order.Monoid.Unbundled.OrderDual (1.5s)
+✔ [691/805] Built Mathlib.Data.Nat.Set (1.6s)
+✔ [692/805] Built Mathlib.Data.Set.List (1.7s)
+✔ [693/805] Built Mathlib.Logic.Embedding.Set (2.7s)
+✔ [694/808] Built Mathlib.Order.Directed (2.5s)
+✔ [695/809] Built Mathlib.Data.Set.Restrict (2.0s)
+✔ [696/809] Built Mathlib.Algebra.Order.Group.Unbundled.Basic (5.2s)
+✔ [697/809] Built Mathlib.Algebra.GroupWithZero.Units.Basic (3.5s)
+✔ [698/809] Built Mathlib.Algebra.GroupWithZero.Hom (3.3s)
+✔ [699/813] Built Mathlib.Tactic.Bound.Init (1.4s)
+✔ [700/813] Built Mathlib.Algebra.Order.GroupWithZero.Defs (3.9s)
+✔ [701/813] Built Mathlib.Order.Hom.Basic (10s)
+✔ [702/813] Built Mathlib.Algebra.Order.Monoid.Unbundled.Pow (4.3s)
+✔ [703/813] Built Mathlib.Algebra.Order.Monoid.OrderDual (2.5s)
+✔ [704/813] Built Mathlib.Data.Set.Prod (6.3s)
+✔ [705/813] Built Mathlib.Data.Multiset.MapFold (4.5s)
+✔ [706/813] Built Mathlib.Logic.Function.DependsOn (2.6s)
+✔ [707/813] Built Mathlib.Algebra.GroupWithZero.Equiv (2.1s)
+✔ [708/813] Built Mathlib.Algebra.Order.Group.Defs (2.8s)
+✔ [709/814] Built Mathlib.Algebra.Order.Monoid.Unbundled.TypeTags (1.0s)
+✔ [710/814] Built Mathlib.Data.Int.Basic (1.7s)
+✔ [711/814] Built Mathlib.Tactic.Bound.Attribute (2.2s)
+✔ [712/814] Built Mathlib.Algebra.Order.Monoid.Units (2.2s)
+✔ [713/814] Built Mathlib.Order.WithBot (14s)
+✔ [714/816] Built Mathlib.Tactic.ApplyFun (2.8s)
+✔ [715/816] Built Mathlib.Order.Antisymmetrization (2.9s)
+✔ [716/816] Built Mathlib.Order.Fin.Basic (3.4s)
+✔ [717/816] Built Mathlib.Data.Set.NAry (3.3s)
+✔ [718/819] Built Mathlib.Algebra.Order.Monoid.TypeTags (2.6s)
+✔ [719/819] Built Mathlib.Algebra.Order.Monoid.NatCast (2.8s)
+✔ [720/819] Built Mathlib.Order.Hom.Bounded (5.8s)
+✔ [721/819] Built Mathlib.Order.Hom.Lattice (5.9s)
+✔ [722/822] Built Mathlib.Algebra.Order.Group.Units (2.7s)
+✔ [723/826] Built Mathlib.Basic.Rel (6.3s)
+✔ [724/827] Built Mathlib.Algebra.Order.Monoid.Unbundled.MinMax (3.1s)
+✔ [725/829] Built Mathlib.Algebra.GroupWithZero.WithZero (6.0s)
+✔ [726/830] Built Mathlib.Data.Int.Cast.Basic (2.3s)
+✔ [727/830] Built Mathlib.Data.Set.Function (6.9s)
+✔ [728/830] Built Mathlib.Data.Nat.Sqrt (1.7s)
+✔ [729/834] Built Mathlib.Algebra.Group.Equiv.Basic (4.3s)
+✔ [730/834] Built Mathlib.Algebra.Divisibility.Hom (2.8s)
+✔ [731/834] Built Mathlib.Algebra.Ring.GrindInstances (2.7s)
+✔ [732/834] Built Mathlib.Algebra.Group.TypeTags.Hom (3.3s)
+✔ [733/834] Built Mathlib.Algebra.Order.Monoid.Unbundled.WithTop (8.5s)
+✔ [734/834] Built Mathlib.Data.Fin.Tuple.Basic (7.3s)
+✔ [735/834] Built Mathlib.Data.Set.Piecewise (3.2s)
+✔ [736/834] Built Mathlib.Order.Hom.BoundedLattice (8.3s)
+✔ [737/834] Built Mathlib.Order.Bounds.Basic (9.0s)
+✔ [738/837] Built Mathlib.Data.Multiset.Filter (4.5s)
+✔ [739/837] Built Mathlib.Order.WellFounded (4.4s)
+✔ [740/837] Built Mathlib.Algebra.Group.Hom.Instances (7.2s)
+✔ [741/837] Built Mathlib.Data.Set.Pairwise.Basic (4.1s)
+✔ [742/837] Built Mathlib.Util.AtomM (2.1s)
+✔ [743/837] Built Mathlib.Data.Int.Sqrt (3.4s)
+✔ [744/837] Built Mathlib.Algebra.Group.Nat.Hom (2.5s)
+✔ [745/837] Built Mathlib.Algebra.Order.Monoid.WithTop (2.5s)
+✔ [746/837] Built Mathlib.Logic.Equiv.Set (6.4s)
+✔ [747/837] Built Mathlib.Data.List.FinRange (3.1s)
+✔ [748/837] Built Mathlib.Data.List.OfFn (2.6s)
+✔ [749/837] Built Mathlib.Algebra.GroupWithZero.Nat (1.3s)
+✔ [750/837] Built Mathlib.Algebra.Order.GroupWithZero.Basic (9.5s)
+✔ [751/839] Built Mathlib.Algebra.Group.Equiv.Opposite (4.5s)
+✔ [752/839] Built Mathlib.Algebra.Group.Action.Pi (2.6s)
+✔ [753/841] Built Mathlib.Order.CompleteLattice.Defs (3.4s)
+✔ [754/841] Built Mathlib.Algebra.BigOperators.Group.Multiset.Defs (2.7s)
+✔ [755/841] Built Mathlib.Order.Bounds.Image (4.0s)
+✔ [756/842] Built Mathlib.Algebra.Ring.Nat (1.0s)
+✔ [757/849] Built Mathlib.Data.Multiset.UnionInter (3.6s)
+✔ [758/849] Built Mathlib.Data.Finset.Defs (3.2s)
+✔ [759/849] Built Mathlib.Algebra.Order.AddGroupWithTop (3.2s)
+✔ [760/849] Built Mathlib.Algebra.Ring.Semiconj (1.7s)
+✔ [761/849] Built Mathlib.Algebra.Group.Semiconj.Units (2.4s)
+✔ [762/849] Built Mathlib.Tactic.TFAE (4.6s)
+✔ [763/849] Built Mathlib.Algebra.Group.Even (3.9s)
+✔ [764/849] Built Mathlib.Data.Bracket (1.6s)
+✔ [765/852] Built Mathlib.Data.List.Sort (5.7s)
+✔ [766/852] Built Mathlib.Data.Multiset.Dedup (3.3s)
+✔ [767/852] Built Mathlib.Data.Multiset.Range (3.2s)
+✔ [768/852] Built Mathlib.Order.Hom.Set (6.6s)
+✔ [769/852] Built Mathlib.Data.Finset.Erase (2.8s)
+✔ [770/852] Built Mathlib.Data.Finset.Empty (3.1s)
+✔ [771/853] Built Mathlib.Algebra.Order.Ring.Unbundled.Basic (6.4s)
+✔ [772/853] Built Mathlib.Data.Finset.Attach (2.4s)
+✔ [773/853] Built Mathlib.Algebra.GroupWithZero.Semiconj (2.0s)
+✔ [774/853] Built Mathlib.Algebra.Group.Commute.Units (2.7s)
+✔ [775/853] Built Mathlib.Algebra.Ring.Basic (2.8s)
+✔ [776/855] Built Mathlib.Algebra.Group.Nat.Even (2.6s)
+✔ [777/855] Built Mathlib.Data.List.NodupEquivFin (3.0s)
+✔ [778/855] Built Mathlib.Algebra.Order.Sub.Basic (2.7s)
+✔ [779/855] Built Mathlib.Data.Finset.Dedup (2.9s)
+✔ [780/855] Built Mathlib.Algebra.Ring.InjSurj (8.1s)
+✔ [781/855] Built Mathlib.Data.Multiset.Fold (2.8s)
+✔ [782/855] Built Mathlib.Algebra.Order.Group.Multiset (3.1s)
+✔ [783/858] Built Mathlib.Data.Multiset.FinsetOps (2.9s)
+✔ [784/858] Built Mathlib.Data.Finset.Filter (3.0s)
+✔ [785/858] Built Mathlib.Algebra.Order.Sub.WithTop (2.2s)
+✔ [786/858] Built Mathlib.Algebra.GroupWithZero.Commute (2.1s)
+✔ [787/858] Built Mathlib.Algebra.Order.Ring.Defs (2.8s)
+✔ [788/858] Built Mathlib.Data.ENat.Defs (1.7s)
+✔ [789/858] Built Mathlib.Data.Nat.Cast.NeZero (1.7s)
+✔ [790/858] Built Mathlib.Algebra.Group.Int.Even (3.1s)
+✔ [791/859] Built Mathlib.Data.Multiset.Sum (3.1s)
+✔ [792/862] Built Mathlib.Algebra.BigOperators.Group.Multiset.Basic (4.2s)
+✔ [793/862] Built Mathlib.Algebra.Order.GroupWithZero.Canonical (10s)
+✔ [794/864] Built Mathlib.Data.Multiset.Lattice (3.6s)
+✔ [795/867] Built Mathlib.Algebra.Ring.Hom.Defs (5.7s)
+✔ [796/867] Built Mathlib.Data.Finset.Lattice.Basic (4.1s)
+✔ [797/867] Built Mathlib.Data.ENat.Basic (3.8s)
+✔ [798/870] Built Mathlib.Order.CompleteLattice.Basic (9.1s)
+✔ [799/872] Built Mathlib.Data.Finset.Insert (5.7s)
+✔ [800/872] Built Mathlib.Order.ConditionallyCompletePartialOrder.Defs (2.4s)
+✔ [801/872] Built Mathlib.Order.ConditionallyCompleteLattice.Defs (3.1s)
+✔ [802/872] Built Mathlib.Data.Fintype.Defs (4.9s)
+✔ [803/876] Built Mathlib.Data.Set.Order (2.9s)
+✔ [804/876] Built Mathlib.Data.Multiset.Bind (4.0s)
+✔ [805/881] Built Mathlib.Algebra.Ring.Units (3.0s)
+✔ [806/881] Built Mathlib.Order.Interval.Set.Image (4.7s)
+✔ [807/881] Built Mathlib.Data.Nat.Cast.Basic (3.6s)
+✔ [808/881] Built Mathlib.Order.CompleteLattice.Lemmas (3.8s)
+✔ [809/881] Built Mathlib.Order.Preorder.Chain (4.0s)
+✔ [810/881] Built Mathlib.Order.ConditionallyCompletePartialOrder.Basic (2.9s)
+✔ [811/882] Built Mathlib.Data.Setoid.Basic (3.0s)
+✔ [812/882] Built Mathlib.Order.Interval.Set.WithBotTop (3.8s)
+✔ [813/882] Built Mathlib.Order.Interval.Set.LinearOrder (6.6s)
+✔ [814/882] Built Mathlib.Order.GaloisConnection.Basic (5.6s)
+✔ [815/883] Built Mathlib.Data.Finset.Lattice.Lemmas (3.4s)
+✔ [816/883] Built Mathlib.Data.Finset.SDiff (3.7s)
+✔ [817/883] Built Mathlib.Order.Iterate (2.5s)
+✔ [818/883] Built Mathlib.Data.Finset.Range (3.3s)
+✔ [819/883] Built Mathlib.Data.Finset.Disjoint (3.2s)
+✔ [820/883] Built Mathlib.Data.Multiset.Pi (3.1s)
+✔ [821/883] Built Mathlib.Algebra.Ring.Commute (3.0s)
+✔ [822/889] Built Mathlib.Data.Nat.Cast.Order.Basic (3.7s)
+✔ [823/890] Built Mathlib.Order.Antichain (3.5s)
+✔ [824/890] Built Mathlib.Algebra.Group.Fin.Basic (3.1s)
+✔ [825/895] Built Mathlib.Algebra.Ring.Int.Defs (2.6s)
+✔ [826/895] Built Mathlib.Data.Nat.Cast.Commute (2.4s)
+✔ [827/899] Built Mathlib.Data.Sym.Basic (5.8s)
+✔ [828/899] Built Mathlib.Algebra.Group.ModEq (3.6s)
+✔ [829/900] Built Mathlib.Order.Interval.Set.UnorderedInterval (6.1s)
+✔ [830/900] Built Mathlib.Algebra.Group.Units.Equiv (4.5s)
+✔ [831/903] Built Mathlib.Data.Finset.Basic (6.1s)
+✔ [832/904] Built Mathlib.Algebra.Divisibility.Units (4.3s)
+✔ [833/904] Built Mathlib.Data.Int.GCD (4.0s)
+✔ [834/904] Built Mathlib.Data.Finset.Image (7.1s)
+✔ [835/904] Built Mathlib.Basic.Countable.Defs (2.3s)
+✔ [836/904] Built Mathlib.Logic.Small.Defs (2.4s)
+✔ [837/904] Built Mathlib.Algebra.Ring.Parity (6.1s)
+✔ [838/904] Built Mathlib.Order.Interval.Set.OrderEmbedding (3.7s)
+✔ [839/908] Built Mathlib.Algebra.Order.Group.OrderIso (3.5s)
+✔ [840/908] Built Mathlib.Algebra.GroupWithZero.Divisibility (3.3s)
+✔ [841/908] Built Mathlib.Order.CompleteBooleanAlgebra (12s)
+✔ [842/908] Built Mathlib.Data.Finset.BooleanAlgebra (3.9s)
+✔ [843/908] Built Mathlib.Basic.UnivLE (2.2s)
+✔ [844/908] Built Mathlib.Data.Fintype.OfMap (3.4s)
+✔ [845/909] Built Mathlib.Data.Finset.Fold (3.8s)
+✔ [846/909] Built Mathlib.Data.Finset.SymmDiff (3.4s)
+✔ [847/909] Built Mathlib.Logic.Small.Basic (3.0s)
+✔ [848/909] Built Mathlib.Algebra.Order.Hom.Monoid (10s)
+✔ [849/911] Built Mathlib.Algebra.Ring.Equiv (9.9s)
+✔ [850/911] Built Mathlib.Algebra.Order.Ring.Nat (3.5s)
+✔ [851/914] Built Mathlib.Data.Set.BooleanAlgebra (2.6s)
+✔ [852/914] Built Mathlib.Algebra.Order.Ring.Canonical (3.5s)
+✔ [853/914] Built Mathlib.Algebra.Order.Group.Lattice (3.2s)
+✔ [854/914] Built Mathlib.Data.Finset.Piecewise (3.2s)
+✔ [855/914] Built Mathlib.Order.Interval.Set.OrdConnected (4.5s)
+✔ [856/914] Built Mathlib.Data.Nat.GCD.Basic (4.1s)
+✔ [857/914] Built Mathlib.Basic.Countable.Small (2.4s)
+✔ [858/915] Built Mathlib.Data.Finset.Card (10s)
+✔ [859/921] Built Mathlib.Data.Fintype.Sets (4.5s)
+✔ [860/921] Built Mathlib.Data.Set.Lattice.Disjoint (3.0s)
+✔ [861/921] Built Mathlib.Data.Set.Lattice.Indexed (4.5s)
+✔ [862/921] Built Mathlib.Data.Finset.Union (5.8s)
+✔ [863/921] Built Mathlib.Algebra.Order.Hom.MonoidWithZero (5.6s)
+✔ [864/921] Built Mathlib.Data.Set.Sigma (5.9s)
+✔ [865/921] Built Mathlib.Data.List.Zip (3.2s)
+✔ [866/921] Built Mathlib.Algebra.Order.Group.Unbundled.Abs (6.1s)
+✔ [867/921] Built Mathlib.Data.Finset.Sum (5.5s)
+✔ [868/921] Built Mathlib.Data.List.Sublists (3.7s)
+✔ [869/921] Built Mathlib.Data.Fintype.Basic (4.3s)
+✔ [870/921] Built Mathlib.Data.Set.Lattice.Bounded (5.5s)
+✔ [871/921] Built Mathlib.Order.Cover (9.4s)
+✔ [872/921] Built Mathlib.Data.Finset.Option (3.9s)
+✔ [873/925] Built Mathlib.Data.Finset.Pi (5.1s)
+✔ [874/925] Built Mathlib.Algebra.Order.Group.Unbundled.Int (3.6s)
+✔ [875/925] Built Mathlib.Data.Finset.Prod (5.9s)
+✔ [876/925] Built Mathlib.Algebra.Order.Ring.WithTop (12s)
+✔ [877/925] Built Mathlib.Algebra.Order.Hom.Ring (6.3s)
+✔ [878/925] Built Mathlib.Order.ConditionallyCompleteLattice.Basic (9.5s)
+✔ [879/927] Built Mathlib.Data.Nat.Bits (2.3s)
+✔ [880/927] Built Mathlib.Data.Fintype.Card (4.6s)
+✔ [881/927] Built Mathlib.Data.Multiset.Powerset (4.8s)
+✔ [882/927] Built Mathlib.Algebra.BigOperators.Group.Finset.Defs (11s)
+✔ [883/927] Built Mathlib.Data.Set.Pairwise.Lattice (3.8s)
+✔ [884/933] Built Mathlib.Data.Nat.ModEq (5.2s)
+✔ [885/937] Built Mathlib.Data.Nat.Order.Lemmas (2.7s)
+✔ [886/937] Built Mathlib.Data.Set.Lattice.Image (6.5s)
+✔ [887/937] Built Mathlib.Data.ENat.Monoid (5.2s)
+✔ [888/937] Built Mathlib.Data.PNat.Notation (1.8s)
+✔ [889/938] Built Mathlib.Data.Fintype.EquivFin (4.7s)
+✔ [890/938] Built Mathlib.Data.Nat.Pairing (3.4s)
+✔ [891/938] Built Mathlib.Logic.Small.Set (3.7s)
+✔ [892/938] Built Mathlib.Data.Finset.Lattice.Fold (11s)
+✔ [893/938] Built Mathlib.Data.List.MinMax (6.0s)
+✔ [894/938] Built Mathlib.Data.PNat.Defs (2.8s)
+✔ [895/938] Built Mathlib.Order.CompleteLattice.Finset (5.3s)
+✔ [896/938] Built Mathlib.Order.SuccPred.Basic (10s)
+✔ [897/938] Built Mathlib.Data.Fintype.Prod (3.4s)
+✔ [898/938] Built Mathlib.Order.Minimal (7.7s)
+✔ [899/938] Built Mathlib.Data.Fintype.Option (3.5s)
+✔ [900/941] Built Mathlib.Data.Fintype.Sum (3.8s)
+✔ [901/941] Built Mathlib.Data.ZMod.Defs (4.8s)
+✔ [902/941] Built Mathlib.Data.Sym.Sym2 (12s)
+✔ [903/941] Built Mathlib.Logic.Equiv.Nat (2.7s)
+✔ [904/943] Built Mathlib.Data.PNat.Equiv (1.0s)
+✔ [905/943] Built Mathlib.Data.Set.Finite.Basic (5.9s)
+✔ [906/943] Built Mathlib.Data.Finset.Lattice.Union (3.5s)
+✔ [907/943] Built Mathlib.Order.SuccPred.WithBot (2.0s)
+✔ [908/943] Built Mathlib.Data.Finset.Sigma (3.0s)
+✔ [909/943] Built Mathlib.Order.RelIso.Set (2.5s)
+✔ [910/946] Built Mathlib.Algebra.BigOperators.Group.Finset.Basic (14s)
+✔ [911/946] Built Mathlib.Order.SuccPred.Archimedean (4.8s)
+✔ [912/946] Built Mathlib.Basic.Countable.Basic (3.2s)
+✔ [913/946] Built Mathlib.Data.Finset.Max (6.5s)
+✔ [914/946] Built Mathlib.Data.Prod.Lex (5.1s)
+✔ [915/947] Built Mathlib.Logic.Encodable.Basic (4.1s)
+✔ [916/947] Built Mathlib.Order.Preorder.Finite (3.8s)
+✔ [917/947] Built Mathlib.Data.Sum.Order (9.5s)
+✔ [918/947] Built Mathlib.Data.Fintype.Pi (3.0s)
+✔ [919/948] Built Mathlib.Data.Finset.Powerset (4.4s)
+✔ [920/948] Built Mathlib.Algebra.BigOperators.Option (3.2s)
+✔ [921/948] Built Mathlib.Algebra.BigOperators.Group.Finset.Sigma (3.7s)
+✔ [922/948] Built Mathlib.Data.Fintype.Sigma (4.4s)
+✔ [923/948] Built Mathlib.Order.ConditionallyCompletePartialOrder.Indexed (3.7s)
+✔ [924/949] Built Mathlib.SetTheory.Cardinal.Defs (2.8s)
+✔ [925/951] Built Mathlib.Order.UpperLower.Basic (7.0s)
+✔ [926/955] Built Mathlib.Basic.Denumerable (4.1s)
+✔ [927/955] Built Mathlib.Algebra.BigOperators.Group.Finset.Piecewise (5.6s)
+✔ [928/955] Built Mathlib.Basic.Finite.Prod (3.4s)
+✔ [929/958] Built Mathlib.Data.Fintype.Powerset (3.2s)
+✔ [930/958] Built Mathlib.Control.Monad.Basic (1.8s)
+✔ [931/958] Built Mathlib.Order.Hom.Order (3.4s)
+✔ [932/958] Built Mathlib.Order.Hom.Lex (5.1s)
+✔ [933/958] Built Mathlib.Dynamics.FixedPoints.Defs (1.8s)
+✔ [934/966] Built Mathlib.Order.SuccPred.Limit (7.2s)
+✔ [935/968] Built Mathlib.Order.ScottContinuity (3.2s)
+✔ [936/968] Built Mathlib.Logic.Equiv.List (3.2s)
+✔ [937/968] Built Mathlib.Data.Part (4.2s)
+✔ [938/968] Built Mathlib.Data.Fintype.Vector (2.8s)
+✔ [939/968] Built Mathlib.Data.FunLike.Fintype (2.9s)
+✔ [940/977] Built Mathlib.Algebra.Group.Equiv.TypeTags (3.2s)
+✔ [941/977] Built Mathlib.Order.ConditionallyCompleteLattice.Indexed (7.0s)
+✔ [942/977] Built Mathlib.Order.CompleteLattice.Chain (2.4s)
+✔ [943/977] Built Mathlib.Data.Set.Finite.Powerset (2.9s)
+✔ [944/977] Built Mathlib.Order.Part (3.1s)
+✔ [945/987] Built Mathlib.Data.Set.Countable (3.6s)
+✔ [946/987] Built Mathlib.Algebra.Order.SuccPred (5.4s)
+✔ [947/987] Built Mathlib.Data.Fintype.BigOperators (4.9s)
+✔ [948/990] Built Mathlib.Order.InitialSeg (6.8s)
+✔ [949/991] Built Mathlib.Order.Zorn (3.8s)
+✔ [950/992] Built Mathlib.Combinatorics.SimpleGraph.Basic (9.4s)
+✔ [951/992] Built Mathlib.Data.Set.Pairwise.List (3.4s)
+✔ [952/998] Built Mathlib.Order.SuccPred.CompleteLinearOrder (5.3s)
+✔ [953/1001] Built Mathlib.Data.List.Sym (6.7s)
+✔ [954/1001] Built Mathlib.Data.Fintype.Pigeonhole (3.6s)
+✔ [955/1003] Built Mathlib.Data.Nat.SuccPred (3.4s)
+✔ [956/1004] Built Mathlib.Algebra.Group.Embedding (2.3s)
+✔ [957/1004] Built Mathlib.Data.Set.Finite.Range (3.8s)
+✔ [958/1008] Built Mathlib.Algebra.Group.End (7.8s)
+✔ [959/1009] Built Mathlib.Combinatorics.SimpleGraph.Dart (3.1s)
+✔ [960/1009] Built Mathlib.Data.Finset.Pairwise (3.2s)
+✔ [961/1009] Built Mathlib.Order.OmegaCompletePartialOrder (7.2s)
+✔ [962/1015] Built Mathlib.Data.Multiset.Sym (2.8s)
+✔ [963/1015] Built Mathlib.Data.Finset.Preimage (3.6s)
+✔ [964/1015] Built Mathlib.Data.ENat.SuccOrder (3.0s)
+✔ [965/1015] Built Mathlib.Data.Nat.Cast.Order.Ring (2.7s)
+✔ [966/1015] Built Mathlib.Data.Set.Monotone (2.5s)
+✔ [967/1016] Built Mathlib.Order.Hom.WithTopBot (5.2s)
+✔ [968/1016] Built Mathlib.Order.BourbakiWitt (3.1s)
+✔ [969/1016] Built Mathlib.Order.LatticeIntervals (4.0s)
+✔ [970/1019] Built Mathlib.Tactic.FinCases (3.0s)
+✔ [971/1019] Built Mathlib.Data.Finset.Lattice.Prod (3.7s)
+✔ [972/1019] Built Mathlib.Data.Set.Finite.Lattice (6.3s)
+✔ [973/1021] Built Mathlib.Data.ENat.Pow (3.6s)
+✔ [974/1021] Built Mathlib.Data.Finset.Sym (4.4s)
+✔ [975/1022] Built Mathlib.Algebra.BigOperators.Group.Finset.Pi (3.3s)
+✔ [976/1024] Built Mathlib.Combinatorics.SimpleGraph.Walk.Basic (7.9s)
+✔ [977/1024] Built Mathlib.Combinatorics.SimpleGraph.Maps (7.0s)
+✔ [978/1026] Built Mathlib.Order.FixedPoints (4.5s)
+✔ [979/1026] Built Mathlib.Algebra.Notation.Support (3.8s)
+✔ [980/1026] Built Mathlib.Order.ModularLattice (5.5s)
+✔ [981/1026] Built Mathlib.Order.CompleteLatticeIntervals (5.4s)
+✔ [982/1026] Built Mathlib.Algebra.Ring.Divisibility.Basic (3.0s)
+✔ [983/1026] Built Mathlib.Order.ConditionallyCompleteLattice.Finset (4.8s)
+✔ [984/1026] Built Mathlib.Data.Sym.Card (4.8s)
+✔ [985/1030] Built Mathlib.Data.Multiset.Antidiagonal (3.0s)
+✔ [986/1032] Built Mathlib.Data.Multiset.Sections (2.7s)
+✔ [987/1034] Built Mathlib.Combinatorics.SimpleGraph.Walk.Traversal (4.0s)
+✔ [988/1035] Built Mathlib.Algebra.Group.Irreducible.Defs (1.0s)
+✔ [989/1037] Built Mathlib.SetTheory.Cardinal.SchroederBernstein (3.7s)
+✔ [990/1037] Built Mathlib.Algebra.Notation.Indicator (3.6s)
+✔ [991/1037] Built Mathlib.Algebra.BigOperators.Ring.List (3.1s)
+✔ [992/1038] Built Mathlib.Data.Int.Cast.Lemmas (4.1s)
+✔ [993/1040] Built Mathlib.Order.Interval.Finset.Defs (11s)
+✔ [994/1040] Built Mathlib.Algebra.Group.ULift (3.5s)
+✔ [995/1040] Built Mathlib.Algebra.GroupWithZero.Opposite (2.8s)
+✔ [996/1040] Built Mathlib.Data.Nat.Cast.Prod (2.4s)
+✔ [997/1040] Built Mathlib.Algebra.Prime.Defs (3.3s)
+✔ [998/1041] Built Mathlib.Algebra.Ring.Int.Units (2.5s)
+✔ [999/1041] Built Mathlib.Algebra.BigOperators.GroupWithZero.Finset (3.5s)
+✔ [1000/1042] Built Mathlib.Algebra.BigOperators.Ring.Multiset (3.5s)
+✔ [1001/1042] Built Mathlib.Order.SupIndep (8.2s)
+✔ [1002/1044] Built Mathlib.SetTheory.Cardinal.Order (5.6s)
+✔ [1003/1044] Built Mathlib.Algebra.GroupWithZero.Units.Equiv (2.9s)
+✔ [1004/1044] Built Mathlib.Combinatorics.SimpleGraph.Walk.Operations (7.4s)
+✔ [1005/1044] Built Mathlib.Data.Int.ModEq (4.6s)
+✔ [1006/1044] Built Mathlib.Order.Atoms (10s)
+✔ [1007/1047] Built Mathlib.Data.Int.Cast.Prod (2.6s)
+✔ [1008/1050] Built Mathlib.Data.Nat.Prime.Defs (4.2s)
+✔ [1009/1050] Built Mathlib.Algebra.GroupWithZero.Prod (3.4s)
+✔ [1010/1052] Built Mathlib.Algebra.Ring.ULift (6.3s)
+✔ [1011/1052] Built Mathlib.Algebra.Ring.CompTypeclasses (3.2s)
+✔ [1012/1068] Built Mathlib.Algebra.BigOperators.Ring.Finset (5.7s)
+✔ [1013/1068] Built Mathlib.Algebra.Ring.Opposite (7.5s)
+✔ [1014/1068] Built Mathlib.Order.Interval.Finset.Basic (9.7s)
+✔ [1015/1072] Built Mathlib.Algebra.Group.Action.Opposite (3.8s)
+✔ [1016/1072] Built Mathlib.Algebra.Group.Subsemigroup.Defs (4.8s)
+✔ [1017/1072] Built Mathlib.Algebra.CharP.Defs (4.3s)
+✔ [1018/1072] Built Mathlib.SetTheory.Cardinal.Basic (7.5s)
+✔ [1019/1072] Built Mathlib.Algebra.Group.Invertible.Defs (2.4s)
+✔ [1020/1072] Built Mathlib.Algebra.Group.Conj (4.6s)
+✔ [1021/1074] Built Mathlib.Algebra.Group.Action.Units (3.1s)
+✔ [1022/1074] Built Mathlib.Order.Interval.Multiset (3.6s)
+✔ [1023/1075] Built Mathlib.Algebra.GroupWithZero.Action.Defs (4.0s)
+✔ [1024/1075] Built Mathlib.Algebra.Group.Subsemigroup.Basic (3.6s)
+✔ [1025/1075] Built Mathlib.Algebra.Ring.Prod (6.1s)
+✔ [1026/1075] Built Mathlib.Algebra.Group.Pointwise.Set.Scalar (4.1s)
+✔ [1027/1079] Built Mathlib.Algebra.CharP.Basic (3.5s)
+✔ [1028/1083] Built Mathlib.Order.Partition.Finpartition (10s)
+✔ [1029/1084] Built Mathlib.Algebra.Group.Invertible.Basic (2.6s)
+✔ [1030/1084] Built Mathlib.Logic.Function.CompTypeclasses (1.7s)
+✔ [1031/1084] Built Mathlib.Algebra.Group.Pi.Lemmas (8.4s)
+✔ [1032/1084] Built Mathlib.Algebra.Group.Submonoid.Defs (5.1s)
+✔ [1033/1084] Built Mathlib.SetTheory.Cardinal.ENat (4.3s)
+✔ [1034/1086] Built Mathlib.Algebra.Group.Action.TypeTags (1.8s)
+✔ [1035/1086] Built Mathlib.Algebra.Module.Defs (2.5s)
+✔ [1036/1086] Built Mathlib.Algebra.Regular.SMul (2.4s)
+✔ [1037/1086] Built Mathlib.Algebra.GroupWithZero.Action.Units (2.4s)
+✔ [1038/1086] Built Mathlib.Order.Interval.Finset.Nat (4.1s)
+✔ [1039/1086] Built Mathlib.Algebra.Group.Action.Basic (2.0s)
+✔ [1040/1088] Built Mathlib.Algebra.Group.Hom.CompTypeclasses (2.1s)
+✔ [1041/1089] Built Mathlib.Data.Setoid.Partition (4.2s)
+✔ [1042/1089] Built Mathlib.Algebra.CharP.Two (3.4s)
+✔ [1043/1094] Built Mathlib.Algebra.Group.Submonoid.MulAction (3.0s)
+✔ [1044/1095] Built Mathlib.Algebra.Group.Action.Pretransitive (2.1s)
+✔ [1045/1095] Built Mathlib.Algebra.Group.Semiconj.Basic (2.0s)
+✔ [1046/1095] Built Mathlib.SetTheory.Cardinal.ToNat (3.4s)
+✔ [1047/1096] Built Mathlib.Algebra.Group.Submonoid.Basic (4.3s)
+✔ [1048/1096] Built Mathlib.Algebra.Group.Support (2.1s)
+✔ [1049/1097] Built Mathlib.Algebra.Group.Commute.Hom (1.7s)
+✔ [1050/1097] Built Mathlib.Order.Lattice.Nat (3.2s)
+✔ [1051/1097] Built Mathlib.Algebra.Group.Submonoid.DistribMulAction (2.1s)
+✔ [1052/1097] Built Mathlib.Algebra.Group.Commute.Basic (2.2s)
+✔ [1053/1098] Built Mathlib.Algebra.Group.Action.Hom (2.1s)
+✔ [1054/1099] Built Mathlib.Algebra.Group.Subgroup.Defs (7.5s)
+✔ [1055/1099] Built Mathlib.Algebra.Order.Group.Action (1.0s)
+✔ [1056/1099] Built Mathlib.Algebra.Group.Center (9.4s)
+✔ [1057/1099] Built Mathlib.Algebra.Group.TransferInstance (3.7s)
+✔ [1058/1102] Built Mathlib.SetTheory.Cardinal.Finite (3.8s)
+✔ [1059/1102] Built Mathlib.Algebra.Module.NatInt (3.5s)
+✔ [1060/1102] Built Mathlib.Algebra.GroupWithZero.Action.End (2.2s)
+✔ [1061/1102] Built Mathlib.Data.ENat.Lattice (4.3s)
+✔ [1062/1102] Built Mathlib.Data.Finset.NoncommProd (4.8s)
+✔ [1063/1102] Built Mathlib.GroupTheory.Subsemigroup.Center (2.4s)
+✔ [1064/1110] Built Mathlib.Algebra.Order.Group.Abs (4.1s)
+✔ [1065/1119] Built Mathlib.Algebra.GroupWithZero.Units.Fintype (3.3s)
+✔ [1066/1119] Built Mathlib.Algebra.Order.Ring.Basic (3.7s)
+✔ [1067/1119] Built Mathlib.Algebra.Ring.Action.Basic (2.1s)
+✔ [1068/1119] Built Mathlib.Algebra.Group.Irreducible.Lemmas (2.6s)
+✔ [1069/1120] Built Mathlib.GroupTheory.GroupAction.Defs (6.3s)
+✔ [1070/1121] Built Mathlib.Algebra.Group.Submonoid.BigOperators (3.8s)
+✔ [1071/1121] Built Mathlib.Algebra.Ring.Int.Parity (4.1s)
+✔ [1072/1121] Built Mathlib.Algebra.Order.Positive.Ring (3.7s)
+✔ [1073/1121] Built Mathlib.Data.List.Permutation (4.3s)
+✔ [1074/1125] Built Mathlib.Dynamics.FixedPoints.Basic (3.6s)
+✔ [1075/1126] Built Mathlib.Algebra.Prime.Lemmas (3.6s)
+✔ [1076/1127] Built Mathlib.Algebra.Group.Pointwise.Set.Basic (15s)
+✔ [1077/1127] Built Mathlib.Algebra.Group.Action.End (4.0s)
+✔ [1078/1129] Built Mathlib.Algebra.Order.Ring.Int (4.2s)
+✔ [1079/1129] Built Mathlib.Algebra.Group.Submonoid.Operations (14s)
+✔ [1080/1130] Built Mathlib.Data.Fintype.List (3.3s)
+✔ [1081/1130] Built Mathlib.Data.PNat.Basic (4.1s)
+✔ [1082/1130] Built Mathlib.Data.Set.Card (9.9s)
+✔ [1083/1130] Built Mathlib.Algebra.Group.Subsemigroup.MulOpposite (3.5s)
+✔ [1084/1130] Built Mathlib.Algebra.Group.Idempotent (1.9s)
+✔ [1085/1130] Built Mathlib.Algebra.Group.Pointwise.Set.Finite (3.6s)
+✔ [1086/1131] Built Mathlib.Algebra.GroupWithZero.Associated (4.8s)
+✔ [1087/1131] Built Mathlib.Algebra.Group.Submonoid.Finite (3.3s)
+✔ [1088/1131] Built Mathlib.Algebra.Order.Ring.Abs (4.0s)
+✔ [1089/1131] Built Mathlib.Algebra.Group.Action.Pointwise.Set.Basic (5.0s)
+✔ [1090/1131] Built Mathlib.GroupTheory.Submonoid.Center (4.3s)
+✔ [1091/1135] Built Mathlib.Algebra.FreeMonoid.Basic (5.7s)
+✔ [1092/1135] Built Mathlib.Data.Sigma.Lex (1.8s)
+✔ [1093/1136] Built Mathlib.Algebra.Order.BigOperators.Group.List (4.3s)
+✔ [1094/1142] Built Mathlib.SetTheory.Cardinal.NatCard (3.0s)
+✔ [1095/1142] Built Mathlib.Algebra.Group.Submonoid.MulOpposite (4.0s)
+✔ [1096/1142] Built Mathlib.Algebra.Ring.Associated (3.5s)
+✔ [1097/1142] Built Mathlib.Algebra.Group.Subgroup.Lattice (8.5s)
+✔ [1098/1142] Built Mathlib.Data.Nat.Prime.Basic (4.3s)
+✔ [1099/1142] Built Mathlib.Algebra.Group.Commutator (1.9s)
+✔ [1100/1144] Built Mathlib.Order.OrderIsoNat (4.2s)
+✔ [1101/1148] Built Mathlib.GroupTheory.Subsemigroup.Centralizer (2.8s)
+✔ [1102/1148] Built Mathlib.Combinatorics.SimpleGraph.Finite (7.6s)
+✔ [1103/1148] Built Mathlib.Algebra.Group.Pointwise.Set.Lattice (3.9s)
+✔ [1104/1148] Built Mathlib.Data.List.Cycle (9.9s)
+✔ [1105/1148] Built Mathlib.Algebra.Group.Subgroup.MulOpposite (3.4s)
+✔ [1106/1152] Built Mathlib.Order.WellQuasiOrder (2.0s)
+✔ [1107/1152] Built Mathlib.Algebra.GroupWithZero.Pointwise.Set.Basic (2.4s)
+✔ [1108/1152] Built Mathlib.Algebra.Group.Action.Prod (3.5s)
+✔ [1109/1156] Built Mathlib.GroupTheory.Submonoid.Centralizer (2.9s)
+✔ [1110/1156] Built Mathlib.Algebra.Quotient (2.5s)
+✔ [1111/1158] Built Mathlib.Combinatorics.SimpleGraph.DeleteEdges (3.8s)
+✔ [1112/1158] Built Mathlib.Algebra.Group.Submonoid.Membership (7.4s)
+✔ [1113/1160] Built Mathlib.GroupTheory.GroupAction.Hom (21s)
+✔ [1114/1161] Built Mathlib.Dynamics.PeriodicPts.Defs (4.7s)
+✔ [1115/1161] Built Mathlib.Algebra.GroupWithZero.Action.Basic (2.0s)
+✔ [1116/1166] Built Mathlib.Algebra.Group.Subgroup.Map (8.6s)
+✔ [1117/1167] Built Mathlib.Order.WellFoundedSet (5.0s)
+✔ [1118/1167] Built Mathlib.Algebra.GroupWithZero.Action.Opposite (2.1s)
+✔ [1119/1167] Built Mathlib.Algebra.Regular.Opposite (1.8s)
+✔ [1120/1169] Built Mathlib.Algebra.GCDMonoid.Basic (10s)
+✔ [1121/1169] Built Mathlib.Logic.Equiv.Sigma (2.1s)
+✔ [1122/1169] Built Mathlib.GroupTheory.Coset.Defs (4.4s)
+✔ [1123/1169] Built Mathlib.Combinatorics.SimpleGraph.Walk.Maps (4.6s)
+✔ [1124/1169] Built Mathlib.Algebra.GroupWithZero.Action.Pointwise.Set (3.5s)
+✔ [1125/1170] Built Mathlib.Algebra.Module.Opposite (2.2s)
+✔ [1126/1170] Built Mathlib.GroupTheory.Congruence.Defs (6.7s)
+✔ [1127/1172] Built Mathlib.Algebra.Group.Subgroup.ZPowers.Basic (3.6s)
+✔ [1128/1172] Built Mathlib.Data.Nat.Log (2.0s)
+✔ [1129/1172] Built Mathlib.Data.Nat.Prime.Pow (2.6s)
+✔ [1130/1172] Built Mathlib.Algebra.GCDMonoid.Nat (3.3s)
+✔ [1131/1172] Built Mathlib.Algebra.GCDMonoid.Multiset (3.4s)
+✔ [1132/1175] Built Mathlib.Basic.Finite.Sigma (3.2s)
+✔ [1133/1176] Built Mathlib.Algebra.Group.Submonoid.Pointwise (5.6s)
+✔ [1134/1176] Built Mathlib.Combinatorics.SimpleGraph.Subgraph (9.7s)
+✔ [1135/1176] Built Mathlib.Algebra.Module.Torsion.Free (3.8s)
+✔ [1136/1176] Built Mathlib.Data.Multiset.OrderedMonoid (2.8s)
+✔ [1137/1177] Built Mathlib.Algebra.Order.BigOperators.Group.Multiset (3.9s)
+✔ [1138/1177] Built Mathlib.Algebra.IsPrimePow (3.1s)
+✔ [1139/1177] Built Mathlib.Algebra.GCDMonoid.Finset (3.4s)
+✔ [1140/1177] Built Mathlib.GroupTheory.Congruence.Hom (4.8s)
+✔ [1141/1180] Built Mathlib.Algebra.Group.Subgroup.Ker (9.1s)
+✔ [1142/1180] Built Mathlib.Order.Interval.Set.SuccPred (3.6s)
+✔ [1143/1180] Built Mathlib.Algebra.Ring.CharZero (2.7s)
+✔ [1144/1180] Built Mathlib.Algebra.GroupWithZero.Submonoid.Pointwise (3.2s)
+✔ [1145/1180] Built Mathlib.Combinatorics.SimpleGraph.Operations (4.6s)
+✔ [1146/1185] Built Mathlib.Dynamics.PeriodicPts.Lemmas (3.2s)
+✔ [1147/1189] Built Mathlib.Data.List.NatAntidiagonal (2.9s)
+✔ [1148/1189] Built Mathlib.GroupTheory.GroupAction.Basic (5.7s)
+✔ [1149/1189] Built Mathlib.Combinatorics.SimpleGraph.Walk.Subwalks (11s)
+✔ [1150/1189] Built Mathlib.Algebra.Order.Antidiag.Prod (5.1s)
+✔ [1151/1192] Built Mathlib.Combinatorics.SimpleGraph.Copy (6.6s)
+✔ [1152/1193] Built Mathlib.Data.List.Prime (2.0s)
+✔ [1153/1193] Built Batteries.Classes.RatCast (819ms)
+✔ [1154/1195] Built Mathlib.Data.Nat.Prime.Infinite (2.6s)
+✔ [1155/1198] Built Mathlib.Order.Interval.Finset.SuccPred (4.4s)
+✔ [1156/1198] Built Mathlib.Data.Multiset.NatAntidiagonal (2.8s)
+✔ [1157/1202] Built Mathlib.Algebra.Order.BigOperators.Group.Finset (7.9s)
+✔ [1158/1203] Built Mathlib.Order.Interval.Set.Infinite (3.0s)
+✔ [1159/1204] Built Mathlib.Data.Rat.Init (1.4s)
+✔ [1160/1204] Built Mathlib.GroupTheory.QuotientGroup.Defs (8.3s)
+✔ [1161/1204] Built Mathlib.Data.Nat.Factors (3.4s)
+✔ [1162/1208] Built Mathlib.Combinatorics.SimpleGraph.Walk.Decomp (4.7s)
+✔ [1163/1208] Built Mathlib.Algebra.GroupWithZero.Invertible (2.4s)
+✔ [1164/1210] Built Mathlib.Algebra.Order.Ring.Synonym (2.8s)
+✔ [1165/1210] Built Mathlib.Data.Finset.NatAntidiagonal (3.7s)
+✔ [1166/1210] Built Mathlib.Algebra.Field.Defs (2.5s)
+✔ [1167/1211] Built Mathlib.Algebra.Order.Nonneg.Basic (5.2s)
+✔ [1168/1214] Built Mathlib.Data.Rat.Defs (3.4s)
+✔ [1169/1214] Built Mathlib.Algebra.Order.Interval.Finset.SuccPred (4.5s)
+✔ [1170/1217] Built Mathlib.Algebra.Order.Nonneg.Lattice (3.1s)
+✔ [1171/1218] Built Mathlib.Data.Nat.PrimeFin (3.3s)
+✔ [1172/1218] Built Mathlib.Algebra.Order.Monoid.Basic (2.5s)
+✔ [1173/1219] Built Mathlib.Algebra.GroupWithZero.Units.Lemmas (2.4s)
+✔ [1174/1219] Built Mathlib.Algebra.Ring.Invertible (2.6s)
+✔ [1175/1223] Built Mathlib.Algebra.Order.Field.Canonical (2.9s)
+✔ [1176/1223] Built Mathlib.Algebra.Group.Subgroup.Basic (13s)
+✔ [1177/1223] Built Mathlib.Algebra.Ring.Rat (2.0s)
+✔ [1178/1223] Built Mathlib.Tactic.HaveI (1.8s)
+✔ [1179/1225] Built Mathlib.Lean.Expr.Rat (1.5s)
+✔ [1180/1225] Built Mathlib.Algebra.Order.Ring.InjSurj (2.4s)
+✔ [1181/1225] Built Mathlib.Util.Qq (1.4s)
+✔ [1182/1225] Built Mathlib.Algebra.Order.Ring.Unbundled.Rat (4.6s)
+✔ [1183/1225] Built Mathlib.Algebra.Order.Ring.Cast (4.4s)
+✔ [1184/1225] Built Mathlib.Algebra.Order.Invertible (3.4s)
+✔ [1185/1225] Built Mathlib.Combinatorics.SimpleGraph.Paths (8.5s)
+✔ [1186/1225] Built Mathlib.Data.Rat.Lemmas (3.6s)
+✔ [1187/1225] Built Mathlib.Tactic.NormNum.Result (4.0s)
+✔ [1188/1225] Built Mathlib.Algebra.Field.Basic (5.6s)
+✔ [1189/1229] Built Mathlib.Algebra.Group.Subgroup.MulOppositeLemmas (3.0s)
+✔ [1190/1229] Built Mathlib.GroupTheory.Subgroup.Center (3.5s)
+✔ [1191/1229] Built Mathlib.Algebra.Order.Nonneg.Ring (3.3s)
+✔ [1192/1231] Built Mathlib.Algebra.Group.Subgroup.Finite (4.8s)
+✔ [1193/1231] Built Mathlib.Algebra.Order.Ring.Rat (2.5s)
+✔ [1194/1234] Built Mathlib.Data.NNRat.Defs (3.6s)
+✔ [1195/1234] Built Mathlib.Algebra.Notation (1.8s)
+✔ [1196/1237] Built Mathlib.Tactic.NormNum.Core (3.9s)
+✔ [1197/1237] Built Mathlib.Data.Int.Cast.Field (1.0s)
+✔ [1198/1242] Built Mathlib.Algebra.Group.Subgroup.Actions (3.7s)
+✔ [1199/1242] Built Mathlib.GroupTheory.Coset.Basic (8.8s)
+✔ [1200/1242] Built Mathlib.Data.Int.Cast.Pi (1.6s)
+✔ [1201/1242] Built Mathlib.GroupTheory.Subgroup.Centralizer (5.2s)
+✔ [1202/1242] Built Mathlib.Algebra.Order.Nonneg.Field (4.0s)
+✔ [1203/1242] Built Mathlib.Algebra.Field.Rat (3.3s)
+✔ [1204/1242] Built Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected (6.8s)
+✔ [1205/1242] Built Mathlib.NumberTheory.Divisors (15s)
+✔ [1206/1242] Built Mathlib.Algebra.Order.Group.PosPart (4.6s)
+✔ [1207/1242] Built Mathlib.Combinatorics.SimpleGraph.Clique (10s)
+✔ [1208/1242] Built Mathlib.Algebra.Order.Hom.Basic (3.8s)
+✔ [1209/1242] Built Mathlib.Data.Int.CharZero (3.2s)
+✔ [1210/1246] Built Mathlib.GroupTheory.Coset.Card (6.1s)
+✔ [1211/1247] Built Mathlib.Algebra.Order.Field.Rat (3.3s)
+✔ [1212/1251] Built Mathlib.Data.Rat.Cast.Defs (3.0s)
+✔ [1213/1251] Built Mathlib.GroupTheory.GroupAction.ConjAct (5.1s)
+✔ [1214/1251] Built Mathlib.Data.Int.LeastGreatest (3.6s)
+✔ [1215/1251] Built Mathlib.Tactic.NormNum.Basic (11s)
+✔ [1216/1253] Built Mathlib.Combinatorics.SimpleGraph.Coloring.Vertex (6.4s)
+✔ [1217/1253] Built Mathlib.Tactic.Positivity.Core (11s)
+✔ [1218/1253] Built Mathlib.Data.Set.Equitable (4.3s)
+✔ [1219/1253] Built Mathlib.Data.Rat.Cast.CharZero (4.3s)
+✔ [1220/1254] Built Mathlib.Data.Fin.VecNotation (7.0s)
+✔ [1221/1254] Built Mathlib.GroupTheory.GroupAction.SubMulAction (14s)
+✔ [1222/1256] Built Mathlib.GroupTheory.Commutator.Basic (13s)
+✔ [1223/1256] Built Mathlib.Tactic.NormNum.Abs (4.7s)
+✔ [1224/1257] Built Mathlib.Combinatorics.SimpleGraph.Walk.Chord (3.9s)
+✔ [1225/1257] Built JSP500.Statement (11s)
+✔ [1226/1260] Built Mathlib.Algebra.Order.Floor.Defs (5.9s)
+✔ [1227/1260] Built Mathlib.Tactic.NormNum.Pow (7.3s)
+✔ [1228/1260] Built Mathlib.Algebra.Group.Subgroup.Pointwise (7.0s)
+✔ [1229/1260] Built Mathlib.Combinatorics.SimpleGraph.Metric (4.1s)
+✔ [1230/1260] Built Mathlib.Logic.Equiv.Fin.Basic (4.6s)
+✔ [1231/1260] Built Mathlib.Tactic.NormNum.Inv (5.6s)
+✔ [1232/1260] Built Mathlib.Data.Fin.SuccPredOrder (3.6s)
+✔ [1233/1260] Built Mathlib.Order.SuccPred.Relation (3.7s)
+✔ [1234/1264] Built Mathlib.Data.Rat.Cast.Order (7.2s)
+✔ [1235/1264] Built Mathlib.Combinatorics.SimpleGraph.Sum (7.2s)
+✔ [1236/1264] Built Mathlib.Data.Ineq (799ms)
+✔ [1237/1264] Built Mathlib.Combinatorics.SimpleGraph.Connectivity.Subgraph (7.6s)
+✔ [1238/1269] Built Mathlib.Util.SynthesizeUsing (1.4s)
+✔ [1239/1270] Built Mathlib.Algebra.GroupWithZero.Subgroup (3.7s)
+✔ [1240/1274] Built Mathlib.GroupTheory.GroupAction.Quotient (8.7s)
+✔ [1241/1274] Built Mathlib.Algebra.Order.Floor.Semiring (5.5s)
+✔ [1242/1274] Built Mathlib.Order.Partition.Equipartition (3.0s)
+✔ [1243/1285] Built Mathlib.Lean.Meta.Tactic.Rewrite (1.2s)
+✔ [1244/1285] Built Mathlib.Tactic.Linarith.Oracle.SimplexAlgorithm.Datatypes (1.5s)
+✔ [1245/1286] Built Mathlib.Tactic.NormNum.Eq (4.0s)
+✔ [1246/1286] Built Mathlib.Data.Tree.Basic (1.5s)
+✔ [1247/1286] Built Mathlib.Tactic.Linarith.Lemmas (2.6s)
+✔ [1248/1290] Built Mathlib.Tactic.Zify (1.8s)
+✔ [1249/1290] Built Mathlib.Util.ElabWithoutMVars (1.2s)
+✔ [1250/1292] Built Mathlib.Tactic.Linarith.Oracle.SimplexAlgorithm.Gauss (1.3s)
+✔ [1251/1292] Built Mathlib.Tactic.Linarith.Oracle.SimplexAlgorithm.SimplexAlgorithm (1.5s)
+✔ [1252/1294] Built Mathlib.Combinatorics.SimpleGraph.Extremal.Basic (3.3s)
+✔ [1253/1294] Built Mathlib.Tactic.TryThis (1.4s)
+✔ [1254/1302] Built Mathlib.Util.AtomM.Recurse (1.6s)
+✔ [1256/1326] Built Mathlib.Tactic.Linarith.Datatypes (3.4s)
+✔ [1257/1326] Built Mathlib.Tactic.Linarith.Oracle.SimplexAlgorithm.PositiveVector (1.6s)
+✔ [1258/1326] Built Mathlib.GroupTheory.QuotientGroup.Basic (11s)
+✔ [1259/1326] Built Mathlib.Tactic.Positivity.Basic (19s)
+✔ [1260/1326] Built Mathlib.Combinatorics.SimpleGraph.Prod (8.5s)
+✔ [1261/1326] Built Mathlib.Tactic.CancelDenoms.Core (4.9s)
+✔ [1262/1326] Built Mathlib.Data.Multiset.Sort (3.1s)
+✔ [1263/1326] Built Mathlib.Tactic.NormNum.Ineq (5.7s)
+✔ [1264/1326] Built Mathlib.Combinatorics.Enumerative.DoubleCounting (3.9s)
+✔ [1265/1326] Built Mathlib.Data.Finset.Fin (2.7s)
+✔ [1266/1326] Built JSP500.WeightedArithmetic (2.2s)
+✔ [1267/1326] Built Mathlib.Tactic.Linarith.Parsing (4.0s)
+✔ [1268/1326] Built Mathlib.Order.Interval.Set.Fin (5.2s)
+✔ [1269/1326] Built Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset (4.4s)
+✔ [1270/1326] Built Mathlib.Tactic.Linarith.Oracle.SimplexAlgorithm (4.7s)
+✔ [1271/1326] Built Mathlib.Tactic.NormNum.OfScientific (4.2s)
+✔ [1272/1326] Built Mathlib.Tactic.Linarith.Preprocessing (5.1s)
+✔ [1273/1326] Built Mathlib.Combinatorics.SimpleGraph.Hasse (6.2s)
+✔ [1274/1326] Built Mathlib.Tactic.NormNum.DivMod (3.6s)
+✔ [1275/1326] Built Mathlib.Tactic.Linarith.Verification (4.0s)
+✔ [1276/1326] Built Mathlib.Data.Finset.Sort (6.3s)
+✔ [1277/1326] Built Mathlib.Tactic.NormNum (1.9s)
+✔ [1278/1326] Built Mathlib.Order.Interval.Finset.Fin (5.2s)
+✔ [1279/1326] Built Mathlib.Tactic.Ring.Common (15s)
+✔ [1280/1326] Built Mathlib.GroupTheory.Index (9.7s)
+✔ [1281/1326] Built Mathlib.Data.Fintype.Fin (2.1s)
+✔ [1282/1326] Built Mathlib.Tactic.IntervalCases (3.2s)
+✔ [1283/1326] Built Mathlib.Tactic.Ring.Basic (4.6s)
+✔ [1284/1326] Built Mathlib.Tactic.Ring.PNat (1.8s)
+✔ [1285/1326] Built Mathlib.Tactic.Ring.RingNF (2.9s)
+✔ [1286/1326] Built Mathlib.Tactic.Linarith.Frontend (3.6s)
+✔ [1287/1326] Built Mathlib.Tactic.Ring (1.6s)
+✔ [1288/1326] Built Mathlib.Tactic.Linarith (1.5s)
+✔ [1289/1326] Built Mathlib.Algebra.BigOperators.Fin (8.0s)
+✔ [1290/1326] Built Mathlib.GroupTheory.OrderOfElement (12s)
+✔ [1291/1326] Built Mathlib.Data.ZMod.Basic (2.7s)
+✔ [1292/1326] Built Mathlib.Combinatorics.SimpleGraph.DegreeSum (1.4s)
+✔ [1293/1326] Built Mathlib.Combinatorics.SimpleGraph.Extremal.Turan (2.9s)
+✔ [1294/1326] Built Mathlib.Combinatorics.SimpleGraph.CompleteMultipartite (3.7s)
+⚠ [1295/1326] Built JSP500.WeightedLightEdge (7.4s)
+warning: JSP500/WeightedLightEdge.lean:98:0: automatically included section variable(s) unused in theorem `JSP500.weighted_degree_sum`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP500/WeightedLightEdge.lean:118:0: automatically included section variable(s) unused in theorem `JSP500.cover_card_at_least_two`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [1296/1326] Built JSP500.Vendor.Statements (4.8s)
+⚠ [1297/1326] Built JSP500.Brooks (8.1s)
+warning: JSP500/Brooks.lean:116:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Brooks.lean:118:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Brooks.lean:121:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Brooks.lean:123:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Brooks.lean:127:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Brooks.lean:174:33: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Brooks.lean:182:49: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Brooks.lean:186:51: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Brooks.lean:297:8: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: JSP500/Brooks.lean:299:10: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: JSP500/Brooks.lean:303:10: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: JSP500/Brooks.lean:305:8: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: JSP500/Brooks.lean:348:15: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: JSP500/Brooks.lean:348:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: JSP500/Brooks.lean:352:15: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: JSP500/Brooks.lean:352:27: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: JSP500/Brooks.lean:396:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Brooks.lean:398:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Brooks.lean:438:39: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Brooks.lean:438:74: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Brooks.lean:440:39: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Brooks.lean:440:75: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Brooks.lean:442:39: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Brooks.lean:459:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Brooks.lean:542:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Brooks.lean:544:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Brooks.lean:649:31: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Brooks.lean:666:47: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Brooks.lean:668:49: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Brooks.lean:678:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Brooks.lean:680:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Brooks.lean:698:47: `if_neg` has been deprecated: Use `ite_eq_right` instead
+✔ [1298/1326] Built JSP500.SevenVertex (2.5s)
+⚠ [1299/1326] Built JSP500.ColoringBounds (2.4s)
+warning: JSP500/ColoringBounds.lean:22:0: automatically included section variable(s) unused in theorem `JSP500.balanced_compl_cliqueFree`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP500/ColoringBounds.lean:29:0: automatically included section variable(s) unused in theorem `JSP500.clique_card_lt_of_cliqueFree`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [1300/1326] Built Mathlib.Combinatorics.SimpleGraph.FiveWheelLike (6.1s)
+⚠ [1301/1326] Built JSP500.ColorCounting (2.3s)
+warning: JSP500/ColorCounting.lean:15:0: automatically included section variable(s) unused in theorem `JSP500.mk_mem_pairsOn`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP500/ColorCounting.lean:35:0: automatically included section variable(s) unused in theorem `JSP500.sum_edgesOn`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1302/1326] Built JSP500.Vendor.Counting (5.5s)
+warning: JSP500/Vendor/Counting.lean:438:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/Counting.lean:445:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+⚠ [1303/1326] Built JSP500.TerminalCore (2.2s)
+warning: JSP500/TerminalCore.lean:38:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [1304/1326] Built JSP500.Vendor.LTable (3.1s)
+warning: JSP500/Vendor/LTable.lean:384:64: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/LTable.lean:384:76: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/LTable.lean:389:74: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/LTable.lean:389:86: `if_neg` has been deprecated: Use `ite_eq_right` instead
+✔ [1305/1326] Built JSP500.ColoredTerminal (2.3s)
+✔ [1306/1326] Built JSP500.Vendor.Brouwer (2.7s)
+✔ [1307/1326] Built JSP500.Vendor.BrouwerProof (2.7s)
+✔ [1308/1326] Built JSP500.Vendor.LTableExt (2.9s)
+⚠ [1309/1326] Built JSP500.Restriction (2.3s)
+warning: JSP500/Restriction.lean:10:0: automatically included section variable(s) unused in theorem `JSP500.balanced_restrict`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP500/Restriction.lean:21:0: automatically included section variable(s) unused in theorem `JSP500.colorGraph_restrict`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP500/Restriction.lean:24:35: This simp argument is unused:
+  Subtype.val_inj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [colorGraph, restrictColor]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: JSP500/Restriction.lean:26:0: automatically included section variable(s) unused in theorem `JSP500.compl_colorGraph_restrict`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP500/Restriction.lean:29:35: This simp argument is unused:
+  Subtype.val_inj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [colorGraph, restrictColor]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1310/1326] Built JSP500.Vendor.MH2Proof (5.0s)
+warning: JSP500/Vendor/MH2Proof.lean:551:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/MH2Proof.lean:552:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/MH2Proof.lean:1132:61: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/MH2Proof.lean:1270:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/MH2Proof.lean:1345:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/MH2Proof.lean:1363:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/MH2Proof.lean:1467:30: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/MH2Proof.lean:1553:35: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/MH2Proof.lean:1578:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/MH2Proof.lean:1579:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/MH2Proof.lean:1264:5: Variable name `hFi38` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hFi38
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1311/1326] Built JSP500.Vendor.BrouwerDischarge (1.4s)
+warning: JSP500/Vendor/BrouwerDischarge.lean:166:24: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: JSP500/Vendor/BrouwerDischarge.lean:203:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerDischarge.lean:206:58: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [1312/1326] Built JSP500.Vendor.BrouwerInduction (46s)
+warning: JSP500/Vendor/BrouwerInduction.lean:46:16: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:157:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:210:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:248:15: This simp argument is unused:
+  Nat.sub_self
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.zero_mul, Nat.mul_zero, Nat.add_zero, Nat.zero_add, show (0 : ℕ) - 1 = 0 from rfl,
+    show (1 : ℕ) - 1 = 0 from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: JSP500/Vendor/BrouwerInduction.lean:248:29: This simp argument is unused:
+  Nat.zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.sub_self, Nat.mul_zero, Nat.add_zero, Nat.zero_add, show (0 : ℕ) - 1 = 0 from rfl,
+    show (1 : ℕ) - 1 = 0 from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: JSP500/Vendor/BrouwerInduction.lean:249:6: This simp argument is unused:
+  Nat.zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.sub_self, Nat.zero_mul, Nat.mul_zero, Nat.add_zero, show (0 : ℕ) - 1 = 0 from rfl,
+    show (1 : ℕ) - 1 = 0 from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: JSP500/Vendor/BrouwerInduction.lean:249:49: This simp argument is unused:
+  show (1 : ℕ) - 1 = 0 from rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.sub_self, Nat.zero_mul, Nat.mul_zero, Nat.add_zero, Nat.zero_add,
+    show (0 : ℕ) - 1 = 0 from rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: JSP500/Vendor/BrouwerInduction.lean:148:4: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: JSP500/Vendor/BrouwerInduction.lean:577:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: JSP500/Vendor/BrouwerInduction.lean:812:39: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:842:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:842:19: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:846:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:846:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:851:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:851:19: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1052:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:1086:18: This simp argument is unused:
+  sqsum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: JSP500/Vendor/BrouwerInduction.lean:1102:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1105:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1106:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1108:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1109:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1121:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1124:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1126:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1127:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1128:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1130:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1132:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1133:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1136:14: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1137:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1139:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1140:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1142:14: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1143:14: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1114:33: Variable name `hbz` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hbz
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: JSP500/Vendor/BrouwerInduction.lean:1148:40: Variable name `hr` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hr
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: JSP500/Vendor/BrouwerInduction.lean:1337:5: Variable name `hMadj` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hMadj
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: JSP500/Vendor/BrouwerInduction.lean:1478:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1478:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1481:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1481:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1484:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1484:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1519:35: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:1544:22: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:1575:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1575:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1576:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1576:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1582:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1585:14: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1586:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1588:14: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1589:14: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1595:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1595:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1601:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1604:14: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1605:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1607:14: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1608:14: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1614:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1614:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1617:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1620:14: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1621:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1623:14: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1624:14: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:1699:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:1718:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: JSP500/Vendor/BrouwerInduction.lean:1780:26: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:1849:45: This simp argument is unused:
+  Nat.mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.sub_self, Nat.mul_zero, Nat.add_zero, Nat.zero_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: JSP500/Vendor/BrouwerInduction.lean:1914:28: This simp argument is unused:
+  Nat.mul_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: JSP500/Vendor/BrouwerInduction.lean:1924:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: JSP500/Vendor/BrouwerInduction.lean:1940:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: JSP500/Vendor/BrouwerInduction.lean:2010:65: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:2187:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:2284:36: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2285:27: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2288:79: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2292:67: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2364:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:2412:15: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2412:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2415:15: `Fin.coe_castAdd` has been deprecated: Use `Fin.val_castAdd` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2417:15: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2417:27: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2420:15: `Fin.coe_castAdd` has been deprecated: Use `Fin.val_castAdd` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2420:32: `Fin.coe_natAdd` has been deprecated: Use `Fin.val_natAdd` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2423:15: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2423:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2426:15: `Fin.coe_castAdd` has been deprecated: Use `Fin.val_castAdd` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2426:32: `Fin.coe_natAdd` has been deprecated: Use `Fin.val_natAdd` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2429:15: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2429:27: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2435:17: `Fin.coe_natAdd` has been deprecated: Use `Fin.val_natAdd` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2451:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:2526:25: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2526:38: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2527:25: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2527:38: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: JSP500/Vendor/BrouwerInduction.lean:2538:10: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:2545:12: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:2549:14: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:2565:16: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:2570:16: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:2607:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: JSP500/Vendor/BrouwerInduction.lean:2659:10: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: JSP500/Vendor/BrouwerInduction.lean:2682:12: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [1313/1326] Built JSP500.ExtremalBounds (1.3s)
+warning: JSP500/ExtremalBounds.lean:12:0: automatically included section variable(s) unused in theorem `JSP500.kp_saving_finite`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP500/ExtremalBounds.lean:27:0: automatically included section variable(s) unused in theorem `JSP500.colorGraph_le_other_compl`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [1314/1326] Built JSP500.CoreLadder (1.4s)
+⚠ [1315/1326] Built JSP500.GraphAccounting (1.7s)
+warning: JSP500/GraphAccounting.lean:16:0: automatically included section variable(s) unused in theorem `JSP500.edgeCount_mono`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP500/GraphAccounting.lean:24:0: automatically included section variable(s) unused in theorem `JSP500.edgeCount_le_choose_two`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP500/GraphAccounting.lean:48:0: automatically included section variable(s) unused in theorem `JSP500.edgeCount_univ_eq_card_edgeFinset`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP500/GraphAccounting.lean:102:0: automatically included section variable(s) unused in theorem `JSP500.edgeCount_comap`:
+  [Fintype V]
+  [Fintype W]
+  [DecidableEq W]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Fintype W] [DecidableEq W] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP500/GraphAccounting.lean:145:0: automatically included section variable(s) unused in theorem `JSP500.adj_of_edgeCount_choose`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP500/GraphAccounting.lean:223:24: This simp argument is unused:
+  Finset.mk_mem_sym2_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [SimpleGraph.mem_neighborFinset, SimpleGraph.compl_adj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: JSP500/GraphAccounting.lean:256:21: This simp argument is unused:
+  Finset.mk_mem_sym2_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Sym2.mem_iff, ne_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [1316/1326] Built JSP500.FloorInfrastructure (1.5s)
+warning: JSP500/FloorInfrastructure.lean:22:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: JSP500/FloorInfrastructure.lean:20:0: automatically included section variable(s) unused in theorem `JSP500.least_degree_vertex`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP500/FloorInfrastructure.lean:26:0: automatically included section variable(s) unused in theorem `JSP500.minimum_degree_average`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [1317/1326] Built JSP500.DirectFloors (1.4s)
+✔ [1318/1326] Built JSP500.PairCover (1.8s)
+⚠ [1319/1326] Built JSP500.NeighborhoodWeights (1.4s)
+warning: JSP500/NeighborhoodWeights.lean:9:0: automatically included section variable(s) unused in theorem `JSP500.degree_comap_subtype`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [1320/1326] Built JSP500.WeightedCoverBridge (1.4s)
+⚠ [1321/1326] Built JSP500.FinalFloors (1.5s)
+warning: JSP500/FinalFloors.lean:25:49: Unused tactic linter: `decide` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: JSP500/FinalFloors.lean:25:49: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: JSP500/FinalFloors.lean:22:45: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: JSP500/FinalFloors.lean:37:47: Unused tactic linter: `decide` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: JSP500/FinalFloors.lean:37:47: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [1322/1326] Built JSP500.CliquePeeling (1.4s)
+warning: JSP500/CliquePeeling.lean:9:0: automatically included section variable(s) unused in theorem `JSP500.edgeCount_clique`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JSP500/CliquePeeling.lean:36:0: automatically included section variable(s) unused in theorem `JSP500.edgeCount_add_cross_le_insert`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [1323/1326] Built JSP500.UnrestrictedFloors (2.0s)
+✔ [1324/1326] Built JSP500.Main (1.4s)
+✔ [1325/1326] Built JSP500 (1.1s)
+Build completed successfully (1326 jobs).

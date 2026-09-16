@@ -1,0 +1,210 @@
+{
+  "checked_at_utc": "2026-09-16T14:07:06.438079+00:00",
+  "language": "Lean 4.34.0",
+  "lean_commit": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+  "mathlib_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+  "main_theorems": [
+    "JSP500.main_proven",
+    "JSP500.upstream_proven"
+  ],
+  "audited_declarations": {
+    "JSP500.weighted_light_edge_six": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.weighted_light_edge_seven": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.seven_vertex_light_edge_six": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.seven_vertex_light_edge_seven": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos617.R6.brooks_zajac": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos617.kp_upper": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos617.kp_saving": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.local_cap_twenty_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.exists_color_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.degree_at_most_six": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.no_colored_terminal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.core_three": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.core_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.core_five": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.neighborhood_accounting": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.weighted_neighborhood_data": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.seven_neighbor_budget_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.six_neighbor_budget_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.floor_four_twenty_eight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.floor_four_twenty_nine": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.floor_six_forty_three": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.clique_deletion_alpha": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.color_floor_six_forty_three": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.no_balanced_fifty": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.main_proven": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP500.upstream_proven": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "checks": [
+    {
+      "name": "toolchain",
+      "exit_code": 0,
+      "elapsed_seconds": 1.431
+    },
+    {
+      "name": "clean",
+      "exit_code": 0,
+      "elapsed_seconds": 3.579
+    },
+    {
+      "name": "build",
+      "exit_code": 0,
+      "elapsed_seconds": 495.874
+    },
+    {
+      "name": "axioms",
+      "exit_code": 0,
+      "elapsed_seconds": 2.937
+    },
+    {
+      "name": "kernel-replay",
+      "exit_code": 0,
+      "elapsed_seconds": 125.966
+    }
+  ],
+  "sha256": {
+    "JSP500.lean": "46f136fbaca3ba14a855c3248babd56bda648e92bc1bd77feddeff136fee22af",
+    "JSP500/Audit.lean": "960cf1d3c14b6cce3023d7f0525ee995a4ff170f585eda6d4d601b0bdec6fbd9",
+    "JSP500/Brooks.lean": "1110dbf923a72f849dc619f84198727f38f3b573389cfb349081264c8e254ce5",
+    "JSP500/CliquePeeling.lean": "52a38f699daff809da4784e95198d60b35adb81a3c65fdf88e7d96bc80a54420",
+    "JSP500/ColorCounting.lean": "ad2448b6a40a124817a325c284b3dfe76c6b7cea0372bb15fbd02dbcb34cf060",
+    "JSP500/ColoredTerminal.lean": "5fb3cd7562261c67a1c37b5156698aaabe89aa4de4a5c7ea34b09aa4490e5c76",
+    "JSP500/ColoringBounds.lean": "d579580cc486ed553f28b5a8ec4f8abf07da2354186fd22e3571dd835dd55554",
+    "JSP500/CoreLadder.lean": "c17a2a19970536092a31e82bf6fd99268ced2183a811cdf211ee79566b3317b6",
+    "JSP500/DirectFloors.lean": "52829a00309278a14c53aaeca3dad1fb97481485364bfb2faea9b3c8815a4e0f",
+    "JSP500/ExtremalAudit.lean": "8a7406c32b2594b097c4a0e3f38b486fdc03c4acbafc6abbcbc0d857c65be907",
+    "JSP500/ExtremalBounds.lean": "5ca0f9987dbe3e0eb32ef6f1e3cd024651735e5accdbf00e3e4ba883f983c33c",
+    "JSP500/FinalFloors.lean": "bc7aaccc9e686f8b3f28567ab2d61c3ad126c67c9f022d8f81b2001804688159",
+    "JSP500/FloorInfrastructure.lean": "39f8ba4daec83b4a60f61bebeaacbe0c82973f037b68dcd0f7cbb96ec7f6dfed",
+    "JSP500/GraphAccounting.lean": "56c4cd20ad98c0f3e8923f65d446f259c35178a329e035a39490134e409c59d9",
+    "JSP500/Main.lean": "c059bff431e3d7bdcc781ebf984cf71e9974935dddb0fe875a6a8e9d65666450",
+    "JSP500/NeighborhoodWeights.lean": "8aada32fddb2e52a5763b16b825811741be149266252a7514b52775682bc308b",
+    "JSP500/PairCover.lean": "d9413408c427f554a22623563ce857e47ee696cf8b40e64e437279e07c7a937f",
+    "JSP500/Restriction.lean": "1f31f311ff5dffb2fc04e96cfc3c6eb38e76ca92fafa8927c4b5ef16adf572f4",
+    "JSP500/SevenVertex.lean": "e0decb00001b4a4c9af383c6824fc7ac678674f75c9995bef299156338d1ca77",
+    "JSP500/Statement.lean": "496ffb713eb2ee4d56f189b9d4c6480380b1eaa6e501bebb94919210f82dfa75",
+    "JSP500/TerminalCore.lean": "1557ba37a75baba039a79cfbc5efd0c193e67e9d0ca7f2d0debad5f5999205d8",
+    "JSP500/UnrestrictedFloors.lean": "77c6e73a30b3b90d256ae79acbbd51671a14675ee22e86a2eac80cf466b6eb51",
+    "JSP500/Vendor/Brouwer.lean": "e58cbe99924e18c831f8384caf718d83a7771e800656650670efc01d4f35cf5e",
+    "JSP500/Vendor/BrouwerDischarge.lean": "d4324a38dcc06c973872be75fa6e24730e094123ded2bbc47c5331f5aa5b0492",
+    "JSP500/Vendor/BrouwerInduction.lean": "dd46f21026d5f00b4076d406d49d869bcebe131fa8e21fec90c6d630b7c7b1d9",
+    "JSP500/Vendor/BrouwerProof.lean": "afc1a5df80f00e1b22e0ca83091b62ec8bd794eab21d452cb19f0493a2c775f3",
+    "JSP500/Vendor/Counting.lean": "046c41061824d10feed56a1a0b63448047b7546965475942b035c6ef4dfb83b7",
+    "JSP500/Vendor/LTable.lean": "54ad549c87f648e0a373ab8d756207c26d88fabe39b15cba5ee7c93d4cabf6ac",
+    "JSP500/Vendor/LTableExt.lean": "355fcbf20ab05ef98f87774152d5eb5c1c5d556b191ebd20cb726c423bb2e150",
+    "JSP500/Vendor/MH2Proof.lean": "67740bea152f7517bbc2022fdcb82bc8dad544a60b0a95b45a4ff1265971d45a",
+    "JSP500/Vendor/Statements.lean": "c0901dee130e7110b5da974c2cb87575e35bd6b7dc782091b16919aaaa839a43",
+    "JSP500/WeightedArithmetic.lean": "52ee9ae70187dae532b5d0ac137946d11d616d9191b6255900313fc21b6aec83",
+    "JSP500/WeightedCoverBridge.lean": "a1169fc6c8a48ee409c08236afe1c1e63fcf584d83cbd69d83acdd17f02fe97d",
+    "JSP500/WeightedLightEdge.lean": "b5cce8cd0813288b731b131aec4dec749e070ccbe8c7b8ac2ce5742522866fe1",
+    "lake-manifest.json": "4aad75013e95f8536607b0f3b6d28d3fef15a7505cd1d5bcb4c2c9f5dfd6df02",
+    "lakefile.toml": "eb7fb81a3ef44136ef971c9d3d3ff0a65bf98c1c62aa415e876d3f04e577efdf",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "scripts/verify.py": "2bd01c65975a1451d1cef56830368beceb82fe7a288cd3863df24b84f4a188de"
+  },
+  "verification_scope": "Fresh replay uses the Lean kernel, not an independent kernel implementation. Statement correspondence and prize review remain for reviewers."
+}

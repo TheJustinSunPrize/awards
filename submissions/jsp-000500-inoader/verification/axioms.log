@@ -1,0 +1,33 @@
+'JSP500.weighted_light_edge_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.weighted_light_edge_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.seven_vertex_light_edge_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.seven_vertex_light_edge_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos617.R6.brooks_zajac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos617.kp_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos617.kp_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.local_cap_twenty_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.exists_color_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.degree_at_most_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.no_colored_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.core_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.core_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.core_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.neighborhood_accounting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.weighted_neighborhood_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.seven_neighbor_budget_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.six_neighbor_budget_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.floor_four_twenty_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.floor_four_twenty_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.floor_six_forty_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.clique_deletion_alpha' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.color_floor_six_forty_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.no_balanced_fifty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.main_proven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP500.upstream_proven' depends on axioms: [propext, Classical.choice, Quot.sound]
+def JSP500.Main : Prop :=
+∀ (c : Sym2 (Fin 50) → Fin 7), ∃ S, S.card = 8 ∧ ∃ k, JSP500.Misses c S k
+def JSP500.Upstream : Prop :=
+∀ (V : Type) [inst : Fintype V] [DecidableEq V],
+  Fintype.card V = 50 → ∀ (c : Sym2 V → Fin 7), ∃ S, S.card = 8 ∧ ∃ k, JSP500.Misses c S k
+JSP500.main_proven : JSP500.Main
+JSP500.upstream_proven : JSP500.Upstream
