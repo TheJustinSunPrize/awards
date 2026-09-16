@@ -1,0 +1,10 @@
+import JSP692
+#print JSP692.Uniform
+#print JSP692.Intersecting
+#print JSP692.Proper
+#print JSP692.ThreeChromatic
+#print JSP692.support
+#print JSP692.QuadraticVertexBound
+#print JSP692.LinearIntersectionAssertion
+#check JSP692.jsp000692_complete
+#check JSP692.jsp000692_complete_explicit

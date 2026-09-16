@@ -1,9 +1,0 @@
-✔ [6653/6656] Built JSP692.Hypergraph
-⚠ [6654/6656] Built JSP692.LinearIntersection
-warning: ././././JSP692/LinearIntersection.lean:105:0: automatically included section variable(s) unused in theorem 'JSP692.edge_disjoint_of_independent':
-  [Fintype V]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [Fintype V] in theorem ...
-note: this linter can be disabled with `set_option linter.unusedSectionVars false`
-✔ [6655/6656] Built JSP692
-Build completed successfully.
