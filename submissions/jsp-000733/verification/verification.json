@@ -1,0 +1,66 @@
+{
+  "lean": "Lean (version 4.33.0, x86_64-w64-windows-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "platform": "Windows",
+  "arch": "AMD64",
+  "imported_mathlib_cache_used": true,
+  "network_isolation": false,
+  "checker": "bundled leanchecker; same Lean kernel, not independently implemented",
+  "source_hashes": {
+    "Erdos882Existing.lean": "6797aeb572234c660b0990767b814d9cd8065356258085f2ef9a7d5d670c3f35",
+    "Erdos882Upper.lean": "f78432b7638b7e5478768e40c8d069116aab01ac6be2335b030efb3a2d5a4918",
+    "AsymptoticCore.lean": "7c4ec5267a5c8707818df3401541fb5d9a66c9b57a298a3b65666f23c5fcb18f",
+    "Erdos882Asymptotic.lean": "788018d8731922bf6c7adb73d51347bffe862d73961fe27acc39909a6945df34"
+  },
+  "steps": [
+    {
+      "command": "lean -j1 -M4096 -o Erdos882Existing.olean Erdos882Existing.lean",
+      "exit_code": 0,
+      "seconds": 31.354
+    },
+    {
+      "command": "lean -j1 -M4096 -o Erdos882Upper.olean Erdos882Upper.lean",
+      "exit_code": 0,
+      "seconds": 17.668
+    },
+    {
+      "command": "lean -j1 -M4096 -o AsymptoticCore.olean AsymptoticCore.lean",
+      "exit_code": 0,
+      "seconds": 7.34
+    },
+    {
+      "command": "lean -j1 -M4096 -o Erdos882Asymptotic.olean Erdos882Asymptotic.lean",
+      "exit_code": 0,
+      "seconds": 14.382
+    },
+    {
+      "command": "leanchecker --verbose Erdos882Existing",
+      "exit_code": 0,
+      "seconds": 18.822
+    },
+    {
+      "command": "leanchecker --verbose Erdos882Upper",
+      "exit_code": 0,
+      "seconds": 18.669
+    },
+    {
+      "command": "leanchecker --verbose AsymptoticCore",
+      "exit_code": 0,
+      "seconds": 8.912
+    },
+    {
+      "command": "leanchecker --verbose Erdos882Asymptotic",
+      "exit_code": 0,
+      "seconds": 12.27
+    }
+  ],
+  "axiom_reports": [
+    "'Erdos882.subset_sum_injective_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Erdos882.maximumSize_pow_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Erdos882.maximumSize_asymptotic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Erdos882.maximumSize_pow_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Erdos882.erdos_882' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "result": "pass",
+  "log_sha256": "a5d28f6d2bec8889e5d69ffd9a45549817da8d53332509fe00ba38c6572c0196"
+}

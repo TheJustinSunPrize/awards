@@ -1,0 +1,12 @@
+Erdos882Existing.lean is copied without modification from plby/lean-proofs
+commit 8822f7ddef30fadbd92e1c6ab4ed897af356af5e. Its author header is retained.
+The upstream src/latest/LICENSE notice is retained as LICENSE.upstream.
+No change to the ownership or licensing of this copied source is asserted.
+
+The Apache License in LICENSE applies to the added proof and reproduction
+files supplied by this package. It does not replace any upstream notice.
+
+Informal lower construction: Paul Erdos, Vsevolod F. Lev, Gerard Rauzy,
+Csaba Sandor, Andras Sarkozy (1999), as credited by the source header.
+Upstream formal authors, as credited by the source: Codex, GPT-5.6 Sol.
+The added bridge and analytic assembly were produced using Codex.

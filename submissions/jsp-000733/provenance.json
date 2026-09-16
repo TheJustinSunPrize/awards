@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/plby/lean-proofs",
+  "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+  "path": "src/latest/ErdosProblems/Erdos882.lean",
+  "copied_as": "Erdos882Existing.lean",
+  "sha256": "6797aeb572234c660b0990767b814d9cd8065356258085f2ef9a7d5d670c3f35",
+  "exact_git_blob": true,
+  "retained_author_header": true
+}
