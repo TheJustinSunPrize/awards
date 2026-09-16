@@ -1,0 +1,42 @@
+{
+  "imports": [
+    "Mathlib.Analysis.InnerProductSpace.PiL2",
+    "Mathlib.Algebra.Order.Round",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Analysis.Real.Sqrt",
+    "Mathlib.Algebra.Ring.Int.Parity",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Tactic.NormNum",
+    "Lean.Elab.Tactic.Omega",
+    "Mathlib.Topology.MetricSpace.ProperSpace"
+  ],
+  "inputs": [
+    {
+      "file": "source-components/Erdos466Definitions.lean",
+      "sha256": "f47c7173896daf0c4e44287f6768f5ef07cedd7aef3d413f5a7f06f869e5c46a"
+    },
+    {
+      "file": "source-components/Erdos466Arithmetic.lean",
+      "sha256": "0d381dfe42dc899fd642f92cfd6c873ca9d32ff4636d8b8ca4289284900807a6"
+    },
+    {
+      "file": "source-components/Erdos466EndpointArithmetic.lean",
+      "sha256": "4abe97fe9f2a7b4fe5dea66f7207ee1457cd7c8ed46fe988172199a4bacde496"
+    },
+    {
+      "file": "source-components/Erdos466Endpoint.lean",
+      "sha256": "a59bbdd9183f04f8f0f4e6d7a857e2450e5d54b8d67398752a2e6b3bd379655f"
+    },
+    {
+      "file": "source-components/Erdos466Construction.lean",
+      "sha256": "a23183e30b2201f9a67c94e93859852b6001b4fab092f15ca169189eed56c144"
+    },
+    {
+      "file": "source-components/Erdos466General.lean",
+      "sha256": "9cb0c1a3fccb4eb52ec07b1bc4650462f7295443b7af0d8cd07a1bb835142a30"
+    }
+  ],
+  "output_sha256": "1e4c3c35392b21578cf3f620b56dc3dee6f0db3c3040d9b1afca92a2d0c2a20a"
+}
