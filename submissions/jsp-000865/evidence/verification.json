@@ -1,0 +1,83 @@
+{
+  "jsp": "JSP-000865",
+  "erdos": 1042,
+  "contribution": "Incremental general-set zero-capacity boundary completion; existing connected-zero clause and positive-capacity work are not new.",
+  "checked": "2026-09-16",
+  "lean_version": "4.33.0",
+  "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+  "lean_windows_archive_sha256": "60d045a2ef45fca55a620b7d55be682e8439ec8d1fc9a8bcd2615da7dffba26a",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "upstream_commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+  "local_build_exit_code": 0,
+  "upstream_license_applicability": "not established; maintainer confirmation needed before redistribution/incorporation of the adapted proof",
+  "build_command": "lake build JSP000865.ZeroCapacity; final comment/LF revision additionally compiled with lean -o and replayed",
+  "targets": [
+    "Erdos1042.zero_transfiniteDiameter_hasUniformComponentGap",
+    "Erdos1042.closed_subunit_transfiniteDiameter_hasUniformComponentGap",
+    "Erdos1042.erdos_1042_including_zero"
+  ],
+  "target_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_review": {
+    "sorry": false,
+    "admit": false,
+    "custom_axiom": false,
+    "native_decide": false,
+    "unsafe_proof_execution": false
+  },
+  "replay": [
+    {
+      "module": "JSP000865.Upstream",
+      "tool": "leanchecker.exe",
+      "mode": "replay",
+      "exit_code": 0,
+      "duration_seconds": 44.972,
+      "source_sha256": "10fb91b2f8e43418adb8bde402e7f1d15d769c5267a72aa813bf42b000e47817"
+    },
+    {
+      "module": "JSP000865.ZeroCapacity",
+      "tool": "leanchecker.exe",
+      "mode": "replay",
+      "exit_code": 0,
+      "duration_seconds": 26.837,
+      "source_sha256": "e115cc1e91d3b5093aaade063043c11ac25b32db7af943485559b7edbda36bb5"
+    }
+  ],
+  "official_verification": "pending; not a completed candidate verification record",
+  "recipient": {
+    "id": "RECIPIENT-JSP-000865-A",
+    "confirmation": "pending"
+  },
+  "limitations": [
+    "Lean elaboration and leanchecker use the same kernel, not two independent checker implementations.",
+    "No designated curator/verifier signature, recipient confirmation, isolated offline adjudication, or prize decision is asserted.",
+    "Source review by separate AI agents is not an official independent verifier attestation."
+  ],
+  "environment": {
+    "os": "Windows",
+    "architecture": "x86_64",
+    "network_disabled": false,
+    "sandboxed": false
+  },
+  "final_source_sha256": "e115cc1e91d3b5093aaade063043c11ac25b32db7af943485559b7edbda36bb5",
+  "final_compile_exit_code": 0,
+  "semantic_review_source_note": "The AI semantic review records the earlier CRLF/comment header hash bdf4b880193392f537899087560cbd31ca29585a41aa5b452f8158aee93382ef. The final publication revision changes only the licensing comment and line endings; its exact bytes were separately recompiled and replayed.",
+  "file_hashes": {
+    ".gitignore": "26cccbcb25f989f20b15b5b094ce0fa29b8a8db05219347b0fa0201e42f735fb",
+    "bootstrap_upstream.py": "37582b940e627e00d10cb753f5361341b256f464c0c1415e73a3cf32a3edd826",
+    "lake-manifest.json": "5a95aa40d69b84fe7948b8287da800742080b6951c15398d538aebe3bfe64357",
+    "lakefile.toml": "5b87485567360ed3154cef6d9122ab1e85a4ef3e1974daa2b994800987795383",
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "README.md": "54688557b4c5dcd7dd826939b1212aaff41e90cd19dc27dea89bb2a71682e6cf",
+    "upstream-pin.json": "33186f6ba0d5bb3ad4bc29eca6e0bbd6069848dc7e63b06f61a42ae683da45a8",
+    "evidence/JSP000865-Upstream-replay.log": "c71d1b2e9d681aec7fde9ad744f327f1acf336dc09cd12e8d6320d53ba40351a",
+    "evidence/JSP000865-ZeroCapacity-compile.log": "1bbb5bf71d3c69e11a8a7c668bed839a2221e0cb4ea86b1c596d0956dac9ed68",
+    "evidence/JSP000865-ZeroCapacity-replay.log": "39336936891b84f4b5b37a3710bc6cb914340f87abd19fcd06c6e12f263e5ebb",
+    "evidence/zero-capacity-build.log": "9d1368cc82fad0bb5023b0e615a2ff0e49c6feadc86fd601e5c3ef17bfe79a60",
+    "evidence/zero-capacity-semantic-review.md": "2bec523c510923a78f1d6206b37d8b1b84ecfa575367f16b07b7e1b7f0e700ff",
+    "JSP000865/ZeroCapacity.lean": "e115cc1e91d3b5093aaade063043c11ac25b32db7af943485559b7edbda36bb5"
+  }
+}

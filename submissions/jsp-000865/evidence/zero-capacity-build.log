@@ -1,0 +1,9 @@
+ℹ [8706/8707] Built JSP000865.Upstream (80s)
+info: JSP000865/Upstream.lean:2444:0: 'Erdos1042.erdos_1042' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8707/8707] Built JSP000865.ZeroCapacity (20s)
+info: JSP000865/ZeroCapacity.lean:128:0: 'Erdos1042.zero_transfiniteDiameter_hasUniformComponentGap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: JSP000865/ZeroCapacity.lean:129:0: 'Erdos1042.closed_subunit_transfiniteDiameter_hasUniformComponentGap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: JSP000865/ZeroCapacity.lean:130:0: 'Erdos1042.erdos_1042_including_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8707 jobs).
