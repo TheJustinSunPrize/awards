@@ -1,0 +1,62 @@
+{
+  "generated_at_utc": "2026-09-16T23:28:20.989710+00:00",
+  "main_target": "Erdos1115.not_erdos_1115_continuousOn",
+  "files": {
+    "JSP000926/GeometricLength.lean": {
+      "bytes": 13498,
+      "sha256": "ce79c8c0ab88b4e942205432ac4b4b92e7bea49fa7eba21b8285b5e4422c0289"
+    },
+    "JSP000926/CurveStatement.lean": {
+      "bytes": 4071,
+      "sha256": "966456733ae1a2dcd168705d7f23b8636a476cd3d0c3243072eea55d7ba4b528"
+    },
+    "JSP000926/LengthProperties.lean": {
+      "bytes": 4878,
+      "sha256": "d50a4c46d41c5e5b70d8c61fcec09881a558c7fbaada605f3b294491bbd5757b"
+    },
+    "JSP000926/Audit.lean": {
+      "bytes": 421,
+      "sha256": "68263048afa8ca3c36632060f93584eabb037001896e8a2663df369972b102c3"
+    },
+    "reproduce.py": {
+      "bytes": 7934,
+      "sha256": "4b013b7d6317cfaa05ead454e1ab1517ae726c6b9cf62b5bcc3ecd636b68facb"
+    },
+    "bootstrap_upstream.py": {
+      "bytes": 947,
+      "sha256": "783b53e0619d1ebdd0ccaf656982361185043396774e0632d2388da35919c280"
+    },
+    "upstream-pin.json": {
+      "bytes": 486,
+      "sha256": "6711d4d1ef81f1258d09103e26b9f4031dcd0962f2600227080853c588f61187"
+    },
+    "lean-toolchain": {
+      "bytes": 25,
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    },
+    "lakefile.toml": {
+      "bytes": 252,
+      "sha256": "8eef12024d5d1445642d78f852400ec5cf8dfdb5aadc1ad587e299696058647d"
+    },
+    "lake-manifest.json": {
+      "bytes": 3554,
+      "sha256": "66e1d56ea0bc6735f6d25dffb0001c26d81d2e6bc3feb3843cb5878622334fa7"
+    }
+  },
+  "fetched_prerequisite": {
+    "repository": "https://github.com/plby/lean-proofs",
+    "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+    "path": "src/latest/ErdosProblems/Erdos1115.lean",
+    "sha256": "c2d04a4823de2d7d92d687c10f7deb076d579b9c0b6817a0bfc983752e65838c",
+    "bytes": 152663,
+    "license": "Apache-2.0, explicitly stated in the pinned file header",
+    "raw_url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1115.lean"
+  },
+  "verified_sources": {
+    "JSP000926/Upstream.lean": "c2d04a4823de2d7d92d687c10f7deb076d579b9c0b6817a0bfc983752e65838c",
+    "JSP000926/GeometricLength.lean": "ce79c8c0ab88b4e942205432ac4b4b92e7bea49fa7eba21b8285b5e4422c0289",
+    "JSP000926/LengthProperties.lean": "d50a4c46d41c5e5b70d8c61fcec09881a558c7fbaada605f3b294491bbd5757b",
+    "JSP000926/CurveStatement.lean": "966456733ae1a2dcd168705d7f23b8636a476cd3d0c3243072eea55d7ba4b528",
+    "JSP000926/Audit.lean": "68263048afa8ca3c36632060f93584eabb037001896e8a2663df369972b102c3"
+  }
+}

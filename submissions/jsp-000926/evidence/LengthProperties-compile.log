@@ -1,0 +1,4 @@
+'Erdos1115.geometricLengthInDisc_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1115.geometricLengthInDisc_ne_top_of_locallyBoundedVariationOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

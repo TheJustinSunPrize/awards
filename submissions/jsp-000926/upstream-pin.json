@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/plby/lean-proofs",
+  "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+  "path": "src/latest/ErdosProblems/Erdos1115.lean",
+  "sha256": "c2d04a4823de2d7d92d687c10f7deb076d579b9c0b6817a0bfc983752e65838c",
+  "bytes": 152663,
+  "license": "Apache-2.0, explicitly stated in the pinned file header",
+  "raw_url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1115.lean"
+}

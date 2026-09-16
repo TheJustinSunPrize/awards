@@ -1,0 +1,2 @@
+'Erdos1115.curve_escapes_of_composition_escapes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1115.not_erdos_1115_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]

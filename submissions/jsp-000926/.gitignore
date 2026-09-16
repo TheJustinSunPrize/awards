@@ -1,0 +1,6 @@
+.lake/
+.reproduction/
+__pycache__/
+JSP000926/Upstream.lean
+*.olean
+*.ilean

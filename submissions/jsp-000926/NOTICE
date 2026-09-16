@@ -1,0 +1,15 @@
+JSP-000926 geometric-arclength extension, 2026.
+Prepared with OpenAI Codex assistance. Proposed recipient confirmation is pending.
+
+The unchanged prerequisite is fetched at the exact revision in upstream-pin.json.
+Its header attributes the mathematics to A. A. Gol'dberg and Alexandre Eremenko,
+the formalization to Codex and GPT-5.6 Sol, and specifies Apache 2.0.
+
+GeometricLength.lean adapts the first-hitting and alternating-gate argument from
+labyrinth_isLengthBarrier in that source, with a different geometric length
+conclusion. It also reuses the existing entire-function construction via import.
+The three new modules are additive formalization contributions, not a claim of
+new mathematical discovery or authorship of the imported construction.
+
+Mathlib's eVariationOn infrastructure is by Sebastien Gouezel and contributors,
+Apache 2.0; Mathlib and all dependency revisions are pinned in lake-manifest.json.

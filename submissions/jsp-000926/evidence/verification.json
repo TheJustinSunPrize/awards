@@ -1,0 +1,311 @@
+{
+  "started_at_utc": "2026-09-16T23:24:27.466827+00:00",
+  "lean_version": "Lean (version 4.33.0, x86_64-w64-windows-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "mathlib_manifest_sha256": "56f0aa1ff2fe546d0356da6f12f15c1242a3a6d6199315ec9860be9c31209453",
+  "prerequisite": {
+    "repository": "https://github.com/plby/lean-proofs",
+    "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+    "path": "src/latest/ErdosProblems/Erdos1115.lean",
+    "sha256": "c2d04a4823de2d7d92d687c10f7deb076d579b9c0b6817a0bfc983752e65838c",
+    "bytes": 152663,
+    "license": "Apache-2.0, explicitly stated in the pinned file header",
+    "raw_url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1115.lean"
+  },
+  "source_sha256": {
+    "JSP000926/Upstream.lean": "c2d04a4823de2d7d92d687c10f7deb076d579b9c0b6817a0bfc983752e65838c",
+    "JSP000926/GeometricLength.lean": "ce79c8c0ab88b4e942205432ac4b4b92e7bea49fa7eba21b8285b5e4422c0289",
+    "JSP000926/LengthProperties.lean": "d50a4c46d41c5e5b70d8c61fcec09881a558c7fbaada605f3b294491bbd5757b",
+    "JSP000926/CurveStatement.lean": "966456733ae1a2dcd168705d7f23b8636a476cd3d0c3243072eea55d7ba4b528",
+    "JSP000926/Audit.lean": "68263048afa8ca3c36632060f93584eabb037001896e8a2663df369972b102c3"
+  },
+  "steps": [
+    {
+      "module": "JSP000926.Upstream",
+      "mode": "compile",
+      "tool": "lean.exe",
+      "arguments": [
+        "-o",
+        ".\\.reproduction\\20260916T232427466827Z\\lib\\lean\\JSP000926\\Upstream.olean",
+        ".\\JSP000926\\Upstream.lean"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 23.094,
+      "source_sha256": "c2d04a4823de2d7d92d687c10f7deb076d579b9c0b6817a0bfc983752e65838c",
+      "log": "Upstream-compile.log",
+      "imported_project_artifacts": {},
+      "source_identity_unchanged": true,
+      "artifact_identity_unchanged": true
+    },
+    {
+      "module": "JSP000926.GeometricLength",
+      "mode": "compile",
+      "tool": "lean.exe",
+      "arguments": [
+        "-o",
+        ".\\.reproduction\\20260916T232427466827Z\\lib\\lean\\JSP000926\\GeometricLength.olean",
+        ".\\JSP000926\\GeometricLength.lean"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 11.672,
+      "source_sha256": "ce79c8c0ab88b4e942205432ac4b4b92e7bea49fa7eba21b8285b5e4422c0289",
+      "log": "GeometricLength-compile.log",
+      "imported_project_artifacts": {
+        "JSP000926/Upstream.olean": "0dc69f92e754bf35d4aceacfa159a450d1e85bd32a48bb38651a32621aa29aae"
+      },
+      "source_identity_unchanged": true,
+      "artifact_identity_unchanged": true
+    },
+    {
+      "module": "JSP000926.LengthProperties",
+      "mode": "compile",
+      "tool": "lean.exe",
+      "arguments": [
+        "-o",
+        ".\\.reproduction\\20260916T232427466827Z\\lib\\lean\\JSP000926\\LengthProperties.olean",
+        ".\\JSP000926\\LengthProperties.lean"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 8.734,
+      "source_sha256": "d50a4c46d41c5e5b70d8c61fcec09881a558c7fbaada605f3b294491bbd5757b",
+      "log": "LengthProperties-compile.log",
+      "imported_project_artifacts": {
+        "JSP000926/GeometricLength.olean": "3619e84abebd965ce7e42e40dea7a21d0f3fff3a0dad712d12337aa072654de7",
+        "JSP000926/Upstream.olean": "0dc69f92e754bf35d4aceacfa159a450d1e85bd32a48bb38651a32621aa29aae"
+      },
+      "source_identity_unchanged": true,
+      "artifact_identity_unchanged": true
+    },
+    {
+      "module": "JSP000926.CurveStatement",
+      "mode": "compile",
+      "tool": "lean.exe",
+      "arguments": [
+        "-o",
+        ".\\.reproduction\\20260916T232427466827Z\\lib\\lean\\JSP000926\\CurveStatement.olean",
+        ".\\JSP000926\\CurveStatement.lean"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 9.141,
+      "source_sha256": "966456733ae1a2dcd168705d7f23b8636a476cd3d0c3243072eea55d7ba4b528",
+      "log": "CurveStatement-compile.log",
+      "imported_project_artifacts": {
+        "JSP000926/GeometricLength.olean": "3619e84abebd965ce7e42e40dea7a21d0f3fff3a0dad712d12337aa072654de7",
+        "JSP000926/LengthProperties.olean": "3b4688b67a432862d224daa6ee334272dc2f166d9d6cb2149000a44dbbf4d5e3",
+        "JSP000926/Upstream.olean": "0dc69f92e754bf35d4aceacfa159a450d1e85bd32a48bb38651a32621aa29aae"
+      },
+      "source_identity_unchanged": true,
+      "artifact_identity_unchanged": true
+    },
+    {
+      "module": "JSP000926.Audit",
+      "mode": "compile",
+      "tool": "lean.exe",
+      "arguments": [
+        "-o",
+        ".\\.reproduction\\20260916T232427466827Z\\lib\\lean\\JSP000926\\Audit.olean",
+        ".\\JSP000926\\Audit.lean"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 8.531,
+      "source_sha256": "68263048afa8ca3c36632060f93584eabb037001896e8a2663df369972b102c3",
+      "log": "Audit-compile.log",
+      "imported_project_artifacts": {
+        "JSP000926/CurveStatement.olean": "77d5d797c0a0f76a42bf43d483797aa84f958569429f15dd4279359f3355b593",
+        "JSP000926/GeometricLength.olean": "3619e84abebd965ce7e42e40dea7a21d0f3fff3a0dad712d12337aa072654de7",
+        "JSP000926/LengthProperties.olean": "3b4688b67a432862d224daa6ee334272dc2f166d9d6cb2149000a44dbbf4d5e3",
+        "JSP000926/Upstream.olean": "0dc69f92e754bf35d4aceacfa159a450d1e85bd32a48bb38651a32621aa29aae"
+      },
+      "source_identity_unchanged": true,
+      "artifact_identity_unchanged": true
+    },
+    {
+      "module": "JSP000926.Upstream",
+      "mode": "replay",
+      "tool": "leanchecker.exe",
+      "arguments": [
+        "--verbose",
+        "JSP000926.Upstream"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 11.046,
+      "source_sha256": "c2d04a4823de2d7d92d687c10f7deb076d579b9c0b6817a0bfc983752e65838c",
+      "log": "Upstream-replay.log",
+      "imported_project_artifacts": {
+        "JSP000926/Audit.olean": "842950f63ca62d6d8f18f634cef1b5257ccb00848e81badc7f3f201e43cf372a",
+        "JSP000926/CurveStatement.olean": "77d5d797c0a0f76a42bf43d483797aa84f958569429f15dd4279359f3355b593",
+        "JSP000926/GeometricLength.olean": "3619e84abebd965ce7e42e40dea7a21d0f3fff3a0dad712d12337aa072654de7",
+        "JSP000926/LengthProperties.olean": "3b4688b67a432862d224daa6ee334272dc2f166d9d6cb2149000a44dbbf4d5e3",
+        "JSP000926/Upstream.olean": "0dc69f92e754bf35d4aceacfa159a450d1e85bd32a48bb38651a32621aa29aae"
+      },
+      "source_identity_unchanged": true,
+      "artifact_identity_unchanged": true,
+      "replayed_modules": [
+        "JSP000926.Upstream"
+      ],
+      "exact_replay_match": true
+    },
+    {
+      "module": "JSP000926.GeometricLength",
+      "mode": "replay",
+      "tool": "leanchecker.exe",
+      "arguments": [
+        "--verbose",
+        "JSP000926.GeometricLength"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 11.234,
+      "source_sha256": "ce79c8c0ab88b4e942205432ac4b4b92e7bea49fa7eba21b8285b5e4422c0289",
+      "log": "GeometricLength-replay.log",
+      "imported_project_artifacts": {
+        "JSP000926/Audit.olean": "842950f63ca62d6d8f18f634cef1b5257ccb00848e81badc7f3f201e43cf372a",
+        "JSP000926/CurveStatement.olean": "77d5d797c0a0f76a42bf43d483797aa84f958569429f15dd4279359f3355b593",
+        "JSP000926/GeometricLength.olean": "3619e84abebd965ce7e42e40dea7a21d0f3fff3a0dad712d12337aa072654de7",
+        "JSP000926/LengthProperties.olean": "3b4688b67a432862d224daa6ee334272dc2f166d9d6cb2149000a44dbbf4d5e3",
+        "JSP000926/Upstream.olean": "0dc69f92e754bf35d4aceacfa159a450d1e85bd32a48bb38651a32621aa29aae"
+      },
+      "source_identity_unchanged": true,
+      "artifact_identity_unchanged": true,
+      "replayed_modules": [
+        "JSP000926.GeometricLength"
+      ],
+      "exact_replay_match": true
+    },
+    {
+      "module": "JSP000926.LengthProperties",
+      "mode": "replay",
+      "tool": "leanchecker.exe",
+      "arguments": [
+        "--verbose",
+        "JSP000926.LengthProperties"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 10.516,
+      "source_sha256": "d50a4c46d41c5e5b70d8c61fcec09881a558c7fbaada605f3b294491bbd5757b",
+      "log": "LengthProperties-replay.log",
+      "imported_project_artifacts": {
+        "JSP000926/Audit.olean": "842950f63ca62d6d8f18f634cef1b5257ccb00848e81badc7f3f201e43cf372a",
+        "JSP000926/CurveStatement.olean": "77d5d797c0a0f76a42bf43d483797aa84f958569429f15dd4279359f3355b593",
+        "JSP000926/GeometricLength.olean": "3619e84abebd965ce7e42e40dea7a21d0f3fff3a0dad712d12337aa072654de7",
+        "JSP000926/LengthProperties.olean": "3b4688b67a432862d224daa6ee334272dc2f166d9d6cb2149000a44dbbf4d5e3",
+        "JSP000926/Upstream.olean": "0dc69f92e754bf35d4aceacfa159a450d1e85bd32a48bb38651a32621aa29aae"
+      },
+      "source_identity_unchanged": true,
+      "artifact_identity_unchanged": true,
+      "replayed_modules": [
+        "JSP000926.LengthProperties"
+      ],
+      "exact_replay_match": true
+    },
+    {
+      "module": "JSP000926.CurveStatement",
+      "mode": "replay",
+      "tool": "leanchecker.exe",
+      "arguments": [
+        "--verbose",
+        "JSP000926.CurveStatement"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 10.844,
+      "source_sha256": "966456733ae1a2dcd168705d7f23b8636a476cd3d0c3243072eea55d7ba4b528",
+      "log": "CurveStatement-replay.log",
+      "imported_project_artifacts": {
+        "JSP000926/Audit.olean": "842950f63ca62d6d8f18f634cef1b5257ccb00848e81badc7f3f201e43cf372a",
+        "JSP000926/CurveStatement.olean": "77d5d797c0a0f76a42bf43d483797aa84f958569429f15dd4279359f3355b593",
+        "JSP000926/GeometricLength.olean": "3619e84abebd965ce7e42e40dea7a21d0f3fff3a0dad712d12337aa072654de7",
+        "JSP000926/LengthProperties.olean": "3b4688b67a432862d224daa6ee334272dc2f166d9d6cb2149000a44dbbf4d5e3",
+        "JSP000926/Upstream.olean": "0dc69f92e754bf35d4aceacfa159a450d1e85bd32a48bb38651a32621aa29aae"
+      },
+      "source_identity_unchanged": true,
+      "artifact_identity_unchanged": true,
+      "replayed_modules": [
+        "JSP000926.CurveStatement"
+      ],
+      "exact_replay_match": true
+    },
+    {
+      "module": "JSP000926.Audit",
+      "mode": "replay",
+      "tool": "leanchecker.exe",
+      "arguments": [
+        "--verbose",
+        "JSP000926.Audit"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 10.625,
+      "source_sha256": "68263048afa8ca3c36632060f93584eabb037001896e8a2663df369972b102c3",
+      "log": "Audit-replay.log",
+      "imported_project_artifacts": {
+        "JSP000926/Audit.olean": "842950f63ca62d6d8f18f634cef1b5257ccb00848e81badc7f3f201e43cf372a",
+        "JSP000926/CurveStatement.olean": "77d5d797c0a0f76a42bf43d483797aa84f958569429f15dd4279359f3355b593",
+        "JSP000926/GeometricLength.olean": "3619e84abebd965ce7e42e40dea7a21d0f3fff3a0dad712d12337aa072654de7",
+        "JSP000926/LengthProperties.olean": "3b4688b67a432862d224daa6ee334272dc2f166d9d6cb2149000a44dbbf4d5e3",
+        "JSP000926/Upstream.olean": "0dc69f92e754bf35d4aceacfa159a450d1e85bd32a48bb38651a32621aa29aae"
+      },
+      "source_identity_unchanged": true,
+      "artifact_identity_unchanged": true,
+      "replayed_modules": [
+        "JSP000926.Audit"
+      ],
+      "exact_replay_match": true
+    }
+  ],
+  "helper_sha256": "4b013b7d6317cfaa05ead454e1ab1517ae726c6b9cf62b5bcc3ecd636b68facb",
+  "bootstrap_sha256": "783b53e0619d1ebdd0ccaf656982361185043396774e0632d2388da35919c280",
+  "tool_sha256": {
+    "lean.exe": "dd86e9b24990b1da425ea4af910f016e4db8f9a25c9ddad27bc6bee3690e677f",
+    "leanchecker.exe": "e1ab36b0ea3d0310e3058cda1dce1c072f78c5938303e8596fa3f24267c715ce"
+  },
+  "environment": {
+    "os": "win32",
+    "network_disabled": false,
+    "LEAN_NUM_THREADS": "1",
+    "LEAN_SYSROOT": "explicit parent of supplied lean-bin directory"
+  },
+  "limitations": [
+    "Existing pinned Mathlib/dependency binaries were imported; no full source rebuild.",
+    "lean and leanchecker use the same Lean kernel, not independent implementations.",
+    "This is contributor-run verification, not organizer certification."
+  ],
+  "target_axioms": {
+    "Erdos1115.labyrinth_isGeometricLengthBarrier": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos1115.not_erdos_1115_geometric": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos1115.not_erdos_1115_continuousOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos1115.curve_escapes_of_composition_escapes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos1115.geometricLengthInDisc_mono": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos1115.geometricLengthInDisc_ne_top_of_locallyBoundedVariationOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "completed_at_utc": "2026-09-16T23:26:23.022077+00:00",
+  "all_steps_passed": true,
+  "module_artifacts": {
+    "JSP000926/Audit.olean": "842950f63ca62d6d8f18f634cef1b5257ccb00848e81badc7f3f201e43cf372a",
+    "JSP000926/CurveStatement.olean": "77d5d797c0a0f76a42bf43d483797aa84f958569429f15dd4279359f3355b593",
+    "JSP000926/GeometricLength.olean": "3619e84abebd965ce7e42e40dea7a21d0f3fff3a0dad712d12337aa072654de7",
+    "JSP000926/LengthProperties.olean": "3b4688b67a432862d224daa6ee334272dc2f166d9d6cb2149000a44dbbf4d5e3",
+    "JSP000926/Upstream.olean": "0dc69f92e754bf35d4aceacfa159a450d1e85bd32a48bb38651a32621aa29aae"
+  }
+}
