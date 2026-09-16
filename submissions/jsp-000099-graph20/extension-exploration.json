@@ -1,0 +1,10 @@
+{
+  "scope": "Extensions of this one fixed graph only; not all graphs of order 21",
+  "neighborhoods": 1048576,
+  "forbidden_patterns": 2394,
+  "patterns_needed_to_cover": 1445,
+  "excluded_neighborhoods": 1048576,
+  "surviving_neighborhoods": 0,
+  "seconds": 1.8366677500016522,
+  "formal_status": "Computational exploration, not Lean verified"
+}

@@ -1,0 +1,170 @@
+{
+  "started_at_utc": "2026-09-16T20:38:49.984317+00:00",
+  "meaning": "Local formal verification; not official prize review; not a globally first result",
+  "independent_formal_checker": "Not run; leanchecker uses the Lean kernel",
+  "source_sha256": {
+    "Audit.lean": "ee4485f545804093e95ffdc28ea19df26566fc6e767e40bf72b23411eccba816",
+    "CertificateSteps.lean": "6d41e340b880306c721740c30803e760bf196cd785454cbc46e7e5057291696f",
+    "CheckpointCertificate.lean": "a424e42b985bb99328453fcae7250da92f3d3fcf15ffca19cf9030c1e7ab7bd6",
+    "Degree0.lean": "c67868330b078e1104c85f7d2b19a6957ccadd1a6cdaa38a03460beee46adddd",
+    "Degree1.lean": "dd566cf2f07b087d37551c2d4ffc4fe6b35d8a8b72bd906e8231189cbeed2a2c",
+    "Degree10.lean": "6c516ddbdfdc40b7b4891d6b258ef0335cd82bffc01d16634294dfae70a63bb5",
+    "Degree11.lean": "0e2615e9c67592216428035f85a360ba57766b5ea574359707f9d4a0a404be76",
+    "Degree12.lean": "2eb33e3789041d85b35fdb46fde078af31c86966cfba443e0097648c6fcbef60",
+    "Degree13.lean": "c1e1af16e40838384f8eb75651880828049536712f71399be892c373de884ff3",
+    "Degree14.lean": "2c6c370693ff58fd6bad3c64bf86b88d06cddc500b43bea8e4102203ea070b5e",
+    "Degree15.lean": "b1aa14fac8a53db46cec95e1b9ae4070c22d900181cd647ffdabfabdd3ccfd8d",
+    "Degree16.lean": "67d05f16cf09148f69eab5600b17de2698dc6c65665d8c964a6644ca95b6a859",
+    "Degree17.lean": "ce10e24919d91010d94c43ef784dc0538173a24ec80175c9e241c095ea0e13a1",
+    "Degree18.lean": "8ba26e9f63b9dcd916e13ca417f08c43e1df7e5fd31e869aa3e3da1f09afd492",
+    "Degree19.lean": "187a6a0f2faacdc89b542b768a1e8765ccd5b8f64052db632fe4c06e50a92260",
+    "Degree2.lean": "eeddc4ca1a52a05e1b0f0db8cfe3907d44432dfa184c324c63aab6d215f8ed21",
+    "Degree3.lean": "a90c5de42de29089fd54d485dc557448069f22dfb9328b60aafbf7ede5379db2",
+    "Degree4.lean": "9a69f5581fdd310d7ec7a48f5fb5b463771af59f4bef181aa086e32f119fb990",
+    "Degree5.lean": "c8b0e15ed3dd28a44a1f219aca6f13af2779415f155ceadea549f7e7d8de40a0",
+    "Degree6.lean": "58285acbe2108bd994573c42539d1b32e4625a7889aef1877b7a58b881088fa5",
+    "Degree7.lean": "91a0bcc90a673cca5459e8480dd7f9c849d1cef242de51c486aa239aee1f0126",
+    "Degree8.lean": "b2615d408a3e8a5b1715021b7644a1efcceaec547ba32cb27b00672dd8a52da7",
+    "Degree9.lean": "978288af5e50816cb9f07ae9a22a1153de143c4e6438739edff32567a143e79c",
+    "Graph20.lean": "76338fae6d3c2db2d6213488c7b7434634616f921d251ad79729505e171d696f",
+    "Graph20Result.lean": "3f0aa67bd7049d8abbfb6f06f6020755f7e73eb33e5c0d8b357a6b72e0931de7",
+    "GraphBridge.lean": "2009f3937c617c10d245add65dfde65230e4ed18288554de25373937a91e2a39",
+    "MaskCertificate.lean": "fdc219bda08d6acd4d36014568ed6119df0ec62cb636495239850f928bcd6314",
+    "NegativeControls.lean": "a8ced1dd9d05d7cdaea27133d7bda7f89082e9591cf3527bdf4d82b85d61e0fe",
+    "RegularCertificate.lean": "49603135797aee37c2a4847f3c7f2d0a70ec80b4e538d580226e92ab9819fa38",
+    "explore_extension.py": "dc8a13176f3f47c5dbd0bd11fcaf51e01a6fe7774acd3f05236d4400ea5654df",
+    "fetch_upstream.py": "fb3c1598f636e76ae584e7c5cc1e5c30f4c205bff5fe418fa368cd90fff687d4",
+    "generate_certificates.py": "bd0823c5967ac1d785831ba35368df9f0554cdc998139ea1028e595710f5d4db",
+    "lake-manifest.json": "255190a5617e48485909c194e6026736a142b6fbbf5c1a4619b094e9933e3c31",
+    "lakefile.toml": "28e0a1206ab1c15c9ffe8a10bbc56ad7dd52b675fdbd76fccd12bfb75ce50103",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "verify_formal.py": "a72fbfbe7436a56ad4f08a658b44bf221f1add7b57078bd747ee8c02816409a8",
+    "verify_witness.py": "c384f2b69d13ff0e26f95675fcb827ed453c0076c053633ebc5d0e8bb16dfee5",
+    "witness20.g6": "6bf644663c9126ff2f863348d6bffe5870701c91d019c7a5703044c518729e5a"
+  },
+  "stages": [
+    {
+      "name": "lean-version",
+      "argv": [
+        "/private/tmp/lean-4.34.0-darwin_aarch64/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.04,
+      "log": "lean-version.log",
+      "log_sha256": "ef292bc08ba85881f3b660d4f1ab1143de776aae5d1c392cff9d8c3221407c2b"
+    },
+    {
+      "name": "build-reproduction",
+      "argv": [
+        "/private/tmp/lean-4.34.0-darwin_aarch64/bin/lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "seconds": 15.556,
+      "log": "build-reproduction.log",
+      "log_sha256": "fd1f08a2e0fc38fe98c247f9eb4747e294e94ed8cf6dd8b7428dd2fe7f589045"
+    },
+    {
+      "name": "negative-controls",
+      "argv": [
+        "/private/tmp/lean-4.34.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "NegativeControls.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.416,
+      "log": "negative-controls.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "axiom-audit",
+      "argv": [
+        "/private/tmp/lean-4.34.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.528,
+      "log": "axiom-audit.log",
+      "log_sha256": "51b9d1700bcfd7d02ca420d30fbfaf1cfeca0544e1773e46fc5477b22b201a49"
+    },
+    {
+      "name": "fresh-kernel-replay",
+      "argv": [
+        "/private/tmp/lean-4.34.0-darwin_aarch64/bin/lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "--verbose",
+        "Graph20Result"
+      ],
+      "exit_code": 0,
+      "seconds": 83.675,
+      "log": "fresh-kernel-replay.log",
+      "log_sha256": "e1c2c1fc4d5b696070dea5d817d18b644871c9511b3223e7c4fb55c8f7c28c55"
+    }
+  ],
+  "tool_binaries": {
+    "lean": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+    "lake": "c8c24f1398162ab4004e2a869952d8469f54293651151feaad4526f2b8474c6e",
+    "leanchecker": "cfde41cb11dde58c84e9c60c551fd104bb2fc1104ad44dca932a923120272a35"
+  },
+  "dependency_revisions": {
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "mathlib": "5ed2965256430c3649e86755f9576b54eca72435"
+  },
+  "certificate_regeneration": "All 20 modules match byte for byte",
+  "final_axioms": {
+    "Graph20Proof.graph20_no_regular_induced": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Graph20Proof.exists_graph20": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "local_olean_sha256": {
+    ".lake/build/lib/lean/CertificateSteps.olean": "23b481632df48938cc6bcff262a9563e56fa99a009116097353f01be17b812ca",
+    ".lake/build/lib/lean/CheckpointCertificate.olean": "74d3741dfe69668e4e7d50f112e147b8164173b91d31961b0c28fd656c4133e6",
+    ".lake/build/lib/lean/Degree0.olean": "4feeb49c9826d3edc88d153c8ff1fca18207f198fac2c6ec028bd3b8aedd213c",
+    ".lake/build/lib/lean/Degree1.olean": "6367d093c6a57829ba700a949a82b845ea6dc75b08da8b54dcb3e0cb7f5a9508",
+    ".lake/build/lib/lean/Degree10.olean": "228e3936bdbe33f863f3515540cf897d1b5c85ebb7c94e75c41d43d5021303e8",
+    ".lake/build/lib/lean/Degree11.olean": "7343c2bbd38e8a11e0395af4c560895b721fee2f163abeb0c561cb1171075381",
+    ".lake/build/lib/lean/Degree12.olean": "63b085e747087b9906c25de3586b346d2d2105390da3a03c6cd894205b532a24",
+    ".lake/build/lib/lean/Degree13.olean": "dd320e03bc8c7a0f717de089654e156dfb72ed3949435c17669c32deff3260de",
+    ".lake/build/lib/lean/Degree14.olean": "2fdc77a7478da17e1b115f13b6e8b4e2650fd734fcdd425b2947c1563f50a83c",
+    ".lake/build/lib/lean/Degree15.olean": "d93f1eb94760eedb6927fb9339c80f87e59b8a3ce5003424479485161cf7aa1d",
+    ".lake/build/lib/lean/Degree16.olean": "6ee32afc2422939cad97a071f8cac8375756a5d789fb2c399ecdafee2a2e741d",
+    ".lake/build/lib/lean/Degree17.olean": "5c43648e4ff9dd32d2efbc3993078897deaf032c44ebfe8e474b1bdd6e41ee8e",
+    ".lake/build/lib/lean/Degree18.olean": "f66d477a19877e3ea6de973673fdb8a8a0687db0daf2cbc5bada96bdc40c2df8",
+    ".lake/build/lib/lean/Degree19.olean": "70c9ea2d61598c2b4a86e781648b04507c326cc790f5d232d07f77eedfcd1f93",
+    ".lake/build/lib/lean/Degree2.olean": "81d168feaa253bfb8d4170da91a9a5ca97c291a8be3da00a1050f848b5f84c76",
+    ".lake/build/lib/lean/Degree3.olean": "c5bad76ec41f3b28c5095f6ed6ee59496f1f56a58ef68bb27bc9601614c4df95",
+    ".lake/build/lib/lean/Degree4.olean": "b24b95b99ac18f04d74b76f1c58aa7475bfa8f400a556646121da469ae388bb7",
+    ".lake/build/lib/lean/Degree5.olean": "4c9e7bd9b544b3b31dda0ddde9caa38abec560f19fd12efb4e2ea085b7abde06",
+    ".lake/build/lib/lean/Degree6.olean": "5917d788849a6161acaca585ea41b3882ac9e57cc14341b83196333d761e88e5",
+    ".lake/build/lib/lean/Degree7.olean": "946868dcacd362e27d611fe355098bde0ce7a78b854ab3d9588b45b488f2cad4",
+    ".lake/build/lib/lean/Degree8.olean": "06e7bedc5a69713e69bce7feada85cdeb44e4ed1f24d37c5bd98d4c3fb49893a",
+    ".lake/build/lib/lean/Degree9.olean": "d5d4377156326807f122a59755acc95c63bb30f35ad92477cd41a53bd3718091",
+    ".lake/build/lib/lean/Graph20.olean": "ebda06fbce6ec5d8e294b09b02af2566717452565b3e4492a8a189ba2c3a3e29",
+    ".lake/build/lib/lean/Graph20Result.olean": "8c6ca28b5d4e28ad5f3c4b20e40b5f1f06f70785ca8f00c7ec1d1627362fd9fe",
+    ".lake/build/lib/lean/GraphBridge.olean": "abb84f43bb00cdb8f93f88bf5dc598e6621beae6975936a000b0f472d559e21e",
+    ".lake/build/lib/lean/MaskCertificate.olean": "1637ac9b578053db03b3790ef0978fb26a90daf811fe019bb53fc4e89923c4e3",
+    ".lake/build/lib/lean/RegularCertificate.olean": "8e09bbeb1744fa81a31b5ef051ef99d7f45e712709f86ac6d697138725debdec"
+  },
+  "completed_at_utc": "2026-09-16T20:40:32.333406+00:00",
+  "success": true
+}

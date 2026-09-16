@@ -1,0 +1,54 @@
+{
+  "repository": "https://github.com/jinkaizhang236-sketch/awards",
+  "commit": "4022d2df0f941a12f497d5045b75995e0cf8f883",
+  "attribution": "jinkaizhang236-sketch and the contributors to JSP PR #190",
+  "license_status": "Scope clarification requested; no license to external sources is granted by this package.",
+  "inquiry": "https://github.com/TheJustinSunPrize/awards/pull/190#issuecomment-5704109522",
+  "files": [
+    {
+      "name": "RegularCertificate.lean",
+      "url": "https://raw.githubusercontent.com/jinkaizhang236-sketch/awards/4022d2df0f941a12f497d5045b75995e0cf8f883/submissions/jsp-000099-graph29/RegularCertificate.lean",
+      "source_sha256": "49603135797aee37c2a4847f3c7f2d0a70ec80b4e538d580226e92ab9819fa38",
+      "assembled_sha256": "49603135797aee37c2a4847f3c7f2d0a70ec80b4e538d580226e92ab9819fa38"
+    },
+    {
+      "name": "MaskCertificate.lean",
+      "url": "https://raw.githubusercontent.com/jinkaizhang236-sketch/awards/4022d2df0f941a12f497d5045b75995e0cf8f883/submissions/jsp-000099-graph29/MaskCertificate.lean",
+      "source_sha256": "268c60f09f518a7c295b8083bd10680eb62801684f045ff0a75328b7f510dd00",
+      "assembled_sha256": "fdc219bda08d6acd4d36014568ed6119df0ec62cb636495239850f928bcd6314"
+    },
+    {
+      "name": "CheckpointCertificate.lean",
+      "url": "https://raw.githubusercontent.com/jinkaizhang236-sketch/awards/4022d2df0f941a12f497d5045b75995e0cf8f883/submissions/jsp-000099-graph29/CheckpointCertificate.lean",
+      "source_sha256": "ef16b038d21d8e2674cf4a8851bc47d0d1cabdc6bf412204265182ae9a85c056",
+      "assembled_sha256": "a424e42b985bb99328453fcae7250da92f3d3fcf15ffca19cf9030c1e7ab7bd6"
+    },
+    {
+      "name": "CertificateSteps.lean",
+      "url": "https://raw.githubusercontent.com/jinkaizhang236-sketch/awards/4022d2df0f941a12f497d5045b75995e0cf8f883/submissions/jsp-000099-graph29/CertificateSteps.lean",
+      "source_sha256": "ccb9b70fca55ae4bddc0f505848c8f42d05e43dd5214b21b7d557885b3634a48",
+      "assembled_sha256": "6d41e340b880306c721740c30803e760bf196cd785454cbc46e7e5057291696f"
+    },
+    {
+      "name": "GraphBridge.lean",
+      "url": "https://raw.githubusercontent.com/jinkaizhang236-sketch/awards/4022d2df0f941a12f497d5045b75995e0cf8f883/submissions/jsp-000099-graph29/GraphBridge.lean",
+      "source_sha256": "1219e50440aa0cfc540229353176383662ea6bca4311e28ca533bb472c8ba29a",
+      "assembled_sha256": "2009f3937c617c10d245add65dfde65230e4ed18288554de25373937a91e2a39"
+    },
+    {
+      "name": "LICENSE",
+      "url": "https://raw.githubusercontent.com/jinkaizhang236-sketch/awards/4022d2df0f941a12f497d5045b75995e0cf8f883/LICENSE",
+      "source_sha256": "1705c0d9e23902f751ba938ff712da181d0f8117f7138be19401d612b95baaeb"
+    },
+    {
+      "name": "LICENSE-CONTENT",
+      "url": "https://raw.githubusercontent.com/jinkaizhang236-sketch/awards/4022d2df0f941a12f497d5045b75995e0cf8f883/LICENSE-CONTENT",
+      "source_sha256": "1b569fe0251daccc1a44da52911e65a76d07ad88858bf858a2b5c5751b34d2f5"
+    },
+    {
+      "name": "THIRD_PARTY_NOTICES.md",
+      "url": "https://raw.githubusercontent.com/jinkaizhang236-sketch/awards/4022d2df0f941a12f497d5045b75995e0cf8f883/submissions/jsp-000099-graph29/THIRD_PARTY_NOTICES.md",
+      "source_sha256": "e8ef62ea0ac7bcdea418070d6cd49bfb013828e3787f65f6d693ead29642a1c5"
+    }
+  ]
+}

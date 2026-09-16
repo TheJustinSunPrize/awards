@@ -1,0 +1,8 @@
+.lake/
+__pycache__/
+.upstream/
+RegularCertificate.lean
+MaskCertificate.lean
+CheckpointCertificate.lean
+CertificateSteps.lean
+GraphBridge.lean
