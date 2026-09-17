@@ -1,0 +1,35 @@
+✔ [2570/2586] Built Mathlib.Analysis.Complex.Angle (31s)
+⚠ [2579/2587] Built SendovFiveDirections (38s)
+warning: vendor/SendovFiveDirections.lean:1:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Real.Basic
+warning: vendor/SendovFiveDirections.lean:25:5: Variable name `r04` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _r04
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: vendor/SendovFiveDirections.lean:406:0: 'SendovFiveDirections.five_halves_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [2581/2588] Built JSP404.Basic (21s)
+ℹ [3300/3306] Built SendovDirectionGeometry (17s)
+info: vendor/SendovDirectionGeometry.lean:285:0: 'SendovDirectionGeometry.middle_angle_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: vendor/SendovDirectionGeometry.lean:286:0: 'SendovDirectionGeometry.arg_between' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: vendor/SendovDirectionGeometry.lean:287:0: 'SendovDirectionGeometry.triangle_labels' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: vendor/SendovDirectionGeometry.lean:288:0: 'SendovDirectionGeometry.five_ordered_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: vendor/SendovDirectionGeometry.lean:289:0: 'SendovDirectionGeometry.five_point_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: vendor/SendovDirectionGeometry.lean:290:0: 'SendovDirectionGeometry.five_points_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3301/3306] Built Mathlib.Tactic (17s)
+ℹ [3303/3335] Built SendovDirectionModel (16s)
+info: vendor/SendovDirectionModel.lean:87:0: 'SendovDirectionModel.model_of_complex_points' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: vendor/SendovDirectionModel.lean:88:0: 'SendovDirectionModel.model_of_plane_points' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: vendor/SendovDirectionModel.lean:89:0: 'SendovDirectionModel.model_of_finite_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: vendor/SendovDirectionModel.lean:90:0: 'SendovDirectionModel.card_bound_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3324/3335] Built JSP404.HierarchicalConstruction (20s)
+✔ [3329/3335] Built Mathlib.Geometry.Euclidean.Angle.Unoriented.TriangleInequality (18s)
+✔ [3330/3335] Built Mathlib.Combinatorics.SimpleGraph.Coloring.Vertex (11s)
+✔ [3331/3335] Built JSP404.BinaryConstruction (19s)
+✔ [3332/3335] Built JSP404.BinaryEncoding (17s)
+✔ [3333/3335] Built JSP404.DirectionalCover (17s)
+✔ [3334/3335] Built JSP404.EquallySpacedDirections (17s)
+✔ [3335/3335] Built JSP404.ClassicalBounds (16s)
+Build completed successfully (3335 jobs).

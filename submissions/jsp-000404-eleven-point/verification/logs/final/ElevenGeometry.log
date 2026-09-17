@@ -1,0 +1,3 @@
+'SunPrize.guaranteed_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunPrize.eleven_point_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunPrize.alpha_eleven_to_sixteen' depends on axioms: [propext, Classical.choice, Quot.sound]

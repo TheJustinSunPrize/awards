@@ -1,0 +1,16 @@
+.work/
+.tools/
+.lake/
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+*.c
+*.o
+*.a
+*.dll
+*.exe
+*.zip
+*.tar.gz
+*.tar.zst
+*.pdf

@@ -1,0 +1,22 @@
+[
+  {
+    "module": "SunPrize.Certificate.LogicClosure",
+    "path": "SunPrize/Certificate/LogicClosure.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.InputsValid",
+    "path": "SunPrize/Certificate/InputsValid.lean"
+  },
+  {
+    "module": "SunPrize.ElevenModel",
+    "path": "SunPrize/ElevenModel.lean"
+  },
+  {
+    "module": "SunPrize.ElevenGeometry",
+    "path": "SunPrize/ElevenGeometry.lean"
+  },
+  {
+    "module": "SunPrize",
+    "path": "SunPrize.lean"
+  }
+]

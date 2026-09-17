@@ -1,0 +1,1566 @@
+{
+  "Audit.lean": {
+    "sha256": "9a912b2054d08f4d4631624b5d893c497bb9666ffba74bdf8d4a51c6e5552454",
+    "bytes": 730
+  },
+  "SunPrize/Certificate/Derived000.lean": {
+    "sha256": "1a9f4efebca1357b067fd3e3d4a7692f20fa694954594903e5afa598e1e318c3",
+    "bytes": 118102
+  },
+  "SunPrize/Certificate/Derived001.lean": {
+    "sha256": "43b313efeb47a103bd72f45520ccf5032c9f8af893d270582957653ce1f3367a",
+    "bytes": 136329
+  },
+  "SunPrize/Certificate/Derived002.lean": {
+    "sha256": "607001ed881b523a5306b0d0a059ec769be1fc2ab53bafe21fccc463bd0a15c5",
+    "bytes": 144963
+  },
+  "SunPrize/Certificate/Derived003.lean": {
+    "sha256": "69c75695ad29015af7ca9a76d27c5611dd603d9a3f1674564b8fcd43e71a6a20",
+    "bytes": 138317
+  },
+  "SunPrize/Certificate/Derived004.lean": {
+    "sha256": "d555301c27ca857cca89e8256ed2329912498bde6cfb0c4b79faafbbb3d10874",
+    "bytes": 139519
+  },
+  "SunPrize/Certificate/Derived005.lean": {
+    "sha256": "80f085ce2651efc68b44b2395d5f9458582425a111e893a207169f32c554e1ce",
+    "bytes": 139253
+  },
+  "SunPrize/Certificate/Derived006.lean": {
+    "sha256": "9165eeba68cd603ff76bf6ea085f1775a630f141903f6f00dca4444c3a1fe4d0",
+    "bytes": 141309
+  },
+  "SunPrize/Certificate/Derived007.lean": {
+    "sha256": "6b397d612c994b6303c3c33210fa445d0513f40336714225f7e32ad30f4851dc",
+    "bytes": 141298
+  },
+  "SunPrize/Certificate/Derived008.lean": {
+    "sha256": "06046da3b30d17748676941265252eaf090364cd3a141bde5c3ed5aa1d0112ab",
+    "bytes": 135075
+  },
+  "SunPrize/Certificate/Derived009.lean": {
+    "sha256": "723bd20c8de65426b9e172c40f2ada4e951c3a36fe62bc837a1544cc060164ca",
+    "bytes": 145486
+  },
+  "SunPrize/Certificate/Derived010.lean": {
+    "sha256": "24e8acea892eae25994b3da6d6724134aa677fff4460c7105a4a431254af0991",
+    "bytes": 140343
+  },
+  "SunPrize/Certificate/Derived011.lean": {
+    "sha256": "88773bde7c0bf4e19130a8ffb5c8accf1e99cbf837cafc3a3b2053544584a80b",
+    "bytes": 148187
+  },
+  "SunPrize/Certificate/Derived012.lean": {
+    "sha256": "933ebd349cd972e2bbb75ed590cb340a9af00d3daa7bd7c1111f86149cf56fbc",
+    "bytes": 152024
+  },
+  "SunPrize/Certificate/Derived013.lean": {
+    "sha256": "f5e6de9514a5dce1f6334e0f6b975f5acd9ee949f6456da6a23854e5e0965016",
+    "bytes": 154649
+  },
+  "SunPrize/Certificate/Derived014.lean": {
+    "sha256": "ab88d038c63a845260493831953204e7df5f7a217a2b1f198da26b4efbcd22a7",
+    "bytes": 150266
+  },
+  "SunPrize/Certificate/Derived015.lean": {
+    "sha256": "6b7a323f11b1ade5a1d204a086fe0cbf8b74b388256d12cc88bffb4e7ff75fb8",
+    "bytes": 152247
+  },
+  "SunPrize/Certificate/Derived016.lean": {
+    "sha256": "e6d27a43793f1ad5e30a3d42df70824482bd5b4cf3466b112832efaf4f892b03",
+    "bytes": 154122
+  },
+  "SunPrize/Certificate/Derived017.lean": {
+    "sha256": "1dbc2cb1de57c1f75518e2caf664d28d7cbc6cb4507c25b18dea440c6ad07e8f",
+    "bytes": 156758
+  },
+  "SunPrize/Certificate/Derived018.lean": {
+    "sha256": "0ce292394e5def4e4c1ecbb0965b92c614653a137962e3661aa1f800c50e66e9",
+    "bytes": 152537
+  },
+  "SunPrize/Certificate/Derived019.lean": {
+    "sha256": "186830644b3b5b3c998ac7f5096089d19cc4117ae24cb2a47d1573d0339f5112",
+    "bytes": 153453
+  },
+  "SunPrize/Certificate/Derived020.lean": {
+    "sha256": "40ae2c8614b835992d1c4131f98acb2787a5d1c1ef88d2fe3614334490b493dd",
+    "bytes": 153941
+  },
+  "SunPrize/Certificate/Derived021.lean": {
+    "sha256": "ea334b8ac48e0b11bb0df9882142b12db3cb18671eccc570a2678c8948f302dd",
+    "bytes": 159679
+  },
+  "SunPrize/Certificate/Derived022.lean": {
+    "sha256": "062fdb3521c3532231adeb1f11a3b799527a7baf47178fcd61f8741407345b92",
+    "bytes": 164272
+  },
+  "SunPrize/Certificate/Derived023.lean": {
+    "sha256": "37886b2791d3f041bc8649c1d6f40f8991bb671858bc219d9a589c0282103b4d",
+    "bytes": 83370
+  },
+  "SunPrize/Certificate/Derived024.lean": {
+    "sha256": "5753257fdc26541be288f8e0bc8de6adb9727060cb0c9e293d2c87ce330136b7",
+    "bytes": 150736
+  },
+  "SunPrize/Certificate/Derived025.lean": {
+    "sha256": "3644d99c5e098e99f5ed398af20e2105d85bc865f431f199696e4bf56508683f",
+    "bytes": 411213
+  },
+  "SunPrize/Certificate/Derived026.lean": {
+    "sha256": "a17b1157729115ef5bb4dec4553e22895eb121a32d3ca37ff8e160c3c16c65ff",
+    "bytes": 989112
+  },
+  "SunPrize/Certificate/Derived027.lean": {
+    "sha256": "6af8c5ddc102d4e07312b5f579ca93856d6f0732267966f7c8be179629d0a274",
+    "bytes": 977503
+  },
+  "SunPrize/Certificate/Derived028.lean": {
+    "sha256": "506a7ea42be6334ba8d58e96c5436939d5f1e5e231da105ff5e3865ffe5990a1",
+    "bytes": 638619
+  },
+  "SunPrize/Certificate/Derived029.lean": {
+    "sha256": "09b55a5a8877ed95e1d64d55fa17bbe7f0569abb0ddecb152de85d185fed94b1",
+    "bytes": 914748
+  },
+  "SunPrize/Certificate/Derived030.lean": {
+    "sha256": "de2f146782a1629d3a0d2900a27a10319a2fc44bb335afe29544b2bec9e94a83",
+    "bytes": 299829
+  },
+  "SunPrize/Certificate/Derived031.lean": {
+    "sha256": "d1bd5a467052813049ab7487f00c138ea51b09b56e51d01bcbf3855e52ada0f7",
+    "bytes": 292833
+  },
+  "SunPrize/Certificate/Derived032.lean": {
+    "sha256": "31adf61cb638071c4b041cf3d34f57446527235c59eb9ae75600d14d74c1a7fc",
+    "bytes": 105006
+  },
+  "SunPrize/Certificate/Derived033.lean": {
+    "sha256": "1fc3266311dc990fd5fc6f86cd353198fdca11e0b0ba9f3b82e659d1f6061c2b",
+    "bytes": 150866
+  },
+  "SunPrize/Certificate/Derived034.lean": {
+    "sha256": "067ed5e4b9fe8eb41c01e4378716e9f1d70b1d172a9a19e2529de06c0a85267c",
+    "bytes": 150811
+  },
+  "SunPrize/Certificate/Derived035.lean": {
+    "sha256": "a595a8f2f60468c058303ae119948028c36eff8fdc26454176b5ac4c1c1820e2",
+    "bytes": 139800
+  },
+  "SunPrize/Certificate/Derived036.lean": {
+    "sha256": "d4534f2f83a9fa10511f9ceff1da1618b7495014bf48ac3ebb4038c8c58c15e1",
+    "bytes": 144742
+  },
+  "SunPrize/Certificate/Derived037.lean": {
+    "sha256": "a1ab1ebe2fcbea5638c14ba6d64c3cae783904ec73225dacf3468909fa0cf955",
+    "bytes": 152134
+  },
+  "SunPrize/Certificate/Derived038.lean": {
+    "sha256": "8b28ed8b8c92ede6dfb5e1ddb42f11545e613e53ae7b7424a4969b15f79d0348",
+    "bytes": 148561
+  },
+  "SunPrize/Certificate/Derived039.lean": {
+    "sha256": "dd4b8427625bc1ddd580d9dd4bbb3e88171f4f636d64973c578e09ead417ea07",
+    "bytes": 151066
+  },
+  "SunPrize/Certificate/Derived040.lean": {
+    "sha256": "b35076ecc0216ec424814cd383ff6297f7eaacb7b014270711913b13034a20af",
+    "bytes": 151152
+  },
+  "SunPrize/Certificate/Derived041.lean": {
+    "sha256": "98b50c15edab21550cca4847bedbdc7e4a8ff1cb78b95bd23e4de5daddb577ca",
+    "bytes": 146557
+  },
+  "SunPrize/Certificate/Derived042.lean": {
+    "sha256": "528cec4690749dfc1a6c3cf974a8844fcc02da47c9efef989c19b8c90e41b2f2",
+    "bytes": 146355
+  },
+  "SunPrize/Certificate/Derived043.lean": {
+    "sha256": "4d9f7e43b39a6756450970406c16a04018d8b92ca1c305ffd0aa9bd585bea3e3",
+    "bytes": 149865
+  },
+  "SunPrize/Certificate/Derived044.lean": {
+    "sha256": "1076ed375b2bf31a34d8fd0dcac7e297dbc7f8be7016fa7a232607e73b46765e",
+    "bytes": 150953
+  },
+  "SunPrize/Certificate/Derived045.lean": {
+    "sha256": "2265db73cb5c556431b0e9a54aa81d5ea96d10fd20e1a28cc51f8c575b85d391",
+    "bytes": 147578
+  },
+  "SunPrize/Certificate/Derived046.lean": {
+    "sha256": "aaf3b2b4442a3f7028cd2a09d209083a39ddc9f4bc5eb548b65b3cc14398931a",
+    "bytes": 148603
+  },
+  "SunPrize/Certificate/Derived047.lean": {
+    "sha256": "b3f0b06d7514f9da87d25162728527cfce684dc4cc2285538ed90d1b93067fa3",
+    "bytes": 148234
+  },
+  "SunPrize/Certificate/Derived048.lean": {
+    "sha256": "86d2ea3fdb6ab6f662a84778ed63574ea4a2c64f7145da14b23b4ed69982998e",
+    "bytes": 148370
+  },
+  "SunPrize/Certificate/Derived049.lean": {
+    "sha256": "e80fab0314b6acfdab94088b2a57e6ae948821c3d3108bf0d116a6c304c48bc9",
+    "bytes": 112809
+  },
+  "SunPrize/Certificate/Derived050.lean": {
+    "sha256": "66906f9f9e24d383d0370be0a2d0898dc808ab4e254582cccabf8787c0fcf3ec",
+    "bytes": 152017
+  },
+  "SunPrize/Certificate/Derived051.lean": {
+    "sha256": "f315abc7f38408dfd6349e9dc89d464e48568f1ed45e5c192c13b477bf65e32a",
+    "bytes": 143955
+  },
+  "SunPrize/Certificate/Derived052.lean": {
+    "sha256": "dd84b127bbe41dacd785e3fd3724c2bf58042ad6ed26e80cedeac42895d12b91",
+    "bytes": 146371
+  },
+  "SunPrize/Certificate/Derived053.lean": {
+    "sha256": "ac5dc1ab7dc6b46da8c981b35a34d04ea063914d4bf8e22406ee5c8f03a97f48",
+    "bytes": 148394
+  },
+  "SunPrize/Certificate/Derived054.lean": {
+    "sha256": "de78edfc7cf13b3dd31cdb1d0f1e33f647c4121c0a4977ca8c638007659977e6",
+    "bytes": 130371
+  },
+  "SunPrize/Certificate/Derived055.lean": {
+    "sha256": "d1f816e7729b008c24e990f39e90fdd0fe189e83e1a67a16627e7d18cc24fb94",
+    "bytes": 164906
+  },
+  "SunPrize/Certificate/Derived056.lean": {
+    "sha256": "9dde946dd5f860a1f1d021a1a8114fe1c65289fabbab54a44b4d83bcb9246129",
+    "bytes": 279559
+  },
+  "SunPrize/Certificate/Derived057.lean": {
+    "sha256": "c2c560576462cc98aebbf5436ce6150f32b9c7c927081ff9405231fad1be855d",
+    "bytes": 559310
+  },
+  "SunPrize/Certificate/Derived058.lean": {
+    "sha256": "9fe7ca05555fd5c428edf1dd4b937afb47bb692c2b78fd15724a196f3f150899",
+    "bytes": 130173
+  },
+  "SunPrize/Certificate/Derived059.lean": {
+    "sha256": "f95b841084465426247ddd028b8840f3bd1c09050dd6f2bf6ace90678a3a077c",
+    "bytes": 136863
+  },
+  "SunPrize/Certificate/Derived060.lean": {
+    "sha256": "386114a70b6a903314798ec777b4b9f59d22cbedb321ad2f41767f699addb508",
+    "bytes": 138388
+  },
+  "SunPrize/Certificate/Derived061.lean": {
+    "sha256": "4d13c695c2b84b6a5d53173057395ee805b6b92af64e41cf18a5393b31b025f4",
+    "bytes": 138077
+  },
+  "SunPrize/Certificate/Derived062.lean": {
+    "sha256": "e22642a304a73081ddf12e1136b8d97885b817be89dc4afe239e45a7d254f067",
+    "bytes": 136195
+  },
+  "SunPrize/Certificate/Derived063.lean": {
+    "sha256": "fb9e5b7a4b9c581e403e1bf227c817211b985609b67f620f83102a8b9dc70398",
+    "bytes": 138649
+  },
+  "SunPrize/Certificate/Derived064.lean": {
+    "sha256": "ea6dfe2e917cfb079a1f8c1d9bc701f101f6c08103b6e4b624e4e91d100b233a",
+    "bytes": 122260
+  },
+  "SunPrize/Certificate/Derived065.lean": {
+    "sha256": "6a6e0b8ccad20301fecc2821a12a9e8b325c895b5e48b87636df98443af950b5",
+    "bytes": 580082
+  },
+  "SunPrize/Certificate/Derived066.lean": {
+    "sha256": "fda5528487f1be7e2b2e763936295fdc89c24f2a30e7c0d5ff30a8a94daec19b",
+    "bytes": 325804
+  },
+  "SunPrize/Certificate/Derived067.lean": {
+    "sha256": "6effc769fd8ae71c3b3ad46bf51dbda1bb06605fc08188bba6879bf9a422caf5",
+    "bytes": 143273
+  },
+  "SunPrize/Certificate/Derived068.lean": {
+    "sha256": "f45fd80b417f506dd5da578c84c2c18255fafea02dcf89a85c2c97a29bcbfb63",
+    "bytes": 142549
+  },
+  "SunPrize/Certificate/Derived069.lean": {
+    "sha256": "4be96d22905172d4f3d88098057f4a506c95fb04ee295da0ed55bd7e8a95816a",
+    "bytes": 142910
+  },
+  "SunPrize/Certificate/Derived070.lean": {
+    "sha256": "26502f1e3c2788cb318925ac68754ad8bbd2316d7224ed8b698699c2cc31fd48",
+    "bytes": 143953
+  },
+  "SunPrize/Certificate/Derived071.lean": {
+    "sha256": "e055c87c3af44534a727be5b2d51caa2a8d6092599e51f7b8fa93cc8e2124fe4",
+    "bytes": 143805
+  },
+  "SunPrize/Certificate/Derived072.lean": {
+    "sha256": "8e10920faad94790f5869ee1eee9511f139f2ae0f3f2725f74f08e26334af0a0",
+    "bytes": 142312
+  },
+  "SunPrize/Certificate/Derived073.lean": {
+    "sha256": "ee5abda2075517d21ca67c67ed046a083849053161f458ffbae11e0e76369176",
+    "bytes": 532222
+  },
+  "SunPrize/Certificate/Derived074.lean": {
+    "sha256": "017736a928231f5039a95528f8d802a81fe99c3f7a5c3db0b24ed978c1a71bb2",
+    "bytes": 563292
+  },
+  "SunPrize/Certificate/Derived075.lean": {
+    "sha256": "c9d9fb728b80b8d79fa919770c1b36face9811fbd97973275f546924bd510406",
+    "bytes": 580086
+  },
+  "SunPrize/Certificate/Derived076.lean": {
+    "sha256": "e10b35a9d7d5ef104391259157e73f10f03d16229542014a546b54fc0098f411",
+    "bytes": 586691
+  },
+  "SunPrize/Certificate/Derived077.lean": {
+    "sha256": "6f1c457db03b09db534ec53e96e03699ca0659b7e1286926c2a2765ba7cebb32",
+    "bytes": 480975
+  },
+  "SunPrize/Certificate/Derived078.lean": {
+    "sha256": "97c298447635eeaf1ee526eedcf474f7ac64266c75843d9a480bdb5653774ab3",
+    "bytes": 227238
+  },
+  "SunPrize/Certificate/Derived079.lean": {
+    "sha256": "f7a1bc4657dcad86b75f5b1decbc359f61d4da6296b6837aa44bc0b372900620",
+    "bytes": 589962
+  },
+  "SunPrize/Certificate/Derived080.lean": {
+    "sha256": "a5996f9f2f9a36bb6225b9d0a6e0b08da81f5d622220b3f27aa2099d8c442831",
+    "bytes": 574364
+  },
+  "SunPrize/Certificate/Derived081.lean": {
+    "sha256": "9aedda0295094e747ce4092108bc8850e3fb01071e9b680daf2921f6c55badca",
+    "bytes": 580238
+  },
+  "SunPrize/Certificate/Derived082.lean": {
+    "sha256": "ef29cdfbb41a81abb28cea6e72c5857067d5e8755155f149d46419aa6d366b95",
+    "bytes": 10147
+  },
+  "SunPrize/Certificate/Initial000.lean": {
+    "sha256": "d614574c9a14d4a4e31f232f06be0d09d65542ad4d841007d1953bed2a46bdc8",
+    "bytes": 146018
+  },
+  "SunPrize/Certificate/Initial001.lean": {
+    "sha256": "2c5cbb316f78fef920d13080d642f7d8ddadddf2ceb4ab9376f8e5eadaa1e79e",
+    "bytes": 72875
+  },
+  "SunPrize/Certificate/Initial002.lean": {
+    "sha256": "3234c5aa36fbd25f2e6b6725257ece46c5d17ae2edba296f9e16df9541410111",
+    "bytes": 73841
+  },
+  "SunPrize/Certificate/Initial003.lean": {
+    "sha256": "044703fe4105aba9d4092e1812d042c1fbf6233954eb510be1c9b27c8ee3487d",
+    "bytes": 73932
+  },
+  "SunPrize/Certificate/Initial004.lean": {
+    "sha256": "a491ffe901a17efe72ca3f169438ca069251cb8ce41a0a344c82201533dc1c9d",
+    "bytes": 77581
+  },
+  "SunPrize/Certificate/Initial005.lean": {
+    "sha256": "50d33f30265bb17f9aedb42bb35847383c74354837e1843efe389feb808a54a5",
+    "bytes": 83176
+  },
+  "SunPrize/Certificate/Initial006.lean": {
+    "sha256": "22c1fc15f4829a176e12d40aa524bbde730b1c177aca4fc56a7fa5feb2f89cdf",
+    "bytes": 93301
+  },
+  "SunPrize/Certificate/Initial007.lean": {
+    "sha256": "c758cc57f87092fa283e65c1f57e44ce113801cf11665c10b2514edfac332af7",
+    "bytes": 97968
+  },
+  "SunPrize/Certificate/Initial008.lean": {
+    "sha256": "2db809150ec6deb5af4977eac9a2954e172c10a27740a8bfab056e4d3e123537",
+    "bytes": 85677
+  },
+  "SunPrize/Certificate/Initial009.lean": {
+    "sha256": "4b0756ae3135eaf886d8bc27160bff8f8af51b6d0865d2201bcbdbce2f5eacd5",
+    "bytes": 79287
+  },
+  "SunPrize/Certificate/Initial010.lean": {
+    "sha256": "db150d6fff44eea4543a4d3707f5d7ea25811622f452057bdcdc1dd9bc5cb823",
+    "bytes": 81029
+  },
+  "SunPrize/Certificate/Initial011.lean": {
+    "sha256": "d55f2d99a9eded4ea6cf829fca6c7aa337481f7099e25b078c7b1c812e1478f7",
+    "bytes": 80957
+  },
+  "SunPrize/Certificate/Initial012.lean": {
+    "sha256": "a2565bd887897c965cf44e91335c6d6c089f0a5f6294d06d0a01c6e5c3f96265",
+    "bytes": 82657
+  },
+  "SunPrize/Certificate/Initial013.lean": {
+    "sha256": "6490f3fa5663d101ab0f9789a368f5b075525693f76b125d3d4c1a06e5ca5f8b",
+    "bytes": 85360
+  },
+  "SunPrize/Certificate/Initial014.lean": {
+    "sha256": "84fe3668bfe7d995aa741e8f10e4a8087bf55c6fb0fa673e52f7d3366ab3c7c2",
+    "bytes": 110483
+  },
+  "SunPrize/Certificate/Initial015.lean": {
+    "sha256": "7966b855246e4dc58bbe6d5db7b693a18f89d3bd6d50875bd73e7c3ecadae74d",
+    "bytes": 115302
+  },
+  "SunPrize/Certificate/Initial016.lean": {
+    "sha256": "af9536024082768e440dc5f6afb143e26af0692275a23d1f3bde8207cd753f30",
+    "bytes": 126640
+  },
+  "SunPrize/Certificate/Initial017.lean": {
+    "sha256": "ddfdbf6566829853fb486517f754d6523c838b15ed6214f7ff146dbebbf62e8c",
+    "bytes": 146052
+  },
+  "SunPrize/Certificate/Initial018.lean": {
+    "sha256": "f1a765f00066e30e23241921d035beea225e7852f7001189959e6648b29b83aa",
+    "bytes": 157328
+  },
+  "SunPrize/Certificate/Initial019.lean": {
+    "sha256": "51538dbf6561527e9d3c96316e10e3a17d5d1c1f0ab94e45b58cfa5b486b736a",
+    "bytes": 163574
+  },
+  "SunPrize/Certificate/Initial020.lean": {
+    "sha256": "5707a5edc8af5ee82880b9bac42492b41b90ffde90d41b0106cb8aa129e0660e",
+    "bytes": 178807
+  },
+  "SunPrize/Certificate/Initial021.lean": {
+    "sha256": "98afa259575c15a5c6e1a9af4664c7c94fb684ee542dd99378fe1615e510eaee",
+    "bytes": 187514
+  },
+  "SunPrize/Certificate/Initial022.lean": {
+    "sha256": "83ef1df7bfedcf4af706a0194549588dc9a1b81794b53bad29adc68dc7fa754f",
+    "bytes": 120999
+  },
+  "SunPrize/Certificate/Initial023.lean": {
+    "sha256": "dec7fb92eb4699d501b7dbd646fbb6cb8554b18280ab2c1ddfb60f72829546ca",
+    "bytes": 87015
+  },
+  "SunPrize/Certificate/Initial024.lean": {
+    "sha256": "b05bc0425043d1e5117b2cc573caebe6e19ac802b5f403bb334f20a8d9215519",
+    "bytes": 86314
+  },
+  "SunPrize/Certificate/Initial025.lean": {
+    "sha256": "d6bec6bc3ac37889c01e26c98908c6310b1d1088a0422ca4476fea07b6ad3e62",
+    "bytes": 89417
+  },
+  "SunPrize/Certificate/Initial026.lean": {
+    "sha256": "e9af025981749ace5478d3e6a7349f94600d952c1d37325d0020bf26b959531c",
+    "bytes": 91299
+  },
+  "SunPrize/Certificate/Initial027.lean": {
+    "sha256": "8a27dbd7c3e9ff1b4649fa5aafe23c3f704b843213df9c8dd3564972edde8969",
+    "bytes": 117015
+  },
+  "SunPrize/Certificate/Initial028.lean": {
+    "sha256": "1bccf4e28c067342ec9a1fcfa30c1a18bad2cf91fa3f7ef5a433743f73efd58b",
+    "bytes": 126294
+  },
+  "SunPrize/Certificate/Initial029.lean": {
+    "sha256": "cb8f345fedc6918c2f28750b7a0cc81599cd227c1c2bec7dba22bcfff5906f8f",
+    "bytes": 152504
+  },
+  "SunPrize/Certificate/Initial030.lean": {
+    "sha256": "6befb0317fe605e6294fe46477b0930605d93db780d6b7e538d1ab93705fb9c0",
+    "bytes": 157048
+  },
+  "SunPrize/Certificate/Initial031.lean": {
+    "sha256": "33177aea119e6aca9626ccbbddf55d8ae7f91cdbd979792d4e72ffcf63c34b33",
+    "bytes": 159868
+  },
+  "SunPrize/Certificate/Initial032.lean": {
+    "sha256": "c04b2381be66afead1b868e41461294d10fc44fc6edf215312e6efbefadfc7d3",
+    "bytes": 169278
+  },
+  "SunPrize/Certificate/Initial033.lean": {
+    "sha256": "6fc1705be14fc09ab2a464af44028dbdac30f8feb126d01db7dd97cc015f3518",
+    "bytes": 165635
+  },
+  "SunPrize/Certificate/Initial034.lean": {
+    "sha256": "8187cf44daaeffbdfeeb06d3f03b282c4209e3266974b9fbdd6aee0ef0b53d1b",
+    "bytes": 171679
+  },
+  "SunPrize/Certificate/Initial035.lean": {
+    "sha256": "89ac5ac92460eb2b9205a1da2700b93e92f12e9b61006c24e477c32c954dc3b7",
+    "bytes": 169192
+  },
+  "SunPrize/Certificate/Initial036.lean": {
+    "sha256": "fee80a19b0d90e3e0ea49fd7cc88bbf35648603ae5be5dc34a36c293b9db6a74",
+    "bytes": 170649
+  },
+  "SunPrize/Certificate/Initial037.lean": {
+    "sha256": "382d4f12d09f94976f4627946514e5b91845d078f90b7a673b88e15c1848c2a2",
+    "bytes": 170489
+  },
+  "SunPrize/Certificate/Initial038.lean": {
+    "sha256": "133d4be0f5274e46c4b609c8e3cfa6ce1f2acc418b8b0747a84ab6b6fa9ff9d5",
+    "bytes": 174552
+  },
+  "SunPrize/Certificate/Initial039.lean": {
+    "sha256": "f031dfc786ba9a82a72076a806386a1130dc1e2fa775ad3c6277faf418086aa3",
+    "bytes": 172976
+  },
+  "SunPrize/Certificate/Initial040.lean": {
+    "sha256": "d1c208731ad5accc28bcd7d246050bf8a01ff9b273cc316c31fdb8e36a244565",
+    "bytes": 174605
+  },
+  "SunPrize/Certificate/Initial041.lean": {
+    "sha256": "40cae11b9e6b672ea8a2a27d3f5d3ffe13e7fc0583f51e69497a94aa0c3f76a0",
+    "bytes": 169287
+  },
+  "SunPrize/Certificate/Initial042.lean": {
+    "sha256": "39fcea5082b1c4200549a2fc6661ff9fd3dffdfd403123c47889ed441109b0a4",
+    "bytes": 159655
+  },
+  "SunPrize/Certificate/Initial043.lean": {
+    "sha256": "b115ebd38cf18b1826c3190f9da167afba92bffdbb7ae9f1e24016a0c8be60b6",
+    "bytes": 153233
+  },
+  "SunPrize/Certificate/Initial044.lean": {
+    "sha256": "9f15a34dc702496f7905032dfe27ba70e18e4ec00914b4b9ee3a1317fbecdf45",
+    "bytes": 121480
+  },
+  "SunPrize/Certificate/Initial045.lean": {
+    "sha256": "31b8993d2c88d66065d0b9b79fb8f90ec11f9a59ada5e126b87cb7078cfe792f",
+    "bytes": 129814
+  },
+  "SunPrize/Certificate/Initial046.lean": {
+    "sha256": "f38a75f5e11e36fdfadbb8dfc83a5b014b73c76a91fb3b9f9a52783972448ef1",
+    "bytes": 154102
+  },
+  "SunPrize/Certificate/Initial047.lean": {
+    "sha256": "55c470273839bb9882b4313fccb3b46be2e657662eb3ce6e9c622b5de1ca204b",
+    "bytes": 170226
+  },
+  "SunPrize/Certificate/Initial048.lean": {
+    "sha256": "68b92e928ee7174d7802bd6aa54daeab5e068446df8c034c77a6e9f1bffb7c65",
+    "bytes": 185727
+  },
+  "SunPrize/Certificate/Initial049.lean": {
+    "sha256": "470e44fcd2c219fa7e7463e97656fc0b19317aea8c771f3ab9fb70b725d9709e",
+    "bytes": 167176
+  },
+  "SunPrize/Certificate/Initial050.lean": {
+    "sha256": "c0780ab25d0b6d71959133d4ad99f038d56057d134dbc527f67e6ce8fbeec1e0",
+    "bytes": 171938
+  },
+  "SunPrize/Certificate/Initial051.lean": {
+    "sha256": "517b71c57123d77d550541c0e74afc109858e5bf1ab4f7e30ca4316229c3dd2a",
+    "bytes": 169694
+  },
+  "SunPrize/Certificate/Initial052.lean": {
+    "sha256": "28646669c5429df1ec2a8d24d5235442909718b6740d5cfdae3fe01addf7d76f",
+    "bytes": 172921
+  },
+  "SunPrize/Certificate/Initial053.lean": {
+    "sha256": "bcf44412373557a8341ecf0312f465ff6eba08e9eeaef1a0b36a4df9af4d610b",
+    "bytes": 176487
+  },
+  "SunPrize/Certificate/Initial054.lean": {
+    "sha256": "bd56c2f7753a6270cd8044e18849f3ca2d5a71a648607733c10b841e3d19b29c",
+    "bytes": 185258
+  },
+  "SunPrize/Certificate/Initial055.lean": {
+    "sha256": "460c183ba3036a7b55a3114d525efe3e963060346104fc38540a194d4c7027d7",
+    "bytes": 185477
+  },
+  "SunPrize/Certificate/Initial056.lean": {
+    "sha256": "cdab4551ed8b2c68e78cf28eeba4feb3c493d251b40eca9db18c68c6bb6c12d2",
+    "bytes": 186024
+  },
+  "SunPrize/Certificate/Initial057.lean": {
+    "sha256": "c06b16ec6d0f2f3f49d71a46c7d34e9600d8d089d425e6649267992e48af64e0",
+    "bytes": 172301
+  },
+  "SunPrize/Certificate/Initial058.lean": {
+    "sha256": "2ec8c1729a098ab08a56cf7e1f83b2b529e07cb21669f2a123df982881d959c0",
+    "bytes": 193352
+  },
+  "SunPrize/Certificate/Initial059.lean": {
+    "sha256": "64ce69b565775aa4f9a78fba5069010923651b519380bbddeb919604922cfa01",
+    "bytes": 178710
+  },
+  "SunPrize/Certificate/Initial060.lean": {
+    "sha256": "63db781da9c7b996fb3517b59926809e7b202c6ff53b0fea81fcbf40ec5cea81",
+    "bytes": 187764
+  },
+  "SunPrize/Certificate/Initial061.lean": {
+    "sha256": "e6795c76d703736c66bf858b5b525d34de0c42ada679266a04a80f82d5e6ce0f",
+    "bytes": 165038
+  },
+  "SunPrize/Certificate/Initial062.lean": {
+    "sha256": "a8649cd827d1a81f2e65be834d4d67b162a29e230422d413efdbb6818fa577e0",
+    "bytes": 173131
+  },
+  "SunPrize/Certificate/Initial063.lean": {
+    "sha256": "bdba007649fcf6b14c35fdda1f251bd8d10b7a3b76d3cf915a179ccb77c4e430",
+    "bytes": 175474
+  },
+  "SunPrize/Certificate/Initial064.lean": {
+    "sha256": "9259de9e55a4329b9e7a9c9a374bc1d85ea4b6564d547ba0ab6884fd9662d99e",
+    "bytes": 180735
+  },
+  "SunPrize/Certificate/Initial065.lean": {
+    "sha256": "eda7f779f96623625a66017828a983f0fe791900cd4306b2a286bf8107204715",
+    "bytes": 177009
+  },
+  "SunPrize/Certificate/Initial066.lean": {
+    "sha256": "827fc480cde51e73b37f517b5aab4f01945f170d6071d50eb823c66e3cf1057e",
+    "bytes": 178572
+  },
+  "SunPrize/Certificate/Initial067.lean": {
+    "sha256": "2fa05eafda69b2d9db0f5f6bb4eb98df088f3a425d8f199333b115e264a7a85a",
+    "bytes": 178702
+  },
+  "SunPrize/Certificate/Initial068.lean": {
+    "sha256": "5b01a193669cffe76e0ee419311bc64528e951c43919cc413ef7ad416b6764d4",
+    "bytes": 187118
+  },
+  "SunPrize/Certificate/Initial069.lean": {
+    "sha256": "fc6275f9ae0d87933c17c2f9af3b7d9c95391ff80ead26b317da0d0346ce32f2",
+    "bytes": 187172
+  },
+  "SunPrize/Certificate/Initial070.lean": {
+    "sha256": "de7d5bbaa031eda103495154bf4e5a7e7458c2e15f91f087049f05bf3b18236f",
+    "bytes": 184408
+  },
+  "SunPrize/Certificate/Initial071.lean": {
+    "sha256": "7d0da5ce46714266ed60f5b65af6c5a510b9cad45f23bef8eca2c076a7ab1b03",
+    "bytes": 196629
+  },
+  "SunPrize/Certificate/Initial072.lean": {
+    "sha256": "b65ac547b0914e45f1897162a27741d04f563a5c5aa456417aa3c062a11e5b2a",
+    "bytes": 182459
+  },
+  "SunPrize/Certificate/Initial073.lean": {
+    "sha256": "92f547832cdd83e040f4d351bc4bac2e29e790fbfe3f995592cd20163f7ed935",
+    "bytes": 186095
+  },
+  "SunPrize/Certificate/Initial074.lean": {
+    "sha256": "030b2dcb06d933511dfc424b8626b85338d05da699fe6963198e3ce37a564ba2",
+    "bytes": 172659
+  },
+  "SunPrize/Certificate/Initial075.lean": {
+    "sha256": "0ba7beadd68768a7c110d776e1ef1b4a17ca7d6ffb38d17e3cbda29ab1fb23cc",
+    "bytes": 175889
+  },
+  "SunPrize/Certificate/Initial076.lean": {
+    "sha256": "05b56efece6e470a862d602633eaf7c89fa18856fdf840ccc9285114fcdc1794",
+    "bytes": 183837
+  },
+  "SunPrize/Certificate/Initial077.lean": {
+    "sha256": "6ff6812eb06660ceaa87fcf58fe502d93d03cab0bcfe7a729cb65d445d6c321d",
+    "bytes": 182750
+  },
+  "SunPrize/Certificate/Initial078.lean": {
+    "sha256": "5df695ab849546f5a15356ddd23573db40bcfa082976172ff25fcb0a9fb90f58",
+    "bytes": 185341
+  },
+  "SunPrize/Certificate/Initial079.lean": {
+    "sha256": "4eb2a361bd1afd208784e38ee2a0add7648b43f08700a122afa16a7974b60058",
+    "bytes": 184222
+  },
+  "SunPrize/Certificate/Initial080.lean": {
+    "sha256": "376d77bd49addcae38acef5945fa36046fac444c92084966444ebfe0f17f9b6a",
+    "bytes": 183307
+  },
+  "SunPrize/Certificate/Initial081.lean": {
+    "sha256": "2af5828654b0998059081f0bf3f7b7e0d4e0d309031bf83d6ec9228646bca496",
+    "bytes": 193673
+  },
+  "SunPrize/Certificate/Initial082.lean": {
+    "sha256": "d96dbddd745449d1c6198346ac8ca4834aadc6025458c335bfd13331cdea8dff",
+    "bytes": 192231
+  },
+  "SunPrize/Certificate/Initial083.lean": {
+    "sha256": "8e539de617dda7fb23b480a7058067d1c50b8a7701734d4157d24918e4a25eb1",
+    "bytes": 196978
+  },
+  "SunPrize/Certificate/Initial084.lean": {
+    "sha256": "a827b333d37f98e35d3eb1ef18405b3d79ada55b8e75511b3b9e4897b600e30f",
+    "bytes": 197019
+  },
+  "SunPrize/Certificate/Initial085.lean": {
+    "sha256": "a61fce36e2ff662cd98cbd91afeefc711bae9880d8d0744bcb5523413ff7c925",
+    "bytes": 207053
+  },
+  "SunPrize/Certificate/Initial086.lean": {
+    "sha256": "6bc7d756283862c8587b94b74f91dc370e2f266f9eb12633ed095eb58eac613b",
+    "bytes": 206365
+  },
+  "SunPrize/Certificate/Initial087.lean": {
+    "sha256": "aea215a66327713f92509b3391c88407c653b92fe8857a8ff8818fdd7dd0fafc",
+    "bytes": 68929
+  },
+  "SunPrize/Certificate/Inputs.lean": {
+    "sha256": "40a2c5bb0255408013a3946ab7dfa233b75ada22b4af94c256dc020a7bf32d0e",
+    "bytes": 2541187
+  },
+  "SunPrize/Certificate/InputsValid.lean": {
+    "sha256": "4dca9f9b80acaf6a5eb0fd50fff2a7b1595c9f59d67e76ca3e5a99c6dbd4f02b",
+    "bytes": 3768
+  },
+  "SunPrize/Certificate/InputsValid000.lean": {
+    "sha256": "3ed44050637bbc8bffd3814ed90db270c009efd486cd1f321ac3c5d5ef169b19",
+    "bytes": 27471
+  },
+  "SunPrize/Certificate/InputsValid001.lean": {
+    "sha256": "787cfc9fa9ec6800a19f04f13c8fb492b1690e183c7ffc5ffbd7700ec28e1946",
+    "bytes": 27679
+  },
+  "SunPrize/Certificate/InputsValid002.lean": {
+    "sha256": "4b70826ae8671ab828bf23d0cae9e479f1267b35b5eba465b3c94bafbe2e55fb",
+    "bytes": 27639
+  },
+  "SunPrize/Certificate/InputsValid003.lean": {
+    "sha256": "4124fa3e3f1e8bbb6eecb68198be5174e7ef3607851239e52a4a405a2d173227",
+    "bytes": 27679
+  },
+  "SunPrize/Certificate/InputsValid004.lean": {
+    "sha256": "6e74716d3fa5131a63898280ec07f77727f8b28d0858f4c9c8d6cb71d45559c2",
+    "bytes": 27639
+  },
+  "SunPrize/Certificate/InputsValid005.lean": {
+    "sha256": "00def01efb6e199071111bc9c9f6a09a6051642383467e68718dde1632435879",
+    "bytes": 27679
+  },
+  "SunPrize/Certificate/InputsValid006.lean": {
+    "sha256": "ae5b1769fe8f23981ee7fdd99e58b30387bff8367a97bb682227a0ae63cd041a",
+    "bytes": 28131
+  },
+  "SunPrize/Certificate/InputsValid007.lean": {
+    "sha256": "670508a54eb4ce092298e54221ff1d5145396b44c92b709bf5ddf21bfbab3d3f",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid008.lean": {
+    "sha256": "66298c71c351b5159a74978c34dbfe0f7afb39e498a0a62024605dfbbd83cb76",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid009.lean": {
+    "sha256": "8bbeefc5b3e45b5d8a3927bad8df4aae00139261665374e39daaf1604232e53b",
+    "bytes": 28662
+  },
+  "SunPrize/Certificate/InputsValid010.lean": {
+    "sha256": "005dd49c3b8fbdbdc0bf98c4d75a47fbcbf3cd8cdaae513d20bc780a5e4965e6",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid011.lean": {
+    "sha256": "24f0bcaf01e989d1b0623ffe8ee6587c74eb95dc5bc3a252d42146305252f07d",
+    "bytes": 28662
+  },
+  "SunPrize/Certificate/InputsValid012.lean": {
+    "sha256": "1df5ce8bcfd9973e05a85a492e4f1be47f0c5f74fce090c9ff3b8b5ce2b49907",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid013.lean": {
+    "sha256": "eea71d720248089caa670903ff2146ac56fb451e4bd4ef60f5a986966c4d5908",
+    "bytes": 28662
+  },
+  "SunPrize/Certificate/InputsValid014.lean": {
+    "sha256": "16c45b42ace64f416812d26b3d0e2ac75b0daf82303f82d130de2ca2f0f69cc9",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid015.lean": {
+    "sha256": "e520c546af320f9c869808a284136df087bc9ccffe3a8501e48ff58c98ed93a6",
+    "bytes": 28662
+  },
+  "SunPrize/Certificate/InputsValid016.lean": {
+    "sha256": "bf8463252b4b11efe06c767097b6e56c1c6a87c2f7fff55817a7380aa4a9ca90",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid017.lean": {
+    "sha256": "cfc2ac44fee021e8d4605cbf7ac81d12083f9d4735c0711f94c57b049a06b52a",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid018.lean": {
+    "sha256": "48f0a0a3761568d6a98a37b69f4b8e9440b5f72e0e442987f4612af72540e428",
+    "bytes": 28662
+  },
+  "SunPrize/Certificate/InputsValid019.lean": {
+    "sha256": "a7f3f84b95cbe3c54524ca1b4981360a18cd7ccac6503bdecb1ff40633727f3c",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid020.lean": {
+    "sha256": "933e8b5a3a84bd8ed502917668ac18a72b1d5dcede35e2365d10cbc916ee1819",
+    "bytes": 28662
+  },
+  "SunPrize/Certificate/InputsValid021.lean": {
+    "sha256": "1c9dc018adfa8998f00381729d136e90a79cc0246f682b490f6ad597e8d6be5e",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid022.lean": {
+    "sha256": "5b7398263885b099b0a2aef88a0ec9826691cbf4bf74f1b893c16f253b36c754",
+    "bytes": 28662
+  },
+  "SunPrize/Certificate/InputsValid023.lean": {
+    "sha256": "37d6b78741739d34acbb24555c7311de36f7b87402f94e7c15507f4616022769",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid024.lean": {
+    "sha256": "cd62fa9c6abca553be81895c2639728c880ca7085357f8c854b1d3b0ec0c5d0b",
+    "bytes": 28662
+  },
+  "SunPrize/Certificate/InputsValid025.lean": {
+    "sha256": "d54d1c8972c893380ab66f0fcd45ca8adb6d819e6b243568d655df8466eb7851",
+    "bytes": 28662
+  },
+  "SunPrize/Certificate/InputsValid026.lean": {
+    "sha256": "a2c8632e415b70233b24293a12e958289db946c13a665796e5d0a56f06a7569c",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid027.lean": {
+    "sha256": "896156e5c1eaa8a35f025150af3c606201550ca2b51c8009c8b381fbb25ed07f",
+    "bytes": 28662
+  },
+  "SunPrize/Certificate/InputsValid028.lean": {
+    "sha256": "48c19bc77e08528132bff276c12d4f07534363a022f223b75954fed53efa4385",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid029.lean": {
+    "sha256": "479193b061b152e1908e64cc7893dcc7facb40d1a78e00cd67df2e0136783a92",
+    "bytes": 28662
+  },
+  "SunPrize/Certificate/InputsValid030.lean": {
+    "sha256": "e15ffb553228a5ad58347709409160edd49617c6a2fb73e34cc5c43420109239",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid031.lean": {
+    "sha256": "1a64d497f0cb31375eb114870c69a23ee469f675cc5ab629490fdf18a362f5f7",
+    "bytes": 28662
+  },
+  "SunPrize/Certificate/InputsValid032.lean": {
+    "sha256": "9082a8090a3a100205408220b4bbfebd312539790eb74412c259ba94500d9dd6",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid033.lean": {
+    "sha256": "c75fb1e7b7f6f9baccb902551769c54d2171739fefce5464f8eb9ceeea182644",
+    "bytes": 28702
+  },
+  "SunPrize/Certificate/InputsValid034.lean": {
+    "sha256": "c70ca55121b08c55798639749d794bd277b56e4066684a1033bf0d0966460221",
+    "bytes": 3627
+  },
+  "SunPrize/Certificate/Logic000.lean": {
+    "sha256": "59494892d6182b771f5c6a0ff43c3e977ee5ccaed05ef803b32b71d4719f7fcc",
+    "bytes": 517552
+  },
+  "SunPrize/Certificate/Logic001.lean": {
+    "sha256": "8f511bd03f7157fd4e868676382204d297b08449fc3631f5d14b2fa5346a86ad",
+    "bytes": 661424
+  },
+  "SunPrize/Certificate/Logic002.lean": {
+    "sha256": "574ed00acf754b49601ef8ea42c278d04f6f945790d7267f4c2f611306404d19",
+    "bytes": 729604
+  },
+  "SunPrize/Certificate/Logic003.lean": {
+    "sha256": "9e606348a71c9360da33e2105fb233859ef0efb39a936e97f1a76f546dfe4bf5",
+    "bytes": 619335
+  },
+  "SunPrize/Certificate/Logic004.lean": {
+    "sha256": "986f36a2325403af991037f3971a4cec126d80f2aa106718e447075d9a3ad69e",
+    "bytes": 627216
+  },
+  "SunPrize/Certificate/Logic005.lean": {
+    "sha256": "ed3a8f00af3c3a3661c31cd6a861cff5650d32c131d15c3a91367c325889f06a",
+    "bytes": 628440
+  },
+  "SunPrize/Certificate/Logic006.lean": {
+    "sha256": "f2acf6424e28d5a707c0d6c0c4dac5b1fb1bcf91493bcded61555b0f2651d7e0",
+    "bytes": 642989
+  },
+  "SunPrize/Certificate/Logic007.lean": {
+    "sha256": "6f50638c33c20d3fe5737d024db19fefb3e6f3f030d05bf71c35b8aa31f6be21",
+    "bytes": 646491
+  },
+  "SunPrize/Certificate/Logic008.lean": {
+    "sha256": "428e8cadfbaa86002e901bf80f0a96154a8ca25e893bda3d67836047e1133250",
+    "bytes": 619936
+  },
+  "SunPrize/Certificate/Logic009.lean": {
+    "sha256": "cd7e4b5741a13fa27b167cdcf01d51e4e8a305c95e452517b0777931c61f5030",
+    "bytes": 727441
+  },
+  "SunPrize/Certificate/Logic010.lean": {
+    "sha256": "aff4dffe862b2e32f5d17b7b4c4b262aca5659674fc732d315a7ac3d7f5c95b9",
+    "bytes": 693236
+  },
+  "SunPrize/Certificate/Logic011.lean": {
+    "sha256": "69fb239318b6d520e1e35a1d8c648223baf3b18e8443385a0b1513863e0ee37b",
+    "bytes": 764568
+  },
+  "SunPrize/Certificate/Logic012.lean": {
+    "sha256": "a4f4dbab28c6f728e8d8a07d4a8f1bb61c3b0ad838ac96aa3fc21449276354b5",
+    "bytes": 798075
+  },
+  "SunPrize/Certificate/Logic013.lean": {
+    "sha256": "66fc8cc3da72620dde8d102387b85b735ff1b0fa4779d299c77ffb0ebc0c3e25",
+    "bytes": 815753
+  },
+  "SunPrize/Certificate/Logic014.lean": {
+    "sha256": "9eece936611e91ea424de2e91cca234441a3141f966bdb3380ebdce3d99822d3",
+    "bytes": 770647
+  },
+  "SunPrize/Certificate/Logic015.lean": {
+    "sha256": "f7ee3cab12934b728640d1112800295123cc13967eba51ff387e1e2ad99ee2f9",
+    "bytes": 784068
+  },
+  "SunPrize/Certificate/Logic016.lean": {
+    "sha256": "3417fedd65d7aff45fae40eb7c9c6ce46e6c4cd203d5c1bf1206689cf2db55b9",
+    "bytes": 798390
+  },
+  "SunPrize/Certificate/Logic017.lean": {
+    "sha256": "823f7e985ccd21b26c5772d5f2f998c7db4b2c6b339bd7fdfabbfadf8366e36d",
+    "bytes": 824828
+  },
+  "SunPrize/Certificate/Logic018.lean": {
+    "sha256": "6c2c6385f5f81917a98325077468bba7915168908768845bf504ae3fd5f40c5b",
+    "bytes": 787075
+  },
+  "SunPrize/Certificate/Logic019.lean": {
+    "sha256": "f53a8785974c8d2dc2e29f42c1dcfc227e9b9f1b449a27d3b9a1ec16e9804d3e",
+    "bytes": 795788
+  },
+  "SunPrize/Certificate/Logic020.lean": {
+    "sha256": "b558a9403134d3ac75ff7dc5fe4a5f4cf38277a3b7edf727e99a5be1012262e3",
+    "bytes": 804258
+  },
+  "SunPrize/Certificate/Logic021.lean": {
+    "sha256": "e40761064dcc8d3bc073da802de60c7b0ca390e5b4395b6c8ae40e15e8b8bfd0",
+    "bytes": 862622
+  },
+  "SunPrize/Certificate/Logic022.lean": {
+    "sha256": "9aa5a40312c9db5a3df370097671ac55aef882b8281e527e397f171103320b15",
+    "bytes": 905354
+  },
+  "SunPrize/Certificate/Logic023.lean": {
+    "sha256": "de659228e5d37d6cdbdc6c48f1213472e23ac78923ee420e9e8702c92ae9e864",
+    "bytes": 259446
+  },
+  "SunPrize/Certificate/Logic024.lean": {
+    "sha256": "e46942c4c3b55cb79f07b3e45d40e17f210c866499261365d8d814a5f2ed9a39",
+    "bytes": 787325
+  },
+  "SunPrize/Certificate/Logic025.lean": {
+    "sha256": "a4b13b3ee011ab3e30acea7dd7935d93d1e768e5bbad8bb702a4d58ba81e3345",
+    "bytes": 3094822
+  },
+  "SunPrize/Certificate/Logic026.lean": {
+    "sha256": "88c76649785c480d6550ff30d47e11325d858a6836d402145f4275b83d5a8547",
+    "bytes": 8637898
+  },
+  "SunPrize/Certificate/Logic027.lean": {
+    "sha256": "ec714e67fee71acbe33042fcab5df914f67e99f626202d8f1adca68c6b2109b9",
+    "bytes": 8402902
+  },
+  "SunPrize/Certificate/Logic028.lean": {
+    "sha256": "d8b3b1a46dbb3fa3c08dce0b47a9b1b289852f56fca6bd16659220c6078ee23d",
+    "bytes": 5135588
+  },
+  "SunPrize/Certificate/Logic029.lean": {
+    "sha256": "e40f00ee5361d236bec99900c1c37b84aa1d5d2ecbcfafb7a9a5b701fd8fb3d9",
+    "bytes": 7386407
+  },
+  "SunPrize/Certificate/Logic030.lean": {
+    "sha256": "63dcf76dc04b9c8e5d287bc76923c8d48104581360e77141ae1f6cb7822e22bb",
+    "bytes": 2072603
+  },
+  "SunPrize/Certificate/Logic031.lean": {
+    "sha256": "bf45503288e25deabc40ffc65806ac54721b5621169bc68182d94c99f893b369",
+    "bytes": 2023730
+  },
+  "SunPrize/Certificate/Logic032.lean": {
+    "sha256": "fb0e09f3790d6af2f3ae8cb13c12af6c175c6cd2125f6b72bb0784e5379c18f3",
+    "bytes": 370969
+  },
+  "SunPrize/Certificate/Logic033.lean": {
+    "sha256": "6e4941b9ae1a2a653bcddc022926767571fc9d1692bd52ac50dd85ecfe21b149",
+    "bytes": 683409
+  },
+  "SunPrize/Certificate/Logic034.lean": {
+    "sha256": "7d7f676d492d026b325827c0a2e6733202dfb0e1930fafe1ee28acf849387702",
+    "bytes": 704140
+  },
+  "SunPrize/Certificate/Logic035.lean": {
+    "sha256": "2af29c6c6a82f323d8d418760e4d4f17c59ccb90d4ae614bb1f69d5cde0afeeb",
+    "bytes": 608787
+  },
+  "SunPrize/Certificate/Logic036.lean": {
+    "sha256": "40bd8c1593acbdb12a788ba534115181d4ae5c22dde7f7dde9b7d408e40aa540",
+    "bytes": 639474
+  },
+  "SunPrize/Certificate/Logic037.lean": {
+    "sha256": "b400caffd90b61994d3220b48c9a23ff698c906c43a7f0e19cc1fed1ff283dcd",
+    "bytes": 693845
+  },
+  "SunPrize/Certificate/Logic038.lean": {
+    "sha256": "ea2d6afe78d0a9ef281ed6f1d0cdf5b3502f48e93df459e98381544c7cecabb5",
+    "bytes": 668766
+  },
+  "SunPrize/Certificate/Logic039.lean": {
+    "sha256": "5ed05027456b53afdf31cbce74f39f63a3cc24a117b6ad3d246f317f4381525c",
+    "bytes": 685754
+  },
+  "SunPrize/Certificate/Logic040.lean": {
+    "sha256": "0172e41587b1cdd03352db5b0d671350e6a413863eb6513b28570d848fcbfd3a",
+    "bytes": 695450
+  },
+  "SunPrize/Certificate/Logic041.lean": {
+    "sha256": "66923291eded5c6bd107d27096525f4ca5eb67cd56ba4634d520a488b91ec19c",
+    "bytes": 666220
+  },
+  "SunPrize/Certificate/Logic042.lean": {
+    "sha256": "2aa4eb461adce8bebf2282bb6231ca3abab0054477922bdd3c59a05f6d56a3b0",
+    "bytes": 654182
+  },
+  "SunPrize/Certificate/Logic043.lean": {
+    "sha256": "0f3e0ce38da2b64431dadb3529593845a66392d6a0a147d6c1d4d97dacf301a0",
+    "bytes": 694391
+  },
+  "SunPrize/Certificate/Logic044.lean": {
+    "sha256": "1042fdd6d5321fb504beee38aa496a2b86c5d5e37e1e9c36eb19ef61e923439b",
+    "bytes": 701689
+  },
+  "SunPrize/Certificate/Logic045.lean": {
+    "sha256": "3810f2f55e38b3c1e8ca63166aa864d5729aeb098b2b4216ae7e87fd2b29f6b7",
+    "bytes": 671451
+  },
+  "SunPrize/Certificate/Logic046.lean": {
+    "sha256": "f417174e91e5842ba6b7beb1260da0f38912383d5012af2e113c9fab56c5206b",
+    "bytes": 679588
+  },
+  "SunPrize/Certificate/Logic047.lean": {
+    "sha256": "89bf89b3ab389c66f5fcc82c8c92a8dc9d3b6b0dbfe2330385ec1ac45b93680a",
+    "bytes": 684791
+  },
+  "SunPrize/Certificate/Logic048.lean": {
+    "sha256": "d9263358fd739b755eb076a4f88ce57f8057cc483419c4b5f0fc3dc128186f68",
+    "bytes": 693312
+  },
+  "SunPrize/Certificate/Logic049.lean": {
+    "sha256": "22f20530d86b07cc30f715e9ef423a03407637711fb3a8a34f097fc3055ce12e",
+    "bytes": 440299
+  },
+  "SunPrize/Certificate/Logic050.lean": {
+    "sha256": "e1ed220fb883fd0cd97b09819551695f309729bf3c46c96b03bc95ef52d9040f",
+    "bytes": 703263
+  },
+  "SunPrize/Certificate/Logic051.lean": {
+    "sha256": "7a256ee1abad76be5222b978dfaa96f4f81da90b27e401b599ce9d55a9c4bcc8",
+    "bytes": 631609
+  },
+  "SunPrize/Certificate/Logic052.lean": {
+    "sha256": "dd89d107b828cb0d53c2e59893c844b4872ff596793ca7780d1204a4b2a2c111",
+    "bytes": 654414
+  },
+  "SunPrize/Certificate/Logic053.lean": {
+    "sha256": "0bb0857baa59de05fb67457e85b88e371ce15b2e50745773ebe67c97d2605af4",
+    "bytes": 677767
+  },
+  "SunPrize/Certificate/Logic054.lean": {
+    "sha256": "95779ec1184284c5ccbefd7e612272bf08231fbe3f571975b1493559a0cde30c",
+    "bytes": 544580
+  },
+  "SunPrize/Certificate/Logic055.lean": {
+    "sha256": "9fac8a252efe87b87e2406cb2e1ed12879150639a95eb55c5caf3db0ea970890",
+    "bytes": 826448
+  },
+  "SunPrize/Certificate/Logic056.lean": {
+    "sha256": "5abb3852d95f5f7f94516d6667bde0fd75ad692a6bdcace9dec9dd9844944e9e",
+    "bytes": 1788957
+  },
+  "SunPrize/Certificate/Logic057.lean": {
+    "sha256": "9b5b9d185e88dba49d27eff269c0a4fbcfeffccd67b26c56623b800b84d42ab2",
+    "bytes": 4182390
+  },
+  "SunPrize/Certificate/Logic058.lean": {
+    "sha256": "eda09ee9828e61dba91f32ef44b19b7ab190c5636bf8aeb657c11252b8bb16dd",
+    "bytes": 591694
+  },
+  "SunPrize/Certificate/Logic059.lean": {
+    "sha256": "19d05fca19d8465753d28802dab373ac9cc2e90e8fd5f3d436d74a1e11c2c585",
+    "bytes": 599647
+  },
+  "SunPrize/Certificate/Logic060.lean": {
+    "sha256": "159d43d0e762b39ce08e1c01c823ad79a4c07f9d640503ee023eba620a216dee",
+    "bytes": 600195
+  },
+  "SunPrize/Certificate/Logic061.lean": {
+    "sha256": "f2d45f03424fd616ea0dbadf8b4ab2caddd6bc0159c7eed8de2ee9d9373bc402",
+    "bytes": 604087
+  },
+  "SunPrize/Certificate/Logic062.lean": {
+    "sha256": "763b97dbae6ca34df699109a9223f634f1253502549aba400c2e9a15daa273f1",
+    "bytes": 592897
+  },
+  "SunPrize/Certificate/Logic063.lean": {
+    "sha256": "16397f732b72b2e3f84a2448fb2ed2d84020458d2e963a730df41e0d3791c79e",
+    "bytes": 608602
+  },
+  "SunPrize/Certificate/Logic064.lean": {
+    "sha256": "856f12bcd6127a4c0cad54ca25c28e9104036553d0af1305fd462b2fab08118b",
+    "bytes": 550829
+  },
+  "SunPrize/Certificate/Logic065.lean": {
+    "sha256": "3c6398cbab73ad72b41bcef8724b503f6aef7dd7415993e91d3c9bc466c6acb3",
+    "bytes": 4343402
+  },
+  "SunPrize/Certificate/Logic066.lean": {
+    "sha256": "86966740be6891ccb106da4ef629723c6bc5c9b7646b800d0eae880532c03651",
+    "bytes": 2159024
+  },
+  "SunPrize/Certificate/Logic067.lean": {
+    "sha256": "48d4ba62ec37e9ac212dee6a90c8a7732ecd5f41596c1124a1b2dcb25e731895",
+    "bytes": 644734
+  },
+  "SunPrize/Certificate/Logic068.lean": {
+    "sha256": "76d27e946b8a66edf4ecacebffde572332d2de6a1fa99ec9595adc4fed43d74c",
+    "bytes": 643062
+  },
+  "SunPrize/Certificate/Logic069.lean": {
+    "sha256": "69f256ca92444ea32ff7513db07fb1e2504b00c28260d8a563dfe34af84bcefb",
+    "bytes": 647809
+  },
+  "SunPrize/Certificate/Logic070.lean": {
+    "sha256": "883c43b3984ba0a56d950fd1e533d3f3fa309be297b6fef18e448a000009fa2e",
+    "bytes": 659448
+  },
+  "SunPrize/Certificate/Logic071.lean": {
+    "sha256": "29b1511ccace0364456bd74a6662b129cca567a0e640b0800a40337c8ad99b37",
+    "bytes": 657607
+  },
+  "SunPrize/Certificate/Logic072.lean": {
+    "sha256": "408f2260168bad1cdedf531f66450dce282715f45447691c1b14353fdde00ff6",
+    "bytes": 645611
+  },
+  "SunPrize/Certificate/Logic073.lean": {
+    "sha256": "5b0f4e5a8b65dcf9d59d6932ce39f38ba0fa56edd12aa3d219a494704b006c5b",
+    "bytes": 4121057
+  },
+  "SunPrize/Certificate/Logic074.lean": {
+    "sha256": "563fcb68cf89e07cf07b9c2a1d08425693a28eaa2b895d401427f15f8e5ce5e0",
+    "bytes": 4455127
+  },
+  "SunPrize/Certificate/Logic075.lean": {
+    "sha256": "9a4d56b4a72db284f27fdb7aa1517294df12c6fc400c8e573f1799083149eea3",
+    "bytes": 4558845
+  },
+  "SunPrize/Certificate/Logic076.lean": {
+    "sha256": "079031ef1be1c10c5a0052485358c9ca20855804501dbac2673de32640f8696a",
+    "bytes": 4611937
+  },
+  "SunPrize/Certificate/Logic077.lean": {
+    "sha256": "9f55c1993715e221608b5ad6c78e3349536eb21bf714b14f0402de802733d838",
+    "bytes": 3601441
+  },
+  "SunPrize/Certificate/Logic078.lean": {
+    "sha256": "d1aa316f0fbdfded00d249c8021619e763c7ecedd4ccd9d05e2b0126417aa78b",
+    "bytes": 1380437
+  },
+  "SunPrize/Certificate/Logic079.lean": {
+    "sha256": "fc20e10346f4416129ad81a3f6e6a76d35fcfb3376acdbad33fe5bdba8ea18de",
+    "bytes": 4378972
+  },
+  "SunPrize/Certificate/Logic080.lean": {
+    "sha256": "0ce0efe3c6db4bb89c167355e5b48e03527cebe2a0080d5da54b4bd0e1cc69c1",
+    "bytes": 4175407
+  },
+  "SunPrize/Certificate/Logic081.lean": {
+    "sha256": "077368e20b76f6ac1fcd5199906ed9d735f00933e54d26972233bb04e7b3050b",
+    "bytes": 4137219
+  },
+  "SunPrize/Certificate/Logic082.lean": {
+    "sha256": "487e2d2de9e001219d0f402f75b3846271c9287dee761019d8eb9995c866339e",
+    "bytes": 50523
+  },
+  "SunPrize/Certificate/LogicClosure.lean": {
+    "sha256": "528e27ed00a55d34a9b0591235bbc85fecc0b2b47d8d36dbb36b81aedc0c46e8",
+    "bytes": 203
+  },
+  "SunPrize/Certificate/Meaning.lean": {
+    "sha256": "dd99e256cc4e931c1fba71d482c651b07958db7e1caed5201db6e8ee7507e2db",
+    "bytes": 1279518
+  },
+  "SunPrize/Certificate/Theory000.lean": {
+    "sha256": "63a114784ecb9fc9f0a521e5aec67c1ccef2da8339894516ad740264324e3251",
+    "bytes": 401601
+  },
+  "SunPrize/Certificate/Theory001.lean": {
+    "sha256": "28f49e8e2be968871f84e26806284df9cfb4b1e896355f430745660549e809d4",
+    "bytes": 315843
+  },
+  "SunPrize/Certificate/Theory002.lean": {
+    "sha256": "53364244c28b55578bc6bdd0141e93140ab97440cbdcebc31c7fd07f7c472321",
+    "bytes": 118580
+  },
+  "SunPrize/Certificate/Theory003.lean": {
+    "sha256": "7ab172225da612200b0815117486bce73c96923e183076bfee3cca689dd8e0c5",
+    "bytes": 54357
+  },
+  "SunPrize/Certificate/Theory004.lean": {
+    "sha256": "4fb9e4ad71b221f8f15e96bf68dcbabb2a7e9e92b8b2f3501a649466911ea044",
+    "bytes": 490532
+  },
+  "SunPrize/Certificate/Theory005.lean": {
+    "sha256": "c4ec6da4e5a48949165bdfe359b74738f66a852e888a17c95498f2f47115a772",
+    "bytes": 252287
+  },
+  "SunPrize/Certificate/Theory006.lean": {
+    "sha256": "5efcce6b4324cf954ca3fadfe2f53196f056e9c376db5262030343e9199e1e94",
+    "bytes": 145865
+  },
+  "SunPrize/Certificate/Theory007.lean": {
+    "sha256": "d2fe0e5babbdd63c10ab0d94d642cf2e59f02722f3ecb99273831de16a5393ee",
+    "bytes": 99382
+  },
+  "SunPrize/Certificate/Theory008.lean": {
+    "sha256": "33fddfac543e00a41404fdfafa6c4be02bde8b6704133c10d11c96752fdd3d20",
+    "bytes": 99829
+  },
+  "SunPrize/Certificate/Theory009.lean": {
+    "sha256": "b49ed7e77fd1dea605e6bbe6daff8a510df3f5ca45e780cd5d0e84d74317b781",
+    "bytes": 86031
+  },
+  "SunPrize/Certificate/Theory010.lean": {
+    "sha256": "a5edf109d4d4a6feb4981c0024cd955cb74ec872c88e70261200ce10584c7561",
+    "bytes": 95303
+  },
+  "SunPrize/Certificate/Theory011.lean": {
+    "sha256": "d1402c2fa3817854d8b1cbb5924e92568b62dc0c2abe7da09afb84262f918842",
+    "bytes": 99670
+  },
+  "SunPrize/Certificate/Theory012.lean": {
+    "sha256": "04016f496a91285797cba403ed437d6a68c5d99a288cbeccabb466582cf6a7b9",
+    "bytes": 289210
+  },
+  "SunPrize/Certificate/Theory013.lean": {
+    "sha256": "a1587a35de69d3e8c37383a996eabfe008fd2f9789b0308c76914502070670ad",
+    "bytes": 172465
+  },
+  "SunPrize/Certificate/Theory014.lean": {
+    "sha256": "a2854ab86aa65ccd3468785ad0ac80a7a1c4313a367cb4492a095273ac3ff305",
+    "bytes": 105844
+  },
+  "SunPrize/Certificate/Theory015.lean": {
+    "sha256": "8ec9a5be3790fff02d9b7355e01a0e85a9e8dc47fdf396f9d08dd27bd0b6976e",
+    "bytes": 96741
+  },
+  "SunPrize/Certificate/Theory016.lean": {
+    "sha256": "fe28fd5bb31b95e2205f8320453a0600636eabd794fae71abee7bb7afebdc94e",
+    "bytes": 97602
+  },
+  "SunPrize/Certificate/Theory017.lean": {
+    "sha256": "9fa92faa28ba0357a7c078b9e313d4d42cf64a69323f84472aa04541dfec64dd",
+    "bytes": 85557
+  },
+  "SunPrize/Certificate/Theory018.lean": {
+    "sha256": "62f823e73e92497f99da342c90353a10d06e235f71ddcbe19e61254fdf39604b",
+    "bytes": 90525
+  },
+  "SunPrize/Certificate/Theory019.lean": {
+    "sha256": "2b6d62a0bbbe3fd62dbbee2e1d79a7ec102eb4b742283676d52e0b97b8f51abc",
+    "bytes": 90881
+  },
+  "SunPrize/Certificate/Theory020.lean": {
+    "sha256": "ff336f576175b5e03b38008d43a0c3d472fb64ada2b63e8f302375549587fe64",
+    "bytes": 85541
+  },
+  "SunPrize/Certificate/Theory021.lean": {
+    "sha256": "efa1999bb91be34ea2e0dfa71126a8f941adc5ec82a2532bd7c93fe94d70acb8",
+    "bytes": 85899
+  },
+  "SunPrize/Certificate/Theory022.lean": {
+    "sha256": "9308225c682972d4bb60e3a8addeab51c66e42743f93aa42673c3aa74e2d463d",
+    "bytes": 86277
+  },
+  "SunPrize/Certificate/Theory023.lean": {
+    "sha256": "bb5cd2e614c519a51e9578ef2b0d45655037fecb457718ac7e01cd0573b1e41b",
+    "bytes": 88491
+  },
+  "SunPrize/Certificate/Theory024.lean": {
+    "sha256": "41e6df58d645ecb2d954afe2159a8f733a793de1390a05a1b4ed8d9b428b0d32",
+    "bytes": 86716
+  },
+  "SunPrize/Certificate/Theory025.lean": {
+    "sha256": "9541994eb8ddefac8d82deea533fdba6115f491a1639c222afcc72b787fd91bc",
+    "bytes": 89282
+  },
+  "SunPrize/Certificate/Theory026.lean": {
+    "sha256": "3c8c2c93d4be9559a21170afe8ac0325287860f4928b0d55ca3cf3572455565f",
+    "bytes": 84734
+  },
+  "SunPrize/Certificate/Theory027.lean": {
+    "sha256": "6363f08f535e50a1bc6c75745ff7e351526a97b83e01d7c4f140d21a6e01c81e",
+    "bytes": 81422
+  },
+  "SunPrize/Certificate/Theory028.lean": {
+    "sha256": "b043fa25ddbff6155a8debc49a291dfb1b00634b3b54c5f24daeb0ba5dd07bd8",
+    "bytes": 73369
+  },
+  "SunPrize/Certificate/Theory029.lean": {
+    "sha256": "5a921e6451b51865c34782ee5491036537dfeccb884fbffb696289c29a7524a7",
+    "bytes": 65207
+  },
+  "SunPrize/Certificate/Theory030.lean": {
+    "sha256": "9111a897eaefc3aabb23fab2d48fdd59bac56830f836467bc93b13fad8dba2c7",
+    "bytes": 72766
+  },
+  "SunPrize/Certificate/Theory031.lean": {
+    "sha256": "074f52b5c418429d7abedfb2f87cced4fe9ec31c205e55a2894b78dfbeb8e198",
+    "bytes": 84061
+  },
+  "SunPrize/Certificate/Theory032.lean": {
+    "sha256": "89eddf50dceeb47a3bc8747a7b15763a8352b9e04a9aa52772df4b9278eae591",
+    "bytes": 93256
+  },
+  "SunPrize/Certificate/Theory033.lean": {
+    "sha256": "17658d419f8285bf0705d5edde472f20d52b6de4bf44dae7a0366c84f10b93c8",
+    "bytes": 96209
+  },
+  "SunPrize/Certificate/Theory034.lean": {
+    "sha256": "c9489a70b14625ab2f0dbecfb1f562b1bdad602485c39fcd7e5187e186e14852",
+    "bytes": 88551
+  },
+  "SunPrize/Certificate/Theory035.lean": {
+    "sha256": "ce676dbab658f212723ad5b15f9a83c9e1daca53555195edfc7d26eeecda511a",
+    "bytes": 88641
+  },
+  "SunPrize/Certificate/Theory036.lean": {
+    "sha256": "224430c7ce1786949b64df2d29cf45d8960d65c3919b6f6dd9eeb1d09d26175d",
+    "bytes": 90626
+  },
+  "SunPrize/Certificate/Theory037.lean": {
+    "sha256": "ab3c5cbbe293a7c0194207c6d9be3f0d9ffc75947ddce55eb8b59179917ce48d",
+    "bytes": 92151
+  },
+  "SunPrize/Certificate/Theory038.lean": {
+    "sha256": "8dc8bff1e783e6b52ff2adcdbf5935cf7ea2daa1885418d17b4d638d85701980",
+    "bytes": 95494
+  },
+  "SunPrize/Certificate/Theory039.lean": {
+    "sha256": "373445ec858bca9935d1c2992d6f6c3c23952bbf959ac6e56f58897005e54462",
+    "bytes": 100877
+  },
+  "SunPrize/Certificate/Theory040.lean": {
+    "sha256": "2d4cf8682eb7b19a77e541faacdf5e711694d8ccfecef2fab90200ad53d110fa",
+    "bytes": 95737
+  },
+  "SunPrize/Certificate/Theory041.lean": {
+    "sha256": "524f5d4a2596d3663a092ea95c4ad51164db09a3e5ff13d2595779c4200fd099",
+    "bytes": 99545
+  },
+  "SunPrize/Certificate/Theory042.lean": {
+    "sha256": "af5fa668b2cf018c254692af4020f1ec353ab309fca78062794efb7859ef9cae",
+    "bytes": 91913
+  },
+  "SunPrize/Certificate/Theory043.lean": {
+    "sha256": "e5f7e30ef01d22ee63d6536b55d8e3481032e69f8aa75a96428129b0b367e953",
+    "bytes": 105182
+  },
+  "SunPrize/Certificate/Theory044.lean": {
+    "sha256": "651cc58e2646627cc0340c876187679c149f5fe5fa0f8ab3beedf88afc5efbe1",
+    "bytes": 90229
+  },
+  "SunPrize/Certificate/Theory045.lean": {
+    "sha256": "e0f732d8d47b2890b2a09810d83ba4d0c37ce36aa2e79b1635999a604b03cbad",
+    "bytes": 102504
+  },
+  "SunPrize/Certificate/Theory046.lean": {
+    "sha256": "c67cf67fc8142993b9077750642efc8e810bc23b211015717e48fa1a896d4d55",
+    "bytes": 86647
+  },
+  "SunPrize/Certificate/Theory047.lean": {
+    "sha256": "59f2cc1919143d4e00499929009c82ce8997b13124d7616861b3bb4a3f1ff297",
+    "bytes": 89422
+  },
+  "SunPrize/Certificate/Theory048.lean": {
+    "sha256": "e147c24164d09a2c51d8099601ceefb3d844cc83f521cd1b643d5abc5abd6455",
+    "bytes": 93598
+  },
+  "SunPrize/Certificate/Theory049.lean": {
+    "sha256": "02e3e5f98568f67650adf5b033c0624d1e77d4de0c98d659efe0bcb8254bce38",
+    "bytes": 95010
+  },
+  "SunPrize/Certificate/Theory050.lean": {
+    "sha256": "e626895a007769c60bcf639c08a6170cc5246a72ceb5390ecab2099af67540c0",
+    "bytes": 91537
+  },
+  "SunPrize/Certificate/Theory051.lean": {
+    "sha256": "f7e397e91c0d7cee0077d797912d19f057883ad34cc332ce23610e944664ac38",
+    "bytes": 94259
+  },
+  "SunPrize/Certificate/Theory052.lean": {
+    "sha256": "ea02f7bb605dbdf0dbe6db61ce38a29993d1a2430c20e7702e00a7a2fdd5e156",
+    "bytes": 96301
+  },
+  "SunPrize/Certificate/Theory053.lean": {
+    "sha256": "5dd8163d2500bb4569eaddda4c9b1aa163a57f0d0231b1172d6abafc8744cd58",
+    "bytes": 96111
+  },
+  "SunPrize/Certificate/Theory054.lean": {
+    "sha256": "4e70deca9f1b8bb0348d5c5c0f7672075331e2b061c03f713d6a9732769534eb",
+    "bytes": 98883
+  },
+  "SunPrize/Certificate/Theory055.lean": {
+    "sha256": "933165fed43a07357868ae1d2d1d5874d6fee64764d87efccfca9c2b9395eef8",
+    "bytes": 100448
+  },
+  "SunPrize/Certificate/Theory056.lean": {
+    "sha256": "f7eb3cad67b14d9001bc1b8e0db2c1196442f0ddcd5857bee593c843f6a21bd3",
+    "bytes": 100802
+  },
+  "SunPrize/Certificate/Theory057.lean": {
+    "sha256": "45bfc4be0a0a0623605c17af47e2c53e3b5feb2dd622873e1a020b38072caa5e",
+    "bytes": 97110
+  },
+  "SunPrize/Certificate/Theory058.lean": {
+    "sha256": "bf81378293d942dad1713e96c3615a50c4fcb6a91e749c6917cc815b9698ed2b",
+    "bytes": 96979
+  },
+  "SunPrize/Certificate/Theory059.lean": {
+    "sha256": "f3d7a7d95d5fa6a5c25a011284f8aa1514fd31b23cc841cf8e4092967d8f8ccb",
+    "bytes": 92313
+  },
+  "SunPrize/Certificate/Theory060.lean": {
+    "sha256": "7575e4fd85b3ebc8bfd4dca08476edc9aec3e0a55aec0fd24dfc017e6312ff67",
+    "bytes": 91745
+  },
+  "SunPrize/Certificate/Theory061.lean": {
+    "sha256": "ebc1ea702be403b336c18d5d581000c51456b6e9483edcd1d5d1c9fc97ea7906",
+    "bytes": 97861
+  },
+  "SunPrize/Certificate/Theory062.lean": {
+    "sha256": "137071c1398c6b8143b9e20052e6a49d3b51a4e78694360f63ed9efb5bd3ab86",
+    "bytes": 94975
+  },
+  "SunPrize/Certificate/Theory063.lean": {
+    "sha256": "57f48db32d4303233026dc259efae6fb740b84176eef253dfaeeb50a40a99b8e",
+    "bytes": 99471
+  },
+  "SunPrize/Certificate/Theory064.lean": {
+    "sha256": "fb4a06a27c938d6b8cc6eb8c236f372dcd027e3a63213d1e5f82f2e0e452c945",
+    "bytes": 95605
+  },
+  "SunPrize/Certificate/Theory065.lean": {
+    "sha256": "784fd57bf8f1cbf777ed2c191eba3713c566a85445b1668bda8342e1733630f3",
+    "bytes": 98150
+  },
+  "SunPrize/Certificate/Theory066.lean": {
+    "sha256": "3230211fcbdbb19d8fde8529b469a384b9c49c97978ca328bcb0e9e0243934fa",
+    "bytes": 103368
+  },
+  "SunPrize/Certificate/Theory067.lean": {
+    "sha256": "67894405b458732b49f72bde4b8814e0d536e675d7a4b18ccddf0b56b5ea40a7",
+    "bytes": 99625
+  },
+  "SunPrize/Certificate/Theory068.lean": {
+    "sha256": "fbfb7e14b6a3d2d727840168eb9156a1847914e5f26d73e8ab0fbc4b011f2f41",
+    "bytes": 106233
+  },
+  "SunPrize/Certificate/Theory069.lean": {
+    "sha256": "caa26e44cfe0065707f5bc3a4382647f27875ecfe508f446d5cce21f16d0f62d",
+    "bytes": 103843
+  },
+  "SunPrize/Certificate/Theory070.lean": {
+    "sha256": "4463ebd44b4a274d1ed83930180811902da33431358d7015980318ae2787ec80",
+    "bytes": 110221
+  },
+  "SunPrize/Certificate/Theory071.lean": {
+    "sha256": "1cad54435950cf1353a88548519423a7096c0a3e7075fbe2215ce6f86d070d57",
+    "bytes": 112037
+  },
+  "SunPrize/Certificate/Theory072.lean": {
+    "sha256": "5767df60c6639c75fc9cfa8d1c81919020eb2c5b9c3927e8334cfb2cdcf191e7",
+    "bytes": 9742
+  },
+  "SunPrize/DirectionModel.lean": {
+    "sha256": "b119292baf3e6280f05f06c45c9cc109a92849b743091d790c884e35cf1da65e",
+    "bytes": 1193
+  },
+  "SunPrize/ElevenGeometry.lean": {
+    "sha256": "f2a48ff923be1f0c0062468ddb3293efa97a6c11ff01a392df1c0b1dd0193ba1",
+    "bytes": 2260
+  },
+  "SunPrize/ElevenModel.lean": {
+    "sha256": "3387f780be7ada5ed8811ed0bbbebc39d4e768298ae362ae5b522cc8c7637d0a",
+    "bytes": 429
+  },
+  "SunPrize.lean": {
+    "sha256": "de1d6d9e7411aef84fb404db264c2698d42ba47f967931b42ecc6032ac795fb6",
+    "bytes": 31
+  },
+  "vendor/Audit.lean": {
+    "sha256": "d5a6a3ab42004faba17c735768f9ee8b46787920415728ec3fd60dc0de23436a",
+    "bytes": 6412
+  },
+  "vendor/JSP404/Basic.lean": {
+    "sha256": "66139ff767d890b886600be68e80970421a6d7c5c885f06a63474c3caa1bfd10",
+    "bytes": 11499
+  },
+  "vendor/JSP404/BinaryConstruction.lean": {
+    "sha256": "e2ec0ebd0cf6cbee23ae97f795afcc821beadb0e9b3e0b71038c4b17c72f9d56",
+    "bytes": 9669
+  },
+  "vendor/JSP404/BinaryEncoding.lean": {
+    "sha256": "1d28f98b3163dd4233cf50cd0d4a081b2680f921661f5e81dcc42b21b6d3aac7",
+    "bytes": 4224
+  },
+  "vendor/JSP404/ClassicalBounds.lean": {
+    "sha256": "8743c526c6a40a30e4c73ae4ae3bf3e12b556e97af529196ba6ae9f200907ec5",
+    "bytes": 3032
+  },
+  "vendor/JSP404/ClusterConstruction.lean": {
+    "sha256": "3fda928692b59c02cb96667fdb53c91cbcb985b4c1c3d77afdcec8e2bf4e68f3",
+    "bytes": 7800
+  },
+  "vendor/JSP404/Counterexample.lean": {
+    "sha256": "84b8161743fb280f86660a86be691b0a52f5badd01800b64ef5afe1f4809c3fd",
+    "bytes": 4619
+  },
+  "vendor/JSP404/DirectionalCover.lean": {
+    "sha256": "55f7ada7352b76668cad7945e763ef7e7fab4cb92ce587a0a5fbff299ed515a3",
+    "bytes": 7384
+  },
+  "vendor/JSP404/EquallySpacedDirections.lean": {
+    "sha256": "4b89b320f05c11f859e9646ac6bb94883e62bcfab718d7d5fc8aa333c03d7cb2",
+    "bytes": 10302
+  },
+  "vendor/JSP404/FormulaCorrection.lean": {
+    "sha256": "c069b886a6fede78859d618cdb5cb385355edc9f42e5e25a989bec2c4205c6e3",
+    "bytes": 2643
+  },
+  "vendor/JSP404/HierarchicalConstruction.lean": {
+    "sha256": "b11dab9b61d3100dc68a304656f3fe897ab642caa9f021b00a69c6b5e2d6c29b",
+    "bytes": 10148
+  },
+  "vendor/JSP404/ThreeCenterBound.lean": {
+    "sha256": "161b2206e0c7cec2f8499813589950eed7cfcf61d81765d1f4407419aad2c22f",
+    "bytes": 9569
+  },
+  "vendor/JSP404/ThreeClusterGeometry.lean": {
+    "sha256": "4c228a5adfe16478a7b1f07d672615f11df98573014a1a110bad48bc1d575582",
+    "bytes": 17071
+  },
+  "vendor/JSP404.lean": {
+    "sha256": "08dd3a48a4b2230c7f776496eede373b359b1f1181762a888651df762e99f936",
+    "bytes": 381
+  },
+  "vendor/SendovDirectionGeometry.lean": {
+    "sha256": "67e42f935432421d0fe377b41a9e5420865b91301fba25740963acf6acd6a379",
+    "bytes": 12673
+  },
+  "vendor/SendovDirectionModel.lean": {
+    "sha256": "2b6bcaf05f51763f46c6384752764557d5663947d752d89ffc684cf9b1afbed5",
+    "bytes": 4397
+  },
+  "vendor/SendovFiveDirections.lean": {
+    "sha256": "ec39ea957c20a34a7c98a4cbca082f396a589106e868fc8dae821f4043b88e2f",
+    "bytes": 33930
+  },
+  "lean-toolchain": {
+    "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "bytes": 25
+  },
+  "lakefile.toml": {
+    "sha256": "0a6b506299b3c711e3d7aa912a605905a4a8e64590d95d204f49952d18d35d94",
+    "bytes": 475
+  },
+  "lake-manifest.json": {
+    "sha256": "1757477f50fcbda841108484488d2909b191a62537597be4d7b9d321486e59ae",
+    "bytes": 3678
+  }
+}

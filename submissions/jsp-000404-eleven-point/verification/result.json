@@ -1,0 +1,81 @@
+{
+  "checked_at_utc": "2026-09-17T09:07:16.860421+00:00",
+  "scope": "JSP-000404 eleven-point lower bound and exact N=11..16 values; partial formalization",
+  "public_author": "hit1190100321",
+  "lean_version": "4.34.0",
+  "mathlib_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+  "dependencies": [
+    {
+      "name": "plausible",
+      "commit": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "tracked_clean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "commit": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "tracked_clean": true
+    },
+    {
+      "name": "importGraph",
+      "commit": "e928b72544873815af278d38681b31c0293588e3",
+      "tracked_clean": true
+    },
+    {
+      "name": "proofwidgets",
+      "commit": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "tracked_clean": true
+    },
+    {
+      "name": "aesop",
+      "commit": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "tracked_clean": true
+    },
+    {
+      "name": "Qq",
+      "commit": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "tracked_clean": true
+    },
+    {
+      "name": "batteries",
+      "commit": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "tracked_clean": true
+    },
+    {
+      "name": "Cli",
+      "commit": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "tracked_clean": true
+    },
+    {
+      "name": "mathlib",
+      "commit": "5ed2965256430c3649e86755f9576b54eca72435",
+      "tracked_clean": true
+    }
+  ],
+  "module_count": 369,
+  "all_module_sources_match_records": true,
+  "all_module_exit_codes_zero": true,
+  "audit": {
+    "command": "lake env lean -j 1 --trust=0 Audit.lean",
+    "exit_code": 0,
+    "trust": 0,
+    "source_sha256": "9a912b2054d08f4d4631624b5d893c497bb9666ffba74bdf8d4a51c6e5552454",
+    "log_sha256": "2464a1bd345b3be7944f262b9f2a3e5d17708e9282639fbfaa6d9c09070899f2",
+    "log_modified_at_utc": "2026-09-17T08:45:47.969386+00:00",
+    "axioms": {
+      "SunPrize.Audit.angle_statement": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "SunPrize.Audit.value_statement": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "execution_mode": "All modules checked in dependency stages, followed by the separate final audit",
+  "full_wrapper_rerun": false,
+  "static_scan_no_prohibited_constructs": true,
+  "official_review": "Pending"
+}

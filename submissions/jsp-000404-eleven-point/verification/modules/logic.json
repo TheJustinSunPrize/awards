@@ -1,0 +1,334 @@
+[
+  {
+    "module": "SunPrize.Certificate.Logic000",
+    "path": "SunPrize\\Certificate\\Logic000.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic001",
+    "path": "SunPrize\\Certificate\\Logic001.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic002",
+    "path": "SunPrize\\Certificate\\Logic002.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic003",
+    "path": "SunPrize\\Certificate\\Logic003.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic004",
+    "path": "SunPrize\\Certificate\\Logic004.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic005",
+    "path": "SunPrize\\Certificate\\Logic005.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic006",
+    "path": "SunPrize\\Certificate\\Logic006.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic007",
+    "path": "SunPrize\\Certificate\\Logic007.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic008",
+    "path": "SunPrize\\Certificate\\Logic008.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic009",
+    "path": "SunPrize\\Certificate\\Logic009.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic010",
+    "path": "SunPrize\\Certificate\\Logic010.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic011",
+    "path": "SunPrize\\Certificate\\Logic011.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic012",
+    "path": "SunPrize\\Certificate\\Logic012.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic013",
+    "path": "SunPrize\\Certificate\\Logic013.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic014",
+    "path": "SunPrize\\Certificate\\Logic014.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic015",
+    "path": "SunPrize\\Certificate\\Logic015.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic016",
+    "path": "SunPrize\\Certificate\\Logic016.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic017",
+    "path": "SunPrize\\Certificate\\Logic017.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic018",
+    "path": "SunPrize\\Certificate\\Logic018.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic019",
+    "path": "SunPrize\\Certificate\\Logic019.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic020",
+    "path": "SunPrize\\Certificate\\Logic020.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic021",
+    "path": "SunPrize\\Certificate\\Logic021.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic022",
+    "path": "SunPrize\\Certificate\\Logic022.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic023",
+    "path": "SunPrize\\Certificate\\Logic023.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic024",
+    "path": "SunPrize\\Certificate\\Logic024.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic025",
+    "path": "SunPrize\\Certificate\\Logic025.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic026",
+    "path": "SunPrize\\Certificate\\Logic026.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic027",
+    "path": "SunPrize\\Certificate\\Logic027.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic028",
+    "path": "SunPrize\\Certificate\\Logic028.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic029",
+    "path": "SunPrize\\Certificate\\Logic029.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic030",
+    "path": "SunPrize\\Certificate\\Logic030.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic031",
+    "path": "SunPrize\\Certificate\\Logic031.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic032",
+    "path": "SunPrize\\Certificate\\Logic032.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic033",
+    "path": "SunPrize\\Certificate\\Logic033.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic034",
+    "path": "SunPrize\\Certificate\\Logic034.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic035",
+    "path": "SunPrize\\Certificate\\Logic035.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic036",
+    "path": "SunPrize\\Certificate\\Logic036.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic037",
+    "path": "SunPrize\\Certificate\\Logic037.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic038",
+    "path": "SunPrize\\Certificate\\Logic038.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic039",
+    "path": "SunPrize\\Certificate\\Logic039.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic040",
+    "path": "SunPrize\\Certificate\\Logic040.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic041",
+    "path": "SunPrize\\Certificate\\Logic041.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic042",
+    "path": "SunPrize\\Certificate\\Logic042.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic043",
+    "path": "SunPrize\\Certificate\\Logic043.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic044",
+    "path": "SunPrize\\Certificate\\Logic044.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic045",
+    "path": "SunPrize\\Certificate\\Logic045.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic046",
+    "path": "SunPrize\\Certificate\\Logic046.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic047",
+    "path": "SunPrize\\Certificate\\Logic047.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic048",
+    "path": "SunPrize\\Certificate\\Logic048.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic049",
+    "path": "SunPrize\\Certificate\\Logic049.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic050",
+    "path": "SunPrize\\Certificate\\Logic050.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic051",
+    "path": "SunPrize\\Certificate\\Logic051.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic052",
+    "path": "SunPrize\\Certificate\\Logic052.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic053",
+    "path": "SunPrize\\Certificate\\Logic053.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic054",
+    "path": "SunPrize\\Certificate\\Logic054.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic055",
+    "path": "SunPrize\\Certificate\\Logic055.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic056",
+    "path": "SunPrize\\Certificate\\Logic056.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic057",
+    "path": "SunPrize\\Certificate\\Logic057.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic058",
+    "path": "SunPrize\\Certificate\\Logic058.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic059",
+    "path": "SunPrize\\Certificate\\Logic059.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic060",
+    "path": "SunPrize\\Certificate\\Logic060.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic061",
+    "path": "SunPrize\\Certificate\\Logic061.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic062",
+    "path": "SunPrize\\Certificate\\Logic062.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic063",
+    "path": "SunPrize\\Certificate\\Logic063.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic064",
+    "path": "SunPrize\\Certificate\\Logic064.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic065",
+    "path": "SunPrize\\Certificate\\Logic065.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic066",
+    "path": "SunPrize\\Certificate\\Logic066.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic067",
+    "path": "SunPrize\\Certificate\\Logic067.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic068",
+    "path": "SunPrize\\Certificate\\Logic068.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic069",
+    "path": "SunPrize\\Certificate\\Logic069.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic070",
+    "path": "SunPrize\\Certificate\\Logic070.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic071",
+    "path": "SunPrize\\Certificate\\Logic071.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic072",
+    "path": "SunPrize\\Certificate\\Logic072.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic073",
+    "path": "SunPrize\\Certificate\\Logic073.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic074",
+    "path": "SunPrize\\Certificate\\Logic074.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic075",
+    "path": "SunPrize\\Certificate\\Logic075.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic076",
+    "path": "SunPrize\\Certificate\\Logic076.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic077",
+    "path": "SunPrize\\Certificate\\Logic077.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic078",
+    "path": "SunPrize\\Certificate\\Logic078.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic079",
+    "path": "SunPrize\\Certificate\\Logic079.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic080",
+    "path": "SunPrize\\Certificate\\Logic080.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic081",
+    "path": "SunPrize\\Certificate\\Logic081.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Logic082",
+    "path": "SunPrize\\Certificate\\Logic082.lean"
+  }
+]
