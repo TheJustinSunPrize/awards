@@ -1,0 +1,161 @@
+{
+  "format": 1,
+  "scope": "JSP-000331 sufficiently-large-cardinality inequality; also distinct witnesses",
+  "status": "passed",
+  "verified_at_utc": "2026-09-16T17:40:22.857337+00:00",
+  "lean_version": "Lean (version 4.33.0, x86_64-w64-windows-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "external_proof_source_files": 126,
+  "package_sha256": {
+    "JSP331.lean": "a11d212fb3e46c00e2ed7338a66db7f0c887b4492c23e2ff424ef0069aad614f",
+    "Audit.lean": "6ef7de983f05f728ac66dbff9e1b025585b21253134a51651d3eb5b710575858",
+    "lakefile.toml": "16ed434b1760bfcd16fc2914bdcd01745f9031636c709e4523005682ce5ccf09",
+    "lake-manifest.json": "d5f7543cf51297bbed9c232b3fbda809a6bbf9e93901f2c7cf781cb61cb9f9de",
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "source-lock.json": "2d0b2522e5e03d1f8fa73e08c28e379b7d68eb11270a285297c2b42027b5286c",
+    "mathlib-cache-roots.json": "43b53bab5f4a53f381a0416739fb28b620df5d5af99adb34e30342cf64a96c33",
+    "JSP331/Correspondence.lean": "4bca27861cbcb1ab3904c41e50fd1d515d2afa92be318e12cedef2c8d76012c6",
+    "JSP331/Proof.lean": "7897b0c6358951c1829b66428efe04739fae30d0ae23e72559a32824faf65d4f",
+    "JSP331/Statement.lean": "486e1ea303acc6f6c803e01b636dbb157743fb5e924ed82db2071fcfeb2682d5",
+    "scripts/bootstrap.py": "de9a1e2dcaceae461a2b74cdf327b7515e3abbac8d8484527649265379ef1b0f",
+    "scripts/status.py": "4708f65b895901bd2d695bc1b9a2ef2eb3bceaa8139e40bc2634e2b145384188",
+    "scripts/test_verification.py": "60a44041970af20e084d1d70388dcecd9dc1867bc77c073889c47eefc1e9b7df",
+    "scripts/verify.py": "913df70d327851fe6d995efda04ee3c0600a55480719f19ae9b02f769dab35f9"
+  },
+  "verified_package_bytes_sha256": {
+    "JSP331.lean": "a11d212fb3e46c00e2ed7338a66db7f0c887b4492c23e2ff424ef0069aad614f",
+    "Audit.lean": "6ef7de983f05f728ac66dbff9e1b025585b21253134a51651d3eb5b710575858",
+    "lakefile.toml": "16ed434b1760bfcd16fc2914bdcd01745f9031636c709e4523005682ce5ccf09",
+    "lake-manifest.json": "601d1c9d9e332ca1cbcd22ff7220a4d1977395f80e5d8d84183d0b817d9c7b6d",
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "source-lock.json": "e3aaeaba728ffd2b718a687e2617a1c533fdefc64da0a0f94365ffb92a753910",
+    "mathlib-cache-roots.json": "600d54292d20fa6115070cbe8fc955726a9189f30150a9916c82c7169bcc5374",
+    "JSP331/Correspondence.lean": "4bca27861cbcb1ab3904c41e50fd1d515d2afa92be318e12cedef2c8d76012c6",
+    "JSP331/Proof.lean": "7897b0c6358951c1829b66428efe04739fae30d0ae23e72559a32824faf65d4f",
+    "JSP331/Statement.lean": "486e1ea303acc6f6c803e01b636dbb157743fb5e924ed82db2071fcfeb2682d5",
+    "scripts/bootstrap.py": "de9a1e2dcaceae461a2b74cdf327b7515e3abbac8d8484527649265379ef1b0f",
+    "scripts/status.py": "4708f65b895901bd2d695bc1b9a2ef2eb3bceaa8139e40bc2634e2b145384188",
+    "scripts/test_verification.py": "60a44041970af20e084d1d70388dcecd9dc1867bc77c073889c47eefc1e9b7df",
+    "scripts/verify.py": "913df70d327851fe6d995efda04ee3c0600a55480719f19ae9b02f769dab35f9"
+  },
+  "line_ending_correspondence": {
+    "status": "passed: staged bytes equal checked bytes after CRLF-to-LF normalization",
+    "normalized_files": [
+      "lake-manifest.json",
+      "source-lock.json",
+      "mathlib-cache-roots.json"
+    ]
+  },
+  "axioms": {
+    "MediumPNT": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos402.erdos_402": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP331.eventual_graham": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP331.sufficiently_large_gcd_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP331.distinct_of_gcd_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP331.sufficiently_large_distinct_gcd_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "commands": [
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 3.05,
+      "log": "version.log",
+      "sha256": "b8d335ab8351a408bac4208701a6e820c84b47cae026393a5e88ffbd40c5447e",
+      "bytes": 104
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "JSP331"
+      ],
+      "exit_code": 0,
+      "seconds": 92.88,
+      "log": "build.log",
+      "sha256": "cc006f0b6ef92e88824148fbe0e9f400ef3a223ce72f99e8d2864543778596d2",
+      "bytes": 16733
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 22.21,
+      "log": "axioms.log",
+      "sha256": "635fcd524b330109b647b0c11497345a7d30ce1aa3fbfdcf66a0fb3888f77722",
+      "bytes": 1798
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "JSP331.Proof"
+      ],
+      "exit_code": 0,
+      "seconds": 1053.97,
+      "log": "kernel-replay.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "initial_complete_source_build": {
+    "argv": [
+      "lake",
+      "build",
+      "JSP331"
+    ],
+    "exit_code": 0,
+    "seconds": 1113.53,
+    "log": "build.log",
+    "sha256": "92e51ec767f6b40a894864d04c8f8e01ff2d21e48f4f1d62534e06fe9c3d13ca",
+    "bytes": 28939
+  },
+  "additional_checks": {
+    "clean_source_bootstrap": "passed: 126 source hashes matched in an empty directory",
+    "verification_gate_tests": "5 passed",
+    "repository_validate_links_build_check_history": "passed",
+    "repository_tests": "22 passed under WSL Ubuntu / Python 3.12",
+    "submission_local_markdown_links": "passed"
+  },
+  "limits": [
+    "Existing formalization reused; no new mathematical proof or first-formalization claim.",
+    "The all-cardinalities inequality and equality classification are not established here.",
+    "leanchecker uses the same Lean kernel, not an independent checker.",
+    "Raw machine-local logs stay local; public build output is an event-only excerpt.",
+    "Git uses LF; verified raw byte hashes are recorded separately where Windows used CRLF.",
+    "Windows repository tests have pre-existing path/symlink limitations; Linux tests passed."
+  ]
+}
