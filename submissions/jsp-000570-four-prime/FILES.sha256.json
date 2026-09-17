@@ -1,0 +1,167 @@
+[
+  {
+    "path": ".gitattributes",
+    "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "bytes": 8
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "6f046c417f6e6c2231e050db7927a9435211942f350a9e8fb74916b90c359919",
+    "bytes": 53
+  },
+  {
+    "path": "Audit.lean",
+    "sha256": "f1c2f70166b934fbcb2b6a517e7cca45a6a75353abb020b62fc1975121db44cc",
+    "bytes": 129
+  },
+  {
+    "path": "Erdos700.lean",
+    "sha256": "116b78d3e8d2fd1e67978cd6d1eb99310d278fe5a78c734499ec807c603463cc",
+    "bytes": 26
+  },
+  {
+    "path": "Erdos700/Arithmetic.lean",
+    "sha256": "baacdfa91a8611244efd0fdadcc8990a6703bcf72e61e306e2485b2cf778914d",
+    "bytes": 4165
+  },
+  {
+    "path": "Erdos700/Bounds.lean",
+    "sha256": "35ed4290c9bd665db2396e059f94aefb49db2deccf76cdbc5c2273cf22629863",
+    "bytes": 24210
+  },
+  {
+    "path": "Erdos700/DigitSupport.lean",
+    "sha256": "02f06b2071d1b455cd7c76cb3e2cafa8f6757f4eb1694ff51d1ca609dd9cc974",
+    "bytes": 3390
+  },
+  {
+    "path": "Erdos700/FourPrime.lean",
+    "sha256": "796ed3599cca2973d7e6a6d3b556b7460f657a524529a1453914d237696b3dec",
+    "bytes": 9498
+  },
+  {
+    "path": "Erdos700/IntDigitSupport.lean",
+    "sha256": "8e6b2cf740ccc3038b81a3afce5ca0063054a598315339a63fc50cafa75c0582",
+    "bytes": 5851
+  },
+  {
+    "path": "Erdos700/Lucas.lean",
+    "sha256": "adee0741d78fa6868e331dbdc9f2866e72346eb1af63931cd43b8cd3ea67354e",
+    "bytes": 3739
+  },
+  {
+    "path": "Erdos700/Minimum.lean",
+    "sha256": "4b3ebd40441faa26ad3c4cf31727318926cd0abe56d59353e136b2abb7bae481",
+    "bytes": 9064
+  },
+  {
+    "path": "Erdos700/PairA.lean",
+    "sha256": "1b3d6dd463c3382809f83a827310c7146867425792eddf26ad7642def3925fad",
+    "bytes": 6594
+  },
+  {
+    "path": "Erdos700/PairADigits.lean",
+    "sha256": "07bb10521695498c6895e6417c36127c0a5fec33db8f212d3f790dc7d7d758a6",
+    "bytes": 20324
+  },
+  {
+    "path": "Erdos700/PairBC.lean",
+    "sha256": "2e42e1e49510d74a177b80d21231e2514ff2599eaf8d5863f5797563a269912e",
+    "bytes": 17972
+  },
+  {
+    "path": "Erdos700/PairPDigits.lean",
+    "sha256": "12c5257ec0e38d69f75a48d505569055712623c3d992dce6cbb2fa0d794d0257",
+    "bytes": 7689
+  },
+  {
+    "path": "Erdos700/ParameterBC.lean",
+    "sha256": "7607d36917f2d913b149abff8405ed4e0b94150e9df286ce9b103f35c9015737",
+    "bytes": 3518
+  },
+  {
+    "path": "Erdos700/ParameterDigits.lean",
+    "sha256": "698ac7e04e4f4d8d5fe43931fbda02309123bfaf4a7a5aa4535134aebaec9048",
+    "bytes": 8115
+  },
+  {
+    "path": "Erdos700/ParameterP.lean",
+    "sha256": "a614d95d1d1075171c94f5a70aa3e9a4cfc2b1beb25de967ae49585266a67fc6",
+    "bytes": 5639
+  },
+  {
+    "path": "Erdos700/PrimeSource.lean",
+    "sha256": "d91cbad72668fafc71abc4bcd4aec222152088e14d229a433ae4d6abca31e2dc",
+    "bytes": 969
+  },
+  {
+    "path": "Erdos700/RowExpansions.lean",
+    "sha256": "97451baab714eca44b8ebce3cdfacbb76bef6dcfd7232db77c6658db9c446be6",
+    "bytes": 1651
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "bytes": 11358
+  },
+  {
+    "path": "README.md",
+    "sha256": "8fdd0eeab858a84e91a9b22d4293ba6c17038e77915f80975a27051756a14a46",
+    "bytes": 3518
+  },
+  {
+    "path": "SEMANTIC-AUDIT.md",
+    "sha256": "b96478fdc1f76b050619ccc906b44497aa296219857e7fe7717a4e88683bc480",
+    "bytes": 9486
+  },
+  {
+    "path": "SUBMISSION.md",
+    "sha256": "c95c0bd20b46cc17e6451cac622aa09949843a4d773040339d6de59780301ad8",
+    "bytes": 2112
+  },
+  {
+    "path": "docs/novelty.md",
+    "sha256": "37571f3e91ea61bee6f8f3afacd6aeca7e9838a8280341882bd948bd7d1278a1",
+    "bytes": 3557
+  },
+  {
+    "path": "docs/proof.md",
+    "sha256": "4c078c73188c77f30e5d8f8326b65ba736128e4add6f46077061758d22f97404",
+    "bytes": 9273
+  },
+  {
+    "path": "lake-manifest.json",
+    "sha256": "0968f425d49ce3b64d512a5727456b8ce6d380991dc172443325d34d9923e8fe",
+    "bytes": 3541
+  },
+  {
+    "path": "lakefile.toml",
+    "sha256": "2162f3dab725bc79e6ba937276b9035b88af4cbcad1f6328d57ce578ec1acd0e",
+    "bytes": 238
+  },
+  {
+    "path": "lean-toolchain",
+    "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "bytes": 25
+  },
+  {
+    "path": "verification/build-record.json",
+    "sha256": "dd5daacbbc59d044606006aa4105cefdc39f6eb379f8e6462af2f9839dbddd99",
+    "bytes": 1377
+  },
+  {
+    "path": "verification/canonical-audit.log",
+    "sha256": "42a94d8cbd7932049655c74b2fe99a3bed2bbcf5b4754b2b09e6cad6cf38bf68",
+    "bytes": 653
+  },
+  {
+    "path": "verification/canonical-build.log",
+    "sha256": "f290f62703ee96fc5b74432c143f8b5a2cfbd28ff4d35590574338ebc5b8fa35",
+    "bytes": 1074
+  },
+  {
+    "path": "verification/line-ending-record.json",
+    "sha256": "8e5adf7eaa17756137d56d323cbe00374c706552b3a34ca52c2b68c184f63a73",
+    "bytes": 5857
+  }
+]
