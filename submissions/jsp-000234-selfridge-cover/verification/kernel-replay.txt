@@ -1,0 +1,2 @@
+replaying Erdos273Selfridge.Audit with --fresh
+Exit status: 0

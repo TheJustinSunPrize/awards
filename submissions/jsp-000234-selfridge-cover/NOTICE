@@ -1,0 +1,26 @@
+Formal statement and structure attribution
+==========================================
+Erdos273Selfridge/CoveringSystem.lean is copied without changes from
+FormalConjecturesForMathlib/NumberTheory/CoveringSystem.lean at
+Google DeepMind Formal Conjectures revision
+40e7c98697de6f66b8cbdbf641749ab39ed9c152.
+Copyright 2025 The Formal Conjectures Authors. Apache-2.0, see LICENSE.
+
+The target statement is adapted from FormalConjectures/ErdosProblems/273.lean
+at the same revision. Copyright 2025 The Formal Conjectures Authors.
+The target is the solved p >= 3 variant, not the open p >= 5 question.
+The answer(True) wrapper is restated as True in the audit.
+No placeholder proof or broader conjecture library is imported.
+
+The mathematical existence construction is attributed to John Selfridge by
+https://www.erdosproblems.com/273. The explicit table of 12 residues is from
+idealombrer/erdos-273-covering-pm1, revision
+9d81d4ba5dea78fa66a2fb8ae21212fe5a8a7760,
+certificates/selfridge_360.out. That project reconstructs a Selfridge-type
+covering with a SAT search. We cite it for these numerical witnesses;
+none of its Python or Lean proof code is incorporated. The original theorem
+and this numerical reconstruction are not claimed as discoveries here.
+
+New Lean proof, audit, and packaging: GitHub account James-16, with substantial
+OpenAI Codex assistance, released under Apache-2.0. No endorsement by cited
+authors or projects is implied.
