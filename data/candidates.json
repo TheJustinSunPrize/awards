@@ -1,4 +1,37 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000108-c07-fixed-constant-v1",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000108",
+          "number": "JSP-000108",
+          "title_en": "If every point has many neighbors at one common distance from it, how large a count can be guaranteed at every point? Is it smaller than every fixed positive power of the number of points?",
+          "posed": {
+            "year": 1975,
+            "basis": "stated",
+            "citation": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000108"
+          },
+          "resolved": null
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000108-c07-fixed-constant-v1",
+      "citation": "# Candidate observation\n\n## English\n\nThis preliminary observation is associated with [JSP-000108 — equidistant neighbors in planar point sets](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000108). It publishes a pinned Lean package in [`submissions/jsp-000108`](../../../submissions/jsp-000108/README.md), including the statement correspondence, source attribution, license notices, dependency lock, reproduction script, and axiom report.\n\n**Claim boundary: full negative theorem for the exact strong fixed-constant formalization.** The theorem `JSP000108.not_jsp_000108` proves the negation of\n\n```text\n∃ c > 0, eventually f(n) ≤ n^(c / log log n).\n```\n\nThis classification does not claim the separately recorded weaker `n^(o(1))` variant, independent equivalence between every possible reading of the catalog prose and the encoded proposition, an official JSP verification decision, an award, eligibility, or recipient confirmation.\n\nThe formal statement is attributed to [Formal Conjectures at commit `40e7c98697de6f66b8cbdbf641749ab39ed9c152`](https://github.com/google-deepmind/formal-conjectures/blob/40e7c98697de6f66b8cbdbf641749ab39ed9c152/FormalConjectures/ErdosProblems/92.lean). The proof and supporting files are attributed to [plby/lean-proofs at commit `8822f7ddef30fadbd92e1c6ab4ed897af356af5e`](https://github.com/plby/lean-proofs/tree/8822f7ddef30fadbd92e1c6ab4ed897af356af5e); the package preserves the public source headers and Apache-2.0 notice.\n\nThe package reports a local Lean 4.33.1 build with pinned Mathlib revision `0df444a360eaa60ab8c11dca51a86af692955474`. That build and axiom report are reproducibility evidence only, not independent mathematical review or official verification. The candidate remains under verification.\n",
+      "recipients": "# Recipients\n\n## English\n\nNo recipient is identified in this preliminary observation. It preserves public source attribution and makes no recipient, award, payment, eligibility, or identity claim.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }
