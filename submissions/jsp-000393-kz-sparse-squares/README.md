@@ -21,6 +21,7 @@ The exact statements and all hypotheses are recorded in [STATEMENT.md](STATEMENT
 - [Pinned proof repository](https://github.com/ketianzhang1-lang/jsp-000301-lean/tree/a337720331a34599114a9d4669d6518d5e608f6f)
 - [Lean source](https://github.com/ketianzhang1-lang/jsp-000301-lean/blob/a337720331a34599114a9d4669d6518d5e608f6f/JSP000393.lean)
 - [Reproduction and verification](VERIFICATION.md)
+- [Completed CI output excerpt](evidence/ci-verification-excerpt.log) and [structured result](evidence/ci-verification.json)
 - [Machine-readable source pins and hashes](SOURCE.json)
 - [Attribution, assistance and contribution limits](PROVENANCE.md)
 

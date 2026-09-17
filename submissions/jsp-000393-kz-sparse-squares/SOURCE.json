@@ -35,5 +35,23 @@
   "related_registration": "https://github.com/TheJustinSunPrize/awards/issues/44",
   "recipient_placeholder": "RECIPIENT-JSP-000393-KZ-A",
   "recipient_confirmation": "pending",
-  "award_claim": "none"
+  "award_claim": "none",
+  "ci_conclusion": "success",
+  "ci_job_id": 105034651595,
+  "ci_evidence_commit": "edbb663aac14387805a9986b257d39e90d8f5cd2",
+  "ci_evidence_files": [
+    {
+      "path": "evidence/ci-verification-excerpt.log",
+      "bytes": 14754,
+      "sha256": "858e383d3f86444935afe8f1d074b426b395ba62b9583bda61e0117029dae854"
+    },
+    {
+      "path": "evidence/ci-verification.json",
+      "bytes": 1420,
+      "sha256": "68e205ccdaf619ac39714511e708f184863533128a7cacd11242be048c92a028"
+    }
+  ],
+  "nanoda_strict_allowlist": false,
+  "nanoda_pretty_printer_errors": 1,
+  "project_axiom_audit": "41 declarations; standard three-axiom allowlist; passed"
 }
