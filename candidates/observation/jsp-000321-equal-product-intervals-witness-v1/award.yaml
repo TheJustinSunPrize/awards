@@ -1,0 +1,20 @@
+id: jsp-000321-equal-product-intervals-witness-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000321"
+  number: "JSP-000321"
+  title_en: "When can two disjoint intervals of consecutive positive integers have equal products?"
+  posed:
+    year: 1976
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000321"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null

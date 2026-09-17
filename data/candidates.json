@@ -1,4 +1,37 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000321-equal-product-intervals-witness-v1",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000321",
+          "number": "JSP-000321",
+          "title_en": "When can two disjoint intervals of consecutive positive integers have equal products?",
+          "posed": {
+            "year": 1976,
+            "basis": "earliest-reference",
+            "citation": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000321"
+          },
+          "resolved": null
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000321-equal-product-intervals-witness-v1",
+      "citation": "# Candidate observation\n\n## English\n\nThis candidate observation is associated with [JSP-000321 — When can two disjoint intervals of consecutive positive integers have equal products?](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000321). It publishes `Statement.lean` and `Proof.lean` for one explicit instance of the phenomenon asked about by the catalogued question: the disjoint intervals `[5, 7]` and `[14, 15]` of consecutive positive integers have equal products, `5 * 6 * 7 = 210 = 14 * 15`, with disjointness witnessed by `7 < 14`.\n\nThis observation records a complete, machine-checked Lean proof of one explicit instance (5·6·7 = 14·15) of equal products of two disjoint intervals of consecutive positive integers. The classification of all such instances requested by the question is not addressed, the catalogued problem is not resolved, and no award claim is made.\n\nThe catalog entry records \"Date proposed: No later than 1976 (bibliographic evidence)\" and lists no publication details. The posed year of 1976 with basis `earliest-reference` follows the catalog entry; no separate publication of the problem is asserted by this observation. The record schema requires a nonempty citation string, so the `citation` field points to the catalog entry itself as the public record of the problem statement, not to an independent publication.\n\nA local Lean compilation (`lake env lean JSP000321.lean`, exit code 0 with no output) and an axiom audit (`#print axioms equal_product_intervals` reports that the theorem depends on no axioms) were run with Lean v4.35.0-rc2 and the pinned Mathlib v4.35.0-rc2 revision at commit `a4dc1fba91544b777a29ea001b25cd6524c06a0b` of [Yaohua-Leo/jsp-000321-lean](https://github.com/Yaohua-Leo/jsp-000321-lean). These compiler results are reproducibility evidence for the stated formal theorem; they are not official JSP verification or award admission.\n\nThe candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.\n",
+      "recipients": "# Recipients\n\n## English\n\nNo recipient is identified in this preliminary observation. It makes no recipient, award, payment, or identity claim.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }
