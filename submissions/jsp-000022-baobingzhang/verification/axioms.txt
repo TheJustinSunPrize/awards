@@ -1,0 +1,6 @@
+'CernyConjecture.frankl_skew_bollobas' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CernyConjecture.exists_shrink' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CernyConjecture.pin_frankl_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CernyConjecture.pin_frankl_bound'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CernyConjecture.kari_eulerian_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CernyConjecture.cerny_conjecture_eulerian' depends on axioms: [propext, Classical.choice, Quot.sound]
