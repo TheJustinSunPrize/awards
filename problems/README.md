@@ -166,7 +166,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000090 | [If local subgraphs have large independent sets, must the whole graph be close to bipartite after few modifications?](catalog-0001-0100.md#JSP-000090) | Solved | No | No | Unavailable |
 | JSP-000091 | [Can a graph have infinite chromatic number while its finite local subgraphs satisfy the prescribed property after very few edge deletions?](catalog-0001-0100.md#JSP-000091) | Solved | Yes | Yes | Unclaimed |
 | JSP-000092 | [Can a graph have uncountable chromatic number while all its finite subgraphs have relatively large independent sets?](catalog-0001-0100.md#JSP-000092) | Open | No | No | Unavailable |
-| JSP-000093 | [How many edge-disjoint monochromatic triangles are guaranteed in a two-coloring of the edges of a complete graph?](catalog-0001-0100.md#JSP-000093) | Solved | No | No | Unavailable |
+| JSP-000093 | [How many edge-disjoint monochromatic triangles are guaranteed in a two-coloring of the edges of a complete graph?](catalog-0001-0100.md#JSP-000093) | Solved | Yes | No | Unavailable |
 | JSP-000094 | [What is the exact exponential growth constant for the number of vertices forcing a monochromatic clique of prescribed size in every two-coloring?](catalog-0001-0100.md#JSP-000094) | Progress | No | No | Unavailable |
 | JSP-000095 | [Can explicit graphs or colorings attain the predicted exponential lower bounds for diagonal Ramsey numbers?](catalog-0001-0100.md#JSP-000095) | Progress | No | No | Unavailable |
 | JSP-000096 | [Which minimal graphs prevent Ramsey numbers from growing linearly with the number of edges? Characterize these obstructions.](catalog-0001-0100.md#JSP-000096) | Solved | No | No | Unavailable |
