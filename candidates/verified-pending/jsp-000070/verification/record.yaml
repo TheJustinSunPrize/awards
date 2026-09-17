@@ -78,6 +78,17 @@ artifacts:
     archive: "candidates/verified-pending/jsp-000070/verification/current-release-v4.34.log"
     sha256: ""
     bytes: 0
-  olean: "verify-current/.lake/build/lib/lean/Erdos42.olean (v4.34.0)"
+  verification_statement:
+    archive: "candidates/verified-pending/jsp-000070/verification/independent-verification.md"
+    sha256: ""
+    bytes: 0
+  source:
+    file: "work/jsp-070/verify-current/Erdos42.lean (v4.34-adapted)"
+    sha256: "749BC7F780F5673A6D18A0C76778951C8A5858046D462CEF36C98D87980A5446"
+    bytes: 613189
+  olean:
+    file: "work/jsp-070/verify-current/.lake/build/lib/lean/Erdos42.olean"
+    sha256: "94ED070FD9A31B9A8D8420227E1063C54273E1DA34EA971FA6648A932AABBF06"
+    bytes: 0
 performed_by: "jsp070-verifier"
 performed_at: "2026-09-17"
