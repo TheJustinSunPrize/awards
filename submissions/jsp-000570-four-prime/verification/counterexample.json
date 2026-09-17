@@ -1,0 +1,168 @@
+{
+  "P": 25480409371,
+  "a": 6,
+  "b": 18,
+  "c": 48,
+  "R": 0,
+  "P_threshold": 25480396800,
+  "primes": [
+    25480409371,
+    25480409377,
+    25480409389,
+    25480409419
+  ],
+  "prime_certificates": [
+    {
+      "n": 25480409371,
+      "isqrt": 159625,
+      "divisors_tested": 79813,
+      "method": "Exact trial division by 2 and every odd integer through isqrt(n).",
+      "prime": true
+    },
+    {
+      "n": 25480409377,
+      "isqrt": 159625,
+      "divisors_tested": 79813,
+      "method": "Exact trial division by 2 and every odd integer through isqrt(n).",
+      "prime": true
+    },
+    {
+      "n": 25480409389,
+      "isqrt": 159625,
+      "divisors_tested": 79813,
+      "method": "Exact trial division by 2 and every odd integer through isqrt(n).",
+      "prime": true
+    },
+    {
+      "n": 25480409419,
+      "isqrt": 159625,
+      "divisors_tested": 79813,
+      "method": "Exact trial division by 2 and every odd integer through isqrt(n).",
+      "prime": true
+    }
+  ],
+  "N": 421527202027998836984769084169268008898197,
+  "k": 314320570951028896159815520413631,
+  "k_formula": "19*P^2*(P+18)",
+  "k_in_minimum_range": true,
+  "N_half_floor": 210763601013999418492384542084634004449098,
+  "lucas_checks": [
+    {
+      "prime": 25480409371,
+      "N_digits_low_first": [
+        0,
+        5184,
+        1260,
+        72,
+        1
+      ],
+      "k_digits_low_first": [
+        0,
+        0,
+        342,
+        19,
+        0
+      ],
+      "violating_digit_positions": [],
+      "prime_divides_binomial_by_Lucas": false
+    },
+    {
+      "prime": 25480409377,
+      "N_digits_low_first": [
+        0,
+        25480406353,
+        179,
+        48,
+        1
+      ],
+      "k_digits_low_first": [
+        8208,
+        25480407325,
+        25480409376,
+        18,
+        0
+      ],
+      "violating_digit_positions": [
+        0,
+        1,
+        2
+      ],
+      "prime_divides_binomial_by_Lucas": true
+    },
+    {
+      "prime": 25480409389,
+      "N_digits_low_first": [
+        0,
+        6480,
+        25480408705,
+        25480409388
+      ],
+      "k_digits_low_first": [
+        0,
+        6156,
+        25480408705,
+        18
+      ],
+      "violating_digit_positions": [],
+      "prime_divides_binomial_by_Lucas": false
+    },
+    {
+      "prime": 25480409419,
+      "N_digits_low_first": [
+        0,
+        25480348939,
+        4715,
+        25480409299
+      ],
+      "k_digits_low_first": [
+        25479096139,
+        98495,
+        25480407025,
+        18
+      ],
+      "violating_digit_positions": [
+        0,
+        2
+      ],
+      "prime_divides_binomial_by_Lucas": true
+    }
+  ],
+  "quotient_digit_certificates": [
+    {
+      "base": 25480409371,
+      "N_over_base": [
+        5184,
+        1260,
+        72,
+        1
+      ],
+      "k_over_base": [
+        0,
+        342,
+        19
+      ]
+    },
+    {
+      "base": 25480409389,
+      "N_over_base": [
+        6480,
+        25480408705,
+        25480409388
+      ],
+      "k_over_base": [
+        6156,
+        25480408705,
+        18
+      ]
+    }
+  ],
+  "gcd_at_k_by_Lucas": 649251263089686721963,
+  "proposed_minimum_value": 16543187948686502107761484559263,
+  "strictly_below_proposed_minimum": true,
+  "conclusion": "The proposed extension c>=3b-a is false. f(N)<=gcd(N,choose(N,k))=(P+6)*(P+48)<P*(P+6)*(P+18).",
+  "scope": "Four primes verified by exhaustive exact trial division; exact full base digits verify the displayed gcd via Lucas. This Python run does not compute the full minimum f(N) or perform Lean verification. A separate kernel-checked proof is supplied in Erdos700/Counterexample.lean; no maintained criterion is refuted.",
+  "formal_proof_file": "Erdos700/Counterexample.lean",
+  "formal_root": "Erdos700.Counterexample.zero_gap_counterexample",
+  "script": "check_counterexample.py",
+  "script_sha256": "e909c595b361b298660c8299b54e23c796760202631c28c5d8d6f0ca1c4b79d5"
+}

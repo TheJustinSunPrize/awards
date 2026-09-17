@@ -1,0 +1,122 @@
+[
+  {
+    "path": "Audit.lean",
+    "sha256": "3cb8685e8267e39e13aef4c04fa68dc845cc8eb00f7003273bc437f248b85d67",
+    "bytes": 1295
+  },
+  {
+    "path": "Erdos700/Arithmetic.lean",
+    "sha256": "baacdfa91a8611244efd0fdadcc8990a6703bcf72e61e306e2485b2cf778914d",
+    "bytes": 4165
+  },
+  {
+    "path": "Erdos700/Bounds.lean",
+    "sha256": "7c9b19858bee231bc14f3b1d0a1d5e9a867093d0311a978ea7c658ba19970faa",
+    "bytes": 18408
+  },
+  {
+    "path": "Erdos700/Counterexample.lean",
+    "sha256": "b805e372901deac15f059355cefbd9070f8fec9c68ddee6d1f18207a644db10c",
+    "bytes": 4274
+  },
+  {
+    "path": "Erdos700/CounterexampleLucas.lean",
+    "sha256": "7a95a15773e6afbc09ca2d509bfd0d33822880fac77a13fa11e30dbef376c5b3",
+    "bytes": 3024
+  },
+  {
+    "path": "Erdos700/CounterexamplePrimes.lean",
+    "sha256": "6fde684b8329216abcece02cbb5418d1f10ee0abb3441008c3324f6c61c8da1e",
+    "bytes": 3728
+  },
+  {
+    "path": "Erdos700/DigitSupport.lean",
+    "sha256": "02f06b2071d1b455cd7c76cb3e2cafa8f6757f4eb1694ff51d1ca609dd9cc974",
+    "bytes": 3390
+  },
+  {
+    "path": "Erdos700/FourPrime.lean",
+    "sha256": "aff6314ea5fe169b19bbbdbe8dc8970c4260c6b836c939125967fb084546e033",
+    "bytes": 12295
+  },
+  {
+    "path": "Erdos700/IntDigitSupport.lean",
+    "sha256": "8e6b2cf740ccc3038b81a3afce5ca0063054a598315339a63fc50cafa75c0582",
+    "bytes": 5851
+  },
+  {
+    "path": "Erdos700/Lucas.lean",
+    "sha256": "adee0741d78fa6868e331dbdc9f2866e72346eb1af63931cd43b8cd3ea67354e",
+    "bytes": 3739
+  },
+  {
+    "path": "Erdos700/Minimum.lean",
+    "sha256": "4b3ebd40441faa26ad3c4cf31727318926cd0abe56d59353e136b2abb7bae481",
+    "bytes": 9064
+  },
+  {
+    "path": "Erdos700/PairA.lean",
+    "sha256": "1b3d6dd463c3382809f83a827310c7146867425792eddf26ad7642def3925fad",
+    "bytes": 6594
+  },
+  {
+    "path": "Erdos700/PairADigits.lean",
+    "sha256": "d61feb35a406f278c8c422c6dffcd6c43e2dc5f07397ffb4a983b188a68521b7",
+    "bytes": 20360
+  },
+  {
+    "path": "Erdos700/PairBC.lean",
+    "sha256": "2f24e879bb5462e032f088e8c7dab539a90612d0504db9b89a9ea584c5522be3",
+    "bytes": 18275
+  },
+  {
+    "path": "Erdos700/PairPDigits.lean",
+    "sha256": "12c5257ec0e38d69f75a48d505569055712623c3d992dce6cbb2fa0d794d0257",
+    "bytes": 7689
+  },
+  {
+    "path": "Erdos700/ParameterBC.lean",
+    "sha256": "d29e179384212f22275b75bfc431814e663708a6c51027ba09fddf685e183d5d",
+    "bytes": 3575
+  },
+  {
+    "path": "Erdos700/ParameterDigits.lean",
+    "sha256": "cf9a7e9acd301b7b91b78d5de41b0182eeffcc707e11544f1e4ddcc587351031",
+    "bytes": 8206
+  },
+  {
+    "path": "Erdos700/ParameterP.lean",
+    "sha256": "536f5c7ad7cea4961beaf6a5e762355782fe7fbb3ee633be2ce93aacadc96dbd",
+    "bytes": 5676
+  },
+  {
+    "path": "Erdos700/PrimeSource.lean",
+    "sha256": "d91cbad72668fafc71abc4bcd4aec222152088e14d229a433ae4d6abca31e2dc",
+    "bytes": 969
+  },
+  {
+    "path": "Erdos700/RowExpansions.lean",
+    "sha256": "97451baab714eca44b8ebce3cdfacbb76bef6dcfd7232db77c6658db9c446be6",
+    "bytes": 1651
+  },
+  {
+    "path": "Erdos700.lean",
+    "sha256": "992af48afd355aef683442edf039b3c5492280900be92a79b96c9e662903cda6",
+    "bytes": 57
+  },
+  {
+    "path": "lake-manifest.json",
+    "sha256": "0968f425d49ce3b64d512a5727456b8ce6d380991dc172443325d34d9923e8fe",
+    "bytes": 3541
+  },
+  {
+    "path": "lakefile.toml",
+    "sha256": "2162f3dab725bc79e6ba937276b9035b88af4cbcad1f6328d57ce578ec1acd0e",
+    "bytes": 238
+  },
+  {
+    "path": "lean-toolchain",
+    "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "bytes": 25
+  }
+]

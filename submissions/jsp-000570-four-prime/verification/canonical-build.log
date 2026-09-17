@@ -1,0 +1,28 @@
+Command (fresh verification project): lake build
+Lean: 4.33.1
+Mathlib: 0df444a360eaa60ab8c11dca51a86af692955474
+Fresh local .lake/build; inherited LEAN_PATH removed.
+All local sources copied byte-for-byte; prebuilt dependency caches reused.
+Exit code: 0
+
+✔ [1662/1682] Built Erdos700.Lucas (11s)
+✔ [1663/1682] Built Erdos700.CounterexampleLucas (11s)
+✔ [1664/1682] Built Erdos700.CounterexamplePrimes (12s)
+✔ [1665/1682] Built Erdos700.PairBC (13s)
+✔ [1666/1682] Built Erdos700.Arithmetic (14s)
+✔ [1667/1682] Built Erdos700.PairA (14s)
+✔ [1668/1682] Built Erdos700.Bounds (14s)
+✔ [1669/1682] Built Erdos700.PrimeSource (9.5s)
+✔ [1670/1682] Built Erdos700.RowExpansions (7.7s)
+✔ [1671/1682] Built Erdos700.DigitSupport (12s)
+✔ [1672/1682] Built Erdos700.Minimum (12s)
+✔ [1673/1682] Built Erdos700.ParameterBC (12s)
+✔ [1674/1682] Built Erdos700.ParameterDigits (12s)
+✔ [1675/1682] Built Erdos700.PairADigits (12s)
+✔ [1676/1682] Built Erdos700.IntDigitSupport (6.3s)
+✔ [1677/1682] Built Erdos700.Counterexample (10s)
+✔ [1678/1682] Built Erdos700.PairPDigits (15s)
+✔ [1679/1682] Built Erdos700.ParameterP (5.6s)
+✔ [1680/1682] Built Erdos700.FourPrime (8.1s)
+✔ [1681/1682] Built Erdos700 (5.4s)
+Build completed successfully (1682 jobs).
