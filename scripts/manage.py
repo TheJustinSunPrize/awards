@@ -263,6 +263,8 @@ def check_history(root, base):
     for path in sorted(old_paths):
         if not path.endswith("/award.yaml"):
             continue
+        # Git object paths always use forward slashes; keep them POSIX on every platform.
+        entry_dir = Path(path).parent.as_posix()
         old = yaml.load(git_text(root, base, path), Loader=RecordLoader)
         new = current.get(old["id"])
         if old["status"] in ("announced", "disputed", "paid", "revoked"):
@@ -274,11 +276,11 @@ def check_history(root, base):
         if new["entry"]["status"] == "revoked":
             for key in ("decision", "recipients", "verification"):
                 require(old[key] == new["entry"][key], f"Revocation must preserve original {key}")
-            old_record = yaml.load(git_text(root, base, str(Path(path).parent / "verification/record.yaml")), Loader=RecordLoader)
+            old_record = yaml.load(git_text(root, base, f"{entry_dir}/verification/record.yaml"), Loader=RecordLoader)
             require(old_record == new["verification_record"], "Revocation must preserve the original verification record")
-        old_statement_path = str(Path(path).parent / "verification/statement.yaml")
+        old_statement_path = f"{entry_dir}/verification/statement.yaml"
         # Previously archived statements remain immutable after further replacements.
-        prefix = str(Path(path).parent / "verification/statements") + "/"
+        prefix = f"{entry_dir}/verification/statements/"
         for archived_old_path in sorted(p for p in old_paths if p.startswith(prefix) and p.endswith(".yaml")):
             prior = yaml.load(git_text(root, base, archived_old_path), Loader=RecordLoader)
             current_archive = root / new["source_path"] / "verification/statements" / Path(archived_old_path).name
@@ -312,7 +314,8 @@ def generate(root, check=False):
             require(path.is_file() and path.read_text(encoding="utf-8") == expected,
                     f"{path}: stale or missing; run python scripts/manage.py build")
         else:
-            path.write_text(expected, encoding="utf-8")
+            # Pin the newline so generated artifacts do not depend on the host platform.
+            path.write_text(expected, encoding="utf-8", newline="\n")
     return outputs
 
 

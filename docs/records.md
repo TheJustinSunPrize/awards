@@ -70,6 +70,8 @@ python scripts/manage.py check
 python -m unittest discover -s tests -v
 ```
 
+On Windows, activate the virtual environment with `.venv\Scripts\activate` instead.
+
 `validate` checks source schemas and cross-file business constraints. `links` checks local Markdown file links, reference links, images and heading anchors. External URL availability and raw HTML links are outside this offline check. `build` validates and writes deterministic `data/*.json`; `check` compares the committed files with regeneration without modifying them. No timestamps or machine-local paths enter the generated data.
 
 `python scripts/manage.py history --base <full-commit-sha>` compares published decisions, statements and retained award history with a Git base revision. CI runs this on PRs and pushes with an available base, using full history. It compares snapshots; reviewers must still check intermediate commits for private information and confirm business event dates.
