@@ -1,0 +1,156 @@
+import Probe.TriangularFaces
+import Probe.FaceVertexSimplicity
+import Probe.MaximalLinks
+import Probe.MaximalNoBridges
+import Probe.MaximalConnectivity
+import Probe.PendantInsertion
+import Probe.ComponentInsertion
+import Probe.RotationSystem
+import Probe.CycleSurgery
+import Probe.EdgeDeletion
+import Probe.OrbitCounting
+import Probe.SwapCycles
+import Probe.DeletionConnectivity
+import Probe.GenusZero
+import Probe.CycleInsertion
+import Probe.EdgeInsertion
+import Probe.CofacialInsertion
+import Probe.MaximalBridges
+
+#print axioms JSP512Probe.RotationSystem.sameCycle_iff_source
+#print axioms JSP512Probe.RotationSystem.vertexOrbit_card
+#print axioms JSP512Probe.RotationSystem.face_ne_self
+#print axioms JSP512Probe.CycleSurgery.eraseAt_sameCycle_iff
+#print axioms JSP512Probe.CycleSurgery.delete_sameCycle_iff
+#print axioms JSP512Probe.CycleSurgery.delete_fiber_cycles
+
+#print axioms JSP512Probe.RotationSystem.deleteEdge
+#print axioms JSP512Probe.RotationSystem.deleted_cycles
+#print axioms JSP512Probe.RotationSystem.deleted_face
+#print axioms JSP512Probe.RotationSystem.ambient_face_surgery
+
+#print axioms JSP512Probe.RotationSystem.removed_face_orbit
+
+#print axioms JSP512Probe.quotient_card_remove_class
+#print axioms JSP512Probe.sameCycle_embedding
+#print axioms JSP512Probe.RotationSystem.ambient_face_count
+
+#print axioms JSP512Probe.CycleSurgery.swap_joins
+#print axioms JSP512Probe.CycleSurgery.swap_cycles_label
+#print axioms JSP512Probe.CycleSurgery.swap_cycle_count
+
+#print axioms JSP512Probe.CycleSurgery.swap_split_count
+#print axioms JSP512Probe.RotationSystem.delete_face_count_same
+#print axioms JSP512Probe.RotationSystem.delete_face_count_different
+#print axioms JSP512Probe.RotationSystem.delete_face_count_source_leaf
+#print axioms JSP512Probe.RotationSystem.delete_face_count_target_leaf
+#print axioms JSP512Probe.RotationSystem.delete_face_count_isolated_edge
+#print axioms JSP512Probe.RotationSystem.bridge_same_face
+#print axioms JSP512Probe.RotationSystem.bridge_component_count
+#print axioms JSP512Probe.RotationSystem.nonbridge_component_count
+
+#print axioms JSP512Probe.RotationSystem.supportSize_delete
+#print axioms JSP512Probe.RotationSystem.defect_delete_le
+#print axioms JSP512Probe.RotationSystem.defect_nonnegative
+#print axioms JSP512Probe.RotationSystem.genusZero_delete
+#print axioms JSP512Probe.RotationSystem.genusZero_bridge_iff_sameFace
+#print axioms JSP512Probe.RotationSystem.genusZero_subgraph
+
+#print axioms JSP512Probe.CycleSurgery.erase_insertAfter
+#print axioms JSP512Probe.CycleSurgery.insertAfter_sameCycle
+#print axioms JSP512Probe.CycleSurgery.insertAfter_new_cycle
+#print axioms JSP512Probe.CycleSurgery.insertAfter_orbit_count
+#print axioms JSP512Probe.CycleSurgery.insertAfter_fiber_cycles
+#print axioms JSP512Probe.CycleSurgery.insertAfter_preserves_label
+
+#print axioms JSP512Probe.CycleSurgery.fresh_source_fiber_cycles
+
+#print axioms JSP512Probe.EdgeInsertion.dartEquiv
+#print axioms JSP512Probe.EdgeInsertion.addEdge
+#print axioms JSP512Probe.EdgeInsertion.added_cycles
+#print axioms JSP512Probe.EdgeInsertion.added_face_embed
+
+#print axioms JSP512Probe.CycleSurgery.insertAfter_old
+#print axioms JSP512Probe.EdgeInsertion.face_insertion_formula
+#print axioms JSP512Probe.EdgeInsertion.added_face_count_eq_cut
+#print axioms JSP512Probe.EdgeInsertion.cofacial_added_face_count
+#print axioms JSP512Probe.EdgeInsertion.added_edge_count
+#print axioms JSP512Probe.EdgeInsertion.added_component_count
+#print axioms JSP512Probe.EdgeInsertion.cofacial_defect
+#print axioms JSP512Probe.EdgeInsertion.cofacial_genusZero
+
+#print axioms JSP512Probe.RotationSystem.exists_maximal_augmentation
+#print axioms JSP512Probe.RotationSystem.maximal_cofacial_adj
+#print axioms JSP512Probe.RotationSystem.maximal_face_vertices_adj
+#print axioms JSP512Probe.RotationSystem.maximal_supergraph_eq
+#print axioms JSP512Probe.RotationSystem.maximal_face_isClique
+#print axioms JSP512Probe.RotationSystem.maximal_bridge_source_fixed
+#print axioms JSP512Probe.RotationSystem.maximal_bridge_endpoints_fixed
+
+#print axioms JSP512Probe.EdgeInsertion.delete_added_edge
+#print axioms JSP512Probe.EdgeInsertion.separate_component_count
+#print axioms JSP512Probe.EdgeInsertion.separate_face_count
+#print axioms JSP512Probe.EdgeInsertion.separate_defect
+#print axioms JSP512Probe.EdgeInsertion.separate_genusZero
+#print axioms JSP512Probe.RotationSystem.maximal_dart_sources_reachable
+#print axioms JSP512Probe.RotationSystem.maximal_support_reachable
+
+#print axioms JSP512Probe.EdgeInsertion.pendant_cycles
+#print axioms JSP512Probe.EdgeInsertion.addPendant
+#print axioms JSP512Probe.EdgeInsertion.pendant_face_formula
+#print axioms JSP512Probe.EdgeInsertion.pendant_face_count
+#print axioms JSP512Probe.EdgeInsertion.delete_pendant_edge
+#print axioms JSP512Probe.EdgeInsertion.pendant_defect
+#print axioms JSP512Probe.EdgeInsertion.pendant_genusZero
+#print axioms JSP512Probe.RotationSystem.maximal_support_univ
+#print axioms JSP512Probe.RotationSystem.maximal_connected_of_dart
+#print axioms JSP512Probe.EdgeInsertion.singleEdgeRotation
+#print axioms JSP512Probe.EdgeInsertion.singleEdge_genusZero
+#print axioms JSP512Probe.RotationSystem.maximal_preconnected
+#print axioms JSP512Probe.RotationSystem.maximal_connected
+
+#print axioms JSP512Probe.RotationSystem.reachable_of_endpoints_fixed
+#print axioms JSP512Probe.RotationSystem.maximal_bridge_card
+#print axioms JSP512Probe.RotationSystem.maximal_not_bridge
+#print axioms JSP512Probe.RotationSystem.maximal_edge_distinct_faces
+#print axioms JSP512Probe.RotationSystem.maximal_face_edge_injective
+#print axioms JSP512Probe.RotationSystem.maximal_face_two_steps_ne
+#print axioms JSP512Probe.RotationSystem.maximal_rotations_nonfixed
+
+#print axioms JSP512Probe.RotationSystem.maximal_consecutive_neighbors_adj
+#print axioms JSP512Probe.RotationSystem.maximal_neighbor_preconnected
+#print axioms JSP512Probe.RotationSystem.maximal_vertex_deleted_preconnected
+#print axioms JSP512Probe.RotationSystem.maximal_vertex_deleted_connected
+
+#print axioms JSP512Probe.RefinedRotation.cycle_source
+#print axioms JSP512Probe.RefinedRotation.dart_bijective
+#print axioms JSP512Probe.RefinedRotation.rotation
+#print axioms JSP512Probe.RefinedRotation.face_count
+#print axioms JSP512Probe.RefinedRotation.full_support
+#print axioms JSP512Probe.RefinedRotation.edge_count
+#print axioms JSP512Probe.RotationSystem.split_source
+#print axioms JSP512Probe.RotationSystem.split_cycles_away
+#print axioms JSP512Probe.RotationSystem.split_graph_connected
+#print axioms JSP512Probe.RotationSystem.maximal_face_vertex_injective
+#print axioms JSP512Probe.RotationSystem.maximal_face_source_injOn
+#print axioms JSP512Probe.RotationSystem.maximal_face_size_le
+
+#print axioms JSP512Probe.CycleSurgery.sum_orbitSize
+#print axioms JSP512Probe.CycleSurgery.orbitSize_three_le
+#print axioms JSP512Probe.CycleSurgery.orbit_size_budget
+#print axioms JSP512Probe.RotationSystem.faceLength_eq_card
+#print axioms JSP512Probe.RotationSystem.rotate_fixed_of_face_two_steps
+#print axioms JSP512Probe.RotationSystem.face_length_budget
+#print axioms JSP512Probe.RotationSystem.genusZero_edge_face_bound
+#print axioms JSP512Probe.RotationSystem.maximal_edge_face_bound
+#print axioms JSP512Probe.RotationSystem.delete_face_step_unchanged
+#print axioms JSP512Probe.RotationSystem.genusZero_subgraph_preserving_steps
+#print axioms JSP512Probe.RotationSystem.complete_rotations_nonfixed
+#print axioms JSP512Probe.RotationSystem.complete_spanning_face_impossible
+#print axioms JSP512Probe.RotationSystem.component_support_count
+#print axioms JSP512Probe.RotationSystem.realized_genusZero
+#print axioms JSP512Probe.RotationSystem.maximal_faceLength_le_three
+#print axioms JSP512Probe.RotationSystem.maximal_faceLength_eq_three
+#print axioms JSP512Probe.RotationSystem.exists_triangular_augmentation
+#print axioms JSP512Probe.RotationSystem.maximal_face_darts_iff
+#print axioms JSP512Probe.RotationSystem.maximal_face_three_steps
