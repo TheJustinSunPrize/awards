@@ -33,6 +33,10 @@ Pinned standalone proof package:
 
 <https://github.com/zeke-ai/erdos-767-jiang-lean/tree/636fa0570b02fc20f58516d3a41ca6a6735bf24d>
 
+Successful proof CI:
+
+<https://github.com/zeke-ai/erdos-767-jiang-lean/actions/runs/35228414087>
+
 ## Verification
 
 The package pins Lean 4.33.0 and Mathlib commit

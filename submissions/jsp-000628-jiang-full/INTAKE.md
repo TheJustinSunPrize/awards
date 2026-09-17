@@ -9,6 +9,8 @@ catalog's current `Lean proof: No` marker in light of that evidence.
 
 Pinned standalone proof package:
 [636fa0570b02fc20f58516d3a41ca6a6735bf24d](https://github.com/zeke-ai/erdos-767-jiang-lean/tree/636fa0570b02fc20f58516d3a41ca6a6735bf24d).
+The corresponding [GitHub Actions proof run](https://github.com/zeke-ai/erdos-767-jiang-lean/actions/runs/35228414087)
+completed successfully.
 
 The retained proof originated in
 [`plby/lean-proofs` commit `8822f7d`](https://github.com/plby/lean-proofs/tree/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems).
