@@ -4,8 +4,8 @@
   "started_at": "2026-09-17T02:35:23+08:00",
   "deadline": "2026-09-18T02:35:00+08:00",
   "phase": "D1-B",
-  "tick": 23,
-  "last_action": "提交包补强：bundle 重建完整（130,058 B / 22 条目）——补入 people 身份档案 3 份（curators×2 + verifiers×1，记录中被引用）；README-SUBMISSION.md 抽出入库 submission/（此前仅存于 zip，tick21 重建时误删 stage 已恢复）；zip 条目清点核对 21 文件全齐；继续等待人工",
+  "tick": 24,
+  "last_action": "待命复核：validate=OK；candidates/state/submission/people 路径零改动；继续等待人工（收件人书面确认 → awards/ 迁移公告 → 上游 PR 推送）",
   "build_status": "submission-ready · waiting-human · bundle-ready(22 entries)",
   "blockers": [],
   "log": [
@@ -34,6 +34,7 @@
     "2026-09-17T12:00:00+08:00 | tick20 | 维护哨兵：validate=OK / lake build 8925 jobs 绿 / axioms 复核通过 / 工作树无交付物漂移；final-report 补 commit 链；等待人工（收件人确认→awards 迁移→PR 推送）",
     "2026-09-17T12:30:00+08:00 | tick21 | 一键提交包 jsp-000070-submission-bundle.zip 生成（README + 四件套 + PR.md + 复现工程 + state）；submission/.gitignore 排除 *.zip；继续等待人工",
     "2026-09-17T12:40:00+08:00 | tick22 | 待命复核：validate=OK；交付物零漂移；等待人工",
-    "2026-09-17T12:50:00+08:00 | tick23 | 提交包补强：bundle 重建（补 people 档案，22 条目核对全齐）；README-SUBMISSION.md 入库；等待人工"
+    "2026-09-17T12:50:00+08:00 | tick23 | 提交包补强：bundle 重建（补 people 档案，22 条目核对全齐）；README-SUBMISSION.md 入库；等待人工",
+    "2026-09-17T13:00:00+08:00 | tick24 | 待命复核：validate=OK；交付物零改动；等待人工"
   ]
 }
