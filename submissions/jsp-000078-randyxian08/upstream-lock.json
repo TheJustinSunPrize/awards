@@ -1,0 +1,471 @@
+{
+  "repository": "plby/lean-proofs",
+  "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+  "files": [
+    {
+      "module": "ErdosProblems.Erdos58",
+      "path": "ErdosProblems/Erdos58.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58.lean",
+      "bytes": 2185,
+      "sha256": "dda16146f67e597202fbd0ace5a337a3a6faa47a589d597d2b8bd1c5d0aba1a8",
+      "git_blob_sha1": "67e9bcf4fb92011da875b24eeb4386648703ee13",
+      "imports": [
+        "ErdosProblems.Erdos58.MainReduction",
+        "ErdosProblems.Erdos58.Structural"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.AlternativeSharp",
+      "path": "ErdosProblems/Erdos58/AlternativeSharp.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/AlternativeSharp.lean",
+      "bytes": 6410,
+      "sha256": "8a55616c251b853a5469a90d870e5c6e27fc2d4e64f4ef39e6fc68479e0ca0e7",
+      "git_blob_sha1": "cc0b48725eeabc08e8eeb490813732d1b92d4964",
+      "imports": [
+        "ErdosProblems.Erdos58.Arithmetic",
+        "ErdosProblems.Erdos58.Basic",
+        "Mathlib.Combinatorics.SimpleGraph.Finite",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Arithmetic",
+      "path": "ErdosProblems/Erdos58/Arithmetic.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Arithmetic.lean",
+      "bytes": 8306,
+      "sha256": "06492dea3c49fa6d8728795953b8042b7cf4920bbe3272e41c753be76f10e4db",
+      "git_blob_sha1": "fa033fe90e0bb4c9e2aab09c47dfb5dd47502069",
+      "imports": [
+        "Mathlib"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Basic",
+      "path": "ErdosProblems/Erdos58/Basic.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Basic.lean",
+      "bytes": 8574,
+      "sha256": "257454c90f3e190e7ae2451ee20b65ed7d9523f5c5aedcc0e73b0af913f52b9e",
+      "git_blob_sha1": "bec31c187967576f286338759c54349655780f86",
+      "imports": [
+        "Mathlib.Combinatorics.SimpleGraph.CycleGraph",
+        "Mathlib.Order.Interval.Set.Nat"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Bipartite",
+      "path": "ErdosProblems/Erdos58/Bipartite.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Bipartite.lean",
+      "bytes": 5607,
+      "sha256": "7b4e39931ad20bdd1dddf2779117804e4ac05fa5d7b91555fd391d51ed464fd9",
+      "git_blob_sha1": "dc38e701ed6d2250836baf8468167f2d4bfae49b",
+      "imports": [
+        "ErdosProblems.Erdos58.Basic",
+        "Mathlib.Combinatorics.SimpleGraph.Coloring.Constructions"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Boundary",
+      "path": "ErdosProblems/Erdos58/Boundary.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Boundary.lean",
+      "bytes": 18096,
+      "sha256": "dc0b4a976947ab129908c00e4f6640a6d8725246eff12ce19e09f36f361ca54d",
+      "git_blob_sha1": "a69c92a6dd1817e8e5bf68f7fc1931633706b018",
+      "imports": [
+        "ErdosProblems.Erdos58.Basic",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Critical",
+      "path": "ErdosProblems/Erdos58/Critical.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Critical.lean",
+      "bytes": 17941,
+      "sha256": "7470100869e81e1821c753a94fd9034c99a8b4da169e52913710c884761bb77c",
+      "git_blob_sha1": "6da515b900f79417cf53bdbc61460d58d9abb825",
+      "imports": [
+        "Mathlib.Combinatorics.SimpleGraph.Coloring.Vertex",
+        "Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected",
+        "Mathlib.Data.Finset.Card",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.CycleArcs",
+      "path": "ErdosProblems/Erdos58/CycleArcs.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/CycleArcs.lean",
+      "bytes": 13329,
+      "sha256": "0ae0be796674aa355987610e23ca3653f20c5cf01bb415d244c739f476bd3b02",
+      "git_blob_sha1": "c4ab5e8d47a1c890ed73885e91ce5ea1426815e4",
+      "imports": [
+        "ErdosProblems.Erdos58.Basic",
+        "Mathlib.Combinatorics.SimpleGraph.Walk.Decomp"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.DFSUpper",
+      "path": "ErdosProblems/Erdos58/DFSUpper.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/DFSUpper.lean",
+      "bytes": 21921,
+      "sha256": "d0e510faf8e792b2a0b540cfe13f700f08d2f093481aed376935d0e48971441c",
+      "git_blob_sha1": "658b28365b7daf24f47fc0672f3e4bb15023aa9b",
+      "imports": [
+        "ErdosProblems.Erdos58.Basic",
+        "Mathlib"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.EndpointCount",
+      "path": "ErdosProblems/Erdos58/EndpointCount.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/EndpointCount.lean",
+      "bytes": 12796,
+      "sha256": "72277d17e6a6d769cd102b9a066ed6d2b844c6d6b7f697ac05f5645fcc638b44",
+      "git_blob_sha1": "799edbca39ce7f9d160e26b861c051036a0a2f38",
+      "imports": [
+        "ErdosProblems.Erdos58.Basic",
+        "Mathlib.Algebra.Order.Floor.Div",
+        "Mathlib.Combinatorics.Additive.CauchyDavenport",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Fan",
+      "path": "ErdosProblems/Erdos58/Fan.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Fan.lean",
+      "bytes": 15413,
+      "sha256": "f2be31ef552aa0e69cc6e4cd0de671ae9a123ea01273bb79bfeb018b877db266",
+      "git_blob_sha1": "b7a32704a86d10db2bb6fd7c2cadb4f44f8593ae",
+      "imports": [
+        "Mathlib"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Independent",
+      "path": "ErdosProblems/Erdos58/Independent.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Independent.lean",
+      "bytes": 25729,
+      "sha256": "3954c631a394c4375d5633773199118911caa441f9d5ef6b6441edcf85a0f34c",
+      "git_blob_sha1": "b6163b9281879962c2b576f8b19894b37e550c1f",
+      "imports": [
+        "ErdosProblems.Erdos58.Basic",
+        "ErdosProblems.Erdos58.Boundary",
+        "Mathlib.Combinatorics.SimpleGraph.Clique",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Linkage",
+      "path": "ErdosProblems/Erdos58/Linkage.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Linkage.lean",
+      "bytes": 16174,
+      "sha256": "31c419daa9d4ae5ff110f1771428be5a3dfd8335331a9f45a558655c591dda84",
+      "git_blob_sha1": "df4b11c6d457181a9ad670e376410f5f2a3002d9",
+      "imports": [
+        "Mathlib"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.MainReduction",
+      "path": "ErdosProblems/Erdos58/MainReduction.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/MainReduction.lean",
+      "bytes": 7399,
+      "sha256": "82e3e10626fc2a7ba3a33c685e0c6d8d7582bfeb3fa90963246e93d906e688d7",
+      "git_blob_sha1": "082d8e861aa8b070c478e56b5bc5ee1c966b006b",
+      "imports": [
+        "ErdosProblems.Erdos58.Basic",
+        "ErdosProblems.Erdos58.Bipartite",
+        "ErdosProblems.Erdos58.Critical",
+        "ErdosProblems.Erdos58.DFSUpper"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Menger",
+      "path": "ErdosProblems/Erdos58/Menger.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Menger.lean",
+      "bytes": 31184,
+      "sha256": "a94c201065502712219d4ffd1d94fe257894d6d6832b11be2fd54a11bb477fb7",
+      "git_blob_sha1": "1843d3ffe470b01da63dba4ef758af5aef6520ab",
+      "imports": [
+        "ErdosProblems.Erdos58.Structural.TwoLinkage",
+        "ErdosProblems.Erdos58.CycleArcs",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural",
+      "path": "ErdosProblems/Erdos58/Structural.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural.lean",
+      "bytes": 7687,
+      "sha256": "29e1e9adcda1356803fb32a2d19e8bdb0eeb55f11397e8a4ec108d31e42720ec",
+      "git_blob_sha1": "42eaf054a72e064ae4823554605230334a8c72a3",
+      "imports": [
+        "ErdosProblems.Erdos58.Basic",
+        "ErdosProblems.Erdos58.Critical",
+        "ErdosProblems.Erdos58.Structural.ConnectivityBridge",
+        "ErdosProblems.Erdos58.Structural.CaseConclusion",
+        "ErdosProblems.Erdos58.Structural.IndependentGap",
+        "ErdosProblems.Erdos58.Structural.K1Boundary",
+        "ErdosProblems.Erdos58.Structural.LongestCycle",
+        "ErdosProblems.Erdos58.Structural.SingletonFan",
+        "ErdosProblems.Erdos58.Structural.SpliceConstruction",
+        "ErdosProblems.Erdos58.Structural.Setup",
+        "Mathlib.Combinatorics.SimpleGraph.Finite",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.BoundaryApplication",
+      "path": "ErdosProblems/Erdos58/Structural/BoundaryApplication.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/BoundaryApplication.lean",
+      "bytes": 135561,
+      "sha256": "71cd1ced5390dd29ab364d1c7f5b4586fd59583a7080f0820ed7bf447e30353a",
+      "git_blob_sha1": "440debb07232c270003ac50faedd99c3e82855fd",
+      "imports": [
+        "ErdosProblems.Erdos58.Boundary",
+        "ErdosProblems.Erdos58.EndpointCount",
+        "Mathlib.Data.Nat.Dist",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.CaseAssembly",
+      "path": "ErdosProblems/Erdos58/Structural/CaseAssembly.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/CaseAssembly.lean",
+      "bytes": 81570,
+      "sha256": "bd2a77ea47b2e2620af859ddee0ba75ba900406234d7a0eb9a77fdf587bb182c",
+      "git_blob_sha1": "99c9f6da6d2371b659e76640c6b3503031c26832",
+      "imports": [
+        "ErdosProblems.Erdos58.AlternativeSharp",
+        "ErdosProblems.Erdos58.Structural.BoundaryApplication",
+        "ErdosProblems.Erdos58.Structural.EndpointApplication",
+        "ErdosProblems.Erdos58.Structural.FanApplication",
+        "ErdosProblems.Erdos58.Structural.LongestCycleBridge",
+        "ErdosProblems.Erdos58.Structural.LongestPath"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.CaseConclusion",
+      "path": "ErdosProblems/Erdos58/Structural/CaseConclusion.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/CaseConclusion.lean",
+      "bytes": 17767,
+      "sha256": "2ccde012838a3ec2999d765082fdb5ab6703022fd96ad594c94e8cf4f39e3a3f",
+      "git_blob_sha1": "8374d576ec7aa029baa02988d4e77b290381491f",
+      "imports": [
+        "ErdosProblems.Erdos58.Structural.CaseAssembly",
+        "ErdosProblems.Erdos58.Structural.FanLinkage",
+        "ErdosProblems.Erdos58.Structural.K1Boundary",
+        "ErdosProblems.Erdos58.Structural.SingletonFan"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.ConnectivityBridge",
+      "path": "ErdosProblems/Erdos58/Structural/ConnectivityBridge.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/ConnectivityBridge.lean",
+      "bytes": 2270,
+      "sha256": "76ca09d7e4cdb9e203bf394e069be8cd24b306033de57daf03258b80fd55cfe7",
+      "git_blob_sha1": "45177343569520bc6e5cb01b047990a260757637",
+      "imports": [
+        "ErdosProblems.Erdos58.Critical",
+        "ErdosProblems.Erdos58.Linkage",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.EndpointApplication",
+      "path": "ErdosProblems/Erdos58/Structural/EndpointApplication.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/EndpointApplication.lean",
+      "bytes": 57601,
+      "sha256": "96140225f2e3b73ccf2e187407eb745adc31ab442c7c9de668da17911c7fa8a0",
+      "git_blob_sha1": "3dcdbe6d397f18834ec89a5e5a5e430c587fe444",
+      "imports": [
+        "ErdosProblems.Erdos58.EndpointCount",
+        "Mathlib.Data.Finset.Sort",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.FanApplication",
+      "path": "ErdosProblems/Erdos58/Structural/FanApplication.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/FanApplication.lean",
+      "bytes": 118290,
+      "sha256": "5decca15a4031fdffb355da93939ea15303eaa01c34453bcd668a341be3c5b82",
+      "git_blob_sha1": "1e514888e42670a050dc67f3273532173f80fbda",
+      "imports": [
+        "ErdosProblems.Erdos58.Fan"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.FanLinkage",
+      "path": "ErdosProblems/Erdos58/Structural/FanLinkage.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/FanLinkage.lean",
+      "bytes": 14812,
+      "sha256": "6e8d07350cbd6fee31a57160e9d877aabd8f98717eb3753c1385115ac63f546d",
+      "git_blob_sha1": "e8ef10976763294b56eb698563514ddd40db8d4a",
+      "imports": [
+        "ErdosProblems.Erdos58.Structural.FanApplication",
+        "ErdosProblems.Erdos58.Structural.CaseAssembly",
+        "ErdosProblems.Erdos58.Structural.SpliceConstruction"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.HamiltonianBranch",
+      "path": "ErdosProblems/Erdos58/Structural/HamiltonianBranch.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/HamiltonianBranch.lean",
+      "bytes": 2147,
+      "sha256": "ded4360b51598c5b81e448d01934b782720d01482a1110859a1136706e474ce6",
+      "git_blob_sha1": "037a95ba67ad60b8a4fa9237865d14784ca63274",
+      "imports": [
+        "ErdosProblems.Erdos58.Independent",
+        "ErdosProblems.Erdos58.StructuralAlt",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.IndependentGap",
+      "path": "ErdosProblems/Erdos58/Structural/IndependentGap.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/IndependentGap.lean",
+      "bytes": 24436,
+      "sha256": "1530c4048b946f50c974f76c74a02cadeec85171e6a6e4bc1f1e0c28159cf662",
+      "git_blob_sha1": "a562bf24318b607f613b20d74471cdfdc3178f63",
+      "imports": [
+        "ErdosProblems.Erdos58.Independent",
+        "ErdosProblems.Erdos58.Linkage",
+        "ErdosProblems.Erdos58.Boundary",
+        "ErdosProblems.Erdos58.Structural.HamiltonianBranch",
+        "Mathlib.GroupTheory.Perm.Fin",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.K1Boundary",
+      "path": "ErdosProblems/Erdos58/Structural/K1Boundary.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/K1Boundary.lean",
+      "bytes": 59827,
+      "sha256": "0540d78cd0419af41b629e4b18971b5f9567d7443a0916c6796f79715d86443e",
+      "git_blob_sha1": "900e373b6d6183adff9bd704ec3e3764da1e3135",
+      "imports": [
+        "ErdosProblems.Erdos58.Structural.BoundaryApplication",
+        "ErdosProblems.Erdos58.Linkage",
+        "Mathlib.Data.Nat.Dist",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.LongestCycle",
+      "path": "ErdosProblems/Erdos58/Structural/LongestCycle.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/LongestCycle.lean",
+      "bytes": 2678,
+      "sha256": "b7b6d880ba5a51da4bbce5ec74498a6ee228f1a17321aba2b3fed0507d14404c",
+      "git_blob_sha1": "1195293330386a19a4a86701ec173dd613a8367a",
+      "imports": [
+        "ErdosProblems.Erdos58.Independent",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.LongestCycleBridge",
+      "path": "ErdosProblems/Erdos58/Structural/LongestCycleBridge.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/LongestCycleBridge.lean",
+      "bytes": 6455,
+      "sha256": "3a0ccd0001d56e6331e5971aebd4ca907652bb9eda937cfcac48ed86ceed09b1",
+      "git_blob_sha1": "59d5d8207aa9542bf0aad44aacd3caf9b96c8652",
+      "imports": [
+        "ErdosProblems.Erdos58.EndpointCount",
+        "ErdosProblems.Erdos58.Independent"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.LongestPath",
+      "path": "ErdosProblems/Erdos58/Structural/LongestPath.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/LongestPath.lean",
+      "bytes": 12660,
+      "sha256": "1e329ad0ff8008d7e7c4bd82ee50ac8ba60c08ac7fb9fb66620dd5a9a2e61600",
+      "git_blob_sha1": "0fcc225059e978ce23eae422ac477aa0ad1a2adc",
+      "imports": [
+        "ErdosProblems.Erdos58.Independent",
+        "Mathlib.Combinatorics.SimpleGraph.Finite",
+        "Mathlib.Combinatorics.SimpleGraph.Paths",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.OutsideCycle",
+      "path": "ErdosProblems/Erdos58/Structural/OutsideCycle.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/OutsideCycle.lean",
+      "bytes": 11034,
+      "sha256": "b8f3a2900203f8d02eb54a0d81af1fd86e0168f2305c202d633c28eae4c7410a",
+      "git_blob_sha1": "268ced398973352dd162d1a503c85df296cb7d6e",
+      "imports": [
+        "ErdosProblems.Erdos58.Independent",
+        "ErdosProblems.Erdos58.Linkage",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.Setup",
+      "path": "ErdosProblems/Erdos58/Structural/Setup.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/Setup.lean",
+      "bytes": 1855,
+      "sha256": "4aced0c30ee14858a3123f871362a19a35fd0dcdb1ff1227aac5ebf6ce120c64",
+      "git_blob_sha1": "66f5c622251e8e8142feb3aeb606d6bc1d73922c",
+      "imports": [
+        "ErdosProblems.Erdos58.Structural.HamiltonianBranch",
+        "ErdosProblems.Erdos58.Structural.LongestPath"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.SingletonFan",
+      "path": "ErdosProblems/Erdos58/Structural/SingletonFan.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/SingletonFan.lean",
+      "bytes": 20894,
+      "sha256": "0c69f3d86b09eb6ee5bee4d47e009c8598d9031608fee0505b8da6d9f82a1b7b",
+      "git_blob_sha1": "a6845f904f659bdb2eaf6cec5b10c621ef9a502d",
+      "imports": [
+        "ErdosProblems.Erdos58.Structural.FanApplication",
+        "ErdosProblems.Erdos58.Structural.FanLinkage",
+        "ErdosProblems.Erdos58.Structural.K1Boundary"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.SpliceConstruction",
+      "path": "ErdosProblems/Erdos58/Structural/SpliceConstruction.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/SpliceConstruction.lean",
+      "bytes": 18200,
+      "sha256": "50c5a9b623ee515f5b6cb0ebf4d71220d430a78d46a1ceacaad329500175b590",
+      "git_blob_sha1": "18f53d5c26ac11a9b876a7f664dfcb9d9f1da461",
+      "imports": [
+        "ErdosProblems.Erdos58.CycleArcs",
+        "ErdosProblems.Erdos58.Fan",
+        "ErdosProblems.Erdos58.Menger",
+        "ErdosProblems.Erdos58.Structural.LongestCycleBridge",
+        "ErdosProblems.Erdos58.Structural.OutsideCycle"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.Structural.TwoLinkage",
+      "path": "ErdosProblems/Erdos58/Structural/TwoLinkage.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/Structural/TwoLinkage.lean",
+      "bytes": 12309,
+      "sha256": "3669b5dbc18b8bcbdd8fa17ab2e1639d23f04aacc100121ef5e2618fd07977af",
+      "git_blob_sha1": "00d5fe1beb8a8b0475cd48e8767390a8eb87a548",
+      "imports": [
+        "ErdosProblems.Erdos58.Linkage",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "ErdosProblems.Erdos58.StructuralAlt",
+      "path": "ErdosProblems/Erdos58/StructuralAlt.lean",
+      "source": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos58/StructuralAlt.lean",
+      "bytes": 14528,
+      "sha256": "c0111412913ae03c025534bb8f029a7e0ef3299af6de22512d0087a477778b89",
+      "git_blob_sha1": "995ccc7371db093c0c18335b493a8191a7cb4d20",
+      "imports": [
+        "ErdosProblems.Erdos58.Arithmetic",
+        "ErdosProblems.Erdos58.Basic",
+        "Mathlib.Combinatorics.SimpleGraph.Hamiltonian",
+        "Mathlib.Tactic"
+      ]
+    }
+  ],
+  "provenance": "All 35 Git blob IDs and byte counts checked against the GitHub tree at the pinned commit."
+}

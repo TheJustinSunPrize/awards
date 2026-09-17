@@ -1,0 +1,13 @@
+{
+  "id": "github-release:randyxian08/awards:jsp000078-verified-20260917",
+  "release_url": "https://github.com/randyxian08/awards/releases/tag/jsp000078-verified-20260917",
+  "assets": [
+    {
+      "name": "JSP000078_verified_20260917.zip",
+      "url": "https://github.com/randyxian08/awards/releases/download/jsp000078-verified-20260917/JSP000078_verified_20260917.zip",
+      "sha256": "c636ef8e79b436913ff02af1214f566952543293ed687d6193486d5e0db87ba4",
+      "bytes": 243162,
+      "contents": "Exact proof source, all 35 finite-proof sources, source lock, pinned manifests, reproduction scripts, and actual verification logs. The archive does not contain its own artifacts.json digest record."
+    }
+  ]
+}

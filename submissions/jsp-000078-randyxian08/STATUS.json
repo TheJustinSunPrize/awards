@@ -1,0 +1,43 @@
+{
+  "problem": "JSP-000078 / Erdos 58",
+  "verified_utc": "2026-09-17T04:12:59.164330+00:00",
+  "delivery_status": "BUILD_AXIOM_AUDIT_AND_KERNEL_REPLAY_PASSED",
+  "final_theorem": "JSP000078.erdos_58_exact_statement",
+  "lean_compilation_performed": true,
+  "transitive_axiom_audit_performed": true,
+  "kernel_replay_module_count": 39,
+  "kernel_replay_declaration_count": 3203,
+  "global_first_formalization_priority": "NOT_CLAIMED; overlapping prior submission PR #130 acknowledged",
+  "prize_eligibility": "PENDING_MAINTAINER_REVIEW",
+  "lean_toolchain": "leanprover/lean4:v4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "verification_command": "SSL_CERT_FILE=/etc/ssl/cert.pem bash scripts/verify.sh",
+  "verification_exit_code": 0,
+  "axioms": {
+    "JSP000078.colorable_of_finite_induced": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos58.erdos_58": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP000078.oddCycleLengths_alignment": [
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP000078.erdos_58_exact_statement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "replay_scope": "Same Lean kernel; project declarations replayed against Mathlib imports. Not an independent implementation or fresh replay of Mathlib.",
+  "dependency_commit_and_clean_source_checks": {
+    "package_count": 9,
+    "passed": true
+  },
+  "award_decision": "NOT_ESTABLISHED"
+}
