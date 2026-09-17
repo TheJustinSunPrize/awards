@@ -1,0 +1,8 @@
+'GeneralPositionBound.boundedLines_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeneralPositionBound.greedy_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeneralPositionBound.greedy_quadratic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeneralPositionBound.greedy_square_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+GeneralPositionBound.greedy_quadratic_bound (a : Finset GeneralPositionBound.Point)
+  (ha : GeneralPositionBound.NoFour a) : ∃ b ⊆ a, GeneralPositionBound.NoThree b ∧ 2 * a.card ≤ b.card * (b.card + 1)
+GeneralPositionBound.greedy_square_bound (a : Finset GeneralPositionBound.Point) (ha : GeneralPositionBound.NoFour a) :
+  ∃ b ⊆ a, GeneralPositionBound.NoThree b ∧ a.card ≤ b.card ^ 2
