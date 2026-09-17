@@ -1,0 +1,3 @@
+'Erdos893.erdos_893.variants.unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos893.exists_prime_orderOf_two_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos893.two_pow_le_sigma_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
