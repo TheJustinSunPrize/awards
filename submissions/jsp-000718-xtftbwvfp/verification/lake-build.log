@@ -1,0 +1,8 @@
+ℹ [8924/8925] Replayed Erdos866
+info: Erdos866.lean:153:0: 'Erdos866.not_pairwise_sums_all_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos866.lean:154:0: 'Erdos866.oddsIn_avoid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos866.lean:155:0: 'Erdos866.insert_two_oddsIn_avoid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos866.lean:156:0: 'Erdos866.g3_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos866.lean:157:0: 'Erdos866.g3_lower'' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8925 jobs).
+exit=0
