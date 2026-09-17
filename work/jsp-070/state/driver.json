@@ -4,9 +4,9 @@
   "started_at": "2026-09-17T02:35:23+08:00",
   "deadline": "2026-09-18T02:35:00+08:00",
   "phase": "D1-B",
-  "tick": 18,
-  "last_action": "D1-B 收尾：state/final-report.md 阶段报告落盘（阶段完成情况/定理清单/commit 链 aa57cec·0a48161·49d4007·74ce07c 及前期 4d1d3bd→fbe0388/环境版本/未完成人工项）；自动管线全部完成，总体状态 submission-ready",
-  "build_status": "submission-ready · current-release-green · records confirmed-valid",
+  "tick": 19,
+  "last_action": "收尾修复：复现三件套入库（verify-current/lakefile.lean mathlib@v4.34.0、lean-toolchain v4.34.0、lake-manifest.json）；people 档案入库（curators/jsp070-verifier、curators/pawan-sasanka-ammanamanchi、verifiers/jsp070-verifier —— 校验器硬依赖）；.gitignore 增补 .lake/、work/jsp-252/、work/jsp-465/（防误提交）；state/blockers.md 落盘（3 项人工阻塞：收件人书面确认、awards/ 迁移公告、上游 PR 授权）；后续 tick 仅截止复核，等待人工",
+  "build_status": "submission-ready · waiting-human (blockers documented)",
   "blockers": [],
   "log": [
     "2026-09-17T02:35:23+08:00 | init | 计划初始化：主靶 JSP-000070，备胎 000043/000071，窗口 24h",
@@ -29,6 +29,7 @@
     "2026-09-17T11:05:00+08:00 | tick15 | D1-A 完成：lake build 幂等绿；独立验证说明落盘（上游 1268917d、Lean 4.34.0、mathlib 5ed29652、适配版 sha256=749BC7F7…、olean sha256=94ED070F…、复现步骤、5 定理公理表）；record.yaml artifacts 补哈希；→ D1-B",
     "2026-09-17T11:20:00+08:00 | tick16 | D1-B 记录管线：manage.py validate=OK —— record.yaml 合规（checkers 去 v4.33、build_log 哈希、sandbox 如实）；statement v1 superseded + v2 active(pinned 5ed29652)；award.status→under-verification（收件人未确认/非特权沙箱未满足）；citation/recipients 补 English 段；遗留：非特权账户重跑内核校验 → pending-recipient-confirmation",
     "2026-09-17T11:30:00+08:00 | tick17 | D1-B 确认态达成：unprivileged_user=true 以进程令牌实证（Medium Integrity S-1-16-8192，非提升）；award.status→pending-recipient-confirmation；validate=OK；submission/PR.md 提交材料（pinned 表 + PR 占位正文 + 清单）；待收件人书面确认与 awards/ 公告（人工步骤）",
-    "2026-09-17T11:40:00+08:00 | tick18 | D1-B 收尾：state/final-report.md 阶段报告（阶段完成情况、定理清单、commit 链、未完成人工项）；自动管线完结，总体 submission-ready；后续 tick 仅做截止复核/维护，等待人工收件人确认"
+    "2026-09-17T11:40:00+08:00 | tick18 | D1-B 收尾：state/final-report.md 阶段报告（阶段完成情况、定理清单、commit 链、未完成人工项）；自动管线完结，总体 submission-ready；后续 tick 仅做截止复核/维护，等待人工收件人确认",
+    "2026-09-17T11:50:00+08:00 | tick19 | 收尾修复：lakefile.lean/lean-toolchain/lake-manifest.json 复现三件套入库；people 档案 3 份入库（校验器/策展人依赖）；.gitignore 增补 .lake/ 与 jsp-252/jsp-465；state/blockers.md 落盘（3 项人工阻塞）；进入 waiting-human，后续 tick 仅截止复核"
   ]
 }
