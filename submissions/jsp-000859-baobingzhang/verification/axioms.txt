@@ -1,0 +1,8 @@
+'Erdos1033.erdos_1033' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1033.erdos_1033_eps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1033.erdos_1033_of_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1033.exists_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1033.h_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1033.h_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1033.le_h' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1033.ratio_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
