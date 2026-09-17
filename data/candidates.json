@@ -1,4 +1,39 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-001002",
+        "batch": null,
+        "problem": {
+          "source": "erdosproblems.com",
+          "number": 1197,
+          "title_en": "Can integer dilates of a positive-measure real set cover all sufficiently distant lattice points along almost every prescribed ray?",
+          "posed": {
+            "year": 1980,
+            "basis": "earliest-reference",
+            "citation": "[BuMa99] On the convergence of sum_{n=1}^infty f(nx) for measurable functions — Mathematika (1999), 337--341."
+          },
+          "resolved": {
+            "year": 2026
+          }
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "draft",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-001002",
+      "citation": "# Citation\n\n## English\n\nPreliminary candidate record under observation for JSP-001002 (Erdős Problem #1197). A mathematical solution has been announced by Enrique Barschkis with an unconditional Lean 4 machine proof in the open repository plby/lean-proofs. Formal verification and written recipient confirmations remain pending.\n",
+      "recipients": "# Recipients\n\n## English\n\nRECIPIENT-jsp-001002-A represents the mathematical solver credit (Enrique Barschkis) based on the published solution manuscript. RECIPIENT-jsp-001002-B represents the Lean formalizer credit (Boris Alexeev et al.) based on the published formal proof source. Written confirmation remains pending.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }

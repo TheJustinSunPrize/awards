@@ -1,0 +1,21 @@
+id: jsp-001002
+batch: null
+problem:
+  source: erdosproblems.com
+  number: 1197
+  title_en: Can integer dilates of a positive-measure real set cover all sufficiently distant lattice points along almost every prescribed ray?
+  posed:
+    year: 1980
+    basis: earliest-reference
+    citation: "[BuMa99] On the convergence of sum_{n=1}^infty f(nx) for measurable functions — Mathematika (1999), 337--341."
+  resolved:
+    year: 2026
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: draft
+revocation: null
