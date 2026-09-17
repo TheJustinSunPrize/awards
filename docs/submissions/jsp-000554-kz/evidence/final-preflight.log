@@ -1,0 +1,14 @@
+$ python scripts/manage.py validate
+validate: OK
+
+$ python scripts/manage.py links
+links: OK
+
+$ python scripts/manage.py build
+build: OK
+
+$ python scripts/manage.py check
+check: OK
+
+$ python scripts/manage.py history --base f4e7173d89dfe91022a185427d63452c8ffbf6ae
+history: OK

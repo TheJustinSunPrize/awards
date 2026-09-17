@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "scope": "finite diagnostic only",
+  "tables": [
+    {
+      "gap": 2,
+      "modulus": 1,
+      "residues": []
+    },
+    {
+      "gap": 4,
+      "modulus": 6,
+      "residues": [
+        1
+      ]
+    },
+    {
+      "gap": 6,
+      "modulus": 30,
+      "residues": [
+        1,
+        23
+      ]
+    },
+    {
+      "gap": 8,
+      "modulus": 210,
+      "residues": [
+        89,
+        113
+      ]
+    },
+    {
+      "gap": 10,
+      "modulus": 210,
+      "residues": [
+        1,
+        199
+      ]
+    },
+    {
+      "gap": 12,
+      "modulus": 2310,
+      "residues": [
+        1,
+        199,
+        467,
+        509,
+        1789,
+        1831,
+        2099,
+        2297
+      ]
+    }
+  ]
+}
