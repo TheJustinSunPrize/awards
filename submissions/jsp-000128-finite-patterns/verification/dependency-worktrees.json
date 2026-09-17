@@ -1,0 +1,38 @@
+[
+  {
+    "package": "mathlib",
+    "tracked_files_match_HEAD": true
+  },
+  {
+    "package": "plausible",
+    "tracked_files_match_HEAD": true
+  },
+  {
+    "package": "proofwidgets",
+    "tracked_files_match_HEAD": true
+  },
+  {
+    "package": "batteries",
+    "tracked_files_match_HEAD": true
+  },
+  {
+    "package": "Cli",
+    "tracked_files_match_HEAD": true
+  },
+  {
+    "package": "aesop",
+    "tracked_files_match_HEAD": true
+  },
+  {
+    "package": "importGraph",
+    "tracked_files_match_HEAD": true
+  },
+  {
+    "package": "LeanSearchClient",
+    "tracked_files_match_HEAD": true
+  },
+  {
+    "package": "Qq",
+    "tracked_files_match_HEAD": true
+  }
+]

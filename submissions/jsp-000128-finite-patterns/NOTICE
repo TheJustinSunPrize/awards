@@ -1,0 +1,21 @@
+JSP-000128 / Erdős 120 finite-set variant
+
+Copyright 2026 The Formal Conjectures Authors.
+Copyright 2026 James-16.
+
+The Erdos120For definition and the finite-set target statement are adapted
+from FormalConjectures/ErdosProblems/120.lean at commit
+40e7c98697de6f66b8cbdbf641749ab39ed9c152 of
+https://github.com/google-deepmind/formal-conjectures (Apache-2.0).
+The namespace and formatting are changed; the target meaning is unchanged.
+The audit repeats the target definition. No placeholder proof or custom
+conjecture axioms from that project are imported.
+
+The mathematical result is known and is commonly attributed to Hugo
+Steinhaus (1920); see the references in README.md. The proof uses existing
+mathlib results on Haar measure, translation continuity, and inner
+regularity, imported as dependencies under their existing licenses.
+
+New Lean proof code, audit, and packaging were developed for GitHub account
+James-16 with substantial OpenAI Codex assistance. No claim of a new
+mathematical solution, exhaustive priority, or award eligibility is made.

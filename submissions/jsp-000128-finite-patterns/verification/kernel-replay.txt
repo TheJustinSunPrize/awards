@@ -1,0 +1,2 @@
+replaying Erdos120FinitePatterns.Audit with --fresh
+Exit status: 0

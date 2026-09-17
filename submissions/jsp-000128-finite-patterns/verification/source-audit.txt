@@ -1,0 +1,3 @@
+Both Lean source files reviewed: no sorry, admit, custom axiom declaration, native_decide, unsafe declaration, implemented_by, ofReduceBool, or kernel-check bypass.
+The exact target is repeated in the audit and connected by definitional equality.
+Only standard axioms occur in all five named audited theorems.

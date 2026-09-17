@@ -1,0 +1,5 @@
+Lean 4.33.1, arm64 macOS
+Compiler revision: 819816b2e0a3bf405af45ae5c7af2491d8f5bee6
+Official asset: lean-4.33.1-darwin_aarch64.tar.zst
+Archive SHA-256: 88c45aad985b5d2a8d925fe10bd1296bd35f66f408480ab182d3facccd065a9d
+The archive was re-hashed after local cloud-file recovery; it matches the official release digest recorded during toolchain acquisition.
