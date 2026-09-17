@@ -1,0 +1,100 @@
+{
+  "steps": {
+    "environment": {
+      "command": [
+        "python3",
+        "tools/check_environment.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.35
+    },
+    "build": {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.018
+    },
+    "axioms": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.307
+    },
+    "small_cases": {
+      "command": [
+        "python3",
+        "tools/check_small.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.588
+    },
+    "kernel_replay": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "--verbose",
+        "ProductDeficit"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 63.53
+    }
+  },
+  "inputs": {
+    "ProductDeficit.lean": {
+      "sha256": "6b111a26b75137c1e68883cfd7e487af95d28105d590f3ca849bbe15e287128b",
+      "bytes": 9781
+    },
+    "Audit.lean": {
+      "sha256": "590add690aec2349746e232c3519362d7d4379bbc1fa6fbcd31d439ff3e17775",
+      "bytes": 779
+    },
+    "lean-toolchain": {
+      "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+      "bytes": 25
+    },
+    "lakefile.toml": {
+      "sha256": "6b4c13f30cdbf66a107389e009f7fb7f2e9318479b06a3294c4ad97f3ab522e2",
+      "bytes": 267
+    },
+    "lake-manifest.json": {
+      "sha256": "d3ecd16cd5985a9cc128a6083e2a871c01c7b6be06fa9ecb42aa81e5aa81aaff",
+      "bytes": 3558
+    }
+  },
+  "logs": {
+    "axioms.log": {
+      "sha256": "d0f8f469067f2063bf837a03050e79f2181cf79027a181dc37756f91cd57ea0a",
+      "bytes": 2398
+    },
+    "build.log": {
+      "sha256": "1cd63d92776b3cfc06ae8bb17626cf7cbe0bae2b7d10159d5052a8bcde3be39e",
+      "bytes": 1132
+    },
+    "environment.log": {
+      "sha256": "9e71f63faed14dcf66db7d9c822f47033e6fc101d86442ae2c3a287f586de8e1",
+      "bytes": 1336
+    },
+    "kernel-replay.log": {
+      "sha256": "78db237e0f48f3c00325e8a7fde1d111c359d27f3e665d583df9c96898ae580b",
+      "bytes": 38
+    },
+    "small-cases.log": {
+      "sha256": "2ff67981c6febc877fb97496bcd6d201cbfddae3ebd534af60f85f7718a9a8b8",
+      "bytes": 1686
+    }
+  },
+  "limits": [
+    "Compiled dependency caches used; not all dependencies rebuilt from source.",
+    "Fresh replay uses Lean's official kernel, not an independent implementation.",
+    "No network or filesystem isolation is claimed.",
+    "No organizer-designated verification or award acceptance is claimed."
+  ]
+}

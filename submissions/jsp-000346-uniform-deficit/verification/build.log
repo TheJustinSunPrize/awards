@@ -1,0 +1,10 @@
+ℹ [1037/1038] Built ProductDeficit (1.2s)
+info: ProductDeficit.lean:209:0: 'ProductDeficit.finite_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ProductDeficit.lean:210:0: 'ProductDeficit.sqrt_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ProductDeficit.lean:211:0: 'ProductDeficit.avoids_of_distinct_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ProductDeficit.lean:212:0: 'ProductDeficit.sequence_sqrt_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ProductDeficit.lean:213:0: 'ProductDeficit.distinct_blocks_iff_injOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ProductDeficit.lean:214:0: 'ProductDeficit.original_statement_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ProductDeficit.lean:215:0: 'ProductDeficit.coefficient_one_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ProductDeficit.lean:216:0: 'ProductDeficit.sequence_coefficient_one_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1038 jobs).

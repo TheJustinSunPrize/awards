@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-09-17T04:36:07.459569+00:00",
+  "official_base": "f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+  "checks": {
+    "validate": "passed",
+    "links": "passed",
+    "build": "passed, official generated files unchanged",
+    "check": "passed",
+    "unittest": "22 tests passed",
+    "history": "passed"
+  },
+  "limits": "These repository checks validate record structure, not mathematics. Local package links were additionally checked because submissions are outside the official record validator scope."
+}

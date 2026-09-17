@@ -1,0 +1,26 @@
+ProductDeficit.finite_bound (B : Set ℕ) (hB : ProductDeficit.AvoidsAdjacentProducts B) (N m t : ℕ) (hmN : m * m ≤ N)
+  (hmt : m < (t + 1) * (t + 1)) : m ≤ ProductDeficit.deficit B N + t + 1
+ProductDeficit.sqrt_bound (B : Set ℕ) (hB : ProductDeficit.AvoidsAdjacentProducts B) (N : ℕ) :
+  N.sqrt ≤ ProductDeficit.deficit B N + N.sqrt.sqrt + 1
+ProductDeficit.avoids_of_distinct_blocks (a : ℕ → ℕ) (ha : StrictMono a) (hd : ProductDeficit.DistinctBlockProducts a) :
+  ProductDeficit.AvoidsAdjacentProducts (Set.range a)
+ProductDeficit.sequence_sqrt_bound (a : ℕ → ℕ) (ha : StrictMono a) (hd : ProductDeficit.DistinctBlockProducts a)
+  (N : ℕ) : N.sqrt ≤ ProductDeficit.deficit (Set.range a) N + N.sqrt.sqrt + 1
+ProductDeficit.distinct_blocks_iff_injOn (a : ℕ → ℕ) :
+  ProductDeficit.DistinctBlockProducts a ↔ Set.InjOn (fun p => ∏ i ∈ Finset.Icc p.1 p.2, a i) {p | p.1 ≤ p.2}
+ProductDeficit.original_statement_bound (a : ℕ → ℕ) (ha : StrictMono a)
+  (hd : Set.InjOn (fun p => ∏ i ∈ Finset.Icc p.1 p.2, a i) {p | p.1 ≤ p.2}) (N : ℕ) :
+  N.sqrt ≤ ProductDeficit.deficit (Set.range a) N + N.sqrt.sqrt + 1
+ProductDeficit.coefficient_one_bound (B : Set ℕ) (hB : ProductDeficit.AvoidsAdjacentProducts B) (k N : ℕ) (hk : 1 ≤ k)
+  (hN : (2 * k) ^ 4 ≤ N) : (k - 1) * N.sqrt ≤ k * ProductDeficit.deficit B N
+ProductDeficit.sequence_coefficient_one_bound (a : ℕ → ℕ) (ha : StrictMono a)
+  (hd : ProductDeficit.DistinctBlockProducts a) (k N : ℕ) (hk : 1 ≤ k) (hN : (2 * k) ^ 4 ≤ N) :
+  (k - 1) * N.sqrt ≤ k * ProductDeficit.deficit (Set.range a) N
+'ProductDeficit.finite_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProductDeficit.sqrt_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProductDeficit.avoids_of_distinct_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProductDeficit.sequence_sqrt_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProductDeficit.distinct_blocks_iff_injOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProductDeficit.original_statement_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProductDeficit.coefficient_one_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProductDeficit.sequence_coefficient_one_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
