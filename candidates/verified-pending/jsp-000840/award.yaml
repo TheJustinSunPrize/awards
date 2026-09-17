@@ -1,0 +1,23 @@
+id: jsp-000840
+batch: null
+problem:
+  source: TheJustinSunPrize problem bank
+  number: JSP-000840
+  title_en: How many triangles must a graph have once its edge count exceeds the maximum bipartite edge count?
+  posed:
+    year: 1962
+    basis: earliest-reference
+    citation: E. Rademacher (1962), unpublished; recorded in the Justin Sun Prize problem bank entry JSP-000840 with bibliography (Er62d, LoSi76, NiKh81)
+  resolved:
+    year: 1981
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
