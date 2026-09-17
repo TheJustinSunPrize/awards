@@ -1,0 +1,31 @@
+theorem JSP791.sequence_third_generator_gt_cutoff :
+  forall {a : Nat → Real},
+  LT.lt (OfNat.ofNat 1) (a (OfNat.ofNat 0)) → StrictMono a → JSP791.SequenceSeparated a → LT.lt
+    (HDiv.hDiv (OfNat.ofNat 4309405275) (OfNat.ofNat 1000000000)) (a (OfNat.ofNat 2)) :=
+  _
+
+def JSP791.SequenceSeparated (a : Nat → Real) : Prop :=
+  forall (u v : Finsupp Nat Nat),
+  Ne u v → LE.le (OfNat.ofNat 1) (abs (HSub.hSub (JSP791.sequenceMonomial a u) (JSP791.sequenceMonomial a v)))
+
+def JSP791.sequenceMonomial (a : Nat → Real) (u : Finsupp Nat Nat) : Real :=
+  Finsupp.prod u (fun (i k : Nat) => HPow.hPow (a i) k)
+
+def JSP791.Separated3 (a a._@._internal._hyg.0 a._@._internal._hyg.0 : Real) : Prop :=
+  forall (u v : Fin (OfNat.ofNat 3) → Nat),
+  Ne u v → LE.le (OfNat.ofNat 1)
+    (abs
+      (HSub.hSub (JSP791.monomial a a._@._internal._hyg.0 a._@._internal._hyg.0 u)
+        (JSP791.monomial a a._@._internal._hyg.0 a._@._internal._hyg.0 v)))
+
+def JSP791.monomial (a b c : Real) (u : Fin (OfNat.ofNat 3) → Nat) : Real :=
+  HMul.hMul (HMul.hMul (HPow.hPow a (u (OfNat.ofNat 0))) (HPow.hPow b (u (OfNat.ofNat 1))))
+    (HPow.hPow c (u (OfNat.ofNat 2)))
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
+Checked 12181 declarations with no errors

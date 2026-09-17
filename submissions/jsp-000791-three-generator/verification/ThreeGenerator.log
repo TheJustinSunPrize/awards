@@ -1,0 +1,3 @@
+'JSP791.third_generator_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP791.third_generator_gt_43_div_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP791.further_comparisons' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,13 @@
+ℹ [3167/3171] Replayed ThreeGenerator
+info: ThreeGenerator.lean:98:0: 'JSP791.third_generator_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ThreeGenerator.lean:99:0: 'JSP791.third_generator_gt_43_div_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ThreeGenerator.lean:100:0: 'JSP791.further_comparisons' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3168/3171] Replayed LowerCertificate
+info: LowerCertificate.lean:108:0: 'JSP791.orientation_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LowerCertificate.lean:109:0: 'JSP791.affine_below_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LowerCertificate.lean:110:0: 'JSP791.affine_contradiction' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3169/3171] Replayed SharpLower
+info: SharpLower.lean:68:0: 'JSP791.third_generator_gt_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3170/3171] Replayed SequenceBridge
+info: SequenceBridge.lean:41:0: 'JSP791.sequence_third_generator_gt_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3171 jobs).

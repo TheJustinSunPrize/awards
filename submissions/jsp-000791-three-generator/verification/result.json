@@ -1,0 +1,127 @@
+{
+  "checked_at_utc": "2026-09-17T11:02:36.412940+00:00",
+  "problem": "JSP-000791 / Erdos 951",
+  "target": "JSP791.sequence_third_generator_gt_cutoff",
+  "lean": "4.34.0",
+  "dependencies": {
+    "mathlib": "5ed2965256430c3649e86755f9576b54eca72435",
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "scope": "Third generator > 4.309405275 for every strictly increasing sequence satisfying full exponent-vector separation",
+  "complete_original_problem": false,
+  "new_mathematical_result": false,
+  "priority": "not asserted",
+  "environment": "Windows; pinned sources and Mathlib compiled caches",
+  "network_isolated": false,
+  "independent_checker": false,
+  "official_verification": false,
+  "files": {
+    "ThreeGenerator.lean": "ac39ed233a4c34d548e1df4c1ef09d92459e7b32569ed2d73f23f19b06e2c6ba",
+    "LowerCertificate.lean": "1f2e396925af6b63ea08e732222d2f27a19b024086948a55200607465017e132",
+    "SharpLower.lean": "5dc2eb03c5f8b4a222371fb749169829a31e1f8de3c9dbb41719add8898867a9",
+    "SequenceBridge.lean": "63d416cf50975af52672aba1ae883445767aa370f79f2301a6c0386df36d9064",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "lakefile.toml": "496f5bb74a2dc28782a117f4da1a864116d085de80515a7ef8a78d53d37d4e43",
+    "lake-manifest.json": "93e0999a3df34a3788daf7d1860273a9656697bc034e5ca53a22e6fcd7c7eae0",
+    "verify.py": "d90a16a3914a35c2f86d0f9fd3dd76f42eb6f1af234e1d258e5fc8dd5259cade",
+    "verify_independent.py": "d54b19f972ab5977aa7d9b4da76b74e09e59bc3f33a556cb7d1b4dc3a781ddfc",
+    "generate_lower_certificate.py": "5d816f8d82282c6b8dab1f9eac1a0cc0dfd4cf1d10f9987022b5fbe1ac2b3db0",
+    "README.md": "94fe3a573b6544220b86ce42b06b9ae6331cab1a1740d4013d71ad818ac28c4d",
+    "INDEPENDENT.md": "26d8dd5aa4687958d60b0302d131de79f726338b853c64081bf0ce56beeeca78",
+    ".gitignore": "9013e70b66092021d858e1cd8744f9dc980d7cad95bb8b789ada5c2da15f5578",
+    ".gitattributes": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9"
+  },
+  "checks": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "version.log",
+      "sha256": "22b2a7b07d8cf2dd036853226f0f7ec55987cbd55c285e1d7282c8ba4840939b"
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "log": "build.log",
+      "sha256": "b4a8105b136180eebc4702b229d429aca1c47ba1eaafd87ad8601215928c51df"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j1",
+        "-M2500",
+        "-o",
+        ".lake/build/lib/lean/ThreeGenerator.olean",
+        "ThreeGenerator.lean"
+      ],
+      "exit_code": 0,
+      "log": "ThreeGenerator.log",
+      "sha256": "e5981d089765653d0f98d0774cd44bf5b51e6be8be21eae92069dec6c4963cae"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j1",
+        "-M2500",
+        "-o",
+        ".lake/build/lib/lean/LowerCertificate.olean",
+        "LowerCertificate.lean"
+      ],
+      "exit_code": 0,
+      "log": "LowerCertificate.log",
+      "sha256": "8969b46c22e80e90ba686c26608b1630a08714ec8060e6da719efff8ae41bd0d"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j1",
+        "-M2500",
+        "-o",
+        ".lake/build/lib/lean/SharpLower.olean",
+        "SharpLower.lean"
+      ],
+      "exit_code": 0,
+      "log": "SharpLower.log",
+      "sha256": "4c1f82741f4cf9ac63d366083f82097edf24dd3dfb6245f7ca5dc444effb05c1"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j1",
+        "-M2500",
+        "-o",
+        ".lake/build/lib/lean/SequenceBridge.olean",
+        "SequenceBridge.lean"
+      ],
+      "exit_code": 0,
+      "log": "SequenceBridge.log",
+      "sha256": "37d8153f9cbd4ec8aa879dff01805cb6da61f29599cfa2ade7e0db38d8bd9424"
+    }
+  ]
+}
