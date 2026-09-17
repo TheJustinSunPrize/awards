@@ -18,20 +18,23 @@ def prime_by_trial_division(n: int) -> bool:
 
 
 def main() -> None:
-    p, a, b, c = 3355448021, 2, 6, 32
+    p, a, b, c = 320001821, 2, 6, 20
     primes = [p, p + a, p + b, p + c]
     assert a >= 1 and b >= 3 * a
-    assert c >= b * (b - a) + b + 1
+    assert c >= 3 * b + 1
+    assert c < b * (b - a) + b + 1
     assert p >= 100 * c ** 5
     assert c < 10 * b ** 2
     assert all(prime_by_trial_division(n) for n in primes)
     result = {
         "P": p, "a": a, "b": b, "c": c,
         "primes": primes,
-        "new_c_threshold": b * (b - a) + b + 1,
+        "new_c_threshold": 3 * b + 1,
+        "v2_c_threshold": b * (b - a) + b + 1,
         "old_c_threshold": 10 * b ** 2,
         "P_threshold": 100 * c ** 5,
-        "satisfies_relaxed_hypotheses": True,
+        "satisfies_linear_hypotheses": True,
+        "violates_v2_c_hypothesis": True,
         "violates_original_c_hypothesis": True,
         "primality_method": "Exact trial division by 2 and every odd integer through isqrt(n).",
         "trial_division_limits": [isqrt(n) for n in primes],

@@ -158,20 +158,19 @@ theorem middle_normalization_range {q d c L U u H J w K : ℤ}
       hcorrection (rfl : J - 2 * u * d - 2 * H + lowCarry K = _)
     obtain ⟨hlarge, hsmall⟩ := positive_H_middle_interval hd hgap hUhi hlo hhi
     exact ⟨by omega, hsmall⟩
-/-- The `H=0, u>0` branch: the low coefficient is positive and the middle
-coefficient requires a borrow, giving a middle digit above its bound. -/
-theorem zero_H_positive_u {q d L u t U : ℤ}
-    (hd : 0 < d) (hLd : L < d) (hu : 1 ≤ u)
-    (ht : 0 ≤ t) (htL : t ≤ L)
+/-- The `H=0, u>0` branch after the negative-low-coefficient case has been
+excluded. The middle coefficient requires a borrow and exceeds its bound. -/
+theorem zero_H_positive_u {q d u t U : ℤ}
+    (hd : 0 < d) (hu : 1 ≤ u)
+    (ht : 0 ≤ t) (htud : t ≤ u * d)
     (hmargin : U - 1 < q - 2 * u * d) :
-    0 < d * (u * d - t) ∧ t - 2 * u * d < 0 ∧
+    0 ≤ d * (u * d - t) ∧ t - 2 * u * d < 0 ∧
       U - 1 < normalizeDigit q (t - 2 * u * d) := by
   have hd0 : 0 ≤ d := le_of_lt hd
-  have hud : d ≤ u * d := by
-    nlinarith [mul_le_mul_of_nonneg_right hu hd0]
-  have hpos : 0 < u * d - t := by omega
-  have hneg : t - 2 * u * d < 0 := by nlinarith
-  refine ⟨mul_pos hd hpos, hneg, ?_⟩
+  have hud : 0 < u * d := mul_pos (by omega) hd
+  have hnonneg : 0 ≤ u * d - t := sub_nonneg.mpr htud
+  have hneg : t - 2 * u * d < 0 := by nlinarith only [htud, hud]
+  refine ⟨mul_nonneg hd0 hnonneg, hneg, ?_⟩
   simp only [normalizeDigit, if_pos hneg]
   omega
 
@@ -196,7 +195,7 @@ implicitly.  In applications, `hnonzero` follows from the original `k > 0`.
 -/
 theorem normalized_pair_exclusion {q d c L U F u H J w K : ℤ}
     (hq : 0 ≤ q) (hd : 0 < d)
-    (hLd : L < d) (hLsize : L ≤ c ^ 2)
+    (hLsize : L ≤ c ^ 2)
     (hu : 0 ≤ u) (hH : 0 ≤ H) (hHd : H < d)
     (hw : 0 ≤ w) (hwL : w ≤ d * L)
     (hJ : d * J = H * q + w)
@@ -212,28 +211,29 @@ theorem normalized_pair_exclusion {q d c L U F u H J w K : ℤ}
       (J - 2 * u * d - 2 * H + lowCarry K) ≤ U - 1) : False := by
   by_cases hH0 : H = 0
   · have hJ0 : d * J = w := by simpa [hH0] using hJ
-    have hJnonneg : 0 ≤ J := by nlinarith
-    have hJL : J ≤ L := by nlinarith
+    have hJnonneg : 0 ≤ J := by nlinarith only [hd, hw, hJ0]
+    have hKexact : K = u * d ^ 2 - w := by simpa [hH0] using hK
     have hK0 : K = d * (u * d - J) := by
-      nlinarith [hK, hJ0]
-    by_cases hu0 : u = 0
-    · have hwne : w ≠ 0 := by simpa [hu0, hH0] using hnonzero
-      have hJpos : 0 < J := by
-        by_contra h
-        have : J = 0 := by omega
-        simp [this] at hJ0
+      nlinarith only [hKexact, hJ0]
+    by_cases hKneg : K < 0
+    · have hud2 : 0 ≤ u * d ^ 2 := mul_nonneg hu (sq_nonneg d)
+      have hminus : -K ≤ d * L := by nlinarith only [hKexact, hud2, hwL]
+      simp only [normalizeDigit, if_pos hKneg] at hlow
+      nlinarith only [hlow, hminus, hF]
+    · have hKnonneg : 0 ≤ K := by omega
+      have hJdu : J ≤ u * d := by nlinarith only [hd, hK0, hKnonneg]
+      by_cases hu0 : u = 0
+      · have hJzero : J = 0 := by
+          have hJle : J ≤ 0 := by simpa [hu0] using hJdu
+          exact le_antisymm hJle hJnonneg
+        have hwzero : w = 0 := by simp [hJzero] at hJ0; omega
+        simp [hu0, hH0, hwzero] at hnonzero
+      · have hu1 : 1 ≤ u := by omega
+        obtain ⟨_, _, hviolation⟩ :=
+          zero_H_positive_u hd hu1 hJnonneg hJdu hmargin
+        simp only [lowCarry, if_neg hKneg, hH0, mul_zero, sub_zero, add_zero]
+          at hmiddle
         omega
-      have hKzero : K = -d * J := by nlinarith [hK0]
-      have hviolation := zero_H_zero_u_positive_t hd hJpos hJL hF (q := q)
-      rw [← hKzero] at hviolation
-      omega
-    · have hu1 : 1 ≤ u := by omega
-      obtain ⟨hKpos, _, hviolation⟩ :=
-        zero_H_positive_u hd hLd hu1 hJnonneg hJL hmargin
-      have hKnonneg : ¬ K < 0 := by rw [hK0]; omega
-      simp only [lowCarry, if_neg hKnonneg, hH0, mul_zero, sub_zero, add_zero]
-        at hmiddle
-      omega
   · have hH1 : 1 ≤ H := by omega
     have hcorrection := correction_bounds (le_of_lt hd) hu hH
       (lowCarry_bounds K) hbudget
@@ -248,7 +248,7 @@ theorem normalized_pair_exclusion {q d c L U F u H J w K : ℤ}
 `q`, rather than assumed bounds on a normalization function. -/
 theorem radix_pair_exclusion {q d c L U F u H J w K y : ℤ}
     (hq : 0 < q) (hd : 0 < d)
-    (hLd : L < d) (hLsize : L ≤ c ^ 2)
+    (hLsize : L ≤ c ^ 2)
     (hu : 0 ≤ u) (hH : 0 ≤ H) (hHd : H < d)
     (hw : 0 ≤ w) (hwL : w ≤ d * L)
     (hJ : d * J = H * q + w)
@@ -267,7 +267,7 @@ theorem radix_pair_exclusion {q d c L U F u H J w K y : ℤ}
   obtain ⟨hloweq, hmiddleeq⟩ := two_digits_normalize hq hKlo hKhi hMlo hMhi (u := u)
   rw [hy, hloweq] at hlow
   rw [hy, hmiddleeq] at hmiddle
-  exact normalized_pair_exclusion (le_of_lt hq) hd hLd hLsize hu hH hHd hw hwL
+  exact normalized_pair_exclusion (le_of_lt hq) hd hLsize hu hH hHd hw hwL
     hJ hK hbudget hgap hUlo hUhi hmargin hF hnonzero hlow hmiddle
 
 /-- Complete pure-integer exclusion from source-base digits and divisibility.
@@ -283,10 +283,11 @@ not include primality, Lucas, or any claim about the desired conclusion.
 -/
 theorem source_pair_exclusion {q d c L U F u v w k : ℤ}
     (hq : 0 < q) (hd : 0 < d)
-    (hLd : L < d) (hLsize : L ≤ c ^ 2)
+    (hLsize : L ≤ c ^ 2)
     (hu : 0 ≤ u) (hv : 0 ≤ v) (hvq : v < q)
     (hw : 0 ≤ w) (hwL : w ≤ d * L)
-    (hsize : u * d ^ 2 + d ^ 2 < q)
+    (hsizeR : u * d ^ 2 + d * L < q)
+    (hsizeK : u * d ^ 2 + d ^ 2 < q)
     (hbudget : 2 * u * d + 2 * d ≤ 4 * c ^ 2)
     (hgap : 7 * c ^ 2 * d < q)
     (hUlo : 1 ≤ U) (hUhi : U ≤ 3 * c ^ 2)
@@ -299,12 +300,10 @@ theorem source_pair_exclusion {q d c L U F u v w k : ℤ}
   have hd0 : 0 ≤ d := le_of_lt hd
   have hud2 : 0 ≤ u * d ^ 2 := mul_nonneg hu (sq_nonneg d)
   have hvd : 0 ≤ v * d := mul_nonneg hv hd0
-  have hdL : d * L < d ^ 2 := by
-    nlinarith only [mul_lt_mul_of_pos_left hLd hd]
   have hRlo : -d * q < u * d ^ 2 - v * d + w := by
     nlinarith only [hud2, hw, mul_lt_mul_of_pos_right hvq hd]
   have hRhi : u * d ^ 2 - v * d + w < q := by
-    nlinarith only [hsize, hwL, hdL, hvd]
+    nlinarith only [hsizeR, hwL, hvd]
   have hRdiv : q ∣ u * d ^ 2 - v * d + w := by
     obtain ⟨s, hs⟩ := hdiv
     refine ⟨s - (u * q - 2 * u * d + v), ?_⟩
@@ -327,11 +326,11 @@ theorem source_pair_exclusion {q d c L U F u v w k : ℤ}
   have hKlo : -q ≤ K := by
     have hdH := mul_nonneg hd0 hH
     dsimp [K]
-    nlinarith only [hud2, hdH, hwL, hdL, hsize]
+    nlinarith only [hud2, hdH, hwL, hsizeR]
   have hKhi : K < q := by
     have hdH := mul_lt_mul_of_pos_left hHd hd
     dsimp [K]
-    nlinarith only [hsize, hdH, hw]
+    nlinarith only [hsizeK, hdH, hw]
   have hbudgetH : 2 * u * d + 2 * H + 1 ≤ 4 * c ^ 2 := by omega
   have hnonzero : u ≠ 0 ∨ H ≠ 0 ∨ w ≠ 0 := by
     by_contra hzero
@@ -352,15 +351,15 @@ theorem source_pair_exclusion {q d c L U F u v w k : ℤ}
     ring
   have hquotient : k / q = u * q ^ 2 + (J - 2 * u * d - 2 * H) * q + K :=
     Int.ediv_eq_of_eq_mul_right (ne_of_gt hq) hkfactor
-  exact radix_pair_exclusion hq hd hLd hLsize hu hH hHd hw hwL hJ hK hKlo hKhi
+  exact radix_pair_exclusion hq hd hLsize hu hH hHd hw hwL hJ hK hKlo hKhi
     hbudgetH hgap hUlo hUhi hmargin hF hnonzero hquotient hlow hmiddle
 
 /-- Convenient coarse estimates: a cubic base threshold suffices for every
 explicit size condition in `source_pair_exclusion`. -/
 theorem large_base_estimates {q d c L U u : ℤ}
     (hd : 0 < d) (hdc : d < c) (hu : 0 ≤ u) (huc : u < c)
-    (hLd : L < d) (hUhi : U ≤ 3 * c ^ 2) (hlarge : 10 * c ^ 3 < q) :
-    0 < q ∧ L ≤ c ^ 2 ∧ u * d ^ 2 + d ^ 2 < q ∧
+    (hLsize : L ≤ c ^ 2) (hUhi : U ≤ 3 * c ^ 2) (hlarge : 10 * c ^ 3 < q) :
+    0 < q ∧ u * d ^ 2 + d * L < q ∧ u * d ^ 2 + d ^ 2 < q ∧
       2 * u * d + 2 * d ≤ 4 * c ^ 2 ∧ 7 * c ^ 2 * d < q ∧
       U - 1 < q - 2 * u * d := by
   have hc : 0 < c := lt_trans hd hdc
@@ -381,14 +380,16 @@ theorem large_base_estimates {q d c L U u : ℤ}
       mul_lt_mul_of_pos_right huc hc2pos]
   have hc2d : c ^ 2 * d < c ^ 3 := by
     nlinarith only [mul_lt_mul_of_pos_left hdc hc2pos]
+  have hdL : d * L ≤ c ^ 3 := by
+    nlinarith only [mul_le_mul_of_nonneg_left hLsize (le_of_lt hd), hc2d]
   refine ⟨?_, ?_, ?_, ?_, ?_, ?_⟩ <;>
-    nlinarith only [hlarge, hc3nonneg, hLd, hdc, hcc2, hc23, hd2, hud,
+    nlinarith only [hlarge, hc3nonneg, hdL, hdc, hcc2, hc23, hd2, hud,
       hud2, hc2d, hUhi, le_of_lt hc2pos]
 
 /-- Caller-facing last-pair exclusion with only coarse source-size estimates.
 The digits supplied here are actual Euclidean digits, not normalized proxies. -/
 theorem source_pair_exclusion_of_large_base {q d c L U F u v w k : ℤ}
-    (hd : 0 < d) (hdc : d < c) (hLd : L < d)
+    (hd : 0 < d) (hdc : d < c) (hLsize : L ≤ c ^ 2)
     (hu : 0 ≤ u) (huc : u < c) (hv : 0 ≤ v) (hvq : v < q)
     (hw : 0 ≤ w) (hwL : w ≤ d * L)
     (hUlo : 1 ≤ U) (hUhi : U ≤ 3 * c ^ 2)
@@ -397,9 +398,9 @@ theorem source_pair_exclusion_of_large_base {q d c L U F u v w k : ℤ}
     (hdiv : q ∣ u * (q - d) ^ 2 + v * (q - d) + w)
     (hlow : (k / q) % q ≤ q - F)
     (hmiddle : (k / q / q) % q ≤ U - 1) : False := by
-  obtain ⟨hq, hLsize, hsize, hbudget, hgap, hmargin⟩ :=
-    large_base_estimates hd hdc hu huc hLd hUhi hlarge
-  exact source_pair_exclusion hq hd hLd hLsize hu hv hvq hw hwL hsize hbudget
+  obtain ⟨hq, hsizeR, hsizeK, hbudget, hgap, hmargin⟩ :=
+    large_base_estimates hd hdc hu huc hLsize hUhi hlarge
+  exact source_pair_exclusion hq hd hLsize hu hv hvq hw hwL hsizeR hsizeK hbudget
     hgap hUlo hUhi hmargin hF hk hsource hdiv hlow hmiddle
 
 end Erdos700.PairBC

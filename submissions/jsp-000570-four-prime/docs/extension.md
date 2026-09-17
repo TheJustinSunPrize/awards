@@ -1,5 +1,9 @@
 # Version 2: weaker separation in the four-prime criterion
 
+Historical version-2 note. Its theorem is retained as a corollary of the
+current [version-3 linear criterion](linear-extension.md). The earlier numerical
+example is retained here for context; current verification uses a smaller-gap witness.
+
 ## Exact change
 
 For natural P,a,b,c, the new theorem assumes
@@ -27,9 +31,8 @@ For example, a=2,b=6 previously required c>=360, whereas the new threshold
 is c>=31. An even offset c=32 therefore lies in the newly admitted range.
 The choice P=3355448021 gives the four primes
 3355448021, 3355448023, 3355448027, and 3355448053; P>=3355443200=100*32^5.
-The separate [numerical check](../verification/witness.json) verifies primality
-by exact trial division through the integer square root. Run
-`python tools/check_witness.py` with Python 3 to reproduce it. This is supporting
+The separate numerical check in the [version-2 archive](../verification/archive-v2.md) verifies primality
+by exact trial division through the integer square root. Use the version-2 archive's `tools/check_witness.py` to reproduce that earlier example. This is supporting
 evidence, not a substitute for the universal Lean proof or a Lean primality proof.
 
 ## Proof changes

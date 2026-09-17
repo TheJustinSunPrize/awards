@@ -30,7 +30,7 @@ def main() -> None:
     x, y, z = s.symbols("x y z", nonnegative=True)
     sa = x + 1
     sb = 3 * sa + y
-    sc = sb * (sb - sa) + sb + 1 + z
+    sc = 3 * sb + 1 + z
     input_symbols = {"a": a, "b": b, "c": c}
     certificate_symbols = {"x": x, "y": y, "z": z}
     certificates = []
@@ -45,7 +45,7 @@ def main() -> None:
             # large_base_thresholds has a separate monotonicity proof.
             assert name == "large_base_thresholds", name
             continue
-        assert "(hc : b*(b-a)+b+1 ≤ c)" in block, name
+        assert "(hc : 3*b+1 ≤ c)" in block, name
         lhs_lean, rhs_lean = identity.groups()
         lhs = s.sympify(lhs_lean.replace("^", "**"), locals=input_symbols)
         rhs = s.sympify(rhs_lean.replace("^", "**"), locals=certificate_symbols)
@@ -72,8 +72,8 @@ def main() -> None:
     report = {
         "source": source_relative.as_posix(),
         "source_sha256": sha256(source_bytes).hexdigest(),
-        "hypotheses": "a>=1, b>=3a, c>=b(b-a)+b+1",
-        "substitution": "a=x+1, b=3a+y, c=b(b-a)+b+1+z; x,y,z>=0",
+        "hypotheses": "a>=1, b>=3a, c>=3b+1",
+        "substitution": "a=x+1, b=3a+y, c=3b+1+z; x,y,z>=0",
         "certificate_count": len(certificates),
         "all_checks_passed": True,
         "certificates": certificates,

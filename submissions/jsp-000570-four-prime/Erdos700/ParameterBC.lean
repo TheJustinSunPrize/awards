@@ -2,7 +2,7 @@ import Erdos700.PairBC
 import Erdos700.Bounds
 
 /-!
-The `(P+b,P+c)` exclusion with the original parameters and source digit bounds.
+The `(P+b,P+c)` exclusion with the linear-separation parameters and source digit bounds.
 All auxiliary size hypotheses of `PairBC.source_pair_exclusion_of_large_base`
 are discharged here from the uniform parameter assumptions.
 -/
@@ -11,14 +11,14 @@ namespace Erdos700.FourPrime.ParameterBC
 
 /-- No positive integer has the source digit bounds for `P+b`, a source
 quotient divisible by `P+c`, and the target low and middle digit bounds for
-`P+c`, under the four-prime construction's original parameter inequalities.
+`P+c`, under the four-prime construction's linear-separation parameter inequalities.
 
 This is an integer arithmetic theorem.  Primality is not needed once the
 source representation, divisibility, and target digit inequalities have been
 obtained.  No auxiliary normalized-digit or size hypothesis is required.
 -/
 theorem pairBC_actual_digits (a b c p u v w k : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b + 1 ≤ c)
     (hp : 100 * c ^ 5 ≤ p)
     (hu0 : 0 ≤ u) (hv0 : 0 ≤ v) (hw0 : 0 ≤ w)
     (hu : u ≤ a + c - 3 * b - 1)
@@ -40,8 +40,8 @@ theorem pairBC_actual_digits (a b c p u v w k : ℤ)
     have h := Bounds.b_less_c a b c ha hb hc
     linarith only [h]
   have hdc : c - b < c := by linarith only [hbpos]
-  have hLd : b * (b - a) < c - b := by
-    have h := Bounds.largest_gap_exceeds_L a b c ha hb hc
+  have hLsize : b * (b - a) ≤ c ^ 2 := by
+    have h := Bounds.L_less_c_squared a b c ha hb hc
     nlinarith only [h]
   have huc : u < c := by
     have h := Bounds.R_less_than_c a b c ha hb hc
@@ -72,7 +72,7 @@ theorem pairBC_actual_digits (a b c p u v w k : ℤ)
     (q := p + c) (d := c - b) (c := c) (L := b * (b - a))
     (U := 3 * c ^ 2 - 2 * c * (a + b) + a * b)
     (F := c * (c - a) * (c - b)) (u := u) (v := v) (w := w) (k := k)
-    hd hdc hLd hu0 huc hv0 hvq hw0 hwL hUlo hUhi hlarge hF hk
+    hd hdc hLsize hu0 huc hv0 hvq hw0 hwL hUlo hUhi hlarge hF hk
   · simpa only [hbase] using hsource
   · simpa only [hbase] using hdiv
   · exact hlow

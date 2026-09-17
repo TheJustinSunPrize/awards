@@ -6,22 +6,23 @@ This project proves a local sufficient condition for the function
 
 For natural numbers P,a,b,c, assume
 
-    1 <= a, 3a <= b, b(b-a)+b+1 <= c, 100c^5 <= P,
+    1 <= a, 3a <= b, 3b+1 <= c, 100c^5 <= P,
     P, P+a, P+b, P+c are prime.
 
-Then the Lean theorem `Erdos700.FourPrime.four_prime_exact_relaxed` proves
+Then the Lean theorem `Erdos700.FourPrime.four_prime_exact_linear` proves
 
     f(P(P+a)(P+b)(P+c)) = P(P+a)(P+b).
 
-Version 2 weakens the separation hypothesis from `c >= 10b^2` to
-`c >= b(b-a)+b+1`. The original `four_prime_exact` declaration is retained,
-with its original type, as a proved corollary. See [the extension note](docs/extension.md).
+Version 3 replaces the quadratic separation requirement by `c >= 3b+1`.
+Both preceding declarations, `four_prime_exact_relaxed` (version 2) and
+`four_prime_exact` (version 1), retain their published types as corollaries.
+See [the linear extension note](docs/linear-extension.md).
 
 The function and minimization range match the current formal statement of Erdős 700. No pair-exclusion statement or prime-existence theorem is assumed by the final declaration.
 
 ## Verification
 
-The complete local theorem compiled with Lean 4.33.1. A fresh standalone `lake build` rebuilt all 17 local modules successfully, with the inherited `LEAN_PATH` cleared. The final audit, run with `-DwarningAsError=true`, printed the complete theorem types and the exact definition of `f`; both the relaxed and original theorem depend only on `propext`, `Classical.choice`, and `Quot.sound`. There is no `sorryAx` or custom axiom in those dependency lists. See [the build log](verification/canonical-build.log), [the audit log](verification/canonical-audit.log), and [the build record](verification/build-record.json). The dependency pin is Mathlib `0df444a360eaa60ab8c11dca51a86af692955474` (v4.33.1).
+The complete local theorem compiled with Lean 4.33.1. A fresh standalone `lake build` rebuilt all 17 local modules successfully, with the inherited `LEAN_PATH` cleared. The final audit, run with `-DwarningAsError=true`, printed the complete theorem types and the exact definition of `f`; the linear theorem and both preceding corollaries depend only on `propext`, `Classical.choice`, and `Quot.sound`. There is no `sorryAx` or custom axiom in those dependency lists. See [the build log](verification/canonical-build.log), [the audit log](verification/canonical-audit.log), and [the build record](verification/build-record.json). The dependency pin is Mathlib `0df444a360eaa60ab8c11dca51a86af692955474` (v4.33.1).
 
 To reproduce with the pinned Lean toolchain installed:
 

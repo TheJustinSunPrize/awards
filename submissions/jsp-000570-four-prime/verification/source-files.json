@@ -1,8 +1,8 @@
 [
   {
     "path": "Audit.lean",
-    "sha256": "7591e53623a35d37fc229ad4a01517bb7634c502fee8d0ffea3ac6383508ae5e",
-    "bytes": 237
+    "sha256": "32c5481c0de897f68ce0fb32b1b790eab5e31d9896886ec9dc4c21f8de3e7a46",
+    "bytes": 344
   },
   {
     "path": "Erdos700/Arithmetic.lean",
@@ -11,8 +11,8 @@
   },
   {
     "path": "Erdos700/Bounds.lean",
-    "sha256": "830d948670b3e9d2bd92a3e505e2edee8c47e8090eb6ea19c4e2cfd19107c170",
-    "bytes": 23439
+    "sha256": "d8b9d77e16591bd8b882e4021f50f839a4f0e11ac963666058ace2d28092d969",
+    "bytes": 18282
   },
   {
     "path": "Erdos700/DigitSupport.lean",
@@ -21,8 +21,8 @@
   },
   {
     "path": "Erdos700/FourPrime.lean",
-    "sha256": "1c9e6d14f7900d68a26d8351a038f20abf58d3d0967463dedfa3a9707f97c267",
-    "bytes": 10406
+    "sha256": "2b4e70cb0920261376488d68fa7885f830ee2be382cc9062c7a2e816a2dc3505",
+    "bytes": 10881
   },
   {
     "path": "Erdos700/IntDigitSupport.lean",
@@ -46,13 +46,13 @@
   },
   {
     "path": "Erdos700/PairADigits.lean",
-    "sha256": "3a73d190fa5717ddc0da6cc6eb8c93ee4e772137ca3631aab2c94aaa0f0ed306",
-    "bytes": 20351
+    "sha256": "a1749c742ac5e30cdc350824dbf0ddbaa44bbad69516b83712c3fdaf5ecb52b7",
+    "bytes": 20321
   },
   {
     "path": "Erdos700/PairBC.lean",
-    "sha256": "2e42e1e49510d74a177b80d21231e2514ff2599eaf8d5863f5797563a269912e",
-    "bytes": 17972
+    "sha256": "2f24e879bb5462e032f088e8c7dab539a90612d0504db9b89a9ea584c5522be3",
+    "bytes": 18275
   },
   {
     "path": "Erdos700/PairPDigits.lean",
@@ -61,18 +61,18 @@
   },
   {
     "path": "Erdos700/ParameterBC.lean",
-    "sha256": "72a243478674c09e3dace5fea0eb87e3427c4c98b45042539308f9c72598fc4a",
-    "bytes": 3527
+    "sha256": "759a40914d9adb714b03f2df22d63b8a9a979ce2b009b4a1a0b7e09f04a162e8",
+    "bytes": 3538
   },
   {
     "path": "Erdos700/ParameterDigits.lean",
-    "sha256": "8ac1bee350553ce8af2eebaf5d7cb53b57115316e871d94de885ea6e4eb94f06",
-    "bytes": 8178
+    "sha256": "7358526e732501b4d8031c2ef8b7047ae21721ff4ae9fbe465b6d057d47eb2d5",
+    "bytes": 8108
   },
   {
     "path": "Erdos700/ParameterP.lean",
-    "sha256": "3a27a3f85fa19dedb92d6286cdbb649c08a386eac2c5a8efe80b829a3ed817c4",
-    "bytes": 5666
+    "sha256": "394847da353edeba03b4d87c05b027ca7d0bf0da7e0aa534246897f1a62a36ac",
+    "bytes": 5636
   },
   {
     "path": "Erdos700/PrimeSource.lean",

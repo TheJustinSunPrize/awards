@@ -11,7 +11,7 @@ namespace Erdos700.FourPrime.ParameterDigits
 
 /-- Basic order and size consequences used by all four digit tables. -/
 theorem parameter_sizes (a b c p : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b + 1 ≤ c)
     (hp : 100 * c ^ 5 ≤ p) :
     0 < a ∧ 0 < b ∧ 10 ≤ c ∧ 0 < p ∧ a < c ∧ b < c ∧
       c ^ 3 < p ∧ 3 * c ^ 2 < p ∧ 3 * c < p := by
@@ -32,7 +32,7 @@ theorem parameter_sizes (a b c p : ℤ)
 
 /-- Low, middle, and high digits of `N/p`. -/
 theorem digit_bounds_p (a b c p : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b + 1 ≤ c)
     (hp : 100 * c ^ 5 ≤ p) :
     0 ≤ a * b * c ∧ a * b * c < p ∧
       0 ≤ a * b + a * c + b * c ∧ a * b + a * c + b * c < p ∧
@@ -49,7 +49,7 @@ theorem digit_bounds_p (a b c p : ℤ)
 
 /-- Low, middle, and high digits of `N/(p+a)`. -/
 theorem digit_bounds_a (a b c p : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b + 1 ≤ c)
     (hp : 100 * c ^ 5 ≤ p) :
     0 ≤ p + a - a * (b - a) * (c - a) ∧
       p + a - a * (b - a) * (c - a) < p + a ∧
@@ -76,7 +76,7 @@ theorem digit_bounds_a (a b c p : ℤ)
 
 /-- Low, middle, and high digits of `N/(p+b)`. -/
 theorem digit_bounds_b (a b c p : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b + 1 ≤ c)
     (hp : 100 * c ^ 5 ≤ p) :
     0 ≤ b * (b - a) * (c - b) ∧ b * (b - a) * (c - b) < p + b ∧
       0 ≤ p + b - ((2 * b - a) * c + 2 * a * b - 3 * b ^ 2) ∧
@@ -98,7 +98,7 @@ theorem digit_bounds_b (a b c p : ℤ)
 
 /-- Low, middle, and high digits of `N/(p+c)`. -/
 theorem digit_bounds_c (a b c p : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b + 1 ≤ c)
     (hp : 100 * c ^ 5 ≤ p) :
     0 ≤ p + c - c * (c - a) * (c - b) ∧
       p + c - c * (c - a) * (c - b) < p + c ∧
@@ -137,7 +137,7 @@ theorem fourth_power_nearby (c p : ℤ) (hc : 0 < c) (hp : 10 * c ≤ p) :
 
 /-- The product of the four bases is below `2*p^4`. -/
 theorem product_lt_two_mul_p_four (a b c p : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b + 1 ≤ c)
     (hp : 100 * c ^ 5 ≤ p) :
     p * (p + a) * (p + b) * (p + c) < 2 * p ^ 4 := by
   obtain ⟨ha0, hb0, hc10, hp0, hac, hbc, _, _, _⟩ :=
@@ -168,7 +168,7 @@ theorem quotient_lt_cube (N p k x : ℤ) (hp : 0 < p)
 
 /-- The quotient bound for any of the four bases, directly from the parameters. -/
 theorem parameter_quotient_lt_cube (a b c p k x : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b + 1 ≤ c)
     (hp : 100 * c ^ 5 ≤ p)
     (hhalf : 2 * k ≤ p * (p + a) * (p + b) * (p + c)) (hpx : p ≤ x) :
     k / x < x ^ 3 := by

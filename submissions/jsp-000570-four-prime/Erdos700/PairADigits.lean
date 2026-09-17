@@ -368,7 +368,7 @@ theorem pairAC_actual_digits
 hypotheses, uniformly for every gap `d` between 0 and c. -/
 theorem source_a_size_bounds
     (a b c d q : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b + 1 ≤ c)
     (hd0 : 0 ≤ d) (hdc : d ≤ c) (hq : 100 * c ^ 5 ≤ q) :
     b + c - 3 * a < q ∧
     3 * d * (b + c - 3 * a) < q ∧
@@ -448,7 +448,7 @@ This theorem still uses integer source/target digits, but no longer has
 any auxiliary size hypotheses. -/
 theorem pairAB_global_digits
     (a b c q u v w k : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b + 1 ≤ c)
     (hq : 100 * c ^ 5 ≤ q)
     (hu0 : 0 ≤ u) (hu : u ≤ b + c - 3 * a)
     (hv0 : 0 ≤ v) (hv : v ≤ b * c - 2 * a * (b + c) + 3 * a ^ 2 - 1)
@@ -475,7 +475,7 @@ theorem pairAB_global_digits
 /-- AC pair exclusion under the original four-prime parameter bounds. -/
 theorem pairAC_global_digits
     (a b c q u v w k : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b + 1 ≤ c)
     (hq : 100 * c ^ 5 ≤ q)
     (hu0 : 0 ≤ u) (hu : u ≤ b + c - 3 * a)
     (hv0 : 0 ≤ v) (hv : v ≤ b * c - 2 * a * (b + c) + 3 * a ^ 2 - 1)

@@ -7,7 +7,7 @@ namespace Erdos700.FourPrime.ParameterP
 from the original parameter assumptions, uniformly for every 0<=d<=c. -/
 theorem source_p_size_bounds
     (a b c d q : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b + 1 ≤ c)
     (hd0 : 0 ≤ d) (hdc : d ≤ c) (hq : 100 * c ^ 5 ≤ q) :
     a + b + c < q ∧
     d ^ 2 * (a + b + c) + a * b * c < q ∧
@@ -85,7 +85,7 @@ theorem source_p_size_bounds
 /-- The pair `(P,P+b)` exclusion under just the original global
 parameters and actual source/target digit hypotheses. -/
 theorem pairPB_global_digits (a b c q u v w k : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b + 1 ≤ c)
     (hq : 100 * c ^ 5 ≤ q)
     (hu0 : 0 ≤ u) (hu : u ≤ a + b + c)
     (hv0 : 0 ≤ v) (hv : v ≤ a * b + a * c + b * c)
@@ -108,7 +108,7 @@ theorem pairPB_global_digits (a b c q u v w k : ℤ)
 
 /-- The pair `(P,P+c)` exclusion under the original global parameters. -/
 theorem pairPC_global_digits (a b c q u v w k : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b + 1 ≤ c)
     (hq : 100 * c ^ 5 ≤ q)
     (hu0 : 0 ≤ u) (hu : u ≤ a + b + c)
     (hv0 : 0 ≤ v) (hv : v ≤ a * b + a * c + b * c)

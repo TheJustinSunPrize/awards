@@ -35,3 +35,8 @@ The version-2 refinement weakens its c-separation hypothesis; this is an extensi
 of that same submission, not a separate full resolution or a higher-exponent claim.
 Additional exact-phrase web searches for the four-prime criterion and the new gap
 formula returned no matching result. This limited negative search does not establish priority.
+
+Version 3 further replaces the quadratic separation hypothesis by c>=3b+1.
+This is a continuation of the same local four-prime criterion, not a claim of
+a larger exponent or a full solution. The previous limited literature review
+does not establish worldwide novelty or optimality of this new threshold.

@@ -11,10 +11,10 @@ import Erdos700.RowExpansions
 namespace Erdos700.FourPrime
 
 /-- A four-prime equality criterion for the binomial-gcd minimum.
-The relaxed separation condition strictly extends the original criterion.
+The linear separation condition extends both previously proved criteria.
 This local theorem does not assume Maynard's theorem. -/
-theorem four_prime_exact_relaxed (P A B C : ℕ)
-    (hA : 1 ≤ A) (hB : 3*A ≤ B) (hC : B*(B-A)+B+1 ≤ C) (hPsize : 100*C^5 ≤ P)
+theorem four_prime_exact_linear (P A B C : ℕ)
+    (hA : 1 ≤ A) (hB : 3*A ≤ B) (hC : 3*B+1 ≤ C) (hPsize : 100*C^5 ≤ P)
     (hP : P.Prime) (hPA : (P+A).Prime) (hPB : (P+B).Prime) (hPC : (P+C).Prime) :
     f (P*(P+A)*(P+B)*(P+C)) = P*(P+A)*(P+B) := by
   let p : ℤ := P
@@ -24,10 +24,7 @@ theorem four_prime_exact_relaxed (P A B C : ℕ)
   let N : ℕ := P*(P+A)*(P+B)*(P+C)
   have ha : 1 ≤ a := by dsimp [a, b, c, p]; exact_mod_cast hA
   have hb : 3*a ≤ b := by dsimp [a, b, c, p]; exact_mod_cast hB
-  have hABnat : A ≤ B := by omega
-  have hcCast : ((B*(B-A)+B+1 : ℕ) : ℤ) ≤ (C : ℤ) := by exact_mod_cast hC
-  have hc : b*(b-a)+b+1 ≤ c := by
-    simpa [a, b, c, Nat.cast_sub hABnat] using hcCast
+  have hc : 3*b+1 ≤ c := by dsimp [a, b, c, p]; exact_mod_cast hC
   have hp : 100*c^5 ≤ p := by dsimp [a, b, c, p]; exact_mod_cast hPsize
   have hp0 : 0 < p := by dsimp [a, b, c, p]; exact_mod_cast hP.pos
   have ha0 : 0 ≤ a := by omega
@@ -187,6 +184,18 @@ theorem four_prime_exact_relaxed (P A B C : ℕ)
     obtain ⟨hlow, hmiddle, _⟩ := target_c hmc
     exact ParameterBC.pairBC_actual_digits a b c p u v w (k : ℤ)
       ha hb hc hp hu0 hv0 hw0 hu hv hw hkpos hs hdiv hlow hmiddle
+
+/-- The version-2 quadratic separation criterion follows from the new linear
+criterion; its published statement and declaration name are preserved. -/
+theorem four_prime_exact_relaxed (P A B C : ℕ)
+    (hA : 1 ≤ A) (hB : 3*A ≤ B) (hC : B*(B-A)+B+1 ≤ C) (hPsize : 100*C^5 ≤ P)
+    (hP : P.Prime) (hPA : (P+A).Prime) (hPB : (P+B).Prime) (hPC : (P+C).Prime) :
+    f (P*(P+A)*(P+B)*(P+C)) = P*(P+A)*(P+B) := by
+  have hBA : 2 ≤ B-A := by omega
+  have hClinear : 3*B+1 ≤ C := by
+    have hmul := Nat.mul_le_mul_left B hBA
+    nlinarith
+  exact four_prime_exact_linear P A B C hA hB hClinear hPsize hP hPA hPB hPC
 
 /-- The original separation criterion is retained as a corollary of the
 relaxed theorem. This preserves the declaration submitted in the v1 packet. -/
