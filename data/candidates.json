@@ -1,46 +1,4 @@
 {
   "schema_version": 1,
-  "items": [
-    {
-      "entry": {
-        "id": "jsp-000623",
-        "batch": null,
-        "problem": {
-          "source": "TheJustinSunPrize problem bank / Erdos Problems",
-          "number": "JSP-000623",
-          "title_en": "Cochromatic number of graphs on orientable surfaces",
-          "posed": {
-            "year": 1993,
-            "basis": "earliest-reference",
-            "citation": "Official catalog JSP-000623: no later than 1993, a bibliographic upper bound."
-          },
-          "resolved": {
-            "year": 1997
-          }
-        },
-        "decision": null,
-        "recipients": [
-          {
-            "id": "RECIPIENT-JSP-000623-A",
-            "affiliation": "",
-            "contribution_en": "Completion of the Lean formalization of cochromatic growth on orientable surfaces, deriving embedding heredity and verifying the full asymptotic theorem.",
-            "confirmation": null
-          }
-        ],
-        "verification": {
-          "peer_review": null,
-          "formal": null,
-          "independent_review": null
-        },
-        "conflicts": [],
-        "status": "under-verification",
-        "revocation": null
-      },
-      "source_path": "candidates/observation/jsp-000623",
-      "citation": "# JSP-000623: Cochromatic growth on orientable surfaces\n\n## English\n\nJohn Gimbel and Carsten Thomassen proved that the maximum cochromatic number of\na finite graph embeddable on the orientable surface of genus g has order\nsqrt(g)/log(g). This submission completes the Lean formalization for the ordinary\nrotation-system embedding class, including disconnected graphs and isolated\nvertices. The new deletion proof derives the induced-subgraph heredity needed\nby the existing cochromatic estimates.\n\nThe [complete Lean project](../../../proofs/jsp-000623/README.md) and\n[fixed-source evidence guide](../../../proofs/jsp-000623/SUBMISSION.md) contain\nthe exact statements, source attribution, pinned dependencies, reproducible\nverification commands, source archive, and checksums. A dedicated Lean workflow\nrebuilds the committed project, checks final theorem types and axioms, and\nreplays all project modules with the Lean kernel.\n\nThe candidate is submitted for designated review. Its official verification\nrecord and recipient confirmation remain pending.\n",
-      "recipients": "# Contribution attribution\n\n## English\n\nThe mathematical surface theorem is due to John Gimbel and Carsten Thomassen.\nThe lower construction uses the cochromatic subgraph theorem of Noga Alon,\nMichael Krivelevich and Benny Sudakov. The project's attribution file identifies\nthe fixed public Lean modules reused with their licenses and original headers.\n\nRECIPIENT-JSP-000623-A identifies the contributor completing the ordinary\nembedding heredity proof, its integration with the full asymptotic theorem,\nand the reproducible verification materials, pending recipient confirmation.\n\n## Recipient placeholder or confirmed public ID\n\nRECIPIENT-JSP-000623-A\n\nGitHub account: cronrpc\n",
-      "verification_record": null,
-      "statement": null
-    }
-  ]
+  "items": []
 }
