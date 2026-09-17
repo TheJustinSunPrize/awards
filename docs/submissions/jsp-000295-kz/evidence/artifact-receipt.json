@@ -1,0 +1,12 @@
+{
+  "run_id": 35171855423,
+  "job_id": 105045009825,
+  "proof_commit": "59c5b5540c469b13e7b4848c7c3fbd17e688f519",
+  "artifact_id": 10476748299,
+  "artifact_size": 9228096,
+  "artifact_sha256": "90a76dc095ab57ff3c46dff0573af4a6e7a65873172e3858113a9cf6a034b99b",
+  "download_hash_verified": true,
+  "source_archive_matches_pinned_project": true,
+  "scheduled_expiration_utc": "2026-12-16T01:46:35Z",
+  "scope": "known lower-bound component only"
+}

@@ -1,0 +1,25 @@
+2026-09-17T01:48:24.6947497Z info: Audit.lean:9:0: 'JSP000295.blocks_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:24.6948539Z info: Audit.lean:10:0: 'JSP000295.entry_hasDistinctSums' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:24.6949473Z info: Audit.lean:11:0: 'JSP000295.admissible_length_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:24.6960767Z info: Audit.lean:12:0: 'JSP000295.lower_bound_of_square_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:24.6961790Z info: Audit.lean:13:0: 'JSP000295.lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:24.6962666Z info: Audit.lean:14:0: 'JSP000295.real_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:24.6963516Z info: Audit.lean:15:0: 'JSP000295.weisenberg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:24.6964767Z info: Audit.lean:16:0: 'Erdos357.erdos_357.variants.weisenberg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:24.6965718Z info: Audit.lean:17:0: 'Erdos357.explicit_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:24.7003323Z Build completed successfully (3095 jobs).
+2026-09-17T01:48:47.2807949Z 'JSP000295.blocks_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:47.2808761Z 'JSP000295.entry_hasDistinctSums' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:47.2809587Z 'JSP000295.admissible_length_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:47.2810629Z 'JSP000295.lower_bound_of_square_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:47.2811555Z 'JSP000295.lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:47.2812437Z 'JSP000295.real_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:47.2813287Z 'JSP000295.weisenberg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:47.2814272Z 'Erdos357.erdos_357.variants.weisenberg' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:47.2815263Z 'Erdos357.explicit_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:48:47.4521719Z Nine target axiom audits and all locked dependency revision checks passed.
+2026-09-17T01:48:57.4228382Z Build completed successfully (6 jobs).
+2026-09-17T01:49:25.2470217Z Checked 13975 declarations with no errors
+2026-09-17T01:49:28.1823010Z SHA256 digest of uploaded artifact zip is 90a76dc095ab57ff3c46dff0573af4a6e7a65873172e3858113a9cf6a034b99b
+2026-09-17T01:49:28.3954818Z Artifact jsp-000295-evidence.zip successfully finalized. Artifact ID 10476748299
+2026-09-17T01:49:28.3955887Z Artifact jsp-000295-evidence has been successfully uploaded! Final size is 9228096 bytes. Artifact ID is 10476748299
