@@ -1,0 +1,268 @@
+{
+  "ai_assistance": "OpenAI Codex",
+  "catalog_id": "JSP-000254",
+  "cloud_execution": {
+    "run_id": 35173758386,
+    "job_id": 105050812305,
+    "url": "https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35173758386",
+    "head_sha": "54a0d8edb05945100ff151f70e8dc28870a45962",
+    "status": "completed",
+    "conclusion": "success",
+    "run_updated_utc": "2026-09-17T02:19:26Z",
+    "stages": {
+      "warnings_as_errors_build": "success",
+      "leanchecker": "success",
+      "twelve_axiom_audits": "success",
+      "dependency_revision_checks": "success",
+      "false_arithmetic_negative_control": "success",
+      "source_archiving": "success"
+    },
+    "artifact": {
+      "archive_download_url": "https://api.github.com/repos/ketianzhang1-lang/jsp-000301-lean/actions/artifacts/10477866850/zip",
+      "created_at": "2026-09-17T02:19:24Z",
+      "digest": "sha256:043167e9e4f3f4dc9936a1794e1013f0d20a10b95c8a2601340aa7914cd47c07",
+      "expired": false,
+      "expires_at": "2026-12-16T02:16:05Z",
+      "id": 10477866850,
+      "name": "jsp-000254-evidence",
+      "size_in_bytes": 8558383,
+      "updated_at": "2026-09-17T02:19:24Z",
+      "url": "https://api.github.com/repos/ketianzhang1-lang/jsp-000301-lean/actions/artifacts/10477866850",
+      "workflow_run": {
+        "head_branch": "jsp-000254-cambie-bound",
+        "head_repository_id": 1373404416,
+        "head_sha": "54a0d8edb05945100ff151f70e8dc28870a45962",
+        "id": 35173758386,
+        "repository_id": 1373404416
+      }
+    },
+    "artifact_integrity_note": "Digest and size are reported by the GitHub artifact API and agree with the upload log. The artifact ZIP has not been independently downloaded and rehashed in this session."
+  },
+  "dependency_lockfile": {
+    "fixedToolchain": false,
+    "lakeDir": ".lake",
+    "name": "JSP000254",
+    "packages": [
+      {
+        "configFile": "lakefile.lean",
+        "inherited": false,
+        "inputRev": "v4.34.0",
+        "manifestFile": "lake-manifest.json",
+        "name": "mathlib",
+        "rev": "5ed2965256430c3649e86755f9576b54eca72435",
+        "scope": "",
+        "subDir": null,
+        "type": "git",
+        "url": "https://github.com/leanprover-community/mathlib4"
+      },
+      {
+        "configFile": "lakefile.toml",
+        "inherited": true,
+        "inputRev": "main",
+        "manifestFile": "lake-manifest.json",
+        "name": "plausible",
+        "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+        "scope": "leanprover-community",
+        "subDir": null,
+        "type": "git",
+        "url": "https://github.com/leanprover-community/plausible"
+      },
+      {
+        "configFile": "lakefile.toml",
+        "inherited": true,
+        "inputRev": "main",
+        "manifestFile": "lake-manifest.json",
+        "name": "LeanSearchClient",
+        "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+        "scope": "leanprover-community",
+        "subDir": null,
+        "type": "git",
+        "url": "https://github.com/leanprover-community/LeanSearchClient"
+      },
+      {
+        "configFile": "lakefile.toml",
+        "inherited": true,
+        "inputRev": "main",
+        "manifestFile": "lake-manifest.json",
+        "name": "importGraph",
+        "rev": "e928b72544873815af278d38681b31c0293588e3",
+        "scope": "leanprover-community",
+        "subDir": null,
+        "type": "git",
+        "url": "https://github.com/leanprover-community/import-graph"
+      },
+      {
+        "configFile": "lakefile.lean",
+        "inherited": true,
+        "inputRev": "main",
+        "manifestFile": "lake-manifest.json",
+        "name": "proofwidgets",
+        "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+        "scope": "leanprover-community",
+        "subDir": null,
+        "type": "git",
+        "url": "https://github.com/leanprover-community/ProofWidgets4"
+      },
+      {
+        "configFile": "lakefile.toml",
+        "inherited": true,
+        "inputRev": "master",
+        "manifestFile": "lake-manifest.json",
+        "name": "aesop",
+        "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+        "scope": "leanprover-community",
+        "subDir": null,
+        "type": "git",
+        "url": "https://github.com/leanprover-community/aesop"
+      },
+      {
+        "configFile": "lakefile.toml",
+        "inherited": true,
+        "inputRev": "master",
+        "manifestFile": "lake-manifest.json",
+        "name": "Qq",
+        "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+        "scope": "leanprover-community",
+        "subDir": null,
+        "type": "git",
+        "url": "https://github.com/leanprover-community/quote4"
+      },
+      {
+        "configFile": "lakefile.toml",
+        "inherited": true,
+        "inputRev": "main",
+        "manifestFile": "lake-manifest.json",
+        "name": "batteries",
+        "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+        "scope": "leanprover-community",
+        "subDir": null,
+        "type": "git",
+        "url": "https://github.com/leanprover-community/batteries"
+      },
+      {
+        "configFile": "lakefile.toml",
+        "inherited": true,
+        "inputRev": "v4.34.0",
+        "manifestFile": "lake-manifest.json",
+        "name": "Cli",
+        "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+        "scope": "leanprover",
+        "subDir": null,
+        "type": "git",
+        "url": "https://github.com/leanprover/lean4-cli"
+      }
+    ],
+    "packagesDir": ".lake/packages",
+    "version": "1.2.0"
+  },
+  "erdos_problem": 302,
+  "formalization_recipient_placeholder": "RECIPIENT-JSP-000254-KZ-A",
+  "independent_checker": {
+    "commit": "4c544ed4099c8227f07d5de77ad1e69fb0740a27",
+    "exporter_commit": "6cea97789dc088ea47fcea15692db85685aedac5",
+    "exporter_repository": "https://github.com/leanprover/lean4export",
+    "name": "NaNoda",
+    "repository": "https://github.com/ammkrn/nanoda_lib",
+    "status": "success",
+    "audited_targets": 12,
+    "dependency_closure_declarations": 12948,
+    "observed_log": "Checked 12948 declarations with no errors"
+  },
+  "local_execution": {
+    "axiom_audit_targets": 12,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "compile_with_warnings_as_errors": "exit 0",
+    "lean_kernel_checker": "exit 0"
+  },
+  "mathematical_attribution": "Stijn Cambie",
+  "prepared_utc_date": "2026-09-17",
+  "repository_validation": {
+    "base_commit": "f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+    "build": "pass",
+    "check": "pass",
+    "history": "pass",
+    "links": "pass",
+    "unit_tests_passed": 22,
+    "validate": "pass"
+  },
+  "review_limits": [
+    "No independent human mathematical statement review is asserted.",
+    "No globally first formalization claim is asserted.",
+    "No full-problem solution, eligibility, award decision, recipient confirmation or payment is asserted."
+  ],
+  "schema_version": 1,
+  "scope": "Known five-eighths lower bound and complete negation of the one-half-density subquestion; not a solution of the full asymptotic problem.",
+  "source": {
+    "commit": "54a0d8edb05945100ff151f70e8dc28870a45962",
+    "files": [
+      {
+        "bytes": 1800,
+        "path": ".github/workflows/jsp-000254.yml",
+        "sha256": "03a8dad950939dd7d3478affe27f97f1a7bdf6fc9223e913f29c186e14f2db8b"
+      },
+      {
+        "bytes": 551,
+        "path": "projects/jsp-000254/Audit.lean",
+        "sha256": "f684f22fb54ea16509965f3891e27f09ebdcb4e7f95b026c0b4d22558bc9abd8"
+      },
+      {
+        "bytes": 7955,
+        "path": "projects/jsp-000254/JSP000254.lean",
+        "sha256": "024aefa69b3e18545972c1038a2306b8939ee922b54e6e07ad504949f12e13c6"
+      },
+      {
+        "bytes": 11357,
+        "path": "projects/jsp-000254/LICENSE.LEAN",
+        "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+      },
+      {
+        "bytes": 3595,
+        "path": "projects/jsp-000254/README.md",
+        "sha256": "1663e4a62a52d43f5b3b9c0e8430a64b89d36a5cd827f44f8f7b731bc3f42a39"
+      },
+      {
+        "bytes": 3506,
+        "path": "projects/jsp-000254/lake-manifest.json",
+        "sha256": "9f0e2d67094def273d49feb49aef6438c2bbd16a42c607ae344b011667f29c31"
+      },
+      {
+        "bytes": 231,
+        "path": "projects/jsp-000254/lakefile.lean",
+        "sha256": "3fffdc93ec25697bbe1215574409c97465c3f9a299ed51463f48d8fc04600c37"
+      },
+      {
+        "bytes": 25,
+        "path": "projects/jsp-000254/lean-toolchain",
+        "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632"
+      },
+      {
+        "bytes": 1507,
+        "path": "projects/jsp-000254/scripts/verify.sh",
+        "sha256": "88002ac5e5b135995b3967588fc0e489f7ab7d88a1c8113da5d3f0d7cc2b376b"
+      },
+      {
+        "bytes": 2132,
+        "path": "projects/jsp-000254/scripts/verify_nanoda.sh",
+        "sha256": "5656216f961d6282db65a56adf4c97753e57b8808d2437046568914ff599ef5b"
+      }
+    ],
+    "project_path": "projects/jsp-000254",
+    "repository": "https://github.com/ketianzhang1-lang/jsp-000301-lean"
+  },
+  "submitting_account": "ketianzhang1-lang",
+  "toolchain": "leanprover/lean4:v4.34.0",
+  "upstream_statement": {
+    "commit": "40e7c98697de6f66b8cbdbf641749ab39ed9c152",
+    "declarations": [
+      "Erdos302.erdos_302.variants.lower_five_eighths",
+      "Erdos302.erdos_302.parts.ii"
+    ],
+    "path": "FormalConjectures/ErdosProblems/302.lean",
+    "repository": "https://github.com/google-deepmind/formal-conjectures",
+    "status_at_snapshot": "Both theorem bodies contain sorry. Only their definitions and types are reused; the upstream admitted file is not imported."
+  }
+}
