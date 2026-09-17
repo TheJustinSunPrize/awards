@@ -1,0 +1,14 @@
+{
+    "checkedAt":  "2026-09-17T16:07:10.3311428+08:00",
+    "buildExitCode":  0,
+    "auditExitCode":  0,
+    "replayExitCode":  0,
+    "auditedDeclarations":  10,
+    "replayedModules":  [
+                            "Cerny"
+                        ],
+    "leanVersion":  "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "mathlibRevision":  "0df444a360eaa60ab8c11dca51a86af692955474",
+    "leanNumThreads":  1,
+    "trustBoundary":  "Official Lean elaborator and same-kernel leanchecker replay of local Cerny module. Imported Mathlib/package caches are trusted. No independent checker implementation or fresh replay of every import; no network isolation."
+}
