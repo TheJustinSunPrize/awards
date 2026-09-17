@@ -15,10 +15,11 @@ def main():
     commands = [
         ["lake", "env", "lean", "--version"],
         ["git", "-C", ".lake/packages/mathlib", "rev-parse", "HEAD"],
-        ["lake", "build", "WangExamples", "Audit"],
+        ["lake", "build", "WangExamples", "Inheritance", "Audit"],
         ["lake", "env", "lean", "-j1", "-M4096", "WangExamples.lean"],
+        ["lake", "env", "lean", "-j1", "-M4096", "Inheritance.lean"],
         ["lake", "env", "lean", "-j1", "-M4096", "Audit.lean"],
-        ["lake", "env", "leanchecker", "WangExamples", "Audit"],
+        ["lake", "env", "leanchecker", "WangExamples", "Inheritance", "Audit"],
         [sys.executable, "check_arithmetic.py"],
     ]
     log = []
@@ -37,7 +38,7 @@ def main():
             raise SystemExit("Unexpected Lean version")
         if index == 1 and result.stdout.strip() != EXPECTED_MATHLIB:
             raise SystemExit("Unexpected Mathlib revision")
-        if index in (3, 4) and ("sorryAx" in output or "Lean.ofReduceBool" in output):
+        if index in (3, 4, 5) and ("sorryAx" in output or "Lean.ofReduceBool" in output):
             raise SystemExit("Unexpected trusted dependency in axiom audit")
     print("All local checks passed. Designated independent review remains pending.")
 

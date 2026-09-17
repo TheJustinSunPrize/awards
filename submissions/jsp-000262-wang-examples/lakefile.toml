@@ -1,6 +1,6 @@
 name = "jsp262_wang_examples"
 version = "0.1.0"
-defaultTargets = ["WangExamples", "Audit"]
+defaultTargets = ["WangExamples", "Inheritance", "Audit"]
 
 [[require]]
 name = "mathlib"
@@ -12,3 +12,6 @@ name = "WangExamples"
 
 [[lean_lib]]
 name = "Audit"
+
+[[lean_lib]]
+name = "Inheritance"

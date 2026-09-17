@@ -9,15 +9,23 @@ $ git -C .lake/packages/mathlib rev-parse HEAD
 5ed2965256430c3649e86755f9576b54eca72435
 exit_code=0
 
-$ lake build WangExamples Audit
-ℹ [1681/1684] Built WangExamples (10s)
+$ lake build WangExamples Inheritance Audit
+ℹ [1681/1686] Replayed WangExamples
 info: WangExamples.lean:119:0: 'JSP262.prime_P10' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: WangExamples.lean:120:0: 'JSP262.wang_examples' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [1683/1684] Replayed Audit
+ℹ [1683/1686] Replayed Inheritance
+info: Inheritance.lean:113:0: 'JSP262.inheritance_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Inheritance.lean:114:0: 'JSP262.complete_inheritance_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Inheritance.lean:115:0: 'JSP262.one_prime_inheritance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Inheritance.lean:116:0: 'JSP262.two_prime_inheritance_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1685/1686] Built Audit (7.8s)
 info: Audit.lean:33:0: 'JSP262.prime_P10' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: Audit.lean:34:0: 'audited_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: Audit.lean:35:0: 'audited_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
-Build completed successfully (1684 jobs).
+info: Audit.lean:48:0: 'audited_inheritance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:49:0: 'JSP262.one_prime_inheritance_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:50:0: 'JSP262.two_prime_inheritance_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1686 jobs).
 exit_code=0
 
 $ lake env lean -j1 -M4096 WangExamples.lean
@@ -25,13 +33,23 @@ $ lake env lean -j1 -M4096 WangExamples.lean
 'JSP262.wang_examples' depends on axioms: [propext, Classical.choice, Quot.sound]
 exit_code=0
 
+$ lake env lean -j1 -M4096 Inheritance.lean
+'JSP262.inheritance_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP262.complete_inheritance_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP262.one_prime_inheritance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP262.two_prime_inheritance_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit_code=0
+
 $ lake env lean -j1 -M4096 Audit.lean
 'JSP262.prime_P10' depends on axioms: [propext, Classical.choice, Quot.sound]
 'audited_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
 'audited_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'audited_inheritance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP262.one_prime_inheritance_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP262.two_prime_inheritance_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 exit_code=0
 
-$ lake env leanchecker WangExamples Audit
+$ lake env leanchecker WangExamples Inheritance Audit
 
 exit_code=0
 

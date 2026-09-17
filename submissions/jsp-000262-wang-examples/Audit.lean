@@ -1,5 +1,5 @@
 module
-public import WangExamples
+public import Inheritance
 
 public section
 
@@ -33,3 +33,18 @@ theorem audited_ten :
 #print axioms JSP262.prime_P10
 #print axioms audited_nine
 #print axioms audited_ten
+
+/-- The general criterion restated without the package's named predicate. -/
+theorem audited_inheritance (K C : ℕ)
+    (hK : 2 ≤ K ∧ Squarefree K ∧ (1 : ℚ) / K +
+      ∑ p ∈ K.primeFactors, (1 : ℚ) / p = 1) :
+    (2 ≤ K * C ∧ Squarefree (K * C) ∧ (1 : ℚ) / (K * C) +
+      ∑ p ∈ (K * C).primeFactors, (1 : ℚ) / p = 1) ↔
+    0 < C ∧ Squarefree C ∧ K.Coprime C ∧
+      (1 : ℚ) / C + K * ∑ p ∈ C.primeFactors, (1 : ℚ) / p = 1 := by
+  simpa only [JSP262.PrimaryPseudoperfect, Nat.cast_mul] using
+    (JSP262.complete_inheritance_iff (C := C) hK)
+
+#print axioms audited_inheritance
+#print axioms JSP262.one_prime_inheritance_iff
+#print axioms JSP262.two_prime_inheritance_iff

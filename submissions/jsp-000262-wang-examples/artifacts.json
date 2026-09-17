@@ -21,13 +21,18 @@
     },
     {
       "path": "Audit.lean",
-      "bytes": 1537,
-      "sha256": "aad4d972c3db33a2e6e1bcc8b82d9b9632f4421e52a30c16d8a09ec3758e037b"
+      "bytes": 2254,
+      "sha256": "fe25d7d16307b989223de0cebd8f4573236fed4fbe4b9952689823a2afcc0a5b"
     },
     {
       "path": "check_arithmetic.py",
       "bytes": 1717,
       "sha256": "767d2140f47f87aec52d4e8d9b3f07191c51e00466528a67b33fa8e703ada662"
+    },
+    {
+      "path": "Inheritance.lean",
+      "bytes": 4919,
+      "sha256": "2d49fd364b234ca35eb308489604c7463bf4fcdb22145224a7143695d2d6f2ad"
     },
     {
       "path": "lake-manifest.json",
@@ -36,8 +41,8 @@
     },
     {
       "path": "lakefile.toml",
-      "bytes": 296,
-      "sha256": "56030e4dfe93338b9871fde6c45ebdc48897efed5684c3ca9a2d38e1793d1352"
+      "bytes": 346,
+      "sha256": "8d5860c924a8fa452a107e194e2fd03031409504db4034f5dc59e7693c1a2ccd"
     },
     {
       "path": "lean-toolchain",
@@ -46,18 +51,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 6210,
-      "sha256": "0bbb3cd865d160937206334d68ad1792f64ca692513194198dbeb9ecc135ed74"
+      "bytes": 7465,
+      "sha256": "76962b9ac646f6d1eae6e1ee14e185b87cc3f46893fc3c028d7b58f4d370b6e3"
     },
     {
       "path": "verification.txt",
-      "bytes": 2118,
-      "sha256": "9994922e0884d206efe9035a4088d8a8ebcb7fa4509a24c5c27e5cdfda2dbc07"
+      "bytes": 3686,
+      "sha256": "8ba1542d17e00e1fe89e5a8c7e875fcaa057be85b83007c87f43b5e816a03a8a"
     },
     {
       "path": "verify.py",
-      "bytes": 2050,
-      "sha256": "860ad0b263570970550b8492e9f1204c86cd9caf4dc954274e73a6a85957f6a6"
+      "bytes": 2153,
+      "sha256": "1e91619f59870976d9a0b0eb05caebe001de6c938a2c6703a3a805208a67f3ff"
     },
     {
       "path": "WangExamples.lean",

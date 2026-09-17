@@ -1,4 +1,4 @@
-# JSP-000262: Wang's nine- and ten-prime-factor examples
+# JSP-000262: Wang's examples and general inheritance criteria
 
 ## English
 
@@ -6,7 +6,8 @@ This submission formalizes two explicit primary pseudoperfect numbers from
 [Han Wang, *Port Fillings for Primary Pseudoperfect Numbers*, arXiv:2605.21518v1,
 18 May 2026](https://arxiv.org/abs/2605.21518v1), Sections 9-11.
 The mathematical results belong to that author. The contribution proposed here
-is the Lean formalization and reproducible verification of these finite examples.
+is the Lean formalization and reproducible verification of these finite examples
+and the general inheritance criteria in Section 5.
 
 **This does not solve the infinitude question in
 [Erdős Problem 313](https://www.erdosproblems.com/313).** It is a scoped partial-result
@@ -48,6 +49,22 @@ The problem's completion, Lean and eligibility fields are left to the maintainer
 
 ## Proof method
 
+[Inheritance.lean](Inheritance.lean) additionally proves a general necessary and
+sufficient condition for multiplying **any** primary pseudoperfect number `K`
+by **any** natural number `C`. The product is primary pseudoperfect exactly when
+`C` is positive and squarefree, coprime to `K`, and
+`1/C + K * sum (p in C.primeFactors) (1/p) = 1`.
+This includes the structural conditions in the equivalence rather than assuming
+them without checking. The case `C = 1` is included; `C = 0` is excluded by the
+proved positivity requirement.
+
+The same file proves the one-prime criterion `q = K + 1`, the two-prime criterion
+`(p - K) * (q - K) = K^2 + 1`, and the addition rule for the number of distinct
+prime factors under coprime extension. The two-prime statement requires distinct
+new primes, and subtraction there is in the integers. Mathematical attribution
+for these criteria remains with the cited source and its antecedents; their
+formalization does not establish an infinite supply of extensions.
+
 Small-prime certificates and exact integer/rational calculations are checked with
 `norm_num`. The large prime uses Mathlib's `lucas_primality`, base 3, and the
 complete prime factorization of `P10 - 1 = N9`. Modular exponentiation is proved
@@ -71,12 +88,12 @@ Use the pinned [lean-toolchain](lean-toolchain), [lakefile.toml](lakefile.toml) 
 In this directory, after installing the Lean toolchain:
 
 ```sh
-lake exe cache get Mathlib/NumberTheory/LucasPrimality.lean Mathlib/Data/Nat/Squarefree.lean Mathlib/Tactic/NormNum/Prime.lean Mathlib/Tactic/ReduceModChar.lean
+lake exe cache get Mathlib/NumberTheory/LucasPrimality.lean Mathlib/Data/Nat/Squarefree.lean Mathlib/Tactic/NormNum/Prime.lean Mathlib/Tactic/ReduceModChar.lean Mathlib/Tactic/FieldSimp.lean Mathlib/Tactic/Ring.lean Mathlib/Tactic/Linarith.lean
 python verify.py
 ```
 
 The cache command downloads dependencies. `verify.py` builds the proof and audit,
-re-elaborates both source files, invokes `leanchecker`, and runs the independent
+re-elaborates all three source files, invokes `leanchecker`, and runs the independent
 exact-arithmetic Python cross-check. It writes `verification-local.txt`, which is
 ignored by Git. Inspect local output before publishing it.
 
@@ -97,7 +114,8 @@ in history lookups. No validator or test code is changed by this submission.
 
 ## Attribution, related work and submission status
 
-Mathematical attribution: Han Wang, arXiv:2605.21518v1, Theorems 9.1, 10.1 and 11.1.
+Mathematical attribution: Han Wang, arXiv:2605.21518v1, Theorems 9.1, 10.1 and 11.1,
+Lemma 5.1 and Corollaries 5.2-5.3 (including the earlier work discussed there).
 The paper has a CC BY 4.0 license. Its text and proof scripts are not copied here;
 the mathematical data and base-3 certificate are attributed above. The Lean and
 Python files in this package were prepared with OpenAI Codex assistance.
@@ -109,8 +127,9 @@ made on the submitter's behalf.
 
 [Related PR #545](https://github.com/TheJustinSunPrize/awards/pull/545) formalizes
 the general denominator/product and uniqueness properties of Erdős 313 solutions.
-This package instead verifies the two explicit 2026 examples and their prime-factor
-counts. It neither imports nor copies that PR. A search of public issue/PR titles
+This package instead verifies the two explicit 2026 examples, their prime-factor
+counts, and general inheritance criteria. It neither imports nor copies that PR.
+A search of public issue/PR titles
 and bodies on 17 September 2026 found #545 and no matching submission for these
 two examples; this bounded search is not proof of first formalization worldwide.
 
