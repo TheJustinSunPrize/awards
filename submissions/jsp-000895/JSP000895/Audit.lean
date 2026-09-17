@@ -1,7 +1,0 @@
-import JSP000895.FiveSixUpper
-
-#print axioms Erdos1076Upper.five_mul_card_le_two_choose
-#print axioms Erdos1076Upper.five_mul_extremalNumber_five_le_two_choose
-#print axioms Erdos1076Upper.three_mul_card_le_completedPairShadow
-#print axioms Erdos1076Upper.three_mul_card_le_choose_of_five_six
-#print axioms Erdos1076Upper.not_five_free_or_not_six_free_of_choose_lt_three_mul_card

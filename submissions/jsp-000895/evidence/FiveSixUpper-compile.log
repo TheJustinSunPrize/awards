@@ -1,5 +1,0 @@
-'Erdos1076Upper.three_mul_card_le_completedPairShadow' depends on axioms: [propext, Classical.choice, Quot.sound]
-'Erdos1076Upper.three_mul_card_le_choose_of_five_six' depends on axioms: [propext, Classical.choice, Quot.sound]
-'Erdos1076Upper.not_five_free_or_not_six_free_of_choose_lt_three_mul_card' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
