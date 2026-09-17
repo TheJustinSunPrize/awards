@@ -13,17 +13,19 @@ Then the Lean theorem `Erdos700.FourPrime.four_prime_exact_cubic` proves
 
     f(P(P+a)(P+b)(P+c)) = P(P+a)(P+b).
 
-Version 5 weakens only the base-size requirement to `P >= 12c^3`, keeping
-`c >= 3b-a+1`. All four preceding declarations keep their published types as
-corollaries: `four_prime_exact_boundary`, `four_prime_exact_linear`,
-`four_prime_exact_relaxed`, and `four_prime_exact`.
-See [the cubic-size extension note](docs/cubic-size.md).
+Version 6 retains the cubic theorem and its four earlier corollaries, and
+adds a fully formal counterexample to simply deleting the gap condition's
+final +1. `Erdos700.Counterexample.zero_gap_extension_false` refutes that
+universal extension even under the older size bound P>=100c^5. The concrete
+four primalities, index range, exact gcd at that index, and strict upper
+bound for f(N) are all proved in Lean. See [the formal counterexample note](docs/counterexample-formal.md).
 
 The function and minimization range match the current formal statement of Erdős 700. No pair-exclusion statement or prime-existence theorem is assumed by the final declaration.
 
 ## Verification
 
-The complete local theorem compiled with Lean 4.33.1. A fresh standalone `lake build` rebuilt all 17 local modules successfully, with the inherited `LEAN_PATH` cleared. The final audit, run with `-DwarningAsError=true`, printed the complete theorem types and the exact definition of `f`; the new theorem and all four preceding corollaries depend only on `propext`, `Classical.choice`, and `Quot.sound`. There is no `sorryAx` or custom axiom in those dependency lists. See [the build log](verification/canonical-build.log), [the audit log](verification/canonical-audit.log), and [the build record](verification/build-record.json). The dependency pin is Mathlib `0df444a360eaa60ab8c11dca51a86af692955474` (v4.33.1).
+The complete local theorem compiled with Lean 4.33.1. A fresh standalone `lake build` rebuilt all 20 local modules successfully, with the inherited `LEAN_PATH` cleared. The final audit, run with `-DwarningAsError=true`, printed the complete theorem types and the exact definition of `f`; the five criterion declarations and six counterexample declarations are
+audited separately and use no axioms outside `propext`, `Classical.choice`, and `Quot.sound`. There is no `sorryAx` or custom axiom in those dependency lists. See [the build log](verification/canonical-build.log), [the audit log](verification/canonical-audit.log), and [the build record](verification/build-record.json). The dependency pin is Mathlib `0df444a360eaa60ab8c11dca51a86af692955474` (v4.33.1).
 
 To reproduce with the pinned Lean toolchain installed:
 
@@ -37,7 +39,7 @@ The Mathlib cache contains precompiled dependency artifacts. The local proof mod
 
 ## Scope and prior work
 
-The [mathematical note](docs/proof.md) combines the local criterion with Maynard's theorem to derive infinitely many N with f(N)/N^(3/4) tending to 1. **That infinite-family consequence, Maynard's theorem, and the asymptotic limit are not formalized in this project.** Only the displayed local four-prime theorem is the Lean submission target.
+The [mathematical note](docs/proof.md) combines the local criterion with Maynard's theorem to derive infinitely many N with f(N)/N^(3/4) tending to 1. **That infinite-family consequence, Maynard's theorem, and the asymptotic limit are not formalized in this project.** The local four-prime criterion and the explicit boundary counterexample are the Lean submission targets.
 
 The preceding three-prime / 2/3-exponent result is credited on the [problem page](https://www.erdosproblems.com/700) to GPT 5.6 Sol Pro prompted by Liam Price; [its manuscript](https://www.overleaf.com/read/pmnwkfnhhxhn#82956e) is cited explicitly. The full characterization and general logarithmic upper-bound questions remain open in this submission. No first solution of the already answered square-root infinitude question is claimed. See [the limited novelty review](docs/novelty.md).
 

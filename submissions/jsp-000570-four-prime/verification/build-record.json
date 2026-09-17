@@ -1,5 +1,5 @@
 {
-  "verifiedAtUTC": "2026-09-17T12:00:46.761662+00:00",
+  "verifiedAtUTC": "2026-09-17T12:19:28.627842+00:00",
   "lean": "4.33.1",
   "mathlibRevision": "0df444a360eaa60ab8c11dca51a86af692955474",
   "buildLocation": "fresh verification project",
@@ -76,36 +76,42 @@
   ],
   "dependencyStateUnchangedAfterBuild": true,
   "localModulesRebuilt": [
-    "Erdos700.PairA",
     "Erdos700.Lucas",
+    "Erdos700.CounterexampleLucas",
+    "Erdos700.CounterexamplePrimes",
     "Erdos700.PairBC",
     "Erdos700.Arithmetic",
+    "Erdos700.PairA",
     "Erdos700.Bounds",
-    "Erdos700.DigitSupport",
     "Erdos700.PrimeSource",
     "Erdos700.RowExpansions",
+    "Erdos700.DigitSupport",
     "Erdos700.Minimum",
     "Erdos700.ParameterBC",
     "Erdos700.ParameterDigits",
     "Erdos700.PairADigits",
     "Erdos700.IntDigitSupport",
+    "Erdos700.Counterexample",
     "Erdos700.PairPDigits",
     "Erdos700.ParameterP",
     "Erdos700.FourPrime",
     "Erdos700"
   ],
-  "localModuleCount": 17,
+  "localModuleCount": 20,
   "buildExitCode": 0,
   "auditExitCode": 0,
   "fourPrimeSourceSHA256": "aff6314ea5fe169b19bbbdbe8dc8970c4260c6b836c939125967fb084546e033",
   "minimumSourceSHA256": "4b3ebd40441faa26ad3c4cf31727318926cd0abe56d59353e136b2abb7bae481",
+  "counterexampleSourceSHA256": "b805e372901deac15f059355cefbd9070f8fec9c68ddee6d1f18207a644db10c",
+  "counterexamplePrimesSourceSHA256": "6fde684b8329216abcece02cbb5418d1f10ee0abb3441008c3324f6c61c8da1e",
+  "counterexampleLucasSourceSHA256": "7a95a15773e6afbc09ca2d509bfd0d33822880fac77a13fa11e30dbef376c5b3",
   "sourceUnchangedDuringBuild": true,
   "allCopiedSourceAndConfigurationBytesMatch": true,
   "sourceAndConfigurationFiles": [
     {
       "path": "Audit.lean",
-      "sha256": "559fdda470ada6de3c103239c5d1f0cf840626d0382fbac367fad053b9627000",
-      "bytes": 561
+      "sha256": "3cb8685e8267e39e13aef4c04fa68dc845cc8eb00f7003273bc437f248b85d67",
+      "bytes": 1295
     },
     {
       "path": "Erdos700/Arithmetic.lean",
@@ -116,6 +122,21 @@
       "path": "Erdos700/Bounds.lean",
       "sha256": "7c9b19858bee231bc14f3b1d0a1d5e9a867093d0311a978ea7c658ba19970faa",
       "bytes": 18408
+    },
+    {
+      "path": "Erdos700/Counterexample.lean",
+      "sha256": "b805e372901deac15f059355cefbd9070f8fec9c68ddee6d1f18207a644db10c",
+      "bytes": 4274
+    },
+    {
+      "path": "Erdos700/CounterexampleLucas.lean",
+      "sha256": "7a95a15773e6afbc09ca2d509bfd0d33822880fac77a13fa11e30dbef376c5b3",
+      "bytes": 3024
+    },
+    {
+      "path": "Erdos700/CounterexamplePrimes.lean",
+      "sha256": "6fde684b8329216abcece02cbb5418d1f10ee0abb3441008c3324f6c61c8da1e",
+      "bytes": 3728
     },
     {
       "path": "Erdos700/DigitSupport.lean",
@@ -189,8 +210,8 @@
     },
     {
       "path": "Erdos700.lean",
-      "sha256": "116b78d3e8d2fd1e67978cd6d1eb99310d278fe5a78c734499ec807c603463cc",
-      "bytes": 26
+      "sha256": "992af48afd355aef683442edf039b3c5492280900be92a79b96c9e662903cda6",
+      "bytes": 57
     },
     {
       "path": "lake-manifest.json",
@@ -230,6 +251,36 @@
       "Quot.sound"
     ],
     "Erdos700.FourPrime.four_prime_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Erdos700.Counterexample.four_primes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Erdos700.Counterexample.index_in_range": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Erdos700.Counterexample.gcd_at_index": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Erdos700.Counterexample.f_strict_upper_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Erdos700.Counterexample.zero_gap_counterexample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Erdos700.Counterexample.zero_gap_extension_false": [
       "propext",
       "Classical.choice",
       "Quot.sound"

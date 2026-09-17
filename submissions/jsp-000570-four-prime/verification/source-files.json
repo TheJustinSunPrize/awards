@@ -1,8 +1,8 @@
 [
   {
     "path": "Audit.lean",
-    "sha256": "559fdda470ada6de3c103239c5d1f0cf840626d0382fbac367fad053b9627000",
-    "bytes": 561
+    "sha256": "3cb8685e8267e39e13aef4c04fa68dc845cc8eb00f7003273bc437f248b85d67",
+    "bytes": 1295
   },
   {
     "path": "Erdos700/Arithmetic.lean",
@@ -13,6 +13,21 @@
     "path": "Erdos700/Bounds.lean",
     "sha256": "7c9b19858bee231bc14f3b1d0a1d5e9a867093d0311a978ea7c658ba19970faa",
     "bytes": 18408
+  },
+  {
+    "path": "Erdos700/Counterexample.lean",
+    "sha256": "b805e372901deac15f059355cefbd9070f8fec9c68ddee6d1f18207a644db10c",
+    "bytes": 4274
+  },
+  {
+    "path": "Erdos700/CounterexampleLucas.lean",
+    "sha256": "7a95a15773e6afbc09ca2d509bfd0d33822880fac77a13fa11e30dbef376c5b3",
+    "bytes": 3024
+  },
+  {
+    "path": "Erdos700/CounterexamplePrimes.lean",
+    "sha256": "6fde684b8329216abcece02cbb5418d1f10ee0abb3441008c3324f6c61c8da1e",
+    "bytes": 3728
   },
   {
     "path": "Erdos700/DigitSupport.lean",
@@ -86,8 +101,8 @@
   },
   {
     "path": "Erdos700.lean",
-    "sha256": "116b78d3e8d2fd1e67978cd6d1eb99310d278fe5a78c734499ec807c603463cc",
-    "bytes": 26
+    "sha256": "992af48afd355aef683442edf039b3c5492280900be92a79b96c9e662903cda6",
+    "bytes": 57
   },
   {
     "path": "lake-manifest.json",

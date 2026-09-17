@@ -1,146 +1,179 @@
-# Internal semantic audit of the cubic-size four-prime criterion
+# Internal semantic audit: the four-prime theorem and its zero-gap counterexample
 
 Date: 2026-09-17. Reviewer: the separate internal audit agent.
 
-**Source-review result: the cubic threshold supplies every size estimate used by the local proof.** The new theorem keeps `c>=3b-a+1` and replaces `P>=100c^5` by `P>=12c^3`. The older four declaration names and mathematical statements are retained as corollaries. The constant 12 and the offset conditions are sufficient conditions; this review makes no optimality claim.
+**Source-review result: the new counterexample statements concern concrete natural numbers and leave no primality, digit, or auxiliary arithmetic assumption unproved.** They certify the gcd at one admissible index, derive a strict upper bound for the minimum, and refute the proposed universal zero-gap extension. The preceding five positive theorem statements are unchanged. The final fresh build, source binding, and 11-declaration axiom audit passed as recorded below.
 
-This is internal AI-assisted review, not external peer review or designated prize verification. For this revision, another internal agent changed the base-size helper and parameter wrappers; the root agent assembled the main theorem and documentation; this reviewer read the resulting sources without editing Lean. The reviewer participated in earlier versions of the project. Source meaning and final reproducible build evidence are separate parts of the review.
+This is internal AI-assisted review, not external human peer review or designated prize verification. The reviewer implemented `CounterexampleLucas.lean` and then reviewed its integration and the final counterexample statements. Another internal agent assembled `Counterexample.lean`; a third prepared the primality certificates; the root agent handled project integration and documentation. The reviewer also participated in preceding versions. These roles do not establish external independence, historical priority, organizer acceptance, or an award.
 
-## Exact statement and minimum range
+## Reviewed source snapshot
 
-`Erdos700.FourPrime.four_prime_exact_cubic` quantifies natural numbers `P,A,B,C`, assumes exactly
+The reviewed frozen source bytes have these SHA-256 digests:
 
-```text
-1 <= A, 3*A <= B, 3*B-A+1 <= C, 12*C^3 <= P,
-Prime P, Prime (P+A), Prime (P+B), Prime (P+C),
+| File | SHA-256 |
+| --- | --- |
+| `Erdos700/Counterexample.lean` | `b805e372901deac15f059355cefbd9070f8fec9c68ddee6d1f18207a644db10c` |
+| `Erdos700/CounterexamplePrimes.lean` | `6fde684b8329216abcece02cbb5418d1f10ee0abb3441008c3324f6c61c8da1e` |
+| `Erdos700/CounterexampleLucas.lean` | `7a95a15773e6afbc09ca2d509bfd0d33822880fac77a13fa11e30dbef376c5b3` |
+| `Erdos700/FourPrime.lean` | `aff6314ea5fe169b19bbbdbe8dc8970c4260c6b836c939125967fb084546e033` |
+| `Erdos700/Minimum.lean` | `4b3ebd40441faa26ad3c4cf31727318926cd0abe56d59353e136b2abb7bae481` |
+| `Audit.lean` | `3cb8685e8267e39e13aef4c04fa68dc845cc8eb00f7003273bc437f248b85d67` |
+
+The source scan found no `sorry`, `admit`, custom `axiom`, `native_decide`, `unsafe`, `extern`, or `implemented_by` declaration. The audit explicitly prints the definitions of `f`, `P`, `N`, and `k`, then the types and transitive axiom lists of all five positive and six new counterexample declarations. It does not audit only an abstract helper while omitting the final concrete result.
+
+## Exact concrete definitions
+
+`Erdos700.Counterexample` defines ordinary natural numbers:
+
+```lean
+def P : ℕ := 25480409371
+def N : ℕ := P * (P + 6) * (P + 18) * (P + 48)
+def k : ℕ := 19 * P ^ 2 * (P + 18)
 ```
 
-and concludes
+Their values are
 
 ```text
-Erdos700.f (P*(P+A)*(P+B)*(P+C)) = P*(P+A)*(P+B).
+N = 421527202027998836984769084169268008898197
+k = 314320570951028896159815520413631.
 ```
 
-There are no surrounding variables, assumed pair exclusions, prime-existence assertions, or extra size premises. The unchanged function is
+The unchanged definition of the function is
 
 ```lean
 noncomputable def f (n : ℕ) : ℕ :=
   sInf {m | ∃ k, 1 < k ∧ k ≤ n / 2 ∧ m = Nat.gcd n (n.choose k)}
 ```
 
-The theorem therefore covers every integer index `2<=k<=floor(N/2)`. It is not a conclusion about selected indices. The largest-prime index `k=P+C` is proved to lie in that range and attain the displayed value. This establishes nonemptiness before `Nat.sInf_mem` is used, so the empty-set convention is irrelevant.
+Thus the index condition is exactly `2<=k<=floor(N/2)`. No alternate function, restricted divisibility range, truncated digit predicate, or hypothetical binomial coefficient replaces the original objects.
 
-The root proves `A<=3*B` before using `Nat.cast_sub` to translate the natural expression `3*B-A+1` into the intended integer expression. Its cast of `12*C^3<=P` is exact. The ordering `0<A<B<C` follows from the offset hypotheses, yielding four distinct primes.
+## The six newly audited declarations
 
-## Reviewed source snapshot
+All names in this table are in `Erdos700.Counterexample`. None has an explicit or implicit mathematical hypothesis.
 
-The frozen source bytes reviewed have these SHA-256 digests:
-
-| Source | SHA-256 |
+| Declaration | Exact mathematical content |
 | --- | --- |
-| `Erdos700/FourPrime.lean` | `aff6314ea5fe169b19bbbdbe8dc8970c4260c6b836c939125967fb084546e033` |
-| `Erdos700/Bounds.lean` | `7c9b19858bee231bc14f3b1d0a1d5e9a867093d0311a978ea7c658ba19970faa` |
-| `Erdos700/ParameterDigits.lean` | `cf9a7e9acd301b7b91b78d5de41b0182eeffcc707e11544f1e4ddcc587351031` |
-| `Erdos700/ParameterP.lean` | `536f5c7ad7cea4961beaf6a5e762355782fe7fbb3ee633be2ce93aacadc96dbd` |
-| `Erdos700/ParameterBC.lean` | `d29e179384212f22275b75bfc431814e663708a6c51027ba09fddf685e183d5d` |
-| `Erdos700/PairADigits.lean` | `d61feb35a406f278c8c422c6dffcd6c43e2dc5f07397ffb4a983b188a68521b7` |
-| `Erdos700/PairBC.lean` | `2f24e879bb5462e032f088e8c7dab539a90612d0504db9b89a9ea584c5522be3` |
-| `Erdos700/Minimum.lean` | `4b3ebd40441faa26ad3c4cf31727318926cd0abe56d59353e136b2abb7bae481` |
+| `four_primes` | `P`, `P+6`, `P+18`, and `P+48` are prime. |
+| `index_in_range` | `1<k` and `k<=N/2`. |
+| `gcd_at_index` | `Nat.gcd N (N.choose k) = (P+6)*(P+48)`. |
+| `f_strict_upper_bound` | `f N < P*(P+6)*(P+18)`. |
+| `zero_gap_counterexample` | Bundles the offset inequalities, equality `48=3*18-6`, the old strong size bound, all four primality facts, index range, exact gcd, and strict upper bound. |
+| `zero_gap_extension_false` | Negates the universal exact-value criterion with `c>=3b-a` and `P>=100c^5`. |
 
-Ten library modules are byte-identical to version 4: `Arithmetic`, `DigitSupport`, `IntDigitSupport`, `Lucas`, `Minimum`, `PairA`, `PairBC`, `PairPDigits`, `PrimeSource`, and `RowExpansions`. The six changed library modules are the other six listed above. The aggregate library and five-root audit file were also reviewed. One comment in unchanged `PairA.lean` mentions the historical `100c^5` threshold; its abstract lemma has no such premise, and the current root and wrappers all use the stated cubic bound.
+The final negation is precisely
 
-## Why the smaller base is sufficient
-
-The unchanged offset certificates give `c>=9`. Every caller of the revised helper explicitly derives its new hypothesis `2<=c`; no call relies on the old generic assumption `1<=c`.
-
-The revised `Bounds.large_base_thresholds` proves, from `c>=2` and `P>=12c^3`,
-
-```text
-11c^3 < P, 13c^2 < P, 7c^3 < P.
+```lean
+¬ ∀ p a b c : ℕ, 1 ≤ a → 3 * a ≤ b → 3 * b - a ≤ c →
+  100 * c ^ 5 ≤ p → p.Prime → (p + a).Prime → (p + b).Prime →
+  (p + c).Prime →
+  f (p * (p + a) * (p + b) * (p + c)) = p * (p + a) * (p + b)
 ```
 
-The first and third inequalities follow from `c^3>0`. For the second, the proof uses `2c^2<=c^3` and `c^2>0`, so `13c^2<24c^2<=12c^3<=P`. This is why strengthening the helper's lower bound on `c` is necessary; the middle estimate would be false for `c=1,P=12`. The actual parameter range is safely above that exceptional value.
+This refutes the proposed change even with the earlier, stronger size premise. The proof specializes the universal assertion at `p=P,a=6,b=18,c=48`; all its premises are proved directly. Natural subtraction is harmless here: the concrete `3*18-6` is 48, with no truncation. The counterexample does not satisfy the maintained positive theorem's `3b-a+1<=c` condition, so it does not contradict any of the existing positive theorems.
 
-All 33 offset-only polynomial certificates are unchanged: 32 are strict inequalities and one is the nonnegative inequality `R-1>=0`, where `R=a+c-3b`. Their substitution remains `a=1+x`, `b=3a+y`, `c=3b-a+1+z` for nonnegative `x,y,z`. The special certificate `R-1=z` allows equality. Generated identities are proved by Lean tactics and are not accepted on the authority of the generation script.
+## Concrete primality certificates
 
-The active size dependencies were checked as follows:
+`CounterexamplePrimes.lean` invokes Mathlib's `lucas_primality`, a sufficient primality criterion with no primality premise on its target. For each target `m`, the file proves `g^(m-1)=1` in `ZMod m` and `g^((m-1)/r)!=1` for every prime `r` dividing `m-1`. The factorizations and witnesses are:
 
-| Consumer | Required estimates supplied by the cubic bound |
-| --- | --- |
-| `ParameterDigits` | Fixed low digits below `c^3<P`, fixed middle digits below `3c^2<P`, fixed high digits below `3c<P`; residual digits legal by positivity of the quantities subtracted. |
-| `ParameterP` | With `0<=d<=c`, `S<=3c`, `T<=3c^2`, and `Z,C<c^3`, its cubic sums are below `4c^3`; its middle-coefficient sums are below `9c^2`. The existing stronger helper margins discharge all six explicit size premises. |
-| `PairADigits` wrappers | With `S1<=2c`, `T1<=c^2`, and `0<=d<=c`, `2d^2*S1<=4c^3`, `C+d*T1<2c^3`, and `3d*S1+U-1<9c^2`. The same helper margins discharge every local size premise. |
-| `ParameterBC` | The base is `q=P+c`; the wrapper derives `q>10c^3` from `P>11c^3`. All remaining premises depend only on the unchanged offset certificates and actual source digit bounds. |
-| Uniform source length | Since `c<=c^3`, the new bound gives `10c<=P`. The existing fourth-power lemma gives `N<=(P+c)^4<2P^4`, and every relevant `k` then satisfies `k/x<x^3` for each base `x>=P`. |
-
-The last estimate ensures that the three source digits exhaust the quotient; it continues to cover the endpoint `k=floor(N/2)`. No quintic bound is retained in an active hypothesis of the new proof. The four old corollaries intentionally retain their original quintic assumptions.
-
-## Digit interpretation and all six exclusions
-
-The normalized rows are the exact quotient expansions of `N` at each prime base. In particular, at `P+b` the high digit is `R-1`, which may be zero. The unchanged integer interfaces connect actual division and remainder to digit bounds. The expressions `(k/q)%q`, `(k/q/q)%q`, and `(k/q/q/q)%q` are the low, middle, and high digits of `k/q`.
-
-Lucas supplies source divisibility and digitwise domination when a prime is absent from a binomial coefficient. The second prime divides the source quotient because it is coprime to the first source factor; that coprimality step is explicit in `PrimeSource`, not assumed from divisibility of the original index alone.
-
-The root supplies every pair:
-
-| Missing pair | Source to target | Exclusion |
+| Target `m` | Complete factorization of `m-1` | Witness `g` |
 | --- | --- | --- |
-| `P,P+A` | `P+A` to `P` | `Arithmetic.pairAP_zero_digits` |
-| `P,P+B` | `P` to `P+B` | `ParameterP.pairPB_global_digits` |
-| `P,P+C` | `P` to `P+C` | `ParameterP.pairPC_global_digits` |
-| `P+A,P+B` | `P+A` to `P+B` | `PairADigits.pairAB_global_digits` |
-| `P+A,P+C` | `P+A` to `P+C` | `PairADigits.pairAC_global_digits` |
-| `P+B,P+C` | `P+B` to `P+C` | `ParameterBC.pairBC_actual_digits` |
+| `25480409371` | `2*3*5*13*17*3843199` | `7` |
+| `25480409377` | `2^5*3*523*507497` | `13` |
+| `25480409389` | `2^2*3*7*563*538789` | `2` |
+| `25480409419` | `2*3^2*37*263*145471` | `2` |
 
-The `PairBC` core is unchanged. It uses `L=b(b-a)<=c^2`, not an obsolete quadratic-gap assumption. For `d=c-b`, all carry branches are covered: positive `H` violates the middle digit; zero `H` with negative constant violates the low digit; zero `H` with nonnegative constant either violates the middle digit or forces `k=0`. The high source digit `u=0`, including the possible integer boundary `R=1`, is covered.
+Each smaller prime factor has a proved `Nat.Prime` declaration, discharged by `norm_num`. The product equalities are exact arithmetic. Prime divisibility of a product reduces every possible prime divisor to one of the listed factors, including the repeated factors of 2 and 3. `reduce_mod_char` produces proofs of the modular-power identities, and ordinary `decide` closes the resulting finite inequalities. This is not `native_decide`, a Python primality flag, a probable-prime test, or an unproved assertion that the factorization is complete.
 
-The remaining pair cores and the row identities are unchanged. Once the six pairs are excluded, `NoTwoMissing` implies `ThreeOfFour`. Distinct-prime divisibility gives the gcd lower bound, and the independent largest-prime witness gives equality over the full minimum range.
+The main file derives `four_primes` from those four unconditional declarations after reducing the concrete additions. No target prime is assumed in order to prove itself. The modular criterion is distinct from the binomial Lucas theorem used next.
 
-## Compatibility with the four previous statements
+## Converse Lucas interface
 
-`four_prime_exact_boundary` retains `100*C^5<=P` and exactly its previous offset condition. It proves `C>=1`, then
+The new helper `CounterexampleLucas.not_dvd_choose_of_digits_lt` takes a prime `p`, bounds `n<p^d` and `k<p^d`, and exactly `d` digit comparisons
 
 ```text
-12*C^3 <= 100*C^3 <= 100*C^5 <= P,
+∀ i, i<d → k/p^i % p <= n/p^i % p.
 ```
 
-using monotonicity of natural powers for the middle inequality. It invokes the cubic theorem only after deriving the new bound.
+It concludes `p` does not divide `n.choose k`. This is a general proved implication, not a certificate axiom. A short induction proves that a prime larger than `n` cannot divide `n!`. The identity `choose(n,k)*k!*(n-k)!=n!` then shows that a binomial formed from ordered legal digits is nonzero modulo the prime. Mathlib's one-digit Lucas congruence and the prime product-divisibility rule reattach one digit at a time. Induction on `d` finishes the result; the power bounds prove the tail vanishes. At `d=0`, both input integers are zero and `choose(0,0)=1`.
 
-`four_prime_exact_linear`, `four_prime_exact_relaxed`, and `four_prime_exact` retain respectively `3*B+1<=C`, `B*(B-A)+B+1<=C`, and `10*B^2<=C`, each with its old `100*C^5<=P` assumption. They use the same valid offset implications as before. Their declaration names and types are preserved. The new theorem does not call the old corollaries, so their stronger premises are not used circularly.
+There is no evaluation of a huge factorial or binomial coefficient in this construction. The use of factorials is a universal symbolic argument. The helper imports the proved Mathlib Lucas theorem, not an upstream open-conjecture declaration.
 
-## Zero-boundary counterexample and limits
+## Exact digits and divisibility pattern
 
-An exact, separate computation disproves the proposed further replacement `c>=3b-a`. Take `a=6,b=18,c=48,P=25480409371` and the four primes `P,P+6,P+18,P+48`. This `P` exceeds even `100*48^5`. For `k=19P^2(P+18)`, exact Lucas digits give
+The main counterexample applies the finite converse with `d=5` at base `P` and `d=4` at base `q=P+18`. `interval_cases` exhausts the finite digit positions and `norm_num` proves each concrete quotient, remainder comparison, and power bound. Both original numbers have units digit zero at these two bases. The quotient lists, in increasing place value and padded with final zeroes where useful, are
+
+| Base | Digits of `N/base` | Digits of `k/base` |
+| --- | --- | --- |
+| `P` | `[5184,1260,72,1]` | `[0,342,19,0]` |
+| `q=P+18` | `[6480,q-684,q-1,0]` | `[6156,q-684,18,0]` |
+
+The exact comparisons prove that neither `P` nor `P+18` divides `N.choose k`.
+
+For the other two primes, the existing forward Lucas lemma states that nondivisibility would require the units digit of `k` to be at most that of `N`. The latter is zero, but the actual residues are
 
 ```text
-gcd(N, choose(N,k)) = (P+6)(P+48) < P(P+6)(P+18),
-2 <= k < N/2.
+k mod (P+6) = 8208,
+k mod (P+48) = 25479096139 = (P+48)-1313280.
 ```
 
-At base `P`, the quotient digit lists are `[5184,1260,72,1]` and `[0,342,19,0]`. At `q=P+18` they are `[6480,q-684,q-1,0]` and `[6156,q-684,18,0]`. Thus those two primes are absent. The units residues at the other bases are nonzero, so the other two primes are present. Exhaustive trial division certifies the four particular primes; the full binomial coefficient and the full minimum are not computed.
+Both are positive. The concrete arithmetic contradiction therefore proves that `P+6` and `P+48` do divide the binomial coefficient. These proofs reason about the actual `N.choose k`; they do not postulate its four-prime support.
 
-This is supporting computation and a hand-checked counterexample argument, not part of the Lean formalization. It neither refutes the maintained `c>=3b-a+1` hypothesis nor proves that the present sufficient conditions or the coefficient 12 are optimal. It does not require or claim infinitely many primes in that fixed offset pattern.
+## From the support pattern to the claimed conclusions
 
-The packaged [counterexample verifier](tools/check_counterexample.py) checks this fixed instance without a search, and records [the exact certificate](verification/counterexample.json). This review independently reran exhaustive trial division for all four numbers, reconstructed `N` and `k` from every stored digit array, checked digit legality and all violating positions, and matched the recorded checker hash. The exact gcd is obtained from Lucas' theorem and squarefreeness, not direct evaluation of `choose(N,k)`.
+Primality and the two missing factors give
 
-## Manuscript and the positive new-range example
+```text
+Coprime (P*(P+18)) (N.choose k).
+```
 
-The [proof manuscript](docs/proof.md) and [cubic-size note](docs/cubic-size.md) state the same local theorem and retain the correct distinction between the local Lean proof and the human-readable Maynard consequence. In the positive-carry branch of the last pair, the manuscript now uses the appropriate estimate `q/d>=P/c>=12c^2>7c^2`. This leaves the normalized middle digit strictly between `U-1` and `q`, exactly as required. The inherited offset identities and the allowance of the zero digit `R-1` remain valid.
+The other two primes are distinct, so their coprimality and individual divisibility give `(P+6)*(P+48) | N.choose k`. After reordering the four-factor product, `Nat.gcd_mul_of_coprime_of_dvd` proves the exact gcd. This argument controls repeated prime factors as well: the original integer is the product of these four distinct primes, and the coprime factors contribute nothing to the gcd.
 
-The new positive example `P=75011,a=2,b=6,c=18` has four primes `75011,75013,75017,75029`. It obeys `12*18^3=69984<=P<188956800=100*18^5`, so it lies outside the old size range. The two size thresholds have ratio 2700. This review independently confirmed primality by exhaustive trial division through the integer square root 273 for each number and checked the inequalities. The [portable checker](tools/check_witness.py) and [record](verification/witness.json) are supporting computation, not a Lean proof of those particular prime values or a direct enumeration of the minimum.
+The exact gcd value is
 
-The earlier extension notes are labelled historical and retain the correct old theorem statements and examples. The source hash in [the auxiliary bounds certificate](tools/bounds-certificates.json) matches the revised `Bounds.lean`; its 33 polynomial identities remain unchanged, while the separate base-threshold lemma is checked by Lean. No new historical-priority search was performed for this bounded source audit.
+```text
+(P+6)*(P+48) = 649251263089686721963,
+```
+
+strictly below
+
+```text
+P*(P+6)*(P+18) = 16543187948686502107761484559263.
+```
+
+The range theorem supplies an actual member of the set defining `f N`. `Nat.sInf_le` therefore gives `f N <= (P+6)*(P+48)`, and the strict numerical comparison gives `f_strict_upper_bound`. This step needs no enumeration of the full index range and does not claim that the displayed quadratic value is the exact minimum. The explicit witness also rules out relying on the empty-set convention.
+
+## Preserved positive results
+
+All 16 preceding internal library modules are byte-identical to version 5. Their five final declarations remain in `Erdos700.FourPrime`:
+
+- `four_prime_exact_cubic`: `a>=1`, `b>=3a`, `c>=3b-a+1`, `P>=12c^3`, and the four primes imply `f(N)=P(P+a)(P+b)`.
+- `four_prime_exact_boundary`: the same offsets with `P>=100c^5`.
+- `four_prime_exact_linear`: `c>=3b+1` with the old size bound.
+- `four_prime_exact_relaxed`: `c>=b(b-a)+b+1` with the old size bound.
+- `four_prime_exact`: `c>=10b^2` with the old size bound.
+
+The common premises in the last three rows are still `a>=1`, `b>=3a`, and primality of all four displayed integers. The old declarations are genuine corollaries, not restated assumptions. The new counterexample import does not enter their proofs.
+
+The positive proof still covers all six missing-prime pairs and every index in the minimum range. Its active cubic estimates are `11c^3<P`, `13c^2<P`, `7c^3<P`, and `10c<=P`, all following from `P>=12c^3` and the derived `c>=9`. The 33 offset certificates remain 32 strict signs and one nonnegative sign `R-1>=0`. Exact row expansions, integer/natural casts, coprimality before source division, and the product bound `N<2P^4` are unchanged. No new counterexample theorem is used to prove a positive case.
+
+## Documentation correspondence
+
+The [formal counterexample note](docs/counterexample-formal.md), [README](README.md), and [submission scope](SUBMISSION.md) distinguish the six new concrete declarations from the five retained positive criteria. They correctly state the old strong threshold in the refuted universal statement and do not assert an exact counterexample minimum. The [version-5 note](docs/cubic-size.md) is explicitly historical: its original counterexample was external computation, while version 6 supplies the separate Lean proof. The updated Python checker describes its output as supplemental and refers to the formal proof without presenting its own execution as Lean verification.
+
+The [main manuscript](docs/proof.md) retains the same positive theorem, the valid `12c^2` carry margin, and the separate human-readable Maynard consequence. Its new counterexample section links the formal treatment. The positive example `P=75011,a=2,b=6,c=18` remains a supporting Python primality check; version 6's new formal primality certificates concern the four much larger counterexample primes. These two roles are not conflated.
+
+The coefficient 12, the positive offset condition, and the negative example are not described as a globally optimal characterization. Neither official verification nor an award is inferred from local Lean checks. No additional historical-priority search was performed for this bounded semantic review.
 
 ## Verification status
 
-The complete project compiled successfully with Lean 4.33.1. A separate fresh verification project then rebuilt all 17 local modules (1609 jobs, exit 0), and its strict audit `lake env lean -DwarningAsError=true Audit.lean` also returned exit 0. The verification record is dated 2026-09-17 at 12:00:46 UTC. The printed types match the cubic theorem and all four retained corollaries; each transitive axiom list contains only `propext`, `Classical.choice`, and `Quot.sound`.
+The complete project compiled successfully with Lean 4.33.1. A separate fresh verification project then rebuilt all 20 local modules, including all three new counterexample modules (1682 jobs, exit 0). Its strict audit `lake env lean -DwarningAsError=true Audit.lean` also returned exit 0. The completed record is dated 2026-09-17 at 12:19:28 UTC.
 
-The completed evidence is the [fresh build log](verification/canonical-build.log), [strict audit log](verification/canonical-audit.log), [build record](verification/build-record.json), and [source hash list](verification/source-files.json). This review read all five printed types and axiom lists and independently matched all 21 recorded source/configuration hashes and byte counts against the current files. The reviewed root hash is the `aff6314e...46e033` digest displayed above. Every recorded dependency revision matches the manifest, all nine tracked dependency working trees are recorded clean, and their state is unchanged after the build.
+The evidence is the [fresh build log](verification/canonical-build.log), [strict audit log](verification/canonical-audit.log), [build record](verification/build-record.json), and [source hash list](verification/source-files.json). This review read all 11 printed declaration types and transitive axiom lists. In this snapshot each of the 11 lists contains exactly `propext`, `Classical.choice`, and `Quot.sound`, with no `sorryAx` or extra axiom. The printed definitions of `f`, `P`, `N`, and `k` agree with the expressions reviewed above.
 
-The fresh build cleared inherited `LEAN_PATH` and excluded the original project directory from the library search path; the local modules were rebuilt from the copied source bytes. Precompiled dependency caches were reused. This is a fresh local Lean verification, not an alternative proof checker or organizer acceptance. The evidence belongs to the cubic theorem and is not substituted from an earlier project.
+This review independently matched all 24 current source/configuration hashes and byte counts against both recorded lists. The counterexample root has the `b805e372...db10c` digest displayed above; the positive root remains unchanged. The recorded source and configuration bytes are identical before and after the fresh build. All nine dependency revisions match the pinned manifest, their tracked working trees are clean, and their state is unchanged after verification.
 
-A scan of local Lean sources found no `sorry`, `admit`, custom `axiom`, `native_decide`, `unsafe`, `extern`, or `implemented_by` declaration. The unchanged Lucas bridge uses Mathlib's proved theorem and does not import the upstream open-conjecture statement file. `Audit.lean` queries the exact definition of `f` and all five root declaration types and transitive axiom lists.
+The fresh build cleared inherited `LEAN_PATH` and excluded the original project's directory from the library search path. It rebuilt the copied local sources while reusing precompiled dependency caches. These are version-6 records for the full package, not substituted evidence from an earlier version. They provide local Lean verification, not an alternative proof checker or organizer acceptance.
 
 ## Scope
 
-Only the local conditional four-prime theorem and its four compatibility corollaries are formalized here. Maynard's theorem, the existence of infinitely many admissible prime tuples, and the asymptotic consequence remain human-readable mathematics outside the Lean development. The cubic size refinement does not change the exponent 3/4. This is partial progress on Erdős 700, not a complete solution or an official prize decision. External peer review, historical priority, recipient identity, and award eligibility are not established by these local checks.
+The formalized scope now includes both the local four-prime sufficient criterion and this explicit counterexample to deleting the gap condition's final `+1`. The external Python calculations remain optional supporting checks; they are not premises of the Lean declarations. Maynard's theorem, prime-tuple infinitude, and the asymptotic limit remain outside this Lean development. No exact value of `f` at the counterexample, globally optimal offset criterion, or optimal coefficient 12 is asserted. The work remains partial progress on Erdős 700, not a complete solution or an official prize decision.

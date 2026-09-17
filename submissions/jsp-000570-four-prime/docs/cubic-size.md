@@ -1,5 +1,8 @@
 # Version 5: a cubic base-size requirement
 
+Historical version-5 extension note. The positive theorem remains unchanged
+in version 6, which additionally [formalizes the counterexample](counterexample-formal.md).
+
 For natural P,a,b,c, assume a>=1, b>=3a, c>=3b-a+1, P>=12c^3,
 and P,P+a,P+b,P+c all prime. The theorem `four_prime_exact_cubic` proves
 
@@ -72,15 +75,17 @@ In particular f(N) is strictly smaller than the proposed value. This does
 not determine the exact minimum f(N). The full fixed-instance certificate
 uses exact trial division and Lucas digit comparisons in
 `python tools/check_counterexample.py`; see [its record](../verification/counterexample.json).
-It never constructs the enormous binomial coefficient. This counterexample
-is mathematical/computational supporting evidence and is not formalized in
-Lean in this packet. It does not contradict versions 1-5, all of which
+It never constructs the enormous binomial coefficient. In the original
+version-5 archive, this counterexample was supporting evidence outside Lean.
+Version 6 adds a separate Lean proof of all these counterexample facts.
+It does not contradict versions 1-5, all of which
 exclude that gap boundary, nor establish an optimal more general criterion.
 
 ## Scope
 
-The submitted Lean result is the local cubic-size four-prime equality and
-its four preceding corollaries. It does not raise the 3/4 exponent or solve
+The version-5 Lean result is the local cubic-size four-prime equality and
+its four preceding corollaries. Version 6 additionally formalizes the
+counterexample, without changing those five positive statements. It does not raise the 3/4 exponent or solve
 the full problem. Maynard, infinitude, and the asymptotic limit remain outside
 the formalization. Global novelty, external peer review, official verification,
 and any award are not established by this self-published evidence.

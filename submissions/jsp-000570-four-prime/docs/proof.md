@@ -1,6 +1,6 @@
 # General four-prime lemma for Erdős 700 (JSP-000570)
 
-Research manuscript, version 5, 2026-09-17. The local four-prime theorem has a Lean proof in `Erdos700/FourPrime.lean`; see the build and axiom records for its verified scope. The Maynard corollary below is a human-readable argument, not part of the Lean formalization. External peer review and historical priority remain unestablished.
+Research manuscript, version 6, 2026-09-17. The local four-prime theorem has a Lean proof in `Erdos700/FourPrime.lean`; see the build and axiom records for its verified scope. The Maynard corollary below is a human-readable argument, not part of the Lean formalization. External peer review and historical priority remain unestablished.
 
 ## Claim
 
@@ -198,3 +198,12 @@ References:
 - [Formal Conjectures #700](https://github.com/google-deepmind/formal-conjectures/blob/40e7c98697de6f66b8cbdbf641749ab39ed9c152/FormalConjectures/ErdosProblems/700.lean) for the precise minimum convention. The local project defines this function independently and does not import the conjecture file or its unfinished declarations.
 
 The mathematical exploration, proof implementation, and internal audits used OpenAI Codex. Parallel AI reviews are internal checks, not external peer review or official prize verification.
+
+## Formal boundary obstruction
+
+The separate [counterexample note](counterexample-formal.md) proves that
+replacing c>=3b-a+1 by c>=3b-a fails even under P>=100c^5. Version 6
+formalizes the four particular primalities, the valid witness index,
+the exact gcd at that index, and the strict inequality for f(N). This
+does not refute the sufficient condition proved above, calculate the exact
+counterexample minimum, or establish an optimal more general condition.

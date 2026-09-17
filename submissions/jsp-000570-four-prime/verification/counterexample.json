@@ -160,7 +160,9 @@
   "proposed_minimum_value": 16543187948686502107761484559263,
   "strictly_below_proposed_minimum": true,
   "conclusion": "The proposed extension c>=3b-a is false. f(N)<=gcd(N,choose(N,k))=(P+6)*(P+48)<P*(P+6)*(P+18).",
-  "scope": "Four primes verified by exhaustive exact trial division; exact full base digits verify the displayed gcd via Lucas. No computation of the full minimum f(N), no Lean verification, and no claim that the existing v4 theorem fails.",
+  "scope": "Four primes verified by exhaustive exact trial division; exact full base digits verify the displayed gcd via Lucas. This Python run does not compute the full minimum f(N) or perform Lean verification. A separate kernel-checked proof is supplied in Erdos700/Counterexample.lean; no maintained criterion is refuted.",
+  "formal_proof_file": "Erdos700/Counterexample.lean",
+  "formal_root": "Erdos700.Counterexample.zero_gap_counterexample",
   "script": "check_counterexample.py",
-  "script_sha256": "42ed92f466f50c455edf283396490ab7a1b9e7d0f74e714edc4c3258cfabd8b1"
+  "script_sha256": "e909c595b361b298660c8299b54e23c796760202631c28c5d8d6f0ca1c4b79d5"
 }

@@ -50,3 +50,9 @@ requirement from P>=100c^5 to P>=12c^3. The separate exact Lucas-digit
 counterexample explains why simply removing the gap condition's final +1
 fails. Neither observation establishes global novelty or an optimal joint
 parameter condition, and the 3/4 exponent remains unchanged.
+
+Version 6 supplies a Lean proof of the fixed boundary counterexample
+previously documented using exact computation. It establishes its four
+primalities and the relevant gcd and minimum inequalities without importing
+the Python result as an axiom. The positive theorem and exponent are unchanged;
+formal verification does not itself establish historical priority or an award.

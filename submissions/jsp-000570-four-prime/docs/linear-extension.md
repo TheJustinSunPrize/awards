@@ -1,7 +1,6 @@
 # Version 3: a linear separation criterion
 
-Historical version-3 note. Its theorem remains a corollary of the [version-4 criterion](boundary-extension.md) and the current
-[version-5 criterion](cubic-size.md). The example and explanation
+Historical version-3 note. Its theorem remains a corollary of the [version-4 criterion](boundary-extension.md) and the [version-5 criterion](cubic-size.md). The example and explanation
 below describe the preceding proof, whose archive remains unchanged.
 
 For natural P,a,b,c, assume a>=1, b>=3a, c>=3b+1, P>=100c^5, and

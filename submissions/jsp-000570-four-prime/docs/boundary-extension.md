@@ -1,7 +1,7 @@
 # Version 4: the offset-dependent separation boundary
 
 Historical version-4 note. Its theorem is retained as a corollary of the
-current [version-5 criterion](cubic-size.md). The size bound and example
+[version-5 criterion](cubic-size.md). The size bound and example
 below describe the unchanged preceding release.
 
 For natural P,a,b,c, assume a>=1, b>=3a, c>=3b-a+1, P>=100c^5,

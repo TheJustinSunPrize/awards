@@ -4,7 +4,8 @@ Run: python check_counterexample.py
 Only Python's standard library is used. The four fixed integers are verified
 prime by exhaustive trial division.
 The gcd at the displayed index is derived via exact Lucas digit comparisons,
-not by constructing the enormous binomial coefficient. This is not a Lean proof.
+not by constructing the enormous binomial coefficient. This script is a
+supplementary check; the separate Lean development proves these same facts.
 """
 from hashlib import sha256
 from math import isqrt, prod
@@ -77,7 +78,9 @@ def main():
         "proposed_minimum_value":proposed_minimum,
         "strictly_below_proposed_minimum":True,
         "conclusion":"The proposed extension c>=3b-a is false. f(N)<=gcd(N,choose(N,k))=(P+6)*(P+48)<P*(P+6)*(P+18).",
-        "scope":"Four primes verified by exhaustive exact trial division; exact full base digits verify the displayed gcd via Lucas. No computation of the full minimum f(N), no Lean verification, and no claim that the existing v4 theorem fails.",
+        "scope":"Four primes verified by exhaustive exact trial division; exact full base digits verify the displayed gcd via Lucas. This Python run does not compute the full minimum f(N) or perform Lean verification. A separate kernel-checked proof is supplied in Erdos700/Counterexample.lean; no maintained criterion is refuted.",
+        "formal_proof_file":"Erdos700/Counterexample.lean",
+        "formal_root":"Erdos700.Counterexample.zero_gap_counterexample",
         "script":"check_counterexample.py",
         "script_sha256":sha256(Path(__file__).read_bytes()).hexdigest(),
     }

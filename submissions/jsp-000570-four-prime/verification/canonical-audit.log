@@ -23,3 +23,53 @@ Erdos700.FourPrime.four_prime_exact (P A B C : ℕ) (hA : 1 ≤ A) (hB : 3 * A �
   (hPsize : 100 * C ^ 5 ≤ P) (hP : Nat.Prime P) (hPA : Nat.Prime (P + A)) (hPB : Nat.Prime (P + B))
   (hPC : Nat.Prime (P + C)) : Erdos700.f (P * (P + A) * (P + B) * (P + C)) = P * (P + A) * (P + B)
 'Erdos700.FourPrime.four_prime_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+def Erdos700.Counterexample.P : ℕ :=
+25480409371
+def Erdos700.Counterexample.N : ℕ :=
+Erdos700.Counterexample.P * (Erdos700.Counterexample.P + 6) * (Erdos700.Counterexample.P + 18) *
+  (Erdos700.Counterexample.P + 48)
+def Erdos700.Counterexample.k : ℕ :=
+19 * Erdos700.Counterexample.P ^ 2 * (Erdos700.Counterexample.P + 18)
+Erdos700.Counterexample.four_primes :
+  Nat.Prime Erdos700.Counterexample.P ∧
+    Nat.Prime (Erdos700.Counterexample.P + 6) ∧
+      Nat.Prime (Erdos700.Counterexample.P + 18) ∧ Nat.Prime (Erdos700.Counterexample.P + 48)
+'Erdos700.Counterexample.four_primes' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos700.Counterexample.index_in_range :
+  1 < Erdos700.Counterexample.k ∧ Erdos700.Counterexample.k ≤ Erdos700.Counterexample.N / 2
+'Erdos700.Counterexample.index_in_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos700.Counterexample.gcd_at_index :
+  Erdos700.Counterexample.N.gcd (Erdos700.Counterexample.N.choose Erdos700.Counterexample.k) =
+    (Erdos700.Counterexample.P + 6) * (Erdos700.Counterexample.P + 48)
+'Erdos700.Counterexample.gcd_at_index' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos700.Counterexample.f_strict_upper_bound :
+  Erdos700.f Erdos700.Counterexample.N <
+    Erdos700.Counterexample.P * (Erdos700.Counterexample.P + 6) * (Erdos700.Counterexample.P + 18)
+'Erdos700.Counterexample.f_strict_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos700.Counterexample.zero_gap_counterexample :
+  1 ≤ 6 ∧
+    3 * 6 ≤ 18 ∧
+      48 = 3 * 18 - 6 ∧
+        100 * 48 ^ 5 ≤ Erdos700.Counterexample.P ∧
+          Nat.Prime Erdos700.Counterexample.P ∧
+            Nat.Prime (Erdos700.Counterexample.P + 6) ∧
+              Nat.Prime (Erdos700.Counterexample.P + 18) ∧
+                Nat.Prime (Erdos700.Counterexample.P + 48) ∧
+                  1 < Erdos700.Counterexample.k ∧
+                    Erdos700.Counterexample.k ≤ Erdos700.Counterexample.N / 2 ∧
+                      Erdos700.Counterexample.N.gcd (Erdos700.Counterexample.N.choose Erdos700.Counterexample.k) =
+                          (Erdos700.Counterexample.P + 6) * (Erdos700.Counterexample.P + 48) ∧
+                        Erdos700.f Erdos700.Counterexample.N <
+                          Erdos700.Counterexample.P * (Erdos700.Counterexample.P + 6) * (Erdos700.Counterexample.P + 18)
+'Erdos700.Counterexample.zero_gap_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos700.Counterexample.zero_gap_extension_false :
+  ¬∀ (p a b c : ℕ),
+      1 ≤ a →
+        3 * a ≤ b →
+          3 * b - a ≤ c →
+            100 * c ^ 5 ≤ p →
+              Nat.Prime p →
+                Nat.Prime (p + a) →
+                  Nat.Prime (p + b) →
+                    Nat.Prime (p + c) → Erdos700.f (p * (p + a) * (p + b) * (p + c)) = p * (p + a) * (p + b)
+'Erdos700.Counterexample.zero_gap_extension_false' depends on axioms: [propext, Classical.choice, Quot.sound]

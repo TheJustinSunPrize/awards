@@ -2,7 +2,7 @@
 
 This packet requests review of a new four-prime sufficient condition as partial progress under section 4.2 of the [published selection rules](https://www.hejustinsun.com/prize/rules). The exact Lean theorem is `Erdos700.FourPrime.four_prime_exact_cubic`; its full type, the definition of `f`, and its transitive axiom list are in [the audit log](verification/canonical-audit.log).
 
-The preceding three-prime / exponent-2/3 result and its Lucas–Maynard strategy are credited in [the mathematical note](docs/proof.md). The contribution proposed for Lean review is the **local four-prime criterion**. The separate infinite-family / exponent-3/4 argument uses Maynard and is human-readable mathematical context, not a formally verified theorem in this packet. No first solution of the already answered square-root infinitude question is claimed.
+The preceding three-prime / exponent-2/3 result and its Lucas–Maynard strategy are credited in [the mathematical note](docs/proof.md). The contributions proposed for Lean review are the **local four-prime criterion** and the **explicit counterexample to the zero-gap extension**. The separate infinite-family / exponent-3/4 argument uses Maynard and is human-readable mathematical context, not a formally verified theorem in this packet. No first solution of the already answered square-root infinitude question is claimed.
 
 The local proof was rebuilt from source with the pinned toolchain and dependency manifest. Only `propext`, `Classical.choice`, and `Quot.sound` occur in the root theorem's axiom list. Prebuilt Mathlib dependency caches were reused; this is not a network-isolated run or an independent alternative proof checker. The internal AI-assisted semantic audit is not external peer review or designated organizer verification.
 
@@ -12,4 +12,9 @@ Recipient attribution remains `RECIPIENT-JSP-000570-A`, pending confirmation. No
 
 The packet has its own Apache-2.0 [license](LICENSE), preserving the source attribution in `Minimum.lean`. It does not redistribute the predecessor's manuscript, Lean, or Mathlib.
 
-Version 5 keeps c>=3b-a+1 and weakens the size condition to P>=12c^3. All four preceding criteria remain theorems. It does not raise the 3/4 exponent or settle the original characterization and upper-bound questions. See [the cubic-size extension note](docs/cubic-size.md).
+Version 6 keeps the version-5 criterion and all four preceding theorem
+statements. It formalizes the concrete primalities, Lucas digit argument,
+exact gcd at one admissible index, strict f(N) upper bound, and refutation
+of the proposed c>=3b-a extension. It does not raise the 3/4 exponent, compute
+the exact f(N) in that counterexample, or settle the full problem. See
+[the formal counterexample note](docs/counterexample-formal.md).
