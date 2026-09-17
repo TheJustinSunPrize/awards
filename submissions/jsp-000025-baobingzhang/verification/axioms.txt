@@ -1,0 +1,16 @@
+'LehmerMahlerMeasureProblem.schinzel_real_rooted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LehmerMahlerMeasureProblem.schinzel_real_rooted'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LehmerMahlerMeasureProblem.schinzel_totally_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LehmerMahlerMeasureProblem.schinzel_real_rooted_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LehmerMahlerMeasureProblem.mahlerMeasureZ_X_sq_sub_X_sub_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.real_rooted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.real_rooted_exists' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LehmerMahlerMeasureProblem.mahlerMeasure_eq_polynomial_mahlerMeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
