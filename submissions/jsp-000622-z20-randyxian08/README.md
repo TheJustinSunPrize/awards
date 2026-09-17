@@ -66,7 +66,15 @@ bytes: 155402683
 SHA-256: 87a311890369469fb8b7a8fdf59214e64801fb202caa116d17b4d9c6c2d3aada
 ```
 
-The artifact has finite GitHub Actions retention. It is not a permanent external archive; archival remains an explicit outstanding verification requirement.
+The artifact has finite GitHub Actions retention. The [complete source release](https://github.com/randyxian08/jsp000958-lean/releases/tag/jsp000622-z20-verified-20260917) additionally preserves the generated source and closed-stage evidence outside the expiring artifact. Independent permanent archival remains outstanding.
+
+Release assets:
+
+- [Complete source ZIP](https://github.com/randyxian08/jsp000958-lean/releases/download/jsp000622-z20-verified-20260917/JSP000622_z20_complete_source_reissued.zip): 1,650,970 bytes; SHA-256 `6dcfd78f08d0440c2b032bafca10df2741224d8b3a13261725e8c38b19300b58`.
+- [Source correspondence manifest](https://github.com/randyxian08/jsp000958-lean/releases/download/jsp000622-z20-verified-20260917/source-correspondence.json): all 971 packaged files under `JSP000622/` match the generated CI project byte for byte. The eight included closed-stage evidence files also match the downloaded artifact.
+- [Asset hashes](https://github.com/randyxian08/jsp000958-lean/releases/download/jsp000622-z20-verified-20260917/SHA256SUMS).
+
+The packaged `bash verify.sh` entry builds the supplied finite proof source without requiring SAT regeneration. Its wrapper is a distribution addition; the successful CI record verifies the matching proof modules, not a fresh extraction of this ZIP. A fresh kernel replay is optional via `bash verify.sh --fresh` and is not claimed by the closed-stage receipt.
 
 ## Proof organization and finite coverage
 
@@ -98,7 +106,7 @@ git checkout 3773abab463d0c58d92bdf200d5397a826385988
 bash Z20/reproduce_complete.sh
 ```
 
-The script reconstructs finite data, compiles the complete theorem, runs the exact axiom audit, and requests a fresh kernel replay. The recorded CI checks used dependency caches; a cold, offline rebuild of the compiler and all dependencies is not claimed. The closed-theorem receipt explicitly excludes fresh replay from that stage. A separate `leanchecker --fresh JSP000622.Main` run was requested in run 35173223882, and its outcome must be assessed from its separate receipt rather than inferred from the successful build.
+The script reconstructs finite data, compiles the complete theorem, runs the exact axiom audit, and requests a fresh kernel replay. The recorded CI checks used dependency caches; a cold, offline rebuild of the compiler and all dependencies is not claimed. The closed-theorem receipt explicitly excludes fresh replay from that stage. The earlier workflow 35172668078 passed the six classification shards but failed the two core shards; workflow 35173223882 passed both repaired core shards but its join/replay job failed. Neither earlier workflow is presented as wholly successful, and neither establishes a successful fresh replay. The later dedicated closed-stage run 35174067645 succeeded. These recorded compilation and axiom checks must not be described as a successful fresh replay or an independent implementation of the kernel.
 
 The Python and C++ generators, NetworkX isomorphism search, SAT solver and file hashes are not mathematical axioms. Lean reconstructs/checks the resulting proof terms and all graph-semantic side conditions. No external solver's answer is accepted as an unexplained proof premise.
 
@@ -117,3 +125,9 @@ The new contribution presented for assessment is this proof-producing classifica
 Please assess statement correspondence, the complete proof artifacts, contribution attribution, reproducibility, the applicable safe toolchain version, permanent archival and the proper intake location for this twenty-vertex extension. Independent substantive verification, recipient confirmation and an organizer decision remain pending.
 
 No catalog flags, candidate records, award records, recipient records, decisions or generated repository data are changed by this evidence update. A successful proof build is not an award announcement or a payment authorization.
+
+## Formalizer nomination and chronology
+
+Please consider this completed formalization for formalizer eligibility and recipient review, with provisional ID `RECIPIENT-JSP-000622-A`. The submitting account authorizes public attribution to `randyxian08`; organizer confirmation remains pending. This is a self-submission with a direct interest in any award outcome. Existing mathematical, source and certificate attribution above remains applicable.
+
+PR #41 was opened on 2026-09-16 at 11:48:26 UTC as a planning-only draft. Successful closed-theorem verification was recorded on 2026-09-17 at 02:23:59 UTC, and the evidence index was added in commit `782ca4291b62818d113181f862d081c2d8189b49` at 02:31:13 UTC. This update retains that chronology and requests substantive review of the now-complete submission. The initial planning date is not represented as the date a complete proof was submitted. Related PR #332 opened on 2026-09-17 at 00:33:38 UTC; attribution and any priority assessment are left to the organizers.
