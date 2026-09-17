@@ -1,0 +1,99 @@
+{
+  "manifest": "work/mathlib/lake-manifest.json",
+  "manifest_sha256": "56f0aa1ff2fe546d0356da6f12f15c1242a3a6d6199315ec9860be9c31209453",
+  "manifest_unchanged": true,
+  "git_version": "git version 2.51.2.windows.1",
+  "packages": [
+    {
+      "name": "aesop",
+      "url": "https://github.com/leanprover-community/aesop",
+      "expected_rev": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "actual_head": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "path": "<WORKSPACE>\\work\\mathlib\\.lake\\packages\\aesop",
+      "existed_before": false,
+      "clean": true,
+      "checked_at_utc": "2026-09-16T16:04:37.6383106Z"
+    },
+    {
+      "name": "batteries",
+      "url": "https://github.com/leanprover-community/batteries",
+      "expected_rev": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "actual_head": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "path": "<WORKSPACE>\\work\\mathlib\\.lake\\packages\\batteries",
+      "existed_before": false,
+      "clean": true,
+      "checked_at_utc": "2026-09-16T16:04:55.1119936Z"
+    },
+    {
+      "name": "Cli",
+      "url": "https://github.com/leanprover/lean4-cli",
+      "expected_rev": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "actual_head": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "path": "<WORKSPACE>\\work\\mathlib\\.lake\\packages\\Cli",
+      "existed_before": false,
+      "clean": true,
+      "checked_at_utc": "2026-09-16T16:04:28.471384Z"
+    },
+    {
+      "name": "importGraph",
+      "url": "https://github.com/leanprover-community/import-graph",
+      "expected_rev": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "actual_head": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "path": "<WORKSPACE>\\work\\mathlib\\.lake\\packages\\importGraph",
+      "existed_before": false,
+      "clean": true,
+      "checked_at_utc": "2026-09-16T16:04:36.1247688Z"
+    },
+    {
+      "name": "LeanSearchClient",
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "expected_rev": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "actual_head": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "path": "<WORKSPACE>\\work\\mathlib\\.lake\\packages\\LeanSearchClient",
+      "existed_before": false,
+      "clean": true,
+      "checked_at_utc": "2026-09-16T16:04:28.9560581Z"
+    },
+    {
+      "name": "plausible",
+      "url": "https://github.com/leanprover-community/plausible",
+      "expected_rev": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "actual_head": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "path": "<WORKSPACE>\\work\\mathlib\\.lake\\packages\\plausible",
+      "existed_before": false,
+      "clean": true,
+      "checked_at_utc": "2026-09-16T16:04:37.5771248Z"
+    },
+    {
+      "name": "proofwidgets",
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "expected_rev": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "actual_head": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "path": "<WORKSPACE>\\work\\mathlib\\.lake\\packages\\proofwidgets",
+      "existed_before": false,
+      "clean": true,
+      "checked_at_utc": "2026-09-16T16:04:51.6264566Z"
+    },
+    {
+      "name": "Qq",
+      "url": "https://github.com/leanprover-community/quote4",
+      "expected_rev": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "actual_head": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "path": "<WORKSPACE>\\work\\mathlib\\.lake\\packages\\Qq",
+      "existed_before": false,
+      "clean": true,
+      "checked_at_utc": "2026-09-16T16:04:32.2119315Z"
+    }
+  ],
+  "lake_executed": false,
+  "_public_copy": {
+    "notice": "REDACTED PUBLIC COPY; this is not unmodified raw output.",
+    "record_role": "preparation and public source evidence",
+    "original_sha256": "e3a718773b49dcd03a3fa8eef2b49ea9f9bcd97dfa644b5935cbf843ca912ffa",
+    "original_bytes": 4213,
+    "replacement_counts": {
+      "<WORKSPACE>": 8
+    },
+    "raw_original_retained_locally": true
+  }
+}

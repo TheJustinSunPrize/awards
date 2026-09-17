@@ -1,0 +1,12 @@
+# REDACTED PUBLIC COPY; this is not unmodified raw output.
+# Record role: original dependency setup attempt
+# Known environment paths were replaced; see logs/REDACTION.md.
+
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Attempting to download 1 file(s) from leanprover-community/mathlib4 cache at https://lakecache.blob.core.windows.net/mathlib4-master
+
+Downloaded: 1 file(s) [attempted 1/1 = 100%, 42 KB/s], Decompressed: 0[K
+Downloaded: 1 file(s) [attempted 1/1 = 100%, 42 KB/s], Decompressed: 0[K
+Decompressed 1 file(s)
+Already decompressed 877 file(s)

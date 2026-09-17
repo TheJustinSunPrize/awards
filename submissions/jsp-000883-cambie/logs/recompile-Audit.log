@@ -1,0 +1,23 @@
+# REDACTED PUBLIC COPY; this is not unmodified raw output.
+# Record role: final verification run
+# Known environment paths were replaced; see logs/REDACTION.md.
+
+@erdos_1063.variants.cambie_upper_bound : ∀ {k : ℕ}, 3 ≤ k → n k ≤ k * (Finset.Icc 1 (k - 1)).lcm id
+@cambie_witness : ∀ {k : ℕ},
+  3 ≤ k →
+    have N := k * (Finset.Icc 1 (k - 1)).lcm id;
+    2 * k ≤ N ∧ ∃ i0 < k, ¬N - i0 ∣ N.choose k ∧ ∀ i < k, i ≠ i0 → N - i ∣ N.choose k
+target_alignment : ∀ (k : ℕ),
+  3 ≤ k →
+    sInf {m | 2 * k ≤ m ∧ ∃ i0 < k, ¬m - i0 ∣ m.choose k ∧ ∀ i < k, i ≠ i0 → m - i ∣ m.choose k} ≤
+      k * (Finset.Icc 1 (k - 1)).lcm id
+def Erdos1063.n : ℕ → ℕ :=
+fun k => sInf {m | 2 * k ≤ m ∧ ∃ i0 < k, ¬m - i0 ∣ m.choose k ∧ ∀ i < k, i ≠ i0 → m - i ∣ m.choose k}
+'Erdos1063.choose_pred_eq_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1063.cambie_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1063.erdos_1063.variants.cambie_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1063.definition_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1063.target_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0

@@ -1,0 +1,7 @@
+.lake/
+__pycache__/
+*.olean
+*.ilean
+*.trace
+verification-tmp/
+.verification-history/

@@ -1,0 +1,101 @@
+{
+  "kind": "Local read-only submission preparation; not official verification",
+  "snapshot_recorded_at_utc": "2026-09-16T16:37:35.684Z",
+  "official_repository": {
+    "url": "https://github.com/TheJustinSunPrize/awards",
+    "main_commit": "f4e7173d89dfe91022a185427d63452c8ffbf6ae"
+  },
+  "searches": [
+    {
+      "query": "repo:TheJustinSunPrize/awards is:issue (1063 OR JSP-000883 OR Erdos1063 OR cambie_upper_bound) in:title,body,comments",
+      "total_count": 0,
+      "incomplete_results": false,
+      "returned_count": 0,
+      "matches": []
+    },
+    {
+      "query": "repo:TheJustinSunPrize/awards is:pr (1063 OR JSP-000883 OR Erdos1063 OR cambie_upper_bound) in:title,body,comments",
+      "total_count": 1,
+      "incomplete_results": false,
+      "returned_count": 1,
+      "matches": [
+        {
+          "number": 56,
+          "title": "JSP-000883: formalize Monier’s factorial upper bound",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/56"
+        }
+      ]
+    },
+    {
+      "query": "repo:TheJustinSunPrize/awards is:issue (Cambie OR lcm OR \"least common multiple\") in:title,body,comments",
+      "total_count": 4,
+      "incomplete_results": false,
+      "returned_count": 4,
+      "matches": [
+        {
+          "number": 22,
+          "title": "[Correction] Batch 1: register existing public Lean proof evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/issues/22"
+        },
+        {
+          "number": 44,
+          "title": "[Correction] Further verification evidence for existing Lean proofs (batch 2, part 2)",
+          "url": "https://github.com/TheJustinSunPrize/awards/issues/44"
+        },
+        {
+          "number": 24,
+          "title": "[Correction] Batch 4: register reproduced existing Lean proof evidence",
+          "url": "https://github.com/TheJustinSunPrize/awards/issues/24"
+        },
+        {
+          "number": 16,
+          "title": "[Correction] Verification evidence for eighteen existing Lean proofs (batch 2)",
+          "url": "https://github.com/TheJustinSunPrize/awards/issues/16"
+        }
+      ]
+    },
+    {
+      "query": "repo:TheJustinSunPrize/awards is:pr (Cambie OR lcm OR \"least common multiple\") in:title,body,comments",
+      "total_count": 1,
+      "incomplete_results": false,
+      "returned_count": 1,
+      "matches": [
+        {
+          "number": 56,
+          "title": "JSP-000883: formalize Monier’s factorial upper bound",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/56"
+        }
+      ]
+    }
+  ],
+  "related_pr": {
+    "number": 56,
+    "url": "https://github.com/TheJustinSunPrize/awards/pull/56",
+    "head_commit": "40446d5328cd5b23d4f7ac0569931deca13b6bcd",
+    "state": "open",
+    "merged": false,
+    "scope": "Monier factorial upper bound; explicitly excludes Cambie's stronger least-common-multiple bound.",
+    "review_snapshot_recorded_at_utc": "2026-09-16T16:43:14.617Z",
+    "issue_comments": 0,
+    "reviews": 0,
+    "inline_comments": 0
+  },
+  "rules": {
+    "url": "https://www.hejustinsun.com/prize/rules",
+    "version": "v1.0",
+    "effective_date": "2026-09-16",
+    "html_sha256": "e0f332525dae0beb034b3991c0ea5f44511b457c0b86c44cf7070e2a42a6ea37",
+    "visible_text_unchanged_since_previous_review": true
+  },
+  "terms": {
+    "url": "https://www.hejustinsun.com/prize/terms",
+    "effective_date": "2026-09-16",
+    "html_sha256": "3ebbd72e0dc344b69d5297773d8322af8b23e4b23a1941933df88a8fb5bd12cd",
+    "visible_text_unchanged_since_previous_review": true
+  },
+  "limits": [
+    "Searches cover the official awards repository only and do not establish global priority.",
+    "No target-specific exclusion was located; eligibility and allocation remain for operator review.",
+    "The intake directory is proposed, not an official published submission policy."
+  ]
+}

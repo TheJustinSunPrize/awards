@@ -1,0 +1,8 @@
+# REDACTED PUBLIC COPY; this is not unmodified raw output.
+# Record role: final verification run
+# Known environment paths were replaced; see logs/REDACTION.md.
+
+{"Erdos1063.choose_pred_eq_prod": ["Classical.choice", "Quot.sound", "propext"], "Erdos1063.cambie_witness": ["Classical.choice", "Quot.sound", "propext"], "Erdos1063.erdos_1063.variants.cambie_upper_bound": ["Classical.choice", "Quot.sound", "propext"], "Erdos1063.definition_alignment": ["Classical.choice", "Quot.sound", "propext"], "Erdos1063.target_alignment": ["Classical.choice", "Quot.sound", "propext"]}
+
+COMMAND STATUS: COMPLETED
+EXIT: 0

@@ -1,0 +1,305 @@
+# REDACTED PUBLIC COPY; this is not unmodified raw output.
+# Record role: final verification run
+# Known environment paths were replaced; see logs/REDACTION.md.
+
+RUN ID: e38f0a6fd3e344dfa4cc67d05e224346
+STARTED UTC: 2026-09-16T16:41:16.975577+00:00
+
+$ <LEAN_BIN>\lake.EXE env lean --version
+CWD: <PROJECT>
+Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE --version
+CWD: <PROJECT>
+Lake version 5.0.0-src+819816b (Lean version 4.33.1)
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\mathlib
+0df444a360eaa60ab8c11dca51a86af692955474
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\mathlib
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\mathlib
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\plausible
+b7eb3304aeae834b12dda98993a37f6a41f6f0bb
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\plausible
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\plausible
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\LeanSearchClient
+5f4d51b81cbd3f6b32b156bfad9056621a040404
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\LeanSearchClient
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\LeanSearchClient
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\importGraph
+16f02aa7642864af59f1ff0e384a015994db9118
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\importGraph
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\importGraph
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\proofwidgets
+4be2e3d5087eeb272cf5a8853b8f9dd025ef5957
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\proofwidgets
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\proofwidgets
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\aesop
+3448c0bcc5ce01b2d1546e483ec3620e32df3d0e
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\aesop
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\aesop
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\Qq
+92c15be17b7caf78c2ad767ec40f89052d908d81
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\Qq
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\Qq
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\batteries
+4488d40d070b9700d4d5a6aa342f0d40c31b2a2d
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\batteries
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\batteries
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\Cli
+6130a47896ce867c6a4a55373441e59e565bad0f
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\Cli
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\Cli
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE build
+CWD: <PROJECT>
+✔ [894/897] Built Cambie (28s)
+ℹ [896/897] Built Audit (4.3s)
+info: Audit.lean:20:0: @erdos_1063.variants.cambie_upper_bound : ∀ {k : ℕ}, 3 ≤ k → n k ≤ k * (Finset.Icc 1 (k - 1)).lcm id
+info: Audit.lean:21:0: @cambie_witness : ∀ {k : ℕ},
+  3 ≤ k →
+    have N := k * (Finset.Icc 1 (k - 1)).lcm id;
+    2 * k ≤ N ∧ ∃ i0 < k, ¬N - i0 ∣ N.choose k ∧ ∀ i < k, i ≠ i0 → N - i ∣ N.choose k
+info: Audit.lean:22:0: target_alignment : ∀ (k : ℕ),
+  3 ≤ k →
+    sInf {m | 2 * k ≤ m ∧ ∃ i0 < k, ¬m - i0 ∣ m.choose k ∧ ∀ i < k, i ≠ i0 → m - i ∣ m.choose k} ≤
+      k * (Finset.Icc 1 (k - 1)).lcm id
+info: Audit.lean:23:0: def Erdos1063.n : ℕ → ℕ :=
+fun k => sInf {m | 2 * k ≤ m ∧ ∃ i0 < k, ¬m - i0 ∣ m.choose k ∧ ∀ i < k, i ≠ i0 → m - i ∣ m.choose k}
+info: Audit.lean:24:0: 'Erdos1063.choose_pred_eq_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:25:0: 'Erdos1063.cambie_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:26:0: 'Erdos1063.erdos_1063.variants.cambie_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:27:0: 'Erdos1063.definition_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:28:0: 'Erdos1063.target_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (897 jobs).
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE env lean -o .lake/build/lib/lean/Statement.olean Statement.lean
+CWD: <PROJECT>
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE env lean -o .lake/build/lib/lean/Cambie.olean Cambie.lean
+CWD: <PROJECT>
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE env lean -o .lake/build/lib/lean/Audit.olean Audit.lean
+CWD: <PROJECT>
+@erdos_1063.variants.cambie_upper_bound : ∀ {k : ℕ}, 3 ≤ k → n k ≤ k * (Finset.Icc 1 (k - 1)).lcm id
+@cambie_witness : ∀ {k : ℕ},
+  3 ≤ k →
+    have N := k * (Finset.Icc 1 (k - 1)).lcm id;
+    2 * k ≤ N ∧ ∃ i0 < k, ¬N - i0 ∣ N.choose k ∧ ∀ i < k, i ≠ i0 → N - i ∣ N.choose k
+target_alignment : ∀ (k : ℕ),
+  3 ≤ k →
+    sInf {m | 2 * k ≤ m ∧ ∃ i0 < k, ¬m - i0 ∣ m.choose k ∧ ∀ i < k, i ≠ i0 → m - i ∣ m.choose k} ≤
+      k * (Finset.Icc 1 (k - 1)).lcm id
+def Erdos1063.n : ℕ → ℕ :=
+fun k => sInf {m | 2 * k ≤ m ∧ ∃ i0 < k, ¬m - i0 ∣ m.choose k ∧ ∀ i < k, i ≠ i0 → m - i ∣ m.choose k}
+'Erdos1063.choose_pred_eq_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1063.cambie_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1063.erdos_1063.variants.cambie_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1063.definition_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1063.target_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <PYTHON> <PROJECT>\verify.py --check-axioms-log <PROJECT>\logs\recompile-Audit.log
+CWD: <PROJECT>
+{"Erdos1063.choose_pred_eq_prod": ["Classical.choice", "Quot.sound", "propext"], "Erdos1063.cambie_witness": ["Classical.choice", "Quot.sound", "propext"], "Erdos1063.erdos_1063.variants.cambie_upper_bound": ["Classical.choice", "Quot.sound", "propext"], "Erdos1063.definition_alignment": ["Classical.choice", "Quot.sound", "propext"], "Erdos1063.target_alignment": ["Classical.choice", "Quot.sound", "propext"]}
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE env lean <PROJECT>\verification-tmp\false-arithmetic.lean
+CWD: <PROJECT>
+<PROJECT>\verification-tmp\false-arithmetic.lean:1:34: error: Tactic `decide` proved that the proposition
+  2 + 2 = 5
+is false
+
+COMMAND STATUS: COMPLETED
+EXIT: 1
+
+$ <LEAN_BIN>\lake.EXE env lean <PROJECT>\verification-tmp\sorry.lean
+CWD: <PROJECT>
+<PROJECT>\verification-tmp\sorry.lean:1:8: warning: declaration uses `sorry`
+'negative' depends on axioms: [sorryAx]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <PYTHON> <PROJECT>\verify.py --check-axioms-log <PROJECT>\logs\negative-sorry.log --names negative
+CWD: <PROJECT>
+Rejected axioms for negative: ['sorryAx']
+
+COMMAND STATUS: COMPLETED
+EXIT: 2
+
+$ <LEAN_BIN>\lake.EXE env lean <PROJECT>\verification-tmp\custom-axiom.lean
+CWD: <PROJECT>
+'negative' depends on axioms: [unapproved]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <PYTHON> <PROJECT>\verify.py --check-axioms-log <PROJECT>\logs\negative-custom-axiom.log --names negative
+CWD: <PROJECT>
+Rejected axioms for negative: ['unapproved']
+
+COMMAND STATUS: COMPLETED
+EXIT: 2
+
+$ <LEAN_BIN>\lake.EXE env leanchecker --fresh -v Cambie
+CWD: <PROJECT>
+replaying Cambie with --fresh
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+FINAL STATUS: PASS
+FINISHED UTC: 2026-09-16T16:44:03.884368+00:00

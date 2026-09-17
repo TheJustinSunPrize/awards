@@ -1,0 +1,126 @@
+{
+  "head": {
+    "name": "main",
+    "commit": {
+      "sha": "a28481f5b4bda374086533397269c5b550c759b8",
+      "node_id": "C_kwDOTjjoXNoAKGEyODQ4MWY1YjRiZGEzNzQwODY1MzMzOTcyNjljNWI1NTBjNzU5Yjg",
+      "commit": {
+        "author": {
+          "name": "Claude",
+          "email": "noreply@anthropic.com",
+          "date": "2026-07-25T22:47:49Z"
+        },
+        "committer": {
+          "name": "Claude",
+          "email": "noreply@anthropic.com",
+          "date": "2026-07-25T22:47:49Z"
+        },
+        "message": "Erdos #1063: a substantially stronger upper bound, n_k = exp(o(k))\n\nIndependently re-verified fresh for this repo (17 values of k, 4-300,\nincluding 5 new spot-checks outside the original suite's range). Published\nafter a reader correctly flagged that an earlier, different, weaker\ndescription of this result on erdosproblemaday.com read like a full\nproblem solve and had no checkable proof behind it -- see the correction\nnote in the README.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+        "tree": {
+          "sha": "9acafa2f94206080c840658a4392a6bf6fbd88ec",
+          "url": "https://api.github.com/repos/pw/erdos1063-upper-bound/git/trees/9acafa2f94206080c840658a4392a6bf6fbd88ec"
+        },
+        "url": "https://api.github.com/repos/pw/erdos1063-upper-bound/git/commits/a28481f5b4bda374086533397269c5b550c759b8",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null,
+          "verified_at": null
+        }
+      },
+      "url": "https://api.github.com/repos/pw/erdos1063-upper-bound/commits/a28481f5b4bda374086533397269c5b550c759b8",
+      "html_url": "https://github.com/pw/erdos1063-upper-bound/commit/a28481f5b4bda374086533397269c5b550c759b8",
+      "comments_url": "https://api.github.com/repos/pw/erdos1063-upper-bound/commits/a28481f5b4bda374086533397269c5b550c759b8/comments",
+      "author": {
+        "login": "claude",
+        "id": 81847,
+        "node_id": "MDQ6VXNlcjgxODQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/claude",
+        "html_url": "https://github.com/claude",
+        "followers_url": "https://api.github.com/users/claude/followers",
+        "following_url": "https://api.github.com/users/claude/following{/other_user}",
+        "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+        "organizations_url": "https://api.github.com/users/claude/orgs",
+        "repos_url": "https://api.github.com/users/claude/repos",
+        "events_url": "https://api.github.com/users/claude/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/claude/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "claude",
+        "id": 81847,
+        "node_id": "MDQ6VXNlcjgxODQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/claude",
+        "html_url": "https://github.com/claude",
+        "followers_url": "https://api.github.com/users/claude/followers",
+        "following_url": "https://api.github.com/users/claude/following{/other_user}",
+        "gists_url": "https://api.github.com/users/claude/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/claude/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/claude/subscriptions",
+        "organizations_url": "https://api.github.com/users/claude/orgs",
+        "repos_url": "https://api.github.com/users/claude/repos",
+        "events_url": "https://api.github.com/users/claude/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/claude/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "parents": []
+    },
+    "_links": {
+      "self": "https://api.github.com/repos/pw/erdos1063-upper-bound/branches/main",
+      "html": "https://github.com/pw/erdos1063-upper-bound/tree/main"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [],
+        "checks": []
+      }
+    },
+    "protection_url": "https://api.github.com/repos/pw/erdos1063-upper-bound/branches/main/protection"
+  },
+  "tree": {
+    "sha": "a28481f5b4bda374086533397269c5b550c759b8",
+    "url": "https://api.github.com/repos/pw/erdos1063-upper-bound/git/trees/a28481f5b4bda374086533397269c5b550c759b8",
+    "tree": [
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1174854559fe2ed0edf74b1430c6149b196e60df",
+        "size": 16644,
+        "url": "https://api.github.com/repos/pw/erdos1063-upper-bound/git/blobs/1174854559fe2ed0edf74b1430c6149b196e60df"
+      },
+      {
+        "path": "VERIFICATION_LOG.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1b6d500d29a7278e3f934037fbd6663a76891b82",
+        "size": 5001,
+        "url": "https://api.github.com/repos/pw/erdos1063-upper-bound/git/blobs/1b6d500d29a7278e3f934037fbd6663a76891b82"
+      },
+      {
+        "path": "verify.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "409e3514a751684619c29e033f18decd78db1507",
+        "size": 10665,
+        "url": "https://api.github.com/repos/pw/erdos1063-upper-bound/git/blobs/409e3514a751684619c29e033f18decd78db1507"
+      }
+    ],
+    "truncated": false
+  }
+}

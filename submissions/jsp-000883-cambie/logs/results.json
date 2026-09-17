@@ -1,0 +1,665 @@
+{
+  "run_id": "e38f0a6fd3e344dfa4cc67d05e224346",
+  "status": "PASS",
+  "started_utc": "2026-09-16T16:41:16.975577+00:00",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "commands": [
+    {
+      "label": "lean-version",
+      "command": [
+        "<LEAN_BIN>\\lake.EXE",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "<PROJECT>",
+      "started_utc": "2026-09-16T16:41:17.003467+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:21.583316+00:00"
+    },
+    {
+      "label": "lake-version",
+      "command": [
+        "<LEAN_BIN>\\lake.EXE",
+        "--version"
+      ],
+      "cwd": "<PROJECT>",
+      "started_utc": "2026-09-16T16:41:21.587699+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:21.644778+00:00"
+    },
+    {
+      "label": "revision-mathlib",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\mathlib",
+      "started_utc": "2026-09-16T16:41:21.650286+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:21.685892+00:00"
+    },
+    {
+      "label": "clean-mathlib",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\mathlib",
+      "started_utc": "2026-09-16T16:41:21.690375+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:21.741921+00:00"
+    },
+    {
+      "label": "status-mathlib",
+      "command": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=normal"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\mathlib",
+      "started_utc": "2026-09-16T16:41:21.746578+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:21.799183+00:00"
+    },
+    {
+      "label": "revision-plausible",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\plausible",
+      "started_utc": "2026-09-16T16:41:21.802531+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:21.837013+00:00"
+    },
+    {
+      "label": "clean-plausible",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\plausible",
+      "started_utc": "2026-09-16T16:41:21.840461+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:21.878451+00:00"
+    },
+    {
+      "label": "status-plausible",
+      "command": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=normal"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\plausible",
+      "started_utc": "2026-09-16T16:41:21.882544+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:21.921868+00:00"
+    },
+    {
+      "label": "revision-LeanSearchClient",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\LeanSearchClient",
+      "started_utc": "2026-09-16T16:41:21.925538+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:21.960299+00:00"
+    },
+    {
+      "label": "clean-LeanSearchClient",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\LeanSearchClient",
+      "started_utc": "2026-09-16T16:41:21.963475+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:21.999985+00:00"
+    },
+    {
+      "label": "status-LeanSearchClient",
+      "command": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=normal"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\LeanSearchClient",
+      "started_utc": "2026-09-16T16:41:22.003528+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.043154+00:00"
+    },
+    {
+      "label": "revision-importGraph",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\importGraph",
+      "started_utc": "2026-09-16T16:41:22.047534+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.082139+00:00"
+    },
+    {
+      "label": "clean-importGraph",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\importGraph",
+      "started_utc": "2026-09-16T16:41:22.086366+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.123662+00:00"
+    },
+    {
+      "label": "status-importGraph",
+      "command": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=normal"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\importGraph",
+      "started_utc": "2026-09-16T16:41:22.127423+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.166101+00:00"
+    },
+    {
+      "label": "revision-proofwidgets",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\proofwidgets",
+      "started_utc": "2026-09-16T16:41:22.170477+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.209262+00:00"
+    },
+    {
+      "label": "clean-proofwidgets",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\proofwidgets",
+      "started_utc": "2026-09-16T16:41:22.214030+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.264922+00:00"
+    },
+    {
+      "label": "status-proofwidgets",
+      "command": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=normal"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\proofwidgets",
+      "started_utc": "2026-09-16T16:41:22.269389+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.312100+00:00"
+    },
+    {
+      "label": "revision-aesop",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\aesop",
+      "started_utc": "2026-09-16T16:41:22.315478+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.348773+00:00"
+    },
+    {
+      "label": "clean-aesop",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\aesop",
+      "started_utc": "2026-09-16T16:41:22.353451+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.395791+00:00"
+    },
+    {
+      "label": "status-aesop",
+      "command": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=normal"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\aesop",
+      "started_utc": "2026-09-16T16:41:22.399544+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.439751+00:00"
+    },
+    {
+      "label": "revision-Qq",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\Qq",
+      "started_utc": "2026-09-16T16:41:22.443435+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.479579+00:00"
+    },
+    {
+      "label": "clean-Qq",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\Qq",
+      "started_utc": "2026-09-16T16:41:22.484437+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.520102+00:00"
+    },
+    {
+      "label": "status-Qq",
+      "command": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=normal"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\Qq",
+      "started_utc": "2026-09-16T16:41:22.523333+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.560185+00:00"
+    },
+    {
+      "label": "revision-batteries",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\batteries",
+      "started_utc": "2026-09-16T16:41:22.564511+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.600265+00:00"
+    },
+    {
+      "label": "clean-batteries",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\batteries",
+      "started_utc": "2026-09-16T16:41:22.604534+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.648140+00:00"
+    },
+    {
+      "label": "status-batteries",
+      "command": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=normal"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\batteries",
+      "started_utc": "2026-09-16T16:41:22.652446+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.695116+00:00"
+    },
+    {
+      "label": "revision-Cli",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\Cli",
+      "started_utc": "2026-09-16T16:41:22.700163+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.739987+00:00"
+    },
+    {
+      "label": "clean-Cli",
+      "command": [
+        "git",
+        "diff",
+        "--exit-code",
+        "HEAD"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\Cli",
+      "started_utc": "2026-09-16T16:41:22.744522+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.783020+00:00"
+    },
+    {
+      "label": "status-Cli",
+      "command": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=normal"
+      ],
+      "cwd": "<PROJECT>\\.lake\\packages\\Cli",
+      "started_utc": "2026-09-16T16:41:22.786683+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:41:22.828705+00:00"
+    },
+    {
+      "label": "build",
+      "command": [
+        "<LEAN_BIN>\\lake.EXE",
+        "build"
+      ],
+      "cwd": "<PROJECT>",
+      "started_utc": "2026-09-16T16:41:22.833590+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:42:03.707668+00:00"
+    },
+    {
+      "label": "recompile-Statement",
+      "command": [
+        "<LEAN_BIN>\\lake.EXE",
+        "env",
+        "lean",
+        "-o",
+        ".lake/build/lib/lean/Statement.olean",
+        "Statement.lean"
+      ],
+      "cwd": "<PROJECT>",
+      "started_utc": "2026-09-16T16:42:03.712418+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:42:09.449811+00:00"
+    },
+    {
+      "label": "recompile-Cambie",
+      "command": [
+        "<LEAN_BIN>\\lake.EXE",
+        "env",
+        "lean",
+        "-o",
+        ".lake/build/lib/lean/Cambie.olean",
+        "Cambie.lean"
+      ],
+      "cwd": "<PROJECT>",
+      "started_utc": "2026-09-16T16:42:09.454372+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:42:15.354574+00:00"
+    },
+    {
+      "label": "recompile-Audit",
+      "command": [
+        "<LEAN_BIN>\\lake.EXE",
+        "env",
+        "lean",
+        "-o",
+        ".lake/build/lib/lean/Audit.olean",
+        "Audit.lean"
+      ],
+      "cwd": "<PROJECT>",
+      "started_utc": "2026-09-16T16:42:15.359095+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:42:21.320556+00:00"
+    },
+    {
+      "label": "axiom-gate",
+      "command": [
+        "<PYTHON>",
+        "<PROJECT>\\verify.py",
+        "--check-axioms-log",
+        "<PROJECT>\\logs\\recompile-Audit.log"
+      ],
+      "cwd": "<PROJECT>",
+      "started_utc": "2026-09-16T16:42:21.335516+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:42:21.461381+00:00"
+    },
+    {
+      "label": "negative-false-arithmetic",
+      "command": [
+        "<LEAN_BIN>\\lake.EXE",
+        "env",
+        "lean",
+        "<PROJECT>\\verification-tmp\\false-arithmetic.lean"
+      ],
+      "cwd": "<PROJECT>",
+      "started_utc": "2026-09-16T16:42:21.467947+00:00",
+      "status": "COMPLETED",
+      "exit_code": 1,
+      "finished_utc": "2026-09-16T16:42:23.442678+00:00"
+    },
+    {
+      "label": "negative-sorry",
+      "command": [
+        "<LEAN_BIN>\\lake.EXE",
+        "env",
+        "lean",
+        "<PROJECT>\\verification-tmp\\sorry.lean"
+      ],
+      "cwd": "<PROJECT>",
+      "started_utc": "2026-09-16T16:42:23.454299+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:42:25.441944+00:00"
+    },
+    {
+      "label": "reject-sorry",
+      "command": [
+        "<PYTHON>",
+        "<PROJECT>\\verify.py",
+        "--check-axioms-log",
+        "<PROJECT>\\logs\\negative-sorry.log",
+        "--names",
+        "negative"
+      ],
+      "cwd": "<PROJECT>",
+      "started_utc": "2026-09-16T16:42:25.447076+00:00",
+      "status": "COMPLETED",
+      "exit_code": 2,
+      "finished_utc": "2026-09-16T16:42:25.570396+00:00"
+    },
+    {
+      "label": "negative-custom-axiom",
+      "command": [
+        "<LEAN_BIN>\\lake.EXE",
+        "env",
+        "lean",
+        "<PROJECT>\\verification-tmp\\custom-axiom.lean"
+      ],
+      "cwd": "<PROJECT>",
+      "started_utc": "2026-09-16T16:42:25.574928+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:42:27.755644+00:00"
+    },
+    {
+      "label": "reject-custom-axiom",
+      "command": [
+        "<PYTHON>",
+        "<PROJECT>\\verify.py",
+        "--check-axioms-log",
+        "<PROJECT>\\logs\\negative-custom-axiom.log",
+        "--names",
+        "negative"
+      ],
+      "cwd": "<PROJECT>",
+      "started_utc": "2026-09-16T16:42:27.759856+00:00",
+      "status": "COMPLETED",
+      "exit_code": 2,
+      "finished_utc": "2026-09-16T16:42:27.894318+00:00"
+    },
+    {
+      "label": "kernel-replay",
+      "command": [
+        "<LEAN_BIN>\\lake.EXE",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "-v",
+        "Cambie"
+      ],
+      "cwd": "<PROJECT>",
+      "started_utc": "2026-09-16T16:42:27.898898+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-09-16T16:44:03.878186+00:00"
+    }
+  ],
+  "previous_logs_archive": "<PROJECT>\\.verification-history\\e38f0a6fd3e344dfa4cc67d05e224346\\logs",
+  "dependencies": {
+    "mathlib": {
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "rev": "0df444a360eaa60ab8c11dca51a86af692955474"
+    },
+    "plausible": {
+      "url": "https://github.com/leanprover-community/plausible",
+      "rev": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb"
+    },
+    "LeanSearchClient": {
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "rev": "5f4d51b81cbd3f6b32b156bfad9056621a040404"
+    },
+    "importGraph": {
+      "url": "https://github.com/leanprover-community/import-graph",
+      "rev": "16f02aa7642864af59f1ff0e384a015994db9118"
+    },
+    "proofwidgets": {
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "rev": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+    },
+    "aesop": {
+      "url": "https://github.com/leanprover-community/aesop",
+      "rev": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e"
+    },
+    "Qq": {
+      "url": "https://github.com/leanprover-community/quote4",
+      "rev": "92c15be17b7caf78c2ad767ec40f89052d908d81"
+    },
+    "batteries": {
+      "url": "https://github.com/leanprover-community/batteries",
+      "rev": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d"
+    },
+    "Cli": {
+      "url": "https://github.com/leanprover/lean4-cli",
+      "rev": "6130a47896ce867c6a4a55373441e59e565bad0f"
+    }
+  },
+  "source_scan": "PASS (separate from dependency axiom audit)",
+  "axioms": {
+    "Erdos1063.choose_pred_eq_prod": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos1063.cambie_witness": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos1063.erdos_1063.variants.cambie_upper_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos1063.definition_alignment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos1063.target_alignment": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "negative_tests": "PASS; fixtures are not imported by the proof",
+  "kernel_replay": "PASS: same Lean kernel; fresh environment including imports; unsafe/partial declarations skipped by the official tool",
+  "independent_checker": "NOT RUN: no second kernel implementation installed",
+  "source_sha256": {
+    "Audit.lean": "e508e6a51404f5cbf65aecf355f8001e22209bc5c9c47730e46817e2c9993081",
+    "Cambie.lean": "e84ef5c78afba121bc1118e0612f983b5dd849e5187ac5583d78686f5d8678fd",
+    "lake-manifest.json": "ebaf4853acfab246e0ee8c73628a0bf1fb0cb4061a9beec0a4e4cdcb0e9d0f87",
+    "lakefile.toml": "61851e41cac5cb2317f2c3a166a8af0e5879f3038ea23b317699991d9758dd9b",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "Statement.lean": "9224bff057861d38b8002d032a21a28d4b03d225ce5d3da07a5ff87e2edce701",
+    "test_verify.py": "dd0f75559c0aed3b0a5dbc76c25fb863c42d70301844507861b65fe51419b583",
+    "verify.py": "936eab778c48cee27a3741ce7f89e96fbdcd11cddf9324544b4833ea059b0d17"
+  },
+  "finished_utc": "2026-09-16T16:44:03.884368+00:00",
+  "process_exit_code": 0,
+  "_public_copy": {
+    "notice": "REDACTED PUBLIC COPY; this is not unmodified raw output.",
+    "record_role": "final verification run",
+    "original_sha256": "4f9257ed7f6e82947490257c5b845caab09974bf884808c3ded37fc17b70f8d7",
+    "original_bytes": 25107,
+    "replacement_counts": {
+      "<LEAN_BIN>": 10,
+      "<PROJECT>": 50,
+      "<PYTHON>": 3
+    },
+    "raw_original_retained_locally": true
+  }
+}

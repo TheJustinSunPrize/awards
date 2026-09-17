@@ -1,0 +1,193 @@
+[
+  {
+    "filename": "formal-conjectures-1063.lean",
+    "source": "https://github.com/google-deepmind/formal-conjectures/blob/40e7c98697de6f66b8cbdbf641749ab39ed9c152/FormalConjectures/ErdosProblems/1063.lean",
+    "blob": "bda13fc03989bb240293a164c7d70c75dfcc86f9",
+    "key_lines": [
+      {
+        "line": 17,
+        "text": "import FormalConjecturesUtil"
+      },
+      {
+        "line": 39,
+        "text": "noncomputable def n (k : ℕ) : ℕ :="
+      },
+      {
+        "line": 53,
+        "text": "    let upper_bound : ℕ → ℝ := answer(sorry)"
+      },
+      {
+        "line": 57,
+        "text": "  sorry"
+      },
+      {
+        "line": 66,
+        "text": "  sorry"
+      },
+      {
+        "line": 114,
+        "text": "  sorry"
+      },
+      {
+        "line": 125,
+        "text": "theorem erdos_1063.variants.cambie_upper_bound {k : ℕ} (hk : 3 ≤ k) :"
+      },
+      {
+        "line": 127,
+        "text": "  sorry"
+      },
+      {
+        "line": 134,
+        "text": "  sorry"
+      }
+    ]
+  },
+  {
+    "filename": "fc100-1063.lean",
+    "source": "https://github.com/Paul-Lez/fc100/blob/4b48458754b42299b09af16590db56abe9ace268/FC100Solved/ErdosProblems/1063.lean",
+    "blob": "3f8e08b199f550cc8d2aca59eb422ed58d85005c",
+    "key_lines": [
+      {
+        "line": 17,
+        "text": "import FormalConjectures.Util.ProblemImports"
+      },
+      {
+        "line": 38,
+        "text": "noncomputable def n (k : ℕ) : ℕ :="
+      },
+      {
+        "line": 47,
+        "text": "    let upper_bound : ℕ → ℝ := answer(sorry)"
+      },
+      {
+        "line": 51,
+        "text": "  sorry"
+      },
+      {
+        "line": 60,
+        "text": "  sorry"
+      },
+      {
+        "line": 66,
+        "text": "  sorry"
+      },
+      {
+        "line": 74,
+        "text": "  sorry"
+      },
+      {
+        "line": 79,
+        "text": "theorem erdos_1063.variants.cambie_upper_bound {k : ℕ} (hk : 3 ≤ k) :"
+      },
+      {
+        "line": 81,
+        "text": "  sorry"
+      },
+      {
+        "line": 88,
+        "text": "  sorry"
+      }
+    ]
+  },
+  {
+    "filename": "lean-genius-Erdos1063Problem.lean",
+    "source": "https://github.com/rjwalters/lean-genius/blob/dc62f771ed5010abfdb04247dff6143e0e69d3e7/proofs/Proofs/Erdos1063Problem.lean",
+    "blob": "6e7b9578cea95cedd938fb573288db208b99c3d8",
+    "key_lines": [
+      {
+        "line": 26,
+        "text": "small cases, and state the known bounds as axioms."
+      },
+      {
+        "line": 29,
+        "text": "import Mathlib.Data.Nat.Basic"
+      },
+      {
+        "line": 30,
+        "text": "import Mathlib.Data.Nat.Choose.Basic"
+      },
+      {
+        "line": 31,
+        "text": "import Mathlib.Data.Nat.Factorial.Basic"
+      },
+      {
+        "line": 32,
+        "text": "import Mathlib.Data.Finset.Basic"
+      },
+      {
+        "line": 33,
+        "text": "import Mathlib.Tactic"
+      },
+      {
+        "line": 54,
+        "text": "@[reducible] def AllButOneDivide (n k : ℕ) : Prop :="
+      },
+      {
+        "line": 64,
+        "text": "  AllButOneDivide nk k ∧"
+      },
+      {
+        "line": 65,
+        "text": "  ∀ m : ℕ, m < nk → m ≥ 2 * k → ¬AllButOneDivide m k"
+      },
+      {
+        "line": 77,
+        "text": "axiom erdos_selfridge_nondivisibility :"
+      },
+      {
+        "line": 89,
+        "text": "  refine ⟨⟨by norm_num, by native_decide⟩, fun m hm hge => by omega⟩"
+      },
+      {
+        "line": 95,
+        "text": "  refine ⟨⟨by norm_num, by native_decide⟩, fun m hm hge => by omega⟩"
+      },
+      {
+        "line": 101,
+        "text": "  refine ⟨⟨by norm_num, by native_decide⟩, ?_⟩"
+      },
+      {
+        "line": 104,
+        "text": "  subst this; native_decide"
+      },
+      {
+        "line": 110,
+        "text": "  refine ⟨⟨by norm_num, by native_decide⟩, ?_⟩"
+      },
+      {
+        "line": 113,
+        "text": "  rcases this with rfl | rfl <;> native_decide"
+      },
+      {
+        "line": 120,
+        "text": "axiom monier_factorial_bound :"
+      },
+      {
+        "line": 128,
+        "text": "axiom cambie_lcm_bound :"
+      },
+      {
+        "line": 148,
+        "text": "(`threshold_k2`..`threshold_k5`) with Monier's factorial-bound axiom for"
+      },
+      {
+        "line": 151,
+        "text": "The bounds — `monier_factorial_bound` (k!) and `cambie_lcm_bound`"
+      },
+      {
+        "line": 158,
+        "text": "  · obtain ⟨nk, hth, _⟩ := monier_factorial_bound k h3"
+      },
+      {
+        "line": 188,
+        "text": "  exact ⟨erdos_selfridge_nondivisibility, monier_factorial_bound⟩"
+      }
+    ]
+  },
+  {
+    "filename": "lean-proofs-LICENSE.txt",
+    "source": "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/LICENSE",
+    "blob": "28334966307b373f23c1e929e128c84c5980066e",
+    "key_lines": []
+  }
+]
