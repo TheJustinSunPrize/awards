@@ -1,0 +1,55 @@
+{
+  "snapshot_utc": "2026-09-17T11:14:13.659649+00:00",
+  "scope": "GitHub indexed all-state PR search; not a semantic or exhaustive priority audit",
+  "queries": [
+    {
+      "query": "JSP-000242",
+      "exit_code": 0,
+      "results": [
+        {
+          "headRefOid": "4e356078988519d2659ab3001910b738b29c763e",
+          "number": 607,
+          "state": "OPEN",
+          "title": "JSP-000242: certified optimizer, uniform bounds and prime thresholds",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/607"
+        }
+      ],
+      "error": null
+    },
+    {
+      "query": "\"factorial\" \"fraction\"",
+      "exit_code": 0,
+      "results": [
+        {
+          "headRefOid": "fcb2edfac6c478815b4fe78d6614250302744504",
+          "number": 303,
+          "state": "OPEN",
+          "title": "JSP-000248: formalize uniform small-multiple obstructions (partial progress)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/303"
+        },
+        {
+          "headRefOid": "6fa0832648ddc3f2b61536403446e66705c3433b",
+          "number": 309,
+          "state": "CLOSED",
+          "title": "JSP-000055: Lean formalization, Erd\u0151s 18, Erd\u0151s's bound h(n!) < n",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/309"
+        }
+      ],
+      "error": null
+    },
+    {
+      "query": "\"smallest denominator\"",
+      "exit_code": 0,
+      "results": [
+        {
+          "headRefOid": "b583ad8173e9a6eac6de5238077d4d76e27a09ce",
+          "number": 354,
+          "state": "OPEN",
+          "title": "JSP-000250: Lean formalization of the upper bound t(N) = O(N/log N)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/354"
+        }
+      ],
+      "error": null
+    }
+  ]
+}

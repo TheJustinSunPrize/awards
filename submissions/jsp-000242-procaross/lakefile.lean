@@ -12,3 +12,6 @@ require mathlib from git
 @[default_target] lean_lib UnitFractionOptimum
 @[default_target] lean_lib UnitFractionAsymptotic
 @[default_target] lean_lib UnitFractionPrimes
+@[default_target] lean_lib UnitFractionRemainder
+@[default_target] lean_lib UnitFractionCompletion
+@[default_target] lean_lib UnitFractionLimit

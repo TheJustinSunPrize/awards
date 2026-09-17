@@ -1,4 +1,4 @@
-ℹ [982/995] Replayed UnitFractionBounds
+ℹ [982/1081] Replayed UnitFractionBounds
 info: UnitFractionBounds.lean:269:0: 'UnitFractionBounds.recips_le_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: UnitFractionBounds.lean:270:0: 'UnitFractionBounds.possible_of_rep' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: UnitFractionBounds.lean:271:0: 'UnitFractionBounds.rep_of_possible' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -15,7 +15,7 @@ info: UnitFractionBounds.lean:281:0: 'UnitFractionBounds.exact_nine' depends on 
 info: UnitFractionBounds.lean:282:0: 'UnitFractionBounds.exact_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: UnitFractionBounds.lean:283:0: 'UnitFractionBounds.exact_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: UnitFractionBounds.lean:284:0: 'UnitFractionBounds.exact_twelve' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [2178/2185] Built UnitFractionOptimum (3.5s)
+ℹ [984/1081] Replayed UnitFractionOptimum
 info: UnitFractionOptimum.lean:170:0: 'UnitFractionBounds.extend_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: UnitFractionOptimum.lean:171:0: 'UnitFractionBounds.possible_two_of_three_le' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: UnitFractionOptimum.lean:172:0: 'UnitFractionBounds.possible_iff_le_optimalMinimum' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -23,7 +23,15 @@ info: UnitFractionOptimum.lean:173:0: 'UnitFractionBounds.optimalMinimum_isGreat
 info: UnitFractionOptimum.lean:174:0: 'UnitFractionBounds.optimalMinimum_mono_step' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: UnitFractionOptimum.lean:175:0: 'UnitFractionBounds.optimalMinimum_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: UnitFractionOptimum.lean:176:0: 'UnitFractionBounds.exceptional_cardinalities' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [2182/2185] Built UnitFractionPrimes (1.9s)
+ℹ [2180/2263] Replayed UnitFractionAsymptotic
+info: UnitFractionAsymptotic.lean:137:0: 'UnitFractionBounds.reciprocal_lt_log_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionAsymptotic.lean:138:0: 'UnitFractionBounds.envelope_le_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionAsymptotic.lean:139:0: 'UnitFractionBounds.envelope_lt_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionAsymptotic.lean:140:0: 'UnitFractionBounds.minimum_lt_exp_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionAsymptotic.lean:141:0: 'UnitFractionBounds.attainable_minimum_lt_exp_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionAsymptotic.lean:142:0: 'UnitFractionBounds.optimalMinimum_ratio_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionAsymptotic.lean:143:0: 'UnitFractionBounds.optimalMinimum_eventual_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2183/2263] Replayed UnitFractionPrimes
 info: UnitFractionPrimes.lean:228:0: 'UnitFractionBounds.weighted_reciprocals' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: UnitFractionPrimes.lean:229:0: 'UnitFractionBounds.prime_dvd_weighted_part' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: UnitFractionPrimes.lean:230:0: 'UnitFractionBounds.prime_exclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -33,12 +41,19 @@ info: UnitFractionPrimes.lean:233:0: 'UnitFractionBounds.exclude_seventeen_up_to
 info: UnitFractionPrimes.lean:234:0: 'UnitFractionBounds.first_prime_threshold_of_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: UnitFractionPrimes.lean:235:0: 'UnitFractionBounds.first_seven_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: UnitFractionPrimes.lean:236:0: 'UnitFractionBounds.first_seventeen_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [2184/2185] Built UnitFractionAsymptotic (4.5s)
-info: UnitFractionAsymptotic.lean:137:0: 'UnitFractionBounds.reciprocal_lt_log_step' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: UnitFractionAsymptotic.lean:138:0: 'UnitFractionBounds.envelope_le_log' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: UnitFractionAsymptotic.lean:139:0: 'UnitFractionBounds.envelope_lt_log' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: UnitFractionAsymptotic.lean:140:0: 'UnitFractionBounds.minimum_lt_exp_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: UnitFractionAsymptotic.lean:141:0: 'UnitFractionBounds.attainable_minimum_lt_exp_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: UnitFractionAsymptotic.lean:142:0: 'UnitFractionBounds.optimalMinimum_ratio_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: UnitFractionAsymptotic.lean:143:0: 'UnitFractionBounds.optimalMinimum_eventual_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
-Build completed successfully (2185 jobs).
+ℹ [2820/2825] Built UnitFractionRemainder (1.6s)
+info: UnitFractionRemainder.lean:200:0: 'UnitFractionBounds.remove_repetitions' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionRemainder.lean:201:0: 'UnitFractionBounds.factorial_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionRemainder.lean:202:0: 'UnitFractionBounds.egyptian_length_factorial' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2822/2825] Built UnitFractionCompletion (2.5s)
+info: UnitFractionCompletion.lean:140:0: 'UnitFractionBounds.small_target_short' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionCompletion.lean:141:0: 'UnitFractionBounds.short_representation_of_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionCompletion.lean:142:0: 'UnitFractionBounds.representation_card_le_of_lcm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionCompletion.lean:143:0: 'UnitFractionBounds.log_le_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionCompletion.lean:144:0: 'UnitFractionBounds.lcm_dilation_le_factorial' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2824/2825] Built UnitFractionLimit (2.5s)
+info: UnitFractionLimit.lean:148:0: 'UnitFractionBounds.optimalMinimum_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionLimit.lean:149:0: 'UnitFractionBounds.optimalMinimum_lower_from_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionLimit.lean:150:0: 'UnitFractionBounds.optimalMinimum_eventual_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnitFractionLimit.lean:151:0: 'UnitFractionBounds.optimalMinimum_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2825 jobs).

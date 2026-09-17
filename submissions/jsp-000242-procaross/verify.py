@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compile and audit four modules; replay and optionally recheck with Nanoda.
+"""Compile and audit seven modules; replay and optionally recheck with Nanoda.
 Does not download or publish.
 """
 from __future__ import annotations
@@ -32,6 +32,14 @@ MODULES = {"UnitFractionBounds": [
     "prime_exclusion_by_certificate", "exclude_seven_up_to_twenty_one",
     "exclude_seventeen_up_to_sixty_eight",
     "first_prime_threshold_of_certificate", "first_seven_threshold", "first_seventeen_threshold",
+], "UnitFractionRemainder": [
+    "remove_repetitions", "factorial_expansion", "egyptian_length_factorial",
+], "UnitFractionCompletion": [
+    "small_target_short", "short_representation_of_envelope", "representation_card_le_of_lcm",
+    "log_le_envelope", "lcm_dilation_le_factorial",
+], "UnitFractionLimit": [
+    "optimalMinimum_blocks", "optimalMinimum_lower_from_blocks",
+    "optimalMinimum_eventual_lower", "optimalMinimum_tendsto",
 ]}
 DECLARATIONS = [name for names in MODULES.values() for name in names]
 ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
@@ -151,7 +159,9 @@ def main() -> int:
                 report["axioms"][name] = sorted(axioms)
             run("replay-" + module, [executables["leanchecker"], "--verbose", module])
         positive = build / "PositiveCertificate.lean"
-        positive.write_text("import UnitFractionAsymptotic\nimport UnitFractionPrimes\n"
+        positive.write_text("import UnitFractionLimit\nimport UnitFractionPrimes\n"
+                            "example : Filter.Tendsto (fun k : ℕ => (UnitFractionBounds.optimalMinimum k : ℝ) / k) Filter.atTop\n"
+                            "  (nhds (1 / (Real.exp 1 - 1))) := UnitFractionBounds.optimalMinimum_tendsto\n"
                             "example : UnitFractionBounds.possible 3 2 1 = true := by decide +kernel\n"
                             "example : UnitFractionBounds.possible 7 4 1 = false := by decide +kernel\n"
                             "example : UnitFractionBounds.optimalMinimum 3 = 2 := by decide +kernel\n"

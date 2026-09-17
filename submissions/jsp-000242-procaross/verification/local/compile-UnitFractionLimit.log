@@ -1,0 +1,4 @@
+'UnitFractionBounds.optimalMinimum_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnitFractionBounds.optimalMinimum_lower_from_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnitFractionBounds.optimalMinimum_eventual_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnitFractionBounds.optimalMinimum_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]

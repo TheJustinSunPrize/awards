@@ -1,0 +1,5 @@
+'UnitFractionBounds.small_target_short' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnitFractionBounds.short_representation_of_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnitFractionBounds.representation_card_le_of_lcm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnitFractionBounds.log_le_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnitFractionBounds.lcm_dilation_le_factorial' depends on axioms: [propext, Classical.choice, Quot.sound]

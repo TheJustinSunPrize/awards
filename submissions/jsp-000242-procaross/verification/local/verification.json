@@ -1,5 +1,5 @@
 {
-  "started_utc": "2026-09-17T10:26:30.795103+00:00",
+  "started_utc": "2026-09-17T11:10:53.289666+00:00",
   "status": "passed",
   "checks": [
     {
@@ -122,6 +122,87 @@
       "log_sha256": "9a18cd34a7302dd0698f096acc9c1d43071c31b55e517320da3784451458a5eb"
     },
     {
+      "name": "compile-UnitFractionRemainder",
+      "command": [
+        "lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "<RESULTS>/build/UnitFractionRemainder.olean",
+        "UnitFractionRemainder.lean"
+      ],
+      "exit_code": 0,
+      "expected_failure": false,
+      "log": "compile-UnitFractionRemainder.log",
+      "log_sha256": "9a483ef2f4b895fae06ce8dfc46e84b8f9209a658f005445d161679244174dc8"
+    },
+    {
+      "name": "replay-UnitFractionRemainder",
+      "command": [
+        "leanchecker",
+        "--verbose",
+        "UnitFractionRemainder"
+      ],
+      "exit_code": 0,
+      "expected_failure": false,
+      "log": "replay-UnitFractionRemainder.log",
+      "log_sha256": "23de6fe887e213e863e5bf44a2f8e98aad3b8023be431aaf747f2f42f08e00cd"
+    },
+    {
+      "name": "compile-UnitFractionCompletion",
+      "command": [
+        "lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "<RESULTS>/build/UnitFractionCompletion.olean",
+        "UnitFractionCompletion.lean"
+      ],
+      "exit_code": 0,
+      "expected_failure": false,
+      "log": "compile-UnitFractionCompletion.log",
+      "log_sha256": "23022f4dd48f748f9d4bb3383c1e45f4db2a5e7a0037c5f7182b181e30c6a4d1"
+    },
+    {
+      "name": "replay-UnitFractionCompletion",
+      "command": [
+        "leanchecker",
+        "--verbose",
+        "UnitFractionCompletion"
+      ],
+      "exit_code": 0,
+      "expected_failure": false,
+      "log": "replay-UnitFractionCompletion.log",
+      "log_sha256": "d0d0f1b87138079d09b24bfa47e09982883014346d08771d6504d6e04b140ddd"
+    },
+    {
+      "name": "compile-UnitFractionLimit",
+      "command": [
+        "lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "<RESULTS>/build/UnitFractionLimit.olean",
+        "UnitFractionLimit.lean"
+      ],
+      "exit_code": 0,
+      "expected_failure": false,
+      "log": "compile-UnitFractionLimit.log",
+      "log_sha256": "5c6da80d34bb6d950f034cc98f4afbb27fbb10cc884aa1faf7c76797fde5bf6a"
+    },
+    {
+      "name": "replay-UnitFractionLimit",
+      "command": [
+        "leanchecker",
+        "--verbose",
+        "UnitFractionLimit"
+      ],
+      "exit_code": 0,
+      "expected_failure": false,
+      "log": "replay-UnitFractionLimit.log",
+      "log_sha256": "be59d12ce2ed301da62a73b240bc5c7bb97f8f4e3b770ad63517f86b18ed27f4"
+    },
+    {
       "name": "positive-certificate",
       "command": [
         "lean",
@@ -162,6 +243,9 @@
         "UnitFractionOptimum",
         "UnitFractionAsymptotic",
         "UnitFractionPrimes",
+        "UnitFractionRemainder",
+        "UnitFractionCompletion",
+        "UnitFractionLimit",
         "--",
         "UnitFractionBounds.recips_le_envelope",
         "UnitFractionBounds.possible_of_rep",
@@ -201,7 +285,19 @@
         "UnitFractionBounds.exclude_seventeen_up_to_sixty_eight",
         "UnitFractionBounds.first_prime_threshold_of_certificate",
         "UnitFractionBounds.first_seven_threshold",
-        "UnitFractionBounds.first_seventeen_threshold"
+        "UnitFractionBounds.first_seventeen_threshold",
+        "UnitFractionBounds.remove_repetitions",
+        "UnitFractionBounds.factorial_expansion",
+        "UnitFractionBounds.egyptian_length_factorial",
+        "UnitFractionBounds.small_target_short",
+        "UnitFractionBounds.short_representation_of_envelope",
+        "UnitFractionBounds.representation_card_le_of_lcm",
+        "UnitFractionBounds.log_le_envelope",
+        "UnitFractionBounds.lcm_dilation_le_factorial",
+        "UnitFractionBounds.optimalMinimum_blocks",
+        "UnitFractionBounds.optimalMinimum_lower_from_blocks",
+        "UnitFractionBounds.optimalMinimum_eventual_lower",
+        "UnitFractionBounds.optimalMinimum_tendsto"
       ],
       "exit_code": 0,
       "expected_failure": false,
@@ -217,7 +313,7 @@
       "exit_code": 0,
       "expected_failure": false,
       "log": "nanoda.log",
-      "log_sha256": "ae1c2bb935d280bd7b65b0b4c061014f8c7e6d1edf3d8438e25efcda9a60629a"
+      "log_sha256": "998dee3245c589d2199e568263050bbf693f10cb175b350b457609eaec406e3f"
     },
     {
       "name": "external-control-compile",
@@ -266,7 +362,7 @@
       "exit_code": 101,
       "expected_failure": true,
       "log": "nanoda-negative-control.log",
-      "log_sha256": "2d0da3bac5c7cf98973af01b01fb40530516ef25a654175d383751c8bb57f7ad"
+      "log_sha256": "cde48c78e79348a993cb45588b2a31835950122ebd4d35065dd6b746eb1c54c4"
     }
   ],
   "axioms": {
@@ -464,6 +560,66 @@
       "Classical.choice",
       "Quot.sound",
       "propext"
+    ],
+    "UnitFractionBounds.remove_repetitions": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.factorial_expansion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.egyptian_length_factorial": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.small_target_short": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.short_representation_of_envelope": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.representation_card_le_of_lcm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.log_le_envelope": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.lcm_dilation_le_factorial": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.optimalMinimum_blocks": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.optimalMinimum_lower_from_blocks": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.optimalMinimum_eventual_lower": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.optimalMinimum_tendsto": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
     ]
   },
   "external_checker": {
@@ -524,12 +680,24 @@
       "UnitFractionBounds.exclude_seventeen_up_to_sixty_eight",
       "UnitFractionBounds.first_prime_threshold_of_certificate",
       "UnitFractionBounds.first_seven_threshold",
-      "UnitFractionBounds.first_seventeen_threshold"
+      "UnitFractionBounds.first_seventeen_threshold",
+      "UnitFractionBounds.remove_repetitions",
+      "UnitFractionBounds.factorial_expansion",
+      "UnitFractionBounds.egyptian_length_factorial",
+      "UnitFractionBounds.small_target_short",
+      "UnitFractionBounds.short_representation_of_envelope",
+      "UnitFractionBounds.representation_card_le_of_lcm",
+      "UnitFractionBounds.log_le_envelope",
+      "UnitFractionBounds.lcm_dilation_le_factorial",
+      "UnitFractionBounds.optimalMinimum_blocks",
+      "UnitFractionBounds.optimalMinimum_lower_from_blocks",
+      "UnitFractionBounds.optimalMinimum_eventual_lower",
+      "UnitFractionBounds.optimalMinimum_tendsto"
     ],
-    "sha256": "1c98fc4b8d7d78c6328515cc18118e894176f14cef9038cc500df06f5af6fad3",
-    "bytes": 151351934,
+    "sha256": "01fc575a9e19a3e3c7856f68d5eea40c6d2560e5e2977224a10ba4f1f3a15b1c",
+    "bytes": 163155421,
     "status": "passed",
-    "checked_declarations": 27862,
+    "checked_declarations": 29437,
     "exporter_binary_sha256": "ad235f7ce3177ea0de2b66316f06361aff890683264c94cb31e91a46eeda60a2",
     "nanoda_binary_sha256": "88b52d8c7cf003fd1440a2b6b3021db46014000ba8bccd4f35409a3e8757701c",
     "positive_control_sha256": "71fce1113ac14d24ea722692fdeae340442d969b77a529e9ef8bc7e726f1a988",
@@ -560,19 +728,25 @@
     "UnitFractionOptimum.lean": "f464d780837b035376a54cea46acd0f7ede8e84ff5517a54daa3ec0523f0814a",
     "UnitFractionAsymptotic.lean": "d15d183d98f13d68fc3819029356caf49fd7614f89790da0c1eb439fd355eeec",
     "UnitFractionPrimes.lean": "0345835053b0aad15a27766d33936955c89e9eeb7762b3af0c9c5dd9e3bac928",
-    "lakefile.lean": "3af71aa736ed286c954861219b3a7cc3da7e110677420b3c87fe4b48532c4885",
+    "UnitFractionRemainder.lean": "1498e00aed8d5db7fe1a47cf100a81e004e4858b615074d366bf290c63247a06",
+    "UnitFractionCompletion.lean": "b3012cf2cd16d0ca5abce34eb68a0b3588de3eaa73358828106fdda8f7cc281d",
+    "UnitFractionLimit.lean": "54c301368e5c287ad2838d1301f06a29a7169232eb847a5910fcfa0bcd35e441",
+    "lakefile.lean": "0b86facdb7e6a3af2e789c3e472b9a184df083fcd37846b4e947b9a0fb423eb6",
     "lake-manifest.json": "bab5934d7cf034d272282ff891e2cf61ba32c407833eebaa517ad89f084ecfff",
     "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
     "external-toolchain.json": "b6d6fd8c4d34acd731da766680c35016430d449a2fdbd9a80e378ff87c2873a7",
-    "verify.py": "76b3e8ce6fc97811957461cb54d1f468d67625aed6b69d82d130b4ae5cce50d2",
+    "verify.py": "cff6aebee6a61faf762950fb45941564d04f31039bb3fa00a3f394d9d0b7684b",
     "external_check.py": "c6186a09a0db6a88815f762af6c1cf7c285146418a1ee187506dcbf8c30ff415"
   },
   "object_sha256": {
     "UnitFractionBounds": "7d5c86dd4c421ff3f1e30e479a4f80d23b19d0de081fc1abee564bfc671962fd",
     "UnitFractionOptimum": "6b0793a70eb7b952b227e816ceef442f58d09689a6296924382f5f5918e8c145",
     "UnitFractionAsymptotic": "2cd70c57fdbf17652adf5338579d49af2708688e9573badbefab37ebe9106160",
-    "UnitFractionPrimes": "030c8c79fb27bcafd9e78a51b08f417530858abe3dc74d27f33986cac07016fc"
+    "UnitFractionPrimes": "030c8c79fb27bcafd9e78a51b08f417530858abe3dc74d27f33986cac07016fc",
+    "UnitFractionRemainder": "376755db3307a5aff6d67b17ba955d7a2ac20a708de2c140eb773f126bba3d10",
+    "UnitFractionCompletion": "e76d51fed6bff3adc18043ef9a367f365ff935582d09e58fa17367d9f3b1de87",
+    "UnitFractionLimit": "82aeddb0a6ee91f76ffee2758e06136064b93dcea3ed78a1da19fe57149d1244"
   },
   "mathlib_revision": "5ed2965256430c3649e86755f9576b54eca72435",
-  "finished_utc": "2026-09-17T10:27:34.731864+00:00"
+  "finished_utc": "2026-09-17T11:12:03.581577+00:00"
 }

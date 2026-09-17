@@ -108,3 +108,30 @@ semantic review, compilation, or independence check of that development.
 No third-party proof source was copied into the submitted modules. These
 comparisons support explicit overlap review; they do not establish first priority,
 novel mathematical results, or satisfaction of the prize's assessment criteria.
+
+## Complete asymptotic proof, 2026-09-17
+
+The current package now proves `B(k)/k → 1/(e-1)` for the attained extremum
+at every sufficiently large cardinality. The construction uses classical
+factorial expansions and duplicate removal, not Croot's short-interval theorem
+as a hypothesis. Mathematical novelty is not claimed.
+
+[Updated search record](dedup-limit.json) retains fresh all-state PR queries for
+`JSP-000242`, factorial/fraction terms, and the smallest-denominator phrase.
+The exact catalog query returns only this PR. This is an indexed search result,
+not proof of first-formalization priority.
+
+[PR #271](https://github.com/TheJustinSunPrize/awards/pull/271), at
+`ea6deab95a19f29705cba2bb9bcec34194e4ece3`, was rechecked via its PR description
+and file inventory. It explicitly claims only the Erdős–Straus lower bound on
+the number of terms, and excludes the constructive upper bound and closure of
+the second-order question JSP-000251. Our harmonic upper-bound argument overlaps
+with that classical inequality in the reciprocal optimization formulation.
+The new construction supplies the matching first-order lower bound for B(k).
+It does not answer whether the second-order difference for JSP-000251 diverges.
+No source from #271 was copied, and its complete proof was not rebuilt here.
+
+The factorial route is attributed to Erdős (1950); the duplicate-removal
+principle and padding identities are classical. The new Lean source was written
+for this submission using pinned Mathlib lemmas. The absence of a matching
+result in the bounded searches does not establish originality or award priority.
