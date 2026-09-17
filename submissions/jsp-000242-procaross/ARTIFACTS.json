@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "note": "Self-excluding manifest bound by the containing Git commit. Full exports are reproducible but not included.",
+  "note": "Self-excluding manifest bound by the containing Git commit. Full exports are separately archived and reproducible, but not included in Git.",
   "files": [
     {
       "path": ".gitignore",
@@ -14,8 +14,8 @@
     },
     {
       "path": "EXTERNAL-VERIFICATION.md",
-      "bytes": 4972,
-      "sha256": "b426586cbc3e50cf8cb7b662aa0082a27c80a280da4ab3255087b9489fa29eba"
+      "bytes": 5104,
+      "sha256": "1892a7c095eee91aaa54253673ea20bced615fa4aef6774680c687d62540586c"
     },
     {
       "path": "LICENSE",
@@ -28,9 +28,14 @@
       "sha256": "6c98b40a4413e92debe84e34d136556b592c251f59e55e5638b5390a6b5fec0f"
     },
     {
+      "path": "OFFLINE-VERIFICATION.md",
+      "bytes": 3364,
+      "sha256": "b4f5e338d7c9e9b9fe8c71286a237be6b6869c5d158a6ddd7b3bccd526b0073a"
+    },
+    {
       "path": "README.md",
-      "bytes": 13476,
-      "sha256": "69f68dc244cb391f464f787482ab203a3b5bd5f51bc40cace4d44710fcbf8cd5"
+      "bytes": 13784,
+      "sha256": "f93d867fa5a05b2eddb041790735e9486bc39bab37d983cc579d59942b005344"
     },
     {
       "path": "UnitFractionAsymptotic.lean",
@@ -106,6 +111,11 @@
       "path": "lean-toolchain",
       "bytes": 25,
       "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632"
+    },
+    {
+      "path": "offline_check.py",
+      "bytes": 5254,
+      "sha256": "caf5e9698e426e5e2f731ad78949a6388eb3ea85fe6f33373950638f1382c8b7"
     },
     {
       "path": "source-pins.json",
@@ -246,6 +256,41 @@
       "path": "verification/local/verification.json",
       "bytes": 24347,
       "sha256": "ac80de7d6969a5a4e59e84492d63a063b0c8f2aa6b2eefcaaf45a353cfdaddd5"
+    },
+    {
+      "path": "verification/offline/integrity-control.json",
+      "bytes": 121,
+      "sha256": "5aceb9d400bee66310c2550abf36ad7af76e7741c4cae6c9aed6519b7fbcf401"
+    },
+    {
+      "path": "verification/offline/isolation-evidence.json",
+      "bytes": 1484,
+      "sha256": "f758908330e668f7d8355bceb82f40bb0a0fbdeca5c0a5388ea0e83721c52906"
+    },
+    {
+      "path": "verification/offline/negative-control.log",
+      "bytes": 302,
+      "sha256": "ce664c4c738be6215e37d4684a5b720ab6f46cf4f0e4b51328b091825e6a4ac2"
+    },
+    {
+      "path": "verification/offline/network-probe.json",
+      "bytes": 290,
+      "sha256": "a3da4169ec00435c809590fd7f132d9e8052bf3712e562aeaaf5b99293fac126"
+    },
+    {
+      "path": "verification/offline/offline-report.json",
+      "bytes": 2039,
+      "sha256": "7d7d7d9c7ddc01c1f375972c584f22a7e8a79516b68d40f9f2fa35fe1c5f4c67"
+    },
+    {
+      "path": "verification/offline/positive-control.log",
+      "bytes": 38,
+      "sha256": "ed07365a85540865ce924a89ee71c44c7c54770e0d61841dcd36d2878b95f080"
+    },
+    {
+      "path": "verification/offline/proof.log",
+      "bytes": 42,
+      "sha256": "998dee3245c589d2199e568263050bbf693f10cb175b350b457609eaec406e3f"
     },
     {
       "path": "verify.py",

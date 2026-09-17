@@ -259,6 +259,11 @@ foundational axioms. It still depends on the exporter, compilers, hardware, and
 axioms. These are contributor-run checks on one host, not independent human review,
 network-isolated organizer verification, or a prize decision.
 
+The separately distributed [offline review kit](OFFLINE-VERIFICATION.md) includes
+the exact full export and true/false controls. It passed a check from a fresh
+archive extraction with OS network access denied. This is additional
+contributor-run reproduction evidence; official verification remains pending.
+
 Source licensing: [Apache 2.0](LICENSE). Dependencies retain their original
 licenses and attribution. Generated objects, caches, and full exports are not
 committed to this source package.

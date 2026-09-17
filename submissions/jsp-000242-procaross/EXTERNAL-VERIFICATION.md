@@ -88,6 +88,8 @@ not independently administered human review, network-isolated organizer
 verification, or a finding of novelty, first priority, or award eligibility.
 
 The source and compact evidence are versioned in Git. Large generated exports
-are excluded from the Git source package. The full NDJSON export is not published with this update; the verifier regenerates
-it from the pinned source and the report records its checksum and size. No
-independently administered permanent archive is claimed.
+are excluded from the Git source package. The exact full NDJSON export is now
+available in the separately archived [offline review kit](OFFLINE-VERIFICATION.md),
+which passed a fresh-extraction check under an OS network-denial policy.
+The verifier can also regenerate the export from the pinned source. No
+independently administered permanent archive or organizer verification is claimed.

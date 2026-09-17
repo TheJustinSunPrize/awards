@@ -1,0 +1,14 @@
+{
+  "profile": "(version 1) (allow default) (deny network*)",
+  "control": {
+    "exit_code": 0,
+    "stdout": "connection allowed\n",
+    "stderr": ""
+  },
+  "blocked": {
+    "exit_code": 88,
+    "stdout": "connection denied: PermissionError 1\n",
+    "stderr": ""
+  },
+  "passed": true
+}
