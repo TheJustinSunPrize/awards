@@ -1,0 +1,23 @@
+{
+  "export_file_path": "evidence/export.ndjson",
+  "use_stdin": false,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unpermitted_axiom_hard_error": true,
+  "nat_extension": true,
+  "string_extension": true,
+  "pp_declars": [
+    "JSP000883.Admissible",
+    "JSP000883.n",
+    "JSP000883.factorial_multiple_admissible",
+    "JSP000883.infinitely_many_starting_points",
+    "Erdos1063.erdos_1063.variants.monier_upper_bound",
+    "Erdos1063.original_least_is_admissible"
+  ],
+  "pp_output_path": "evidence/nanoda-statements.txt",
+  "pp_to_stdout": false,
+  "print_success_message": true
+}

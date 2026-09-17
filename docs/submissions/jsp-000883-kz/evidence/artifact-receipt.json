@@ -1,0 +1,36 @@
+{
+  "artifact_id": 10478082980,
+  "run_id": 35174825512,
+  "proof_commit": "d951a581d98d209c168ec4066af97df52a7a9498",
+  "downloaded_size_bytes": 4046754,
+  "downloaded_sha256": "4c8f827bc74dfdaa72dfa2f75e28b21d28db7954195703033e658cb1218755b1",
+  "expires_at": "2026-12-16T02:32:45Z",
+  "tested_source_files_compared": [
+    "Compatibility.lean",
+    "JSP000883.lean",
+    "Audit.lean",
+    "scripts/verify.sh",
+    "scripts/verify_nanoda.sh",
+    "README.md",
+    "lakefile.lean",
+    "lake-manifest.json",
+    "lean-toolchain",
+    "LICENSE"
+  ],
+  "retained_original_files": [
+    "ARCHIVE_SHA256",
+    "SOURCE_COMMIT",
+    "CHECKER_SHA256SUMS",
+    "axioms.log",
+    "build.log",
+    "kernel-Audit.log",
+    "kernel-Compatibility.log",
+    "kernel-JSP000883.log",
+    "nanoda-config.json",
+    "nanoda-build.log",
+    "nanoda-statements.txt",
+    "nanoda.log",
+    "negative-control.log"
+  ],
+  "large_export_and_archive": "Available in the linked full CI artifact; not copied into this compact package."
+}
