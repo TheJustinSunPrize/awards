@@ -1,0 +1,20 @@
+Excerpt from public job 105045364631, run 35171971482.
+Selected proof-checking and artifact-upload lines; this is not the complete job log.
+
+2026-09-17T01:50:35.5970081Z ✔ [3092/3093] Built JSP000017 (4.4s)
+2026-09-17T01:50:35.6033873Z Build completed successfully (3093 jobs).
+2026-09-17T01:50:47.0906125Z 'JSP000017.two_real_speeds' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:50:47.0917585Z 'JSP000017.three_runners' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:50:47.0918744Z 'JSP000017.three_runners_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:50:47.0919813Z 'JSP000017.doubling_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:50:47.0920870Z 'JSP000017.doubling_speeds' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:50:47.0921707Z 'JSP000017.doubling_real_speeds' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:50:47.0922482Z 'JSP000017.doubling_relative_to_runner' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:50:47.0923253Z 'JSP000017.doubling_runners' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:50:47.2769373Z All eight axiom audits and all actual dependency revisions passed.
+2026-09-17T01:50:50.3755457Z https://github.com/leanprover/lean4export.git 6cea97789dc088ea47fcea15692db85685aedac5
+2026-09-17T01:50:50.7913331Z https://github.com/ammkrn/nanoda_lib.git 4c544ed4099c8227f07d5de77ad1e69fb0740a27
+2026-09-17T01:51:26.7787612Z Checked 13647 declarations with no errors
+2026-09-17T01:51:29.5574095Z SHA256 digest of uploaded artifact zip is 8172795267b73a1adc7e6e12093de4708e8ad17526d1fc9c0264d36e20bcbe71
+2026-09-17T01:51:29.7683317Z Artifact jsp-000017-evidence has been successfully uploaded! Final size is 8775996 bytes. Artifact ID is 10476873166
+2026-09-17T01:51:29.7690081Z Artifact download URL: https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35171971482/artifacts/10476873166

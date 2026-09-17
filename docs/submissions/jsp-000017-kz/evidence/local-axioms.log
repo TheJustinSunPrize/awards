@@ -1,0 +1,27 @@
+'JSP000017.two_real_speeds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000017.three_runners' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000017.three_runners_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000017.doubling_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000017.doubling_speeds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000017.doubling_real_speeds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000017.doubling_relative_to_runner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000017.doubling_runners' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP000017.two_real_speeds {a b : ℝ} (ha : a ≠ 0) (hb : b ≠ 0) : ∃ t, 0 < t ∧ 1 / 3 ≤ ‖↑(t * a)‖ ∧ 1 / 3 ≤ ‖↑(t * b)‖
+JSP000017.three_runners (speed : Fin 3 ↪ ℝ) (r : Fin 3) :
+  ∃ t, 0 < t ∧ ∀ (s : Fin 3), s ≠ r → 1 / 3 ≤ dist ↑(t * speed r) ↑(t * speed s)
+JSP000017.three_runners_spec (speed : Fin 3 ↪ ℝ) (lonely : Fin 3 → ℝ → Prop)
+  (lonely_def : ∀ (r : Fin 3) (t : ℝ), lonely r t ↔ ∀ (s : Fin 3), s ≠ r → dist ↑(t * speed r) ↑(t * speed s) ≥ 1 / 3)
+  (r : Fin 3) : ∃ t ≥ 0, lonely r t
+JSP000017.doubling_band (v : ℕ → ℝ) (δ : ℝ) (hδ : 0 < δ) (m k : ℕ) (hk : k ≤ m) (hsmall : (↑m + 2) * δ ≤ 1)
+  (hv : ∀ i ≤ k, 0 < v i) (hgap : ∀ i < k, 2 * v i ≤ v (i + 1)) :
+  ∃ l u, 0 < l ∧ l ≤ u ∧ (u - l) * v k = (↑m - ↑k) * δ ∧ ∀ i ≤ k, ∀ (t : ℝ), l ≤ t → t ≤ u → JSP000017.Safe δ (t * v i)
+JSP000017.doubling_speeds (v : ℕ → ℝ) (m : ℕ) (hv : ∀ i ≤ m, 0 < v i) (hgap : ∀ i < m, 2 * v i ≤ v (i + 1)) :
+  ∃ t, 0 < t ∧ ∀ i ≤ m, 1 / (↑m + 2) ≤ ‖↑(t * v i)‖
+JSP000017.doubling_real_speeds (v : ℕ → ℝ) (m : ℕ) (hv : ∀ i ≤ m, v i ≠ 0) (hgap : ∀ i < m, 2 * |v i| ≤ |v (i + 1)|) :
+  ∃ t, 0 < t ∧ ∀ i ≤ m, 1 / (↑m + 2) ≤ ‖↑(t * v i)‖
+JSP000017.doubling_relative_to_runner (v₀ : ℝ) (v : ℕ → ℝ) (m : ℕ) (hv : ∀ i ≤ m, v i ≠ v₀)
+  (hgap : ∀ i < m, 2 * |v i - v₀| ≤ |v (i + 1) - v₀|) : ∃ t, 0 < t ∧ ∀ i ≤ m, 1 / (↑m + 2) ≤ dist ↑(t * v i) ↑(t * v₀)
+JSP000017.doubling_runners (m : ℕ) (speed : Fin (m + 2) ↪ ℝ) (r : Fin (m + 2)) (other : ℕ → Fin (m + 2))
+  (hother : ∀ i ≤ m, other i ≠ r) (hcover : ∀ (s : Fin (m + 2)), s ≠ r → ∃ i ≤ m, other i = s)
+  (hgap : ∀ i < m, 2 * |speed (other i) - speed r| ≤ |speed (other (i + 1)) - speed r|) :
+  ∃ t, 0 < t ∧ ∀ (s : Fin (m + 2)), s ≠ r → 1 / (↑m + 2) ≤ dist ↑(t * speed r) ↑(t * speed s)
