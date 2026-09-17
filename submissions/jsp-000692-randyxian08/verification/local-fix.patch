@@ -1,7 +1,0 @@
---- original/JSP692/AlonCore.lean
-+++ verified/JSP692/AlonCore.lean
-@@ -104,2 +104,2 @@
--    (insert (Sum.inr y) (liftCore s)).card = s.card + 1 := by
--  have hy : Sum.inr y ∉ liftCore s := by simp [liftCore]
-+    (insert (Sum.inr y) (liftCore (Y := Y) s)).card = s.card + 1 := by
-+  have hy : Sum.inr y ∉ liftCore (Y := Y) s := by simp [liftCore]
