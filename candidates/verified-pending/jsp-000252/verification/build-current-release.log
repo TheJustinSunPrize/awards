@@ -1,0 +1,6 @@
+JSP-252 build log
+command: lake env lean Jsp252.lean
+status: SUCCESS (exit 0)
+theorems: Jsp252.rep_236/rep_23824/rep_23918/rep_231015/rep_24520/rep_24612/at_least_six_subsets
+six subsets of [1,30] with reciprocal sum 1
+toolchain: Lean 4.34.0, mathlib 5ed2965256430c3649e86755f9576b54eca72435
