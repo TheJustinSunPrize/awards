@@ -1,0 +1,3 @@
+PASS: every subset-sum cardinality for N=0,...,40 (41 intervals)
+PASS: boundary witnesses for t=2,...,30 (29 intervals)
+Finite diagnostic only; no claim of universal proof from enumeration
