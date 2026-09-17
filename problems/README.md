@@ -395,7 +395,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000304 | [How large a prime factor must the product of two consecutive positive integers have?](catalog-0301-0400.md#JSP-000304) | Progress | No | No | Unavailable |
 | JSP-000305 | [Are there arbitrarily long runs of consecutive integers whose prime factors all lie below the specified bound?](catalog-0301-0400.md#JSP-000305) | Solved | Yes | Yes | Unclaimed |
 | JSP-000306 | [What is the density of integers whose largest prime factor is smaller than that of the next integer?](catalog-0301-0400.md#JSP-000306) | Progress | No | No | Unavailable |
-| JSP-000307 | [Can three consecutive integers have strictly decreasing largest prime factors?](catalog-0301-0400.md#JSP-000307) | Solved | No | No | Unavailable |
+| JSP-000307 | [Are there infinitely many triples of consecutive integers with strictly decreasing largest prime factors?](catalog-0301-0400.md#JSP-000307) | Solved | No | No | Unavailable |
 | JSP-000308 | [Under the stated restrictions, are there only finitely many factorials equal to products of smaller factorials?](catalog-0301-0400.md#JSP-000308) | Progress | No | No | Unavailable |
 | JSP-000309 | [How many factorials are needed to obtain a square product, and how is this minimum distributed?](catalog-0301-0400.md#JSP-000309) | Open | No | No | Unavailable |
 | JSP-000310 | [Can distinct prime divisors be assigned to the terms of every run of consecutive composite integers?](catalog-0301-0400.md#JSP-000310) | Open | No | No | Unavailable |
@@ -696,7 +696,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000595 | [Can the square of a factorial with index slightly above a reference value divide the factorial of twice that reference value?](catalog-0501-0600.md#JSP-000595) | Progress | No | No | Unavailable |
 | JSP-000596 | [If one product of two factorials divides another, how far apart can the sums of their indices be?](catalog-0501-0600.md#JSP-000596) | Solved | Yes | Yes | Unclaimed |
 | JSP-000597 | [What restrictions on factorial indices follow when the reduced denominator of their ratio has only small prime factors?](catalog-0501-0600.md#JSP-000597) | Solved | Yes | Yes | Unclaimed |
-| JSP-000598 | [Can two distinct central binomial coefficients have exactly the same prime divisors?](catalog-0501-0600.md#JSP-000598) | Solved | No | No | Unavailable |
+| JSP-000598 | [Are there infinitely many pairs of distinct central binomial coefficients with exactly the same prime divisors?](catalog-0501-0600.md#JSP-000598) | Solved | No | No | Unavailable |
 | JSP-000599 | [How large is the smallest positive integer not dividing a central binomial coefficient, typically?](catalog-0501-0600.md#JSP-000599) | Open | No | No | Unavailable |
 | JSP-000600 | [Which prescribed block-size sequences admit a pairwise balanced design in which every pair occurs exactly once?](catalog-0501-0600.md#JSP-000600) | Solved | No | No | Unavailable |
 
@@ -1063,7 +1063,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000942 | [What is the limiting ratio of the product of consecutive prime gaps to the square of the specified maximum gap?](catalog-0901-1000.md#JSP-000942) | Open | No | No | Unavailable |
 | JSP-000943 | [How are prime counts and local distributions governed in intervals comparable in length to the largest prime gap?](catalog-0901-1000.md#JSP-000943) | Solved | Yes | Yes | Unclaimed |
 | JSP-000944 | [Among integers with at most two prime factors, are normalized consecutive gaps unbounded?](catalog-0901-1000.md#JSP-000944) | Open | No | No | Unavailable |
-| JSP-000945 | [Is there an integer whose differences from twice every permitted smaller square are all prime?](catalog-0901-1000.md#JSP-000945) | Solved | No | No | Unavailable |
+| JSP-000945 | [Are there infinitely many integers whose differences from twice every permitted smaller square are all prime?](catalog-0901-1000.md#JSP-000945) | Solved | No | No | Unavailable |
 | JSP-000946 | [Is there an integer whose differences from every sufficiently small square coprime to it are all prime?](catalog-0901-1000.md#JSP-000946) | Solved | Yes | Yes | Unclaimed |
 | JSP-000947 | [Is there an integer whose differences from every permitted smaller power of two are all prime?](catalog-0901-1000.md#JSP-000947) | Progress | No | No | Unavailable |
 | JSP-000948 | [How many multiples of primes from a specified set are guaranteed in every given short integer interval?](catalog-0901-1000.md#JSP-000948) | Open | No | No | Unavailable |
