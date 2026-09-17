@@ -1,60 +1,74 @@
 {
   "source": "Erdos700/Bounds.lean",
-  "source_sha256": "d8b9d77e16591bd8b882e4021f50f839a4f0e11ac963666058ace2d28092d969",
-  "hypotheses": "a>=1, b>=3a, c>=3b+1",
-  "substitution": "a=x+1, b=3a+y, c=3b+1+z; x,y,z>=0",
+  "source_sha256": "48210f2c367b3b929d94ef75819c4d1d1118f2e129387ae0cabe365d95d04ff2",
+  "hypotheses": "a>=1, b>=3a, c>=3b-a+1",
+  "substitution": "a=x+1, b=3a+y, c=3b-a+1+z; x,y,z>=0",
   "certificate_count": 33,
+  "strict_certificate_count": 32,
+  "nonnegative_certificate_count": 1,
   "all_checks_passed": true,
   "certificates": [
     {
-      "name": "c_at_least_10",
-      "source_expression": "c - 9",
-      "positive_constant": 1,
+      "name": "c_at_least_9",
+      "source_expression": "c - 8",
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 1,
       "number_of_monomials": 4,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "9 * x + 3 * y + z + 1"
+      "generated_lean_rhs": "8 * x + 3 * y + z + 1"
     },
     {
       "name": "T1_positive",
       "source_expression": "3 * a ^ 2 - 2 * a * (b + c) + b * c",
-      "positive_constant": 7,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 6,
       "number_of_monomials": 9,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "6 * x ^ 2 + 10 * x * y + x * z + 13 * x + 3 * y ^ 2 + y * z + 11 * y + z + 7"
+      "generated_lean_rhs": "5 * x ^ 2 + 9 * x * y + x * z + 11 * x + 3 * y ^ 2 + y * z + 10 * y + z + 6"
     },
     {
       "name": "T1_less_than_bc",
       "source_expression": "-3 * a ^ 2 + 2 * a * (b + c)",
-      "positive_constant": 23,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 21,
       "number_of_monomials": 7,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "21 * x ^ 2 + 8 * x * y + 2 * x * z + 44 * x + 8 * y + 2 * z + 23"
+      "generated_lean_rhs": "19 * x ^ 2 + 8 * x * y + 2 * x * z + 40 * x + 8 * y + 2 * z + 21"
     },
     {
       "name": "S1_positive",
       "source_expression": "-3 * a + b + c",
-      "positive_constant": 10,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 9,
       "number_of_monomials": 4,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "9 * x + 4 * y + z + 10"
+      "generated_lean_rhs": "8 * x + 4 * y + z + 9"
     },
     {
-      "name": "R_greater_than_one",
+      "name": "R_at_least_one",
       "source_expression": "a - 3 * b + c - 1",
-      "positive_constant": 1,
-      "number_of_monomials": 3,
+      "conclusion_relation": "0 \u2264 expression",
+      "strictly_positive": false,
+      "constant_term": 0,
+      "number_of_monomials": 1,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "x + z + 1"
+      "generated_lean_rhs": "z"
     },
     {
       "name": "R_less_than_c",
       "source_expression": "-a + 3 * b",
-      "positive_constant": 8,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 8,
       "number_of_monomials": 3,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
@@ -63,97 +77,119 @@
     {
       "name": "B_positive",
       "source_expression": "2 * a * b - 3 * b ^ 2 + c * (-a + 2 * b)",
-      "positive_constant": 29,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 24,
       "number_of_monomials": 9,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "24 * x ^ 2 + 17 * x * y + 5 * x * z + 53 * x + 3 * y ^ 2 + 2 * y * z + 19 * y + 5 * z + 29"
+      "generated_lean_rhs": "19 * x ^ 2 + 15 * x * y + 5 * x * z + 43 * x + 3 * y ^ 2 + 2 * y * z + 17 * y + 5 * z + 24"
     },
     {
       "name": "B_less_than_2bc",
       "source_expression": "-2 * a * b + 3 * b ^ 2 + 2 * b * c - c * (-a + 2 * b)",
-      "positive_constant": 31,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 30,
       "number_of_monomials": 8,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "30 * x ^ 2 + 19 * x * y + x * z + 61 * x + 3 * y ^ 2 + 19 * y + z + 31"
+      "generated_lean_rhs": "29 * x ^ 2 + 19 * x * y + x * z + 59 * x + 3 * y ^ 2 + 19 * y + z + 30"
     },
     {
       "name": "U_positive",
       "source_expression": "a * b + 3 * c ^ 2 - 2 * c * (a + b)",
-      "positive_constant": 223,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 174,
       "number_of_monomials": 10,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "174 * x ^ 2 + 121 * x * y + 46 * x * z + 394 * x + 21 * y ^ 2 + 16 * y * z + 137 * y + 3 * z ^ 2 + 52 * z + 223"
+      "generated_lean_rhs": "131 * x ^ 2 + 105 * x * y + 40 * x * z + 302 * x + 21 * y ^ 2 + 16 * y * z + 121 * y + 3 * z ^ 2 + 46 * z + 174"
     },
     {
       "name": "U_less_than_3c_squared",
       "source_expression": "-a * b + 2 * c * (a + b)",
-      "positive_constant": 77,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 69,
       "number_of_monomials": 9,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "69 * x ^ 2 + 41 * x * y + 8 * x * z + 146 * x + 6 * y ^ 2 + 2 * y * z + 43 * y + 8 * z + 77"
+      "generated_lean_rhs": "61 * x ^ 2 + 39 * x * y + 8 * x * z + 130 * x + 6 * y ^ 2 + 2 * y * z + 41 * y + 8 * z + 69"
     },
     {
       "name": "c_greater_than_a_plus_b",
       "source_expression": "-a - b + c",
-      "positive_constant": 6,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 5,
       "number_of_monomials": 4,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "5 * x + 2 * y + z + 6"
+      "generated_lean_rhs": "4 * x + 2 * y + z + 5"
     },
     {
       "name": "L_less_c_squared",
       "source_expression": "c ^ 2 - b * (b - a)",
-      "positive_constant": 94,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 75,
       "number_of_monomials": 10,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "75 * x ^ 2 + 49 * x * y + 18 * x * z + 168 * x + 8 * y ^ 2 + 6 * y * z + 55 * y + z ^ 2 + 20 * z + 94"
+      "generated_lean_rhs": "58 * x ^ 2 + 43 * x * y + 16 * x * z + 132 * x + 8 * y ^ 2 + 6 * y * z + 49 * y + z ^ 2 + 18 * z + 75"
     },
     {
       "name": "p1_to_p2_h0_gap",
       "source_expression": "2 * a * b - 3 * b ^ 2 + c * (-a + 2 * b) - (-2 * a + 2 * b) * (a - 3 * b + c)",
-      "positive_constant": 21,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 20,
       "number_of_monomials": 8,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "20 * x ^ 2 + 15 * x * y + x * z + 41 * x + 3 * y ^ 2 + 15 * y + z + 21"
+      "generated_lean_rhs": "19 * x ^ 2 + 15 * x * y + x * z + 39 * x + 3 * y ^ 2 + 15 * y + z + 20"
     },
     {
       "name": "p1_to_p3_low_gap",
       "source_expression": "(-a + c) * (3 * a - 2 * b + c)",
-      "positive_constant": 63,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 48,
       "number_of_monomials": 10,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "48 * x ^ 2 + 26 * x * y + 14 * x * z + 110 * x + 3 * y ^ 2 + 4 * y * z + 30 * y + z ^ 2 + 16 * z + 63"
+      "generated_lean_rhs": "35 * x ^ 2 + 22 * x * y + 12 * x * z + 82 * x + 3 * y ^ 2 + 4 * y * z + 26 * y + z ^ 2 + 14 * z + 48"
     },
     {
       "name": "p0_to_p3_low_gap",
       "source_expression": "-a * b * c + c * (-a + c) * (-b + c)",
-      "positive_constant": 600,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 405,
       "number_of_monomials": 20,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "405 * x ^ 3 + 432 * x ^ 2 * y + 171 * x ^ 2 * z + 1386 * x ^ 2 + 153 * x * y ^ 2 + 120 * x * y * z + 984 * x * y + 23 * x * z ^ 2 + 388 * x * z + 1580 * x + 18 * y ^ 3 + 21 * y ^ 2 * z + 174 * y ^ 2 + 8 * y * z ^ 2 + 136 * y * z + 560 * y + z ^ 3 + 26 * z ^ 2 + 220 * z + 600"
+      "generated_lean_rhs": "256 * x ^ 3 + 320 * x ^ 2 * y + 128 * x ^ 2 * z + 896 * x ^ 2 + 132 * x * y ^ 2 + 104 * x * y * z + 744 * x * y + 20 * x * z ^ 2 + 296 * x * z + 1044 * x + 18 * y ^ 3 + 21 * y ^ 2 * z + 153 * y ^ 2 + 8 * y * z ^ 2 + 120 * y * z + 432 * y + z ^ 3 + 23 * z ^ 2 + 171 * z + 405"
     },
     {
       "name": "p2_to_p3_low_gap",
       "source_expression": "-b * (-a + b) + c * (-a + c)",
-      "positive_constant": 84,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 66,
       "number_of_monomials": 10,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "66 * x ^ 2 + 46 * x * y + 17 * x * z + 149 * x + 8 * y ^ 2 + 6 * y * z + 52 * y + z ^ 2 + 19 * z + 84"
+      "generated_lean_rhs": "50 * x ^ 2 + 40 * x * y + 15 * x * z + 115 * x + 8 * y ^ 2 + 6 * y * z + 46 * y + z ^ 2 + 17 * z + 66"
     },
     {
       "name": "a_less_b",
       "source_expression": "-a + b",
-      "positive_constant": 2,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 2,
       "number_of_monomials": 3,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
@@ -162,88 +198,108 @@
     {
       "name": "b_less_c",
       "source_expression": "-b + c",
-      "positive_constant": 7,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 6,
       "number_of_monomials": 4,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "6 * x + 2 * y + z + 7"
+      "generated_lean_rhs": "5 * x + 2 * y + z + 6"
     },
     {
       "name": "S_positive",
       "source_expression": "a + b + c",
-      "positive_constant": 14,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 13,
       "number_of_monomials": 4,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "13 * x + 4 * y + z + 14"
+      "generated_lean_rhs": "12 * x + 4 * y + z + 13"
     },
     {
       "name": "S_less_3c",
       "source_expression": "-a - b + 2 * c",
-      "positive_constant": 16,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 14,
       "number_of_monomials": 4,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "14 * x + 5 * y + 2 * z + 16"
+      "generated_lean_rhs": "12 * x + 5 * y + 2 * z + 14"
     },
     {
       "name": "T_positive",
       "source_expression": "a * b + a * c + b * c",
-      "positive_constant": 43,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 39,
       "number_of_monomials": 9,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "39 * x ^ 2 + 22 * x * y + 4 * x * z + 82 * x + 3 * y ^ 2 + y * z + 23 * y + 4 * z + 43"
+      "generated_lean_rhs": "35 * x ^ 2 + 21 * x * y + 4 * x * z + 74 * x + 3 * y ^ 2 + y * z + 22 * y + 4 * z + 39"
     },
     {
       "name": "T_less_3c_squared",
       "source_expression": "-a * b - a * c - b * c + 3 * c ^ 2",
-      "positive_constant": 257,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 204,
       "number_of_monomials": 10,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "204 * x ^ 2 + 140 * x * y + 50 * x * z + 458 * x + 24 * y ^ 2 + 17 * y * z + 157 * y + 3 * z ^ 2 + 56 * z + 257"
+      "generated_lean_rhs": "157 * x ^ 2 + 123 * x * y + 44 * x * z + 358 * x + 24 * y ^ 2 + 17 * y * z + 140 * y + 3 * z ^ 2 + 50 * z + 204"
     },
     {
       "name": "Z_positive",
       "source_expression": "a * b * c",
-      "positive_constant": 30,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 27,
       "number_of_monomials": 14,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "27 * x ^ 3 + 18 * x ^ 2 * y + 3 * x ^ 2 * z + 84 * x ^ 2 + 3 * x * y ^ 2 + x * y * z + 37 * x * y + 6 * x * z + 87 * x + 3 * y ^ 2 + y * z + 19 * y + 3 * z + 30"
+      "generated_lean_rhs": "24 * x ^ 3 + 17 * x ^ 2 * y + 3 * x ^ 2 * z + 75 * x ^ 2 + 3 * x * y ^ 2 + x * y * z + 35 * x * y + 6 * x * z + 78 * x + 3 * y ^ 2 + y * z + 18 * y + 3 * z + 27"
     },
     {
       "name": "Z_less_c_cubed",
       "source_expression": "-a * b * c + c ^ 3",
-      "positive_constant": 970,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 702,
       "number_of_monomials": 20,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "702 * x ^ 3 + 711 * x ^ 2 * y + 240 * x ^ 2 * z + 2346 * x ^ 2 + 240 * x * y ^ 2 + 161 * x * y * z + 1583 * x * y + 27 * x * z ^ 2 + 534 * x * z + 2613 * x + 27 * y ^ 3 + 27 * y ^ 2 * z + 267 * y ^ 2 + 9 * y * z ^ 2 + 179 * y * z + 881 * y + z ^ 3 + 30 * z ^ 2 + 297 * z + 970"
+      "generated_lean_rhs": "488 * x ^ 3 + 559 * x ^ 2 * y + 189 * x ^ 2 * z + 1653 * x ^ 2 + 213 * x * y ^ 2 + 143 * x * y * z + 1261 * x * y + 24 * x * z ^ 2 + 426 * x * z + 1866 * x + 27 * y ^ 3 + 27 * y ^ 2 * z + 240 * y ^ 2 + 9 * y * z ^ 2 + 161 * y * z + 711 * y + z ^ 3 + 27 * z ^ 2 + 240 * z + 702"
     },
     {
       "name": "S1_less_2c",
       "source_expression": "3 * a - b + c",
-      "positive_constant": 10,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 9,
       "number_of_monomials": 4,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "9 * x + 2 * y + z + 10"
+      "generated_lean_rhs": "8 * x + 2 * y + z + 9"
     },
     {
       "name": "D_positive",
       "source_expression": "-a - b + 3 * c",
-      "positive_constant": 26,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 23,
       "number_of_monomials": 4,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "23 * x + 8 * y + 3 * z + 26"
+      "generated_lean_rhs": "20 * x + 8 * y + 3 * z + 23"
     },
     {
       "name": "D_less_3c",
       "source_expression": "a + b",
-      "positive_constant": 4,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 4,
       "number_of_monomials": 3,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
@@ -252,56 +308,68 @@
     {
       "name": "A_positive",
       "source_expression": "a * (-a + b) * (-a + c)",
-      "positive_constant": 18,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 16,
       "number_of_monomials": 14,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "16 * x ^ 3 + 14 * x ^ 2 * y + 2 * x ^ 2 * z + 50 * x ^ 2 + 3 * x * y ^ 2 + x * y * z + 29 * x * y + 4 * x * z + 52 * x + 3 * y ^ 2 + y * z + 15 * y + 2 * z + 18"
+      "generated_lean_rhs": "14 * x ^ 3 + 13 * x ^ 2 * y + 2 * x ^ 2 * z + 44 * x ^ 2 + 3 * x * y ^ 2 + x * y * z + 27 * x * y + 4 * x * z + 46 * x + 3 * y ^ 2 + y * z + 14 * y + 2 * z + 16"
     },
     {
       "name": "A_less_c_cubed",
       "source_expression": "-a * (-a + b) * (-a + c) + c ^ 3",
-      "positive_constant": 982,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 713,
       "number_of_monomials": 20,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "713 * x ^ 3 + 715 * x ^ 2 * y + 241 * x ^ 2 * z + 2380 * x ^ 2 + 240 * x * y ^ 2 + 161 * x * y * z + 1591 * x * y + 27 * x * z ^ 2 + 536 * x * z + 2648 * x + 27 * y ^ 3 + 27 * y ^ 2 * z + 267 * y ^ 2 + 9 * y * z ^ 2 + 179 * y * z + 885 * y + z ^ 3 + 30 * z ^ 2 + 298 * z + 982"
+      "generated_lean_rhs": "498 * x ^ 3 + 563 * x ^ 2 * y + 190 * x ^ 2 * z + 1684 * x ^ 2 + 213 * x * y ^ 2 + 143 * x * y * z + 1269 * x * y + 24 * x * z ^ 2 + 428 * x * z + 1898 * x + 27 * y ^ 3 + 27 * y ^ 2 * z + 240 * y ^ 2 + 9 * y * z ^ 2 + 161 * y * z + 715 * y + z ^ 3 + 27 * z ^ 2 + 241 * z + 713"
     },
     {
       "name": "C_positive",
       "source_expression": "b * (-a + b) * (-b + c)",
-      "positive_constant": 42,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 36,
       "number_of_monomials": 16,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "36 * x ^ 3 + 42 * x ^ 2 * y + 6 * x ^ 2 * z + 114 * x ^ 2 + 16 * x * y ^ 2 + 5 * x * y * z + 89 * x * y + 12 * x * z + 120 * x + 2 * y ^ 3 + y ^ 2 * z + 17 * y ^ 2 + 5 * y * z + 47 * y + 6 * z + 42"
+      "generated_lean_rhs": "30 * x ^ 3 + 37 * x ^ 2 * y + 6 * x ^ 2 * z + 96 * x ^ 2 + 15 * x * y ^ 2 + 5 * x * y * z + 79 * x * y + 12 * x * z + 102 * x + 2 * y ^ 3 + y ^ 2 * z + 16 * y ^ 2 + 5 * y * z + 42 * y + 6 * z + 36"
     },
     {
       "name": "C_less_c_cubed",
       "source_expression": "-b * (-a + b) * (-b + c) + c ^ 3",
-      "positive_constant": 958,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 693,
       "number_of_monomials": 20,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "693 * x ^ 3 + 687 * x ^ 2 * y + 237 * x ^ 2 * z + 2316 * x ^ 2 + 227 * x * y ^ 2 + 157 * x * y * z + 1531 * x * y + 27 * x * z ^ 2 + 528 * x * z + 2580 * x + 25 * y ^ 3 + 26 * y ^ 2 * z + 253 * y ^ 2 + 9 * y * z ^ 2 + 175 * y * z + 853 * y + z ^ 3 + 30 * z ^ 2 + 294 * z + 958"
+      "generated_lean_rhs": "482 * x ^ 3 + 539 * x ^ 2 * y + 186 * x ^ 2 * z + 1632 * x ^ 2 + 201 * x * y ^ 2 + 139 * x * y * z + 1217 * x * y + 24 * x * z ^ 2 + 420 * x * z + 1842 * x + 25 * y ^ 3 + 26 * y ^ 2 * z + 227 * y ^ 2 + 9 * y * z ^ 2 + 157 * y * z + 687 * y + z ^ 3 + 27 * z ^ 2 + 237 * z + 693"
     },
     {
       "name": "F_positive",
       "source_expression": "c * (-a + c) * (-b + c)",
-      "positive_constant": 630,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 432,
       "number_of_monomials": 20,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "432 * x ^ 3 + 450 * x ^ 2 * y + 174 * x ^ 2 * z + 1470 * x ^ 2 + 156 * x * y ^ 2 + 121 * x * y * z + 1021 * x * y + 23 * x * z ^ 2 + 394 * x * z + 1667 * x + 18 * y ^ 3 + 21 * y ^ 2 * z + 177 * y ^ 2 + 8 * y * z ^ 2 + 137 * y * z + 579 * y + z ^ 3 + 26 * z ^ 2 + 223 * z + 630"
+      "generated_lean_rhs": "280 * x ^ 3 + 337 * x ^ 2 * y + 131 * x ^ 2 * z + 971 * x ^ 2 + 135 * x * y ^ 2 + 105 * x * y * z + 779 * x * y + 20 * x * z ^ 2 + 302 * x * z + 1122 * x + 18 * y ^ 3 + 21 * y ^ 2 * z + 156 * y ^ 2 + 8 * y * z ^ 2 + 121 * y * z + 450 * y + z ^ 3 + 23 * z ^ 2 + 174 * z + 432"
     },
     {
       "name": "F_less_c_cubed",
       "source_expression": "c ^ 3 - c * (-a + c) * (-b + c)",
-      "positive_constant": 370,
+      "conclusion_relation": "0 < expression",
+      "strictly_positive": true,
+      "constant_term": 297,
       "number_of_monomials": 19,
       "all_coefficients_nonnegative": true,
       "matches_current_lean_identity": true,
-      "generated_lean_rhs": "297 * x ^ 3 + 279 * x ^ 2 * y + 69 * x ^ 2 * z + 960 * x ^ 2 + 87 * x * y ^ 2 + 41 * x * y * z + 599 * x * y + 4 * x * z ^ 2 + 146 * x * z + 1033 * x + 9 * y ^ 3 + 6 * y ^ 2 * z + 93 * y ^ 2 + y * z ^ 2 + 43 * y * z + 321 * y + 4 * z ^ 2 + 77 * z + 370"
+      "generated_lean_rhs": "232 * x ^ 3 + 239 * x ^ 2 * y + 61 * x ^ 2 * z + 757 * x ^ 2 + 81 * x * y ^ 2 + 39 * x * y * z + 517 * x * y + 4 * x * z ^ 2 + 130 * x * z + 822 * x + 9 * y ^ 3 + 6 * y ^ 2 * z + 87 * y ^ 2 + y * z ^ 2 + 41 * y * z + 279 * y + 4 * z ^ 2 + 69 * z + 297"
     }
   ],
   "trust_note": "Auxiliary generation only. Lean ring and positivity check the proofs."

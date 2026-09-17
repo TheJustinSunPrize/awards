@@ -1,5 +1,9 @@
 # Version 3: a linear separation criterion
 
+Historical version-3 note. Its theorem remains a corollary of the current
+[version-4 criterion](boundary-extension.md). The example and explanation
+below describe the preceding proof, whose archive remains unchanged.
+
 For natural P,a,b,c, assume a>=1, b>=3a, c>=3b+1, P>=100c^5, and
 P,P+a,P+b,P+c all prime. The theorem `four_prime_exact_linear` proves
 
@@ -19,8 +23,8 @@ For a=2,b=6, the respective c thresholds are 360, 31, and now 19.
 The choice c=20, P=320001821 yields the four primes
 320001821,320001823,320001827,320001841 and satisfies P>=320000000=100*20^5.
 It satisfies the new assumptions and violates both old c thresholds.
-The [supporting numerical check](../verification/witness.json) uses exact trial
-division to the integer square root; run `python tools/check_witness.py` to
+The supporting numerical check in the [version-3 archive](../verification/archive-v3.md) uses exact trial
+division to the integer square root; run that archive's `python tools/check_witness.py` to
 reproduce it. This separate computation is not a Lean primality proof, an
 enumeration of f(N), or an infinitude claim.
 

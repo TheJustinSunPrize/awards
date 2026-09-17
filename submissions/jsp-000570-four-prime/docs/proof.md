@@ -1,10 +1,10 @@
 # General four-prime lemma for Erdős 700 (JSP-000570)
 
-Research manuscript, version 3, 2026-09-17. The local four-prime theorem has a Lean proof in `Erdos700/FourPrime.lean`; see the build and axiom records for its verified scope. The Maynard corollary below is a human-readable argument, not part of the Lean formalization. External peer review and historical priority remain unestablished.
+Research manuscript, version 4, 2026-09-17. The local four-prime theorem has a Lean proof in `Erdos700/FourPrime.lean`; see the build and axiom records for its verified scope. The Maynard corollary below is a human-readable argument, not part of the Lean formalization. External peer review and historical priority remain unestablished.
 
 ## Claim
 
-Let positive integers a,b,c obey b>=3a and c>=3b+1. Let P>=100c^5, and suppose P,P+a,P+b,P+c are all prime. Set N to their product and f(N)=min_{2<=k<=floor(N/2)} gcd(N,binom(N,k)). Then
+Let positive integers a,b,c obey b>=3a and c>=3b-a+1. Let P>=100c^5, and suppose P,P+a,P+b,P+c are all prime. Set N to their product and f(N)=min_{2<=k<=floor(N/2)} gcd(N,binom(N,k)). Then
 
     f(N)=P(P+a)(P+b).
 
@@ -19,15 +19,16 @@ Put
     R=a+c-3b, B=(2b-a)c+2ab-3b^2, C=b(b-a)(c-b);
     D=3c-a-b, U=3c^2-2c(a+b)+ab, F=c(c-a)(c-b).
 
-All entries in this normalized digit table are legal. Here a>=1, b>=3 and c>=10. More explicitly:
+All entries in this normalized digit table are legal. Here a>=1, b>=3 and c>=9. More explicitly:
 
 - 0<S<3c, 0<T<3c^2 and 0<Z<c^3.
 - 0<S1<2c. Also T1=(b-2a)c-2ab+3a^2>=a(c-2b+3a)>0, while T1<bc<c^2.
-- 1<R<c, since c-3b>=1 and a>=1, so R=a+c-3b>=2. Also 0<B<2bc<2c^2, since B>b(c-3b)>0 and its remaining terms beyond 2bc sum to -ac+2ab-3b^2<0.
+- 1<=R<c, directly from c>=3b-a+1 and 3b>a. Thus the high digit R-1 may be zero.
+- 0<B<2bc<2c^2. For the lower bound, write B=3b(b-a)+a^2+(2b-a)(c-3b+a)>0; here c-3b+a>=1 and b>=3a. For the upper bound, 2bc-B=a(c-2b)+3b^2>0 because c>2b.
 - 0<U<3c^2, since a+b<c implies U>c^2; and 0<D<3c.
 - 0<A,C,F<c^3.
 
-Every fixed positive quantity displayed above is below P. Thus the residual digits x-A,x-B,x-F,x-D are nonnegative and below x, while every other displayed digit is also between zero and x-1.
+Every fixed nonnegative digit displayed above is below P, including R-1=0 when R=1. Thus the residual digits x-A,x-B,x-F,x-D are nonnegative and below x, while every other displayed digit is also between zero and x-1.
 
 | base x | low digit of N/x | middle digit | high digit | fourth digit |
 | --- | --- | --- | --- | --- |
@@ -54,7 +55,7 @@ For pairs starting from P+a, we have u<2c, v<c^2, |d|<c and h in {0,1} for upwar
 
     q-10c^3>c^3,  q-10c^2>U-1,
 
-because q>=100c^5, c>=10, and U<3c^2. Thus a negative constant coefficient for a target with fixed low digit C<c^3 immediately violates that low bound. A negative middle coefficient, after any required low-digit normalization, produces a digit exceeding the fixed target middle bound U-1.
+because q>=100c^5, c>=9, and U<3c^2. Thus a negative constant coefficient for a target with fixed low digit C<c^3 immediately violates that low bound. A negative middle coefficient, after any required low-digit normalization, produces a digit exceeding the fixed target middle bound U-1.
 
 For pairs starting from P, the congruence w=dv-d^2u+hq, with |dv-d^2u|<6c^3 and 0<=w<=Z<c^3, forces h=0.
 For pairs starting from P+a and going upward, |dv-d^2u|<3c^3 and 0<=w<=q-d-A<q force h=0 or 1.
@@ -132,7 +133,7 @@ If K<0, then -K<=abc<F because c>a+b. Thus the low digit q+K exceeds q-F. If K>=
 
 Put d=c-b and L=b(b-a), so C=dL. We use L<c^2 and C<F, not L<d.
 The latter strict inequality follows from F-C=(c-b)^2(c+b-a)>0.
-Here u<=R-1<c, v<=x-B<x<q, w<=C<c^3. In particular
+Here 0<=u<=R-1<c, v<=x-B<x<q, w<=C<c^3. When R=1, u=0; this case remains covered below. In particular
 ud^2+w<2c^3<q, giving
 
     -dq<ud^2-vd+w<q.
@@ -150,7 +151,7 @@ If H>=1, the bounds on u,H,w give
 
     q/d-4c^2 <= E <= q-q/d+c^2.
 
-Since q/d>=P/c>=100c^4>7c^2, this interval lies strictly between U-1 and q. So E is already the actual middle digit and is too large.
+Since q/d>=P/c>=90c^4>7c^2, this interval lies strictly between U-1 and q. So E is already the actual middle digit and is too large.
 
 If H=0, write w=dt with 0<=t<=L. Then K=d(ud-t) and the middle coefficient is M=t-2ud.
 
@@ -174,8 +175,8 @@ For any i<j<k<l, put a=h_j-h_i, b=h_k-h_i, c=h_l-h_i. Then
     b>h_j^4-h_j>3h_j>3a,
     c>h_k^4-h_k>10h_k^2>10b^2.
 
-The displayed bounds on these chosen offsets imply the linear hypothesis,
-because b>=3 gives 3b+1<=10b^2.
+The displayed bounds on these chosen offsets imply the new hypothesis,
+because 3b-a+1<=3b+1<=10b^2 for b>=3.
 
 Maynard's theorem (with at least four prime values in a sufficiently large fixed admissible tuple), followed by the finite pigeonhole principle, produces one fixed quadruple of indices for infinitely many translates x. Letting P=x+h_i, the corresponding four primes satisfy the lemma for every sufficiently large such P. Their product N tends to infinity, and the lemma gives
 
@@ -186,7 +187,7 @@ This improves the exponent 2/3 of the inspected prior three-prime manuscript. It
 ## Prior work and attribution
 
 The current [Erdős 700 page](https://www.erdosproblems.com/700) credits the preceding three-prime construction to GPT 5.6 Sol Pro prompted by Liam Price. Its full public manuscript, [Large Binomial GCDs](https://www.overleaf.com/read/pmnwkfnhhxhn#82956e), proves a three-prime criterion and derives an infinite family with exponent 2/3. The present work extends the prime-product approach to four primes.
-The version-3 refinement lowers the required final gap to a linear bound without changing the exponent. The use of Lucas digits and the strategy of combining a local criterion with Maynard are credited to those predecessors. No first resolution of the square-root infinitude question is claimed.
+The version-4 refinement further lowers the final gap to c>=3b-a+1 without changing the exponent. The use of Lucas digits and the strategy of combining a local criterion with Maynard are credited to those predecessors. No first resolution of the square-root infinitude question is claimed.
 
 The proposed new contribution is the four-prime local criterion, its Lean formalization, and the separate stronger infinite-family consequence. This is not a complete solution of every part of Erdős 700.
 

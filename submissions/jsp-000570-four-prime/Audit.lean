@@ -1,7 +1,9 @@
 import Erdos700
 
-#check Erdos700.FourPrime.four_prime_exact_linear
+#check Erdos700.FourPrime.four_prime_exact_boundary
 #print Erdos700.f
+#print axioms Erdos700.FourPrime.four_prime_exact_boundary
+#check Erdos700.FourPrime.four_prime_exact_linear
 #print axioms Erdos700.FourPrime.four_prime_exact_linear
 #check Erdos700.FourPrime.four_prime_exact_relaxed
 #print axioms Erdos700.FourPrime.four_prime_exact_relaxed

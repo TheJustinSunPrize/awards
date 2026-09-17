@@ -1,7 +1,8 @@
 # Version 2: weaker separation in the four-prime criterion
 
 Historical version-2 note. Its theorem is retained as a corollary of the
-current [version-3 linear criterion](linear-extension.md). The earlier numerical
+[version-3 linear criterion](linear-extension.md) and the current
+[version-4 criterion](boundary-extension.md). The earlier numerical
 example is retained here for context; current verification uses a smaller-gap witness.
 
 ## Exact change

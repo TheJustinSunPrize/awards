@@ -11,10 +11,10 @@ import Erdos700.RowExpansions
 namespace Erdos700.FourPrime
 
 /-- A four-prime equality criterion for the binomial-gcd minimum.
-The linear separation condition extends both previously proved criteria.
+The offset-dependent separation condition includes the zero high-digit boundary.
 This local theorem does not assume Maynard's theorem. -/
-theorem four_prime_exact_linear (P A B C : ℕ)
-    (hA : 1 ≤ A) (hB : 3*A ≤ B) (hC : 3*B+1 ≤ C) (hPsize : 100*C^5 ≤ P)
+theorem four_prime_exact_boundary (P A B C : ℕ)
+    (hA : 1 ≤ A) (hB : 3*A ≤ B) (hC : 3*B-A+1 ≤ C) (hPsize : 100*C^5 ≤ P)
     (hP : P.Prime) (hPA : (P+A).Prime) (hPB : (P+B).Prime) (hPC : (P+C).Prime) :
     f (P*(P+A)*(P+B)*(P+C)) = P*(P+A)*(P+B) := by
   let p : ℤ := P
@@ -24,7 +24,10 @@ theorem four_prime_exact_linear (P A B C : ℕ)
   let N : ℕ := P*(P+A)*(P+B)*(P+C)
   have ha : 1 ≤ a := by dsimp [a, b, c, p]; exact_mod_cast hA
   have hb : 3*a ≤ b := by dsimp [a, b, c, p]; exact_mod_cast hB
-  have hc : 3*b+1 ≤ c := by dsimp [a, b, c, p]; exact_mod_cast hC
+  have hA3B : A ≤ 3*B := by omega
+  have hcCast : ((3*B-A+1 : ℕ) : ℤ) ≤ (C : ℤ) := by exact_mod_cast hC
+  have hc : 3*b-a+1 ≤ c := by
+    simpa [a, b, c, Nat.cast_sub hA3B] using hcCast
   have hp : 100*c^5 ≤ p := by dsimp [a, b, c, p]; exact_mod_cast hPsize
   have hp0 : 0 < p := by dsimp [a, b, c, p]; exact_mod_cast hP.pos
   have ha0 : 0 ≤ a := by omega
@@ -184,6 +187,15 @@ theorem four_prime_exact_linear (P A B C : ℕ)
     obtain ⟨hlow, hmiddle, _⟩ := target_c hmc
     exact ParameterBC.pairBC_actual_digits a b c p u v w (k : ℤ)
       ha hb hc hp hu0 hv0 hw0 hu hv hw hkpos hs hdiv hlow hmiddle
+
+/-- The version-3 linear separation criterion retains its published statement
+and declaration name as a corollary of the offset-dependent criterion. -/
+theorem four_prime_exact_linear (P A B C : ℕ)
+    (hA : 1 ≤ A) (hB : 3*A ≤ B) (hC : 3*B+1 ≤ C) (hPsize : 100*C^5 ≤ P)
+    (hP : P.Prime) (hPA : (P+A).Prime) (hPB : (P+B).Prime) (hPC : (P+C).Prime) :
+    f (P*(P+A)*(P+B)*(P+C)) = P*(P+A)*(P+B) := by
+  have hCboundary : 3*B-A+1 ≤ C := by omega
+  exact four_prime_exact_boundary P A B C hA hB hCboundary hPsize hP hPA hPB hPC
 
 /-- The version-2 quadratic separation criterion follows from the new linear
 criterion; its published statement and declaration name are preserved. -/

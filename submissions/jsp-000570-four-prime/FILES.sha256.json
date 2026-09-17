@@ -11,8 +11,8 @@
   },
   {
     "path": "Audit.lean",
-    "sha256": "32c5481c0de897f68ce0fb32b1b790eab5e31d9896886ec9dc4c21f8de3e7a46",
-    "bytes": 344
+    "sha256": "fc363ccafba3d0fa6928498684954161ca1edec8e4d0554c607149c7e60d0609",
+    "bytes": 455
   },
   {
     "path": "Erdos700.lean",
@@ -26,8 +26,8 @@
   },
   {
     "path": "Erdos700/Bounds.lean",
-    "sha256": "d8b9d77e16591bd8b882e4021f50f839a4f0e11ac963666058ace2d28092d969",
-    "bytes": 18282
+    "sha256": "48210f2c367b3b929d94ef75819c4d1d1118f2e129387ae0cabe365d95d04ff2",
+    "bytes": 18394
   },
   {
     "path": "Erdos700/DigitSupport.lean",
@@ -36,8 +36,8 @@
   },
   {
     "path": "Erdos700/FourPrime.lean",
-    "sha256": "2b4e70cb0920261376488d68fa7885f830ee2be382cc9062c7a2e816a2dc3505",
-    "bytes": 10881
+    "sha256": "8b0f9a5ebac7ffbeab520bdaa0156f11f6560e5ea3c6ff07e80db4c3ffc27b1d",
+    "bytes": 11562
   },
   {
     "path": "Erdos700/IntDigitSupport.lean",
@@ -61,8 +61,8 @@
   },
   {
     "path": "Erdos700/PairADigits.lean",
-    "sha256": "a1749c742ac5e30cdc350824dbf0ddbaa44bbad69516b83712c3fdaf5ecb52b7",
-    "bytes": 20321
+    "sha256": "1cdb1bfa7413f3f561b801ac424e9c075280e52e37a076af1b39f1833543da66",
+    "bytes": 20331
   },
   {
     "path": "Erdos700/PairBC.lean",
@@ -76,18 +76,18 @@
   },
   {
     "path": "Erdos700/ParameterBC.lean",
-    "sha256": "759a40914d9adb714b03f2df22d63b8a9a979ce2b009b4a1a0b7e09f04a162e8",
-    "bytes": 3538
+    "sha256": "7cfd4cbe5cb70136781a53ac15c9a82bb271b91e64498c631f463e1eca9a5280",
+    "bytes": 3543
   },
   {
     "path": "Erdos700/ParameterDigits.lean",
-    "sha256": "7358526e732501b4d8031c2ef8b7047ae21721ff4ae9fbe465b6d057d47eb2d5",
-    "bytes": 8108
+    "sha256": "6bc9fd1d9f6ce8aced2300c2cea8592e9256c0a3dc0bd5f52eb70698e9402b01",
+    "bytes": 8180
   },
   {
     "path": "Erdos700/ParameterP.lean",
-    "sha256": "394847da353edeba03b4d87c05b027ca7d0bf0da7e0aa534246897f1a62a36ac",
-    "bytes": 5636
+    "sha256": "39f8694eeb437346af0acf16d95efe08b77f8806a7b5b238f5c801211b39d6ff",
+    "bytes": 5646
   },
   {
     "path": "Erdos700/PrimeSource.lean",
@@ -106,38 +106,43 @@
   },
   {
     "path": "README.md",
-    "sha256": "48d47ecc3a44704db0d3da03068718d873f1b5b87343c55b9463312cdeddb123",
-    "bytes": 3837
+    "sha256": "18206358d9cb8b36ee5797afa628b3a0a289b050512af0557c3cbbc1c3201b80",
+    "bytes": 3925
   },
   {
     "path": "SEMANTIC-AUDIT.md",
-    "sha256": "731d64529c5d0c2f5773bbc04b8a3f3b397fc38a76069f6c369476cb96ccc328",
-    "bytes": 11318
+    "sha256": "de5b02f60a5f5147875fdc55997e603ca83097180b3a1a0a5788011b4e80c579",
+    "bytes": 12447
   },
   {
     "path": "SUBMISSION.md",
-    "sha256": "98a13c650b17f3926cbd6990dfe3db8c46c38826983642ad87e72fdab84ff7d1",
-    "bytes": 2377
+    "sha256": "1361d899b14a01399e0549470cf26994c2478c5027fd58b5932c00d9afb7cc44",
+    "bytes": 2390
+  },
+  {
+    "path": "docs/boundary-extension.md",
+    "sha256": "53f0ef83bf8c3309b931c2c181bc8fbd10b2eeae11b31f94318b622e2110ec24",
+    "bytes": 3034
   },
   {
     "path": "docs/extension.md",
-    "sha256": "4493357953c68a5604ee6bab5d435d513d4cd890b66dfdd62249c1bb1749de80",
-    "bytes": 2751
+    "sha256": "e4d87761e3afdd3cfae8643dc358c49033e368468a9bcb8129bb7c67b28f0ba8",
+    "bytes": 2804
   },
   {
     "path": "docs/linear-extension.md",
-    "sha256": "6ac2f450213e9db19163498f65a9d3dc9379b267fd3ab744ce83da0f0ece9d96",
-    "bytes": 2641
+    "sha256": "7e7751e0c052a2e716a05f7d95611e34fb22ac733d9e70c61711957a6d92ee20",
+    "bytes": 2900
   },
   {
     "path": "docs/novelty.md",
-    "sha256": "2e9d024510fa58abd26f2d12e55cc9401f3d4ed79dad12dda7d971976de3289e",
-    "bytes": 4254
+    "sha256": "fee9e0c8ce6517d0b7f3bbc5d6a19becc843eb2f8dbfb3fd0350ddef9caf6e30",
+    "bytes": 4471
   },
   {
     "path": "docs/proof.md",
-    "sha256": "3fad1507303a574b5fefc9460c8f7dbfd7fe2c65c03a4f1a1d89bac667378ab5",
-    "bytes": 9939
+    "sha256": "647fba966358d1d6ad73f7fc9bef2637673ff1bc91061691667edcf315595ee2",
+    "bytes": 10106
   },
   {
     "path": "lake-manifest.json",
@@ -156,18 +161,18 @@
   },
   {
     "path": "tools/bounds-certificates.json",
-    "sha256": "43ec2ebbafdd77a32039e3919985096c9108adffed29c1c93679164785166b65",
-    "bytes": 13146
+    "sha256": "7a5b26b6c753f4f54980ee8e4c766919d30667610e131f83b745d486009f9f7b",
+    "bytes": 15712
   },
   {
     "path": "tools/check_witness.py",
-    "sha256": "54065d35def8191918b0a0e52db262f4294011e3f288e32d43fc5fe5e5128661",
-    "bytes": 1828
+    "sha256": "7eef54b1f24d28e8159318894e92c29ee4316c2eb985df36ff0c9b0d3b6c9972",
+    "bytes": 1942
   },
   {
     "path": "tools/generate_bounds.py",
-    "sha256": "acdee86f63b4e906da17a02d1e91e91a09ca65030555b3d4da8478f928a68038",
-    "bytes": 3674
+    "sha256": "915c2cf05dc0c9a1a41eedb174c288daee09adc2974d8ba9b4724c940b8aad2e",
+    "bytes": 4782
   },
   {
     "path": "verification/archive-v1.md",
@@ -180,33 +185,33 @@
     "bytes": 888
   },
   {
-    "path": "verification/archive.md",
-    "sha256": "bbcb2b777cdbd874122f0bf3e4a29ee27a1b93fc690b746ff68d5d9d602a08a1",
-    "bytes": 1174
+    "path": "verification/archive-v3.md",
+    "sha256": "8b0b811fcc99507182acf40042a36bef50c41322b88b9ea3538f3f87ac0b9e27",
+    "bytes": 898
   },
   {
     "path": "verification/build-record.json",
-    "sha256": "34b60db73c094c91d73f5af0eb0121a22830921421a366ae2ced9e8a71e7f548",
-    "bytes": 7400
+    "sha256": "3dc285a4edbc5bcc1ec9fc99f837c8b97a83d7e09253d55f8045d865f8dfb2b1",
+    "bytes": 7523
   },
   {
     "path": "verification/canonical-audit.log",
-    "sha256": "572940d2dbb75eab6aa6d6a359773efc1f7623b44332d50ea4ceada2d8095a07",
-    "bytes": 1469
+    "sha256": "1cce39183f039534eba2df70994090f912f6d81666fd1421bb6f47f0b4ef113d",
+    "bytes": 1898
   },
   {
     "path": "verification/canonical-build.log",
-    "sha256": "0cef76805fca870db9801829a894adbc40c32625f45b95afccc1a8efd6985382",
-    "bytes": 1106
+    "sha256": "e1ec52df2d7f86efa46f0ac17496e703faa48efc62994483943e8c3416d30061",
+    "bytes": 1107
   },
   {
     "path": "verification/source-files.json",
-    "sha256": "4b16b90cbb06027dcd11e7b068213c9668c3c36e1ec57788b7f82589bbd777e1",
+    "sha256": "9ec8ef8cb98466cb6b0a8a58a9c811b70a99af55b49eaec932514dd392c60915",
     "bytes": 3074
   },
   {
     "path": "verification/witness.json",
-    "sha256": "8959648fa305ec8158e75be2b64f767820415c319bcc2814e2d01946974b122d",
-    "bytes": 628
+    "sha256": "0df71a1cc7ffcef428bcfc993da4566e00735a8f8050e43fa188171dc64e2b02",
+    "bytes": 690
   }
 ]

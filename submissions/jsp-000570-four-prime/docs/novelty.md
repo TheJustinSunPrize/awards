@@ -40,3 +40,7 @@ Version 3 further replaces the quadratic separation hypothesis by c>=3b+1.
 This is a continuation of the same local four-prime criterion, not a claim of
 a larger exponent or a full solution. The previous limited literature review
 does not establish worldwide novelty or optimality of this new threshold.
+
+Version 4 further weakens the final separation condition to c>=3b-a+1,
+with all other assumptions retained. This extension does not change the 3/4
+exponent. No optimality or worldwide-priority claim follows from it.
