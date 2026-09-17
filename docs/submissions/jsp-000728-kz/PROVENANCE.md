@@ -10,4 +10,6 @@ Proposed formalization-contributor identifier: RECIPIENT-JSP-000728-KZ-A; confir
 
 The official issue and pull-request inventory was checked for JSP-000728 on September 17, 2026; no existing entry was found at the initial check. This is a bounded search, not a guarantee of worldwide novelty or priority.
 
+A subsequent external-source review found public upper-bound formalization source for the same counting problem in `plby/lean-proofs`, predating this submission. See [OVERLAP_REVIEW.md](OVERLAP_REVIEW.md) for the pinned source, exact statement comparison, upstream attribution and limits of verification. This discovery does not expand the scope or priority claims of the present lower-bound implementation.
+
 Reproduction scripts adapt same-account tooling used for earlier proof submissions. Mathematical source text is linked and paraphrased, not reproduced as a paper. Repository code and documentation licenses apply; dependency and external tool licenses remain with their authors.
