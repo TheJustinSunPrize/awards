@@ -1,0 +1,23 @@
+$ python scripts/manage.py validate
+validate: OK
+exit_code=0
+
+$ python scripts/manage.py links
+links: OK
+exit_code=0
+
+$ python scripts/manage.py build
+build: OK
+exit_code=0
+
+$ python scripts/manage.py check
+check: OK
+exit_code=0
+
+$ python -m unittest discover -s tests
+......................
+----------------------------------------------------------------------
+Ran 22 tests in 2.516s
+
+OK
+exit_code=0

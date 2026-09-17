@@ -1,0 +1,26 @@
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentBalancedDeterminant.lean:11:5: warning: Variable name `hK` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hK
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentBalancedDeterminant.lean:11:31: warning: Variable name `hR` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hR
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentBalancedDeterminant.lean:11:44: warning: Variable name `hS` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hS
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentBalancedDeterminant.lean:12:5: warning: Variable name `hp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+exit_code=0

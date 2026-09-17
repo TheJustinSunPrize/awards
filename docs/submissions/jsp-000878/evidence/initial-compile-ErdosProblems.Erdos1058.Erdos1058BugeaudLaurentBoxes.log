@@ -1,0 +1,23 @@
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentBoxes.lean:332:48: warning: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Nat.factorization_mul (pow_ne_zero _ hp0) (pow_ne_zero _ hq0), hp.factorization_pow,
+    hq.factorization_pow, hpq, hpq.symm] at hpExp hqExp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentBoxes.lean:388:20: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentBoxes.lean:357:18: warning: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentBoxes.lean:359:49: warning: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+exit_code=0

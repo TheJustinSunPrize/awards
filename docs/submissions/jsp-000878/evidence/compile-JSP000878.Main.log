@@ -1,0 +1,12 @@
+JSP000878/Main.lean:39:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+'JSP000878.classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000878.finitely_many_solutions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000878.escaping_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+exit_code=0

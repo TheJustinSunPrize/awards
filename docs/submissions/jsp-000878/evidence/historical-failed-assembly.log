@@ -1,0 +1,114 @@
+Historical failed compatibility attempt; this is not successful proof evidence.
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:67:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:340:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:489:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:504:4: warning: Try `simp at hval` instead of `simpa using hval`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:730:15: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:714:41: warning: Variable name `hdgt` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hdgt
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:808:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:816:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:792:10: warning: This simp argument is unused:
+  hlogm_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:876:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:956:15: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:945:18: warning: Variable name `hdone` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hdone
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1209:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1217:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1251:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1314:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1596:2: warning: Unused tactic linter: `norm_num at hlog ⊢` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1665:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1683:8: error: Type mismatch
+  Nat.zero_le ?m.112
+has type
+  0 ≤ ?m.112
+but is expected to have type
+  APPrimePowerProduct (n / s) 6 ≤ 21 ^ progressionExponent (n / s)
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1684:12: error: No goals to be solved
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1758:18: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1809:59: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1913:2: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 1
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 1
+  b - d ≤ -1
+  b ≥ 0
+  a ≥ 0
+  a - d ≤ 0
+  a + b - d ≤ 0
+where
+ a := ↑(digits 2 n).sum
+ b := ↑(n - (log 2 n + 1))
+ c := ↑(n !.factorization 2)
+ d := ↑n
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1995:2: error: linarith failed to find a contradiction
+n : ℕ
+hid : padicValNat 2 n ! = n - (digits 2 n).sum
+hsumNat : (digits 2 n).sum ≤ n
+hcastId : ↑(padicValNat 2 n !) = ↑n - ↑(digits 2 n).sum
+hsum : ↑(digits 2 n).sum ≤ Real.log (↑n + 1) / Real.log 2
+a✝ : ↑(n !.factorization 2) < ↑n - Real.log (↑n + 1) / Real.log 2
+⊢ False
+failed
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:2195:2: error: linarith failed to find a contradiction
+n : ℕ
+hn : 9000000 ≤ n
+hlower : ↑n - Real.log (↑n + 1) / Real.log 2 ≤ ↑(n !.factorization 2)
+hratio : Real.log (↑n + 1) / Real.log 2 ≤ ↑((n + 1) / 16)
+hdivCast : ↑((n + 1) / 16) ≤ (↑n + 1) / 16
+hnreal : 9000000 ≤ ↑n
+a✝ : ↑(padicValNat 2 n !) ≤ 91 / 100 * ↑n
+⊢ False
+failed
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:3238:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+exit_code=1

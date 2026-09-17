@@ -1,0 +1,218 @@
+{
+  "README.md": {
+    "sha256": "6ec1e9cfd3766bf04277ef5699bce946c097175a5982d70a348ccb8a1b166aa7",
+    "bytes": 4330
+  },
+  "evidence/README.md": {
+    "sha256": "3667c3f0591bb6720865c48ab0dc4d2fc4bff77008ae88fab20c00b42fa5b874",
+    "bytes": 1535
+  },
+  "evidence/compile-JSP000878.Main.log": {
+    "sha256": "fc2721f3fd990a57cad08e4218112ec8730bb19f1ef0458a9970e566217044ad",
+    "bytes": 612
+  },
+  "evidence/compile-JSP000878.Statement.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/historical-attempt-1.json": {
+    "sha256": "a1aff860dad0614863ae0b8cbb7f49f2accabf49938cfa10072c673229cb88c3",
+    "bytes": 1936
+  },
+  "evidence/historical-attempt-2.json": {
+    "sha256": "50a0459599b8820887da7c79a45c9439fc14dc958298535958b2c3de07546d52",
+    "bytes": 3184
+  },
+  "evidence/historical-attempt-3.json": {
+    "sha256": "2e941e2f7d41cdb57de870340b0b1e10ffbfe63810a8a10ddb901066b34f2a79",
+    "bytes": 3297
+  },
+  "evidence/historical-failed-assembly.log": {
+    "sha256": "f32d3f02c6f7415c1fe475006990685ccb87bb60007f37a9b576f3ed970cab57",
+    "bytes": 6038
+  },
+  "evidence/historical-failed-valuation-bridge.log": {
+    "sha256": "1a0c336097d27b2cd94ae7b1b5e0c0132c68397a6a14f1ce8ddb876c78763693",
+    "bytes": 1565
+  },
+  "evidence/historical-parameters-timeout.log": {
+    "sha256": "7f495adc90d95ddba45f00ff8767fa2ccfe93ef1563f4d090bf1b6d5828d6f1b",
+    "bytes": 104
+  },
+  "evidence/initial-compilation-receipt.json": {
+    "sha256": "85ebc132a0560aa444dd0dfdc97a094d838081399677252b61bc731ad14c14ca",
+    "bytes": 16512
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058Assembly.log": {
+    "sha256": "c0d01d985a8c4f0139686ff0fdca47088867aa5632ea902e73cef3e4ef052546",
+    "bytes": 4663
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058BugeaudLaurent.log": {
+    "sha256": "1b2b13e2ce2a57ab7d64f5fd5769747fc86d7a4bedbdb10ca3582948ff49b80b",
+    "bytes": 203
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentBalancedDeterminant.log": {
+    "sha256": "ba8e5ab4b9b2c9e956f2947fd2589d57ba5a85afb6284df6ce1634224eabcfe5",
+    "bytes": 1559
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentBoxes.log": {
+    "sha256": "d9d432008db70d0200d716bb25445c14f77159fddd4601d1c9bec499f9858e4c",
+    "bytes": 1320
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentDeterminant.log": {
+    "sha256": "ba8835470425880ba71ea5a1ef0f630d6c58628094d2bb13e3d1881efb2ccf05",
+    "bytes": 1158
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentMod.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentParameters.log": {
+    "sha256": "c0d10e22c69b52404c2795b869ca15184ac4db95255e289e42a98ad8aed11960",
+    "bytes": 2414
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentProof.log": {
+    "sha256": "7fc210ae08a942c6a6c91f5536765ab4b65a3d38d942d0eb5277f8e77ca99cd7",
+    "bytes": 1139
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentRectangle.log": {
+    "sha256": "1551461d3f47b6ce17d42755a309413d7635b47d6a27166f2630689cf89fb690",
+    "bytes": 536
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentSharpBound.log": {
+    "sha256": "9dd24827775253965bd0b810371524064c63ad7d5791c4fba838b0ea71bdff48",
+    "bytes": 2046
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentVandermonde.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentZero.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058CharacterData.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058CharacterSieve.log": {
+    "sha256": "ac050dfe1e293d50e7776d5358b002dfa81e8399e3bab0e8e948897b21e06532",
+    "bytes": 147
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058Core.log": {
+    "sha256": "1a9f37d71a57944cc8e511156c1a5b1a6c275285c8adeb6d13d9550f781ab9af",
+    "bytes": 1555
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058PeriodicCertificates.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058PeriodicData0.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058PeriodicData1.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058PeriodicData2.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058PeriodicData3.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058PeriodicSieve.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058PrimeBatch.log": {
+    "sha256": "d652ecbcbb8f7aaf3761bef430d8eeeeea34dcc02722aa09b49eeeb062209583",
+    "bytes": 143
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058PrimeBatchData0.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058PrimeBatchData1.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058PrimeBatchData2.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058PrimeBatchData3.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058PrimeGapBase.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.Erdos1058PrimeGapBatch210.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/initial-compile-ErdosProblems.Erdos1058.log": {
+    "sha256": "9fa3b6ead7afc298499f30c5b70014c78b6686a8269611537606fa5a7c02b6a2",
+    "bytes": 13
+  },
+  "evidence/leanchecker.log": {
+    "sha256": "9c86ed7926659825b1ae18bc5750276d48bde758e5d750b4f538a7d6cfb6e381",
+    "bytes": 1797
+  },
+  "evidence/negative-control.log": {
+    "sha256": "d4e6d99cfa42a8064386b64a26b8458e3beedb8573aac72cab27682031fc1c72",
+    "bytes": 108
+  },
+  "evidence/project-checks.log": {
+    "sha256": "cf3707091dc13261cd20d92f2b66ea74504a4e30d2444f9ec895a980346ef677",
+    "bytes": 402
+  },
+  "evidence/verification.json": {
+    "sha256": "1130383c602ab2748ab4218768c7fa697a865c5d2443b94f23782d86eaa34099",
+    "bytes": 21318
+  },
+  "proof/Main.lean": {
+    "sha256": "abb644f66e9875d1491c103d4900985a27bac0f9510e805c6bc0830d48d0f25b",
+    "bytes": 1827
+  },
+  "proof/README.md": {
+    "sha256": "302744fab663619860a57668181e6045534270ef559d097d289a122ca01be3e8",
+    "bytes": 3433
+  },
+  "proof/Statement.lean": {
+    "sha256": "011d4c5912194592cb2de48fb5c0bd18cb2da630c066fa89daf3266df8b6eb77",
+    "bytes": 835
+  },
+  "proof/compatibility.json": {
+    "sha256": "5f1982aaca754b27cb86f08354b50b36d499d141e00f988b5f792f3ae6dcd231",
+    "bytes": 1559
+  },
+  "proof/compatibility.patch": {
+    "sha256": "16221d81a0b6d116711f45e0ad045a58618b34d8c752f973679338333a57a3bb",
+    "bytes": 1142
+  },
+  "proof/lean-toolchain": {
+    "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "bytes": 25
+  },
+  "proof/reproduce.py": {
+    "sha256": "4edefbc9da44d6bff35d184106138d2a36c8206bdd9d733bcd55eebadbe83533",
+    "bytes": 11435
+  },
+  "proof/source-lock.json": {
+    "sha256": "eb4c2e0201111d18e97dac2f56af255348a73e75606a7aaf095afeb1e6750eaa",
+    "bytes": 13210
+  },
+  "review-status.json": {
+    "sha256": "d5edab5c60d20c58caae31ba54f2187fc8a2be5a9a2abaf8791e7e6d7db5e018",
+    "bytes": 353
+  },
+  "statement-and-attribution.md": {
+    "sha256": "256abf9160d558def5f20dc35e6d96dc13e7c2b19351495eac3ced8bf1c35ab1",
+    "bytes": 5768
+  }
+}
