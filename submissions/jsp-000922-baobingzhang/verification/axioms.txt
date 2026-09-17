@@ -1,0 +1,8 @@
+'Erdos1111.erdos_1111_of_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1111.erdos_1111.variants.wagon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1111.isChromaticBound_three_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1111.erdos_1111.variants.wagon_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1111.erdos_1111.variants.d_two_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1111.erdos_1111.variants.d_three_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1111.five_le_d_four_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1111.wagon' depends on axioms: [propext, Classical.choice, Quot.sound]
