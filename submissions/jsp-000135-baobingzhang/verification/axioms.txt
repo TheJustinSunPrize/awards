@@ -1,0 +1,6 @@
+'Erdos129.erdos_129' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos129.erdos_129_disproof' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos129.girao_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos129.two_pow_lt_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos129.R_set_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos129.erdos_gyarfas_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
