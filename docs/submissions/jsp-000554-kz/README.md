@@ -6,6 +6,10 @@ It does not prove the asymptotic estimate for exceptional prime gaps, the
 density-zero conclusion, or the Hardy–Littlewood conditional asymptotic.
 No mathematical novelty or first-formalization priority is claimed.
 
+An existing public Lean development already states and proves the original
+density-one theorem. See [PRIOR_ART.md](PRIOR_ART.md) for the scope comparison
+and [REVIEW_REQUEST.md](REVIEW_REQUEST.md) for this incremental review request.
+
 ## Proven statements
 
 `BadGap p h` asserts that `p` and `p+h` are prime, there is no prime strictly
