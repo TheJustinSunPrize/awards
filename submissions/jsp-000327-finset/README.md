@@ -59,7 +59,7 @@ Prepared with OpenAI Codex assistance. Any formalization-recipient identity rema
 Lean is pinned to `v4.34.0`; Mathlib is pinned to `5ed2965256430c3649e86755f9576b54eca72435`, with transitive dependencies locked in [lake-manifest.json](lake-manifest.json). With the pinned Lean toolchain installed, run from this directory:
 
 ```sh
-lake exe cache get Mathlib/Data/Nat/Choose/Central.lean Mathlib/Data/Rat/Cast/Order.lean Mathlib/Data/Set/Finite/Basic.lean Mathlib/Tactic/FieldSimp.lean Mathlib/Tactic/Linarith.lean Mathlib/Tactic/NormNum.lean Mathlib/Tactic/Positivity.lean Mathlib/Tactic/Ring.lean
+lake exe cache get Mathlib.Data.Nat.Choose.Central Mathlib.Data.Rat.Cast.Order Mathlib.Data.Set.Finite.Basic Mathlib.Tactic.FieldSimp Mathlib.Tactic.Linarith Mathlib.Tactic.NormNum Mathlib.Tactic.Positivity Mathlib.Tactic.Ring
 lake build
 lake env leanchecker --verbose Main
 ```
