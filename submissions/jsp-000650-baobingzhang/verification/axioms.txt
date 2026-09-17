@@ -1,0 +1,6 @@
+'Erdos791.erdos_791' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos791.not_tendsto_g_div_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos791.eventually_g_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos791.mrose_construction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos791.g_fourteen_mul_sq_sub_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos791.exists_card_eq_g' depends on axioms: [propext, Classical.choice, Quot.sound]
