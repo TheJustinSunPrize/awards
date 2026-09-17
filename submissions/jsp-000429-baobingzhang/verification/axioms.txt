@@ -1,0 +1,5 @@
+'Erdos535.erdos_535.variants.lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos535.erdos_535.variants.lower_bound_of_three_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos535.exists_card_eq_f' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos535.f_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos535.f_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
