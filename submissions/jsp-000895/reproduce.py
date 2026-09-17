@@ -1,4 +1,4 @@
-"""Compile and replay this exact two-module package with an existing pinned cache.
+"""Compile and replay this exact three-module package with an existing pinned cache.
 
 The caller coordinates any machine-wide Lean mutex. This helper acquires none.
 It rebuilds every package module in a fresh output directory, and never modifies the supplied Mathlib/runtime trees.
@@ -8,8 +8,8 @@ from pathlib import Path
 from datetime import datetime, timezone
 import argparse, hashlib, json, os, re, subprocess, sys, time
 
-MODULES = ('FiveThreeUpper', 'Audit')
-TARGETS = ('Erdos1076Upper.five_mul_card_le_two_choose', 'Erdos1076Upper.five_mul_extremalNumber_five_le_two_choose')
+MODULES = ('FiveThreeUpper', 'FiveSixUpper', 'Audit')
+TARGETS = ('Erdos1076Upper.five_mul_card_le_two_choose', 'Erdos1076Upper.five_mul_extremalNumber_five_le_two_choose', 'Erdos1076Upper.three_mul_card_le_completedPairShadow', 'Erdos1076Upper.three_mul_card_le_choose_of_five_six', 'Erdos1076Upper.not_five_free_or_not_six_free_of_choose_lt_three_mul_card')
 STANDARD_AXIOMS = {'propext', 'Classical.choice', 'Quot.sound'}
 MATHLIB_COMMIT = 'db584cd6d46c92f209a44c0f1c829460d327499d'
 MATHLIB_MANIFEST = '56f0aa1ff2fe546d0356da6f12f15c1242a3a6d6199315ec9860be9c31209453'
@@ -29,7 +29,7 @@ def main():
         raise SystemExit('Mathlib revision/manifest mismatch')
     extension = '.exe' if os.name == 'nt' else ''
     lean, checker = runtime/('lean'+extension), runtime/('leanchecker'+extension)
-    env = os.environ.copy()
+    env = {k:v for k,v in os.environ.items() if not k.upper().startswith(('LEAN_', 'LAKE_'))}
     env['LEAN_SYSROOT'] = str(runtime.parent)
     version = subprocess.check_output([str(lean), '--version'], text=True, env=env).strip()
     if 'version 4.33.0' not in version or 'd8b18978322de05a8f3dba51ef03cf5461676c17' not in version:
@@ -44,7 +44,6 @@ def main():
     for p in sorted((mathlib/'.lake/packages').iterdir()):
         if p.is_dir():
             paths.append(p/'.lake/build/lib/lean')
-    paths.append(root)
     env['PATH'] = str(runtime)+os.pathsep+env.get('PATH', '')
     env['LEAN_PATH'] = os.pathsep.join(map(str, paths))
     env['LEAN_NUM_THREADS'] = '1'
@@ -54,10 +53,14 @@ def main():
         helper_sha256=digest(root/'reproduce.py'),
         tool_sha256={lean.name:digest(lean), checker.name:digest(checker)},
         environment={'os':sys.platform, 'network_disabled':False, 'LEAN_NUM_THREADS':'1',
-            'LEAN_SYSROOT':'explicit parent of supplied lean-bin directory'},
+            'LEAN_SYSROOT':'explicit parent of supplied lean-bin directory',
+            'inherited_lean_lake_variables_removed':True,
+            'project_root_excluded_from_lean_path':True},
         limitations=['Existing pinned Mathlib/dependency binaries were imported; no full source rebuild.',
             'lean and leanchecker use the same Lean kernel, not independent implementations.',
             'This is contributor-run verification, not organizer certification.'])
+    controls = ('reproduce.py', 'source-origin.json', 'lean-toolchain', 'lakefile.toml', 'lake-manifest.json', '.gitattributes')
+    meta['control_file_sha256'] = {name:digest(root/name) for name in controls}
     def redact(text):
         for prefix, label in ((root, '.'), (mathlib, '<mathlib>'), (runtime, '<lean-bin>')):
             text = text.replace(str(prefix), label).replace(prefix.as_posix(), label)
@@ -85,6 +88,7 @@ def main():
                 arguments=[redact(x) for x in command[1:]],
                 exit_code=result.returncode, duration_seconds=round(time.monotonic()-clock,3),
                 source_sha256=digest(source), log=logfile,
+                log_bytes=(run/logfile).stat().st_size, log_sha256=digest(run/logfile),
                 imported_project_artifacts=binaries)
             after = {key:digest(root/key) for key in source_hashes}
             step['source_identity_unchanged'] = before == after == source_hashes
@@ -116,6 +120,11 @@ def main():
                     audits[target] = sorted(axioms)
                 meta['target_axioms'] = audits
                 save()
+    meta['control_inputs_unchanged'] = meta['control_file_sha256'] == {name:digest(root/name) for name in controls}
+    meta['tool_identity_unchanged'] = meta['tool_sha256'] == {lean.name:digest(lean), checker.name:digest(checker)}
+    if not meta['control_inputs_unchanged'] or not meta['tool_identity_unchanged']:
+        save()
+        raise SystemExit('Control inputs or tool identity changed')
     meta['completed_at_utc'] = datetime.now(timezone.utc).isoformat()
     meta['all_steps_passed'] = True
     meta['module_artifacts'] = {p.relative_to(build).as_posix():digest(p) for p in build.rglob('*.olean*')}

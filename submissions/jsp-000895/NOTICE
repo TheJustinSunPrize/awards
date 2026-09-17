@@ -15,3 +15,5 @@ separate from the upstream lower-bound construction.
 
 Mathlib and its contributors provide the imported finite-set infrastructure,
 under Apache 2.0, pinned in lake-manifest.json. See LICENSE.
+
+FiveSixUpper.lean adds a new formal implementation of the known combined F5/F6 finite upper bound, following Glock Section 3. No discovery priority is asserted.

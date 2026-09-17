@@ -1,6 +1,6 @@
 # Scope and statement correspondence
 
-**Partial Progress: the finite upper half for the single (5,3)-free extremal problem.**
+**Partial Progress: finite upper bounds for the single (5,3) prohibition and the combined (5,3)/(6,4) prohibitions.**
 
 `TripleOn V` is a finite vertex subset of cardinality three. `TripleSystemOn V` is a finite set of such triples. Thus vertices within an edge and edges within the hypergraph are distinct; this is not a multihypergraph.
 
@@ -27,6 +27,16 @@ The stronger target `Erdos1076Upper.five_mul_card_le_two_shadow` proves
 The structural argument is proved from freeness, rather than assumed: if two distinct triples share a pair, they span four vertices, use five distinct pairs, and no third edge can contain any pair from those four vertices. Otherwise those three edges would span at most five vertices. This makes the one-edge or two-edge deletion argument valid. The finite shadow bound and the extremal supremum are connected to complete terminal theorems.
 
 This scope differs from the cumulative high-girth family used in PR90, whose upper bound uses the additional `FkFree 4` condition. It also differs from the pinned plby source's cofinal `92/529` lower construction. Only the six minimal definitions are reproduced here; the new upper-bound argument does not depend on that lower construction.
+
+## Combined F5-and-F6 increment
+
+`FkFree 6 G` prohibits every four-edge subfamily spanning at most six vertices. Together with `FkFree 5 G`, and without `FkFree 4`, it implies `3 * G.card <= n.choose 2` for every natural `n`. The contrapositive says that exceeding the pair budget forces failure of at least one of these two freeness conditions.
+
+The existing `extremalNumber k n` filters a single Fk condition. No claim is made that the combined bound applies to `extremalNumber 5 n` or `extremalNumber 6 n`, and no new combined-family extremal definition is introduced. The graph theorem itself is the submitted finite upper contribution. The exact-five/exact-six ambient wording agrees with both at-most conditions when `n >= 6`; the all-n formal statements retain explicit at-most semantics.
+
+The completed pair shadow contains ordinary edge pairs and every pair on the four-vertex union of two distinct edges sharing a pair. No freeness assumption enters that definition. The additional sixth pair is unused under F5-freeness. When deleting two edges, F6 is applied only after proving all four edges of the two blocks are distinct. It then rules out a shared pair between their four-vertex unions. Resource containment and disjointness suffice; no extra linearity, exact decomposition or unproved counting injection is assumed.
+
+This is the finite upper half of the combined-family asymptotic result discussed in Glock's Theorem 8. It does not prove that theorem's matching lower half or its asymptotic equivalence.
 
 ## Excluded claims
 
