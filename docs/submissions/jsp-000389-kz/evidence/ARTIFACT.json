@@ -1,0 +1,14 @@
+{
+  "repository": "ketianzhang1-lang/jsp-000301-lean",
+  "run_id": 35171609997,
+  "job_id": 105044276233,
+  "source_commit": "3ab06d1f57b76a0573da1003b126f1df4a96abda",
+  "artifact_id": 10476144763,
+  "name": "jsp-000389-evidence",
+  "size_in_bytes": 10368924,
+  "sha256": "aaad20a4046b506184a0d8f885f679cacad167a8e200576c973814566354556d",
+  "expires_at": "2026-12-16T01:42:45Z",
+  "url": "https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35171609997/artifacts/10476144763",
+  "download_hash_checked": true,
+  "source_archive_compared": true
+}
