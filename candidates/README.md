@@ -11,4 +11,4 @@ Keep IDs stable when moving entries. An ID can occur only once across candidates
 
 See [records](../docs/records.md).
 
-No candidate records are currently published in this directory.
+- [JSP-000737: known Erdős–Rosenfeld fourth-root divisor bound](observation/jsp-000737-rosenfeld-bound/citation.md) — draft observation candidate for a Lean formalization of a known partial result; repository review is pending.
