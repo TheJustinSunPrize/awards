@@ -1,23 +1,8 @@
 [
   {
-    "path": ".gitattributes",
-    "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
-    "bytes": 8
-  },
-  {
-    "path": ".gitignore",
-    "sha256": "6f046c417f6e6c2231e050db7927a9435211942f350a9e8fb74916b90c359919",
-    "bytes": 53
-  },
-  {
     "path": "Audit.lean",
     "sha256": "7591e53623a35d37fc229ad4a01517bb7634c502fee8d0ffea3ac6383508ae5e",
     "bytes": 237
-  },
-  {
-    "path": "Erdos700.lean",
-    "sha256": "116b78d3e8d2fd1e67978cd6d1eb99310d278fe5a78c734499ec807c603463cc",
-    "bytes": 26
   },
   {
     "path": "Erdos700/Arithmetic.lean",
@@ -100,39 +85,9 @@
     "bytes": 1651
   },
   {
-    "path": "LICENSE",
-    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-    "bytes": 11358
-  },
-  {
-    "path": "README.md",
-    "sha256": "184b50fc0b89dfce9e675d05123436205d353911811c0560cbef30804f3c0636",
-    "bytes": 3785
-  },
-  {
-    "path": "SEMANTIC-AUDIT.md",
-    "sha256": "6a6c30c364a90b55889287bc1b407637146030cdecf44727e8196b4c8827e601",
-    "bytes": 5605
-  },
-  {
-    "path": "SUBMISSION.md",
-    "sha256": "dbe97049b5c37865fc976f62a0dcdb87288ac9c3b9b3be20362ba844bf07b045",
-    "bytes": 2354
-  },
-  {
-    "path": "docs/extension.md",
-    "sha256": "14134e381d9a46b82f0bb9a18f01a2e21a32a02d2d5a1995273760473a357b7e",
-    "bytes": 2462
-  },
-  {
-    "path": "docs/novelty.md",
-    "sha256": "42279db39680043d2bfa59c0795574d8954b6c85131e7afc8e4c578ea17d5ad6",
-    "bytes": 3949
-  },
-  {
-    "path": "docs/proof.md",
-    "sha256": "93c8cb0cd9a9458a0f3a7ca9b53d13c4ef23ae17612d57f5ed7bc4490d6a9e10",
-    "bytes": 9529
+    "path": "Erdos700.lean",
+    "sha256": "116b78d3e8d2fd1e67978cd6d1eb99310d278fe5a78c734499ec807c603463cc",
+    "bytes": 26
   },
   {
     "path": "lake-manifest.json",
@@ -148,50 +103,5 @@
     "path": "lean-toolchain",
     "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
     "bytes": 25
-  },
-  {
-    "path": "tools/bounds-certificates.json",
-    "sha256": "5ddbb75bc11fba4a9d05b95ac7e53f107b3b29ed9ba1af3e927c768f7e269571",
-    "bytes": 17922
-  },
-  {
-    "path": "tools/check_witness.py",
-    "sha256": "319d8bb0c991ee5fdc5dbed9b141c761a2a98304c5b572696bab316f2d0ee55f",
-    "bytes": 1726
-  },
-  {
-    "path": "tools/generate_bounds.py",
-    "sha256": "46042b0cd808b4cbaa650dbb3580982528446f80f070dd315b08791b65856252",
-    "bytes": 3705
-  },
-  {
-    "path": "verification/archive-v1.md",
-    "sha256": "588728eca3faaa29e0207319e5df53ff6bec2c2c4ec78cc6eb854eb226d15ee1",
-    "bytes": 892
-  },
-  {
-    "path": "verification/build-record.json",
-    "sha256": "0c19e6a014c8d308c4581b1b95fe516b2c896a7c1df541a523be84ed76a79d16",
-    "bytes": 7178
-  },
-  {
-    "path": "verification/canonical-audit.log",
-    "sha256": "cefeb85ac71fbbe3b409da66d54e3be41f34d8dc00f0c0af5be4a648ecb0c69e",
-    "bytes": 1048
-  },
-  {
-    "path": "verification/canonical-build.log",
-    "sha256": "2de77f9536b88046d9fe67e53a8601ee74b88ca6db6e6afb8544dbd04221b09a",
-    "bytes": 1105
-  },
-  {
-    "path": "verification/source-files.json",
-    "sha256": "88459c435a3c9b9fbb525d25f60c785239ea4ee73845b8f953fc27fff28e3eb0",
-    "bytes": 3074
-  },
-  {
-    "path": "verification/witness.json",
-    "sha256": "e06f26f59b2485648499818756b63c2cc9d4533f20a4ee9810c9ae6a4ffd778f",
-    "bytes": 575
   }
 ]

@@ -1,15 +1,13 @@
-Command (submission packet root): lake env lean -DwarningAsError=true Audit.lean
+Command (fresh verification project): lake env lean -DwarningAsError=true Audit.lean
 Exit code: 0
 
-Erdos700.FourPrime.four_prime_exact : ∀ (P A B C : ℕ),
-  1 ≤ A →
-    3 * A ≤ B →
-      10 * B ^ 2 ≤ C →
-        100 * C ^ 5 ≤ P →
-          Nat.Prime P →
-            Nat.Prime (P + A) →
-              Nat.Prime (P + B) →
-                Nat.Prime (P + C) → Erdos700.f (P * (P + A) * (P + B) * (P + C)) = P * (P + A) * (P + B)
+Erdos700.FourPrime.four_prime_exact_relaxed (P A B C : ℕ) (hA : 1 ≤ A) (hB : 3 * A ≤ B) (hC : B * (B - A) + B + 1 ≤ C)
+  (hPsize : 100 * C ^ 5 ≤ P) (hP : Nat.Prime P) (hPA : Nat.Prime (P + A)) (hPB : Nat.Prime (P + B))
+  (hPC : Nat.Prime (P + C)) : Erdos700.f (P * (P + A) * (P + B) * (P + C)) = P * (P + A) * (P + B)
 def Erdos700.f : ℕ → ℕ :=
 fun n => sInf {m | ∃ k, 1 < k ∧ k ≤ n / 2 ∧ m = n.gcd (n.choose k)}
+'Erdos700.FourPrime.four_prime_exact_relaxed' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos700.FourPrime.four_prime_exact (P A B C : ℕ) (hA : 1 ≤ A) (hB : 3 * A ≤ B) (hC : 10 * B ^ 2 ≤ C)
+  (hPsize : 100 * C ^ 5 ≤ P) (hP : Nat.Prime P) (hPA : Nat.Prime (P + A)) (hPB : Nat.Prime (P + B))
+  (hPC : Nat.Prime (P + C)) : Erdos700.f (P * (P + A) * (P + B) * (P + C)) = P * (P + A) * (P + B)
 'Erdos700.FourPrime.four_prime_exact' depends on axioms: [propext, Classical.choice, Quot.sound]

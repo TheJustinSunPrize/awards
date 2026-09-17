@@ -1,204 +1,123 @@
-# Independent semantic audit of the four-prime theorem
+# Current v2 semantic audit
 
-Date: 2026-09-17. Auditor: the separate proof-attempt agent.
+Date: 2026-09-17. Internal AI-assisted source review by a separate agent.
+This is not external human peer review or designated organizer verification.
 
-Result: no mismatch was identified between `Erdos700.FourPrime.four_prime_exact`
-and the local four-prime lemma in the human-readable manuscript. No omitted
-pair, narrower minimization range, extra mathematical hypothesis, or assumed
-conclusion was found in the source proof reviewed here.
+**Finding:** no semantic mismatch or additional mathematical assumption was
+identified in the current relaxed theorem. This report is a source-level
+review. The root agent has reported a successful assembled `lake build`
+(exit code 0), including both the relaxed theorem and the original corollary.
+The subsequent [fresh build record](verification/build-record.json) and
+[final axiom audit](verification/canonical-audit.log) also pass: all 17 local
+modules were rebuilt, and both root theorems use only `propext`,
+`Classical.choice`, and `Quot.sound`. These checks remain internal verification.
 
-This is a source-level semantic audit, supplemented by a compiled dependency
-axiom check. The independent complete build and final-theorem axiom audit are
-recorded in `verification/`. This audit did not modify any theorem source.
+Reviewed `Erdos700/FourPrime.lean` SHA-256:
+`1C9E6D14F7900D68A26D8351A038F20ABF58D3D0967463DEDFA3A9707F97C267`.
 
-## Snapshot
+## Statement and natural subtraction
 
-The reviewed final `Erdos700/FourPrime.lean` has SHA-256:
-
-`796ED3599CCA2973D7E6A6D3B556B7460F657A524529A1453914D237696B3DEC`
-
-`Erdos700/Minimum.lean` has SHA-256:
-
-`4B3EBD40441FAA26AD3C4CF31727318926CD0ABE56D59353E136B2ABB7BAE481`
-
-Release packaging addendum (2026-09-17): the packet text was normalized
-to UTF-8 with LF line endings, no trailing horizontal whitespace, and one
-final newline. Lean source changes were limited to CRLF-to-LF conversion and
-removal of an extra final blank line; no other source characters changed.
-No mathematical or Lean content changed: every released
-Lean source was compared with the original audited snapshot after that
-same whitespace normalization and matched exactly. The two hashes above
-identify the normalized release bytes. A fresh build and final theorem
-audit of those release bytes are recorded under `verification/`.
-
-The local comparison copy of the upstream Formal Conjectures problem 700
-statement has SHA-256:
-
-`AA583A47B578A8AC29FA2A6A050683F3D030623DF21D7566EEB561C0B040A375`
-
-## Exact statement and scope
-
-The final theorem quantifies natural numbers `P,A,B,C`, assumes exactly
-
-- `1 ≤ A`;
-- `3*A ≤ B`;
-- `10*B^2 ≤ C`;
-- `100*C^5 ≤ P`;
-- primality of `P`, `P+A`, `P+B`, and `P+C`;
-
-and concludes
+`four_prime_exact_relaxed` retains the original conclusion
 
 ```text
-f (P*(P+A)*(P+B)*(P+C)) = P*(P+A)*(P+B).
+f(P(P+A)(P+B)(P+C)) = P(P+A)(P+B)
 ```
 
-There are no surrounding section variables or additional implicit hypotheses
-in the theorem's source. These assumptions match the human-readable local
-lemma: the natural-number formulation loses no positive-integer cases.
-`A ≥ 1` and the other parameter inequalities imply `B,C > 0`; primality implies
-`P > 0`. The derived strict ordering is `P < P+A < P+B < P+C`.
+and assumes exactly `A>=1`, `B>=3A`, `C>=B(B-A)+B+1`, `P>=100C^5`, and
+primality of the four displayed factors. No source digits, carry inequalities,
+pair exclusions, or minimum equality are hypotheses of the final theorem.
 
-The theorem is conditional on the four displayed integers being prime. It
-does not itself assert that any such quadruple exists, that infinitely many
-exist, or any asymptotic statement.
+The new natural-number subtraction is handled correctly. The proof first
+establishes `A<=B`, casts the complete natural inequality to integers, then
+uses `Nat.cast_sub hABnat`. Therefore integer `b-a` is exactly the cast of
+natural `B-A`; there is no silent replacement of truncated subtraction.
+The parameter assumptions still imply `0<A<B<C` and hence four distinct,
+strictly ordered primes.
 
-## Definition of the minimum and its nonempty range
+## Preservation of the original theorem
 
-The local definition of `Erdos700.f` is textually the same mathematical
-definition used by the checked upstream `FormalConjectures/ErdosProblems/700.lean`:
+The name `four_prime_exact` remains available with its original statement,
+including `C>=10B^2`. It is now proved as a corollary of the relaxed theorem.
+The implication is valid: `B(B-A)<=B^2`, while `B>=3` implies
+`B^2+B+1<=10B^2`. No old assumption has been silently replaced in the
+backward-compatible declaration.
 
-```lean
-noncomputable def f (n : ℕ) : ℕ :=
-  sInf {m | ∃ k, 1 < k ∧ k ≤ n / 2 ∧ m = Nat.gcd n (n.choose k)}
-```
+The parameter region is enlarged; the conclusion and exponent are unchanged.
+For example, the gap tuple `(A,B,C)=(2,6,32)` satisfies the new gap inequality
+and fails the old one. This observation concerns the gap region, not a claim
+that a particular translate has all four factors prime.
 
-Thus the index range is exactly `2 ≤ k ≤ floor(n/2)`, with the natural-number
-binomial coefficient and gcd. It is not a restricted set of prime indices,
-indices divisible by a selected factor, or a different gcd function.
+## Definition, range, and all six pairs
 
-The use of `sInf` does not hide an empty-set case. `largest_prime_in_range`
-proves that the largest prime `s` lies in the range for the product of the four
-primes. `gcd_four_primes_at_largest` proves equality with the product of the
-three smaller primes at this index. That witness establishes nonemptiness
-before `Nat.sInf_mem` is used for the lower bound.
+`Minimum.lean` is byte-for-byte unchanged from v1 (SHA-256
+`4B3EBD40441FAA26AD3C4CF31727318926CD0ABE56D59353E136B2ABB7BAE481`).
+In particular, `f` still takes the infimum of all gcd values with
+`1<k<=floor(N/2)`. The proof supplies the witness `k=P+C` before using
+`Nat.sInf_mem`, so it does not exploit the empty-set convention.
 
-The upper-bound witness is exactly the manuscript's `k=P+C`. Its gcd proof
-uses primality and strict ordering to show the three smaller primes divide
-the binomial while `P+C` does not. Distinctness also makes the product
-squarefree for this step. The argument does not assume the six exclusions
-in order to construct the witness.
+The six pair directions are unchanged and exhaustive:
 
-## Natural numbers, integer arithmetic, and digit positions
-
-The prime, row, index, gcd, and binomial coefficient remain natural numbers.
-The cast to integers is used for parameter inequalities, signed polynomial
-coefficients, and Euclidean division. All four bases are positive, and the
-casted divisions/moduli are connected back to natural-number operations in
-`IntDigitSupport.lean`; no truncating subtraction is introduced into the
-signed carry calculations.
-
-The source digit bounds follow from Lucas, the four legal row expansions,
-and a proved quotient range. They are not hypotheses of `four_prime_exact`.
-`ParameterDigits.parameter_quotient_lt_cube` proves that range from
-`2*k ≤ N`, `P ≤ x`, and `N < 2*P^4`. Hence `k/x < x^3`, so the three source
-digits exhaust the quotient. This applies through the endpoint
-`k=floor(N/2)` as well as to smaller indices.
-
-The target digit positions are correctly shifted by the initially removed
-factor of the target base `q`:
-
-| Digit of `k/q` | Integer expression used |
+| Missing pair | Source -> target |
 | --- | --- |
-| Low | `(k/q) % q` |
-| Middle | `(k/q/q) % q` |
-| High | `(k/q/q/q) % q` |
+| `P, P+A` | `P+A -> P` |
+| `P, P+B` | `P -> P+B` |
+| `P, P+C` | `P -> P+C` |
+| `P+A, P+B` | `P+A -> P+B` |
+| `P+A, P+C` | `P+A -> P+C` |
+| `P+B, P+C` | `P+B -> P+C` |
 
-The third expression is the high digit of the quotient, not an extra digit.
-The target bounds come directly from `int_lucas_three_digit_bounds`. The
-target interface need not assume `q ∣ N` separately to obtain those bounds;
-the prime-factor property is established in the main proof and is used when
-deriving divisibility of `k`.
+Source digits are derived from Lucas and the proved `k/x<x^3` range.
+Target bounds remain actual integer Euclidean remainders at the correct
+positions. Divisibility of each source quotient by the second prime is
+proved from the two missing primes and their distinctness. Auxiliary size
+conditions are discharged by wrappers using the new parameter inequality;
+none is retained as an extra hypothesis of the final theorem.
 
-## All six unordered pairs
+The first pair intentionally uses the reversed source direction and forces
+all source digits to be zero, contradicting the positive original index.
+All other directions still match their respective row expansions.
 
-`NoTwoMissing` explicitly lists all six unordered pairs. The assembled proof
-handles them in the same order:
+## Bounds and auxiliary generator
 
-| Missing pair | Source base | Target base | Exclusion used |
-| --- | --- | --- | --- |
-| `P, P+A` | `P+A` | `P` | `Arithmetic.pairAP_zero_digits` |
-| `P, P+B` | `P` | `P+B` | `ParameterP.pairPB_global_digits` |
-| `P, P+C` | `P` | `P+C` | `ParameterP.pairPC_global_digits` |
-| `P+A, P+B` | `P+A` | `P+B` | `PairADigits.pairAB_global_digits` |
-| `P+A, P+C` | `P+A` | `P+C` | `PairADigits.pairAC_global_digits` |
-| `P+B, P+C` | `P+B` | `P+C` | `ParameterBC.pairBC_actual_digits` |
+The auditor directly observed a successful `lake build Erdos700.Bounds`
+under Lean 4.33.1: exit code 0, no warnings. All 33 strict inequalities have
+new certificates after substituting
 
-Reversing the first pair is intentional and matches the residue argument in
-the manuscript. It needs no separate target digit hypothesis: divisibility
-of the source quotient by `P` already forces all three source digits to
-vanish. The main proof then contradicts the original positive index.
+```text
+a=1+x, b=3a+y, c=b(b-a)+b+1+z, with x,y,z>=0.
+```
 
-For every pair, divisibility of the source quotient by the other prime is
-proved using the corresponding binomial nondivisibility, Lucas's lowest
-digit implication, and distinctness of the two primes. It is not assumed
-without proof and is not confused with divisibility of the original index.
+Each expanded polynomial has nonnegative integer coefficients and a positive
+constant coefficient. Lean checks the identities with `ring` and their signs
+with `positivity`. The renamed lower-bound lemma is `c_at_least_10`, proving
+`0<c-9`; no old `c>=90` assumption remains in the reviewed relaxed modules.
+The four downstream wrapper modules have also been reported as successfully
+built by their responsible agent. The root agent's assembled project build
+has subsequently passed, including `four_prime_exact_relaxed` and
+`four_prime_exact`. The separate final fresh-build and axiom-list checks have
+also passed, as recorded in the verification links above.
 
-The target `P+B` bounds are exactly `(C, q-B, R-1)` in the manuscript's
-notation. The target `P+C` bounds are exactly `(q-F, U-1, q-D)`. Pair proofs
-that only need the first two bounds intentionally discard the third; this
-strengthens their applicability and does not weaken the final conclusion.
+`tools/generate_bounds.py` is portable and reads only this project's
+`Erdos700/Bounds.lean`. With Python 3 and SymPy installed, run:
 
-## Auxiliary hypotheses and generic lemmas
+```text
+python tools/generate_bounds.py
+```
 
-The generic carry lemmas expose size and digit hypotheses. The main theorem
-does not retain any of them as additional assumptions:
+It regenerates the 33 right-hand-side polynomials, compares them with the
+current Lean identities, checks coefficient signs, and writes
+`tools/bounds-certificates.json`. It does not modify Lean source or depend on
+the old v1 source path. This tool is an auxiliary generator, not part of the
+trusted proof; acceptance rests on Lean's checks.
 
-- Row digit legality is discharged by `ParameterDigits`.
-- Signed carry ranges and large-base inequalities are discharged by
-  `ParameterP`, the global wrappers in `PairADigits`, and `ParameterBC`.
-- Actual integer remainders are connected to the normalization functions
-  before the normalized exclusions are applied.
-- The source representations and target bounds are derived independently
-  from the two supposed missing primes.
+No `sorry`, custom `axiom`, `admit`, `native_decide`, `unsafe`, `extern`, or
+`implemented_by` declaration was found by a source scan of the Lean modules.
+This source scan does not replace the final imported-axiom audit.
 
-In particular, the last pair constructs its internal `H,J,K` and derives the
-middle correction `-2*H`; it does not assume the desired contradictory
-middle interval. No generic lemma used by the main proof assumes
-`NoTwoMissing`, the minimum equality, or a logically equivalent conclusion.
+## Scope
 
-After the pair exclusions, `threeOfFour_of_noTwoMissing` is the elementary
-propositional step that at least three primes divide every relevant
-binomial. The smallest product of three of the ordered primes supplies the
-gcd lower bound, which is combined with the witnessed upper bound.
-
-## Dependency trust check
-
-`AuditCoreIndependent.lean` was an internal auxiliary audit, not included in
-this packet. It was run successfully with the configured Lean 4.33.1/Mathlib
-environment. Its twelve `#print axioms` queries cover the
-minimum framework, the integer Lucas support, source quotient divisibility,
-all six pair exclusions, the quotient range, and a row expansion.
-
-All queried declarations depend only on subsets of the standard axioms
-`propext`, `Classical.choice`, and `Quot.sound`. No `sorryAx` or custom axiom
-appeared. A source scan of the local `Erdos700` files also found no `sorry`,
-`admit`, custom `axiom`, `native_decide`, `unsafe`, `extern`, or
-`implemented_by` declaration.
-
-The included `Audit.lean` reproduces the complete final theorem's transitive
-axiom audit, together with its type and the definition of `f`; the public
-result is recorded in `verification/canonical-audit.log`.
-
-The upstream open problem file, which contains unproved problem statements,
-is used only as a comparison source for the definition of `f`; it is not
-imported by this development.
-
-## What this audit does not establish
-
-This audit does not establish novelty or priority in the literature, prize
-eligibility, or the truth of an unformalized external statement. It does not
-claim that Maynard's theorem, the admissible tuple construction, the
-infinite-family consequence, or `f(N)~N^(3/4)` has been formalized here.
-
-The conclusion audited is the complete local four-prime equality criterion,
-with the original parameters and the original full minimization range.
+This audit does not establish novelty, priority, prize eligibility, or a
+formalized Maynard theorem. The conditional local equality criterion is the
+statement reviewed. Neither the existence of infinitely many prime
+quadruples nor the infinite-family asymptotic consequence is claimed to be
+formalized by this development.

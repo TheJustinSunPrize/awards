@@ -30,4 +30,8 @@ The following are internal working artifacts, not included in the packet:
 - erdos700-four-prime-proof.md: independent fallback fixed pattern (0,2,6,30), P>=100000; proves only the implication for primes of that pattern and does not claim infinitely many such patterns.
 - verify_700_four_prime_certificate.py and 700-four-prime-certificate.json: exact finite parameter audit for the universal fixed-pattern proof.
 
-No external submission or public priority claim has been made by this agent.
+The version-1 packet was subsequently submitted as [official PR #657](https://github.com/TheJustinSunPrize/awards/pull/657).
+The version-2 refinement weakens its c-separation hypothesis; this is an extension
+of that same submission, not a separate full resolution or a higher-exponent claim.
+Additional exact-phrase web searches for the four-prime criterion and the new gap
+formula returned no matching result. This limited negative search does not establish priority.

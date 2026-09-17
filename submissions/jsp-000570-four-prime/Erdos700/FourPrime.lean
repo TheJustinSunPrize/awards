@@ -11,9 +11,10 @@ import Erdos700.RowExpansions
 namespace Erdos700.FourPrime
 
 /-- A four-prime equality criterion for the binomial-gcd minimum.
-This is the new local theorem. It does not assume Maynard's theorem. -/
-theorem four_prime_exact (P A B C : ℕ)
-    (hA : 1 ≤ A) (hB : 3*A ≤ B) (hC : 10*B^2 ≤ C) (hPsize : 100*C^5 ≤ P)
+The relaxed separation condition strictly extends the original criterion.
+This local theorem does not assume Maynard's theorem. -/
+theorem four_prime_exact_relaxed (P A B C : ℕ)
+    (hA : 1 ≤ A) (hB : 3*A ≤ B) (hC : B*(B-A)+B+1 ≤ C) (hPsize : 100*C^5 ≤ P)
     (hP : P.Prime) (hPA : (P+A).Prime) (hPB : (P+B).Prime) (hPC : (P+C).Prime) :
     f (P*(P+A)*(P+B)*(P+C)) = P*(P+A)*(P+B) := by
   let p : ℤ := P
@@ -23,7 +24,10 @@ theorem four_prime_exact (P A B C : ℕ)
   let N : ℕ := P*(P+A)*(P+B)*(P+C)
   have ha : 1 ≤ a := by dsimp [a, b, c, p]; exact_mod_cast hA
   have hb : 3*a ≤ b := by dsimp [a, b, c, p]; exact_mod_cast hB
-  have hc : 10*b^2 ≤ c := by dsimp [a, b, c, p]; exact_mod_cast hC
+  have hABnat : A ≤ B := by omega
+  have hcCast : ((B*(B-A)+B+1 : ℕ) : ℤ) ≤ (C : ℤ) := by exact_mod_cast hC
+  have hc : b*(b-a)+b+1 ≤ c := by
+    simpa [a, b, c, Nat.cast_sub hABnat] using hcCast
   have hp : 100*c^5 ≤ p := by dsimp [a, b, c, p]; exact_mod_cast hPsize
   have hp0 : 0 < p := by dsimp [a, b, c, p]; exact_mod_cast hP.pos
   have ha0 : 0 ≤ a := by omega
@@ -183,5 +187,19 @@ theorem four_prime_exact (P A B C : ℕ)
     obtain ⟨hlow, hmiddle, _⟩ := target_c hmc
     exact ParameterBC.pairBC_actual_digits a b c p u v w (k : ℤ)
       ha hb hc hp hu0 hv0 hw0 hu hv hw hkpos hs hdiv hlow hmiddle
+
+/-- The original separation criterion is retained as a corollary of the
+relaxed theorem. This preserves the declaration submitted in the v1 packet. -/
+theorem four_prime_exact (P A B C : ℕ)
+    (hA : 1 ≤ A) (hB : 3*A ≤ B) (hC : 10*B^2 ≤ C) (hPsize : 100*C^5 ≤ P)
+    (hP : P.Prime) (hPA : (P+A).Prime) (hPB : (P+B).Prime) (hPC : (P+C).Prime) :
+    f (P*(P+A)*(P+B)*(P+C)) = P*(P+A)*(P+B) := by
+  have hBB : B*(B-A) ≤ B^2 := by
+    calc
+      B*(B-A) ≤ B*B := Nat.mul_le_mul_left B (Nat.sub_le B A)
+      _ = B^2 := by ring
+  have hB3 : 3 ≤ B := by omega
+  have hRelax : B*(B-A)+B+1 ≤ C := by nlinarith
+  exact four_prime_exact_relaxed P A B C hA hB hRelax hPsize hP hPA hPB hPC
 
 end Erdos700.FourPrime

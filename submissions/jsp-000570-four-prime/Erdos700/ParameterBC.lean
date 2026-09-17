@@ -18,7 +18,7 @@ source representation, divisibility, and target digit inequalities have been
 obtained.  No auxiliary normalized-digit or size hypothesis is required.
 -/
 theorem pairBC_actual_digits (a b c p u v w k : ℤ)
-    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 10 * b ^ 2 ≤ c)
+    (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : b * (b - a) + b + 1 ≤ c)
     (hp : 100 * c ^ 5 ≤ p)
     (hu0 : 0 ≤ u) (hv0 : 0 ≤ v) (hw0 : 0 ≤ w)
     (hu : u ≤ a + c - 3 * b - 1)
@@ -32,8 +32,8 @@ theorem pairBC_actual_digits (a b c p u v w k : ℤ)
     (hmiddle : (k / (p + c) / (p + c)) % (p + c) ≤
       3 * c ^ 2 - 2 * c * (a + b) + a * b - 1) : False := by
   have hbpos : 0 < b := by linarith only [ha, hb]
-  have hc90 : 90 ≤ c := by
-    have h := Bounds.c_at_least_90 a b c ha hb hc
+  have hc10 : 10 ≤ c := by
+    have h := Bounds.c_at_least_10 a b c ha hb hc
     omega
   have hc1 : 1 ≤ c := by omega
   have hd : 0 < c - b := by

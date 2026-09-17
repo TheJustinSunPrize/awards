@@ -1,0 +1,25 @@
+{
+  "P": 3355448021,
+  "a": 2,
+  "b": 6,
+  "c": 32,
+  "primes": [
+    3355448021,
+    3355448023,
+    3355448027,
+    3355448053
+  ],
+  "new_c_threshold": 31,
+  "old_c_threshold": 360,
+  "P_threshold": 3355443200,
+  "satisfies_relaxed_hypotheses": true,
+  "violates_original_c_hypothesis": true,
+  "primality_method": "Exact trial division by 2 and every odd integer through isqrt(n).",
+  "trial_division_limits": [
+    57926,
+    57926,
+    57926,
+    57926
+  ],
+  "scope": "Supporting computation, separate from Lean. No direct enumeration of f(N), no infinitude claim."
+}

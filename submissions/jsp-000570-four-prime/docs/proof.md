@@ -1,10 +1,10 @@
 # General four-prime lemma for Erdős 700 (JSP-000570)
 
-Research manuscript, 2026-09-17. The local four-prime theorem has a Lean proof in `Erdos700/FourPrime.lean`; see the build and axiom records for its verified scope. The Maynard corollary below is a human-readable argument, not part of the Lean formalization. External peer review and historical priority remain unestablished.
+Research manuscript, version 2, 2026-09-17. The local four-prime theorem has a Lean proof in `Erdos700/FourPrime.lean`; see the build and axiom records for its verified scope. The Maynard corollary below is a human-readable argument, not part of the Lean formalization. External peer review and historical priority remain unestablished.
 
 ## Claim
 
-Let positive integers a,b,c obey b>=3a and c>=10b^2. Let P>=100c^5, and suppose P,P+a,P+b,P+c are all prime. Set N to their product and f(N)=min_{2<=k<=floor(N/2)} gcd(N,binom(N,k)). Then
+Let positive integers a,b,c obey b>=3a and c>=b(b-a)+b+1. Let P>=100c^5, and suppose P,P+a,P+b,P+c are all prime. Set N to their product and f(N)=min_{2<=k<=floor(N/2)} gcd(N,binom(N,k)). Then
 
     f(N)=P(P+a)(P+b).
 
@@ -19,11 +19,11 @@ Put
     R=a+c-3b, B=(2b-a)c+2ab-3b^2, C=b(b-a)(c-b);
     D=3c-a-b, U=3c^2-2c(a+b)+ab, F=c(c-a)(c-b).
 
-All entries in this normalized digit table are legal. Here a>=1, b>=3 and c>=90. More explicitly:
+All entries in this normalized digit table are legal. Here a>=1, b>=3 and c>=10. More explicitly:
 
 - 0<S<3c, 0<T<3c^2 and 0<Z<c^3.
 - 0<S1<2c. Also T1=(b-2a)c-2ab+3a^2>=a(c-2b+3a)>0, while T1<bc<c^2.
-- 1<R<c, since R>=c-3b>=10b^2-3b>1. Also 0<B<2bc<2c^2, since B>b(c-3b)>0 and its remaining terms beyond 2bc sum to -ac+2ab-3b^2<0.
+- 1<R<c, since b-a>=2 and c-3b>=b(b-a-2)+1>=1, so R=a+c-3b>=2. Also 0<B<2bc<2c^2, since B>b(c-3b)>0 and its remaining terms beyond 2bc sum to -ac+2ab-3b^2<0.
 - 0<U<3c^2, since a+b<c implies U>c^2; and 0<D<3c.
 - 0<A,C,F<c^3.
 
@@ -54,7 +54,7 @@ For pairs starting from P+a, we have u<2c, v<c^2, |d|<c and h in {0,1} for upwar
 
     q-10c^3>c^3,  q-10c^2>U-1,
 
-because q>=100c^5, c>=90, and U<3c^2. Thus a negative constant coefficient for a target with fixed low digit C<c^3 immediately violates that low bound. A negative middle coefficient, after any required low-digit normalization, produces a digit exceeding the fixed target middle bound U-1.
+because q>=100c^5, c>=10, and U<3c^2. Thus a negative constant coefficient for a target with fixed low digit C<c^3 immediately violates that low bound. A negative middle coefficient, after any required low-digit normalization, produces a digit exceeding the fixed target middle bound U-1.
 
 For pairs starting from P, the congruence w=dv-d^2u+hq, with |dv-d^2u|<6c^3 and 0<=w<=Z<c^3, forces h=0.
 For pairs starting from P+a and going upward, |dv-d^2u|<3c^3 and 0<=w<=q-d-A<q force h=0 or 1.
@@ -164,6 +164,9 @@ For any i<j<k<l, put a=h_j-h_i, b=h_k-h_i, c=h_l-h_i. Then
     b>h_j^4-h_j>3h_j>3a,
     c>h_k^4-h_k>10h_k^2>10b^2.
 
+The displayed bounds on these chosen offsets imply the relaxed hypothesis,
+because b>=3a>=3 gives b(b-a)+b+1<=b^2+b+1<=10b^2.
+
 Maynard's theorem (with at least four prime values in a sufficiently large fixed admissible tuple), followed by the finite pigeonhole principle, produces one fixed quadruple of indices for infinitely many translates x. Letting P=x+h_i, the corresponding four primes satisfy the lemma for every sufficiently large such P. Their product N tends to infinity, and the lemma gives
 
     f(N)=P(P+a)(P+b)=N^(3/4)(1+o(1)).
@@ -172,7 +175,8 @@ This improves the exponent 2/3 of the inspected prior three-prime manuscript. It
 
 ## Prior work and attribution
 
-The current [Erdős 700 page](https://www.erdosproblems.com/700) credits the preceding three-prime construction to GPT 5.6 Sol Pro prompted by Liam Price. Its full public manuscript, [Large Binomial GCDs](https://www.overleaf.com/read/pmnwkfnhhxhn#82956e), proves a three-prime criterion and derives an infinite family with exponent 2/3. The present work extends the prime-product approach to four primes. The use of Lucas digits and the strategy of combining a local criterion with Maynard are credited to those predecessors. No first resolution of the square-root infinitude question is claimed.
+The current [Erdős 700 page](https://www.erdosproblems.com/700) credits the preceding three-prime construction to GPT 5.6 Sol Pro prompted by Liam Price. Its full public manuscript, [Large Binomial GCDs](https://www.overleaf.com/read/pmnwkfnhhxhn#82956e), proves a three-prime criterion and derives an infinite family with exponent 2/3. The present work extends the prime-product approach to four primes.
+The version-2 refinement lowers the required final gap without changing the exponent. The use of Lucas digits and the strategy of combining a local criterion with Maynard are credited to those predecessors. No first resolution of the square-root infinitude question is claimed.
 
 The proposed new contribution is the four-prime local criterion, its Lean formalization, and the separate stronger infinite-family consequence. This is not a complete solution of every part of Erdős 700.
 

@@ -1,25 +1,88 @@
 {
   "lean": "4.33.1",
   "mathlibRevision": "0df444a360eaa60ab8c11dca51a86af692955474",
-  "buildLocation": "submission packet root",
-  "releaseTextEncoding": "UTF-8 without BOM",
-  "releaseLineEndings": "LF",
+  "buildLocation": "fresh verification project",
   "freshProjectBuildDirectory": true,
   "inheritedLeanPathCleared": true,
   "sourceDirectoryAbsentFromLakeSearchPath": true,
   "dependencyCachesReused": true,
   "allNineDependencyRevisionsMatchManifest": true,
   "allNineDependencyTrackedWorkingTreesClean": true,
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "manifestRevision": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "actualRevision": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "matchesManifest": true,
+      "trackedWorkingTreeClean": true
+    },
+    {
+      "name": "plausible",
+      "manifestRevision": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "actualRevision": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "matchesManifest": true,
+      "trackedWorkingTreeClean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "manifestRevision": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "actualRevision": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "matchesManifest": true,
+      "trackedWorkingTreeClean": true
+    },
+    {
+      "name": "importGraph",
+      "manifestRevision": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "actualRevision": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "matchesManifest": true,
+      "trackedWorkingTreeClean": true
+    },
+    {
+      "name": "proofwidgets",
+      "manifestRevision": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "actualRevision": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "matchesManifest": true,
+      "trackedWorkingTreeClean": true
+    },
+    {
+      "name": "aesop",
+      "manifestRevision": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "actualRevision": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "matchesManifest": true,
+      "trackedWorkingTreeClean": true
+    },
+    {
+      "name": "Qq",
+      "manifestRevision": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "actualRevision": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "matchesManifest": true,
+      "trackedWorkingTreeClean": true
+    },
+    {
+      "name": "batteries",
+      "manifestRevision": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "actualRevision": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "matchesManifest": true,
+      "trackedWorkingTreeClean": true
+    },
+    {
+      "name": "Cli",
+      "manifestRevision": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "actualRevision": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "matchesManifest": true,
+      "trackedWorkingTreeClean": true
+    }
+  ],
   "localModulesRebuilt": [
     "Erdos700.Arithmetic",
+    "Erdos700.PairA",
     "Erdos700.Lucas",
-    "Erdos700.PairBC",
     "Erdos700.RowExpansions",
-    "Erdos700.PrimeSource",
+    "Erdos700.PairBC",
     "Erdos700.DigitSupport",
+    "Erdos700.PrimeSource",
     "Erdos700.Minimum",
     "Erdos700.IntDigitSupport",
-    "Erdos700.PairA",
     "Erdos700.Bounds",
     "Erdos700.ParameterBC",
     "Erdos700.ParameterDigits",
@@ -32,13 +95,128 @@
   "localModuleCount": 17,
   "buildExitCode": 0,
   "auditExitCode": 0,
-  "fourPrimeSourceSHA256": "796ED3599CCA2973D7E6A6D3B556B7460F657A524529A1453914D237696B3DEC",
-  "minimumSourceSHA256": "4B3EBD40441FAA26AD3C4CF31727318926CD0ABE56D59353E136B2ABB7BAE481",
-  "allReleasedLeanSourcesMatchNormalizationRecord": true,
+  "fourPrimeSourceSHA256": "1c9e6d14f7900d68a26d8351a038f20abf58d3d0967463dedfa3a9707f97c267",
+  "minimumSourceSHA256": "4b3ebd40441faa26ad3c4cf31727318926cd0abe56d59353e136b2abb7bae481",
   "sourceUnchangedDuringBuild": true,
-  "axioms": [
-    "propext",
-    "Classical.choice",
-    "Quot.sound"
-  ]
+  "allCopiedSourceAndConfigurationBytesMatch": true,
+  "sourceAndConfigurationFiles": [
+    {
+      "path": "Audit.lean",
+      "sha256": "7591e53623a35d37fc229ad4a01517bb7634c502fee8d0ffea3ac6383508ae5e",
+      "bytes": 237
+    },
+    {
+      "path": "Erdos700/Arithmetic.lean",
+      "sha256": "baacdfa91a8611244efd0fdadcc8990a6703bcf72e61e306e2485b2cf778914d",
+      "bytes": 4165
+    },
+    {
+      "path": "Erdos700/Bounds.lean",
+      "sha256": "830d948670b3e9d2bd92a3e505e2edee8c47e8090eb6ea19c4e2cfd19107c170",
+      "bytes": 23439
+    },
+    {
+      "path": "Erdos700/DigitSupport.lean",
+      "sha256": "02f06b2071d1b455cd7c76cb3e2cafa8f6757f4eb1694ff51d1ca609dd9cc974",
+      "bytes": 3390
+    },
+    {
+      "path": "Erdos700/FourPrime.lean",
+      "sha256": "1c9e6d14f7900d68a26d8351a038f20abf58d3d0967463dedfa3a9707f97c267",
+      "bytes": 10406
+    },
+    {
+      "path": "Erdos700/IntDigitSupport.lean",
+      "sha256": "8e6b2cf740ccc3038b81a3afce5ca0063054a598315339a63fc50cafa75c0582",
+      "bytes": 5851
+    },
+    {
+      "path": "Erdos700/Lucas.lean",
+      "sha256": "adee0741d78fa6868e331dbdc9f2866e72346eb1af63931cd43b8cd3ea67354e",
+      "bytes": 3739
+    },
+    {
+      "path": "Erdos700/Minimum.lean",
+      "sha256": "4b3ebd40441faa26ad3c4cf31727318926cd0abe56d59353e136b2abb7bae481",
+      "bytes": 9064
+    },
+    {
+      "path": "Erdos700/PairA.lean",
+      "sha256": "1b3d6dd463c3382809f83a827310c7146867425792eddf26ad7642def3925fad",
+      "bytes": 6594
+    },
+    {
+      "path": "Erdos700/PairADigits.lean",
+      "sha256": "3a73d190fa5717ddc0da6cc6eb8c93ee4e772137ca3631aab2c94aaa0f0ed306",
+      "bytes": 20351
+    },
+    {
+      "path": "Erdos700/PairBC.lean",
+      "sha256": "2e42e1e49510d74a177b80d21231e2514ff2599eaf8d5863f5797563a269912e",
+      "bytes": 17972
+    },
+    {
+      "path": "Erdos700/PairPDigits.lean",
+      "sha256": "12c5257ec0e38d69f75a48d505569055712623c3d992dce6cbb2fa0d794d0257",
+      "bytes": 7689
+    },
+    {
+      "path": "Erdos700/ParameterBC.lean",
+      "sha256": "72a243478674c09e3dace5fea0eb87e3427c4c98b45042539308f9c72598fc4a",
+      "bytes": 3527
+    },
+    {
+      "path": "Erdos700/ParameterDigits.lean",
+      "sha256": "8ac1bee350553ce8af2eebaf5d7cb53b57115316e871d94de885ea6e4eb94f06",
+      "bytes": 8178
+    },
+    {
+      "path": "Erdos700/ParameterP.lean",
+      "sha256": "3a27a3f85fa19dedb92d6286cdbb649c08a386eac2c5a8efe80b829a3ed817c4",
+      "bytes": 5666
+    },
+    {
+      "path": "Erdos700/PrimeSource.lean",
+      "sha256": "d91cbad72668fafc71abc4bcd4aec222152088e14d229a433ae4d6abca31e2dc",
+      "bytes": 969
+    },
+    {
+      "path": "Erdos700/RowExpansions.lean",
+      "sha256": "97451baab714eca44b8ebce3cdfacbb76bef6dcfd7232db77c6658db9c446be6",
+      "bytes": 1651
+    },
+    {
+      "path": "Erdos700.lean",
+      "sha256": "116b78d3e8d2fd1e67978cd6d1eb99310d278fe5a78c734499ec807c603463cc",
+      "bytes": 26
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "0968f425d49ce3b64d512a5727456b8ce6d380991dc172443325d34d9923e8fe",
+      "bytes": 3541
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "2162f3dab725bc79e6ba937276b9035b88af4cbcad1f6328d57ce578ec1acd0e",
+      "bytes": 238
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "bytes": 25
+    }
+  ],
+  "axiomsByTheorem": {
+    "Erdos700.FourPrime.four_prime_exact_relaxed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Erdos700.FourPrime.four_prime_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "leanVersionOutput": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
 }

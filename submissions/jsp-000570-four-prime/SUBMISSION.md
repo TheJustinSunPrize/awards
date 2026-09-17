@@ -1,6 +1,6 @@
 # Submission scope: JSP-000570 / Erdős 700
 
-This packet requests review of a new four-prime sufficient condition as partial progress under section 4.2 of the [published selection rules](https://www.hejustinsun.com/prize/rules). The exact Lean theorem is `Erdos700.FourPrime.four_prime_exact`; its full type, the definition of `f`, and its transitive axiom list are in [the audit log](verification/canonical-audit.log).
+This packet requests review of a new four-prime sufficient condition as partial progress under section 4.2 of the [published selection rules](https://www.hejustinsun.com/prize/rules). The exact Lean theorem is `Erdos700.FourPrime.four_prime_exact_relaxed`; its full type, the definition of `f`, and its transitive axiom list are in [the audit log](verification/canonical-audit.log).
 
 The preceding three-prime / exponent-2/3 result and its Lucas–Maynard strategy are credited in [the mathematical note](docs/proof.md). The contribution proposed for Lean review is the **local four-prime criterion**. The separate infinite-family / exponent-3/4 argument uses Maynard and is human-readable mathematical context, not a formally verified theorem in this packet. No first solution of the already answered square-root infinitude question is claimed.
 
@@ -11,3 +11,5 @@ No full-entry solved status, eligibility flag, award record, payment, or tier is
 Recipient attribution remains `RECIPIENT-JSP-000570-A`, pending confirmation. No recipient identity, private contact, payment data, signed verification certificate, or committee decision is asserted. The preparation used OpenAI Codex; the submitter and internal reviewers have an interest in this work's acceptance.
 
 The packet has its own Apache-2.0 [license](LICENSE), preserving the source attribution in `Minimum.lean`. It does not redistribute the predecessor's manuscript, Lean, or Mathlib.
+
+Version 2 relaxes only the separation condition on c; the original criterion remains a theorem. It does not raise the 3/4 exponent or settle additional parts of the original open problem. See [the extension note](docs/extension.md).
