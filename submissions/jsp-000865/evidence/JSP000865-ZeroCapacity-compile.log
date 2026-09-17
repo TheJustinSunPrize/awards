@@ -1,5 +1,0 @@
-'Erdos1042.zero_transfiniteDiameter_hasUniformComponentGap' depends on axioms: [propext, Classical.choice, Quot.sound]
-'Erdos1042.closed_subunit_transfiniteDiameter_hasUniformComponentGap' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-'Erdos1042.erdos_1042_including_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
