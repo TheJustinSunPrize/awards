@@ -150,6 +150,30 @@ class RecordTests(unittest.TestCase):
         self.write(relative.parent / "statements" / (statement["id"] + ".yaml"), {**statement, "status": "superseded"})
         manage.check_history(self.root, base)
 
+    def test_archived_statement_immutable(self):
+        """A superseded statement stays frozen once it has been published."""
+        self.git("init", "-q")
+        self.profile("reviewer-a", "curator")
+        self.profile("reviewer-b", "curator")
+        relative = self.entry_dir.relative_to(self.root) / "verification/statement.yaml"
+        statement = self.statement()
+        self.write(relative, statement)
+        self.commit()
+        replacement = copy.deepcopy(statement)
+        replacement["id"] = "STMT-example-problem-v2"
+        replacement["supersedes"] = statement["id"]
+        self.write(relative, replacement)
+        archive = relative.parent / "statements" / (statement["id"] + ".yaml")
+        self.write(archive, {**statement, "status": "superseded"})
+        base = self.commit()
+        manage.check_history(self.root, base)
+
+        rewritten = copy.deepcopy(statement)
+        rewritten["statement"]["text"] = "Rewritten archived assertion"
+        self.write(archive, {**rewritten, "status": "superseded"})
+        with self.assertRaisesRegex(manage.InvalidRecord, "archived statements"):
+            manage.check_history(self.root, base)
+
     def test_local_links_and_anchors(self):
         for name in ("README.md", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md"):
             (self.root / name).write_text("# Title\n")
