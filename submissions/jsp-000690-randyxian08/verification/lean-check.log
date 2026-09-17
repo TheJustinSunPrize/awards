@@ -1,4 +1,0 @@
-'JSP690.JSP_000690' depends on axioms: [propext, Quot.sound]
-'JSP690.JSP_000690_full' depends on axioms: [propext, Classical.choice, Quot.sound]
-'JSP690.Edge.ext_vertices' depends on axioms: [propext, Quot.sound]
-'JSP690.Edge.proper_iff_nonmonochromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
