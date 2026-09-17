@@ -15,5 +15,6 @@ Formalization evidence, published for substantive review:
 - The axiom audit of the top-level theorem reports the standard Lean axioms (propext, Classical.choice, Quot.sound) plus Lean.ofReduceBool, reflecting the use of native_decide for the finite enumerations; no sorry placeholders are present.
 - Two independent checks passed: the Lean kernel itself during a clean build, and the independent lean4checker re-checking tool run in both of its modes across all four modules of the proof.
 - The clean build log (SHA-256 `5725b26137eea93c1c15ab59ca99640d801287b8ab41ab2d617c505b9479c9cc`, 1097 bytes) is retained for permanent external archiving.
+- Formalization attribution: the formalization and its local verification were prepared with AI coding-assistant sessions (TRAE agent) under the direction of the account holder. Mathematical discovery credit remains with the preprint authors.
 
 A structured verification record and a signed formal statement require registered curator and verifier profiles in this repository. Those role directories are not yet populated, so `verification/record.yaml` is null and this candidate remains under verification. No award is claimed or announced by this record.
