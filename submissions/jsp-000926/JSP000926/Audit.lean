@@ -1,9 +1,0 @@
-import JSP000926.CurveStatement
-import JSP000926.LengthProperties
-
-#print axioms Erdos1115.labyrinth_isGeometricLengthBarrier
-#print axioms Erdos1115.not_erdos_1115_geometric
-#print axioms Erdos1115.not_erdos_1115_continuousOn
-#print axioms Erdos1115.curve_escapes_of_composition_escapes
-#print axioms Erdos1115.geometricLengthInDisc_mono
-#print axioms Erdos1115.geometricLengthInDisc_ne_top_of_locallyBoundedVariationOn

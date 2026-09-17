@@ -1,2 +1,0 @@
-'Erdos1115.labyrinth_isGeometricLengthBarrier' depends on axioms: [propext, Classical.choice, Quot.sound]
-'Erdos1115.not_erdos_1115_geometric' depends on axioms: [propext, Classical.choice, Quot.sound]
