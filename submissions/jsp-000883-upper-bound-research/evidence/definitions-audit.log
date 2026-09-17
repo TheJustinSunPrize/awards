@@ -1,0 +1,20 @@
+def JSP000883.FiniteConstructionClaim : Prop :=
+∀ (k p : ℕ),
+  9 ≤ k →
+    Nat.Prime p →
+      k < 2 * p →
+        3 * p + 2 ≤ 2 * k →
+          have n := JSP000883.candidateN k p;
+          have i0 := JSP000883.candidateOffset k p;
+          2 * k ≤ n ∧
+            i0 < k ∧
+              n - i0 = JSP000883.center k p ∧
+                ¬JSP000883.center k p ∣ n.choose k ∧
+                  (∀ i < k, i ≠ i0 → n - i ∣ n.choose k) ∧ n ≤ 3 * JSP000883.lcmInitial k
+def JSP000883.EventualPrimeIntervalClaim : Prop :=
+∃ K, 9 ≤ K ∧ ∀ (k : ℕ), K ≤ k → ∃ p, Nat.Prime p ∧ k < 2 * p ∧ 3 * p + 2 ≤ 2 * k
+def JSP000883.EventualUpperClaim : Prop :=
+∃ K, ∀ (k : ℕ), K ≤ k → (∃ n, JSP000883.Admissible k n) ∧ JSP000883.leastN k ≤ 3 * JSP000883.lcmInitial k
+def JSP000883.BetterUpperClaim : Prop :=
+((fun k => ↑(JSP000883.leastN k)) =O[atTop] fun k => ↑(JSP000883.lcmInitial k)) ∧
+  (fun k => ↑(JSP000883.lcmInitial k)) =o[atTop] fun k => ↑k * ↑(JSP000883.lcmInitial k)

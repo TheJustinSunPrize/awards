@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this versioned, unrefereed research note; Lean proofs are incomplete."
+title: "A proposed lcm-scale upper bound for Erdos Problem 1063"
+type: report
+authors:
+  - family-names: "randyxian08"
+version: "0.1"
+date-released: "2026-09-17"
+url: "https://github.com/randyxian08/awards/releases/tag/jsp000883-research-v0.1"
+license: Apache-2.0
+abstract: "AI-assisted proof claim that n_k is at most three times lcm(1,...,k-1) for all sufficiently large k. Written argument and exact finite experiments supplied; no completed Lean proof, independent peer acceptance, or global priority confirmation claimed."
