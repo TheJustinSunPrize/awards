@@ -1,0 +1,28 @@
+{
+  "problem": "JSP-000281 / Erdos 339, second original question",
+  "status": "submitted-for-review",
+  "recipient_placeholder": "RECIPIENT-JSP-000281-A",
+  "confirmation": "pending",
+  "contribution": "New upper-density formalization endpoint and quantitative transfer; not mathematical solver or prior finite machinery authorship. AI assistance disclosed.",
+  "proof_commit": "96eab57b0ab449bc03a95e797e3dd5e4de841156",
+  "proof_url": "https://github.com/x2515102083/erdos339-upper-density/tree/96eab57b0ab449bc03a95e797e3dd5e4de841156",
+  "archive_url": "https://github.com/x2515102083/erdos339-upper-density/releases/download/proof-2026-09-17/erdos339-upper-density-evidence.zip",
+  "archive_sha256": "f83245243f1fe9c379ea1a32bb6eb9c2f4af2badd01c43ab30171f3369940a54",
+  "archive_bytes": 16464,
+  "lean": "4.32.1",
+  "mathlib_commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "local_checks": {
+    "lake_build_exit": 0,
+    "lake_build_jobs": 1569,
+    "axiom_audit_exit": 0,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "verification_limits": "Local Lean kernel only; imported cached mathlib not rebuilt, no independent checker, no official verification, no priority or eligibility adjudication.",
+  "requested_action": "Please review statement fidelity, reproduce the proof, assess attribution and the eligibility of this completed original subquestion for a formalization contribution award.",
+  "related_issue": "https://github.com/TheJustinSunPrize/awards/issues/22",
+  "upstream_license": "No general upstream license found. Generated finite source excluded; immutable URL + SHA256 bootstrap obtains it locally. No redistribution permission asserted."
+}
