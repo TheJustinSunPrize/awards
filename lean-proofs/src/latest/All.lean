@@ -1,4 +1,5 @@
 import ErdosProblems.Erdos307
+import ErdosProblems.Erdos52
 
 /-!
 # Erdős Problems
@@ -11,5 +12,9 @@ namespace ErdosProblems
 /-- Formalization of Erdős Problem 307. -/
 theorem erdos_307 : ∃ n : ℕ, 1 < n ∧ lpf n > lpf (n + 1) ∧ lpf (n + 1) > lpf (n + 2) :=
   Erdos307.exists_three_consecutive_decreasing_lpf
+
+/-- Formalization of Erdős Problem 52. -/
+theorem erdos_52 : ∀ N : ℕ, ∃ n : ℕ, n ≥ N ∧ d n = d (n + 1) :=
+  Erdos52.exists_infinitely_many_consecutive_equal_d
 
 end ErdosProblems
