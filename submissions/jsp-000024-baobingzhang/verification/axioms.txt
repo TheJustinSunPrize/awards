@@ -1,0 +1,21 @@
+'InvariantSubspaceProblem.exists_hyperinvariant_of_isCompactOperator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InvariantSubspaceProblem.exists_hyperinvariant_of_spectralRadius_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InvariantSubspaceProblem.lomonosov' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InvariantSubspaceProblem.aronszajn_smith' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InvariantSubspaceProblem.bernstein_robinson' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InvariantSubspaceProblem.Invariant_subspace_problem_finite_dimensional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InvariantSubspaceProblem.Invariant_subspace_problem_of_isCompactOperator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InvariantSubspaceProblem.Invariant_subspace_problem_of_commute_isCompactOperator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'InvariantSubspaceProblem.Invariant_subspace_problem_normal_operator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
