@@ -1,0 +1,28 @@
+import ReciprocalDoubling
+
+#print axioms ReciprocalDoubling.sum_val_pos
+#print axioms ReciprocalDoubling.scaled_term_val
+#print axioms ReciprocalDoubling.multiples_interval
+#print axioms ReciprocalDoubling.scaled_split
+#print axioms ReciprocalDoubling.compatible_prime_extension
+#print axioms ReciprocalDoubling.mem_differences
+#print axioms ReciprocalDoubling.irreducible_iff
+#print axioms ReciprocalDoubling.compatible_iff
+#print axioms ReciprocalDoubling.sumsBelow_succ
+#print axioms ReciprocalDoubling.irreducible_iff_doubling
+#print axioms ReciprocalDoubling.compatible_prime_doubling
+#print axioms ReciprocalDoubling.compatible_of_large
+#print axioms ReciprocalDoubling.exists_large_compatible_prime
+#print axioms ReciprocalDoubling.exists_large_doubling_multiple
+#print axioms ReciprocalDoubling.one_compatible
+#print axioms ReciprocalDoubling.prime_power_doubling
+#print axioms ReciprocalDoubling.isIrreducible_correct
+#print axioms ReciprocalDoubling.isCompatible_correct
+#print axioms ReciprocalDoubling.four_two_compatible
+#print axioms ReciprocalDoubling.four_twenty_three_compatible
+#print axioms ReciprocalDoubling.four_two_power_doubling
+#print axioms ReciprocalDoubling.four_twenty_three_power_doubling
+#print axioms ReciprocalDoubling.four_numeratorBound
+#print axioms ReciprocalDoubling.four_three_not_compatible
+#print axioms ReciprocalDoubling.sumsBelow_subset_succ
+#print axioms ReciprocalDoubling.doubling_count_lower_bound
