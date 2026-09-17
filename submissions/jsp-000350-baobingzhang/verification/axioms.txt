@@ -1,0 +1,6 @@
+'Erdos425.erdos_425_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos425.erdos_425_real_page' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos425.erdos_425_real_conjecture_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos425.erdos_425_real_not_isLittleO' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos425.exists_large_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos425.alexander_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
