@@ -11,4 +11,8 @@ Keep IDs stable when moving entries. An ID can occur only once across candidates
 
 See [records](../docs/records.md).
 
-No candidate records are currently published in this directory.
+## Observation candidates
+
+| Entry | Scope | Status |
+| --- | --- | --- |
+| [JSP-000738: five-divisor infinite family](observation/jsp-000738-five-divisors/citation.md) | Lean formalization of a known partial result for Erdős 887; C = 31 | Draft; review pending |

@@ -1,0 +1,24 @@
+id: jsp-000738-five-divisors
+batch: null
+problem:
+  source: https://github.com/TheJustinSunPrize/awards/blob/f4e7173d89dfe91022a185427d63452c8ffbf6ae/problems/catalog-0701-0800.md#JSP-000738
+  number: JSP-000738
+  title_en: "JSP-000738: Lean formalization of Czech's five-divisor infinite family for Erdős 887"
+  posed:
+    year: 1997
+    basis: earliest-reference
+    citation: "P. Erdős and M. Rosenfeld, The factor-difference set of integers, Acta Arithmetica 79 (1997), 353–359. https://doi.org/10.4064/aa-79-4-353-359"
+  resolved: null
+decision: null
+recipients:
+  - id: RECIPIENT-JSP-000738-LEAN-A
+    affiliation: ""
+    contribution_en: "AI-assisted Lean 4 formalization and reproducibility evidence for M. Czech's known five-divisor infinite family with C = 31. The ordinary mathematical construction is credited to M. Czech, July 2026, Theorem 1. This is a partial result for Erdős 887; it does not establish an absolute upper bound or a new mathematical discovery."
+    confirmation: null
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: draft
+revocation: null
