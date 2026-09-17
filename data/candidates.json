@@ -1,4 +1,46 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000400",
+        "batch": null,
+        "problem": {
+          "source": "TheJustinSunPrize problem bank / Erdos Problems",
+          "number": "JSP-000400",
+          "title_en": "Sum of two squares approximating an irrational multiple of a square",
+          "posed": {
+            "year": 1961,
+            "basis": "earliest-reference",
+            "citation": "P. Erdos, Some unsolved problems (1961), I.34, pp.238-239."
+          },
+          "resolved": {
+            "year": 1989
+          }
+        },
+        "decision": null,
+        "recipients": [
+          {
+            "id": "RECIPIENT-JSP-000400-A",
+            "affiliation": "",
+            "contribution_en": "Lean formalization of Margulis's positive-parameter approximation theorem, with both original inequalities and positive integer witnesses.",
+            "confirmation": null
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000400",
+      "citation": "# JSP-000400: Lean formalization of the sum-of-two-squares approximation theorem\n\n## English\n\nGrigory A. Margulis proved the mathematical result. This submission supplies its Lean formalization: for every positive irrational real alpha and every epsilon > 0, there are strictly positive natural numbers x, y and z satisfying |x^2+y^2-alpha*z^2| < epsilon. It also proves |alpha*(x^2+y^2)-z^2| < epsilon and arbitrarily large denominators.\n\nThe [complete Lean project](../../../proofs/jsp-000400/README.md) accompanies this candidate. The [statement and evidence guide](../../../proofs/jsp-000400/SUBMISSION.md) identifies the original question, fixed sources, theorem declarations and reproduction results. The dedicated Lean workflow compiles the actual proof, checks its modules and audits theorem axioms.\n\nThe candidate is submitted for designated verification. The formal record is pending the repository's authorized review and statement signatures; the supplied build evidence is recorded separately in the proof project.\n",
+      "recipients": "# Contribution attribution\n\n## English\n\nThe mathematical theorem is due to Grigory A. Margulis. Paul Erdos's 1961 paper records the question. The lattice basis reduction follows the classical method of A. K. Lenstra, H. W. Lenstra Jr. and L. Lovasz.\n\nRECIPIENT-JSP-000400-A identifies the contributor of this Lean formalization while recipient confirmation is pending. The contribution consists of the complete matrix dynamics, lattice compactness and positive-witness proof, together with reproducible source and verification materials. No recipient identity is confirmed by this candidate record.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }

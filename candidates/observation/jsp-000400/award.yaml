@@ -1,0 +1,25 @@
+id: jsp-000400
+batch: null
+problem:
+  source: TheJustinSunPrize problem bank / Erdos Problems
+  number: JSP-000400
+  title_en: Sum of two squares approximating an irrational multiple of a square
+  posed:
+    year: 1961
+    basis: earliest-reference
+    citation: "P. Erdos, Some unsolved problems (1961), I.34, pp.238-239."
+  resolved:
+    year: 1989
+decision: null
+recipients:
+  - id: RECIPIENT-JSP-000400-A
+    affiliation: ""
+    contribution_en: Lean formalization of Margulis's positive-parameter approximation theorem, with both original inequalities and positive integer witnesses.
+    confirmation: null
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
