@@ -1,0 +1,68 @@
+[
+  {
+    "command": [
+      "python",
+      "scripts/manage.py",
+      "validate"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.111,
+    "log": "repo-validate.log"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/manage.py",
+      "links"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.641,
+    "log": "repo-links.log"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/manage.py",
+      "build"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.105,
+    "log": "repo-build.log"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/manage.py",
+      "check"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.105,
+    "log": "repo-check.log"
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.056,
+    "log": "repo-tests.log"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/manage.py",
+      "history",
+      "--base",
+      "f4e7173d89dfe91022a185427d63452c8ffbf6ae"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.123,
+    "log": "repo-history.log"
+  }
+]

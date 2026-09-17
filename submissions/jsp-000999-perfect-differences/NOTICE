@@ -1,0 +1,12 @@
+The new Lean and Python source in this package was prepared independently for
+this submission with GPT/Codex assistance under public account green3sf and is
+released under MIT. The verification harness adapts the submitter's earlier packages.
+
+The underlying greedy-construction mathematics is established prior work,
+attributed to Lev, Cilleruelo–Nathanson, and the finite-seed extension tradition
+summarized by Alexeev–Mixon (crediting Hall). See PRIOR_ART.md for exact references.
+No ownership of these mathematical results is asserted.
+
+Related Lean work by lechmazur/erdos_1194 is explicitly acknowledged in PRIOR_ART.md.
+No code from that project or from Alexeev–Mixon is incorporated. Lean, Mathlib and
+transitive dependencies retain their own licenses and are obtained separately.
