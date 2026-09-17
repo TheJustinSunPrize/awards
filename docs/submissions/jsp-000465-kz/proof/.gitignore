@@ -1,7 +1,0 @@
-.lake/
-evidence/
-*.olean
-*.ilean
-*.olean.private
-*.olean.server
-Negative.lean
