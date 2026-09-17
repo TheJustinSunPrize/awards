@@ -1,0 +1,6 @@
+'Erdos252.erdos_252.variants.k_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos252.erdos_252.variants.k_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos252.erdos_252.variants.k_eq_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos252.erdos_252.variants.schinzel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos252.erdos_252.variants.prime_tuples' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos252.summable_sigma_div_factorial' depends on axioms: [propext, Classical.choice, Quot.sound]
