@@ -1,0 +1,20 @@
+id: jsp-000872-unitary-perfect-witness-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000872"
+  number: "JSP-000872"
+  title_en: "Are there only finitely many unitary perfect numbers, equal to the sum of their proper divisors coprime to their complementary divisors?"
+  posed:
+    year: 2004
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000872"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
