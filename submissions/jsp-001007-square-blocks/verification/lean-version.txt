@@ -1,7 +1,0 @@
-Current branch: HEAD
-Using cache from origin: (some leanprover-community/mathlib4)
-Decompressing 8689 already-cached file(s) (1 already decompressed)
-No files to download
-Decompressed 8689 already-cached file(s)
-Completed successfully in 12049 ms!
-Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)

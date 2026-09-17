@@ -1,7 +1,0 @@
-'JSP001007.Arithmetic.window_point_mod' depends on axioms: [propext, Quot.sound]
-'JSP001007.Arithmetic.window_point_in_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
-'JSP001007.Arithmetic.window_points_injective' depends on axioms: [propext, Quot.sound]
-'JSP001007.Arithmetic.window_density' depends on axioms: [propext, Quot.sound]
-'JSP001007.Arithmetic.cluster_conditions' depends on axioms: [propext, Quot.sound]
-'JSP001007.Arithmetic.cluster_cutoff_four' depends on axioms: [propext, Quot.sound]
-'JSP001007.Arithmetic.cutoff_ten' depends on axioms: [propext, Quot.sound]
