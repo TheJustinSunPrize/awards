@@ -505,13 +505,14 @@ theorem F_less_c_cubed (a b c : ℤ)
   rw [hid]
   positivity
 
-theorem large_base_thresholds (c p : ℤ) (hc : 1 ≤ c) (hp : 100*c^5 ≤ p) :
+theorem large_base_thresholds (c p : ℤ) (hc : 2 ≤ c) (hp : 12*c^3 ≤ p) :
     11*c^3 < p ∧ 13*c^2 < p ∧ 7*c^3 < p := by
-  have h3 : c^3 ≤ c^5 := pow_le_pow_right₀ hc (by decide : 3 ≤ 5)
-  have h2 : c^2 ≤ c^5 := pow_le_pow_right₀ hc (by decide : 2 ≤ 5)
-  have hpos : 0 < c^5 := pow_pos (by linarith : 0 < c) 5
+  have hpos : 0 < c^3 := pow_pos (by linarith : 0 < c) 3
+  have hsq : 0 < c^2 := pow_pos (by linarith : 0 < c) 2
+  have h2 : 2*c^2 ≤ c^3 := by
+    nlinarith only [mul_nonneg (by linarith : 0 ≤ c - 2) (sq_nonneg c)]
   constructor
-  · nlinarith only [h3, hpos, hp]
-  constructor <;> nlinarith only [h2, h3, hpos, hp]
+  · nlinarith only [hpos, hp]
+  constructor <;> nlinarith only [h2, hsq, hpos, hp]
 
 end Erdos700.FourPrime.Bounds

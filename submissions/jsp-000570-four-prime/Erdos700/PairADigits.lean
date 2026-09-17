@@ -48,7 +48,7 @@ theorem borrow_middle_digits (n q u M K : ℤ) (hq : 0 < q)
 
 The three target hypotheses are actual Euclidean remainders of `k/q`, not
 presupposed normalized coefficients. The four explicit size hypotheses
-are weaker than the global `P >= 100*c^5` condition in the paper. The
+are weaker than the global `P >= 12*c^3` condition in the paper. The
 source divisibility `q | k/(P+a)` is the input obtained from the two
 prime divisibilities and coprimality; no primality is used in this lemma.
 -/
@@ -369,7 +369,7 @@ hypotheses, uniformly for every gap `d` between 0 and c. -/
 theorem source_a_size_bounds
     (a b c d q : ℤ)
     (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b - a + 1 ≤ c)
-    (hd0 : 0 ≤ d) (hdc : d ≤ c) (hq : 100 * c ^ 5 ≤ q) :
+    (hd0 : 0 ≤ d) (hdc : d ≤ c) (hq : 12 * c ^ 3 ≤ q) :
     b + c - 3 * a < q ∧
     3 * d * (b + c - 3 * a) < q ∧
     2 * d ^ 2 * (b + c - 3 * a) < q ∧
@@ -384,6 +384,7 @@ theorem source_a_size_bounds
   let U := 3 * c ^ 2 - 2 * c * (a + b) + a * b
   have hc9 := Bounds.c_at_least_9 a b c ha hb hc
   have hc1 : 1 ≤ c := by omega
+  have hc2 : 2 ≤ c := by omega
   have hc0 : 0 ≤ c := by omega
   have hb_lt_c := Bounds.b_less_c a b c ha hb hc
   have hbc : b ≤ c := by linarith only [hb_lt_c]
@@ -427,7 +428,7 @@ theorem source_a_size_bounds
     have h₁ := mul_le_mul_of_nonneg_right hdc hT0
     have h₂ := mul_le_mul_of_nonneg_left hTupper hc0
     nlinarith only [h₁, h₂]
-  have hbase := Bounds.large_base_thresholds c q hc1 hq
+  have hbase := Bounds.large_base_thresholds c q hc2 hq
   have hc2 : 0 < c ^ 2 := sq_pos_of_pos (by omega : 0 < c)
   have hc3 : 0 < c ^ 3 := pow_pos (by omega : 0 < c) 3
   have hcc : c ≤ c ^ 2 := by
@@ -449,7 +450,7 @@ any auxiliary size hypotheses. -/
 theorem pairAB_global_digits
     (a b c q u v w k : ℤ)
     (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b - a + 1 ≤ c)
-    (hq : 100 * c ^ 5 ≤ q)
+    (hq : 12 * c ^ 3 ≤ q)
     (hu0 : 0 ≤ u) (hu : u ≤ b + c - 3 * a)
     (hv0 : 0 ≤ v) (hv : v ≤ b * c - 2 * a * (b + c) + 3 * a ^ 2 - 1)
     (hw0 : 0 ≤ w)
@@ -476,7 +477,7 @@ theorem pairAB_global_digits
 theorem pairAC_global_digits
     (a b c q u v w k : ℤ)
     (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b - a + 1 ≤ c)
-    (hq : 100 * c ^ 5 ≤ q)
+    (hq : 12 * c ^ 3 ≤ q)
     (hu0 : 0 ≤ u) (hu : u ≤ b + c - 3 * a)
     (hv0 : 0 ≤ v) (hv : v ≤ b * c - 2 * a * (b + c) + 3 * a ^ 2 - 1)
     (hw0 : 0 ≤ w)

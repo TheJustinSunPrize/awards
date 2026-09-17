@@ -1,5 +1,8 @@
 import Erdos700
 
+#check Erdos700.FourPrime.four_prime_exact_cubic
+#print axioms Erdos700.FourPrime.four_prime_exact_cubic
+
 #check Erdos700.FourPrime.four_prime_exact_boundary
 #print Erdos700.f
 #print axioms Erdos700.FourPrime.four_prime_exact_boundary

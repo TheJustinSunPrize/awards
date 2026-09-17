@@ -1,29 +1,31 @@
 {
-  "P": 189078581,
+  "P": 75011,
   "a": 2,
   "b": 6,
   "c": 18,
   "primes": [
-    189078581,
-    189078583,
-    189078587,
-    189078599
+    75011,
+    75013,
+    75017,
+    75029
   ],
   "new_c_threshold": 17,
   "v3_c_threshold": 19,
   "v2_c_threshold": 31,
   "old_c_threshold": 360,
-  "P_threshold": 188956800,
-  "satisfies_boundary_hypotheses": true,
+  "P_threshold": 69984,
+  "old_P_threshold": 188956800,
+  "satisfies_cubic_hypotheses": true,
+  "violates_v4_P_hypothesis": true,
   "violates_v3_c_hypothesis": true,
   "violates_v2_c_hypothesis": true,
   "violates_original_c_hypothesis": true,
   "primality_method": "Exact trial division by 2 and every odd integer through isqrt(n).",
   "trial_division_limits": [
-    13750,
-    13750,
-    13750,
-    13750
+    273,
+    273,
+    273,
+    273
   ],
   "scope": "Supporting computation, separate from Lean. No direct enumeration of f(N), no infinitude claim."
 }

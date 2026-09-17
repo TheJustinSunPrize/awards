@@ -1,6 +1,6 @@
 # Submission scope: JSP-000570 / Erdős 700
 
-This packet requests review of a new four-prime sufficient condition as partial progress under section 4.2 of the [published selection rules](https://www.hejustinsun.com/prize/rules). The exact Lean theorem is `Erdos700.FourPrime.four_prime_exact_boundary`; its full type, the definition of `f`, and its transitive axiom list are in [the audit log](verification/canonical-audit.log).
+This packet requests review of a new four-prime sufficient condition as partial progress under section 4.2 of the [published selection rules](https://www.hejustinsun.com/prize/rules). The exact Lean theorem is `Erdos700.FourPrime.four_prime_exact_cubic`; its full type, the definition of `f`, and its transitive axiom list are in [the audit log](verification/canonical-audit.log).
 
 The preceding three-prime / exponent-2/3 result and its Lucas–Maynard strategy are credited in [the mathematical note](docs/proof.md). The contribution proposed for Lean review is the **local four-prime criterion**. The separate infinite-family / exponent-3/4 argument uses Maynard and is human-readable mathematical context, not a formally verified theorem in this packet. No first solution of the already answered square-root infinitude question is claimed.
 
@@ -12,4 +12,4 @@ Recipient attribution remains `RECIPIENT-JSP-000570-A`, pending confirmation. No
 
 The packet has its own Apache-2.0 [license](LICENSE), preserving the source attribution in `Minimum.lean`. It does not redistribute the predecessor's manuscript, Lean, or Mathlib.
 
-Version 4 weakens the separation condition to c>=3b-a+1. All three preceding criteria remain theorems. It does not raise the 3/4 exponent or settle the original characterization and upper-bound questions. See [the boundary extension note](docs/boundary-extension.md).
+Version 5 keeps c>=3b-a+1 and weakens the size condition to P>=12c^3. All four preceding criteria remain theorems. It does not raise the 3/4 exponent or settle the original characterization and upper-bound questions. See [the cubic-size extension note](docs/cubic-size.md).

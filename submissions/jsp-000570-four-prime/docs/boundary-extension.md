@@ -1,5 +1,9 @@
 # Version 4: the offset-dependent separation boundary
 
+Historical version-4 note. Its theorem is retained as a corollary of the
+current [version-5 criterion](cubic-size.md). The size bound and example
+below describe the unchanged preceding release.
+
 For natural P,a,b,c, assume a>=1, b>=3a, c>=3b-a+1, P>=100c^5,
 and P,P+a,P+b,P+c all prime. The theorem `four_prime_exact_boundary`
 proves
@@ -46,8 +50,8 @@ and P=189078581 gives the four primes
 
 This satisfies P>=188956800=100*18^5 and the new separation condition,
 while violating all three preceding c conditions. The standard-library
-script `python tools/check_witness.py` verifies primality by full trial
-division through each integer square root; see [its record](../verification/witness.json).
+script `python tools/check_witness.py` in the version-4 archive verifies primality by full trial
+division through each integer square root; see [that archive](../verification/archive-v4.md).
 This calculation is separate from Lean and does not enumerate f(N).
 
 Since the root's large P makes all four primes odd, the offsets a,b,c must

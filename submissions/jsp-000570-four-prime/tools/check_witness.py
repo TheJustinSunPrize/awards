@@ -18,13 +18,14 @@ def prime_by_trial_division(n: int) -> bool:
 
 
 def main() -> None:
-    p, a, b, c = 189078581, 2, 6, 18
+    p, a, b, c = 75011, 2, 6, 18
     primes = [p, p + a, p + b, p + c]
     assert a >= 1 and b >= 3 * a
     assert c >= 3 * b - a + 1
     assert c < 3 * b + 1
     assert c < b * (b - a) + b + 1
-    assert p >= 100 * c ** 5
+    assert p >= 12 * c ** 3
+    assert p < 100 * c ** 5
     assert c < 10 * b ** 2
     assert all(prime_by_trial_division(n) for n in primes)
     result = {
@@ -34,8 +35,10 @@ def main() -> None:
         "v3_c_threshold": 3 * b + 1,
         "v2_c_threshold": b * (b - a) + b + 1,
         "old_c_threshold": 10 * b ** 2,
-        "P_threshold": 100 * c ** 5,
-        "satisfies_boundary_hypotheses": True,
+        "P_threshold": 12 * c ** 3,
+        "old_P_threshold": 100 * c ** 5,
+        "satisfies_cubic_hypotheses": True,
+        "violates_v4_P_hypothesis": True,
         "violates_v3_c_hypothesis": True,
         "violates_v2_c_hypothesis": True,
         "violates_original_c_hypothesis": True,

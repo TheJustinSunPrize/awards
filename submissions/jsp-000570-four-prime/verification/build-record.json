@@ -1,5 +1,5 @@
 {
-  "verifiedAtUTC": "2026-09-17T11:44:37.606692+00:00",
+  "verifiedAtUTC": "2026-09-17T12:00:46.761662+00:00",
   "lean": "4.33.1",
   "mathlibRevision": "0df444a360eaa60ab8c11dca51a86af692955474",
   "buildLocation": "fresh verification project",
@@ -76,14 +76,14 @@
   ],
   "dependencyStateUnchangedAfterBuild": true,
   "localModulesRebuilt": [
+    "Erdos700.PairA",
     "Erdos700.Lucas",
     "Erdos700.PairBC",
     "Erdos700.Arithmetic",
-    "Erdos700.PairA",
     "Erdos700.Bounds",
     "Erdos700.DigitSupport",
-    "Erdos700.RowExpansions",
     "Erdos700.PrimeSource",
+    "Erdos700.RowExpansions",
     "Erdos700.Minimum",
     "Erdos700.ParameterBC",
     "Erdos700.ParameterDigits",
@@ -97,15 +97,15 @@
   "localModuleCount": 17,
   "buildExitCode": 0,
   "auditExitCode": 0,
-  "fourPrimeSourceSHA256": "8b0f9a5ebac7ffbeab520bdaa0156f11f6560e5ea3c6ff07e80db4c3ffc27b1d",
+  "fourPrimeSourceSHA256": "aff6314ea5fe169b19bbbdbe8dc8970c4260c6b836c939125967fb084546e033",
   "minimumSourceSHA256": "4b3ebd40441faa26ad3c4cf31727318926cd0abe56d59353e136b2abb7bae481",
   "sourceUnchangedDuringBuild": true,
   "allCopiedSourceAndConfigurationBytesMatch": true,
   "sourceAndConfigurationFiles": [
     {
       "path": "Audit.lean",
-      "sha256": "fc363ccafba3d0fa6928498684954161ca1edec8e4d0554c607149c7e60d0609",
-      "bytes": 455
+      "sha256": "559fdda470ada6de3c103239c5d1f0cf840626d0382fbac367fad053b9627000",
+      "bytes": 561
     },
     {
       "path": "Erdos700/Arithmetic.lean",
@@ -114,8 +114,8 @@
     },
     {
       "path": "Erdos700/Bounds.lean",
-      "sha256": "48210f2c367b3b929d94ef75819c4d1d1118f2e129387ae0cabe365d95d04ff2",
-      "bytes": 18394
+      "sha256": "7c9b19858bee231bc14f3b1d0a1d5e9a867093d0311a978ea7c658ba19970faa",
+      "bytes": 18408
     },
     {
       "path": "Erdos700/DigitSupport.lean",
@@ -124,8 +124,8 @@
     },
     {
       "path": "Erdos700/FourPrime.lean",
-      "sha256": "8b0f9a5ebac7ffbeab520bdaa0156f11f6560e5ea3c6ff07e80db4c3ffc27b1d",
-      "bytes": 11562
+      "sha256": "aff6314ea5fe169b19bbbdbe8dc8970c4260c6b836c939125967fb084546e033",
+      "bytes": 12295
     },
     {
       "path": "Erdos700/IntDigitSupport.lean",
@@ -149,8 +149,8 @@
     },
     {
       "path": "Erdos700/PairADigits.lean",
-      "sha256": "1cdb1bfa7413f3f561b801ac424e9c075280e52e37a076af1b39f1833543da66",
-      "bytes": 20331
+      "sha256": "d61feb35a406f278c8c422c6dffcd6c43e2dc5f07397ffb4a983b188a68521b7",
+      "bytes": 20360
     },
     {
       "path": "Erdos700/PairBC.lean",
@@ -164,18 +164,18 @@
     },
     {
       "path": "Erdos700/ParameterBC.lean",
-      "sha256": "7cfd4cbe5cb70136781a53ac15c9a82bb271b91e64498c631f463e1eca9a5280",
-      "bytes": 3543
+      "sha256": "d29e179384212f22275b75bfc431814e663708a6c51027ba09fddf685e183d5d",
+      "bytes": 3575
     },
     {
       "path": "Erdos700/ParameterDigits.lean",
-      "sha256": "6bc9fd1d9f6ce8aced2300c2cea8592e9256c0a3dc0bd5f52eb70698e9402b01",
-      "bytes": 8180
+      "sha256": "cf9a7e9acd301b7b91b78d5de41b0182eeffcc707e11544f1e4ddcc587351031",
+      "bytes": 8206
     },
     {
       "path": "Erdos700/ParameterP.lean",
-      "sha256": "39f8694eeb437346af0acf16d95efe08b77f8806a7b5b238f5c801211b39d6ff",
-      "bytes": 5646
+      "sha256": "536f5c7ad7cea4961beaf6a5e762355782fe7fbb3ee633be2ce93aacadc96dbd",
+      "bytes": 5676
     },
     {
       "path": "Erdos700/PrimeSource.lean",
@@ -209,6 +209,11 @@
     }
   ],
   "axiomsByTheorem": {
+    "Erdos700.FourPrime.four_prime_exact_cubic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
     "Erdos700.FourPrime.four_prime_exact_boundary": [
       "propext",
       "Classical.choice",

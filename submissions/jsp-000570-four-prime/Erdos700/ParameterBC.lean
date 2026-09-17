@@ -19,7 +19,7 @@ obtained.  No auxiliary normalized-digit or size hypothesis is required.
 -/
 theorem pairBC_actual_digits (a b c p u v w k : ℤ)
     (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b - a + 1 ≤ c)
-    (hp : 100 * c ^ 5 ≤ p)
+    (hp : 12 * c ^ 3 ≤ p)
     (hu0 : 0 ≤ u) (hv0 : 0 ≤ v) (hw0 : 0 ≤ w)
     (hu : u ≤ a + c - 3 * b - 1)
     (hv : v ≤ p + b - ((2 * b - a) * c + 2 * a * b - 3 * b ^ 2))
@@ -36,6 +36,7 @@ theorem pairBC_actual_digits (a b c p u v w k : ℤ)
     have h := Bounds.c_at_least_9 a b c ha hb hc
     omega
   have hc1 : 1 ≤ c := by omega
+  have hc2 : 2 ≤ c := by omega
   have hd : 0 < c - b := by
     have h := Bounds.b_less_c a b c ha hb hc
     linarith only [h]
@@ -59,7 +60,7 @@ theorem pairBC_actual_digits (a b c p u v w k : ℤ)
     have h := Bounds.U_less_than_3c_squared a b c ha hb hc
     nlinarith only [h]
   have hlarge : 10 * c ^ 3 < p + c := by
-    have h := (Bounds.large_base_thresholds c p hc1 hp).1
+    have h := (Bounds.large_base_thresholds c p hc2 hp).1
     have hc3 : 0 ≤ c ^ 3 := pow_nonneg (by omega : 0 ≤ c) 3
     nlinarith only [h, hc3, hc1]
   have hLlow : b * (b - a) < c * (c - a) := by

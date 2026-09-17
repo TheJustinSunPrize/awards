@@ -13,7 +13,7 @@ namespace Erdos700.FourPrime.ParameterDigits
 /-- Basic order and size consequences used by all four digit tables. -/
 theorem parameter_sizes (a b c p : ℤ)
     (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b - a + 1 ≤ c)
-    (hp : 100 * c ^ 5 ≤ p) :
+    (hp : 12 * c ^ 3 ≤ p) :
     0 < a ∧ 0 < b ∧ 9 ≤ c ∧ 0 < p ∧ a < c ∧ b < c ∧
       c ^ 3 < p ∧ 3 * c ^ 2 < p ∧ 3 * c < p := by
   have ha0 : 0 < a := by omega
@@ -22,9 +22,10 @@ theorem parameter_sizes (a b c p : ℤ)
     have h := Bounds.c_at_least_9 a b c ha hb hc
     omega
   have hc1 : 1 ≤ c := by omega
+  have hc2 : 2 ≤ c := by omega
   have hcc2 : c ≤ c ^ 2 := by
     nlinarith only [mul_nonneg (by omega : 0 ≤ c) (by omega : 0 ≤ c - 1)]
-  obtain ⟨h3, h2, _⟩ := Bounds.large_base_thresholds c p hc1 hp
+  obtain ⟨h3, h2, _⟩ := Bounds.large_base_thresholds c p hc2 hp
   have hc3 : 0 ≤ c ^ 3 := pow_nonneg (by omega : 0 ≤ c) 3
   have hab := Bounds.a_less_b a b c ha hb hc
   have hbc := Bounds.b_less_c a b c ha hb hc
@@ -34,7 +35,7 @@ theorem parameter_sizes (a b c p : ℤ)
 /-- Low, middle, and high digits of `N/p`. -/
 theorem digit_bounds_p (a b c p : ℤ)
     (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b - a + 1 ≤ c)
-    (hp : 100 * c ^ 5 ≤ p) :
+    (hp : 12 * c ^ 3 ≤ p) :
     0 ≤ a * b * c ∧ a * b * c < p ∧
       0 ≤ a * b + a * c + b * c ∧ a * b + a * c + b * c < p ∧
       0 ≤ a + b + c ∧ a + b + c < p := by
@@ -51,7 +52,7 @@ theorem digit_bounds_p (a b c p : ℤ)
 /-- Low, middle, and high digits of `N/(p+a)`. -/
 theorem digit_bounds_a (a b c p : ℤ)
     (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b - a + 1 ≤ c)
-    (hp : 100 * c ^ 5 ≤ p) :
+    (hp : 12 * c ^ 3 ≤ p) :
     0 ≤ p + a - a * (b - a) * (c - a) ∧
       p + a - a * (b - a) * (c - a) < p + a ∧
       0 ≤ b * c - 2 * a * (b + c) + 3 * a ^ 2 - 1 ∧
@@ -78,7 +79,7 @@ theorem digit_bounds_a (a b c p : ℤ)
 /-- Low, middle, and high digits of `N/(p+b)`. -/
 theorem digit_bounds_b (a b c p : ℤ)
     (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b - a + 1 ≤ c)
-    (hp : 100 * c ^ 5 ≤ p) :
+    (hp : 12 * c ^ 3 ≤ p) :
     0 ≤ b * (b - a) * (c - b) ∧ b * (b - a) * (c - b) < p + b ∧
       0 ≤ p + b - ((2 * b - a) * c + 2 * a * b - 3 * b ^ 2) ∧
       p + b - ((2 * b - a) * c + 2 * a * b - 3 * b ^ 2) < p + b ∧
@@ -100,7 +101,7 @@ theorem digit_bounds_b (a b c p : ℤ)
 /-- Low, middle, and high digits of `N/(p+c)`. -/
 theorem digit_bounds_c (a b c p : ℤ)
     (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b - a + 1 ≤ c)
-    (hp : 100 * c ^ 5 ≤ p) :
+    (hp : 12 * c ^ 3 ≤ p) :
     0 ≤ p + c - c * (c - a) * (c - b) ∧
       p + c - c * (c - a) * (c - b) < p + c ∧
       0 ≤ 3 * c ^ 2 - 2 * c * (a + b) + a * b - 1 ∧
@@ -139,14 +140,14 @@ theorem fourth_power_nearby (c p : ℤ) (hc : 0 < c) (hp : 10 * c ≤ p) :
 /-- The product of the four bases is below `2*p^4`. -/
 theorem product_lt_two_mul_p_four (a b c p : ℤ)
     (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b - a + 1 ≤ c)
-    (hp : 100 * c ^ 5 ≤ p) :
+    (hp : 12 * c ^ 3 ≤ p) :
     p * (p + a) * (p + b) * (p + c) < 2 * p ^ 4 := by
   obtain ⟨ha0, hb0, hc9, hp0, hac, hbc, _, _, _⟩ :=
     parameter_sizes a b c p ha hb hc hp
   have hc0 : 0 < c := by omega
-  have hc5 : c ≤ c ^ 5 := by
-    simpa using (pow_le_pow_right₀ (by omega : 1 ≤ c) (by decide : 1 ≤ 5))
-  have hp10 : 10 * c ≤ p := by nlinarith only [hc5, hp, hc0]
+  have hc3 : c ≤ c ^ 3 := by
+    simpa using (pow_le_pow_right₀ (by omega : 1 ≤ c) (by decide : 1 ≤ 3))
+  have hp10 : 10 * c ≤ p := by nlinarith only [hc3, hp, hc0]
   have hpc : 0 ≤ p + c := by omega
   have h01 : p * (p + a) ≤ (p + c) * (p + c) :=
     mul_le_mul (by omega) (by omega) (by omega) hpc
@@ -170,7 +171,7 @@ theorem quotient_lt_cube (N p k x : ℤ) (hp : 0 < p)
 /-- The quotient bound for any of the four bases, directly from the parameters. -/
 theorem parameter_quotient_lt_cube (a b c p k x : ℤ)
     (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b - a + 1 ≤ c)
-    (hp : 100 * c ^ 5 ≤ p)
+    (hp : 12 * c ^ 3 ≤ p)
     (hhalf : 2 * k ≤ p * (p + a) * (p + b) * (p + c)) (hpx : p ≤ x) :
     k / x < x ^ 3 := by
   have hp0 := (parameter_sizes a b c p ha hb hc hp).2.2.2.1

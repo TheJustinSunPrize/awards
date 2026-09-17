@@ -8,7 +8,7 @@ from the original parameter assumptions, uniformly for every 0<=d<=c. -/
 theorem source_p_size_bounds
     (a b c d q : ℤ)
     (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b - a + 1 ≤ c)
-    (hd0 : 0 ≤ d) (hdc : d ≤ c) (hq : 100 * c ^ 5 ≤ q) :
+    (hd0 : 0 ≤ d) (hdc : d ≤ c) (hq : 12 * c ^ 3 ≤ q) :
     a + b + c < q ∧
     d ^ 2 * (a + b + c) + a * b * c < q ∧
     b * (b - a) * (c - b) + d * (a * b + a * c + b * c) < q ∧
@@ -22,6 +22,7 @@ theorem source_p_size_bounds
   let U := 3 * c ^ 2 - 2 * c * (a + b) + a * b
   have hc9 := Bounds.c_at_least_9 a b c ha hb hc
   have hc1 : 1 ≤ c := by omega
+  have hc2 : 2 ≤ c := by omega
   have hc0 : 0 ≤ c := by omega
   have hS0 : 0 ≤ S := by
     have hs := Bounds.S_positive a b c ha hb hc
@@ -66,7 +67,7 @@ theorem source_p_size_bounds
     have h₁ := mul_le_mul_of_nonneg_right hdc hT0
     have h₂ := mul_le_mul_of_nonneg_left hTupper hc0
     nlinarith only [h₁, h₂]
-  have hbase := Bounds.large_base_thresholds c q hc1 hq
+  have hbase := Bounds.large_base_thresholds c q hc2 hq
   have hc2 : 0 < c ^ 2 := sq_pos_of_pos (by omega : 0 < c)
   have hc3 : 0 < c ^ 3 := pow_pos (by omega : 0 < c) 3
   have hcc : c ≤ c ^ 2 := by
@@ -86,7 +87,7 @@ theorem source_p_size_bounds
 parameters and actual source/target digit hypotheses. -/
 theorem pairPB_global_digits (a b c q u v w k : ℤ)
     (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b - a + 1 ≤ c)
-    (hq : 100 * c ^ 5 ≤ q)
+    (hq : 12 * c ^ 3 ≤ q)
     (hu0 : 0 ≤ u) (hu : u ≤ a + b + c)
     (hv0 : 0 ≤ v) (hv : v ≤ a * b + a * c + b * c)
     (hw0 : 0 ≤ w) (hw : w ≤ a * b * c)
@@ -109,7 +110,7 @@ theorem pairPB_global_digits (a b c q u v w k : ℤ)
 /-- The pair `(P,P+c)` exclusion under the original global parameters. -/
 theorem pairPC_global_digits (a b c q u v w k : ℤ)
     (ha : 1 ≤ a) (hb : 3 * a ≤ b) (hc : 3 * b - a + 1 ≤ c)
-    (hq : 100 * c ^ 5 ≤ q)
+    (hq : 12 * c ^ 3 ≤ q)
     (hu0 : 0 ≤ u) (hu : u ≤ a + b + c)
     (hv0 : 0 ≤ v) (hv : v ≤ a * b + a * c + b * c)
     (hw0 : 0 ≤ w) (hw : w ≤ a * b * c)

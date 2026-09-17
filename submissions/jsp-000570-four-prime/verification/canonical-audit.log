@@ -1,6 +1,10 @@
 Command (fresh verification project): lake env lean -DwarningAsError=true Audit.lean
 Exit code: 0
 
+Erdos700.FourPrime.four_prime_exact_cubic (P A B C : ℕ) (hA : 1 ≤ A) (hB : 3 * A ≤ B) (hC : 3 * B - A + 1 ≤ C)
+  (hPsize : 12 * C ^ 3 ≤ P) (hP : Nat.Prime P) (hPA : Nat.Prime (P + A)) (hPB : Nat.Prime (P + B))
+  (hPC : Nat.Prime (P + C)) : Erdos700.f (P * (P + A) * (P + B) * (P + C)) = P * (P + A) * (P + B)
+'Erdos700.FourPrime.four_prime_exact_cubic' depends on axioms: [propext, Classical.choice, Quot.sound]
 Erdos700.FourPrime.four_prime_exact_boundary (P A B C : ℕ) (hA : 1 ≤ A) (hB : 3 * A ≤ B) (hC : 3 * B - A + 1 ≤ C)
   (hPsize : 100 * C ^ 5 ≤ P) (hP : Nat.Prime P) (hPA : Nat.Prime (P + A)) (hPB : Nat.Prime (P + B))
   (hPC : Nat.Prime (P + C)) : Erdos700.f (P * (P + A) * (P + B) * (P + C)) = P * (P + A) * (P + B)

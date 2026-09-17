@@ -44,3 +44,9 @@ does not establish worldwide novelty or optimality of this new threshold.
 Version 4 further weakens the final separation condition to c>=3b-a+1,
 with all other assumptions retained. This extension does not change the 3/4
 exponent. No optimality or worldwide-priority claim follows from it.
+
+Version 5 retains the version-4 gap condition but reduces the base-size
+requirement from P>=100c^5 to P>=12c^3. The separate exact Lucas-digit
+counterexample explains why simply removing the gap condition's final +1
+fails. Neither observation establishes global novelty or an optimal joint
+parameter condition, and the 3/4 exponent remains unchanged.

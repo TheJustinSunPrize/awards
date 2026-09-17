@@ -1,6 +1,6 @@
 {
   "source": "Erdos700/Bounds.lean",
-  "source_sha256": "48210f2c367b3b929d94ef75819c4d1d1118f2e129387ae0cabe365d95d04ff2",
+  "source_sha256": "7c9b19858bee231bc14f3b1d0a1d5e9a867093d0311a978ea7c658ba19970faa",
   "hypotheses": "a>=1, b>=3a, c>=3b-a+1",
   "substitution": "a=x+1, b=3a+y, c=3b-a+1+z; x,y,z>=0",
   "certificate_count": 33,

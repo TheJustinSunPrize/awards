@@ -1,10 +1,10 @@
 # General four-prime lemma for Erdős 700 (JSP-000570)
 
-Research manuscript, version 4, 2026-09-17. The local four-prime theorem has a Lean proof in `Erdos700/FourPrime.lean`; see the build and axiom records for its verified scope. The Maynard corollary below is a human-readable argument, not part of the Lean formalization. External peer review and historical priority remain unestablished.
+Research manuscript, version 5, 2026-09-17. The local four-prime theorem has a Lean proof in `Erdos700/FourPrime.lean`; see the build and axiom records for its verified scope. The Maynard corollary below is a human-readable argument, not part of the Lean formalization. External peer review and historical priority remain unestablished.
 
 ## Claim
 
-Let positive integers a,b,c obey b>=3a and c>=3b-a+1. Let P>=100c^5, and suppose P,P+a,P+b,P+c are all prime. Set N to their product and f(N)=min_{2<=k<=floor(N/2)} gcd(N,binom(N,k)). Then
+Let positive integers a,b,c obey b>=3a and c>=3b-a+1. Let P>=12c^3, and suppose P,P+a,P+b,P+c are all prime. Set N to their product and f(N)=min_{2<=k<=floor(N/2)} gcd(N,binom(N,k)). Then
 
     f(N)=P(P+a)(P+b).
 
@@ -37,7 +37,7 @@ Every fixed nonnegative digit displayed above is below P, including R-1=0 when R
 | P+b | C | x-B | R-1 | 1 |
 | P+c | x-F | U-1 | x-D | 0 |
 
-For every relevant k, k/x<x^3: since c/P<=1/100, we have N<=(P+c)^4<2P^4, and k<=N/2 gives k/x<P^4/x<=x^3. Thus if x does not divide binom(N,k), Lucas gives x|k and
+For every relevant k, k/x<x^3: since P>=12c^3>=10c, we have N<=(P+c)^4<2P^4, and k<=N/2 gives k/x<P^4/x<=x^3. Thus if x does not divide binom(N,k), Lucas gives x|k and
 
     k/x=u*x^2+v*x+w,
 
@@ -55,7 +55,7 @@ For pairs starting from P+a, we have u<2c, v<c^2, |d|<c and h in {0,1} for upwar
 
     q-10c^3>c^3,  q-10c^2>U-1,
 
-because q>=100c^5, c>=9, and U<3c^2. Thus a negative constant coefficient for a target with fixed low digit C<c^3 immediately violates that low bound. A negative middle coefficient, after any required low-digit normalization, produces a digit exceeding the fixed target middle bound U-1.
+because q>=12c^3, c>=9, and U<3c^2. Thus a negative constant coefficient for a target with fixed low digit C<c^3 immediately violates that low bound. A negative middle coefficient, after any required low-digit normalization, produces a digit exceeding the fixed target middle bound U-1.
 
 For pairs starting from P, the congruence w=dv-d^2u+hq, with |dv-d^2u|<6c^3 and 0<=w<=Z<c^3, forces h=0.
 For pairs starting from P+a and going upward, |dv-d^2u|<3c^3 and 0<=w<=q-d-A<q force h=0 or 1.
@@ -151,7 +151,7 @@ If H>=1, the bounds on u,H,w give
 
     q/d-4c^2 <= E <= q-q/d+c^2.
 
-Since q/d>=P/c>=90c^4>7c^2, this interval lies strictly between U-1 and q. So E is already the actual middle digit and is too large.
+Since q/d>=P/c>=12c^2>7c^2, this interval lies strictly between U-1 and q. So E is already the actual middle digit and is too large.
 
 If H=0, write w=dt with 0<=t<=L. Then K=d(ud-t) and the middle coefficient is M=t-2ud.
 
@@ -187,7 +187,7 @@ This improves the exponent 2/3 of the inspected prior three-prime manuscript. It
 ## Prior work and attribution
 
 The current [Erdős 700 page](https://www.erdosproblems.com/700) credits the preceding three-prime construction to GPT 5.6 Sol Pro prompted by Liam Price. Its full public manuscript, [Large Binomial GCDs](https://www.overleaf.com/read/pmnwkfnhhxhn#82956e), proves a three-prime criterion and derives an infinite family with exponent 2/3. The present work extends the prime-product approach to four primes.
-The version-4 refinement further lowers the final gap to c>=3b-a+1 without changing the exponent. The use of Lucas digits and the strategy of combining a local criterion with Maynard are credited to those predecessors. No first resolution of the square-root infinitude question is claimed.
+Version 4 lowered the final gap to c>=3b-a+1; version 5 reduces the base-size condition to P>=12c^3. Neither refinement changes the exponent. The use of Lucas digits and the strategy of combining a local criterion with Maynard are credited to those predecessors. No first resolution of the square-root infinitude question is claimed.
 
 The proposed new contribution is the four-prime local criterion, its Lean formalization, and the separate stronger infinite-family consequence. This is not a complete solution of every part of Erdős 700.
 
