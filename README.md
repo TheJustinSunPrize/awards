@@ -1,31 +1,64 @@
-# The Justin Sun Prize
+# JSP-000360 / Erdos #441: unbounded additive improvement
 
-A public repository for The Justin Sun Prize: recognizing mathematical breakthroughs and machine-verifiable formal proofs through a problem-list-based academic bounty mechanism.
+This Lean project proves that Erdos's standard lcm-bounded construction can be
+extended by **any prescribed number of elements**, at arbitrarily large bounds.
+It formalizes a qualitative consequence of Chen and Dai's known result; it does
+not claim a new mathematical discovery or the full sharp asymptotic formula.
 
-[About the prize](docs/about.md)
+The final theorem `JSP000360.unbounded_extension` states, for every r,M in the
+natural numbers, that some N>=M admits a finite admissible set containing the
+standard construction with exactly r additional elements.
 
-## Explore
+## Reproduce
 
-| Topic | Source |
-| --- | --- |
-| Purpose, scope, and governance | [About](docs/about.md) |
-| Award assessment | [Grading](docs/grading.md) |
-| Recipients and attribution | [Attribution](docs/attribution.md) |
-| Formal verification and review | [Verification](docs/verification.md) |
-| Problem bank: 1,022 problems | [Problems](problems/README.md) |
-| Confirmed, publicly announced awards | [Awards](awards/README.md) |
-| Public candidates | [Candidates](candidates/README.md) |
-| Public roles and recusals | [People](people/README.md) |
-| Machine-readable data and schemas | [Data](data/README.md) |
+Install Lean through elan, Git, and a working HTTPS connection. In this directory:
 
-Award entries are confirmed and publicly announced decisions; candidates are tracked separately. The repository publishes public records; detailed assessment criteria and deliberations are not included.
+```sh
+lake exe cache get Mathlib.Data.Nat.Factorial.Basic Mathlib.Data.Nat.GCD.Basic Mathlib.Data.Finset.Card Mathlib.Tactic
+lake build
+lake env lean Audit.lean
+```
 
-## Participate
+The included `lake-manifest.json` locks every dependency. `lake update` is not
+needed when reproducing this manifest. If regenerating it, the direct Mathlib
+dependency is still pinned to the exact commit in `lakefile.toml`.
 
-You can recommend a problem, recommend a recipient, correct a record, or raise a dispute using the four [issue forms](.github/ISSUE_TEMPLATE/). Read [CONTRIBUTING.md](CONTRIBUTING.md) for evidence requirements and handling steps, and follow the [Code of Conduct](CODE_OF_CONDUCT.md). Do not submit private personal information through public issues.
+- Lean: 4.19.0, release commit 6caaee842e94.
+- Lake: the version bundled with that Lean release.
+- Mathlib: c44e0c8ee63ca166450922a373c7409c5d26b00b (v4.19.0).
+- Local validation: Windows x86_64, 2026-09-17.
+- `lake build`: passed.
+- Final axioms: `propext`, `Classical.choice`, `Quot.sound`.
 
-## Repository maintenance
+These are the standard logical axioms in the checked theorem. There is no
+`sorryAx`, custom placeholder axiom, or compiled-evaluation axiom in its axiom
+list. The project proof does not use `sorry`, `admit`, or `native_decide`.
 
-See the [record guide](docs/records.md) for templates, validation commands, and data generation. Source records live in `awards/` and `candidates/`; `data/*.json` is generated automatically.
+Windows note: an ASCII directory path is recommended for this Lean release's
+auxiliary tools. The local run used ASCII junction paths to this project and its
+dependencies. Official Mathlib cache files were reused; this was not a full
+rebuild of Mathlib from source. No independent-machine reproduction is claimed.
 
-Code: [LICENSE](LICENSE). Documentation and data: [LICENSE-CONTENT](LICENSE-CONTENT).
+## Files
+
+- [Proof.lean](Proof.lean): complete formal proof.
+- [Audit.lean](Audit.lean): final statement and axiom inspection.
+- [PROOF.md](PROOF.md): mathematical construction and proof.
+- [STATEMENT.md](STATEMENT.md): exact correspondence and scope.
+- [SOURCES.md](SOURCES.md): original result and earlier formalization.
+- [verification/build-log.txt](verification/build-log.txt): project build output.
+- [verification/lean-check.txt](verification/lean-check.txt): direct source check.
+- [verification/axioms.txt](verification/axioms.txt): audit of the built theorem.
+- [verification/checksums.txt](verification/checksums.txt): SHA-256 file checksums.
+
+## Contribution and submission status
+
+The inspected earlier proof gives an infinite family with one extra element.
+This project proves an unbounded number of extra elements using a factorial
+recurrence. The mathematical source remains Chen and Dai (2007); AI assistance
+was used to prepare this formalization and accompanying documents.
+
+This is prepared submission evidence, not an accepted prize claim. No confirmed
+recipient, award decision, eligibility change, independent review, or first
+public timestamp is asserted. The official submission route and recognition of
+this incremental formalization scope remain unconfirmed.
