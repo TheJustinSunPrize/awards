@@ -21,6 +21,6 @@ verification:
     statement: verification/statement.yaml
   independent_review: null
 conflicts: []
-status: under-verification
+status: pending-recipient-confirmation
 revocation: null
 decision: null

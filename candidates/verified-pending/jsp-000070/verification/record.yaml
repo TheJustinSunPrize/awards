@@ -62,7 +62,7 @@ sandbox:
   limits:
     time: "24h window, per-file time-boxed"
     memory: "unlimited"
-  unprivileged_user: false
+  unprivileged_user: true
 attribution:
   proof_route: "compact-Cayley / Fourier-analytic route (Erdos42.lean); math proof by Harjas Sandhu; formalization by Pawan Sasanka Ammanamanchi"
   third_party: true

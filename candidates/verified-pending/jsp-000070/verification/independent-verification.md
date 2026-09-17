@@ -90,7 +90,19 @@ lake env lean -o .lake/build/lib/lean/Erdos42.olean Erdos42.lean
   经 Cayley 图上团条件与傅里叶上界编码（详见 `verification/statement.yaml`，
   `result: equivalent`）。
 
-## 7. 相关记录
+## 7. 沙箱声明依据（sandbox attestation）
+
+验证进程（aionrs 自动化验证器）以非提升令牌运行：
+
+- `unprivileged_user: true` —— Windows 进程令牌为 UAC 过滤后的标准用户令牌：
+  `whoami /groups` 显示 Mandatory Label = Medium Mandatory Level (S-1-16-8192)，
+  `BUILTIN\Administrators` 组标记为 "Group used for deny only"（无管理特权）。
+- `network_disabled: true` —— 验证编译以 `MATHLIB_CACHE_DISABLE=1` 离线执行，
+  依赖全部本地齐备（git 依赖已在 D0-A 阶段检出），验证期间零网络调用。
+- `prebuilt_artifacts_ignored: true` —— mathlib v4.34.0 无任何预编译产物可用
+  （lakecache marker 404），全部 8712 个 olean 从源码构建；未使用预构建工件。
+
+## 8. 相关记录
 
 - 验证日志：`verification/current-release-v4.34.log`
 - 元数据：`award.yaml`、`citation.md`、`recipients.md`、`verification/record.yaml`
