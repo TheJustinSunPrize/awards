@@ -1,60 +1,68 @@
-# JSP-000212: finite Bose--Chowla construction
+# JSP-000212: prime-power Bose--Chowla formalization
 
-## Requested review
+## Requested review and current scope
 
-Please assess this Lean formalization of a known lower-bound construction
-for [JSP-000212](../../../problems/catalog-0201-0300.md#JSP-000212).
-The original extremal problem remains open. This submission claims neither
-a new mathematical result nor the first worldwide formalization. It requests
-review of the formalization contribution, its scope, reproducibility, overlap,
-and eligibility under the published prize rules.
+Please assess this supplement to [PR #423](https://github.com/TheJustinSunPrize/awards/pull/423).
+It extends the initial prime-cardinality construction to **every prime
+power and modular equality of sums**, completing the finite Bose--Chowla
+construction. This is one contribution in the existing PR, not a second
+award application.
+
+The original [JSP-000212 extremal problem](../../../problems/catalog-0201-0300.md#JSP-000212)
+remains open. This is the formalization of a known lower-bound construction;
+it claims no new bound or mathematical discovery, complete solution of the
+extremal question, worldwide priority, or prize entitlement.
 
 The proposed recipient is `RECIPIENT-JSP-000212-KZ-A`, confirmation pending.
-This is a self-submission by `ketianzhang1-lang`, prepared with OpenAI ChatGPT
+This self-submission by `ketianzhang1-lang` was prepared with OpenAI ChatGPT
 assistance. The submitter has a direct interest in the review outcome.
 Mathematical credit remains with R. C. Bose and S. Chowla.
 
-## Exact contribution
+## Exact theorem
 
-For every prime `p` and every natural `h >= 2`, the package proves that there
-exists `A ⊆ {1,...,p^h-1}` with exactly `p` elements such that equal sums of
-`h` elements of `A`, **including repetitions**, have equal multisets of
-summands. The main construction is `BoseChowla.exists_bose_chowla`.
+For every prime p, every r >= 1 and h >= 2, write q=p^r. There exists a set
+A in {1,...,q^h-1} of cardinality q such that **congruent sums modulo q^h-1
+of h elements of A have the same multiset of summands**, including repetitions.
 
-`BoseChowla.jsp000212` specializes to `h=3` and transfers the result to sums
-over three-element finite subsets, which is the exact condition in the
-official catalog. In particular, at interval lengths `N=p^3-1` the relevant
-maximum is at least `p`. The theorem covers every prime, not a fixed list.
+The final theorem is `BoseChowlaPrimePower.exists_prime_power_modular`.
+It proves the existence of the finite-field embedding and the required
+extension degree, without extra conjectural assumptions.
+`BoseChowlaPrimePower.jsp000212_prime_power` specializes to h=3 and the
+catalog's sums of distinct three-element subsets.
 
-| Catalog feature | Formal statement |
-| --- | --- |
-| Positive integer interval | `A ⊆ Finset.Icc 1 (p^3-1)` |
-| Constructed size | `A.card = p` |
-| Two three-element subsets | `S ⊆ A`, `T ⊆ A`, `S.card = 3`, `T.card = 3` |
-| Equality only for the same subset | `S.sum id = T.sum id → S = T` |
-| Known component only | No upper bound or complete asymptotic answer is asserted |
+| Feature | Initial submission | Current supplement |
+| --- | --- | --- |
+| Cardinalities | Primes p | All prime powers q=p^r, r >= 1 |
+| Sum comparison | Equality in the integers | Congruence modulo q^h-1 |
+| Number of summands | Every h >= 2 | Every h >= 2 |
+| Repeated summands | Allowed | Allowed |
+| JSP-000212 endpoint | At N=p^3-1, size p | At N=q^3-1, size q |
+| Complete original extremal problem | Not claimed | Not claimed |
 
-Only prime cardinalities are proved here; the classical theorem also covers
-prime powers and a stronger modular condition. Neither additional scope is
-silently claimed. The general `h` statement and cubic specialization are one
-contribution, not separate award requests.
+## Source and evidence
 
-## Evidence and attribution
+- [Immutable current proof source](https://github.com/ketianzhang1-lang/jsp-000301-lean/tree/9ef8a063998150500dcdddad81c669c69ed8fa2c/projects/jsp-000212).
+- [Current verification run](https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35178083844).
+- [Proof, attribution and reproduction](PROOF.md).
+- [Current verification receipt](VERIFICATION.md).
+- [Source checksums](SOURCE_SHA256SUMS).
+- [Historical initial receipt](INITIAL_VERIFICATION.md).
+- [Initial submission snapshot](https://github.com/ketianzhang1-lang/awards/tree/546e5b052fef4a87a0853501c46ed36df2eed402/docs/submissions/jsp-000212-kz).
+- [Suggested updated PR description](PR_DESCRIPTION.md).
 
-- [Immutable tested proof source](https://github.com/ketianzhang1-lang/jsp-000301-lean/tree/5a44bae1b7d4a8a70d1f8594e26688f251f0b9e0/projects/jsp-000212).
-- [Public proof verification run](https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35176592120).
-- [Proof explanation, original sources, and reproduction commands](PROOF.md).
-- [Verification receipt and limitations](VERIFICATION.md).
-- [Source file hashes](SOURCE_SHA256SUMS).
+BoseChowla.lean and Audit.lean are byte-identical to the initial verified
+version. The new PrimePower.lean and PrimePowerAudit.lean supply the
+supplement. Documentation and verification scripts now cover both.
+The old run, source pin and evidence remain traceable; the initial date
+does not establish priority for the later extension.
 
-The proof uses only Mathlib; it does not import an unproved conjecture library
-or add assumptions encoding the desired result. The original implementation
-and verification scripts are Apache-2.0. Mathematical attribution and source
-links are retained in PROOF.md.
+The proof uses Mathlib and standard foundational axioms. No unproved
+conjecture, custom target assumption, native-evaluation axiom or sorry is
+used. Source and scripts are Apache-2.0. Relevant mathematical attribution
+is retained in PROOF.md.
 
-Bounded official issue/PR and public-source searches found no matching
-submission on 2026-09-17. They are not a proof of global novelty or priority.
-The catalog's current Open / Lean No / Eligible No markers, public candidate
-records, and award records are not modified. Automated checks are contributor
-evidence; designated verification, human statement review, recipient
-confirmation, priority, eligibility, and award decisions remain pending.
+Bounded official issue/PR and public-source searches found no separate
+matching submission on 2026-09-17; they do not prove global novelty.
+Catalog flags, public candidate records and award records remain unchanged.
+Contributor-run checks do not replace designated verification, human
+statement review, recipient confirmation, priority or eligibility decisions.
