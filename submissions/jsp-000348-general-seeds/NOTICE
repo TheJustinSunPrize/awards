@@ -1,0 +1,24 @@
+JSP-000348 arbitrary-positive-seed formalization
+New work: Copyright (c) 2026 green3sf (AI-assisted development).
+Released under Apache License 2.0.
+
+The parity-obstruction and finite-approximation construction patterns in
+GeneralSeeds.lean are adapted from:
+  baobingzhang/jsp-000348-erdos423-lean, Erdos423.lean
+  commit 6af50e76fc7d7bf6da0c43975998805fca5cb4a3
+  https://github.com/baobingzhang/jsp-000348-erdos423-lean/blob/6af50e76fc7d7bf6da0c43975998805fca5cb4a3/Erdos423.lean
+  Apache License 2.0 (included as LICENSE).
+
+Changes: zero-based indexing, half-open blocks, arbitrary finite positive
+seeds, generalized predicates and proofs, and a single odd-exponent power
+square-gap argument replacing the two-power plateau argument. The source
+file's fixed-seed quantitative theorems are not included or claimed here.
+
+That upstream file credits Google DeepMind's Formal Conjectures project
+(Copyright 2026 The Formal Conjectures Authors; Apache License 2.0) for its
+original problem definitions. This package uses different generalized
+definitions; the relationship and index shift are documented in STATEMENT.md.
+
+The arbitrary-seed mathematical result is credited to Quanyu Tang,
+arXiv:2603.09939v1 Theorem 1.4 / v2 Section 6.1. The classical qualitative
+result is also independently credited to Matthew Bolan in Tang's paper.
