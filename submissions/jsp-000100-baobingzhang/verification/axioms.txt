@@ -1,0 +1,7 @@
+'Erdos84.erdos_84' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos84.erdos_84_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos84.erdos_84_eps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos84.eventually_numCycleSets_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos84.cycleSets_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos84.cycleSet_comap_equiv' depends on axioms: [propext, Quot.sound]
+'Erdos84.two_le_numCycleSets_three' depends on axioms: [propext, Classical.choice, Quot.sound]
