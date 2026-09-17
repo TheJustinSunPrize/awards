@@ -1,0 +1,20 @@
+Formal statement attribution
+============================
+The L and a definitions and the final theorem statement are adapted from
+Google DeepMind's Formal Conjectures repository, file
+FormalConjectures/ErdosProblems/291.lean, revision
+40e7c98697de6f66b8cbdbf641749ab39ed9c152.
+
+Copyright 2026 The Formal Conjectures Authors.
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+Changes: standalone namespace; complete proofs replacing the target placeholder;
+independent restatement of the exact type and boundary checks. Formal Conjectures
+is not imported and its unproved declarations are not dependencies.
+
+The mathematical criterion is attributed to Stefan Steinerberger by
+https://www.erdosproblems.com/291. No original mathematical discovery is claimed.
+
+New formalization and packaging: GitHub account James-16, with substantial
+OpenAI Codex assistance. New code is released under Apache-2.0.
+No endorsement by any cited author or project is implied.

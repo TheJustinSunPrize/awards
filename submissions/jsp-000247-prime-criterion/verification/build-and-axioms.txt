@@ -1,0 +1,9 @@
+ℹ [2760/2760] Built Erdos291Criterion.Audit (34s)
+info: Erdos291Criterion/Audit.lean:32:0: 'Erdos291Criterion.steinerberger_generalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos291Criterion/Audit.lean:33:0: 'Erdos291CriterionAudit.exact_public_statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos291Criterion/Audit.lean:34:0: exact_public_statement : ∀ (n p : ℕ),
+  Nat.Prime p →
+    p ≤ n →
+      have k := n / p ^ Nat.log p n;
+      p ∣ (a n).gcd (L n) ↔ ↑p ∣ (∑ i ∈ Finset.Icc 1 k, 1 / ↑i).num
+Build completed successfully (2760 jobs).

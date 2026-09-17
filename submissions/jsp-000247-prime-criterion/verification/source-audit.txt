@@ -1,0 +1,2 @@
+Both submitted Lean source files reviewed. No sorry, custom axiom, native_decide, unsafe, implemented_by, or ofReduceBool occurrence.
+The final theorem and exact statement depend only on propext, Classical.choice, and Quot.sound.
