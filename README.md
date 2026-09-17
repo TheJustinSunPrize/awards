@@ -22,7 +22,7 @@ Award entries are confirmed and publicly announced decisions; candidates are tra
 
 ## Participate
 
-You can recommend a problem, claim an award for your own contribution, correct a record, or raise a dispute using the four [issue forms](.github/ISSUE_TEMPLATE/). Award claims must be submitted by the actual contributor. The TRON mainnet receiving address is optional when applying and must be provided and confirmed before payment; addresses posted in an issue are public. Read [CONTRIBUTING.md](CONTRIBUTING.md) for evidence requirements and handling steps, and follow the [Code of Conduct](CODE_OF_CONDUCT.md). Keep identity documents, private contact details and other private personal information out of public issues.
+You can recommend a problem, claim an award for your own contribution, correct a record, or raise a dispute using the four [issue forms](.github/ISSUE_TEMPLATE/). Award claims must be submitted by the actual contributor. Read [CONTRIBUTING.md](CONTRIBUTING.md) for evidence requirements and handling steps, and follow the [Code of Conduct](CODE_OF_CONDUCT.md). Keep identity documents, private contact details and other private personal information out of public issues.
 
 ## Repository maintenance
 

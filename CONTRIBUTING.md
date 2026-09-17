@@ -7,31 +7,37 @@ Contributions maintain the public problem bank, evidence, candidate records, and
 | Type | Include | Handling |
 | --- | --- | --- |
 | Recommend a problem | Precise statement, significance, original references, known results, formalization links | Maintainers check scope, sources and duplicates. |
-| Claim an award | Problem-bank link, your contribution role, optional TRON receiving address, related claims and any attribution clarification | Maintainers use the catalog's evidence and verify the applicant's identity and receiving address before payment. |
+| Claim an award | Problem ID, original Lean proof repository owned by the submitting GitHub account, public follow-up email, contribution role and related claims | Maintainers verify source attribution and the applicant's identity; payment arrangements are handled privately after award confirmation. |
 | Correction | Exact record, current text, proposed correction and supporting sources | Maintainers review the evidence and record the outcome. |
 | Dispute | Announced award, disputed claim, evidence, requested resolution and conflicts | Maintainers record the concern and arrange review. |
 
-Use the corresponding [issue form](.github/ISSUE_TEMPLATE/). Link existing issues instead of duplicating them. Disclose relevant conflicts using public professional information only. Use RECIPIENT-<ENTRY>-A placeholders until recipient identities are confirmed. Never publish unconfirmed identities, private contacts, identity documents, private financial information, internal assessment criteria or deliberations, including in commit messages. The award claim form specifically requests a public TRON receiving address with the applicant's consent; keep other payment arrangements private.
+Use the corresponding [issue form](.github/ISSUE_TEMPLATE/). Link existing issues instead of duplicating them. Disclose relevant conflicts using public professional information only. Use RECIPIENT-<ENTRY>-A placeholders until recipient identities are confirmed. Never publish unconfirmed identities, private contacts, identity documents, private financial information, internal assessment criteria or deliberations, including in commit messages. Handle payment arrangements through the maintainer-designated private channel.
 
 The [award claim form](.github/ISSUE_TEMPLATE/claim-award.yml) is for the
 actual contributor applying for themselves. Proxy applications and collection on
 another person's behalf are not accepted. Both mathematical and Lean contributions
 can be claimed in the same issue and are
-reviewed separately using the evidence already in the problem bank. Do not repeat
-proof or source information in the claim; link a correction issue or PR if the
+reviewed separately using the evidence already in the problem bank. Every claim
+must provide the JSP problem ID, the original Lean proof repository URL and a
+follow-up contact email. The repository owner must match the issue author's GitHub
+account; mirrors or collections of someone else's proof do not qualify. The email
+will be public, so use an address intended for public correspondence. A contact
+email alone does not establish identity. Do not upload proof materials or repeat
+the catalog's branch, commit or theorem details; link a correction issue or PR if the
 catalog is missing information or needs updating. Read the [identity and payment process](docs/attribution.md#claiming-an-award).
-The TRON mainnet receiving address is optional when applying but must be provided
-and confirmed before payment. Any address posted in the issue is public and linked
-to the applicant's GitHub account and claim. Maintainers confirm the address
-with the verified applicant before payment; identity documents and private contact
-details are handled through the official private channel.
+After identity verification and award confirmation, agree payment arrangements
+through the maintainer-designated private channel.
+Identity documents and private contact details are also handled privately.
 For mathematical solver claims, including claims for both roles, state an
 independently verifiable identity-confirmation method. A paper-listed author email is one option; established
 institutional or author channels, historical signing identities and other
 corroborated methods may also be used subject to maintainer verification.
-For Lean claims, submitting the issue from the contribution-linked GitHub account
-confirms that account without a separate account-control check. Lean-only applicants
-may leave the identity-verification-method field blank.
+For Lean claims, maintainers check that the repository owner matches the issue
+author and that source attribution identifies the applicant as a formalization
+contributor. Ownership alone is not authorship. If that connection is missing or
+unclear, use the same independent identity-verification process as for mathematical
+solver claims. Lean-only applicants may leave the identity-verification-method
+field blank only when source attribution establishes that connection.
 
 ## Public records
 
