@@ -539,7 +539,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000437 | [Can every graph's Ramsey number be bounded exponentially in the square root of its edge count?](catalog-0401-0500.md#JSP-000437) | Solved | No | No | Unavailable |
 | JSP-000438 | [What is the optimal upper bound for the two-color Ramsey number of an arbitrary tree?](catalog-0401-0500.md#JSP-000438) | Open | No | No | Unavailable |
 | JSP-000439 | [Does sufficiently large average degree force a graph to contain every tree of a prescribed order?](catalog-0401-0500.md#JSP-000439) | Solved | Yes | Yes | Unclaimed |
-| JSP-000440 | [What is the two-color Ramsey number of a tree whose bipartition sizes have ratio one to two?](catalog-0401-0500.md#JSP-000440) | Solved | No | No | Unavailable |
+| JSP-000440 | [What is the two-color Ramsey number of a tree whose bipartition sizes have ratio one to two?](catalog-0401-0500.md#JSP-000440) | Solved | Yes | No | Unavailable |
 | JSP-000441 | [What is the Ramsey number of a prescribed tree versus a complete multipartite graph?](catalog-0401-0500.md#JSP-000441) | Open | No | No | Unavailable |
 | JSP-000442 | [What is the exact Ramsey number of a prescribed cycle versus a clique?](catalog-0401-0500.md#JSP-000442) | Open | No | No | Unavailable |
 | JSP-000443 | [What is the Ramsey number of a four-cycle versus a prescribed star?](catalog-0401-0500.md#JSP-000443) | Open | No | No | Unavailable |
