@@ -1,70 +1,85 @@
-# Verification record — 2026-09-17 UTC
+# Verification record — all-order supplement, 2026-09-17 UTC
 
 ## Tested revision and result
 
-Proof commit: `91cc5632694304c3a9764cd676088cafb573a799`.
+Proof commit: `91a57fa9ab5d0f0f1df3f94e156e29fc4a8ca0f2`.
 
-[Successful public CI run 35176522636](https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35176522636).
-Job: `105059337292`. All verification steps completed successfully.
+[Successful public CI run 35177883810](https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35177883810).
+Job: `105063508812`. Every verification step completed successfully.
 
-- Lean 4.34.0 compilation with warnings as errors: successful (3,127 jobs,
+- Lean 4.34.0 compilation with warnings as errors: successful (3,249 jobs,
   including cached dependencies).
-- Bundled `leanchecker JSP000463` replay: successful.
-- All eleven selected axiom audits: successful; each uses only `propext`,
+- Bundled `leanchecker AllOrders` replay: successful.
+- All eighteen selected axiom audits: successful; each uses only `propext`,
   `Classical.choice`, and `Quot.sound`.
 - All nine dependency revision checks: successful.
 - False-arithmetic negative control: rejected as required.
-- Python incidence checks: primes 2,3,5,7,11 passed. Modulus 4 has a 4-cycle,
-  as required for the composite-modulus negative control.
-- Independently implemented NaNoda checker: **7,703 declarations checked with
-  no errors**, under a strict three-axiom allowlist.
+- Python incidence checks: primes 2,3,5,7,11 passed; the composite-modulus
+  negative control at modulus 4 exhibits a 4-cycle as expected. These finite
+  checks supplement the original construction; the all-order theorem is
+  established by the general Lean proof, not by finite sampling.
+- Independently implemented NaNoda checker: **32,138 declarations checked with
+  no errors**, under the strict three-axiom allowlist.
+
+The exported targets include the original finite-field construction and lower
+bounds, and the new monotonicity, all-order graph-existence and all-order
+extremal lower-bound theorems, with their complete dependency closures.
 
 Exporter pin: `6cea97789dc088ea47fcea15692db85685aedac5` in
 [leanprover/lean4export](https://github.com/leanprover/lean4export).
 Checker pin: `4c544ed4099c8227f07d5de77ad1e69fb0740a27` in
 [ammkrn/nanoda_lib](https://github.com/ammkrn/nanoda_lib).
 
-`evidence/public-ci-excerpt.log` is a selection of the actual timestamped public
-job log, not the complete log. The run and artifact preserve the larger record.
-`evidence/local-frontend-audit.log` records earlier local development checks,
-not a separate independently administered verification.
+`evidence/all-orders-public-ci-excerpt.log` selects lines from the actual
+public job log; it is not the complete log. The run and artifact contain the
+larger record. `evidence/all-orders-local-frontend-audit.log` records successful
+local development checks, not independently administered verification.
 
-## Artifact
+## Artifact and source integrity
 
-[GitHub Actions artifact 10478881733](https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35176522636/artifacts/10478881733)
+[GitHub Actions artifact 10479636775](https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35177883810/artifacts/10479636775)
 
-- Size: 4,642,937 bytes.
+- Size: 30,571,637 bytes.
 - GitHub-reported ZIP SHA-256:
-  `490ab6f4a4b8573777e4cd623d677912c68ac6855391e5a0e2759045e0ff9fe6`.
-- Advertised expiry: 2026-12-16T03:00:20Z.
+  `d332f1484bdc3a254c51f84548c8677e789917da435f8b3023d8cd3b3cd01494`.
+- Advertised expiry: 2026-12-16T03:21:52Z.
 - The ZIP was not downloaded and independently rehashed locally; the metadata
-  is reported by GitHub, as recorded in `evidence/artifact-metadata.json`.
+  is reported by GitHub in `evidence/all-orders-artifact-metadata.json`.
 
-Lean source SHA-256:
+AllOrders.lean SHA-256:
+`abf342024bf5761cd338c03bf5f9ae8fa6c58001de441fa8604f406e35c02ebd`.
+
+The original JSP000463.lean is unchanged, with SHA-256:
 `9cd53bd33d38f5799543102cd64407e81758e5309ac943af7c054dea90d8a197`.
 
-## Submission checks
+## Submission checks and earlier evidence
 
-All 22 official repository unit tests passed. The unmodified organizer scripts
-passed `validate`, `links`, `build`, `check`, and `history` against
+All 22 official repository unit tests passed. Repository validation results
+are recorded in `evidence/all-orders-preflight.log` against official baseline
 `f4e7173d89dfe91022a185427d63452c8ffbf6ae`.
-The submitted source, manifest, compiler pin and verification scripts match
-the tested proof package. Only docs/submissions/jsp-000463-kz is added.
+The submitted Lean sources, lockfile, compiler pin and verification scripts
+match the tested proof package. Changes stay within this submission directory.
 
-The earlier proof run 35176347605 compiled and replayed the same Lean source,
-but its audit invocation used an unsupported `lean --wfail` option. The next
-commit changed that script to `lean -DwarningAsError=true`; the complete rerun
-listed above passed. The failed attempt is not counted as successful verification.
+[VERIFICATION-v1.md](VERIFICATION-v1.md) preserves the original construction's
+successful run 35176522636 and 7,703-declaration independent check. The original
+artifact-metadata.json, public-ci-excerpt.log, local-frontend-audit.log and
+preflight.log refer to that earlier revision, not the all-order supplement.
+The original proof and submission commits remain in Git history.
 
-## Limits
+## Scope and limitations
 
-Checks were run by the contributor, not by an organizer-designated verifier.
-The independent implementation refers to NaNoda, not to an independent human
-review. Dependency caches and network access were used; a full offline rebuild
-of every foundational dependency is not claimed. The local environment used a
-Lean frontend through Lake because it could not launch the ordinary lean
-executable; the public run supplies the standard build and replay evidence.
+The new conclusion is `n³ < 512 exC3C4(n)²` for every n ≥ 8, together with an
+actual graph-existence statement. It is a classical uniform lower bound with
+a constant eight times smaller than the conjectured sharp constant. This
+submission does not prove the original asymptotic equivalence or a matching
+upper bound and does not claim a new mathematical discovery.
 
-Permanent independently administered archival, organizer review, mathematical
-scope/priority adjudication and recipient confirmation remain pending. No
-catalog eligibility, award allocation or payment entitlement is asserted.
+Checks were run by the contributor, not an organizer-designated verifier.
+The independent implementation refers to NaNoda, not independent human review.
+Dependency caches and network access were used; a full offline rebuild of all
+foundational dependencies is not claimed. Local checks used a Lean frontend
+through Lake; the public run provides the standard build and replay evidence.
+
+Organizer review, scope and priority adjudication, recipient confirmation and
+independently administered permanent archival remain pending. No award or
+payment entitlement is asserted.

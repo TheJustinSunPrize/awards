@@ -1,0 +1,30 @@
+2026-09-17T03:23:31.5959389Z Build completed successfully (3249 jobs).
+2026-09-17T03:23:37.0090838Z 'JSP000463.rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0091715Z 'JSP000463.free_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0092445Z 'JSP000463.free_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0093346Z 'JSP000463.regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0094404Z 'JSP000463.vertex_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0095244Z 'JSP000463.edge_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0096049Z 'JSP000463.finite_field_construction' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0096915Z 'JSP000463.finite_field_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0097732Z 'JSP000463.prime_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0098540Z 'JSP000463.unbounded_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0099350Z 'JSP000463.unbounded_graphs' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0106720Z   ∃ G x, (SimpleGraph.cycleGraph 3).Free G ∧ (SimpleGraph.cycleGraph 4).Free G ∧ G.edgeFinset.card = Fintype.card K ^ 3
+2026-09-17T03:23:37.0109747Z 'JSP000463.free_map_of_no_isolated' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0110627Z 'JSP000463.pad_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0111525Z 'JSP000463.edge_count_le_ex' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0112438Z 'JSP000463.exC3C4_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0113551Z 'JSP000463.prime_for_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0114526Z 'JSP000463.all_order_graphs' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0115732Z 'JSP000463.all_order_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:23:37.0116755Z JSP000463.all_order_graphs (n : ℕ) (hn : 8 ≤ n) :
+2026-09-17T03:23:37.0118059Z   ∃ G x, (SimpleGraph.cycleGraph 3).Free G ∧ (SimpleGraph.cycleGraph 4).Free G ∧ n ^ 3 < 512 * G.edgeFinset.card ^ 2
+2026-09-17T03:23:37.0119201Z JSP000463.all_order_lower_bound (n : ℕ) (hn : 8 ≤ n) : n ^ 3 < 512 * JSP000463.exC3C4 n ^ 2
+2026-09-17T03:23:37.1365401Z All 18 target axiom audits and nine dependency revision checks passed.
+2026-09-17T03:23:46.0093760Z Build completed successfully (6 jobs).
+2026-09-17T03:24:32.1541411Z Checked 32138 declarations with no errors
+2026-09-17T03:24:38.2616636Z SHA256 digest of uploaded artifact zip is d332f1484bdc3a254c51f84548c8677e789917da435f8b3023d8cd3b3cd01494
+2026-09-17T03:24:38.4845753Z Artifact jsp-000463-evidence.zip successfully finalized. Artifact ID 10479636775
+2026-09-17T03:24:38.4847424Z Artifact jsp-000463-evidence has been successfully uploaded! Final size is 30571637 bytes. Artifact ID is 10479636775
+
