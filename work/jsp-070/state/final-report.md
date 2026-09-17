@@ -26,6 +26,8 @@
 | `0a48161` | 15 | D1-A 完成：独立验证说明（pinned/版本/哈希/复现/公理表） |
 | `49d4007` | 16 | 四件套整批入库；`manage.py validate` = OK；statement v2 active |
 | `74ce07c` | 17 | 确认态记录：sandbox 实证、status=pending-recipient-confirmation、PR.md 提交包 |
+| `2b0f3a2` | 18 | 阶段报告 final-report.md 落盘（本文件） |
+| `96276d8` | 19 | 复现三件套 + people 档案入库；.gitignore 卫生；blockers.md 落盘 |
 
 上游 pinned：`github.com/plby/lean-proofs` @ `1268917deaaaa0d674f651287027baa26cea9920`
 current-release 环境：Lean `leanprover/lean4:v4.34.0`，mathlib @ `5ed2965256430c3649e86755f9576b54eca72435`（v4.34.0，源码构建 8712 olean）
