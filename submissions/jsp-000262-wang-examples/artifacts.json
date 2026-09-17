@@ -1,0 +1,68 @@
+{
+  "format_version": 1,
+  "verification_date": "2026-09-17",
+  "mathlib_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+  "paper": {
+    "id": "arXiv:2605.21518v1",
+    "url": "https://arxiv.org/abs/2605.21518v1",
+    "license": "CC BY 4.0"
+  },
+  "external_proof_archive": null,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 14,
+      "sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 95,
+      "sha256": "a1e080e0f2952a76ff4896b42508257ec62c10df7e89d89a46efb74b30933463"
+    },
+    {
+      "path": "Audit.lean",
+      "bytes": 1537,
+      "sha256": "aad4d972c3db33a2e6e1bcc8b82d9b9632f4421e52a30c16d8a09ec3758e037b"
+    },
+    {
+      "path": "check_arithmetic.py",
+      "bytes": 1717,
+      "sha256": "767d2140f47f87aec52d4e8d9b3f07191c51e00466528a67b33fa8e703ada662"
+    },
+    {
+      "path": "lake-manifest.json",
+      "bytes": 3553,
+      "sha256": "a3d54f53bae373ed5af0c8c8c8cd9efd42c6acff5605de0639bb9e692f9f9e96"
+    },
+    {
+      "path": "lakefile.toml",
+      "bytes": 296,
+      "sha256": "56030e4dfe93338b9871fde6c45ebdc48897efed5684c3ca9a2d38e1793d1352"
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6210,
+      "sha256": "0bbb3cd865d160937206334d68ad1792f64ca692513194198dbeb9ecc135ed74"
+    },
+    {
+      "path": "verification.txt",
+      "bytes": 2118,
+      "sha256": "9994922e0884d206efe9035a4088d8a8ebcb7fa4509a24c5c27e5cdfda2dbc07"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 2050,
+      "sha256": "860ad0b263570970550b8492e9f1204c86cd9caf4dc954274e73a6a85957f6a6"
+    },
+    {
+      "path": "WangExamples.lean",
+      "bytes": 4281,
+      "sha256": "73e05fe1389796d6a64acc7fc7e321d6a277ea21a139783fc145f601c5025146"
+    }
+  ]
+}

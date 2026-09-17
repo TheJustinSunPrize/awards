@@ -1,0 +1,51 @@
+Local verification: 2026-09-17, Windows x86_64.
+All commands below exited successfully. Designated independent review is pending.
+
+$ lake env lean --version
+Lean (version 4.34.0, x86_64-w64-windows-gnu, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)
+exit_code=0
+
+$ git -C .lake/packages/mathlib rev-parse HEAD
+5ed2965256430c3649e86755f9576b54eca72435
+exit_code=0
+
+$ lake build WangExamples Audit
+ℹ [1681/1684] Built WangExamples (10s)
+info: WangExamples.lean:119:0: 'JSP262.prime_P10' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: WangExamples.lean:120:0: 'JSP262.wang_examples' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1683/1684] Replayed Audit
+info: Audit.lean:33:0: 'JSP262.prime_P10' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:34:0: 'audited_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:35:0: 'audited_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1684 jobs).
+exit_code=0
+
+$ lake env lean -j1 -M4096 WangExamples.lean
+'JSP262.prime_P10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP262.wang_examples' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit_code=0
+
+$ lake env lean -j1 -M4096 Audit.lean
+'JSP262.prime_P10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'audited_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'audited_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+exit_code=0
+
+$ lake env leanchecker WangExamples Audit
+
+exit_code=0
+
+$ python check_arithmetic.py
+P10 primality certificate, base 3; q, residue, gcd(residue-1, P10):
+2 5998279018951962402 1
+3 4047235457071963600 1
+11 1960775996554845167 1
+17 4250297572912931159 1
+101 4171113358307276571 1
+157 4300987241477220124 1
+1979 377227602530225687 1
+10093 500752720299465003 1
+16879 4854371929456556661 1
+PASS: 5998279018951962402, 9 distinct prime factors, exact reciprocal identity
+PASS: 35979351189199316534587473905773572006, 10 distinct prime factors, exact reciprocal identity
+exit_code=0
