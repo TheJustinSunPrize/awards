@@ -202,15 +202,22 @@ The prime obstruction overlaps in method with earlier formalizations, especially
 bounds, and records exact inspected revisions. No global first-formalization
 priority or mathematical novelty is asserted.
 
-Public submitter: `procaross`. Proposed formalizer recipient placeholder:
-`RECIPIENT-JSP-000242-PROCAROSS-A`; confirmation is pending. This implementation
+Public applicant and submitter: `procaross`. The applicant has supplied an
+authorized [public confirmation](https://github.com/TheJustinSunPrize/awards/pull/607#issuecomment-5714157675)
+of the formalization application, account control and publication consent.
+[Confirmation scope](CONTRIBUTOR-CONFIRMATION.md) connects that attestation to
+the earlier placeholder `RECIPIENT-JSP-000242-PROCAROSS-A`. This implementation
 and documentation were prepared with OpenAI ChatGPT/Codex assistance.
+
+The [review addendum](REVIEW-ADDENDUM.md) maps the statement directly to question 1
+on page 99 of Croot's published paper, records additional prior-work checks, and
+distinguishes initial PR creation from the later complete-proof release.
 
 Please assess correspondence, usefulness, attribution, overlap, and eligibility
 of the complete minimum-denominator asymptotic formalization under the [published rules](https://www.hejustinsun.com/zh/prize/rules).
-No candidate, catalog, decision, recipient-confirmation, or payment record is
-created or changed. This is a submission for review, not a tier assignment or an
-assertion of payment entitlement.
+Official candidate, catalog, recipient-profile, decision and payment records
+remain unchanged. Applicant confirmation does not establish organizer acceptance,
+a tier assignment or payment entitlement.
 
 ## Reproduction and evidence
 

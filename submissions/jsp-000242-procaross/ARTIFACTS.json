@@ -8,9 +8,14 @@
       "sha256": "a1d53d8656e4c4df718a3f250dbbf05912c4acdcac1a61a51d5f03d9787ed499"
     },
     {
+      "path": "CONTRIBUTOR-CONFIRMATION.md",
+      "bytes": 1177,
+      "sha256": "3e2891ebb3cf1c900bc9037b8752ff4a3cb473ae7c601be6da4c60600f838427"
+    },
+    {
       "path": "DUPLICATE-SEARCH.md",
-      "bytes": 9110,
-      "sha256": "fc3ef30d0a77df331cc7f706a747bacca88489e34012fd274c1d9f2fb47489eb"
+      "bytes": 9469,
+      "sha256": "79c0803e8b266d5ae940216fb3fa7005733745912dfb31e72ef7fd1561149e45"
     },
     {
       "path": "EXTERNAL-VERIFICATION.md",
@@ -34,8 +39,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 13784,
-      "sha256": "f93d867fa5a05b2eddb041790735e9486bc39bab37d983cc579d59942b005344"
+      "bytes": 14296,
+      "sha256": "857e7a10608777c5ce3bae9afd34dfd72df9058efca7dcd44c5fc849e4a00f17"
+    },
+    {
+      "path": "REVIEW-ADDENDUM.md",
+      "bytes": 5174,
+      "sha256": "a7141d770764cc4aed8440858ec1c074c614ae44a6597b5c8a67307317682015"
     },
     {
       "path": "UnitFractionAsymptotic.lean",

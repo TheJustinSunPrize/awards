@@ -135,3 +135,10 @@ The factorial route is attributed to Erdős (1950); the duplicate-removal
 principle and padding identities are classical. The new Lean source was written
 for this submission using pinned Mathlib lemmas. The absence of a matching
 result in the bounded searches does not establish originality or award priority.
+
+## Follow-up statement and priority review
+
+[REVIEW-ADDENDUM.md](REVIEW-ADDENDUM.md) records a later all-state title/body
+screen of 440 PRs, additional source checks including the explicitly axiomatized
+Erdos284 file, and the distinction between initial PR creation and publication
+of the complete proof. Earlier snapshots above retain their original scope.
