@@ -70,3 +70,12 @@ exclusive priority or prize entitlement.
 No candidate eligibility, confirmed recipient identity or award record
 is changed by this package. Organizer verification and assessment remain
 necessary before any claim of an award.
+
+## Documentation attribution
+
+Catalog context is credited to **The Justin Sun Prize contributors**,
+[source revision `f4e7173d89dfe91022a185427d63452c8ffbf6ae`](https://github.com/TheJustinSunPrize/awards/blob/f4e7173d89dfe91022a185427d63452c8ffbf6ae/problems/catalog-0601-0700.md#JSP-000651),
+under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Changes: new formalization documentation, explicit theorem scope, proof
+correspondence and reproducibility instructions; the catalog is unchanged.
+Mathematical attribution and third-party rights remain as stated above.

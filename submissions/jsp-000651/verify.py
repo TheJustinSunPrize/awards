@@ -54,6 +54,9 @@ def main():
     args = parser.parse_args()
     evidence = ROOT / "evidence"
     evidence.mkdir(exist_ok=True)
+    # A failed or interrupted rerun must not retain an earlier success receipt.
+    for name in ("verification.json", "axioms.txt", "verification.json.tmp"):
+        (evidence / name).unlink(missing_ok=True)
     result = {"checked_at_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
               "award_confirmed": False, "organizer_verification": "pending",
               "python_optimization_level": sys.flags.optimize}
@@ -115,8 +118,10 @@ def main():
         data = (ROOT / name).read_bytes()
         result["source_files"][name] = {"sha256": hashlib.sha256(data).hexdigest(), "bytes": len(data)}
     result["local_validation"] = "pass"
-    (evidence / "verification.json").write_text(json.dumps(result, indent=2) + "\n")
     (evidence / "axioms.txt").write_text(audit["output"])
+    receipt = evidence / "verification.json.tmp"
+    receipt.write_text(json.dumps(result, indent=2) + "\n")
+    receipt.replace(evidence / "verification.json")
     print("Local validation passed; organizer verification and award review remain pending.")
 
 

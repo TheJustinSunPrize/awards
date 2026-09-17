@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-09-17T05:51:49.376276+00:00",
+  "checked_at_utc": "2026-09-17T06:10:48.044784+00:00",
   "award_confirmed": false,
   "organizer_verification": "pending",
   "python_optimization_level": 1,
@@ -12,7 +12,7 @@
       "--version"
     ],
     "exit_code": 0,
-    "elapsed_seconds": 0.707,
+    "elapsed_seconds": 0.86,
     "output": "Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)\n"
   },
   "build": {
@@ -21,7 +21,7 @@
       "build"
     ],
     "exit_code": 0,
-    "elapsed_seconds": 1.622,
+    "elapsed_seconds": 1.969,
     "output": "Build completed successfully (3757 jobs).\n"
   },
   "axiom_audit": {
@@ -33,7 +33,7 @@
       "Audit.lean"
     ],
     "exit_code": 0,
-    "elapsed_seconds": 10.787,
+    "elapsed_seconds": 11.582,
     "output": "'SumFreeBound.middle_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SumFreeBound.middle_sumFree' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SumFreeBound.middle_third_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SumFreeBound.erdos_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SumFreeBound.singleton_zero_exception' depends on axioms: [propext, Classical.choice, Quot.sound]\nSumFreeBound.erdos_lower_bound (a : Finset \u2124) (ha : 2 \u2264 a.card) : \u2203 b \u2286 a, SumFreeBound.SumFree b \u2227 a.card \u2264 3 * b.card\nSumFreeBound.singleton_zero_exception : \u00ac\u2203 b \u2286 {0}, SumFreeBound.SumFree b \u2227 1 \u2264 3 * b.card\n"
   },
   "axiom_dependencies": {
@@ -78,7 +78,7 @@
       "SumFreeBound"
     ],
     "exit_code": 0,
-    "elapsed_seconds": 326.617,
+    "elapsed_seconds": 353.607,
     "output": "replaying SumFreeBound with --fresh\n"
   },
   "checker_limitation": "leanchecker uses the bundled Lean kernel, not an independently implemented checker; upstream cached library artifacts were used, not a full source rebuild of all imports.",
@@ -104,8 +104,8 @@
       "bytes": 25
     },
     "verify.py": {
-      "sha256": "48bd68843c6db84a25d7edf9b2ee63c11ad4c7871e37677a94c352486bfeafb1",
-      "bytes": 5289
+      "sha256": "67ad5643676bb422caaa1c9f37c918708b989176708b6d61bf0278b23759db06",
+      "bytes": 5573
     }
   },
   "local_validation": "pass"

@@ -56,6 +56,11 @@ class OptimizedVerifierGates(unittest.TestCase):
                 target.write_text("axiom bad : False\n" if mode == "source" and
                                   name == "SumFreeBound.lean" else "\n")
             bindir = fixture / "bin"
+            old_evidence = fixture / "evidence"
+            old_evidence.mkdir()
+            (old_evidence / "verification.json").write_text(
+                json.dumps({"local_validation": "pass", "stale": True}))
+            (old_evidence / "axioms.txt").write_text("stale audit from a previous run\n")
             bindir.mkdir()
             stub = bindir / "lake"
             stub.write_text("#!" + sys.executable + "\n" + LAKE_STUB)
@@ -66,22 +71,27 @@ class OptimizedVerifierGates(unittest.TestCase):
                                   env=env, capture_output=True, text=True)
             receipt_path = fixture / "evidence/verification.json"
             receipt = json.loads(receipt_path.read_text()) if receipt_path.exists() else None
-            return proc, receipt
+            audit_path = fixture / "evidence/axioms.txt"
+            audit = audit_path.read_text() if audit_path.exists() else None
+            return proc, receipt, audit
 
     def test_optimized_success_control(self):
-        proc, receipt = self.run_case("success")
+        proc, receipt, audit = self.run_case("success")
         self.assertEqual(proc.returncode, 0, proc.stdout + proc.stderr)
         self.assertEqual(receipt["local_validation"], "pass")
         self.assertEqual(receipt["python_optimization_level"], 1)
+        self.assertNotIn("stale", receipt)
+        self.assertNotIn("stale", audit)
 
     def test_optimized_failures_do_not_write_success(self):
         for mode in ("source", "version", "build", "audit_exit", "audit_missing", "audit_axiom",
                      "false_arithmetic", "placeholder", "custom_exit", "custom_unflagged", "replay"):
             with self.subTest(mode=mode):
-                proc, receipt = self.run_case(mode)
+                proc, receipt, audit = self.run_case(mode)
                 self.assertNotEqual(proc.returncode, 0, proc.stdout + proc.stderr)
                 self.assertIn("Verification failed:", proc.stderr)
                 self.assertIsNone(receipt)
+                self.assertIsNone(audit)
 
 
 if __name__ == "__main__":
