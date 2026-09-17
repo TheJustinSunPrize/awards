@@ -1,0 +1,92 @@
+[
+  {
+    "path": ".gitattributes",
+    "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+    "bytes": 19
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "3fdf8e496a6bbfa1b994cdafe0306794ad7790de05f9dbca43e4479376d12c9b",
+    "bytes": 32
+  },
+  {
+    "path": "Audit.lean",
+    "sha256": "c05cd1d3d10fb0ad201972b94a5f1a28e7518c08193d97df310f635b9ccd6c76",
+    "bytes": 628
+  },
+  {
+    "path": "BipartiteC4.lean",
+    "sha256": "6843326a45d4061f9363628a689bc07f50c691c6a18c3fe38cf8e7b21c0bbdc2",
+    "bytes": 29
+  },
+  {
+    "path": "BipartiteC4/Basic.lean",
+    "sha256": "575af26b677b5df28a89b74ed8319b8b076766e841cf3a2637e64c13b38e77f8",
+    "bytes": 2785
+  },
+  {
+    "path": "BipartiteC4/Construction.lean",
+    "sha256": "e4e7d4227d4be894c1fd62e3d2d6a188f454d5e9eae1e5241d495ad23203ae12",
+    "bytes": 1803
+  },
+  {
+    "path": "BipartiteC4/Counts.lean",
+    "sha256": "6a597aa73cc87549cecefc0ff01ba60fdad1ab7d4e1cc2b5d06419dce8c209b1",
+    "bytes": 2321
+  },
+  {
+    "path": "BipartiteC4/Sharpness.lean",
+    "sha256": "eeecc7d1c90caa642d7bf2918cf4fa8a98fc9eee9bd1844467db7f29e7a8d72e",
+    "bytes": 3512
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "bytes": 11357
+  },
+  {
+    "path": "NOTICE",
+    "sha256": "b25482a6b754610821cff9433cb4b474d4225b893fbce779c6bb393d1f273e27",
+    "bytes": 852
+  },
+  {
+    "path": "PROOF.md",
+    "sha256": "3829ccf8f641ec1636df5691567c8ec507f5b17160fa9cf7b80ea07dab7859d4",
+    "bytes": 2558
+  },
+  {
+    "path": "README.md",
+    "sha256": "a7b427fd2c1ff15230c471213212ec91129159309ccdce6e1e323598f4c049e0",
+    "bytes": 4566
+  },
+  {
+    "path": "SOURCE_COMPARISON.md",
+    "sha256": "4a92da96ba291b9cfa44d53b840280ed49b33e1fa7b0bc68c35704964bba1f20",
+    "bytes": 2835
+  },
+  {
+    "path": "lake-manifest.json",
+    "sha256": "431aa216a2199291f4c722c4dd695f4b78aceafad267071dcc01620dd666f121",
+    "bytes": 3130
+  },
+  {
+    "path": "lakefile.toml",
+    "sha256": "facdfe253d8c6074055922ad668da0a7b04ac7277081689c679d093e49ad3edd",
+    "bytes": 215
+  },
+  {
+    "path": "lean-toolchain",
+    "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "bytes": 25
+  },
+  {
+    "path": "statement-review.md",
+    "sha256": "cc82a078b65358d78e30b1399befd1708d25a920518651aea6c14eeecf82447c",
+    "bytes": 6264
+  },
+  {
+    "path": "verify.ps1",
+    "sha256": "5f9a0e70608466c01fd24005b88d2fcd742c075dcf77b0572a5c2701a601a0f7",
+    "bytes": 4323
+  }
+]

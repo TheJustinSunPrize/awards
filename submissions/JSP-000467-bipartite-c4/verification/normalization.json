@@ -1,0 +1,46 @@
+{
+  "preparedAt": "2026-09-17T08:15:42.698787+00:00",
+  "reason": "Publication text normalization; no proof term, definition, or theorem changed. Original verification execution is retained.",
+  "proofModules": [
+    {
+      "path": "BipartiteC4.lean",
+      "reviewedSHA256": "6843326a45d4061f9363628a689bc07f50c691c6a18c3fe38cf8e7b21c0bbdc2",
+      "publishedSHA256": "6843326a45d4061f9363628a689bc07f50c691c6a18c3fe38cf8e7b21c0bbdc2",
+      "reviewedBytes": 29,
+      "publishedBytes": 29,
+      "change": "Already LF; bytes unchanged"
+    },
+    {
+      "path": "BipartiteC4/Basic.lean",
+      "reviewedSHA256": "575af26b677b5df28a89b74ed8319b8b076766e841cf3a2637e64c13b38e77f8",
+      "publishedSHA256": "575af26b677b5df28a89b74ed8319b8b076766e841cf3a2637e64c13b38e77f8",
+      "reviewedBytes": 2785,
+      "publishedBytes": 2785,
+      "change": "Already LF; bytes unchanged"
+    },
+    {
+      "path": "BipartiteC4/Construction.lean",
+      "reviewedSHA256": "e4e7d4227d4be894c1fd62e3d2d6a188f454d5e9eae1e5241d495ad23203ae12",
+      "publishedSHA256": "e4e7d4227d4be894c1fd62e3d2d6a188f454d5e9eae1e5241d495ad23203ae12",
+      "reviewedBytes": 1803,
+      "publishedBytes": 1803,
+      "change": "Already LF; bytes unchanged"
+    },
+    {
+      "path": "BipartiteC4/Counts.lean",
+      "reviewedSHA256": "6a597aa73cc87549cecefc0ff01ba60fdad1ab7d4e1cc2b5d06419dce8c209b1",
+      "publishedSHA256": "6a597aa73cc87549cecefc0ff01ba60fdad1ab7d4e1cc2b5d06419dce8c209b1",
+      "reviewedBytes": 2321,
+      "publishedBytes": 2321,
+      "change": "Already LF; bytes unchanged"
+    },
+    {
+      "path": "BipartiteC4/Sharpness.lean",
+      "reviewedSHA256": "febedd8ef6980afc499760e39a87ecc4bebfd2b0624cad7481e2b94cdb9dfcbf",
+      "publishedSHA256": "eeecc7d1c90caa642d7bf2918cf4fa8a98fc9eee9bd1844467db7f29e7a8d72e",
+      "reviewedBytes": 3603,
+      "publishedBytes": 3512,
+      "change": "CRLF to LF only"
+    }
+  ]
+}

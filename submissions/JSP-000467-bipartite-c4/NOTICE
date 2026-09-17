@@ -1,0 +1,15 @@
+Exact four-cycle packing in complete bipartite graphs
+Copyright 2026 bipartite-c4-packing contributors
+
+Published and maintained through the GitHub account 156631890.
+The Lean proof code and documentation were developed with OpenAI Codex under
+the user's direction, with separate Codex agents contributing proof work and
+source review. No human-only authorship or independent human review is claimed.
+
+The complete-bipartite capacity formula and the minimum-degree sharpness
+construction are classical mathematics. This package claims the formalized
+results stated in README.md, not a new proof of Wang's positive theorem or
+global priority. See SOURCE_COMPARISON.md for the reviewed public sources.
+
+Mathlib and other fetched dependencies retain their respective licenses.
+They are not bundled in this source repository or its source release archive.
