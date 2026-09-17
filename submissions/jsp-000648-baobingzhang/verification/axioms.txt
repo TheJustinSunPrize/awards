@@ -1,0 +1,2 @@
+'Erdos789.erdos_789.variants.isBigO_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos789.subsetSumThreshold_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
