@@ -1,0 +1,191 @@
+{
+  "retrieved_utc": "2026-09-17T07:20:31.202155+00:00",
+  "limit_per_query": 100,
+  "scope": "GitHub issue/PR search across all states. Search indexing is not exhaustive. No global first-formalization or mathematical novelty claim follows.",
+  "issue_searches": [
+    {
+      "query": "JSP-000242",
+      "exit_code": 0,
+      "returned_count": 0,
+      "limit_reached": false,
+      "matches": []
+    },
+    {
+      "query": "\"smallest denominator\"",
+      "exit_code": 0,
+      "returned_count": 1,
+      "limit_reached": false,
+      "matches": [
+        {
+          "number": 354,
+          "title": "JSP-000250: Lean formalization of the upper bound t(N) = O(N/log N)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/354"
+        }
+      ]
+    },
+    {
+      "query": "\"unit fractions\"",
+      "exit_code": 0,
+      "returned_count": 7,
+      "limit_reached": false,
+      "matches": [
+        {
+          "number": 93,
+          "title": "JSP-000248: submit Lean formalization and certificates for largest unit-fraction denominators",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/93"
+        },
+        {
+          "number": 354,
+          "title": "JSP-000250: Lean formalization of the upper bound t(N) = O(N/log N)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/354"
+        },
+        {
+          "number": 480,
+          "title": "JSP-000260: Lean formalization of the trivial bound \u03b4(N) >= 1/[1, \u2026, N] for unit-fraction deviations (Erd\u0151s #311, scoped component)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/480"
+        },
+        {
+          "number": 271,
+          "title": "JSP-000251: submit Lean formalization of the Erd\u0151s\u2013Straus lower bound k(N) \u2265 (e\u22121)(N\u22121) (Erd\u0151s #295, scoped component)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/271"
+        },
+        {
+          "number": 206,
+          "title": "JSP-000257: Lean certificate of the a/b = 1 instance of Erd\u0151s #306 (component)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/206"
+        },
+        {
+          "number": 303,
+          "title": "JSP-000248: formalize uniform small-multiple obstructions (partial progress)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/303"
+        },
+        {
+          "number": 530,
+          "title": "JSP-000253: Lean formalization of f(N) >= \u2308N/2\u2309 from the upper half and the repeated-denominator threshold (Erd\u0151s #301, scoped component)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/530"
+        }
+      ]
+    },
+    {
+      "query": "\"Croot\"",
+      "exit_code": 0,
+      "returned_count": 2,
+      "limit_reached": false,
+      "matches": [
+        {
+          "number": 533,
+          "title": "JSP-000710: Lean formalization, Erd\u0151s 857, the Naslund\u2013Sawin bound m(n,3) \u2264 (3/2^{2/3})^{(1+o(1))n} via slice rank",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/533"
+        },
+        {
+          "number": 534,
+          "title": "[Recipient] JSP-000710: Lean formalization, Erd\u0151s 857, the Naslund\u2013Sawin bound m(n,3) \u2264 (3/2^{2/3})^{(1+o(1))n} via slice rank",
+          "url": "https://github.com/TheJustinSunPrize/awards/issues/534"
+        }
+      ]
+    },
+    {
+      "query": "\"Egyptian\"",
+      "exit_code": 0,
+      "returned_count": 4,
+      "limit_reached": false,
+      "matches": [
+        {
+          "number": 213,
+          "title": "[Recipient] JSP-000241: Can the denominators in Egyptian-fraction representations be used to combin solvers and Lean formalization",
+          "url": "https://github.com/TheJustinSunPrize/awards/issues/213"
+        },
+        {
+          "number": 303,
+          "title": "JSP-000248: formalize uniform small-multiple obstructions (partial progress)",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/303"
+        },
+        {
+          "number": 309,
+          "title": "JSP-000055: Lean formalization, Erd\u0151s 18, Erd\u0151s's bound h(n!) < n",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/309"
+        },
+        {
+          "number": 310,
+          "title": "[Recipient] JSP-000055: Lean formalization, Erd\u0151s 18, Erd\u0151s's bound h(n!) < n",
+          "url": "https://github.com/TheJustinSunPrize/awards/issues/310"
+        }
+      ]
+    }
+  ],
+  "code_searches": [
+    {
+      "query": "JSP-000242",
+      "language": "Lean",
+      "exit_code": 0,
+      "returned_count": 0,
+      "limit_reached": false,
+      "matches": []
+    },
+    {
+      "query": "\"smallest denominator\"",
+      "language": "Lean",
+      "exit_code": 0,
+      "returned_count": 0,
+      "limit_reached": false,
+      "matches": []
+    },
+    {
+      "query": "Egyptian",
+      "language": "Lean",
+      "exit_code": 0,
+      "returned_count": 8,
+      "limit_reached": false,
+      "matches": [
+        {
+          "path": "Linglib/Data/WALS/Languages.lean",
+          "url": "https://github.com/hawkrobe/linglib/blob/3b9767ad15e409cfa8ebdb1c8bcba0005426842b/Linglib/Data/WALS/Languages.lean",
+          "repository": "hawkrobe/linglib"
+        },
+        {
+          "path": "lean/Egyptian121.lean",
+          "url": "https://github.com/math-market/practice-problems/blob/8990a84ee67f25f4847a8895119229eed6f0fa57/lean/Egyptian121.lean",
+          "repository": "math-market/practice-problems"
+        },
+        {
+          "path": "src/pair/lean/proofs/registry.lean",
+          "url": "https://github.com/ceccec/ceccec.github.io/blob/f53b886037d7d8906d5a52a961b09d81b6f68b6f/src/pair/lean/proofs/registry.lean",
+          "repository": "ceccec/ceccec.github.io"
+        },
+        {
+          "path": "00-Paper-SubLemma_Process_v2_Paper.lean",
+          "url": "https://github.com/SNSFT/Substrate-Neutral-Structural-Foundation-Theory-SNSFT/blob/513bda3965bb861a000688c61f1dfc5784781cb1/00-Paper-SubLemma_Process_v2_Paper.lean",
+          "repository": "SNSFT/Substrate-Neutral-Structural-Foundation-Theory-SNSFT"
+        },
+        {
+          "path": "SolveMath/Corpus/NumberTheory/ReciprocalSumLiuSawhneySupport/PrimePowerLCMTelescope.lean",
+          "url": "https://github.com/beetree/math_erdos_289/blob/7a520bded78b26629850cbfc152c4c832437702f/SolveMath/Corpus/NumberTheory/ReciprocalSumLiuSawhneySupport/PrimePowerLCMTelescope.lean",
+          "repository": "beetree/math_erdos_289"
+        },
+        {
+          "path": "SolveMath/Corpus/NumberTheory/ReciprocalSumLiuSawhneySupport/SmoothPrimePowerFactorization.lean",
+          "url": "https://github.com/beetree/math_erdos_289/blob/7a520bded78b26629850cbfc152c4c832437702f/SolveMath/Corpus/NumberTheory/ReciprocalSumLiuSawhneySupport/SmoothPrimePowerFactorization.lean",
+          "repository": "beetree/math_erdos_289"
+        },
+        {
+          "path": "archive/src/test.lean",
+          "url": "https://github.com/kovach/etch/blob/b9e66fe99c33dc1edd926626e598ba00d5d78627/archive/src/test.lean",
+          "repository": "kovach/etch"
+        },
+        {
+          "path": "lean/archive/src/test.lean",
+          "url": "https://github.com/merry-classical-boatyard/40/blob/4ecbe3de60b52bf151d3dc8b7a511316ca67e2f7/lean/archive/src/test.lean",
+          "repository": "merry-classical-boatyard/40"
+        }
+      ]
+    },
+    {
+      "query": "Croot",
+      "language": "Lean",
+      "exit_code": 0,
+      "returned_count": 100,
+      "limit_reached": true,
+      "matches": []
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "started_utc": "2026-09-17T08:22:31.219788+00:00",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "lean-version",
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "expected_failure": false,
+      "log": "lean-version.log",
+      "log_sha256": "ef292bc08ba85881f3b660d4f1ab1143de776aae5d1c392cff9d8c3221407c2b"
+    },
+    {
+      "name": "compile",
+      "command": [
+        "lean",
+        "-DautoImplicit=false",
+        "-DwarningAsError=true",
+        "-o",
+        "<RESULTS>/build/UnitFractionBounds.olean",
+        "UnitFractionBounds.lean"
+      ],
+      "exit_code": 0,
+      "expected_failure": false,
+      "log": "compile.log",
+      "log_sha256": "de569714e6975940544b926a008c1640400731f0ae9931931f4f18e6ec6091cc"
+    },
+    {
+      "name": "replay",
+      "command": [
+        "leanchecker",
+        "--verbose",
+        "UnitFractionBounds"
+      ],
+      "exit_code": 0,
+      "expected_failure": false,
+      "log": "replay.log",
+      "log_sha256": "a7314f08bd3f89df9bf60a43c6861bf2a233bcab16c8254de3e25db997b3d3e7"
+    },
+    {
+      "name": "positive-certificate",
+      "command": [
+        "lean",
+        "PositiveCertificate.lean"
+      ],
+      "exit_code": 0,
+      "expected_failure": false,
+      "log": "positive-certificate.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "false-certificate",
+      "command": [
+        "lean",
+        "FalseCertificate.lean"
+      ],
+      "exit_code": 1,
+      "expected_failure": true,
+      "log": "false-certificate.log",
+      "log_sha256": "b87f89317c0a610fa59cb5f2476eb432b840fd27b9ef1e83dd5a3bd583f7656a"
+    }
+  ],
+  "axioms": {
+    "UnitFractionBounds.recips_le_envelope": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.possible_of_rep": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.rep_of_possible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.possible_of_finset": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.certificate_seven": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.possible_iff_finset": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.exact_three": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.exact_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.exact_five": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.exact_six": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.exact_seven": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.exact_eight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.exact_nine": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.exact_ten": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.exact_eleven": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UnitFractionBounds.exact_twelve": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "trust_boundary": [
+    "The bundled leanchecker reuses Lean's kernel; it is not an independent verifier.",
+    "Imported Lean and Mathlib declarations are trusted, not replayed from scratch.",
+    "Compilation and replay do not establish mathematical novelty or prize eligibility."
+  ],
+  "source_sha256": {
+    "UnitFractionBounds.lean": "8e970516c23d803f852a96aefa9c7d3cda7d76cb03accd478b9b8565701fee17",
+    "verify.py": "ce695bc4158a3e47060ab42b6a4ad9a45e9ef5a14cda2472db832c98ecbcddb8"
+  },
+  "object_sha256": "7d5c86dd4c421ff3f1e30e479a4f80d23b19d0de081fc1abee564bfc671962fd",
+  "mathlib_revision": "5ed2965256430c3649e86755f9576b54eca72435",
+  "finished_utc": "2026-09-17T08:22:58.898416+00:00"
+}

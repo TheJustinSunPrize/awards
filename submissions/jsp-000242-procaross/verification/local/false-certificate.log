@@ -1,0 +1,12 @@
+FalseCertificate.lean:2:58: error: Tactic `decide` failed for proposition
+  UnitFractionBounds.possible 3 2 1 = false
+because its `Decidable` instance
+  instDecidableEqBool (UnitFractionBounds.possible 3 2 1) false
+did not reduce to `isTrue` or `isFalse`.
+
+Reduction got stuck at the `Decidable` instance
+  match UnitFractionBounds.possible 3 2 1, false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
