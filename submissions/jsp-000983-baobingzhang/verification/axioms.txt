@@ -1,0 +1,7 @@
+'Erdos1178.erdos_1178_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1178.erdos_1178_not_isSubquadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1178.ex_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1178.family_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1178.d_r_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1178.exists_card_eq_ex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1178.card_le_ex' depends on axioms: [propext, Classical.choice, Quot.sound]
