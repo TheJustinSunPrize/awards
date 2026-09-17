@@ -1,0 +1,39 @@
+{
+  "problem_id": "JSP-000393",
+  "scope": "Known constructive component only; not the full Schinzel theorem",
+  "proof_repository": "https://github.com/ketianzhang1-lang/jsp-000301-lean",
+  "proof_commit": "a337720331a34599114a9d4669d6518d5e608f6f",
+  "lean": "leanprover/lean4:v4.34.0",
+  "mathlib_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+  "theorems": [
+    "JSP000393.family_counts",
+    "JSP000393.arbitrarily_sparse_squares"
+  ],
+  "files": [
+    {
+      "path": "JSP000393.lean",
+      "sha256": "32fc88e06d8897c326a6caa2b113bd3648ab8386062d4a136a219649ff165694",
+      "bytes": 6524
+    },
+    {
+      "path": "lakefile.lean",
+      "sha256": "92b8e55d1182d28591206f6afcb3d9d0854ceaa4a4560befc8b3b9a87c923ee3",
+      "bytes": 234
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+      "bytes": 25
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "cb85dff7759f5e74300a86db0518198bd29a3ec5c888a57613ef80f6305bd876",
+      "bytes": 3506
+    }
+  ],
+  "ci_run": "https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35168428244",
+  "related_registration": "https://github.com/TheJustinSunPrize/awards/issues/44",
+  "recipient_placeholder": "RECIPIENT-JSP-000393-KZ-A",
+  "recipient_confirmation": "pending",
+  "award_claim": "none"
+}
