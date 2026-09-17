@@ -1,7 +1,0 @@
-'UnitFractionBounds.reciprocal_lt_log_step' depends on axioms: [propext, Classical.choice, Quot.sound]
-'UnitFractionBounds.envelope_le_log' depends on axioms: [propext, Classical.choice, Quot.sound]
-'UnitFractionBounds.envelope_lt_log' depends on axioms: [propext, Classical.choice, Quot.sound]
-'UnitFractionBounds.minimum_lt_exp_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-'UnitFractionBounds.attainable_minimum_lt_exp_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-'UnitFractionBounds.optimalMinimum_ratio_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
-'UnitFractionBounds.optimalMinimum_eventual_upper' depends on axioms: [propext, Classical.choice, Quot.sound]

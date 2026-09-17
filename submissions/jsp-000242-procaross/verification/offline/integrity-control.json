@@ -1,6 +1,0 @@
-{
-  "exit_code": 1,
-  "expected_error": "Manifest mismatch: changed.txt",
-  "checker_invoked": false,
-  "passed": true
-}

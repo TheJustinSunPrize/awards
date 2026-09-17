@@ -1,7 +1,0 @@
-'UnitFractionBounds.extend_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
-'UnitFractionBounds.possible_two_of_three_le' depends on axioms: [propext, Classical.choice, Quot.sound]
-'UnitFractionBounds.possible_iff_le_optimalMinimum' depends on axioms: [propext, Classical.choice, Quot.sound]
-'UnitFractionBounds.optimalMinimum_isGreatest' depends on axioms: [propext, Classical.choice, Quot.sound]
-'UnitFractionBounds.optimalMinimum_mono_step' depends on axioms: [propext, Classical.choice, Quot.sound]
-'UnitFractionBounds.optimalMinimum_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
-'UnitFractionBounds.exceptional_cardinalities' depends on axioms: [propext, Classical.choice, Quot.sound]

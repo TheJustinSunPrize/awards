@@ -1,3 +1,0 @@
-'UnitFractionBounds.remove_repetitions' depends on axioms: [propext, Classical.choice, Quot.sound]
-'UnitFractionBounds.factorial_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
-'UnitFractionBounds.egyptian_length_factorial' depends on axioms: [propext, Classical.choice, Quot.sound]
