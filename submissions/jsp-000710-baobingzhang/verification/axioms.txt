@@ -1,0 +1,8 @@
+'Erdos857.erdos_857.variants.naslund_sawin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos857.erdos_857.variants.naslund_sawin_rpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos857.erdos_857.variants.naslund_sawin_asymp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos857.ncard_le_of_sunflowerFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos857.exists_sunflower_of_lt_ncard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos857.m_three_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos857.m_zero_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos857.card_le_of_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
