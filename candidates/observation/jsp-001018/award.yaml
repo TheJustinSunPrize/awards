@@ -1,0 +1,34 @@
+id: jsp-001018
+batch: null
+problem:
+  source: jsp
+  number: JSP-001018
+  title_en: Must every sufficiently long integer sequence with bounded gaps have two distinct consecutive blocks with equal sums?
+  posed:
+    year: 1986
+    basis: earliest-reference
+    citation: Hegyvari, N. On consecutive sums in sequences. Acta Math. Hungar. 48, 193-200 (1986).
+  resolved:
+    year: 1986
+decision: null
+recipients:
+  - id: RECIPIENT-JSP-001018-HEGYVARI
+    affiliation: ""
+    contribution_en: Original mathematical proof of Erdős Problem 1213 in sequences with bounded gaps (1986).
+    confirmation: null
+  - id: RECIPIENT-JSP-001018-CODEX
+    affiliation: ""
+    contribution_en: Machine-checked Lean 4 formalization of Erdős Problem 1213 with explicit threshold bound.
+    confirmation: null
+verification:
+  peer_review:
+    venue: "Acta Mathematica Hungarica"
+    identifier: "https://doi.org/10.1007/BF01949112"
+    checked_via: "zbMATH 0612.10009 / MathSciNet MR0874391"
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
