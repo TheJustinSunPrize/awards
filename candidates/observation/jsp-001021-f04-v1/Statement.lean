@@ -20,16 +20,38 @@ def TransitiveEmbedding {α : Type*} [DecidableEq α]
   Function.Injective f ∧
     ∀ ⦃i j : Fin k⦄, i < j → T.edge (f i) (f j)
 
-/--
-The elementary Erdős--Moser lower-bound theorem, reindexed so that a tournament
-with `2 ^ k` vertices is shown to contain a transitive subtournament with `k + 1`
-vertices.  This is the exact statement formalized by `Proof.lean`.
--/
+/-- The finite type of all ordered transitive copies of size `k`.  In a tournament
+such an ordering is the unique ordering of its vertex set, so its cardinality is
+also the number of transitive `k`-subtournaments. -/
+abbrev EmbeddingType {α : Type*} [DecidableEq α]
+    (T : Tournament α) (k : Nat) :=
+  {f : Fin k → α // TransitiveEmbedding T k f}
+
+noncomputable instance embeddingTypeFintype {α : Type*} [Fintype α] [DecidableEq α]
+    (T : Tournament α) (k : Nat) : Fintype (EmbeddingType T k) :=
+  Fintype.ofFinite _
+
+/-- `r_T(k)`, the number of ordered transitive `k`-subtournaments of `T`. -/
+noncomputable def embeddingCount {α : Type*} [Fintype α] [DecidableEq α]
+    (T : Tournament α) (k : Nat) : Nat :=
+  Fintype.card (EmbeddingType T k)
+
+/-- Moon's lower-bound function.  The strict source condition
+`n > 2^m - 1` is equivalent to `2^m ≤ n`. -/
+noncomputable def moonTau (n k : Nat) : ℝ :=
+  match k with
+  | 0 => 1
+  | m + 1 =>
+      if 2 ^ m ≤ n then
+        ∏ i ∈ Finset.range (m + 1),
+          ((n : ℝ) - ((2 : ℝ)^i - 1)) / (2 : ℝ)^i
+      else 0
+
+/-- Moon's source-faithful all-quantifier lower-bound statement: every finite
+ tournament of order `n` has at least `τ(n,k)` transitive `k`-subtournaments. -/
 def JSP001021Statement : Prop :=
-  ∀ (k : Nat),
-    ∀ {α : Type*} [Fintype α] [DecidableEq α]
-      (T : Tournament α),
-      Fintype.card α = 2 ^ k →
-        ∃ f : Fin (k + 1) → α, TransitiveEmbedding T (k + 1) f
+  ∀ {α : Type*} [Fintype α] [DecidableEq α]
+    (T : Tournament α) (k : Nat),
+    moonTau (Fintype.card α) k ≤ (embeddingCount T k : ℝ)
 
 end JSP001021
