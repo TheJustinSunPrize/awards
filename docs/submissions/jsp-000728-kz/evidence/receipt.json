@@ -1,0 +1,31 @@
+{
+  "proof_commit": "91fdee92a0e9122b9e41cfd3b24d0ab70a64b3c0",
+  "run_id": 35171421581,
+  "job_id": 105043714130,
+  "result": "success",
+  "build": true,
+  "bundled_kernel_replay": true,
+  "axiom_audits": 5,
+  "independent_checker": {
+    "name": "NaNoda",
+    "revision": "4c544ed4099c8227f07d5de77ad1e69fb0740a27",
+    "exporter_revision": "6cea97789dc088ea47fcea15692db85685aedac5",
+    "declarations": 4974,
+    "errors": 0,
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "artifact": {
+    "id": 10477250755,
+    "name": "jsp-000728-evidence",
+    "size_in_bytes": 3363253,
+    "sha256": "sha256:255250da2ba085a78f391ac46f928cdb8a0856a3bf3e6b00bb8c3a99c5ce0a3d",
+    "expires_at": "2026-12-16T01:39:51Z",
+    "digest_source": "GitHub Actions API; archive download through connector succeeded, temporary URL download into local environment returned HTTP 403, so checksum not independently recomputed locally."
+  },
+  "source_url": "https://github.com/ketianzhang1-lang/jsp-000301-lean/tree/91fdee92a0e9122b9e41cfd3b24d0ab70a64b3c0/projects/jsp-000728",
+  "run_url": "https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35171421581"
+}
