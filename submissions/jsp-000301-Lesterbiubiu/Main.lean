@@ -99,4 +99,17 @@ theorem jsp_000301 :
   · rw [consecutive] at hs
     exact not_isSquare_12168 hs
 
+/-! ### The same counterexample, stated existentially -/
+
+/-- The counterexample stated positively: there *exist* two consecutive powerful
+positive integers of which neither is a perfect square.  This is the form that
+matches the problem's "must at least one be a square?" question most directly:
+it exhibits the witness rather than refuting the universal claim.  It is
+classically equivalent to `jsp_000301` above. -/
+theorem jsp_000301_exists :
+    ∃ a b : ℕ, 0 < a ∧ IsPowerful a ∧ IsPowerful b ∧ b = a + 1 ∧
+      ¬ IsSquare a ∧ ¬ IsSquare b :=
+  ⟨12167, 12168, by norm_num, powerful_12167, powerful_12168, consecutive.symm,
+    not_isSquare_12167, not_isSquare_12168⟩
+
 end JSP000301
