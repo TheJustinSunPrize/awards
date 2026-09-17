@@ -1,0 +1,3 @@
+'jsp_000595' depends on axioms: [propext]
+'jsp_000595_least_k2' depends on axioms: [propext, Classical.choice, Quot.sound]
+No sorryAx present. decide calls are kernel-reduced.
