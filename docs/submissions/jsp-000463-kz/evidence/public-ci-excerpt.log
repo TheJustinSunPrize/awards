@@ -1,0 +1,19 @@
+2026-09-17T03:02:03.8490683Z ✔ [3126/3127] Built JSP000463 (3.2s)
+2026-09-17T03:02:03.8555732Z Build completed successfully (3127 jobs).
+2026-09-17T03:02:12.8995748Z 'JSP000463.rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:02:12.8996920Z 'JSP000463.free_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:02:12.8997993Z 'JSP000463.free_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:02:12.8999082Z 'JSP000463.regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:02:12.9000139Z 'JSP000463.vertex_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:02:12.9001307Z 'JSP000463.edge_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:02:12.9002444Z 'JSP000463.finite_field_construction' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:02:12.9003679Z 'JSP000463.finite_field_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:02:12.9005054Z 'JSP000463.prime_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:02:12.9006243Z 'JSP000463.unbounded_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:02:12.9007420Z 'JSP000463.unbounded_graphs' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:02:13.0828606Z All 11 target axiom audits and nine dependency revision checks passed.
+2026-09-17T03:02:16.3268645Z https://github.com/leanprover/lean4export.git 6cea97789dc088ea47fcea15692db85685aedac5
+2026-09-17T03:02:16.6050316Z https://github.com/ammkrn/nanoda_lib.git 4c544ed4099c8227f07d5de77ad1e69fb0740a27
+2026-09-17T03:02:48.0287002Z Checked 7703 declarations with no errors
+2026-09-17T03:02:49.5279227Z SHA256 digest of uploaded artifact zip is 490ab6f4a4b8573777e4cd623d677912c68ac6855391e5a0e2759045e0ff9fe6
+2026-09-17T03:02:49.6921004Z Artifact jsp-000463-evidence has been successfully uploaded! Final size is 4642937 bytes. Artifact ID is 10478881733
