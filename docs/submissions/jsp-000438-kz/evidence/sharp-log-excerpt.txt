@@ -1,0 +1,17 @@
+2026-09-17T03:15:54.9592890Z ✔ [3138/3139] Built StarSharpness (2.5s)
+2026-09-17T03:15:54.9656461Z Build completed successfully (3139 jobs).
+2026-09-17T03:16:32.5668703Z 'Erdos548.tree_free_edge_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:16:32.5674880Z 'JSP000438.trees_monochromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:16:32.5676668Z 'JSP000438.tree_monochromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:16:32.5678021Z 'JSP000438.graphRamsey_trees' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:16:32.5679229Z 'Erdos547.erdos_547' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:16:32.5680366Z 'JSP000438.sharpGraph_degree_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:16:32.5681578Z 'JSP000438.sharpGraph_compl_degree_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:16:32.5682798Z 'JSP000438.sharpGraph_avoids_star' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:16:32.5684218Z 'JSP000438.star_ramsey_even_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:16:32.5685445Z 'JSP000438.tree_ramsey_bound_is_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:16:32.7491400Z All ten axiom audits and all actual dependency revisions passed.
+2026-09-17T03:16:43.1274442Z Build completed successfully (6 jobs).
+2026-09-17T03:17:10.5412625Z Checked 11276 declarations with no errors
+2026-09-17T03:17:13.9971390Z SHA256 digest of uploaded artifact zip is 2d6482c1e9ac669bf7d1549ed7cfe559e102ca202a39ea82643eb7eba76afb65
+2026-09-17T03:17:14.2590778Z Artifact jsp-000438-sharp-evidence has been successfully uploaded! Final size is 8419347 bytes. Artifact ID is 10479581072
