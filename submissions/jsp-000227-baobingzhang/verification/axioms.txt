@@ -1,0 +1,3 @@
+'Erdos263.erdos_263.variants.doubly_exponential_all_but_countable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
