@@ -1,0 +1,12 @@
+Repository checks for the submission directory added to the official baseline:
+
+validate: OK
+links: OK
+check: OK
+
+Existing test suite (no code changes to repository tooling):
+
+----------------------------------------------------------------------
+Ran 22 tests in 3.342s
+
+OK

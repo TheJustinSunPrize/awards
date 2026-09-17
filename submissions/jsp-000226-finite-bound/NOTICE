@@ -1,0 +1,23 @@
+Formal statement attribution
+============================
+The Erdos261Prop definition and audited theorem statement are adapted from
+Google DeepMind's Formal Conjectures repository, file
+FormalConjectures/ErdosProblems/261.lean, revision
+40e7c98697de6f66b8cbdbf641749ab39ed9c152.
+
+Copyright 2026 The Formal Conjectures Authors.
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+Changes: the public statement is restated in a standalone namespace; the
+placeholder proof is replaced with a complete certificate-based formal proof.
+No proof from the statement repository is used, and it is not a dependency.
+
+The finite computational result and greedy algorithm are due to Szabolcs
+Tengely, Maciej Ulas, and Jakub Zygadło (2020), building on Peter Borwein and
+Terry A. Loring (1990). This submission does not claim original discovery of
+the mathematical result or algorithm.
+
+New formalization, certificate generation, and packaging: GitHub user
+James-16, with substantial AI assistance from OpenAI Codex. New code is
+released under Apache-2.0. No endorsement by any cited author or project
+is implied.

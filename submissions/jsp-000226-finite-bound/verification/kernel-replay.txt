@@ -1,0 +1,3 @@
+replaying Erdos261Finite.FiniteBound with --fresh
+Exit status: 0
+Command: lake env leanchecker --fresh -v Erdos261Finite.FiniteBound

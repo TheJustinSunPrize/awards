@@ -1,0 +1,1 @@
+PASS: All 47 generated Lean source files reproduced byte for byte from the packaged generators.

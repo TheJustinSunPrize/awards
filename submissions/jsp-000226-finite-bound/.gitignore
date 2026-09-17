@@ -1,0 +1,6 @@
+.lake/
+generated-work/
+*.olean
+*.ilean
+*.trace
+.DS_Store

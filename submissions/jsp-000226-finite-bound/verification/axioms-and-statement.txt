@@ -1,0 +1,12 @@
+'Erdos261Finite.transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos261Finite.run_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos261Finite.property_of_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos261Finite.le_10000' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem Erdos261Finite.le_10000 : ∀ {n : ℕ}, 0 < n → n ≤ 10000 → Erdos261Finite.Erdos261Prop n :=
+fun {n} hn_pos hn =>
+  if h : n = 1 then
+    Eq.ndrec (motive := fun {n} => 0 < n → n ≤ 10000 → Erdos261Finite.Erdos261Prop n)
+      (fun hn_pos hn => Erdos261Finite.property_one) (Eq.symm h) hn_pos hn
+  else
+    have hn2 := Decidable.byContradiction fun a => Erdos261Finite.le_10000._proof_1_1 hn_pos hn h a;
+    Erdos261Finite.property_of_tail n hn2 (Erdos261Finite.tails_2_10000 n hn2 hn)

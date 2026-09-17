@@ -1,0 +1,8 @@
+generated-work/NegativeControl.lean:2:53: error: Tactic `rfl` failed: The left-hand side
+  Erdos261Finite.run 1 (2, 2)
+is not definitionally equal to the right-hand side
+  (3, 2)
+
+⊢ Erdos261Finite.run 1 (2, 2) = (3, 2)
+
+Expected failure observed; verifier command returned nonzero.
