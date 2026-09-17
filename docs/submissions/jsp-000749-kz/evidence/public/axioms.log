@@ -1,0 +1,16 @@
+'JSP000749.exists_hitting_tuple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000749.desc_factorial_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000749.binomial_ratio_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000749.tuple_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000749.majority_card_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000749.exists_bounded_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000749.minimal_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000749.jsp000749_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000749.m_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000749.m_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000749.m_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+JSP000749.jsp000749_upper_bound (n : ℕ) (hn : 2 ≤ n) :
+  ∃ H,
+    JSP000749.Uniform H n ∧
+      Finset.card H ≤ 4 * n ^ 2 * 2 ^ n ∧ JSP000749.ExactlyThree H ∧ ∀ G ⊂ H, JSP000749.Colorable G 2
+JSP000749.m_upper_bound (n : ℕ) (hn : 2 ≤ n) : JSP000749.m n ≤ 4 * n ^ 2 * 2 ^ n
