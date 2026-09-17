@@ -1,0 +1,2 @@
+Lean: leanprover/lean4:v4.34.0
+Mathlib: v4.34.0
