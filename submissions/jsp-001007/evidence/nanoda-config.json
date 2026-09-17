@@ -1,0 +1,23 @@
+{
+  "export_file_path": "jsp-001007-proof.ndjson",
+  "use_stdin": false,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unpermitted_axiom_hard_error": true,
+  "unsafe_permit_all_axioms": false,
+  "nat_extension": true,
+  "string_extension": true,
+  "pp_declars": [
+    "JSP001007.green44_counterexample",
+    "JSP001007.not_green44_conjecture"
+  ],
+  "pp_to_stdout": true,
+  "pp_options": {
+    "proofs": false,
+    "width": 100
+  },
+  "print_success_message": true
+}

@@ -1,0 +1,35 @@
+✔ [8930/8937] Built Jsp.Jsp001007 (5.4s)
+⚠ [8931/8937] Built Jsp.Jsp001007Chebyshev (9.3s)
+warning: Jsp/Jsp001007Chebyshev.lean:201:6: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Jsp/Jsp001007Chebyshev.lean:230:4: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8932/8937] Replayed Jsp.Jsp001007Cluster
+warning: Jsp/Jsp001007Cluster.lean:53:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [8933/8937] Built Jsp.Jsp001007Proof (6.3s)
+warning: Jsp/Jsp001007Proof.lean:108:2: Try this:
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Jsp/Jsp001007Proof.lean:100:48: Variable name `hk` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hk
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8934/8937] Built Jsp.Jsp001007Final (19s)
+✔ [8935/8937] Built Jsp.Jsp001007Conclusion (4.1s)
+✔ [8936/8937] Built Jsp (3.7s)
+Build completed successfully (8937 jobs).

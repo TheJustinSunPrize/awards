@@ -1,0 +1,29 @@
+{
+  "lean": "4.35.0-rc1",
+  "mathlib_commit": "96f4f6ca6e9dcdb26fec36ec10fa90c7f424e94d",
+  "lean4export_commit": "fd0d78eaa91750096cf519907b266efb1b26bf22",
+  "nanoda_commit": "4c544ed4099c8227f07d5de77ad1e69fb0740a27",
+  "nanoda_version": "0.4.17",
+  "nanoda_checked_declarations": 43725,
+  "result": "pass",
+  "theorems": [
+    "JSP001007.green44_counterexample",
+    "JSP001007.not_green44_conjecture"
+  ],
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "export_bytes": 260532118,
+  "export_sha256": "c2be831fa13d6f313271ebee5f3e4cb2d53aa27fe0a0dee98d292920c17101c7",
+  "checked_on": "2026-09-16",
+  "source_sha256": {
+    "Jsp/Jsp001007.lean": "3af5634875156cc259118a00760915ac78d2f280556f944901afbaa8c4ded89a",
+    "Jsp/Jsp001007Chebyshev.lean": "b9c92be08c39a64ac585184538a6dfb42f70dbd459843b4775232138c9ff428c",
+    "Jsp/Jsp001007Cluster.lean": "36dd212f26e98fea2a7d0063ca94bd8bac2a08feb0491fed7d18487caee9a51c",
+    "Jsp/Jsp001007Conclusion.lean": "6b925b0584215ad9e8b1566786b67fcbb1297894f71b523e9e77ebb81a1ff462",
+    "Jsp/Jsp001007Final.lean": "1a8f997e01d69858000c8105b7e29af0312e98257f1575a5e645f5c747ad2081",
+    "Jsp/Jsp001007Proof.lean": "b4e54ad1412cbc4e276c50c77c08732689e0d2701e1989996cef24d283489d56"
+  }
+}
