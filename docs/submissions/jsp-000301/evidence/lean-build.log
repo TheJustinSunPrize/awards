@@ -1,0 +1,9 @@
+Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)
+'JSP000301.prime_iff' depends on axioms: [propext, Quot.sound]
+'JSP000301.prime_dvd_mul' depends on axioms: [propext, Quot.sound]
+'JSP000301.first_powerful' depends on axioms: [propext, Quot.sound]
+'JSP000301.second_powerful' depends on axioms: [propext, Quot.sound]
+'JSP000301.counterexample' depends on axioms: [propext, Quot.sound]
+'JSP000301.original_claim_false' depends on axioms: [propext, Quot.sound]
+
+exit_code=0
