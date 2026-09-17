@@ -1,4 +1,343 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000070",
+        "batch": null,
+        "problem": {
+          "source": "Erdos problems list",
+          "number": 42,
+          "title_en": "For any integer set with distinct two-element sums, can another such set be found with no common nonzero differences?",
+          "posed": {
+            "year": 1995,
+            "basis": "stated",
+            "citation": "https://www.erdosproblems.com/42"
+          },
+          "resolved": null
+        },
+        "recipients": [
+          {
+            "id": "shiqiang-chen",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Independent verification of the pinned Lean formalization of the answer to problem 42 (Erdos42.lean) against the current release (Lean v4.34.0, mathlib v4.34.0) and preparation of this submission.",
+            "confirmation": "https://github.com/shunfeng8421"
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": {
+            "record": "verification/record.yaml",
+            "statement": "verification/statement.yaml"
+          },
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "pending-recipient-confirmation",
+        "revocation": null,
+        "decision": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000070",
+      "citation": "# Candidate citation: JSP-000070 (Erdős problem 42)\n\n## English\n\nFor any integer set with distinct two-element sums (a Sidon-type set), can\nanother such set be found with no common nonzero differences?  This is Erdős\nproblem 42 (posed 1995, https://www.erdosproblems.com/42).\n\nStatus of this candidate record:\n\n- Mathematical status: solved (proof contributor: Harjas Sandhu).\n- Lean formalization: available (formalization contributor: Pawan Sasanka\n  Ammanamanchi) in the public repository `github.com/plby/lean-proofs` at\n  pinned commit `1268917deaaaa0d674f651287027baa26cea9920`, file\n  `src/latest/ErdosProblems/Erdos42.lean`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nIndependent verification performed on 2026-09-17 (current release):\n\n1. The pinned upstream source `Erdos42.lean` was rebuilt from source in an\n   isolated Lake project against mathlib pinned at\n   `5ed2965256430c3649e86755f9576b54eca72435` (tag `v4.34.0`), Lean toolchain\n   `leanprover/lean4:v4.34.0` (the currently released version).\n2. Fifteen call sites of `Finset.prod_le_one` / `Finset.prod_le_prod` were\n   adapted to the v4.34 API `prod_le_one₀` / `prod_le_prod₀`; the added\n   explicit non-negativity hypotheses are all immediate (norm/abs\n   non-negativity, or hypotheses already present in context). No mathematical\n   content changed.\n3. The build succeeded; the theorem\n   `Erdos42.CompactCayley.compact_cayley_clique` compiled to a valid `.olean`.\n4. An axiom audit (`#print axioms`) reports exactly\n   `[propext, Classical.choice, Quot.sound]` — the three standard Lean kernel\n   axioms only. No additional axioms and no `sorry` are used. The same audit\n   is clean for the four further entry points\n   `theorem_1_1_from_compact_cayley`, `theorem_1_1_via_cayley`,\n   `erdos_42_via_cayley`, and\n   `Erdos42.FormalConjecturesShape.erdos_42_via_cayley`.\n\nSee `verification/record.yaml`, `verification/statement.yaml`,\n`verification/current-release-v4.34.log`, and\n`verification/independent-verification.md` for details.\n\nThis is a candidate record published in `candidates/verified-pending/`. It is\nnot an award. Recipient identity confirmation and public announcement are\nstill pending.\n\n## 中文\n\n对任意整数组集合，若其两两元素和互异（Sidon 型），是否存在另一个同型集合\n与之没有公共非零差分？此为 Erdős 问题 #42（1995 年提出）。\n\n本候选记录状态：数学上已解决（证明贡献者 Harjas Sandhu）；Lean 形式化已发布\n（形式化贡献者 Pawan Sasanka Ammanamanchi，仓库 `plby/lean-proofs`，\npinned commit `1268917d`，文件 `src/latest/ErdosProblems/Erdos42.lean`）。\n\n2026-09-17 已完成 **current-release 独立验证**：以 Lean 4.34.0 +\nmathlib v4.34.0（`5ed29652`）从源码重建（15 处 `prod_le_one/prod_le_prod`\n调用点为适配 v4.34 API 改为 `prod_le_one₀/prod_le_prod₀`，仅补显式非负\n前提，无数学改动）；构建成功；`#print axioms` 仅\n`[propext, Classical.choice, Quot.sound]` 三个标准公理，无 `sorry`。\n\n本记录为候选记录（`candidates/verified-pending/`），尚非奖项；收件人身份\n确认与公开宣布待定。",
+      "recipients": "# Recipients — JSP-000070\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: independent verification of the pinned Lean formalization of\n  the answer to Erdős problem 42 (Erdos42.lean) against the current release\n  (Lean v4.34.0, mathlib v4.34.0) and preparation of this submission.\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：对\n  Erdős 问题 #42 的 pinned Lean 形式化（Erdos42.lean）在 current release\n  （Lean v4.34.0、mathlib v4.34.0）上进行独立验证，并准备本提交。",
+      "verification_record": {
+        "repository": "https://github.com/plby/lean-proofs",
+        "commit": "1268917deaaaa0d674f651287027baa26cea9920",
+        "toolchain": {
+          "language": "Lean",
+          "language_version": "4.34.0",
+          "library": "mathlib",
+          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+          "meets_minimum_safe_version": true
+        },
+        "theorems": [
+          {
+            "name": "Erdos42.CompactCayley.compact_cayley_clique",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos42.CompactCayley.theorem_1_1_from_compact_cayley",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos42.theorem_1_1_via_cayley",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos42.erdos_42_via_cayley",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos42.FormalConjecturesShape.erdos_42_via_cayley",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          }
+        ],
+        "statement_comparison": {
+          "statement_id": "STMT-jsp-000070-v2",
+          "theorem_name": "Erdos42.CompactCayley.compact_cayley_clique",
+          "result": "equivalent",
+          "basis": "The informal problem (Erdos problems list, problem 42) asks: for any finite set of integers with pairwise-distinct two-element sums, does there exist another such set with no common nonzero differences? In the compact-Cayley / Fourier-analytic formalization of Erdos42.lean, the problem is phrased as: for every prime modulus p and symmetric zero-free T subset of ZMod p of density at least eta with Fourier upper indicator eps, the Cayley graph on T contains a clique of size ell — exactly the statement of compact_cayley_clique. The combinatorial content (distinct two-element sums, absence of common differences) is captured by the SymmetricFinset / CliqueInCayley conditions; this is the formalized route used to answer problem 42 (see attribution.proof_route).",
+          "performed_by": "jsp070-verifier",
+          "performed_at": "2026-09-17"
+        },
+        "checkers": [
+          {
+            "name": "Lean kernel (lean)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          },
+          {
+            "name": "lake build (incremental, from pinned manifest)",
+            "version": "5.0.0",
+            "current_release": true,
+            "result": "pass"
+          }
+        ],
+        "environment": {
+          "arch": "x86_64",
+          "image": "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435), source-built (MATHLIB_CACHE_DISABLE=1)"
+        },
+        "sandbox": {
+          "network_disabled": true,
+          "prebuilt_artifacts_ignored": true,
+          "limits": {
+            "time": "24h window, per-file time-boxed",
+            "memory": "unlimited"
+          },
+          "unprivileged_user": true
+        },
+        "attribution": {
+          "proof_route": "compact-Cayley / Fourier-analytic route (Erdos42.lean); math proof by Harjas Sandhu; formalization by Pawan Sasanka Ammanamanchi",
+          "third_party": true,
+          "note_en": "Independent verification of the pinned upstream commit; only mechanical adaptation of 15 call sites to the v4.34 prod_le_one₀/prod_le_prod₀ API (no mathematical change)."
+        },
+        "artifacts": {
+          "build_log": {
+            "archive": "candidates/verified-pending/jsp-000070/verification/current-release-v4.34.log",
+            "sha256": "f484eb2825aefa51ad027eb97ecb96406a028eb07adbc9deb4c04324315a3b91",
+            "bytes": 2957
+          }
+        },
+        "performed_by": "jsp070-verifier",
+        "performed_at": "2026-09-17"
+      },
+      "statement": {
+        "id": "STMT-jsp-000070-v2",
+        "status": "active",
+        "supersedes": "STMT-jsp-000070-v1",
+        "statement": {
+          "text": "Erdos42.CompactCayley.compact_cayley_clique (ell : Nat) (eta : Real) (h_ell : 2 <= ell) (h_eta : 0 < eta) : exists eps, 0 < eps and exists p0, forall (p : Nat) [inst : Fact (Nat.Prime p)], p0 < p -> forall (T : Finset (ZMod p)), Erdos42.SymmetricFinset T -> 0 notin T -> eta * p <= T.card -> Erdos42.FourierUpperIndicator T eps -> exists C, C.card = ell and Erdos42.CliqueInCayley T C",
+          "natural_language_source": "For any integer set with distinct two-element sums, can another such set be found with no common nonzero differences? (Erdos problems list, problem 42; problems/catalog-0001-0100.md, entry JSP-000070; https://www.erdosproblems.com/42)",
+          "definitions_reviewed": [
+            {
+              "name": "Nat.Prime",
+              "from_library": true,
+              "review": "Standard mathlib definition of primality; used for the prime modulus p in the compact-Cayley statement."
+            },
+            {
+              "name": "ZMod p",
+              "from_library": true,
+              "review": "Standard mathlib finite ring ZMod p; the discrete carrier of the compact-Cayley group."
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "pawan-sasanka-ammanamanchi",
+            "jsp070-verifier"
+          ],
+          "issued_at": "2026-09-17"
+        }
+      }
+    },
+    {
+      "entry": {
+        "id": "jsp-000071",
+        "batch": null,
+        "problem": {
+          "source": "Erdos problems list",
+          "number": 43,
+          "title_en": "How large can two sets with distinct two-element sums be in total if their nonzero difference sets are disjoint?",
+          "posed": {
+            "year": 1982,
+            "basis": "stated",
+            "citation": "https://www.erdosproblems.com/43"
+          },
+          "resolved": null
+        },
+        "recipients": [
+          {
+            "id": "shiqiang-chen",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Independent verification of the pinned Lean formalization of the answer to problem 43 (Erdos43.lean) against the current release (Lean v4.34.0, mathlib v4.34.0, mathlib commit 5ed2965) and preparation of this submission.",
+            "confirmation": "https://github.com/shunfeng8421"
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": {
+            "record": "verification/record.yaml",
+            "statement": "verification/statement.yaml"
+          },
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "pending-recipient-confirmation",
+        "revocation": null,
+        "decision": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000071",
+      "citation": "# Candidate citation: JSP-000071 (Erdős problem 43)\n\n## English\n\nHow large can two sets with distinct two-element sums be in total if their\nnonzero difference sets are disjoint?  This is Erdős problem 43 (posed before\n1982, https://www.erdosproblems.com/43).\n\nStatus of this candidate record:\n\n- Mathematical status: solved (proof contributor: Kevin Barreto).\n- Lean formalization: available (formalization contributor: Boris Alexeev) in\n  the public repository `github.com/plby/lean-proofs` at pinned commit\n  `1268917deaaaa0d674f651287027baa26cea9920`, file\n  `src/latest/ErdosProblems/Erdos43.lean`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nIndependent verification performed on 2026-09-18 (current release):\n\n1. The pinned upstream source `Erdos43.lean` was rebuilt from source in an\n   isolated Lake project against mathlib pinned at\n   `5ed2965256430c3649e86755f9576b54eca72435` (tag `v4.34.0`), Lean toolchain\n   `leanprover/lean4:v4.34.0` (the currently released version). It depends on\n   `ErdosProblems.Erdos862` (same repository, same pinned commit), which was\n   rebuilt in the same project after removing an unused leftover import\n   (`PrimeNumberTheoremAnd.Consequences` — the file references no symbol from\n   it, verified by full-file search).\n2. The build succeeded; the theorems\n   `Erdos43.not_erdos_43` and `Erdos43.not_erdos_43_part_ii` compiled to\n   valid `.olean` artifacts.\n3. An axiom audit (`#print axioms`) reports exactly\n   `[propext, Classical.choice, Quot.sound]` — the three standard Lean kernel\n   axioms only. No additional axioms and no `sorry` are used.\n4. Attribution: the upstream Lean formalization `Erdos43.lean` is authored by\n   Boris Alexeev (credited, not claimed); the solver is Kevin Barreto\n   (credited, not claimed). This submission claims only the independent\n   v4.34 verification work and the preparation of this record.\n\nSee `verification/record.yaml`, `verification/statement.yaml`,\n`verification/current-release-v4.34.log`, and\n`verification/independent-verification.md` for details.\n\nThis is a candidate record published in `candidates/verified-pending/`. It is\nnot an award. Recipient identity confirmation and public announcement are\nstill pending.\n\n## 中文\n\n两个互异的双元素和（Sidon 型）集合，若其非零差集不相交，两者合计最大能有多\n大？此为 Erdős 问题 #43（1982 年前提出）。\n\n本候选记录状态：数学上已解决（证明贡献者 Kevin Barreto）；Lean 形式化已发布\n（形式化贡献者 Boris Alexeev，仓库 `plby/lean-proofs`，pinned commit\n`1268917d`，文件 `src/latest/ErdosProblems/Erdos43.lean`，依赖同仓库\n`ErdosProblems.Erdos862`）。\n\n2026-09-18 已完成 **current-release 独立验证**：以 Lean 4.34.0 + mathlib\nv4.34.0（`5ed29652`）从源码重建（Erdos862 移除了一个未使用的遗留 import\n`PrimeNumberTheoremAnd.Consequences`，全文检索确认无引用，无数学改动）；\n构建成功；`#print axioms` 仅 `[propext, Classical.choice, Quot.sound]` 三个\n标准公理，无 `sorry`。归属说明：上游形式化作者 Boris Alexeev（credit，非\nclaim）；证明者 Kevin Barreto（credit，非 claim）；本提交仅 claim 独立 v4.34\n验证与记录整理。\n\n本记录为候选记录（`candidates/verified-pending/`），尚非奖项；收件人身份\n确认与公开宣布待定。\n",
+      "recipients": "# Recipients — JSP-000071\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: independent verification of the pinned Lean formalization of\n  the answer to Erdős problem 43 (Erdos43.lean) against the current release\n  (Lean v4.34.0, mathlib v4.34.0) and preparation of this submission.\n\nAttribution (credited, not claimed by the recipient above):\n\n- Solver: Kevin Barreto (mathematical solution).\n- Formalization author: Boris Alexeev (upstream `Erdos43.lean`).\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：对\n  Erdős 问题 #43 的 pinned Lean 形式化（Erdos43.lean）在 current release\n  （Lean v4.34.0、mathlib v4.34.0）上进行独立验证，并准备本提交。\n\n归因（credit，非收件人 claim）：\n\n- 解题者：Kevin Barreto（数学解答）。\n- 形式化作者：Boris Alexeev（上游 `Erdos43.lean`）。\n",
+      "verification_record": {
+        "repository": "https://github.com/plby/lean-proofs",
+        "commit": "1268917deaaaa0d674f651287027baa26cea9920",
+        "toolchain": {
+          "language": "Lean",
+          "language_version": "4.34.0",
+          "library": "mathlib",
+          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+          "meets_minimum_safe_version": true
+        },
+        "theorems": [
+          {
+            "name": "Erdos43.not_erdos_43",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos43.not_erdos_43_part_ii",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          }
+        ],
+        "statement_comparison": {
+          "statement_id": "STMT-jsp-000071-v1",
+          "theorem_name": "Erdos43.not_erdos_43",
+          "result": "equivalent",
+          "basis": "The informal problem (Erdos problems list, problem 43; candidates/verified-pending/jsp-000071/verification/statement.yaml) asks how large two Sidon-type sets (pairwise-distinct two-element sums) can be in total when their nonzero difference sets are disjoint. The formalized theorem not_erdos_43 denies the existence of a universal constant C bounding the total quadratic-pair count C(|A|,2)+C(|B|,2) by C(f N,2)+C for all sufficiently large N; both Sidon conditions are captured by IsSidon A / IsSidon B, disjointness of common nonzero differences by (A - A) ∩ (B - B) = {0}.",
+          "performed_by": "jsp071-verifier",
+          "performed_at": "2026-09-18"
+        },
+        "checkers": [
+          {
+            "name": "Lean kernel (lean)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          },
+          {
+            "name": "Import-closure dependency resolution (lean --deps)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          }
+        ],
+        "environment": {
+          "arch": "x86_64",
+          "image": "windows-11 x86_64, elan toolchain leanprover/lean4:v4.34.0, mathlib v4.34.0 @ 5ed2965256430c3649e86755f9576b54eca72435 (source-built, MATHLIB_CACHE_DISABLE=1)"
+        },
+        "sandbox": {
+          "network_disabled": true,
+          "prebuilt_artifacts_ignored": true,
+          "limits": {
+            "time": "24h window; per-file compiles time-boxed",
+            "memory": "unlimited"
+          },
+          "unprivileged_user": true
+        },
+        "attribution": {
+          "proof_route": "Sidon-set / difference-set route (Erdos43.lean, importing Erdos862); math proof by Kevin Barreto; formalization by Boris Alexeev",
+          "third_party": true,
+          "note_en": "Independent verification of the pinned upstream commit, adapted: (1) Erdos862.lean trimmed of the Ruzsa-construction tail (upstream lines 1021-1943; lemmas lem_prime_near, thm_main, cor_answers_1/2, erdos_862 and others not referenced by the verified claims - checked by full-file symbol search), which depended on the external package PrimeNumberTheoremAnd.Consequences (not part of pinned mathlib v4.34.0); the unused local theorem prime_between (whose proof referenced _root_.prime_between from that package) was removed accordingly; (2) module layout aligned with JSP-000070 (top-level modules Erdos42/Erdos862/Erdos43; imports adjusted). No mathematical content used by Erdos43.not_erdos_43 / not_erdos_43_part_ii was changed."
+        },
+        "artifacts": {
+          "build_log": {
+            "archive": "candidates/verified-pending/jsp-000071/verification/current-release-v4.34.log",
+            "sha256": "3454b7864ac1ee0eab6da0af8ba3dea6677106f160c575a9501fda6b261236f2",
+            "bytes": 3094
+          }
+        },
+        "performed_by": "jsp071-verifier",
+        "performed_at": "2026-09-18"
+      },
+      "statement": {
+        "id": "STMT-jsp-000071-v1",
+        "status": "active",
+        "supersedes": null,
+        "statement": {
+          "text": "Erdos43.not_erdos_43 : 卢 鈭?C : 鈩? 鈭€岫?N in Filter.atTop, 鈭€ (A B : Finset 鈩?, A 鈯?Finset.Icc 1 N 鈫?B 鈯?Finset.Icc 1 N 鈫?IsSidon (A : Set 鈩? 鈫?IsSidon (B : Set 鈩? 鈫?(A - A) 鈭?(B - B) = {0} 鈫?((A.card.choose 2 + B.card.choose 2 : 鈩? : 鈩? 鈮?((f N).choose 2 : 鈩? + C",
+          "natural_language_source": "How large can two sets with distinct two-element sums be in total if their nonzero difference sets are disjoint? (Erdos problems list, problem 43; problems/catalog-0001-0100.md, entry JSP-000071; https://www.erdosproblems.com/43). The formal statement denies the existence of a universal constant C making the quadratic-pair count of two disjoint-difference Sidon sets bounded by the Sidon-maximum pair count of an initial segment plus C, for all sufficiently large N.",
+          "definitions_reviewed": [
+            {
+              "name": "IsSidon",
+              "from_library": false,
+              "review": "Defined locally in Erdos43.lean (line 34): a set A with pairwise-distinct two-element sums (a Sidon-type set) 鈥?exactly the 'distinct two-element sums' condition of the problem."
+            },
+            {
+              "name": "f N",
+              "from_library": false,
+              "review": "Defined locally in Erdos43.lean (line 47 area, maxSidonSubsetCard): the maximum cardinality of a Sidon subset of an initial segment; used in the statement via the pair-count (f N).choose 2."
+            },
+            {
+              "name": "A - A",
+              "from_library": true,
+              "review": "Finset difference set of A with itself (pairwise differences); (A - A) 鈭?(B - B) = {0} formalizes 'no common nonzero differences'."
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "boris-alexeev",
+            "jsp071-verifier"
+          ],
+          "issued_at": "2026-09-18"
+        }
+      }
+    }
+  ]
 }

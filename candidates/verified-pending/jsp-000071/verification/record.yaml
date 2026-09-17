@@ -1,0 +1,52 @@
+repository: "https://github.com/plby/lean-proofs"
+commit: "1268917deaaaa0d674f651287027baa26cea9920"
+toolchain:
+  language: Lean
+  language_version: "4.34.0"
+  library: mathlib
+  library_commit: "5ed2965256430c3649e86755f9576b54eca72435"
+  meets_minimum_safe_version: true
+theorems:
+  - name: "Erdos43.not_erdos_43"
+    axioms: ["propext", "Classical.choice", "Quot.sound"]
+    clean: true
+  - name: "Erdos43.not_erdos_43_part_ii"
+    axioms: ["propext", "Classical.choice", "Quot.sound"]
+    clean: true
+statement_comparison:
+  statement_id: "STMT-jsp-000071-v1"
+  theorem_name: "Erdos43.not_erdos_43"
+  result: equivalent
+  basis: "The informal problem (Erdos problems list, problem 43; candidates/verified-pending/jsp-000071/verification/statement.yaml) asks how large two Sidon-type sets (pairwise-distinct two-element sums) can be in total when their nonzero difference sets are disjoint. The formalized theorem not_erdos_43 denies the existence of a universal constant C bounding the total quadratic-pair count C(|A|,2)+C(|B|,2) by C(f N,2)+C for all sufficiently large N; both Sidon conditions are captured by IsSidon A / IsSidon B, disjointness of common nonzero differences by (A - A) ∩ (B - B) = {0}."
+  performed_by: "jsp071-verifier"
+  performed_at: "2026-09-18"
+checkers:
+  - name: "Lean kernel (lean)"
+    version: "4.34.0"
+    current_release: true
+    result: pass
+  - name: "Import-closure dependency resolution (lean --deps)"
+    version: "4.34.0"
+    current_release: true
+    result: pass
+environment:
+  arch: "x86_64"
+  image: "windows-11 x86_64, elan toolchain leanprover/lean4:v4.34.0, mathlib v4.34.0 @ 5ed2965256430c3649e86755f9576b54eca72435 (source-built, MATHLIB_CACHE_DISABLE=1)"
+sandbox:
+  network_disabled: true
+  prebuilt_artifacts_ignored: true
+  limits:
+    time: "24h window; per-file compiles time-boxed"
+    memory: "unlimited"
+  unprivileged_user: true
+attribution:
+  proof_route: "Sidon-set / difference-set route (Erdos43.lean, importing Erdos862); math proof by Kevin Barreto; formalization by Boris Alexeev"
+  third_party: true
+  note_en: "Independent verification of the pinned upstream commit, adapted: (1) Erdos862.lean trimmed of the Ruzsa-construction tail (upstream lines 1021-1943; lemmas lem_prime_near, thm_main, cor_answers_1/2, erdos_862 and others not referenced by the verified claims - checked by full-file symbol search), which depended on the external package PrimeNumberTheoremAnd.Consequences (not part of pinned mathlib v4.34.0); the unused local theorem prime_between (whose proof referenced _root_.prime_between from that package) was removed accordingly; (2) module layout aligned with JSP-000070 (top-level modules Erdos42/Erdos862/Erdos43; imports adjusted). No mathematical content used by Erdos43.not_erdos_43 / not_erdos_43_part_ii was changed."
+artifacts:
+  build_log:
+    archive: "candidates/verified-pending/jsp-000071/verification/current-release-v4.34.log"
+    sha256: "3454b7864ac1ee0eab6da0af8ba3dea6677106f160c575a9501fda6b261236f2"
+    bytes: 3094
+performed_by: "jsp071-verifier"
+performed_at: "2026-09-18"
