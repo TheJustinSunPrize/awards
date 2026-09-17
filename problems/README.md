@@ -992,7 +992,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000876 | [Can several consecutive integer intervals each have product congruent to one modulo the same prime?](catalog-0801-0900.md#JSP-000876) | Open | No | No | Unavailable |
 | JSP-000877 | [Carmichael numbers](catalog-0801-0900.md#JSP-000877) | Progress | No | No | Unavailable |
 | JSP-000878 | [Are there only finitely many factorials plus one supported on the specified next two primes?](catalog-0801-0900.md#JSP-000878) | Solved | No | No | Unavailable |
-| JSP-000879 | [Is there a prime whose difference from every permitted smaller factorial is composite?](catalog-0801-0900.md#JSP-000879) | Open | No | No | Unavailable |
+| JSP-000879 | [Are there infinitely many primes whose differences from every permitted smaller factorial are composite?](catalog-0801-0900.md#JSP-000879) | Open | No | No | Unavailable |
 | JSP-000880 | [How many integers can have a prescribed value of the integer times its divisor sum?](catalog-0801-0900.md#JSP-000880) | Open | No | No | Unavailable |
 | JSP-000881 | [How many integer solutions satisfy the specified additive equation involving the sum-of-divisors function?](catalog-0801-0900.md#JSP-000881) | Open | No | No | Unavailable |
 | JSP-000882 | [How large can an integer-interval subset be if no element divides two other elements?](catalog-0801-0900.md#JSP-000882) | Progress | No | No | Unavailable |
@@ -1064,8 +1064,8 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000943 | [How are prime counts and local distributions governed in intervals comparable in length to the largest prime gap?](catalog-0901-1000.md#JSP-000943) | Solved | Yes | Yes | Unclaimed |
 | JSP-000944 | [Among integers with at most two prime factors, are normalized consecutive gaps unbounded?](catalog-0901-1000.md#JSP-000944) | Open | No | No | Unavailable |
 | JSP-000945 | [Are there infinitely many integers whose differences from twice every permitted smaller square are all prime?](catalog-0901-1000.md#JSP-000945) | Solved | No | No | Unavailable |
-| JSP-000946 | [Is there an integer whose differences from every sufficiently small square coprime to it are all prime?](catalog-0901-1000.md#JSP-000946) | Solved | Yes | Yes | Unclaimed |
-| JSP-000947 | [Is there an integer whose differences from every permitted smaller power of two are all prime?](catalog-0901-1000.md#JSP-000947) | Progress | No | No | Unavailable |
+| JSP-000946 | [Are there infinitely many integers whose differences from every sufficiently small square coprime to them are all prime?](catalog-0901-1000.md#JSP-000946) | Solved | Yes | Yes | Unclaimed |
+| JSP-000947 | [Are there infinitely many integers whose differences from every permitted smaller power of two are all prime?](catalog-0901-1000.md#JSP-000947) | Progress | No | No | Unavailable |
 | JSP-000948 | [How many multiples of primes from a specified set are guaranteed in every given short integer interval?](catalog-0901-1000.md#JSP-000948) | Open | No | No | Unavailable |
 | JSP-000949 | [Do partial sums of a random completely multiplicative function infinitely often exceed every fixed multiple of the square root of the summation range?](catalog-0901-1000.md#JSP-000949) | Progress | No | No | Unavailable |
 | JSP-000950 | [If two complementary additive sets have asymptotically equal growth, must their cross-sum representation counts be unbounded?](catalog-0901-1000.md#JSP-000950) | Open | No | No | Unavailable |
