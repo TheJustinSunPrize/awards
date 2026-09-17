@@ -1,0 +1,19 @@
+{
+  "problem": "JSP-000248",
+  "files": [
+    {
+      "path": "LargestDenominator.lean",
+      "sha256": "02e721e634c6ea5ee05fa23f8adc497e3c19d15c963edc8d56ba200d15b90a19"
+    },
+    {
+      "path": "README.md",
+      "sha256": "8dc5dcec8f14982599fd441e5c33abbd6699aced91d0b3b8a6663f6c2db79d9b"
+    },
+    {
+      "path": "verify.sh",
+      "sha256": "848016c8ccaed2dd35e9d01e3610b36021c2816951d626c62fb7d94b55349c92"
+    }
+  ],
+  "toolchain": "Lean 4",
+  "notes": "Supplemental constructive certificates and bounded finite impossibility for JSP-000248."
+}

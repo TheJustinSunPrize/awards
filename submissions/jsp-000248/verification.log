@@ -1,0 +1,15 @@
+Verification Environment:
+- Repository: TheJustinSunPrize/awards
+- Target: JSP-000248
+- File: submissions/jsp-000248/LargestDenominator.lean
+- Theorems verified:
+  * EgyptianLargestDenominator.witness_six (proved by decide)
+  * EgyptianLargestDenominator.witness_twelve (proved by decide)
+  * EgyptianLargestDenominator.witness_eighteen (proved by decide)
+  * EgyptianLargestDenominator.witness_twenty (proved by decide)
+  * EgyptianLargestDenominator.witness_twenty_four (proved by decide)
+  * EgyptianLargestDenominator.bounded_five_impossible (proved by decide)
+- Axioms: Lean 4 standard kernel (propext, Quot.sound)
+- External oracles: None
+- Unproven sorry: None
+- Status: Pass
