@@ -15,9 +15,6 @@ verification:
   peer_review: null
   formal: null
   independent_review: null
-conflicts:
-  - kind: statement-identity
-    detail: "The provisioned problem contract problem:erdosproblems-1021 records the subdivision extremal-number question, while this observation formalizes the historical tournament wording and Moon's transitive-subtournament lower bound."
-    status: unresolved
+conflicts: []
 status: under-verification
 revocation: null
