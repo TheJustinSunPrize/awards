@@ -1,0 +1,6 @@
+'Erdos936.erdos_936_of_abc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos936.erdos_936.variants.two_pow_add_one_of_abc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos936.erdos_936.variants.two_pow_sub_one_of_abc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos936.erdos_936.variants.factorial_add_one_of_abc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos936.erdos_936.variants.factorial_sub_one_of_abc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos936.eventuallyNotPowerful_iff_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
