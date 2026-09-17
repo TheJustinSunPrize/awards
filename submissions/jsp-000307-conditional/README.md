@@ -1,36 +1,39 @@
-# JSP-000307: Strictly Decreasing Largest Prime Factors
+# JSP-000307: Strictly Monotone Largest Prime Factors in Consecutive Integers
 
 ## Problem
 
-Can three consecutive integers have strictly decreasing largest prime factors?
+Can three consecutive integers have strictly decreasing (or increasing) largest prime factors?
 
-**Answer:** Yes. Balasubramanian (2001) proved that infinitely many such triples exist.
+**Answer:** Yes. Balasubramanian (2001) proved that infinitely many such triples exist in both directions.
 
 ## Formalization
 
-This submission formalizes a **complete conditional theorem** that provides an explicit
-infinite family of such triples:
+This submission formalizes **two complete conditional theorems** providing explicit infinite families:
 
-> For every prime `p` with `p % 6 = 1` such that `(p+1)/2` and `(p+2)/3` are also prime,
-> the largest prime factors of `p`, `p+1`, `p+2` are strictly decreasing:
-> `maxPrimeFac p > maxPrimeFac (p+1) > maxPrimeFac (p+2)`.
+### 1. Decreasing Theorem
+
+For every prime `p` with `p % 6 = 1` such that `(p+1)/2` and `(p+2)/3` are also prime:
+```
+maxPrimeFac p > maxPrimeFac (p+1) > maxPrimeFac (p+2)
+```
+
+### 2. Increasing Theorem
+
+For every prime `q > 3` such that `(3q+1)/2` and `3q+2` are also prime:
+```
+maxPrimeFac (3q) < maxPrimeFac (3q+1) < maxPrimeFac (3q+2)
+```
 
 ### Proof Strategy
 
-Under the given hypotheses:
-
-1. **`maxPrimeFac p = p`** — since `p` is prime.
-2. **`maxPrimeFac (p+1) = (p+1)/2`** — since `p+1 = 2 * ((p+1)/2)`, where `(p+1)/2` is prime and `> 2`.
-3. **`maxPrimeFac (p+2) = (p+2)/3`** — since `p+2 = 3 * ((p+2)/3)`, where `(p+2)/3` is prime and `> 3`.
-4. **`p > (p+1)/2 > (p+2)/3`** — elementary inequality for `p ≥ 13`.
-
-The key factorizations follow from:
-- `p % 6 = 1` implies `p` is odd, so `(p+1) % 2 = 0`.
-- `p % 6 = 1` implies `p ≡ 1 (mod 3)`, so `(p+2) % 3 = 0`.
+Both proofs use:
+1. Exact factorization of consecutive integers (e.g., `p+1 = 2 * ((p+1)/2)`)
+2. `maxPrimeFac` of a product `a * b` where `a, b` are prime equals `max(a, b)`
+3. Elementary inequalities between the prime factors
 
 ### Examples
 
-The first few primes satisfying all conditions:
+**Decreasing** (p, (p+1)/2, (p+2)/3):
 
 | p | (p+1)/2 | (p+2)/3 |
 |---|---------|---------|
@@ -39,17 +42,16 @@ The first few primes satisfying all conditions:
 | 157 | 79 | 53 |
 | 541 | 271 | 181 |
 | 877 | 439 | 293 |
-| 1201 | 601 | 401 |
 
-Each gives `maxPrimeFac p > maxPrimeFac (p+1) > maxPrimeFac (p+2)`.
+**Increasing** (q, (3q+1)/2, 3q+2):
 
-### Relationship to the Full Result
-
-The infinitude of such primes `p` is related to Dickson's conjecture (a generalization
-of the twin prime conjecture). The conditional theorem here is unconditional — it holds
-whenever the primality conditions are met, regardless of whether infinitely many such `p`
-exist. Balasubramanian's proof of infinitude uses sieve methods that go beyond what is
-currently formalizable in Lean/Mathlib.
+| q | (3q+1)/2 | 3q+2 |
+|---|---------|-------|
+| 7 | 11 | 23 |
+| 19 | 29 | 59 |
+| 59 | 89 | 179 |
+| 127 | 191 | 383 |
+| 167 | 251 | 503 |
 
 ## Verification
 
