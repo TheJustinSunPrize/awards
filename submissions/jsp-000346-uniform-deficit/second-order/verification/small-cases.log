@@ -1,0 +1,15 @@
+{
+  "subsets_examined": 65536,
+  "product_distinct_subsets": 36600,
+  "finite_witness_checks": 658951,
+  "greedy_prefix_length": 135,
+  "lean_cube_roots_matched": 1001,
+  "adjacency_only_negative_control": {
+    "N": 1000000,
+    "left": 1100,
+    "right": 1045,
+    "E_N": 972,
+    "E_cube_root": 8
+  },
+  "all_integers_negative_control": true
+}

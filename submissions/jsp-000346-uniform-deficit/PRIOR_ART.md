@@ -1,3 +1,9 @@
+# Update on subsequent work
+
+The subsequent inverse-factorial improvement in PR #457 is credited in [the new comparison](second-order/PRIOR_ART.md). The newly added package proves a positive cube-root second-order term under natural density one. The comparison below records the original submission's inspected source versions and should not be read as the latest unconditional error bound.
+
+---
+
 # Sources, scope comparison, and attribution
 
 ## Source versions consulted

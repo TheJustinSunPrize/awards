@@ -1,3 +1,17 @@
+# Omission bounds for product-distinct sequences
+
+**Update: a positive cube-root second-order term under natural density one.**
+
+The new self-contained [second-order package](second-order/README.md) proves that every natural-density-one sequence with distinct consecutive-block products satisfies
+
+`E(N) ≥ sqrt(N) + (1−o(1))*N^(1/3)`.
+
+Its Lean theorem includes the ordinary real-valued natural-density hypothesis and gives a fully quantified integer-root conclusion. It also proves a density-free two-scale finite inequality. [Exact statement](second-order/STATEMENT.md), [proof](second-order/PROOF.md), and [verification](second-order/VERIFICATION.md) are included. This is an update to the same contribution, not a new prize claim. Global originality and recognition remain unestablished.
+
+The original unconditional coefficient-one result below is retained. Since its submission, [PR #457](https://github.com/TheJustinSunPrize/awards/pull/457) has improved that unconditional error to inverse-factorial size; this is explicitly acknowledged. Our new density-one second-order result addresses a different refinement and does not supersede their hypothesis-free estimate. Reproduction records for the original module refer to its original pinned inputs; the new package has its own lockfile, scripts and logs.
+
+---
+
 # JSP-000346: a uniform square-root bound on omitted integers
 
 This AI-assisted contribution proves an explicit necessary condition for the sequences in [Erdős 421](https://www.erdosproblems.com/421): if an increasing sequence has distinct products on all distinct nonempty consecutive blocks, then, for every natural number N,
