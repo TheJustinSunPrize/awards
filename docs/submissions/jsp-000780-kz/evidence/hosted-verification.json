@@ -1,0 +1,40 @@
+{
+  "run_id": 35169276174,
+  "attempt": 2,
+  "job_id": 105037420291,
+  "conclusion": "success",
+  "proof_commit": "d5b210f5507e8a20c401f07e3ebe05209b107bc6",
+  "url": "https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35169276174",
+  "nanoda": {
+    "checked_declarations": 6049,
+    "errors": 0,
+    "allowlist": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "exporter": "6cea97789dc088ea47fcea15692db85685aedac5",
+    "checker": "4c544ed4099c8227f07d5de77ad1e69fb0740a27"
+  },
+  "artifact": {
+    "archive_download_url": "https://api.github.com/repos/ketianzhang1-lang/jsp-000301-lean/actions/artifacts/10476078317/zip",
+    "created_at": "2026-09-17T01:11:07Z",
+    "digest": "sha256:021c60ce86a4a134eb6d5f4ce642be9fa2b636417dc05cd21b0fd5c9492d0f58",
+    "expired": false,
+    "expires_at": "2026-12-16T01:08:00Z",
+    "id": 10476078317,
+    "name": "jsp-000780-verification",
+    "size_in_bytes": 3709442,
+    "updated_at": "2026-09-17T01:11:07Z",
+    "url": "https://api.github.com/repos/ketianzhang1-lang/jsp-000301-lean/actions/artifacts/10476078317",
+    "workflow_run": {
+      "head_branch": "jsp-000780-sixfull",
+      "head_repository_id": 1373404416,
+      "head_sha": "d5b210f5507e8a20c401f07e3ebe05209b107bc6",
+      "id": 35169276174,
+      "repository_id": 1373404416
+    }
+  },
+  "digest_provenance": "GitHub-reported ZIP digest; this session could not retrieve the archive bytes through the returned file URL (HTTP 403), so no local ZIP rehash is claimed. Job result and full decoded log were retrieved using the GitHub connector.",
+  "first_attempt": "Failed during installer download (connection reset); no proof check ran in attempt 1. Attempt 2 completed all steps successfully."
+}

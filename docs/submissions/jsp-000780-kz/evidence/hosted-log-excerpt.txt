@@ -1,0 +1,24 @@
+Selected lines from GitHub Actions job 105037420291, run 35169276174, attempt 2.
+The full public job log remains available through GitHub. This excerpt is not the complete log.
+
+2026-09-17T01:09:59.9216719Z info: Audit.lean:8:0: 'JSP000780.solution_for_every_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:09:59.9217788Z info: Audit.lean:9:0: 'JSP000780.terms_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:09:59.9218820Z info: Audit.lean:10:0: 'JSP000780.infinitely_many_solutions' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:09:59.9220410Z info: Audit.lean:11:0: 'JSP000780.infinitely_many_totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:09:59.9221498Z info: Audit.lean:12:0: 'JSP000780.original_six_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:09:59.9222548Z info: Audit.lean:13:0: 'JSP000780.not_finite_for_every_r' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:09:59.9256236Z Build completed successfully (3094 jobs).
+2026-09-17T01:10:21.8906385Z 'JSP000780.solution_for_every_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:10:21.8907109Z 'JSP000780.terms_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:10:21.8907819Z 'JSP000780.infinitely_many_solutions' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:10:21.8908564Z 'JSP000780.infinitely_many_totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:10:21.8909787Z 'JSP000780.original_six_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:10:21.8910832Z 'JSP000780.not_finite_for_every_r' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:10:22.1044319Z Six target axiom audits and nine dependency revision checks passed.
+2026-09-17T01:10:25.6492671Z https://github.com/leanprover/lean4export.git 6cea97789dc088ea47fcea15692db85685aedac5
+2026-09-17T01:10:25.9129235Z https://github.com/ammkrn/nanoda_lib.git 4c544ed4099c8227f07d5de77ad1e69fb0740a27
+2026-09-17T01:10:33.4743778Z Build completed successfully (6 jobs).
+2026-09-17T01:11:05.6650063Z Checked 6049 declarations with no errors
+2026-09-17T01:11:07.0428871Z SHA256 digest of uploaded artifact zip is 021c60ce86a4a134eb6d5f4ce642be9fa2b636417dc05cd21b0fd5c9492d0f58
+2026-09-17T01:11:07.2244720Z Artifact jsp-000780-verification.zip successfully finalized. Artifact ID 10476078317
+2026-09-17T01:11:07.2246432Z Artifact jsp-000780-verification has been successfully uploaded! Final size is 3709442 bytes. Artifact ID is 10476078317
