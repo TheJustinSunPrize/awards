@@ -1,3 +1,5 @@
 .lake/
 *.olean
 *.ilean
+
+.independent-check/

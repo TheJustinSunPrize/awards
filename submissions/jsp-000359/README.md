@@ -104,8 +104,16 @@ All audited theorem footprints contain only `propext`, `Classical.choice`, and
 proof code is used. The verification record lists actual commands and outcomes.
 The local run reused pinned dependency checkouts and compiled caches. It was
 not network isolated, and the same Lean implementation is not an independently
-implemented checker. Official statement-fidelity review and independent
-verification remain pending.
+implemented checker.
+
+A separate Nanoda 0.4.17 run checks the final theorem, the real-threshold
+membership equivalence, and normalized-count boundedness: 10,694 declarations
+pass. A deliberately wrong proof and an unpermitted replacement axiom are both
+rejected. See [INDEPENDENT.md](INDEPENDENT.md) for pinned tools, reproduction,
+exact hashes and the submitter-operated verification boundary. Neither proof
+source file was changed for this additional check. Official statement-fidelity
+review, independent-operator review and designated isolated verification remain
+pending.
 
 This package changes no catalog eligibility, recipient, candidate, or award
 record. Whether an additional reproduction is useful for intake or eligible for
