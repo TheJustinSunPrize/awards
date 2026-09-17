@@ -68,34 +68,39 @@ a supplementary packet for organizer review. Organizers may consolidate
 the intake with related submissions. Public account authorship of a commit
 does not establish a confirmed recipient identity or signed academic credit.
 
-## Rules audit and remaining requirements
+## Official rules and remaining requirements
 
-| Question | Source-backed finding |
+**Correction, 2026-09-17:** the earlier audit inspected repository materials
+only. The official [About](https://hejustinsun.com/zh/prize/about),
+[Selection Rules](https://hejustinsun.com/zh/prize/rules),
+[Claim Guidelines](https://hejustinsun.com/zh/prize/claim),
+[FAQ](https://hejustinsun.com/zh/prize/faq) and
+[Terms](https://hejustinsun.com/zh/prize/terms) have now been read directly.
+The [detailed official-source audit](official-rules-audit.md) records exact
+quotations, sections, access date, source hashes and corrections to the
+previous application. Rules v1.0 were published/effective September 16, 2026.
+
+| Topic | Established public rule and application here |
 | --- | --- |
-| Amount and payment entitlement | **Unknown, not zero.** The inspected [grading rules](../../grading.md) publish no amount or payment calculation for this result. An empty historical bounty field is not an amount. No payment promise is inferred. |
-| Separate formalization contribution | [About](../../about.md) and [attribution](../../attribution.md) distinguish discovery and formalization. They do not guarantee an award for this particular additional proof or establish its novelty. |
-| Screening versus an award | The catalog's solved/Lean eligibility convention is not a nomination, award, or right to payment. This contribution changes no catalog flag, claim status, candidate, or award. See [about](../../about.md). |
-| Intake | The [recipient recommendation form](../../../.github/ISSUE_TEMPLATE/recommend-recipient.yml) and [contribution guide](../../../CONTRIBUTING.md) supply an evidence intake route, not automatic acceptance or payment. |
-| Formal review | [Verification](../../verification.md) and [records](../../records.md) require source pinning, statement comparison, axiom auditing, reproduction and independent review. Local compilation alone is insufficient. |
-| Signatures and checkers | [Statement schema](../../../data/schema/statement.schema.json) requires at least two signatories. [Validation](../../../scripts/manage.py) requires authorized profiles and reviews of non-library definitions, distinct checkers, safe-version assertions and isolation controls for confirmed evidence. These are not supplied or fabricated here. |
-| Historical dates | The catalog's proposal and first-counterexample dates are unverified. The live award schema requires a proposal year; no date is invented to satisfy it. No live award YAML is proposed. |
-| Recipient confirmation | Pending. The placeholder does not identify the operator as a mathematical discoverer, confirmed formalizer, or award recipient. Identity, consent and conflicts require actual confirmation. See [attribution](../../attribution.md). |
-| Final decision | An authorized public award announcement and completed verification/recipient requirements remain necessary. Payments are outside the repository. See [records](../../records.md) and [platform notes](../../platform-setup.md). |
+| Tiers and amount | Five tiers. Pinnacle: USD 1,000,000 gross per designated verified closure; Breakthrough/Landmark/Advance/Contribution: committee-determined. This packet has no assigned tier or amount; the Pinnacle allocation is not a program-wide pool or this example's bounty (Rules §3). |
+| Role allocation | Solver 70%, Lean formalizer 30%, both roles together 100% (Rules §5). This known counterexample supplies no new solver claim; no automatic formalizer share or dollar amount is asserted. |
+| AI participation | Human-AI teams and AI systems are permitted, subject to verified contributions and lawful applicant/representative/payee requirements (Rules §5; FAQ Q4, Q16). Identity and ownership remain unconfirmed. |
+| Priority | First public visibility across platforms governs formalizer priority; code elegance and internal processing speed do not displace valid earlier work (FAQ Q8). Prior submissions exist; first priority is not established. Joint treatment is conditional on the organizer's evaluation-window determination. |
+| Evaluation route | Lean PR and evidence → designated isolated verification → verified PR finalization → evaluation (Rules §§4.1, 6). A publicly peer-verified registration route also exists; self-checking does not establish peer verification. |
+| Payment claim route | After official eligible-claimant publication, initiate via the official email; verify identity, ownership and authorization; obtain formal confirmation; only then provide payment details (Claim Guidelines I–III, VII). Issue #441 is an evaluation intake, not a payment claim. |
+| Payout | TRC-20 USDT or ERC-20 USDC, subject to KYC/compliance and official confirmation (Rules §§2.6, 3.3). Taxes and deadlines follow the claim guidance. Conflicting website fee clauses require written clarification. |
+| Current eligibility | No designated independent review, verified merge, official eligible-claimant publication or award confirmation exists for this packet. It is **not currently eligible for a payment claim**; any formalizer/joint eligibility remains an organizer decision. |
+| Records | No official status, recipient, candidate or award record is changed. Unknown historical dates remain unknown. Website five tiers versus repository levels 1–4 requires authorized interpretation, not an invented mapping. |
 
-On 2026-09-17, the official GitHub API returned an empty releases list and
-an `awards/` directory containing only `README.md`. An official about-page
-snapshot is retained with its Git blob identifier in the
-[source-check record](evidence/official-source-check.json). These endpoints
-do not establish that no announcement exists in any other official channel.
-Raw-content access failed certificate validation; the API fallback succeeded
-without bypassing TLS checks. Other contributors' descriptions of award
-terms are not treated as independently verified official terms.
-
-Requested organizer decisions are acceptance or consolidation of this
-supplementary intake, an authorized independent verification route, whether
-this additional formalization qualifies for consideration, and the applicable
-public terms, amount and payment conditions. No amount, acceptance, reviewer
-signature, discovery priority or award is asserted by this packet.
+The repository API checks in [the earlier source record](evidence/official-source-check.json)
+remain accurate for those endpoints, but are not an exhaustive survey of
+public rules and do not override the newly checked website. Requested next
+steps are organizer acceptance or consolidation, designated verification,
+priority/joint-eligibility determination and clarification of case-specific
+award terms. If this later contribution is ineligible, it should remain an
+unawarded supplementary contribution, not be relabeled as a new discovery.
+No private claim email, identity document, legal signature or payout detail
+has been supplied. See the detailed audit for the official contact and prerequisites.
 
 ## Publication and validation
 

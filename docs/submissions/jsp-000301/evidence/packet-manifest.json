@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "README.md",
-      "sha256": "ef0a90671a01002065a7ee491c3f83f3f1a6ca10f59d8a78f4fa24d359195307",
-      "bytes": 8149
+      "sha256": "152dcf2b49676f7ec8f857b664598f3d75a16b8ed352712e99d509209ed6a84a",
+      "bytes": 8629
     },
     {
       "path": "evidence/arithmetic-check.log",
@@ -62,9 +62,19 @@
       "bytes": 852
     },
     {
+      "path": "evidence/official-website-sources.json",
+      "sha256": "797a544a3d62fce4ac561654aefb27c8e1c8523b80b518e1e859b38b9827539a",
+      "bytes": 2838
+    },
+    {
       "path": "evidence/toolchain-download.json",
       "sha256": "f72905d7f614f0741bd76b1898180b08d0189f5779b8592d55460efb27ddd65c",
       "bytes": 437
+    },
+    {
+      "path": "official-rules-audit.md",
+      "sha256": "ef74cbc1250af5734d29b832500862ba598ada9fe6b55b4477fd616518edcde4",
+      "bytes": 11180
     },
     {
       "path": "proof/Counterexample.lean",
