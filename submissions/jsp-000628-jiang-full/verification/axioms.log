@@ -1,0 +1,6 @@
+Command: lake env lean Audit.lean
+Exit code: 0
+
+Erdos767.erdos_767 (k n : ℕ) (hk : 0 < k) (hn : 3 * k + 3 ≤ n) :
+  Erdos767.chordCycleExtremalNumber k n = (k + 1) * n - (k + 1) ^ 2
+'Erdos767.erdos_767' depends on axioms: [propext, Classical.choice, Quot.sound]

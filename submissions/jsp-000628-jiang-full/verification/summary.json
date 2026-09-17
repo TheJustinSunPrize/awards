@@ -1,0 +1,40 @@
+{
+  "problem": "JSP-000628",
+  "scope": "Tao Jiang's full 2004 theorem for positive k and n >= 3k + 3",
+  "upstream": {
+    "repository": "https://github.com/plby/lean-proofs",
+    "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e"
+  },
+  "standalone_proof": {
+    "repository": "https://github.com/zeke-ai/erdos-767-jiang-lean",
+    "commit": "636fa0570b02fc20f58516d3a41ca6a6735bf24d"
+  },
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "checks": [
+    {
+      "command": "lake build ErdosProblems.Erdos767",
+      "exit_code": 0,
+      "jobs": 8732
+    },
+    {
+      "command": "lake env lean Audit.lean",
+      "exit_code": 0
+    },
+    {
+      "command": "rg -n '\\b(sorry|admit|axiom|unsafe)\\b' ErdosProblems Audit.lean",
+      "exit_code": 1,
+      "meaning": "no matches"
+    }
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "notes": [
+    "Mathlib dependencies were obtained from the official cache except for one cache artifact, Mathlib.Analysis.Complex.Circle, which was rebuilt from the pinned source.",
+    "All retained local Erdős 767 and supporting Erdős 58 modules were rebuilt from source in this package.",
+    "Repository validate, links, build, check, and all 22 unit tests passed."
+  ]
+}
