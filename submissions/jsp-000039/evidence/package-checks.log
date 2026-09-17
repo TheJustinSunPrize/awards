@@ -1,0 +1,5 @@
+PASS: package file inventory excludes caches and symlinks.
+PASS: no CJK prose or machine-home/credential/private-key patterns detected.
+Scope: pattern checks supplement manual content review; they do not prove absence of all private information.
+PASS: 24 local Markdown links and anchors resolve.
+INFO: 2 HTTPS links have valid syntax; external availability is not certified.

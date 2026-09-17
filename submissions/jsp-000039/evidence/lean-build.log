@@ -1,0 +1,7 @@
+✔ [8924/8927] Built DGGCounterexample.Submission (20s)
+ℹ [8925/8927] Built DGGCounterexample.CostPerturbation (21s)
+info: DGGCounterexample/CostPerturbation.lean:103:0: 'DGG.perturbed_example' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DGGCounterexample/CostPerturbation.lean:104:0: 'DGG.counterexample_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DGGCounterexample/CostPerturbation.lean:105:0: 'DGG.feasible_prices_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8926/8927] Built DGGCounterexample (19s)
+Build completed successfully (8927 jobs).

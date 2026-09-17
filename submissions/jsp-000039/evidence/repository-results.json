@@ -1,0 +1,26 @@
+[
+  {
+    "check": "validate",
+    "exit_code": 0
+  },
+  {
+    "check": "links",
+    "exit_code": 0
+  },
+  {
+    "check": "build",
+    "exit_code": 0
+  },
+  {
+    "check": "check",
+    "exit_code": 0
+  },
+  {
+    "check": "unittest",
+    "exit_code": 1
+  },
+  {
+    "check": "history",
+    "exit_code": 0
+  }
+]
