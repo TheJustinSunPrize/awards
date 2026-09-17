@@ -104,3 +104,11 @@ permitting only propext, Classical.choice and Quot.sound.
 See VERIFICATION.md for observed results; commands alone are not test results.
 
 Code license: Apache-2.0. Mathlib retains its original authorship and license.
+
+## Supplementary implementation
+
+[SUPPLEMENTARY_PROOF.md](SUPPLEMENTARY_PROOF.md) records a separately written
+Lean implementation, its pinned source, successful verification run, and overlap
+with this submission. It is supplementary evidence for this same contribution,
+not a second problem submission or an additional award claim. Its checker results
+are kept separate from the primary implementation's NaNoda results.
