@@ -1,0 +1,5 @@
+'Erdos332.erdos_332.variants.upperBanachDensity_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos332.erdos_332.variants.upperDensity_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos332.erdos_332.variants.hasPosDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos332.upperDensity_le_upperBanachDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos332.upperDensity_univ' depends on axioms: [propext, Classical.choice, Quot.sound]
