@@ -1,0 +1,7 @@
+'JSP000736.factorDifferenceSet_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000736.common_differences' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000736.erdos_885_k_eq_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+def JSP000736.factorDifferenceSet : ℕ → Set ℕ :=
+fun n => {d | ∃ a b, n = a * b ∧ ↑d = |↑a - ↑b|}
+JSP000736.erdos_885_k_eq_4 :
+  ∃ Ns, (∀ n ∈ Ns, 1 ≤ n) ∧ Ns.card = 4 ∧ (⋂ n ∈ Ns, JSP000736.factorDifferenceSet n).ncard ≥ 4
