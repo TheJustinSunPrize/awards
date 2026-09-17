@@ -1,0 +1,4 @@
+'Erdos78.erdos_078' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos78.dvd_subset_sum_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos78.sum_lt_subset_sum_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos78.exists_coloring_avoiding_mono_subset_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
