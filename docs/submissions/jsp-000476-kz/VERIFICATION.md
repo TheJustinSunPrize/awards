@@ -1,59 +1,53 @@
-# Observed verification results
+# Observed verification — revision 2
 
-All checks below completed successfully on 2026-09-17 UTC.
+All checks passed on 2026-09-17 UTC. The revised proof covers every positive
+integer step d through d=b^2*a with a squarefree. The earlier prime-step
+theorems and uniform lower bound are retained.
 
-## Immutable source and run
+## Source and results
 
-- Repository: https://github.com/ketianzhang1-lang/jsp-000301-lean
-- Proof commit: `933c76d71c241b7cb078b5acc644188a94798b26`
-- Source directory: https://github.com/ketianzhang1-lang/jsp-000301-lean/tree/933c76d71c241b7cb078b5acc644188a94798b26/projects/jsp-000476
-- Run: https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35171337199
-- Job: https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35171337199/job/105043456044
-- Lean: `v4.34.0`; Mathlib: `5ed2965256430c3649e86755f9576b54eca72435`.
+Proof commit: `4ab28a44e7c89d814699c70f79a0e138f72162e7`.
+Source: https://github.com/ketianzhang1-lang/jsp-000301-lean/tree/4ab28a44e7c89d814699c70f79a0e138f72162e7/projects/jsp-000476
 
-## Results
+Run: https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35172595984
+Job: https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35172595984/job/105047255472
 
-- `lake build --wfail`: passed, 2277 build jobs.
-- `lake env leanchecker JSP000476`: passed.
-- Twelve target axiom audits: passed; only `propext`, `Classical.choice`,
-  and `Quot.sound` occur.
+- Lean 4.34.0, Mathlib 5ed2965256430c3649e86755f9576b54eca72435.
+- Build with warnings as errors: passed (2277 jobs).
+- Lean kernel replay with leanchecker: passed.
+- Twenty target axiom audits: passed; only propext, Classical.choice and Quot.sound.
 - Nine dependency revision checks: passed.
-- Negative control `1 = 0`: rejected, as required.
-- Pinned strict NaNoda: **31,556 declarations checked with no errors**.
-- Official repository validation, links, generation/check and all 22 tests
-  passed locally for this submission package. These checks verify repository
-  structure; they do not execute or approve the mathematics.
+- False arithmetic negative control: rejected as required.
+- Strict NaNoda: **32,032 declarations checked without errors**.
+- Official repository validate, links, build/check and all 22 tests passed locally.
 
-The CI source of every file listed in PROOF_SHA256SUMS is byte-identical to
-the corresponding submission file. Documentation is supplemented here with
-observed results, statement comparison and a corrected attribution sentence.
+The eight exported roots and their complete dependency closures include
+the general-step criterion, the all-positive-step classification, the
+squarefree perfect-power criterion, and the counterexample {8}. The exact
+roots, checker settings and tool commit pins are in scripts/verify_nanoda.sh.
+The submission proof, audit and verification scripts match the CI source
+byte for byte. Configuration and dependency pins remain unchanged.
+PROOF_SHA256SUMS records the exact file bytes.
 
-## Artifact receipt and retention
+## Archive receipt and limits
 
-- Archive ID: `10476872050`, name `jsp-000476-evidence`.
-- URL: https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35171337199/artifacts/10476872050
-- Byte count: `30102830`.
-- SHA-256: `b8730b580a414c6e10cadd940e549888cd997ff10c18a1d064ba84f38d9f64da`.
-- GitHub-reported expiry: `2026-12-16T01:38:29Z`.
+Artifact ID: `10477376441`.
+URL: https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35172595984/artifacts/10477376441
+Size: `30500568` bytes.
+SHA-256: `6c3184bce60ec757b0cca74a939a1329cab6573527bb4c9e2792e075c0d76b29`.
+GitHub-reported expiry: `2026-12-16T01:58:24Z`.
 
-The ID, size and digest were read from the GitHub artifact API and match the
-workflow upload log. A local download from the connector-provided file URL
-was blocked with HTTP 403, so no separate local ZIP hash validation is claimed.
-The large checker export is subject to the stated GitHub retention deadline;
-a permanent independent archive has not yet been established. The proof
-source, reproduction scripts, receipt and relevant log excerpt are preserved
-in Git. See artifact-receipt.json and verification-excerpt.log.
+The API receipt and upload-log digest agree. No independent local ZIP
+hash validation is asserted. Large exports remain subject to GitHub retention;
+permanent independent archiving is outstanding. The source, scripts, receipt
+and selected log lines are retained in Git. See artifact-receipt.json and
+verification-excerpt.log.
 
-The exported roots are `exact_criterion`, `multiples_power_free_iff`,
-`cubic_lower_bound`, and `example_twelve` in namespace JSP000476, together
-with their complete dependencies. The exporter is pinned to
-`6cea97789dc088ea47fcea15692db85685aedac5`; NaNoda is pinned to
-`4c544ed4099c8227f07d5de77ad1e69fb0740a27`. Unpermitted axioms are hard errors.
+Revision 1 evidence is retained in VERIFICATION-v1.md, artifact-receipt-v1.json,
+verification-excerpt-v1.log and Git history.
 
-## Independence and review
-
-NaNoda is an independent checker implementation, but its run was initiated
-by the contributor. This is not a claim of independent human review,
-organizer verification, recipient confirmation, award approval, or payment
-entitlement. Overlap with the existing Erdős 587 formalization is disclosed
-in README.md; eligibility for this scoped component remains undecided.
+NaNoda is a separate checker implementation, run by the contributor.
+Independent human review, organizer approval, recipient confirmation and
+award eligibility remain pending. The original arbitrary-set asymptotic
+upper bound is not claimed. Prior mathematical and formalization credit is
+preserved in README.md.

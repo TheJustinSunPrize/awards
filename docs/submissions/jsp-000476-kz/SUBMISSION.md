@@ -3,7 +3,13 @@
 Please assess this independently written formalization of the classical
 prime-multiple lower-bound construction for JSP-000476 / Erdős 587.
 
-The proved criterion covers every prime p and every natural m:
+Revision 2 classifies every positive integer step d: writing d=b^2*a with
+a squarefree, {d,2d,...,md} is square-sum-free exactly when m(m+1)<2a.
+For squarefree steps, the same condition excludes every perfect-power subset
+sum. For nonsquarefree steps, only square avoidance is claimed; {8} is a
+verified counterexample to the stronger claim.
+
+The retained prime-step criterion covers every prime p and every natural m:
 {p,2p,...,mp} is square-sum-free if and only if m(m+1)<2p. The proof also
 excludes all higher perfect-power subset sums under the same condition,
 constructs a square-sum witness when it fails, and supplies an explicit

@@ -1,5 +1,28 @@
 # Statement correspondence and limitations
 
+## Revision 2: exact classification for every positive step
+
+`general_step_criterion` takes arbitrary natural d,a,b with a squarefree,
+b>0, and d=b^2*a. It proves for every m that
+`SquareSumFree (multiples d m)` is equivalent to `m*(m+1)<2*a`.
+There is no primality assumption on d or a.
+
+`all_positive_steps_classified` quantifies over every d>0 and obtains
+such a,b using Mathlib's square-times-squarefree decomposition. It then
+supplies the criterion for all m at once. This is a complete classification
+of the family {d,2d,...,md}; it does not classify arbitrary finite sets or
+arithmetic progressions with arbitrary initial offset.
+
+For squarefree a, `squarefree_exact_criterion` gives the identical threshold
+for avoidance of all x^k, k>=2. The general d criterion excludes squares
+only. The theorem `nonsquare_step_does_not_imply_power_avoidance` formally
+exhibits {8} as square-sum-free but not perfect-power-sum-free.
+
+All original prime-step results are retained. The classical construction,
+its squarefree variant, and existing external formalization remain credited.
+The new Lean lemmas are a formalization extension, not an assertion of
+new mathematical discovery or completion of the original asymptotic theorem.
+
 ## Original problem
 
 JSP-000476 asks for the largest size of a subset of {1,...,N} having no
