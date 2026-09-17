@@ -110,7 +110,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000034 | [Sidorenko conjecture](catalog-0001-0100.md#JSP-000034) | Open | No | No | Unavailable |
 | JSP-000035 | [Catalan conjecture](catalog-0001-0100.md#JSP-000035) | Solved | No | No | Unavailable |
 | JSP-000036 | [Modularity theorem for rational elliptic curves (Taniyama–Shimura–Weil conjecture)](catalog-0001-0100.md#JSP-000036) | Solved | No | No | Unavailable |
-| JSP-000037 | [Jacobian conjecture](catalog-0001-0100.md#JSP-000037) | Progress (not fully resolved) | Partial (three-dimensional counterexample only) | No | Unavailable |
+| JSP-000037 | [Jacobian conjecture](catalog-0001-0100.md#JSP-000037) | Progress | Partial (three-dimensional counterexample only) | No | Unavailable |
 | JSP-000038 | [Sendov conjecture](catalog-0001-0100.md#JSP-000038) | Solved | Yes | Yes | Unclaimed |
 | JSP-000039 | [DGG cost-preserving conjecture](catalog-0001-0100.md#JSP-000039) | Solved | Yes | Yes | Unclaimed |
 | JSP-000040 | [Anderson problem on weakly quasi-complete local rings](catalog-0001-0100.md#JSP-000040) | Solved | Yes | Yes | Unclaimed |
