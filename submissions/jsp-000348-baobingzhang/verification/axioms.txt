@@ -1,0 +1,8 @@
+'Erdos423.erdos_423.variants.unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos423.erdos_423.variants.infinite_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos423.erdos_423.variants.lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos423.erdos_423.variants.nondecreasing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos423.exists_isHofstadterSeq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos423.Hofstadter.eq_of_isHofstadterSeq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos423.Hofstadter.plateau_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos423.Hofstadter.lt_of_le_add' depends on axioms: [propext, Classical.choice, Quot.sound]
