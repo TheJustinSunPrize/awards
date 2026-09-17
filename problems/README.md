@@ -395,7 +395,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000304 | [How large a prime factor must the product of two consecutive positive integers have?](catalog-0301-0400.md#JSP-000304) | Progress | No | No | Unavailable |
 | JSP-000305 | [Are there arbitrarily long runs of consecutive integers whose prime factors all lie below the specified bound?](catalog-0301-0400.md#JSP-000305) | Solved | Yes | Yes | Unclaimed |
 | JSP-000306 | [What is the density of integers whose largest prime factor is smaller than that of the next integer?](catalog-0301-0400.md#JSP-000306) | Progress | No | No | Unavailable |
-| JSP-000307 | [Can three consecutive integers have strictly decreasing largest prime factors?](catalog-0301-0400.md#JSP-000307) | Solved | No | No | Unavailable |
+| JSP-000307 | [Can three consecutive integers have strictly decreasing largest prime factors?](catalog-0301-0400.md#JSP-000307) | Solved | Yes | Pending verification | Unavailable |
 | JSP-000308 | [Under the stated restrictions, are there only finitely many factorials equal to products of smaller factorials?](catalog-0301-0400.md#JSP-000308) | Progress | No | No | Unavailable |
 | JSP-000309 | [How many factorials are needed to obtain a square product, and how is this minimum distributed?](catalog-0301-0400.md#JSP-000309) | Open | No | No | Unavailable |
 | JSP-000310 | [Can distinct prime divisors be assigned to the terms of every run of consecutive composite integers?](catalog-0301-0400.md#JSP-000310) | Open | No | No | Unavailable |
@@ -895,7 +895,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000784 | [What upper bounds and growth laws govern the number of representations of an integer as a sum of two powerful numbers?](catalog-0701-0800.md#JSP-000784) | Open | No | No | Unavailable |
 | JSP-000785 | [Can a graph be vertex-critical for chromatic number while deletion of any small number of edges never lowers its chromatic number?](catalog-0701-0800.md#JSP-000785) | Progress | No | No | Unavailable |
 | JSP-000786 | [How long a run of consecutive integers can have pairwise distinct divisor counts?](catalog-0701-0800.md#JSP-000786) | Progress | No | No | Unavailable |
-| JSP-000787 | [Are there infinitely many consecutive positive integers with equal divisor counts?](catalog-0701-0800.md#JSP-000787) | Solved | No | No | Unavailable |
+| JSP-000787 | [Are there infinitely many consecutive positive integers with equal divisor counts?](catalog-0701-0800.md#JSP-000787) | Solved | Yes | No | Unavailable |
 | JSP-000788 | [Under a finite coloring of the positive integers, can the specified sparse sequence be found whose subset sums omit at least one color?](catalog-0701-0800.md#JSP-000788) | Solved | No | No | Unavailable |
 | JSP-000789 | [If a real set is sum-free, does its complement contain a large set together with all its pairwise sums?](catalog-0701-0800.md#JSP-000789) | Open | No | No | Unavailable |
 | JSP-000790 | [For a fixed integer, how large is the reciprocal sum of its positive differences from preceding primes, and how does it vary?](catalog-0701-0800.md#JSP-000790) | Open | No | No | Unavailable |
