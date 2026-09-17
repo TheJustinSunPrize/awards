@@ -1,0 +1,18 @@
+Upstream Lean proofs under ErdosProblems/ are copied from:
+https://github.com/plby/lean-proofs
+Pinned commit: 8822f7ddef30fadbd92e1c6ab4ed897af356af5e
+Git tree: 58dcfe3878b60e662aa813bd6f41f865e476fc06
+Path prefix: src/latest/
+
+The original source headers identify The Formal Conjectures Authors,
+Copyright 2026, Apache License 2.0. Original headers are retained.
+Some import lists have been modified for a smaller dependency environment;
+proof bodies are unchanged. See upstream-imports.patch and source-provenance.json.
+
+The upstream root credits formal authors Codex and GPT-5.6 Sol, and mathematical
+authors C. Hao, X. Li, Izumi Okada, and Y. Zheng for the favorite-sites result.
+Our integration does not claim authorship of those upstream results.
+
+New root-level Lean files implement the independent counting argument,
+definition bridges, maximum-tail reduction, summable-tail numerics and assembly.
+They are provided under the same Apache License 2.0 for reproducibility.
