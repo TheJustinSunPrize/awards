@@ -1,0 +1,20 @@
+id: jsp-000163-f01-r4-asymptotic-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000163"
+  number: "JSP-000163"
+  title_en: "How many vertices can a two-colored complete graph have while avoiding a four-vertex clique in one color and a prescribed large clique in the other?"
+  posed:
+    year: 1990
+    basis: earliest-reference
+    citation: "https://arxiv.org/abs/2306.04007"
+  resolved: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
+decision: null
