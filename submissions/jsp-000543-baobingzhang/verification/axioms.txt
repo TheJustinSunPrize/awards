@@ -1,0 +1,8 @@
+'Erdos669.erdos_669.variants.three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos669.erdos_669.variants.three_isBigO' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos669.bounds_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos669.erdos_669.variants.upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos669.f_le_F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos669.isGreatest_F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos669.isGreatest_f' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos669.richLines_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
