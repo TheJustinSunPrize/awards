@@ -1,0 +1,3 @@
+<proof>/ErdosProblems/Erdos1058/Erdos1058CharacterSieve.lean:130:15: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+exit_code=0
