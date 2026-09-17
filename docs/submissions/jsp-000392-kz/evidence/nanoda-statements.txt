@@ -1,0 +1,135 @@
+def JSP000392.Valid (k N : Nat) (c : Nat → Nat) : Prop :=
+  And (forall (x : Nat), LE.le (OfNat.ofNat 1) x → LE.le x N → LT.lt (c x) k)
+    (forall (x y : Nat),
+    LE.le (OfNat.ofNat 1) x → LE.le (OfNat.ofNat 1) y → LE.le (HAdd.hAdd x y) N → Eq (c x) (c y) → Ne (c x)
+      (c (HAdd.hAdd x y)))
+
+def JSP000392.Colorable (n a._@._internal._hyg.0 : Nat) : Prop :=
+  Exists (fun (c : Nat → Nat) => JSP000392.Valid n a._@._internal._hyg.0 c)
+
+def JSP000392.Forces (n a._@._internal._hyg.0 : Nat) : Prop :=
+  forall (c : Nat → Nat),
+  (forall (x : Nat), LE.le (OfNat.ofNat 1) x → LE.le x a._@._internal._hyg.0 → LT.lt (c x) n) → Exists
+    (fun (x : Nat) =>
+    Exists
+      (fun (y : Nat) =>
+      And (LE.le (OfNat.ofNat 1) x)
+        (And (LE.le (OfNat.ofNat 1) y)
+          (And (LE.le (HAdd.hAdd x y) a._@._internal._hyg.0) (And (Eq (c x) (c y)) (Eq (c x) (c (HAdd.hAdd x y))))))))
+
+def JSP000392.TriangleColorable (n a._@._internal._hyg.0 : Nat) : Prop :=
+  Exists
+    (fun (e : Nat → Nat → Nat) =>
+    And (forall (x y : Nat), Eq (e x y) (e y x))
+      (And (forall (x y : Nat), LT.lt x y → LE.le y a._@._internal._hyg.0 → LT.lt (e x y) n)
+        (forall (x y z : Nat),
+        LT.lt x y → LT.lt y z → LE.le z a._@._internal._hyg.0 → Eq (e x y) (e y z) → Ne (e x y) (e x z))))
+
+def JSP000392.seedHalf (n : Nat) : Nat :=
+  ite
+    (Membership.mem
+      (List.cons (OfNat.ofNat 4)
+        (List.cons (OfNat.ofNat 5)
+          (List.cons (OfNat.ofNat 15)
+            (List.cons (OfNat.ofNat 16)
+              (List.cons (OfNat.ofNat 22)
+                (List.cons (OfNat.ofNat 28)
+                  (List.cons (OfNat.ofNat 29)
+                    (List.cons (OfNat.ofNat 39)
+                      (List.cons (OfNat.ofNat 40)
+                        (List.cons (OfNat.ofNat 41)
+                          (List.cons (OfNat.ofNat 42)
+                            (List.cons (OfNat.ofNat 48)
+                              (List.cons (OfNat.ofNat 49) (List.cons (OfNat.ofNat 59) List.nil)))))))))))))) n)
+    (OfNat.ofNat 0)
+    (ite
+      (Membership.mem
+        (List.cons (OfNat.ofNat 2)
+          (List.cons (OfNat.ofNat 3)
+            (List.cons (OfNat.ofNat 8)
+              (List.cons (OfNat.ofNat 14)
+                (List.cons (OfNat.ofNat 19)
+                  (List.cons (OfNat.ofNat 20)
+                    (List.cons (OfNat.ofNat 24)
+                      (List.cons (OfNat.ofNat 25)
+                        (List.cons (OfNat.ofNat 36)
+                          (List.cons (OfNat.ofNat 46)
+                            (List.cons (OfNat.ofNat 47)
+                              (List.cons (OfNat.ofNat 51)
+                                (List.cons (OfNat.ofNat 62) (List.cons (OfNat.ofNat 73) List.nil)))))))))))))) n)
+      (OfNat.ofNat 1)
+      (ite
+        (Membership.mem
+          (List.cons (OfNat.ofNat 7)
+            (List.cons (OfNat.ofNat 9)
+              (List.cons (OfNat.ofNat 11)
+                (List.cons (OfNat.ofNat 12)
+                  (List.cons (OfNat.ofNat 13)
+                    (List.cons (OfNat.ofNat 17)
+                      (List.cons (OfNat.ofNat 27)
+                        (List.cons (OfNat.ofNat 31)
+                          (List.cons (OfNat.ofNat 32)
+                            (List.cons (OfNat.ofNat 33)
+                              (List.cons (OfNat.ofNat 35)
+                                (List.cons (OfNat.ofNat 37)
+                                  (List.cons (OfNat.ofNat 53)
+                                    (List.cons (OfNat.ofNat 56)
+                                      (List.cons (OfNat.ofNat 57)
+                                        (List.cons (OfNat.ofNat 61)
+                                          (List.cons (OfNat.ofNat 79) List.nil))))))))))))))))) n) (OfNat.ofNat 2)
+        (ite
+          (Membership.mem
+            (List.cons (OfNat.ofNat 1)
+              (List.cons (OfNat.ofNat 6)
+                (List.cons (OfNat.ofNat 10)
+                  (List.cons (OfNat.ofNat 18)
+                    (List.cons (OfNat.ofNat 21)
+                      (List.cons (OfNat.ofNat 23)
+                        (List.cons (OfNat.ofNat 26)
+                          (List.cons (OfNat.ofNat 30)
+                            (List.cons (OfNat.ofNat 34)
+                              (List.cons (OfNat.ofNat 38)
+                                (List.cons (OfNat.ofNat 43)
+                                  (List.cons (OfNat.ofNat 45)
+                                    (List.cons (OfNat.ofNat 50)
+                                      (List.cons (OfNat.ofNat 54)
+                                        (List.cons (OfNat.ofNat 65) (List.cons (OfNat.ofNat 74) List.nil))))))))))))))))
+            n) (OfNat.ofNat 3) (OfNat.ofNat 4))))
+
+def JSP000392.seed (n : Nat) : Nat :=
+  JSP000392.seedHalf (ite (LE.le n (OfNat.ofNat 80)) n (HSub.hSub (OfNat.ofNat 161) n))
+
+theorem JSP000392.exoo_160 : JSP000392.Colorable (OfNat.ofNat 5) (OfNat.ofNat 160) := _
+
+theorem JSP000392.general_seed_family :
+  forall {k N : Nat},
+  JSP000392.Colorable k N → (forall (r : Nat),
+  JSP000392.Colorable (HAdd.hAdd k r)
+    (HDiv.hDiv
+      (HSub.hSub (HMul.hMul (HAdd.hAdd (HMul.hMul (OfNat.ofNat 2) N) (OfNat.ofNat 1)) (HPow.hPow (OfNat.ofNat 3) r))
+        (OfNat.ofNat 1)) (OfNat.ofNat 2))) :=
+  _
+
+theorem JSP000392.exoo_family (r : Nat) :
+  JSP000392.Colorable (HAdd.hAdd (OfNat.ofNat 5) r)
+    (HDiv.hDiv (HSub.hSub (HMul.hMul (OfNat.ofNat 321) (HPow.hPow (OfNat.ofNat 3) r)) (OfNat.ofNat 1))
+      (OfNat.ofNat 2)) :=
+  _
+
+theorem JSP000392.exoo_forcing_lower (r : Nat) :
+  Not
+    (JSP000392.Forces (HAdd.hAdd (OfNat.ofNat 5) r)
+      (HDiv.hDiv (HSub.hSub (HMul.hMul (OfNat.ofNat 321) (HPow.hPow (OfNat.ofNat 3) r)) (OfNat.ofNat 1))
+        (OfNat.ofNat 2))) :=
+  _
+
+theorem JSP000392.exoo_ramsey_family (r : Nat) :
+  JSP000392.TriangleColorable (HAdd.hAdd (OfNat.ofNat 5) r)
+    (HDiv.hDiv (HSub.hSub (HMul.hMul (OfNat.ofNat 321) (HPow.hPow (OfNat.ofNat 3) r)) (OfNat.ofNat 1))
+      (OfNat.ofNat 2)) :=
+  _
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+

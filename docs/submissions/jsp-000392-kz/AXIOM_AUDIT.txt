@@ -1,0 +1,27 @@
+'JSP000392.lift_valid' depends on axioms: [propext, Quot.sound]
+'JSP000392.tripling' depends on axioms: [propext, Quot.sound]
+'JSP000392.seed_certificate' depends on axioms: [propext, Quot.sound]
+'JSP000392.exoo_160' depends on axioms: [propext, Quot.sound]
+'JSP000392.capacity_identity' depends on axioms: [propext, Quot.sound]
+'JSP000392.iterate_tripling' depends on axioms: [propext, Quot.sound]
+'JSP000392.general_seed_family' depends on axioms: [propext, Quot.sound]
+'JSP000392.exoo_family' depends on axioms: [propext, Quot.sound]
+'JSP000392.colorable_not_forces' does not depend on any axioms
+'JSP000392.exoo_forcing_lower' depends on axioms: [propext, Quot.sound]
+'JSP000392.difference_coloring' depends on axioms: [propext, Quot.sound]
+'JSP000392.exoo_ramsey_family' depends on axioms: [propext, Quot.sound]
+def JSP000392.Valid : ℕ → ℕ → (ℕ → ℕ) → Prop :=
+fun k N c => (∀ (x : ℕ), 1 ≤ x → x ≤ N → c x < k) ∧ ∀ (x y : ℕ), 1 ≤ x → 1 ≤ y → x + y ≤ N → c x = c y → c x ≠ c (x + y)
+def JSP000392.Colorable : ℕ → ℕ → Prop :=
+fun k N => ∃ c, JSP000392.Valid k N c
+def JSP000392.Forces : ℕ → ℕ → Prop :=
+fun k N =>
+  ∀ (c : ℕ → ℕ), (∀ (x : ℕ), 1 ≤ x → x ≤ N → c x < k) → ∃ x y, 1 ≤ x ∧ 1 ≤ y ∧ x + y ≤ N ∧ c x = c y ∧ c x = c (x + y)
+def JSP000392.TriangleColorable : ℕ → ℕ → Prop :=
+fun k N =>
+  ∃ e,
+    (∀ (x y : ℕ), e x y = e y x) ∧
+      (∀ (x y : ℕ), x < y → y ≤ N → e x y < k) ∧ ∀ (x y z : ℕ), x < y → y < z → z ≤ N → e x y = e y z → e x y ≠ e x z
+JSP000392.exoo_family (r : ℕ) : JSP000392.Colorable (5 + r) ((321 * 3 ^ r - 1) / 2)
+JSP000392.exoo_forcing_lower (r : ℕ) : ¬JSP000392.Forces (5 + r) ((321 * 3 ^ r - 1) / 2)
+JSP000392.exoo_ramsey_family (r : ℕ) : JSP000392.TriangleColorable (5 + r) ((321 * 3 ^ r - 1) / 2)
