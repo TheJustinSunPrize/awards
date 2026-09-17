@@ -1,0 +1,38 @@
+id: jsp-000263
+batch: null
+problem:
+  source: https://github.com/TheJustinSunPrize/awards
+  number: JSP-000263
+  title_en: >-
+    How close to zero can a nonzero signed subsum of a finite harmonic
+    series be?
+  posed:
+    year: 1980
+    basis: earliest-reference
+    citation: >-
+      R. L. Graham, "Old and New Problems and Results in Combinatorial
+      Number Theory", L'Enseignement Mathematique, Universite de Geneve,
+      1980 (problem on signed sums of unit fractions).
+  resolved: null
+decision: null
+recipients:
+  - id: RECIPIENT-JSP-000263-A
+    affiliation: Independent researcher
+    contribution_en: >-
+      Computed the exact minimum nonzero absolute signed subsum f(n) of the
+      first n unit fractions 1/1, ..., 1/n for all n = 2 through 40 by two
+      independent methods (exact 3^n sign enumeration for n <= 13, and
+      meet-in-the-middle adjacent-gap computation over exact integer
+      arithmetic for n <= 40), established a structural reduction of the
+      signed-subsum problem to minimum adjacent gaps of subset-sum sets,
+      proved a p-adic lower-bound lemma for prime p in (n/2, n], and
+      conjectured the asymptotic law log_10 f(n) ~ -0.074 pi(n)^2
+      (R^2 = 0.99), i.e. f(n) = exp(-Theta(n^2/log^2 n)).
+    confirmation: null
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: draft
+revocation: null
