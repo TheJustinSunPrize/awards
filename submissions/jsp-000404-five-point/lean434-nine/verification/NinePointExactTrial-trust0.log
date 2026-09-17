@@ -1,0 +1,2 @@
+'JSP404.guaranteed_nine_five_pi_sevenths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP404.alpha_nine_ten_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
