@@ -32,3 +32,27 @@ verification, not independent human review or an organizer attestation.
 No curator/verifier role, private agreement, award allocation or payment
 entitlement is asserted. Attribution, overlap, scope, priority and any
 applicable contribution eligibility remain for organizer assessment.
+
+
+## Infinite-family extension
+
+PolarityFamily.lean formalizes the classical finite-field polarity construction
+uniformly, with an injective family of neighbors and an algebraic common-neighbor
+uniqueness proof. Its all-power-of-two equality is a known consequence; the
+Parsons reference in README.md retains mathematical credit. This extension is
+OpenAI ChatGPT-assisted implementation work and makes no global first-priority
+claim. It supplements existing PR #379 and is not a new reward request for each
+parameter. See FAMILY_PROOF.md for the exact additional scope.
+
+
+## Earlier same-problem submission
+
+[PR #134](https://github.com/TheJustinSunPrize/awards/pull/134), at head
+`bf3b21b1dde6fbc9e0b023914e9e780695cebe8d`, already formalizes Boza's
+Theorem 6 and Corollary 8. Its published scope is
+`a+b <= f(a) or f(a+b) <= a+2*b` for positive a,b, and
+`f(f(n)+1) <= 2*f(n)-n+2` for positive n. Those are different named targets
+from this finite-field exact family. This comparison is based on the PR's
+explicit theorem statements, not an independent rebuild of its source.
+The earlier submission is acknowledged and no general first-formalization
+claim for JSP-000443 is made. Organizers should assess any overlap.

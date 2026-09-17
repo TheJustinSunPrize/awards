@@ -1,3 +1,6 @@
+> Historical initial-package preflight. Current extension checks will be
+> recorded separately in FAMILY_VERIFICATION.md.
+
 # Submission repository checks — 2026-09-17
 
 Base: `TheJustinSunPrize/awards` commit

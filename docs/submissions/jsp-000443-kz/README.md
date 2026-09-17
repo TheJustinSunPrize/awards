@@ -4,7 +4,7 @@
 or its unbounded-deficit question, and does not establish award eligibility.**
 
 It independently formalizes elementary, known graph-theoretic bounds and a
-known finite special value. Mathematical novelty and first-formalization
+known infinite family of exact values. Mathematical novelty and first-formalization
 priority are not claimed.
 
 ## Checked mathematical targets
@@ -15,7 +15,8 @@ edge coloring contains a red four-cycle or a blue star with **n leaves**
 
 - For every natural n, `R(C4,K1,n) <= n + floor(sqrt(n)) + 2`.
 - For every positive even k, `R(C4,K1,k^2) <= k^2 + k + 1`.
-- `R(C4,K1,16) = 21`.
+- For every integer r > 0, with q = 2^r, `R(C4,K1,q^2) = q^2 + q + 1`.
+- In particular: `R(C4,K1,16) = 21`, `R(C4,K1,64) = 73`, and `R(C4,K1,256) = 273`.
 
 The formal `c4StarRamsey` is the least N satisfying that property, using
 `Nat.find` with its existence supplied by the proved universal upper bound.
@@ -41,6 +42,10 @@ absolute point. The Lean kernel checks its literal adjacency rows,
 symmetry, absence of loops, all codegrees, and degree bound. The Python
 generator is reproducibility support, not a trusted proof oracle.
 
+The module `PolarityFamily.lean` proves a uniform algebraic construction
+over an arbitrary finite field, replacing reliance on isolated adjacency
+tables for the infinite family. See [FAMILY_PROOF.md](FAMILY_PROOF.md).
+
 ## Attribution and scope
 
 - [Original problem / current catalog](https://github.com/TheJustinSunPrize/awards/blob/f4e7173d89dfe91022a185427d63452c8ffbf6ae/problems/catalog-0401-0500.md#JSP-000443).
@@ -65,15 +70,6 @@ The exact n=16 theorem, all-n upper bound and even-square family are
 components, not a complete formula. In particular, they do not prove
 that for every c>0 there are infinitely many n with R <= n+sqrt(n)-c.
 
-## Fixed proof source
-
-The tested proof source is commit `0a78950267f4b292414624f8cd8e15c074c14850`
-in `ketianzhang1-lang/jsp-000301-lean`, directory `projects/jsp-000443`.
-The copied Lean source, audit, lockfile, toolchain and reproduction scripts
-are byte-for-byte identical to that commit.
-
-[Immutable proof package](https://github.com/ketianzhang1-lang/jsp-000301-lean/tree/0a78950267f4b292414624f8cd8e15c074c14850/projects/jsp-000443)
-
 ## Reproduction
 
 Pinned Lean 4.34.0; Mathlib commit
@@ -87,14 +83,13 @@ bash scripts/verify_nanoda.sh
 ```
 
 The first script builds with warnings as errors, replays the main module
-with Lean's bundled checker, audits nine declarations, checks dependency
+with Lean's bundled checker, audits sixteen declarations, checks dependency
 revisions, rejects a false-arithmetic negative control, and reproduces
-the finite adjacency rows. The second exports five endpoint dependency
+the finite adjacency rows. The second exports six endpoint dependency
 closures and checks them with pinned NaNoda under a strict allowlist of
 `propext`, `Classical.choice`, and `Quot.sound`.
 
 Successful contributor-run checks are distinct from independent human
 review, organizer acceptance, award allocation, and payment approval.
-See `VERIFICATION.md` for current observed results. `LOCAL_VERIFICATION.md`
-is the preserved historical local-only checkpoint; its publication-pending
-statements describe that earlier checkpoint, not this submission status.
+See `VERIFICATION.md` for observed results rather than treating these
+reproduction instructions as evidence that a command has already run.

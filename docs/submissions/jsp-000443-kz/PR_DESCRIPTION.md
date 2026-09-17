@@ -1,47 +1,57 @@
-## Change
+## Infinite-family supplement — 2026-09-17
 
-Please assess a **partial formalization contribution** for JSP-000443 / Erdős 552. This does not solve the original all-parameter question or its unbounded-deficit variant. The mathematical bounds and finite construction are known; mathematical novelty and first-formalization priority are not claimed.
+This updates existing PR #379 with a uniform finite-field proof. For every
+positive natural r, with q = 2^r, Lean proves
 
-The Lean package proves, with K1,n denoting a star with n leaves:
+**R(C4,K1,q^2) = q^2 + q + 1.**
 
-- For every natural n, R(C4,K1,n) <= n + floor(sqrt(n)) + 2.
-- For positive even k, R(C4,K1,k^2) <= k^2 + k + 1.
-- R(C4,K1,16) = 21, using a kernel-checked 20-vertex graph obtained from a GF(4) polarity construction.
+K1,n denotes the star with n leaves; copies are ordinary, not induced.
+The construction works over arbitrary finite fields for the lower bound;
+even field order gives equality. This covers all positive exponents and
+includes R(C4,K1,64)=73 and R(C4,K1,256)=273. It retains the original
+universal square-root upper bound, even-square upper bound, exact n=16
+certificate, and Mathlib graph-copy equivalences.
 
-It also proves equivalence of its containment predicates with Mathlib graph copies of cycleGraph 4 and completeBipartiteGraph (Fin 1) (Fin n). The finite graph generator is reproduction support, not a trusted proof oracle.
+**Partial scope:** this does not determine all star Ramsey numbers or settle
+the original unbounded-deficit question. The polarity construction and its
+Ramsey consequence are known mathematics. Parsons and the other original
+sources retain credit. No mathematical novelty or global first-formalization
+priority is claimed. OpenAI ChatGPT assistance is disclosed.
 
-- [Review request and source package](https://github.com/ketianzhang1-lang/awards/tree/96b0c41d652a129ed582041e9da3b70574911974/docs/submissions/jsp-000443-kz)
-- [Pinned, tested proof source](https://github.com/ketianzhang1-lang/jsp-000301-lean/tree/0a78950267f4b292414624f8cd8e15c074c14850/projects/jsp-000443)
-- [Successful public verification run](https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35172429626)
+## Fixed source and verification
 
-## Verification evidence
+- [Tested source a6b9188](https://github.com/ketianzhang1-lang/jsp-000301-lean/tree/a6b9188dea3d13d3c6c67ea1da6a5fd87045ec7f/projects/jsp-000443).
+- [Successful cloud run 35176333614](https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35176333614).
+- [Mathematical construction](FAMILY_PROOF.md), [complete receipt](FAMILY_VERIFICATION.md), [source hashes](FAMILY_SOURCE_SHA256SUMS), and [attribution and overlap](PROVENANCE.md).
 
-The fixed proof commit passed Lean 4.34.0 compilation with warnings as errors, bundled leanchecker replay, nine target axiom audits, all nine dependency revision checks, a false-arithmetic negative control, and exact graph-row reproduction. Mathlib is pinned to 5ed2965256430c3649e86755f9576b54eca72435.
+Lean 4.34.0 with pinned Mathlib and all transitive dependencies. The build
+with warnings as errors, both kernel replays, all sixteen axiom audits,
+dependency checks, false-arithmetic negative control, and finite-witness
+reconstruction passed. Pinned NaNoda checked **21,448 declarations without
+errors**, allowing only propext, Classical.choice and Quot.sound.
 
-Pinned lean4export and NaNoda independently checked the five endpoint dependency closures: **8,737 declarations, no errors**, allowing only propext, Classical.choice and Quot.sound. The audit rejects sorryAx and compiler-trust axioms. These are contributor-run checks with an independently implemented checker, not an independent human review or organizer certification.
+The external artifact is 10479055490, 17,716,297 bytes, with service-reported
+ZIP SHA-256 56cb74e591bd0efe9d4f4340a6d511fa1ba38f60996cbe36267e7d05591b7fcd.
+Advertised expiry: 2026-12-16. The receipt distinguishes service-reported
+metadata from local hash recomputation and records finite-retention and
+cached-library limits. These are contributor-run checks, including a second
+checker implementation; independent human or organizer review is not claimed.
 
-The external Actions artifact has ID 10476958624, 5,513,816 bytes, and GitHub-reported ZIP SHA-256 cbc6e6eaf516b653264a3b0ec044a1a8c9f88311398f8babeaff463900803f1c. Its advertised expiry is 2026-12-16; **permanent independent archival remains pending**. The ZIP could not be materialized locally through the connector, so a separately recalculated local ZIP digest is not claimed. Fixed repository commits preserve source, historical local receipts, and a clearly labeled cloud-log excerpt. See VERIFICATION.md for all limits and checker pins.
+All 22 repository tests and validate/links/build/check/history passed.
+The original proof module is unchanged; initial verification receipts and
+the initial PR description are preserved with clearly identified scope.
 
-## Record or policy impact
+## Prior work and review request
 
-This PR only adds docs/submissions/jsp-000443-kz/. It changes no catalog eligibility, candidate, award, recipient confirmation, payout, or published decision. The whole-problem catalog remains Progress / Lean No / Eligible No / Unavailable.
+Earlier [PR #134](https://github.com/TheJustinSunPrize/awards/pull/134)
+formalizes Boza's Theorem 6 and Corollary 8 for the same problem. Its stated
+targets are different inequalities; this comparison and its limits are
+recorded in PROVENANCE.md. Please assess overlap and the incremental value
+of this independently written finite-field implementation.
 
-This is a self-submission, prepared with OpenAI ChatGPT assistance. The proposed contributor is the unconfirmed placeholder RECIPIENT-JSP-000443-KZ-A. Classical background and original problem references are attributed in README.md and PROVENANCE.md. No curator or designated verifier role is claimed.
-
-Please review statement fidelity, attribution, overlap, scope and whether any formalization-contribution pathway applies. No award allocation or payment entitlement is asserted.
-
-## Checks
-
-- [x] All submission text is in English; it does not announce an award.
-- [x] The proposed recipient uses an unconfirmed placeholder; no private contact/payment details or committee deliberations are included.
-- [ ] Permanent independent verification archive completed. A finite-retention external artifact and its reported ID/digest/size are documented above.
-- [x] Published statements and decisions are preserved.
-- [x] python scripts/manage.py validate and links pass.
-- [x] build has run and check passes; generated indexes are unchanged.
-- [x] history passes against f4e7173d89dfe91022a185427d63452c8ffbf6ae.
-- [x] All 22 organizer validator tests pass; no validator code was changed.
-- [x] Nine proof/reproduction files match the pinned tested proof tree byte-for-byte.
-
-## Requested reviewer decision
-
-Please assess this scoped contribution and advise whether it can enter any applicable review/eligibility process, with the pending archive and human-review gates explicitly retained. A green repository check is not mathematical approval or permission to pay.
+Proposed recipient: RECIPIENT-JSP-000443-KZ-A, confirmation pending.
+This is a self-submission for formalization-contribution review. Only the
+existing submission directory is changed; no catalog eligibility, candidate,
+award, recipient confirmation or payment record is changed. No separate
+reward request is made for individual parameters. Please assess statement
+fidelity, attribution, scope, significance and any applicable eligibility.

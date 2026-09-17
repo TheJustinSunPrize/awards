@@ -1,28 +1,26 @@
-# Review request: scoped formalization contribution
+# Supplement to existing PR #379
 
-Please assess a scoped formalization contribution for JSP-000443 / Erdős 552.
-The package proves the universal elementary upper bound, an improvement for
-positive even-square parameters, and the exact special value
-`R(C4,K1,16) = 21`. It includes a kernel-checked 20-vertex lower-bound
-certificate and formal equivalences with Mathlib graph-copy containment.
+Please assess the infinite-family extension of the scoped formalization in
+[PR #379](https://github.com/TheJustinSunPrize/awards/pull/379), without opening
+a duplicate submission.
 
-This is **partial scope**, not a solution of the original all-parameter
-question or its unbounded-deficit variant. The known mathematical results
-and projective-plane construction are not claimed as new discoveries.
-The original catalog's eligibility and claim-status flags are unchanged.
+For every positive natural r, put q = 2^r. The extension proves
+`R(C4,K1,q^2) = q^2+q+1` by a uniform finite-field construction. It retains
+the universal upper bound, positive even-square upper bound, the exact n=16
+certificate, and the equivalences with Mathlib's ordinary graph copies.
+The proof covers every positive exponent, not a finite enumeration.
 
-The Lean implementation was written with OpenAI ChatGPT assistance.
-Proposed contributor placeholder: `RECIPIENT-JSP-000443-KZ-A`, confirmation
-pending. Please assess statement fidelity, attribution, overlap and any
-applicable formalization-contribution eligibility. No award or payment
-entitlement is asserted.
+This remains partial scope relative to the original all-parameter problem and
+its unbounded-deficit variant. The classical polarity construction and Ramsey
+consequence are not claimed as new mathematical discoveries. No global
+first-formalization priority is asserted. Attribution is in README.md and
+FAMILY_PROOF.md. The implementation was prepared with OpenAI ChatGPT assistance.
 
-Public CI completed successfully on proof commit
-`0a78950267f4b292414624f8cd8e15c074c14850`: source compilation, same-kernel
-module replay, nine axiom audits, dependency pin checks, a deliberately
-false arithmetic negative control and graph reproduction all passed.
-Pinned NaNoda independently checked 8,737 declarations with no errors.
-See `VERIFICATION.md` for the run, checker pins, artifact identity and
-limitations. These are contributor-run checks, not organizer certification.
-Permanent external archival, human mathematical review and any eligibility
-decision remain pending.
+Proposed contributor: `RECIPIENT-JSP-000443-KZ-A`, confirmation pending.
+This is a self-submission for review of the additional formalization work.
+Please assess statement fidelity, overlap, significance and any applicable
+eligibility. No catalog, candidate, award or payment record is changed.
+
+The initial proof and its successful public verification remain separately
+identified. See FAMILY_VERIFICATION.md for the extension's observed checks;
+reproduction scripts alone are not evidence of completed verification.
