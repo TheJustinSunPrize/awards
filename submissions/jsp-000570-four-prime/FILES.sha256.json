@@ -180,6 +180,11 @@
     "bytes": 888
   },
   {
+    "path": "verification/archive.md",
+    "sha256": "bbcb2b777cdbd874122f0bf3e4a29ee27a1b93fc690b746ff68d5d9d602a08a1",
+    "bytes": 1174
+  },
+  {
     "path": "verification/build-record.json",
     "sha256": "34b60db73c094c91d73f5af0eb0121a22830921421a366ae2ced9e8a71e7f548",
     "bytes": 7400
