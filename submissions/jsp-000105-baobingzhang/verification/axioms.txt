@@ -1,0 +1,6 @@
+'DistinctDistances.sqrt_isBigO_minimalDistinctDistances' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DistinctDistances.le_two_mul_minimalDistinctDistances_sq_add' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DistinctDistances.card_le_two_mul_sq_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DistinctDistances.sqrt_div_two_le_minimalDistinctDistances' depends on axioms: [propext, Classical.choice, Quot.sound]
