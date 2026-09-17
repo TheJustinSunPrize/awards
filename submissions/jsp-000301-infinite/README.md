@@ -37,7 +37,7 @@ Prepared with OpenAI Codex assistance. Any formalization-recipient identity rema
 Lean is pinned to `v4.34.0`; Mathlib is pinned to commit `5ed2965256430c3649e86755f9576b54eca72435`, with transitive dependencies locked in [lake-manifest.json](lake-manifest.json). From this directory, with Lean's version manager installed:
 
 ```sh
-lake exe cache get Mathlib/Data/Nat/Factorization/Defs.lean Mathlib/Tactic/Linarith.lean Mathlib/Tactic/NormNum/Prime.lean
+lake exe cache get Mathlib.Data.Nat.Factorization.Defs Mathlib.Tactic.Linarith Mathlib.Tactic.NormNum.Prime
 lake build
 lake env leanchecker --verbose Main
 ```
