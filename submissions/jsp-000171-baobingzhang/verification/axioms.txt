@@ -1,0 +1,8 @@
+'Erdos176.discrepancyAPNumber_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos176.discrepancyAPNumber_one_padicValNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos176.discrepancyAPNumber_two_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos176.discrepancyAPNumber_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos176.forcesDiscrepancy_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos176.isLeast_forcesDiscrepancy_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos176.exists_balanced_colouring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos176.forcesDiscrepancy_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
