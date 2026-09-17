@@ -1,0 +1,107 @@
+[
+  {
+    "path": ".gitattributes",
+    "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+    "bytes": 19
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "10b8fc158cd712c137f85e2c6464e2ee3586cce7ac9da29562839af3e33cea66",
+    "bytes": 17
+  },
+  {
+    "path": "Audit.lean",
+    "sha256": "9611ae35529e2c557f25fc00c41d6d5ab09648b6095684500951e3f8276bc65b",
+    "bytes": 787
+  },
+  {
+    "path": "FCC.lean",
+    "sha256": "1442d53ff73a5ed93b1915045599e01c37917933d167b095a2111423ab776b03",
+    "bytes": 18
+  },
+  {
+    "path": "FCC/Basic.lean",
+    "sha256": "28a7fcd815292a31d5151e9d4e82d0005a62f3c0f4899febfb259e60a791d880",
+    "bytes": 1768
+  },
+  {
+    "path": "FCC/Bounds.lean",
+    "sha256": "f51f4283a25e505b2eea8e5a0097c05030d11f99bbcb4e5cc4df608dee6e2b12",
+    "bytes": 1414
+  },
+  {
+    "path": "FCC/ContactGraph.lean",
+    "sha256": "811ddcd9d77e3e4cffa9213b7a88558cd384372a4eafbab0c68561c031521910",
+    "bytes": 5177
+  },
+  {
+    "path": "FCC/CountCore.lean",
+    "sha256": "8d3ee2d26ab8667f1856cc0934829044008bdd6cc4c0f1a9e323af7b1e4a343a",
+    "bytes": 4791
+  },
+  {
+    "path": "FCC/Counting.lean",
+    "sha256": "9db137622db71e3debd81b5bc68b7b6b3bc952632209a21f4dbb6e0a0f303ec4",
+    "bytes": 5522
+  },
+  {
+    "path": "FCC/Geometry.lean",
+    "sha256": "b64a5c734b3ca43446eedcab33d52cf1f2205360248d24e94890ace9ce91ebde",
+    "bytes": 3898
+  },
+  {
+    "path": "FCC/Padding.lean",
+    "sha256": "413e3e2ae2fbe7c13f5c1cf92b2b2c7735f74317510939a4c77a157b09076d97",
+    "bytes": 5099
+  },
+  {
+    "path": "FCC/Scale.lean",
+    "sha256": "7ad1e1737843afe87ea02a77a1a4535e2314bcb60f74ea2b24e17751803f8b9a",
+    "bytes": 1993
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "bytes": 11357
+  },
+  {
+    "path": "PROOF.md",
+    "sha256": "69894d8e54cfd10b08040f4f95666e99093fa56299926450098fbbd66979ea5a",
+    "bytes": 7075
+  },
+  {
+    "path": "README.md",
+    "sha256": "c206f7832d8d25c1318af79f9c1017420d394f33983b5f22c31cf9fca9a42ba3",
+    "bytes": 6769
+  },
+  {
+    "path": "SOURCE_COMPARISON.md",
+    "sha256": "3ef67c0c6186448266b6ff009333f4cbf69029e07d52cffe8e28e2ff4560fe3c",
+    "bytes": 7405
+  },
+  {
+    "path": "lake-manifest.json",
+    "sha256": "11d6c76fe37bde7e1eca1d67f8f274a3275ae567c9ecbf9da9cbfdcdf87093e7",
+    "bytes": 3129
+  },
+  {
+    "path": "lakefile.toml",
+    "sha256": "194ff626d671bfe0aeae35689b18b4e50727e46bf7d87090133942291e5d236d",
+    "bytes": 198
+  },
+  {
+    "path": "lean-toolchain",
+    "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "bytes": 25
+  },
+  {
+    "path": "statement-review.md",
+    "sha256": "d4fa8aad6e13a3db112b306f8743a671fac8685bd85a96b22ed2de0cb2424554",
+    "bytes": 8070
+  },
+  {
+    "path": "verify.ps1",
+    "sha256": "4c9b9cb5aea4bcc379f71cbb619a2be5a0cbbe3dd6c34cec37253e49498ed8a5",
+    "bytes": 5001
+  }
+]
