@@ -1,0 +1,4 @@
+'Erdos821.erdos_821.variants.pillai' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos821.finite_setOf_totient_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos821.two_pow_card_le_g' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos821.frequently_le_g' depends on axioms: [propext, Classical.choice, Quot.sound]
