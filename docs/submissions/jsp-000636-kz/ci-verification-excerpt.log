@@ -1,0 +1,28 @@
+Source: GitHub Actions job 105046956109, run 35172497300
+Commit: 61368d8d5c75eb4854ba9c057933c20446f5d4cc
+Selected result lines; this is not the full job log or NaNoda export.
+
+2026-09-17T01:58:48.7616615Z Build completed successfully (3093 jobs).
+2026-09-17T01:58:54.7121217Z 'JSP000636.antichain_iff_isAntichain' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:58:54.7122047Z 'JSP000636.twins_of_multiplicity' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:58:54.7122933Z 'JSP000636.card_pos_of_twins' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:58:54.7123694Z 'JSP000636.antichain_complements' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:58:54.7124387Z 'JSP000636.twins_complements' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:58:54.7125353Z 'JSP000636.card_sizes_complements' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:58:54.7126073Z 'JSP000636.card_le_of_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:58:54.7126815Z 'JSP000636.size_count_le_of_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:58:54.7127522Z 'JSP000636.size_count_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:58:54.7128214Z 'JSP000636.card_eq_mul_size_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:58:54.7128925Z 'JSP000636.exact_multiplicity_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:58:54.7129622Z 'JSP000636.sharp_at_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:58:54.7130545Z 'JSP000636.three_is_exception' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:58:54.7131231Z 'JSP000636.one_is_exception' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:58:54.8780960Z All 14 theorem axiom audits and dependency pins passed.
+2026-09-17T01:58:56.8434735Z False arithmetic rejected as required.
+2026-09-17T01:58:57.4978456Z https://github.com/leanprover/lean4export.git 6cea97789dc088ea47fcea15692db85685aedac5
+2026-09-17T01:58:58.0138906Z https://github.com/ammkrn/nanoda_lib.git 4c544ed4099c8227f07d5de77ad1e69fb0740a27
+2026-09-17T01:59:31.0884869Z Checked 5565 declarations with no errors
+2026-09-17T01:59:33.2623225Z Artifact jsp-000636-evidence.zip successfully finalized. Artifact ID 10477053133
+2026-09-17T01:59:33.2624450Z Artifact jsp-000636-evidence has been successfully uploaded! Final size is 3716420 bytes. Artifact ID is 10477053133
+2026-09-17T01:59:33.2629529Z Artifact download URL: https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35172497300/artifacts/10477053133
+
