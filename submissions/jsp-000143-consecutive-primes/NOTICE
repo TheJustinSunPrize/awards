@@ -1,0 +1,21 @@
+Erdős 141 known finite-length formalization
+
+Copyright 2025 The Formal Conjectures Authors.
+Copyright 2026 James-16.
+Released under the Apache License, Version 2.0; see LICENSE.
+
+Definitions in Erdos141FirstCases/Statements.lean are copied from:
+https://github.com/google-deepmind/formal-conjectures/blob/40e7c98697de6f66b8cbdbf641749ab39ed9c152/FormalConjectures/ErdosProblems/141.lean
+https://github.com/google-deepmind/formal-conjectures/blob/40e7c98697de6f66b8cbdbf641749ab39ed9c152/FormalConjecturesForMathlib/Combinatorics/AP/Basic.lean
+
+The mathematical construction belongs to the published literature, specifically
+Dubner, Forbes, Lygeros, Mizony, Nelson, and Zimmermann (2002), who credit
+Manfred Toplic with the 1998 discovery of the ten-prime progression.
+
+The proof implementation was developed with substantial OpenAI Codex assistance.
+It uses existing Mathlib theorems and proof-producing tactics with their original
+attribution retained in the pinned dependency. FactorDB provided untrusted
+numerical factorization hints; no external assertion of primality is an axiom.
+
+The paper is cited, not redistributed. There is no claim of new mathematical
+discovery or globally first formalization.

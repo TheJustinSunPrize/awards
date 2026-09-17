@@ -1,0 +1,9 @@
+ℹ [1953/1953] Built Erdos141FirstCases.Audit (7.1s)
+info: Erdos141FirstCases/Audit.lean:35:0: 'Erdos141FirstCases.pratt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos141FirstCases/Audit.lean:36:0: 'Erdos141FirstCases.prime_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos141FirstCases/Audit.lean:37:0: 'Erdos141FirstCases.composite_between' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos141FirstCases/Audit.lean:38:0: 'Erdos141FirstCases.progression_from_certificates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos141FirstCases/Audit.lean:39:0: 'Erdos141.erdos_141.variants.first_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos141FirstCases/Audit.lean:40:0: 'Erdos141FirstCases.Audit.exact_statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos141FirstCases/Audit.lean:41:0: 'Erdos141FirstCases.Audit.exact_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1953 jobs).

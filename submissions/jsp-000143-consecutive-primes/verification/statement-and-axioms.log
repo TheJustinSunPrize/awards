@@ -1,0 +1,7 @@
+'Erdos141FirstCases.pratt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos141FirstCases.prime_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos141FirstCases.composite_between' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos141FirstCases.progression_from_certificates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos141.erdos_141.variants.first_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos141FirstCases.Audit.exact_statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos141FirstCases.Audit.exact_interval' depends on axioms: [propext, Classical.choice, Quot.sound]

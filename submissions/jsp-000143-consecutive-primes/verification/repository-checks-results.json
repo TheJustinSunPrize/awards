@@ -1,0 +1,26 @@
+[
+  {
+    "command": "python scripts/manage.py validate",
+    "exit_code": 0
+  },
+  {
+    "command": "python scripts/manage.py links",
+    "exit_code": 0
+  },
+  {
+    "command": "python scripts/manage.py build",
+    "exit_code": 0
+  },
+  {
+    "command": "python scripts/manage.py check",
+    "exit_code": 0
+  },
+  {
+    "command": "python -m unittest discover -s tests -v",
+    "exit_code": 0
+  },
+  {
+    "command": "python scripts/manage.py history --base f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+    "exit_code": 0
+  }
+]

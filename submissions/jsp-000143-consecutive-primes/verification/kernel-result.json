@@ -1,0 +1,5 @@
+{
+  "command": "lake env leanchecker --fresh -v Erdos141FirstCases.Audit",
+  "exit_code": 0,
+  "elapsed_seconds": 209.51163005828857
+}

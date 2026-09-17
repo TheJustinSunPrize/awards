@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-09-17T09:30:00.514898+00:00",
+  "lean_files": 10,
+  "forbidden_proof_constructs_found": [],
+  "audited_declarations": 7,
+  "allowed_transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}
