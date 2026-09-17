@@ -1,0 +1,1 @@
+'Erdos12.erdos_12.variants.erdos_sarkozy' depends on axioms: [propext, Classical.choice, Quot.sound]
