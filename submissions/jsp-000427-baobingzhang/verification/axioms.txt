@@ -1,0 +1,7 @@
+'Erdos531.two_pow_le_F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos531.two_pow_lt_F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos531.not_folkmanProperty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos531.folkman' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos531.folkmanProperty_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos531.F_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos531.not_two_pow_le_F_one' depends on axioms: [propext, Classical.choice, Quot.sound]
