@@ -63,6 +63,10 @@ mp <= m^2(m+1). The empty case m=0 is handled explicitly.
 
 ## Scope, attribution and overlap
 
+See [CONTRIBUTION_REVIEW.md](CONTRIBUTION_REVIEW.md) for a statement-by-statement
+comparison with the inspected prior lower-bound files and full entry file,
+the specific finite-threshold differences, and the remaining eligibility gaps.
+
 The construction is credited to Erdős in Example 1.2 of Nguyen and Vu's *Squares in sumsets*. That paper
 provides the context and the substantially deeper upper bound:
 https://arxiv.org/abs/0811.1311 (published in 2010).

@@ -1,5 +1,18 @@
 # Revision history
 
+## Contribution comparison — 2026-09-17
+
+- Add a source-pinned comparison with prior lower-bound declarations and the
+  external entry file's declared complete result.
+- Distinguish exact finite-criterion increments from the shared classical
+  construction and the missing general upper bound.
+- Preserve the supplementary implementation and distinguish its checking from
+  the primary proof and from independent human review.
+- Record unresolved eligibility, review, confirmation, and archiving questions.
+
+This is a documentation update. Proof source, theorem claims, and the tested
+proof commit remain unchanged.
+
 ## Revision 2 — all positive steps
 
 - Retain every theorem from revision 1.
