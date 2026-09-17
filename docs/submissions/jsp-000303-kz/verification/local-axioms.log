@@ -1,0 +1,31 @@
+'JSP000303.alpha_congruence' depends on axioms: [propext, Quot.sound]
+'JSP000303.prime_power_divides' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000303.quantitative_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000303.log_witness_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000303.logarithmic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000303.erdos_367_k_three_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000303.logarithmic_lower_all_k' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000303.ratio_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000303.not_quadratic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos367.erdos_367.variants.k_ge_three_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos367.erdos_367.parts.ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem Erdos367.erdos_367.variants.k_ge_three_lower : ∃ c > 0,
+  ∃ᶠ (n : ℕ) in Filter.atTop, c * (↑n ^ 2 * Real.log ↑n) ≤ ↑(∏ m ∈ Finset.Ico n (n + 3), Erdos367.B 2 m) :=
+JSP000303.erdos_367_k_three_lower
+theorem Erdos367.erdos_367.parts.ii : False ↔
+  ∀ (k : ℕ), 1 ≤ k → (fun n => ↑(∏ m ∈ Finset.Ico n (n + k), Erdos367.B 2 m)) =O[Filter.atTop] fun n => ↑n ^ 2 :=
+{ mp := False.elim,
+  mpr := fun h =>
+    JSP000303.not_quadratic_bound 3
+      (Mathlib.Meta.NormNum.isNat_le_true (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 3))
+        (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 3)) (Eq.refl true))
+      (id
+        (Eq.mp
+          (congrArg
+            (Asymptotics.IsBigO Filter.atTop fun n =>
+              ↑(∏ m ∈ Finset.Ico n (n + 3),
+                  ∏ i ∈ m.factorization.support with 2 ≤ m.factorization i, i ^ m.factorization i))
+            (funext fun n => Real.rpow_two ↑n))
+          (h 3
+            (Mathlib.Meta.NormNum.isNat_le_true (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 1))
+              (Mathlib.Meta.NormNum.isNat_ofNat ℕ (Eq.refl 3)) (Eq.refl true))))) }

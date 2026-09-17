@@ -1,0 +1,105 @@
+{
+  "proof_commit": "8828e97f231afdd50556350b87660c16f5068a03",
+  "files": [
+    {
+      "path": "Audit.lean",
+      "bytes": 592,
+      "sha256": "301fdd96f2f385904e2e2c5e5fbfab553d4f9248a252cde9ea175d0d3207a533"
+    },
+    {
+      "path": "JSP000303.lean",
+      "bytes": 11715,
+      "sha256": "1586935125e005758dbde40eaa742f4600dd388b6f76429feadcf0de5fcdeae4"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 3075,
+      "sha256": "e57995eab0c89d04a79053d271f70f9220babeff5b57f409ad8842d2bcb648f3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3751,
+      "sha256": "b49f5e1b9f7d8f17df1a0a77e4a4c8a79e03fedafcbbf04274e3219c34f3068f"
+    },
+    {
+      "path": "SUBMISSION.md",
+      "bytes": 1661,
+      "sha256": "e258bbd7723f55c1cc0fd459e103997950c23ff43100479040477cec94b2da31"
+    },
+    {
+      "path": "Statement.lean",
+      "bytes": 1694,
+      "sha256": "88264930054714923300e4987903439bc656c0342b63217f7c2c786541861866"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "bytes": 3643,
+      "sha256": "32794ab13569eb3d3954352ff9577c172857b6fdba01e7e251715e09f8b3bb82"
+    },
+    {
+      "path": "lake-manifest.json",
+      "bytes": 3506,
+      "sha256": "715f92e7d4e9233a6c4c8ed91bc6cbff6de8dd212a9e6f5b08fce21700861656"
+    },
+    {
+      "path": "lakefile.lean",
+      "bytes": 243,
+      "sha256": "97e4580807446470da8ad42b4c241e8e42e94d34a96aeb927d0639370ab97894"
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632"
+    },
+    {
+      "path": "scripts/audit.py",
+      "bytes": 995,
+      "sha256": "34f44a3b6370941b69d2bcd5057e05df85754dd49ecade3e40f8ce09d4698791"
+    },
+    {
+      "path": "scripts/verify.sh",
+      "bytes": 809,
+      "sha256": "7242abbe76dedfecfc13030f190dae241e88113eeadc1b927487573cea3e5b7f"
+    },
+    {
+      "path": "scripts/verify_nanoda.sh",
+      "bytes": 2345,
+      "sha256": "a9a450448600da3ef340854b187181adbf784f823458eb5b6b3a2c4506138ac6"
+    },
+    {
+      "path": "verification/artifact-metadata.json",
+      "bytes": 868,
+      "sha256": "579fe3a23d8abcb3164663a295a7660bacc3623fb5696af61bf1de7853a2115f"
+    },
+    {
+      "path": "verification/ci-summary.log",
+      "bytes": 2514,
+      "sha256": "709e73f60d67cde5e12d48107a2fc94b8e9ff7d8b833f6c7ae668e1a7a40160b"
+    },
+    {
+      "path": "verification/local-axioms.log",
+      "bytes": 2138,
+      "sha256": "ab1cb74c1e331feef5c08e5a65c4e0dd14d7b7a24454c8489741e9463138a87b"
+    },
+    {
+      "path": "verification/repository-checks.log",
+      "bytes": 2761,
+      "sha256": "51ad2fe36b54f9ac8b2e250b9c57d93f3dda44acb1f20265cf87f6ca0bcc92e9"
+    },
+    {
+      "path": "verification/source-comparison.log",
+      "bytes": 661,
+      "sha256": "86842a7cab87101affa9e2934e1397c4c33de97be0239aa2f806f733bbeb843f"
+    },
+    {
+      "path": "workflow/jsp-000303.yml",
+      "bytes": 1943,
+      "sha256": "484396af68030a88308f3d2ad653cec0cca0e665d8f02f534d07727c5d82c1f8"
+    }
+  ]
+}
