@@ -1,0 +1,5 @@
+'Erdos195.erdos_195.variants.leq_4_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos195.erdos_195.variants.leq_5_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos195.not_hasMonotoneAP_perm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos195.exists_perm_not_hasMonotoneAP_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos195.le_four_of_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
