@@ -34,11 +34,25 @@ formalization of the finite Sylvester--Gallai theorem supplies only existence
 of an ordinary line, which is strictly weaker than the catalog's quantitative
 question and cannot be used as a substitute.
 
-Therefore no `sorry`-free Lean artifact is claimed here for JSP-000194.  The
-existing observation and its scope are preserved.  Completion requires an
-independent statement-adjudication decision selecting the exact source theorem
-and a proof of that theorem; this file does not make that decision or provide
-an assumed theorem.
+An independent source check gives the same obstruction.  The Green--Tao
+source describes its result as: if `n` is sufficiently large, at least `n/2`
+ordinary lines exist, together with an extremal classification and a structure
+theorem.  It does not state a single all-`n` theorem matching the catalogue
+sentence.  The catalogue simultaneously cites the earlier Motzkin,
+Kelly--Moser, and Csima--Sawyer bounds.  These are distinct candidate
+propositions, not interchangeable proof obligations.  Public Lean search
+found the complete Sylvester--Gallai existence formalization, but no Lean
+formalization of any of those quantitative bounds or of the Green--Tao
+classification.
+
+This is a statement-and-proof dependency blocker, not a failed proof route:
+without an owner decision fixing the target theorem, any choice among
+existence, `3n/7`, `6n/13`, or the sufficiently-large-`n` Green--Tao result
+would silently change the frozen problem.  Therefore no `sorry`-free Lean
+artifact is claimed here for JSP-000194.  The existing observation and its
+scope are preserved.  Completion requires an independent statement-
+adjudication decision selecting the exact source theorem and a proof of that
+theorem; this file does not make that decision or provide an assumed theorem.
 
 ## Sources
 
