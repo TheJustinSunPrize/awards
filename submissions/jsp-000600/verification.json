@@ -1,0 +1,414 @@
+{
+  "schema_version": 1,
+  "jsp": "JSP-000600",
+  "status": "verified_fresh_custom_compilation",
+  "recipe_json_sha256": "931478e31f82d8b5db193cf428779f7c81c9f700291ee7abf4d96a665e127b8c",
+  "fresh_custom_compilation": true,
+  "private_object_reuse": false,
+  "lean_version": "Lean (version 4.33.0, x86_64-w64-windows-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "LEAN_NUM_THREADS": "1",
+  "runtime_binary_sha256": {
+    "lean.exe": "dd86e9b24990b1da425ea4af910f016e4db8f9a25c9ddad27bc6bee3690e677f",
+    "leanchecker.exe": "e1ab36b0ea3d0310e3058cda1dce1c072f78c5938303e8596fa3f24267c715ce"
+  },
+  "source_sha256": {
+    "ErdosProblems.Erdos732": "752d9a781a713dd96e55b482e584ccc4227cb2b698795f6c0cd474d18945db34",
+    "Contribution732.FinitePlane": "edf92165b70f170a4f3366f8857cc24d635d152c9f9129feedf527bdb2fa0bdb",
+    "Contribution732.Profiles": "4e5ee65f20cb5cdfc959f10334f5562b0d909766f21874712dd5aff44f3f8f72",
+    "Contribution732.Counting": "6a02f6f866aaa49de397cb80c248a594958876f5aab05f8b2d2d2c0b700ea7f4",
+    "Contribution732.PrimePowers": "0d2e0b86a8719e4ddd516848c8c913997ac4f2f44dd3babc1314fff25e99fd3d"
+  },
+  "audit_sha256": "b706021431668e1660b7083012180ab2cace094d0380531b2bed39c6222f9193",
+  "events": [
+    {
+      "stage": "compile",
+      "module": "ErdosProblems.Erdos732",
+      "start_utc": "2026-09-16T23:42:50.422979+00:00",
+      "exit_code": 0,
+      "log": "logs/00-compile-ErdosProblems.Erdos732.log",
+      "LEAN_NUM_THREADS": "1",
+      "seconds": 25.601,
+      "end_utc": "2026-09-16T23:43:16.024718+00:00",
+      "log_sha256": "be06df0ed9e961c02fdef0c4f0123126932ae4bcf5be1f0f03281dc1b02a678b",
+      "log_bytes": 80,
+      "recorded_command_with_paths_redacted": [
+        "<LEAN>",
+        "-j1",
+        "-M8192",
+        "-o",
+        "<BUILD>/ErdosProblems/Erdos732.olean",
+        "ErdosProblems/Erdos732.lean"
+      ],
+      "original_event_canonical_sha256": "20445e85a7fe1bd29bf837393e918dfbd15c0ccc77c3b5f140a06e5f33325c02"
+    },
+    {
+      "stage": "compile",
+      "module": "Contribution732.FinitePlane",
+      "start_utc": "2026-09-16T23:43:16.033176+00:00",
+      "exit_code": 0,
+      "log": "logs/01-compile-Contribution732.FinitePlane.log",
+      "LEAN_NUM_THREADS": "1",
+      "seconds": 15.043,
+      "end_utc": "2026-09-16T23:43:31.076981+00:00",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_bytes": 0,
+      "recorded_command_with_paths_redacted": [
+        "<LEAN>",
+        "-j1",
+        "-M8192",
+        "-o",
+        "<BUILD>/Contribution732/FinitePlane.olean",
+        "Contribution732/FinitePlane.lean"
+      ],
+      "original_event_canonical_sha256": "24e3cb54fb1c2919b653cc1ff14fbc7792fd3add0f716a173dfb44538cb4410e"
+    },
+    {
+      "stage": "compile",
+      "module": "Contribution732.Profiles",
+      "start_utc": "2026-09-16T23:43:31.078396+00:00",
+      "exit_code": 0,
+      "log": "logs/02-compile-Contribution732.Profiles.log",
+      "LEAN_NUM_THREADS": "1",
+      "seconds": 15.096,
+      "end_utc": "2026-09-16T23:43:46.175071+00:00",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_bytes": 0,
+      "recorded_command_with_paths_redacted": [
+        "<LEAN>",
+        "-j1",
+        "-M8192",
+        "-o",
+        "<BUILD>/Contribution732/Profiles.olean",
+        "Contribution732/Profiles.lean"
+      ],
+      "original_event_canonical_sha256": "2e760f487feaa0e93825a57df7e1841aca5ba41023b046244ed857e8340c5e0c"
+    },
+    {
+      "stage": "compile",
+      "module": "Contribution732.Counting",
+      "start_utc": "2026-09-16T23:43:46.176545+00:00",
+      "exit_code": 0,
+      "log": "logs/03-compile-Contribution732.Counting.log",
+      "LEAN_NUM_THREADS": "1",
+      "seconds": 14.735,
+      "end_utc": "2026-09-16T23:44:00.912067+00:00",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log_bytes": 0,
+      "recorded_command_with_paths_redacted": [
+        "<LEAN>",
+        "-j1",
+        "-M8192",
+        "-o",
+        "<BUILD>/Contribution732/Counting.olean",
+        "Contribution732/Counting.lean"
+      ],
+      "original_event_canonical_sha256": "72621fd40b3af48b2cb590b6358a3416ef25a111c2730573a60fb6d8c3c38975"
+    },
+    {
+      "stage": "compile",
+      "module": "Contribution732.PrimePowers",
+      "start_utc": "2026-09-16T23:44:00.913626+00:00",
+      "exit_code": 0,
+      "log": "logs/04-compile-Contribution732.PrimePowers.log",
+      "LEAN_NUM_THREADS": "1",
+      "seconds": 14.644,
+      "end_utc": "2026-09-16T23:44:15.558094+00:00",
+      "log_sha256": "50b9b504e2bd8bfb8096a6f7bc12015f76369e834ddbdcf86223c7763e7b88f3",
+      "log_bytes": 1088,
+      "recorded_command_with_paths_redacted": [
+        "<LEAN>",
+        "-j1",
+        "-M8192",
+        "-o",
+        "<BUILD>/Contribution732/PrimePowers.olean",
+        "Contribution732/PrimePowers.lean"
+      ],
+      "original_event_canonical_sha256": "de9d7bd1a1b73337c23b04d78357f6929386098d4e097fe5eb8681a8e44e133d"
+    },
+    {
+      "stage": "audit",
+      "module": "Audit732Contribution",
+      "start_utc": "2026-09-16T23:44:15.565837+00:00",
+      "exit_code": 0,
+      "log": "logs/05-audit-Audit732Contribution.log",
+      "LEAN_NUM_THREADS": "1",
+      "seconds": 14.123,
+      "end_utc": "2026-09-16T23:44:29.689364+00:00",
+      "log_sha256": "b40f69518769d4e099a0f1cf510224ec39a25ddb9e55c189fffdcd17c21d0832",
+      "log_bytes": 10214,
+      "recorded_command_with_paths_redacted": [
+        "<LEAN>",
+        "-j1",
+        "-M8192",
+        "-o",
+        "<BUILD>/Audit732Contribution.olean",
+        "Audit732Contribution.lean"
+      ],
+      "original_event_canonical_sha256": "a8241ae453d2f5bf6fc6580a690200320a73c55efe7f797c747541cf1bc657b3"
+    },
+    {
+      "stage": "leanchecker",
+      "module": "Contribution732",
+      "expected_selected_modules": [
+        "Contribution732.FinitePlane",
+        "Contribution732.Profiles",
+        "Contribution732.Counting",
+        "Contribution732.PrimePowers"
+      ],
+      "start_utc": "2026-09-16T23:44:29.704119+00:00",
+      "exit_code": 0,
+      "log": "logs/06-leanchecker-Contribution732.log",
+      "LEAN_NUM_THREADS": "1",
+      "seconds": 34.871,
+      "end_utc": "2026-09-16T23:45:04.575988+00:00",
+      "log_sha256": "45c9ef5c245283f659c55e847421a82dcf565530c4d204a940f8f4f5d47c07c2",
+      "log_bytes": 146,
+      "recorded_command_with_paths_redacted": [
+        "<LEANCHECKER>",
+        "--verbose",
+        "Contribution732"
+      ],
+      "original_event_canonical_sha256": "062300d584503e04af4d19c75cc8fd5303aaa5605c4d504f90bd7cbf6e5dd2d3"
+    },
+    {
+      "stage": "leanchecker",
+      "module": "ErdosProblems.Erdos732",
+      "expected_selected_modules": [
+        "ErdosProblems.Erdos732"
+      ],
+      "start_utc": "2026-09-16T23:45:04.582094+00:00",
+      "exit_code": 0,
+      "log": "logs/07-leanchecker-ErdosProblems.Erdos732.log",
+      "LEAN_NUM_THREADS": "1",
+      "seconds": 15.228,
+      "end_utc": "2026-09-16T23:45:19.810189+00:00",
+      "log_sha256": "e74f399021912d2e86a214c3c13c3441de6c31b30cece5040a6308efd239d275",
+      "log_bytes": 33,
+      "recorded_command_with_paths_redacted": [
+        "<LEANCHECKER>",
+        "--verbose",
+        "ErdosProblems.Erdos732"
+      ],
+      "original_event_canonical_sha256": "4aa370e6bb05175602a2143795b849c33e5ae9441149da67613d0b3368e8717b"
+    }
+  ],
+  "actual_axioms": {
+    "Contribution732.card_PG": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Contribution732.card_linePoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Contribution732.exists_compatible_of_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Contribution732.determined_by_primary_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Contribution732.completeProfile_compatible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Contribution732.profileSizes_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Contribution732.card_profileCode": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Contribution732.complete_profile_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Contribution732.card_galoisField": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Contribution732.exists_compatible_of_prime_power_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Contribution732.complete_prime_power_profile_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Contribution732.order_four_profile_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Contribution732.order_five_profile_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Erdos732.erdos_732": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "actual_checker_modules": {
+    "Contribution732": [
+      "Contribution732.Profiles",
+      "Contribution732.PrimePowers",
+      "Contribution732.FinitePlane",
+      "Contribution732.Counting"
+    ],
+    "ErdosProblems.Erdos732": [
+      "ErdosProblems.Erdos732"
+    ]
+  },
+  "actual_axiom_reports_raw": {
+    "Contribution732.card_PG": "'Contribution732.card_PG' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]",
+    "Contribution732.card_linePoints": "'Contribution732.card_linePoints' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]",
+    "Contribution732.exists_compatible_of_profile": "'Contribution732.exists_compatible_of_profile' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]",
+    "Contribution732.determined_by_primary_profile": "'Contribution732.determined_by_primary_profile' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]",
+    "Contribution732.completeProfile_compatible": "'Contribution732.completeProfile_compatible' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]",
+    "Contribution732.profileSizes_injective": "'Contribution732.profileSizes_injective' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]",
+    "Contribution732.card_profileCode": "'Contribution732.card_profileCode' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]",
+    "Contribution732.complete_profile_family": "'Contribution732.complete_profile_family' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]",
+    "Contribution732.card_galoisField": "'Contribution732.card_galoisField' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]",
+    "Contribution732.exists_compatible_of_prime_power_profile": "'Contribution732.exists_compatible_of_prime_power_profile' depends on axioms: [propext,\n Classical.choice.{u},\n Quot.sound.{u}]",
+    "Contribution732.complete_prime_power_profile_family": "'Contribution732.complete_prime_power_profile_family' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]",
+    "Contribution732.order_four_profile_family": "'Contribution732.order_four_profile_family' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]",
+    "Contribution732.order_five_profile_family": "'Contribution732.order_five_profile_family' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]",
+    "Erdos732.erdos_732": "'Erdos732.erdos_732' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]"
+  },
+  "actual_definition_headers_raw": {
+    "Erdos732.PairwiseBalancedDesign": "structure Erdos732.PairwiseBalancedDesign.{u} (P : Type u) [Fintype.{u} P] : Type (u + 1)",
+    "Erdos732.BlockCompatible": "def Erdos732.BlockCompatible : ℕ → Multiset.{0} ℕ → Prop :=",
+    "Erdos732.PairwiseBalancedDesign.blockSizes": "def Erdos732.PairwiseBalancedDesign.blockSizes.{u} : {P : Type u} →",
+    "Contribution732.completeProfile": "def Contribution732.completeProfile : ℕ → Multiset.{0} ℕ → Multiset.{0} ℕ :=",
+    "Contribution732.ProfileCode": "@[reducible] def Contribution732.ProfileCode : ℕ → Type :=",
+    "Contribution732.profileSizes": "def Contribution732.profileSizes : (q : ℕ) → Contribution732.ProfileCode q → Multiset.{0} ℕ :="
+  },
+  "build_artifacts": [
+    {
+      "file": "build/Audit732Contribution.olean",
+      "sha256": "633ae386275a29af6512dd3fcaa76892f399d545b0398219a2dbb291387dcca5",
+      "bytes": 1480
+    },
+    {
+      "file": "build/Contribution732/Counting.olean",
+      "sha256": "0686431b7dcf79f146ca97bb202bdd24280dcb03f5758f85939a63dab83bb6e5",
+      "bytes": 232944
+    },
+    {
+      "file": "build/Contribution732/FinitePlane.olean",
+      "sha256": "35c7388899b2605d076682710775eeab26e1538e1edcd1eebc3915bd7ba0e959",
+      "bytes": 198576
+    },
+    {
+      "file": "build/Contribution732/PrimePowers.olean",
+      "sha256": "070ae43e1f5875c176a3bb5c2d2314175fbd9d6da27ab46fb30ad2f8b58ff706",
+      "bytes": 209728
+    },
+    {
+      "file": "build/Contribution732/Profiles.olean",
+      "sha256": "6e949877f7d447c16e5dca65d5284e7a6ea9fdd8c099a7983eac1c2e286db5a6",
+      "bytes": 205768
+    },
+    {
+      "file": "build/ErdosProblems/Erdos732.olean",
+      "sha256": "1c7d7880f37806979def52da41fc3b4c0118fc3e71be81ce1a688f4ed51dbdee",
+      "bytes": 1283184
+    }
+  ],
+  "final_source_hashes_match": true,
+  "runtime_binary_hashes_unchanged": true,
+  "ended_utc": "2026-09-16T23:45:19.866069+00:00",
+  "observed_wrapper_exit_code": 0,
+  "logs": {
+    "logs/00-compile-ErdosProblems.Erdos732.log": {
+      "original_sha256": "be06df0ed9e961c02fdef0c4f0123126932ae4bcf5be1f0f03281dc1b02a678b",
+      "published_sha256": "be06df0ed9e961c02fdef0c4f0123126932ae4bcf5be1f0f03281dc1b02a678b",
+      "original_bytes": 80,
+      "published_bytes": 80,
+      "bytes_unchanged": true,
+      "redactions": []
+    },
+    "logs/01-compile-Contribution732.FinitePlane.log": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "published_bytes": 0,
+      "bytes_unchanged": true,
+      "redactions": []
+    },
+    "logs/02-compile-Contribution732.Profiles.log": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "published_bytes": 0,
+      "bytes_unchanged": true,
+      "redactions": []
+    },
+    "logs/03-compile-Contribution732.Counting.log": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "published_bytes": 0,
+      "bytes_unchanged": true,
+      "redactions": []
+    },
+    "logs/04-compile-Contribution732.PrimePowers.log": {
+      "original_sha256": "50b9b504e2bd8bfb8096a6f7bc12015f76369e834ddbdcf86223c7763e7b88f3",
+      "published_sha256": "50b9b504e2bd8bfb8096a6f7bc12015f76369e834ddbdcf86223c7763e7b88f3",
+      "original_bytes": 1088,
+      "published_bytes": 1088,
+      "bytes_unchanged": true,
+      "redactions": []
+    },
+    "logs/05-audit-Audit732Contribution.log": {
+      "original_sha256": "b40f69518769d4e099a0f1cf510224ec39a25ddb9e55c189fffdcd17c21d0832",
+      "published_sha256": "b40f69518769d4e099a0f1cf510224ec39a25ddb9e55c189fffdcd17c21d0832",
+      "original_bytes": 10214,
+      "published_bytes": 10214,
+      "bytes_unchanged": true,
+      "redactions": []
+    },
+    "logs/06-leanchecker-Contribution732.log": {
+      "original_sha256": "45c9ef5c245283f659c55e847421a82dcf565530c4d204a940f8f4f5d47c07c2",
+      "published_sha256": "45c9ef5c245283f659c55e847421a82dcf565530c4d204a940f8f4f5d47c07c2",
+      "original_bytes": 146,
+      "published_bytes": 146,
+      "bytes_unchanged": true,
+      "redactions": []
+    },
+    "logs/07-leanchecker-ErdosProblems.Erdos732.log": {
+      "original_sha256": "e74f399021912d2e86a214c3c13c3441de6c31b30cece5040a6308efd239d275",
+      "published_sha256": "e74f399021912d2e86a214c3c13c3441de6c31b30cece5040a6308efd239d275",
+      "original_bytes": 33,
+      "published_bytes": 33,
+      "bytes_unchanged": true,
+      "redactions": []
+    }
+  },
+  "failed_attempts": [],
+  "exporter_schema_version": 1,
+  "original_result_sha256": "fcb20d8aa348bd81a27bfa3ca79054964330f68d048d9bba31e7f513cc443ee3",
+  "original_result_bytes": 14347,
+  "original_wrapper_receipt_sha256": "756ac7b68b3b9ebed3de15181814b1a3b4d672c28037597a42ce6635a1f703a2",
+  "executed_helper_sha256": "0b4d862064551760f9922d04511b5c00321fb79d654c56c9364951b5d575e01d",
+  "original_event_hash_encoding": "UTF-8 JSON with sorted keys and compact separators",
+  "command_metadata_redactions": "Absolute executable and build-output paths only; every raw log is unchanged."
+}
