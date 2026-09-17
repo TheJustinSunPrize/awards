@@ -1,6 +1,6 @@
 name = "jsp404integration"
 version = "0.1.0"
-defaultTargets = ["SmallCasesExact"]
+defaultTargets = ["VerifiedCasesExact"]
 
 [[require]]
 name = "jsp_000404"
@@ -32,3 +32,12 @@ name = "SendovSixPointPlane"
 [[lean_lib]]
 name = "SmallCasesExact"
 
+
+[[lean_lib]]
+name = "SendovStrictPower"
+
+[[lean_lib]]
+name = "PowerCasesExact"
+
+[[lean_lib]]
+name = "VerifiedCasesExact"

@@ -29,4 +29,3 @@ theorem small_cases_exact :
 #print axioms guaranteed_two_pi_div_three
 #print axioms alpha_eq_two_pi_div_three
 end JSP404
-

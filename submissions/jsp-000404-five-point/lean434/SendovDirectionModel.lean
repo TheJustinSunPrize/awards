@@ -89,4 +89,3 @@ theorem card_bound_transfer (B : ℝ → ℕ)
 #print axioms model_of_finite_set
 #print axioms card_bound_transfer
 end SendovDirectionModel
-

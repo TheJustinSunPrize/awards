@@ -1,0 +1,8 @@
+'SendovStrictPower.no_two_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovStrictPower.arrow_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+SendovStrictPower.lean:92:6: warning: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'SendovStrictPower.card_add_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovStrictPower.exists_isolated_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovStrictPower.model_card_lt' depends on axioms: [propext, Classical.choice, Quot.sound]

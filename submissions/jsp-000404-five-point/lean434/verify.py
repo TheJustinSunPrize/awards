@@ -1,4 +1,4 @@
-"""Rebuild the finite-point proof and audit its final dependency closures."""
+"""Rebuild the partial planar formalization and audit its final dependency closures."""
 from pathlib import Path
 from datetime import datetime, timezone
 import hashlib
@@ -9,7 +9,7 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'verification'
-MODULES = ['SendovFiveDirections', 'SendovDirectionGeometry', 'SendovFivePointPlane', 'FivePointExact', 'SendovDirectionModel', 'SendovSixDirections', 'SendovSixPointPlane', 'SmallCasesExact']
+MODULES = ['SendovFiveDirections', 'SendovDirectionGeometry', 'SendovFivePointPlane', 'FivePointExact', 'SendovDirectionModel', 'SendovSixDirections', 'SendovSixPointPlane', 'SmallCasesExact', 'SendovStrictPower', 'PowerCasesExact', 'VerifiedCasesExact']
 ALLOWED = {'propext', 'Classical.choice', 'Quot.sound'}
 
 
@@ -40,7 +40,7 @@ def main():
         source = (ROOT / (module + '.lean')).read_text(encoding='utf-8')
         if re.search(r'\b(sorry|admit|axiom|native_decide|unsafe|implemented_by)\b', source):
             raise RuntimeError('Unexpected source construct: ' + module)
-        expected[module] = {('JSP404' if module in ['FivePointExact', 'SmallCasesExact'] else module) + '.' + n for n in re.findall(r'^#print axioms (\w+)', source, re.M)}
+        expected[module] = {('JSP404' if module in ['FivePointExact', 'SmallCasesExact', 'PowerCasesExact', 'VerifiedCasesExact'] else module) + '.' + n for n in re.findall(r'^#print axioms (\w+)', source, re.M)}
         if not expected[module]:
             raise RuntimeError('Missing audit declarations: ' + module)
     commands = [('version', ['env', 'lean', '--version'], None),
@@ -74,7 +74,7 @@ def main():
     record = {
         'checked_at_utc': datetime.now(timezone.utc).isoformat(),
         'problem': 'JSP-000404 / Erdos 504',
-        'scope': 'Exact alpha(5)=3*pi/5 and alpha(N)=2*pi/3 for 6<=N<=8; general classification remains unproved',
+        'scope': 'Exact small cases N=5..8 and alpha(2^n)=(1-1/n)*pi for every n>=2; general classification remains unproved',
         'complete_original_problem': False,
         'lean': '4.34.0', 'dependencies': dependencies,
         'files': {name: digest(ROOT / name) for name in sources}, 'checks': checks,

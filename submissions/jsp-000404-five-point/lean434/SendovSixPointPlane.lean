@@ -99,4 +99,3 @@ theorem finite_set_large_angle (s : Finset Point) (hs : 6 ≤ s.card) :
 #print axioms six_points_large_angle
 #print axioms finite_set_large_angle
 end SendovSixPointPlane
-

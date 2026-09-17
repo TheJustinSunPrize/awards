@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 import argparse, hashlib, json, re, shutil, subprocess
 
 ROOT = Path(__file__).resolve().parent
-TARGET = 'JSP404.small_cases_exact'
+TARGET = 'JSP404.verified_cases_exact'
 EXPORTER_REV = '076e8e57707e813375e8f9da8bf989799ace9680'
 CHECKER_REV = '4c544ed4099c8227f07d5de77ad1e69fb0740a27'
 AXIOMS = ['propext', 'Classical.choice', 'Quot.sound']
@@ -47,7 +47,7 @@ def main():
     out = ROOT / 'verification'
     export = scratch / 'final.ndjson'
     with export.open('wb') as f:
-        subprocess.run([lake, 'env', str(args.exporter.resolve()), 'SmallCasesExact',
+        subprocess.run([lake, 'env', str(args.exporter.resolve()), 'VerifiedCasesExact',
                         '--', TARGET], cwd=ROOT, stdout=f, check=True)
     with export.open(encoding='utf-8') as f:
         meta = json.loads(next(f))['meta']

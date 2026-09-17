@@ -289,4 +289,3 @@ theorem five_points_large_angle {p : Fin 5 → ℂ} (hp : Function.Injective p) 
 #print axioms five_point_cap
 #print axioms five_points_large_angle
 end SendovDirectionGeometry
-

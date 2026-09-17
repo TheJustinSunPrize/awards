@@ -1,8 +1,12 @@
-theorem JSP404.small_cases_exact :
-  And (Eq (JSP404.alpha (OfNat.ofNat 5)) (HDiv.hDiv (HMul.hMul (OfNat.ofNat 3) Real.pi) (OfNat.ofNat 5)))
-    (forall {N : Nat},
-    LE.le (OfNat.ofNat 6) N → LE.le N (OfNat.ofNat 8) → Eq (JSP404.alpha N)
-      (HDiv.hDiv (HMul.hMul (OfNat.ofNat 2) Real.pi) (OfNat.ofNat 3))) :=
+theorem JSP404.verified_cases_exact :
+  And
+    (And (Eq (JSP404.alpha (OfNat.ofNat 5)) (HDiv.hDiv (HMul.hMul (OfNat.ofNat 3) Real.pi) (OfNat.ofNat 5)))
+      (forall {N : Nat},
+      LE.le (OfNat.ofNat 6) N → LE.le N (OfNat.ofNat 8) → Eq (JSP404.alpha N)
+        (HDiv.hDiv (HMul.hMul (OfNat.ofNat 2) Real.pi) (OfNat.ofNat 3))))
+    (forall {n : Nat},
+    LE.le (OfNat.ofNat 2) n → Eq (JSP404.alpha (HPow.hPow (OfNat.ofNat 2) n))
+      (HMul.hMul (HSub.hSub (OfNat.ofNat 1) (HDiv.hDiv (OfNat.ofNat 1) (Nat.cast n))) Real.pi)) :=
   _
 
 def JSP404.alpha (a._@._internal._hyg.0 : Nat) : Real :=
@@ -58,4 +62,4 @@ axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b �
 
 axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
 
-Checked 23550 declarations with no errors
+Checked 23681 declarations with no errors

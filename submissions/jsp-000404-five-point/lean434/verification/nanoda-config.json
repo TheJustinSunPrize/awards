@@ -16,7 +16,7 @@
   "pp_to_stdout": true,
   "unknown_pp_declar_hard_error": true,
   "pp_declars": [
-    "JSP404.small_cases_exact",
+    "JSP404.verified_cases_exact",
     "JSP404.alpha",
     "JSP404.Guaranteed",
     "JSP404.HasLargeAngle",

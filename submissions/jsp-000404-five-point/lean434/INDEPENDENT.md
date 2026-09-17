@@ -1,6 +1,6 @@
 # Independent-implementation check
 
-The checked target is `JSP404.small_cases_exact`, containing the five-point equality and the exact values for six through eight points. Exporting this theorem includes the dependencies of both our lower proofs and the separately attributed upstream upper constructions.
+The checked target is `JSP404.verified_cases_exact`, containing the five-point equality, the exact values for six through eight points, and the equality `alpha(2^n)=(1-1/n)*pi` for every integer `n >= 2`. Exporting this theorem includes the dependencies of both our lower proofs and the separately attributed upstream upper constructions.
 
 Tools are built from clean pinned source trees:
 

@@ -1,4 +1,4 @@
-⚠ [2577/2659] Replayed SendovFiveDirections
+⚠ [2577/2618] Replayed SendovFiveDirections
 warning: SendovFiveDirections.lean:1:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
 
 import Mathlib.Basic.Real.Basic
@@ -9,25 +9,7 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
 info: SendovFiveDirections.lean:406:0: 'SendovFiveDirections.five_halves_le' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [2578/2659] Replayed SendovDirectionGeometry
-info: SendovDirectionGeometry.lean:285:0: 'SendovDirectionGeometry.middle_angle_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: SendovDirectionGeometry.lean:286:0: 'SendovDirectionGeometry.arg_between' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: SendovDirectionGeometry.lean:287:0: 'SendovDirectionGeometry.triangle_labels' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: SendovDirectionGeometry.lean:288:0: 'SendovDirectionGeometry.five_ordered_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: SendovDirectionGeometry.lean:289:0: 'SendovDirectionGeometry.five_point_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: SendovDirectionGeometry.lean:290:0: 'SendovDirectionGeometry.five_points_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [2579/2659] Replayed SendovFivePointPlane
-info: SendovFivePointPlane.lean:41:0: 'SendovFivePointPlane.five_points_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: SendovFivePointPlane.lean:42:0: 'SendovFivePointPlane.finite_set_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [3338/3343] Replayed FivePointExact
-info: FivePointExact.lean:18:0: 'JSP404.guaranteed_five_three_pi_div_five' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: FivePointExact.lean:19:0: 'JSP404.alpha_five_eq_three_pi_div_five' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [3339/3343] Replayed SendovDirectionModel
-info: SendovDirectionModel.lean:87:0: 'SendovDirectionModel.model_of_complex_points' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: SendovDirectionModel.lean:88:0: 'SendovDirectionModel.model_of_plane_points' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: SendovDirectionModel.lean:89:0: 'SendovDirectionModel.model_of_finite_set' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: SendovDirectionModel.lean:90:0: 'SendovDirectionModel.card_bound_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [3340/3343] Replayed SendovSixDirections
+⚠ [3336/3346] Replayed SendovSixDirections
 warning: SendovSixDirections.lean:1:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
 
 import Mathlib.Basic.Real.Basic
@@ -38,13 +20,45 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
 info: SendovSixDirections.lean:5985:0: 'SendovSixDirections.three_le' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [3341/3343] Replayed SendovSixPointPlane
+ℹ [3337/3346] Built SendovDirectionGeometry (7.0s)
+info: SendovDirectionGeometry.lean:285:0: 'SendovDirectionGeometry.middle_angle_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SendovDirectionGeometry.lean:286:0: 'SendovDirectionGeometry.arg_between' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SendovDirectionGeometry.lean:287:0: 'SendovDirectionGeometry.triangle_labels' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SendovDirectionGeometry.lean:288:0: 'SendovDirectionGeometry.five_ordered_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SendovDirectionGeometry.lean:289:0: 'SendovDirectionGeometry.five_point_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SendovDirectionGeometry.lean:290:0: 'SendovDirectionGeometry.five_points_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3338/3346] Replayed SendovFivePointPlane
+info: SendovFivePointPlane.lean:41:0: 'SendovFivePointPlane.five_points_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SendovFivePointPlane.lean:42:0: 'SendovFivePointPlane.finite_set_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3339/3346] Replayed FivePointExact
+info: FivePointExact.lean:18:0: 'JSP404.guaranteed_five_three_pi_div_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FivePointExact.lean:19:0: 'JSP404.alpha_five_eq_three_pi_div_five' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3340/3346] Built SendovDirectionModel (7.2s)
+info: SendovDirectionModel.lean:87:0: 'SendovDirectionModel.model_of_complex_points' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SendovDirectionModel.lean:88:0: 'SendovDirectionModel.model_of_plane_points' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SendovDirectionModel.lean:89:0: 'SendovDirectionModel.model_of_finite_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SendovDirectionModel.lean:90:0: 'SendovDirectionModel.card_bound_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3341/3346] Built SendovSixPointPlane (7.8s)
 info: SendovSixPointPlane.lean:97:0: 'SendovSixPointPlane.model_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: SendovSixPointPlane.lean:98:0: 'SendovSixPointPlane.six_point_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: SendovSixPointPlane.lean:99:0: 'SendovSixPointPlane.six_points_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: SendovSixPointPlane.lean:100:0: 'SendovSixPointPlane.finite_set_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [3342/3343] Replayed SmallCasesExact
+⚠ [3342/3346] Built SendovStrictPower (9.4s)
+info: SendovStrictPower.lean:56:0: 'SendovStrictPower.no_two_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SendovStrictPower.lean:57:0: 'SendovStrictPower.arrow_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: SendovStrictPower.lean:92:6: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: SendovStrictPower.lean:167:0: 'SendovStrictPower.card_add_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SendovStrictPower.lean:168:0: 'SendovStrictPower.exists_isolated_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SendovStrictPower.lean:169:0: 'SendovStrictPower.model_card_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3343/3346] Replayed PowerCasesExact
+info: PowerCasesExact.lean:41:0: 'JSP404.guaranteed_power_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PowerCasesExact.lean:42:0: 'JSP404.alpha_power_two_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3344/3346] Built SmallCasesExact (8.7s)
 info: SmallCasesExact.lean:28:0: 'JSP404.small_cases_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: SmallCasesExact.lean:29:0: 'JSP404.guaranteed_two_pi_div_three' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: SmallCasesExact.lean:30:0: 'JSP404.alpha_eq_two_pi_div_three' depends on axioms: [propext, Classical.choice, Quot.sound]
-Build completed successfully (3343 jobs).
+ℹ [3345/3346] Replayed VerifiedCasesExact
+info: VerifiedCasesExact.lean:14:0: 'JSP404.verified_cases_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3346 jobs).

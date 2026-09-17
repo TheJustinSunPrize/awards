@@ -90,4 +90,3 @@ receipt=dict(leaf_count=leaves,split_count=splits,max_depth=maxdepth,
              z3_version=z3.get_version_string(),scope='Six abstract direction labels; Lean check required.')
 (W/'SendovSixDirections.generation.json').write_text(json.dumps(receipt,indent=2),encoding='utf-8',newline='\n')
 print(receipt,flush=True)
-
