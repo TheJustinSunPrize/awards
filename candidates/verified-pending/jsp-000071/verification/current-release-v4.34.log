@@ -1,0 +1,50 @@
+﻿JSP-000071 independent verification build log (current release)
+========================================================================
+Toolchain : leanprover/lean4:v4.34.0
+lean.exe  : I:\Lean4\.elan\toolchains\leanprover--lean4---v4.34.0\bin\lean.exe
+mathlib   : v4.34.0 @ 5ed2965256430c3649e86755f9576b54eca72435 (source-built, MATHLIB_CACHE_DISABLE=1, no prebuilt artifacts)
+Project   : I:\research\justin-sun-prize\work\jsp-071\verify-current  (lakefile.lean: require mathlib @ v4.34.0)
+Runner    : aionrs automated verifier (jsp071-verifier), unprivileged, network-disabled
+Run date  : 2026-09-18 05:52:41
+Driver    : powershell -File compile071.ps1 (Run-Step per file, lean.exe -o <olean> <src>)
+LEAN_PATH entries (10):
+  I:\research\justin-sun-prize\work\jsp-071\olean
+  I:\research\justin-sun-prize\work\jsp-070\verify-current\.lake\build\lib\lean
+  I:\research\justin-sun-prize\work\jsp-070\verify-current\.lake\packages\mathlib\Mathlib
+  I:\research\justin-sun-prize\work\jsp-070\verify-current\.lake\packages\mathlib\.lake\build\lib\lean
+  I:\research\justin-sun-prize\work\jsp-070\verify-current\.lake\packages\Qq\.lake\build\lib\lean
+  I:\research\justin-sun-prize\work\jsp-070\verify-current\.lake\packages\std\.lake\build\lib\lean
+  I:\research\justin-sun-prize\work\jsp-070\verify-current\.lake\packages\batteries\.lake\build\lib\lean
+  I:\research\justin-sun-prize\work\jsp-070\verify-current\.lake\packages\proofwidgets\.lake\build\lib\lean
+  I:\research\justin-sun-prize\work\jsp-070\verify-current\.lake\packages\leanprover-community-mathlib4\.lake\build\lib\lean
+  I:\research\justin-sun-prize\work\jsp-071\verify-current\.lake\build\lib\lean
+========================================================================
+
+----- STEP: Erdos862.lean [05:45:30 -> 05:50:13] -----
+cmd: & lean.exe -o .lake\build\lib\lean\Erdos862.olean Erdos862.lean
+exit: 0
+output:
+  (clean: no warnings, no errors)
+
+----- STEP: Erdos43.lean [05:50:13 -> 05:50:54] -----
+cmd: & lean.exe -o .lake\build\lib\lean\Erdos43.olean Erdos43.lean
+exit: 0
+output:
+  Erdos43.lean:131:22: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+  'Erdos43.not_erdos_43' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'Erdos43.not_erdos_43_part_ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+----- STEP: Audit43.lean [05:50:54 -> 05:51:06] -----
+cmd: & lean.exe -o .lake\build\lib\lean\Audit43.olean Audit43.lean
+exit: 0
+output:
+  'Erdos43.not_erdos_43' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'Erdos43.not_erdos_43_part_ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+----- AXIOM AUDIT (Audit43.lean, #print axioms) -----
+'Erdos43.not_erdos_43' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos43.not_erdos_43_part_ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+(no sorryAx, no user axioms, no unsafe declarations)
+========================================================================
+RESULT: ALL DONE exit=0 (Erdos862 -> Erdos43 -> Audit43)
+
