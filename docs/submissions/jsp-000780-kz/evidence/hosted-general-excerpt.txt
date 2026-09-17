@@ -1,0 +1,24 @@
+CI run: https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35177584518
+Tested commit: b680afc09c4249542a3c2ea8c75fcefb13522b37
+Status: completed / success
+Job: 105062575324
+
+2026-09-17T03:17:08.1713425Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +b680afc09c4249542a3c2ea8c75fcefb13522b37:refs/remotes/origin/jsp-000780-all-r
+2026-09-17T03:17:08.6483036Z  * [new ref]         b680afc09c4249542a3c2ea8c75fcefb13522b37 -> origin/jsp-000780-all-r
+2026-09-17T03:17:08.6704506Z b680afc09c4249542a3c2ea8c75fcefb13522b37
+2026-09-17T03:19:26.9369989Z info: Audit.lean:2:0: 'JSP000780General.solution_for_every_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:19:26.9370517Z info: Audit.lean:3:0: 'JSP000780General.infinitely_many_solutions' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:19:26.9371059Z info: Audit.lean:4:0: 'JSP000780General.infinitely_many_totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:19:26.9371488Z info: Audit.lean:5:0: 'JSP000780General.original_all_r_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:19:26.9372036Z info: Audit.lean:6:0: 'JSP000780General.original_every_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:19:26.9460839Z Build completed successfully (3099 jobs).
+2026-09-17T03:19:43.9220632Z 'JSP000780General.solution_for_every_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:19:43.9221471Z 'JSP000780General.infinitely_many_solutions' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:19:43.9222896Z 'JSP000780General.infinitely_many_totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:19:43.9223667Z 'JSP000780General.original_all_r_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:19:43.9224087Z 'JSP000780General.original_every_parameter' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:19:44.7879974Z PASS: five target axiom audits and nine dependency revision checks.
+2026-09-17T03:19:45.3713074Z https://github.com/leanprover/lean4export.git 6cea97789dc088ea47fcea15692db85685aedac5
+2026-09-17T03:19:46.0045730Z https://github.com/ammkrn/nanoda_lib.git 4c544ed4099c8227f07d5de77ad1e69fb0740a27
+2026-09-17T03:19:50.4416367Z Build completed successfully (6 jobs).
+2026-09-17T03:20:19.9407598Z Checked 8223 declarations with no errors

@@ -43,5 +43,10 @@ and `Audit`, and five target axiom audits passed. The only target axioms
 are `propext`, `Classical.choice`, and `Quot.sound`. There are no proof holes
 or new axioms. The local cache lacks complete git metadata, so the clean CI
 run linked above is the source of any claim about fresh dependency revision
-checks or independent NaNoda validation. Its current status must be checked;
-local compilation alone does not establish CI success.
+checks or independent NaNoda validation. The clean CI completed successfully on 2026-09-17 at 03:20 UTC for
+commit `b680afc09c4249542a3c2ea8c75fcefb13522b37`. Compilation, both kernel
+replays, all five axiom audits, nine dependency revision checks, and the
+strict-allowlist NaNoda check passed. NaNoda checked 8,223 declarations with
+no errors. The [retained log excerpt](evidence/hosted-general-excerpt.txt)
+records the exact run and commit. The run artifact contains the export,
+checker configuration and logs; GitHub artifact retention is 90 days.
