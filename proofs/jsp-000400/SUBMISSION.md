@@ -47,3 +47,7 @@ The source archive is produced by `git archive` at the fixed proof commit; no de
 ## Review status
 
 This package is submitted as a Lean formalization contribution. The underlying mathematical authorship remains with the cited authors. Recipient confirmation and the prize repository's designated verification remain pending. The candidate's formal review record is left for authorized reviewers; build results and internal statement checks are supplied as evidence, without replacing that record.
+
+## Related submission
+
+[Recipient recommendation](https://github.com/TheJustinSunPrize/awards/issues/536).
