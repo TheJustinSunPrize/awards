@@ -1,9 +1,9 @@
-"""Retrieve pinned external sources and reproduce the verified local adaptations.
+"""Optionally retrieve pinned upstream sources and reproduce the local adaptations.
 
-The five upstream Lean modules are deliberately not redistributed in this PR.
-Their licensing scope is awaiting clarification; this script grants no rights
-to those sources. Downloads occur only when this script is explicitly invoked.
-Use --source-dir for already obtained upstream files without network access.
+The five Lean modules are included under the scoped MIT permission preserved
+in LICENSE-UPSTREAM-LEAN.md. This provenance/reconstruction tool is not required
+for ordinary proof verification. Downloads occur only when explicitly invoked.
+Use --source-dir for already obtained upstream files and notices without network.
 """
 from __future__ import annotations
 import argparse
@@ -69,7 +69,9 @@ def main():
     for path, data in outputs:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(data)
-    print("Verified all eight upstream source/notice hashes and five assembled Lean-module hashes.")
+    source_count = len(manifest["files"])
+    module_count = sum("assembled_sha256" in item for item in manifest["files"])
+    print(f"Verified {source_count} upstream source/notice hashes and {module_count} assembled Lean-module hashes.")
 
 
 if __name__ == "__main__":

@@ -1,8 +1,8 @@
 {
   "repository": "https://github.com/jinkaizhang236-sketch/awards",
   "commit": "4022d2df0f941a12f497d5045b75995e0cf8f883",
-  "attribution": "jinkaizhang236-sketch and the contributors to JSP PR #190",
-  "license_status": "Scope clarification requested; no license to external sources is granted by this package.",
+  "attribution": "Certificate-checking implementation from jinkaizhang236-sketch, TheJustinSunPrize/awards PR #190, commit 4022d2df0f941a12f497d5045b75995e0cf8f883, prepared with OpenAI Codex assistance; adapted for the present instance.",
+  "license_status": "MIT permission confirmed for the five included Lean modules at the pinned source revision; original scoped notice preserved as LICENSE-UPSTREAM-LEAN.md.",
   "inquiry": "https://github.com/TheJustinSunPrize/awards/pull/190#issuecomment-5704109522",
   "files": [
     {
@@ -49,6 +49,14 @@
       "name": "THIRD_PARTY_NOTICES.md",
       "url": "https://raw.githubusercontent.com/jinkaizhang236-sketch/awards/4022d2df0f941a12f497d5045b75995e0cf8f883/submissions/jsp-000099-graph29/THIRD_PARTY_NOTICES.md",
       "source_sha256": "e8ef62ea0ac7bcdea418070d6cd49bfb013828e3787f65f6d693ead29642a1c5"
+    },
+    {
+      "name": "LICENSE-LEAN.md",
+      "url": "https://raw.githubusercontent.com/jinkaizhang236-sketch/awards/f765145ecba8bf68f9633af9c6d952256091b232/submissions/jsp-000099-graph29/LICENSE-LEAN.md",
+      "source_sha256": "01aa9f9d21e150382684bf34d0423bc75f19c6efbb1b406f894b6bc39e237104",
+      "included_as": "LICENSE-UPSTREAM-LEAN.md"
     }
-  ]
+  ],
+  "permission_confirmation": "https://github.com/TheJustinSunPrize/awards/pull/190#issuecomment-5704339077",
+  "license_commit": "f765145ecba8bf68f9633af9c6d952256091b232"
 }

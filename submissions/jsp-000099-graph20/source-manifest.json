@@ -1,16 +1,26 @@
 {
-  "prepared_at_utc": "2026-09-16T20:41:26.163930+00:00",
-  "scope": "Tracked submission files except this manifest; external source dependencies are separately pinned in upstream-sources.json.",
+  "prepared_at_utc": "2026-09-17T00:58:20.869599+00:00",
+  "scope": "Tracked submission files except this manifest. All local Lean sources are included; upstream provenance and scoped MIT permission are pinned in upstream-sources.json. Toolchain dependencies are not included.",
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 142,
-      "sha256": "99dfa21d31e15dd35505e962b871af80a856d54956dc88ee6db3e384edb5256d"
+      "bytes": 31,
+      "sha256": "aa9c0be5ab4c93f01779bc5c004b9fa61b63af909c9195420bc4a1f7fa986573"
     },
     {
       "path": "Audit.lean",
       "bytes": 199,
       "sha256": "ee4485f545804093e95ffdc28ea19df26566fc6e767e40bf72b23411eccba816"
+    },
+    {
+      "path": "CertificateSteps.lean",
+      "bytes": 1876,
+      "sha256": "6d41e340b880306c721740c30803e760bf196cd785454cbc46e7e5057291696f"
+    },
+    {
+      "path": "CheckpointCertificate.lean",
+      "bytes": 3309,
+      "sha256": "a424e42b985bb99328453fcae7250da92f3d3fcf15ffca19cf9030c1e7ab7bd6"
     },
     {
       "path": "Degree0.lean",
@@ -123,9 +133,24 @@
       "sha256": "3f0aa67bd7049d8abbfb6f06f6020755f7e73eb33e5c0d8b357a6b72e0931de7"
     },
     {
+      "path": "GraphBridge.lean",
+      "bytes": 1853,
+      "sha256": "2009f3937c617c10d245add65dfde65230e4ed18288554de25373937a91e2a39"
+    },
+    {
       "path": "LICENSE",
-      "bytes": 1358,
-      "sha256": "ad1578699e27503b36dbb9ec67aba98ddf73ece4d422d6b0586a93d5a51b73b6"
+      "bytes": 1425,
+      "sha256": "8af70cd7efcda2f4bd0f95341ba3709bf091616f0e4bd83012cffbe7520508f9"
+    },
+    {
+      "path": "LICENSE-UPSTREAM-LEAN.md",
+      "bytes": 2578,
+      "sha256": "01aa9f9d21e150382684bf34d0423bc75f19c6efbb1b406f894b6bc39e237104"
+    },
+    {
+      "path": "MaskCertificate.lean",
+      "bytes": 4891,
+      "sha256": "fdc219bda08d6acd4d36014568ed6119df0ec62cb636495239850f928bcd6314"
     },
     {
       "path": "NegativeControls.lean",
@@ -134,8 +159,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5415,
-      "sha256": "519f03be2dea7ab66c1eb614a1144e3c4ddccff300aeeed5ae28e58f5de4bbbb"
+      "bytes": 5893,
+      "sha256": "cc4ef79433e2a77f55164c313de104929a53bf6c556063bd686d79dada3147c5"
+    },
+    {
+      "path": "RegularCertificate.lean",
+      "bytes": 4756,
+      "sha256": "49603135797aee37c2a4847f3c7f2d0a70ec80b4e538d580226e92ab9819fa38"
     },
     {
       "path": "STATEMENT.md",
@@ -144,8 +174,8 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 2520,
-      "sha256": "2b86e4782835619f10f991e48d29fd7d078550cbaa7e610d95730dc50a0879b4"
+      "bytes": 2643,
+      "sha256": "fc84f217ae82048bd27841ae2c96660850ac06b0d043b3e5ad8dff9c9032ce00"
     },
     {
       "path": "certificate-generation.json",
@@ -164,8 +194,8 @@
     },
     {
       "path": "fetch_upstream.py",
-      "bytes": 3364,
-      "sha256": "fb3c1598f636e76ae584e7c5cc1e5c30f4c205bff5fe418fa368cd90fff687d4"
+      "bytes": 3512,
+      "sha256": "4d53d0506aaf5a42958146a1593686d7e1d9b9d2244bd0ccdb16f3ea6b99bba2"
     },
     {
       "path": "generate_certificates.py",
@@ -194,8 +224,8 @@
     },
     {
       "path": "upstream-sources.json",
-      "bytes": 3319,
-      "sha256": "0876318cb8554fde875e15803e5ab489ff1f996973eaee0021e4edd1688a8d05"
+      "bytes": 4069,
+      "sha256": "17a7e4225124003936e2be738c880ba9b65ca4cd562900cdbd7ad55f574e8908"
     },
     {
       "path": "verification-python.json",
@@ -226,6 +256,11 @@
       "path": "verification/lean-version.log",
       "bytes": 106,
       "sha256": "ef292bc08ba85881f3b660d4f1ab1143de776aae5d1c392cff9d8c3221407c2b"
+    },
+    {
+      "path": "verification/license-integration.json",
+      "bytes": 9244,
+      "sha256": "d45b57453dc87b25e64e9d2675d625f7dd1af12f729f8ece07411f705fe2e3b8"
     },
     {
       "path": "verification/negative-controls.log",

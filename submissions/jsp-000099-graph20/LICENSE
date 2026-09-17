@@ -21,6 +21,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 Scope: original additions in submissions/jsp-000099-graph20, to the extent
-the contributors hold rights in them. This license does not cover external
-upstream source dependencies or claim rights in the original graph data or
-mathematical discoveries. See THIRD_PARTY_NOTICES.md.
+the contributors hold rights in them. The five included upstream Lean modules
+are covered by LICENSE-UPSTREAM-LEAN.md. This license does not claim rights
+in the original graph data or mathematical discoveries, or relicense other
+dependencies. See THIRD_PARTY_NOTICES.md.
