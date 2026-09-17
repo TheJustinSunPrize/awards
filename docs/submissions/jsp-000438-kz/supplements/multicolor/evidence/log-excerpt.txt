@@ -1,0 +1,15 @@
+2026-09-17T03:13:25.6353727Z Build completed successfully (3133 jobs).
+2026-09-17T03:13:37.0963980Z 'Erdos548.tree_free_edge_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:13:37.0964762Z 'JSP000438.trees_monochromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:13:37.0965442Z 'JSP000438.tree_monochromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:13:37.0966111Z 'JSP000438.graphRamsey_trees' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:13:37.0966681Z 'Erdos547.erdos_547' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:13:37.0967228Z 'JSP000438.sum_edges_of_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:13:37.0967863Z 'JSP000438.multicolor_trees_monochromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:13:37.0968527Z 'JSP000438.multicolor_tree_embedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:13:37.0969186Z 'JSP000438.multicolorGraphRamsey_trees' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:13:37.2888522Z All nine axiom audits and all actual dependency revisions passed.
+2026-09-17T03:13:47.3662637Z Build completed successfully (6 jobs).
+2026-09-17T03:14:15.3637323Z Checked 10992 declarations with no errors
+2026-09-17T03:14:17.9257339Z Artifact jsp-000438-evidence.zip successfully finalized. Artifact ID 10478806837
+2026-09-17T03:14:17.9259179Z Artifact jsp-000438-evidence has been successfully uploaded! Final size is 8205770 bytes. Artifact ID is 10478806837
