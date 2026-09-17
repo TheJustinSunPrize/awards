@@ -1,0 +1,3 @@
+'JSP791.orientation_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP791.affine_below_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP791.affine_contradiction' depends on axioms: [propext, Classical.choice, Quot.sound]
