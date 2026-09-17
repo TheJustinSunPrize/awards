@@ -1,0 +1,31 @@
+--- a/JSP000883/Asymptotics.lean
++++ b/JSP000883/Asymptotics.lean
+@@ -38,8 +38,8 @@
+     have hb : (leastN k : ℝ) ≤ 3 * (lcmInitial k : ℝ) := by
+       exact_mod_cast (hK k hk).2
+     simpa only [Real.norm_eq_abs,
+-      abs_of_nonneg (Nat.cast_nonneg (leastN k)),
+-      abs_of_nonneg (Nat.cast_nonneg (lcmInitial k))] using hb
++      abs_of_nonneg ((Nat.cast_nonneg (leastN k) : (0 : ℝ) ≤ (leastN k : ℝ))),
++      abs_of_nonneg ((Nat.cast_nonneg (lcmInitial k) : (0 : ℝ) ≤ (lcmInitial k : ℝ)))] using hb
+   exact hO.isBigO
+
+ /-- All hypotheses are discharged: the selected upper bound is `L_k`. -/
+--- a/JSP000883/FiniteConstruction.lean
++++ b/JSP000883/FiniteConstruction.lean
+@@ -24,6 +24,7 @@
+       p ∣ term false (center k p) a ∧ p ∣ term false (center k p) b := by
+   let m := center k p
+   let r := m % p
++  change r ≤ k - p - 1 at hc
+   have hr0 : 0 < r := h.mod_pos
+   have hrp : r < p := Nat.mod_lt m h.prime.pos
+   have hp0 := h.prime.pos
+@@ -50,6 +51,7 @@
+       p ∣ term true (center k p) a ∧ p ∣ term true (center k p) b := by
+   let m := center k p
+   let r := m % p
++  change ¬ r ≤ k - p - 1 at hc
+   have hr0 : 0 < r := h.mod_pos
+   have hrp : r < p := Nat.mod_lt m h.prime.pos
+   have hrm : r ≤ m := Nat.mod_le m p

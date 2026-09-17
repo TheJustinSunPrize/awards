@@ -1,83 +1,59 @@
-# A proposed lcm-scale upper bound for Erdos Problem 1063
+# Erdos 1063: a locally verified lcm-scale upper bound
 
-**Research note v0.1, 17 September 2026. Published by the GitHub account
-`randyxian08`, with OpenAI ChatGPT/Codex assistance.**
+Version 0.2.1 (local repairs), 17 September 2026. This continues PR #498 with a
+complete Lean proof of the eventual bound `n_k <= 3*L_k`, where
+`L_k = lcm(1,...,k-1)`, and the resulting `better_upper` Big-O/little-o target.
+All four former proposition-only obligations now have compiled theorem proofs.
 
-This is an unrefereed mathematical manuscript offered for scrutiny and
-formalization. A complete written argument is supplied; the Lean files contain
-target definitions only. This publication is not a verified Lean submission,
-an assertion of established first-discovery priority, or an award announcement.
+**Local verification passed:** Lean 4.33.0 compiled all project and pinned PNT
+modules; exact-type checks and transitive axiom audits passed. The final axiom
+set is `[propext, Classical.choice, Quot.sound]`. Lean's own checker replayed
+all 16 local/PNT modules against their imports, with exit code 0.
+This is not independent verifier attestation, a fresh replay of Mathlib, or
+an award/priority determination.
 
-## Proposed result
+## Review the proof and evidence
 
-Let `L_k = lcm(1,...,k-1)` and let `n_k` be the least `n >= 2k` for which exactly
-one of `n,n-1,...,n-k+1` fails to divide `choose(n,k)`. The manuscript proposes
+- [Lean project and reproduction commands](lean/README.md).
+- [Exact final theorem](lean/JSP000883/Asymptotics.lean).
+- [Verification scope and receipts](VERIFICATION.md).
+- [Attribution](lean/docs/ATTRIBUTION.md) and [identified prior work](lean/docs/PRIOR_ART.md).
+- [Versioned source/evidence release](https://github.com/randyxian08/awards/releases/tag/jsp000883-lean-v0.2.1).
+- [Original v0.1 manuscript](MANUSCRIPT.md); the Lean proof uses an equivalent
+  integer-product/coprimality route, with details in the Lean module comments.
 
-$$
-n_k \le 3L_k \qquad\text{for all sufficiently large }k.
-$$
+## Scope and credit
 
-It constructs a witness using a prime `k/2 < p <= (2k-2)/3`, then applies the
-classical prime number theorem. The claimed consequence is `n_k = O(L_k)` and
-`L_k = o(k L_k)`, improving the known `k L_k` upper bound by an unbounded factor.
-This does not determine the sharp growth rate or claim to settle the entire
-open-ended original estimation problem. No explicit numerical threshold is claimed.
+The result provides actual witnesses for all sufficiently large k before
+bounding the natural infimum. The LCM is computed in naturals before casting
+to reals. It does not establish the sharp growth rate or fully settle the
+original open-ended estimation question.
 
-## Read and reproduce
+Related PR #601 submits a stronger bound and attributes earlier public research;
+this submission does not claim first mathematical discovery or first verified
+formalization of the broad target. Monier, Cambie, pcycho's formalization, the
+PNT project, the plby port, and Mathlib retain their credited contributions.
+The publishing account is `randyxian08`; work and verification were assisted by
+ChatGPT/Codex. No legal recipient identity or award entitlement is asserted.
 
-- [Full manuscript](MANUSCRIPT.md), including the finite construction, all prime
-  valuations, uniqueness of the exception, and the asymptotic step.
-- [Sources, prior work and contribution disclosure](REFERENCES.md).
-- [Verification evidence and limits](VERIFICATION.md).
-- [Remaining formalization obligations](docs/FORMALIZATION_PLAN.md).
-- [Versioned release, PDF and complete research bundle](https://github.com/randyxian08/awards/releases/tag/jsp000883-research-v0.1).
+## Reproduce
 
-From this directory, using Python 3.10 or later and no third-party libraries:
+From `lean/`, with Python 3.10+, Git and elan/Lake:
 
 ```sh
+python3 scripts/check_integrity.py
+python3 scripts/verify.py --prepare
+lake env leanchecker --verbose JSP000883 PrimeNumberTheoremAnd
 python3 -m unittest discover -s tests -v
-python3 scripts/run_checks.py --min-k 9 --max-k 300 --prime-mode all
 ```
 
-The run writes new results to `runs/latest/`. Published checks cover all 1,454
-eligible `(k,p)` pairs with `9 <= k <= 300`, with zero failures. These finite
-calculations support exploration; they do not prove the universal theorem.
+All 70 Python tests passed. These tests are separate from the Lean proof checks.
+The original finite experiment code remains in `src/`, `tests/`, and `scripts/`.
 
-The optional PDF builder needs ReportLab (tested with 4.4.9) and the four
-DejaVu Serif font files (regular, bold, italic, and bold italic):
+## Version history
 
-```sh
-python3 scripts/build_note_pdf.py --font-dir /path/to/dejavu-fonts --output note.pdf
-```
-
-The release includes a PDF and ZIP. Their exact sizes and SHA-256 hashes are
-recorded in [artifacts.json](https://github.com/randyxian08/awards/blob/jsp000883-research-v0.1/submissions/jsp-000883-upper-bound-research/artifacts.json). The ZIP contains its own
-`SHA256SUMS` for every packaged file; `artifacts.json` is excluded from the ZIP
-to avoid a circular archive checksum.
-
-## Review request
-
-We invite specific corrections to the valuation argument, the prime-interval
-step, and the correspondence with Formal Conjectures' `better_upper` target.
-We also welcome references to earlier equivalent bounds or constructions and
-collaboration on the missing Lean proofs. Please use the linked upstream research
-PR for discussion once it is opened; this release remains a fixed v0.1 snapshot.
-
-The related prize PRs [#56](https://github.com/TheJustinSunPrize/awards/pull/56),
-[#154](https://github.com/TheJustinSunPrize/awards/pull/154), and
-[#406](https://github.com/TheJustinSunPrize/awards/pull/406) concern the known
-factorial or `k L_k` bounds. This is a proposed mathematical improvement, not
-a request to reassign their formalization credits.
-
-## Citation and status
-
-Suggested citation: **randyxian08. A proposed lcm-scale upper bound for Erdos
-Problem 1063. Research note v0.1, 17 September 2026.** Cite the release URL above
-and, when citing source, its pinned Git commit. See `CITATION.cff`.
-
-A GitHub release records public availability; it is not a DOI deposit, peer
-review, or a guarantee of prize priority. A passed Lean verification remains a
-separate requirement for prize evaluation under the
-[published rules](https://www.hejustinsun.com/prize/rules). This research
-publication requests feedback, not immediate payment or a change to official
-problem/award status. See [NOTICE](NOTICE) and [LICENSE](LICENSE).
+The [v0.1 release](https://github.com/randyxian08/awards/releases/tag/jsp000883-research-v0.1) and its PDF remain unchanged as the historical
+unrefereed, Lean-incomplete research note. The present source release adds the
+compiled proof and evidence; it does not retroactively label v0.1 as verified.
+`artifacts.json` retains both releases' asset hashes and sizes. See
+[CHANGELOG.md](CHANGELOG.md), [NOTICE](NOTICE), and [LICENSE](LICENSE).

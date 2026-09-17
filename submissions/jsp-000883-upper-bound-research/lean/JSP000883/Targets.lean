@@ -1,6 +1,6 @@
 /-
-Erdős 1063 / JSP-000883: TARGET DEFINITIONS ONLY; no proof is supplied here.
-This file has NOT been compiled in the packaging environment.
+Erdős 1063 / JSP-000883: original target definitions, with companion proof-source modules.
+The revised project has NOT been compiled in the packaging environment.
 
 The minimum and Big-O/Little-o target follow the Formal Conjectures Authors'
 ErdosProblems/1063.lean (2026), Git blob bda13fc03989bb240293a164c7d70c75dfcc86f9.
@@ -37,7 +37,7 @@ def candidateN (k p : ℕ) : ℕ :=
 def candidateOffset (k p : ℕ) : ℕ :=
   if center k p % p ≤ k - p - 1 then 0 else k - 1
 
-/-- UNPROVED target: the fully quantified finite construction, not sampled instances. -/
+/-- Original target: the fully quantified finite construction, not sampled instances. -/
 def FiniteConstructionClaim : Prop :=
   ∀ k p : ℕ, 9 ≤ k → p.Prime → k < 2 * p → 3 * p + 2 ≤ 2 * k →
     let n := candidateN k p
@@ -47,12 +47,12 @@ def FiniteConstructionClaim : Prop :=
       (∀ i < k, i ≠ i0 → (n - i) ∣ n.choose k) ∧
       n ≤ 3 * lcmInitial k
 
-/-- UNPROVED target: prime-distribution input needed for the eventual theorem. -/
+/-- Original target: prime-distribution input needed for the eventual theorem. -/
 def EventualPrimeIntervalClaim : Prop :=
   ∃ K : ℕ, 9 ≤ K ∧ ∀ k : ℕ, K ≤ k →
     ∃ p : ℕ, p.Prime ∧ k < 2 * p ∧ 3 * p + 2 ≤ 2 * k
 
-/-- UNPROVED target: explicit nonemptiness rules out the empty-infimum shortcut. -/
+/-- Original target: explicit nonemptiness rules out the empty-infimum shortcut. -/
 def EventualUpperClaim : Prop :=
   ∃ K : ℕ, ∀ k : ℕ, K ≤ k →
     (∃ n : ℕ, Admissible k n) ∧ leastN k ≤ 3 * lcmInitial k
@@ -63,8 +63,7 @@ def BetterUpperClaim : Prop :=
     ((fun k : ℕ => (lcmInitial k : ℝ)) =o[atTop]
       fun k : ℕ => (k : ℝ) * (lcmInitial k : ℝ))
 
--- No `theorem ... : FiniteConstructionClaim`, `EventualUpperClaim`, or
--- `BetterUpperClaim` is provided. A successful build of definitions alone
--- must not be reported as a successful mathematical proof.
+-- Companion theorem bodies are in FiniteConstruction, PrimeInterval, and Asymptotics.
+-- Their existence in source is not a claim of successful compiler verification.
 
 end JSP000883

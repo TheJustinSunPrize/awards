@@ -1,0 +1,137 @@
+{
+  "repository": "plby/lean-proofs",
+  "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+  "tree": "b9f65ffdf398be0170db7a21de3a635f32d887b5",
+  "entry": "PrimeNumberTheoremAnd.Consequences",
+  "status": "source_identity_checked_not_proof_verified",
+  "files": [
+    {
+      "module": "PrimeNumberTheoremAnd.Consequences",
+      "path": "PrimeNumberTheoremAnd/Consequences.lean",
+      "git_blob": "167d52c19bdba66c37fa766415c3bd73105376b0",
+      "bytes": 130087,
+      "sha256": "c53d6857226b3e597174b7f78a9f937219b9b32e57f98f9188649f1ed2babb80",
+      "url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/PrimeNumberTheoremAnd/Consequences.lean",
+      "imports": [
+        "Mathlib.NumberTheory.Harmonic.Bounds",
+        "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "PrimeNumberTheoremAnd.Defs",
+        "PrimeNumberTheoremAnd.Wiener"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Defs",
+      "path": "PrimeNumberTheoremAnd/Defs.lean",
+      "git_blob": "b518e3265839a5528e0d03e8797f9830b00c19f6",
+      "bytes": 7995,
+      "sha256": "1e3aba80fc36d4a349940394a6b3e5a0a7f7596d115764b3470d255e111532c4",
+      "url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/PrimeNumberTheoremAnd/Defs.lean",
+      "imports": [
+        "PrimeNumberTheoremAnd.Fourier",
+        "Mathlib.NumberTheory.Chebyshev"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Fourier",
+      "path": "PrimeNumberTheoremAnd/Fourier.lean",
+      "git_blob": "c1e2224e30d6c3cf47c27c615958bc5ba8ba8697",
+      "bytes": 3562,
+      "sha256": "5812d352fbc983626ff0b5c1ac51cb35b17008901598feeba9b2382cf10baac0",
+      "url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/PrimeNumberTheoremAnd/Fourier.lean",
+      "imports": [
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Deriv",
+        "Mathlib.MeasureTheory.Integral.IntegralEqImproper",
+        "Mathlib.Topology.ContinuousMap.Bounded.Basic",
+        "Mathlib.Order.Filter.ZeroAndBoundedAtFilter",
+        "Mathlib.Analysis.Fourier.FourierTransformDeriv",
+        "PrimeNumberTheoremAnd.Sobolev"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support",
+      "path": "PrimeNumberTheoremAnd/Mathlib/Algebra/Notation/Support.lean",
+      "git_blob": "5f0c1f15b4c7e4fe3434271e2c933faa8d93de36",
+      "bytes": 432,
+      "sha256": "dec487419be00fa77ecfc6273a7451d0c04ea90693ab50566a47ba827c5ab84d",
+      "url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/PrimeNumberTheoremAnd/Mathlib/Algebra/Notation/Support.lean",
+      "imports": [
+        "Mathlib.Algebra.Notation.Support"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Asymptotics.Asymptotics",
+      "path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Asymptotics/Asymptotics.lean",
+      "git_blob": "93c9e8965476fc23f7718d498d06a98bd0ac5aa3",
+      "bytes": 1823,
+      "sha256": "9ee475ea6d7b4db026c275b9e38326bf88724d2274b948b31fc53d8cf136975d",
+      "url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/PrimeNumberTheoremAnd/Mathlib/Analysis/Asymptotics/Asymptotics.lean",
+      "imports": [
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Topology.Order.Compact"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Basic",
+      "path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+      "git_blob": "c8e9edbb3ff2419aa897251b0084b7708ed314c1",
+      "bytes": 832,
+      "sha256": "21bc8312b14d87e78b42af2d1ab78bfe7ecaa3343f6c32bedd6b2483ef984af5",
+      "url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+      "imports": [
+        "Mathlib.Algebra.Order.Floor.Defs",
+        "Mathlib.Algebra.Order.Floor.Ring",
+        "Mathlib.Algebra.Order.Floor.Semiring",
+        "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Continuity"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.SmoothExistence",
+      "path": "PrimeNumberTheoremAnd/SmoothExistence.lean",
+      "git_blob": "c6e892450e964617f0452a4de8e5f02cb830ffc5",
+      "bytes": 4496,
+      "sha256": "5943ee37e08b463e63332c8f3ccc918d734e7bf799705bb3c1a8ff0c35935952",
+      "url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/PrimeNumberTheoremAnd/SmoothExistence.lean",
+      "imports": [
+        "Batteries.Tactic.Lemma",
+        "Mathlib.Geometry.Manifold.PartitionOfUnity",
+        "Mathlib.Tactic.Bound",
+        "PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Sobolev",
+      "path": "PrimeNumberTheoremAnd/Sobolev.lean",
+      "git_blob": "34ab91738153db4b7ab0b8aa54a110af7c8403b3",
+      "bytes": 16524,
+      "sha256": "17cedc5898d6a696dca9e557bfaafbe1209e4a5252a62baddebc777c2a3a9bb2",
+      "url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/PrimeNumberTheoremAnd/Sobolev.lean",
+      "imports": [
+        "Mathlib.Analysis.Calculus.Deriv.Support",
+        "Mathlib.Analysis.Distribution.SchwartzSpace.Deriv",
+        "Mathlib.Order.Filter.ZeroAndBoundedAtFilter"
+      ]
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Wiener",
+      "path": "PrimeNumberTheoremAnd/Wiener.lean",
+      "git_blob": "f611176a6e3b6da52d71b6bb5c6ebbf7f971cbdd",
+      "bytes": 192209,
+      "sha256": "5a45e04a848cd76797928286eb1bbfaef2dfb6e541bf3a848dbc5bb9ae4b9f94",
+      "url": "https://raw.githubusercontent.com/plby/lean-proofs/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/PrimeNumberTheoremAnd/Wiener.lean",
+      "imports": [
+        "Mathlib.Analysis.Fourier.RiemannLebesgueLemma",
+        "Mathlib.Analysis.Normed.Group.Tannery",
+        "Mathlib.Analysis.SumIntegralComparisons",
+        "Mathlib.NumberTheory.Chebyshev",
+        "Mathlib.NumberTheory.LSeries.PrimesInAP",
+        "Mathlib.NumberTheory.MulChar.Lemmas",
+        "Mathlib.Topology.EMetricSpace.BoundedVariation",
+        "PrimeNumberTheoremAnd.Mathlib.Analysis.Asymptotics.Asymptotics",
+        "PrimeNumberTheoremAnd.Fourier",
+        "PrimeNumberTheoremAnd.SmoothExistence",
+        "Mathlib.Analysis.Convolution"
+      ]
+    }
+  ]
+}

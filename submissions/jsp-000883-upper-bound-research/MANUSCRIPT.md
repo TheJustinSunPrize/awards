@@ -2,6 +2,9 @@
 
 Research note v0.1 | 17 September 2026
 
+Historical manuscript text below. Version 0.2.1 now adds a compiled Lean proof;
+see [current verification](VERIFICATION.md). The original v0.1 publication remains unchanged.
+
 Published by the GitHub account **randyxian08**, with OpenAI ChatGPT/Codex assistance.
 This is an unrefereed proof claim offered for scrutiny. No completed Lean proof,
 established first-discovery priority, or award decision is claimed.

@@ -1,0 +1,22 @@
+JSP-000883 / Erdos 1063: version 0.2.1 with locally verified repairs.
+
+Published by the GitHub account randyxian08 with ChatGPT/Codex assistance.
+No first discovery, first formalization, independent verifier attestation,
+legal recipient identity, or award decision is asserted.
+
+Monier's and Cambie's mathematical bounds retain their credit. The elementary
+quotient-product, recurrence and coprimality approach adapts API idioms from
+pcycho's Apache-2.0 Cambie formalization at
+396c09bfdf4cf8306261b8176a1917aa72135459.
+
+Target definitions follow the 2026 Formal Conjectures Authors' Apache-2.0
+ErdosProblems/1063.lean, blob bda13fc03989bb240293a164c7d70c75dfcc86f9.
+The PNT source closure is reused unchanged from plby/lean-proofs at
+8822f7ddef30fadbd92e1c6ab4ed897af356af5e, based on the Prime Number Theorem +
+project of Alex Kontorovich, Terence Tao and collaborators. All original source
+notices and licenses remain in force; these files are not relicensed here.
+Mathlib and dependency authors retain their contributions.
+
+Original package additions are Apache-2.0, subject to those upstream notices.
+See docs/ATTRIBUTION.md and ../REFERENCES.md. PR #601 and the earlier work it
+cites are acknowledged; no priority or payment claim is made.

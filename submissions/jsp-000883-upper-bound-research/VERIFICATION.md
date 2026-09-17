@@ -1,42 +1,52 @@
-# Checks completed and proof status
+# Actual verification and its limits
 
-The manuscript is a mathematical proof claim offered for review. It has not
-received independent peer acceptance and is not a completed Lean proof.
+Version 0.2.1 includes the locally repaired, compiled proof. Its incoming archive
+was not compiled. The supplied arithmetic repairs passed; two residue-hypothesis
+normalizations and two real-type annotations were then needed. The precise
+additional changes are in [LOCAL_REPAIRS.patch](lean/LOCAL_REPAIRS.patch).
+No theorem statement, mathematical assumption or dependency pin was weakened.
 
-## Actual reproduced results
+## Successful final run
 
-- All 18 Python tests passed.
-- All 1,454 eligible parameter pairs for `9 <= k <= 300` passed exact integer
-  checks of all `k` divisibilities of the actual binomial coefficient.
-- The cases cover 285 values of `k`: 1,055 left intervals and 399 right intervals.
-- Values `10,11,14,15,16,17,26` have no eligible prime under this construction's
-  hypotheses and were skipped, not counted as successful cases.
-- `Targets.lean` was checked using Lean 4.33.0 and Mathlib
-  `db584cd6d46c92f209a44c0f1c829460d327499d`, with exit code 0. The check reused an
-  existing pinned library environment; no clean build of this target project's
-  complete Lake workspace is claimed.
-- Actual `#print` inspection confirms all four core claims are **definitions
-  of propositions**, not theorems proving those propositions.
+[Machine-readable result](lean/evidence/result.json) records all four completed
+stages: arithmetic, finite construction, growth, and full asymptotics.
+[The final audit](lean/evidence/audit-full.log) prints the inline original target
+and the transitive axiom dependencies of all required results, including the
+external `chebyshev_asymptotic` input.
 
-The compact logs are [Python tests](evidence/python-tests.log),
-[finite checks](evidence/finite-checks.log), and
-[Lean declaration inspection](evidence/definitions-audit.log).
-The source bundle in the release also contains every reproduced finite case.
+- Lean 4.33.0; Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
+- All nine package Git revisions match the committed manifest.
+- All four original propositions are inhabited by actual typed proof terms.
+- All audited theorems depend only on `propext`, `Classical.choice`, `Quot.sound`.
+  No `sorryAx` or additional mathematical axiom appears.
+- All nine pinned PNT source modules were downloaded, checked against Git blob
+  identities, and compiled. The source bytes and original notices are retained.
+- [Native leanchecker record](lean/evidence/leanchecker.actual.json) and
+  [log](lean/evidence/leanchecker.actual.log): all 16 local/PNT modules replayed
+  against their imported environments, exit code 0.
+- [70 Python tests](lean/evidence/repaired-python-tests.actual.log) passed.
+- The publication copy's 16 mathematical source files are byte-identical to the
+  verified files; [hashes](lean/evidence/verified-source-files.json) are included.
 
-## What has not been established
+The local run reused pinned Mathlib caches. It did not rebuild or replay all
+Mathlib from source. The replay uses the same Lean kernel, not an independent
+implementation. An additional combined-batch utility was attempted but stopped
+on duplicate generated declarations before completion; the claimed successful
+replay is the native per-module command above, not that batch attempt.
 
-No universal Lean proof of `FiniteConstructionClaim`,
-`EventualPrimeIntervalClaim`, `EventualUpperClaim`, or `BetterUpperClaim` is
-provided. No final-theorem axiom audit or kernel replay can be claimed for
-those unproved propositions. The prime-number-theorem input remains an informal
-standard theorem in the written argument. Passing tests or compiling a
-proposition definition does not prove it.
+Public logs normalize local filesystem prefixes to `$PROJECT`,
+`$DEPENDENCY_CACHE`, `$ELAN_HOME`, and `$LOCAL_HOME`. Log hashes in result.json
+were recalculated after this path-only normalization; process outcomes and
+mathematical output are preserved. These are self-produced local verification
+receipts, not external verifier attestations.
 
-The valuation proof was examined step by step without finding an obvious
-gap. That review and the computation were AI-assisted and are not independent
-human refereeing. A formal target's continued placeholder does not establish
-that no proof exists elsewhere.
+## Historical numerical evidence
 
-This research publication does not request the official catalog to mark the
-problem solved or Lean-verified. Passing the award repository's structural
-checks only establishes document/schema consistency.
+The original v0.1 [Python log](evidence/python-tests.log) and
+[finite-check log](evidence/finite-checks.log) cover 18 tests and 1,454 eligible
+pairs up to k=300. Those are historical finite experiments, not the reason the
+universal theorem is now considered locally Lean-verified.
+
+Official review, statement acceptance, novelty/priority and award eligibility
+remain with the reviewers and organizer. PR #601 and its stronger-bound sources
+are explicitly acknowledged. No official catalog or award record is changed.

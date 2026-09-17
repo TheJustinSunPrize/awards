@@ -1,22 +1,32 @@
-# Target-only Lean starting point
+# Complete locally verified Lean proof
 
-`JSP000883/Targets.lean` defines the construction and four propositions to prove.
-No theorem proving these propositions is supplied. Missing proofs are not
-disguised by placeholders or custom axioms.
+The theorem endpoints are `JSP000883.finiteConstruction`,
+`JSP000883.eventualPrimeInterval`, `JSP000883.eventualUpper`,
+`JSP000883.betterUpper`, and the inline original target
+`JSP000883.erdos_1063_better_upper`.
 
-The definitions were checked with Lean 4.33.0 and Mathlib
-`db584cd6d46c92f209a44c0f1c829460d327499d` in an existing pinned environment,
-with exit code 0. A declaration audit confirmed the four claims have type
-`Prop`; it did not supply proofs of them.
-
-A developer can prepare a standalone environment here with:
+All compiled successfully with Lean 4.33.0 and the pinned dependencies.
+The final transitive axiom set is `[propext, Classical.choice, Quot.sound]`.
+See [the actual final record](evidence/result.json) and
+[the final type/axiom output](evidence/audit-full.log).
 
 ```sh
-lake update
-lake exe cache get
-lake build
+python3 scripts/check_integrity.py
+python3 scripts/verify.py --prepare
+lake env leanchecker --verbose JSP000883 PrimeNumberTheoremAnd
+python3 -m unittest discover -s tests -v
 ```
 
-Success checks definitions only. The
-[formalization plan](../docs/FORMALIZATION_PLAN.md) lists the remaining work.
-There is no completed final-theorem axiom audit or kernel replay.
+The supplied PNT closure is retained byte-for-byte and identified by the
+[source manifest](evidence/pnt-source-manifest.json). Mathlib and its dependency
+sources/caches are fetched separately. All mathematical source bytes match the
+verified local run; source comments describing the original uncompiled packaging
+environment are historical, superseded by the actual logs and current README.
+
+The original `FiniteConstructionClaim`, `EventualPrimeIntervalClaim`,
+`EventualUpperClaim`, and `BetterUpperClaim` remain definitions of propositions;
+the companion theorem files now prove them. Compilation of definitions alone
+is not the verification claim.
+
+[Attribution](docs/ATTRIBUTION.md), [prior art](docs/PRIOR_ART.md),
+[local repair diff](LOCAL_REPAIRS.patch), and [verification scope](../VERIFICATION.md).

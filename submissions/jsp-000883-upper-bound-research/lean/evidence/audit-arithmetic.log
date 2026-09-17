@@ -1,0 +1,8 @@
+'JSP000883.ProductConstruction.descending_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000883.ProductConstruction.ascFactorial_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000883.ProductConstruction.ascending_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000883.ProductConstruction.auxiliary_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000883.ProductConstruction.coefficient_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000883.ProductConstruction.split_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000883.ProductConstruction.Parameters.cross_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000883.ProductConstruction.cancel_cross_product' depends on axioms: [propext, Classical.choice, Quot.sound]

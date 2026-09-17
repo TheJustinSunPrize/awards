@@ -1,5 +1,4 @@
 {
-  "release": "https://github.com/randyxian08/awards/releases/tag/jsp000883-research-v0.1",
   "archive_excludes": [
     "artifacts.json"
   ],
@@ -15,6 +14,14 @@
       "bytes": 293624,
       "sha256": "6133e6585975fc8c5070882d7f9d6f6b8c8d783715a91747969960fddbf21d1b",
       "url": "https://github.com/randyxian08/awards/releases/download/jsp000883-research-v0.1/JSP000883_research_bundle_v0.1.zip"
+    },
+    {
+      "name": "JSP000883_lean_v0.2.1_verified_sources.zip",
+      "bytes": 187490,
+      "sha256": "148624f4244f448de983d7b31b7bf77c3db6afcf2a8c06ef84a5f82145d66f38",
+      "url": "https://github.com/randyxian08/awards/releases/download/jsp000883-lean-v0.2.1/JSP000883_lean_v0.2.1_verified_sources.zip"
     }
-  ]
+  ],
+  "historical_release": "https://github.com/randyxian08/awards/releases/tag/jsp000883-research-v0.1",
+  "release": "https://github.com/randyxian08/awards/releases/tag/jsp000883-lean-v0.2.1"
 }

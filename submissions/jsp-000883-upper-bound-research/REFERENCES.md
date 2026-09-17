@@ -40,6 +40,9 @@ inspecting the Lean declarations, preparing the English manuscript/PDF, and
 publishing the reproducibility package. This is a self-submission of an
 AI-assisted research claim, not an independent referee report.
 
+Version 0.2.1 adds locally compiled proofs; see [updated attribution](lean/docs/ATTRIBUTION.md)
+and [stronger prior-work submissions](lean/docs/PRIOR_ART.md), including PR #601.
+
 The package does not assert a confirmed legal recipient identity, prize
 entitlement, first-discovery priority, or full resolution of the original
 estimation problem. Earlier bounds retain their mathematical authors' credit.

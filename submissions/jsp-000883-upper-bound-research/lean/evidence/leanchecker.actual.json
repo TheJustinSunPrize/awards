@@ -1,0 +1,31 @@
+{
+  "exit_code": 0,
+  "command": [
+    "lake",
+    "env",
+    "leanchecker",
+    "--verbose",
+    "JSP000883",
+    "PrimeNumberTheoremAnd"
+  ],
+  "modules": [
+    "PrimeNumberTheoremAnd.Fourier",
+    "PrimeNumberTheoremAnd.Consequences",
+    "PrimeNumberTheoremAnd.Defs",
+    "PrimeNumberTheoremAnd.Sobolev",
+    "PrimeNumberTheoremAnd.Wiener",
+    "PrimeNumberTheoremAnd.SmoothExistence",
+    "PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support",
+    "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Basic",
+    "PrimeNumberTheoremAnd.Mathlib.Analysis.Asymptotics.Asymptotics",
+    "JSP000883.PrimeInterval",
+    "JSP000883.Arithmetic",
+    "JSP000883.Targets",
+    "JSP000883.Growth",
+    "JSP000883.FiniteConstruction",
+    "JSP000883.Asymptotics",
+    "JSP000883"
+  ],
+  "module_count": 16,
+  "scope": "Each module replayed using the same Lean 4.33.0 kernel against its imported environment; no independent implementation and no fresh replay of all Mathlib."
+}
