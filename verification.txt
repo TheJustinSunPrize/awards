@@ -1,0 +1,23 @@
+Proof.lean SHA-256: 7cf82f0fcec57c0734d4edf5880af965c8756c8807f05093140e170569b1c7d2
+Independent trial-division check: PASS (12166 certificates; first pair 12167, 12168)
+Factorizations: 12167 = 23^3; 12168 = 2^3 * 3^2 * 13^2
+Lean (version 4.19.0, x86_64-w64-windows-gnu, commit 6caaee842e94, Release)
+'JSP000301.prime_iff' depends on axioms: [propext, Quot.sound]
+'JSP000301.negative_answer' depends on axioms: [propext, Quot.sound]
+'JSP000301.smallest_counterexample' depends on axioms: [propext, Quot.sound]
+Lean kernel verification and axiom audit: PASS
+
+Repository checks (Python 3.12, Windows; PYTHONUTF8=1):
+  python scripts/manage.py validate: PASS
+  python scripts/manage.py links: PASS
+  python scripts/manage.py build: PASS (no generated data changes)
+  python scripts/manage.py check: PASS
+  python scripts/manage.py history --base f4e7173d89dfe91022a185427d63452c8ffbf6ae: PASS
+  python -m unittest discover -s tests -v: 19 passed, 1 failure, 2 errors
+The same three test outcomes were reproduced on an unmodified archive of the
+base commit. They are existing Windows environment/portability limitations:
+  test_published_statement_immutable_and_superseded: expected exception not raised
+  test_revocation_keeps_original_evidence: backslash path passed to git show
+  test_symlinks_and_misplaced_records_rejected: Windows symlink privilege absent
+The upstream Linux CI test suite has not been run for this submission yet.
+Verification is author-side only; no independent reviewer is claimed.
