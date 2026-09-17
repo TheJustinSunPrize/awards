@@ -1,0 +1,23 @@
+id: STMT-jsp-000840-v1
+status: active
+supersedes: null
+statement:
+  text: "theorem Rad.rademacher {V : Type u} [Fintype V] [DecidableEq V] (G : SimpleGraph V) [DecidableRel G.Adj] (h3 : 3 ≤ Fintype.card V) (he : Fintype.card V ^ 2 / 4 + 1 ≤ G.edgeFinset.card) : Fintype.card V / 2 ≤ (G.cliqueFinset 3).card"
+  natural_language_source: "Justin Sun Prize problem bank entry JSP-000840: 'How many triangles must a graph have once its edge count exceeds the maximum bipartite edge count?' The formalized statement is the l = 1 case: every graph on n ≥ 3 vertices with at least floor(n²/4) + 1 edges contains at least floor(n/2) triangles (Rademacher, 1962). The general l case (floor(n²/4) + l edges force floor(n/2)·l triangles, Khadzhiivanov-Nikiforov 1981) is not part of this statement."
+  definitions_reviewed:
+    - name: "SimpleGraph.edgeFinset.card (edge count)"
+      from_library: true
+      review: "mathlib's canonical edge Finset; its cardinality is the graph's edge count. Division by 4 in ℕ is truncating, so Fintype.card V ^ 2 / 4 is floor(n²/4), matching the Mantel/Turán threshold."
+    - name: "SimpleGraph.cliqueFinset 3 (triangles)"
+      from_library: true
+      review: "mathlib's canonical encoding of triangles as 3-cliques; cardinality counts triangles exactly."
+    - name: "Fintype.card V (number of vertices)"
+      from_library: true
+      review: "Standard."
+  library:
+    name: mathlib
+    commit: "db584cd6d46c92f209a44c0f1c829460d327499d"
+    meets_minimum_safe_version: true
+authorship:
+  signatories: ["aichiwuhuarou", "glm-zcode-agent"]
+  issued_at: "2026-09-17"
