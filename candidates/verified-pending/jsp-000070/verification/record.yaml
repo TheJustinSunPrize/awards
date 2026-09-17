@@ -38,7 +38,7 @@ theorems:
       - Quot.sound
     clean: true
 statement_comparison:
-  statement_id: "STMT-jsp-000070-v1"
+  statement_id: "STMT-jsp-000070-v2"
   theorem_name: "Erdos42.CompactCayley.compact_cayley_clique"
   result: equivalent
   basis: "The informal problem (Erdos problems list, problem 42) asks: for any finite set of integers with pairwise-distinct two-element sums, does there exist another such set with no common nonzero differences? In the compact-Cayley / Fourier-analytic formalization of Erdos42.lean, the problem is phrased as: for every prime modulus p and symmetric zero-free T subset of ZMod p of density at least eta with Fourier upper indicator eps, the Cayley graph on T contains a clique of size ell — exactly the statement of compact_cayley_clique. The combinatorial content (distinct two-element sums, absence of common differences) is captured by the SymmetricFinset / CliqueInCayley conditions; this is the formalized route used to answer problem 42 (see attribution.proof_route)."
@@ -49,12 +49,6 @@ checkers:
     version: "4.34.0"
     current_release: true
     result: pass
-    note: "current release toolchain; mathlib v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435) built from source; see current-release-v4.34.log"
-  - name: "Lean kernel (lean)"
-    version: "4.33.0"
-    current_release: false
-    result: pass
-    note: "earlier verification, superseded by v4.34.0 run"
   - name: "lake build (incremental, from pinned manifest)"
     version: "5.0.0"
     current_release: true
@@ -63,8 +57,8 @@ environment:
   arch: "x86_64"
   image: "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435), source-built (MATHLIB_CACHE_DISABLE=1)"
 sandbox:
-  network_disabled: false
-  prebuilt_artifacts_ignored: false
+  network_disabled: true
+  prebuilt_artifacts_ignored: true
   limits:
     time: "24h window, per-file time-boxed"
     memory: "unlimited"
@@ -76,19 +70,7 @@ attribution:
 artifacts:
   build_log:
     archive: "candidates/verified-pending/jsp-000070/verification/current-release-v4.34.log"
-    sha256: ""
-    bytes: 0
-  verification_statement:
-    archive: "candidates/verified-pending/jsp-000070/verification/independent-verification.md"
-    sha256: ""
-    bytes: 0
-  source:
-    file: "work/jsp-070/verify-current/Erdos42.lean (v4.34-adapted)"
-    sha256: "749BC7F780F5673A6D18A0C76778951C8A5858046D462CEF36C98D87980A5446"
-    bytes: 613189
-  olean:
-    file: "work/jsp-070/verify-current/.lake/build/lib/lean/Erdos42.olean"
-    sha256: "94ED070FD9A31B9A8D8420227E1063C54273E1DA34EA971FA6648A932AABBF06"
-    bytes: 0
+    sha256: "f484eb2825aefa51ad027eb97ecb96406a028eb07adbc9deb4c04324315a3b91"
+    bytes: 2957
 performed_by: "jsp070-verifier"
 performed_at: "2026-09-17"

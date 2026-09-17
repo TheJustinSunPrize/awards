@@ -4,8 +4,8 @@
   "started_at": "2026-09-17T02:35:23+08:00",
   "deadline": "2026-09-18T02:35:00+08:00",
   "phase": "D1-B",
-  "tick": 15,
-  "last_action": "D1-A 完成：lake build 幂等复核绿（8925 任务全缓存）；#print axioms 五入口定理复核仅 [propext, Classical.choice, Quot.sound]；撰写独立验证说明 verification/independent-verification.md（上游 pinned 1268917d + 适配版哈希 749BC7F7… + Lean 4.34.0/mathlib 5ed29652 + 复现步骤 + 定理清单）；record.yaml artifacts 落哈希；phase 推进 D1-B",
+  "tick": 16,
+  "last_action": "D1-B 记录管线全绿：python scripts/manage.py validate = OK —— ① record.yaml 合规化（checkers 仅保留 current_release 两项，去掉 v4.33 旧条目；artifacts.build_log 补 sha256=f484eb28…/bytes=2957；sandbox 按事实 network_disabled/prebuilt_artifacts_ignored=true、unprivileged_user=false）② statement 升级：STMT-jsp-000070-v1 保留为 superseded（statements/ 目录），v2 活动（mathlib pinned 5ed29652=v4.34.0），record.statement_id 同步 v2 ③ award.status 由 pending-recipient-confirmation 改为 under-verification（收件人未确认，且非特权沙箱尚未满足，如实降级）④ citation.md/recipients.md 补 ## English/## 中文 段并更新为 v4.34 事实。遗留：D1-B 提交前须以非特权账户重跑内核校验满足 sandbox.unprivileged_user=true，再置 pending-recipient-confirmation",
   "build_status": "v4.34-current-release-green",
   "blockers": [],
   "log": [
@@ -26,6 +26,7 @@
     "2026-09-17T05:50:00+08:00 | tick13 | current-release 工程 verify-current 建立；lake 挂起根因排查：① v4.34.0 无预编译缓存(marker 404) ② cache get 探测双容器后异常等待 → MATHLIB_CACHE_DISABLE=1 绕开",
     "2026-09-17T06:10:00+08:00 | tick13 | mathlib v4.34.0 源码编译启动：20 lean 并行，Mathlib/Lean 瓶颈模块编译中；预期 3-5h 完成全库",
     "2026-09-17T10:51:00+08:00 | tick14 | v4.34 全库编译完成 (8712 oleans)；15 处 prod_le_one/prod_le_prod → prod_le_one₀/prod_le_prod₀（v4.34 MulLeftMono 破坏性变更，改显式非负假设）；Erdos42.lean 编译绿 exit 0；五个入口定理 axioms=[propext, Classical.choice, Quot.sound]；record.yaml current_release: true；验证日志 current-release-v4.34.log；D0-B 完成 → D1-A",
-    "2026-09-17T11:05:00+08:00 | tick15 | D1-A 完成：lake build 幂等绿；独立验证说明落盘（上游 1268917d、Lean 4.34.0、mathlib 5ed29652、适配版 sha256=749BC7F7…、olean sha256=94ED070F…、复现步骤、5 定理公理表）；record.yaml artifacts 补哈希；→ D1-B"
+    "2026-09-17T11:05:00+08:00 | tick15 | D1-A 完成：lake build 幂等绿；独立验证说明落盘（上游 1268917d、Lean 4.34.0、mathlib 5ed29652、适配版 sha256=749BC7F7…、olean sha256=94ED070F…、复现步骤、5 定理公理表）；record.yaml artifacts 补哈希；→ D1-B",
+    "2026-09-17T11:20:00+08:00 | tick16 | D1-B 记录管线：manage.py validate=OK —— record.yaml 合规（checkers 去 v4.33、build_log 哈希、sandbox 如实）；statement v1 superseded + v2 active(pinned 5ed29652)；award.status→under-verification（收件人未确认/非特权沙箱未满足）；citation/recipients 补 English 段；遗留：非特权账户重跑内核校验 → pending-recipient-confirmation"
   ]
 }

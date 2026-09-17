@@ -1,0 +1,26 @@
+id: jsp-000070
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 42
+  title_en: "For any integer set with distinct two-element sums, can another such set be found with no common nonzero differences?"
+  posed:
+    year: 1995
+    basis: stated
+    citation: "https://www.erdosproblems.com/42"
+  resolved: null
+recipients:
+  - id: "RECIPIENT-JSP-000070-A"
+    affiliation: "Pending written confirmation"
+    contribution_en: "Independent verification of the pinned Lean formalization of the answer to problem 42 (Erdos42.lean) and preparation of this submission."
+    confirmation: null
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
+decision: null
