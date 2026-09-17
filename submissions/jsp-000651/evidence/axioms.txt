@@ -1,0 +1,7 @@
+'SumFreeBound.middle_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SumFreeBound.middle_sumFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SumFreeBound.middle_third_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SumFreeBound.erdos_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SumFreeBound.singleton_zero_exception' depends on axioms: [propext, Classical.choice, Quot.sound]
+SumFreeBound.erdos_lower_bound (a : Finset ℤ) (ha : 2 ≤ a.card) : ∃ b ⊆ a, SumFreeBound.SumFree b ∧ a.card ≤ 3 * b.card
+SumFreeBound.singleton_zero_exception : ¬∃ b ⊆ {0}, SumFreeBound.SumFree b ∧ 1 ≤ 3 * b.card

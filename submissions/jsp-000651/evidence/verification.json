@@ -1,0 +1,112 @@
+{
+  "checked_at_utc": "2026-09-17T06:10:48.044784+00:00",
+  "award_confirmed": false,
+  "organizer_verification": "pending",
+  "python_optimization_level": 1,
+  "proof_source_policy": "pass",
+  "toolchain": {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.86,
+    "output": "Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)\n"
+  },
+  "build": {
+    "command": [
+      "lake",
+      "build"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.969,
+    "output": "Build completed successfully (3757 jobs).\n"
+  },
+  "axiom_audit": {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Audit.lean"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 11.582,
+    "output": "'SumFreeBound.middle_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SumFreeBound.middle_sumFree' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SumFreeBound.middle_third_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SumFreeBound.erdos_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SumFreeBound.singleton_zero_exception' depends on axioms: [propext, Classical.choice, Quot.sound]\nSumFreeBound.erdos_lower_bound (a : Finset \u2124) (ha : 2 \u2264 a.card) : \u2203 b \u2286 a, SumFreeBound.SumFree b \u2227 a.card \u2264 3 * b.card\nSumFreeBound.singleton_zero_exception : \u00ac\u2203 b \u2286 {0}, SumFreeBound.SumFree b \u2227 1 \u2264 3 * b.card\n"
+  },
+  "axiom_dependencies": {
+    "SumFreeBound.middle_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SumFreeBound.middle_sumFree": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SumFreeBound.middle_third_nonzero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SumFreeBound.erdos_lower_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SumFreeBound.singleton_zero_exception": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "negative_controls": {
+    "false_arithmetic": "rejected by Lean with warnings as errors",
+    "placeholder": "rejected by Lean with warnings as errors",
+    "custom_axiom": "rejected by the axiom allowlist"
+  },
+  "fresh_kernel_replay": {
+    "command": [
+      "lake",
+      "env",
+      "leanchecker",
+      "--verbose",
+      "--fresh",
+      "SumFreeBound"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 353.607,
+    "output": "replaying SumFreeBound with --fresh\n"
+  },
+  "checker_limitation": "leanchecker uses the bundled Lean kernel, not an independently implemented checker; upstream cached library artifacts were used, not a full source rebuild of all imports.",
+  "source_files": {
+    "SumFreeBound.lean": {
+      "sha256": "8920f4b89cb8295febebb49641b067665990d21cc6084a209b72aead7b3fad3b",
+      "bytes": 5702
+    },
+    "Audit.lean": {
+      "sha256": "bcbc1d5d7868cf5b00aa7fc8a826a45b1ba271a1bfb1e3f6c32a8814122a0b1e",
+      "bytes": 331
+    },
+    "lakefile.toml": {
+      "sha256": "62df5e563d107fd0ec7108d3de6c2b21889f775a2904332d91a988aaf3c39e81",
+      "bytes": 275
+    },
+    "lake-manifest.json": {
+      "sha256": "f0b3046d2a8e642e5b755456eefa89a6dd10da118f85c57aad67630d0d0a27d8",
+      "bytes": 3559
+    },
+    "lean-toolchain": {
+      "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+      "bytes": 25
+    },
+    "verify.py": {
+      "sha256": "67ad5643676bb422caaa1c9f37c918708b989176708b6d61bf0278b23759db06",
+      "bytes": 5573
+    }
+  },
+  "local_validation": "pass"
+}
