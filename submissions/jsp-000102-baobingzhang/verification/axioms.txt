@@ -1,0 +1,3 @@
+'Erdos86.erdos_86_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos86.bhn_four_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos86.exists_c4Free_subgraph' depends on axioms: [propext, Classical.choice, Quot.sound]
