@@ -1,0 +1,5 @@
+'Erdos267.badea_criterion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos267.erdos_267.variants.two_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos267.erdos_267.variants.specialization_pow_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos267.summable_of_two_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos267.summable_pow_two' depends on axioms: [propext, Classical.choice, Quot.sound]
