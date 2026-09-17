@@ -1,0 +1,67 @@
+[
+  {
+    "path": ".gitattributes",
+    "sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9",
+    "bytes": 14
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "fde850d24186b6e99c8c0debd641fb3ab85198b109eb66f71a1fea02bd6ea1b3",
+    "bytes": 7
+  },
+  {
+    "path": "Audit.lean",
+    "sha256": "08deaf3cec05af0fa41445fe700e355ee804e92088c6c3b4ddc3729cea77d6c7",
+    "bytes": 401
+  },
+  {
+    "path": "Cerny.lean",
+    "sha256": "02675b9d0244a1b1574b136078624544f8b31f73c7481cb7e0cbe1f574e4bd5e",
+    "bytes": 8914
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "bytes": 11357
+  },
+  {
+    "path": "PROOF.md",
+    "sha256": "cb9d2f381a5d133c8162174afb01889beae78f0b185c73ce75d8cf24b9867cf8",
+    "bytes": 5795
+  },
+  {
+    "path": "README.md",
+    "sha256": "8ec8e2dfbb7acac00e48d8223b5aa4ffd4ca39302b718c1b0bf77b38fd91f749",
+    "bytes": 3882
+  },
+  {
+    "path": "SOURCE_COMPARISON.md",
+    "sha256": "25e1c6692f56ab9b6ad474d6fead17e98348bd13c055eeb9a136fddc20159447",
+    "bytes": 3019
+  },
+  {
+    "path": "lake-manifest.json",
+    "sha256": "92fafd3587840923abcaae144edb5d9f8d270b931e5711f494def0c67fbdd742",
+    "bytes": 3132
+  },
+  {
+    "path": "lakefile.toml",
+    "sha256": "1d9f6b96c3cf8e7ec10dd4401f042125d15868a79305c101d9b85e52ba702922",
+    "bytes": 205
+  },
+  {
+    "path": "lean-toolchain",
+    "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "bytes": 25
+  },
+  {
+    "path": "statement-review.md",
+    "sha256": "493c1237eaaa2c9f335dc8905e099a083fbd64a1239f5e479f6fc91ca70a8271",
+    "bytes": 5675
+  },
+  {
+    "path": "verify.ps1",
+    "sha256": "599c967a7c3895723b87d2519f7f9cee41f29390b835ff7658866231e24bd486",
+    "bytes": 4279
+  }
+]
