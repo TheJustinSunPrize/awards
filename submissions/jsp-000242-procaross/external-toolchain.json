@@ -1,0 +1,16 @@
+{
+  "lean4export": {
+    "repository": "https://github.com/leanprover/lean4export",
+    "revision": "076e8e57707e813375e8f9da8bf989799ace9680",
+    "lean_version": "4.34.0",
+    "format_version": "3.1.0"
+  },
+  "nanoda": {
+    "repository": "https://github.com/ammkrn/nanoda_lib",
+    "revision": "4c544ed4099c8227f07d5de77ad1e69fb0740a27",
+    "version": "0.4.17",
+    "cargo_lock_sha256": "0b59e677b7ffa4831e91434e7fe421bd8f023f74e2ae96fd8bee428024f5fa95",
+    "recorded_rustc": "1.94.0 (4a4ef493e 2026-03-02)"
+  },
+  "note": "Source revisions are pinned; platform-dependent binary hashes are in the verification report. Neither upstream checker was modified."
+}

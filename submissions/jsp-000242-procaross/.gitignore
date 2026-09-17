@@ -5,3 +5,4 @@ __pycache__/
 *.olean
 *.ilean
 *.ir
+.verification-tools/

@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "command": [
+    "lake",
+    "--packages=<PINNED_ARCHIVE_OVERRIDES>",
+    "build"
+  ],
+  "dependency_mode": "Exact-revision archive paths; no fresh bootstrap claimed",
+  "source_sha256": {
+    "UnitFractionOptimum.lean": "f464d780837b035376a54cea46acd0f7ede8e84ff5517a54daa3ec0523f0814a",
+    "UnitFractionPrimes.lean": "0345835053b0aad15a27766d33936955c89e9eeb7762b3af0c9c5dd9e3bac928",
+    "UnitFractionBounds.lean": "8e970516c23d803f852a96aefa9c7d3cda7d76cb03accd478b9b8565701fee17",
+    "UnitFractionAsymptotic.lean": "d15d183d98f13d68fc3819029356caf49fd7614f89790da0c1eb439fd355eeec"
+  },
+  "log_sha256": "39a18b529476fa215d2cf79ffb07f7084e1c01ae63e7c001742b4a07cfd77f20"
+}

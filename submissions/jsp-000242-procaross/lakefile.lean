@@ -9,3 +9,6 @@ require mathlib from git
   "5ed2965256430c3649e86755f9576b54eca72435"
 
 @[default_target] lean_lib UnitFractionBounds
+@[default_target] lean_lib UnitFractionOptimum
+@[default_target] lean_lib UnitFractionAsymptotic
+@[default_target] lean_lib UnitFractionPrimes

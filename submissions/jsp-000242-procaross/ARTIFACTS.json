@@ -1,0 +1,201 @@
+{
+  "format": 1,
+  "note": "Self-excluding manifest bound by the containing Git commit. Full exports are reproducible but not included.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 106,
+      "sha256": "a1d53d8656e4c4df718a3f250dbbf05912c4acdcac1a61a51d5f03d9787ed499"
+    },
+    {
+      "path": "DUPLICATE-SEARCH.md",
+      "bytes": 7491,
+      "sha256": "e6eaaa35da690001c2b6e818f69168e32856cea18d46b86ac9e1b8b04fdb57ae"
+    },
+    {
+      "path": "EXTERNAL-VERIFICATION.md",
+      "bytes": 4918,
+      "sha256": "e129ae266a8868fa9cbee173bac5862a989548ba0b691fa0cbde6a69e0abe883"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 10141,
+      "sha256": "c8858a5a76440bbca484e134cf7df46385d090dd18b2c58e650f939258802e5b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10152,
+      "sha256": "40db7c73f6a844ef2fe24912153930c1b022916abeeb16a2a3d7cda757a0708a"
+    },
+    {
+      "path": "UnitFractionAsymptotic.lean",
+      "bytes": 6561,
+      "sha256": "d15d183d98f13d68fc3819029356caf49fd7614f89790da0c1eb439fd355eeec"
+    },
+    {
+      "path": "UnitFractionBounds.lean",
+      "bytes": 11205,
+      "sha256": "8e970516c23d803f852a96aefa9c7d3cda7d76cb03accd478b9b8565701fee17"
+    },
+    {
+      "path": "UnitFractionOptimum.lean",
+      "bytes": 8016,
+      "sha256": "f464d780837b035376a54cea46acd0f7ede8e84ff5517a54daa3ec0523f0814a"
+    },
+    {
+      "path": "UnitFractionPrimes.lean",
+      "bytes": 10784,
+      "sha256": "0345835053b0aad15a27766d33936955c89e9eeb7762b3af0c9c5dd9e3bac928"
+    },
+    {
+      "path": "dedup-summary.json",
+      "bytes": 7561,
+      "sha256": "cfeb68d3f7a95efc71cc8468601b8b7049890c45f9d22ca2e32126dd9f8d7169"
+    },
+    {
+      "path": "dedup-update.json",
+      "bytes": 1505,
+      "sha256": "d803acdaa1c814d0108501e32d7346e9d88f70372a16302a390cc315e2eb5760"
+    },
+    {
+      "path": "external-toolchain.json",
+      "bytes": 665,
+      "sha256": "b6d6fd8c4d34acd731da766680c35016430d449a2fdbd9a80e378ff87c2873a7"
+    },
+    {
+      "path": "external_check.py",
+      "bytes": 7745,
+      "sha256": "c6186a09a0db6a88815f762af6c1cf7c285146418a1ee187506dcbf8c30ff415"
+    },
+    {
+      "path": "lake-manifest.json",
+      "bytes": 3542,
+      "sha256": "bab5934d7cf034d272282ff891e2cf61ba32c407833eebaa517ad89f084ecfff"
+    },
+    {
+      "path": "lakefile.lean",
+      "bytes": 447,
+      "sha256": "3af71aa736ed286c954861219b3a7cc3da7e110677420b3c87fe4b48532c4885"
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632"
+    },
+    {
+      "path": "source-pins.json",
+      "bytes": 1308,
+      "sha256": "2471c57c6223bbc79e41d479d520bb7228be6e14a549a94684949a5adc99909a"
+    },
+    {
+      "path": "verification/local/compile-UnitFractionAsymptotic.log",
+      "bytes": 722,
+      "sha256": "74025fa322d9b82bb8878d34ee55dbc86196f5d9966abea855f8eeb675a34c95"
+    },
+    {
+      "path": "verification/local/compile-UnitFractionBounds.log",
+      "bytes": 1503,
+      "sha256": "de569714e6975940544b926a008c1640400731f0ae9931931f4f18e6ec6091cc"
+    },
+    {
+      "path": "verification/local/compile-UnitFractionOptimum.log",
+      "bytes": 735,
+      "sha256": "5f07a6974415fb3d76b033354e97db300d2974c38b98ca7cca120f73ac9d0fd2"
+    },
+    {
+      "path": "verification/local/compile-UnitFractionPrimes.log",
+      "bytes": 964,
+      "sha256": "f565469b019563d2c5efc0193f2b888567723a70569bf249c2d0c9e158f99e0e"
+    },
+    {
+      "path": "verification/local/export.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/local/external-control-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/local/external-control-export.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/local/false-certificate.log",
+      "bytes": 481,
+      "sha256": "b87f89317c0a610fa59cb5f2476eb432b840fd27b9ef1e83dd5a3bd583f7656a"
+    },
+    {
+      "path": "verification/local/false-prime-certificate.log",
+      "bytes": 136,
+      "sha256": "e86fc2bd854bbacbcb3089e4e27ef77c9b2d2ba2f9de3f65ab0b35fb704733e5"
+    },
+    {
+      "path": "verification/local/lean-version.log",
+      "bytes": 106,
+      "sha256": "ef292bc08ba85881f3b660d4f1ab1143de776aae5d1c392cff9d8c3221407c2b"
+    },
+    {
+      "path": "verification/local/nanoda-negative-control.log",
+      "bytes": 302,
+      "sha256": "2d0da3bac5c7cf98973af01b01fb40530516ef25a654175d383751c8bb57f7ad"
+    },
+    {
+      "path": "verification/local/nanoda-positive-control.log",
+      "bytes": 38,
+      "sha256": "ed07365a85540865ce924a89ee71c44c7c54770e0d61841dcd36d2878b95f080"
+    },
+    {
+      "path": "verification/local/nanoda.log",
+      "bytes": 42,
+      "sha256": "ae1c2bb935d280bd7b65b0b4c061014f8c7e6d1edf3d8438e25efcda9a60629a"
+    },
+    {
+      "path": "verification/local/package-build.json",
+      "bytes": 701,
+      "sha256": "985c5d3a3c9157ce423e16d09b85bcf38cad34641bca59727f0c46aadec08f30"
+    },
+    {
+      "path": "verification/local/package-build.log",
+      "bytes": 5635,
+      "sha256": "39a18b529476fa215d2cf79ffb07f7084e1c01ae63e7c001742b4a07cfd77f20"
+    },
+    {
+      "path": "verification/local/positive-certificate.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verification/local/replay-UnitFractionAsymptotic.log",
+      "bytes": 33,
+      "sha256": "0f49e585b3348a46f9fb064c2f7ca7dee416caa9451024417a5f7cc136d43a71"
+    },
+    {
+      "path": "verification/local/replay-UnitFractionBounds.log",
+      "bytes": 29,
+      "sha256": "a7314f08bd3f89df9bf60a43c6861bf2a233bcab16c8254de3e25db997b3d3e7"
+    },
+    {
+      "path": "verification/local/replay-UnitFractionOptimum.log",
+      "bytes": 30,
+      "sha256": "0e0b154e6bfaa59f1034e05901b605f59b26dc2be26a9af3b8540e9f0928198f"
+    },
+    {
+      "path": "verification/local/replay-UnitFractionPrimes.log",
+      "bytes": 29,
+      "sha256": "9a18cd34a7302dd0698f096acc9c1d43071c31b55e517320da3784451458a5eb"
+    },
+    {
+      "path": "verification/local/verification.json",
+      "bytes": 18467,
+      "sha256": "c1d74158833a937b213a0b9a7cf115a318c12767ba5f178c1172c46b316f3123"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 10986,
+      "sha256": "76b3e8ce6fc97811957461cb54d1f468d67625aed6b69d82d130b4ae5cce50d2"
+    }
+  ]
+}
