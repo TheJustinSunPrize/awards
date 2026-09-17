@@ -1,0 +1,4 @@
+'Erdos104.erdos_104_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos104.rpow_le_maxUnitCircleCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos104.exists_card_eq_choose_two_choose_three_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos104.choose_three_le_maxUnitCircleCount' depends on axioms: [propext, Classical.choice, Quot.sound]
