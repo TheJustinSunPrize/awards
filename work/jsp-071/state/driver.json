@@ -1,18 +1,20 @@
 {
   "target": "JSP-000071",
-  "phase": "D0-A",
-  "tick": 0,
+  "phase": "D1-A",
+  "tick": 2,
   "window_start": "2026-09-17T02:35:00+08:00",
   "deadline": "2026-09-18T02:35:00+08:00",
-  "status": "d0a-in-progress",
+  "status": "d1a-in-progress",
   "upstream": {
     "repo": "https://github.com/plby/lean-proofs",
     "pinned_commit": "1268917deaaaa0d674f651287027baa26cea9920",
     "source_file": "src/latest/ErdosProblems/Erdos43.lean"
   },
-  "environment": "leanprover/lean4:v4.34.0 + mathlib 5ed2965256430c3649e86755f9576b54eca72435 (reuse work/jsp-070/verify-current)",
-  "last_action": "启动：计划书 PLAN.md 已建；依赖核查完成（import Mathlib + Erdos42 + Erdos862，均本地可用）；待复制 Erdos43.lean 入 verify-current",
+  "environment": "leanprover/lean4:v4.34.0 + mathlib 5ed2965256430c3649e86755f9576b54eca72435 (reuse work/jsp-070/verify-current .lake via junction)",
+  "last_action": "D1-A 启动：环境搭建完成（ErdosProblems/{42,43,862} + junction 复用 070 .lake）；lake git manifest 校验挂网络 → 改 lean.exe 直连（TestImport 11.6s 实证）；Erdos862 全量编译 >9min 超时待续；build071.ps1 固化",
   "log": [
-    "2026-09-18T01:50:00+08:00 | tick0 | 启动 071：计划书 + 依赖核查（Erdos42/Erdos862 均在同 pinned commit，本地已克隆）"
+    "2026-09-18T01:50:00+08:00 | tick0 | 启动 071：计划书 + 依赖核查（Erdos42/Erdos862 均在同 pinned commit，本地已克隆）",
+    "2026-09-18T02:10:00+08:00 | tick1 | D0-A 完成：scaffold 提交 b49f467；ErdosProblems/{42,43,862} 就位；Erdos862 删除 PNT 遗留 import",
+    "2026-09-18T02:55:00+08:00 | tick2 | D1-A 启动：junction 复用 .lake；发现 lake 挂网络（git manifest 校验）→ lean.exe 直连 11.6s 通过；Erdos862 首次全量编译 >9min 被时间盒终止；build071.ps1 + blockers.md 落盘"
   ]
 }
