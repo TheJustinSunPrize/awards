@@ -1,0 +1,39 @@
+{
+  "status": "submitted-for-review",
+  "repository": "https://github.com/wentAInx/jsp-000971-erdos-1166",
+  "commit": "46f55ea4192231736bd8ecbdfc5eec8b3104d018",
+  "archive": {
+    "id": "v0.2.0",
+    "url": "https://github.com/wentAInx/jsp-000971-erdos-1166/releases/download/v0.2.0/jsp000971-proof-v0.2.0.tar.gz",
+    "sha256": "2c0f739446a1810ccf05be5fb43e1d39e13c2ac97a0b0be7dcf396520cde43c5",
+    "bytes": 2608633
+  },
+  "prior_work_disclosed": true,
+  "first_formalization_claim": false,
+  "lean_sources": {
+    "Checks.lean": "6c0cdeed81492b58ef02b2253d0b44c56b943c709ab4bffed59f4fbb346c133b",
+    "Counting.lean": "85afa283324c4ace66f2c9ee4c6c74895ecb7401b8f055f2ae5a812e50cbe013",
+    "DefinitionBridge.lean": "64697d48fcbad5618c6b42f865ad8059b8264495698564aa0e1bba5eb13df49f",
+    "Final.lean": "2d7f6170a46a95d269f7660a7df34435e46958c083e9282811f91a7ba8aa5ca3",
+    "LogTailNumerics.lean": "96712c6f9a2e97dc9672aa5d5c6116e610f4a827efcf69a914c97158373f04aa",
+    "MaximumCover.lean": "4fe477005c326d47856b0a50b746da6ba7618b9e2a54a46a3cb9625aeca766d0",
+    "MaximumLog.lean": "2c2b00daf6c8bbf669dd3657344d22b680949297590f57ee01e0df306707125b",
+    "ProbabilityAssembly.lean": "c060325d4590cc3a0081769ffb1c1731c5e877e262e505e22d7862c3bbbbc735",
+    "RandomWalkCover.lean": "1b211bcbc0a89425117f9d1f8dcdb0bd31160c892d2be4f3c2bf3ace64fdda67"
+  },
+  "validation": {
+    "upstream_modules": 785,
+    "integration_modules": 9,
+    "axiom_reports": 20,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "key_module_replay": "passed",
+    "full_environment_kernel_replay": "passed",
+    "published_archive_readback": "byte-identical; all source hashes verified",
+    "independent_checker": "not completed",
+    "official_verification": "pending"
+  }
+}
