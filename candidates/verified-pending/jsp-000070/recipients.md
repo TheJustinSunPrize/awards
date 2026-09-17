@@ -2,15 +2,18 @@
 
 ## English
 
-Placeholder entry. Recipient identity will be confirmed through the
-identity-confirmation workflow before any award is announced.
+Confirmed recipient (written confirmation provided 2026-09-18 via this
+records repository; public profile https://github.com/shunfeng8421):
 
-- **RECIPIENT-JSP-000070-A** — placeholder identifier; role: recipient.
-  Final name/legal identity: pending written confirmation.
+- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.
+  Contribution: independent verification of the pinned Lean formalization of
+  the answer to Erdős problem 42 (Erdos42.lean) against the current release
+  (Lean v4.34.0, mathlib v4.34.0) and preparation of this submission.
 
 ## 中文
 
-占位条目。收件人身份将在任何奖项宣布前经身份确认流程核实。
+已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：
 
-- **RECIPIENT-JSP-000070-A** — 占位标识；身份：收件人。最终姓名/法律身份：
-  待书面确认。
+- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：对
+  Erdős 问题 #42 的 pinned Lean 形式化（Erdos42.lean）在 current release
+  （Lean v4.34.0、mathlib v4.34.0）上进行独立验证，并准备本提交。

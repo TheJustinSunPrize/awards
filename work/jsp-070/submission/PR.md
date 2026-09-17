@@ -36,8 +36,8 @@ nonzero differences? — answered (solution + Lean 4 formalization).
 > `compact_cayley_clique` (and the four further entry points) reports exactly
 > `[propext, Classical.choice, Quot.sound]`.
 >
-> Recipient placeholder: **RECIPIENT-JSP-000070-A** (identity confirmation
-> pending per prize rules).
+> Recipient: **Shiqiang Chen (陈世强)** (independent researcher; written
+> confirmation recorded, public profile https://github.com/shunfeng8421).
 >
 > Verification evidence: `candidates/verified-pending/jsp-000070/` in the
 > companion records repository (this repo) — `award.yaml`, `citation.md`,
@@ -54,7 +54,6 @@ nonzero differences? — answered (solution + Lean 4 formalization).
 - [x] Statement v2 active (mathlib v4.34.0 pinned), v1 retained as superseded
 - [x] Sandbox attestation documented (non-elevated token; offline verification;
       source-built mathlib)
-- [x] Recipient placeholder `RECIPIENT-JSP-000070-A` in place
-- [ ] Recipient identity confirmation (human step, pending)
-- [ ] Public award announcement in `awards/` (human step, after confirmation)
+- [x] Recipient confirmed (Shiqiang Chen / 陈世强, shiqiang-chen) — see people/recipients/shiqiang-chen.yaml
+- [ ] Public award announcement in `awards/` (pending official decision; see state)
 - [ ] Final report (`state/final-report.md`)
