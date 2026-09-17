@@ -1,0 +1,3 @@
+'Erdos454.erdos_454.variants.two_le_limsup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos454.exists_gt_forall_nth_prime_add_nth_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos454.frequently_two_mul_nth_prime_add_two_le_f' depends on axioms: [propext, Classical.choice, Quot.sound]
