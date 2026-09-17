@@ -1,0 +1,20 @@
+2026-09-17T01:57:41.4296843Z Build completed successfully (3131 jobs).
+2026-09-17T01:57:53.7130828Z 'JSP000443.hasC4_iff_copy' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:57:53.7131785Z 'JSP000443.hasStar_iff_copy' depends on axioms: [propext, Quot.sound]
+2026-09-17T01:57:53.7132672Z 'JSP000443.hasStar_iff_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:57:53.7133627Z 'JSP000443.rooted_degree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:57:53.7134578Z 'JSP000443.ramsey_bound_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:57:53.7135878Z 'JSP000443.ramsey_bound_even_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:57:53.7136905Z 'JSP000443.polarity20_noC4' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:57:53.7137936Z 'JSP000443.polarity20_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:57:53.7138983Z 'JSP000443.c4StarRamsey_sixteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T01:57:53.8945124Z Nine target axiom audits and all nine dependency revision checks passed.
+2026-09-17T01:57:56.5611634Z   "minimum_degree": 4,
+2026-09-17T01:57:56.5611885Z   "maximum_common_neighbors": 1,
+2026-09-17T01:57:56.5612157Z   "rows_match_Lean": true,
+2026-09-17T01:58:03.9565347Z Build completed successfully (6 jobs).
+2026-09-17T01:58:39.1393336Z Checked 8737 declarations with no errors
+2026-09-17T01:58:41.1459458Z Uploaded bytes 5513816
+2026-09-17T01:58:41.1795738Z SHA256 digest of uploaded artifact zip is cbc6e6eaf516b653264a3b0ec044a1a8c9f88311398f8babeaff463900803f1c
+2026-09-17T01:58:41.3583988Z Artifact jsp-000443-evidence.zip successfully finalized. Artifact ID 10476958624
+2026-09-17T01:58:41.3585183Z Artifact jsp-000443-evidence has been successfully uploaded! Final size is 5513816 bytes. Artifact ID is 10476958624
