@@ -1,0 +1,1 @@
+d426fafcc4e6ff372fddef86251f4de18ca7988f792c05f4a99a2e5d563480cb  LehmerSchinzel.lean
