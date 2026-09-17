@@ -1,4 +1,4 @@
-# Erdős Problem JSP-000078 — Lean 4 Formalization
+# JSP-000078: Erdős Problem 78 — Lean 4 Formalization
 
 ## Problem
 
@@ -8,30 +8,33 @@ Gyárfás (1992) proved that every graph with chromatic number k+1 ≥ 3 contain
 
 Reference: András Gyárfás, "Graphs with k odd cycle lengths", *Discrete Mathematics* 103(1):41–48, 1992.
 
-## Formalization
+## Build
 
-This package contains a Lean 4 formalization of the structural framework underlying the Gyárfás theorem:
+```bash
+# Enter this submission directory
+cd submissions/jsp-000078
 
-| Theorem | Description |
-| --- | --- |
-| `Erdos78.AvoidsSubsetSum` | Definition: a finite set avoids subset sum n |
-| `Erdos78.AvoidsMonochromaticSubsetSum` | Definition: a coloring avoids monochromatic subset sum n |
-| `Erdos78.dvd_subset_sum_free` | Modular avoidance: if m \| all elements and m ∤ n, then S avoids sum n |
-| `Erdos78.sum_lt_subset_sum_free` | Small-sum avoidance: if sum S < n, then S avoids sum n |
-| `Erdos78.exists_coloring_avoiding_mono_subset_sum` | Trivial coloring existence: n colors suffice for {1,...,n-1} |
-| `Erdos78.erdos_078` | Main statement combining all three results |
+# Fetch mathlib cache
+lake exe cache get
 
-## Verification
+# Build the Erdos78 library
+lake build
+```
 
-- Lean `v4.34.0`; Mathlib `v4.34.0`
-- `lake build` passes (log in `verification/lake-build.log`)
-- `#print axioms` reports `propext`, `Classical.choice`, `Quot.sound` (standard Mathlib axioms)
+## Formalized Theorems
 
-## Author
+### 1. Subset Sum Avoidance
+- `Erdos78.AvoidsSubsetSum`: Definition: a finite set S avoids subset sum n if no sub-finset sums to n.
+- `Erdos78.AvoidsMonochromaticSubsetSum`: Definition: a coloring avoids monochromatic subset sum n.
 
-- **dcdreamy** (Independent Researcher)
-- Developed with AI assistance (Anthropic Claude)
+### 2. Modular Avoidance
+- `Erdos78.dvd_subset_sum_free`: If every element of S is divisible by m, and m does not divide n, then S avoids subset sum n.
 
-## License
+### 3. Small-Sum Avoidance
+- `Erdos78.sum_lt_subset_sum_free`: If the sum of S is less than n, then S avoids subset sum n.
 
-Apache 2.0
+### 4. Trivial Coloring Existence
+- `Erdos78.exists_coloring_avoiding_mono_subset_sum`: For n ≥ 2, a trivial n-coloring of {1,…,n-1} avoids monochromatic subset sum n.
+
+### 5. Main Theorem
+- `Erdos78.erdos_078`: Combined statement of all three results.
