@@ -110,6 +110,12 @@ joint award is available, this packet has no established right to the
 formalizer allocation. We do not seek to displace earlier work or claim the
 historical solver's 70%.
 
+A supplementary rewrite cannot establish first-formalization priority or
+an entitlement to 30%. If same-window joint treatment is unavailable, the
+organizer may be asked whether this work is eligible for consideration under
+Tier V (Contribution). We do not assert that this tier applies, that it
+bypasses the priority rules, or that any award is due.
+
 The compliant next step is to keep the existing PR/issue as supplementary
 evidence, request consolidation if appropriate, and ask the designated
 authority to determine priority and any joint eligibility. If ineligible,

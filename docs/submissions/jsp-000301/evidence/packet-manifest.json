@@ -73,8 +73,8 @@
     },
     {
       "path": "official-rules-audit.md",
-      "sha256": "ef74cbc1250af5734d29b832500862ba598ada9fe6b55b4477fd616518edcde4",
-      "bytes": 11180
+      "sha256": "2064eee3555154107d646454cd7907a92b7c5cbe4c9676eb7672705953d70521",
+      "bytes": 11532
     },
     {
       "path": "proof/Counterexample.lean",
