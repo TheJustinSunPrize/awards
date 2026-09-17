@@ -4,9 +4,9 @@
   "started_at": "2026-09-17T02:35:23+08:00",
   "deadline": "2026-09-18T02:35:00+08:00",
   "phase": "D1-B",
-  "tick": 22,
-  "last_action": "待命复核：manage.py validate=OK；交付物零漂移（tracked 改动仅旧 build.log，untracked 均为排查草稿）；继续等待人工（收件人书面确认 → awards/ 迁移公告 → 上游 PR 推送）",
-  "build_status": "submission-ready · waiting-human · bundle-ready",
+  "tick": 23,
+  "last_action": "提交包补强：bundle 重建完整（130,058 B / 22 条目）——补入 people 身份档案 3 份（curators×2 + verifiers×1，记录中被引用）；README-SUBMISSION.md 抽出入库 submission/（此前仅存于 zip，tick21 重建时误删 stage 已恢复）；zip 条目清点核对 21 文件全齐；继续等待人工",
+  "build_status": "submission-ready · waiting-human · bundle-ready(22 entries)",
   "blockers": [],
   "log": [
     "2026-09-17T02:35:23+08:00 | init | 计划初始化：主靶 JSP-000070，备胎 000043/000071，窗口 24h",
@@ -33,6 +33,7 @@
     "2026-09-17T11:50:00+08:00 | tick19 | 收尾修复：lakefile.lean/lean-toolchain/lake-manifest.json 复现三件套入库；people 档案 3 份入库（校验器/策展人依赖）；.gitignore 增补 .lake/ 与 jsp-252/jsp-465；state/blockers.md 落盘（3 项人工阻塞）；进入 waiting-human，后续 tick 仅截止复核",
     "2026-09-17T12:00:00+08:00 | tick20 | 维护哨兵：validate=OK / lake build 8925 jobs 绿 / axioms 复核通过 / 工作树无交付物漂移；final-report 补 commit 链；等待人工（收件人确认→awards 迁移→PR 推送）",
     "2026-09-17T12:30:00+08:00 | tick21 | 一键提交包 jsp-000070-submission-bundle.zip 生成（README + 四件套 + PR.md + 复现工程 + state）；submission/.gitignore 排除 *.zip；继续等待人工",
-    "2026-09-17T12:40:00+08:00 | tick22 | 待命复核：validate=OK；交付物零漂移；等待人工"
+    "2026-09-17T12:40:00+08:00 | tick22 | 待命复核：validate=OK；交付物零漂移；等待人工",
+    "2026-09-17T12:50:00+08:00 | tick23 | 提交包补强：bundle 重建（补 people 档案，22 条目核对全齐）；README-SUBMISSION.md 入库；等待人工"
   ]
 }
