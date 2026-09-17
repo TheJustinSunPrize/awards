@@ -1,0 +1,69 @@
+name: Claim an award
+description: Apply for your own mathematical solution or Lean formalization contribution.
+title: "[Award claim] JSP- "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Only the contributor may submit this claim. Do not apply or collect an award on someone else's behalf.**
+        Your submitting GitHub account is the applicant account. Select both roles if you are claiming both contributions. Update an existing claim instead of submitting a duplicate.
+
+        You may leave the TRON mainnet receiving address blank when applying and provide it later, before payment. **Any address posted here will be public and linked to your GitHub account and claim.** Keep private contact details, identity documents and private confirmation materials out of this issue. Payment requires contribution and identity verification and confirmation of the receiving address.
+
+        Before identity confirmation, use your GitHub account or an existing RECIPIENT-<ENTRY>-A placeholder rather than publishing an unconfirmed real-name identity. A submitted form or checked declaration is not identity verification or award approval.
+  - type: input
+    id: entry
+    attributes:
+      label: Problem link
+      description: Provide the problem-bank link for the JSP identifier in the issue title.
+      placeholder: https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000123
+    validations:
+      required: true
+  - type: dropdown
+    id: contribution_type
+    attributes:
+      label: Contribution being claimed
+      description: Both contributions are reviewed separately, even when made by the same person.
+      options:
+        - Mathematical solution
+        - Lean formalization
+        - Both mathematical solution and Lean formalization
+    validations:
+      required: true
+  - type: input
+    id: tron_receiving_address
+    attributes:
+      label: TRON mainnet receiving address
+      description: Provide and confirm the address before payment. Any address entered here is public. Use a receiving account you own or are entitled to use. Address changes require renewed confirmation by maintainers.
+    validations:
+      required: false
+  - type: textarea
+    id: identity_verification
+    attributes:
+      label: Identity verification method
+      description: Required for mathematical solver claims, including Both. Describe how maintainers can independently verify your identity and confirm the TRON receiving address. Examples include emailing thejustinsunprize@hejustinsun.com from an author email listed in the paper, responding through an established institutional or author website, or using a historical signing key already linked to the author. Other independently verifiable methods may be proposed. For Lean-only claims, leave this field blank; submitting this issue from your contribution-linked GitHub account confirms the account without an additional account-control check. If claiming both roles, explain how your mathematical author identity connects to this account. Name the method here; send private evidence through the maintainer-designated channel, not this issue.
+  - type: textarea
+    id: attribution_clarification
+    attributes:
+      label: Identity or attribution clarification (if needed)
+      description: Leave blank if the catalog already identifies your contribution clearly. Explain only what is needed to connect your applicant account to the credited contributor, such as bot commits or a shared project account. Link a correction issue or PR if the catalog needs updating. Do not repeat proof materials or post private identity information.
+  - type: textarea
+    id: related_claims
+    attributes:
+      label: Related claims, attribution questions and conflicts
+      description: Link previous claims for this work and co-contributors' claims. Disclose overlapping claims, attribution disputes and relevant professional relationships. Update your existing claim instead of submitting a duplicate. Write None if there are no related claims or conflicts.
+    validations:
+      required: true
+  - type: checkboxes
+    id: declarations
+    attributes:
+      label: Applicant declarations
+      options:
+        - label: I am applying for my own contribution using my own GitHub account, not applying or collecting on behalf of another person.
+          required: true
+        - label: My claim concerns my own contribution to the complete solution or Lean proof referenced in the linked problem-bank entry. I have identified any attribution discrepancies that need review.
+          required: true
+        - label: I have disclosed related claims and attribution conflicts and will complete the maintainer's contribution and identity verification before claiming payment.
+          required: true
+        - label: If I provide a TRON address here, I own or am entitled to use the receiving account, designate it for this award payment, and consent to publishing it. If left blank, I will provide it later. I will confirm the receiving address through the verified applicant channel before payment.
+          required: true

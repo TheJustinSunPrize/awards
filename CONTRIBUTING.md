@@ -7,11 +7,31 @@ Contributions maintain the public problem bank, evidence, candidate records, and
 | Type | Include | Handling |
 | --- | --- | --- |
 | Recommend a problem | Precise statement, significance, original references, known results, formalization links | Maintainers check scope, sources and duplicates. |
-| Recommend a recipient | Placeholder or confirmed public ID, contribution description, evidence, related entry | Maintainers review attribution evidence. |
+| Claim an award | Problem-bank link, your contribution role, optional TRON receiving address, related claims and any attribution clarification | Maintainers use the catalog's evidence and verify the applicant's identity and receiving address before payment. |
 | Correction | Exact record, current text, proposed correction and supporting sources | Maintainers review the evidence and record the outcome. |
 | Dispute | Announced award, disputed claim, evidence, requested resolution and conflicts | Maintainers record the concern and arrange review. |
 
-Use the corresponding [issue form](.github/ISSUE_TEMPLATE/). Link existing issues instead of duplicating them. Disclose relevant conflicts using public professional information only. Use RECIPIENT-<ENTRY>-A placeholders until recipient identities are confirmed. Never publish unconfirmed identities, private contacts, identity documents, payment details, internal assessment criteria or deliberations, including in commit messages.
+Use the corresponding [issue form](.github/ISSUE_TEMPLATE/). Link existing issues instead of duplicating them. Disclose relevant conflicts using public professional information only. Use RECIPIENT-<ENTRY>-A placeholders until recipient identities are confirmed. Never publish unconfirmed identities, private contacts, identity documents, private financial information, internal assessment criteria or deliberations, including in commit messages. The award claim form specifically requests a public TRON receiving address with the applicant's consent; keep other payment arrangements private.
+
+The [award claim form](.github/ISSUE_TEMPLATE/claim-award.yml) is for the
+actual contributor applying for themselves. Proxy applications and collection on
+another person's behalf are not accepted. Both mathematical and Lean contributions
+can be claimed in the same issue and are
+reviewed separately using the evidence already in the problem bank. Do not repeat
+proof or source information in the claim; link a correction issue or PR if the
+catalog is missing information or needs updating. Read the [identity and payment process](docs/attribution.md#claiming-an-award).
+The TRON mainnet receiving address is optional when applying but must be provided
+and confirmed before payment. Any address posted in the issue is public and linked
+to the applicant's GitHub account and claim. Maintainers confirm the address
+with the verified applicant before payment; identity documents and private contact
+details are handled through the official private channel.
+For mathematical solver claims, including claims for both roles, state an
+independently verifiable identity-confirmation method. A paper-listed author email is one option; established
+institutional or author channels, historical signing identities and other
+corroborated methods may also be used subject to maintainer verification.
+For Lean claims, submitting the issue from the contribution-linked GitHub account
+confirms that account without a separate account-control check. Lean-only applicants
+may leave the identity-verification-method field blank.
 
 ## Public records
 
@@ -21,7 +41,7 @@ Formal evidence references identify a pinned proof source, a statement tied to t
 
 Keep recipient identities as placeholders until confirmation. Announced awards require completed verification evidence, confirmed public profiles and explicit batch membership. A revocation retains the original decision, recipients and evidence alongside the published reason.
 
-Recommendations, corrections and disputes should receive a public response in their issue thread. [Discussions](docs/discussions-notice.md) is for general conversation. Refer to published announcements for any applicable submission requirements; these forms do not establish an assessment or appeals procedure.
+Recommendations, claims, corrections and disputes should receive a public response in their issue thread. [Discussions](docs/discussions-notice.md) is for general conversation. Refer to published announcements for any applicable submission requirements; these forms do not establish award entitlement or an appeals procedure.
 
 ## Pull requests
 
