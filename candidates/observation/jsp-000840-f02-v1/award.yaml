@@ -1,0 +1,20 @@
+id: jsp-000840-f02-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000840"
+  number: "JSP-000840"
+  title_en: "How many triangles must a graph have once its edge count exceeds the maximum bipartite edge count?"
+  posed:
+    year: 1962
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000840"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
