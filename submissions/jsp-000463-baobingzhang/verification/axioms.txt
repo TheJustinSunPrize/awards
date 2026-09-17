@@ -1,0 +1,4 @@
+'C3C4Free.exC3C4_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'C3C4Free.exC3C4_le_rpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'C3C4Free.extremalNumber_cycleGraph_four_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'C3C4Free.card_edgeFinset_le_of_free_cycleGraph_four' depends on axioms: [propext, Classical.choice, Quot.sound]
