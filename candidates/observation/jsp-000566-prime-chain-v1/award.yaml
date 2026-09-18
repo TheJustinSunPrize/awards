@@ -1,0 +1,20 @@
+id: jsp-000566-prime-chain-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0501-0600.md#JSP-000566"
+  number: "JSP-000566"
+  title_en: "How fast can prime chains grow when each prime divides one less than the next?"
+  posed:
+    year: 1979
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0501-0600.md#JSP-000566"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
