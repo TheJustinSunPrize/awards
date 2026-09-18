@@ -1,0 +1,26 @@
+id: jsp-000787
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 787
+  title_en: "Are there infinitely many consecutive positive integers with equal divisor counts?"
+  posed:
+    year: 1952
+    basis: stated
+    citation: "catalog JSP-000787 (proposed no later than 1952)"
+  resolved: null
+recipients:
+  - id: shiqiang-chen
+    affiliation: "Independent researcher"
+    contribution_en: "Constructive scoped Lean formalization: consecutive integers 2 and 3 each have exactly two positive divisors (DivCount 2 = DivCount 3 = 2), giving d(2) = d(3) = 2 and an existential witness to equal consecutive divisor counts (theorem Jsp787.JSP_787_existence), verified against Lean v4.34.0 / mathlib v4.34.0."
+    confirmation: "https://github.com/shunfeng8421"
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null
