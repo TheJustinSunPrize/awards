@@ -1,0 +1,9 @@
+The copied Lean source files originate from plby/lean-proofs and retain their
+public source headers.  Those headers identify the original license as the
+Apache License, Version 2.0.  The license text is available at:
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+The JSP-specific wrapper and reproduction documentation are provided in this
+repository under the repository's applicable license.  No source license or
+authorship notice is removed by this package.
