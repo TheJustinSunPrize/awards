@@ -374,3 +374,78 @@ theorem crt_lower_bound (n : ℕ) (hn : 4 ≤ n) :
   unfold windowSize
   exact Nat.le_trans (three_pow_le_prod_window hn)
     (Nat.le_of_dvd (lcmUpTo_pos n) (prod_window_dvd_lcm hn))
+
+-- ========== B(n)/L_n 下界: CRT 余数分析 ==========
+
+/-- 合法符号向量: eps_k ∈ {-1, 0, 1} -/
+def validSign (n : ℕ) (eps : ℕ → ℤ) : Prop :=
+  ∀ k, 1 ≤ k → k ≤ n → eps k ∈ ({-1, 0, 1} : Set ℤ)
+
+private lemma dvd_neg_one_imp_dvd_one (p : ℕ) (h : (p:ℤ) ∣ (-1:ℤ)) : (p:ℤ) ∣ (1:ℤ) := by
+  obtain ⟨t, ht⟩ := h
+  use -t
+  ring_nf
+  linarith
+
+/-- 核心消去: 若 e ∈ {-1,0,1} 且 p ≥ 3 整除 e, 则 e = 0
+    这是 CRT 下界的关键: 窗口素数 p (≥ 3) 不能整除 ±1,
+    所以 p | ε_p 推出 ε_p = 0 -/
+theorem dvd_one_of_validSign (p : ℕ) (hp : 3 ≤ p) (e : ℤ)
+    (hv : e ∈ ({-1, 0, 1} : Set ℤ)) (hdvd : (p:ℤ) ∣ e) :
+    e = 0 := by
+  simp only [Set.mem_insert_iff, Set.mem_singleton_iff] at hv
+  rcases hv with rfl | rfl | rfl
+  · exfalso
+    have h1 : p ∣ 1 := Int.natCast_dvd.mp (dvd_neg_one_imp_dvd_one p hdvd)
+    have h2 : p = 1 := Nat.eq_one_of_dvd_one h1
+    omega
+  · rfl
+  · exfalso
+    have h1 : p ∣ 1 := Int.natCast_dvd.mp hdvd
+    have h2 : p = 1 := Nat.eq_one_of_dvd_one h1
+    omega
+
+/-- 合法符号: 若 m(ε) ≡ 0 (mod p) 对窗口素数 p, 则 ε_p = 0
+    这是 proj_zero 在合法符号向量上的加强: 不仅 p | ε_p, 而且 ε_p = 0 -/
+theorem valid_proj_zero (n : ℕ) (hn : 4 ≤ n) (eps : ℕ → ℤ) (hv : validSign n eps)
+    {p : ℕ} (hp : p ∈ windowPrimes n)
+    (hmod : (signedNum (lcmUpTo n) n eps) % (p:ℤ) = 0) :
+    eps p = 0 := by
+  have hp3 : 3 ≤ p := window_prime_ge_three hn hp
+  have hdvd : (p:ℤ) ∣ eps p := proj_zero n p (window_prime_prime hp) (window_prime_hpn hp) (window_prime_hle hp) eps hp3 hmod
+  exact dvd_one_of_validSign p hp3 (eps p) (hv p (by omega) (window_prime_hle hp)) hdvd
+
+/-- CRT 余数非零: 若 ε_p ≠ 0 对窗口素数 p, 则 m(ε) ≢ 0 (mod p)
+    这是 CRT 下界的核心: p-adic 障碍使得非零 ε_p 产生非零余数 -/
+theorem crt_residue_nonzero (n : ℕ) (hn : 4 ≤ n) (eps : ℕ → ℤ) (hv : validSign n eps)
+    {p : ℕ} (hp : p ∈ windowPrimes n)
+    (heps : eps p ≠ 0) :
+    (signedNum (lcmUpTo n) n eps) % (p:ℤ) ≠ 0 := by
+  intro hmod
+  exact heps (valid_proj_zero n hn eps hv hp hmod)
+
+/-- CRT 整除性否定: 若 ε_p ≠ 0 对窗口素数 p, 则 p 不整除 m(ε) -/
+theorem crt_mod_nonzero (n : ℕ) (hn : 4 ≤ n) (eps : ℕ → ℤ) (hv : validSign n eps)
+    {p : ℕ} (hp : p ∈ windowPrimes n)
+    (heps : eps p ≠ 0) :
+    ¬((p:ℤ) ∣ signedNum (lcmUpTo n) n eps) := by
+  intro h
+  have : (signedNum (lcmUpTo n) n eps) % (p:ℤ) = 0 := Int.dvd_iff_emod_eq_zero.mp h
+  exact heps (valid_proj_zero n hn eps hv hp this)
+
+/-- 非零有理数分子绝对值 ≥ 1 -/
+theorem signedNum_abs_pos (n : ℕ) (eps : ℕ → ℤ)
+    (hne : signedNum (lcmUpTo n) n eps ≠ 0) :
+    1 ≤ |signedNum (lcmUpTo n) n eps| :=
+  Int.one_le_abs hne
+
+/-- **Graham 下界 (ℤ 层面)**: 非零合法签名分子的绝对值 ≥ 1
+    等价于有理数层面 f(n) ≥ 1/L_n
+    含义: 对 Graham 问题中的 f(n) = min|m*|/L, 有 f(n) ≥ 1/L_n -/
+theorem graham_lower_bound (n : ℕ) (hn : 4 ≤ n) (eps : ℕ → ℤ) (hv : validSign n eps)
+    (hne : signedNum (lcmUpTo n) n eps ≠ 0) :
+    1 ≤ |signedNum (lcmUpTo n) n eps| ∧
+    ∀ p ∈ windowPrimes n, eps p ≠ 0 → ¬((p:ℤ) ∣ signedNum (lcmUpTo n) n eps) := by
+  constructor
+  · exact signedNum_abs_pos n eps hne
+  · exact fun p hp heps => crt_mod_nonzero n hn eps hv hp heps
