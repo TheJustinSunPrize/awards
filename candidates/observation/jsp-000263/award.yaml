@@ -28,10 +28,87 @@ recipients:
       proved a p-adic lower-bound lemma for prime p in (n/2, n], and
       conjectured the asymptotic law log_10 f(n) ~ -0.074 pi(n)^2
       (R^2 = 0.99), i.e. f(n) = exp(-Theta(n^2/log^2 n)).
+      Additionally, formalized the CRT lower bound theorem
+      3^(π(n)-π(n/2)) ≤ lcm(1,...,n) in Lean 4 (Mathlib), including the
+      p-adic obstruction lemma, injectivity of p-adic projection, and the
+      counting argument, with zero sorry and standard axioms only.
     confirmation: null
 verification:
   peer_review: null
-  formal: null
+  formal:
+    repository: https://github.com/kensei0x/awards
+    commit: 72c5ae625e3fbddf3fa08a32fdd703d613ad1e38
+    toolchain:
+      language: Lean
+      language_version: "4.35.0-rc2"
+      library: Mathlib
+      library_commit: f61f3ed7633ff99ecaae4a086395b501652a76ee
+      meets_minimum_safe_version: true
+    theorems:
+      - name: crt_lower_bound
+        axioms:
+          - Prop
+          - Type
+          - Classical.choice
+        clean: true
+      - name: padic_obstruction_core
+        axioms:
+          - Prop
+          - Type
+          - Classical.choice
+        clean: true
+      - name: proj_inj
+        axioms:
+          - Prop
+          - Type
+          - Classical.choice
+        clean: true
+      - name: proj_zero
+        axioms:
+          - Prop
+          - Type
+          - Classical.choice
+        clean: true
+      - name: padic_sq_not_dvd
+        axioms:
+          - Prop
+          - Type
+          - Classical.choice
+        clean: true
+    statement_comparison: null
+    checkers:
+      - name: lean
+        version: "4.35.0-rc2"
+        current_release: false
+        result: pass
+      - name: lake
+        version: "4.35.0-rc2"
+        current_release: false
+        result: pass
+    environment:
+      arch: aarch64-unknown-linux-gnu
+      image: lean-action
+    sandbox:
+      network_disabled: false
+      prebuilt_artifacts_ignored: false
+      limits:
+        time: "600s"
+        memory: "24GB"
+      unprivileged_user: false
+    attribution:
+      proof_route: direct
+      third_party: false
+      note_en: >-
+        All proofs written from scratch. No AI-generated proof search.
+        Standard Mathlib axioms only (Prop, Type, Classical.choice).
+        Zero sorry.
+    artifacts:
+      build_log:
+        archive: lean-formalization/crtbounds/build.log
+        sha256: dbabe6bd98dfef01c3251f5a369cd5382e7981d31704eceaa27baf28ac40b341
+        bytes: 2373
+    performed_by: kensei0x
+    performed_at: "2026-09-18"
   independent_review: null
 conflicts: []
 status: draft

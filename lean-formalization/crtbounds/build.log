@@ -1,0 +1,44 @@
+⚠ [8931/8933] Replayed Crtbounds.Basic
+warning: Crtbounds/Basic.lean:25:15: Variable name `L` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _L
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Crtbounds/Basic.lean:35:34: Variable name `hp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Crtbounds/Basic.lean:35:67: Variable name `hpn'` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hpn'
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Crtbounds/Basic.lean:58:5: Variable name `hkz` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hkz
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Crtbounds/Basic.lean:123:4: Try this: intro p hp _ h
+
+Note: This linter can be disabled with `set_option linter.tacticAnalysis.introMerge false`
+warning: Crtbounds/Basic.lean:213:17: Variable name `hp3` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp3
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Crtbounds/Basic.lean:255:2: Unused tactic linter: `congr 1` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Crtbounds/Basic.lean:328:37: Variable name `hn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (8933 jobs).
