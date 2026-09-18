@@ -1,0 +1,20 @@
+id: jsp-000598-f06-central-support-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0501-0600.md#JSP-000598"
+  number: "JSP-000598"
+  title_en: "Can two distinct central binomial coefficients have exactly the same prime divisors?"
+  posed:
+    year: 1975
+    basis: earliest-reference
+    citation: "https://doi.org/10.1090/S0025-5718-1975-0369288-3"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
