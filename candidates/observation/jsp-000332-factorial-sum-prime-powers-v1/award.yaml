@@ -1,0 +1,20 @@
+id: jsp-000332-factorial-sum-prime-powers-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000332"
+  number: "JSP-000332"
+  title_en: "How high a power of a prescribed prime can divide a sum of distinct factorials?"
+  posed:
+    year: 1980
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000332"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
