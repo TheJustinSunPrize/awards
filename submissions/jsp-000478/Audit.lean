@@ -1,0 +1,9 @@
+import GeneralPositionBound
+
+#print axioms GeneralPositionBound.boundedLines_iff
+#print axioms GeneralPositionBound.greedy_bound
+#print axioms GeneralPositionBound.greedy_quadratic_bound
+#print axioms GeneralPositionBound.greedy_square_bound
+
+#check GeneralPositionBound.greedy_quadratic_bound
+#check GeneralPositionBound.greedy_square_bound

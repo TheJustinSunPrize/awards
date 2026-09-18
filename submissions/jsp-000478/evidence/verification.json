@@ -1,0 +1,107 @@
+{
+  "checked_at_utc": "2026-09-17T06:10:48.044783+00:00",
+  "award_confirmed": false,
+  "organizer_verification": "pending",
+  "python_optimization_level": 1,
+  "proof_source_policy": "pass",
+  "toolchain": {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "--version"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.861,
+    "output": "Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)\n"
+  },
+  "build": {
+    "command": [
+      "lake",
+      "build"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.331,
+    "output": "Build completed successfully (1687 jobs).\n"
+  },
+  "axiom_audit": {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "Audit.lean"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 9.231,
+    "output": "'GeneralPositionBound.boundedLines_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralPositionBound.greedy_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralPositionBound.greedy_quadratic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralPositionBound.greedy_square_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\nGeneralPositionBound.greedy_quadratic_bound (a : Finset GeneralPositionBound.Point)\n  (ha : GeneralPositionBound.NoFour a) : \u2203 b \u2286 a, GeneralPositionBound.NoThree b \u2227 2 * a.card \u2264 b.card * (b.card + 1)\nGeneralPositionBound.greedy_square_bound (a : Finset GeneralPositionBound.Point) (ha : GeneralPositionBound.NoFour a) :\n  \u2203 b \u2286 a, GeneralPositionBound.NoThree b \u2227 a.card \u2264 b.card ^ 2\n"
+  },
+  "axiom_dependencies": {
+    "GeneralPositionBound.boundedLines_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "GeneralPositionBound.greedy_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "GeneralPositionBound.greedy_quadratic_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "GeneralPositionBound.greedy_square_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "negative_controls": {
+    "false_arithmetic": "rejected by Lean with warnings as errors",
+    "placeholder": "rejected by Lean with warnings as errors",
+    "custom_axiom": "rejected by the axiom allowlist"
+  },
+  "fresh_kernel_replay": {
+    "command": [
+      "lake",
+      "env",
+      "leanchecker",
+      "--verbose",
+      "--fresh",
+      "GeneralPositionBound"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 132.797,
+    "output": "replaying GeneralPositionBound with --fresh\n"
+  },
+  "checker_limitation": "leanchecker uses the bundled Lean kernel, not an independently implemented checker; upstream cached library artifacts were used, not a full source rebuild of all imports.",
+  "source_files": {
+    "GeneralPositionBound.lean": {
+      "sha256": "eb32aeda59d729a4821abf9a4b0ab1e7f1a6b0b81350e5ee4099fc81dac82e2e",
+      "bytes": 7278
+    },
+    "Audit.lean": {
+      "sha256": "8edbbd7f2b8a5127ec41f08c9bb6fc770b329389860f06d995ead121f3dd2e98",
+      "bytes": 342
+    },
+    "lakefile.toml": {
+      "sha256": "a010c388206f1688854b09f2e03de75e500705fed7f5bb7a330f877e25544cf4",
+      "bytes": 291
+    },
+    "lake-manifest.json": {
+      "sha256": "5f595ac58d6064b5403c9d853afe663db227b06d31de9706856320e9ed7c6378",
+      "bytes": 3559
+    },
+    "lean-toolchain": {
+      "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+      "bytes": 25
+    },
+    "verify.py": {
+      "sha256": "c6ff2e66b313908cdcf71e74085d85f58cbaf82f1909ceba0d0a937effe7a35c",
+      "bytes": 5583
+    }
+  },
+  "local_validation": "pass"
+}
