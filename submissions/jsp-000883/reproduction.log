@@ -1,0 +1,56 @@
+Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 2796 file(s)
+ℹ [2812/2819] Built OneCarry (6.2s)
+info: OneCarry.lean:332:0: 'Erdos1063.carry_of_mod_lt' depends on axioms: [propext, Quot.sound]
+info: OneCarry.lean:333:0: 'Erdos1063.one_carry' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OneCarry.lean:334:0: 'Erdos1063.prime_power_dvd_choose' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OneCarry.lean:335:0: 'Erdos1063.high_power_carry' depends on axioms: [propext, Quot.sound]
+info: OneCarry.lean:336:0: 'Erdos1063.truncated_covering' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OneCarry.lean:337:0: 'Erdos1063.low_power_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OneCarry.lean:338:0: 'Erdos1063.truncated_covering_of_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OneCarry.lean:339:0: 'Erdos1063.large_prime_automatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OneCarry.lean:340:0: 'Erdos1063.anchored_residue' depends on axioms: [propext]
+info: OneCarry.lean:341:0: 'Erdos1063.anchored_covering' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OneCarry.lean:342:0: 'Erdos1063.off_center_valuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OneCarry.lean:343:0: 'Erdos1063.anchor_carry_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OneCarry.lean:344:0: 'Erdos1063.small_prime_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OneCarry.lean:345:0: 'Erdos1063.exceptional_large_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OneCarry.lean:346:0: 'Erdos1063.carry_iff_mod_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: OneCarry.lean:347:0: 'Erdos1063.no_late_carry' depends on axioms: [propext, Quot.sound]
+info: OneCarry.lean:348:0: 'Erdos1063.center_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2813/2819] Built FiniteConstruction (1.5s)
+info: FiniteConstruction.lean:137:0: 'Erdos1063.small_prime_from_depth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteConstruction.lean:138:0: 'Erdos1063.prime_divisor_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteConstruction.lean:139:0: 'Erdos1063.center_fails_at_prime_divisor' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteConstruction.lean:140:0: 'Erdos1063.dvd_choose_of_local' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FiniteConstruction.lean:141:0: 'Erdos1063.finite_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2814/2819] Built Simultaneous (1.3s)
+info: Simultaneous.lean:130:0: 'Erdos1063.simultaneous_boxes' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Simultaneous.lean:131:0: 'Erdos1063.difference_carry' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Simultaneous.lean:132:0: 'Erdos1063.exists_regular_multiplier' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Simultaneous.lean:133:0: 'Erdos1063.exists_bounded_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2815/2819] Built SizeBounds (7.3s)
+info: SizeBounds.lean:149:0: 'Erdos1063.small_remainder_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SizeBounds.lean:150:0: 'Erdos1063.anchorProduct_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SizeBounds.lean:151:0: 'Erdos1063.exists_coarse_bounded_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2816/2819] Built Parameters (3.5s)
+info: Parameters.lean:59:0: 'Erdos1063.parameter_arithmetic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Parameters.lean:60:0: 'Erdos1063.parameter_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2817/2819] Built AsymptoticBound (2.3s)
+info: AsymptoticBound.lean:106:0: 'Erdos1063.eventually_anchor_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AsymptoticBound.lean:107:0: 'Erdos1063.eventually_prime_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AsymptoticBound.lean:108:0: 'Erdos1063.eventually_coarse_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2818/2819] Built Submission (1.7s)
+info: Submission.lean:76:0: 'Erdos1063.erdos_1063.better_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2819 jobs).
+'Erdos1063.erdos_1063.better_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+replaying Submission
+replaying AsymptoticBound
+replaying Parameters
+replaying SizeBounds
+replaying Simultaneous
+replaying FiniteConstruction
+replaying OneCarry
