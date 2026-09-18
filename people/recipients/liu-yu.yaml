@@ -1,0 +1,9 @@
+# Public recipient profile. Real identity confirmed by the contributor.
+id: liu-yu
+name: "Liu Yu (刘煜)"
+role: recipient
+affiliation: ""
+links:
+  - https://github.com/lyssom
+publication_consent: "https://gist.github.com/lyssom/113fe050f18bdc8ac01bce07dc54c71e"
+recusals: []

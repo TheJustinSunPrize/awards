@@ -12,18 +12,19 @@ problem:
     year: 2001
 decision: null
 recipients:
-  - id: RECIPIENT-jsp-000307-LYSSOM-A
+  - id: liu-yu
     affiliation: ""
     contribution_en: |
       Lean 4 / Mathlib v4.33.0 formalization of the existence statement
-      (witness n = 13). Lean author: lyssom, with AI assistance from
-      MiniMax-M3 (human-AI collaborative team). Mathematical credit
-      remains with Erdős, Pomerance (1978), and Balog (2001).
-    confirmation: null
+      (witness n = 13). Lean author: Liu Yu (刘煜) / lyssom, with AI
+      assistance from MiniMax-M3 (human-AI collaborative team).
+      Mathematical credit remains with Erdős, Pomerance (1978), and
+      Balog (2001).
+    confirmation: "https://gist.github.com/lyssom/113fe050f18bdc8ac01bce07dc54c71e"
 verification:
   peer_review: null
   formal: null
   independent_review: null
 conflicts: []
-status: draft
+status: under-verification
 revocation: null
