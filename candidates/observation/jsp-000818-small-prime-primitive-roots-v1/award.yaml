@@ -1,0 +1,20 @@
+id: jsp-000818-small-prime-primitive-roots-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000818"
+  number: "JSP-000818"
+  title_en: "Does every prime modulus have a relatively small prime primitive root?"
+  posed:
+    year: 1965
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000818"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
