@@ -1,4 +1,44 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000263",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards",
+          "number": "JSP-000263",
+          "title_en": "How close to zero can a nonzero signed subsum of a finite harmonic series be?",
+          "posed": {
+            "year": 1980,
+            "basis": "earliest-reference",
+            "citation": "R. L. Graham, \"Old and New Problems and Results in Combinatorial Number Theory\", L'Enseignement Mathematique, Universite de Geneve, 1980 (problem on signed sums of unit fractions)."
+          },
+          "resolved": null
+        },
+        "decision": null,
+        "recipients": [
+          {
+            "id": "RECIPIENT-JSP-000263-A",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Computed the exact minimum nonzero absolute signed subsum f(n) of the first n unit fractions 1/1, ..., 1/n for all n = 2 through 40 by two independent methods (exact 3^n sign enumeration for n <= 13, and meet-in-the-middle adjacent-gap computation over exact integer arithmetic for n <= 40), established a structural reduction of the signed-subsum problem to minimum adjacent gaps of subset-sum sets, proved a p-adic lower-bound lemma for prime p in (n/2, n], and conjectured the asymptotic law log_10 f(n) ~ -0.074 pi(n)^2 (R^2 = 0.99), i.e. f(n) = exp(-Theta(n^2/log^2 n)).",
+            "confirmation": null
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "draft",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000263",
+      "citation": "# Citation\n\n## English\n\n**Candidate progress claim (draft, under preparation; no award implied).**\n\nFor the Graham problem JSP-000263 — minimizing |sum_{k=1}^n eps_k/k| over\neps_k in {-1,0,+1} with a nonzero sum — the candidate work contributes:\n\n1. **Exact tabulation.** The exact minimum f(n) for n = 2..40, computed in\n   exact integer arithmetic over L_n = lcm(1..n) by two independent\n   algorithms: (a) direct enumeration of all 3^n sign vectors with exact\n   rational arithmetic for n <= 13; (b) meet-in-the-middle: sorted\n   signed-subsum arrays for each half, vectorized binary-search merge to\n   obtain the minimum cross gap, for n <= 40. Both methods agree on all\n   overlap (n = 2..13).\n\n2. **Structural reduction.** f(n) equals the minimum adjacent gap of the\n   sorted set of all 2^n subset sums of {L_n/k : 1 <= k <= n}, divided by\n   L_n. This converts the signed-subsum question into a subset-sum gap\n   problem.\n\n3. **p-adic obstruction lemma (proved).** For each prime p with n/2 < p <= n,\n   every nonzero signed subsum numerator m satisfies m = eps_p (L_n/p) (mod p)\n   with eps_p in {-1,0,+1}; in particular m is not divisible by p whenever\n   eps_p != 0. This explains the observed downward jumps of f(n) at primes.\n\n4. **Asymptotic conjecture.** Empirical fit log_10 f(n) = -0.074 pi(n)^2 -\n   1.23 with R^2 = 0.99, suggesting f(n) = exp(-Theta(n^2/log^2 n)).\n\nHighlights of the computed values: f(13..16) = 1/40040; f(17..21) = 23/6126120;\nf(27..30) = 1/174594420; f(31..36) = 11/386105756400; f(37) = 109/8010391989600;\nf(38..40) = 1/452675714400 (about 2.2 x 10^-12).\n\nNo formal Lean statement has yet been produced for this progress claim; this\nrecord is published as a draft observation candidate pending independent\nverification.\n\n## English (computation reproducibility)\n\nScripts (Python 3.10+, exact integer arithmetic, no floating point in the\ncomparison path): `fseq2.py` (incremental exact subset-sum set), `fseq5.py`\n(numpy int64 sorted-array merge), `fseq_vmitm.py` (vectorized MITM). Total\nruntime about 45 minutes on a 24 GB workstation; n >= 41 requires out-of-core\nsubset-sum gap computation. Data file `f_sequence.json` contains the exact\nnumerator/denominator pairs.\n",
+      "recipients": "# Recipients\n\n## English\n\nUse RECIPIENT-JSP-000263-A until written confirmation. The candidate\ncontribution (exact computation of f(n) for n <= 40, the subset-sum gap\nreduction, the p-adic obstruction lemma, and the exp(-Theta(n^2/log^2 n))\nasymptotic conjecture) is described in `award.yaml` and `citation.md`.\nWritten recipient confirmation is pending; an authorized attestation link\nwill be added when available.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }
