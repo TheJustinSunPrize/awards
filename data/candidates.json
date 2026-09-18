@@ -1,4 +1,37 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000304-odd-prime-factor-v1",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000304",
+          "number": "JSP-000304",
+          "title_en": "How large a prime factor must the product of two consecutive positive integers have?",
+          "posed": {
+            "year": 1965,
+            "basis": "earliest-reference",
+            "citation": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000304"
+          },
+          "resolved": null
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000304-odd-prime-factor-v1",
+      "citation": "# Candidate observation\n\n## English\n\nThis candidate observation is associated with [JSP-000304 — How large a prime factor must the product of two consecutive positive integers have?](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000304). It publishes `Statement.lean` and `Proof.lean` for a complete, machine-checked Lean formalization of the answer to the catalog question: for every `n ≥ 2` the product `n * (n + 1)` of two consecutive positive integers always has a prime factor at least `3`, and the guaranteed bound `3` is optimal, being attained at `n = 8`, where `8 * 9 = 72 = 2³ · 3²` has largest prime factor exactly `3`. The theorems proved are `jsp000304 (n : ℕ) (hn : 2 ≤ n) : ∃ p : ℕ, Nat.Prime p ∧ 3 ≤ p ∧ p ∣ n * (n + 1)`, `prime_dvd_72_le_three : Nat.Prime p → p ∣ 72 → p ≤ 3`, `jsp000304_tight : ∃ n : ℕ, 2 ≤ n ∧ ∀ p, Nat.Prime p → p ∣ n * (n + 1) → p ≤ 3` (witness `n = 8`), and the combined form `jsp000304_complete : (∀ n : ℕ, 2 ≤ n → ∃ p : ℕ, Nat.Prime p ∧ 3 ≤ p ∧ p ∣ n * (n + 1)) ∧ ∃ n : ℕ, 2 ≤ n ∧ ∀ p, Nat.Prime p → p ∣ n * (n + 1) → p ≤ 3`. The argument is elementary: of two consecutive integers one is odd and, since `n ≥ 2`, that odd one is at least `3`; every prime factor of an odd number is an odd prime, hence at least `3`, and it divides the product. Tightness follows because every prime factor of `72 = 8 * 9 = 2³ · 3²` is at most `3`.\n\n**Scope boundary:** this observation records the complete answer to the catalog question as stated — the guaranteed lower bound `3` and its optimality in the range `n ≥ 2`. The catalog entry remains Open; whether it should be reclassified on the basis of this observation is a decision for the maintainers and is not made by this candidate record. No award claim is made.\n\nThe formal source is pinned to the public repository [Yaohua-Leo/jsp-000304-lean](https://github.com/Yaohua-Leo/jsp-000304-lean) at commit `475a389b3c6052d97bc3ca4cc81683341a4662e9` on branch `main`. A local Lean compilation was run with the pinned toolchain `leanprover/lean4:v4.35.0-rc2` and Mathlib `v4.35.0-rc2`: `lake env lean JSP000304.lean` produces only the axiom-audit info lines, and `#print axioms` reports for each of the four theorems exactly `[propext, Classical.choice, Quot.sound]`. These compiler results are reproducibility evidence for the stated formal theorems; they are not official JSP verification or award admission.\n\nThe catalog entry records \"Date proposed: No later than 1965 (bibliographic evidence)\" with no publication details, so the `posed.citation` field points to the catalog entry itself as the source of record rather than to an external publication.\n\nThe candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.\n",
+      "recipients": "# Recipients\n\n## English\n\nNo recipient is identified in this preliminary observation. It makes no recipient, award, payment, or identity claim. For attribution of the formalization only: formalization author Yaohua-Leo, AI-assisted via ZCode (GLM); mathematical credit for the catalogued question belongs to the public record of JSP-000304.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }
