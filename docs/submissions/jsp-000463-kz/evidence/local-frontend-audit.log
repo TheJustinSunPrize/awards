@@ -1,0 +1,28 @@
+'JSP000463.rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000463.free_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000463.free_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000463.regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000463.vertex_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000463.edge_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000463.finite_field_construction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000463.finite_field_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000463.prime_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000463.unbounded_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000463.unbounded_graphs' depends on axioms: [propext, Classical.choice, Quot.sound]
+def JSP000463.incidence.{u_1} : (K : Type u_1) → [Field K] → SimpleGraph (JSP000463.Vertex K) :=
+fun K [Field K] =>
+  {
+    Adj := fun u v =>
+      match u, v with
+      | Sum.inl p, Sum.inr l => p.2 = l.1 * p.1 + l.2
+      | Sum.inr l, Sum.inl p => p.2 = l.1 * p.1 + l.2
+      | x, x_1 => False,
+    symm := ⋯, loopless := ⋯ }
+def JSP000463.exC3C4 : ℕ → ℕ :=
+fun n => {G | (SimpleGraph.cycleGraph 3).Free G ∧ (SimpleGraph.cycleGraph 4).Free G}.sup fun G => G.edgeFinset.card
+JSP000463.finite_field_construction.{u_1} {K : Type u_1} [Field K] [Fintype K] [DecidableEq K] :
+  ∃ G x, (SimpleGraph.cycleGraph 3).Free G ∧ (SimpleGraph.cycleGraph 4).Free G ∧ G.edgeFinset.card = Fintype.card K ^ 3
+JSP000463.unbounded_graphs (N : ℕ) :
+  ∃ n,
+    N < n ∧
+      ∃ G x, (SimpleGraph.cycleGraph 3).Free G ∧ (SimpleGraph.cycleGraph 4).Free G ∧ 8 * G.edgeFinset.card ^ 2 = n ^ 3

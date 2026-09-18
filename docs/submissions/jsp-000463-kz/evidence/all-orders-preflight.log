@@ -1,0 +1,20 @@
+2026-09-17 UTC: python3 -m unittest discover -s tests -v
+Ran 22 tests in 6.694s
+OK
+This is a summary; individual test results were observed in the tool output.
+
+$ python scripts/manage.py validate
+validate: OK
+
+$ python scripts/manage.py links
+links: OK
+
+$ python scripts/manage.py build
+build: OK
+
+$ python scripts/manage.py check
+check: OK
+
+$ python scripts/manage.py history --base f4e7173d89dfe91022a185427d63452c8ffbf6ae
+history: OK
+

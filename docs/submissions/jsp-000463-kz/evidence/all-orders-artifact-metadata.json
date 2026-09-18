@@ -1,0 +1,19 @@
+{
+  "archive_download_url": "https://api.github.com/repos/ketianzhang1-lang/jsp-000301-lean/actions/artifacts/10479636775/zip",
+  "created_at": "2026-09-17T03:24:38Z",
+  "digest": "sha256:d332f1484bdc3a254c51f84548c8677e789917da435f8b3023d8cd3b3cd01494",
+  "expired": false,
+  "expires_at": "2026-12-16T03:21:52Z",
+  "id": 10479636775,
+  "name": "jsp-000463-evidence",
+  "size_in_bytes": 30571637,
+  "updated_at": "2026-09-17T03:24:38Z",
+  "url": "https://api.github.com/repos/ketianzhang1-lang/jsp-000301-lean/actions/artifacts/10479636775",
+  "workflow_run": {
+    "head_branch": "jsp-000463-incidence-kz",
+    "head_repository_id": 1373404416,
+    "head_sha": "91a57fa9ab5d0f0f1df3f94e156e29fc4a8ca0f2",
+    "id": 35177883810,
+    "repository_id": 1373404416
+  }
+}
