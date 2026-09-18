@@ -1,0 +1,41 @@
+def JSP000389.factorialResidues (p : Nat) : Finset (ZMod p) :=
+  Finset.image (fun (n : Nat) => Nat.cast (Nat.factorial n)) (Finset.Ico (OfNat.ofNat 1) p)
+
+def JSP000389.residueCount (n : Nat) : Nat :=
+  Finset.card (Finset.image (fun (n : Nat) => HMod.hMod (Nat.factorial n) n) (Finset.Ico (OfNat.ofNat 1) n))
+
+def JSP000389.Socialist (a._@._internal._hyg.0 : Nat) : Prop :=
+  And (Nat.Prime a._@._internal._hyg.0)
+    (And (LT.lt (OfNat.ofNat 5) a._@._internal._hyg.0)
+      (Set.InjOn (fun (n : Nat) => Nat.cast (Nat.factorial n)) (Set.Ico (OfNat.ofNat 2) a._@._internal._hyg.0)))
+
+theorem JSP000389.factorial_residue_lower_bound (p : Nat) (hp : Nat.Prime p) :
+  LE.le (HSub.hSub p (OfNat.ofNat 2))
+    (HMul.hMul (JSP000389.residueCount p) (HSub.hSub (JSP000389.residueCount p) (OfNat.ofNat 1))) :=
+  _
+
+theorem JSP000389.factorial_residue_upper_bound (p : Nat) (hprime : Nat.Prime p) (hp : LT.lt (OfNat.ofNat 5) p)
+  (hmod : Ne (HMod.hMod p (OfNat.ofNat 8)) (OfNat.ofNat 5)) :
+  LE.le (JSP000389.residueCount p) (HSub.hSub p (OfNat.ofNat 3)) :=
+  _
+
+theorem JSP000389.socialist_necessary_conditions (p : Nat) (h : JSP000389.Socialist p) :
+  And (Eq (HMod.hMod p (OfNat.ofNat 8)) (OfNat.ofNat 5))
+    (Eq
+      (HPow.hPow (HSub.hSub (Finset.sum (Finset.range p) (fun (n : Nat) => Nat.cast (Nat.factorial n))) (OfNat.ofNat 2))
+        (OfNat.ofNat 2)) (Neg.neg (OfNat.ofNat 1))) :=
+  _
+
+theorem JSP000389.socialist_missing_residue :
+  forall {p : Nat} [inst._@.JSP000389.871614579._hygCtx._hyg.5 : Fact (Nat.Prime p)],
+  JSP000389.Socialist p → Eq (Finset.erase Finset.univ (OfNat.ofNat 0))
+    (Insert.insert (Neg.neg (Nat.cast (Nat.factorial (HDiv.hDiv (HSub.hSub p (OfNat.ofNat 1)) (OfNat.ofNat 2)))))
+      (Finset.image (fun (n : Nat) => Nat.cast (Nat.factorial n)) (Finset.Ico (OfNat.ofNat 2) p))) :=
+  _
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
