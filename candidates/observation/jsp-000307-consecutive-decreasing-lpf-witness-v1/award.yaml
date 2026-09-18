@@ -1,3 +1,6 @@
+# Observation candidate for JSP-000307.
+# Scope: witness-only record. This does NOT resolve the full problem
+# (infinitely many descending triples — Balog 2001) and claims no award.
 id: jsp-000307-consecutive-decreasing-lpf-witness-v1
 batch: null
 problem:
@@ -11,20 +14,11 @@ problem:
   resolved:
     year: 2001
 decision: null
-recipients:
-  - id: liu-yu
-    affiliation: ""
-    contribution_en: |
-      Lean 4 / Mathlib v4.33.0 formalization of the existence statement
-      (witness n = 13). Lean author: Liu Yu (刘煜) / lyssom, with AI
-      assistance from MiniMax-M3 (human-AI collaborative team).
-      Mathematical credit remains with Erdős, Pomerance (1978), and
-      Balog (2001).
-    confirmation: "https://gist.github.com/lyssom/113fe050f18bdc8ac01bce07dc54c71e"
+recipients: []
 verification:
   peer_review: null
   formal: null
   independent_review: null
 conflicts: []
-status: under-verification
+status: draft
 revocation: null

@@ -19,26 +19,19 @@
           }
         },
         "decision": null,
-        "recipients": [
-          {
-            "id": "liu-yu",
-            "affiliation": "",
-            "contribution_en": "Lean 4 / Mathlib v4.33.0 formalization of the existence statement\n(witness n = 13). Lean author: Liu Yu (刘煜) / lyssom, with AI\nassistance from MiniMax-M3 (human-AI collaborative team).\nMathematical credit remains with Erdős, Pomerance (1978), and\nBalog (2001).\n",
-            "confirmation": "https://gist.github.com/lyssom/113fe050f18bdc8ac01bce07dc54c71e"
-          }
-        ],
+        "recipients": [],
         "verification": {
           "peer_review": null,
           "formal": null,
           "independent_review": null
         },
         "conflicts": [],
-        "status": "under-verification",
+        "status": "draft",
         "revocation": null
       },
-      "source_path": "candidates/verified-pending/jsp-000307-consecutive-decreasing-lpf-witness-v1",
-      "citation": "# Citation\n\n## English\n\nVerified-pending candidate for JSP-000307 (Erdős problem 307): \"Can three\nconsecutive integers have strictly decreasing largest prime factors?\"\n\nThe catalog records the problem as Solved with the deeper Balog 2001\nresult (infinitely many such triples exist). This candidate records\nonly the **existence** of one witness triple, proved by a complete\nLean 4 / Mathlib v4.33.0 formalization at\nhttps://github.com/lyssom/jsp-000307-lean.\n\nWitness: `n = 13`. The triple (13, 14, 15) has largest prime factors\n(13, 7, 5), with `13 > 7 > 5`.\n\nTheorem (`JSP000307.JSP_307`):\n\n```lean\n∃ n : ℕ, IsLPF n 13 ∧ IsLPF (n + 1) 7 ∧ IsLPF (n + 2) 5 ∧ 13 > 7 ∧ 7 > 5\n```\n\nRecipient: Liu Yu (刘煜) / GitHub `lyssom`, with public publication\nconsent at https://gist.github.com/lyssom/113fe050f18bdc8ac01bce07dc54c71e.\n\nStatus: `under-verification`. The Lean formalization has been built\n(8707 jobs, axiom audit `[propext, Classical.choice, Quot.sound]` only,\nno `sorry`/`admit`/`native_decide`/custom axioms), but the formal\nverification record (`verification/record.yaml` with pinned commits,\nindependent checkers, and statement comparison) has **not yet been\ncompleted**. The `verification/formal` field is intentionally `null`\nuntil an independent reviewer closes the statement comparison\n(`equivalent`) and an independent runner reproduces the build.\n\nScope honesty: this formalization does NOT formalize the Balog 2001\n\"infinitely many\" theorem. It only proves that at least one such\ntriple exists. Tier evaluation should reflect \"Partial Progress /\nContribution\" rather than full resolution.\n\nToolchain (pinned, immutable): Lean v4.33.0, Mathlib v4.33.0.",
-      "recipients": "# Recipients\n\n## English\n\nConfirmed recipient: **Liu Yu (刘煜)** — GitHub `lyssom`.\n\nContribution: Lean 4 / Mathlib v4.33.0 formalization of the existence\nstatement for JSP-000307 (witness n = 13, largest prime factors\n13 > 7 > 5), developed with AI assistance from MiniMax-M3\n(human-AI collaborative team; AI role disclosed).\n\nPublic publication consent:\nhttps://gist.github.com/lyssom/113fe050f18bdc8ac01bce07dc54c71e\n\nPublic profile: https://github.com/lyssom\n\nThe mathematical problem was solved (and the deeper \"infinitely many\"\nresult proved) by Erdős, Pomerance, and Balog — that mathematical\ncredit is recorded in the catalog entry's citation, not in this\ncandidate record.",
+      "source_path": "candidates/observation/jsp-000307-consecutive-decreasing-lpf-witness-v1",
+      "citation": "# Citation\n\n## English\n\nObservation candidate for JSP-000307 (Erdős problem 307): \"Can three\nconsecutive integers have strictly decreasing largest prime factors?\"\n\nThis record proves only the **existence** of a witness triple\n(n = 13, with largest prime factors 13 > 7 > 5) in Lean 4 / Mathlib\nv4.33.0. It does **not** prove the full result recorded in the catalog\n(Balog 2001: infinitely many such triples exist), it does not resolve\nthe catalogued problem, and it makes **no award claim**.\n\nThe catalog entry for JSP-000307 remains `Solved` with `Lean proof: No`\nand `Eligible to claim: No`. This observation record is published for\ntransparency only; it does not change any catalog status or eligibility\nfield.\n\nMain theorem (`JSP000307.JSP_307`, in `JSP000307.lean`):\n\n```lean\n∃ n : ℕ, IsLPF n 13 ∧ IsLPF (n + 1) 7 ∧ IsLPF (n + 2) 5 ∧ 13 > 7 ∧ 7 > 5\n```\n\nAxiom audit: every proved theorem depends only on `[propext,\nClassical.choice, Quot.sound]`. No `sorry`, no `admit`, no\n`native_decide`, no custom axioms.\n\nLean author: lyssom (with AI assistance from MiniMax-M3). No recipient\nidentity is confirmed or claimed in this record (`recipients: []`).\n",
+      "recipients": "# Recipients\n\n## English\n\nNo recipient is identified or claimed in this observation record.\n\nThe Lean formalization is an existence-witness proof only (n = 13); it\ndoes not constitute a complete solution of JSP-000307, so no recipient\nplaceholder or profile is published here. The underlying mathematical\ncredit (Erdős, Pomerance 1978; Balog 2001) is recorded in the problem\ncatalog, not in this candidate record.\n",
       "verification_record": null,
       "statement": null
     }
