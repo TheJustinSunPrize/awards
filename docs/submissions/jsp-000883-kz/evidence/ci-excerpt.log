@@ -1,0 +1,25 @@
+2026-09-17T02:34:15.4966106Z info: Audit.lean:3:0: 'JSP000883.descFactorial_mod' depends on axioms: [propext, Quot.sound]
+2026-09-17T02:34:15.4966872Z info: Audit.lean:4:0: 'JSP000883.choose_multiple_factorial' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:15.4967726Z info: Audit.lean:5:0: 'JSP000883.self_not_dvd_choose_multiple_factorial' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:15.4968646Z info: Audit.lean:6:0: 'JSP000883.all_other_factors_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:15.4969571Z info: Audit.lean:7:0: 'JSP000883.factorial_multiple_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:15.4970185Z info: Audit.lean:8:0: 'JSP000883.least_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:15.4971008Z info: Audit.lean:9:0: 'JSP000883.infinitely_many_starting_points' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:15.4971615Z info: Audit.lean:10:0: 'Erdos1063.erdos_1063.variants.monier_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:15.4972222Z info: Audit.lean:11:0: 'Erdos1063.original_least_is_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:15.5059023Z Build completed successfully (3095 jobs).
+2026-09-17T02:34:33.4852615Z 'JSP000883.descFactorial_mod' depends on axioms: [propext, Quot.sound]
+2026-09-17T02:34:33.4853592Z 'JSP000883.choose_multiple_factorial' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:33.4854603Z 'JSP000883.self_not_dvd_choose_multiple_factorial' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:33.4855567Z 'JSP000883.all_other_factors_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:33.4856687Z 'JSP000883.factorial_multiple_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:33.4857583Z 'JSP000883.least_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:33.4858452Z 'JSP000883.infinitely_many_starting_points' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:33.4859254Z 'Erdos1063.erdos_1063.variants.monier_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:33.4859790Z 'Erdos1063.original_least_is_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:34:33.6346644Z Nine target axiom audits and all locked dependency revision checks passed.
+2026-09-17T02:34:36.2531483Z https://github.com/leanprover/lean4export.git 6cea97789dc088ea47fcea15692db85685aedac5
+2026-09-17T02:34:36.5085610Z https://github.com/ammkrn/nanoda_lib.git 4c544ed4099c8227f07d5de77ad1e69fb0740a27
+2026-09-17T02:34:41.7491008Z Build completed successfully (6 jobs).
+2026-09-17T02:35:01.8381018Z Checked 6675 declarations with no errors
+2026-09-17T02:35:03.4175770Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

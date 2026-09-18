@@ -1,0 +1,50 @@
+def JSP000883.Admissible (n a._@._internal._hyg.0 : Nat) : Prop :=
+  And (LE.le (HMul.hMul (OfNat.ofNat 2) n) a._@._internal._hyg.0)
+    (Exists
+      (fun (i0 : Nat) =>
+      And (LT.lt i0 n)
+        (And (Not (Dvd.dvd (HSub.hSub a._@._internal._hyg.0 i0) (Nat.choose a._@._internal._hyg.0 n)))
+          (forall (i : Nat),
+          LT.lt i n → Ne i i0 → Dvd.dvd (HSub.hSub a._@._internal._hyg.0 i) (Nat.choose a._@._internal._hyg.0 n)))))
+
+def JSP000883.n (n : Nat) : Nat :=
+  InfSet.sInf
+    (Set.ofPred
+      (fun (N : Nat) =>
+      And (LE.le (HMul.hMul (OfNat.ofNat 2) n) N)
+        (Exists
+          (fun (i0 : Nat) =>
+          And (LT.lt i0 n)
+            (And (Not (Dvd.dvd (HSub.hSub N i0) (Nat.choose N n)))
+              (forall (i : Nat), LT.lt i n → Ne i i0 → Dvd.dvd (HSub.hSub N i) (Nat.choose N n)))))))
+
+theorem JSP000883.factorial_multiple_admissible :
+  forall {a k : Nat},
+  LT.lt (OfNat.ofNat 0) a → LE.le (OfNat.ofNat 3) k → JSP000883.Admissible k (HMul.hMul a (Nat.factorial k)) :=
+  _
+
+theorem JSP000883.infinitely_many_starting_points :
+  forall {k : Nat}, LE.le (OfNat.ofNat 3) k → Set.Infinite (Set.ofPred (fun (N : Nat) => JSP000883.Admissible k N)) :=
+  _
+
+theorem Erdos1063.erdos_1063.variants.monier_upper_bound :
+  forall {k : Nat}, LE.le (OfNat.ofNat 3) k → LE.le (Erdos1063.n k) (Nat.factorial k) :=
+  _
+
+theorem Erdos1063.original_least_is_admissible :
+  forall {k : Nat},
+  LE.le (OfNat.ofNat 3) k → And (LE.le (HMul.hMul (OfNat.ofNat 2) k) (Erdos1063.n k))
+    (Exists
+      (fun (i0 : Nat) =>
+      And (LT.lt i0 k)
+        (And (Not (Dvd.dvd (HSub.hSub (Erdos1063.n k) i0) (Nat.choose (Erdos1063.n k) k)))
+          (forall (i : Nat),
+          LT.lt i k → Ne i i0 → Dvd.dvd (HSub.hSub (Erdos1063.n k) i) (Nat.choose (Erdos1063.n k) k))))) :=
+  _
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
