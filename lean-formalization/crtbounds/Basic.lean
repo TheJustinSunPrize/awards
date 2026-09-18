@@ -739,3 +739,37 @@ theorem window_projection_injective {n : ℕ} (hn : 4 ≤ n)
   have hle : p ≤ n := window_prime_hle hp
   apply proj_inj_two n p hprime hhalf hle hp3 e₁ e₂ (hres p hp)
   exact validSign_diff_bound h₁ h₂ (by omega) hle
+
+/-- Each window prime divides the product of all window primes. -/
+theorem window_prime_dvd_product {n p : ℕ} (hp : p ∈ windowPrimes n) :
+    p ∣ ∏ q ∈ windowPrimes n, q := by
+  exact Finset.dvd_prod_of_mem id hp
+
+/-- A single CRT modulus Q = product(windowPrimes n) determines all window signs.
+    Thus the joint residue map modulo Q is injective on valid window coordinates. -/
+theorem window_product_projection_injective {n : ℕ} (hn : 4 ≤ n)
+    {e₁ e₂ : ℕ → ℤ}
+    (h₁ : validSign n e₁) (h₂ : validSign n e₂)
+    (hQ : (((∏ p ∈ windowPrimes n, p : ℕ) : ℤ) ∣
+      signedNum (lcmUpTo n) n e₁ - signedNum (lcmUpTo n) n e₂)) :
+    ∀ p ∈ windowPrimes n, e₁ p = e₂ p := by
+  apply window_projection_injective hn h₁ h₂
+  intro p hp
+  apply Int.dvd_iff_emod_eq_zero.mp
+  have hpQNat : p ∣ ∏ q ∈ windowPrimes n, q := window_prime_dvd_product hp
+  have hpQInt : (p : ℤ) ∣ ((∏ q ∈ windowPrimes n, q : ℕ) : ℤ) :=
+    Int.natCast_dvd_natCast.mpr hpQNat
+  exact dvd_trans hpQInt hQ
+
+/-- Equivalent congruence form of product-modulus injectivity. -/
+theorem window_product_modEq_injective {n : ℕ} (hn : 4 ≤ n)
+    {e₁ e₂ : ℕ → ℤ}
+    (h₁ : validSign n e₁) (h₂ : validSign n e₂)
+    (hQ : signedNum (lcmUpTo n) n e₁ ≡ signedNum (lcmUpTo n) n e₂
+      [ZMOD ((∏ p ∈ windowPrimes n, p : ℕ) : ℤ)]) :
+    ∀ p ∈ windowPrimes n, e₁ p = e₂ p := by
+  apply window_product_projection_injective hn h₁ h₂
+  rw [Int.modEq_iff_dvd] at hQ
+  obtain ⟨t, ht⟩ := hQ
+  refine ⟨-t, ?_⟩
+  linarith
