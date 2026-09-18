@@ -1,0 +1,40 @@
+id: "STMT-jsp-000127-v1"
+status: active
+supersedes: null
+statement:
+  text: "Erdos119.erdos_119 : ∀ (z : ℕ → ℂ), (∀ i, ‖z i‖ = 1) → ∃ c, ∃ (_ : c > 0), ∀ᶠ (n : ℕ) in Filter.atTop, ∑ k ∈ Finset.range n, Erdos119.M z k > (n : ℝ) ^ (1 + c), together with Erdos119.erdos_119.parts.iii_quantitative (∃ C > 0, ∀ᶠ n in atTop, C * ((n : ℝ) ^ (5 / 4) / Real.sqrt (Real.log (n : ℝ))) < ∑ k ∈ Finset.range n, Erdos119.M z k), Erdos119.erdos_119.parts.ii (∃ c > 0, Infinite {n | Erdos119.M z n > (n : ℝ) ^ c}) and Erdos119.erdos_119.parts.i (Filter.limsup (fun n => (Erdos119.M z n : ℝ)) Filter.atTop = ⊤)"
+  natural_language_source: "Erdos problems list, problem 119: if all zeros of a polynomial lie on the unit circle, how does its maximum modulus on the prescribed region grow with its degree? (https://www.erdosproblems.com/119; historical bounty $100; Problem 4.1 in [Ha74], attributed to Erdos). Let p_n(z) = ∏_{i < n}(z - z_i) with all |z_i| = 1, and let M_n = max_{|z|=1} |p_n(z)| be the maximum modulus on the unit circle (the prescribed region). Problem-page history: Wagner [Wa80] proved limsup M_n = ∞; Beck [Be91] proved there is c > 0 with max_{n ≤ N} M_n > N^c; Erdos gave a construction with M_n ≤ n+1 and Linden [Li77] improved it to M_n ≪ n^{1-c}; the $100 prize for the third question (the growth rate) was offered in [Er97f] and, per the problem page, resolved by GPT 5.6 and Korsky (proof claims) with ∑_{k ≤ n} M_k ≫ n^{3/2-o(1)}. The formalized theorem erdos_119 answers the growth question affirmatively with explicit constants: for every sequence z : ℕ → ℂ with ‖z i‖ = 1, there is an absolute constant c > 0 (c = 1/256 in the proof) such that eventually in n the running sums ∑_{k < n} M z k of the maximum moduli exceed n^(1 + c); the companion declarations give the quantitative growth (eventually C · n^(5/4)/√(log n) < ∑_{k < n} M z k, a near-n^(5/4) aggregate rate — weaker than the page's claimed n^(3/2-o(1)) rate), infinitely many n with M z n > n^c (refining Beck's theorem), and limsup_n (M z n) = ∞ (matching Wagner's theorem). Informal authors: ChatGPT 5.6 Pro, Samuel Korsky; statement authors: Formal Conjectures authors; formal authors: Codex, Boris Alexeev (credited in the pinned source header of Erdos119.lean; statement originates from the google-deepmind/formal-conjectures formalization of Erdos problem 119). The pinned source targets Lean v4.33.0 / mathlib v4.33.0 and was ported to the current release v4.34.0 with 2 documented patches (PORTING-DIFF-127.md)."
+  definitions_reviewed:
+    - name: "Erdos119.p"
+      from_library: false
+      review: "Defined locally in ErdosProblems/Erdos119.lean: p z n = ∏ i ∈ Finset.range n, (w - z i), the monic polynomial of degree n whose roots are z 0 … z (n-1) — exactly the polynomial of the problem statement."
+    - name: "Erdos119.M"
+      from_library: false
+      review: "Defined locally in ErdosProblems/Erdos119.lean: M z n = sSup {‖p z n w‖ | w : ℂ, ‖w‖ = 1}, the supremum of the modulus of p z n on the unit circle. Since w ↦ ‖p z n w‖ is continuous on the compact unit circle, the supremum is attained, so M z n is exactly the maximum modulus M_n the problem asks about."
+    - name: "Complex.norm (‖·‖ on ℂ)"
+      from_library: true
+      review: "Mathlib's complex absolute value; the hypothesis ‖z i‖ = 1 says the zero z i lies on the unit circle."
+    - name: "Filter.atTop / ∀ᶠ"
+      from_library: true
+      review: "Mathlib's cofinite filter on ℕ; ∀ᶠ n in atTop means 'for all sufficiently large n' (eventually)."
+    - name: "Finset.range / Finset.sum"
+      from_library: true
+      review: "Mathlib's finite initial segments and their sums; ∑ k ∈ Finset.range n is the running sum over degrees k = 0 … n-1 of the maximum moduli M z k."
+    - name: "Real.sqrt / Real.log"
+      from_library: true
+      review: "Mathlib's real square root and natural logarithm; √(Real.log n) appears in the quantitative growth bound."
+    - name: "Filter.limsup"
+      from_library: true
+      review: "Mathlib's limit superior; Filter.limsup (fun n => (M z n : ℝ)) atTop = ⊤ formalizes limsup_n M_n = ∞ (in the extended reals)."
+    - name: "Set.Infinite"
+      from_library: true
+      review: "Mathlib's notion of an infinite set; parts.ii states that {n | M z n > n^c} is infinite."
+  library:
+    name: "mathlib"
+    commit: "5ed2965256430c3649e86755f9576b54eca72435"
+    meets_minimum_safe_version: true
+authorship:
+  signatories:
+    - "jsp127-verifier"
+    - "shiqiang-chen"
+  issued_at: "2026-09-19"

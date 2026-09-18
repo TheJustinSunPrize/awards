@@ -1,4 +1,206 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000127",
+        "batch": null,
+        "problem": {
+          "source": "Erdos problems list",
+          "number": 119,
+          "title_en": "If all zeros of a polynomial lie on the unit circle, how does its maximum modulus on the prescribed region grow with its degree?",
+          "posed": {
+            "year": 1974,
+            "basis": "earliest-reference",
+            "citation": "https://www.erdosproblems.com/119 (Problem 4.1 in [Ha74], attributed to Erdos)"
+          },
+          "resolved": null
+        },
+        "recipients": [
+          {
+            "id": "shiqiang-chen",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Independent verification of the pinned Lean formalization for problem 119 (Erdos119.lean, single-file closure over mathlib v4.34.0) against the current release (Lean v4.34.0, mathlib v4.34.0, mathlib commit 5ed2965) and preparation of this submission.",
+            "confirmation": "https://github.com/shunfeng8421"
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": {
+            "record": "verification/record.yaml",
+            "statement": "verification/statement.yaml"
+          },
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "pending-recipient-confirmation",
+        "revocation": null,
+        "decision": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000127",
+      "citation": "# Citation — JSP-000127\n\n## English\n\n**Problem.** Erdős problems list, problem 119 — \"If all zeros of a polynomial\nlie on the unit circle, how does its maximum modulus on the prescribed region\ngrow with its degree?\" (https://www.erdosproblems.com/119, historical bounty\n$100).\n\nLet $p_n(z) = \\prod_{i < n}(z - z_i)$ be a monic polynomial of degree $n$ whose\nzeros all lie on the unit circle ($|z_i| = 1$), and let\n$M_n = \\max_{|z|=1} |p_n(z)|$ be its maximum modulus on the unit circle — the\nprescribed region. The problem asks how $M_n$ can grow with the degree $n$. The\nformalized theorems below answer this growth question for every sequence of\nroots on the unit circle:\n\n- `Erdos119.erdos_119` — there is an absolute constant $c > 0$\n  ($c = 1/256$ in the proof) such that eventually in $n$,\n  $\\sum_{k<n} M_k > n^{1+c}$;\n- `Erdos119.erdos_119.parts.iii_quantitative` — eventually\n  $C \\cdot n^{5/4}/\\sqrt{\\log n} < \\sum_{k<n} M_k$ for some constant $C > 0$;\n- `Erdos119.erdos_119.parts.ii` — $M_n > n^c$ for infinitely many $n$;\n- `Erdos119.erdos_119.parts.i` — $\\limsup_n M_n = \\infty$.\n\n**Formal statements (Lean 4, file `ErdosProblems/Erdos119.lean`, module\n`ErdosProblems.Erdos119`, namespace `Erdos119`).**\n\n```lean\ntheorem erdos_119 (z : ℕ → ℂ) :\n    (∀ i, ‖z i‖ = 1) →\n      ∃ c, ∃ (_ : c > 0), ∀ᶠ n in atTop,\n        ∑ k ∈ Finset.range n, M z k > (n : ℝ) ^ (1 + c)\n\n-- M z n := sSup {‖p z n w‖ | w : ℂ, ‖w‖ = 1}   (maximum modulus on the unit circle)\n-- p z n := ∏ i ∈ Finset.range n, (w - z i)     (the polynomial whose zeros are z 0 … z (n-1))\n```\n\n**Authorship and provenance (credit only; this submission claims no\nmathematical or formalization authorship).**\n\n- Informal solution: **ChatGPT 5.6 Pro, Samuel Korsky** (credited in the\n  pinned source header of `Erdos119.lean`).\n- Statement: **Formal Conjectures authors** (statement originates from the\n  google-deepmind/formal-conjectures formalization of Erdős problem 119).\n- Formalization: **Codex, Boris Alexeev** (credited in the pinned source\n  header).\n- Public port: [plby/lean-proofs](https://github.com/plby/lean-proofs) at\n  commit `1268917deaaaa0d674f651287027baa26cea9920`, file\n  `src/latest/ErdosProblems/Erdos119.lean` — a single-file closure over mathlib\n  (`import Mathlib` only, 1788 lines).\n\n**Verification summary.** The pinned file was extracted byte-exactly from the\npinned commit and compiled with the *current release* toolchain — Lean v4.34.0,\nmathlib v4.34.0 (commit `5ed2965256430c3649e86755f9576b54eca72435`), direct\n`lean.exe` invocation (no lake environment), mathlib built from source (no\nprebuilt artifacts). Two documented porting patches were required by the\nmathlib 4.33 → 4.34 API drift (see `verification/PORTING-DIFF-127.md`;\nbyte-level pinned-vs-verified diff between `verification/hashes-pinned-src.tsv`\nand `verification/hashes-final.tsv`): `Finset.prod_le_prod` →\n`Finset.prod_le_prod₀` (mathlib 4.34 renamed the two-hypothesis ordered-ring\nform), and removal of an obsolete `rw [hsub]` whose pattern is normalized away\nby 4.34's `norm_num`. With these, both the entry module\n(`ErdosProblems.Erdos119`) and the audit module (`Audit127.lean`) compile with\nexit 0 (driver run 2026-09-19 03:26:24 → 03:26:50; details in\n`verification/current-release-v4.34.log`, which records the full two-pass\nhistory including the first-pass porting error and one externally terminated\nrecompile that wrote no output). Dependency resolution via `lean --deps` exits\n0 (closure: `Init` + `Mathlib` for the entry; `Init` + `ErdosProblems.Erdos119`\nfor the audit module). All sources, logs, and produced `.olean` files are\nhash-pinned in `verification/hashes-final.tsv`.\n\n**Axiom audit.** `#print axioms` on the four exported declarations\n(`Erdos119.erdos_119`, `.parts.i`, `.parts.ii`, `.parts.iii_quantitative`)\nyields exactly `[propext, Classical.choice, Quot.sound]` — the standard Lean\ncore axioms. No additional axioms, no `sorry`, no `unsafe` definitions.\n\n## 中文\n\n**问题（Erdős 问题表第 119 题，历史赏金 100 美元）**：若多项式 $p_n$ 的所有零点\n都在单位圆上（$|z_i| = 1$），则 $p_n$ 在指定区域（单位圆）上的最大模\n$M_n = \\max_{|z|=1}|p_n(z)|$ 随次数 $n$ 的增长速度如何？被验证的形式化定理\n（对单位圆上的任意零点序列）给出了回答：\n\n- `Erdos119.erdos_119` — 存在绝对常数 $c > 0$（证明中 $c = 1/256$），使得对\n  充分大的 $n$ 有 $\\sum_{k<n} M_k > n^{1+c}$；\n- `parts.iii_quantitative` — 对充分大的 $n$ 有 $C \\cdot n^{5/4}/\\sqrt{\\log n}\n  < \\sum_{k<n} M_k$（某常数 $C > 0$）；\n- `parts.ii` — 对无穷多个 $n$ 有 $M_n > n^c$；\n- `parts.i` — $\\limsup_n M_n = \\infty$。\n\n**形式化陈述（Lean 4，文件 `ErdosProblems/Erdos119.lean`，模块\n`ErdosProblems.Erdos119`，命名空间 `Erdos119`）**：定理 `Erdos119.erdos_119`\n及其三个推论，如上代码块所示。\n\n**来源与署名（仅为署名，本提交不主张任何数学或形式化作者身份）**：非正式解答\n出自 ChatGPT 5.6 Pro 与 Samuel Korsky；陈述出自 Formal Conjectures 作者\n（源于 google-deepmind/formal-conjectures 对 Erdős 问题 119 的形式化）；\n形式化出自 Codex 与 Boris Alexeev（以上均见 pinned 源码头注释）。公开移植版\n位于 [plby/lean-proofs](https://github.com/plby/lean-proofs) 提交\n`1268917deaaaa0d674f651287027baa26cea9920`（单文件闭包，仅 `import Mathlib`，\n共 1788 行）。\n\n**验证结论**：固定源按字节精确提取，并在当今发布版工具链（Lean v4.34.0 +\nmathlib v4.34.0，mathlib 提交 `5ed2965…`，直接 `lean.exe` 调用，mathlib 从源码\n构建、不使用预构建产物）上编译。因 mathlib 4.33→4.34 API 漂移需两处文档化\n移植补丁（见 `verification/PORTING-DIFF-127.md` 及\n`verification/hashes-pinned-src.tsv` 与 `verification/hashes-final.tsv` 的\n逐字节差异）：`Finset.prod_le_prod` → `Finset.prod_le_prod₀`（mathlib 4.34\n将双假设有序环形式改名），以及删除一条被 4.34 `norm_num` 规范化掉、不再匹配\n的 `rw [hsub]`。补丁后入口模块与审计模块（`Audit127.lean`）编译均退出码 0\n（驱动运行 2026-09-19 03:26:24 → 03:26:50；完整两轮历史、首轮移植错误及一次\n被外部终止且未产生输出的重编译均如实记录于\n`verification/current-release-v4.34.log`）。依赖解析（`lean --deps`）退出码\n0（入口闭包：`Init` + `Mathlib`；审计模块：`Init` + `ErdosProblems.Erdos119`）。\n全部源码、日志与产物 `.olean` 均以 SHA-256 固定于\n`verification/hashes-final.tsv`。\n\n**公理审计**：对四个导出声明（`Erdos119.erdos_119`、`parts.i`、`parts.ii`、\n`parts.iii_quantitative`）执行 `#print axioms`，仅得\n`[propext, Classical.choice, Quot.sound]` —— 即 Lean 核心公理集合；无额外\n公理、无 `sorry`、无 `unsafe` 定义。\n",
+      "recipients": "# Recipients — JSP-000127\n\n## English\n\nThis submission asks for **verification credit only**. It claims no\nmathematical or formalization authorship for Erdős problem 119.\n\n| Role | Person | Notes |\n| --- | --- | --- |\n| Recipient (verification) | **shiqiang-chen** (陈世强, GitHub: shunfeng8421) | Independent verification of the pinned Lean formalization (`ErdosProblems/Erdos119.lean`) against the current-release toolchain (Lean v4.34.0 / mathlib v4.34.0), porting-patch documentation, and preparation of this submission. |\n\nThe mathematical solution is credited to **Samuel Korsky** (informal authors:\nChatGPT 5.6 Pro, Samuel Korsky), the statement to the **Formal Conjectures\nauthors**, and the formalization to **Boris Alexeev** (formal authors: Codex,\nBoris Alexeev), as recorded in the pinned source header of\n`Erdos119.lean`; the public port is by **plby** (plby/lean-proofs). The\nrecipient takes no credit for any of that work.\n\n## 中文\n\n本提交仅请求**验证功劳**，不主张对 Erdős 问题 119 的任何数学或形式化作者身份。\n\n| 角色 | 人员 | 说明 |\n| --- | --- | --- |\n| 收件人（验证） | **shiqiang-chen**（陈世强，GitHub: shunfeng8421） | 对固定 Lean 形式化（`ErdosProblems/Erdos119.lean`）在当今发布版工具链（Lean v4.34.0 / mathlib v4.34.0）上的独立验证、移植补丁记录与本提交的准备。 |\n\n数学解答归功于 **Samuel Korsky**（非正式作者：ChatGPT 5.6 Pro、Samuel\nKorsky），陈述归功于 **Formal Conjectures 作者**，形式化归功于 **Boris\nAlexeev**（形式化作者：Codex、Boris Alexeev）——以上均按 `Erdos119.lean`\npinned 源码头注释记录；公开移植由 **plby**（plby/lean-proofs）完成。收件人\n不对上述任何工作主张功劳。\n",
+      "verification_record": {
+        "repository": "https://github.com/plby/lean-proofs",
+        "commit": "1268917deaaaa0d674f651287027baa26cea9920",
+        "toolchain": {
+          "language": "Lean",
+          "language_version": "4.34.0",
+          "library": "mathlib",
+          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+          "meets_minimum_safe_version": true
+        },
+        "theorems": [
+          {
+            "name": "Erdos119.erdos_119",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos119.erdos_119.parts.i",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos119.erdos_119.parts.ii",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos119.erdos_119.parts.iii_quantitative",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          }
+        ],
+        "statement_comparison": {
+          "statement_id": "STMT-jsp-000127-v1",
+          "theorem_name": "Erdos119.erdos_119",
+          "result": "equivalent",
+          "basis": "The informal problem (Erdos problems list, problem 119; candidates/verified-pending/jsp-000127/verification/statement.yaml; https://www.erdosproblems.com/119) asks how the maximum modulus of a polynomial whose zeros all lie on the unit circle grows with its degree. The problem page records: the weaker conjecture limsup M_n = ∞ was proved by Wagner [Wa80]; Beck [Be91] proved there is c > 0 with max_{n ≤ N} M_n > N^c; Erdos gave a construction with M_n ≤ n+1 and Linden [Li77] improved it to M_n ≪ n^{1-c}; the $100 prize was offered for the third question (growth rate) in [Er97f] and, per the problem page, was resolved by GPT 5.6 and Korsky (proof claims) with the rate ∑_{k ≤ n} M_k ≫ n^{3/2-o(1)}. The formalized theorem erdos_119 answers the growth question affirmatively with explicit constants: for every sequence z : ℕ → ℂ with ‖z i‖ = 1 (all zeros on the unit circle), there is an absolute constant c > 0 (c = 1/256 in the proof) such that eventually in n the running sum ∑_{k < n} M z k of the maximum moduli M z k = sSup {‖∏_{i < k}(w - z i)‖ | ‖w‖ = 1} exceeds n^(1 + c). The companion declarations give the quantitative growth (eventually C · n^(5/4)/√(log n) < ∑_{k < n} M z k, a near-n^(5/4) aggregate rate), infinitely many n with M z n > n^c (refining Beck's theorem), and limsup_n (M z n) = ∞ (matching Wagner's theorem). The formal statements are exactly the statements of the pinned file: an affirmative answer to the prize question with explicit constants and a quantitative corollary at the near-n^(5/4) aggregate rate — consistent with the page's claimed n^(3/2-o(1)) rate (weaker, not reproducing the full claimed exponent); we verify the Lean file as pinned, not the page's headline claim.",
+          "performed_by": "jsp127-verifier",
+          "performed_at": "2026-09-19"
+        },
+        "checkers": [
+          {
+            "name": "Lean kernel (lean)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          },
+          {
+            "name": "Import-closure dependency resolution (lean --deps)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          }
+        ],
+        "environment": {
+          "arch": "x86_64",
+          "image": "windows-11 x86_64, elan toolchain leanprover/lean4:v4.34.0, mathlib v4.34.0 @ 5ed2965256430c3649e86755f9576b54eca72435 (source-built, MATHLIB_CACHE_DISABLE=1)"
+        },
+        "sandbox": {
+          "network_disabled": true,
+          "prebuilt_artifacts_ignored": true,
+          "limits": {
+            "time": "24h window; per-file compiles time-boxed",
+            "memory": "unlimited"
+          },
+          "unprivileged_user": true
+        },
+        "attribution": {
+          "proof_route": "ErdosProblems/Erdos119.lean (single-file closure over mathlib v4.34.0: import Mathlib only, 1788 lines); informal solution by ChatGPT 5.6 Pro + Samuel Korsky, statement by the Formal Conjectures authors (google-deepmind/formal-conjectures ErdosProblems/119.lean), formalization by Codex + Boris Alexeev (credited in the pinned source header), ported to the pinned repo by plby",
+          "third_party": true,
+          "note_en": "Independent verification of the pinned upstream commit at Lean v4.34.0 / mathlib v4.34.0. The pinned file (byte-exact from plby/lean-proofs @ 1268917de) compiles exit=0 on the current-release toolchain (direct lean.exe; mathlib source-built, no prebuilt artifacts) after 2 documented porting fixes required by the mathlib 4.33->4.34 API drift (see PORTING-DIFF-127.md and the byte-level pinned-vs-verified diff between hashes-pinned-src.tsv and hashes-final.tsv): (1) Finset.prod_le_prod -> Finset.prod_le_prod₀ (mathlib 4.34 made prod_le_prod the single-hypothesis [MulLeftMono] variant; the two-hypothesis ordered-ring form is prod_le_prod₀), (2) dropped the obsolete 'have hsub : m + 3 - 2 = m + 1 := by omega; rw [hsub]' in cube_le_six_choose (4.34's norm_num [Nat.descFactorial_succ] already normalizes (m+3).descFactorial 3 to (m+1)*((m+2)*(m+3)); the rewrite had no pattern left). Driver run 2026-09-19 03:26:24 -> 03:26:50: Erdos119 exit=0 (17 s), Audit127 exit=0 (9 s), ALL DONE 03:26:50 (log embedded in current-release-v4.34.log, which also records the first-pass porting error at 03:22:54, the sorryAx recovery-stub artifact of that error, and one externally terminated recompile at 03:32:14 that wrote no output). lean --deps exit=0 for both modules (Erdos119: Init + Mathlib; Audit127: Init + ErdosProblems.Erdos119). Zero-sorry scan over the 1788-line source: 0 occurrences of sorry/admit. Axiom audit via #print axioms on all four exported declarations (Audit127.lean) reports exactly [propext, Classical.choice, Quot.sound]; no sorryAx, no user axioms, no unsafe declarations. Module layout mirrors upstream (ErdosProblems.Erdos119)."
+        },
+        "artifacts": {
+          "build_log": {
+            "archive": "candidates/verified-pending/jsp-000127/verification/current-release-v4.34.log",
+            "sha256": "bf6ac22c5949169b35e450f7c8eba9e88496681bd6ffd885d7ae04f34e7cf476",
+            "bytes": 5061
+          }
+        },
+        "performed_by": "jsp127-verifier",
+        "performed_at": "2026-09-19"
+      },
+      "statement": {
+        "id": "STMT-jsp-000127-v1",
+        "status": "active",
+        "supersedes": null,
+        "statement": {
+          "text": "Erdos119.erdos_119 : ∀ (z : ℕ → ℂ), (∀ i, ‖z i‖ = 1) → ∃ c, ∃ (_ : c > 0), ∀ᶠ (n : ℕ) in Filter.atTop, ∑ k ∈ Finset.range n, Erdos119.M z k > (n : ℝ) ^ (1 + c), together with Erdos119.erdos_119.parts.iii_quantitative (∃ C > 0, ∀ᶠ n in atTop, C * ((n : ℝ) ^ (5 / 4) / Real.sqrt (Real.log (n : ℝ))) < ∑ k ∈ Finset.range n, Erdos119.M z k), Erdos119.erdos_119.parts.ii (∃ c > 0, Infinite {n | Erdos119.M z n > (n : ℝ) ^ c}) and Erdos119.erdos_119.parts.i (Filter.limsup (fun n => (Erdos119.M z n : ℝ)) Filter.atTop = ⊤)",
+          "natural_language_source": "Erdos problems list, problem 119: if all zeros of a polynomial lie on the unit circle, how does its maximum modulus on the prescribed region grow with its degree? (https://www.erdosproblems.com/119; historical bounty $100; Problem 4.1 in [Ha74], attributed to Erdos). Let p_n(z) = ∏_{i < n}(z - z_i) with all |z_i| = 1, and let M_n = max_{|z|=1} |p_n(z)| be the maximum modulus on the unit circle (the prescribed region). Problem-page history: Wagner [Wa80] proved limsup M_n = ∞; Beck [Be91] proved there is c > 0 with max_{n ≤ N} M_n > N^c; Erdos gave a construction with M_n ≤ n+1 and Linden [Li77] improved it to M_n ≪ n^{1-c}; the $100 prize for the third question (the growth rate) was offered in [Er97f] and, per the problem page, resolved by GPT 5.6 and Korsky (proof claims) with ∑_{k ≤ n} M_k ≫ n^{3/2-o(1)}. The formalized theorem erdos_119 answers the growth question affirmatively with explicit constants: for every sequence z : ℕ → ℂ with ‖z i‖ = 1, there is an absolute constant c > 0 (c = 1/256 in the proof) such that eventually in n the running sums ∑_{k < n} M z k of the maximum moduli exceed n^(1 + c); the companion declarations give the quantitative growth (eventually C · n^(5/4)/√(log n) < ∑_{k < n} M z k, a near-n^(5/4) aggregate rate — weaker than the page's claimed n^(3/2-o(1)) rate), infinitely many n with M z n > n^c (refining Beck's theorem), and limsup_n (M z n) = ∞ (matching Wagner's theorem). Informal authors: ChatGPT 5.6 Pro, Samuel Korsky; statement authors: Formal Conjectures authors; formal authors: Codex, Boris Alexeev (credited in the pinned source header of Erdos119.lean; statement originates from the google-deepmind/formal-conjectures formalization of Erdos problem 119). The pinned source targets Lean v4.33.0 / mathlib v4.33.0 and was ported to the current release v4.34.0 with 2 documented patches (PORTING-DIFF-127.md).",
+          "definitions_reviewed": [
+            {
+              "name": "Erdos119.p",
+              "from_library": false,
+              "review": "Defined locally in ErdosProblems/Erdos119.lean: p z n = ∏ i ∈ Finset.range n, (w - z i), the monic polynomial of degree n whose roots are z 0 … z (n-1) — exactly the polynomial of the problem statement."
+            },
+            {
+              "name": "Erdos119.M",
+              "from_library": false,
+              "review": "Defined locally in ErdosProblems/Erdos119.lean: M z n = sSup {‖p z n w‖ | w : ℂ, ‖w‖ = 1}, the supremum of the modulus of p z n on the unit circle. Since w ↦ ‖p z n w‖ is continuous on the compact unit circle, the supremum is attained, so M z n is exactly the maximum modulus M_n the problem asks about."
+            },
+            {
+              "name": "Complex.norm (‖·‖ on ℂ)",
+              "from_library": true,
+              "review": "Mathlib's complex absolute value; the hypothesis ‖z i‖ = 1 says the zero z i lies on the unit circle."
+            },
+            {
+              "name": "Filter.atTop / ∀ᶠ",
+              "from_library": true,
+              "review": "Mathlib's cofinite filter on ℕ; ∀ᶠ n in atTop means 'for all sufficiently large n' (eventually)."
+            },
+            {
+              "name": "Finset.range / Finset.sum",
+              "from_library": true,
+              "review": "Mathlib's finite initial segments and their sums; ∑ k ∈ Finset.range n is the running sum over degrees k = 0 … n-1 of the maximum moduli M z k."
+            },
+            {
+              "name": "Real.sqrt / Real.log",
+              "from_library": true,
+              "review": "Mathlib's real square root and natural logarithm; √(Real.log n) appears in the quantitative growth bound."
+            },
+            {
+              "name": "Filter.limsup",
+              "from_library": true,
+              "review": "Mathlib's limit superior; Filter.limsup (fun n => (M z n : ℝ)) atTop = ⊤ formalizes limsup_n M_n = ∞ (in the extended reals)."
+            },
+            {
+              "name": "Set.Infinite",
+              "from_library": true,
+              "review": "Mathlib's notion of an infinite set; parts.ii states that {n | M z n > n^c} is infinite."
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "jsp127-verifier",
+            "shiqiang-chen"
+          ],
+          "issued_at": "2026-09-19"
+        }
+      }
+    }
+  ]
 }
