@@ -1,0 +1,20 @@
+id: jsp-000967-s3-subgroups-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0901-1000.md#JSP-000967"
+  number: "JSP-000967"
+  title_en: "How many subgroups does a symmetric group have, and how are their orders distributed?"
+  posed:
+    year: 1999
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0901-1000.md#JSP-000967"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
