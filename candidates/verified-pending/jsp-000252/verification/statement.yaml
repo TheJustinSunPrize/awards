@@ -1,0 +1,25 @@
+id: "STMT-jsp-000252-v2"
+status: active
+supersedes: "STMT-jsp-000252-v1"
+statement:
+  text: "JSP252.main_bound : ∃ N₀ : ℕ, ∀ n : ℕ, N₀ ≤ n → ((JSP252.subOneSubsets n).card : ℝ) ≤ (2 : ℝ) ^ (0.93 * (n : ℝ))"
+  natural_language_source: "Catalog JSP-000252 asks 'How many subsets of a finite integer range have reciprocal sum exactly one?'. The catalog's solution reference [St24] = S. Steinerberger, On a problem involving unit fractions, arXiv:2403.17041 (2024), proves: for n sufficiently large, #{S ⊆ {1,…,n} : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n). JSP252.main_bound formalizes exactly this theorem (non-strict upper bound, constant 0.93, 'sufficiently large' witnessed explicitly by N₀ = 200000). The exactly-one family {S : Σ 1/s = 1} is a subset of {S : Σ 1/s ≤ 1}, so the same bound also answers the catalog's 'exactly one' counting question."
+  definitions_reviewed:
+    - name: "JSP252.subOneSubsets"
+      from_library: false
+      review: "Subsets S of {1,…,n} with Σ_{s∈S} 1/s ≤ 1; matches the paper's counting set."
+    - name: "harmonicR"
+      from_library: false
+      review: "Real harmonic numbers Σ_{k=1}^{m} 1/k; matches mathlib conventions and paper usage."
+    - name: "Nat.floor"
+      from_library: true
+      review: "Standard mathlib definition of floor; used to set m = ⌊c0·n⌋ with c0 = 0.0384235."
+  library:
+    name: "mathlib"
+    commit: "09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68"
+    meets_minimum_safe_version: true
+authorship:
+  signatories:
+    - "jsp252-verifier"
+    - "shiqiang-chen"
+  issued_at: "2026-09-18"

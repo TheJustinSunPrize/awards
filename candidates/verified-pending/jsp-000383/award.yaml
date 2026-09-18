@@ -1,0 +1,26 @@
+id: jsp-000383
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 383
+  title_en: "Repeatedly adjoining prime sums of three existing primes"
+  posed:
+    year: 1980
+    basis: stated
+    citation: "catalog JSP-000383 (proposed no later than 1980)"
+  resolved: null
+recipients:
+  - id: shiqiang-chen
+    affiliation: "Independent researcher"
+    contribution_en: "Constructive scoped Lean formalization: a 30-step legal run of the closure rule from the five primes {2,3,5,7,11}, adjoining primes 19,23,29,...,157 — each a prime sum of three distinct already-present primes, growing the set from 5 to 35 primes (theorem Jsp383.chain_is_legal_run), verified against Lean v4.34.0 / mathlib v4.34.0."
+    confirmation: "https://github.com/shunfeng8421"
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null
