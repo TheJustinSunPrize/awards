@@ -1,5 +1,12 @@
 # JSP-000467 / Erdős 577 — verified base case
 
+> Historical `k = 1` package. The current review concerns a statement bridge
+> and reproduction of the existing complete formalization in Boris Alexeev's
+> `plby/lean-proofs` development, based on Hong Wang's mathematical theorem.
+> See the [full-proof verification and prior-art correction](../jsp-000467-full-proof-verification/README.md).
+> This directory's proof, CI, and logs establish only the base case; the
+> arbitrary-`k` reproduction has separate evidence and attribution.
+
 This repository formalizes the exact `k = 1` case of the Erdős–Faudree
 quadrilateral conjecture in Lean 4:
 
