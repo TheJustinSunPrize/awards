@@ -1,0 +1,51 @@
+def JSP000295.HasDistinctSums.{u_1 u_2} :
+  forall {ι : Type u_1} {α : Type u_2} [inst._@.JSP000295.3827683249._hygCtx._hyg.4 : Preorder ι]
+    [inst._@.JSP000295.3827683249._hygCtx._hyg.7 : AddCommMonoid α],
+  (ι → α) → Prop :=
+  fun {ι : Type u_1} {α : Type u_2} [inst._@.JSP000295.3827683249._hygCtx._hyg.4 : Preorder ι]
+    [inst._@.JSP000295.3827683249._hygCtx._hyg.7 : AddCommMonoid α] (a : ι → α) =>
+  Set.InjOn (fun (J : Finset ι) => Finset.sum J (fun (h : ι) => a h))
+    (Set.ofPred (fun (J : Finset ι) => Set.OrdConnected (SetLike.coe J)))
+
+def JSP000295.f (n : Nat) : Nat :=
+  SupSet.sSup
+    (Set.ofPred
+      (fun (k : Nat) =>
+      Exists
+        (fun (a : Fin k → Int) =>
+        And (LE.le (Set.range a) (Set.Icc (OfNat.ofNat 1) (Nat.cast n)))
+          (And (StrictMono a) (JSP000295.HasDistinctSums a)))))
+
+def JSP000295.entry (t : Nat) (i : Fin (HAdd.hAdd (HMul.hMul (OfNat.ofNat 2) t) (OfNat.ofNat 1))) : Int :=
+  HAdd.hAdd (HAdd.hAdd (HPow.hPow (Nat.cast t) (OfNat.ofNat 2)) (OfNat.ofNat 1)) (Nat.cast (Fin.val i))
+
+theorem JSP000295.lower_bound (n : Nat) :
+  LE.le (HSub.hSub (HMul.hMul (OfNat.ofNat 2) (Nat.sqrt n)) (OfNat.ofNat 1)) (JSP000295.f n) :=
+  _
+
+theorem JSP000295.weisenberg :
+  Exists
+    (fun (o : Nat → Real) =>
+    And (Asymptotics.IsLittleO Filter.atTop o (OfNat.ofNat 1))
+      (Filter.Eventually
+        (fun (n : Nat) =>
+        LE.le (HMul.hMul (HAdd.hAdd (OfNat.ofNat 2) (o n)) (Real.sqrt (Nat.cast n))) (Nat.cast (JSP000295.f n)))
+        Filter.atTop)) :=
+  _
+
+theorem Erdos357.erdos_357.variants.weisenberg :
+  Exists
+    (fun (o : Nat → Real) =>
+    And (Asymptotics.IsLittleO Filter.atTop o (OfNat.ofNat 1))
+      (Filter.Eventually
+        (fun (n : Nat) =>
+        LE.le (HMul.hMul (HAdd.hAdd (OfNat.ofNat 2) (o n)) (Real.sqrt (Nat.cast n))) (Nat.cast (Erdos357.f n)))
+        Filter.atTop)) :=
+  _
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+

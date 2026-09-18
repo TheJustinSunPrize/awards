@@ -1,0 +1,40 @@
+def JSP000295.HasDistinctSums.{u_1, u_2} : {ι : Type u_1} →
+  {α : Type u_2} → [Preorder ι] → [AddCommMonoid α] → (ι → α) → Prop :=
+fun {ι} {α} [Preorder ι] [AddCommMonoid α] a => Set.InjOn (fun J => ∑ i ∈ J, a i) {J | (↑J).OrdConnected}
+def JSP000295.f : ℕ → ℕ :=
+fun n => sSup {k | ∃ a, Set.range a ⊆ Set.Icc 1 ↑n ∧ StrictMono a ∧ JSP000295.HasDistinctSums a}
+def JSP000295.entry : (t : ℕ) → Fin (2 * t + 1) → ℤ :=
+fun t i => ↑t ^ 2 + 1 + ↑↑i
+theorem JSP000295.lower_bound : ∀ (n : ℕ), 2 * n.sqrt - 1 ≤ JSP000295.f n :=
+fun n =>
+  if hn : n = 0 then
+    Eq.symm hn ▸
+      of_eq_true
+        (Eq.trans
+          (congrFun'
+            (congrArg LE.le
+              (Eq.trans
+                (congrFun' (congrArg HSub.hSub (Eq.trans (congrArg (HMul.hMul 2) Nat.sqrt_zero) (mul_zero 2))) 1)
+                (zero_tsub 1)))
+            (JSP000295.f 0))
+          zero_le._simp_1)
+  else
+    have hp := Nat.sqrt_pos.mpr (Nat.pos_of_ne_zero hn);
+    have ht := Decidable.byContradiction fun a => JSP000295.lower_bound._proof_1_1 n hp a;
+    have hsq :=
+      Eq.mpr (id (congrArg (fun _a => _a ^ 2 ≤ n) ht))
+        (Eq.mpr (id (congrArg (fun _a => _a ≤ n) (pow_two n.sqrt))) (Nat.sqrt_le n));
+    have this := JSP000295.lower_bound_of_square_le hsq;
+    Decidable.byContradiction fun a => JSP000295.lower_bound._proof_1_2 n hp ht this a
+theorem Erdos357.erdos_357.variants.weisenberg : ∃ o,
+  o =o[Filter.atTop] 1 ∧ ∀ᶠ (n : ℕ) in Filter.atTop, (2 + o n) * √↑n ≤ ↑(Erdos357.f n) :=
+JSP000295.weisenberg
+'JSP000295.blocks_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000295.entry_hasDistinctSums' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000295.admissible_length_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000295.lower_bound_of_square_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000295.lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000295.real_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000295.weisenberg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos357.erdos_357.variants.weisenberg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos357.explicit_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
