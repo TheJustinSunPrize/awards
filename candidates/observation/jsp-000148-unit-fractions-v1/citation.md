@@ -1,0 +1,13 @@
+# Candidate observation
+
+## English
+
+This candidate observation is associated with [JSP-000148 — How many representations of one are there as a sum of a prescribed number of distinct positive unit fractions?](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000148). It publishes `Statement.lean` and `Proof.lean` for a complete, machine-checked Lean formalization observation of concrete instances of the catalog question: one three-term representation of one by distinct positive unit fractions, `(1:ℚ) = 1/2 + 1/3 + 1/6`, and two distinct four-term representations, `(1:ℚ) = 1/2 + 1/3 + 1/8 + 1/24` and `(1:ℚ) = 1/2 + 1/4 + 1/6 + 1/12`. The theorems proved are `jsp000148_k3 : (1 : ℚ) = 1 / 2 + 1 / 3 + 1 / 6`, `jsp000148_k4a : (1 : ℚ) = 1 / 2 + 1 / 3 + 1 / 8 + 1 / 24`, `jsp000148_k4b : (1 : ℚ) = 1 / 2 + 1 / 4 + 1 / 6 + 1 / 12`, and the combined statement `jsp000148 : ∃ (A B : Finset ℕ), A ≠ B ∧ A.card = 4 ∧ B.card = 4 ∧ (∀ x ∈ A, 1 < x) ∧ (∀ x ∈ B, 1 < x) ∧ (∑ x ∈ A, 1 / (x : ℚ)) = 1 ∧ (∑ x ∈ B, 1 / (x : ℚ)) = 1`, which establishes that the number of representations of one as a sum of four distinct positive unit fractions is at least two.
+
+**Scope boundary:** this observation records only the concrete instances above — one three-term representation and two distinct four-term representations (a lower bound of 2 on the number of four-term representations). It does not determine, for any prescribed number of terms, the exact number of representations of one as a sum of that many distinct positive unit fractions, does not study the growth of these counts, and does not resolve the catalogued open problem, which remains Open. No award is claimed.
+
+The formal source is pinned to the public repository [Yaohua-Leo/jsp-000148-lean](https://github.com/Yaohua-Leo/jsp-000148-lean) at commit `682f5b2f7ddc3abd2769df08b48f60aa5ebbfbdc` on branch `main`. A local Lean compilation was run with the pinned toolchain `leanprover/lean4:v4.35.0-rc2` and Mathlib `v4.35.0-rc2`: `lake env lean JSP000148.lean` produces zero output (no errors, warnings, or sorries), and `#print axioms` for each of the four theorems reports exactly `[propext, Classical.choice, Quot.sound]`. These compiler results are reproducibility evidence for the stated formal theorems; they are not official JSP verification or award admission.
+
+The catalog entry records "No later than 1980 (bibliographic evidence)" with no publication details, so the `posed.citation` field points to the catalog entry itself as the source of record rather than to an external publication.
+
+The candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.
