@@ -1,0 +1,26 @@
+id: jsp-000106
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 90
+  title_en: "How many unit distances can be determined by n points in the plane? (part b: arbitrarily many unit distances)"
+  posed:
+    year: 1946
+    basis: earliest-reference
+    citation: "https://www.erdosproblems.com/90"
+  resolved: null
+recipients:
+  - id: shiqiang-chen
+    affiliation: "Independent researcher"
+    contribution_en: "Independent verification of the pinned Lean formalization of L. Alpöge's construction for problem 90b (Erdos90b.lean + ErdosProblems/Erdos90b/*.lean closure, including the vendored PrimeNumberTheoremAnd supporting package) against the current release (Lean v4.34.0, mathlib v4.34.0, mathlib commit 5ed2965) and preparation of this submission."
+    confirmation: "https://github.com/shunfeng8421"
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null
