@@ -1,0 +1,11 @@
+'SunPrize621.base_card' depends on axioms: [propext, Quot.sound]
+'SunPrize621.base_local_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunPrize621.nine_contains_progression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunPrize621.witness_sidon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunPrize621.sidon_card_le_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunPrize621.realBase_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunPrize621.realBase_almostSidon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunPrize621.realBase_sidon_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunPrize621.realBase_has_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunPrize621.admissible_le_four_sevenths' depends on axioms: [propext, Classical.choice, Quot.sound]
+SunPrize621.admissible_le_four_sevenths {c : ℝ} (hc : SunPrize621.Admissible c) : c ≤ 4 / 7
