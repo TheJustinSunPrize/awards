@@ -1,4 +1,37 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000283-greedy-odd-sequence-v1",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0201-0300.md#JSP-000283",
+          "number": "JSP-000283",
+          "title_en": "Does the sequence obtained by repeatedly adjoining the smallest integer not expressible as a sum of two existing terms eventually become periodic?",
+          "posed": {
+            "year": 1980,
+            "basis": "earliest-reference",
+            "citation": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0201-0300.md#JSP-000283"
+          },
+          "resolved": null
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000283-greedy-odd-sequence-v1",
+      "citation": "# Candidate observation\n\n## English\n\nThis candidate observation is associated with [JSP-000283 — Does the sequence obtained by repeatedly adjoining the smallest integer not expressible as a sum of two existing terms eventually become periodic?](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0201-0300.md#JSP-000283). It publishes `Statement.lean` and `Proof.lean` for a complete, machine-checked Lean formalization of the greedy sequence under the stated reading (initial set of existing terms `{1}`; \"a sum of two existing terms\" allows the same term to be used twice, so `2 = 1 + 1`; candidates are the positive integers): the sequence is exactly the odd positive integers, `g n = 2*n + 1` for every `n`, hence its gaps are constantly `2` from the very first step and the sequence is strictly increasing. **Claim boundary: complete theorem for this exact formalization and reading.** It does not address other readings of the question (e.g. requiring the two summands to be distinct, or a different starting set), does not resolve the catalogued open problem, and does not claim official JSP verification, award status, recipient identity, or independent review.\n\nA local Lean compilation and axiom audit were run with Lean `v4.35.0-rc2` and Mathlib `v4.35.0-rc2` (`lake env lean JSP000283.lean`; every exported theorem depends only on `propext`, `Classical.choice`, `Quot.sound`, with `Classical.choice` entering through the classical decidability instance used with `Nat.find`). These compiler results are reproducibility evidence for the stated formal theorem; they are not official JSP verification or award admission. The formal source is pinned to [JSP000283.lean](https://github.com/Yaohua-Leo/jsp-000283-lean/blob/a381d7fab4e9074b50f81c0bfba1894a189a28e5/JSP000283.lean), with the formalization authored by Yaohua-Leo (AI-assisted via ZCode (GLM)).\n\nThe candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.\n",
+      "recipients": "# Recipients\n\n## English\n\nNo recipient is identified in this preliminary observation. It makes no recipient, award, payment, or identity claim.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }
