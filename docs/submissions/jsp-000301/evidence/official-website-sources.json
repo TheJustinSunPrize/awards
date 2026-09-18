@@ -1,0 +1,60 @@
+{
+  "scope": "Official website source audit; hashes identify retrieved responses, not permanent archives. Only attributed relevant excerpts are reproduced in official-rules-audit.md.",
+  "method": "Certificate-verified HTTPS GET; Python HTMLParser text extraction excluding script/style tags, strip nonempty text nodes, newline join. No TLS verification bypass.",
+  "rules_version": "v1.0",
+  "rules_publication_date": "2026-09-16",
+  "rules_effective_date": "2026-09-16",
+  "terms_effective_date": "2026-09-16",
+  "sources": [
+    {
+      "url": "https://hejustinsun.com/zh/prize/about",
+      "accessed_on": "2026-09-17",
+      "html_sha256": "d59390accec4023b63a4f56ec55748b24d7ecb4c86a3bb0878c81c1ce7bb97e0",
+      "html_bytes": 443540,
+      "extracted_text_sha256": "52ae3b3df8c9809a642384816267acfb02353a3de8acb8b391873a7c09627a7a",
+      "extracted_text_bytes": 9245,
+      "response_language": "English despite /zh/ path"
+    },
+    {
+      "url": "https://hejustinsun.com/zh/prize/rules",
+      "accessed_on": "2026-09-17",
+      "html_sha256": "2139279f5d264843837555593e696d7127eee22dc2bba68e18f41983ebe81316",
+      "html_bytes": 274355,
+      "extracted_text_sha256": "77083cbfa6932a4e6dd393b6fc7226cd97f61e4ae47917685b15fef56396b956",
+      "extracted_text_bytes": 14181,
+      "response_language": "English despite /zh/ path"
+    },
+    {
+      "url": "https://hejustinsun.com/zh/prize/claim",
+      "accessed_on": "2026-09-17",
+      "html_sha256": "bbefdc5feacfadb4f07ea751b90395a7d1469eb36867c4a8ba024e8d4ac7b62e",
+      "html_bytes": 275256,
+      "extracted_text_sha256": "d1947d4eac1ee0606519f084042f230909046fab4da91bfd6bce34e046b6f0ac",
+      "extracted_text_bytes": 14937,
+      "response_language": "English despite /zh/ path"
+    },
+    {
+      "url": "https://hejustinsun.com/zh/prize/faq",
+      "accessed_on": "2026-09-17",
+      "html_sha256": "ca7ad5cdc69687c0167373656606d8fa44fe59d0efd6a7e4da7b0734b5d5f272",
+      "html_bytes": 392055,
+      "extracted_text_sha256": "b9c2872cd987a7ba7e91ecb7fef9ee4e387f715188b13f1e5a16c82adddc4e27",
+      "extracted_text_bytes": 48472,
+      "response_language": "English despite /zh/ path"
+    },
+    {
+      "url": "https://hejustinsun.com/zh/prize/terms",
+      "accessed_on": "2026-09-17",
+      "html_sha256": "f93dd09b54ab53437af8fab41b918c39014236da994d161db9c14751ee5fcdf0",
+      "html_bytes": 281560,
+      "extracted_text_sha256": "4892cf8c3c2019c73f742ae5b325d3ba39828fd517c84715720943430a402f5a",
+      "extracted_text_bytes": 11374,
+      "response_language": "English despite /zh/ path"
+    }
+  ],
+  "official_contact": {
+    "email": "thejustinsunprize@hejustinsun.com",
+    "source": "https://hejustinsun.com/zh/prize/about",
+    "method": "Decoded the public data-cfemail obfuscation in the official contact link; not a private user address."
+  }
+}

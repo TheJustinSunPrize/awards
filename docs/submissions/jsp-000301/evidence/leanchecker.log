@@ -1,0 +1,4 @@
+Same-toolchain kernel replay, not an independent verifier.
+replaying Counterexample
+
+exit_code=0
