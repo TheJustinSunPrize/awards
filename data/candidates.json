@@ -1,4 +1,37 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000317-smooth-after-prime-square-v1",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000317",
+          "number": "JSP-000317",
+          "title_en": "Can a prime square be followed by several consecutive integers having no prime factor larger than that prime?",
+          "posed": {
+            "year": 1980,
+            "basis": "earliest-reference",
+            "citation": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000317"
+          },
+          "resolved": null
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000317-smooth-after-prime-square-v1",
+      "citation": "# Candidate observation\n\n## English\n\nThis candidate observation is associated with [JSP-000317 — Can a prime square be followed by several consecutive integers having no prime factor larger than that prime?](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000317). It publishes `Statement.lean` and `Proof.lean` for a complete, machine-checked Lean formalization observation for the length-two existence component of the catalog question: there exists a prime `p` such that both integers immediately following `p²` have no prime factor larger than `p`. The main theorem proved is `jsp000317 : ∃ p : ℕ, Nat.Prime p ∧ (∀ q, Nat.Prime q → q ∣ p ^ 2 + 1 → q ≤ p) ∧ (∀ q, Nat.Prime q → q ∣ p ^ 2 + 2 → q ≤ p)` with witness `p = 41`, where `41² + 1 = 1682 = 2 · 29²` and `41² + 2 = 1683 = 3² · 11 · 17`, so every prime divisor of both integers is at most `41`. Auxiliary theorems record the same length-two property for the further witnesses `p = 157` (`157² + 1 = 24650 = 2 · 5² · 17 · 29`, `157² + 2 = 24651 = 3³ · 11 · 83`) and `p = 211` (`211² + 1 = 44522 = 2 · 113 · 197`, `211² + 2 = 44523 = 3³ · 17 · 97`).\n\n**Scope boundary:** this observation records only the existence of prime squares followed by (at least) two consecutive integers whose prime factors are all at most that prime, i.e. a length-two lower bound for the runs asked about in the catalog question. It does not address how long such runs can be, does not resolve the catalogued open problem, which remains Open, and makes no award claim.\n\nThe formal source is pinned to the public repository [Yaohua-Leo/jsp-000317-lean](https://github.com/Yaohua-Leo/jsp-000317-lean) at commit `440d87de95b117eadcc2ce0dff5f30a642dff5be` on branch `main`. A local Lean compilation was run with the pinned toolchain `leanprover/lean4:v4.35.0-rc2` and Mathlib `v4.35.0-rc2`: `lake env lean JSP000317.lean` produces zero errors and zero warnings, and `#print axioms` for every theorem in the file (`jsp000317`, `jsp000317_dvd_1682`, `jsp000317_dvd_1683`, `jsp000317_witness_157`, `jsp000317_witness_211`) reports exactly `[propext, Classical.choice, Quot.sound]` — no `sorryAx` and no other axioms. The proof contains no `sorry`, `admit`, `native_decide`, or added unproved assumptions. These compiler results are reproducibility evidence for the stated formal theorem; they are not official JSP verification or award admission.\n\nThe catalog entry records \"No later than 1980 (bibliographic evidence)\" with no publication details, so the `posed.citation` field points to the catalog entry itself as the source of record rather than to an external publication.\n\nThe candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.\n",
+      "recipients": "# Recipients\n\n## English\n\nNo recipient is identified in this preliminary observation. It makes no recipient, award, payment, or identity claim. For attribution of the formalization only: formalization author Yaohua-Leo, AI-assisted via ZCode (GLM); mathematical credit for the catalogued question belongs to the public record of JSP-000317.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }

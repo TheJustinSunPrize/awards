@@ -1,0 +1,20 @@
+id: jsp-000317-smooth-after-prime-square-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000317"
+  number: "JSP-000317"
+  title_en: "Can a prime square be followed by several consecutive integers having no prime factor larger than that prime?"
+  posed:
+    year: 1980
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000317"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
