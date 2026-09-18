@@ -1,0 +1,27 @@
+id: jsp-000252
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 252
+  title_en: "Subsets of a finite integer range with reciprocal sum one"
+  posed:
+    year: 2024
+    basis: stated
+    citation: "catalog JSP-000252 ([St24] S. Steinerberger, On a problem involving unit fractions, arXiv:2403.17041, 2024)"
+  resolved:
+    year: 2024
+recipients:
+  - id: RECIPIENT-JSP-000252-A
+    affiliation: "Independent researcher"
+    contribution_en: "Independent verification of the pinned Lean 4.35.0-rc1 formalization of the main theorem #{S ⊆ {1,…,n} : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n) (Steinerberger 2024) at github.com/shunfeng8421/jsp252-lean (commit fc534c649e222d9743bffc975fe1daed1a6fd71b), including axiom audit, and preparation of this submission."
+    confirmation: null
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null

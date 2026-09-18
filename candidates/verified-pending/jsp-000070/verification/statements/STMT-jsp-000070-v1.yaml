@@ -1,0 +1,22 @@
+id: "STMT-jsp-000070-v1"
+status: superseded
+supersedes: null
+statement:
+  text: "Erdos42.CompactCayley.compact_cayley_clique (ell : Nat) (eta : Real) (h_ell : 2 <= ell) (h_eta : 0 < eta) : exists eps, 0 < eps and exists p0, forall (p : Nat) [inst : Fact (Nat.Prime p)], p0 < p -> forall (T : Finset (ZMod p)), Erdos42.SymmetricFinset T -> 0 notin T -> eta * p <= T.card -> Erdos42.FourierUpperIndicator T eps -> exists C, C.card = ell and Erdos42.CliqueInCayley T C"
+  natural_language_source: "For any integer set with distinct two-element sums, can another such set be found with no common nonzero differences? (Erdos problems list, problem 42; problems/catalog-0001-0100.md, entry JSP-000070; https://www.erdosproblems.com/42)"
+  definitions_reviewed:
+    - name: "Nat.Prime"
+      from_library: true
+      review: "Standard mathlib definition of primality; used for the prime modulus p in the compact-Cayley statement."
+    - name: "ZMod p"
+      from_library: true
+      review: "Standard mathlib finite ring ZMod p; the discrete carrier of the compact-Cayley group."
+  library:
+    name: "mathlib"
+    commit: "db584cd6d46c92f209a44c0f1c829460d327499d"
+    meets_minimum_safe_version: true
+authorship:
+  signatories:
+    - "pawan-sasanka-ammanamanchi"
+    - "jsp070-verifier"
+  issued_at: "2026-09-17"

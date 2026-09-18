@@ -1,0 +1,26 @@
+id: jsp-000177
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 183
+  title_en: "What is the exponential growth rate of the number of vertices needed to force a monochromatic triangle as the number of edge colors increases?"
+  posed:
+    year: 1981
+    basis: stated
+    citation: "https://www.erdosproblems.com/183"
+  resolved: null
+recipients:
+  - id: shiqiang-chen
+    affiliation: "Independent researcher"
+    contribution_en: "Independent verification of the pinned Lean formalization of the answer to problem 183 (Erdos183.lean + ErdosProblems/Erdos183/Proof.lean) against the current release (Lean v4.34.0, mathlib v4.34.0, mathlib commit 5ed2965) and preparation of this submission."
+    confirmation: "https://github.com/shunfeng8421"
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null
