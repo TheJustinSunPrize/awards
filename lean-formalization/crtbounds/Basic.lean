@@ -525,3 +525,22 @@ theorem graham_upper_bound_exists {n : ℕ} (hn : 4 ≤ n) :
   obtain ⟨p, hp⟩ := windowPrimes_nonempty hn
   obtain ⟨eps, hvalid, hne, habs⟩ := graham_upper_bound n hn hp
   exact ⟨p, hp, eps, hvalid, hne, habs⟩
+
+/-- A global numerical form of the constructive upper bound:
+    some legal witness has numerator at most one third of L_n. -/
+theorem graham_upper_bound_three {n : ℕ} (hn : 4 ≤ n) :
+    ∃ p ∈ windowPrimes n, ∃ eps : ℕ → ℤ,
+      validSign n eps ∧
+      signedNum (lcmUpTo n) n eps ≠ 0 ∧
+      |signedNum (lcmUpTo n) n eps| = ((lcmUpTo n / p : ℕ) : ℤ) ∧
+      3 * (lcmUpTo n / p) ≤ lcmUpTo n := by
+  obtain ⟨p, hp⟩ := windowPrimes_nonempty hn
+  obtain ⟨eps, hvalid, hne, habs⟩ := graham_upper_bound n hn hp
+  have hp3 : 3 ≤ p := window_prime_ge_three hn hp
+  have hdiv : p ∣ lcmUpTo n := window_prime_dvd hp
+  have hmul : 3 * (lcmUpTo n / p) ≤ p * (lcmUpTo n / p) := by
+    exact Nat.mul_le_mul_right (lcmUpTo n / p) hp3
+  refine ⟨p, hp, eps, hvalid, hne, habs, ?_⟩
+  calc
+    3 * (lcmUpTo n / p) ≤ p * (lcmUpTo n / p) := hmul
+    _ = lcmUpTo n := Nat.mul_div_cancel' hdiv
