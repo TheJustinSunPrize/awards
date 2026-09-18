@@ -1,0 +1,11 @@
+# REDACTED COPY; not unmodified raw output.
+# Record role: final English-source verifier run 4e5e8a02c48f46739006c6dafd238531
+# Known environment paths replaced; see REDACTION.md.
+
+Erdos882Trial.refined_upper_bound : ∃ C,
+  ∀ᶠ (n : ℕ) in atTop, ↑(Erdos882Trial.maximumSize n) ≤ Real.logb 2 ↑n + 1 / 2 * Real.logb 2 (Real.logb 2 ↑n) + C
+'Erdos882Trial.maximumSize_refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0

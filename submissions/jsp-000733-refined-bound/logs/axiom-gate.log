@@ -1,0 +1,8 @@
+# REDACTED COPY; not unmodified raw output.
+# Record role: final English-source verifier run 4e5e8a02c48f46739006c6dafd238531
+# Known environment paths replaced; see REDACTION.md.
+
+{"Erdos882Trial.powerset_centered_sum_sq": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.integer_energy_lower_bound": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.distinct_subset_sums_squared_bound": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.primitive_condition_iff_image": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.admissible_iff_interval_image": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.subset_sum_injective_of_primitive": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.admissible_squared_bound": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.finite_bound_explicit": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.maximumSize_attained": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.maximumSize_characterization": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.maximumSize_definition_alignment": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.logarithmic_bound_of_squared": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.admissible_refined_upper_bound": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.maximumSize_refined_upper_bound": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.refined_upper_bound": ["Classical.choice", "Quot.sound", "propext"]}
+
+COMMAND STATUS: COMPLETED
+EXIT: 0

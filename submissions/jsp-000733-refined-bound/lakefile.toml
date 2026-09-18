@@ -1,0 +1,29 @@
+name = "erdos882_complete"
+version = "0.1.0"
+defaultTargets = ["Audit"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "0df444a360eaa60ab8c11dca51a86af692955474"
+
+[[lean_lib]]
+name = "Moment"
+
+[[lean_lib]]
+name = "Energy"
+
+[[lean_lib]]
+name = "Counting"
+
+[[lean_lib]]
+name = "Primitive"
+
+[[lean_lib]]
+name = "Audit"
+
+[[lean_lib]]
+name = "Maximum"
+
+[[lean_lib]]
+name = "LogBound"

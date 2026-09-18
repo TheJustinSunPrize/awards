@@ -1,0 +1,26 @@
+# REDACTED COPY; not unmodified raw output.
+# Record role: earlier development attempt before the Chinese final verification; source may differ
+# Known environment paths replaced; see REDACTION.md.
+
+ℹ [979/984] Built Moment (17s)
+info: Moment.lean:38:0: @powerset_centered_sum_sq : ∀ {α : Type u_1} [DecidableEq α] (A : Finset α) (f : α → ℤ),
+  ∑ S ∈ A.powerset, (2 * ∑ a ∈ S, f a - ∑ a ∈ A, f a) ^ 2 = 2 ^ A.card * ∑ a ∈ A, f a ^ 2
+info: Moment.lean:39:0: 'Erdos882Trial.powerset_centered_sum_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [980/984] Built Energy (17s)
+info: Energy.lean:48:0: 'Erdos882Trial.integer_energy_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [981/984] Built Counting (5.4s)
+info: Counting.lean:66:0: 'Erdos882Trial.distinct_subset_sums_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [982/984] Built Primitive (5.4s)
+info: Primitive.lean:123:0: @Erdos882Trial.admissible_squared_bound : ∀ {n : ℕ} {A : Finset ℕ},
+  Erdos882Trial.Admissible n A → 2 ≤ A.card → 4 ^ A.card ≤ 32 * A.card * n ^ 2
+info: Primitive.lean:124:0: 'Erdos882Trial.primitive_condition_iff_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Primitive.lean:125:0: 'Erdos882Trial.admissible_iff_interval_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Primitive.lean:126:0: 'Erdos882Trial.subset_sum_injective_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Primitive.lean:127:0: 'Erdos882Trial.admissible_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [983/984] Built Maximum (5.6s)
+warning: Maximum.lean:31:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: Maximum.lean:59:0: 'Erdos882Trial.maximumSize_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Maximum.lean:60:0: 'Erdos882Trial.maximumSize_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (984 jobs).
