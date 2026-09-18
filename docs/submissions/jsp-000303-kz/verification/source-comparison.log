@@ -1,0 +1,17 @@
+PASS: all 15 published proof project/workflow blob hashes match local bytes.
+Proof commit: 8828e97f231afdd50556350b87660c16f5068a03
+.github/workflows/jsp-000303.yml
+projects/jsp-000303/.gitignore
+projects/jsp-000303/Audit.lean
+projects/jsp-000303/JSP000303.lean
+projects/jsp-000303/LICENSE
+projects/jsp-000303/PROVENANCE.md
+projects/jsp-000303/README.md
+projects/jsp-000303/Statement.lean
+projects/jsp-000303/lake-manifest.json
+projects/jsp-000303/lakefile.lean
+projects/jsp-000303/lean-toolchain
+projects/jsp-000303/scripts/audit.py
+projects/jsp-000303/scripts/verify.sh
+projects/jsp-000303/scripts/verify_nanoda.sh
+projects/jsp-000303/workflow/jsp-000303.yml
