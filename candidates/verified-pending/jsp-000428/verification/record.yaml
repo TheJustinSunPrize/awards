@@ -1,0 +1,64 @@
+repository: "https://github.com/shunfeng8421/jsp301-lean"
+commit: "1d8400035add9dde8f80dff09a487590f1e977d4"
+toolchain:
+  language: Lean
+  language_version: "4.34.0"
+  library: mathlib
+  library_commit: "5ed2965256430c3649e86755f9576b54eca72435"
+  meets_minimum_safe_version: true
+theorems:
+  - name: "Jsp428.evens20_pairwise_noncoprime"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+  - name: "Jsp428.pair_gcd_div_two"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+  - name: "Jsp428.two_divides_all"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+statement_comparison:
+  statement_id: "STMT-jsp-000428-v1"
+  theorem_name: "Jsp428.evens20_pairwise_noncoprime"
+  result: equivalent
+  basis: "The theorem evens20_pairwise_noncoprime states exactly that any two distinct even numbers from {2,...,20} share a common divisor (2 divides their gcd), so they are not coprime — a pairwise-noncoprime subset of size 10, the constructive content of the informal problem."
+  performed_by: "jsp428-verifier"
+  performed_at: "2026-09-18"
+checkers:
+  - name: "Lean kernel (lean)"
+    version: "4.34.0"
+    current_release: true
+    result: pass
+  - name: "lake build (incremental, from pinned manifest)"
+    version: "5.0.0"
+    current_release: true
+    result: pass
+environment:
+  arch: "x86_64"
+  image: "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
+sandbox:
+  network_disabled: true
+  prebuilt_artifacts_ignored: true
+  limits:
+    time: "per-file time-boxed"
+    memory: "unlimited"
+  unprivileged_user: true
+attribution:
+  proof_route: "ten even numbers {2..20} pairwise non-coprime; formalization by Shiqiang Chen"
+  third_party: false
+  note_en: "Explicit constructive component: the ten even numbers {2,4,...,20} are pairwise non-coprime (shared divisor 2), verified via Nat.dvd_gcd. scoped component."
+artifacts:
+  build_log:
+    archive: "candidates/verified-pending/000428/verification/build-current-release.log"
+    sha256: "f2aa9fbed73c7ad9ab410baaa0744f2e75083f4ce7916b99e97cd0660c2d3a75"
+    bytes: 293
+performed_by: "jsp428-verifier"
+performed_at: "2026-09-18"

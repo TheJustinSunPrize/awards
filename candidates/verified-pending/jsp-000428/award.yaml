@@ -1,0 +1,26 @@
+id: jsp-000428
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 428
+  title_en: "Large pairwise noncoprime subsets of an integer interval"
+  posed:
+    year: 1973
+    basis: stated
+    citation: "catalog JSP-000428 ([Er73] Problems and results in combinatorial number theory)"
+  resolved: null
+recipients:
+  - id: shiqiang-chen
+    affiliation: "Independent researcher"
+    contribution_en: "Constructive scoped Lean formalization: the ten even numbers {2,4,...,20} in [1,20] are pairwise non-coprime (each pair shares divisor 2, gcd ≥ 2), a subset of size 10 (theorem Jsp428.evens20_pairwise_noncoprime), verified against Lean v4.34.0 / mathlib v4.34.0."
+    confirmation: "https://github.com/shunfeng8421"
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null
