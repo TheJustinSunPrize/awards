@@ -1008,7 +1008,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000886 | [For a planar point set of minimum separation one, how large an independent set must its unit-distance graph have?](catalog-0801-0900.md#JSP-000886) | Open | No | No | Unavailable |
 | JSP-000887 | [Must a graph of uncountable chromatic number contain a countable subgraph that remains connected after every finite vertex deletion?](catalog-0801-0900.md#JSP-000887) | Open | No | No | Unavailable |
 | JSP-000888 | [How many lines can contain at least a prescribed number of points of a finite planar set?](catalog-0801-0900.md#JSP-000888) | Solved | No | No | Unavailable |
-| JSP-000889 | [What proportion of every finite planar point set can be selected with no pair at unit distance?](catalog-0801-0900.md#JSP-000889) | Open | No | No | Unavailable |
+| JSP-000889 | [What proportion of every finite planar point set can be selected with no pair at unit distance?](catalog-0801-0900.md#JSP-000889) | Solved | Yes | Yes | Unclaimed |
 | JSP-000890 | [Can a maximal family of pairwise disjoint unit segments in the specified planar region be finite or countable?](catalog-0801-0900.md#JSP-000890) | Solved | Yes | Yes | Unclaimed |
 | JSP-000891 | [How small can the first factorial index congruent to minus one modulo a prime be?](catalog-0801-0900.md#JSP-000891) | Open | No | No | Unavailable |
 | JSP-000892 | [How many composite integers divide some factorial plus one, and how are they distributed?](catalog-0801-0900.md#JSP-000892) | Open | No | No | Unavailable |
