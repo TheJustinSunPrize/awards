@@ -496,3 +496,32 @@ theorem graham_upper_bound (n : ℕ) (hn : 4 ≤ n) {p : ℕ} (hp : p ∈ window
     have h1 : 1 ≤ lcmUpTo n / p := (Nat.le_div_iff_mul_le (k := p) (by omega)).mpr (by rw [Nat.one_mul]; exact hle)
     have hpos : 0 < ((lcmUpTo n / p : ℕ) : ℤ) := by exact_mod_cast h1
     exact abs_of_pos hpos
+
+/-- Every interval (n/2, n] with n >= 4 contains a prime. -/
+theorem windowPrimes_nonempty {n : ℕ} (hn : 4 ≤ n) :
+    (windowPrimes n).Nonempty := by
+  let m := n / 2
+  have hm : 0 < m := by
+    dsimp [m]
+    omega
+  obtain ⟨p, hp, hgt, hle⟩ := Nat.bertrand m (by omega : m ≠ 0)
+  have hhalf : n / 2 < p := by
+    exact hgt
+  have hpn : p ≤ n := by
+    dsimp [m] at hle ⊢
+    have hdiv : 2 * (n / 2) ≤ n := by omega
+    omega
+  exact ⟨p, by
+    rw [mem_windowPrimes]
+    exact ⟨hhalf, hpn, hp⟩⟩
+
+/-- There is a nonzero legal signed numerator whose absolute value is L/p
+    for some prime p in the window. -/
+theorem graham_upper_bound_exists {n : ℕ} (hn : 4 ≤ n) :
+    ∃ p ∈ windowPrimes n, ∃ eps : ℕ → ℤ,
+      validSign n eps ∧
+      signedNum (lcmUpTo n) n eps ≠ 0 ∧
+      |signedNum (lcmUpTo n) n eps| = ((lcmUpTo n / p : ℕ) : ℤ) := by
+  obtain ⟨p, hp⟩ := windowPrimes_nonempty hn
+  obtain ⟨eps, hvalid, hne, habs⟩ := graham_upper_bound n hn hp
+  exact ⟨p, hp, eps, hvalid, hne, habs⟩
