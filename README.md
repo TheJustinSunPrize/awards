@@ -19,7 +19,7 @@ A public repository for The Justin Sun Prize: recognizing mathematical breakthro
 | Machine-readable data and schemas | [Data](data/README.md) |
 
 Award entries are confirmed and publicly announced decisions; candidates are tracked separately. The repository publishes public records; detailed assessment criteria and deliberations are not included.
-
+ 
 ## Participate
 
 You can recommend a problem, claim an award for your own contribution, correct a record, or raise a dispute using the four [issue forms](.github/ISSUE_TEMPLATE/). Award claims must be submitted by the actual contributor. Read [CONTRIBUTING.md](CONTRIBUTING.md) for evidence requirements and handling steps, and follow the [Code of Conduct](CODE_OF_CONDUCT.md). Keep identity documents, private contact details and other private personal information out of public issues.
