@@ -1,0 +1,365 @@
+2026-09-17T03:25:05.9228600Z Current runner version: '2.337.0'
+2026-09-17T03:25:05.9281735Z ##[group]Runner Image Provisioner
+2026-09-17T03:25:05.9283894Z Hosted Compute Agent
+2026-09-17T03:25:05.9284482Z Version: 20260828.587
+2026-09-17T03:25:05.9285203Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-17T03:25:05.9287117Z Build Date: 2026-08-28T16:44:25Z
+2026-09-17T03:25:05.9289200Z Worker ID: {863dc751-e8ec-4289-b27d-3dd03e59cc36}
+2026-09-17T03:25:05.9289916Z Azure Region: centralus
+2026-09-17T03:25:05.9290416Z ##[endgroup]
+2026-09-17T03:25:05.9294502Z ##[group]Operating System
+2026-09-17T03:25:05.9295079Z Ubuntu
+2026-09-17T03:25:05.9295517Z 24.04.5
+2026-09-17T03:25:05.9297612Z LTS
+2026-09-17T03:25:05.9298247Z ##[endgroup]
+2026-09-17T03:25:05.9298800Z ##[group]Runner Image
+2026-09-17T03:25:05.9300616Z Image: ubuntu-24.04
+2026-09-17T03:25:05.9301076Z Version: 20260907.300.1
+2026-09-17T03:25:05.9303122Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260907.300/images/ubuntu/Ubuntu2404-Readme.md
+2026-09-17T03:25:05.9306169Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260907.300
+2026-09-17T03:25:05.9306994Z ##[endgroup]
+2026-09-17T03:25:05.9309236Z ##[group]GITHUB_TOKEN Permissions
+2026-09-17T03:25:05.9313564Z Contents: read
+2026-09-17T03:25:05.9314419Z Metadata: read
+2026-09-17T03:25:05.9315179Z ##[endgroup]
+2026-09-17T03:25:05.9317729Z Secret source: Actions
+2026-09-17T03:25:05.9319074Z Cache mode: write
+2026-09-17T03:25:05.9320108Z Prepare workflow directory
+2026-09-17T03:25:05.9832737Z Prepare all required actions
+2026-09-17T03:25:05.9894926Z Getting action download info
+2026-09-17T03:25:06.1975168Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-09-17T03:25:06.3149013Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-09-17T03:25:06.5162805Z Complete job name: verify
+2026-09-17T03:25:06.5598023Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-17T03:25:06.5602953Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-09-17T03:25:06.5603389Z with:
+2026-09-17T03:25:06.5603623Z   persist-credentials: false
+2026-09-17T03:25:06.5603924Z   repository: ketianzhang1-lang/jsp-000301-lean
+2026-09-17T03:25:06.5605820Z   token: ***
+2026-09-17T03:25:06.5606041Z   ssh-strict: true
+2026-09-17T03:25:06.5606271Z   ssh-user: git
+2026-09-17T03:25:06.5606494Z   clean: true
+2026-09-17T03:25:06.5606736Z   sparse-checkout-cone-mode: true
+2026-09-17T03:25:06.5607009Z   fetch-depth: 1
+2026-09-17T03:25:06.5607237Z   fetch-tags: false
+2026-09-17T03:25:06.5607470Z   show-progress: true
+2026-09-17T03:25:06.5607851Z   lfs: false
+2026-09-17T03:25:06.5608082Z   submodules: false
+2026-09-17T03:25:06.5608322Z   set-safe-directory: true
+2026-09-17T03:25:06.5608592Z   allow-unsafe-pr-checkout: false
+2026-09-17T03:25:06.5608936Z ##[endgroup]
+2026-09-17T03:25:06.6260729Z Syncing repository: ketianzhang1-lang/jsp-000301-lean
+2026-09-17T03:25:06.6262226Z ##[group]Getting Git version info
+2026-09-17T03:25:06.6262905Z Working directory is '/home/runner/work/jsp-000301-lean/jsp-000301-lean'
+2026-09-17T03:25:06.6263812Z [command]/usr/bin/git version
+2026-09-17T03:25:06.6330543Z git version 2.55.0
+2026-09-17T03:25:06.6343383Z ##[endgroup]
+2026-09-17T03:25:06.6354033Z Temporarily overriding HOME='/home/runner/work/_temp/5dfa8584-468a-46b4-8112-02a148de4abe' before making global git config changes
+2026-09-17T03:25:06.6355442Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-17T03:25:06.6358537Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jsp-000301-lean/jsp-000301-lean
+2026-09-17T03:25:06.6406515Z Deleting the contents of '/home/runner/work/jsp-000301-lean/jsp-000301-lean'
+2026-09-17T03:25:06.6409673Z ##[group]Initializing the repository
+2026-09-17T03:25:06.6412612Z [command]/usr/bin/git init /home/runner/work/jsp-000301-lean/jsp-000301-lean
+2026-09-17T03:25:06.6509417Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-17T03:25:06.6510448Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-17T03:25:06.6526070Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-17T03:25:06.6526738Z hint: call:
+2026-09-17T03:25:06.6527032Z hint:
+2026-09-17T03:25:06.6527436Z hint: 	git config --global init.defaultBranch <name>
+2026-09-17T03:25:06.6528023Z hint:
+2026-09-17T03:25:06.6528483Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-17T03:25:06.6529224Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-17T03:25:06.6529882Z hint:
+2026-09-17T03:25:06.6530216Z hint: 	git branch -m <name>
+2026-09-17T03:25:06.6530590Z hint:
+2026-09-17T03:25:06.6531091Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-17T03:25:06.6531933Z Initialized empty Git repository in /home/runner/work/jsp-000301-lean/jsp-000301-lean/.git/
+2026-09-17T03:25:06.6533680Z [command]/usr/bin/git remote add origin https://github.com/ketianzhang1-lang/jsp-000301-lean
+2026-09-17T03:25:06.6576314Z ##[endgroup]
+2026-09-17T03:25:06.6576923Z ##[group]Disabling automatic garbage collection
+2026-09-17T03:25:06.6577429Z [command]/usr/bin/git config --local gc.auto 0
+2026-09-17T03:25:06.6599059Z ##[endgroup]
+2026-09-17T03:25:06.6599565Z ##[group]Setting up auth
+2026-09-17T03:25:06.6604688Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-17T03:25:06.6635265Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-17T03:25:06.6941882Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-17T03:25:06.6969998Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-17T03:25:06.7133466Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-17T03:25:06.7159131Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-17T03:25:06.7321609Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-17T03:25:06.7350412Z ##[endgroup]
+2026-09-17T03:25:06.7351034Z ##[group]Fetching the repository
+2026-09-17T03:25:06.7356066Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +9ef8a063998150500dcdddad81c669c69ed8fa2c:refs/remotes/origin/jsp-000212-bose-chowla
+2026-09-17T03:25:07.0643198Z From https://github.com/ketianzhang1-lang/jsp-000301-lean
+2026-09-17T03:25:07.0643891Z  * [new ref]         9ef8a063998150500dcdddad81c669c69ed8fa2c -> origin/jsp-000212-bose-chowla
+2026-09-17T03:25:07.0646633Z ##[endgroup]
+2026-09-17T03:25:07.0647401Z ##[group]Determining the checkout info
+2026-09-17T03:25:07.0648961Z ##[endgroup]
+2026-09-17T03:25:07.0652901Z [command]/usr/bin/git sparse-checkout disable
+2026-09-17T03:25:07.0851168Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-17T03:25:07.0875444Z ##[group]Checking out the ref
+2026-09-17T03:25:07.0879050Z [command]/usr/bin/git checkout --progress --force -B jsp-000212-bose-chowla refs/remotes/origin/jsp-000212-bose-chowla
+2026-09-17T03:25:07.0971615Z Switched to a new branch 'jsp-000212-bose-chowla'
+2026-09-17T03:25:07.0975996Z branch 'jsp-000212-bose-chowla' set up to track 'origin/jsp-000212-bose-chowla'.
+2026-09-17T03:25:07.0980314Z ##[endgroup]
+2026-09-17T03:25:07.1012747Z [command]/usr/bin/git log -1 --format=%H
+2026-09-17T03:25:07.1033095Z 9ef8a063998150500dcdddad81c669c69ed8fa2c
+2026-09-17T03:25:07.1039836Z ##[group]Removing auth
+2026-09-17T03:25:07.1041981Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-17T03:25:07.1066910Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-17T03:25:07.1228897Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-17T03:25:07.1250446Z http.https://github.com/.extraheader
+2026-09-17T03:25:07.1254530Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-09-17T03:25:07.1280222Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-17T03:25:07.1441613Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-17T03:25:07.1466705Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-17T03:25:07.1640844Z ##[endgroup]
+2026-09-17T03:25:07.1775615Z ##[group]Run set -euo pipefail
+2026-09-17T03:25:07.1776135Z [36;1mset -euo pipefail[0m
+2026-09-17T03:25:07.1776686Z [36;1mcurl -sSf https://elan.lean-lang.org/elan-init.sh | sh -s -- -y --default-toolchain none[0m
+2026-09-17T03:25:07.1777292Z [36;1mecho "$HOME/.elan/bin" >> "$GITHUB_PATH"[0m
+2026-09-17T03:25:07.1777908Z [36;1mexport PATH="$HOME/.elan/bin:$PATH"[0m
+2026-09-17T03:25:07.1778443Z [36;1melan toolchain install "$(cat lean-toolchain)"[0m
+2026-09-17T03:25:07.1779249Z [36;1mlake exe cache get Mathlib.FieldTheory.Finite.GaloisField Mathlib.FieldTheory.PrimitiveElement Mathlib.Algebra.Polynomial.Roots Mathlib.Tactic[0m
+2026-09-17T03:25:07.1780057Z [36;1mgit diff --exit-code -- lake-manifest.json[0m
+2026-09-17T03:25:07.1811628Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-09-17T03:25:07.1812000Z ##[endgroup]
+2026-09-17T03:25:07.3044855Z info: downloading installer
+2026-09-17T03:25:08.6289975Z info: downloading https://releases.lean-lang.org/lean4/v4.34.0/lean-4.34.0-linux.tar.zst
+2026-09-17T03:25:13.6355344Z info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.34.0
+2026-09-17T03:25:19.6670509Z 
+2026-09-17T03:25:19.6951041Z leanprover/lean4:v4.34.0 installed - Lean (version 4.34.0, x86_64-unknown-linux-gnu, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)
+2026-09-17T03:25:19.6951628Z 
+2026-09-17T03:25:20.1041237Z info: mathlib: cloning https://github.com/leanprover-community/mathlib4
+2026-09-17T03:25:42.0627698Z info: mathlib: checking out revision '5ed2965256430c3649e86755f9576b54eca72435'
+2026-09-17T03:25:42.6090251Z info: plausible: cloning https://github.com/leanprover-community/plausible
+2026-09-17T03:25:43.0008238Z info: plausible: checking out revision '118aa17ee84656b8bd727fef7c458ee8c833385c'
+2026-09-17T03:25:43.0115512Z info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+2026-09-17T03:25:43.3844590Z info: LeanSearchClient: checking out revision 'ddf04cf3949fa556442341e87d47f9f6e6074707'
+2026-09-17T03:25:43.3942301Z info: importGraph: cloning https://github.com/leanprover-community/import-graph
+2026-09-17T03:25:43.8314995Z info: importGraph: checking out revision 'e928b72544873815af278d38681b31c0293588e3'
+2026-09-17T03:25:43.8434116Z info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+2026-09-17T03:25:44.5484534Z info: proofwidgets: checking out revision '106ff4fafc74ef4ac99d81dbf3ab399118f497a5'
+2026-09-17T03:25:44.9377446Z info: aesop: cloning https://github.com/leanprover-community/aesop
+2026-09-17T03:25:45.7718410Z info: aesop: checking out revision '355695d523e41d0554926416cba2a2b3544fbbc9'
+2026-09-17T03:25:45.7871817Z info: Qq: cloning https://github.com/leanprover-community/quote4
+2026-09-17T03:25:46.2461997Z info: Qq: checking out revision '6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259'
+2026-09-17T03:25:46.2570907Z info: batteries: cloning https://github.com/leanprover-community/batteries
+2026-09-17T03:25:53.1056369Z info: batteries: checking out revision 'f2effa3d803fda822b1f97b806c47cf2adfbcbc2'
+2026-09-17T03:25:53.1232101Z info: Cli: cloning https://github.com/leanprover/lean4-cli
+2026-09-17T03:25:53.5290491Z info: Cli: checking out revision 'e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204'
+2026-09-17T03:25:53.8405787Z ✔ [1/5] Built Cache.Cli (244ms)
+2026-09-17T03:25:56.8452830Z ✔ [2/5] Built Cache.Lean (291ms)
+2026-09-17T03:25:56.8453209Z ✔ [7/42] Built Cache.Cli:c.o (155ms)
+2026-09-17T03:25:56.8453877Z ✔ [8/42] Built Cache.Lean:c.o (149ms)
+2026-09-17T03:25:56.9454638Z ✔ [10/42] Built Cache.Env (279ms)
+2026-09-17T03:25:57.0456724Z ✔ [11/42] Built Cache.Env:c.o (123ms)
+2026-09-17T03:25:57.2499517Z ✔ [12/42] Built Cache.Infra (344ms)
+2026-09-17T03:25:57.4479007Z ✔ [13/42] Built Cache.Infra:c.o (164ms)
+2026-09-17T03:25:57.7482749Z ✔ [14/42] Built Cache.IO (1.1s)
+2026-09-17T03:25:58.3489661Z ✔ [15/42] Built Cache.Hashing (587ms)
+2026-09-17T03:25:58.6486299Z ✔ [16/42] Built Cache.Hashing:c.o (343ms)
+2026-09-17T03:25:58.7487987Z ✔ [17/42] Built Cache.IO:c.o (960ms)
+2026-09-17T03:25:59.5495482Z ✔ [18/42] Built Cache.Requests (1.2s)
+2026-09-17T03:25:59.9516280Z ✔ [19/42] Built Cache.Marker (427ms)
+2026-09-17T03:26:00.1519359Z ✔ [20/42] Built Cache.Marker:c.o (120ms)
+2026-09-17T03:26:00.6530453Z ✔ [21/42] Built Cache.Upload.Dest (642ms)
+2026-09-17T03:26:00.6531292Z ✔ [22/42] Built Cache.Query (658ms)
+2026-09-17T03:26:00.7538831Z ✔ [23/42] Built Cache.Upload.Dest:c.o (104ms)
+2026-09-17T03:26:01.0532871Z ✔ [24/42] Built Cache.Query:c.o (261ms)
+2026-09-17T03:26:01.3548845Z ✔ [25/42] Built Cache.Upload.Curl (721ms)
+2026-09-17T03:26:01.3549242Z ✔ [26/42] Built Cache.Upload.Rclone (689ms)
+2026-09-17T03:26:01.4568795Z ✔ [27/42] Built Cache.Requests:c.o (1.9s)
+2026-09-17T03:26:01.4600520Z ✔ [28/42] Built Cache.Upload.Rclone:c.o (169ms)
+2026-09-17T03:26:01.5567316Z ✔ [29/42] Built Cache.Upload.Curl:c.o (172ms)
+2026-09-17T03:26:01.7579148Z ✔ [30/42] Built Cache.Warning (709ms)
+2026-09-17T03:26:01.9580150Z ✔ [31/42] Built Cache.Warning:c.o (192ms)
+2026-09-17T03:26:02.0581092Z ✔ [32/42] Built Cache.Upload.Azure (533ms)
+2026-09-17T03:26:02.1589153Z ✔ [33/42] Built Cache.Upload.S3 (656ms)
+2026-09-17T03:26:02.1590106Z ✔ [34/42] Built Cache.Upload.Azure:c.o (103ms)
+2026-09-17T03:26:02.3585360Z ✔ [35/42] Built Cache.Upload.S3:c.o (195ms)
+2026-09-17T03:26:02.5588251Z ✔ [36/42] Built Cache.Upload.Defs (438ms)
+2026-09-17T03:26:02.6588525Z ✔ [37/42] Built Cache.Upload.Defs:c.o (91ms)
+2026-09-17T03:26:03.0592058Z ✔ [38/42] Built Cache.Upload (431ms)
+2026-09-17T03:26:03.0592318Z ✔ [39/42] Built Cache.Upload:c.o (73ms)
+2026-09-17T03:26:03.7599145Z ✔ [40/42] Built Cache.Main (706ms)
+2026-09-17T03:26:04.2604377Z ✔ [41/42] Built Cache.Main:c.o (518ms)
+2026-09-17T03:26:04.8614439Z ✔ [42/42] Built cache:exe (572ms)
+2026-09-17T03:26:06.8502989Z Current branch: HEAD
+2026-09-17T03:26:06.8503330Z Using cache from origin: (some leanprover-community/mathlib4)
+2026-09-17T03:26:06.8504081Z Attempting to download 3076 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4-master
+2026-09-17T03:26:07.0295235Z 
+2026-09-17T03:26:07.1332502Z Downloaded: 1 file(s) [attempted 1/3076 = 0%, 59 KB/s], Decompressed: 0
+2026-09-17T03:26:07.2362637Z Downloaded: 24 file(s) [attempted 24/3076 = 0%, 255 KB/s], Decompressed: 17
+2026-09-17T03:26:07.3381203Z Downloaded: 125 file(s) [attempted 125/3076 = 4%, 393 KB/s], Decompressed: 46
+2026-09-17T03:26:07.4360152Z Downloaded: 272 file(s) [attempted 272/3076 = 8%, 913 KB/s], Decompressed: 87
+2026-09-17T03:26:07.5378011Z Downloaded: 399 file(s) [attempted 399/3076 = 12%, 4510 KB/s], Decompressed: 87
+2026-09-17T03:26:07.6443390Z Downloaded: 539 file(s) [attempted 539/3076 = 17%, 224 KB/s], Decompressed: 87
+2026-09-17T03:26:07.7468501Z Downloaded: 680 file(s) [attempted 680/3076 = 22%, 186 KB/s], Decompressed: 231
+2026-09-17T03:26:07.8463962Z Downloaded: 815 file(s) [attempted 815/3076 = 26%, 1844 KB/s], Decompressed: 231
+2026-09-17T03:26:07.9530437Z Downloaded: 930 file(s) [attempted 930/3076 = 30%, 3428 KB/s], Decompressed: 231
+2026-09-17T03:26:08.0518305Z Downloaded: 1024 file(s) [attempted 1024/3076 = 33%, 189 KB/s], Decompressed: 231
+2026-09-17T03:26:08.1613741Z Downloaded: 1170 file(s) [attempted 1170/3076 = 38%, 532 KB/s], Decompressed: 231
+2026-09-17T03:26:08.2615400Z Downloaded: 1286 file(s) [attempted 1286/3076 = 41%, 1750 KB/s], Decompressed: 231
+2026-09-17T03:26:08.3616104Z Downloaded: 1398 file(s) [attempted 1398/3076 = 45%, 445 KB/s], Decompressed: 231
+2026-09-17T03:26:08.4621523Z Downloaded: 1545 file(s) [attempted 1545/3076 = 50%, 1581 KB/s], Decompressed: 231
+2026-09-17T03:26:08.5649871Z Downloaded: 1689 file(s) [attempted 1689/3076 = 54%, 1618 KB/s], Decompressed: 231
+2026-09-17T03:26:08.6658873Z Downloaded: 1828 file(s) [attempted 1828/3076 = 59%, 504 KB/s], Decompressed: 231
+2026-09-17T03:26:08.7648179Z Downloaded: 1965 file(s) [attempted 1965/3076 = 63%, 654 KB/s], Decompressed: 651
+2026-09-17T03:26:08.9014487Z Downloaded: 2118 file(s) [attempted 2118/3076 = 68%, 1243 KB/s], Decompressed: 651
+2026-09-17T03:26:09.0065670Z Downloaded: 2243 file(s) [attempted 2243/3076 = 72%, 426 KB/s], Decompressed: 651
+2026-09-17T03:26:09.1122230Z Downloaded: 2394 file(s) [attempted 2394/3076 = 77%, 446 KB/s], Decompressed: 651
+2026-09-17T03:26:09.2119076Z Downloaded: 2522 file(s) [attempted 2522/3076 = 81%, 1182 KB/s], Decompressed: 651
+2026-09-17T03:26:09.3143651Z Downloaded: 2675 file(s) [attempted 2675/3076 = 86%, 231 KB/s], Decompressed: 651
+2026-09-17T03:26:09.4159771Z Downloaded: 2786 file(s) [attempted 2786/3076 = 90%, 2228 KB/s], Decompressed: 651
+2026-09-17T03:26:09.5177631Z Downloaded: 2913 file(s) [attempted 2913/3076 = 94%, 3341 KB/s], Decompressed: 651
+2026-09-17T03:26:09.5315443Z Downloaded: 3047 file(s) [attempted 3047/3076 = 99%, 770 KB/s], Decompressed: 651
+2026-09-17T03:26:09.5328640Z Downloaded: 3076 file(s) [attempted 3076/3076 = 100%, 770 KB/s], Decompressed: 651
+2026-09-17T03:26:13.9098154Z Decompressed 3076 file(s)
+2026-09-17T03:26:13.9098386Z Already decompressed 3076 file(s)
+2026-09-17T03:26:14.0469846Z ##[group]Run bash scripts/verify.sh
+2026-09-17T03:26:14.0470034Z [36;1mbash scripts/verify.sh[0m
+2026-09-17T03:26:14.0502600Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-09-17T03:26:14.0502781Z ##[endgroup]
+2026-09-17T03:26:16.9539924Z ✔ [3092/3096] Built BoseChowla (1.7s)
+2026-09-17T03:26:18.4524302Z ℹ [3093/3096] Built Audit (1.6s)
+2026-09-17T03:26:18.4525157Z info: Audit.lean:3:0: 'BoseChowla.product_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:18.4525895Z info: Audit.lean:4:0: 'BoseChowla.sub_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:18.4526798Z info: Audit.lean:5:0: 'BoseChowla.exists_exponent_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:18.4527480Z info: Audit.lean:6:0: 'BoseChowla.exists_bose_chowla' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:18.4528327Z info: Audit.lean:7:0: 'BoseChowla.jsp000212' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:18.6528212Z ✔ [3094/3096] Built PrimePower (1.8s)
+2026-09-17T03:26:20.2542440Z ℹ [3095/3096] Built PrimePowerAudit (1.5s)
+2026-09-17T03:26:20.2543035Z info: PrimePowerAudit.lean:3:0: 'BoseChowlaPrimePower.exponent_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:20.2543777Z info: PrimePowerAudit.lean:4:0: 'BoseChowlaPrimePower.prime_power_exponents' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:20.2544489Z info: PrimePowerAudit.lean:5:0: 'BoseChowlaPrimePower.IsBhMod.isBh' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:20.2545546Z info: PrimePowerAudit.lean:6:0: 'BoseChowlaPrimePower.exists_prime_power_modular' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:20.2546306Z info: PrimePowerAudit.lean:7:0: 'BoseChowlaPrimePower.jsp000212_prime_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:20.2595147Z Build completed successfully (3096 jobs).
+2026-09-17T03:26:41.4589006Z 'BoseChowla.product_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:41.4608750Z 'BoseChowla.sub_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:41.4609232Z 'BoseChowla.exists_exponent_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:41.4609550Z 'BoseChowla.exists_bose_chowla' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:41.4609877Z 'BoseChowla.jsp000212' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:43.6357687Z 'BoseChowlaPrimePower.exponent_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:43.6358324Z 'BoseChowlaPrimePower.prime_power_exponents' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:43.6358706Z 'BoseChowlaPrimePower.IsBhMod.isBh' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:43.6359060Z 'BoseChowlaPrimePower.exists_prime_power_modular' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:43.6359425Z 'BoseChowlaPrimePower.jsp000212_prime_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T03:26:43.7820403Z Ten target axiom audits and all locked dependency revisions passed.
+2026-09-17T03:26:45.9230814Z False-arithmetic negative control rejected as expected.
+2026-09-17T03:26:45.9266695Z ##[group]Run bash scripts/verify_nanoda.sh 2>&1 | tee evidence/nanoda-build.log
+2026-09-17T03:26:45.9267009Z [36;1mbash scripts/verify_nanoda.sh 2>&1 | tee evidence/nanoda-build.log[0m
+2026-09-17T03:26:45.9309743Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-09-17T03:26:45.9309928Z ##[endgroup]
+2026-09-17T03:26:46.3490012Z https://github.com/leanprover/lean4export.git 6cea97789dc088ea47fcea15692db85685aedac5
+2026-09-17T03:26:46.7706012Z https://github.com/ammkrn/nanoda_lib.git 4c544ed4099c8227f07d5de77ad1e69fb0740a27
+2026-09-17T03:26:48.2082884Z ✔ [2/6] Built Export (1.3s)
+2026-09-17T03:26:49.5100563Z ✔ [3/6] Built Export:c.o (1.4s)
+2026-09-17T03:26:50.2106322Z ✔ [4/6] Built Main (656ms)
+2026-09-17T03:26:50.3108465Z ✔ [5/6] Built Main:c.o (122ms)
+2026-09-17T03:26:51.0122100Z ✔ [6/6] Built lean4export:exe (711ms)
+2026-09-17T03:26:51.0124353Z Build completed successfully (6 jobs).
+2026-09-17T03:26:51.2437026Z     Updating crates.io index
+2026-09-17T03:26:51.4800334Z  Downloading crates ...
+2026-09-17T03:26:51.5529801Z   Downloaded cfg-if v1.0.0
+2026-09-17T03:26:51.5635770Z   Downloaded autocfg v1.1.0
+2026-09-17T03:26:51.5648654Z   Downloaded equivalent v1.0.1
+2026-09-17T03:26:51.5822931Z   Downloaded getrandom v0.2.11
+2026-09-17T03:26:51.5918128Z   Downloaded hashbrown v0.16.1
+2026-09-17T03:26:51.5958147Z   Downloaded itoa v1.0.15
+2026-09-17T03:26:51.5967960Z   Downloaded rand_chacha v0.3.1
+2026-09-17T03:26:51.5975346Z   Downloaded rustc-hash v1.1.0
+2026-09-17T03:26:51.6181053Z   Downloaded ppv-lite86 v0.2.17
+2026-09-17T03:26:51.6221378Z   Downloaded semver v1.0.27
+2026-09-17T03:26:51.6238141Z   Downloaded num-integer v0.1.46
+2026-09-17T03:26:51.6249773Z   Downloaded quote v1.0.35
+2026-09-17T03:26:51.6268049Z   Downloaded rand v0.8.5
+2026-09-17T03:26:51.6318252Z   Downloaded rand_core v0.6.4
+2026-09-17T03:26:51.6352337Z   Downloaded ryu v1.0.20
+2026-09-17T03:26:51.6374562Z   Downloaded proc-macro2 v1.0.103
+2026-09-17T03:26:51.6452020Z   Downloaded serde_derive v1.0.228
+2026-09-17T03:26:51.6474352Z   Downloaded serde_core v1.0.228
+2026-09-17T03:26:51.6495106Z   Downloaded num-traits v0.2.17
+2026-09-17T03:26:51.6513326Z   Downloaded serde v1.0.228
+2026-09-17T03:26:51.6536911Z   Downloaded unicode-ident v1.0.12
+2026-09-17T03:26:51.6555433Z   Downloaded num-bigint v0.4.4
+2026-09-17T03:26:51.6589314Z   Downloaded indexmap v2.13.0
+2026-09-17T03:26:51.6620525Z   Downloaded memchr v2.7.6
+2026-09-17T03:26:51.6659497Z   Downloaded serde_json v1.0.145
+2026-09-17T03:26:51.6709699Z   Downloaded syn v2.0.111
+2026-09-17T03:26:51.6784635Z   Downloaded libc v0.2.180
+2026-09-17T03:26:51.7238725Z    Compiling proc-macro2 v1.0.103
+2026-09-17T03:26:51.7239055Z    Compiling autocfg v1.1.0
+2026-09-17T03:26:51.7239628Z    Compiling unicode-ident v1.0.12
+2026-09-17T03:26:51.7239776Z    Compiling serde_core v1.0.228
+2026-09-17T03:26:51.9299614Z    Compiling serde v1.0.228
+2026-09-17T03:26:51.9897138Z    Compiling num-traits v0.2.17
+2026-09-17T03:26:52.1119053Z    Compiling num-bigint v0.4.4
+2026-09-17T03:26:52.1955931Z    Compiling serde_json v1.0.145
+2026-09-17T03:26:52.3818372Z    Compiling hashbrown v0.16.1
+2026-09-17T03:26:52.5728359Z    Compiling quote v1.0.35
+2026-09-17T03:26:52.7139843Z    Compiling syn v2.0.111
+2026-09-17T03:26:53.3149566Z    Compiling num-integer v0.1.46
+2026-09-17T03:26:53.3179317Z    Compiling ryu v1.0.20
+2026-09-17T03:26:53.4278769Z    Compiling equivalent v1.0.1
+2026-09-17T03:26:53.4548934Z    Compiling memchr v2.7.6
+2026-09-17T03:26:53.4720970Z    Compiling itoa v1.0.15
+2026-09-17T03:26:53.5259140Z    Compiling indexmap v2.13.0
+2026-09-17T03:26:53.6768866Z    Compiling rustc-hash v1.1.0
+2026-09-17T03:26:53.7138853Z    Compiling semver v1.0.27
+2026-09-17T03:26:54.0084358Z    Compiling serde_derive v1.0.228
+2026-09-17T03:26:55.7910095Z    Compiling nanoda_lib v0.4.17 (/tmp/tmp.xTkbpVvwQL/checker)
+2026-09-17T03:27:05.4730722Z     Finished `release` profile [optimized] target(s) in 14.39s
+2026-09-17T03:27:19.3809511Z Checked 24888 declarations with no errors
+2026-09-17T03:27:21.7494007Z ##[group]Run set -euo pipefail
+2026-09-17T03:27:21.7494215Z [36;1mset -euo pipefail[0m
+2026-09-17T03:27:21.7494348Z [36;1mmkdir -p evidence[0m
+2026-09-17T03:27:21.7494520Z [36;1mgit rev-parse HEAD > evidence/SOURCE_COMMIT[0m
+2026-09-17T03:27:21.7494725Z [36;1mcp lake-manifest.json evidence/lake-manifest.json[0m
+2026-09-17T03:27:21.7494932Z [36;1mgit diff --exit-code -- lake-manifest.json[0m
+2026-09-17T03:27:21.7495159Z [36;1mtar --exclude=.lake --exclude=evidence -czf evidence/source.tar.gz .[0m
+2026-09-17T03:27:21.7495415Z [36;1msha256sum evidence/source.tar.gz > evidence/ARCHIVE_SHA256[0m
+2026-09-17T03:27:21.7526011Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-09-17T03:27:21.7526200Z ##[endgroup]
+2026-09-17T03:27:21.7712304Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-17T03:27:21.7713615Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-09-17T03:27:21.7713840Z with:
+2026-09-17T03:27:21.7713959Z   name: jsp-000212-evidence
+2026-09-17T03:27:21.7714102Z   path: projects/jsp-000212/evidence
+2026-09-17T03:27:21.7714248Z   if-no-files-found: warn
+2026-09-17T03:27:21.7714662Z   compression-level: 6
+2026-09-17T03:27:21.7714785Z   overwrite: false
+2026-09-17T03:27:21.7714905Z   include-hidden-files: false
+2026-09-17T03:27:21.7715038Z ##[endgroup]
+2026-09-17T03:27:21.8823405Z (node:3856) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-17T03:27:21.8824067Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-17T03:27:21.8892439Z With the provided path, there will be 17 files uploaded
+2026-09-17T03:27:21.8896565Z Artifact name is valid!
+2026-09-17T03:27:21.8897004Z Root directory input is valid!
+2026-09-17T03:27:22.1690209Z Beginning upload of artifact content to blob storage
+2026-09-17T03:27:22.3560556Z (node:3856) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-09-17T03:27:22.9938726Z Uploaded bytes 8388608
+2026-09-17T03:27:23.0525788Z Uploaded bytes 16777216
+2026-09-17T03:27:23.2596386Z Uploaded bytes 22529489
+2026-09-17T03:27:23.3033174Z Finished uploading artifact content to blob storage!
+2026-09-17T03:27:23.3033763Z SHA256 digest of uploaded artifact zip is 7ff9777babc4ffa87a06307e09b67943b5dd812030b637d3f7911cc465c03dd1
+2026-09-17T03:27:23.3035259Z Finalizing artifact upload
+2026-09-17T03:27:23.5162891Z Artifact jsp-000212-evidence.zip successfully finalized. Artifact ID 10479651862
+2026-09-17T03:27:23.5163578Z Artifact jsp-000212-evidence has been successfully uploaded! Final size is 22529489 bytes. Artifact ID is 10479651862
+2026-09-17T03:27:23.5169138Z Artifact download URL: https://github.com/ketianzhang1-lang/jsp-000301-lean/actions/runs/35178083844/artifacts/10479651862
+2026-09-17T03:27:23.5359288Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-17T03:27:23.5359927Z Post job cleanup.
+2026-09-17T03:27:23.5907912Z [command]/usr/bin/git version
+2026-09-17T03:27:23.5942368Z git version 2.55.0
+2026-09-17T03:27:23.5969218Z Temporarily overriding HOME='/home/runner/work/_temp/20e72e94-b4fa-4140-98c7-3703fbb44da3' before making global git config changes
+2026-09-17T03:27:23.5969827Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-17T03:27:23.5973888Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jsp-000301-lean/jsp-000301-lean
+2026-09-17T03:27:23.6010127Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-17T03:27:23.6047188Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-17T03:27:23.6238243Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-17T03:27:23.6268306Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-17T03:27:23.6462707Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-17T03:27:23.6491811Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-17T03:27:23.6778404Z Cleaning up orphan processes
+2026-09-17T03:27:23.6976601Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

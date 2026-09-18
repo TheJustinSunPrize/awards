@@ -1,0 +1,23 @@
+{
+  "artifacts": [
+    {
+      "archive_download_url": "https://api.github.com/repos/ketianzhang1-lang/jsp-000301-lean/actions/artifacts/10479116479/zip",
+      "created_at": "2026-09-17T03:04:02Z",
+      "digest": "sha256:6d0ba1e301e8d48af1073c78a298c3aac4ac19363d54c024c6e3170a0cca2272",
+      "expired": false,
+      "expires_at": "2026-12-16T03:01:21Z",
+      "id": 10479116479,
+      "name": "jsp-000212-evidence",
+      "size_in_bytes": 20915410,
+      "updated_at": "2026-09-17T03:04:02Z",
+      "url": "https://api.github.com/repos/ketianzhang1-lang/jsp-000301-lean/actions/artifacts/10479116479",
+      "workflow_run": {
+        "head_branch": "jsp-000212-bose-chowla",
+        "head_repository_id": 1373404416,
+        "head_sha": "5a44bae1b7d4a8a70d1f8594e26688f251f0b9e0",
+        "id": 35176592120,
+        "repository_id": 1373404416
+      }
+    }
+  ]
+}
