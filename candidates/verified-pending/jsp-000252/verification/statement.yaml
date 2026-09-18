@@ -3,7 +3,7 @@ status: active
 supersedes: "STMT-jsp-000252-v1"
 statement:
   text: "JSP252.main_bound : ∃ N₀ : ℕ, ∀ n : ℕ, N₀ ≤ n → ((JSP252.subOneSubsets n).card : ℝ) ≤ (2 : ℝ) ^ (0.93 * (n : ℝ))"
-  natural_language_source: "catalog 000252: 'Subsets of a finite integer range with reciprocal sum one'. [St24] S. Steinerberger, On a problem involving unit fractions, arXiv:2403.17041 (2024), main theorem: for all sufficiently large n, #{S ⊆ {1,…,n} : Σ_{s∈S} 1/s ≤ 1} < 2^(0.93·n). The formalized statement is the non-strict upper bound for all n ≥ N₀ (implied by the paper's strict bound); N₀ = 200000 is chosen in the proof."
+  natural_language_source: "Catalog JSP-000252 asks 'How many subsets of a finite integer range have reciprocal sum exactly one?'. The catalog's solution reference [St24] = S. Steinerberger, On a problem involving unit fractions, arXiv:2403.17041 (2024), proves: for n sufficiently large, #{S ⊆ {1,…,n} : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n). JSP252.main_bound formalizes exactly this theorem (non-strict upper bound, constant 0.93, 'sufficiently large' witnessed explicitly by N₀ = 200000). The exactly-one family {S : Σ 1/s = 1} is a subset of {S : Σ 1/s ≤ 1}, so the same bound also answers the catalog's 'exactly one' counting question."
   definitions_reviewed:
     - name: "JSP252.subOneSubsets"
       from_library: false

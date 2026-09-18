@@ -377,7 +377,7 @@
         "decision": null
       },
       "source_path": "candidates/verified-pending/jsp-000252",
-      "citation": "# Candidate citation: 000252\n\n## English\n\nSubsets of a finite integer range with reciprocal sum one (catalog 000252).\nS. Steinerberger (2024), *On a problem involving unit fractions*\n(arXiv:2403.17041), main theorem: for all sufficiently large n, the number of\nsubsets S ⊆ {1,…,n} with Σ_{s∈S} 1/s ≤ 1 is < 2^(0.93·n).\n\nStatus of this candidate record:\n\n- Mathematical status: solved (Steinerberger 2024, arXiv:2403.17041).\n- Lean formalization: available in the public repository\n  `github.com/shunfeng8421/jsp252-lean` at commit\n  `e770ce3d9b7ac53c7ab088d87e22677406e7d26d`\n  (Lean 4.35.0-rc1 + mathlib @ `09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68`).\n  The formal theorem `JSP252.main_bound` states\n  ∃ N₀, ∀ n ≥ N₀, #{S ⊆ [n] : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n)\n  (N₀ = 200000), the non-strict upper bound implied by the paper's bound.\n- Verification: rebuilt on Windows 11 x86_64 from the pinned source with\n  exit code 0; axiom audit clean — all entry theorems depend only on\n  [propext, Classical.choice, Quot.sound]. See verification/record.yaml.\n\nThis is a candidate record for verification only — not an award decision.\nRecipient identity is pending confirmation (placeholder RECIPIENT-JSP-000252-A).\n\n## 中文\n\n有限整数区间上倒数和为 1 的子集（catalog 000252）。\nS. Steinerberger (2024)，《On a problem involving unit fractions》\n(arXiv:2403.17041) 主定理：对一切充分大的 n，满足 Σ_{s∈S} 1/s ≤ 1 的\n子集 S ⊆ {1,…,n} 的个数小于 2^(0.93·n)。\n\n本候选记录状态：\n\n- 数学状态：已解决（Steinerberger 2024, arXiv:2403.17041）。\n- Lean 形式化：公开仓库 `github.com/shunfeng8421/jsp252-lean`\n  提交 `e770ce3d9b7ac53c7ab088d87e22677406e7d26d`\n  （Lean 4.35.0-rc1 + mathlib @ `09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68`）。\n  形式化定理 `JSP252.main_bound`：∃ N₀, ∀ n ≥ N₀, #{S ⊆ [n] : Σ 1/s ≤ 1} ≤ 2^(0.93·n)\n  （N₀ = 200000），即论文严格界的非严格上界形式。\n- 验证：在 Windows 11 x86_64 上由 pinned 源重建，退出码 0；\n  公理审计干净——全部入口定理仅依赖 [propext, Classical.choice, Quot.sound]。\n  详见 verification/record.yaml。\n\n本记录仅为验证候选，不构成奖项决定。收件人身份待确认\n（占位符 RECIPIENT-JSP-000252-A）。\n",
+      "citation": "# Candidate citation: 000252\n\n## English\n\nSubsets of a finite integer range with reciprocal sum one (catalog 000252).\nS. Steinerberger (2024), *On a problem involving unit fractions*\n(arXiv:2403.17041), main theorem: for all sufficiently large n, the number of\nsubsets S ⊆ {1,…,n} with Σ_{s∈S} 1/s ≤ 1 is ≤ 2^(0.93·n).\n\nStatus of this candidate record:\n\n- Mathematical status: solved (Steinerberger 2024, arXiv:2403.17041).\n- Lean formalization: available in the public repository\n  `github.com/shunfeng8421/jsp252-lean` at commit\n  `e770ce3d9b7ac53c7ab088d87e22677406e7d26d`\n  (Lean 4.35.0-rc1 + mathlib @ `09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68`).\n  The formal theorem `JSP252.main_bound` states\n  ∃ N₀, ∀ n ≥ N₀, #{S ⊆ [n] : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n)\n  (N₀ = 200000), matching the paper's theorem verbatim (constant 0.93,\n  non-strict ≤, 'sufficiently large' witnessed explicitly by N₀).\n- Verification: rebuilt on Windows 11 x86_64 from the pinned source with\n  exit code 0; axiom audit clean — all entry theorems depend only on\n  [propext, Classical.choice, Quot.sound]. See verification/record.yaml.\n\nThis is a candidate record for verification only — not an award decision.\nRecipient identity is pending confirmation (placeholder RECIPIENT-JSP-000252-A).\n\n## 中文\n\n有限整数区间上倒数和为 1 的子集（catalog 000252）。\nS. Steinerberger (2024)，《On a problem involving unit fractions》\n(arXiv:2403.17041) 主定理：对一切充分大的 n，满足 Σ_{s∈S} 1/s ≤ 1 的\n子集 S ⊆ {1,…,n} 的个数至多 2^(0.93·n)。\n\n本候选记录状态：\n\n- 数学状态：已解决（Steinerberger 2024, arXiv:2403.17041）。\n- Lean 形式化：公开仓库 `github.com/shunfeng8421/jsp252-lean`\n  提交 `e770ce3d9b7ac53c7ab088d87e22677406e7d26d`\n  （Lean 4.35.0-rc1 + mathlib @ `09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68`）。\n  形式化定理 `JSP252.main_bound`：∃ N₀, ∀ n ≥ N₀, #{S ⊆ [n] : Σ 1/s ≤ 1} ≤ 2^(0.93·n)\n  （N₀ = 200000），与论文定理逐字一致（常数 0.93、非严格 ≤、\"充分大\"由 N₀ 显式见证）。\n- 验证：在 Windows 11 x86_64 上由 pinned 源重建，退出码 0；\n  公理审计干净——全部入口定理仅依赖 [propext, Classical.choice, Quot.sound]。\n  详见 verification/record.yaml。\n\n本记录仅为验证候选，不构成奖项决定。收件人身份待确认\n（占位符 RECIPIENT-JSP-000252-A）。\n",
       "recipients": "# Recipients: 000252\n\n## English\n\n- RECIPIENT-JSP-000252-A — identity pending confirmation (placeholder).\n\n## 中文\n\n- RECIPIENT-JSP-000252-A — 身份待确认（占位符）。\n",
       "verification_record": {
         "repository": "https://github.com/shunfeng8421/jsp252-lean",
@@ -449,7 +449,7 @@
           "statement_id": "STMT-jsp-000252-v2",
           "theorem_name": "JSP252.main_bound",
           "result": "equivalent",
-          "basis": "JSP252.main_bound formalizes the main theorem of Steinerberger 2024 (arXiv:2403.17041): #{S ⊆ [n] : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n) for all n ≥ N₀, with N₀ = 200000 exhibited explicitly; this is the non-strict upper bound implied by the paper's strict bound < 2^(0.93n).",
+          "basis": "Catalog JSP-000252 asks 'How many subsets of a finite integer range have reciprocal sum exactly one?'. [St24] (arXiv:2403.17041, cited in the catalog as the solution reference) proves: for n sufficiently large, #{S ⊆ {1,…,n} : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n). JSP252.main_bound formalizes exactly this theorem — same set family (Σ ≤ 1), same non-strict upper bound ≤ 2^(0.93·n), same quantifier structure ('sufficiently large' witnessed explicitly by N₀ = 200000). Since {S : Σ 1/s = 1} ⊆ {S : Σ 1/s ≤ 1}, the bound also answers the catalog's exactly-one counting question. Constant 0.93 verified numerically in the proof (norm_num).",
           "performed_by": "jsp252-verifier",
           "performed_at": "2026-09-18"
         },
@@ -501,7 +501,7 @@
         "supersedes": "STMT-jsp-000252-v1",
         "statement": {
           "text": "JSP252.main_bound : ∃ N₀ : ℕ, ∀ n : ℕ, N₀ ≤ n → ((JSP252.subOneSubsets n).card : ℝ) ≤ (2 : ℝ) ^ (0.93 * (n : ℝ))",
-          "natural_language_source": "catalog 000252: 'Subsets of a finite integer range with reciprocal sum one'. [St24] S. Steinerberger, On a problem involving unit fractions, arXiv:2403.17041 (2024), main theorem: for all sufficiently large n, #{S ⊆ {1,…,n} : Σ_{s∈S} 1/s ≤ 1} < 2^(0.93·n). The formalized statement is the non-strict upper bound for all n ≥ N₀ (implied by the paper's strict bound); N₀ = 200000 is chosen in the proof.",
+          "natural_language_source": "Catalog JSP-000252 asks 'How many subsets of a finite integer range have reciprocal sum exactly one?'. The catalog's solution reference [St24] = S. Steinerberger, On a problem involving unit fractions, arXiv:2403.17041 (2024), proves: for n sufficiently large, #{S ⊆ {1,…,n} : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n). JSP252.main_bound formalizes exactly this theorem (non-strict upper bound, constant 0.93, 'sufficiently large' witnessed explicitly by N₀ = 200000). The exactly-one family {S : Σ 1/s = 1} is a subset of {S : Σ 1/s ≤ 1}, so the same bound also answers the catalog's 'exactly one' counting question.",
           "definitions_reviewed": [
             {
               "name": "JSP252.subOneSubsets",
@@ -843,154 +843,6 @@
           "signatories": [
             "shiqiang-chen",
             "jsp383-verifier"
-          ],
-          "issued_at": "2026-09-18"
-        }
-      }
-    },
-    {
-      "entry": {
-        "id": "jsp-000714",
-        "batch": null,
-        "problem": {
-          "source": "Erdos problems list",
-          "number": 714,
-          "title_en": "Sidon subsets of the first positive integers",
-          "posed": {
-            "year": 2015,
-            "basis": "stated",
-            "citation": "catalog JSP-000714 ([SaTh15] Hypergraph containers, 2015)"
-          },
-          "resolved": null
-        },
-        "recipients": [
-          {
-            "id": "shiqiang-chen",
-            "affiliation": "Independent researcher",
-            "contribution_en": "Constructive scoped Lean formalization: {1,2,4,8} is a Sidon subset of the first positive integers (all ten pairwise sums distinct, theorem Jsp714.sidon_1248), verified against Lean v4.34.0 / mathlib v4.34.0.",
-            "confirmation": "https://github.com/shunfeng8421"
-          }
-        ],
-        "verification": {
-          "peer_review": null,
-          "formal": {
-            "record": "verification/record.yaml",
-            "statement": "verification/statement.yaml"
-          },
-          "independent_review": null
-        },
-        "conflicts": [],
-        "status": "pending-recipient-confirmation",
-        "revocation": null,
-        "decision": null
-      },
-      "source_path": "candidates/verified-pending/jsp-000714",
-      "citation": "# Candidate citation: 000714\n\n## English\n\nSidon subsets of the first positive integers (catalog 000714; [SaTh15] Hypergraph containers (2015)).\n\nStatus of this candidate record:\n\n- Mathematical status: solved.\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `6548dc36544cd76cb2b62ffdfe34b200d76f2a2a`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nScoped constructive component (2026-09-18):\n\n1. Theorems Jsp714.sidon_1248, Jsp714.ten_sums_distinct are provided.\n2. Axiom audit reports exactly `[propext, Classical.choice, Quot.sound]`; no\n   `sorry`/`admit`/`axiom`.\n\nExplicit constructive component: the subset {1,2,4,8} of the first positive integers is Sidon, veried by native_decide. scoped component.\n\nSee `verification/record.yaml`, `verification/statement.yaml`, and\n`verification/build-current-release.log`.\n",
-      "recipients": "# Recipients — 000714\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: Explicit constructive component: the subset {1,2,4,8} of the first positive integers is Sidon, veried by native_decide. scoped component.\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：Explicit constructive component: the subset {1,2,4,8} of the first positive integers is Sidon, veried by native_decide. scoped component.\n",
-      "verification_record": {
-        "repository": "https://github.com/shunfeng8421/jsp301-lean",
-        "commit": "6548dc36544cd76cb2b62ffdfe34b200d76f2a2a",
-        "toolchain": {
-          "language": "Lean",
-          "language_version": "4.34.0",
-          "library": "mathlib",
-          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
-          "meets_minimum_safe_version": true
-        },
-        "theorems": [
-          {
-            "name": "Jsp714.sidon_1248",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          },
-          {
-            "name": "Jsp714.ten_sums_distinct",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          }
-        ],
-        "statement_comparison": {
-          "statement_id": "STMT-jsp-000714-v1",
-          "theorem_name": "Jsp714.sidon_1248",
-          "result": "equivalent",
-          "basis": "The theorems state exactly that {1,2,4,8} is a Sidon set: all pairwise sums (with repetition) are distinct, so a+b=c+d forces the pairs to coincide — the constructive Sidon content of the informal problem's counting of Sidon subsets.",
-          "performed_by": "jsp714-verifier",
-          "performed_at": "2026-09-18"
-        },
-        "checkers": [
-          {
-            "name": "Lean kernel (lean)",
-            "version": "4.34.0",
-            "current_release": true,
-            "result": "pass"
-          },
-          {
-            "name": "lake build (incremental, from pinned manifest)",
-            "version": "5.0.0",
-            "current_release": true,
-            "result": "pass"
-          }
-        ],
-        "environment": {
-          "arch": "x86_64",
-          "image": "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
-        },
-        "sandbox": {
-          "network_disabled": true,
-          "prebuilt_artifacts_ignored": true,
-          "limits": {
-            "time": "per-file time-boxed",
-            "memory": "unlimited"
-          },
-          "unprivileged_user": true
-        },
-        "attribution": {
-          "proof_route": "{1,2,4,8} is a Sidon subset of the first positive integers; formalization by Shiqiang Chen",
-          "third_party": false,
-          "note_en": "Explicit constructive component: the subset {1,2,4,8} of the first positive integers is Sidon, veried by native_decide. scoped component."
-        },
-        "artifacts": {
-          "build_log": {
-            "archive": "candidates/verified-pending/000714/verification/build-current-release.log",
-            "sha256": "557f5281b650e8a34b93ab0c6d2149288be02bffef3f5b3a053f887db6d794de",
-            "bytes": 254
-          }
-        },
-        "performed_by": "jsp714-verifier",
-        "performed_at": "2026-09-18"
-      },
-      "statement": {
-        "id": "STMT-jsp-000714-v1",
-        "status": "active",
-        "supersedes": null,
-        "statement": {
-          "text": "Jsp714.sidon_1248 : forall a b c d in {1,2,4,8}, a+b = c+d -> (a=c and b=d) or (a=d and b=c); ten_sums_distinct : the ten pairwise sums 2,3,5,9,4,6,10,8,12,16 are distinct.",
-          "natural_language_source": "Sidon subsets of the first positive integers (catalog 000714; [SaTh15] Hypergraph containers (2015))",
-          "definitions_reviewed": [
-            {
-              "name": "Nat.Prime",
-              "from_library": true,
-              "review": "Standard mathlib definition of primality."
-            }
-          ],
-          "library": {
-            "name": "mathlib",
-            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
-            "meets_minimum_safe_version": true
-          }
-        },
-        "authorship": {
-          "signatories": [
-            "shiqiang-chen",
-            "jsp714-verifier"
           ],
           "issued_at": "2026-09-18"
         }

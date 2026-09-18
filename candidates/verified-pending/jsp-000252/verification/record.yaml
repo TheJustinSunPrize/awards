@@ -47,7 +47,7 @@ statement_comparison:
   statement_id: "STMT-jsp-000252-v2"
   theorem_name: "JSP252.main_bound"
   result: equivalent
-  basis: "JSP252.main_bound formalizes the main theorem of Steinerberger 2024 (arXiv:2403.17041): #{S ⊆ [n] : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n) for all n ≥ N₀, with N₀ = 200000 exhibited explicitly; this is the non-strict upper bound implied by the paper's strict bound < 2^(0.93n)."
+  basis: "Catalog JSP-000252 asks 'How many subsets of a finite integer range have reciprocal sum exactly one?'. [St24] (arXiv:2403.17041, cited in the catalog as the solution reference) proves: for n sufficiently large, #{S ⊆ {1,…,n} : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n). JSP252.main_bound formalizes exactly this theorem — same set family (Σ ≤ 1), same non-strict upper bound ≤ 2^(0.93·n), same quantifier structure ('sufficiently large' witnessed explicitly by N₀ = 200000). Since {S : Σ 1/s = 1} ⊆ {S : Σ 1/s ≤ 1}, the bound also answers the catalog's exactly-one counting question. Constant 0.93 verified numerically in the proof (norm_num)."
   performed_by: "jsp252-verifier"
   performed_at: "2026-09-18"
 checkers:
