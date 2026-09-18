@@ -23,7 +23,7 @@ theorem dvd_lcmUpTo : ∀ (n k : ℕ), 1 ≤ k → k ≤ n → k ∣ lcmUpTo n :
         exact by rw [h2, lcmUpTo_succ]; exact h6
 /-- m = Σ_{k=1}^n eps k * (L/k) -/
 def signedNum (L : ℕ) (n : ℕ) (eps : ℕ → ℤ) : ℤ :=
-  ∑ k ∈ Finset.range n, eps (k + 1) * ((lcmUpTo n / (k + 1) : ℕ) : ℤ)
+  ∑ k ∈ Finset.range n, eps (k + 1) * ((L / (k + 1) : ℕ) : ℤ)
 theorem div_half_lt {n p : ℕ} (h : n / 2 < p) : n < p * 2 := by
   have hdm : 2 * (n / 2) + n % 2 = n := Nat.div_add_mod n 2
   have hmod : n % 2 < 2 := Nat.mod_lt n (by norm_num)
@@ -572,7 +572,3 @@ theorem signedNum_zero (L n : ℕ) :
   intro k hk
   simp
 
-/-- The L argument is definitionally irrelevant in this normalized numerator. -/
-theorem signedNum_L_irrel (L₁ L₂ n : ℕ) (e : ℕ → ℤ) :
-    signedNum L₁ n e = signedNum L₂ n e := by
-  rfl
