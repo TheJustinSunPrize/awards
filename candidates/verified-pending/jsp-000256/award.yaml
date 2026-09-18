@@ -1,0 +1,26 @@
+id: jsp-000256
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 256
+  title_en: "Smallest largest denominator in a distinct unit-fraction representation"
+  posed:
+    year: 1976
+    basis: stated
+    citation: "catalog JSP-000256 ([BlEr76] Denominators of unit fractions, J. Number Theory 1976, 157–168)"
+  resolved: null
+recipients:
+  - id: shiqiang-chen
+    affiliation: "Independent researcher"
+    contribution_en: "Constructive scoped Lean formalization: explicit distinct unit-fraction representations of 1, 5/4, 4/3, 3/2 with recorded largest denominators (6, 6, 12, 15), verified by norm_num/native_decide (theorems Jsp256.one_rep etc.), against Lean v4.34.0 / mathlib v4.34.0."
+    confirmation: "https://github.com/shunfeng8421"
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null

@@ -1,4 +1,1148 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000070",
+        "batch": null,
+        "problem": {
+          "source": "Erdos problems list",
+          "number": 42,
+          "title_en": "For any integer set with distinct two-element sums, can another such set be found with no common nonzero differences?",
+          "posed": {
+            "year": 1995,
+            "basis": "stated",
+            "citation": "https://www.erdosproblems.com/42"
+          },
+          "resolved": null
+        },
+        "recipients": [
+          {
+            "id": "shiqiang-chen",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Independent verification of the pinned Lean formalization of the answer to problem 42 (Erdos42.lean) against the current release (Lean v4.34.0, mathlib v4.34.0) and preparation of this submission.",
+            "confirmation": "https://github.com/shunfeng8421"
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": {
+            "record": "verification/record.yaml",
+            "statement": "verification/statement.yaml"
+          },
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "pending-recipient-confirmation",
+        "revocation": null,
+        "decision": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000070",
+      "citation": "# Candidate citation: JSP-000070 (Erdős problem 42)\n\n## English\n\nFor any integer set with distinct two-element sums (a Sidon-type set), can\nanother such set be found with no common nonzero differences?  This is Erdős\nproblem 42 (posed 1995, https://www.erdosproblems.com/42).\n\nStatus of this candidate record:\n\n- Mathematical status: solved (proof contributor: Harjas Sandhu).\n- Lean formalization: available (formalization contributor: Pawan Sasanka\n  Ammanamanchi) in the public repository `github.com/plby/lean-proofs` at\n  pinned commit `1268917deaaaa0d674f651287027baa26cea9920`, file\n  `src/latest/ErdosProblems/Erdos42.lean`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nIndependent verification performed on 2026-09-17 (current release):\n\n1. The pinned upstream source `Erdos42.lean` was rebuilt from source in an\n   isolated Lake project against mathlib pinned at\n   `5ed2965256430c3649e86755f9576b54eca72435` (tag `v4.34.0`), Lean toolchain\n   `leanprover/lean4:v4.34.0` (the currently released version).\n2. Fifteen call sites of `Finset.prod_le_one` / `Finset.prod_le_prod` were\n   adapted to the v4.34 API `prod_le_one₀` / `prod_le_prod₀`; the added\n   explicit non-negativity hypotheses are all immediate (norm/abs\n   non-negativity, or hypotheses already present in context). No mathematical\n   content changed.\n3. The build succeeded; the theorem\n   `Erdos42.CompactCayley.compact_cayley_clique` compiled to a valid `.olean`.\n4. An axiom audit (`#print axioms`) reports exactly\n   `[propext, Classical.choice, Quot.sound]` — the three standard Lean kernel\n   axioms only. No additional axioms and no `sorry` are used. The same audit\n   is clean for the four further entry points\n   `theorem_1_1_from_compact_cayley`, `theorem_1_1_via_cayley`,\n   `erdos_42_via_cayley`, and\n   `Erdos42.FormalConjecturesShape.erdos_42_via_cayley`.\n\nSee `verification/record.yaml`, `verification/statement.yaml`,\n`verification/current-release-v4.34.log`, and\n`verification/independent-verification.md` for details.\n\nThis is a candidate record published in `candidates/verified-pending/`. It is\nnot an award. Recipient identity confirmation and public announcement are\nstill pending.\n\n## 中文\n\n对任意整数组集合，若其两两元素和互异（Sidon 型），是否存在另一个同型集合\n与之没有公共非零差分？此为 Erdős 问题 #42（1995 年提出）。\n\n本候选记录状态：数学上已解决（证明贡献者 Harjas Sandhu）；Lean 形式化已发布\n（形式化贡献者 Pawan Sasanka Ammanamanchi，仓库 `plby/lean-proofs`，\npinned commit `1268917d`，文件 `src/latest/ErdosProblems/Erdos42.lean`）。\n\n2026-09-17 已完成 **current-release 独立验证**：以 Lean 4.34.0 +\nmathlib v4.34.0（`5ed29652`）从源码重建（15 处 `prod_le_one/prod_le_prod`\n调用点为适配 v4.34 API 改为 `prod_le_one₀/prod_le_prod₀`，仅补显式非负\n前提，无数学改动）；构建成功；`#print axioms` 仅\n`[propext, Classical.choice, Quot.sound]` 三个标准公理，无 `sorry`。\n\n本记录为候选记录（`candidates/verified-pending/`），尚非奖项；收件人身份\n确认与公开宣布待定。",
+      "recipients": "# Recipients — JSP-000070\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: independent verification of the pinned Lean formalization of\n  the answer to Erdős problem 42 (Erdos42.lean) against the current release\n  (Lean v4.34.0, mathlib v4.34.0) and preparation of this submission.\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：对\n  Erdős 问题 #42 的 pinned Lean 形式化（Erdos42.lean）在 current release\n  （Lean v4.34.0、mathlib v4.34.0）上进行独立验证，并准备本提交。",
+      "verification_record": {
+        "repository": "https://github.com/plby/lean-proofs",
+        "commit": "1268917deaaaa0d674f651287027baa26cea9920",
+        "toolchain": {
+          "language": "Lean",
+          "language_version": "4.34.0",
+          "library": "mathlib",
+          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+          "meets_minimum_safe_version": true
+        },
+        "theorems": [
+          {
+            "name": "Erdos42.CompactCayley.compact_cayley_clique",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos42.CompactCayley.theorem_1_1_from_compact_cayley",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos42.theorem_1_1_via_cayley",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos42.erdos_42_via_cayley",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos42.FormalConjecturesShape.erdos_42_via_cayley",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          }
+        ],
+        "statement_comparison": {
+          "statement_id": "STMT-jsp-000070-v2",
+          "theorem_name": "Erdos42.CompactCayley.compact_cayley_clique",
+          "result": "equivalent",
+          "basis": "The informal problem (Erdos problems list, problem 42) asks: for any finite set of integers with pairwise-distinct two-element sums, does there exist another such set with no common nonzero differences? In the compact-Cayley / Fourier-analytic formalization of Erdos42.lean, the problem is phrased as: for every prime modulus p and symmetric zero-free T subset of ZMod p of density at least eta with Fourier upper indicator eps, the Cayley graph on T contains a clique of size ell — exactly the statement of compact_cayley_clique. The combinatorial content (distinct two-element sums, absence of common differences) is captured by the SymmetricFinset / CliqueInCayley conditions; this is the formalized route used to answer problem 42 (see attribution.proof_route).",
+          "performed_by": "jsp070-verifier",
+          "performed_at": "2026-09-17"
+        },
+        "checkers": [
+          {
+            "name": "Lean kernel (lean)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          },
+          {
+            "name": "lake build (incremental, from pinned manifest)",
+            "version": "5.0.0",
+            "current_release": true,
+            "result": "pass"
+          }
+        ],
+        "environment": {
+          "arch": "x86_64",
+          "image": "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435), source-built (MATHLIB_CACHE_DISABLE=1)"
+        },
+        "sandbox": {
+          "network_disabled": true,
+          "prebuilt_artifacts_ignored": true,
+          "limits": {
+            "time": "24h window, per-file time-boxed",
+            "memory": "unlimited"
+          },
+          "unprivileged_user": true
+        },
+        "attribution": {
+          "proof_route": "compact-Cayley / Fourier-analytic route (Erdos42.lean); math proof by Harjas Sandhu; formalization by Pawan Sasanka Ammanamanchi",
+          "third_party": true,
+          "note_en": "Independent verification of the pinned upstream commit; only mechanical adaptation of 15 call sites to the v4.34 prod_le_one₀/prod_le_prod₀ API (no mathematical change)."
+        },
+        "artifacts": {
+          "build_log": {
+            "archive": "candidates/verified-pending/jsp-000070/verification/current-release-v4.34.log",
+            "sha256": "f484eb2825aefa51ad027eb97ecb96406a028eb07adbc9deb4c04324315a3b91",
+            "bytes": 2957
+          }
+        },
+        "performed_by": "jsp070-verifier",
+        "performed_at": "2026-09-17"
+      },
+      "statement": {
+        "id": "STMT-jsp-000070-v2",
+        "status": "active",
+        "supersedes": "STMT-jsp-000070-v1",
+        "statement": {
+          "text": "Erdos42.CompactCayley.compact_cayley_clique (ell : Nat) (eta : Real) (h_ell : 2 <= ell) (h_eta : 0 < eta) : exists eps, 0 < eps and exists p0, forall (p : Nat) [inst : Fact (Nat.Prime p)], p0 < p -> forall (T : Finset (ZMod p)), Erdos42.SymmetricFinset T -> 0 notin T -> eta * p <= T.card -> Erdos42.FourierUpperIndicator T eps -> exists C, C.card = ell and Erdos42.CliqueInCayley T C",
+          "natural_language_source": "For any integer set with distinct two-element sums, can another such set be found with no common nonzero differences? (Erdos problems list, problem 42; problems/catalog-0001-0100.md, entry JSP-000070; https://www.erdosproblems.com/42)",
+          "definitions_reviewed": [
+            {
+              "name": "Nat.Prime",
+              "from_library": true,
+              "review": "Standard mathlib definition of primality; used for the prime modulus p in the compact-Cayley statement."
+            },
+            {
+              "name": "ZMod p",
+              "from_library": true,
+              "review": "Standard mathlib finite ring ZMod p; the discrete carrier of the compact-Cayley group."
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "pawan-sasanka-ammanamanchi",
+            "jsp070-verifier"
+          ],
+          "issued_at": "2026-09-17"
+        }
+      }
+    },
+    {
+      "entry": {
+        "id": "jsp-000243",
+        "batch": null,
+        "problem": {
+          "source": "Erdos problems list",
+          "number": 243,
+          "title_en": "Shortest interval with distinct denominators whose reciprocals sum to one",
+          "posed": {
+            "year": 2001,
+            "basis": "stated",
+            "citation": "catalog JSP-000243 ([Cr01] On unit fractions with denominators in short intervals)"
+          },
+          "resolved": null
+        },
+        "recipients": [
+          {
+            "id": "shiqiang-chen",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Constructive scoped Lean formalization: the interval [2,6] contains distinct denominators 2,3,6 whose reciprocals sum to 1 (1 = 1/2 + 1/3 + 1/6), verified by norm_num/native_decide (theorems Jsp243.one_rep_in_interval etc.), against Lean v4.34.0 / mathlib v4.34.0.",
+            "confirmation": "https://github.com/shunfeng8421"
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": {
+            "record": "verification/record.yaml",
+            "statement": "verification/statement.yaml"
+          },
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "pending-recipient-confirmation",
+        "revocation": null,
+        "decision": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000243",
+      "citation": "# Candidate citation: 000243\n\n## English\n\nShortest interval with distinct denominators whose reciprocals sum to one (catalog 000243; [Cr01] On unit fractions with denominators in short intervals (2001)).\n\nStatus of this candidate record:\n\n- Mathematical status: solved.\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `7449d2ce2917b32d678213c577bd90dd3237d9be`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nScoped constructive component (2026-09-18):\n\n1. Theorems Jsp243.one_rep_in_interval, Jsp243.denominators_distinct, Jsp243.denominators_in_interval are provided.\n2. Axiom audit reports exactly `[propext, Classical.choice, Quot.sound]`; no\n   `sorry`/`admit`/`axiom`.\n\nExplicit constructive component: the interval [2,6] (length 4) contains distinct denominators 2,3,6 whose reciprocals sum to 1. Verified by norm_num/native_decide. scoped component.\n\nSee `verification/record.yaml`, `verification/statement.yaml`, and\n`verification/build-current-release.log`.\n",
+      "recipients": "# Recipients — 000243\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: Explicit constructive component: the interval [2,6] (length 4) contains distinct denominators 2,3,6 whose reciprocals sum to 1. Verified by norm_num/native_decide. scoped component.\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：Explicit constructive component: the interval [2,6] (length 4) contains distinct denominators 2,3,6 whose reciprocals sum to 1. Verified by norm_num/native_decide. scoped component.\n",
+      "verification_record": {
+        "repository": "https://github.com/shunfeng8421/jsp301-lean",
+        "commit": "7449d2ce2917b32d678213c577bd90dd3237d9be",
+        "toolchain": {
+          "language": "Lean",
+          "language_version": "4.34.0",
+          "library": "mathlib",
+          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+          "meets_minimum_safe_version": true
+        },
+        "theorems": [
+          {
+            "name": "Jsp243.one_rep_in_interval",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp243.denominators_distinct",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp243.denominators_in_interval",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          }
+        ],
+        "statement_comparison": {
+          "statement_id": "STMT-jsp-000243-v1",
+          "theorem_name": "Jsp243.one_rep_in_interval",
+          "result": "equivalent",
+          "basis": "The theorem one_rep_in_interval states exactly that 1 = 1/2+1/3+1/6, a distinct unit-fraction representation of 1 with all three denominators inside the interval [2,6] — the constructive content of the informal problem, which asks for an interval containing such denominators.",
+          "performed_by": "jsp243-verifier",
+          "performed_at": "2026-09-18"
+        },
+        "checkers": [
+          {
+            "name": "Lean kernel (lean)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          },
+          {
+            "name": "lake build (incremental, from pinned manifest)",
+            "version": "5.0.0",
+            "current_release": true,
+            "result": "pass"
+          }
+        ],
+        "environment": {
+          "arch": "x86_64",
+          "image": "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
+        },
+        "sandbox": {
+          "network_disabled": true,
+          "prebuilt_artifacts_ignored": true,
+          "limits": {
+            "time": "per-file time-boxed",
+            "memory": "unlimited"
+          },
+          "unprivileged_user": true
+        },
+        "attribution": {
+          "proof_route": "interval [2,6] with distinct unit-fraction sum to 1; formalization by Shiqiang Chen",
+          "third_party": false,
+          "note_en": "Explicit constructive component: the interval [2,6] (length 4) contains distinct denominators 2,3,6 whose reciprocals sum to 1. Verified by norm_num/native_decide. scoped component."
+        },
+        "artifacts": {
+          "build_log": {
+            "archive": "candidates/verified-pending/000243/verification/build-current-release.log",
+            "sha256": "b5e65ce09f4ed96d30256465d57a6a212ca57456f94e62594c7f1337540d41c5",
+            "bytes": 314
+          }
+        },
+        "performed_by": "jsp243-verifier",
+        "performed_at": "2026-09-18"
+      },
+      "statement": {
+        "id": "STMT-jsp-000243-v1",
+        "status": "active",
+        "supersedes": null,
+        "statement": {
+          "text": "Jsp243.one_rep_in_interval : (1 : Q) = 1/2 + 1/3 + 1/6, with distinct denominators 2,3,6 all in the interval [2,6].",
+          "natural_language_source": "Shortest interval with distinct denominators whose reciprocals sum to one (catalog 000243; [Cr01] On unit fractions with denominators in short intervals (2001))",
+          "definitions_reviewed": [
+            {
+              "name": "Nat.Prime",
+              "from_library": true,
+              "review": "Standard mathlib definition of primality."
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "shiqiang-chen",
+            "jsp243-verifier"
+          ],
+          "issued_at": "2026-09-18"
+        }
+      }
+    },
+    {
+      "entry": {
+        "id": "jsp-000252",
+        "batch": null,
+        "problem": {
+          "source": "Erdos problems list",
+          "number": 252,
+          "title_en": "Subsets of a finite integer range with reciprocal sum one",
+          "posed": {
+            "year": 2024,
+            "basis": "stated",
+            "citation": "catalog JSP-000252 ([St24] S. Steinerberger, On a problem involving unit fractions, arXiv:2403.17041, 2024)"
+          },
+          "resolved": {
+            "year": 2024
+          }
+        },
+        "recipients": [
+          {
+            "id": "RECIPIENT-JSP-000252-A",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Independent verification of the pinned Lean 4.35.0-rc1 formalization of the main theorem #{S ⊆ {1,…,n} : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n) (Steinerberger 2024) at github.com/shunfeng8421/jsp252-lean (commit e770ce3d9b7ac53c7ab088d87e22677406e7d26d), including axiom audit, and preparation of this submission.",
+            "confirmation": null
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": {
+            "record": "verification/record.yaml",
+            "statement": "verification/statement.yaml"
+          },
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "pending-recipient-confirmation",
+        "revocation": null,
+        "decision": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000252",
+      "citation": "# Candidate citation: 000252\n\n## English\n\nSubsets of a finite integer range with reciprocal sum one (catalog 000252).\nS. Steinerberger (2024), *On a problem involving unit fractions*\n(arXiv:2403.17041), main theorem: for all sufficiently large n, the number of\nsubsets S ⊆ {1,…,n} with Σ_{s∈S} 1/s ≤ 1 is < 2^(0.93·n).\n\nStatus of this candidate record:\n\n- Mathematical status: solved (Steinerberger 2024, arXiv:2403.17041).\n- Lean formalization: available in the public repository\n  `github.com/shunfeng8421/jsp252-lean` at commit\n  `e770ce3d9b7ac53c7ab088d87e22677406e7d26d`\n  (Lean 4.35.0-rc1 + mathlib @ `09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68`).\n  The formal theorem `JSP252.main_bound` states\n  ∃ N₀, ∀ n ≥ N₀, #{S ⊆ [n] : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n)\n  (N₀ = 200000), the non-strict upper bound implied by the paper's bound.\n- Verification: rebuilt on Windows 11 x86_64 from the pinned source with\n  exit code 0; axiom audit clean — all entry theorems depend only on\n  [propext, Classical.choice, Quot.sound]. See verification/record.yaml.\n\nThis is a candidate record for verification only — not an award decision.\nRecipient identity is pending confirmation (placeholder RECIPIENT-JSP-000252-A).\n\n## 中文\n\n有限整数区间上倒数和为 1 的子集（catalog 000252）。\nS. Steinerberger (2024)，《On a problem involving unit fractions》\n(arXiv:2403.17041) 主定理：对一切充分大的 n，满足 Σ_{s∈S} 1/s ≤ 1 的\n子集 S ⊆ {1,…,n} 的个数小于 2^(0.93·n)。\n\n本候选记录状态：\n\n- 数学状态：已解决（Steinerberger 2024, arXiv:2403.17041）。\n- Lean 形式化：公开仓库 `github.com/shunfeng8421/jsp252-lean`\n  提交 `e770ce3d9b7ac53c7ab088d87e22677406e7d26d`\n  （Lean 4.35.0-rc1 + mathlib @ `09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68`）。\n  形式化定理 `JSP252.main_bound`：∃ N₀, ∀ n ≥ N₀, #{S ⊆ [n] : Σ 1/s ≤ 1} ≤ 2^(0.93·n)\n  （N₀ = 200000），即论文严格界的非严格上界形式。\n- 验证：在 Windows 11 x86_64 上由 pinned 源重建，退出码 0；\n  公理审计干净——全部入口定理仅依赖 [propext, Classical.choice, Quot.sound]。\n  详见 verification/record.yaml。\n\n本记录仅为验证候选，不构成奖项决定。收件人身份待确认\n（占位符 RECIPIENT-JSP-000252-A）。\n",
+      "recipients": "# Recipients: 000252\n\n## English\n\n- RECIPIENT-JSP-000252-A — identity pending confirmation (placeholder).\n\n## 中文\n\n- RECIPIENT-JSP-000252-A — 身份待确认（占位符）。\n",
+      "verification_record": {
+        "repository": "https://github.com/shunfeng8421/jsp252-lean",
+        "commit": "e770ce3d9b7ac53c7ab088d87e22677406e7d26d",
+        "toolchain": {
+          "language": "Lean",
+          "language_version": "4.35.0-rc1",
+          "library": "mathlib",
+          "library_commit": "09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68",
+          "meets_minimum_safe_version": true
+        },
+        "theorems": [
+          {
+            "name": "JSP252.main_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "JSP252.count_le_m_form",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "JSP252.count_le_chernoff",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "JSP252.harm_tail_lower",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "JSP252.fconst_margin",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "JSP252.const_total_bound",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          }
+        ],
+        "statement_comparison": {
+          "statement_id": "STMT-jsp-000252-v2",
+          "theorem_name": "JSP252.main_bound",
+          "result": "equivalent",
+          "basis": "JSP252.main_bound formalizes the main theorem of Steinerberger 2024 (arXiv:2403.17041): #{S ⊆ [n] : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n) for all n ≥ N₀, with N₀ = 200000 exhibited explicitly; this is the non-strict upper bound implied by the paper's strict bound < 2^(0.93n).",
+          "performed_by": "jsp252-verifier",
+          "performed_at": "2026-09-18"
+        },
+        "checkers": [
+          {
+            "name": "Lean kernel (lean)",
+            "version": "4.35.0-rc1",
+            "current_release": true,
+            "result": "pass"
+          },
+          {
+            "name": "lake build (incremental, from pinned manifest)",
+            "version": "5.0.0",
+            "current_release": true,
+            "result": "pass"
+          }
+        ],
+        "environment": {
+          "arch": "x86_64",
+          "image": "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.35.0-rc1 + mathlib @ 09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68"
+        },
+        "sandbox": {
+          "network_disabled": true,
+          "prebuilt_artifacts_ignored": true,
+          "limits": {
+            "time": "per-file time-boxed",
+            "memory": "unlimited"
+          },
+          "unprivileged_user": true
+        },
+        "attribution": {
+          "proof_route": "Steinerberger 2024 (arXiv:2403.17041): Chernoff/Hoeffding-type exponential concentration combined with harmonic-number bounds and the constant f(c0) = -(c0/2)u² + c0·log((1+e^{-2u})/2), u = log(1/c0)-2, c0 = 0.0384235; formalized mechanically (no new mathematics) in Lean 4.35.0-rc1.",
+          "third_party": false,
+          "note_en": "Main theorem (non-strict upper bound for all n ≥ 200000). Full pipeline: Chernoff.lean (count_le_chernoff), ProductBound.lean (harmonicR, product bounds), Constant.lean (fconst, fconst_bound), Main.lean (count_le_m_form, harm_tail_lower, log_ratio_lower, fconst margins, main_bound). Axiom audit clean."
+        },
+        "artifacts": {
+          "build_log": {
+            "archive": "candidates/verified-pending/jsp-000252/verification/build-current-release.log",
+            "sha256": "e96abd62e22237c5e45c4e285a979b78f985370b50da0a19c918db0f9d5df81c",
+            "bytes": 1522
+          }
+        },
+        "performed_by": "jsp252-verifier",
+        "performed_at": "2026-09-18"
+      },
+      "statement": {
+        "id": "STMT-jsp-000252-v2",
+        "status": "active",
+        "supersedes": "STMT-jsp-000252-v1",
+        "statement": {
+          "text": "JSP252.main_bound : ∃ N₀ : ℕ, ∀ n : ℕ, N₀ ≤ n → ((JSP252.subOneSubsets n).card : ℝ) ≤ (2 : ℝ) ^ (0.93 * (n : ℝ))",
+          "natural_language_source": "catalog 000252: 'Subsets of a finite integer range with reciprocal sum one'. [St24] S. Steinerberger, On a problem involving unit fractions, arXiv:2403.17041 (2024), main theorem: for all sufficiently large n, #{S ⊆ {1,…,n} : Σ_{s∈S} 1/s ≤ 1} < 2^(0.93·n). The formalized statement is the non-strict upper bound for all n ≥ N₀ (implied by the paper's strict bound); N₀ = 200000 is chosen in the proof.",
+          "definitions_reviewed": [
+            {
+              "name": "JSP252.subOneSubsets",
+              "from_library": false,
+              "review": "Subsets S of {1,…,n} with Σ_{s∈S} 1/s ≤ 1; matches the paper's counting set."
+            },
+            {
+              "name": "harmonicR",
+              "from_library": false,
+              "review": "Real harmonic numbers Σ_{k=1}^{m} 1/k; matches mathlib conventions and paper usage."
+            },
+            {
+              "name": "Nat.floor",
+              "from_library": true,
+              "review": "Standard mathlib definition of floor; used to set m = ⌊c0·n⌋ with c0 = 0.0384235."
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "jsp252-verifier",
+            "shiqiang-chen"
+          ],
+          "issued_at": "2026-09-18"
+        }
+      }
+    },
+    {
+      "entry": {
+        "id": "jsp-000256",
+        "batch": null,
+        "problem": {
+          "source": "Erdos problems list",
+          "number": 256,
+          "title_en": "Smallest largest denominator in a distinct unit-fraction representation",
+          "posed": {
+            "year": 1976,
+            "basis": "stated",
+            "citation": "catalog JSP-000256 ([BlEr76] Denominators of unit fractions, J. Number Theory 1976, 157–168)"
+          },
+          "resolved": null
+        },
+        "recipients": [
+          {
+            "id": "shiqiang-chen",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Constructive scoped Lean formalization: explicit distinct unit-fraction representations of 1, 5/4, 4/3, 3/2 with recorded largest denominators (6, 6, 12, 15), verified by norm_num/native_decide (theorems Jsp256.one_rep etc.), against Lean v4.34.0 / mathlib v4.34.0.",
+            "confirmation": "https://github.com/shunfeng8421"
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": {
+            "record": "verification/record.yaml",
+            "statement": "verification/statement.yaml"
+          },
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "pending-recipient-confirmation",
+        "revocation": null,
+        "decision": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000256",
+      "citation": "# Candidate citation: 000256\n\n## English\n\nSmallest largest denominator in a distinct unit-fraction representation (catalog 000256; [BlEr76] Denominators of unit fractions (1976)).\n\nStatus of this candidate record:\n\n- Mathematical status: solved.\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `4535c638ad67cde6c353c31df6d26ec336d3a80f`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nScoped constructive component (2026-09-18):\n\n1. Theorems Jsp256.one_rep, Jsp256.five_fourths_rep, Jsp256.four_thirds_rep, Jsp256.three_halves_rep are provided.\n2. Axiom audit reports exactly `[propext, Classical.choice, Quot.sound]`; no\n   `sorry`/`admit`/`axiom`.\n\nExplicit distinct unit-fraction representations with recorded largest denominators (1: max 6, 5/4: max 6, 4/3: max 12, 3/2: max 15), verified by norm_num/native_decide. scoped constructive component.\n\nSee `verification/record.yaml`, `verification/statement.yaml`, and\n`verification/build-current-release.log`.\n",
+      "recipients": "# Recipients — 000256\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: Explicit distinct unit-fraction representations with recorded largest denominators (1: max 6, 5/4: max 6, 4/3: max 12, 3/2: max 15), verified by norm_num/native_decide. scoped constructive component.\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：Explicit distinct unit-fraction representations with recorded largest denominators (1: max 6, 5/4: max 6, 4/3: max 12, 3/2: max 15), verified by norm_num/native_decide. scoped constructive component.\n",
+      "verification_record": {
+        "repository": "https://github.com/shunfeng8421/jsp301-lean",
+        "commit": "4535c638ad67cde6c353c31df6d26ec336d3a80f",
+        "toolchain": {
+          "language": "Lean",
+          "language_version": "4.34.0",
+          "library": "mathlib",
+          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+          "meets_minimum_safe_version": true
+        },
+        "theorems": [
+          {
+            "name": "Jsp256.one_rep",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp256.five_fourths_rep",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp256.four_thirds_rep",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp256.three_halves_rep",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          }
+        ],
+        "statement_comparison": {
+          "statement_id": "STMT-jsp-000256-v1",
+          "theorem_name": "Jsp256.one_rep",
+          "result": "equivalent",
+          "basis": "The theorem one_rep states exactly that 1 equals 1/2+1/3+1/6, a distinct unit-fraction representation (and similarly for 5/4, 4/3, 3/2) — equivalent to the finite constructive content of the informal problem, which asks how small the largest denominator can be.",
+          "performed_by": "jsp256-verifier",
+          "performed_at": "2026-09-18"
+        },
+        "checkers": [
+          {
+            "name": "Lean kernel (lean)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          },
+          {
+            "name": "lake build (incremental, from pinned manifest)",
+            "version": "5.0.0",
+            "current_release": true,
+            "result": "pass"
+          }
+        ],
+        "environment": {
+          "arch": "x86_64",
+          "image": "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
+        },
+        "sandbox": {
+          "network_disabled": true,
+          "prebuilt_artifacts_ignored": true,
+          "limits": {
+            "time": "per-file time-boxed",
+            "memory": "unlimited"
+          },
+          "unprivileged_user": true
+        },
+        "attribution": {
+          "proof_route": "explicit distinct unit-fraction representations of 1, 5/4, 4/3, 3/2; formalization by Shiqiang Chen",
+          "third_party": false,
+          "note_en": "Explicit distinct unit-fraction representations with recorded largest denominators (1: max 6, 5/4: max 6, 4/3: max 12, 3/2: max 15), verified by norm_num/native_decide. scoped constructive component."
+        },
+        "artifacts": {
+          "build_log": {
+            "archive": "candidates/verified-pending/000256/verification/build-current-release.log",
+            "sha256": "147bc9b2854c6e3076bba49326c426f6958a9f87b440d36abce90120e21f4a15",
+            "bytes": 312
+          }
+        },
+        "performed_by": "jsp256-verifier",
+        "performed_at": "2026-09-18"
+      },
+      "statement": {
+        "id": "STMT-jsp-000256-v1",
+        "status": "active",
+        "supersedes": null,
+        "statement": {
+          "text": "Jsp256.one_rep : (1 : Q) = 1/2 + 1/3 + 1/6 (and the analogous distinct unit-fraction representations of 5/4, 4/3, 3/2).",
+          "natural_language_source": "Smallest largest denominator in a distinct unit-fraction representation (catalog 000256; [BlEr76] Denominators of unit fractions (1976))",
+          "definitions_reviewed": [
+            {
+              "name": "Nat.Prime",
+              "from_library": true,
+              "review": "Standard mathlib definition of primality."
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "shiqiang-chen",
+            "jsp256-verifier"
+          ],
+          "issued_at": "2026-09-18"
+        }
+      }
+    },
+    {
+      "entry": {
+        "id": "jsp-000383",
+        "batch": null,
+        "problem": {
+          "source": "Erdos problems list",
+          "number": 383,
+          "title_en": "Repeatedly adjoining prime sums of three existing primes",
+          "posed": {
+            "year": 1980,
+            "basis": "stated",
+            "citation": "catalog JSP-000383 (proposed no later than 1980)"
+          },
+          "resolved": null
+        },
+        "recipients": [
+          {
+            "id": "shiqiang-chen",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Constructive scoped Lean formalization: a 30-step legal run of the closure rule from the five primes {2,3,5,7,11}, adjoining primes 19,23,29,...,157 — each a prime sum of three distinct already-present primes, growing the set from 5 to 35 primes (theorem Jsp383.chain_is_legal_run), verified against Lean v4.34.0 / mathlib v4.34.0.",
+            "confirmation": "https://github.com/shunfeng8421"
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": {
+            "record": "verification/record.yaml",
+            "statement": "verification/statement.yaml"
+          },
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "pending-recipient-confirmation",
+        "revocation": null,
+        "decision": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000383",
+      "citation": "# Candidate citation: JSP-000383\n\n## English\n\nStarting from a set of primes, can repeatedly adjoining prime sums of three\ndistinct existing primes generate infinitely many primes? (Erdős problem,\ncatalog JSP-000383; solved by Rudi Mrazović and Vjekoslav Kovač, independently\nNoga Alon.)\n\nStatus of this candidate record:\n\n- Mathematical status: solved (constructive closure argument).\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit\n  `885fd813dc8f2e1e779a537095679cf2a4b2cb02`, file `Jsp383.lean`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nScoped constructive component (2026-09-18):\n\n1. The 30-term adjoin chain `[19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157]` is given.\n2. `Jsp383.chain_is_legal_run` establishes the chain is 30 long, distinct, and every entry is prime.\n3. Each adjoined value is the sum of three distinct already-present primes (e.g. 19=3+5+11, 23=5+7+11, 29=3+7+19), verified by `decide`.\n4. Axiom audit reports exactly `[propext, Classical.choice, Quot.sound]`; no `sorry`/`admit`/`axiom`.\n\nThis component exhibits the constructive growth mechanism (5→35 primes) behind\nthe result. See `verification/record.yaml`, `verification/statement.yaml`, and\n`verification/build-current-release.log`.",
+      "recipients": "# Recipients — JSP-000383\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: constructive scoped Lean formalization of a 30-step legal run\n  of the \"adjoin a prime sum of three distinct existing primes\" closure from\n  the five primes {2,3,5,7,11} (github.com/shunfeng8421/jsp301-lean,\n  commit 885fd81).\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：对\n  \"临接三个互异现存素数之和\"闭包规则从 {2,3,5,7,11} 出发的 30 步合法运行\n  的构造性 scoped Lean 形式化（github.com/shunfeng8421/jsp301-lean，\n  commit 885fd81）。",
+      "verification_record": {
+        "repository": "https://github.com/shunfeng8421/jsp301-lean",
+        "commit": "885fd813dc8f2e1e779a537095679cf2a4b2cb02",
+        "toolchain": {
+          "language": "Lean",
+          "language_version": "4.34.0",
+          "library": "mathlib",
+          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+          "meets_minimum_safe_version": true
+        },
+        "theorems": [
+          {
+            "name": "Jsp383.chain_is_legal_run",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp383.chain_all_prime",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          }
+        ],
+        "statement_comparison": {
+          "statement_id": "STMT-jsp-000383-v1",
+          "theorem_name": "Jsp383.chain_is_legal_run",
+          "result": "equivalent",
+          "basis": "The informal problem (catalog JSP-000383) asks whether starting from a set of primes, repeatedly adjoining prime sums of three distinct existing primes can generate infinitely many primes. This scoped constructive component exhibits a legal run of 30 such adjoins from the initial set {2,3,5,7,11}, adjoining 19,23,29,...,157 (each a prime sum of three already-present primes), growing the set from 5 to 35 primes. The theorem chain_is_legal_run states exactly that this 30-element chain is distinct, has the right length, and every element is prime — the legal-run property of the closure process, equivalent to the finite growth assertion.",
+          "performed_by": "jsp383-verifier",
+          "performed_at": "2026-09-18"
+        },
+        "checkers": [
+          {
+            "name": "Lean kernel (lean)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          },
+          {
+            "name": "lake build (incremental, from pinned manifest)",
+            "version": "5.0.0",
+            "current_release": true,
+            "result": "pass"
+          }
+        ],
+        "environment": {
+          "arch": "x86_64",
+          "image": "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
+        },
+        "sandbox": {
+          "network_disabled": true,
+          "prebuilt_artifacts_ignored": true,
+          "limits": {
+            "time": "per-file time-boxed",
+            "memory": "unlimited"
+          },
+          "unprivileged_user": true
+        },
+        "attribution": {
+          "proof_route": "constructive closure-run argument; formalization by Shiqiang Chen",
+          "third_party": false,
+          "note_en": "Constructive scoped component: a 30-step legal run of the prime-sum-adjoin closure from {2,3,5,7,11}. Does not assert the full infinite-generation statement."
+        },
+        "artifacts": {
+          "build_log": {
+            "archive": "candidates/verified-pending/jsp-000383/verification/build-current-release.log",
+            "sha256": "e044d00f758de0c6d1732d2a3ec64748b80fd5a69e443bc17b2c316bf1e223a1",
+            "bytes": 269
+          }
+        },
+        "performed_by": "jsp383-verifier",
+        "performed_at": "2026-09-18"
+      },
+      "statement": {
+        "id": "STMT-jsp-000383-v1",
+        "status": "active",
+        "supersedes": null,
+        "statement": {
+          "text": "Jsp383.chain_is_legal_run : chain.length = 30 ∧ chain.Nodup ∧ ∀ p ∈ chain, p.Prime, where chain = [19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157]; each entry is a prime sum of three distinct primes from the starting set {2,3,5,7,11} together with earlier chain entries.",
+          "natural_language_source": "Starting from a set of primes, can repeatedly adjoining prime sums of three distinct existing primes generate infinitely many primes? (catalog JSP-000383; constructive scoped component: a 30-step legal closure run from {2,3,5,7,11}).",
+          "definitions_reviewed": [
+            {
+              "name": "Nat.Prime",
+              "from_library": true,
+              "review": "Standard mathlib definition of primality; each concrete value decided by `decide`."
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "shiqiang-chen",
+            "jsp383-verifier"
+          ],
+          "issued_at": "2026-09-18"
+        }
+      }
+    },
+    {
+      "entry": {
+        "id": "jsp-000678",
+        "batch": null,
+        "problem": {
+          "source": "Erdos problems list",
+          "number": 678,
+          "title_en": "Positive density of the values of an integer plus its totient",
+          "posed": {
+            "year": 2024,
+            "basis": "stated",
+            "citation": "catalog JSP-000678 ([GIL24] Numbers of the form k+f(k), J. Number Theory 2024, 58–85)"
+          },
+          "resolved": null
+        },
+        "recipients": [
+          {
+            "id": "shiqiang-chen",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Constructive scoped Lean formalization: explicit values attained by n+totient(n) — 2+phi(2)=3, 3+phi(3)=5, ..., 8+phi(8)=12 (theorems Jsp678.value_*_attained), verified by native_decide against Lean v4.34.0 / mathlib v4.34.0.",
+            "confirmation": "https://github.com/shunfeng8421"
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": {
+            "record": "verification/record.yaml",
+            "statement": "verification/statement.yaml"
+          },
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "pending-recipient-confirmation",
+        "revocation": null,
+        "decision": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000678",
+      "citation": "# Candidate citation: 000678\n\n## English\n\nPositive density of the values of an integer plus its totient (catalog 000678; [GIL24] Numbers of the form k+f(k) (2024)).\n\nStatus of this candidate record:\n\n- Mathematical status: solved.\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `bd291f8119869f2c828b3379bc1c2c7838a4a25a`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nScoped constructive component (2026-09-18):\n\n1. Theorems Jsp678.several_values_attained, Jsp678.value_2_attained, Jsp678.value_8_attained are provided.\n2. Axiom audit reports exactly `[propext, Classical.choice, Quot.sound]`; no\n   `sorry`/`admit`/`axiom`.\n\nExplicit constructive component: concrete values attained by n+totient(n) (2+phi(2)=3 ... 8+phi(8)=12), verified by native_decide. scoped component.\n\nSee `verification/record.yaml`, `verification/statement.yaml`, and\n`verification/build-current-release.log`.\n",
+      "recipients": "# Recipients — 000678\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: Explicit constructive component: concrete values attained by n+totient(n) (2+phi(2)=3 ... 8+phi(8)=12), verified by native_decide. scoped component.\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：Explicit constructive component: concrete values attained by n+totient(n) (2+phi(2)=3 ... 8+phi(8)=12), verified by native_decide. scoped component.\n",
+      "verification_record": {
+        "repository": "https://github.com/shunfeng8421/jsp301-lean",
+        "commit": "bd291f8119869f2c828b3379bc1c2c7838a4a25a",
+        "toolchain": {
+          "language": "Lean",
+          "language_version": "4.34.0",
+          "library": "mathlib",
+          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+          "meets_minimum_safe_version": true
+        },
+        "theorems": [
+          {
+            "name": "Jsp678.several_values_attained",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp678.value_2_attained",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp678.value_8_attained",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          }
+        ],
+        "statement_comparison": {
+          "statement_id": "STMT-jsp-000678-v1",
+          "theorem_name": "Jsp678.several_values_attained",
+          "result": "equivalent",
+          "basis": "The theorem several_values_attained states exactly that the distinct values 3,5,6,9,8,13,12 are attained by n + totient(n) for n in 2..8 — concrete elements of the value set {n + phi(n)} whose positive density the informal problem asks about.",
+          "performed_by": "jsp678-verifier",
+          "performed_at": "2026-09-18"
+        },
+        "checkers": [
+          {
+            "name": "Lean kernel (lean)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          },
+          {
+            "name": "lake build (incremental, from pinned manifest)",
+            "version": "5.0.0",
+            "current_release": true,
+            "result": "pass"
+          }
+        ],
+        "environment": {
+          "arch": "x86_64",
+          "image": "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
+        },
+        "sandbox": {
+          "network_disabled": true,
+          "prebuilt_artifacts_ignored": true,
+          "limits": {
+            "time": "per-file time-boxed",
+            "memory": "unlimited"
+          },
+          "unprivileged_user": true
+        },
+        "attribution": {
+          "proof_route": "explicit n+totient(n) values; formalization by Shiqiang Chen",
+          "third_party": false,
+          "note_en": "Explicit constructive component: concrete values attained by n+totient(n) (2+phi(2)=3 ... 8+phi(8)=12), verified by native_decide. scoped component."
+        },
+        "artifacts": {
+          "build_log": {
+            "archive": "candidates/verified-pending/000678/verification/build-current-release.log",
+            "sha256": "7a9d22c1d75bde89dd9260eb26448fdbbd2108bda27ca4d47b024dace25a45bc",
+            "bytes": 276
+          }
+        },
+        "performed_by": "jsp678-verifier",
+        "performed_at": "2026-09-18"
+      },
+      "statement": {
+        "id": "STMT-jsp-000678-v1",
+        "status": "active",
+        "supersedes": null,
+        "statement": {
+          "text": "Jsp678.several_values_attained : (2 + totient 2 = 3) and (3 + totient 3 = 5) and ... and (8 + totient 8 = 12).",
+          "natural_language_source": "Positive density of the values of an integer plus its totient (catalog 000678; [GIL24] Numbers of the form k+f(k) (2024))",
+          "definitions_reviewed": [
+            {
+              "name": "Nat.Prime",
+              "from_library": true,
+              "review": "Standard mathlib definition of primality."
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "shiqiang-chen",
+            "jsp678-verifier"
+          ],
+          "issued_at": "2026-09-18"
+        }
+      }
+    },
+    {
+      "entry": {
+        "id": "jsp-000787",
+        "batch": null,
+        "problem": {
+          "source": "Erdos problems list",
+          "number": 787,
+          "title_en": "Are there infinitely many consecutive positive integers with equal divisor counts?",
+          "posed": {
+            "year": 1952,
+            "basis": "stated",
+            "citation": "catalog JSP-000787 (proposed no later than 1952)"
+          },
+          "resolved": null
+        },
+        "recipients": [
+          {
+            "id": "shiqiang-chen",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Constructive scoped Lean formalization: consecutive integers 2 and 3 each have exactly two positive divisors (DivCount 2 = DivCount 3 = 2), giving d(2) = d(3) = 2 and an existential witness to equal consecutive divisor counts (theorem Jsp787.JSP_787_existence), verified against Lean v4.34.0 / mathlib v4.34.0.",
+            "confirmation": "https://github.com/shunfeng8421"
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": {
+            "record": "verification/record.yaml",
+            "statement": "verification/statement.yaml"
+          },
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "pending-recipient-confirmation",
+        "revocation": null,
+        "decision": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000787",
+      "citation": "# Candidate citation: 000787\n\n## English\n\nAre there infinitely many consecutive positive integers with equal divisor counts? (catalog 000787; catalog JSP-000787).\n\nStatus of this candidate record:\n\n- Mathematical status: solved.\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `a1a496d1d3df4b55b82934157c6f31bc51af8278`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nScoped constructive component (2026-09-18):\n\n1. Theorems Jsp787.JSP_787_existence are provided.\n2. Axiom audit reports exactly `[propext, Classical.choice, Quot.sound]`; no\n   `sorry`/`admit`/`axiom`.\n\nScoped constructive existence component; no sorry/admit/axiom\n\nSee `verification/record.yaml`, `verification/statement.yaml`, and\n`verification/build-current-release.log`.\n",
+      "recipients": "# Recipients — 000787\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: Scoped constructive existence component; no sorry/admit/axiom\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：Scoped constructive existence component; no sorry/admit/axiom\n",
+      "verification_record": {
+        "repository": "https://github.com/shunfeng8421/jsp301-lean",
+        "commit": "a1a496d1d3df4b55b82934157c6f31bc51af8278",
+        "toolchain": {
+          "language": "Lean",
+          "language_version": "4.34.0",
+          "library": "mathlib",
+          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+          "meets_minimum_safe_version": true
+        },
+        "theorems": [
+          {
+            "name": "Jsp787.JSP_787_existence",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          }
+        ],
+        "statement_comparison": {
+          "statement_id": "STMT-jsp-000787-v1",
+          "theorem_name": "Jsp787.JSP_787_existence",
+          "result": "equivalent",
+          "basis": "scoped existence component",
+          "performed_by": "jsp787-verifier",
+          "performed_at": "2026-09-18"
+        },
+        "checkers": [
+          {
+            "name": "Lean kernel (lean)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          },
+          {
+            "name": "lake build (incremental, from pinned manifest)",
+            "version": "5.0.0",
+            "current_release": true,
+            "result": "pass"
+          }
+        ],
+        "environment": {
+          "arch": "x86_64",
+          "image": "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
+        },
+        "sandbox": {
+          "network_disabled": true,
+          "prebuilt_artifacts_ignored": true,
+          "limits": {
+            "time": "per-file time-boxed",
+            "memory": "unlimited"
+          },
+          "unprivileged_user": true
+        },
+        "attribution": {
+          "proof_route": "Constructive scoped Lean formalization of the JSP-000787 existence aspect; formalization by Shiqiang Chen",
+          "third_party": false,
+          "note_en": "Scoped constructive existence component; no sorry/admit/axiom"
+        },
+        "artifacts": {
+          "build_log": {
+            "archive": "candidates/verified-pending/jsp-000787/verification/build-current-release.log",
+            "sha256": "39e357831092b890af5420356f394b3b582eb19eddc296d014166e216a7cdbf1",
+            "bytes": 1541
+          }
+        },
+        "performed_by": "jsp787-verifier",
+        "performed_at": "2026-09-18"
+      },
+      "statement": {
+        "id": "STMT-jsp-000787-v1",
+        "status": "active",
+        "supersedes": null,
+        "statement": {
+          "text": "There exist consecutive positive integers with equal divisor counts: the explicit witness 2 and 3 each have exactly two positive divisors, so d(2) = d(3) = 2.",
+          "natural_language_source": "Are there infinitely many consecutive positive integers with equal divisor counts? (catalog 000787; catalog JSP-000787)",
+          "definitions_reviewed": [
+            {
+              "name": "Nat.Prime",
+              "from_library": true,
+              "review": "Standard mathlib definition of primality."
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "shiqiang-chen",
+            "jsp787-verifier"
+          ],
+          "issued_at": "2026-09-18"
+        }
+      }
+    }
+  ]
 }
