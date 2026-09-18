@@ -1,0 +1,62 @@
+theorem JSP000057.matching_of_card.{u_1} :
+  forall {α : Type u_1} [inst._@.JSP000057.3457963738._hygCtx._hyg.3 : DecidableEq α] (r : Nat)
+    (F : Finset (Finset α)),
+  (forall (A : Finset α), Membership.mem F A → Eq (Finset.card A) (OfNat.ofNat 2)) → (forall (x : α),
+    LE.le (JSP000057.degree F x) (OfNat.ofNat 2)) →
+  LT.lt (HMul.hMul (OfNat.ofNat 3) r) (Finset.card F) → Exists
+    (fun (S : Finset (Finset α)) =>
+    And (LE.le S F)
+      (And (Eq (Finset.card S) (HAdd.hAdd r (OfNat.ofNat 1))) (Set.PairwiseDisjoint (SetLike.coe S) id))) :=
+  _
+
+theorem JSP000057.seven_forces_three.{u_1} :
+  forall {α : Type u_1} [inst._@.JSP000057.1448776179._hygCtx._hyg.3 : DecidableEq α] (F : Finset (Finset α)),
+  (forall (A : Finset α), Membership.mem F A → Eq (Finset.card A) (OfNat.ofNat 2)) → LE.le (OfNat.ofNat 7)
+      (Finset.card F) →
+  Exists
+    (fun (S : Finset (Finset α)) =>
+    And (LE.le S F) (And (Eq (Finset.card S) (OfNat.ofNat 3)) (JSP000057.Sunflower S))) :=
+  _
+
+theorem JSP000057.twoTriangles_no_three (S : Finset (Finset Nat)) (hS : LE.le S JSP000057.twoTriangles)
+  (hc : Eq (Finset.card S) (OfNat.ofNat 3)) :
+  Not (JSP000057.Sunflower S) :=
+  _
+
+theorem JSP000057.threshold_iff (m : Nat) :
+  Iff
+    (forall (α : Type 0) [inst._@.JSP000057.3533508504._hygCtx._hyg.17 : DecidableEq α] (F : Finset (Finset α)),
+    (forall (A : Finset α), Membership.mem F A → Eq (Finset.card A) (OfNat.ofNat 2)) → LE.le m (Finset.card F) →
+    Exists
+      (fun (S : Finset (Finset α)) =>
+      And (LE.le S F) (And (Eq (Finset.card S) (OfNat.ofNat 3)) (JSP000057.Sunflower S)))) (LE.le (OfNat.ofNat 7) m) :=
+  _
+
+theorem JSP000057.seven_forces_three_sets.{u_1} :
+  forall {α : Type u_1} [inst._@.JSP000057.3895967086._hygCtx._hyg.3 : DecidableEq α] (F : Set (Set α)),
+  (forall (A : Set α), Membership.mem F A → Eq (Set.ncard A) (OfNat.ofNat 2)) → LE.le (OfNat.ofNat 7)
+      (Set.ncard F) →
+  Exists (fun (S : Set (Set α)) => And (LE.le S F) (And (Eq (Set.ncard S) (OfNat.ofNat 3)) (IsSunflower S))) :=
+  _
+
+theorem JSP000057.twoTriangles_sets_no_three (S : Set (Set Nat))
+  (hS : LE.le S (JSP000057.setFamily JSP000057.twoTriangles)) (hc : Eq (Set.ncard S) (OfNat.ofNat 3)) :
+  Not (IsSunflower S) :=
+  _
+
+theorem JSP000057.original_threshold_iff (m : Nat) :
+  Iff
+    (forall {α : Type 0} (F : Set (Set α)),
+    And (forall (A : Set α), Membership.mem F A → Eq (Set.ncard A) (OfNat.ofNat 2)) (LE.le m (Set.ncard F)) →
+    Exists (fun (S : Set (Set α)) => And (LE.le S F) (And (Eq (Set.ncard S) (OfNat.ofNat 3)) (IsSunflower S))))
+    (LE.le (OfNat.ofNat 7) m) :=
+  _
+
+theorem JSP000057.f_two_three : Eq (Erdos20.f (OfNat.ofNat 2) (OfNat.ofNat 3)) (OfNat.ofNat 7) := _
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
