@@ -1,0 +1,42 @@
+{
+  "all_k_finite_checks": [
+    {
+      "k": 3,
+      "cardinality": 6,
+      "combinations": 20,
+      "pass": true
+    },
+    {
+      "k": 4,
+      "cardinality": 8,
+      "combinations": 70,
+      "pass": true
+    },
+    {
+      "k": 5,
+      "cardinality": 10,
+      "combinations": 252,
+      "pass": true
+    },
+    {
+      "k": 6,
+      "cardinality": 12,
+      "combinations": 924,
+      "pass": true
+    },
+    {
+      "k": 7,
+      "cardinality": 14,
+      "combinations": 3432,
+      "pass": true
+    },
+    {
+      "k": 8,
+      "cardinality": 16,
+      "combinations": 12870,
+      "pass": true
+    }
+  ],
+  "three_entry_recovery_checks": 286,
+  "scope": "Finite checks; universal proofs are in Complement.lean"
+}
