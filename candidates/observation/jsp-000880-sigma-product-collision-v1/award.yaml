@@ -1,0 +1,20 @@
+id: jsp-000880-sigma-product-collision-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000880"
+  number: "JSP-000880"
+  title_en: "How many integers can have a prescribed value of the integer times its divisor sum?"
+  posed:
+    year: 2004
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000880"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
