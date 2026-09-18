@@ -544,3 +544,35 @@ theorem graham_upper_bound_three {n : ℕ} (hn : 4 ≤ n) :
   calc
     3 * (lcmUpTo n / p) ≤ p * (lcmUpTo n / p) := hmul
     _ = lcmUpTo n := Nat.mul_div_cancel' hdiv
+
+/-- The signed numerator is additive in the sign vector. -/
+theorem signedNum_add (L n : ℕ) (e₁ e₂ : ℕ → ℤ) :
+    signedNum L n (fun k => e₁ k + e₂ k) =
+      signedNum L n e₁ + signedNum L n e₂ := by
+  simp only [signedNum]
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro k hk
+  ring
+
+/-- Negating every sign negates the signed numerator. -/
+theorem signedNum_neg (L n : ℕ) (e : ℕ → ℤ) :
+    signedNum L n (fun k => -e k) = -signedNum L n e := by
+  simp only [signedNum]
+  rw [← Finset.sum_neg_distrib]
+  apply Finset.sum_congr rfl
+  intro k hk
+  ring
+
+/-- The zero sign vector has zero numerator. -/
+theorem signedNum_zero (L n : ℕ) :
+    signedNum L n (fun _ => (0 : ℤ)) = 0 := by
+  simp only [signedNum]
+  apply Finset.sum_eq_zero
+  intro k hk
+  simp
+
+/-- The L argument is definitionally irrelevant in this normalized numerator. -/
+theorem signedNum_L_irrel (L₁ L₂ n : ℕ) (e : ℕ → ℤ) :
+    signedNum L₁ n e = signedNum L₂ n e := by
+  rfl
