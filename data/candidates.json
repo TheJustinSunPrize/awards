@@ -1,4 +1,39 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000307-consecutive-decreasing-lpf-witness-v1",
+        "batch": null,
+        "problem": {
+          "source": "jsp",
+          "number": 307,
+          "title_en": "Erdős 307 — Three consecutive integers with strictly decreasing largest prime factors",
+          "posed": {
+            "year": 1978,
+            "basis": "earliest-reference",
+            "citation": "[ErPo78] Erdős and Pomerance, On the largest prime factors of n and n+1, Aequationes Math. (1978), 311-321."
+          },
+          "resolved": {
+            "year": 2001
+          }
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "draft",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000307-consecutive-decreasing-lpf-witness-v1",
+      "citation": "# Citation\n\n## English\n\nObservation candidate for JSP-000307 (Erdős problem 307): \"Can three\nconsecutive integers have strictly decreasing largest prime factors?\"\n\nThis record proves only the **existence** of a witness triple\n(n = 13, with largest prime factors 13 > 7 > 5) in Lean 4 / Mathlib\nv4.33.0. It does **not** prove the full result recorded in the catalog\n(Balog 2001: infinitely many such triples exist), it does not resolve\nthe catalogued problem, and it makes **no award claim**.\n\nThe catalog entry for JSP-000307 remains `Solved` with `Lean proof: No`\nand `Eligible to claim: No`. This observation record is published for\ntransparency only; it does not change any catalog status or eligibility\nfield.\n\nMain theorem (`JSP000307.JSP_307`, in `JSP000307.lean`):\n\n```lean\n∃ n : ℕ, IsLPF n 13 ∧ IsLPF (n + 1) 7 ∧ IsLPF (n + 2) 5 ∧ 13 > 7 ∧ 7 > 5\n```\n\nAxiom audit: every proved theorem depends only on `[propext,\nClassical.choice, Quot.sound]`. No `sorry`, no `admit`, no\n`native_decide`, no custom axioms.\n\nLean author: lyssom (with AI assistance from MiniMax-M3). No recipient\nidentity is confirmed or claimed in this record (`recipients: []`).\n",
+      "recipients": "# Recipients\n\n## English\n\nNo recipient is identified or claimed in this observation record.\n\nThe Lean formalization is an existence-witness proof only (n = 13); it\ndoes not constitute a complete solution of JSP-000307, so no recipient\nplaceholder or profile is published here. The underlying mathematical\ncredit (Erdős, Pomerance 1978; Balog 2001) is recorded in the problem\ncatalog, not in this candidate record.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }

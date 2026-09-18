@@ -1,0 +1,10 @@
+# Verification record placeholder for the JSP-000307 observation candidate.
+# This draft entry records the existence proof (witness n = 13) only; the
+# formal verification record, statement comparison, and statement.yaml
+# files are intentionally absent at the draft stage.
+# To promote this entry to `under-verification`, fill in
+# `verification/formal: {record: verification/record.yaml, statement: verification/statement.yaml}`
+# in award.yaml and provide the matching verification/record.yaml and
+# verification/statement.yaml files with pinned commits, axiom
+# performance, statement comparison, and toolchain details.
+null
