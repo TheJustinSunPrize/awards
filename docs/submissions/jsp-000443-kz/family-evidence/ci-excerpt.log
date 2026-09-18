@@ -1,0 +1,25 @@
+2026-09-17T02:59:05.6728445Z ✔ [3130/3132] Built JSP000443 (3.3s)
+2026-09-17T02:59:07.4757021Z ✔ [3131/3132] Built PolarityFamily (1.8s)
+2026-09-17T02:59:07.4782240Z Build completed successfully (3132 jobs).
+2026-09-17T02:59:18.0264445Z 'JSP000443.hasC4_iff_copy' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.0265144Z 'JSP000443.hasStar_iff_copy' depends on axioms: [propext, Quot.sound]
+2026-09-17T02:59:18.0265671Z 'JSP000443.hasStar_iff_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.0266259Z 'JSP000443.rooted_degree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.0267181Z 'JSP000443.ramsey_bound_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.0267943Z 'JSP000443.ramsey_bound_even_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.0268747Z 'JSP000443.polarity20_noC4' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.0269434Z 'JSP000443.polarity20_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.0270199Z 'JSP000443.c4StarRamsey_sixteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.0279327Z 'JSP000443.PolarityFamily.noC4' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.0280010Z 'JSP000443.PolarityFamily.minimum_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.0280906Z 'JSP000443.PolarityFamily.lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.0281933Z 'JSP000443.PolarityFamily.exact_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.0282636Z 'JSP000443.c4StarRamsey_power_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.0283228Z 'JSP000443.c4StarRamsey_sixty_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.0283812Z 'JSP000443.c4StarRamsey_256' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:59:18.1583776Z Sixteen target axiom audits and all nine dependency revision checks passed.
+2026-09-17T02:59:26.0858171Z Build completed successfully (6 jobs).
+2026-09-17T02:59:54.1844213Z Checked 21448 declarations with no errors
+2026-09-17T02:59:58.2581451Z SHA256 digest of uploaded artifact zip is 56cb74e591bd0efe9d4f4340a6d511fa1ba38f60996cbe36267e7d05591b7fcd
+2026-09-17T02:59:58.4503338Z Artifact jsp-000443-evidence.zip successfully finalized. Artifact ID 10479055490
+2026-09-17T02:59:58.4504636Z Artifact jsp-000443-evidence has been successfully uploaded! Final size is 17716297 bytes. Artifact ID is 10479055490

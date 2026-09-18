@@ -1,0 +1,51 @@
+{
+  "proof_commit": "0a78950267f4b292414624f8cd8e15c074c14850",
+  "proof_directory": "projects/jsp-000443",
+  "files": [
+    {
+      "path": "JSP000443.lean",
+      "bytes": 12076,
+      "sha256": "e9af3522e33a292c1f53a54414a9aa92e01e7f92a7ca24c44d6395e0069b092a"
+    },
+    {
+      "path": "Audit.lean",
+      "bytes": 490,
+      "sha256": "fa595fd758a4d88364886684d1bf3a9087312a02db73ff8183c30f9d3fd6e4e2"
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632"
+    },
+    {
+      "path": "lakefile.lean",
+      "bytes": 234,
+      "sha256": "6b1e4df3de15e604efa08ed460f290d03dc1d2b378331ef72fe5330433a87ffa"
+    },
+    {
+      "path": "lake-manifest.json",
+      "bytes": 3123,
+      "sha256": "24f2acc41ac6d5ed37e75941cdde09c76c829943a0e5008b1fd22084dfdb8b9a"
+    },
+    {
+      "path": "scripts/generate_polarity.py",
+      "bytes": 1316,
+      "sha256": "66307307718bb8d63b87f2bd959379b4050f6a43e12b974e7255e58f99e4cf36"
+    },
+    {
+      "path": "scripts/local_frontend/lakefile.lean",
+      "bytes": 686,
+      "sha256": "14acf2abc5234fd1b6ab16f0b2e336d1597c8a129fe0014e0934d0f03d0583c9"
+    },
+    {
+      "path": "scripts/verify.sh",
+      "bytes": 1510,
+      "sha256": "69345205a20122d2917f7d8d3978622ad96c6e0935a5ef573bf2f20064d54144"
+    },
+    {
+      "path": "scripts/verify_nanoda.sh",
+      "bytes": 2019,
+      "sha256": "949cd8b7d0bb8d3a2f8e3ffed2ab3fcdb7bbb69ef6316a07649795670492df8d"
+    }
+  ]
+}
