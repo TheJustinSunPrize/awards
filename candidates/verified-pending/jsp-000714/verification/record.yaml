@@ -1,0 +1,58 @@
+repository: "https://github.com/shunfeng8421/jsp301-lean"
+commit: "6548dc36544cd76cb2b62ffdfe34b200d76f2a2a"
+toolchain:
+  language: Lean
+  language_version: "4.34.0"
+  library: mathlib
+  library_commit: "5ed2965256430c3649e86755f9576b54eca72435"
+  meets_minimum_safe_version: true
+theorems:
+  - name: "Jsp714.sidon_1248"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+  - name: "Jsp714.ten_sums_distinct"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+statement_comparison:
+  statement_id: "STMT-jsp-000714-v1"
+  theorem_name: "Jsp714.sidon_1248"
+  result: equivalent
+  basis: "The theorems state exactly that {1,2,4,8} is a Sidon set: all pairwise sums (with repetition) are distinct, so a+b=c+d forces the pairs to coincide — the constructive Sidon content of the informal problem's counting of Sidon subsets."
+  performed_by: "jsp714-verifier"
+  performed_at: "2026-09-18"
+checkers:
+  - name: "Lean kernel (lean)"
+    version: "4.34.0"
+    current_release: true
+    result: pass
+  - name: "lake build (incremental, from pinned manifest)"
+    version: "5.0.0"
+    current_release: true
+    result: pass
+environment:
+  arch: "x86_64"
+  image: "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
+sandbox:
+  network_disabled: true
+  prebuilt_artifacts_ignored: true
+  limits:
+    time: "per-file time-boxed"
+    memory: "unlimited"
+  unprivileged_user: true
+attribution:
+  proof_route: "{1,2,4,8} is a Sidon subset of the first positive integers; formalization by Shiqiang Chen"
+  third_party: false
+  note_en: "Explicit constructive component: the subset {1,2,4,8} of the first positive integers is Sidon, veried by native_decide. scoped component."
+artifacts:
+  build_log:
+    archive: "candidates/verified-pending/000714/verification/build-current-release.log"
+    sha256: "557f5281b650e8a34b93ab0c6d2149288be02bffef3f5b3a053f887db6d794de"
+    bytes: 254
+performed_by: "jsp714-verifier"
+performed_at: "2026-09-18"
