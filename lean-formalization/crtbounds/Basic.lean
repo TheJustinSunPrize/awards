@@ -621,3 +621,66 @@ theorem signedNum_coord_decomposition (L n : ℕ) (e : ℕ → ℤ) :
     rw [hdelta k hk]
   rw [hcoord]
   simp only [signedNum]
+
+/-- Generic coordinate projection modulo p for an arbitrary common denominator L.
+    If every off-diagonal coefficient L/k is divisible by p, only coordinate p remains. -/
+theorem signedNum_modEq_coord (L n p : ℕ) (hp1 : 1 ≤ p) (hpn : p ≤ n)
+    (eps : ℕ → ℤ)
+    (hoff : ∀ k, 1 ≤ k → k ≤ n → k ≠ p → p ∣ L / k) :
+    signedNum L n eps ≡ eps p * (((L / p : ℕ) : ℤ) % (p : ℤ)) [ZMOD (p : ℤ)] := by
+  have hzero : ∀ k ∈ Finset.range n, k + 1 ≠ p →
+      ((L / (k + 1) : ℕ) : ℤ) % (p : ℤ) = 0 := by
+    intro k hk hne
+    have hklt : k < n := Finset.mem_range.mp hk
+    have hdvd : p ∣ L / (k + 1) := hoff (k + 1) (by omega) (by omega) hne
+    have hstep := congrArg (fun m => ((m : ℕ) : ℤ) % (p : ℤ))
+      (Nat.dvd_iff_mod_eq_zero.mp hdvd)
+    simpa using hstep
+  have hterm : ∀ k ∈ Finset.range n,
+      eps (k + 1) * (((L / (k + 1) : ℕ) : ℤ))
+        ≡ eps (k + 1) * (((L / (k + 1) : ℕ) : ℤ) % (p : ℤ)) [ZMOD (p : ℤ)] := by
+    intro k hk
+    rw [Int.modEq_iff_dvd]
+    have hbase := Int.mul_ediv_add_emod ((L / (k + 1) : ℕ) : ℤ) (p : ℤ)
+    have h1 : ((L / (k + 1) : ℕ) : ℤ) - ((L / (k + 1) : ℕ) : ℤ) % (p : ℤ)
+        = (p : ℤ) * (((L / (k + 1) : ℕ) : ℤ) / (p : ℤ)) := by
+      linarith [hbase]
+    refine ⟨-((eps (k + 1) : ℤ) * (((L / (k + 1) : ℕ) : ℤ) / (p : ℤ))), ?_⟩
+    have hre : (eps (k + 1) : ℤ) * (((L / (k + 1) : ℕ) : ℤ) % (p : ℤ))
+        - (eps (k + 1) : ℤ) * ((L / (k + 1) : ℕ) : ℤ)
+        = -((eps (k + 1) : ℤ) * (((L / (k + 1) : ℕ) : ℤ)
+          - ((L / (k + 1) : ℕ) : ℤ) % (p : ℤ))) := by ring
+    rw [hre, h1]
+    ring
+  have hsum :
+      ∑ k ∈ Finset.range n, eps (k + 1) * (((L / (k + 1) : ℕ) : ℤ))
+        ≡ ∑ k ∈ Finset.range n,
+          eps (k + 1) * (((L / (k + 1) : ℕ) : ℤ) % (p : ℤ)) [ZMOD (p : ℤ)] :=
+    Int.ModEq.sum hterm
+  have hsingle :
+      ∑ k ∈ Finset.range n,
+          eps (k + 1) * (((L / (k + 1) : ℕ) : ℤ) % (p : ℤ)) =
+        eps p * (((L / p : ℕ) : ℤ) % (p : ℤ)) := by
+    rw [Finset.sum_eq_single_of_mem (a := p - 1)
+      (Finset.mem_range.mpr (by omega))
+      (fun b hb hne => by
+        have hb1 : b + 1 ≠ p := by omega
+        rw [hzero b hb hb1]
+        ring)]
+    have hpid : p - 1 + 1 = p := by omega
+    rw [hpid]
+  unfold signedNum
+  rw [hsingle] at hsum
+  exact hsum
+
+/-- The original p-adic obstruction is an instance of the generic coordinate projection. -/
+theorem padic_obstruction_core_via_generic (n p : ℕ) (hp : p.Prime)
+    (hpn : n / 2 < p) (hpn' : p ≤ n) (eps : ℕ → ℤ) :
+    signedNum (lcmUpTo n) n eps
+      ≡ eps p * (((lcmUpTo n / p : ℕ) : ℤ) % (p : ℤ)) [ZMOD (p : ℤ)] := by
+  apply signedNum_modEq_coord (lcmUpTo n) n p hp.pos hpn' eps
+  intro k hk1 hkn hkp
+  have hkdvd : k ∣ lcmUpTo n := dvd_lcmUpTo n k hk1 hkn
+  have hnot : ¬p ∣ k := notDvdWindow hp hpn hpn' hk1 hkn hkp
+  have hpdvd : p ∣ lcmUpTo n := dvd_lcmUpTo n p hp.pos hpn'
+  exact div_dvd_of hp hpdvd hnot hkdvd (by omega)
