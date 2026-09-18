@@ -1,0 +1,7 @@
+JSP-391 build log
+command: lake env lean Jsp391Full.lean (in jsp301-lean)
+status: SUCCESS (exit 0)
+theorems: Jsp391.step_step_digit/d_mem_zero_one (+ square_bound, step_le_2u_sub2, step_sq_bound/upper, u_pos, u_strict_mono, u_odd_composition, u_odd_ge_three)
+Graham-Pollak: d_n = u_{2n+1}-2u_{2n-1} in {0,1} (binary digits of sqrt 2)
+commit: e8872b9b405206ce100f5131a9ce744a6f0c9d32
+toolchain: Lean 4.34.0, mathlib 5ed2965256430c3649e86755f9576b54eca72435
