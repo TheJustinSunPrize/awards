@@ -1,0 +1,6 @@
+JSP-363 build log
+command: lake env lean Jsp363.lean
+status: SUCCESS (exit 0)
+theorems: Jsp363.has_divisor24_iff_23/no_divisor24_iff/concrete_no_divisor
+no divisor in [2,4] iff not div by 2 and not by 3
+toolchain: Lean 4.34.0, mathlib 5ed2965256430c3649e86755f9576b54eca72435
