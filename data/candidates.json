@@ -1,4 +1,43 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000513-tonymayixuan",
+        "batch": null,
+        "problem": {
+          "source": "https://www.erdosproblems.com/632",
+          "number": "JSP-000513",
+          "title_en": "Does list multicolorability persist when both the available-list size and the required number of colors per vertex are doubled?",
+          "posed": {
+            "year": 1980,
+            "basis": "earliest-reference",
+            "citation": "P. Erdős, A. L. Rubin, H. Taylor, Choosability in graphs, Proceedings of the West Coast Conference on Combinatorics, Graph Theory and Computing (1979), Congressus Numerantium XXVI (1980), 125-157."
+          },
+          "resolved": {
+            "year": 2019
+          }
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": {
+            "venue": "Advances in Combinatorics",
+            "identifier": "doi:10.19086/aic.10811",
+            "checked_via": "https://doi.org/10.19086/aic.10811"
+          },
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000513-tonymayixuan",
+      "citation": "# Candidate review narrative\n\n## English\n\nThis candidate concerns JSP-000513 / Erdős Problem #632, the question of whether simultaneous scaling of the available-list size and the required number of colors preserves list multicolorability.\n\nDvořák, Hu, and Sereni gave a negative answer by constructing a finite graph that is 4-choosable but not (8:2)-choosable:\n\nZ. Dvořák, X. Hu, J.-S. Sereni, *A 4-choosable graph that is not (8:2)-choosable*, Advances in Combinatorics (2019), 2019:5, https://doi.org/10.19086/aic.10811.\n\nA public Lean 4 formalization of this construction is available at:\n\nhttps://github.com/TonyMaYiXuan/jsp-000513-lean\n\nThe principal theorem is `JSP513.main`; the repository also contains the explicitly finite existential form `JSP513.exists_finite_counterexample`. The project is pinned to Lean 4.33.1 and mathlib v4.33.1, with mathlib commit `0df444a360eaa60ab8c11dca51a86af692955474`.\n\nThe proof repository was locally checked successfully and its axiom audit reports only `propext`, `Classical.choice`, and `Quot.sound`. This candidate record does not assert independent verification, recipient confirmation, or an award decision. The formal verification record is intentionally left null pending repository review.\n",
+      "recipients": "# Recipient attribution\n\n## English\n\nNo recipient identity is recorded in this candidate at this stage.\n\nThe Lean formalization was submitted for review from the public GitHub account `TonyMaYiXuan`. Recipient attribution and confirmation, if applicable, remain pending the repository's review process.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }
