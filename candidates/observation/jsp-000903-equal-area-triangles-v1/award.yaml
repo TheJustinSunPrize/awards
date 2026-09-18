@@ -1,0 +1,20 @@
+id: jsp-000903-equal-area-triangles-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0901-1000.md#JSP-000903"
+  number: "JSP-000903"
+  title_en: "How many triangles of the same area can a finite planar point set determine?"
+  posed:
+    year: 1971
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0901-1000.md#JSP-000903"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
