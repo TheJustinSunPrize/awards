@@ -1,0 +1,68 @@
+=== JSP-000127 build log — Lean v4.34.0 / mathlib v4.34.0 (current release) ===
+=== 2026-09-19 (UTC+8) ===
+
+[environment]
+toolchain : I:\Lean4\.elan\toolchains\leanprover--lean4---v4.34.0\bin\lean.exe (direct lean.exe, no lake env)
+mathlib   : v4.34.0 @ 5ed2965256430c3649e86755f9576b54eca72435 (local source build, MATHLIB_CACHE_DISABLE=1, no prebuilt artifacts)
+os/arch   : Windows 11 x86_64, unprivileged user session, network disabled during compile
+cwd       : I:\research\justin-sun-prize\work\jsp-127\verify-current
+LEAN_PATH : 10 entries = local .lake\build\lib\lean + local olean + all jsp-071 .lake\packages\*\ .lake\build\lib\lean (aesop, batteries, Cli, importGraph, LeanSearchClient, mathlib, plausible, proofwidgets, Qq)
+pinned    : plby/lean-proofs @ 1268917deaaaa0d674f651287027baa26cea9920, src/latest/ErdosProblems/Erdos119.lean (1788 lines, byte-exact extraction)
+steps     : 1) ErdosProblems\Erdos119.lean -> .lake\build\lib\lean\ErdosProblems\Erdos119.olean
+            2) Audit127.lean -> .lake\build\lib\lean\Audit127.olean (#check + #print axioms on the 4 exported declarations)
+
+[RESULT]
+Pass 1 (driver, 03:22:54 -> 03:23:18): Erdos119 failed at line 777:
+    ErdosProblems\Erdos119.lean:777:10: error: Tactic `rewrite` failed:
+      Did not find an occurrence of the pattern
+        m + 3 - 2
+      in the target expression
+        m ^ 3 <= (m + 1) * ((m + 2) * (m + 3))
+  Cause: mathlib v4.34.0 normalizes (m + 3).descFactorial 3 (via norm_num
+  [Nat.descFactorial_succ]) further than v4.33.0; the 4.33-era rewrite
+  [hsub] (hsub : m + 3 - 2 = m + 1) has no pattern left. Fixed by dropping the
+  obsolete have/rw pair (PORTING-DIFF-127.md, fix 2). The output also showed
+  sorryAx in the axiom lists of Erdos119.erdos_119 / parts.ii / parts.i: that
+  is the Lean-4 elaboration-recovery stub of the failed line-777 declaration
+  (a declaration that fails to elaborate is stubbed with sorryAx so the file
+  can continue); it disappears once the file compiles cleanly (see pass 2).
+Pass 2 (driver, 03:26:24 -> 03:26:50): ALL STEPS EXIT 0.
+    Erdos119 exit=0 (17 s), Audit127 exit=0 (9 s), ALL DONE 03:26:50.
+  Axiom audit: #print axioms on all four declarations gives exactly
+  [propext, Classical.choice, Quot.sound] (standard Lean core axioms);
+  no sorryAx, no user axioms, no unsafe declarations. Zero-sorry scan over
+  the 1788-line source (findstr): 0 occurrences of sorry/admit.
+  Dependency resolution: lean --deps exit 0 for both modules
+  (Erdos119: Init + Mathlib; Audit127: Init + ErdosProblems.Erdos119).
+Log provenance: the driver writes step logs via Out-File (console-codepage
+decode); the two step logs embedded below were re-captured byte-faithfully at
+03:32-03:34 via cmd redirection (raw UTF-8) — ASCII content identical, the
+non-ASCII #check text is clean in this copy. One recompile of Erdos119
+(03:32:14) was terminated externally mid-run (exit=-1, host-level interference)
+and wrote no output; the retry (03:33:54) compiled exit=0 and produced a
+byte-identical Erdos119.olean (sha256 a2770ec3... == driver-run product,
+see hashes-final.tsv). No compile step ever passed via a killed run.
+
+[final raw driver output — run 2, 03:26:24 -> 03:26:50]
+LEAN_PATH entries: 10
+=== Erdos119 start 2026-09-19 03:26:24 ===
+=== Erdos119 exit=0 done 03:26:41 ===
+=== Audit127 start 2026-09-19 03:26:41 ===
+=== Audit127 exit=0 done 03:26:50 ===
+ALL DONE 2026-09-19 03:26:50
+
+[step log: compile-erdos119.log — 360 B (file's own trailing #print axioms)]
+'Erdos119.erdos_119.parts.iii_quantitative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos119.erdos_119' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos119.erdos_119.parts.ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos119.erdos_119.parts.i' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+[step log: compile-audit.log — 1090 B (Audit127.lean: #check + #print axioms)]
+Erdos119.erdos_119 (z : ℕ → ℂ) : (∀ (i : ℕ), ‖z i‖ = 1) → ∃ c, ∃ (_ : c > 0), ∀ᶠ (n : ℕ) in Filter.atTop, ∑ k ∈ Finset.range n, Erdos119.M z k > (n : ℝ) ^ (1 + c)
+Erdos119.erdos_119.parts.iii_quantitative (z : ℕ → ℂ) : (∀ (i : ℕ), ‖z i‖ = 1) → ∃ C, ∃ (_ : C > 0), ∀ᶠ (n : ℕ) in Filter.atTop, C * ((n : ℝ) ^ (5 / 4) / Real.sqrt (Real.log (n : ℝ))) < ∑ k ∈ Finset.range n, Erdos119.M z k
+Erdos119.erdos_119.parts.ii (z : ℕ → ℂ) : (∀ (i : ℕ), ‖z i‖ = 1) → ∃ c, ∃ (_ : c > 0), Infinite {n : ℕ | Erdos119.M z n > (n : ℝ) ^ c}
+Erdos119.erdos_119.parts.i (z : ℕ → ℂ) : (∀ (i : ℕ), ‖z i‖ = 1) → Filter.limsup (fun n : ℕ => (Erdos119.M z n : ℝ)) Filter.atTop = ⊤
+'Erdos119.erdos_119' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos119.erdos_119.parts.i' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos119.erdos_119.parts.ii' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos119.erdos_119.parts.iii_quantitative' depends on axioms: [propext, Classical.choice, Quot.sound]

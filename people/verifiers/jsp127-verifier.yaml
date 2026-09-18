@@ -1,0 +1,7 @@
+id: jsp127-verifier
+name: "JSP-127 Independent Verification Worker"
+role: verifier
+affiliation: "Independent verification automation (24-hour cron-driven formalization verification)"
+links: []
+publication_consent: null
+recusals: []
