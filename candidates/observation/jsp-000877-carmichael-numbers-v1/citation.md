@@ -1,0 +1,13 @@
+# Candidate observation
+
+## English
+
+This candidate observation is associated with [JSP-000877 — Carmichael numbers](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000877). It publishes `Statement.lean` and `Proof.lean` for a complete, machine-checked Lean formalization of three explicit witnesses: the three smallest Carmichael numbers `561 = 3 * 11 * 17`, `1105 = 5 * 13 * 17` and `1729 = 7 * 13 * 19` are Carmichael numbers in the sense of Mathlib's `Nat.IsCarmichael` (composite `n > 2` with `b^(n-1) ≡ 1 (mod n)` for every `b` coprime to `n`). Each instance is certified through the standard Korselt criterion (Korselt 1899): `n` is a Carmichael number iff `n` is composite, squarefree, and `p - 1 ∣ n - 1` for every prime factor `p` of `n`; the equivalence is `Nat.isCarmichael_iff_korselt` in Mathlib v4.35.0-rc2, and this observation supplies the concrete certificates (explicit factorizations; squarefreeness; `2/10/16 ∣ 560`, `4/12/16 ∣ 1104`, `6/12/18 ∣ 1728`). The main theorem proved is `Jsp000877.jsp000877_observation : Nat.IsCarmichael 561 ∧ Nat.IsCarmichael 1105 ∧ Nat.IsCarmichael 1729`.
+
+**Scope boundary:** this observation records only that the three concrete numbers `561`, `1105` and `1729` satisfy the Korselt criterion (the standard certificate of Carmichaelness). It proves no general statement about the set of Carmichael numbers — in particular nothing about the growth of the counting function of Carmichael numbers up to a bound, which is the literal catalogued open question of JSP-000877 ("Does the count of Carmichael numbers up to a bound grow with exponent approaching one?"). The catalogued problem remains Open, and no award claim is made.
+
+The formal source is pinned to the public repository [Yaohua-Leo/jsp-000877-lean](https://github.com/Yaohua-Leo/jsp-000877-lean) at commit `3c6d64dd81ce27e9ecc173b506e9e7eca0072ba2` on branch `main`. A local Lean compilation was run with the pinned toolchain `leanprover/lean4:v4.35.0-rc2` and Mathlib `v4.35.0-rc2`: `lake env lean JSP000877.lean` produces zero output, and `#print axioms` reports exactly `[propext, Classical.choice, Quot.sound]` for every theorem in the file. These compiler results are reproducibility evidence for the stated formal theorems; they are not official JSP verification or award admission.
+
+The catalog entry records "No later than 1956 (bibliographic evidence)" with no publication details, so the `posed.citation` field points to the catalog entry itself as the source of record rather than to an external publication.
+
+The candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.

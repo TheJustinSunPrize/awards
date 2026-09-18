@@ -1,4 +1,37 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000877-carmichael-numbers-v1",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000877",
+          "number": "JSP-000877",
+          "title_en": "Carmichael numbers",
+          "posed": {
+            "year": 1956,
+            "basis": "earliest-reference",
+            "citation": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000877"
+          },
+          "resolved": null
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000877-carmichael-numbers-v1",
+      "citation": "# Candidate observation\n\n## English\n\nThis candidate observation is associated with [JSP-000877 — Carmichael numbers](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000877). It publishes `Statement.lean` and `Proof.lean` for a complete, machine-checked Lean formalization of three explicit witnesses: the three smallest Carmichael numbers `561 = 3 * 11 * 17`, `1105 = 5 * 13 * 17` and `1729 = 7 * 13 * 19` are Carmichael numbers in the sense of Mathlib's `Nat.IsCarmichael` (composite `n > 2` with `b^(n-1) ≡ 1 (mod n)` for every `b` coprime to `n`). Each instance is certified through the standard Korselt criterion (Korselt 1899): `n` is a Carmichael number iff `n` is composite, squarefree, and `p - 1 ∣ n - 1` for every prime factor `p` of `n`; the equivalence is `Nat.isCarmichael_iff_korselt` in Mathlib v4.35.0-rc2, and this observation supplies the concrete certificates (explicit factorizations; squarefreeness; `2/10/16 ∣ 560`, `4/12/16 ∣ 1104`, `6/12/18 ∣ 1728`). The main theorem proved is `Jsp000877.jsp000877_observation : Nat.IsCarmichael 561 ∧ Nat.IsCarmichael 1105 ∧ Nat.IsCarmichael 1729`.\n\n**Scope boundary:** this observation records only that the three concrete numbers `561`, `1105` and `1729` satisfy the Korselt criterion (the standard certificate of Carmichaelness). It proves no general statement about the set of Carmichael numbers — in particular nothing about the growth of the counting function of Carmichael numbers up to a bound, which is the literal catalogued open question of JSP-000877 (\"Does the count of Carmichael numbers up to a bound grow with exponent approaching one?\"). The catalogued problem remains Open, and no award claim is made.\n\nThe formal source is pinned to the public repository [Yaohua-Leo/jsp-000877-lean](https://github.com/Yaohua-Leo/jsp-000877-lean) at commit `3c6d64dd81ce27e9ecc173b506e9e7eca0072ba2` on branch `main`. A local Lean compilation was run with the pinned toolchain `leanprover/lean4:v4.35.0-rc2` and Mathlib `v4.35.0-rc2`: `lake env lean JSP000877.lean` produces zero output, and `#print axioms` reports exactly `[propext, Classical.choice, Quot.sound]` for every theorem in the file. These compiler results are reproducibility evidence for the stated formal theorems; they are not official JSP verification or award admission.\n\nThe catalog entry records \"No later than 1956 (bibliographic evidence)\" with no publication details, so the `posed.citation` field points to the catalog entry itself as the source of record rather than to an external publication.\n\nThe candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.\n",
+      "recipients": "# Recipients\n\n## English\n\nNo recipient is identified in this preliminary observation. It makes no recipient, award, payment, or identity claim. For attribution of the formalization only: formalization author Yaohua-Leo, AI-assisted via ZCode (GLM); mathematical credit for the catalogued question belongs to the public record of JSP-000877, and credit for the Korselt criterion belongs to A. Korselt (1899).\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }
