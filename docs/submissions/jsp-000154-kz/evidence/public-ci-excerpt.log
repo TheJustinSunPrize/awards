@@ -1,0 +1,13 @@
+Selected unmodified lines from GitHub Actions job 105057700470; not the full log.
+2026-09-17T02:53:33.5191368Z ✔ [3092/3093] Built JSP000154 (6.4s)
+2026-09-17T02:53:46.6591961Z 'JSP000154.insertion_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:53:46.6593381Z 'JSP000154.maximal_iff_inclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:53:46.6594739Z 'JSP000154.maximal_sidon_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:53:46.6595692Z 'JSP000154.exists_maximal_sidon' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:53:46.6596599Z 'JSP000154.minimumSize_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:53:46.6597633Z 'JSP000154.minimumSize_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:53:46.6598602Z 'JSP000154.minimumSize_cube_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:53:46.6599553Z 'JSP000154.doubled_cube_root_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:53:46.6600743Z 'JSP000154.minimumSize_doubled_cube_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-09-17T02:53:46.8556689Z All nine axiom audits and all actual dependency revisions passed.
+2026-09-17T02:54:38.8830211Z Checked 17926 declarations with no errors
