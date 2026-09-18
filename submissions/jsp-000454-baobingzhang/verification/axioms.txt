@@ -1,0 +1,4 @@
+'Erdos564.erdos_564_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos564.two_pow_sq_div_twelve_lt_hypergraphRamsey_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos564.hypergraphRamsey_set_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos564.lt_hypergraphRamsey_three_of_choose' depends on axioms: [propext, Classical.choice, Quot.sound]
