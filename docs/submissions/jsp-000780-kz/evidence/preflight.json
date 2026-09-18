@@ -1,0 +1,15 @@
+{
+  "checked_at_utc": "2026-09-17T01:08:27.495286+00:00",
+  "official_base": "f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+  "checks": {
+    "validate": "passed",
+    "links": "passed",
+    "build": "passed",
+    "check": "passed",
+    "history": "passed",
+    "unittest_cases": 22,
+    "unittest_failures": 0,
+    "proof_source_byte_comparison": "passed"
+  },
+  "scope": "Only new docs/submissions/jsp-000780-kz files; no official records are changed. Contributor-run checks, not organizer certification."
+}
