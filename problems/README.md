@@ -817,7 +817,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | --- | --- | --- | --- | --- | --- |
 | JSP-000701 | [How large can an integer-interval subset be if every pairwise product plus one has a nontrivial square factor?](catalog-0701-0800.md#JSP-000701) | Open | No | No | Unavailable |
 | JSP-000702 | [Singmaster's conjecture](catalog-0701-0800.md#JSP-000702) | Open | No | No | Unavailable |
-| JSP-000703 | [Matching prime-factor sets across shifted integer pairs](catalog-0701-0800.md#JSP-000703) | Open | No | No | Unavailable |
+| JSP-000703 | [Matching prime-factor sets across shifted integer pairs](catalog-0701-0800.md#JSP-000703) | Solved | No | No | Unavailable |
 | JSP-000704 | [Can a density-one set of integers be represented as a power of two plus a number with few prime factors?](catalog-0701-0800.md#JSP-000704) | Solved | No | No | Unavailable |
 | JSP-000705 | [How long a run of pairwise distinct consecutive prime gaps can occur?](catalog-0701-0800.md#JSP-000705) | Open | No | No | Unavailable |
 | JSP-000706 | [How large is the smallest positive even number not yet seen among the prime gaps up to a given point?](catalog-0701-0800.md#JSP-000706) | Open | No | No | Unavailable |
