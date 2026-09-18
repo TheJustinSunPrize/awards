@@ -1,0 +1,20 @@
+id: jsp-000194-f01-three-point-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000194"
+  number: "JSP-000194"
+  title_en: "How many ordinary lines, each containing exactly two of the points, must a finite noncollinear planar point set determine?"
+  posed:
+    year: 1961
+    basis: earliest-reference
+    citation: "https://doi.org/10.1090/S0002-9947-1951-0041447-9"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
