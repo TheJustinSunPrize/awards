@@ -1,0 +1,12 @@
+=== Toolchain ===
+Lean: Lean (version 4.33.0, Release)
+Mathlib: db584cd6d46c92f209a44c0f1c829460d327499d (Mathlib v4.33.0)
+
+=== lake build JSP000307 ===
+Build completed successfully (8707 jobs).
+
+=== Axiom audit ===
+'JSP000307.JSP_307' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000307.IsLPF_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000307.IsLPF_14_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000307.IsLPF_15_5' depends on axioms: [propext, Classical.choice, Quot.sound]
