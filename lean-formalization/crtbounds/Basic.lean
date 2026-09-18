@@ -684,3 +684,58 @@ theorem padic_obstruction_core_via_generic (n p : ℕ) (hp : p.Prime)
   have hnot : ¬p ∣ k := notDvdWindow hp hpn hpn' hk1 hkn hkp
   have hpdvd : p ∣ lcmUpTo n := dvd_lcmUpTo n p hp.pos hpn'
   exact div_dvd_of hp hpdvd hnot hkdvd (by omega)
+
+/-- A prime p >= 3 also detects a signed-coordinate difference of size at most 2. -/
+theorem proj_inj_two (n p : ℕ) (hp : p.Prime) (hpn : n / 2 < p) (hpn' : p ≤ n)
+    (hp3 : 3 ≤ p) (e₁ e₂ : ℕ → ℤ)
+    (hmod : (signedNum (lcmUpTo n) n e₁ - signedNum (lcmUpTo n) n e₂) % (p : ℤ) = 0)
+    (hdiff : (e₁ p - e₂ p).natAbs ≤ 2) :
+    e₁ p = e₂ p := by
+  set δ : ℕ → ℤ := fun k => e₁ k - e₂ k with hδ
+  have hlin := signedNum_sub (lcmUpTo n) n e₁ e₂
+  have hmodδ : (signedNum (lcmUpTo n) n δ) % (p : ℤ) = 0 := by
+    rw [hδ]
+    rw [← hlin]
+    exact hmod
+  have hdvd := proj_zero n p hp hpn hpn' δ hp3 hmodδ
+  obtain ⟨q, hq⟩ := hdvd
+  have hdp : δ p = (p : ℤ) * q := hq
+  have hq0 : q = 0 := by
+    by_contra hne
+    have habs : ((p : ℤ) * q).natAbs ≤ 2 := hdp ▸ hdiff
+    have hprod : ((p : ℤ) * q).natAbs = p * q.natAbs := by
+      rw [Int.natAbs_mul, Int.natAbs_natCast]
+    have hqabs : 1 ≤ q.natAbs := by omega
+    have hp2 : 2 ≤ p := hp.two_le
+    have hle : p * 1 ≤ p * q.natAbs := Nat.mul_le_mul_left p hqabs
+    omega
+  rw [hq0] at hq
+  simp at hq
+  rw [hδ] at hq
+  linarith
+
+/-- A valid {-1,0,1}-valued coordinate difference has absolute value at most 2. -/
+theorem validSign_diff_bound {n : ℕ} {e₁ e₂ : ℕ → ℤ}
+    (h₁ : validSign n e₁) (h₂ : validSign n e₂)
+    {p : ℕ} (hp1 : 1 ≤ p) (hpn : p ≤ n) :
+    (e₁ p - e₂ p).natAbs ≤ 2 := by
+  have h1 := h₁ p hp1 hpn
+  have h2 := h₂ p hp1 hpn
+  simp only [Set.mem_insert_iff, Set.mem_singleton_iff] at h1 h2
+  rcases h1 with h1 | h1 | h1 <;> rcases h2 with h2 | h2 | h2 <;>
+    rw [h1, h2] <;> norm_num
+
+/-- Equality of all window-prime residues determines every window-prime sign. -/
+theorem window_projection_injective {n : ℕ} (hn : 4 ≤ n)
+    {e₁ e₂ : ℕ → ℤ}
+    (h₁ : validSign n e₁) (h₂ : validSign n e₂)
+    (hres : ∀ p ∈ windowPrimes n,
+      (signedNum (lcmUpTo n) n e₁ - signedNum (lcmUpTo n) n e₂) % (p : ℤ) = 0) :
+    ∀ p ∈ windowPrimes n, e₁ p = e₂ p := by
+  intro p hp
+  have hp3 : 3 ≤ p := window_prime_ge_three hn hp
+  have hprime : p.Prime := window_prime_prime hp
+  have hhalf : n / 2 < p := window_prime_hpn hp
+  have hle : p ≤ n := window_prime_hle hp
+  apply proj_inj_two n p hprime hhalf hle hp3 e₁ e₂ (hres p hp)
+  exact validSign_diff_bound h₁ h₂ (by omega) hle
