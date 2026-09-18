@@ -1,4 +1,37 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000891-factorial-minus-one-v1",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000891",
+          "number": "JSP-000891",
+          "title_en": "How small can the first factorial index congruent to minus one modulo a prime be?",
+          "posed": {
+            "year": 2002,
+            "basis": "earliest-reference",
+            "citation": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000891"
+          },
+          "resolved": null
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000891-factorial-minus-one-v1",
+      "citation": "# Candidate observation\n\n## English\n\nThis candidate observation is associated with [JSP-000891 — How small can the first factorial index congruent to minus one modulo a prime be?](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000891). It publishes `Statement.lean` and `Proof.lean` for a complete, machine-checked Lean formalization of a scoped observation about the catalog question. Wilson's theorem gives `(p-1)! ≡ -1 (mod p)` for every prime `p`, so for each prime `p` there is a first index `n` with `n! ≡ -1 (mod p)` and it is at most `p - 1`; the catalog asks how small this first index can be. The theorems proved are `jsp000891_p7 : Nat.Prime 7 ∧ Nat.factorial 3 % 7 = 6 ∧ (∀ m < 3, Nat.factorial m % 7 ≠ 6)`, `jsp000891_p11 : Nat.Prime 11 ∧ Nat.factorial 5 % 11 = 10 ∧ (∀ m < 5, Nat.factorial m % 11 ≠ 10)`, `jsp000891_p71 : Nat.Prime 71 ∧ Nat.factorial 7 % 71 = 70 ∧ (∀ m < 7, Nat.factorial m % 71 ≠ 70)`, and the combined form `jsp000891_observation : ∃ (n p : ℕ), Nat.Prime p ∧ n + 1 < p ∧ Nat.factorial n % p = p - 1 ∧ ∀ m < n, Nat.factorial m % p ≠ p - 1`, witnessing `(n, p) = (3, 7)`: `3! = 6 ≡ -1 (mod 7)` at an index strictly below the Wilson index `6`. The three instances verify, respectively, first indices `3`, `5`, `7` for `p = 7, 11, 71` (for `p = 71`, `7! = 5040 = 71² - 1`).\n\n**Scope boundary:** this observation records only the minimality verification of the three listed `(n, p)` instances, each showing a first factorial index far below the Wilson index `p - 1`. It makes no assertion for all primes, does not address the distribution question of whether such small indices occur for infinitely many primes, does not resolve the catalogued open problem, which remains Open, and makes no award claim.\n\nThe formal source is pinned to the public repository [Yaohua-Leo/jsp-000891-lean](https://github.com/Yaohua-Leo/jsp-000891-lean) at commit `30e5facd5f648fc4b5a440c08e01554ba19ebb82` on branch `main`. A local Lean compilation was run with the pinned toolchain `leanprover/lean4:v4.35.0-rc2` and Mathlib `v4.35.0-rc2`: `lake env lean JSP000891.lean` produces only the axiom-audit info lines, and `#print axioms` reports for each of the four theorems exactly `[propext, Classical.choice, Quot.sound]`. These compiler results are reproducibility evidence for the stated formal theorems; they are not official JSP verification or award admission.\n\nThe catalog entry records \"No later than 2002 (bibliographic evidence)\" with no publication details, so the `posed.citation` field points to the catalog entry itself as the source of record rather than to an external publication.\n\nThe candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.\n",
+      "recipients": "# Recipients\n\n## English\n\nNo recipient is identified in this preliminary observation. It makes no recipient, award, payment, or identity claim. For attribution of the formalization only: formalization author Yaohua-Leo, AI-assisted via ZCode (GLM); mathematical credit for the catalogued question belongs to the public record of JSP-000891.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }

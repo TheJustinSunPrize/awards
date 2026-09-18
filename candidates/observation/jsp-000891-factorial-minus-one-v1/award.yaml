@@ -1,0 +1,20 @@
+id: jsp-000891-factorial-minus-one-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000891"
+  number: "JSP-000891"
+  title_en: "How small can the first factorial index congruent to minus one modulo a prime be?"
+  posed:
+    year: 2002
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0801-0900.md#JSP-000891"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
