@@ -1,4 +1,183 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000106",
+        "batch": null,
+        "problem": {
+          "source": "Erdos problems list",
+          "number": 90,
+          "title_en": "How many unit distances can be determined by n points in the plane? (part b: arbitrarily many unit distances)",
+          "posed": {
+            "year": 1946,
+            "basis": "earliest-reference",
+            "citation": "https://www.erdosproblems.com/90"
+          },
+          "resolved": null
+        },
+        "recipients": [
+          {
+            "id": "shiqiang-chen",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Independent verification of the pinned Lean formalization of L. Alpöge's construction for problem 90b (Erdos90b.lean + ErdosProblems/Erdos90b/*.lean closure, including the vendored PrimeNumberTheoremAnd supporting package) against the current release (Lean v4.34.0, mathlib v4.34.0, mathlib commit 5ed2965) and preparation of this submission.",
+            "confirmation": "https://github.com/shunfeng8421"
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": {
+            "record": "verification/record.yaml",
+            "statement": "verification/statement.yaml"
+          },
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "pending-recipient-confirmation",
+        "revocation": null,
+        "decision": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000106",
+      "citation": "# Citation — JSP-000106\n\n## English\n\n**Problem.** Erdős problems list, problem 90 — \"How many unit distances can be\ndetermined by $n$ points in the plane?\" (https://www.erdosproblems.com/90,\nhistorical bounty $500 for part (b)).\n\nLet $u(n)$ be the maximum number of unit-distance pairs among $n$ points in the\nEuclidean plane. Part (b) concerns the proposed uniform bound\n$u(n) < n^{1 + C/\\log\\log n}$ for some absolute constant $C$. The formalized\ntheorem below is a *disproof* of every such bound: L. Alpöge's construction\nyields, for every $C > 0$ and every cardinality threshold $N$, a planar\nconfiguration $P$ of $n \\ge N$ points with more than\n$n^{1 + C/\\log\\log n}$ unit-distance pairs.\n\n**Formal statement (Lean 4, file `ErdosProblems/Erdos90b.lean`).**\n\n```lean\ntheorem not_erdos_90 :\n    ∀ C : ℝ, 0 < C → ∀ N : ℕ,\n      ∃ (n : ℕ) (P : Finset Point),\n        N ≤ n ∧ P.card = n ∧\n          (n : ℝ) ^ (1 + C / Real.log (Real.log n)) <\n            (unitDistancePairs P : ℝ)\n\n-- where\n-- Point := EuclideanSpace ℝ (Fin 2)\n-- unitDistancePairs P := Erdos.unitDist P   -- unordered pairs at distance one\n\nalias _root_.Erdos90b.erdos_90b := _root_.Erdos90b.not_erdos_90\n```\n\n**Authorship and provenance (credit only, no authorship claim).**\n\n- Mathematical construction: **L. Alpöge** (as credited in the pinned source\n  header of `Erdos90b.lean`).\n- Supporting formalization: **Kim Morrison and the Tau Ceti contributors**\n  (as credited in the pinned source header); the closure includes the\n  `TauCeti` package (12 modules, class numbers / ideal-count machinery for\n  quadratic fields) and the `ErdosUnitDistance` package (9 modules), together\n  with the vendored `PrimeNumberTheoremAnd` supporting package (10 modules,\n  analytic number theory: Fourier, Wiener, Sobolev, Chebyshev bounds).\n- Public port: [plby/lean-proofs](https://github.com/plby/lean-proofs) @\n  `1268917deaaaa0d674f651287027baa26cea9920`, files\n  `src/latest/ErdosProblems/Erdos90b.lean`,\n  `src/latest/ErdosProblems/Erdos90b/*.lean` and\n  `src/latest/PrimeNumberTheoremAnd/*.lean`.\n- This submission claims **no mathematical or formalization authorship**. It is\n  an independent verification contribution (see `verification/record.yaml`).\n\n**Verification summary.** All 32 pinned Lean files of the closure were compiled\nwith the *current release* toolchain — Lean v4.34.0 with mathlib v4.34.0\n(mathlib commit `5ed2965256430c3649e86755f9576b54eca72435`) — using direct\n`lean.exe` invocations in import order, after applying 8 documented porting\npatches required by the mathlib 4.33→4.34 API drift (see\n`verification/PORTING-DIFF-106.md`; each patch verified standalone, byte-level\npinned-vs-verified diff in `verification/hashes-final.tsv` vs\n`verification/hashes-pinned-src.tsv`). The entry module and an audit module\n(`Audit90b.lean`) were then compiled against the produced `.olean`s. Every one\nof the 32 steps has an exit-0 compile on this toolchain (established across\nthe three driver runs of 2026-09-19 02:24/02:32/02:43); in the final raw run\nthree single-file steps were terminated mid-compile by external host-level\ninterference (an unrelated parallel workload on the shared host), and their\nbyte-consistent `.olean`s from the immediately preceding runs of the same\ndriver were used by all downstream steps, which passed (details in\n`verification/current-release-v4.34.log`). The build log records all steps,\nexit codes and elapsed times; all `.lean` sources and the produced `.olean`s\nare hash-pinned in `verification/record.yaml`.\n\n**Axiom audit.** `#print axioms` run on the two exported declarations\n(`Erdos90b.not_erdos_90` and `Erdos90b.erdos_90b`) yields exactly\n`[propext, Classical.choice, Quot.sound]` — the standard Lean core axioms. In\nparticular, the proofs use no additional axioms, no `sorry`, and no `unsafe`\ndefinitions.\n\n## 中文\n\n**问题（Erdős 问题表第 90 题，历史赏金 500 美元，第 (b) 部分）**：平面上\n$n$ 个点至多能确定多少个单位距离？记最大值为 $u(n)$。第 (b) 部分考察统一上界\n$u(n) < n^{1 + C/\\log\\log n}$（$C$ 为某绝对常数）。本形式化工作所验证的定理\n**否证**了所有此类上界：L. Alpöge 的构造对每个 $C > 0$ 与每个基数阈值 $N$，\n给出 $n \\ge N$ 个点的平面构型 $P$，其单位距离对数超过\n$n^{1 + C/\\log\\log n}$。\n\n**形式化陈述（Lean 4，文件 `ErdosProblems/Erdos90b.lean`）**：定理\n`Erdos90b.not_erdos_90`（及别名 `Erdos90b.erdos_90b`），如上代码块所示。\n\n**来源**：数学构造出自 L. Alpöge；支撑形式化出自 Kim Morrison 与 Tau Ceti\n贡献者（见 pinned 源码头注释）；闭包含 `TauCeti` 12 模块、`ErdosUnitDistance`\n9 模块，以及随仓库固定（vendored）的 `PrimeNumberTheoremAnd` 支撑包 10 模块\n（解析数论：Fourier、Wiener、Sobolev、Chebyshev 界）。公开移植版位于\n[plby/lean-proofs](https://github.com/plby/lean-proofs) 提交\n`1268917deaaaa0d674f651287027baa26cea9920`。本提交**不主张**任何数学或\n形式化作者身份，仅为独立验证贡献。\n\n**验证结论**：固定闭包的 32 个 Lean 文件在当今发布版工具链（Lean v4.34.0 +\nmathlib v4.34.0，mathlib 提交 `5ed2965…`）上按导入顺序用 `lean.exe` 直接\n编译；因 mathlib 4.33→4.34 API 漂移需 8 处文档化移植补丁（见\n`verification/PORTING-DIFF-106.md`，逐条单独验证）。全部 32 步均以退出码\n0 编译通过（跨 2026-09-19 凌晨三轮驱动运行各自建立；最终原始一轮中有 3 个\n单文件步骤被宿主机上无关并行负载的外部 TerminateProcess 中断，其 `.olean`\n沿用同会话紧邻轮次同工具链产物，下游步骤全部通过——详见\n`verification/current-release-v4.34.log`）；入口模块与审计模块亦通过。\n编译日志记录全部步骤、退出码与耗时；源码与产物 `.olean` 的哈希均固定在\n`verification/record.yaml` 中。\n\n**公理审计**：对两条导出声明执行 `#print axioms`，仅得\n`[propext, Classical.choice, Quot.sound]` — 即 Lean 核心公理集合；无额外\n公理、无 `sorry`、无 `unsafe` 定义。\n",
+      "recipients": "# Recipient — JSP-000106\n\n## English\n\n- **Shiqiang Chen (陈世强)** — https://github.com/shunfeng8421\n  - Contribution: independent verification of the pinned Lean formalization of\n    L. Alpöge's unit-distance construction for Erdős problem 90(b), against the\n    current release (Lean v4.34.0 / mathlib v4.34.0), and the preparation of\n    this submission.\n  - Confirmation: https://github.com/shunfeng8421\n\n**Attribution (credit, not recipients of the bounty record):**\n\n- **Mathematical solution**: L. Alpöge (construction credited in the pinned\n  source header of `Erdos90b.lean`).\n- **Supporting formalization**: Kim Morrison and the Tau Ceti contributors\n  (credited in the pinned source header; TauCeti 12 modules +\n  ErdosUnitDistance 9 modules + the vendored PrimeNumberTheoremAnd package,\n  10 modules).\n- **Public formalization**: plby (maintainer of\n  [plby/lean-proofs](https://github.com/plby/lean-proofs), port @\n  `1268917deaaaa0d674f651287027baa26cea9920`); as noted in the pinned sources,\n  Git commit authorship is not treated as proof authorship.\n\n## 中文\n\n- **陈世强 (Shiqiang Chen)** — https://github.com/shunfeng8421\n  - 贡献：对 pinned Lean 形式化（Erdős 问题 #90(b) —— L. Alpöge 单位距离\n    构造）在当今发布版（Lean v4.34.0 / mathlib v4.34.0）上的独立验证，以及\n    本提交的整理与递交。\n  - 确认：https://github.com/shunfeng8421\n\n**致谢（credit，非本赏金记录的收件人）：**\n\n- **数学解答**：L. Alpöge（构造，见 pinned 源码 `Erdos90b.lean` 头部注释）。\n- **支撑形式化**：Kim Morrison 与 Tau Ceti 贡献者（见 pinned 源码头部注释；\n  TauCeti 12 模块 + ErdosUnitDistance 9 模块 + vendored\n  PrimeNumberTheoremAnd 支撑包 10 模块）。\n- **公开形式化**：plby（[plby/lean-proofs](https://github.com/plby/lean-proofs)\n  维护者，移植 @ `1268917deaaaa0d674f651287027baa26cea9920`）；如 pinned 源码\n  注释所述，Git 提交作者身份不视为证明作者。\n",
+      "verification_record": {
+        "repository": "https://github.com/plby/lean-proofs",
+        "commit": "1268917deaaaa0d674f651287027baa26cea9920",
+        "toolchain": {
+          "language": "Lean",
+          "language_version": "4.34.0",
+          "library": "mathlib",
+          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+          "meets_minimum_safe_version": true
+        },
+        "theorems": [
+          {
+            "name": "Erdos90b.not_erdos_90",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos90b.erdos_90b",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          }
+        ],
+        "statement_comparison": {
+          "statement_id": "STMT-jsp-000106-v1",
+          "theorem_name": "Erdos90b.not_erdos_90",
+          "result": "equivalent",
+          "basis": "The informal problem (Erdos problems list, problem 90(b); candidates/verified-pending/jsp-000106/verification/statement.yaml; https://www.erdosproblems.com/90) asks how many unit-distance pairs n points in the Euclidean plane can determine, and whether the uniform bound u(n) < n^(1 + C/log(log n)) holds for some absolute constant C. The formalized theorem not_erdos_90 states exactly the negation of every such bound: for every C : ℝ with 0 < C and every N : ℕ, there exist n ≥ N and a Finset Point P (Point = EuclideanSpace ℝ (Fin 2)) with P.card = n and (n : ℝ)^(1 + C / Real.log (Real.log n)) < (unitDistancePairs P : ℝ), where unitDistancePairs P = Erdos.unitDist P counts the unordered pairs of distinct points of P at distance one. The companion declaration Erdos90b.erdos_90b is an alias of the same theorem. The formal statement directly matches the requested answer (the proposed uniform bound is false; arbitrarily many unit distances occur).",
+          "performed_by": "jsp106-verifier",
+          "performed_at": "2026-09-18"
+        },
+        "checkers": [
+          {
+            "name": "Lean kernel (lean)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          },
+          {
+            "name": "Import-closure dependency resolution (lean --deps)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          }
+        ],
+        "environment": {
+          "arch": "x86_64",
+          "image": "windows-11 x86_64, elan toolchain leanprover/lean4:v4.34.0, mathlib v4.34.0 @ 5ed2965256430c3649e86755f9576b54eca72435 (source-built, MATHLIB_CACHE_DISABLE=1)"
+        },
+        "sandbox": {
+          "network_disabled": true,
+          "prebuilt_artifacts_ignored": true,
+          "limits": {
+            "time": "24h window; per-file compiles time-boxed",
+            "memory": "unlimited"
+          },
+          "unprivileged_user": true
+        },
+        "attribution": {
+          "proof_route": "Alpoge unit-distance construction (ErdosProblems/Erdos90b.lean importing the Erdos90b closure of 21 modules: ErdosUnitDistance 9 + TauCeti 12, plus the vendored PrimeNumberTheoremAnd package of 10 modules); mathematical construction by L. Alpoge, supporting formalization by Kim Morrison and the Tau Ceti contributors (credited in the pinned source headers), ported to the pinned repo by plby",
+          "third_party": true,
+          "note_en": "Independent verification of the pinned upstream commit at Lean v4.34.0 / mathlib v4.34.0. All 32 Lean files of the closure (22 Erdos90b + 10 PrimeNumberTheoremAnd) compile exit=0 in import order on the current-release toolchain (established across the driver runs of 2026-09-19 02:24/02:32/02:43; each step has an exit=0 compile) after applying 8 documented porting fixes required by the mathlib 4.33->4.34 API drift (see PORTING-DIFF-106.md and the byte-level pinned-vs-verified diff between hashes-pinned-src.tsv and hashes-final.tsv): Sobolev.lean 308-309 (ring_nf), Wiener.lean 2827 (binder ascription (sigma' : ℝ)), Consequences.lean 4 sites (sqrt_eq_rpow/div_sqrt rewrites, ext+ring, dropped stale bullets, exponent-sum equality via Finset.sum_congr + Nat.primeFactorsList_count_eq), TauCeti IdealCount/Basic + ErdosUnitDistance NormFibre + PointCount (+ import Mathlib.Algebra.CharZero.Infinite; mathlib 4.34 added an [Infinite S] hypothesis to Ideal.absNorm), MultiquadraticField.lean 41 (Complex.isIntegral_I ℚ), Discriminant.lean 296/314 and PointCount.lean 153 (Finset.prod_le_prod -> Finset.prod_le_prod₀; mathlib 4.34 made prod_le_prod the single-hypothesis [MulLeftMono] variant, the ordered-ring two-hypothesis form is prod_le_prod₀). The final raw driver run (02:43:50 -> 02:49:56, log embedded in current-release-v4.34.log) had 29/32 steps exit=0: three single-file steps (PNT-Sobolev, PNT-Wiener, EUD-PrimesMod4) were terminated mid-compile by external host-level interference (TerminateProcess by an unrelated parallel workload on the shared host; observed at 02:43:58/02:44:59/02:46:57); each of those three steps compiled exit=0 in the immediately preceding driver runs of the same session (Sobolev 02:32:37, Wiener 02:33:22, PrimesMod4 02:35:09), and their byte-consistent .olean files were loaded by all downstream steps, which passed. Module layout mirrors upstream (ErdosProblems.Erdos90b + ErdosProblems.Erdos90b/External/{ErdosUnitDistance,TauCeti} + PrimeNumberTheoremAnd). Axiom audit via #print axioms on both entry declarations (Audit90b.lean, exit=0 in every run) reports exactly [propext, Classical.choice, Quot.sound]; no sorryAx, no user axioms, no unsafe declarations (grep over the 33 source files: zero occurrences of sorry)."
+        },
+        "artifacts": {
+          "build_log": {
+            "archive": "candidates/verified-pending/jsp-000106/verification/current-release-v4.34.log",
+            "sha256": "a9038c954b682e2910609148251e07f90c912b9b1a964aa59478f68311dbd5ac",
+            "bytes": 5446
+          }
+        },
+        "performed_by": "jsp106-verifier",
+        "performed_at": "2026-09-18"
+      },
+      "statement": {
+        "id": "STMT-jsp-000106-v1",
+        "status": "active",
+        "supersedes": null,
+        "statement": {
+          "text": "Erdos90b.not_erdos_90 : ∀ C : ℝ, 0 < C → ∀ N : ℕ, ∃ (n : ℕ) (P : Finset Point), N ≤ n ∧ P.card = n ∧ (n : ℝ) ^ (1 + C / Real.log (Real.log n)) < (unitDistancePairs P : ℝ)",
+          "natural_language_source": "Erdos problems list, problem 90 — how many unit distances can be determined by n points in the plane? (https://www.erdosproblems.com/90; historical bounty $500 for part (b)). Let u(n) denote the maximum number of unit-distance pairs among n points in the Euclidean plane. The proposed uniform upper bound u(n) < n^(1 + C/log(log n)) for some absolute constant C (the form implicit in the problem's part (b)) is false: L. Alpöge's construction disproves every such bound. The formal statement not_erdos_90 quantifies this: for every positive constant C and every cardinality threshold N, there is a planar configuration P of n >= N points with more than n^(1 + C/log(log n)) unit-distance pairs (Point = EuclideanSpace ℝ (Fin 2); unitDistancePairs P = Erdos.unitDist P, the number of unordered pairs of distinct points of P at Euclidean distance one). The companion declaration Erdos90b.erdos_90b is an alias of the same theorem. The formal core is Erdos.erdos_unit_distance_uniform_constant_false in the ErdosUnitDistance closure; the entry theorem is its immediate restatement (simpa). The supporting formalization is due to Kim Morrison and the Tau Ceti contributors (credited in the pinned source header); the pinned sources target Lean v4.33.0/mathlib v4.33.0 and were ported to the current release v4.34.0 with 8 documented patches (PORTING-DIFF-106.md).",
+          "definitions_reviewed": [
+            {
+              "name": "Erdos90b.Point",
+              "from_library": false,
+              "review": "Local abbreviation in ErdosProblems/Erdos90b.lean: Point = EuclideanSpace ℝ (Fin 2), the Euclidean plane. Matches the problem's setting."
+            },
+            {
+              "name": "Erdos90b.unitDistancePairs",
+              "from_library": false,
+              "review": "Local abbreviation in ErdosProblems/Erdos90b.lean: unitDistancePairs P = Erdos.unitDist P, the number of unordered pairs of distinct points at Euclidean distance one. Exactly the quantity u(n) the problem asks about."
+            },
+            {
+              "name": "Erdos.unitDist",
+              "from_library": false,
+              "review": "Defined locally in ErdosProblems/Erdos90b/External/ErdosUnitDistance/Counting.lean: for a finite point set P, the cardinality of the collection of 2-element subsets {p,q} of P with p ≠ q and ‖p - q‖ = 1 (unit-distance pairs)."
+            },
+            {
+              "name": "Erdos.erdos_unit_distance_uniform_constant_false",
+              "from_library": false,
+              "review": "Defined locally in the ErdosUnitDistance closure (Main.lean): the formal core of the result — for every C > 0 and every N, there exist n ≥ N and a configuration P with P.card = n and more than n^(1 + C/log(log n)) unit-distance pairs (Alpöge's construction). The entry theorem not_erdos_90 is its immediate restatement via simpa."
+            },
+            {
+              "name": "EuclideanSpace ℝ (Fin 2)",
+              "from_library": true,
+              "review": "Mathlib's finite-dimensional Euclidean space; the plane. Distance is the standard Euclidean norm."
+            },
+            {
+              "name": "Real.log",
+              "from_library": true,
+              "review": "Mathlib's natural logarithm on ℝ; log(log n) is the double logarithm appearing in the problem's exponent."
+            },
+            {
+              "name": "Finset.card",
+              "from_library": true,
+              "review": "Mathlib's cardinality of a finite set; P.card = n is the number of points."
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "jsp106-verifier",
+            "shiqiang-chen"
+          ],
+          "issued_at": "2026-09-18"
+        }
+      }
+    }
+  ]
 }

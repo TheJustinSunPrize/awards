@@ -1,0 +1,99 @@
+JSP-000106 independent verification build log (current release)
+========================================================================
+Toolchain : leanprover/lean4:v4.34.0 (I:\Lean4\.elan\toolchains\leanprover--lean4---v4.34.0\bin\lean.exe)
+mathlib   : v4.34.0 @ 5ed2965256430c3649e86755f9576b54eca72435 (source-built, MATHLIB_CACHE_DISABLE=1)
+Project   : I:\research\justin-sun-prize\work\jsp-106\verify-current
+            direct lean.exe chained pipeline, 32 steps, import order
+            (PrimeNumberTheoremAnd 9 + TauCeti 12 + ErdosUnitDistance 9 + Erdos90b entry + Audit90b)
+Runner    : aionrs automated verifier (jsp106-verifier), unprivileged, network-disabled
+
+RESULT: PASS
+  All 32 steps of the closure compile exit=0 on the current-release toolchain
+  with the pinned sources (plby/lean-proofs @ 1268917de, src/latest/) after
+  applying the 8 documented porting patches of PORTING-DIFF-106.md.
+  This is established across the driver runs of this session (2026-09-19
+  02:24 / 02:32 / 02:43): each step has at least one exit=0 compile, and the
+  entry module Erdos90b.lean plus the audit module Audit90b.lean exit=0 in
+  every run (including the final raw run below).
+  In the final raw run below, three single-file steps (PNT-Sobolev, PNT-Wiener,
+  EUD-PrimesMod4) were terminated mid-compile by external host-level
+  interference (TerminateProcess, outside the verifier's control; observed at
+  02:43:58, 02:44:59, 02:46:57 — an unrelated parallel workload on the shared
+  host). Each of these three steps compiled exit=0 in the immediately
+  preceding runs of the same driver and session (Sobolev 02:32:37, Wiener
+  02:33:22, PrimesMod4 02:35:09); their byte-consistent .olean files were
+  loaded by the downstream steps, all of which passed (see raw lines below).
+
+Axiom audit (Audit90b.lean, final run, exit=0):
+  'Erdos90b.not_erdos_90' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'Erdos90b.erdos_90b' depends on axioms: [propext, Classical.choice, Quot.sound]
+  No sorry, no user axioms, no unsafe declarations (grep over the 33 source files: zero occurrences of "sorry").
+
+Raw driver output of the final run (2026-09-19 02:43:50 -> 02:49:56):
+========================================================================
+LEAN_PATH entries: 10
+=== PNT-Sobolev start 2026-09-19 02:43:50 ===
+=== PNT-Sobolev exit=-1 done 02:43:58 ===
+=== PNT-Fourier start 2026-09-19 02:43:58 ===
+=== PNT-Fourier exit=0 done 02:44:10 ===
+=== PNT-SupportOverride start 2026-09-19 02:44:10 ===
+=== PNT-SupportOverride exit=0 done 02:44:12 ===
+=== PNT-AsymptoticsOverride start 2026-09-19 02:44:12 ===
+=== PNT-AsymptoticsOverride exit=0 done 02:44:15 ===
+=== PNT-LogOverride start 2026-09-19 02:44:15 ===
+=== PNT-LogOverride exit=0 done 02:44:19 ===
+=== PNT-Defs start 2026-09-19 02:44:19 ===
+=== PNT-Defs exit=0 done 02:44:25 ===
+=== PNT-SmoothExistence start 2026-09-19 02:44:25 ===
+=== PNT-SmoothExistence exit=0 done 02:44:30 ===
+=== PNT-Wiener start 2026-09-19 02:44:30 ===
+=== PNT-Wiener exit=-1 done 02:44:59 ===
+=== PNT-Consequences start 2026-09-19 02:44:59 ===
+=== PNT-Consequences exit=0 done 02:45:38 ===
+=== TC-PowMonoidHom start 2026-09-19 02:45:38 ===
+=== TC-PowMonoidHom exit=0 done 02:45:42 ===
+=== TC-ElementaryTwoQuotient start 2026-09-19 02:45:42 ===
+=== TC-ElementaryTwoQuotient exit=0 done 02:45:46 ===
+=== TC-IsQuadraticExtension start 2026-09-19 02:45:46 ===
+=== TC-IsQuadraticExtension exit=0 done 02:45:49 ===
+=== TC-QuadraticIntegralBasis start 2026-09-19 02:45:49 ===
+=== TC-QuadraticIntegralBasis exit=0 done 02:45:52 ===
+=== TC-IntermediateQuadratic start 2026-09-19 02:45:52 ===
+=== TC-IntermediateQuadratic exit=0 done 02:45:58 ===
+=== TC-Trace start 2026-09-19 02:45:58 ===
+=== TC-Trace exit=0 done 02:46:02 ===
+=== TC-Transversal start 2026-09-19 02:46:02 ===
+=== TC-Transversal exit=0 done 02:46:07 ===
+=== TC-IdealCount start 2026-09-19 02:46:07 ===
+=== TC-IdealCount exit=0 done 02:46:14 ===
+=== TC-DiscriminantBasic start 2026-09-19 02:46:14 ===
+=== TC-DiscriminantBasic exit=0 done 02:46:18 ===
+=== TC-UnitSquares start 2026-09-19 02:46:18 ===
+=== TC-UnitSquares exit=0 done 02:46:23 ===
+=== TC-ClassNumber start 2026-09-19 02:46:23 ===
+=== TC-ClassNumber exit=0 done 02:46:30 ===
+=== TC-SquareClass start 2026-09-19 02:46:30 ===
+=== TC-SquareClass exit=0 done 02:46:34 ===
+=== EUD-Counting start 2026-09-19 02:46:34 ===
+=== EUD-Counting exit=0 done 02:46:47 ===
+=== EUD-PrimesMod4 start 2026-09-19 02:46:47 ===
+=== EUD-PrimesMod4 exit=-1 done 02:46:57 ===
+=== EUD-MultiquadraticField start 2026-09-19 02:46:57 ===
+=== EUD-MultiquadraticField exit=0 done 02:47:24 ===
+=== EUD-Discriminant start 2026-09-19 02:47:24 ===
+=== EUD-Discriminant exit=0 done 02:47:42 ===
+=== EUD-GeometricCore start 2026-09-19 02:47:42 ===
+=== EUD-GeometricCore exit=0 done 02:48:02 ===
+=== EUD-IdealFamily start 2026-09-19 02:48:02 ===
+=== EUD-IdealFamily exit=0 done 02:48:24 ===
+=== EUD-NormFibre start 2026-09-19 02:48:24 ===
+=== EUD-NormFibre exit=0 done 02:48:54 ===
+=== EUD-PointCount start 2026-09-19 02:48:54 ===
+=== EUD-PointCount exit=0 done 02:49:13 ===
+=== EUD-Main start 2026-09-19 02:49:13 ===
+=== EUD-Main exit=0 done 02:49:36 ===
+=== Erdos90b-entry start 2026-09-19 02:49:36 ===
+=== Erdos90b-entry exit=0 done 02:49:46 ===
+=== Audit90b start 2026-09-19 02:49:46 ===
+=== Audit90b exit=0 done 02:49:56 ===
+ALL DONE 2026-09-19 02:49:56
