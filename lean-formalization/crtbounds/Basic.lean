@@ -572,3 +572,52 @@ theorem signedNum_zero (L n : ℕ) :
   intro k hk
   simp
 
+
+/-- General single-coordinate evaluation for the corrected L-parameterized numerator. -/
+theorem signedNum_delta_general (L n p : ℕ) (hn : 1 ≤ p) (hpn : p ≤ n) :
+    signedNum L n (fun k => if k = p then (1 : ℤ) else 0) =
+      ((L / p : ℕ) : ℤ) := by
+  simp only [signedNum]
+  rw [Finset.sum_eq_single (p - 1)]
+  · have h1 : p - 1 + 1 = p := by omega
+    rw [if_pos h1, h1]
+    ring
+  · intro b hb hne
+    rw [if_neg (by omega)]
+    ring
+  · intro hcon
+    exact absurd (Finset.mem_range.mpr (by omega : p - 1 < n)) hcon
+
+/-- If p divides a positive L, then the single-coordinate numerator L/p is nonzero. -/
+theorem div_pos_of_dvd {L p : ℕ} (hL : 0 < L) (hp : 0 < p) (hd : p ∣ L) :
+    0 < L / p := by
+  have h1 : 1 ≤ L / p := (Nat.one_le_div_iff hp).mpr (Nat.le_of_dvd hL hd)
+  omega
+
+/-- The single-coordinate witness remains nonzero for every positive divisible L. -/
+theorem signedNum_delta_general_ne_zero {L n p : ℕ}
+    (hL : 0 < L) (hp : 0 < p) (hpn : p ≤ n) (hd : p ∣ L) :
+    signedNum L n (fun k => if k = p then (1 : ℤ) else 0) ≠ 0 := by
+  rw [signedNum_delta_general L n p hp hpn]
+  exact_mod_cast (Nat.ne_of_gt (div_pos_of_dvd hL hp hd))
+
+/-- Every signed numerator is the sum of its coordinate contributions. -/
+theorem signedNum_coord_decomposition (L n : ℕ) (e : ℕ → ℤ) :
+    signedNum L n e =
+      ∑ k ∈ Finset.range n,
+        e (k + 1) * signedNum L n (fun j => if j = k + 1 then (1 : ℤ) else 0) := by
+  have hdelta : ∀ k ∈ Finset.range n,
+      signedNum L n (fun j => if j = k + 1 then (1 : ℤ) else 0) =
+        ((L / (k + 1) : ℕ) : ℤ) := by
+    intro k hk
+    have hklt : k < n := Finset.mem_range.mp hk
+    exact signedNum_delta_general L n (k + 1) (by omega) (by omega)
+  have hcoord :
+      (∑ k ∈ Finset.range n,
+        e (k + 1) * signedNum L n (fun j => if j = k + 1 then (1 : ℤ) else 0)) =
+      ∑ k ∈ Finset.range n, e (k + 1) * ((L / (k + 1) : ℕ) : ℤ) := by
+    apply Finset.sum_congr rfl
+    intro k hk
+    rw [hdelta k hk]
+  rw [hcoord]
+  simp only [signedNum]
