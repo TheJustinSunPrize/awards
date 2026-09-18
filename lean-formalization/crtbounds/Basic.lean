@@ -449,3 +449,50 @@ theorem graham_lower_bound (n : ℕ) (hn : 4 ≤ n) (eps : ℕ → ℤ) (hv : va
   constructor
   · exact signedNum_abs_pos n eps hne
   · exact fun p hp heps => crt_mod_nonzero n hn eps hv hp heps
+
+-- ========== 上界: f(n) ≤ 1/p 构造性证明 ==========
+
+/-- 单点符号 (delta 函数) 的求值: eps_p = 1, 其余为 0 ⟹ m = L/p -/
+theorem signedNum_delta (n p : ℕ) (hn : 1 ≤ p) (hpn : p ≤ n) :
+    signedNum (lcmUpTo n) n (fun k => if k = p then (1:ℤ) else 0)
+      = ((lcmUpTo n / p : ℕ) : ℤ) := by
+  simp only [signedNum]
+  rw [Finset.sum_eq_single (p - 1)]
+  · have h1 : p - 1 + 1 = p := by omega
+    rw [if_pos (show p - 1 + 1 = p from h1), h1]
+    ring
+  · intro b hb hne
+    rw [if_neg (by omega)]
+    ring
+  · intro hcon
+    exact absurd (Finset.mem_range.mpr (by omega : p - 1 < n)) hcon
+
+/-- 单点符号是合法的 -/
+theorem validSign_delta (n p : ℕ) (hn : 1 ≤ p) : validSign n (fun k => if k = p then (1:ℤ) else 0) := by
+  intro k h1 h2
+  simp only [Set.mem_insert_iff, Set.mem_singleton_iff]
+  by_cases hk : k = p
+  · rw [if_pos hk]
+    exact Or.inr (Or.inr rfl)
+  · rw [if_neg hk]
+    exact Or.inr (Or.inl rfl)
+
+/-- **Graham 上界**: f(n) ≤ 1/p 对任何窗口素数 p
+    构造: eps_p = 1, 其余 = 0, 则 m = L/p ≠ 0, |m|/L = 1/p -/
+theorem graham_upper_bound (n : ℕ) (hn : 4 ≤ n) {p : ℕ} (hp : p ∈ windowPrimes n) :
+    ∃ eps : ℕ → ℤ, validSign n eps ∧
+      signedNum (lcmUpTo n) n eps ≠ 0 ∧
+      |signedNum (lcmUpTo n) n eps| = ((lcmUpTo n / p : ℕ) : ℤ) := by
+  have hp3 : 3 ≤ p := window_prime_ge_three hn hp
+  set eps : ℕ → ℤ := fun k => if k = p then (1:ℤ) else 0 with heps_def
+  refine ⟨eps, validSign_delta n p (by omega), ?_, ?_⟩
+  · have hle : p ≤ lcmUpTo n := Nat.le_of_dvd (lcmUpTo_pos n) (window_prime_dvd hp)
+    have h1 : 1 ≤ lcmUpTo n / p := (Nat.le_div_iff_mul_le (k := p) (by omega)).mpr (by rw [Nat.one_mul]; exact hle)
+    have hne : ((lcmUpTo n / p : ℕ) : ℤ) ≠ 0 := by exact_mod_cast (Nat.one_le_iff_ne_zero.mp h1)
+    rw [signedNum_delta n p (by omega) (window_prime_hle hp)]
+    exact hne
+  · rw [signedNum_delta n p (by omega) (window_prime_hle hp)]
+    have hle : p ≤ lcmUpTo n := Nat.le_of_dvd (lcmUpTo_pos n) (window_prime_dvd hp)
+    have h1 : 1 ≤ lcmUpTo n / p := (Nat.le_div_iff_mul_le (k := p) (by omega)).mpr (by rw [Nat.one_mul]; exact hle)
+    have hpos : 0 < ((lcmUpTo n / p : ℕ) : ℤ) := by exact_mod_cast h1
+    exact abs_of_pos hpos
