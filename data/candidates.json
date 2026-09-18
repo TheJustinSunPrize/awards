@@ -1,4 +1,46 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000307-consecutive-decreasing-lpf-witness-v1",
+        "batch": null,
+        "problem": {
+          "source": "jsp",
+          "number": 307,
+          "title_en": "Erdős 307 — Three consecutive integers with strictly decreasing largest prime factors",
+          "posed": {
+            "year": 1978,
+            "basis": "earliest-reference",
+            "citation": "[ErPo78] Erdős and Pomerance, On the largest prime factors of n and n+1, Aequationes Math. (1978), 311-321."
+          },
+          "resolved": {
+            "year": 2001
+          }
+        },
+        "decision": null,
+        "recipients": [
+          {
+            "id": "RECIPIENT-jsp-000307-LYSSOM-A",
+            "affiliation": "",
+            "contribution_en": "Lean 4 / Mathlib v4.33.0 formalization of the existence statement\n(witness n = 13). Lean author: lyssom, with AI assistance from\nMiniMax-M3 (human-AI collaborative team). Mathematical credit\nremains with Erdős, Pomerance (1978), and Balog (2001).\n",
+            "confirmation": null
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "draft",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000307-consecutive-decreasing-lpf-witness-v1",
+      "citation": "# Citation\n\n## English\n\nObservation candidate for JSP-000307 (Erdős problem 307): \"Can three\nconsecutive integers have strictly decreasing largest prime factors?\"\n\nThe catalog records the problem as Solved with the deeper Balog 2001\nresult (infinitely many such triples exist). This observation records\nonly the **existence** of one witness triple, proved by a complete\nLean 4 / Mathlib v4.33.0 formalization at\nhttps://github.com/lyssom/jsp-000307-lean.\n\nWitness: `n = 13`. The triple (13, 14, 15) has largest prime factors\n(13, 7, 5), with `13 > 7 > 5`.\n\nTheorem (`JSP000307.JSP_307`):\n\n```lean\n∃ n : ℕ, IsLPF n 13 ∧ IsLPF (n + 1) 7 ∧ IsLPF (n + 2) 5 ∧ 13 > 7 ∧ 7 > 5\n```\n\nScope honesty: this formalization does NOT formalize the Balog 2001\n\"infinitely many\" theorem. It only proves that at least one such\ntriple exists. Tier evaluation should reflect \"Partial Progress /\nContribution\" rather than full resolution.\n\nAxiom audit: every proved theorem depends only on `[propext,\nClassical.choice, Quot.sound]`. No `sorry`, no `admit`, no\n`native_decide` trust oracle, no custom mathematical axioms.\nThis matches the gold standard of `plby/lean-proofs` in the\nupstream `TheJustinSunPrize/awards` repo.\n\nToolchain (pinned, immutable): Lean v4.33.0, Mathlib v4.33.0.",
+      "recipients": "# Recipients\n\n## English\n\nAll recipients are recorded under placeholders. No real-name identity\nhas been confirmed for this entry.\n\n`RECIPIENT-jsp-000307-LYSSOM-A` — Lean 4 / Mathlib v4.33.0\nformalization author (with AI assistance from MiniMax-M3). Pending\nwritten confirmation and matching `people/recipients/` profile with\n`publication_consent` URL.\n\nThe mathematical problem was solved (and the deeper \"infinitely many\"\nresult proved) by Erdős, Pomerance, and Balog — credit remains with\nthem and is recorded in the catalog entry's citation, not in this\ncandidate record.",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }

@@ -1,0 +1,29 @@
+id: jsp-000307-consecutive-decreasing-lpf-witness-v1
+batch: null
+problem:
+  source: jsp
+  number: 307
+  title_en: "Erdős 307 — Three consecutive integers with strictly decreasing largest prime factors"
+  posed:
+    year: 1978
+    basis: earliest-reference
+    citation: "[ErPo78] Erdős and Pomerance, On the largest prime factors of n and n+1, Aequationes Math. (1978), 311-321."
+  resolved:
+    year: 2001
+decision: null
+recipients:
+  - id: RECIPIENT-jsp-000307-LYSSOM-A
+    affiliation: ""
+    contribution_en: |
+      Lean 4 / Mathlib v4.33.0 formalization of the existence statement
+      (witness n = 13). Lean author: lyssom, with AI assistance from
+      MiniMax-M3 (human-AI collaborative team). Mathematical credit
+      remains with Erdős, Pomerance (1978), and Balog (2001).
+    confirmation: null
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: draft
+revocation: null
