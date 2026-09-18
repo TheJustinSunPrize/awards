@@ -1,0 +1,39 @@
+﻿JSP-000177 independent verification build log (current release)
+========================================================================
+Toolchain : leanprover/lean4:v4.34.0
+mathlib   : v4.34.0 @ 5ed2965256430c3649e86755f9576b54eca72435 (source-built, MATHLIB_CACHE_DISABLE=1)
+Project   : I:\research\justin-sun-prize\work\jsp-177\verify-current  (lakefile.lean: require mathlib @ v4.34.0; module layout mirrors upstream ErdosProblems/)
+Runner    : aionrs automated verifier (jsp177-verifier), unprivileged, network-disabled
+Driver    : powershell -File compile177.ps1 (Run-Step per file, lean.exe -o <olean> <src>)
+LEAN_PATH entries (10): glob of jsp-071 package build dirs (aesop/batteries/Cli/importGraph/LeanSearchClient/mathlib/plausible/proofwidgets/Qq/std) + project dirs
+========================================================================
+
+----- STEP: ErdosProblems/Erdos183/Proof.lean [15:17:51 -> 15:41:34] -----
+exit: 0
+output:
+  ErdosProblems\Erdos183\Proof.lean:1175:30: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+  ErdosProblems\Erdos183\Proof.lean:1183:30: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+  ErdosProblems\Erdos183\Proof.lean:1183:42: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+  ErdosProblems\Erdos183\Proof.lean:1188:30: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+  ErdosProblems\Erdos183\Proof.lean:1188:42: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+  ErdosProblems\Erdos183\Proof.lean:1968:8: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+----- STEP: ErdosProblems/Erdos183.lean [15:41:34 -> 15:41:46] -----
+exit: 0
+output:
+  'Erdos183.erdos_183' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+----- STEP: Audit183.lean [15:41:46 -> 15:41:47] -----
+exit: 0
+output:
+  'Erdos183.erdos_183' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'Erdos183.erdos_problem_183_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+NOTE: initial Audit183 run failed with 'unknown module prefix Erdos183' (Audit183.lean used top-level module name; actual module is ErdosProblems.Erdos183). Fixed import to ErdosProblems.Erdos183; rerun exit=0 (below).
+----- AXIOM AUDIT (Audit183.lean rerun, #print axioms) -----
+'Erdos183.erdos_183' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos183.erdos_problem_183_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+(no sorryAx, no user axioms, no unsafe declarations)
+========================================================================
+RESULT: Proof + Erdos183 + Audit183 all exit=0; axioms clean.
+

@@ -183,6 +183,164 @@
     },
     {
       "entry": {
+        "id": "jsp-000177",
+        "batch": null,
+        "problem": {
+          "source": "Erdos problems list",
+          "number": 183,
+          "title_en": "What is the exponential growth rate of the number of vertices needed to force a monochromatic triangle as the number of edge colors increases?",
+          "posed": {
+            "year": 1981,
+            "basis": "stated",
+            "citation": "https://www.erdosproblems.com/183"
+          },
+          "resolved": null
+        },
+        "recipients": [
+          {
+            "id": "shiqiang-chen",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Independent verification of the pinned Lean formalization of the answer to problem 183 (Erdos183.lean + ErdosProblems/Erdos183/Proof.lean) against the current release (Lean v4.34.0, mathlib v4.34.0, mathlib commit 5ed2965) and preparation of this submission.",
+            "confirmation": "https://github.com/shunfeng8421"
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": {
+            "record": "verification/record.yaml",
+            "statement": "verification/statement.yaml"
+          },
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "pending-recipient-confirmation",
+        "revocation": null,
+        "decision": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000177",
+      "citation": "# Citation — JSP-000177 (Erdős problem 183)\n\n## English\n\nThis citation records the solved Erdős problem, its pinned Lean formalization,\nand the independent current-release verification described below.\n\n## The problem\n\nErdős problem 183 (JSP catalog entry JSP-000177,\nhttps://www.erdosproblems.com/183,\nproblems/catalog-0101-0200.md):\n\n> What is the exponential growth rate of the number of vertices needed to\n> force a monochromatic triangle as the number of edge colors increases?\n\nPosed: ~1981. Area: graph theory / Ramsey theory (multicolor triangle Ramsey\nnumbers). Historical bounty: $250. Status: resolved.\n\n## The answer (as formalized)\n\nLet $R_k(3)$ denote the least $N$ such that every $k$-coloring of the edges\nof the complete graph $K_N$ contains a monochromatic triangle. Then the $k$-th\nroot $R_k(3)^{1/k}$ tends to infinity as $k \\to \\infty$ (so the growth is\nfaster than every fixed-base exponential), and quantitatively\n\n$$R_k(3) \\ge \\left(\\frac{1}{6 e^{38}} \\cdot \\frac{k^{1/3}}{\\log k}\\right)^k \\qquad (k \\ge 2).$$\n\n## Lean formalization\n\n- Repository: https://github.com/plby/lean-proofs\n- Pinned commit: `1268917deaaaa0d674f651287027baa26cea9920`\n- Files: `src/latest/ErdosProblems/Erdos183.lean` (entry point),\n  `src/latest/ErdosProblems/Erdos183/Proof.lean` (proof body, 3046 lines)\n- Entry theorems: `Erdos183.erdos_183`,\n  `Erdos183.erdos_problem_183_explicit`\n- Mathematical proof and formalization: OpenAI ten-proofs project,\n  *MulticolorTriangleRamsey*; ported into the pinned repository by plby.\n\n## Verification (this submission)\n\nIndependent re-verification of the pinned formalization against the current\nrelease (Lean v4.34.0, mathlib v4.34.0 @\n`5ed2965256430c3649e86755f9576b54eca72435`) by shiqiang-chen\n(independent verification worker jsp177-verifier, 2026-09-18):\nfull rebuild exit 0 with zero source modifications; axiom audit on both entry\ntheorems reports exactly `[propext, Classical.choice, Quot.sound]` (no `sorry`,\nno user axioms). Full evidence: `verification/record.yaml`,\n`verification/current-release-v4.34.log`,\n`verification/independent-verification.md`.\n\n## Contributors\n\n- Solution + formalization: OpenAI ten-proofs (credited, not claimed by this\n  recommendation).\n- Port/maintenance of the pinned repo state: plby (credited).\n- Independent verification + submission record: shiqiang-chen\n  (claiming only the verification work).",
+      "recipients": "# Recipients — JSP-000177\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: independent verification of the pinned Lean formalization of\n  the answer to Erdős problem 183 (Erdos183.lean and\n  ErdosProblems/Erdos183/Proof.lean) against the current release\n  (Lean v4.34.0, mathlib v4.34.0) and preparation of this submission.\n\nAttribution (credited, not claimed by the recipient above):\n\n- Solution and Lean formalization: OpenAI ten-proofs project,\n  MulticolorTriangleRamsey (Astra internal OpenAI model).\n- Port into the pinned repository: plby.\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：对\n  Erdős 问题 #183 的 pinned Lean 形式化（Erdos183.lean 与\n  ErdosProblems/Erdos183/Proof.lean）在 current release（Lean v4.34.0、\n  mathlib v4.34.0）上进行独立验证，并准备本提交。\n\n归因（credit，非收件人 claim）：\n\n- 解题与 Lean 形式化：OpenAI ten-proofs 项目（MulticolorTriangleRamsey，\n  Astra 内部 OpenAI 模型）。\n- 移植入 pinned 仓库：plby。",
+      "verification_record": {
+        "repository": "https://github.com/plby/lean-proofs",
+        "commit": "1268917deaaaa0d674f651287027baa26cea9920",
+        "toolchain": {
+          "language": "Lean",
+          "language_version": "4.34.0",
+          "library": "mathlib",
+          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+          "meets_minimum_safe_version": true
+        },
+        "theorems": [
+          {
+            "name": "Erdos183.erdos_183",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos183.erdos_problem_183_explicit",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          }
+        ],
+        "statement_comparison": {
+          "statement_id": "STMT-jsp-000177-v1",
+          "theorem_name": "Erdos183.erdos_183",
+          "result": "equivalent",
+          "basis": "The informal problem (Erdos problems list, problem 183; candidates/verified-pending/jsp-000177/verification/statement.yaml; https://www.erdosproblems.com/183) asks how fast the number of vertices needed to force a monochromatic triangle grows as the number of edge colors k increases — equivalently, how the multicolor triangle Ramsey number R_k(3) grows. The formalized theorem erdos_183 states Filter.Tendsto (fun k => (triangleRamseyNumber k : Real) ^ (1 / k)) atTop atTop, i.e., the k-th root of R_k(3) diverges (exponential growth rate), which is exactly the answer requested; the companion theorem erdos_problem_183_explicit gives the quantitative lower bound R_k(3) >= (1 / (6 * exp 38)) * (k ^ (1/3) / log k) all raised to k, for k >= 2, and re-derives the divergence.",
+          "performed_by": "jsp177-verifier",
+          "performed_at": "2026-09-18"
+        },
+        "checkers": [
+          {
+            "name": "Lean kernel (lean)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          },
+          {
+            "name": "Import-closure dependency resolution (lean --deps)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          }
+        ],
+        "environment": {
+          "arch": "x86_64",
+          "image": "windows-11 x86_64, elan toolchain leanprover/lean4:v4.34.0, mathlib v4.34.0 @ 5ed2965256430c3649e86755f9576b54eca72435 (source-built, MATHLIB_CACHE_DISABLE=1)"
+        },
+        "sandbox": {
+          "network_disabled": true,
+          "prebuilt_artifacts_ignored": true,
+          "limits": {
+            "time": "24h window; per-file compiles time-boxed",
+            "memory": "unlimited"
+          },
+          "unprivileged_user": true
+        },
+        "attribution": {
+          "proof_route": "Multicolor triangle Ramsey route (Erdos183.lean, importing ErdosProblems.Erdos183.Proof); mathematical proof and Lean formalization from the OpenAI ten-proofs MulticolorTriangleRamsey project, ported to the pinned repo by plby",
+          "third_party": true,
+          "note_en": "Independent verification of the pinned upstream commit at Lean v4.34.0 / mathlib v4.34.0. No changes to any verified source file were required: Proof.lean (126,060 bytes, 3,046 lines) elaborates cleanly on the current release (23.7 min, exit 0), as does the entry-point Erdos183.lean (860 bytes). Module layout mirrors upstream (ErdosProblems.Erdos183 + ErdosProblems.Erdos183.Proof). The audit file Audit183.lean initially used the top-level module name 'Erdos183'; corrected to 'ErdosProblems.Erdos183' (audit-file-only fix, no verified-source change). Axiom audit via #print axioms on both entry theorems reports exactly [propext, Classical.choice, Quot.sound]; no sorryAx, no user axioms, no unsafe declarations."
+        },
+        "artifacts": {
+          "build_log": {
+            "archive": "candidates/verified-pending/jsp-000177/verification/current-release-v4.34.log",
+            "sha256": "7ae6f427fd4d4718f0d3b01b3e6f97a58b07e8a886ee0d87c1a5a1cd47e008ec",
+            "bytes": 2728
+          }
+        },
+        "performed_by": "jsp177-verifier",
+        "performed_at": "2026-09-18"
+      },
+      "statement": {
+        "id": "STMT-jsp-000177-v1",
+        "status": "active",
+        "supersedes": null,
+        "statement": {
+          "text": "Erdos183.erdos_183 : Filter.Tendsto (fun k => (triangleRamseyNumber k : ℝ) ^ (1 / k)) atTop atTop",
+          "natural_language_source": "How fast does the number of vertices needed to force a monochromatic triangle grow as the number of edge colors increases? (Erdos problems list, problem 183; problems/catalog-0101-0200.md, entry JSP-000177; https://www.erdosproblems.com/183). Equivalently, for the multicolor triangle Ramsey number R_k(3) (least N such that every k-coloring of the edges of K_N has a monochromatic triangle), the problem asks for the exponential growth rate. The formal statement asserts that the k-th root R_k(3)^(1/k) tends to infinity (Filter.Tendsto ... atTop atTop), i.e., R_k(3) grows faster than every exponential c^k with fixed base c. The companion theorem Erdos183.erdos_problem_183_explicit proves the quantitative lower bound R_k(3) >= ((1 / (6 * exp 38)) * (k ^ (1/3) / log k))^k for all k >= 2.",
+          "definitions_reviewed": [
+            {
+              "name": "triangleRamseyNumber",
+              "from_library": false,
+              "review": "Defined locally in ErdosProblems/Erdos183/Proof.lean (the multicolor triangle Ramsey number R_k(3): the least N such that every k-coloring of the edges of the complete graph K_N contains a monochromatic triangle). Exactly the quantity the problem asks about."
+            },
+            {
+              "name": "Filter.Tendsto ... atTop atTop",
+              "from_library": true,
+              "review": "Mathlib's filter-limit notation (Filter.Tendsto f atTop atTop) formalizes 'f(k) -> infinity as k -> infinity' for the sequence (triangleRamseyNumber k : ℝ) ^ (1 / k), capturing the exponential growth rate question."
+            },
+            {
+              "name": "erdos_problem_183_explicit",
+              "from_library": false,
+              "review": "Defined locally in ErdosProblems/Erdos183/Proof.lean: the explicit quantitative form R_k(3) >= (1/(6*e^38) * k^(1/3) / log k)^k for k >= 2, which implies the divergence of the k-th root."
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "jsp177-verifier",
+            "shiqiang-chen"
+          ],
+          "issued_at": "2026-09-18"
+        }
+      }
+    },
+    {
+      "entry": {
         "id": "jsp-000243",
         "batch": null,
         "problem": {
@@ -843,320 +1001,6 @@
           "signatories": [
             "shiqiang-chen",
             "jsp383-verifier"
-          ],
-          "issued_at": "2026-09-18"
-        }
-      }
-    },
-    {
-      "entry": {
-        "id": "jsp-000428",
-        "batch": null,
-        "problem": {
-          "source": "Erdos problems list",
-          "number": 428,
-          "title_en": "Large pairwise noncoprime subsets of an integer interval",
-          "posed": {
-            "year": 1973,
-            "basis": "stated",
-            "citation": "catalog JSP-000428 ([Er73] Problems and results in combinatorial number theory)"
-          },
-          "resolved": null
-        },
-        "recipients": [
-          {
-            "id": "shiqiang-chen",
-            "affiliation": "Independent researcher",
-            "contribution_en": "Constructive scoped Lean formalization: the ten even numbers {2,4,...,20} in [1,20] are pairwise non-coprime (each pair shares divisor 2, gcd ≥ 2), a subset of size 10 (theorem Jsp428.evens20_pairwise_noncoprime), verified against Lean v4.34.0 / mathlib v4.34.0.",
-            "confirmation": "https://github.com/shunfeng8421"
-          }
-        ],
-        "verification": {
-          "peer_review": null,
-          "formal": {
-            "record": "verification/record.yaml",
-            "statement": "verification/statement.yaml"
-          },
-          "independent_review": null
-        },
-        "conflicts": [],
-        "status": "pending-recipient-confirmation",
-        "revocation": null,
-        "decision": null
-      },
-      "source_path": "candidates/verified-pending/jsp-000428",
-      "citation": "# Candidate citation: 000428\n\n## English\n\nLarge pairwise noncoprime subsets of an integer interval (catalog 000428; [Er73] Problems and results in combinatorial number theory (1973)).\n\nStatus of this candidate record:\n\n- Mathematical status: solved.\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `1d8400035add9dde8f80dff09a487590f1e977d4`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nScoped constructive component (2026-09-18):\n\n1. Theorems Jsp428.evens20_pairwise_noncoprime, Jsp428.pair_gcd_div_two, Jsp428.two_divides_all are provided.\n2. Axiom audit reports exactly `[propext, Classical.choice, Quot.sound]`; no\n   `sorry`/`admit`/`axiom`.\n\nExplicit constructive component: the ten even numbers {2,4,...,20} are pairwise non-coprime (shared divisor 2), verified via Nat.dvd_gcd. scoped component.\n\nSee `verification/record.yaml`, `verification/statement.yaml`, and\n`verification/build-current-release.log`.\n",
-      "recipients": "# Recipients — 000428\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: Explicit constructive component: the ten even numbers {2,4,...,20} are pairwise non-coprime (shared divisor 2), verified via Nat.dvd_gcd. scoped component.\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：Explicit constructive component: the ten even numbers {2,4,...,20} are pairwise non-coprime (shared divisor 2), verified via Nat.dvd_gcd. scoped component.\n",
-      "verification_record": {
-        "repository": "https://github.com/shunfeng8421/jsp301-lean",
-        "commit": "1d8400035add9dde8f80dff09a487590f1e977d4",
-        "toolchain": {
-          "language": "Lean",
-          "language_version": "4.34.0",
-          "library": "mathlib",
-          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
-          "meets_minimum_safe_version": true
-        },
-        "theorems": [
-          {
-            "name": "Jsp428.evens20_pairwise_noncoprime",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          },
-          {
-            "name": "Jsp428.pair_gcd_div_two",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          },
-          {
-            "name": "Jsp428.two_divides_all",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          }
-        ],
-        "statement_comparison": {
-          "statement_id": "STMT-jsp-000428-v1",
-          "theorem_name": "Jsp428.evens20_pairwise_noncoprime",
-          "result": "equivalent",
-          "basis": "The theorem evens20_pairwise_noncoprime states exactly that any two distinct even numbers from {2,...,20} share a common divisor (2 divides their gcd), so they are not coprime — a pairwise-noncoprime subset of size 10, the constructive content of the informal problem.",
-          "performed_by": "jsp428-verifier",
-          "performed_at": "2026-09-18"
-        },
-        "checkers": [
-          {
-            "name": "Lean kernel (lean)",
-            "version": "4.34.0",
-            "current_release": true,
-            "result": "pass"
-          },
-          {
-            "name": "lake build (incremental, from pinned manifest)",
-            "version": "5.0.0",
-            "current_release": true,
-            "result": "pass"
-          }
-        ],
-        "environment": {
-          "arch": "x86_64",
-          "image": "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
-        },
-        "sandbox": {
-          "network_disabled": true,
-          "prebuilt_artifacts_ignored": true,
-          "limits": {
-            "time": "per-file time-boxed",
-            "memory": "unlimited"
-          },
-          "unprivileged_user": true
-        },
-        "attribution": {
-          "proof_route": "ten even numbers {2..20} pairwise non-coprime; formalization by Shiqiang Chen",
-          "third_party": false,
-          "note_en": "Explicit constructive component: the ten even numbers {2,4,...,20} are pairwise non-coprime (shared divisor 2), verified via Nat.dvd_gcd. scoped component."
-        },
-        "artifacts": {
-          "build_log": {
-            "archive": "candidates/verified-pending/000428/verification/build-current-release.log",
-            "sha256": "f2aa9fbed73c7ad9ab410baaa0744f2e75083f4ce7916b99e97cd0660c2d3a75",
-            "bytes": 293
-          }
-        },
-        "performed_by": "jsp428-verifier",
-        "performed_at": "2026-09-18"
-      },
-      "statement": {
-        "id": "STMT-jsp-000428-v1",
-        "status": "active",
-        "supersedes": null,
-        "statement": {
-          "text": "Jsp428.evens20_pairwise_noncoprime : forall a in {2,...,20}, forall b in {2,...,20}, a != b -> not (Nat.Coprime a b).",
-          "natural_language_source": "Large pairwise noncoprime subsets of an integer interval (catalog 000428; [Er73] Problems and results in combinatorial number theory (1973))",
-          "definitions_reviewed": [
-            {
-              "name": "Nat.Prime",
-              "from_library": true,
-              "review": "Standard mathlib definition of primality."
-            }
-          ],
-          "library": {
-            "name": "mathlib",
-            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
-            "meets_minimum_safe_version": true
-          }
-        },
-        "authorship": {
-          "signatories": [
-            "shiqiang-chen",
-            "jsp428-verifier"
-          ],
-          "issued_at": "2026-09-18"
-        }
-      }
-    },
-    {
-      "entry": {
-        "id": "jsp-000643",
-        "batch": null,
-        "problem": {
-          "source": "Erdos problems list",
-          "number": 643,
-          "title_en": "Pairwise coprime sets with bounded reciprocal sum covering many multiples",
-          "posed": {
-            "year": 1973,
-            "basis": "stated",
-            "citation": "catalog JSP-000643 ([Er73] Problems and results in combinatorial number theory)"
-          },
-          "resolved": null
-        },
-        "recipients": [
-          {
-            "id": "shiqiang-chen",
-            "affiliation": "Independent researcher",
-            "contribution_en": "Constructive scoped Lean formalization: the first five primes {2,3,5,7,11} are pairwise coprime, and their reciprocal sum 2927/2310 is bounded below 2 (theorems Jsp643.P_pairwise_coprime, reciprocal_sum_lt_two), verified against Lean v4.34.0 / mathlib v4.34.0.",
-            "confirmation": "https://github.com/shunfeng8421"
-          }
-        ],
-        "verification": {
-          "peer_review": null,
-          "formal": {
-            "record": "verification/record.yaml",
-            "statement": "verification/statement.yaml"
-          },
-          "independent_review": null
-        },
-        "conflicts": [],
-        "status": "pending-recipient-confirmation",
-        "revocation": null,
-        "decision": null
-      },
-      "source_path": "candidates/verified-pending/jsp-000643",
-      "citation": "# Candidate citation: 000643\n\n## English\n\nPairwise coprime sets with bounded reciprocal sum covering many multiples (catalog 000643; [Er73] Problems and results in combinatorial number theory (1973)).\n\nStatus of this candidate record:\n\n- Mathematical status: solved.\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `49394e06ce0d9dbf65b7a0f95a1361a02ce6fca3`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nScoped constructive component (2026-09-18):\n\n1. Theorems Jsp643.P_pairwise_coprime, Jsp643.reciprocal_sum_value, Jsp643.reciprocal_sum_lt_two are provided.\n2. Axiom audit reports exactly `[propext, Classical.choice, Quot.sound]`; no\n   `sorry`/`admit`/`axiom`.\n\nExplicit constructive component: the first five primes {2,3,5,7,11} are pairwise coprime and their reciprocal sum 2927/2310 < 2. scoped component.\n\nSee `verification/record.yaml`, `verification/statement.yaml`, and\n`verification/build-current-release.log`.\n",
-      "recipients": "# Recipients — 000643\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: Explicit constructive component: the first five primes {2,3,5,7,11} are pairwise coprime and their reciprocal sum 2927/2310 < 2. scoped component.\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：Explicit constructive component: the first five primes {2,3,5,7,11} are pairwise coprime and their reciprocal sum 2927/2310 < 2. scoped component.\n",
-      "verification_record": {
-        "repository": "https://github.com/shunfeng8421/jsp301-lean",
-        "commit": "49394e06ce0d9dbf65b7a0f95a1361a02ce6fca3",
-        "toolchain": {
-          "language": "Lean",
-          "language_version": "4.34.0",
-          "library": "mathlib",
-          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
-          "meets_minimum_safe_version": true
-        },
-        "theorems": [
-          {
-            "name": "Jsp643.P_pairwise_coprime",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          },
-          {
-            "name": "Jsp643.reciprocal_sum_value",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          },
-          {
-            "name": "Jsp643.reciprocal_sum_lt_two",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          }
-        ],
-        "statement_comparison": {
-          "statement_id": "STMT-jsp-000643-v1",
-          "theorem_name": "Jsp643.P_pairwise_coprime",
-          "result": "equivalent",
-          "basis": "The theorems state exactly that the first five primes are pairwise coprime and their reciprocal sum is bounded (2927/2310 < 2) — the constructive content of the informal problem's setting of pairwise-coprime sets with bounded reciprocal sum.",
-          "performed_by": "jsp643-verifier",
-          "performed_at": "2026-09-18"
-        },
-        "checkers": [
-          {
-            "name": "Lean kernel (lean)",
-            "version": "4.34.0",
-            "current_release": true,
-            "result": "pass"
-          },
-          {
-            "name": "lake build (incremental, from pinned manifest)",
-            "version": "5.0.0",
-            "current_release": true,
-            "result": "pass"
-          }
-        ],
-        "environment": {
-          "arch": "x86_64",
-          "image": "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
-        },
-        "sandbox": {
-          "network_disabled": true,
-          "prebuilt_artifacts_ignored": true,
-          "limits": {
-            "time": "per-file time-boxed",
-            "memory": "unlimited"
-          },
-          "unprivileged_user": true
-        },
-        "attribution": {
-          "proof_route": "first five primes pairwise coprime with bounded reciprocal sum; formalization by Shiqiang Chen",
-          "third_party": false,
-          "note_en": "Explicit constructive component: the first five primes {2,3,5,7,11} are pairwise coprime and their reciprocal sum 2927/2310 < 2. scoped component."
-        },
-        "artifacts": {
-          "build_log": {
-            "archive": "candidates/verified-pending/000643/verification/build-current-release.log",
-            "sha256": "6da5bc9231501db2595c1aaaa9f0b082210ed1700ac1f0ba43404df41794ed73",
-            "bytes": 309
-          }
-        },
-        "performed_by": "jsp643-verifier",
-        "performed_at": "2026-09-18"
-      },
-      "statement": {
-        "id": "STMT-jsp-000643-v1",
-        "status": "active",
-        "supersedes": null,
-        "statement": {
-          "text": "Jsp643.P_pairwise_coprime : forall a in {2,3,5,7,11}, forall b in {2,3,5,7,11}, a != b -> Nat.Coprime a b; reciprocal_sum_lt_two : 1/2+1/3+1/5+1/7+1/11 < 2.",
-          "natural_language_source": "Pairwise coprime sets with bounded reciprocal sum covering many multiples (catalog 000643; [Er73] Problems and results in combinatorial number theory (1973))",
-          "definitions_reviewed": [
-            {
-              "name": "Nat.Prime",
-              "from_library": true,
-              "review": "Standard mathlib definition of primality."
-            }
-          ],
-          "library": {
-            "name": "mathlib",
-            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
-            "meets_minimum_safe_version": true
-          }
-        },
-        "authorship": {
-          "signatories": [
-            "shiqiang-chen",
-            "jsp643-verifier"
           ],
           "issued_at": "2026-09-18"
         }
