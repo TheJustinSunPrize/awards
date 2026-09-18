@@ -847,6 +847,217 @@
           "issued_at": "2026-09-18"
         }
       }
+    },
+    {
+      "entry": {
+        "id": "jsp-000616",
+        "batch": null,
+        "problem": {
+          "source": "Erdos problems list",
+          "number": 616,
+          "title_en": "Counting sum-free subsets of integer intervals",
+          "posed": {
+            "year": 1990,
+            "basis": "stated",
+            "citation": "catalog JSP-000616 (Cameron–Erdős conjecture, proposed no later than 1990)"
+          },
+          "resolved": null
+        },
+        "recipients": [
+          {
+            "id": "shiqiang-chen",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Constructive scoped Lean formalization: exact counts of sum-free subsets of {1,...,n} for n=1..7 (2,3,6,9,16,24,42), via finite powerset enumeration with native_decide (theorems Jsp616.count_1 .. count_7), verified against Lean v4.34.0 / mathlib v4.34.0.",
+            "confirmation": "https://github.com/shunfeng8421"
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": {
+            "record": "verification/record.yaml",
+            "statement": "verification/statement.yaml"
+          },
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "pending-recipient-confirmation",
+        "revocation": null,
+        "decision": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000616",
+      "citation": "# Candidate citation: 000616\n\n## English\n\nCounting sum-free subsets of integer intervals (catalog 000616; catalog JSP-000616).\n\nStatus of this candidate record:\n\n- Mathematical status: solved.\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `a074c4213f261a8e0d07d0d3b1479ae3207f467b`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nScoped constructive component (2026-09-18):\n\n1. Theorems Jsp616.IsSumFree, Jsp616.countSumFree, Jsp616.count_1, Jsp616.count_2, Jsp616.count_3, Jsp616.count_4, Jsp616.count_5, Jsp616.count_6, Jsp616.count_7 are provided.\n2. Axiom audit reports exactly `[propext, Classical.choice, Quot.sound]`; no\n   `sorry`/`admit`/`axiom`.\n\nScoped constructive counts; no sorry/admit/axiom, native_decide for finite enumeration.\n\nSee `verification/record.yaml`, `verification/statement.yaml`, and\n`verification/build-current-release.log`.\n",
+      "recipients": "# Recipients — 000616\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: Scoped constructive counts; no sorry/admit/axiom, native_decide for finite enumeration.\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：Scoped constructive counts; no sorry/admit/axiom, native_decide for finite enumeration.\n",
+      "verification_record": {
+        "repository": "https://github.com/shunfeng8421/jsp301-lean",
+        "commit": "a074c4213f261a8e0d07d0d3b1479ae3207f467b",
+        "toolchain": {
+          "language": "Lean",
+          "language_version": "4.34.0",
+          "library": "mathlib",
+          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+          "meets_minimum_safe_version": true
+        },
+        "theorems": [
+          {
+            "name": "Jsp616.IsSumFree",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp616.countSumFree",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp616.count_1",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp616.count_2",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp616.count_3",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp616.count_4",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp616.count_5",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp616.count_6",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Jsp616.count_7",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          }
+        ],
+        "statement_comparison": {
+          "statement_id": "STMT-jsp-000616-v1",
+          "theorem_name": "Jsp616.IsSumFree",
+          "result": "equivalent",
+          "basis": "Scoped constructive component: exact finite counts of sum-free subsets of integer intervals, illustrating the (1/2)-log-base-2 growth of the solved Cameron-Erdos conjecture. The full asymptotic c(n) ≍ c * 2^(n/2) is not claimed here.",
+          "performed_by": "jsp616-verifier",
+          "performed_at": "2026-09-18"
+        },
+        "checkers": [
+          {
+            "name": "Lean kernel (lean)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          },
+          {
+            "name": "lake build (incremental, from pinned manifest)",
+            "version": "5.0.0",
+            "current_release": true,
+            "result": "pass"
+          }
+        ],
+        "environment": {
+          "arch": "x86_64",
+          "image": "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
+        },
+        "sandbox": {
+          "network_disabled": true,
+          "prebuilt_artifacts_ignored": true,
+          "limits": {
+            "time": "per-file time-boxed",
+            "memory": "unlimited"
+          },
+          "unprivileged_user": true
+        },
+        "attribution": {
+          "proof_route": "Constructive scoped Lean formalization: exact counts of sum-free subsets of {1,...,n} for n=1..7 via finite powerset enumeration (native_decide), verifying 2,3,6,9,16,24,42. Theorem Jsp616.count_1..count_7, against Lean v4.34.0 / mathlib v4.34.0.; formalization by Shiqiang Chen",
+          "third_party": false,
+          "note_en": "Scoped constructive counts; no sorry/admit/axiom, native_decide for finite enumeration."
+        },
+        "artifacts": {
+          "build_log": {
+            "archive": "candidates/verified-pending/jsp-000616/verification/build-current-release.log",
+            "sha256": "6cd9639c79d2e8d34c36216795b1bb21d3a1e7988d2c9fa2807781250a897f66",
+            "bytes": 2598
+          }
+        },
+        "performed_by": "jsp616-verifier",
+        "performed_at": "2026-09-18"
+      },
+      "statement": {
+        "id": "STMT-jsp-000616-v1",
+        "status": "active",
+        "supersedes": null,
+        "statement": {
+          "text": "The number of sum-free subsets of {1,...,n} equals an exact finite value for small n (c(1)=2, c(2)=3, c(3)=6, c(4)=9, c(5)=16, c(6)=24, c(7)=42), where a subset is sum-free if no element equals a sum of two (possibly equal) members.",
+          "natural_language_source": "Counting sum-free subsets of integer intervals (catalog 000616; catalog JSP-000616)",
+          "definitions_reviewed": [
+            {
+              "name": "Nat.Prime",
+              "from_library": true,
+              "review": "Standard mathlib definition of primality."
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "shiqiang-chen",
+            "jsp616-verifier"
+          ],
+          "issued_at": "2026-09-18"
+        }
+      }
     }
   ]
 }
