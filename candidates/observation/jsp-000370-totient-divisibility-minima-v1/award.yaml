@@ -1,0 +1,20 @@
+id: jsp-000370-totient-divisibility-minima-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000370"
+  number: "JSP-000370"
+  title_en: "How large can the smallest integer whose totient is divisible by a prescribed positive integer be?"
+  posed:
+    year: 1979
+    basis: earliest-reference
+    citation: "no publication source recorded"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null

@@ -1,4 +1,37 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000370-totient-divisibility-minima-v1",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000370",
+          "number": "JSP-000370",
+          "title_en": "How large can the smallest integer whose totient is divisible by a prescribed positive integer be?",
+          "posed": {
+            "year": 1979,
+            "basis": "earliest-reference",
+            "citation": "no publication source recorded"
+          },
+          "resolved": null
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000370-totient-divisibility-minima-v1",
+      "citation": "# Candidate observation\n\n## English\n\nThis candidate observation is associated with [JSP-000370 — How large can the smallest integer whose totient is divisible by a prescribed positive integer be?](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000370). It publishes `Statement.lean` and `Proof.lean` for a complete, machine-checked Lean proof of two explicit instances concerning the least positive integer `n` with `k ∣ φ(n)`, where `φ` is Mathlib's `Nat.totient`. For `k = 6` the minimum is exactly `7 = 6 + 1` (`6 ∣ φ(7)`, and the totients `φ(1), …, φ(6) = 1, 1, 2, 2, 4, 2` are never divisible by `6`); for `k = 13` the minimum is exactly `53 = 4 · 13 + 1` (`13 ∣ φ(53)`, and no `1 ≤ m ≤ 52` satisfies `13 ∣ φ(m)`). Together the two instances show that the ratio of the minimum to `k` is not a fixed constant close to `1`: it equals `7 / 6` for `k = 6` but `53 / 13 > 4` for `k = 13`. **Scope: this observation verifies only the two explicit instances `k = 6` and `k = 13` (in each case the witness works and every smaller positive integer fails). How large the minimum can be for a general prescribed `k` — the actual catalog question — is not addressed, the catalogued problem is not resolved, and no award claim is made.** The catalog entry JSP-000370 remains Open.\n\nThe proof source is pinned to [Yaohua-Leo/jsp-000370-lean](https://github.com/Yaohua-Leo/jsp-000370-lean) at commit `6d62d8e0583b812e6851dca726f9fc8c37512a05` (branch `main`), built with Lean `leanprover/lean4:v4.35.0-rc2` and Mathlib v4.35.0-rc2 (revision `a218e50f981942cba4fd060faff7cae680805062`). `lake env lean JSP000370.lean` compiles with zero output, and `#print axioms` on every theorem reports dependencies only on `propext`, `Classical.choice`, and `Quot.sound`; the proofs contain no `sorry`, no `admit`, and no `native_decide`. These compiler results are reproducibility evidence for the stated formal theorem; they are not official JSP verification or award admission.\n\nAttribution: the totient-divisibility minimum question is an open problem in number theory recorded in the Justin Sun Prize catalog (JSP-000370, proposed no later than 1979, bibliographic evidence; no publication source); mathematical credit for the problem belongs to the number theory community. The formalization author is Yaohua-Leo (AI-assisted via ZCode (GLM)).\n\nThe candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.\n",
+      "recipients": "# Recipients\n\n## English\n\nNo recipient is identified in this preliminary observation. It makes no recipient, award, payment, or identity claim.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }
