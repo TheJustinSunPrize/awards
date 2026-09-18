@@ -1,0 +1,5 @@
+'Erdos1045.not_regularPolygonMaximises_four_and_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1045.erdos_1045_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1045.erdos_1045_six' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1045.delta_kite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1045.delta_reuleauxSix' depends on axioms: [propext, Classical.choice, Quot.sound]
