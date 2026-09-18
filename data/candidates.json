@@ -1,4 +1,37 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000139-f10-moore-bound-v1",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000139",
+          "number": "JSP-000139",
+          "title_en": "How large must the maximum degree of a triangle-free graph of diameter at most two be?",
+          "posed": {
+            "year": 1997,
+            "basis": "earliest-reference",
+            "citation": "https://doi.org/10.1016/S0012-365X(96)00173-2"
+          },
+          "resolved": null
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000139-f10-moore-bound-v1",
+      "citation": "# Candidate observation\n\n## English\n\nThis candidate observation is associated with [JSP-000139 — How large must the maximum degree of a triangle-free graph of diameter at most two be?](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000139). It publishes `Statement.lean` and `Proof.lean` for the source-faithful formalization of Erdős Problem 133: if `f(n)` is the least maximum degree of an `n`-vertex triangle-free graph of diameter at most two, then for every `n ≥ 64`, `sqrt(n) - 1 ≤ f(n) ≤ 4*sqrt(n)`, hence `f(n) = Θ(sqrt(n))` and `f(n)/sqrt(n)` does not tend to infinity. The formal source is pinned to [Erdos133.lean](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos133.lean), with the source record identifying David Hanson and Kathy Seyffarth for the mathematics and Codex/GPT-5.6 Sol for the formalization. **Claim boundary: complete theorem for this exact formalization.** It does not claim official JSP verification, award status, recipient identity, or independent review.\n\nA local Lean compilation and trust-level-zero replay were run with Lean 4.33.1 and the pinned Mathlib revision. These compiler results are reproducibility evidence for the stated formal theorem; they are not official JSP verification or award admission.\n\nThe candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.\n",
+      "recipients": "# Recipients\n\n## English\n\nNo recipient is identified in this preliminary observation. It makes no recipient, award, payment, or identity claim.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }

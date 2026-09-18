@@ -1,0 +1,20 @@
+id: jsp-000139-f10-moore-bound-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000139"
+  number: "JSP-000139"
+  title_en: "How large must the maximum degree of a triangle-free graph of diameter at most two be?"
+  posed:
+    year: 1997
+    basis: earliest-reference
+    citation: "https://doi.org/10.1016/S0012-365X(96)00173-2"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
