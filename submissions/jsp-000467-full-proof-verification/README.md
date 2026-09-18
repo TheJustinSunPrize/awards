@@ -65,7 +65,7 @@ by the submitting account is not official independent Prize verification.
 
 ## Review scope
 
-Related [PR #595](https://github.com/TheJustinSunPrize/awards/pull/595) and
+Related [PR #1195](https://github.com/TheJustinSunPrize/awards/pull/1195) and
 [issue #591](https://github.com/TheJustinSunPrize/awards/issues/591).
 Any attribution consideration for `RECIPIENT-JSP-000467-A` is limited to the
 new statement bridge, review, and verification tooling/evidence. No
