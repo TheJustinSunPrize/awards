@@ -1,0 +1,3 @@
+'JSP000359.mem_goodIndices_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000359.counting_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000359.counting_bound_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]

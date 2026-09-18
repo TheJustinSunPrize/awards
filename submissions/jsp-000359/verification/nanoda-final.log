@@ -1,0 +1,56 @@
+theorem JSP000359.original_problem :
+  And
+    (forall (a : Nat → Nat),
+    StrictMono a → (forall (i : Nat), LT.lt (OfNat.ofNat 0) (a i)) → (forall (x : Real),
+    LE.le (OfNat.ofNat 0) x → LE.le (Nat.cast (JSP000359.realCount a x)) (HMul.hMul (OfNat.ofNat 2) (Real.sqrt x))))
+    (IsGreatest
+      (setOf
+        (fun (c : Real) =>
+        Exists
+          (fun (a : Nat → Nat) =>
+          And (StrictMono a)
+            (And (forall (i : Nat), LT.lt (OfNat.ofNat 0) (a i))
+              (Eq (Filter.liminf (JSP000359.normalizedCount a) Filter.atTop) c))))) (OfNat.ofNat 1)) :=
+  _
+
+theorem JSP000359.mem_real_count_iff (a : Nat → Nat) (ha : StrictMono a)
+  (hpos : (forall (i : Nat), LT.lt (OfNat.ofNat 0) (a i))) (i : Nat) (x : Real) (hx : LE.le (OfNat.ofNat 0) x) :
+  Iff (Membership.mem (JSP000359.goodIndices a (Nat.floor x)) i)
+    (LE.le (Nat.cast (Nat.lcm (a i) (a (HAdd.hAdd i (OfNat.ofNat 1))))) x) :=
+  _
+
+theorem JSP000359.normalized_count_bounded (a : Nat → Nat) (ha : StrictMono a)
+  (hpos : (forall (i : Nat), LT.lt (OfNat.ofNat 0) (a i))) (x : Real) :
+  And (LE.le (OfNat.ofNat 0) (JSP000359.normalizedCount a x)) (LE.le (JSP000359.normalizedCount a x) (OfNat.ofNat 2)) :=
+  _
+
+def JSP000359.realCount (a : Nat → Nat) (x : Real) : Nat := Finset.card (JSP000359.goodIndices a (Nat.floor x))
+
+def JSP000359.goodIndices (a : Nat → Nat) (n : Nat) : Finset Nat :=
+  Finset.filter (fun (i : Nat) => LE.le (Nat.lcm (a i) (a (HAdd.hAdd i (OfNat.ofNat 1)))) n)
+    (Finset.range (HAdd.hAdd n (OfNat.ofNat 1)))
+
+def JSP000359.normalizedCount (a : Nat → Nat) (a._@.Mathlib.Data.Real.Basic._hyg.482 : Real) : Real :=
+  HDiv.hDiv (Nat.cast (JSP000359.realCount a a._@.Mathlib.Data.Real.Basic._hyg.482))
+    (Real.sqrt a._@.Mathlib.Data.Real.Basic._hyg.482)
+
+def JSP000359.consecutiveNaturals (n : Nat) : Nat := HAdd.hAdd n (OfNat.ofNat 1)
+
+def Filter.liminf.{u_1 u_2} :
+  forall {α : Type u_1} {β : Type u_2}
+    [inst._@.Mathlib.Order.LiminfLimsup._hyg.160 : ConditionallyCompleteLattice α],
+  (β → α) → Filter β → α :=
+  fun {α : Type u_1} {β : Type u_2} [inst._@.Mathlib.Order.LiminfLimsup._hyg.160 : ConditionallyCompleteLattice α]
+    (u : β → α) (f : Filter β) =>
+  Filter.limsInf (Filter.map u f)
+
+def Nat.lcm (a._@.Init.Prelude._hyg.2865 n : Nat) : Nat :=
+  HDiv.hDiv (HMul.hMul a._@.Init.Prelude._hyg.2865 n) (Nat.gcd a._@.Init.Prelude._hyg.2865 n)
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
+Checked 10694 declarations with no errors

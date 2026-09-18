@@ -1,0 +1,66 @@
+{
+  "checked_at_utc": "2026-09-16T11:07:20.432891+00:00",
+  "problem": "JSP-000359 / Erdos 440",
+  "scope": "Both original questions: real-threshold O(sqrt x) bound and greatest attainable liminf equal to 1",
+  "lean": "4.19.0",
+  "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "files": {
+    "LcmCounting.lean": "efafbc367405487a2f3e37b983795175abb33d56f4489c41ad670cc387074f9f",
+    "LcmLiminf.lean": "8f4db422d0806e07a3a20a89801e993eb015e98625f52cfffe082662435e410f",
+    "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "lakefile.toml": "06909e2aa78b32b57414018c5fee43b55bf984c25b24b829182af3756c9cdfcb",
+    "lake-manifest.json": "169bb6647e8a2fcf47c54f4a089eae71a62a9a80d327e2eabae67e3ff3df65dc",
+    "verify.py": "d26f5124e97c82691bf12b728f9cc7cb33f7c91d5d33978a29d150446968f26f"
+  },
+  "checks": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "log": "lean-version.txt",
+      "exit_code": 0,
+      "sha256": "ac45440c370c2409c4fda2e1693aa1f1354989a0bcf1563ee3133bb006806400"
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "log": "lake-build.txt",
+      "exit_code": 0,
+      "sha256": "c515377345ea89f246193c037a027a44119bbf19bde68b74775fa853da215023"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "LcmCounting.lean"
+      ],
+      "log": "lean-trust0.txt",
+      "exit_code": 0,
+      "sha256": "6230821560331d86a9a41ec0251164e42b44a97a0c34d08e538389567ae108af"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "LcmLiminf.lean"
+      ],
+      "log": "liminf-trust0.txt",
+      "exit_code": 0,
+      "sha256": "510b32930328279c7706f717af28e8076b8a72d164cfb03568f3aff3abc5c5cb"
+    }
+  ],
+  "environment": "Windows; pinned existing dependency checkouts and compiled cache",
+  "independent_checker": false,
+  "network_isolated": false,
+  "official_review": "not completed",
+  "priority": "not asserted"
+}
