@@ -1,40 +1,58 @@
-repository: "https://github.com/shunfeng8421/jsp301-lean"
-commit: "a11e8cc6056c4020b85e75ed5ec460f52f2781c6"
+repository: "https://github.com/shunfeng8421/jsp252-lean"
+commit: "fc534c649e222d9743bffc975fe1daed1a6fd71b"
 toolchain:
   language: Lean
-  language_version: "4.34.0"
+  language_version: "4.35.0-rc1"
   library: mathlib
-  library_commit: "5ed2965256430c3649e86755f9576b54eca72435"
+  library_commit: "09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68"
   meets_minimum_safe_version: true
 theorems:
-  - name: "Jsp252.at_least_six_subsets"
+  - name: "JSP252.main_bound"
     axioms:
       - propext
       - Classical.choice
       - Quot.sound
     clean: true
-  - name: "Jsp252.rep_236"
+  - name: "JSP252.count_le_m_form"
     axioms:
       - propext
       - Classical.choice
       - Quot.sound
     clean: true
-  - name: "Jsp252.rep_23824"
+  - name: "JSP252.count_le_chernoff"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+  - name: "JSP252.harm_tail_lower"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+  - name: "JSP252.fconst_margin"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+  - name: "JSP252.const_total_bound"
     axioms:
       - propext
       - Classical.choice
       - Quot.sound
     clean: true
 statement_comparison:
-  statement_id: "STMT-jsp-000252-v1"
-  theorem_name: "Jsp252.at_least_six_subsets"
+  statement_id: "STMT-jsp-000252-v2"
+  theorem_name: "JSP252.main_bound"
   result: equivalent
-  basis: "The theorem at_least_six_subsets states exactly six distinct unit-fraction representations of 1 with denominators in [1,30] — a constructive lower bound on the count asked in the informal problem, equivalent to the finite constructive content."
+  basis: "JSP252.main_bound formalizes the main theorem of Steinerberger 2024 (arXiv:2403.17041): #{S ⊆ [n] : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n) for all n ≥ N₀, with N₀ = 200000 exhibited explicitly; this is the non-strict upper bound implied by the paper's strict bound < 2^(0.93n)."
   performed_by: "jsp252-verifier"
   performed_at: "2026-09-18"
 checkers:
   - name: "Lean kernel (lean)"
-    version: "4.34.0"
+    version: "4.35.0-rc1"
     current_release: true
     result: pass
   - name: "lake build (incremental, from pinned manifest)"
@@ -43,7 +61,7 @@ checkers:
     result: pass
 environment:
   arch: "x86_64"
-  image: "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
+  image: "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.35.0-rc1 + mathlib @ 09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68"
 sandbox:
   network_disabled: true
   prebuilt_artifacts_ignored: true
@@ -52,13 +70,13 @@ sandbox:
     memory: "unlimited"
   unprivileged_user: true
 attribution:
-  proof_route: "six subsets of [1,30] with reciprocal sum 1; formalization by Shiqiang Chen"
+  proof_route: "Steinerberger 2024 (arXiv:2403.17041): Chernoff/Hoeffding-type exponential concentration combined with harmonic-number bounds and the constant f(c0) = -(c0/2)u² + c0·log((1+e^{-2u})/2), u = log(1/c0)-2, c0 = 0.0384235; formalized mechanically (no new mathematics) in Lean 4.35.0-rc1."
   third_party: false
-  note_en: "Explicit constructive component: six distinct subsets of [1,30] whose reciprocal sums equal 1, verified by norm_num. scoped component."
+  note_en: "Main theorem (non-strict upper bound for all n ≥ 200000). Full pipeline: Chernoff.lean (count_le_chernoff), ProductBound.lean (harmonicR, product bounds), Constant.lean (fconst, fconst_bound), Main.lean (count_le_m_form, harm_tail_lower, log_ratio_lower, fconst margins, main_bound). Axiom audit clean."
 artifacts:
   build_log:
-    archive: "candidates/verified-pending/000252/verification/build-current-release.log"
-    sha256: "556ba0660801d5d0b9efc5ca0913751f805bc6ac8777a761d45adcc80afd917d"
-    bytes: 292
+    archive: "candidates/verified-pending/jsp-000252/verification/build-current-release.log"
+    sha256: "8ead91554669091af9f8d4c7a9773dfc114bd84b87ac2be07b59dc8294be9576"
+    bytes: 1247
 performed_by: "jsp252-verifier"
 performed_at: "2026-09-18"

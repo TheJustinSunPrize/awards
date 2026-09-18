@@ -1,15 +1,9 @@
-# Recipients — 000252
+# Recipients: 000252
 
 ## English
 
-Confirmed recipient (written confirmation provided 2026-09-18 via this
-records repository; public profile https://github.com/shunfeng8421):
-
-- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.
-  Contribution: Explicit constructive component: six distinct subsets of [1,30] whose reciprocal sums equal 1, verified by norm_num. scoped component.
+- RECIPIENT-JSP-000252-A — identity pending confirmation (placeholder).
 
 ## 中文
 
-已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：
-
-- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：Explicit constructive component: six distinct subsets of [1,30] whose reciprocal sums equal 1, verified by norm_num. scoped component.
+- RECIPIENT-JSP-000252-A — 身份待确认（占位符）。
