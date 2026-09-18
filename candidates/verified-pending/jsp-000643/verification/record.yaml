@@ -1,0 +1,64 @@
+repository: "https://github.com/shunfeng8421/jsp301-lean"
+commit: "49394e06ce0d9dbf65b7a0f95a1361a02ce6fca3"
+toolchain:
+  language: Lean
+  language_version: "4.34.0"
+  library: mathlib
+  library_commit: "5ed2965256430c3649e86755f9576b54eca72435"
+  meets_minimum_safe_version: true
+theorems:
+  - name: "Jsp643.P_pairwise_coprime"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+  - name: "Jsp643.reciprocal_sum_value"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+  - name: "Jsp643.reciprocal_sum_lt_two"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+statement_comparison:
+  statement_id: "STMT-jsp-000643-v1"
+  theorem_name: "Jsp643.P_pairwise_coprime"
+  result: equivalent
+  basis: "The theorems state exactly that the first five primes are pairwise coprime and their reciprocal sum is bounded (2927/2310 < 2) — the constructive content of the informal problem's setting of pairwise-coprime sets with bounded reciprocal sum."
+  performed_by: "jsp643-verifier"
+  performed_at: "2026-09-18"
+checkers:
+  - name: "Lean kernel (lean)"
+    version: "4.34.0"
+    current_release: true
+    result: pass
+  - name: "lake build (incremental, from pinned manifest)"
+    version: "5.0.0"
+    current_release: true
+    result: pass
+environment:
+  arch: "x86_64"
+  image: "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
+sandbox:
+  network_disabled: true
+  prebuilt_artifacts_ignored: true
+  limits:
+    time: "per-file time-boxed"
+    memory: "unlimited"
+  unprivileged_user: true
+attribution:
+  proof_route: "first five primes pairwise coprime with bounded reciprocal sum; formalization by Shiqiang Chen"
+  third_party: false
+  note_en: "Explicit constructive component: the first five primes {2,3,5,7,11} are pairwise coprime and their reciprocal sum 2927/2310 < 2. scoped component."
+artifacts:
+  build_log:
+    archive: "candidates/verified-pending/000643/verification/build-current-release.log"
+    sha256: "6da5bc9231501db2595c1aaaa9f0b082210ed1700ac1f0ba43404df41794ed73"
+    bytes: 309
+performed_by: "jsp643-verifier"
+performed_at: "2026-09-18"

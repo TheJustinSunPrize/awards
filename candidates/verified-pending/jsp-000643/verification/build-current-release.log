@@ -1,0 +1,6 @@
+JSP-643 build log
+command: lake env lean Jsp643.lean
+status: SUCCESS (exit 0)
+theorems: Jsp643.P_all_prime/P_pairwise_coprime/reciprocal_sum_value/reciprocal_sum_lt_two
+primes {2,3,5,7,11} pairwise coprime, reciprocal sum 2927/2310 < 2
+toolchain: Lean 4.34.0, mathlib 5ed2965256430c3649e86755f9576b54eca72435
