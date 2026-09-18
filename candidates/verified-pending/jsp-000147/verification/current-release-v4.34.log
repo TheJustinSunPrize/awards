@@ -1,0 +1,81 @@
+JSP-000147 independent verification build log (current release)
+========================================================================
+Toolchain : leanprover/lean4:v4.34.0
+mathlib   : v4.34.0 @ 5ed2965256430c3649e86755f9576b54eca72435 (source-built, MATHLIB_CACHE_DISABLE=1)
+Project   : I:\research\justin-sun-prize\work\jsp-147\verify-current  (lakefile.lean: require mathlib @ v4.34.0; module layout mirrors upstream ErdosProblems/)
+Runner    : aionrs automated verifier (jsp147-verifier), unprivileged, network-disabled
+Driver    : powershell -File compile147.ps1 (Run-Step per file, lean.exe -o <olean> <src>, chained in import order)
+LEAN_PATH entries (10): glob of jsp-071 package build dirs (aesop/batteries/Cli/importGraph/LeanSearchClient/mathlib/plausible/proofwidgets/Qq/std) + project dirs
+========================================================================
+
+----- RUN 1 (pinned upstream sources, no changes): BinaryEntropy.lean [17:30:47 -> 17:57:45] -----
+exit: 1
+error (ErdosProblems\Erdos146\BinaryEntropy.lean:2068:8):
+  failed to synthesize MulLeftMono ℝ
+  (apply Finset.prod_le_prod; mathlib v4.34.0 states Finset.prod_le_prod with
+  [MulLeftMono N], which is not available for ℝ: left multiplication by
+  negative scalars is not monotone)
+NOTE: this was the single genuine error in the 7-file closure (381,239 bytes);
+remaining run-1 steps were not executed (cascade failure on the missing olean).
+PORTING FIX (documented, minimal; see PORTING-DIFF.md):
+  ErdosProblems\Erdos146\BinaryEntropy.lean line 2068:
+    apply Finset.prod_le_prod   ->   apply Finset.prod_le_prod₀
+  (mathlib v4.34.0 ordered-ring variant taking (h0 : 0 <= f i) and (f i <= g i)
+  per factor - exactly the two branches already present in the proof body:
+  `positivity` and `choose_le_exp_binary_entropy`. Semantics unchanged, no
+  axioms added; the source grows by exactly the 3 UTF-8 bytes of '₀'.)
+
+----- RUN 2 (with the 1-line porting fix): 8 steps chained in import order, all exit=0 -----
+
+----- STEP: ErdosProblems/Erdos146/BinaryEntropy.lean [18:11:33 -> 18:13:54] -----
+exit: 0
+output:
+  (no warnings)
+
+----- STEP: ErdosProblems/Erdos146/ForbiddenGraph.lean [18:13:54 -> 18:14:07] -----
+exit: 0
+output:
+  (no warnings)
+
+----- STEP: ErdosProblems/Erdos146/HammingProfiles.lean [18:14:07 -> 18:14:24] -----
+exit: 0
+output:
+  ErdosProblems\Erdos146\HammingProfiles.lean:1283:15: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+----- STEP: ErdosProblems/Erdos146/SamplingAndHammingBalls.lean [18:14:24 -> 18:14:36] -----
+exit: 0
+output:
+  (no warnings)
+
+----- STEP: ErdosProblems/Erdos146/HammingHostAndExclusion.lean [18:14:36 -> 18:14:50] -----
+exit: 0
+output:
+  ErdosProblems\Erdos146\HammingHostAndExclusion.lean:116:34: warning: `if_true` has been deprecated: Use `ite_true` instead
+  ErdosProblems\Erdos146\HammingHostAndExclusion.lean:178:34: warning: `if_true` has been deprecated: Use `ite_true` instead
+  ErdosProblems\Erdos146\HammingHostAndExclusion.lean:252:36: warning: `if_true` has been deprecated: Use `ite_true` instead
+  ErdosProblems\Erdos146\HammingHostAndExclusion.lean:526:32: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+----- STEP: ErdosProblems/Erdos146/MainTheorem.lean [18:14:50 -> 18:15:04] -----
+exit: 0
+output:
+  (no warnings)
+
+----- STEP: ErdosProblems/Erdos146.lean (entry point) [18:15:05 -> 18:15:14] -----
+exit: 0
+output:
+  'Erdos146.not_erdos_146' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+----- STEP: Audit146.lean [18:15:14 -> 18:15:24] -----
+exit: 0
+output:
+  'Erdos146.not_erdos_146' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'Erdos146.twoDegenerateExtremalCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+----- AXIOM AUDIT (Audit146.lean, #print axioms on both exported theorems) -----
+'Erdos146.not_erdos_146' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos146.twoDegenerateExtremalCounterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+(no sorryAx, no user axioms, no unsafe declarations)
+========================================================================
+RESULT: run 2: 8/8 steps exit=0, warnings only (deprecated if_neg/if_true); one
+documented 1-line porting fix (prod_le_prod -> prod_le_prod₀, mathlib 4.33 ->
+4.34 API drift); axiom bases clean: [propext, Classical.choice, Quot.sound].
