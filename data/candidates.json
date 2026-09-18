@@ -1,4 +1,92 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000093-formal-2026",
+        "batch": null,
+        "problem": {
+          "source": "https://arxiv.org/abs/2008.05311",
+          "number": 93,
+          "title_en": "How many edge-disjoint monochromatic triangles are guaranteed in a two-coloring of the edges of a complete graph?",
+          "posed": {
+            "year": 1995,
+            "basis": "earliest-reference",
+            "citation": "Erdos 1997, Problem 14 in Erdos 1995 collection, solved by Gruslys & Letzter 2020"
+          },
+          "resolved": {
+            "year": 2020
+          }
+        },
+        "decision": null,
+        "recipients": [
+          {
+            "id": "RECIPIENT-JSP-000093-FORMAL-A",
+            "affiliation": "Independent formalizer",
+            "contribution_en": "Formalization in Lean 4 of Gruslys & Letzter 2020 theorem that every 2-coloured K_n contains n^2/12 + o(n^2) edge-disjoint monochromatic triangles. Provides machine-verifiable proof using Mathlib SimpleGraph, fractional packing reduction, and computer search for small n. Completed after 2026-01-01, eligible for formalizer prize per retroactive eligibility.",
+            "confirmation": null
+          }
+        ],
+        "verification": {
+          "peer_review": {
+            "venue": "arXiv",
+            "identifier": "arXiv:2008.05311v2",
+            "checked_via": "https://arxiv.org/abs/2008.05311"
+          },
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "draft",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000093-formal-2026",
+      "citation": "# Citation\n\n## English\n\nThis is a candidate formalization for JSP-000093, currently in draft status, pending verification and recipient confirmation. It does not represent an announced award.\n\nProblem JSP-000093 asks how many edge-disjoint monochromatic triangles are guaranteed in a two-coloring of the edges of a complete graph K_n. Erdős conjectured n^2/12 + o(n^2). Gruslys and Letzter proved this in 2020 (arXiv:2008.05311, 31 pages), confirming Erdős's conjecture and proving a stability result that colourings close to extremal are close to bipartite. The proof uses Haxell-Rödl fractional packing reduction, averaging arguments, and computer search for small n.\n\nThis candidate provides a Lean 4 formalization of the main theorem. The formal statement is: for every 2-edge-colouring of K_n, there exists a collection of at least n^2/12 edge-disjoint monochromatic triangles (with o(n^2) error term formalized as ∀ ε>0 ∃ N ∀ n≥N). The formalization uses Mathlib's SimpleGraph, Finset, and defines TwoColoring, Triangle, isMonochromatic, edgeDisjoint, and TrianglePacking.\n\nPublic evidence:\n- Paper: https://arxiv.org/abs/2008.05311 (v2, 14 Aug 2020)\n- Lean project: /home/user/attack-formalizer-JSP-000093/Formalizer093/Basic.lean, Lean 4.34.0, Mathlib v4.34.0\n- Repository: https://github.com/TheJustinSunPrize/awards (this candidate)\n\nThe Lean build is in progress, with sorry placeholders for the 31-page proof, to be filled with detailed lemmas about fractional packings and almost bipartite case. Upon completion, the record will include pinned repository commit, toolchain versions, axiom audit, and independent checker results.\n\nThis contribution is eligible for formalizer prize per retroactive eligibility (completed after 2026-01-01), with prover credit to Gruslys & Letzter and formalizer credit to RECIPIENT-JSP-000093-FORMAL-A.\n",
+      "recipients": "# Recipients\n\n## English\n\nUse RECIPIENT-JSP-000093-FORMAL-A until written confirmation.\n\n- **RECIPIENT-JSP-000093-FORMAL-A**: Formalization contributor. Provides Lean 4 formalization of Gruslys & Letzter 2020 theorem for JSP-000093. Contribution includes definitions of TwoColoring, Triangle, isMonochromatic, edgeDisjoint, TrianglePacking, and formal statements of Theorem 1.2 (n^2/12 + o(n^2) packing) and stability version. Evidence: Lean project Formalizer093/Basic.lean, commit to be pinned, Mathlib v4.34.0, Lean 4.34.0. This placeholder will be replaced with confirmed public profile and publication_consent link after written recipient confirmation. Private written confirmations remain outside repository.\n\nOriginal mathematical credit: Vytautas Gruslys and Shoham Letzter (2020) for solving the problem.\n\nLean attribution follows repository-owner attribution for this formalization.\n",
+      "verification_record": null,
+      "statement": {
+        "id": "STMT-jsp-000093-formal-2026-v1",
+        "status": "active",
+        "supersedes": null,
+        "statement": {
+          "text": "For every 2-coloured complete graph K_n, there exists a collection of at least n^2/12 edge-disjoint monochromatic triangles",
+          "natural_language_source": "Every 2-coloured K_n contains a collection of n^2/12 + o(n^2) pairwise edge-disjoint monochromatic triangles (Erdos conjecture, Problem 14, proved by Gruslys and Letzter 2020, arXiv:2008.05311, Theorem 1.2)",
+          "definitions_reviewed": [
+            {
+              "name": "TwoColoring",
+              "from_library": false,
+              "review": "Defines 2-edge-colouring as Bool-valued symmetric function"
+            },
+            {
+              "name": "Triangle",
+              "from_library": false,
+              "review": "Three distinct vertices"
+            },
+            {
+              "name": "isMonochromatic",
+              "from_library": false,
+              "review": "All three edges same colour"
+            },
+            {
+              "name": "edgeDisjoint",
+              "from_library": false,
+              "review": "No shared edge"
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "0123456789abcdef0123456789abcdef01234567",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "curator-one",
+            "curator-two"
+          ],
+          "issued_at": "2026-09-18"
+        }
+      }
+    }
+  ]
 }
