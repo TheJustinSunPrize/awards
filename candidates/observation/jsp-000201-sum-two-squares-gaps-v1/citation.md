@@ -1,0 +1,15 @@
+# Candidate observation
+
+## English
+
+This candidate observation is associated with [JSP-000201 — How large can gaps between consecutive integers representable as sums of two squares be?](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0201-0300.md#JSP-000201). It publishes `Statement.lean` and `Proof.lean` for a complete, machine-checked Lean formalization of the answer to the catalog question: the gaps between consecutive integers representable as sums of two squares are **unbounded**. The main theorem is `jsp000201 : ∀ k : ℕ, ∃ x : ℕ, ∀ i, 1 ≤ i → i ≤ k → ¬ ∃ a b : ℕ, a * a + b * b = x + i`, i.e. for every `k` there are `k` consecutive integers none of which is a sum of two squares.
+
+The argument is the classical elementary construction (Hardy–Wright style), formalized in four steps: (1) there are infinitely many primes `p ≡ 3 (mod 4)` (Euclid-style, via prime factors of `4 * M * M - 1` with `M = ∏ x ∈ s, max 1 x`, together with the counting fact that a product of primes all `≡ 1 (mod 4)` is `≡ 1 (mod 4)`); (2) hence there are `k` pairwise distinct (strictly increasing) such primes `p 1, ..., p k`; (3) by the Chinese remainder theorem there is `x` with `x ≡ p i - i (mod p i ^ 2)` for all `1 ≤ i ≤ k`, so `x + i ≡ p i (mod p i ^ 2)` and `p i` divides `x + i` exactly once (`padicValNat (p i) (x + i) = 1`); (4) by Fermat's two-squares theorem (`Nat.eq_sq_add_sq_iff`), a sum of two squares has every prime `q ≡ 3 (mod 4)` dividing it to an even power — contradicting `padicValNat (p i) (x + i) = 1`.
+
+**Scope boundary:** this observation records the complete answer to the catalog question as stated — the gaps between consecutive sums of two squares are unbounded. The catalog entry remains Open; whether it should be reclassified on the basis of this observation is a decision for the maintainers and is not made by this candidate record. No award claim is made.
+
+The formal source is pinned to the public repository [Yaohua-Leo/jsp-000201-lean](https://github.com/Yaohua-Leo/jsp-000201-lean) at commit `55204b35294c9a132f0e5d54770d7b8bcc8cef91` on branch `main`. A local Lean compilation was run with the pinned toolchain `leanprover/lean4:v4.35.0-rc2` and Mathlib `v4.35.0-rc2`: `lake env lean JSP000201.lean` produces only the axiom-audit info line, and `#print axioms jsp000201` reports exactly `[propext, Classical.choice, Quot.sound]`. These compiler results are reproducibility evidence for the stated formal theorem; they are not official JSP verification or award admission.
+
+The catalog entry records "Date proposed: No later than 1957 (bibliographic evidence)" with no publication details, so the `posed.citation` field points to the catalog entry itself as the source of record rather than to an external publication. Mathematical credit for the construction belongs to the number-theory community (the argument is classical, in the spirit of Hardy and Wright's treatment of sums of two squares).
+
+The candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.

@@ -1,0 +1,20 @@
+id: jsp-000201-sum-two-squares-gaps-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0201-0300.md#JSP-000201"
+  number: "JSP-000201"
+  title_en: "How large can gaps between consecutive integers representable as sums of two squares be?"
+  posed:
+    year: 1957
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0201-0300.md#JSP-000201"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
