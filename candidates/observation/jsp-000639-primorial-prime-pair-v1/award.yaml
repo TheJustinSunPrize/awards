@@ -1,0 +1,20 @@
+id: jsp-000639-primorial-prime-pair-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0601-0700.md#JSP-000639"
+  number: "JSP-000639"
+  title_en: "For a product of the first several primes, is there always a prime between its largest factor and the product whose sum with the product is also prime?"
+  posed:
+    year: 1983
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0601-0700.md#JSP-000639"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
