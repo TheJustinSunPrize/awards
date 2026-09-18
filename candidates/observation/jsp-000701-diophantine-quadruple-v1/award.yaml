@@ -1,0 +1,20 @@
+id: jsp-000701-diophantine-quadruple-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0701-0800.md#JSP-000701"
+  number: "JSP-000701"
+  title_en: "How large can an integer-interval subset be if every pairwise product plus one has a nontrivial square factor?"
+  posed:
+    year: 1992
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0701-0800.md#JSP-000701"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null

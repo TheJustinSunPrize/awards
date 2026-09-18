@@ -1,0 +1,13 @@
+# Candidate observation
+
+## English
+
+This candidate observation is associated with [JSP-000701 — How large can an integer-interval subset be if every pairwise product plus one has a nontrivial square factor?](https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0701-0800.md#JSP-000701). It publishes `Statement.lean` and `Proof.lean` for a complete, machine-checked Lean formalization of a constructive existence component of the catalog question: the classical Diophantine quadruple `{1, 3, 8, 120}` is a 4-element set of positive integers such that for every two distinct elements `a, b`, the number `a * b + 1` has a nontrivial square factor, i.e. some `q > 1` satisfies `q * q ∣ a * b + 1`. In fact all six pairwise products plus one are perfect squares: `1*3+1 = 4 = 2^2`, `1*8+1 = 9 = 3^2`, `1*120+1 = 121 = 11^2`, `3*8+1 = 25 = 5^2`, `3*120+1 = 361 = 19^2`, `8*120+1 = 961 = 31^2`. The theorem proved is `jsp000701 : ∃ (s : Finset ℕ), s.card = 4 ∧ ∀ a ∈ s, ∀ b ∈ s, a ≠ b → ∃ q : ℕ, 1 < q ∧ q * q ∣ a * b + 1`.
+
+**Scope boundary:** "pairwise product" is read in the standard way, as applying to distinct pairs only; self-pairs (`a = a`) are not in scope (for example `1*1+1 = 2` is squarefree, so a self-pair reading would make the property fail for any set containing 1). This observation records only the lower-bound/existence component — a size-4 set with the distinct-pair property exists. It does not prove any upper bound, does not determine the maximum size asked by the catalog question, does not resolve the catalogued open problem, which remains Open, and makes no award claim.
+
+The formal source is pinned to the public repository [Yaohua-Leo/jsp-000701-lean](https://github.com/Yaohua-Leo/jsp-000701-lean) at commit `5963644eff77f4b9f2acef85e8ef5e2788ab1378` on branch `main`. A local Lean compilation was run with the pinned toolchain `leanprover/lean4:v4.35.0-rc2` and Mathlib `v4.35.0-rc2`: `lake env lean JSP000701.lean` produces no errors and no warnings, and `#print axioms jsp000701` reports exactly `[propext, Classical.choice, Quot.sound]`. These compiler results are reproducibility evidence for the stated formal theorem; they are not official JSP verification or award admission.
+
+The catalog entry records "No later than 1992 (bibliographic evidence)" with no publication details, so the `posed.citation` field points to the catalog entry itself as the source of record rather than to an external publication.
+
+The candidate remains under verification. No award decision, recipient identity, solver or formalizer credit, payment, or official verification is asserted.
