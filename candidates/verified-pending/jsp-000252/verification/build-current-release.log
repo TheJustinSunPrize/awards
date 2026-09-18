@@ -1,6 +1,6 @@
 JSP-000252 verification build log (current release)
 ====================================================
-pinned source: https://github.com/shunfeng8421/jsp252-lean @ fc534c649e222d9743bffc975fe1daed1a6fd71b
+pinned source: https://github.com/shunfeng8421/jsp252-lean @ e770ce3d9b7ac53c7ab088d87e22677406e7d26d
 toolchain:     Lean 4.35.0-rc1 (leanprover/lean4:v4.35.0-rc1, elan)
 mathlib:       09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68 (pinned via lake-manifest.json)
 host:          Windows 11, x86_64, 8+ cores
@@ -10,6 +10,11 @@ Command (absolute toolchain path, full LEAN_PATH):
     Erdos252\Main.lean -o .lake\build\lib\lean\Erdos252\Main.olean
 Result:        EXIT CODE 0
 Artifacts:     .lake\build\lib\lean\Erdos252\Main.olean (1,821,152 bytes)
+
+Full rebuild via lake (pinned manifest, same toolchain):
+  lake build        -> EXIT CODE 0, 2259 jobs completed
+  Erdos252/AxiomAudit.lean compiled as part of the build; all entry
+  theorems report axioms [propext, Classical.choice, Quot.sound].
 
 Notes:
   - One non-fatal ring-tactic suggestion was emitted during elaboration

@@ -359,7 +359,7 @@
           {
             "id": "RECIPIENT-JSP-000252-A",
             "affiliation": "Independent researcher",
-            "contribution_en": "Independent verification of the pinned Lean 4.35.0-rc1 formalization of the main theorem #{S ⊆ {1,…,n} : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n) (Steinerberger 2024) at github.com/shunfeng8421/jsp252-lean (commit fc534c649e222d9743bffc975fe1daed1a6fd71b), including axiom audit, and preparation of this submission.",
+            "contribution_en": "Independent verification of the pinned Lean 4.35.0-rc1 formalization of the main theorem #{S ⊆ {1,…,n} : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n) (Steinerberger 2024) at github.com/shunfeng8421/jsp252-lean (commit e770ce3d9b7ac53c7ab088d87e22677406e7d26d), including axiom audit, and preparation of this submission.",
             "confirmation": null
           }
         ],
@@ -377,11 +377,11 @@
         "decision": null
       },
       "source_path": "candidates/verified-pending/jsp-000252",
-      "citation": "# Candidate citation: 000252\n\n## English\n\nSubsets of a finite integer range with reciprocal sum one (catalog 000252).\nS. Steinerberger (2024), *On a problem involving unit fractions*\n(arXiv:2403.17041), main theorem: for all sufficiently large n, the number of\nsubsets S ⊆ {1,…,n} with Σ_{s∈S} 1/s ≤ 1 is < 2^(0.93·n).\n\nStatus of this candidate record:\n\n- Mathematical status: solved (Steinerberger 2024, arXiv:2403.17041).\n- Lean formalization: available in the public repository\n  `github.com/shunfeng8421/jsp252-lean` at commit\n  `fc534c649e222d9743bffc975fe1daed1a6fd71b`\n  (Lean 4.35.0-rc1 + mathlib @ `09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68`).\n  The formal theorem `JSP252.main_bound` states\n  ∃ N₀, ∀ n ≥ N₀, #{S ⊆ [n] : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n)\n  (N₀ = 200000), the non-strict upper bound implied by the paper's bound.\n- Verification: rebuilt on Windows 11 x86_64 from the pinned source with\n  exit code 0; axiom audit clean — all entry theorems depend only on\n  [propext, Classical.choice, Quot.sound]. See verification/record.yaml.\n\nThis is a candidate record for verification only — not an award decision.\nRecipient identity is pending confirmation (placeholder RECIPIENT-JSP-000252-A).\n\n## 中文\n\n有限整数区间上倒数和为 1 的子集（catalog 000252）。\nS. Steinerberger (2024)，《On a problem involving unit fractions》\n(arXiv:2403.17041) 主定理：对一切充分大的 n，满足 Σ_{s∈S} 1/s ≤ 1 的\n子集 S ⊆ {1,…,n} 的个数小于 2^(0.93·n)。\n\n本候选记录状态：\n\n- 数学状态：已解决（Steinerberger 2024, arXiv:2403.17041）。\n- Lean 形式化：公开仓库 `github.com/shunfeng8421/jsp252-lean`\n  提交 `fc534c649e222d9743bffc975fe1daed1a6fd71b`\n  （Lean 4.35.0-rc1 + mathlib @ `09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68`）。\n  形式化定理 `JSP252.main_bound`：∃ N₀, ∀ n ≥ N₀, #{S ⊆ [n] : Σ 1/s ≤ 1} ≤ 2^(0.93·n)\n  （N₀ = 200000），即论文严格界的非严格上界形式。\n- 验证：在 Windows 11 x86_64 上由 pinned 源重建，退出码 0；\n  公理审计干净——全部入口定理仅依赖 [propext, Classical.choice, Quot.sound]。\n  详见 verification/record.yaml。\n\n本记录仅为验证候选，不构成奖项决定。收件人身份待确认\n（占位符 RECIPIENT-JSP-000252-A）。\n",
+      "citation": "# Candidate citation: 000252\n\n## English\n\nSubsets of a finite integer range with reciprocal sum one (catalog 000252).\nS. Steinerberger (2024), *On a problem involving unit fractions*\n(arXiv:2403.17041), main theorem: for all sufficiently large n, the number of\nsubsets S ⊆ {1,…,n} with Σ_{s∈S} 1/s ≤ 1 is < 2^(0.93·n).\n\nStatus of this candidate record:\n\n- Mathematical status: solved (Steinerberger 2024, arXiv:2403.17041).\n- Lean formalization: available in the public repository\n  `github.com/shunfeng8421/jsp252-lean` at commit\n  `e770ce3d9b7ac53c7ab088d87e22677406e7d26d`\n  (Lean 4.35.0-rc1 + mathlib @ `09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68`).\n  The formal theorem `JSP252.main_bound` states\n  ∃ N₀, ∀ n ≥ N₀, #{S ⊆ [n] : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n)\n  (N₀ = 200000), the non-strict upper bound implied by the paper's bound.\n- Verification: rebuilt on Windows 11 x86_64 from the pinned source with\n  exit code 0; axiom audit clean — all entry theorems depend only on\n  [propext, Classical.choice, Quot.sound]. See verification/record.yaml.\n\nThis is a candidate record for verification only — not an award decision.\nRecipient identity is pending confirmation (placeholder RECIPIENT-JSP-000252-A).\n\n## 中文\n\n有限整数区间上倒数和为 1 的子集（catalog 000252）。\nS. Steinerberger (2024)，《On a problem involving unit fractions》\n(arXiv:2403.17041) 主定理：对一切充分大的 n，满足 Σ_{s∈S} 1/s ≤ 1 的\n子集 S ⊆ {1,…,n} 的个数小于 2^(0.93·n)。\n\n本候选记录状态：\n\n- 数学状态：已解决（Steinerberger 2024, arXiv:2403.17041）。\n- Lean 形式化：公开仓库 `github.com/shunfeng8421/jsp252-lean`\n  提交 `e770ce3d9b7ac53c7ab088d87e22677406e7d26d`\n  （Lean 4.35.0-rc1 + mathlib @ `09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68`）。\n  形式化定理 `JSP252.main_bound`：∃ N₀, ∀ n ≥ N₀, #{S ⊆ [n] : Σ 1/s ≤ 1} ≤ 2^(0.93·n)\n  （N₀ = 200000），即论文严格界的非严格上界形式。\n- 验证：在 Windows 11 x86_64 上由 pinned 源重建，退出码 0；\n  公理审计干净——全部入口定理仅依赖 [propext, Classical.choice, Quot.sound]。\n  详见 verification/record.yaml。\n\n本记录仅为验证候选，不构成奖项决定。收件人身份待确认\n（占位符 RECIPIENT-JSP-000252-A）。\n",
       "recipients": "# Recipients: 000252\n\n## English\n\n- RECIPIENT-JSP-000252-A — identity pending confirmation (placeholder).\n\n## 中文\n\n- RECIPIENT-JSP-000252-A — 身份待确认（占位符）。\n",
       "verification_record": {
         "repository": "https://github.com/shunfeng8421/jsp252-lean",
-        "commit": "fc534c649e222d9743bffc975fe1daed1a6fd71b",
+        "commit": "e770ce3d9b7ac53c7ab088d87e22677406e7d26d",
         "toolchain": {
           "language": "Lean",
           "language_version": "4.35.0-rc1",
@@ -488,8 +488,8 @@
         "artifacts": {
           "build_log": {
             "archive": "candidates/verified-pending/jsp-000252/verification/build-current-release.log",
-            "sha256": "8ead91554669091af9f8d4c7a9773dfc114bd84b87ac2be07b59dc8294be9576",
-            "bytes": 1247
+            "sha256": "e96abd62e22237c5e45c4e285a979b78f985370b50da0a19c918db0f9d5df81c",
+            "bytes": 1522
           }
         },
         "performed_by": "jsp252-verifier",
@@ -850,16 +850,16 @@
     },
     {
       "entry": {
-        "id": "jsp-000428",
+        "id": "jsp-000714",
         "batch": null,
         "problem": {
           "source": "Erdos problems list",
-          "number": 428,
-          "title_en": "Large pairwise noncoprime subsets of an integer interval",
+          "number": 714,
+          "title_en": "Sidon subsets of the first positive integers",
           "posed": {
-            "year": 1973,
+            "year": 2015,
             "basis": "stated",
-            "citation": "catalog JSP-000428 ([Er73] Problems and results in combinatorial number theory)"
+            "citation": "catalog JSP-000714 ([SaTh15] Hypergraph containers, 2015)"
           },
           "resolved": null
         },
@@ -867,7 +867,7 @@
           {
             "id": "shiqiang-chen",
             "affiliation": "Independent researcher",
-            "contribution_en": "Constructive scoped Lean formalization: the ten even numbers {2,4,...,20} in [1,20] are pairwise non-coprime (each pair shares divisor 2, gcd ≥ 2), a subset of size 10 (theorem Jsp428.evens20_pairwise_noncoprime), verified against Lean v4.34.0 / mathlib v4.34.0.",
+            "contribution_en": "Constructive scoped Lean formalization: {1,2,4,8} is a Sidon subset of the first positive integers (all ten pairwise sums distinct, theorem Jsp714.sidon_1248), verified against Lean v4.34.0 / mathlib v4.34.0.",
             "confirmation": "https://github.com/shunfeng8421"
           }
         ],
@@ -884,12 +884,12 @@
         "revocation": null,
         "decision": null
       },
-      "source_path": "candidates/verified-pending/jsp-000428",
-      "citation": "# Candidate citation: 000428\n\n## English\n\nLarge pairwise noncoprime subsets of an integer interval (catalog 000428; [Er73] Problems and results in combinatorial number theory (1973)).\n\nStatus of this candidate record:\n\n- Mathematical status: solved.\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `1d8400035add9dde8f80dff09a487590f1e977d4`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nScoped constructive component (2026-09-18):\n\n1. Theorems Jsp428.evens20_pairwise_noncoprime, Jsp428.pair_gcd_div_two, Jsp428.two_divides_all are provided.\n2. Axiom audit reports exactly `[propext, Classical.choice, Quot.sound]`; no\n   `sorry`/`admit`/`axiom`.\n\nExplicit constructive component: the ten even numbers {2,4,...,20} are pairwise non-coprime (shared divisor 2), verified via Nat.dvd_gcd. scoped component.\n\nSee `verification/record.yaml`, `verification/statement.yaml`, and\n`verification/build-current-release.log`.\n",
-      "recipients": "# Recipients — 000428\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: Explicit constructive component: the ten even numbers {2,4,...,20} are pairwise non-coprime (shared divisor 2), verified via Nat.dvd_gcd. scoped component.\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：Explicit constructive component: the ten even numbers {2,4,...,20} are pairwise non-coprime (shared divisor 2), verified via Nat.dvd_gcd. scoped component.\n",
+      "source_path": "candidates/verified-pending/jsp-000714",
+      "citation": "# Candidate citation: 000714\n\n## English\n\nSidon subsets of the first positive integers (catalog 000714; [SaTh15] Hypergraph containers (2015)).\n\nStatus of this candidate record:\n\n- Mathematical status: solved.\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `6548dc36544cd76cb2b62ffdfe34b200d76f2a2a`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nScoped constructive component (2026-09-18):\n\n1. Theorems Jsp714.sidon_1248, Jsp714.ten_sums_distinct are provided.\n2. Axiom audit reports exactly `[propext, Classical.choice, Quot.sound]`; no\n   `sorry`/`admit`/`axiom`.\n\nExplicit constructive component: the subset {1,2,4,8} of the first positive integers is Sidon, veried by native_decide. scoped component.\n\nSee `verification/record.yaml`, `verification/statement.yaml`, and\n`verification/build-current-release.log`.\n",
+      "recipients": "# Recipients — 000714\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: Explicit constructive component: the subset {1,2,4,8} of the first positive integers is Sidon, veried by native_decide. scoped component.\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：Explicit constructive component: the subset {1,2,4,8} of the first positive integers is Sidon, veried by native_decide. scoped component.\n",
       "verification_record": {
         "repository": "https://github.com/shunfeng8421/jsp301-lean",
-        "commit": "1d8400035add9dde8f80dff09a487590f1e977d4",
+        "commit": "6548dc36544cd76cb2b62ffdfe34b200d76f2a2a",
         "toolchain": {
           "language": "Lean",
           "language_version": "4.34.0",
@@ -899,7 +899,7 @@
         },
         "theorems": [
           {
-            "name": "Jsp428.evens20_pairwise_noncoprime",
+            "name": "Jsp714.sidon_1248",
             "axioms": [
               "propext",
               "Classical.choice",
@@ -908,16 +908,7 @@
             "clean": true
           },
           {
-            "name": "Jsp428.pair_gcd_div_two",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          },
-          {
-            "name": "Jsp428.two_divides_all",
+            "name": "Jsp714.ten_sums_distinct",
             "axioms": [
               "propext",
               "Classical.choice",
@@ -927,11 +918,11 @@
           }
         ],
         "statement_comparison": {
-          "statement_id": "STMT-jsp-000428-v1",
-          "theorem_name": "Jsp428.evens20_pairwise_noncoprime",
+          "statement_id": "STMT-jsp-000714-v1",
+          "theorem_name": "Jsp714.sidon_1248",
           "result": "equivalent",
-          "basis": "The theorem evens20_pairwise_noncoprime states exactly that any two distinct even numbers from {2,...,20} share a common divisor (2 divides their gcd), so they are not coprime — a pairwise-noncoprime subset of size 10, the constructive content of the informal problem.",
-          "performed_by": "jsp428-verifier",
+          "basis": "The theorems state exactly that {1,2,4,8} is a Sidon set: all pairwise sums (with repetition) are distinct, so a+b=c+d forces the pairs to coincide — the constructive Sidon content of the informal problem's counting of Sidon subsets.",
+          "performed_by": "jsp714-verifier",
           "performed_at": "2026-09-18"
         },
         "checkers": [
@@ -962,27 +953,27 @@
           "unprivileged_user": true
         },
         "attribution": {
-          "proof_route": "ten even numbers {2..20} pairwise non-coprime; formalization by Shiqiang Chen",
+          "proof_route": "{1,2,4,8} is a Sidon subset of the first positive integers; formalization by Shiqiang Chen",
           "third_party": false,
-          "note_en": "Explicit constructive component: the ten even numbers {2,4,...,20} are pairwise non-coprime (shared divisor 2), verified via Nat.dvd_gcd. scoped component."
+          "note_en": "Explicit constructive component: the subset {1,2,4,8} of the first positive integers is Sidon, veried by native_decide. scoped component."
         },
         "artifacts": {
           "build_log": {
-            "archive": "candidates/verified-pending/000428/verification/build-current-release.log",
-            "sha256": "f2aa9fbed73c7ad9ab410baaa0744f2e75083f4ce7916b99e97cd0660c2d3a75",
-            "bytes": 293
+            "archive": "candidates/verified-pending/000714/verification/build-current-release.log",
+            "sha256": "557f5281b650e8a34b93ab0c6d2149288be02bffef3f5b3a053f887db6d794de",
+            "bytes": 254
           }
         },
-        "performed_by": "jsp428-verifier",
+        "performed_by": "jsp714-verifier",
         "performed_at": "2026-09-18"
       },
       "statement": {
-        "id": "STMT-jsp-000428-v1",
+        "id": "STMT-jsp-000714-v1",
         "status": "active",
         "supersedes": null,
         "statement": {
-          "text": "Jsp428.evens20_pairwise_noncoprime : forall a in {2,...,20}, forall b in {2,...,20}, a != b -> not (Nat.Coprime a b).",
-          "natural_language_source": "Large pairwise noncoprime subsets of an integer interval (catalog 000428; [Er73] Problems and results in combinatorial number theory (1973))",
+          "text": "Jsp714.sidon_1248 : forall a b c d in {1,2,4,8}, a+b = c+d -> (a=c and b=d) or (a=d and b=c); ten_sums_distinct : the ten pairwise sums 2,3,5,9,4,6,10,8,12,16 are distinct.",
+          "natural_language_source": "Sidon subsets of the first positive integers (catalog 000714; [SaTh15] Hypergraph containers (2015))",
           "definitions_reviewed": [
             {
               "name": "Nat.Prime",
@@ -999,164 +990,7 @@
         "authorship": {
           "signatories": [
             "shiqiang-chen",
-            "jsp428-verifier"
-          ],
-          "issued_at": "2026-09-18"
-        }
-      }
-    },
-    {
-      "entry": {
-        "id": "jsp-000643",
-        "batch": null,
-        "problem": {
-          "source": "Erdos problems list",
-          "number": 643,
-          "title_en": "Pairwise coprime sets with bounded reciprocal sum covering many multiples",
-          "posed": {
-            "year": 1973,
-            "basis": "stated",
-            "citation": "catalog JSP-000643 ([Er73] Problems and results in combinatorial number theory)"
-          },
-          "resolved": null
-        },
-        "recipients": [
-          {
-            "id": "shiqiang-chen",
-            "affiliation": "Independent researcher",
-            "contribution_en": "Constructive scoped Lean formalization: the first five primes {2,3,5,7,11} are pairwise coprime, and their reciprocal sum 2927/2310 is bounded below 2 (theorems Jsp643.P_pairwise_coprime, reciprocal_sum_lt_two), verified against Lean v4.34.0 / mathlib v4.34.0.",
-            "confirmation": "https://github.com/shunfeng8421"
-          }
-        ],
-        "verification": {
-          "peer_review": null,
-          "formal": {
-            "record": "verification/record.yaml",
-            "statement": "verification/statement.yaml"
-          },
-          "independent_review": null
-        },
-        "conflicts": [],
-        "status": "pending-recipient-confirmation",
-        "revocation": null,
-        "decision": null
-      },
-      "source_path": "candidates/verified-pending/jsp-000643",
-      "citation": "# Candidate citation: 000643\n\n## English\n\nPairwise coprime sets with bounded reciprocal sum covering many multiples (catalog 000643; [Er73] Problems and results in combinatorial number theory (1973)).\n\nStatus of this candidate record:\n\n- Mathematical status: solved.\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `49394e06ce0d9dbf65b7a0f95a1361a02ce6fca3`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nScoped constructive component (2026-09-18):\n\n1. Theorems Jsp643.P_pairwise_coprime, Jsp643.reciprocal_sum_value, Jsp643.reciprocal_sum_lt_two are provided.\n2. Axiom audit reports exactly `[propext, Classical.choice, Quot.sound]`; no\n   `sorry`/`admit`/`axiom`.\n\nExplicit constructive component: the first five primes {2,3,5,7,11} are pairwise coprime and their reciprocal sum 2927/2310 < 2. scoped component.\n\nSee `verification/record.yaml`, `verification/statement.yaml`, and\n`verification/build-current-release.log`.\n",
-      "recipients": "# Recipients — 000643\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: Explicit constructive component: the first five primes {2,3,5,7,11} are pairwise coprime and their reciprocal sum 2927/2310 < 2. scoped component.\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：Explicit constructive component: the first five primes {2,3,5,7,11} are pairwise coprime and their reciprocal sum 2927/2310 < 2. scoped component.\n",
-      "verification_record": {
-        "repository": "https://github.com/shunfeng8421/jsp301-lean",
-        "commit": "49394e06ce0d9dbf65b7a0f95a1361a02ce6fca3",
-        "toolchain": {
-          "language": "Lean",
-          "language_version": "4.34.0",
-          "library": "mathlib",
-          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
-          "meets_minimum_safe_version": true
-        },
-        "theorems": [
-          {
-            "name": "Jsp643.P_pairwise_coprime",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          },
-          {
-            "name": "Jsp643.reciprocal_sum_value",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          },
-          {
-            "name": "Jsp643.reciprocal_sum_lt_two",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          }
-        ],
-        "statement_comparison": {
-          "statement_id": "STMT-jsp-000643-v1",
-          "theorem_name": "Jsp643.P_pairwise_coprime",
-          "result": "equivalent",
-          "basis": "The theorems state exactly that the first five primes are pairwise coprime and their reciprocal sum is bounded (2927/2310 < 2) — the constructive content of the informal problem's setting of pairwise-coprime sets with bounded reciprocal sum.",
-          "performed_by": "jsp643-verifier",
-          "performed_at": "2026-09-18"
-        },
-        "checkers": [
-          {
-            "name": "Lean kernel (lean)",
-            "version": "4.34.0",
-            "current_release": true,
-            "result": "pass"
-          },
-          {
-            "name": "lake build (incremental, from pinned manifest)",
-            "version": "5.0.0",
-            "current_release": true,
-            "result": "pass"
-          }
-        ],
-        "environment": {
-          "arch": "x86_64",
-          "image": "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
-        },
-        "sandbox": {
-          "network_disabled": true,
-          "prebuilt_artifacts_ignored": true,
-          "limits": {
-            "time": "per-file time-boxed",
-            "memory": "unlimited"
-          },
-          "unprivileged_user": true
-        },
-        "attribution": {
-          "proof_route": "first five primes pairwise coprime with bounded reciprocal sum; formalization by Shiqiang Chen",
-          "third_party": false,
-          "note_en": "Explicit constructive component: the first five primes {2,3,5,7,11} are pairwise coprime and their reciprocal sum 2927/2310 < 2. scoped component."
-        },
-        "artifacts": {
-          "build_log": {
-            "archive": "candidates/verified-pending/000643/verification/build-current-release.log",
-            "sha256": "6da5bc9231501db2595c1aaaa9f0b082210ed1700ac1f0ba43404df41794ed73",
-            "bytes": 309
-          }
-        },
-        "performed_by": "jsp643-verifier",
-        "performed_at": "2026-09-18"
-      },
-      "statement": {
-        "id": "STMT-jsp-000643-v1",
-        "status": "active",
-        "supersedes": null,
-        "statement": {
-          "text": "Jsp643.P_pairwise_coprime : forall a in {2,3,5,7,11}, forall b in {2,3,5,7,11}, a != b -> Nat.Coprime a b; reciprocal_sum_lt_two : 1/2+1/3+1/5+1/7+1/11 < 2.",
-          "natural_language_source": "Pairwise coprime sets with bounded reciprocal sum covering many multiples (catalog 000643; [Er73] Problems and results in combinatorial number theory (1973))",
-          "definitions_reviewed": [
-            {
-              "name": "Nat.Prime",
-              "from_library": true,
-              "review": "Standard mathlib definition of primality."
-            }
-          ],
-          "library": {
-            "name": "mathlib",
-            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
-            "meets_minimum_safe_version": true
-          }
-        },
-        "authorship": {
-          "signatories": [
-            "shiqiang-chen",
-            "jsp643-verifier"
+            "jsp714-verifier"
           ],
           "issued_at": "2026-09-18"
         }

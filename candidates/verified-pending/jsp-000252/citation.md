@@ -12,7 +12,7 @@ Status of this candidate record:
 - Mathematical status: solved (Steinerberger 2024, arXiv:2403.17041).
 - Lean formalization: available in the public repository
   `github.com/shunfeng8421/jsp252-lean` at commit
-  `fc534c649e222d9743bffc975fe1daed1a6fd71b`
+  `e770ce3d9b7ac53c7ab088d87e22677406e7d26d`
   (Lean 4.35.0-rc1 + mathlib @ `09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68`).
   The formal theorem `JSP252.main_bound` states
   ∃ N₀, ∀ n ≥ N₀, #{S ⊆ [n] : Σ_{s∈S} 1/s ≤ 1} ≤ 2^(0.93·n)
@@ -35,7 +35,7 @@ S. Steinerberger (2024)，《On a problem involving unit fractions》
 
 - 数学状态：已解决（Steinerberger 2024, arXiv:2403.17041）。
 - Lean 形式化：公开仓库 `github.com/shunfeng8421/jsp252-lean`
-  提交 `fc534c649e222d9743bffc975fe1daed1a6fd71b`
+  提交 `e770ce3d9b7ac53c7ab088d87e22677406e7d26d`
   （Lean 4.35.0-rc1 + mathlib @ `09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68`）。
   形式化定理 `JSP252.main_bound`：∃ N₀, ∀ n ≥ N₀, #{S ⊆ [n] : Σ 1/s ≤ 1} ≤ 2^(0.93·n)
   （N₀ = 200000），即论文严格界的非严格上界形式。

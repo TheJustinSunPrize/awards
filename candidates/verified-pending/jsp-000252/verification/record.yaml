@@ -1,5 +1,5 @@
 repository: "https://github.com/shunfeng8421/jsp252-lean"
-commit: "fc534c649e222d9743bffc975fe1daed1a6fd71b"
+commit: "e770ce3d9b7ac53c7ab088d87e22677406e7d26d"
 toolchain:
   language: Lean
   language_version: "4.35.0-rc1"
@@ -76,7 +76,7 @@ attribution:
 artifacts:
   build_log:
     archive: "candidates/verified-pending/jsp-000252/verification/build-current-release.log"
-    sha256: "8ead91554669091af9f8d4c7a9773dfc114bd84b87ac2be07b59dc8294be9576"
-    bytes: 1247
+    sha256: "e96abd62e22237c5e45c4e285a979b78f985370b50da0a19c918db0f9d5df81c"
+    bytes: 1522
 performed_by: "jsp252-verifier"
 performed_at: "2026-09-18"
