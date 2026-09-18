@@ -1,0 +1,20 @@
+id: jsp-000757-factorial-exponent-values-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0701-0800.md#JSP-000757"
+  number: "JSP-000757"
+  title_en: "How many distinct exponent values occur in the prime factorization of a factorial?"
+  posed:
+    year: 1982
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0701-0800.md#JSP-000757"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
