@@ -1,0 +1,26 @@
+id: jsp-000147
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 146
+  title_en: "How many edges can a graph have while excluding a given bipartite graph of bounded degeneracy?"
+  posed:
+    year: 1984
+    basis: earliest-reference
+    citation: "https://www.erdosproblems.com/146"
+  resolved: null
+recipients:
+  - id: shiqiang-chen
+    affiliation: "Independent researcher"
+    contribution_en: "Independent verification of the pinned Lean formalization of the disproof of the Erdős–Simonovits degeneracy conjecture for problem 146 (Erdos146.lean + ErdosProblems/Erdos146/*.lean closure) against the current release (Lean v4.34.0, mathlib v4.34.0, mathlib commit 5ed2965) and preparation of this submission."
+    confirmation: "https://github.com/shunfeng8421"
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null

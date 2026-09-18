@@ -1,4 +1,178 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000147",
+        "batch": null,
+        "problem": {
+          "source": "Erdos problems list",
+          "number": 146,
+          "title_en": "How many edges can a graph have while excluding a given bipartite graph of bounded degeneracy?",
+          "posed": {
+            "year": 1984,
+            "basis": "earliest-reference",
+            "citation": "https://www.erdosproblems.com/146"
+          },
+          "resolved": null
+        },
+        "recipients": [
+          {
+            "id": "shiqiang-chen",
+            "affiliation": "Independent researcher",
+            "contribution_en": "Independent verification of the pinned Lean formalization of the disproof of the Erdős–Simonovits degeneracy conjecture for problem 146 (Erdos146.lean + ErdosProblems/Erdos146/*.lean closure) against the current release (Lean v4.34.0, mathlib v4.34.0, mathlib commit 5ed2965) and preparation of this submission.",
+            "confirmation": "https://github.com/shunfeng8421"
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": {
+            "record": "verification/record.yaml",
+            "statement": "verification/statement.yaml"
+          },
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "pending-recipient-confirmation",
+        "revocation": null,
+        "decision": null
+      },
+      "source_path": "candidates/verified-pending/jsp-000147",
+      "citation": "# Citation — JSP-000147\n\n## English\n\n**Problem.** Erdős problems list, problem 146 — \"How many edges can a graph have\nwhile excluding a given bipartite graph of bounded degeneracy?\"\n(https://www.erdosproblems.com/146, historical bounty $500).\n\nThe Erdős–Simonovits degeneracy conjecture predicts that every bipartite\n$r$-degenerate graph $H$ satisfies $\\operatorname{ex}(n,H) = O(n^{2-1/r})$.\nThe formalized theorem below is a *disproof* of that conjecture: it exhibits a\nconnected bipartite $2$-degenerate graph $H$ (a Hamming graph) and constants\n$c, \\varepsilon > 0$ such that $\\operatorname{ex}(n,H) \\ge c \\cdot n^{3/2+\\varepsilon}$\neventually, strictly above the conjectured $O(n^{3/2})$ bound.\n\n**Formal statement (Lean 4, file `Erdos146.lean`).**\n\n```lean\ntheorem not_erdos_146 :\n    ¬ (∀ (r q : ℕ) (H : SimpleGraph (Fin q)),\n      0 < r → H.IsBipartite → IsDegenerate r H →\n        Asymptotics.IsBigO Filter.atTop\n          (fun n : ℕ => (SimpleGraph.extremalNumber n H : ℝ))\n          (fun n : ℕ => (n : ℝ) ^ (((2 : ℕ) : ℝ) - 1 / (r : ℝ))))\n```\n\n**Authorship and provenance (credit only, no authorship claim).**\n\n- Mathematical solution and first formalization: OpenAI \"ten-proofs\" project\n  (Astra, OpenAI team), see the in-file comment in `Erdos146.lean`; the original\n  development is `CompactnessAndDegeneracy.lean` in OpenAI ten-proofs @\n  `a13547c6be4563746881d0b3b4c9fd03f72f0484` (bitbucket mirror).\n- Public port: [plby/lean-proofs](https://github.com/plby/lean-proofs) @\n  `1268917deaaaa0d674f651287027baa26cea9920`, files\n  `src/latest/ErdosProblems/Erdos146.lean` and\n  `src/latest/ErdosProblems/Erdos146/*.lean` (Apache-2.0, `LICENSE` shipped in\n  the closure).\n- This submission claims **no mathematical or formalization authorship**. It is\n  an independent verification contribution (see `verification/record.yaml`).\n\n**Verification summary.** All seven Lean files of the pinned closure were\ncompiled unmodified with the *current release* toolchain — Lean v4.34.0 with\nmathlib v4.34.0 (mathlib commit `5ed2965256430c3649e86755f9576b54eca72435`) —\nusing direct `lean.exe` invocations in import order, then the entry module and\nan audit module were compiled against the produced `.olean`s. Every step exited\n0 with no source edits, warnings only. The build log\n(`verification/current-release-v4.34.log`) records all commands, exit codes and\nelapsed times; both `.lean` files and the final `Erdos146.olean` are hash-pinned\nin `verification/record.yaml`.\n\n**Axiom audit.** `#print axioms` run on the two exported theorems yields exactly\n`[propext, Classical.choice, Quot.sound]` — the standard Lean core axioms — as\nattested in the upstream source header. In particular, the proof uses no\nadditional axioms or `unsafe` definitions.\n\n## 中文\n\n**问题（Erdős 问题表第 146 题，历史赏金 500 美元）**：给定一个二分图\n$H$，若限制其退化度（degeneracy），则不含 $H$ 作为子图的 $n$ 顶点图至多能\n有多少条边？Erdős–Simonovits 退化猜想断言：对每个二分 $r$-退化图 $H$，\n$\\operatorname{ex}(n,H) = O(n^{2-1/r})$。\n\n**本形式化工作的内容**：被验证文件 `Erdos146.lean`（Lean 4）否定了该猜想\n（定理 `Erdos146.not_erdos_146`），并构造出反例（定理\n`Erdos146.twoDegenerateExtremalCounterexample`）：一个连通的二分 2-退化\nHamming 图 $H$，使得 $\\operatorname{ex}(n,H) \\ge c \\cdot n^{3/2+\\varepsilon}$\n最终成立，严格超过推测的 $O(n^{3/2})$。\n\n**来源**：数学解答与最初的形式化出自 OpenAI ten-proofs 项目（Astra, OpenAI），\n原始文件 `CompactnessAndDegeneracy.lean`（提交\n`a13547c6be4563746881d0b3b4c9fd03f72f0484`）；公开移植版位于\n[plby/lean-proofs](https://github.com/plby/lean-proofs) 提交\n`1268917deaaaa0d674f651287027baa26cea9920`（Apache-2.0）。本提交**不主张**\n任何数学或形式化作者身份，仅为独立验证贡献。\n\n**验证结论**：固定闭包的 7 个 Lean 文件在当今发布版工具链（Lean v4.34.0 +\nmathlib v4.34.0，mathlib 提交 `5ed2965…`）上按导入顺序逐个用 `lean.exe`\n直接编译，零源码修改、全部退出码 0；入口模块与审计模块亦通过。编译日志\n（`verification/current-release-v4.34.log`）记录全部命令、退出码与耗时；\n源码与产物 `.olean` 的哈希均固定在 `verification/record.yaml` 中。\n\n**公理审计**：对两条导出定理执行 `#print axioms`，仅得\n`[propext, Classical.choice, Quot.sound]` — 即 Lean 核心公理集合，无任何\n额外公理或 `unsafe` 定义。",
+      "recipients": "# Recipient — JSP-000147\n\n## English\n\n- **Shiqiang Chen (陈世强)** — https://github.com/shunfeng8421\n  - Contribution: independent verification of the pinned Lean formalization of\n    the disproof of the Erdős–Simonovits degeneracy conjecture for Erdős\n    problem 146, against the current release (Lean v4.34.0 / mathlib v4.34.0),\n    and the preparation of this submission.\n  - Confirmation: https://github.com/shunfeng8421\n\n**Attribution (credit, not recipients of the bounty record):**\n\n- **Mathematical solution**: OpenAI ten-proofs — Astra, OpenAI team\n  (original development: `CompactnessAndDegeneracy.lean`, OpenAI ten-proofs @\n  `a13547c6be4563746881d0b3b4c9fd03f72f0484`).\n- **Public formalization**: plby (maintainer of\n  [plby/lean-proofs](https://github.com/plby/lean-proofs), port @\n  `1268917deaaaa0d674f651287027baa26cea9920`), building on the OpenAI\n  development; as noted in the pinned sources, Git commit authorship is not\n  treated as proof authorship.\n\n## 中文\n\n- **陈世强 (Shiqiang Chen)** — https://github.com/shunfeng8421\n  - 贡献：对 pinned Lean 形式化（Erdős 问题 #146 —— Erdős–Simonovits 退化\n    猜想之反例）在当今发布版（Lean v4.34.0 / mathlib v4.34.0）上的独立验证，\n    以及本提交的整理与递交。\n  - 确认：https://github.com/shunfeng8421\n\n**致谢（credit，非本赏金记录的收件人）：**\n\n- **数学解答**：OpenAI ten-proofs —— Astra, OpenAI 团队（原始开发\n  `CompactnessAndDegeneracy.lean`，OpenAI ten-proofs @\n  `a13547c6be4563746881d0b3b4c9fd03f72f0484`）。\n- **公开形式化**：plby（[plby/lean-proofs](https://github.com/plby/lean-proofs)\n  维护者，移植 @ `1268917deaaaa0d674f651287027baa26cea9920`），基于 OpenAI\n  的开发；如 pinned 源码注释所述，Git 提交作者身份不视为证明作者。",
+      "verification_record": {
+        "repository": "https://github.com/plby/lean-proofs",
+        "commit": "1268917deaaaa0d674f651287027baa26cea9920",
+        "toolchain": {
+          "language": "Lean",
+          "language_version": "4.34.0",
+          "library": "mathlib",
+          "library_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+          "meets_minimum_safe_version": true
+        },
+        "theorems": [
+          {
+            "name": "Erdos146.not_erdos_146",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          },
+          {
+            "name": "Erdos146.twoDegenerateExtremalCounterexample",
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true
+          }
+        ],
+        "statement_comparison": {
+          "statement_id": "STMT-jsp-000147-v1",
+          "theorem_name": "Erdos146.not_erdos_146",
+          "result": "equivalent",
+          "basis": "The informal problem (Erdos problems list, problem 146; candidates/verified-pending/jsp-000147/verification/statement.yaml; https://www.erdosproblems.com/146) asks whether the extremal number of every bipartite graph of bounded degeneracy is at most n^(2-1/r+o(1)) - the Erdos-Simonovits degeneracy conjecture, whose classical special case predicts ex(n,H) = O(n^(2-1/r)) for every bipartite r-degenerate graph H. The formalized theorem not_erdos_146 states exactly the negation: for every r, q and simple graph H on Fin q with 0 < r, H.IsBipartite and IsDegenerate r H, it is NOT the case that ex(n,H) = O(n^(2-1/r)) as n -> infinity (Asymptotics.IsBigO Filter.atTop). The companion theorem twoDegenerateExtremalCounterexample exhibits the counterexample contained in the negation: a connected bipartite 2-degenerate Hamming graph H and constants c, eps > 0 with ex(n,H) >= c * n^(3/2+eps) eventually, strictly above the conjectured O(n^(3/2)). The formal statement directly matches the requested answer (the conjecture is false).",
+          "performed_by": "jsp147-verifier",
+          "performed_at": "2026-09-18"
+        },
+        "checkers": [
+          {
+            "name": "Lean kernel (lean)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          },
+          {
+            "name": "Import-closure dependency resolution (lean --deps)",
+            "version": "4.34.0",
+            "current_release": true,
+            "result": "pass"
+          }
+        ],
+        "environment": {
+          "arch": "x86_64",
+          "image": "windows-11 x86_64, elan toolchain leanprover/lean4:v4.34.0, mathlib v4.34.0 @ 5ed2965256430c3649e86755f9576b54eca72435 (source-built, MATHLIB_CACHE_DISABLE=1)"
+        },
+        "sandbox": {
+          "network_disabled": true,
+          "prebuilt_artifacts_ignored": true,
+          "limits": {
+            "time": "24h window; per-file compiles time-boxed",
+            "memory": "unlimited"
+          },
+          "unprivileged_user": true
+        },
+        "attribution": {
+          "proof_route": "Hamming-graph / entropy route (Erdos146.lean importing the Erdos146 closure of 6 modules); mathematical proof and Lean formalization from the OpenAI ten-proofs project (CompactnessAndDegeneracy.lean), ported to the pinned repo by plby",
+          "third_party": true,
+          "note_en": "Independent verification of the pinned upstream commit at Lean v4.34.0 / mathlib v4.34.0. All 7 Lean files of the closure (381,239 bytes pinned) were compiled unmodified except for a single documented 1-line porting fix in BinaryEntropy.lean line 2068 (apply Finset.prod_le_prod -> apply Finset.prod_le_prod₀, required by the mathlib 4.33->4.34 change adding a [MulLeftMono N] hypothesis to prod_le_prod; the ordered-ring variant prod_le_prod₀ takes exactly the two hypotheses the proof already supplied; see PORTING-DIFF.md and hashes-final.tsv: pinned BinaryEntropy.lean b4d15290.../103349 bytes vs as-verified 164e9dc2.../103352 bytes, the 3 UTF-8 bytes of the subscript ₀). Run 2: 8/8 chained steps exit=0 (BinaryEntropy 2m21s; whole closure <4min; entry+audit <20s), warnings only (deprecated if_neg/if_true). Module layout mirrors upstream (ErdosProblems.Erdos146 + ErdosProblems.Erdos146/*). Axiom audit via #print axioms on both entry theorems reports exactly [propext, Classical.choice, Quot.sound]; no sorryAx, no user axioms, no unsafe declarations."
+        },
+        "artifacts": {
+          "build_log": {
+            "archive": "candidates/verified-pending/jsp-000147/verification/current-release-v4.34.log",
+            "sha256": "93878d4965a3555b80a2f00e135fd33ac6d10be75c2af07a5d66a9345b37f09b",
+            "bytes": 4395
+          }
+        },
+        "performed_by": "jsp147-verifier",
+        "performed_at": "2026-09-18"
+      },
+      "statement": {
+        "id": "STMT-jsp-000147-v1",
+        "status": "active",
+        "supersedes": null,
+        "statement": {
+          "text": "Erdos146.not_erdos_146 : ¬ (∀ (r q : ℕ) (H : SimpleGraph (Fin q)), 0 < r → H.IsBipartite → IsDegenerate r H → Asymptotics.IsBigO Filter.atTop (fun n : ℕ => (SimpleGraph.extremalNumber n H : ℝ)) (fun n : ℕ => (n : ℝ) ^ (((2 : ℕ) : ℝ) - 1 / (r : ℝ))))",
+          "natural_language_source": "How many edges can a graph have while excluding a given bipartite graph of bounded degeneracy? (Erdos problems list, problem 146; problems/catalog-0101-0200.md, entry JSP-000147; https://www.erdosproblems.com/146). The Erdos-Simonovits degeneracy conjecture predicts that every bipartite r-degenerate graph H satisfies ex(n,H) = O(n^(2-1/r)); formally the conjecture quantifies over r, q and H on Fin q with H.IsBipartite and IsDegenerate r H and asserts (SimpleGraph.extremalNumber n H : ℝ) is Asymptotics.IsBigO atTop of n^(2-1/r). The formal statement not_erdos_146 negates this universally quantified bound: the conjecture is false. The companion theorem Erdos146.twoDegenerateExtremalCounterexample proves the explicit counterexample: a connected bipartite 2-degenerate Hamming graph H with constants c, eps > 0 such that c * n^(3/2+eps) <= extremalNumber n H eventually (∀ᶠ n in atTop), strictly above the conjectured O(n^(3/2)).",
+          "definitions_reviewed": [
+            {
+              "name": "SimpleGraph.extremalNumber",
+              "from_library": true,
+              "review": "Mathlib's Turan number: maximum number of edges in a simple graph on n vertices containing no subgraph isomorphic to H. Exactly the quantity ex(n,H) the problem asks about."
+            },
+            {
+              "name": "SimpleGraph.IsBipartite",
+              "from_library": true,
+              "review": "Mathlib's bipartiteness predicate (existence of a 2-coloring with no monochromatic edge). Matches the problem's restriction to bipartite graphs."
+            },
+            {
+              "name": "Asymptotics.IsBigO Filter.atTop",
+              "from_library": true,
+              "review": "Mathlib's Big-O asymptotic comparison; IsBigO atTop f g states |f(n)| <= c*|g(n)| eventually. Formalizes the conjectured O(n^(2-1/r)) upper bound and the negation in not_erdos_146."
+            },
+            {
+              "name": "IsDegenerate",
+              "from_library": false,
+              "review": "Defined locally in ErdosProblems/Erdos146/ForbiddenGraph.lean: H is r-degenerate iff every nonempty induced subgraph has a vertex of degree at most r (classic degeneracy). Bounded maximum degree implies bounded degeneracy, so this is the correct formalization of the problem's 'bounded degeneracy' hypothesis."
+            },
+            {
+              "name": "IsTwoDegenerate",
+              "from_library": false,
+              "review": "Defined locally in ErdosProblems/Erdos146/ForbiddenGraph.lean: the 2-degenerate special case used by the counterexample (r = 2)."
+            },
+            {
+              "name": "twoDegenerateExtremalCounterexample",
+              "from_library": false,
+              "review": "Defined locally in ErdosProblems/Erdos146/MainTheorem.lean: the explicit counterexample contained in the negation - a connected bipartite 2-degenerate graph (Hamming graph over binary strings of length q with a tangent-tuple vertex hardening step) whose extremal number is eventually at least c * n^(3/2+eps), exceeding the conjectured O(n^(3/2)) bound."
+            }
+          ],
+          "library": {
+            "name": "mathlib",
+            "commit": "5ed2965256430c3649e86755f9576b54eca72435",
+            "meets_minimum_safe_version": true
+          }
+        },
+        "authorship": {
+          "signatories": [
+            "jsp147-verifier",
+            "shiqiang-chen"
+          ],
+          "issued_at": "2026-09-18"
+        }
+      }
+    }
+  ]
 }
