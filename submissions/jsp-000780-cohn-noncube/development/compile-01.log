@@ -1,0 +1,27 @@
+✔ [970/988] Built Mathlib.Order.Bounds.OrderIso (6.0s)
+✔ [971/988] Built Mathlib.Data.List.Prime (10s)
+✔ [972/988] Built Mathlib.Data.Nat.Prime.Defs (10s)
+✔ [973/988] Built Mathlib.Algebra.Order.Ring.NNRat (8.0s)
+✔ [974/988] Built Mathlib.Data.Set.Finite.Lemmas (10s)
+✔ [975/988] Built Mathlib.Algebra.GroupWithZero.Units.Equiv (9.8s)
+✔ [976/988] Built Mathlib.Algebra.Order.Ring.Abs (9.8s)
+✔ [977/988] Built Mathlib.Algebra.Order.GroupWithZero.OrderIso (3.9s)
+✔ [978/988] Built Mathlib.Data.Nat.Prime.Basic (5.6s)
+✔ [979/988] Built Mathlib.Data.Nat.Prime.Infinite (5.5s)
+✔ [980/988] Built Mathlib.Data.Finset.Density (7.1s)
+✔ [981/988] Built Mathlib.Data.Nat.Factors (4.7s)
+✔ [982/988] Built Mathlib.Algebra.Order.Field.Basic (6.9s)
+✔ [983/988] Built Mathlib.Tactic.Positivity.Finset (7.1s)
+✔ [984/988] Built Mathlib.Data.Nat.PrimeFin (4.4s)
+✔ [985/988] Built Mathlib.Tactic.Positivity (3.8s)
+✖ [986/988] Building Prize939 (18s)
+trace: .> LEAN_PATH=<PROJECT_ROOT>\.lake\packages\Cli\.lake\build\lib\lean;<PROJECT_ROOT>\.lake\packages\batteries\.lake\build\lib\lean;<PROJECT_ROOT>\.lake\packages\Qq\.lake\build\lib\lean;<PROJECT_ROOT>\.lake\packages\aesop\.lake\build\lib\lean;<PROJECT_ROOT>\.lake\packages\proofwidgets\.lake\build\lib\lean;<PROJECT_ROOT>\.lake\packages\importGraph\.lake\build\lib\lean;<PROJECT_ROOT>\.lake\packages\LeanSearchClient\.lake\build\lib\lean;<PROJECT_ROOT>\.lake\packages\plausible\.lake\build\lib\lean;<PROJECT_ROOT>\.lake\packages\mathlib\.lake\build\lib\lean;<PROJECT_ROOT>\.lake\build\lib\lean <LEAN_TOOLCHAIN>\bin\lean.exe <PROJECT_ROOT>\Prize939.lean -o <PROJECT_ROOT>\.lake\build\lib\lean\Prize939.olean -i <PROJECT_ROOT>\.lake\build\lib\lean\Prize939.ilean -c <PROJECT_ROOT>\.lake\build\ir\Prize939.c --setup <PROJECT_ROOT>\.lake\build\ir\Prize939.setup.json --json
+error: Prize939.lean:146:52: unsolved goals
+h243 : Full 3 243
+⊢ 2 ^ 3 * 3 ^ 5 * 73 ^ 3 = 243 * (2 * 73) ^ 3
+info: Prize939.lean:180:0: 'Erdos939.triples_infinite' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: Prize939.lean:181:0: 'Erdos939.erdos_939.variants.triples' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- Prize939
+error: build failed

@@ -1,0 +1,31 @@
+JSP-000780 / Erdős 939: infinitely many 3-powerful triples
+
+Mathematics: A. Nitaj (1995), On a Conjecture of Erdős on 3-Powerful
+Numbers, Bulletin of the London Mathematical Society 27, 317–318.
+The iterative argument specializes J. H. E. Cohn (1998), A conjecture of
+Erdős on 3-powerful numbers, Mathematics of Computation 67, 439–440.
+No new mathematical discovery is claimed.
+
+The final statement and the definitions Nat.Full and Finset.Coprime are
+adapted from these Formal Conjectures files:
+FormalConjectures/ErdosProblems/939.lean
+FormalConjecturesForMathlib/Data/Nat/Full.lean
+FormalConjecturesForMathlib/Data/Nat/Prime/Finset.lean
+Copyright 2025 The Formal Conjectures Authors, Apache License 2.0.
+Source revision: 40e7c98697de6f66b8cbdbf641749ab39ed9c152.
+No source placeholder theorem or primeFactors simproc is imported.
+
+New Lean proofs: copyright 2026 inoader, prepared with ChatGPT assistance,
+distributed under Apache-2.0. The pinned mathlib dependency retains its
+own copyright notices and license.
+
+Local noncube extension, copyright 2026 pcycho, prepared with ChatGPT assistance:
+CohnNoncube.lean and Audit.lean, distributed under Apache-2.0.
+Prize939.lean is adapted from inoader/awards commit
+b5b70857b2d77d6a060e00956beb8e19918b48f9. The Lean 4.33.1 port adds an explicit
+norm_num step to discharge a numerical convert side goal in the original seed;
+the original definitions and mathematical arguments are retained.
+The noncube seed is copied as mathematical data from Cohn (1998), page 439.
+The new contribution is the separate noncube invariant, seed certification,
+and strengthened infinitude statement; existing base infinitude is credited
+to the upstream formalization, not claimed as new work.

@@ -1,0 +1,17 @@
+{
+  "prepared_utc": "2026-09-16T19:27:41.002942+00:00",
+  "scope": "Publication wording and this preparation record only; mathematical source and verification configuration are unchanged. No new Lean run is claimed.",
+  "prior_package_manifest_sha256": "dfef90cd1145a5aa6cbc16ed23d0b2fcd6785edcdcfb10c137def9c09b0628d7",
+  "proof_verification_run": "0dcac7b76bd84c479fe61297eefafbe1",
+  "unchanged_source_sha256": {
+    "Audit.lean": "061c225334ab476d4b792394c9f43b37d21de19547d25123e8c1ccd49c06d7f4",
+    "CohnNoncube.lean": "e7391c04a02619a2203476055cae929a0214ec2519a7ad296f5c54664b21020f",
+    "lake-manifest.json": "11100b3a05cb7c68fffb6b2f4f2db5ad1eaed331721537e24d81054c3cbfaf56",
+    "lakefile.toml": "4f29c8f1318964b623a1c39c7cd3e0411819823219cb37eeeb0f348e0fee7529",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "Prize939.lean": "6059bca78e7b5cdc2ecd01c027206f220d4574c82d2347d8eb4ca19308c5a602",
+    "test_verify.py": "d430081affd506f920648795ce907ad8ac6054d36ddc7a1f6b1599ab95ec706c",
+    "verify.py": "4084dd79fd5680b3051cfe8efde8b87c7114c129194ec6a2751525806ecc79ab"
+  },
+  "publication_status": "Prepared for review; actual remote publication is tracked by the pull request."
+}

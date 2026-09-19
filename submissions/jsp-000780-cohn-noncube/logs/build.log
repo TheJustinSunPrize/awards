@@ -1,0 +1,34 @@
+ℹ [986/989] Replayed Prize939
+info: Prize939.lean:184:0: 'Erdos939.triples_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Prize939.lean:185:0: 'Erdos939.erdos_939.variants.triples' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [987/989] Replayed CohnNoncube
+info: CohnNoncube.lean:120:0: 'Erdos939.noncube_mul_cube' depends on axioms: [propext, Quot.sound]
+info: CohnNoncube.lean:121:0: 'Erdos939.cohn_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CohnNoncube.lean:122:0: 'Erdos939.noncube_triples_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [988/989] Replayed Audit
+info: Audit.lean:3:0: def Nat.Full : ℕ → ℕ → Prop :=
+fun k n => ∀ p ∈ n.primeFactors, p ^ k ∣ n
+info: Audit.lean:4:0: def Erdos939.Noncube : ℕ → Prop :=
+fun a => ¬∃ r, r ^ 3 = a
+info: Audit.lean:5:0: Erdos939.noncube_triples_infinite : {t |
+    0 < t.1 ∧
+      0 < t.2.1 ∧
+        0 < t.2.2 ∧
+          t.1.Coprime t.2.1 ∧
+            t.1.Coprime t.2.2 ∧
+              t.2.1.Coprime t.2.2 ∧
+                Nat.Full 3 t.1 ∧
+                  Nat.Full 3 t.2.1 ∧
+                    Nat.Full 3 t.2.2 ∧
+                      t.1 + t.2.1 = t.2.2 ∧
+                        Erdos939.Noncube t.1 ∧ Erdos939.Noncube t.2.1 ∧ Erdos939.Noncube t.2.2}.Infinite
+info: Audit.lean:6:0: 'Erdos939.cube_of_mul_cube' depends on axioms: [propext, Quot.sound]
+info: Audit.lean:7:0: 'Erdos939.noncube_mul_cube' depends on axioms: [propext, Quot.sound]
+info: Audit.lean:8:0: 'Erdos939.cohn_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:9:0: 'Erdos939.larger_noncube' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:10:0: 'Erdos939.noncube_triples_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:25:0: 'cohn_noncube_statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (989 jobs).
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
