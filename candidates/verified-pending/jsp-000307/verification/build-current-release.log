@@ -1,0 +1,6 @@
+JSP-307 build log
+command: lake env lean Jsp307.lean
+status: SUCCESS (exit 0)
+theorem: Jsp307.JSP_307 (consecutive 13,14,15 have strictly decreasing largest prime factors 13>7>5)
+private: prime_13/7/5/2/3, lpf_13/14/15
+toolchain: Lean 4.34.0, mathlib 5ed2965256430c3649e86755f9576b54eca72435

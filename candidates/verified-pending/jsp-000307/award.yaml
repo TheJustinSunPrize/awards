@@ -1,0 +1,26 @@
+id: jsp-000307
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 307
+  title_en: "Consecutive integers 13, 14, 15 have strictly decreasing largest prime factors (13 > 7 > 5)"
+  posed:
+    year: 1978
+    basis: stated
+    citation: "catalog JSP-000307 ([ErPo78] On the largest prime factors of n and n+1 — Aequationes Math. 1978, 311–321)"
+  resolved: null
+recipients:
+  - id: shiqiang-chen
+    affiliation: "Independent researcher"
+    contribution_en: "Lean 4 formal proof that consecutive integers 13, 14, 15 have strictly decreasing largest prime factors (P(13)=13 > P(14)=7 > P(15)=5), i.e. the witness n=13 satisfies P(n) > P(n+1) > P(n+2) (theorem Jsp307.JSP_307), verified against Lean v4.34.0 / mathlib v4.34.0."
+    confirmation: "https://github.com/shunfeng8421"
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null
