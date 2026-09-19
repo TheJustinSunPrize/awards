@@ -946,7 +946,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000814 | [For quadratic-character partial sums, what is the average initial range needed to reach the specified relative balance, over primes?](catalog-0801-0900.md#JSP-000814) | Solved | No | No | Unavailable |
 | JSP-000815 | [Must every convex polygon have a vertex determining about half as many distinct distances as the total number of vertices?](catalog-0801-0900.md#JSP-000815) | Open | No | No | Unavailable |
 | JSP-000816 | [If an integer set is larger than the prime count in its range, must some collection of its elements be supported on relatively few small primes?](catalog-0801-0900.md#JSP-000816) | Open | No | No | Unavailable |
-| JSP-000817 | [Can integers be two-colored so that every monochromatic arithmetic progression has length bounded by a very slowly growing function of its starting point?](catalog-0801-0900.md#JSP-000817) | Solved | No | No | Unavailable |
+| JSP-000817 | [Can integers be two-colored so that every monochromatic arithmetic progression has length bounded by a very slowly growing function of its starting point?](catalog-0801-0900.md#JSP-000817) | Solved | Yes | No | Unavailable |
 | JSP-000818 | [Does every prime modulus have a relatively small prime primitive root?](catalog-0801-0900.md#JSP-000818) | Open | No | No | Unavailable |
 | JSP-000819 | [What lower bounds hold for off-diagonal clique Ramsey numbers with one target fixed and the other growing?](catalog-0801-0900.md#JSP-000819) | Solved | No | No | Unavailable |
 | JSP-000820 | [For exponential sums from an arbitrary infinite real sequence, how much growth in partial sums is forced as frequency varies?](catalog-0801-0900.md#JSP-000820) | Solved | Yes | Yes | Unclaimed |
