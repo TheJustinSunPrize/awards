@@ -1134,7 +1134,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000997 | [Can the mean square of representation counts in an additive basis remain bounded?](catalog-0901-1000.md#JSP-000997) | Open | No | No | Unavailable |
 | JSP-000998 | [How large a density can integers have on which additive representation counts equal a prescribed positive monotone function?](catalog-0901-1000.md#JSP-000998) | Solved | Yes | Yes | Unclaimed |
 | JSP-000999 | [How fast must an integer set grow if each positive integer has exactly one representation as a difference of two of its elements?](catalog-0901-1000.md#JSP-000999) | Open | No | No | Unavailable |
-| JSP-001000 | [How fast can the measure of a real set grow if no ratio of distinct elements is an integer?](catalog-0901-1000.md#JSP-001000) | Solved | No | No | Unavailable |
+| JSP-001000 | [How fast can the measure of a real set grow if no ratio of distinct elements is an integer?](catalog-0901-1000.md#JSP-001000) | Solved | Yes | No | Unavailable |
 
 ### Problems 1001–1022
 
