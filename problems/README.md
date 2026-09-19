@@ -962,7 +962,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000830 | [Can the fractional parts of primes multiplied by an irrational number satisfy the specified stronger uniform-distribution property?](catalog-0801-0900.md#JSP-000830) | Solved | Yes | Yes | Unclaimed |
 | JSP-000831 | [What necessary and sufficient conditions on interval endpoints give bounded counting discrepancy for an irrational rotation?](catalog-0801-0900.md#JSP-000831) | Solved | No | No | Unavailable |
 | JSP-000832 | [Duffin-Schaeffer conjecture](catalog-0801-0900.md#JSP-000832) | Solved | No | No | Unavailable |
-| JSP-000833 | [What limiting measure is covered by approximation intervals using rational numbers with denominators in the specified range?](catalog-0801-0900.md#JSP-000833) | Solved | No | No | Unavailable |
+| JSP-000833 | [What limiting measure is covered by approximation intervals using rational numbers with denominators in the specified range?](catalog-0801-0900.md#JSP-000833) | Solved | Yes | No | Unavailable |
 | JSP-000834 | [What limiting distribution arises from normalized cumulative centered fractional parts of an irrational rotation?](catalog-0801-0900.md#JSP-000834) | Open | No | No | Unavailable |
 | JSP-000835 | [Are there infinitely many consecutive positive integers with equal totients?](catalog-0801-0900.md#JSP-000835) | Open | No | No | Unavailable |
 | JSP-000836 | [How long a consecutive-integer interval can have pairwise distinct totient values?](catalog-0801-0900.md#JSP-000836) | Open | No | No | Unavailable |
