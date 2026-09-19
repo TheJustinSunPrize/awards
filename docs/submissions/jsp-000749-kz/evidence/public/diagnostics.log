@@ -1,0 +1,3 @@
+PASS: 59 exact binomial-ratio bounds; 147677 colour-class-size checks.
+PASS: triangle, single-edge and singleton-edge semantic diagnostics.
+These are finite diagnostics; all-parameter correctness is proved in Lean.

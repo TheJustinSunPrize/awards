@@ -1,0 +1,25 @@
+{
+  "export_file_path": "evidence/ci/export.ndjson",
+  "use_stdin": false,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unpermitted_axiom_hard_error": true,
+  "nat_extension": true,
+  "string_extension": true,
+  "pp_declars": [
+    "JSP000749.Colorable",
+    "JSP000749.Uniform",
+    "JSP000749.ExactlyThree",
+    "JSP000749.Attainable",
+    "JSP000749.m",
+    "JSP000749.jsp000749_upper_bound",
+    "JSP000749.m_upper_bound",
+    "JSP000749StatementCheck.plain_upper_bound"
+  ],
+  "pp_output_path": "evidence/ci/nanoda-statements.txt",
+  "pp_to_stdout": false,
+  "print_success_message": true
+}
