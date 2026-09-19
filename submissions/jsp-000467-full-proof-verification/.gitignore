@@ -1,0 +1,9 @@
+/.lake/
+/.upstream/
+/ErdosProblems
+/verification/*.log
+/verification/source-audit*.json
+/verification/cloud-run-*.json
+/verification/kernel/
+__pycache__/
+.DS_Store
