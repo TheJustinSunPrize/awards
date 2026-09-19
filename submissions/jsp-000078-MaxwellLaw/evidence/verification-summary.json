@@ -1,0 +1,179 @@
+{
+  "completed_utc": "2026-09-16T15:44:25.900237+00:00",
+  "platform": "Darwin 25.4.0 arm64",
+  "lean": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "replayed_module_count": 39,
+  "replayed_declaration_count": 3197,
+  "axioms": {
+    "Jsp000078.colorable_of_finite_induced": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Jsp000078.oddCycleLengths_eq": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos58.erdos_58": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Jsp000078.erdos_58_encard": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Jsp000078.erdos_58": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "commands": [
+    {
+      "stage": "sources",
+      "command": [
+        "python3",
+        "verify_sources.py"
+      ],
+      "started_utc": "2026-09-16T15:40:28.929790+00:00",
+      "duration_seconds": 0.035,
+      "exit_code": 0
+    },
+    {
+      "stage": "toolchain",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "started_utc": "2026-09-16T15:40:28.965142+00:00",
+      "duration_seconds": 4.732,
+      "exit_code": 0
+    },
+    {
+      "stage": "build",
+      "command": [
+        "lake",
+        "build"
+      ],
+      "started_utc": "2026-09-16T15:40:33.697523+00:00",
+      "duration_seconds": 14.739,
+      "exit_code": 0
+    },
+    {
+      "stage": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "started_utc": "2026-09-16T15:40:48.437177+00:00",
+      "duration_seconds": 112.622,
+      "exit_code": 0
+    },
+    {
+      "stage": "replay",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "ReplayBatch.lean",
+        "ErdosProblems.Erdos58",
+        "ErdosProblems.Erdos58.AlternativeSharp",
+        "ErdosProblems.Erdos58.Arithmetic",
+        "ErdosProblems.Erdos58.Basic",
+        "ErdosProblems.Erdos58.Bipartite",
+        "ErdosProblems.Erdos58.Boundary",
+        "ErdosProblems.Erdos58.Critical",
+        "ErdosProblems.Erdos58.CycleArcs",
+        "ErdosProblems.Erdos58.DFSUpper",
+        "ErdosProblems.Erdos58.EndpointCount",
+        "ErdosProblems.Erdos58.Fan",
+        "ErdosProblems.Erdos58.Independent",
+        "ErdosProblems.Erdos58.Linkage",
+        "ErdosProblems.Erdos58.MainReduction",
+        "ErdosProblems.Erdos58.Menger",
+        "ErdosProblems.Erdos58.Structural",
+        "ErdosProblems.Erdos58.Structural.BoundaryApplication",
+        "ErdosProblems.Erdos58.Structural.CaseAssembly",
+        "ErdosProblems.Erdos58.Structural.CaseConclusion",
+        "ErdosProblems.Erdos58.Structural.ConnectivityBridge",
+        "ErdosProblems.Erdos58.Structural.EndpointApplication",
+        "ErdosProblems.Erdos58.Structural.FanApplication",
+        "ErdosProblems.Erdos58.Structural.FanLinkage",
+        "ErdosProblems.Erdos58.Structural.HamiltonianBranch",
+        "ErdosProblems.Erdos58.Structural.IndependentGap",
+        "ErdosProblems.Erdos58.Structural.K1Boundary",
+        "ErdosProblems.Erdos58.Structural.LongestCycle",
+        "ErdosProblems.Erdos58.Structural.LongestCycleBridge",
+        "ErdosProblems.Erdos58.Structural.LongestPath",
+        "ErdosProblems.Erdos58.Structural.OutsideCycle",
+        "ErdosProblems.Erdos58.Structural.Setup",
+        "ErdosProblems.Erdos58.Structural.SingletonFan",
+        "ErdosProblems.Erdos58.Structural.SpliceConstruction",
+        "ErdosProblems.Erdos58.Structural.TwoLinkage",
+        "ErdosProblems.Erdos58.StructuralAlt",
+        "Jsp000078.CycleLengths",
+        "Jsp000078.Compactness",
+        "Jsp000078.General",
+        "Jsp000078"
+      ],
+      "started_utc": "2026-09-16T15:42:41.062128+00:00",
+      "duration_seconds": 104.05,
+      "exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "Audit.lean": "c2394e4df5b15b138f99ba5bf59f341cdeee7ac3030051865ce623fdf5f6323d",
+    "ErdosProblems/Erdos58/AlternativeSharp.lean": "8a55616c251b853a5469a90d870e5c6e27fc2d4e64f4ef39e6fc68479e0ca0e7",
+    "ErdosProblems/Erdos58/Arithmetic.lean": "06492dea3c49fa6d8728795953b8042b7cf4920bbe3272e41c753be76f10e4db",
+    "ErdosProblems/Erdos58/Basic.lean": "257454c90f3e190e7ae2451ee20b65ed7d9523f5c5aedcc0e73b0af913f52b9e",
+    "ErdosProblems/Erdos58/Bipartite.lean": "7b4e39931ad20bdd1dddf2779117804e4ac05fa5d7b91555fd391d51ed464fd9",
+    "ErdosProblems/Erdos58/Boundary.lean": "dc0b4a976947ab129908c00e4f6640a6d8725246eff12ce19e09f36f361ca54d",
+    "ErdosProblems/Erdos58/Critical.lean": "7470100869e81e1821c753a94fd9034c99a8b4da169e52913710c884761bb77c",
+    "ErdosProblems/Erdos58/CycleArcs.lean": "0ae0be796674aa355987610e23ca3653f20c5cf01bb415d244c739f476bd3b02",
+    "ErdosProblems/Erdos58/DFSUpper.lean": "d0e510faf8e792b2a0b540cfe13f700f08d2f093481aed376935d0e48971441c",
+    "ErdosProblems/Erdos58/EndpointCount.lean": "72277d17e6a6d769cd102b9a066ed6d2b844c6d6b7f697ac05f5645fcc638b44",
+    "ErdosProblems/Erdos58/Fan.lean": "f2be31ef552aa0e69cc6e4cd0de671ae9a123ea01273bb79bfeb018b877db266",
+    "ErdosProblems/Erdos58/Independent.lean": "3954c631a394c4375d5633773199118911caa441f9d5ef6b6441edcf85a0f34c",
+    "ErdosProblems/Erdos58/Linkage.lean": "31c419daa9d4ae5ff110f1771428be5a3dfd8335331a9f45a558655c591dda84",
+    "ErdosProblems/Erdos58/MainReduction.lean": "82e3e10626fc2a7ba3a33c685e0c6d8d7582bfeb3fa90963246e93d906e688d7",
+    "ErdosProblems/Erdos58/Menger.lean": "a94c201065502712219d4ffd1d94fe257894d6d6832b11be2fd54a11bb477fb7",
+    "ErdosProblems/Erdos58/Structural/BoundaryApplication.lean": "71cd1ced5390dd29ab364d1c7f5b4586fd59583a7080f0820ed7bf447e30353a",
+    "ErdosProblems/Erdos58/Structural/CaseAssembly.lean": "bd2a77ea47b2e2620af859ddee0ba75ba900406234d7a0eb9a77fdf587bb182c",
+    "ErdosProblems/Erdos58/Structural/CaseConclusion.lean": "2ccde012838a3ec2999d765082fdb5ab6703022fd96ad594c94e8cf4f39e3a3f",
+    "ErdosProblems/Erdos58/Structural/ConnectivityBridge.lean": "76ca09d7e4cdb9e203bf394e069be8cd24b306033de57daf03258b80fd55cfe7",
+    "ErdosProblems/Erdos58/Structural/EndpointApplication.lean": "96140225f2e3b73ccf2e187407eb745adc31ab442c7c9de668da17911c7fa8a0",
+    "ErdosProblems/Erdos58/Structural/FanApplication.lean": "5decca15a4031fdffb355da93939ea15303eaa01c34453bcd668a341be3c5b82",
+    "ErdosProblems/Erdos58/Structural/FanLinkage.lean": "6e8d07350cbd6fee31a57160e9d877aabd8f98717eb3753c1385115ac63f546d",
+    "ErdosProblems/Erdos58/Structural/HamiltonianBranch.lean": "ded4360b51598c5b81e448d01934b782720d01482a1110859a1136706e474ce6",
+    "ErdosProblems/Erdos58/Structural/IndependentGap.lean": "1530c4048b946f50c974f76c74a02cadeec85171e6a6e4bc1f1e0c28159cf662",
+    "ErdosProblems/Erdos58/Structural/K1Boundary.lean": "0540d78cd0419af41b629e4b18971b5f9567d7443a0916c6796f79715d86443e",
+    "ErdosProblems/Erdos58/Structural/LongestCycle.lean": "b7b6d880ba5a51da4bbce5ec74498a6ee228f1a17321aba2b3fed0507d14404c",
+    "ErdosProblems/Erdos58/Structural/LongestCycleBridge.lean": "3a0ccd0001d56e6331e5971aebd4ca907652bb9eda937cfcac48ed86ceed09b1",
+    "ErdosProblems/Erdos58/Structural/LongestPath.lean": "1e329ad0ff8008d7e7c4bd82ee50ac8ba60c08ac7fb9fb66620dd5a9a2e61600",
+    "ErdosProblems/Erdos58/Structural/OutsideCycle.lean": "b8f3a2900203f8d02eb54a0d81af1fd86e0168f2305c202d633c28eae4c7410a",
+    "ErdosProblems/Erdos58/Structural/Setup.lean": "4aced0c30ee14858a3123f871362a19a35fd0dcdb1ff1227aac5ebf6ce120c64",
+    "ErdosProblems/Erdos58/Structural/SingletonFan.lean": "0c69f3d86b09eb6ee5bee4d47e009c8598d9031608fee0505b8da6d9f82a1b7b",
+    "ErdosProblems/Erdos58/Structural/SpliceConstruction.lean": "50c5a9b623ee515f5b6cb0ebf4d71220d430a78d46a1ceacaad329500175b590",
+    "ErdosProblems/Erdos58/Structural/TwoLinkage.lean": "3669b5dbc18b8bcbdd8fa17ab2e1639d23f04aacc100121ef5e2618fd07977af",
+    "ErdosProblems/Erdos58/Structural.lean": "29e1e9adcda1356803fb32a2d19e8bdb0eeb55f11397e8a4ec108d31e42720ec",
+    "ErdosProblems/Erdos58/StructuralAlt.lean": "c0111412913ae03c025534bb8f029a7e0ef3299af6de22512d0087a477778b89",
+    "ErdosProblems/Erdos58.lean": "dda16146f67e597202fbd0ace5a337a3a6faa47a589d597d2b8bd1c5d0aba1a8",
+    "Jsp000078/Compactness.lean": "afb35eb1d05d2053d8cf7c2da75eac416b3506164e55361d062c5fb3d54876ad",
+    "Jsp000078/CycleLengths.lean": "8cae7509c78e065a889f18a414d097fba51a734e4e09fe2ab10fcacb55f52ba6",
+    "Jsp000078/General.lean": "84324117919a762a218be62a27f51bced800819336b1fc22282a0cf052286637",
+    "Jsp000078.lean": "08cfe96245d9f57a6e101d045662a4641e8d34a15b56a859bc2577e8dbdddfae",
+    "Replay.lean": "9211af5d292f53b26e8cbdf13cf3d637552807a44374026021cbb2f0a4eead5d",
+    "ReplayBatch.lean": "0ff295a3780e93a6ccd0142d4de9c438a996b162021c79d762d30f22204e3e82",
+    "lake-manifest.json": "62ae283398cea13555328d27f48a6a3d9a77a320b1161cfd3413b752f777bd49",
+    "lakefile.toml": "a97c772fc8c7c588896c858e7173e91f20a7ae3dcbaca189608f8989c0b22628",
+    "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+  },
+  "scope": "Custom modules compiled from source; all custom declarations replayed into a Mathlib-only environment using the same Lean kernel; official dependency caches used; not a full fresh replay of Mathlib or an independently implemented verifier."
+}

@@ -1,0 +1,11 @@
+ℹ [8718/8745] Replayed ErdosProblems.Erdos58.EndpointCount
+info: ErdosProblems/Erdos58/EndpointCount.lean:330:0: 'Erdos58.EndpointCount.endpoint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8720/8745] Replayed ErdosProblems.Erdos58.Structural.EndpointApplication
+info: ErdosProblems/Erdos58/Structural/EndpointApplication.lean:1383:0: 'Erdos58.Structural.EndpointApplication.EndpointConfiguration.endpoint_count_from_configuration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8741/8745] Replayed ErdosProblems.Erdos58.Structural
+info: ErdosProblems/Erdos58/Structural.lean:188:0: 'Erdos58.Structural.gyarfas_structural' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8742/8745] Replayed ErdosProblems.Erdos58
+info: ErdosProblems/Erdos58.lean:65:0: 'Erdos58.erdos_58' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8745 jobs).
