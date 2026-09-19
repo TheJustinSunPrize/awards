@@ -1,0 +1,66 @@
+{
+  "base": "f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.115
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/manage.py",
+        "links"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.609
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/manage.py",
+        "build"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.094
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/manage.py",
+        "check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.096
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.866
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/manage.py",
+        "history",
+        "--base",
+        "f4e7173d89dfe91022a185427d63452c8ffbf6ae"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.108
+    }
+  ],
+  "limits": "Repository checks do not certify mathematical correctness or award acceptance."
+}

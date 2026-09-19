@@ -1,0 +1,280 @@
+{
+  "tests": 916,
+  "exhaustive_3x3_subsets": 512,
+  "random_5x5_subsets": 400,
+  "random_seed": 735,
+  "grid_counts": {
+    "accepted": 379,
+    "rejected": 533
+  },
+  "named": {
+    "failed-fano": {
+      "accepted": true,
+      "mode": "degree-formula",
+      "point_count": 7,
+      "lines": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "reciprocal_sum": "3",
+      "forced_total": "5/2",
+      "candidate_weights": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/4"
+      ],
+      "nonpositive_points": [],
+      "failed_line_sums": []
+    },
+    "five-point-obstruction": {
+      "accepted": false,
+      "mode": "degree-formula",
+      "point_count": 5,
+      "lines": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "degrees": [
+        3,
+        3,
+        3,
+        4,
+        4
+      ],
+      "reciprocal_sum": "13/6",
+      "forced_total": "43/19",
+      "candidate_weights": [
+        "7/19",
+        "7/19",
+        "7/19",
+        "11/19",
+        "11/19"
+      ],
+      "nonpositive_points": [],
+      "failed_line_sums": [
+        {
+          "line": [
+            0,
+            1,
+            2
+          ],
+          "total": "21/19"
+        },
+        {
+          "line": [
+            0,
+            3
+          ],
+          "total": "18/19"
+        },
+        {
+          "line": [
+            0,
+            4
+          ],
+          "total": "18/19"
+        },
+        {
+          "line": [
+            1,
+            3
+          ],
+          "total": "18/19"
+        },
+        {
+          "line": [
+            1,
+            4
+          ],
+          "total": "18/19"
+        },
+        {
+          "line": [
+            2,
+            3
+          ],
+          "total": "18/19"
+        },
+        {
+          "line": [
+            2,
+            4
+          ],
+          "total": "18/19"
+        },
+        {
+          "line": [
+            3,
+            4
+          ],
+          "total": "22/19"
+        }
+      ]
+    },
+    "near-pencil": {
+      "accepted": true,
+      "mode": "degree-formula",
+      "point_count": 5,
+      "lines": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "degrees": [
+        2,
+        2,
+        2,
+        2,
+        4
+      ],
+      "reciprocal_sum": "13/3",
+      "forced_total": "7/4",
+      "candidate_weights": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4",
+        "3/4"
+      ],
+      "nonpositive_points": [],
+      "failed_line_sums": []
+    },
+    "rational-triangle": {
+      "accepted": true,
+      "mode": "degree-formula",
+      "point_count": 3,
+      "lines": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "degrees": [
+        2,
+        2,
+        2
+      ],
+      "reciprocal_sum": "3",
+      "forced_total": "3/2",
+      "candidate_weights": [
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "nonpositive_points": [],
+      "failed_line_sums": []
+    }
+  },
+  "method": "Exact Fraction Gaussian elimination independent of the degree formula"
+}

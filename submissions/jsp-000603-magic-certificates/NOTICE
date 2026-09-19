@@ -1,0 +1,12 @@
+JSP-000603 magic degree certificates
+Prepared in 2026 by public GitHub account green3sf with GPT/Codex assistance.
+
+Mathematical attribution:
+Ackerman, Buchin, Knauer, Pinchasi and Rote, There are not too many magic
+configurations (2008), final discussion of weakly magic configurations.
+The known formula and uniqueness are not claimed as new mathematics.
+
+This package relies on Mathlib and Lean at the pinned revisions. Their upstream
+licenses and attributions apply to those dependencies; they are not vendored here.
+The related lean-genius work is cited but its source is not incorporated.
+No private identity, contact, payment or recipient information is included.
