@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/plby/lean-proofs",
+  "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+  "files": [
+    {
+      "path": "ErdosProblems/Erdos922.lean",
+      "upstream_path": "src/latest/ErdosProblems/Erdos922.lean",
+      "sha256": "0bc22004ecbe76ab3cc3f263c29c76994b39017828ea835d987139fa324b9971",
+      "bytes": 233944
+    }
+  ],
+  "license_notice_url": "https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/LICENSE",
+  "distribution": "The upstream finite proof is fetched for local verification and is not redistributed by this package."
+}

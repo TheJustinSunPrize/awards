@@ -1,0 +1,107 @@
+{
+  "archive": "Versioned in the contributor fork at the immutable commit linked from the PR.",
+  "artifacts": [
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/awards-build.log",
+      "path": "awards-build.log",
+      "sha256": "c391b6d4b9adf7d960f401ad1a346744d469edaa1cfddf187e6c4324004dae01",
+      "bytes": 10
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/awards-check.log",
+      "path": "awards-check.log",
+      "sha256": "ad3249b444b1a55ed35b7c507156da9ec158647696fe440b17ff9d90a3e9cd56",
+      "bytes": 10
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/awards-history.log",
+      "path": "awards-history.log",
+      "sha256": "568ed9c8cc323b4fea33d8599b8846c57cc44e0b9874555f2ce6a8a53dbc94a1",
+      "bytes": 12
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/awards-links.log",
+      "path": "awards-links.log",
+      "sha256": "e221de9f0763035b20e207fa620824584944b786488c20c2a798bd82e6f305d4",
+      "bytes": 10
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/awards-tests.log",
+      "path": "awards-tests.log",
+      "sha256": "ef2abf3dc37d31691e186399bbe5404aff9b63d1c43ab1ab37465f1d1a92239e",
+      "bytes": 2535
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/awards-validate.log",
+      "path": "awards-validate.log",
+      "sha256": "12ca74086bb12b155a06bf138e5c804ccf9d9a7826eb350fe4f067578588f832",
+      "bytes": 13
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/axioms.log",
+      "path": "axioms.log",
+      "sha256": "f371c3cd0f9761411b3ce5bf0c2f6b3b2ce5b569ac964e4055b4b2f5cc9a986f",
+      "bytes": 1247
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/build.log",
+      "path": "build.log",
+      "sha256": "935aaba203e76dd82a11688d220867cc50d85d28f866b7c7dfe9479672d9966b",
+      "bytes": 212
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/commands.json",
+      "path": "commands.json",
+      "sha256": "da944896726e052c317c033889772b7294ff8211e8a57b5f4c5bf01729e73c2b",
+      "bytes": 1193
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/fresh-source-fetch.log",
+      "path": "fresh-source-fetch.log",
+      "sha256": "5f2b607a9a9b2d4788063fd39a62e56ffe9a2272f7db2fd71b8ba2425940b808",
+      "bytes": 125
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/general-build-fixed.log",
+      "path": "general-build-fixed.log",
+      "sha256": "321a59fb1bca78ae3c0b78828c8862ac48f5882ad111d090359755d7e1924231",
+      "bytes": 298
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/initial-build.log",
+      "path": "initial-build.log",
+      "sha256": "90382313981b14dafa7c9a1ec9bd2dcda7314172b8620e2ff84cf8953869060d",
+      "bytes": 267
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/replay.log",
+      "path": "replay.log",
+      "sha256": "a39f34cde11420d403f7f06d0b2de9898b37280a84cb868f636675ec729ce3af",
+      "bytes": 232
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/repository-commands.json",
+      "path": "repository-commands.json",
+      "sha256": "3e754cea20c2cee04b43cffc7badac7d39761db9adfaec3cc294bfc08aa28516",
+      "bytes": 1528
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/sources.log",
+      "path": "sources.log",
+      "sha256": "5f2b607a9a9b2d4788063fd39a62e56ffe9a2272f7db2fd71b8ba2425940b808",
+      "bytes": 125
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/toolchain.log",
+      "path": "toolchain.log",
+      "sha256": "328b78e438553509f9760b1f71680473cb11be77077f0ab10ac92cd3e01d37db",
+      "bytes": 106
+    },
+    {
+      "artifact_id": "jsp-000766-MaxwellLaw/verification-summary.json",
+      "path": "verification-summary.json",
+      "sha256": "b6e651e456c576ad48db963f4cb6d79f18322e73421c36ce4f658b544859e822",
+      "bytes": 3847
+    }
+  ]
+}

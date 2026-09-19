@@ -1,0 +1,7 @@
+.lake/
+logs/
+__pycache__/
+*.olean
+*.ilean
+.DS_Store
+ErdosProblems/
