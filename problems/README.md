@@ -449,7 +449,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000342 | [Which orderings of totient values at consecutive integers occur, and with what frequencies?](catalog-0301-0400.md#JSP-000342) | Open | No | No | Unavailable |
 | JSP-000343 | [What is the precise asymptotic number of distinct totient values in a prescribed range?](catalog-0301-0400.md#JSP-000343) | Open | No | No | Unavailable |
 | JSP-000344 | [How much does the number of distinct totient values differ when bounding the input versus bounding the output by the same limit?](catalog-0301-0400.md#JSP-000344) | Open | No | No | Unavailable |
-| JSP-000345 | [What is the distribution of the ratio of divisor counts of factorials with nearby indices?](catalog-0301-0400.md#JSP-000345) | Open | No | No | Unavailable |
+| JSP-000345 | [What is the distribution of the ratio of divisor counts of factorials with nearby indices?](catalog-0301-0400.md#JSP-000345) | Open | Yes | No | Unavailable |
 | JSP-000346 | [Is there an increasing integer sequence of density one whose products over distinct consecutive blocks are always different?](catalog-0301-0400.md#JSP-000346) | Solved | No | No | Unavailable |
 | JSP-000347 | [Which positive integers are omitted by the specified self-referential recurrence?](catalog-0301-0400.md#JSP-000347) | Open | No | No | Unavailable |
 | JSP-000348 | [Determine the long-term growth of the integer sequence generated greedily by the prescribed consecutive-sum rule.](catalog-0301-0400.md#JSP-000348) | Open | No | No | Unavailable |
