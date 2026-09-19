@@ -1,0 +1,33 @@
+id: jsp-000092-near-linear
+batch: null
+problem:
+  source: https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000092
+  number: JSP-000092
+  title_en: "JSP-000092 near-linear variant: submitted Lean 4 formalization"
+  posed:
+    year: 1982
+    basis: earliest-reference
+    citation: >-
+      The JSP-000092 catalog records no later than 1982 on bibliographic
+      evidence. Erdős, Hajnal and Szemerédi, On almost bipartite large
+      chromatic graphs (1982), Problem 2, states the stronger linear question.
+      This draft concerns only the near-linear variant; 1982 is the catalog's
+      reference year, not a newly established first date for that variant.
+  resolved: null
+decision: null
+recipients:
+  - id: RECIPIENT-JSP-000092-LEAN-A
+    affiliation: ""
+    contribution_en: >-
+      Submitted an AI-assisted Lean 4 formalization of the near-linear
+      proposition, with pinned source, dependency lockfile, reproduction
+      instructions, and local build and axiom reports. Mathematical sources
+      are credited separately. Attribution and external verification are pending.
+    confirmation: null
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: draft
+revocation: null
