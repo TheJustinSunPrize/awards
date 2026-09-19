@@ -1,0 +1,6 @@
+Graph20Proof.graph20_no_regular_induced (T : Finset (Fin 20)) (hT : 6 ≤ T.card) (d : ℕ) :
+  ¬(SimpleGraph.induce (↑T) Graph20Proof.graph).IsRegularOfDegree d
+Graph20Proof.exists_graph20 :
+  ∃ G inst, ∀ (T : Finset (Fin 20)), 6 ≤ T.card → ∀ (d : ℕ), ¬(SimpleGraph.induce (↑T) G).IsRegularOfDegree d
+'Graph20Proof.graph20_no_regular_induced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Graph20Proof.exists_graph20' depends on axioms: [propext, Classical.choice, Quot.sound]

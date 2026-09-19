@@ -1,0 +1,67 @@
+{
+  "base_commit": "f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+  "records": [
+    {
+      "command": [
+        "python3",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "exit_code": 0,
+      "seconds": 0.934
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/manage.py",
+        "links"
+      ],
+      "exit_code": 0,
+      "seconds": 0.672
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/manage.py",
+        "build"
+      ],
+      "exit_code": 0,
+      "seconds": 0.112
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/manage.py",
+        "check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.113
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/manage.py",
+        "history",
+        "--base",
+        "f4e7173d89dfe91022a185427d63452c8ffbf6ae"
+      ],
+      "exit_code": 0,
+      "seconds": 0.127
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 2.157
+    }
+  ],
+  "validator_tests": 22,
+  "limits": "Repository checks validate structure; they do not execute or certify Lean proofs. Submission Markdown links were separately checked."
+}

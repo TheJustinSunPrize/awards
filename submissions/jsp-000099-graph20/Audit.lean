@@ -1,0 +1,5 @@
+import Graph20Result
+#check Graph20Proof.graph20_no_regular_induced
+#check Graph20Proof.exists_graph20
+#print axioms Graph20Proof.graph20_no_regular_induced
+#print axioms Graph20Proof.exists_graph20

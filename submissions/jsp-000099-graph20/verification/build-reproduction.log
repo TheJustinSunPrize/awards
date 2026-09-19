@@ -1,0 +1,54 @@
+ℹ [985/1012] Built RegularCertificate (828ms)
+info: RegularCertificate.lean:122:0: 'RegularCertificate.check_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [986/1012] Built Graph20 (788ms)
+ℹ [987/1012] Built MaskCertificate (908ms)
+info: MaskCertificate.lean:132:0: 'Graph20Proof.mcheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [988/1012] Built GraphBridge (1.0s)
+info: GraphBridge.lean:47:0: 'Graph20Proof.regular_correspondence' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [989/1012] Built CheckpointCertificate (812ms)
+info: CheckpointCertificate.lean:77:0: 'Graph20Proof.fcheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [990/1012] Built CertificateSteps (728ms)
+ℹ [991/1012] Built Degree17 (2.8s)
+info: Degree17.lean:16:0: 'Graph20Proof.no_regular_17' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [992/1012] Built Degree11 (2.9s)
+info: Degree11.lean:16:0: 'Graph20Proof.no_regular_11' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [993/1012] Built Degree12 (2.9s)
+info: Degree12.lean:16:0: 'Graph20Proof.no_regular_12' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [994/1012] Built Degree18 (2.9s)
+info: Degree18.lean:16:0: 'Graph20Proof.no_regular_18' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [995/1012] Built Degree9 (3.0s)
+info: Degree9.lean:16:0: 'Graph20Proof.no_regular_9' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [996/1012] Built Degree13 (3.0s)
+info: Degree13.lean:16:0: 'Graph20Proof.no_regular_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [997/1012] Built Degree14 (2.0s)
+info: Degree14.lean:16:0: 'Graph20Proof.no_regular_14' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [998/1012] Built Degree15 (2.0s)
+info: Degree15.lean:16:0: 'Graph20Proof.no_regular_15' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [999/1012] Built Degree16 (2.0s)
+info: Degree16.lean:16:0: 'Graph20Proof.no_regular_16' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1000/1012] Built Degree19 (2.0s)
+info: Degree19.lean:16:0: 'Graph20Proof.no_regular_19' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1001/1012] Built Degree8 (3.1s)
+info: Degree8.lean:21:0: 'Graph20Proof.no_regular_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1002/1012] Built Degree10 (3.0s)
+info: Degree10.lean:16:0: 'Graph20Proof.no_regular_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1003/1012] Built Degree7 (3.3s)
+info: Degree7.lean:31:0: 'Graph20Proof.no_regular_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1004/1012] Built Degree6 (4.0s)
+info: Degree6.lean:66:0: 'Graph20Proof.no_regular_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1005/1012] Built Degree0 (1.2s)
+info: Degree0.lean:26:0: 'Graph20Proof.no_regular_0' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1006/1012] Built Degree1 (1.0s)
+info: Degree1.lean:66:0: 'Graph20Proof.no_regular_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1007/1012] Built Degree5 (5.9s)
+info: Degree5.lean:156:0: 'Graph20Proof.no_regular_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1008/1012] Built Degree2 (3.9s)
+info: Degree2.lean:161:0: 'Graph20Proof.no_regular_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1009/1012] Built Degree4 (5.9s)
+info: Degree4.lean:251:0: 'Graph20Proof.no_regular_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1010/1012] Built Degree3 (6.3s)
+info: Degree3.lean:266:0: 'Graph20Proof.no_regular_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1011/1012] Built Graph20Result (909ms)
+info: Graph20Result.lean:76:0: 'Graph20Proof.graph20_no_regular_induced' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Graph20Result.lean:77:0: 'Graph20Proof.exists_graph20' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1012 jobs).
