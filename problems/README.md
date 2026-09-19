@@ -481,7 +481,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000374 | [How many distinct small-prime parts can occur among integers in a short interval?](catalog-0301-0400.md#JSP-000374) | Open | No | No | Unavailable |
 | JSP-000375 | [The sum over composites of least prime factor divided by the integer has known global asymptotics. Is there a uniform positive lower bound on the prescribed short intervals?](catalog-0301-0400.md#JSP-000375) | Open | No | No | Unavailable |
 | JSP-000376 | [How close to a given integer can one find a composite number whose least prime factor satisfies the prescribed size conditions?](catalog-0301-0400.md#JSP-000376) | Open | No | No | Unavailable |
-| JSP-000377 | [Can the size of a planar point set whose distances all stay away from integers be bounded in terms of the specified parameters?](catalog-0301-0400.md#JSP-000377) | Solved | No | No | Unavailable |
+| JSP-000377 | [Can the size of a planar point set whose distances all stay away from integers be bounded in terms of the specified parameters?](catalog-0301-0400.md#JSP-000377) | Solved | Yes | No | Unavailable |
 | JSP-000378 | [Can arbitrarily large planar point sets have all pairwise distances uniformly bounded away from the nearest integer?](catalog-0301-0400.md#JSP-000378) | Solved | No | No | Unavailable |
 | JSP-000379 | [ambiguous statement](catalog-0301-0400.md#JSP-000379) | Open | No | No | Unavailable |
 | JSP-000380 | [Successively sum the divisors greater than one of an integer. Which sums have not appeared before, and how small can the original integer representing a target be?](catalog-0301-0400.md#JSP-000380) | Open | No | No | Unavailable |
