@@ -1,0 +1,4 @@
+'Jsp000310.grimm_certified' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Jsp000310.grimm_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Jsp000310.cert_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+No sorryAx present. decide calls are kernel-reduced.
