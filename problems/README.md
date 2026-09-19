@@ -950,7 +950,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000828 | [For a square-integrable function sampled along dilations from a sparse integer sequence, how fast do partial sums grow for typical inputs?](catalog-0801-0900.md#JSP-000828) | Open | No | No | Unavailable |
 | JSP-000829 | [Does sufficiently fast decay of Fourier approximation error ensure convergence of averages along the prescribed sparse sequence?](catalog-0801-0900.md#JSP-000829) | Open | No | No | Unavailable |
 | JSP-000830 | [Can the fractional parts of primes multiplied by an irrational number satisfy the specified stronger uniform-distribution property?](catalog-0801-0900.md#JSP-000830) | Solved | Yes | Yes | Unclaimed |
-| JSP-000831 | [What necessary and sufficient conditions on interval endpoints give bounded counting discrepancy for an irrational rotation?](catalog-0801-0900.md#JSP-000831) | Solved | No | No | Unavailable |
+| JSP-000831 | [What necessary and sufficient conditions on interval endpoints give bounded counting discrepancy for an irrational rotation?](catalog-0801-0900.md#JSP-000831) | Solved | Yes | No | Unavailable |
 | JSP-000832 | [Duffin-Schaeffer conjecture](catalog-0801-0900.md#JSP-000832) | Solved | No | No | Unavailable |
 | JSP-000833 | [What limiting measure is covered by approximation intervals using rational numbers with denominators in the specified range?](catalog-0801-0900.md#JSP-000833) | Solved | No | No | Unavailable |
 | JSP-000834 | [What limiting distribution arises from normalized cumulative centered fractional parts of an irrational rotation?](catalog-0801-0900.md#JSP-000834) | Open | No | No | Unavailable |
