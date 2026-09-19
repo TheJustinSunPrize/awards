@@ -1,0 +1,21 @@
+id: jsp-000252-lean
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000252"
+  number: "000252"
+  title_en: "Lean 4 + Mathlib formalization for JSP-000252"
+  posed:
+    year: 1980
+    basis: earliest-reference
+    citation: "See catalog entry for JSP-000252"
+  resolved:
+    year: 2026
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: draft
+revocation: null
