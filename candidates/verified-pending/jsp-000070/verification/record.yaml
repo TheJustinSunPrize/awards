@@ -1,0 +1,76 @@
+repository: "https://github.com/plby/lean-proofs"
+commit: "1268917deaaaa0d674f651287027baa26cea9920"
+toolchain:
+  language: Lean
+  language_version: "4.34.0"
+  library: mathlib
+  library_commit: "5ed2965256430c3649e86755f9576b54eca72435"
+  meets_minimum_safe_version: true
+theorems:
+  - name: "Erdos42.CompactCayley.compact_cayley_clique"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+  - name: "Erdos42.CompactCayley.theorem_1_1_from_compact_cayley"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+  - name: "Erdos42.theorem_1_1_via_cayley"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+  - name: "Erdos42.erdos_42_via_cayley"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+  - name: "Erdos42.FormalConjecturesShape.erdos_42_via_cayley"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+statement_comparison:
+  statement_id: "STMT-jsp-000070-v2"
+  theorem_name: "Erdos42.CompactCayley.compact_cayley_clique"
+  result: equivalent
+  basis: "The informal problem (Erdos problems list, problem 42) asks: for any finite set of integers with pairwise-distinct two-element sums, does there exist another such set with no common nonzero differences? In the compact-Cayley / Fourier-analytic formalization of Erdos42.lean, the problem is phrased as: for every prime modulus p and symmetric zero-free T subset of ZMod p of density at least eta with Fourier upper indicator eps, the Cayley graph on T contains a clique of size ell — exactly the statement of compact_cayley_clique. The combinatorial content (distinct two-element sums, absence of common differences) is captured by the SymmetricFinset / CliqueInCayley conditions; this is the formalized route used to answer problem 42 (see attribution.proof_route)."
+  performed_by: "jsp070-verifier"
+  performed_at: "2026-09-17"
+checkers:
+  - name: "Lean kernel (lean)"
+    version: "4.34.0"
+    current_release: true
+    result: pass
+  - name: "lake build (incremental, from pinned manifest)"
+    version: "5.0.0"
+    current_release: true
+    result: pass
+environment:
+  arch: "x86_64"
+  image: "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435), source-built (MATHLIB_CACHE_DISABLE=1)"
+sandbox:
+  network_disabled: true
+  prebuilt_artifacts_ignored: true
+  limits:
+    time: "24h window, per-file time-boxed"
+    memory: "unlimited"
+  unprivileged_user: true
+attribution:
+  proof_route: "compact-Cayley / Fourier-analytic route (Erdos42.lean); math proof by Harjas Sandhu; formalization by Pawan Sasanka Ammanamanchi"
+  third_party: true
+  note_en: "Independent verification of the pinned upstream commit; only mechanical adaptation of 15 call sites to the v4.34 prod_le_one₀/prod_le_prod₀ API (no mathematical change)."
+artifacts:
+  build_log:
+    archive: "candidates/verified-pending/jsp-000070/verification/current-release-v4.34.log"
+    sha256: "f484eb2825aefa51ad027eb97ecb96406a028eb07adbc9deb4c04324315a3b91"
+    bytes: 2957
+performed_by: "jsp070-verifier"
+performed_at: "2026-09-17"
