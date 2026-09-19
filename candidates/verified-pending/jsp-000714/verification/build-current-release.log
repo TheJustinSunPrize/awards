@@ -1,0 +1,6 @@
+JSP-714 build log
+command: lake env lean Jsp714.lean
+status: SUCCESS (exit 0)
+theorems: Jsp714.sidon_1248/ten_sums_distinct
+{1,2,4,8} is a Sidon set (all 10 pairwise sums distinct)
+toolchain: Lean 4.34.0, mathlib 5ed2965256430c3649e86755f9576b54eca72435

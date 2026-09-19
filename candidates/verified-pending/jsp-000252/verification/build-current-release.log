@@ -1,0 +1,22 @@
+JSP-000252 verification build log (current release)
+====================================================
+pinned source: https://github.com/shunfeng8421/jsp252-lean @ fc534c649e222d9743bffc975fe1daed1a6fd71b
+toolchain:     Lean 4.35.0-rc1 (leanprover/lean4:v4.35.0-rc1, elan)
+mathlib:       09a9e06e4e5ccd5b783f25e52ad3ebecfb1e2d68 (pinned via lake-manifest.json)
+host:          Windows 11, x86_64, 8+ cores
+
+Command (absolute toolchain path, full LEAN_PATH):
+  I:\Lean4\.elan\toolchains\leanprover--lean4---v4.35.0-rc1\bin\lean.exe
+    Erdos252\Main.lean -o .lake\build\lib\lean\Erdos252\Main.olean
+Result:        EXIT CODE 0
+Artifacts:     .lake\build\lib\lean\Erdos252\Main.olean (1,821,152 bytes)
+
+Notes:
+  - One non-fatal ring-tactic suggestion was emitted during elaboration
+    ("Try this: [apply] ring_nf"); no errors, exit code 0.
+  - Axiom audit (Erdos252\AxiomAudit.lean, compiled exit 0):
+    JSP252.main_bound, JSP252.count_le_m_form, JSP252.count_le_chernoff,
+    JSP252.harm_tail_lower, JSP252.sum_inv_Icc_tail, JSP252.log_inv_c_upper,
+    JSP252.fconst_margin, JSP252.fconst_bound, JSP252.const_total_bound,
+    JSP252.log_ratio_lower, JSP252.fconst_c0_explicit
+    all report axioms [propext, Classical.choice, Quot.sound]; clean.

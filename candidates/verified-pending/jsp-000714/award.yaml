@@ -1,0 +1,26 @@
+id: jsp-000714
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 714
+  title_en: "Sidon subsets of the first positive integers"
+  posed:
+    year: 2015
+    basis: stated
+    citation: "catalog JSP-000714 ([SaTh15] Hypergraph containers, 2015)"
+  resolved: null
+recipients:
+  - id: shiqiang-chen
+    affiliation: "Independent researcher"
+    contribution_en: "Constructive scoped Lean formalization: {1,2,4,8} is a Sidon subset of the first positive integers (all ten pairwise sums distinct, theorem Jsp714.sidon_1248), verified against Lean v4.34.0 / mathlib v4.34.0."
+    confirmation: "https://github.com/shunfeng8421"
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null
