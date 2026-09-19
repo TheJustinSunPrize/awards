@@ -845,7 +845,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000728 | [How many inclusion-maximal sum-free subsets does a finite integer interval have?](catalog-0701-0800.md#JSP-000728) | Solved | No | No | Unavailable |
 | JSP-000729 | [How does the sum of an integer's prime-power factors compare with the maximum sum of pairwise coprime divisors?](catalog-0701-0800.md#JSP-000729) | Open | No | No | Unavailable |
 | JSP-000730 | [What is the largest sum of pairwise coprime integers in a finite interval, and what are the extremizing sets?](catalog-0701-0800.md#JSP-000730) | Open | No | No | Unavailable |
-| JSP-000731 | [Must the distinct-element sumset of an additive basis have bounded gaps?](catalog-0701-0800.md#JSP-000731) | Solved | No | No | Unavailable |
+| JSP-000731 | [Must the distinct-element sumset of an additive basis have bounded gaps?](catalog-0701-0800.md#JSP-000731) | Solved | Yes | No | Unavailable |
 | JSP-000732 | [After deleting infinitely many elements of a minimal additive basis, can every sufficiently large integer still be represented using one additional summand?](catalog-0701-0800.md#JSP-000732) | Open | No | No | Unavailable |
 | JSP-000733 | [How large can an integer-interval subset be if its distinct subset sums never divide one another?](catalog-0701-0800.md#JSP-000733) | Solved | No | No | Unavailable |
 | JSP-000734 | [Which odd cycles and complete multipartite graphs must occur in the coprimality graph of a dense integer set?](catalog-0701-0800.md#JSP-000734) | Open | No | No | Unavailable |
