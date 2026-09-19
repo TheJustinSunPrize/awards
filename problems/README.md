@@ -698,7 +698,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000581 | [What is the maximum edge density of a uniform hypergraph excluding a prescribed complete uniform hypergraph?](catalog-0501-0600.md#JSP-000581) | Open | No | No | Unavailable |
 | JSP-000582 | [Does every fixed bipartite graph have an extremal function asymptotic to a constant times a rational power?](catalog-0501-0600.md#JSP-000582) | Open | No | No | Unavailable |
 | JSP-000583 | [Can graphs excluding a prescribed balanced complete bipartite graph attain the predicted extremal lower bound?](catalog-0501-0600.md#JSP-000583) | Open | No | No | Unavailable |
-| JSP-000584 | [Must every regular graph of the specified degree contain a three-regular subgraph?](catalog-0501-0600.md#JSP-000584) | Solved | No | No | Unavailable |
+| JSP-000584 | [Must every regular graph of the specified degree contain a three-regular subgraph?](catalog-0501-0600.md#JSP-000584) | Solved | Yes | No | Unavailable |
 | JSP-000585 | [How does a graph's chromatic number relate to the order of its largest complete-graph subdivision?](catalog-0501-0600.md#JSP-000585) | Solved | No | No | Unavailable |
 | JSP-000586 | [What average degree forces a subdivision of a complete graph of prescribed order?](catalog-0501-0600.md#JSP-000586) | Solved | No | No | Unavailable |
 | JSP-000587 | [How many complete uniform hypergraphs suffice to partition the edges of an arbitrary uniform hypergraph?](catalog-0501-0600.md#JSP-000587) | Open | No | No | Unavailable |
