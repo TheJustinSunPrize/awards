@@ -1,0 +1,8 @@
+Output of `#print axioms` (lake build, Lean 4.34.0 + Mathlib v4.34.0):
+
+'jsp_000947' depends on axioms: [propext, Classical.choice, Quot.sound]
+'jsp_000947_known_list' depends on axioms: [propext, Classical.choice, Quot.sound]
+'allPrimePowDiffs_fifteen_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Standard Mathlib axioms only. No `sorryAx`, no `Lean.ofReduceBool`
+(no `native_decide`), no custom axioms.
