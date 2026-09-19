@@ -1,0 +1,52 @@
+{
+  "note": "Private absolute project paths are replaced by transparent placeholders. GitHub web upload adds one newline to empty logs; that serialization change is explicitly recorded. Check results and nonempty theorem/log text are otherwise unchanged. Raw logs retained locally.",
+  "logs": [
+    {
+      "file": "compile-Erdos466.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "local_paths_replaced": false,
+      "empty_log_serialized_as_one_newline": true
+    },
+    {
+      "file": "compile-Erdos466.stdout.log",
+      "original_sha256": "bbd3fb05a342d489c013189f98076acddccbbcb799b4ba0cd67b29784af381c9",
+      "published_sha256": "9bcb5fa96bdc8f87e247bdecc08457fb97dc042a3c58d10db17533b75e438bc3",
+      "local_paths_replaced": true
+    },
+    {
+      "file": "export.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "local_paths_replaced": false,
+      "empty_log_serialized_as_one_newline": true
+    },
+    {
+      "file": "leanchecker.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "local_paths_replaced": false,
+      "empty_log_serialized_as_one_newline": true
+    },
+    {
+      "file": "leanchecker.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "local_paths_replaced": false,
+      "empty_log_serialized_as_one_newline": true
+    },
+    {
+      "file": "nanoda.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "local_paths_replaced": false,
+      "empty_log_serialized_as_one_newline": true
+    },
+    {
+      "file": "nanoda.stdout.log",
+      "original_sha256": "85e401bf879e36c0ff08739c13980e88e064110c5d63c246ee9975f082258fce",
+      "published_sha256": "85e401bf879e36c0ff08739c13980e88e064110c5d63c246ee9975f082258fce",
+      "local_paths_replaced": false
+    }
+  ]
+}

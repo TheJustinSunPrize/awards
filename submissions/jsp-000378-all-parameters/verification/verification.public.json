@@ -1,0 +1,229 @@
+{
+  "module": "Erdos466",
+  "theorems": [
+    "Erdos466General.erdos_466_parameter_classification",
+    "Erdos466General.erdos_466"
+  ],
+  "source_sha256": "1e4c3c35392b21578cf3f620b56dc3dee6f0db3c3040d9b1afca92a2d0c2a20a",
+  "source_bytes": 20127,
+  "local_sources": [
+    {
+      "module": "Erdos466",
+      "path": "<project>/Erdos466.lean",
+      "sha256": "1e4c3c35392b21578cf3f620b56dc3dee6f0db3c3040d9b1afca92a2d0c2a20a"
+    }
+  ],
+  "toolchain": "Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)",
+  "project_lean_toolchain": "leanprover/lean4:v4.34.0",
+  "verification_script_sha256": "ebc72565e4fed59853b07f42e8b67353fda59f467e2b09000d47e8c82f5e204b",
+  "lean_bin": "<lean-bin>",
+  "lean_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "nanoda_path": "<nanoda>",
+  "nanoda_sha256": "cfd89798e7f5f984f852e2410694e8c4efe1463b613f75e85c8dc904b499e146",
+  "exporter_path": "<exporter>",
+  "exporter_sha256": "ad235f7ce3177ea0de2b66316f06361aff890683264c94cb31e91a46eeda60a2",
+  "commands": [
+    {
+      "name": "compile-Erdos466",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-o",
+        "<project>/.lake/build/lib/lean/Erdos466.olean",
+        "<project>/Erdos466.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 73.463
+    },
+    {
+      "name": "leanchecker",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "Erdos466"
+      ],
+      "exit_code": 0,
+      "seconds": 708.752
+    },
+    {
+      "name": "export",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "<exporter>",
+        "Erdos466",
+        "--",
+        "Erdos466General.erdos_466_parameter_classification",
+        "Erdos466General.erdos_466"
+      ],
+      "exit_code": 0,
+      "seconds": 127.344
+    },
+    {
+      "name": "nanoda",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<nanoda>",
+        "<verification-output>/nanoda.json"
+      ],
+      "exit_code": 0,
+      "seconds": 7.221
+    }
+  ],
+  "network_access_denied_for_check_commands": true,
+  "network_policy": "(version 1)(allow default)(deny network*)",
+  "network_policy_control_probe": [
+    {
+      "name": "control",
+      "exit_code": 0,
+      "stdout": "NETWORK_ACCESSIBLE\n",
+      "stderr": ""
+    },
+    {
+      "name": "denied",
+      "exit_code": 73,
+      "stdout": "NETWORK_DENIED 1\n",
+      "stderr": ""
+    }
+  ],
+  "filesystem_isolated": false,
+  "dependencies_rebuilt_from_source": false,
+  "precompiled_dependencies_used": true,
+  "official_acceptance": false,
+  "lake_manifest_sha256": "368098857ce273495f37e231250c9ed0ab5056d35b29cbea8cfc8e38d22146e5",
+  "lake_manifest": {
+    "version": "1.2.0",
+    "packagesDir": ".lake/packages",
+    "packages": [
+      {
+        "url": "https://github.com/leanprover-community/mathlib4.git",
+        "type": "git",
+        "subDir": null,
+        "scope": "",
+        "rev": "5ed2965256430c3649e86755f9576b54eca72435",
+        "name": "mathlib",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "5ed2965256430c3649e86755f9576b54eca72435",
+        "inherited": false,
+        "configFile": "lakefile.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/plausible",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+        "name": "plausible",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/LeanSearchClient",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+        "name": "LeanSearchClient",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/import-graph",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "e928b72544873815af278d38681b31c0293588e3",
+        "name": "importGraph",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/ProofWidgets4",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+        "name": "proofwidgets",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/aesop",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+        "name": "aesop",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "master",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/quote4",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+        "name": "Qq",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "master",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/batteries",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+        "name": "batteries",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover/lean4-cli",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover",
+        "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+        "name": "Cli",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "v4.34.0",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      }
+    ],
+    "name": "erdos466",
+    "lakeDir": ".lake",
+    "fixedToolchain": false
+  },
+  "export_sha256": "35fc58ff0e23fa84afd99f6086b39a096879d3affdcc85116b6f58faedec8ec4",
+  "export_bytes": 145728907,
+  "local_checks_passed": true,
+  "paths_redacted_for_publication": true
+}

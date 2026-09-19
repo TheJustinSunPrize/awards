@@ -1,0 +1,21 @@
+{
+  "export_file_path": "proof.ndjson",
+  "use_stdin": false,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unpermitted_axiom_hard_error": true,
+  "unsafe_permit_all_axioms": false,
+  "nat_extension": true,
+  "string_extension": true,
+  "num_threads": 2,
+  "pp_to_stdout": true,
+  "pp_declars": [
+    "Erdos466General.erdos_466_parameter_classification",
+    "Erdos466General.erdos_466"
+  ],
+  "print_axioms": true,
+  "print_success_message": true
+}
