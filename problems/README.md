@@ -873,7 +873,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000756 | [How does the size Ramsey number grow with the target graph's average degree?](catalog-0701-0800.md#JSP-000756) | Open | No | No | Unavailable |
 | JSP-000757 | [How many distinct exponent values occur in the prime factorization of a factorial?](catalog-0701-0800.md#JSP-000757) | Open | No | No | Unavailable |
 | JSP-000758 | [Can the product of consecutive integers have pairwise distinct prime-factor exponents?](catalog-0701-0800.md#JSP-000758) | Open | No | No | Unavailable |
-| JSP-000759 | [What edge count forces many internally disjoint paths between two vertices?](catalog-0701-0800.md#JSP-000759) | Solved | No | No | Unavailable |
+| JSP-000759 | [What edge count forces many internally disjoint paths between two vertices?](catalog-0701-0800.md#JSP-000759) | Solved | Yes | No | Unavailable |
 | JSP-000760 | [Can a linear edge bound force a cycle and an external vertex adjacent to three of its vertices?](catalog-0701-0800.md#JSP-000760) | Solved | No | No | Unavailable |
 | JSP-000761 | [How many edges can a graph critical under the specified chromatic-reducing deletions have?](catalog-0701-0800.md#JSP-000761) | Open | No | No | Unavailable |
 | JSP-000762 | [Can a large graph have uncountable chromatic number while all subgraphs of the specified smaller size have countable chromatic number?](catalog-0701-0800.md#JSP-000762) | Open | No | No | Unavailable |
