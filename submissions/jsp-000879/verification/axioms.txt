@@ -1,0 +1,5 @@
+Output of `#print axioms` (lake build, Lean 4.34.0 + Mathlib v4.34.0):
+
+'jsp_000879' depends on axioms: [propext, Classical.choice, Quot.sound]
+'jsp_000879_known_list' depends on axioms: [propext, Classical.choice, Quot.sound]
+'jsp_000879_least' depends on axioms: [propext, Classical.choice, Quot.sound]
