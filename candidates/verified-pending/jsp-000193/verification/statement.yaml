@@ -2,12 +2,12 @@ id: "STMT-jsp-000193-v1"
 status: active
 supersedes: null
 statement:
-  text: "There exists a positive integer N such that for every i in {1,2,3,4,5,6,7,8}, the integer N+i is not squarefree, i.e. the gap between consecutive squarefree integers is at least 9. Witness N = 65335225716547, with p_i^2 dividing N+i for the primes p = (2,3,5,7,11,13,17,19)."
-  natural_language_source: "Gaps between consecutive squarefree integers (catalog JSP-000193; catalog problem 000193, Erdős)"
+  text: "Gaps between consecutive squarefree integers are unbounded: for every n ≥ 1 there exist n consecutive positive integers, none of which is squarefree. Equivalently, ∀ n ≥ 1, ∃ N, ∀ i with 1 ≤ i ≤ n, N+i is not squarefree."
+  natural_language_source: "Gaps between consecutive squarefree integers (catalog JSP-000193; catalog problem 000193, Erdős). Complete solution: the gaps are unbounded, via the Chinese Remainder Theorem."
   definitions_reviewed:
     - name: "Squarefree"
       from_library: true
-      review: "Standard mathlib definition (root-namespace Squarefree via natFactorization / prime-square obstruction)."
+      review: "Standard mathlib definition (root-namespace Squarefree; a number is squarefree iff no prime square divides it, Nat.squarefree_iff_prime_squarefree)."
     - name: "Nat.Prime"
       from_library: true
       review: "Standard mathlib definition of primality."

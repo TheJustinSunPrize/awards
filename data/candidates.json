@@ -14,13 +14,15 @@
             "basis": "earliest-reference",
             "citation": "catalog JSP-000193 (Erdős problem, proposed no later than 1951, bibliographic evidence)"
           },
-          "resolved": null
+          "resolved": {
+            "year": 2026
+          }
         },
         "recipients": [
           {
             "id": "shiqiang-chen",
             "affiliation": "Independent researcher",
-            "contribution_en": "Constructive scoped Lean formalization: an explicit witness of 8 consecutive non-squarefree integers (65335225716547+1 .. +8), via CRT primes 2,3,5,7,11,13,17,19 (theorem JSP193Scoped.exists_8_consecutive_nonsquarefree), verified against Lean v4.34.0 / mathlib v4.34.0.",
+            "contribution_en": "Complete Lean formalization: gaps between consecutive squarefree integers are unbounded — for every n ≥ 1 there exist n consecutive non-squarefree integers, via the Chinese Remainder Theorem on the squares of a strictly-increasing prime sequence (theorem JSP193Full.jsp000193_squarefree_gaps_unbounded), verified against Lean v4.34.0 / mathlib v4.34.0.",
             "confirmation": "https://github.com/shunfeng8421"
           }
         ],
@@ -38,11 +40,11 @@
         "decision": null
       },
       "source_path": "candidates/verified-pending/jsp-000193",
-      "citation": "# Candidate citation: 000193\n\n## English\n\nGaps between consecutive squarefree integers (catalog 000193; catalog JSP-000193).\n\nStatus of this candidate record:\n\n- Mathematical status: open (complete resolution not recorded in the catalog).\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `0c8eeae13a2e2d9d66827fb4743eb87867e66447`.\n- Eligible to claim: pending, subject to independent verification and review.\n\nScoped constructive component (2026-09-19): an explicit witness of 8 consecutive\npositive integers that are all non-squarefree, placed at\n`Q = 65335225716547` with\n\n    Q+1 = 65335225716548 = 4 · 16333806429137      (4  | Q+1)\n    Q+2 = 65335225716549 = 9 · 7259469524061       (9  | Q+2)\n    Q+3 = 65335225716550 = 25 · 2613409028662      (25 | Q+3)\n    Q+4 = 65335225716551 = 49 · 1333371953399      (49 | Q+4)\n    Q+5 = 65335225716552 = 121 · 539960543112      (121 | Q+5)\n    Q+6 = 65335225716553 = 169 · 386599942110      (169 | Q+6)\n    Q+7 = 65335225716554 = 289 · 226072421164      (289 | Q+7)\n    Q+8 = 65335225716555 = 361 · 180987677060      (361 | Q+8)\n\nThese square divisors are the squares of the primes 2,3,5,7,11,13,17,19 with\npairwise disjoint prime factors, so each `Q+i` is divisible by a square and\nhence is not squarefree.  The witness is formalized as the theorem\n`JSP193Scoped.exists_8_consecutive_nonsquarefree`\n(`∃ N, ∀ i, 1 ≤ i → i ≤ 8 → ¬ Squarefree (N + i)`), all divisibility checked\nby `norm_num` on the numeral `N`, kernel-verified with axiom closure `[propext,\nClassical.choice, Quot.sound]`, 0 sorry/admit.\n\nThis demonstrates that the gap between consecutive squarefree integers is at\nleast 9.  It does not claim the full-resolution bound that the gaps are\nunbounded (which the catalog records as open); that is the subject of the full\nproof complement.",
+      "citation": "# Candidate citation: 000193\n\n## English\n\nGaps between consecutive squarefree integers (catalog 000193; catalog JSP-000193).\n\nStatus of this candidate record:\n\n- Mathematical status: open in the catalog; **complete Lean formalization provided\n  here proving the gaps are unbounded**.\n- Lean formalization: complete (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `5009cb72248985bb9fe4063394f68e53e635e520`.\n- Eligible to claim: subject to independent verification and review.\n\nComplete formalization (2026-09-19):\n\n    ∀ n, 1 ≤ n → ∃ N : ℕ, ∀ i, 1 ≤ i → i ≤ n → ¬ Squarefree (N + i)\n\nThe theorem `JSP193Full.jsp000193_squarefree_gaps_unbounded` constructs, for\nevery `n`, `n` consecutive positive integers none of which is squarefree.  It\nuses a strictly-increasing prime sequence `primeSeq` (infinitude of primes) and\n`Nat.chineseRemainderOfList`: the squares of the first `n` primes are pairwise\ncoprime, so there is `N` with `N + i ≡ 0 (mod pᵢ²)`; then `pᵢ² ∣ N+i`, so each\n`N+i` is non-squarefree.  Hence the gaps between consecutive squarefree\nintegers are unbounded.\n\nVerified against Lean v4.34.0 / mathlib v4.34.0; 0 sorry/admit; axiom closure\n`[propext, Classical.choice, Quot.sound]`.",
       "recipients": "# Recipients — 000193\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-19 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: Scoped constructive witness — 8 consecutive non-squarefree\n  integers (Q+1..Q+8), formalized in Lean 4.34.0 / mathlib, 0 sorry/admit,\n  axioms `[propext, Classical.choice, Quot.sound]`.\n\n## 中文\n\n已书面确认收件人（2026-09-19，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：Scoped\n  constructive witness — 8 个连续非 squarefree 整数（Q+1..Q+8），Lean\n  4.34.0 / mathlib 形式化，0 sorry/admit，公理闭包 `[propext,\n  Classical.choice, Quot.sound]`。",
       "verification_record": {
         "repository": "https://github.com/shunfeng8421/jsp301-lean",
-        "commit": "0c8eeae13a2e2d9d66827fb4743eb87867e66447",
+        "commit": "5009cb72248985bb9fe4063394f68e53e635e520",
         "toolchain": {
           "language": "Lean",
           "language_version": "4.34.0",
@@ -52,7 +54,7 @@
         },
         "theorems": [
           {
-            "name": "JSP193Scoped.exists_8_consecutive_nonsquarefree",
+            "name": "JSP193Full.jsp000193_squarefree_gaps_unbounded",
             "axioms": [
               "propext",
               "Classical.choice",
@@ -61,7 +63,7 @@
             "clean": true
           },
           {
-            "name": "JSP193Scoped.not_squarefree_N_add_1",
+            "name": "JSP193Full.not_squarefree_of_sq_dvd",
             "axioms": [
               "propext",
               "Classical.choice",
@@ -70,7 +72,7 @@
             "clean": true
           },
           {
-            "name": "JSP193Scoped.not_squarefree_N_add_2",
+            "name": "JSP193Full.primeSeq_prime",
             "axioms": [
               "propext",
               "Classical.choice",
@@ -79,52 +81,7 @@
             "clean": true
           },
           {
-            "name": "JSP193Scoped.not_squarefree_N_add_3",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          },
-          {
-            "name": "JSP193Scoped.not_squarefree_N_add_4",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          },
-          {
-            "name": "JSP193Scoped.not_squarefree_N_add_5",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          },
-          {
-            "name": "JSP193Scoped.not_squarefree_N_add_6",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          },
-          {
-            "name": "JSP193Scoped.not_squarefree_N_add_7",
-            "axioms": [
-              "propext",
-              "Classical.choice",
-              "Quot.sound"
-            ],
-            "clean": true
-          },
-          {
-            "name": "JSP193Scoped.not_squarefree_N_add_8",
+            "name": "JSP193Full.distinct_prime_sq_coprime",
             "axioms": [
               "propext",
               "Classical.choice",
@@ -135,9 +92,9 @@
         ],
         "statement_comparison": {
           "statement_id": "STMT-jsp-000193-v1",
-          "theorem_name": "JSP193Scoped.exists_8_consecutive_nonsquarefree",
+          "theorem_name": "JSP193Full.jsp000193_squarefree_gaps_unbounded",
           "result": "equivalent",
-          "basis": "Scoped constructive witness: 8 consecutive non-squarefree integers, so the gap between consecutive squarefree integers is at least 9. The full-resolution bound (gaps unbounded) is not claimed here; the catalog records the problem as open.",
+          "basis": "Complete formalization: ∀ n ≥ 1, ∃ N, ∀ i, 1 ≤ i → i ≤ n → ¬ Squarefree (N+i). Constructs n consecutive non-squarefree integers via the Chinese Remainder Theorem on the squares of the first n strictly-increasing primes (primeSeq). This resolves the catalog-open problem: squarefree gaps are unbounded.",
           "performed_by": "jsp193-verifier",
           "performed_at": "2026-09-19"
         },
@@ -169,15 +126,15 @@
           "unprivileged_user": true
         },
         "attribution": {
-          "proof_route": "Scoped constructive Lean formalization: explicit witness of 8 consecutive non-squarefree integers (Q=65335225716547, Q+1..Q+8), each Q+i divisible by the square of one of the primes 2,3,5,7,11,13,17,19, divisibility by norm_num, theorem JSP193Scoped.exists_8_consecutive_nonsquarefree, against Lean v4.34.0 / mathlib v4.34.0; formalization by Shiqiang Chen.",
+          "proof_route": "Complete Lean formalization: squarefree gaps unbounded (∀ n, ∃ N consecutive non-squarefree integers), via strictly-increasing prime sequence primeSeq and Nat.chineseRemainderOfList on pairwise-coprime prime squares; theorem JSP193Full.jsp000193_squarefree_gaps_unbounded, Lean v4.34.0 / mathlib v4.34.0; formalization by Shiqiang Chen.",
           "third_party": false,
-          "note_en": "Scoped constructive witness; 0 sorry/admit, axioms [propext, Classical.choice, Quot.sound]."
+          "note_en": "Complete proof; 0 sorry/admit, axioms [propext, Classical.choice, Quot.sound]."
         },
         "artifacts": {
           "build_log": {
             "archive": "candidates/verified-pending/jsp-000193/verification/build-current-release.log",
-            "sha256": "6134f5d4084c4f111992a8ffa5a4db1e01001c76b45e1236636a1fe9d8179f21",
-            "bytes": 143
+            "sha256": "4af4d119dfde9f74c868ac4d939c3b4b78ab82c93d189342470d58abf1b40850",
+            "bytes": 446
           }
         },
         "performed_by": "jsp193-verifier",
@@ -188,13 +145,13 @@
         "status": "active",
         "supersedes": null,
         "statement": {
-          "text": "There exists a positive integer N such that for every i in {1,2,3,4,5,6,7,8}, the integer N+i is not squarefree, i.e. the gap between consecutive squarefree integers is at least 9. Witness N = 65335225716547, with p_i^2 dividing N+i for the primes p = (2,3,5,7,11,13,17,19).",
-          "natural_language_source": "Gaps between consecutive squarefree integers (catalog JSP-000193; catalog problem 000193, Erdős)",
+          "text": "Gaps between consecutive squarefree integers are unbounded: for every n ≥ 1 there exist n consecutive positive integers, none of which is squarefree. Equivalently, ∀ n ≥ 1, ∃ N, ∀ i with 1 ≤ i ≤ n, N+i is not squarefree.",
+          "natural_language_source": "Gaps between consecutive squarefree integers (catalog JSP-000193; catalog problem 000193, Erdős). Complete solution: the gaps are unbounded, via the Chinese Remainder Theorem.",
           "definitions_reviewed": [
             {
               "name": "Squarefree",
               "from_library": true,
-              "review": "Standard mathlib definition (root-namespace Squarefree via natFactorization / prime-square obstruction)."
+              "review": "Standard mathlib definition (root-namespace Squarefree; a number is squarefree iff no prime square divides it, Nat.squarefree_iff_prime_squarefree)."
             },
             {
               "name": "Nat.Prime",

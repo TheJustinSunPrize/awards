@@ -1,4 +1,10 @@
-JSP-000193 current-release verification build log
+JSP-000193 FULL current-release verification build log
 Generated: 2026-09-19 by jsp193-verifier
---- lake env lean Jsp193Scoped.lean ---
+--- lake env lean Jsp193Full.lean ---
+Jsp193FullLocal.lean:79:41: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Jsp193FullLocal.lean:80:41: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
 LEAN_EXIT=0
