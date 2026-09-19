@@ -1,0 +1,11 @@
+SendovFiveDirections.lean:1:0: warning: 
+'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Real.Basic
+SendovFiveDirections.lean:25:5: warning: Variable name `r04` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _r04
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'SendovFiveDirections.five_halves_le' depends on axioms: [propext, Classical.choice, Quot.sound]

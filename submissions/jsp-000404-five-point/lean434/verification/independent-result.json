@@ -1,0 +1,69 @@
+{
+  "checked_at_utc": "2026-09-17T03:21:01.100482+00:00",
+  "target": "JSP404.verified_cases_exact",
+  "proof_files": {
+    "SendovFiveDirections.lean": "ec39ea957c20a34a7c98a4cbca082f396a589106e868fc8dae821f4043b88e2f",
+    "SendovDirectionGeometry.lean": "67e42f935432421d0fe377b41a9e5420865b91301fba25740963acf6acd6a379",
+    "SendovFivePointPlane.lean": "258e1c6ab1f40d804a6127facaca6b716ee3f79591a7bb2072096e9bb51a839f",
+    "FivePointExact.lean": "8b454a30863ad6fd219b167406cf6b967f828ff3d2d147242ee2e18852ed74ff",
+    "SendovDirectionModel.lean": "2b6bcaf05f51763f46c6384752764557d5663947d752d89ffc684cf9b1afbed5",
+    "SendovSixDirections.lean": "4f7c39bb32669ef7063ed45354799e32c5d9daa309643b1eee8dfe899997a13a",
+    "SendovSixPointPlane.lean": "ae1cf62b8d75a16bb164342105258456456a70f8ddff5e6416ee4d79e420d613",
+    "SmallCasesExact.lean": "38c984e4dc878a53dbe2d71913f846553d8dbdbf6dccd7cdfe1d049ffa4f3368",
+    "SendovStrictPower.lean": "bf37b3ed154abb6fa644a80ad128ce28851495e62ab294150f3a6ba2d65e98cd",
+    "PowerCasesExact.lean": "dc290f2d60b974382e8058248d02142740e05d0be09c6e1c7cb023ec311b05d1",
+    "VerifiedCasesExact.lean": "a30708b9dbfa74283af9e63a17b782fec4eab60ad3497e1e3b9f6881fbc14850"
+  },
+  "export_metadata": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+      "version": "4.34.0"
+    }
+  },
+  "exporter_commit": "076e8e57707e813375e8f9da8bf989799ace9680",
+  "nanoda_commit": "4c544ed4099c8227f07d5de77ad1e69fb0740a27",
+  "exporter_binary_sha256": "5a3975718f04d9ce8c8a79d3d83497b4de70d9224c0e4f4eb89987c39ba37a2f",
+  "nanoda_binary_sha256": "aa463f65bc2551b83f6c14764fb9367388bea921ec5171cb3436cd19bff43b5b",
+  "export_bytes": 128287004,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unsafe_permit_all_axioms": false,
+  "unpermitted_axiom_hard_error": true,
+  "independent_implementation": true,
+  "independent_operator": false,
+  "official_verification": false,
+  "network_isolated": false,
+  "positive": {
+    "exit_code": 0,
+    "declarations": 23681,
+    "log": "nanoda-final.log",
+    "log_sha256": "c336b06a9a5a5cd5397d3f321bcf0326c1772ff8186e841d3395d1a09cc81b23",
+    "input_sha256": "89081836d668f2b47055d68adbe50b2a80fac5173ceb48ac970523e513eeb629"
+  },
+  "wrong_proof": {
+    "exit_code": 101,
+    "declarations": null,
+    "log": "nanoda-wrong-proof.log",
+    "log_sha256": "576277a5cec9cd3cc02f27f81e7dfb579e15fcc3e53159312b4e60c37aa60722",
+    "input_sha256": "22b59ccb749681b0e888c861e6fc3b549614409469042ce051119a34d6dadafd"
+  },
+  "unpermitted_axiom": {
+    "exit_code": 1,
+    "declarations": null,
+    "log": "nanoda-unpermitted-axiom.log",
+    "log_sha256": "ed7d69c1764a7627530c8cc9128390a20cb3722b53e2a9a6fc6922d33adba5fd",
+    "input_sha256": "dd939dc8dbf6dfaf4e67a436c34d11c5e0b8ac68e294f19ff16026bd669b500b"
+  },
+  "script_sha256": "85be27e6a3d276f34eed2b4e55d072e0021b923007e24e4b32d9690cc3ad7918",
+  "config_sha256": "d9b13fbe9c37befe029d5b196956e0b97b8c824789b08074963f6ba93ba82fc2"
+}

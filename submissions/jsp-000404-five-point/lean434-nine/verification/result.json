@@ -1,0 +1,1117 @@
+{
+  "checked_at_utc": "2026-09-17T05:07:40.213519+00:00",
+  "problem": "JSP-000404 / Erdos 504",
+  "scope": "Exact alpha N=5*pi/7 for every 9<=N<=10; arbitrary-N classification not proved",
+  "complete_original_problem": false,
+  "lean": "4.34.0",
+  "dependencies": {
+    "jsp404integration": {
+      "path": "../lean434",
+      "files": {
+        "SendovFiveDirections.lean": "ec39ea957c20a34a7c98a4cbca082f396a589106e868fc8dae821f4043b88e2f",
+        "SendovDirectionGeometry.lean": "67e42f935432421d0fe377b41a9e5420865b91301fba25740963acf6acd6a379",
+        "SendovFivePointPlane.lean": "258e1c6ab1f40d804a6127facaca6b716ee3f79591a7bb2072096e9bb51a839f",
+        "FivePointExact.lean": "8b454a30863ad6fd219b167406cf6b967f828ff3d2d147242ee2e18852ed74ff",
+        "SendovDirectionModel.lean": "2b6bcaf05f51763f46c6384752764557d5663947d752d89ffc684cf9b1afbed5",
+        "SendovSixDirections.lean": "4f7c39bb32669ef7063ed45354799e32c5d9daa309643b1eee8dfe899997a13a",
+        "SendovSixPointPlane.lean": "ae1cf62b8d75a16bb164342105258456456a70f8ddff5e6416ee4d79e420d613",
+        "SmallCasesExact.lean": "38c984e4dc878a53dbe2d71913f846553d8dbdbf6dccd7cdfe1d049ffa4f3368",
+        "SendovStrictPower.lean": "bf37b3ed154abb6fa644a80ad128ce28851495e62ab294150f3a6ba2d65e98cd",
+        "PowerCasesExact.lean": "dc290f2d60b974382e8058248d02142740e05d0be09c6e1c7cb023ec311b05d1",
+        "VerifiedCasesExact.lean": "a30708b9dbfa74283af9e63a17b782fec4eab60ad3497e1e3b9f6881fbc14850",
+        "lakefile.toml": "d2b32948ec31f53e7008b03c748ea11fec4cc38f40542d86310b21c9e909edfb",
+        "lake-manifest.json": "b34c64afbda6ba670c5c4a27f2f666b49ae500958d8ed728dcc3326aaf29020d",
+        "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+        "verify.py": "f95f9b7ff49531f10a7e813893321b84b954ecc5af4e3a8c26d0034fac534021",
+        "generate_five_direction_proof.py": "d0c87453f3714ff64a9592872eb5a52e510e7c4d0740c17e43173ccb31b49527",
+        "generate_six_direction_proof.py": "214e58c2734f93eb7458e69c8c28d8040bee13dba9931423ce9d0b57ead9a466",
+        "SendovFiveDirections.generation.json": "f3195b66c3417bf7ca579600d38c4dd41bb6eeaf07048636304a128a3c4163bf",
+        "SendovSixDirections.generation.json": "5151fb45597b459bc13fb60d74ea3465b4094e1d562b98650ac0a70931f1e1a6",
+        "README.md": "363d9576db6974874c2b3887a53c8239c390262e39ea140eb7673676ab6b0c22",
+        "verify_independent.py": "85be27e6a3d276f34eed2b4e55d072e0021b923007e24e4b32d9690cc3ad7918",
+        "INDEPENDENT.md": "d708946808a5ff2815d9f2960d2cd87f1c7926cf537232dfe0227ea34c0a97ae"
+      }
+    },
+    "jsp_000404": "722cb3caa86710c788296ca0ec954a79e9a0adcc",
+    "mathlib": "5ed2965256430c3649e86755f9576b54eca72435",
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+  },
+  "files": {
+    "NineTheoryTrial.lean": "d584b765c74c0fa7425d12aaba45bd8e0c826cb16007f22d495248fc275983f7",
+    "NineRUPChunk000.lean": "b02425ffa3316da9ef0dc9c9f5be11e9f76ac03c7e795a1f22e7502c1d934f51",
+    "NineRUPChunk001.lean": "2fe907f4256c36b46558bbbed78ffa329c384fb4cffb2725cb63d9d7d6a3b685",
+    "NineRUPChunk002.lean": "2ca49d0502e4c5501176071b814683e7e7deaaa127834b25506615d44ddd8027",
+    "NineRUPChunk003.lean": "618f6913d235d2fc2f7c5f213b1578e39aa4d1cd698e7480d76786ac6b8d99d3",
+    "NineRUPChunk004.lean": "ab1eb849f92b29da6c5d273ae68e21f101906a52264c10845a86d8e54db76cae",
+    "NineRUPChunk005.lean": "674a80e7d26c2d3fb733a68baabf676488c08d389615334e1275bce0808d856f",
+    "NineRUPChunk006.lean": "9ab7c2891821f2f4ad40daed51b88e6932e57db0b95dd57d6ad48d94e9ad9337",
+    "NineRUPChunk007.lean": "31dfa65525fd3261cdca1242cb4009dbbeb73d7e54319bae702cb729fad2ff4c",
+    "NineRUPChunk008.lean": "acc303e2831954f6d3868254f9ece01f59e17908670e370570c7af5de4ec48ad",
+    "NineRUPChunk009.lean": "7b12c563ae252724c711a0483ec2ebb85d3b2942c6a13f3027fdf5c1e7f5cc7c",
+    "NineRUPChunk010.lean": "2869c84d73fc1c1ac1204190651fdd87e7411b4f28b24d674117f70e12bc2caf",
+    "NineRUPChunk011.lean": "1fe976fe92dca027314a79e0bed958af2a202a7ae4c2cb2bfbf468d9fea8d499",
+    "NineRUPChunk012.lean": "7f59b33b1e41eedef22f157b554e0ee54083614ad124142caa1b6f4ae24eb3f2",
+    "NineRUPChunk013.lean": "15ef354590d565266bab21ca664818d7b62227edd70fb0be9b434054a56bf453",
+    "NineRUPChunk014.lean": "83f6ff6b0991ed57922836009b4d431a971d857031afb0bb5dc31aebbeed202a",
+    "NineRUPChunk015.lean": "0a4123cba3256ab8927e78e8498c04dccc92234dea495eeb942fe9f6babe996f",
+    "NineRUPChunk016.lean": "0db1bea6ebef80323a69af784d0b2833d8cd9d045acb34fe284ce21a3d9662b1",
+    "NineRUPChunk017.lean": "f6ed876de3edb9e2e1e468660624c7d061b8e07eda6e4b5e8cfa510ebd5cc0a0",
+    "NineRUPChunk018.lean": "8920221495f36cfaaa1f40ad32d24152a3444084a36b7d19f37dca9957e6595c",
+    "NineRUPChunk019.lean": "cf5eb6f1845729a56c03bce7ebcd12d5bdac8c5152fdf8828395ab5bbfa8fcec",
+    "NineRUPChunk020.lean": "de4f421d932a46eaa32643616cf5ded7fdc981e0e24b26eefbf755035d32f3cf",
+    "NineRUPChunk021.lean": "53ce5788393b705278f61714280bf2a680c89903c46dec4ce35e3087df6ac63c",
+    "NineRUPChunk022.lean": "37b862ed5a54422af092fb7d7c123a126b556f92ce2736fc8802cc6dc0658cb8",
+    "NineRUPChunk023.lean": "33e3a3cee22f8dac32fadd5aa883a403cd984da7c292bcd74b8cde973a263fda",
+    "NineRUPChunk024.lean": "ecd0fc03ae532046adf38a7c06768347a6abd4cad6856f66aae1fe2186f1b2d5",
+    "NineRUPChunk025.lean": "8225aac42f96dbf700b2c8b615a9ecd91625888334c5a1932e7dfe9a03e69bc6",
+    "NineRUPChunk026.lean": "495a28581463b02afc2a0ae333320ecc60b188fa971a5ba3168efabd6915968d",
+    "NineRUPChunk027.lean": "376008e3e99b25e130df434c88a2a81c12ac85f5ba32648cc77ad955e61ec2f1",
+    "NineRUPChunk028.lean": "a7e16e84011fab1af5a32cab803cd1fd2621c8b4c3cd57ed9404757583497377",
+    "NineRUPChunk029.lean": "fc1a9641f76f1ad5fa2e3a01d5a5eb4c846e468ddb3a9114056167c16d938c7c",
+    "NineRUPChunk030.lean": "37965e0392f67126dbd5d194cc4ed559ad69aa98abec68ead52c58f9eadb2bfc",
+    "NineRUPChunk031.lean": "6e94cdc65a7940e8e9b2f68fe3d2f3f7d2ed2b35ca22f0e641fa3e9406cdd0cf",
+    "NineRUPChunk032.lean": "3deb86d51dac4a29725f04835471b43eb5d377e80f257eacc85cc1300426907b",
+    "NineRUPChunk033.lean": "74c2e647274965a429332eb3186a87895ab422d4bf3db17e2e7fc0e076b4e5a1",
+    "NineRUPChunk034.lean": "5e2f9496b2b5c1a863ce0dc3d49c60177dbde1e640e6d6b870547908809cc70f",
+    "NinePropositionalTrial.lean": "1112069737a3876d950363ab621e4ad98a49fef90da8c113d5842f0e2032a632",
+    "NineCNFDirectChunk000.lean": "59e9aa225e65aec0ca7b0d31ed7c2caacda9b11d0a445f24603a68b7f6b9db6b",
+    "NineCNFDirectChunk001.lean": "b72e4efc5c4c8fb813673b0c32a0f40f33dafd070d2a57e6c56c2ec6198e06b0",
+    "NineCNFDirectChunk002.lean": "635b180d4709ce01c1bf907f26c28151c425bca141171da8abbcab535cbcaabd",
+    "NineCNFDirectChunk003.lean": "69574d3f67d80584374acb9165cc02185b95906b76ac8717b39c665ceff3aad3",
+    "NineCNFDirectChunk004.lean": "04b484d78468a74fd67c29c62df519eda6d0f39b491d16c3c7c259e1e4c53caf",
+    "NineCNFDirectChunk005.lean": "b8236c501f05639f81f3d7c05ad699c26454043ae806277a1aa6f83a2a0b750a",
+    "NineCNFDirectChunk006.lean": "93f37bd5d845b1a357e344cf67b330a12fece7023f38377431a2a68c21398e62",
+    "NineCNFDirectChunk007.lean": "1604cd28ba35e043668c784587a10896dc2cd1169d67ec9c41fa12edd773e6d7",
+    "NineCNFDirectChunk008.lean": "f270ec392d37fb546da1daf6bb794f8885234b67cbfb97fdb6cebf4e5f0c63a1",
+    "NineCNFDirectChunk009.lean": "6405f4145ded58979b827b83de415e6823f71bc4527c1a27cfdeaf207a1ac9cc",
+    "NineCNFDirectChunk010.lean": "a967db27687a10b15db0228b7e6d05a641cc8affb5d2ccf6a5d2263ee598bd53",
+    "NineCNFDirectChunk011.lean": "87e644ee6a9da4dfd1981e5f1f374826fdae7f07d1926a98eddf2095bb023976",
+    "NineCNFDirectChunk012.lean": "4db70d7e394c09d8fefe495e77c4834e18ffc87768d81bae2b50b458fb1a3593",
+    "NineCNFDirectChunk013.lean": "a7ef3100f981fe691d47b72e33732fc21da947759c0334cad6ec1a6aaa5b28d2",
+    "NineCNFDirectChunk014.lean": "e0f902339d165aafa438a80c658921ed2b897d52620005abc7211788e7403ffe",
+    "NineCNFDirectChunk015.lean": "fabe901a81d7e4fa5547ec7626e61b26c8cd9418701f8517645bccf010bb88fb",
+    "NineCNFDirectChunk016.lean": "859b94f89ecf2717c61967fba7fc0f0f40748d991b3299475b96b53081632e59",
+    "NineCNFDirectAll.lean": "54fb7b029227a1475d3eab543505c80e261e8f2be7cecc5da35bba34b50e69fb",
+    "NineModelTrial.lean": "46005f3bb3b2a02ded7e7a20cbf8f23784445227ddeee99f4134d7e462530dcb",
+    "NinePointExactTrial.lean": "3b613b95fb4bce250f957ce63e40c22c68d180bac3e72301f213d41f1426f47b",
+    "modules.json": "cd5f696b5a00cd9d9b6433fd4d8f9ac6740fc0e9a2bdf52c51ad3e2aea16cd46",
+    "lakefile.toml": "ce0a2bece0fe037cb5abed2525a3743b0c92f2d4cb7a9693c73c15d1157f2c51",
+    "lake-manifest.json": "973f82da5a6fadccc429edb81a4d3e8509cd0413766eaef0e07797312f9d1289",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "verify.py": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b",
+    "verify_independent.py": "3fda3a87fa737a018262ac5b0df0ba60a0e7a6975c492cccf321c61e9c9a2294",
+    "README.md": "7402f176f40c6312cba431ea841aae9f88fc9ec15ffe6905635cfaee54cb5976",
+    "INDEPENDENT.md": "d88e5e3669db5d29c381a783473fced4b1799da0553e1b814be2c7258d53a87e",
+    ".gitignore": "6a4894a0fdc2a7a54b78c431cf29b923e72b91f6af022fb30cfce3e62b7241e4",
+    "verification/verify-initial.py": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+  },
+  "checks": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "version.log",
+      "sha256": "22b2a7b07d8cf2dd036853226f0f7ec55987cbd55c285e1d7282c8ba4840939b",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "--dir",
+        "../lean434",
+        "build"
+      ],
+      "exit_code": 0,
+      "log": "sibling-build.log",
+      "sha256": "9d3e40a104066f08ece2d66dc08c765277a81de4458ae85ac573e64eae4bed05",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineTheoryTrial.olean",
+        "NineTheoryTrial.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineTheoryTrial-trust0.log",
+      "sha256": "90dd5382e704ef43f2a095643112093fbd4900fc7c8b441952d872aca16f0c9c",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk000.olean",
+        "NineRUPChunk000.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk000-trust0.log",
+      "sha256": "c6b3933d81a4addedd96e666515bc040d2aaddbad4af3decd6ebcee36011829b",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk001.olean",
+        "NineRUPChunk001.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk001-trust0.log",
+      "sha256": "0ae1bbeb73d254046ffb5e06a8aabd60b8c97156139c7ffbe105aefce1ffb43b",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk002.olean",
+        "NineRUPChunk002.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk002-trust0.log",
+      "sha256": "8db3d48320f04e3232e661e7c528feb87a6332bda2609cc3b6eb001c30aaf495",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk003.olean",
+        "NineRUPChunk003.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk003-trust0.log",
+      "sha256": "c39f5f8526c3dce8d83ed283c9e4d65ae73fbb43192dbae9c09ccca8f7a068ad",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk004.olean",
+        "NineRUPChunk004.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk004-trust0.log",
+      "sha256": "d626ff4df9d89f82cbed47f501771fb182c56e16c116ce58bcd7a8097eccb000",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk005.olean",
+        "NineRUPChunk005.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk005-trust0.log",
+      "sha256": "c52fc2aa2dc7bd4c609b761050338477015dd8a1327958c189f070b0bcbcf547",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk006.olean",
+        "NineRUPChunk006.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk006-trust0.log",
+      "sha256": "ebe8353a032e72dc40ff8e8813869f059d1067c3c92f1662741a814f63380d5e",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk007.olean",
+        "NineRUPChunk007.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk007-trust0.log",
+      "sha256": "c7c9157629444c341c9d5588e5ba7a887ffd90ad3bc4b5480e9d6e5e7714d823",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk008.olean",
+        "NineRUPChunk008.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk008-trust0.log",
+      "sha256": "e81b67a8119997e452e30c48900e23cc1e9fd1fdd6ec612996a3d90c5ac1a0cb",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk009.olean",
+        "NineRUPChunk009.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk009-trust0.log",
+      "sha256": "34e4a96add9cbaf5932c624bf5a488e1b87d82ee8078d057b30de6a7f913b658",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk010.olean",
+        "NineRUPChunk010.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk010-trust0.log",
+      "sha256": "d1f17a3eebc03531719bf174c093efa2ab4c91bf5efc56599c1af859b1da2e4c",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk011.olean",
+        "NineRUPChunk011.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk011-trust0.log",
+      "sha256": "6eb500ed5f6b71b5f6315c1f7306138e768ee59d0fcd81bc21789001e2bb3936",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk012.olean",
+        "NineRUPChunk012.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk012-trust0.log",
+      "sha256": "682b3c2f7290b8493e87e175f0b84678abac51a61b90d19b003393d602ab4724",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk013.olean",
+        "NineRUPChunk013.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk013-trust0.log",
+      "sha256": "51643ebb1e41b03e3d03b71d7db7ca6d27e6575edac82c52cc990005bcaa402c",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk014.olean",
+        "NineRUPChunk014.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk014-trust0.log",
+      "sha256": "2ec6f894bc01a8c93ee65a3208be7fbb6e118731e562dca42dccbc9ad0db83ce",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk015.olean",
+        "NineRUPChunk015.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk015-trust0.log",
+      "sha256": "71a63ce7fb58b62fb083efc8abf696eb89c93045beb296beb352133128a2a428",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk016.olean",
+        "NineRUPChunk016.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk016-trust0.log",
+      "sha256": "c553645667f1a40562de639c6938a947b7b04ff5102abccf1fe717a534f2509f",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk017.olean",
+        "NineRUPChunk017.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk017-trust0.log",
+      "sha256": "623a2aed38b4ccdafaf3c8f7591f53133bc670a8b36316dbb737d315b7c04fcd",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk018.olean",
+        "NineRUPChunk018.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk018-trust0.log",
+      "sha256": "c4cd21252d55a6021a0bfcc65e3299ccd94a88c409486d054bc8de887c2e2b2e",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk019.olean",
+        "NineRUPChunk019.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk019-trust0.log",
+      "sha256": "83a2e78f5aefe443c74eab24859ee54f72d888737990932d87cc2ce06e42885d",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk020.olean",
+        "NineRUPChunk020.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk020-trust0.log",
+      "sha256": "6cd0d7603094d68a0f76a5d98bfb79c96eec7102fdf2cc179ff0a00133c7c3bc",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk021.olean",
+        "NineRUPChunk021.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk021-trust0.log",
+      "sha256": "fa4097384ecf3cdb369a82c8173ef88707ac23248a13397c398cb438de5a0f8f",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk022.olean",
+        "NineRUPChunk022.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk022-trust0.log",
+      "sha256": "b4d454c94d2e08081e7d95e2f71e9923feff7bc47f5f187d168f44b0147f71d9",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk023.olean",
+        "NineRUPChunk023.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk023-trust0.log",
+      "sha256": "b0a59a2f24b1573a3be882506cb493b29e6af6f881a7f2c64e2ea0e577204f5b",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk024.olean",
+        "NineRUPChunk024.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk024-trust0.log",
+      "sha256": "4df8f3b4c643858bfa981e20f2111887fa6829809ac788fa0fbc37c3511a5f1d",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk025.olean",
+        "NineRUPChunk025.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk025-trust0.log",
+      "sha256": "530807c73c2dfefb30f4f928e81771fdcabfbfb8cd6b1cc3a89502b74bf9b95e",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk026.olean",
+        "NineRUPChunk026.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk026-trust0.log",
+      "sha256": "fd43097c7759c64c601454d528d1a26ca6b5609edb42c0bd53593b3957b6c242",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk027.olean",
+        "NineRUPChunk027.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk027-trust0.log",
+      "sha256": "7c6a6ae27e8cae2a7673e05600999281fa511cd358101f0ed471abcee723e919",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk028.olean",
+        "NineRUPChunk028.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk028-trust0.log",
+      "sha256": "29048de7d38470f73bb52ac238f494d41933e1a56d719875c93be90fbe11b4c6",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk029.olean",
+        "NineRUPChunk029.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk029-trust0.log",
+      "sha256": "ffebd0424d5b0639d897172987f482b7a98f1bebb2655fb0ef4265d674cc0502",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk030.olean",
+        "NineRUPChunk030.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk030-trust0.log",
+      "sha256": "08c40131623a80e4bddc7fecf9dd7ab2c226a74f35ed231792ddbbc7dc874e1b",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk031.olean",
+        "NineRUPChunk031.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk031-trust0.log",
+      "sha256": "2ed55bf913d150fdeef3405a86be697e2ca937adba00272a3f6069da1b22b38f",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk032.olean",
+        "NineRUPChunk032.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk032-trust0.log",
+      "sha256": "a01d51c03aa588c105d22ec45e9a59bf2e238105c9c6487259193d17a9b992d8",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j2",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk033.olean",
+        "NineRUPChunk033.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk033-trust0.log",
+      "sha256": "811d78532d11a7e6c188e5b6086ab03a6870f54122fb1c045abf4d9ed84ab5a3",
+      "verifier_sha256": "47c0d48c0b5c2082344ba4f0d169c2cc51edde735ed46299a481e36bd984398c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineRUPChunk034.olean",
+        "NineRUPChunk034.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineRUPChunk034-trust0.log",
+      "sha256": "16a837fdf4b51fecc83918b7f27a39fd963a65dd224f82e6daddeb2f60622719",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j1",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NinePropositionalTrial.olean",
+        "NinePropositionalTrial.lean"
+      ],
+      "exit_code": 0,
+      "log": "NinePropositionalTrial-trust0.log",
+      "sha256": "1d1877a9fd8f2627b3854cdb071589189a99df17cfc8db5afe9ee25ecc57f361",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk000.olean",
+        "NineCNFDirectChunk000.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk000-trust0.log",
+      "sha256": "37d63106f3063859e56efabfe428bffc770cbd39927b7109e89e9d934492c61a",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk001.olean",
+        "NineCNFDirectChunk001.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk001-trust0.log",
+      "sha256": "3f0f019707a53ef4ad37b4f87e9241ca21c2d3b8ddc50857f5f6775ca1ffab20",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk002.olean",
+        "NineCNFDirectChunk002.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk002-trust0.log",
+      "sha256": "fd79c6a57173b5a919a0d3896fd133fe48bae88cb3fd4d137e20acec4940aa3f",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk003.olean",
+        "NineCNFDirectChunk003.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk003-trust0.log",
+      "sha256": "f8b448987349b30cbdb3e403cedf3ec13f32737a4d25a45c2bc909aed90865bf",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk004.olean",
+        "NineCNFDirectChunk004.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk004-trust0.log",
+      "sha256": "8e273aa4800e1acd8ff31be7ea06fa7fa16b06633ff9c5af6f0afccad3f2df2f",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk005.olean",
+        "NineCNFDirectChunk005.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk005-trust0.log",
+      "sha256": "37b368caf6e591f88164c16d9d6041ddc3a96df7f91054babb83161318aa4a27",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk006.olean",
+        "NineCNFDirectChunk006.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk006-trust0.log",
+      "sha256": "c8eb89b1aebe69bdc540912617b531bd7ad493bf6cf5217850a80af29b84e226",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk007.olean",
+        "NineCNFDirectChunk007.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk007-trust0.log",
+      "sha256": "119aa7d6946faa194e7b568d51e26a44d373a9396d92c9f195668d2caaa37a9b",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk008.olean",
+        "NineCNFDirectChunk008.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk008-trust0.log",
+      "sha256": "b0c1afbce6aa2e932e1eb8712b148c0e13fd69c7629be2648ee7f795e48e9dfb",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk009.olean",
+        "NineCNFDirectChunk009.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk009-trust0.log",
+      "sha256": "c9ed74fe2e27c3673d6b28bbaa79ac34cc493801746d5a9a13580d3b0a8dd4c7",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk010.olean",
+        "NineCNFDirectChunk010.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk010-trust0.log",
+      "sha256": "ba676fdb63ac921fc52e68cb9d2cca97e6e54e3c2dc57ad0a39ede8f06e16a27",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk011.olean",
+        "NineCNFDirectChunk011.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk011-trust0.log",
+      "sha256": "6fc5060076f25d6cd5f9d3063f428d71ae7323113dd1873825dbdd0ed7381f93",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk012.olean",
+        "NineCNFDirectChunk012.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk012-trust0.log",
+      "sha256": "ed91d66421ce1bcf7806d84af9de550ee5146a1f959ac7355bdb102fe8b28236",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk013.olean",
+        "NineCNFDirectChunk013.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk013-trust0.log",
+      "sha256": "dec7418a99491f2c5f9d9159b7d386684858749b52a93c7709fbec79849972b4",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk014.olean",
+        "NineCNFDirectChunk014.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk014-trust0.log",
+      "sha256": "a60d0ff2bbe0dd8b43b45f1e4d7a5e9889500de90f7e0e8154a77f8214274311",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk015.olean",
+        "NineCNFDirectChunk015.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk015-trust0.log",
+      "sha256": "caa0307466d53e3810e10f2f4346a79a8cee704c5c69ba6a0ca683a39f2b14a0",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectChunk016.olean",
+        "NineCNFDirectChunk016.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectChunk016-trust0.log",
+      "sha256": "e02c7c8053875f316975b1e6005c7aac52bd77b68c34da833e06db9c45a2fc20",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j4",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineCNFDirectAll.olean",
+        "NineCNFDirectAll.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineCNFDirectAll-trust0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j1",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NineModelTrial.olean",
+        "NineModelTrial.lean"
+      ],
+      "exit_code": 0,
+      "log": "NineModelTrial-trust0.log",
+      "sha256": "06af91b863b0674c9de9c508302cb9b7486eae2a8b3df9a9ff998b5e43171054",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "-j1",
+        "-M5000",
+        "-o",
+        ".lake/build/lib/lean/NinePointExactTrial.olean",
+        "NinePointExactTrial.lean"
+      ],
+      "exit_code": 0,
+      "log": "NinePointExactTrial-trust0.log",
+      "sha256": "c2aeaad22b7eca647c9294a8c83098ac230693765c93a84013c895928685f112",
+      "verifier_sha256": "d7fdb504a305fc737ee4768dbdb504b9d3a2c392e59344c0f783fd6e1485d57b"
+    }
+  ],
+  "environment": "Windows; pinned dependency sources and compiled Mathlib caches",
+  "network_isolated": false,
+  "independent_checker": false,
+  "official_review": "pending",
+  "priority": "not asserted",
+  "solvers_in_verification_trust_chain": false,
+  "record_scope": "57 source modules checked individually with Lean kernel; separate Nanoda evidence"
+}

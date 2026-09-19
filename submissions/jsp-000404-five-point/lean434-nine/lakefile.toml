@@ -1,0 +1,179 @@
+name = "jsp404nine"
+version = "0.1.0"
+defaultTargets = ["NinePointExactTrial"]
+moreLeanArgs = ["-j1", "-M5000"]
+
+[[require]]
+name = "jsp404integration"
+path = "../lean434"
+
+[[lean_lib]]
+name = "NineTheoryTrial"
+
+[[lean_lib]]
+name = "NineRUPChunk000"
+
+[[lean_lib]]
+name = "NineRUPChunk001"
+
+[[lean_lib]]
+name = "NineRUPChunk002"
+
+[[lean_lib]]
+name = "NineRUPChunk003"
+
+[[lean_lib]]
+name = "NineRUPChunk004"
+
+[[lean_lib]]
+name = "NineRUPChunk005"
+
+[[lean_lib]]
+name = "NineRUPChunk006"
+
+[[lean_lib]]
+name = "NineRUPChunk007"
+
+[[lean_lib]]
+name = "NineRUPChunk008"
+
+[[lean_lib]]
+name = "NineRUPChunk009"
+
+[[lean_lib]]
+name = "NineRUPChunk010"
+
+[[lean_lib]]
+name = "NineRUPChunk011"
+
+[[lean_lib]]
+name = "NineRUPChunk012"
+
+[[lean_lib]]
+name = "NineRUPChunk013"
+
+[[lean_lib]]
+name = "NineRUPChunk014"
+
+[[lean_lib]]
+name = "NineRUPChunk015"
+
+[[lean_lib]]
+name = "NineRUPChunk016"
+
+[[lean_lib]]
+name = "NineRUPChunk017"
+
+[[lean_lib]]
+name = "NineRUPChunk018"
+
+[[lean_lib]]
+name = "NineRUPChunk019"
+
+[[lean_lib]]
+name = "NineRUPChunk020"
+
+[[lean_lib]]
+name = "NineRUPChunk021"
+
+[[lean_lib]]
+name = "NineRUPChunk022"
+
+[[lean_lib]]
+name = "NineRUPChunk023"
+
+[[lean_lib]]
+name = "NineRUPChunk024"
+
+[[lean_lib]]
+name = "NineRUPChunk025"
+
+[[lean_lib]]
+name = "NineRUPChunk026"
+
+[[lean_lib]]
+name = "NineRUPChunk027"
+
+[[lean_lib]]
+name = "NineRUPChunk028"
+
+[[lean_lib]]
+name = "NineRUPChunk029"
+
+[[lean_lib]]
+name = "NineRUPChunk030"
+
+[[lean_lib]]
+name = "NineRUPChunk031"
+
+[[lean_lib]]
+name = "NineRUPChunk032"
+
+[[lean_lib]]
+name = "NineRUPChunk033"
+
+[[lean_lib]]
+name = "NineRUPChunk034"
+
+[[lean_lib]]
+name = "NinePropositionalTrial"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk000"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk001"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk002"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk003"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk004"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk005"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk006"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk007"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk008"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk009"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk010"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk011"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk012"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk013"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk014"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk015"
+
+[[lean_lib]]
+name = "NineCNFDirectChunk016"
+
+[[lean_lib]]
+name = "NineCNFDirectAll"
+
+[[lean_lib]]
+name = "NineModelTrial"
+
+[[lean_lib]]
+name = "NinePointExactTrial"

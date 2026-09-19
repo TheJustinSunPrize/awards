@@ -1,0 +1,65 @@
+theorem JSP404.verified_cases_exact :
+  And
+    (And (Eq (JSP404.alpha (OfNat.ofNat 5)) (HDiv.hDiv (HMul.hMul (OfNat.ofNat 3) Real.pi) (OfNat.ofNat 5)))
+      (forall {N : Nat},
+      LE.le (OfNat.ofNat 6) N → LE.le N (OfNat.ofNat 8) → Eq (JSP404.alpha N)
+        (HDiv.hDiv (HMul.hMul (OfNat.ofNat 2) Real.pi) (OfNat.ofNat 3))))
+    (forall {n : Nat},
+    LE.le (OfNat.ofNat 2) n → Eq (JSP404.alpha (HPow.hPow (OfNat.ofNat 2) n))
+      (HMul.hMul (HSub.hSub (OfNat.ofNat 1) (HDiv.hDiv (OfNat.ofNat 1) (Nat.cast n))) Real.pi)) :=
+  _
+
+def JSP404.alpha (a._@._internal._hyg.0 : Nat) : Real :=
+  SupSet.sSup (Set.ofPred (fun (θ : Real) => JSP404.Guaranteed a._@._internal._hyg.0 θ))
+
+def JSP404.Guaranteed (n : Nat) (a._@._internal._hyg.0 : Real) : Prop :=
+  forall (s : Finset JSP404.Point), Eq (Finset.card s) n → JSP404.HasLargeAngle s a._@._internal._hyg.0
+
+def JSP404.HasLargeAngle (s : Finset JSP404.Point) (a._@._internal._hyg.0 : Real) : Prop :=
+  Exists
+    (fun (a : JSP404.Point) =>
+    And (Membership.mem s a)
+      (Exists
+        (fun (b : JSP404.Point) =>
+        And (Membership.mem s b)
+          (Exists
+            (fun (c : JSP404.Point) =>
+            And (Membership.mem s c)
+              (And (Ne a b)
+                (And (Ne a c) (And (Ne b c) (LE.le a._@._internal._hyg.0 (EuclideanGeometry.angle a b c))))))))))
+
+def JSP404.Point : Type 0 := EuclideanSpace Real (Fin (OfNat.ofNat 2))
+
+def EuclideanGeometry.angle.{u_1 u_2} :
+  forall {V : Type u_1} {P : Type u_2}
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine.1031290141._hygCtx._hyg.4 : NormedAddCommGroup V]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine.1031290141._hygCtx._hyg.7 : InnerProductSpace Real V]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine.1031290141._hygCtx._hyg.13 : MetricSpace P]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine.1031290141._hygCtx._hyg.16 : NormedAddTorsor V P],
+  P → P → P → Real :=
+  fun {V : Type u_1} {P : Type u_2}
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine.1031290141._hygCtx._hyg.4 : NormedAddCommGroup V]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine.1031290141._hygCtx._hyg.7 : InnerProductSpace Real V]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine.1031290141._hygCtx._hyg.13 : MetricSpace P]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine.1031290141._hygCtx._hyg.16 : NormedAddTorsor V P]
+    (p₁ p₂ p₃ : P) =>
+  InnerProductGeometry.angle (VSub.vsub p₁ p₂) (VSub.vsub p₃ p₂)
+
+def InnerProductGeometry.angle.{u_1} :
+  forall {V : Type u_1}
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Basic.1031290141._hygCtx._hyg.3 : NormedAddCommGroup V]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Basic.1031290141._hygCtx._hyg.6 : InnerProductSpace Real V],
+  V → V → Real :=
+  fun {V : Type u_1}
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Basic.1031290141._hygCtx._hyg.3 : NormedAddCommGroup V]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Basic.1031290141._hygCtx._hyg.6 : InnerProductSpace Real V]
+    (x y : V) =>
+  Real.arccos (HDiv.hDiv (Inner.inner Real x y) (HMul.hMul (Norm.norm x) (Norm.norm y)))
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
+Checked 23681 declarations with no errors

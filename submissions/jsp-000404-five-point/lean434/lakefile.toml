@@ -1,0 +1,43 @@
+name = "jsp404integration"
+version = "0.1.0"
+defaultTargets = ["VerifiedCasesExact"]
+
+[[require]]
+name = "jsp_000404"
+git = "https://github.com/superpilot69/awards.git"
+rev = "722cb3caa86710c788296ca0ec954a79e9a0adcc"
+subDir = "submissions/jsp-000404"
+
+[[lean_lib]]
+name = "SendovFiveDirections"
+
+[[lean_lib]]
+name = "SendovDirectionGeometry"
+
+[[lean_lib]]
+name = "SendovFivePointPlane"
+
+[[lean_lib]]
+name = "FivePointExact"
+
+[[lean_lib]]
+name = "SendovDirectionModel"
+
+[[lean_lib]]
+name = "SendovSixDirections"
+
+[[lean_lib]]
+name = "SendovSixPointPlane"
+
+[[lean_lib]]
+name = "SmallCasesExact"
+
+
+[[lean_lib]]
+name = "SendovStrictPower"
+
+[[lean_lib]]
+name = "PowerCasesExact"
+
+[[lean_lib]]
+name = "VerifiedCasesExact"

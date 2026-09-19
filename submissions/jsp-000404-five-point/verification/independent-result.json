@@ -1,0 +1,61 @@
+{
+  "checked_at_utc": "2026-09-16T15:39:33.521489+00:00",
+  "target": "SendovFivePointPlane.finite_set_large_angle",
+  "proof_files": {
+    "SendovFiveDirections.lean": "ec39ea957c20a34a7c98a4cbca082f396a589106e868fc8dae821f4043b88e2f",
+    "SendovDirectionGeometry.lean": "455d4c07a3a4bfa5c79d0ee9ba9ee4a3549fbf604d65aaa3bb950dde56f5bff1",
+    "SendovFivePointPlane.lean": "258e1c6ab1f40d804a6127facaca6b716ee3f79591a7bb2072096e9bb51a839f"
+  },
+  "export_metadata": {
+    "lean": {
+      "version": "4.19.0",
+      "githash": "6caaee842e9495688c1567e78c0e68dbb96942aa"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "exporter": {
+      "version": "3.1.0",
+      "name": "lean4export"
+    }
+  },
+  "exporter_commit": "bae5a4a9c1cddec1fd97a82907cb5be9da884b2d",
+  "nanoda_commit": "4c544ed4099c8227f07d5de77ad1e69fb0740a27",
+  "exporter_binary_sha256": "c453e556c88aae8839a208aeb2c92bd3326df06b0d82d8f4c8d963c87f9ed07e",
+  "nanoda_binary_sha256": "aa463f65bc2551b83f6c14764fb9367388bea921ec5171cb3436cd19bff43b5b",
+  "export_bytes": 80394434,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unsafe_permit_all_axioms": false,
+  "unpermitted_axiom_hard_error": true,
+  "independent_implementation": true,
+  "independent_operator": false,
+  "official_verification": false,
+  "network_isolated": false,
+  "positive": {
+    "exit_code": 0,
+    "declarations": 18045,
+    "log": "nanoda-final.log",
+    "log_sha256": "39ad6ab7380ae3aae7589c5320e5e95ab6603ce2c627cdb7d0ae98a98d39f052",
+    "input_sha256": "8d97ddb767c81cf9a291ba0e31efe12f64630ed8601db3f2d3ea609a69cb7326"
+  },
+  "wrong_proof": {
+    "exit_code": 101,
+    "declarations": null,
+    "log": "nanoda-wrong-proof.log",
+    "log_sha256": "03a915f0462adf9c3867aaa682a6fc254da5784a5f564615e252be3589756197",
+    "input_sha256": "521b9951e2a12a0142d850116cb50d27479e207811cc70a128bc9e8c30e6988b"
+  },
+  "unpermitted_axiom": {
+    "exit_code": 1,
+    "declarations": null,
+    "log": "nanoda-unpermitted-axiom.log",
+    "log_sha256": "06ad35af949aa1cf8cc45e45c4b38a1881a63595d49b94415dd6481c5b243e9f",
+    "input_sha256": "e5746aabe0e35c3a7cb3567cfc8a155a0a51f23fca56bdcc5c91309f5ddcbfe2"
+  },
+  "script_sha256": "dc63821e760ea9db8f347df46b0643a560d139128fd2651135c32bbcc6f8db92",
+  "config_sha256": "fa19919a066f6818e7b83ff287474fa385fe523b5f9e3cdd31b2753e2eda614d"
+}

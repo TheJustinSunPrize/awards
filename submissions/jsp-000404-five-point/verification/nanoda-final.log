@@ -1,0 +1,49 @@
+theorem SendovFivePointPlane.finite_set_large_angle (s : Finset SendovFivePointPlane.Point)
+  (hs : LE.le (OfNat.ofNat 5) (Finset.card s)) :
+  Exists
+    (fun (a : SendovFivePointPlane.Point) =>
+    And (Membership.mem s a)
+      (Exists
+        (fun (b : SendovFivePointPlane.Point) =>
+        And (Membership.mem s b)
+          (Exists
+            (fun (c : SendovFivePointPlane.Point) =>
+            And (Membership.mem s c)
+              (And (Ne a b)
+                (And (Ne a c)
+                  (And (Ne b c)
+                    (LE.le (HDiv.hDiv (HMul.hMul (OfNat.ofNat 3) Real.pi) (OfNat.ofNat 5))
+                      (EuclideanGeometry.angle a b c)))))))))) :=
+  _
+
+def SendovFivePointPlane.Point : Type 0 := EuclideanSpace Real (Fin (OfNat.ofNat 2))
+
+def EuclideanGeometry.angle.{u_1 u_2} :
+  forall {V : Type u_1} {P : Type u_2}
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine._hyg.40 : NormedAddCommGroup V]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine._hyg.43 : InnerProductSpace Real V]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine._hyg.49 : MetricSpace P]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine._hyg.52 : NormedAddTorsor V P],
+  P → P → P → Real :=
+  fun {V : Type u_1} {P : Type u_2}
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine._hyg.40 : NormedAddCommGroup V]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine._hyg.43 : InnerProductSpace Real V]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine._hyg.49 : MetricSpace P]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine._hyg.52 : NormedAddTorsor V P] (p₁ p₂ p₃ : P) =>
+  InnerProductGeometry.angle (VSub.vsub p₁ p₂) (VSub.vsub p₃ p₂)
+
+def InnerProductGeometry.angle.{u_1} :
+  forall {V : Type u_1} [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Basic._hyg.30 : NormedAddCommGroup V]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Basic._hyg.33 : InnerProductSpace Real V],
+  V → V → Real :=
+  fun {V : Type u_1} [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Basic._hyg.30 : NormedAddCommGroup V]
+    [inst._@.Mathlib.Geometry.Euclidean.Angle.Unoriented.Basic._hyg.33 : InnerProductSpace Real V] (x y : V) =>
+  Real.arccos (HDiv.hDiv (Inner.inner x y) (HMul.hMul (Norm.norm x) (Norm.norm y)))
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
+Checked 18045 declarations with no errors

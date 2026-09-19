@@ -1,0 +1,230 @@
+[
+  {
+    "module": "NineTheoryTrial",
+    "namespace": "NineTheoryTrial"
+  },
+  {
+    "module": "NineRUPChunk000",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk001",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk002",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk003",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk004",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk005",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk006",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk007",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk008",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk009",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk010",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk011",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk012",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk013",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk014",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk015",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk016",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk017",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk018",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk019",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk020",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk021",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk022",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk023",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk024",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk025",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk026",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk027",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk028",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk029",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk030",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk031",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk032",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk033",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NineRUPChunk034",
+    "namespace": "NineRUPTrial"
+  },
+  {
+    "module": "NinePropositionalTrial",
+    "namespace": "NinePropositionalTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk000",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk001",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk002",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk003",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk004",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk005",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk006",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk007",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk008",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk009",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk010",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk011",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk012",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk013",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk014",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk015",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectChunk016",
+    "namespace": "NineCNFDirectTrial"
+  },
+  {
+    "module": "NineCNFDirectAll",
+    "namespace": "NineCNFDirectAll"
+  },
+  {
+    "module": "NineModelTrial",
+    "namespace": "NineModelTrial"
+  },
+  {
+    "module": "NinePointExactTrial",
+    "namespace": "JSP404"
+  }
+]

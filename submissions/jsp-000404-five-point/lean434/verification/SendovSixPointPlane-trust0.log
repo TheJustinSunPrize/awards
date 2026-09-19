@@ -1,0 +1,4 @@
+'SendovSixPointPlane.model_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovSixPointPlane.six_point_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovSixPointPlane.six_points_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovSixPointPlane.finite_set_large_angle' depends on axioms: [propext, Classical.choice, Quot.sound]

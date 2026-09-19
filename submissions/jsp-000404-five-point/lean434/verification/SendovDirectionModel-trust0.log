@@ -1,0 +1,4 @@
+'SendovDirectionModel.model_of_complex_points' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovDirectionModel.model_of_plane_points' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovDirectionModel.model_of_finite_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SendovDirectionModel.card_bound_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
