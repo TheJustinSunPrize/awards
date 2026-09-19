@@ -1,0 +1,29 @@
+{
+  "source_file": "Prize939.lean",
+  "source_sha256": "f556e09410ff1ea3da2d8d38b84a91e068465181ecc42ebe97ce98a8eb4727fc",
+  "source_bytes": 7861,
+  "toolchain": "leanprover/lean4:v4.28.0",
+  "mathlib_revision": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+  "axioms": {
+    "Erdos939.triples_infinite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos939.erdos_939.variants.triples": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "build": "passed",
+  "warnings_as_errors": "passed",
+  "negative_controls": {
+    "false_arithmetic": "rejected by Lean",
+    "placeholder": "rejected by axiom audit",
+    "custom_axiom": "rejected by axiom audit"
+  },
+  "independent_checker": "not performed",
+  "designated_verification": "pending",
+  "award_eligibility": "not established"
+}
