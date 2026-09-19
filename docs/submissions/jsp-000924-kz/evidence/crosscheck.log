@@ -1,0 +1,2 @@
+PASS: 10260 proper-divisor checks; 20 failures of the specified seven-prime cover.
+Finite diagnostics only; arbitrary parameters and exponents are handled by the Lean proof.
