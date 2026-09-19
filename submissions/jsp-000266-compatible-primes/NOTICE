@@ -1,0 +1,12 @@
+This package's Lean and Python source was prepared independently for this submission
+with GPT/Codex assistance, under the public account green3sf, and is released under MIT.
+
+Mathematical attribution: Sandro Bettin, Loïc Grenié, Giuseppe Molteni and Carlo Sanna,
+A lower bound for the number of Egyptian fractions, arXiv:2509.10030v1 (2025),
+particularly Lemmas 1, 2 and the compatible-prime part of Lemma 4.
+No ownership of the underlying mathematical results is asserted.
+
+Existing related Lean work by joachimneu/distinct-reciprocal-subset-sums is cited in
+PRIOR_ART.md. No source from that project is incorporated. Lean, Mathlib and their
+transitive dependencies retain their own licenses and are obtained separately.
+The environment and verification harnesses adapt the submitter's earlier packages.
