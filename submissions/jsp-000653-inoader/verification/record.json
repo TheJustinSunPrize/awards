@@ -1,0 +1,57 @@
+{
+  "checked_at_utc": "2026-09-16T12:22:18.790002+00:00",
+  "language": "Lean 4.34.0",
+  "lean_commit": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+  "dependencies": "Bundled Lean/Std only; no external Lake packages",
+  "main_theorem": "JSP653.exact_formula_false",
+  "main_theorem_axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "checks": [
+    {
+      "name": "toolchain",
+      "exit_code": 0,
+      "elapsed_seconds": 0.152
+    },
+    {
+      "name": "clean",
+      "exit_code": 0,
+      "elapsed_seconds": 0.025
+    },
+    {
+      "name": "build",
+      "exit_code": 0,
+      "elapsed_seconds": 5.23
+    },
+    {
+      "name": "axioms",
+      "exit_code": 0,
+      "elapsed_seconds": 0.27
+    },
+    {
+      "name": "kernel-replay",
+      "exit_code": 0,
+      "elapsed_seconds": 51.377
+    },
+    {
+      "name": "witness",
+      "exit_code": 0,
+      "elapsed_seconds": 0.257
+    }
+  ],
+  "sha256": {
+    "JSP653.lean": "6a37d7557114078c3affc580b56bca99b8ed9419889182a6d6c1a36442f7e867",
+    "Audit.lean": "7ba9ae32c8ec40bb681892852bdbbb7a8895f89a1bd7a691554c9207a0d066fa",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "lakefile.toml": "60558f0cd07a2e724e97962c68114af06d16270d683fcdb042b2aa880e66db51",
+    "lake-manifest.json": "c4e4036f8a486cc56b8b662daba662b5a172fc4757cebe6894b9bcf304849d4d",
+    "scripts/check_witness.py": "984defc34d22929f42ad3c342bbc1e71c0825e9ba5d1c72416c382cc3659b1b9",
+    "scripts/verify.py": "f534aa2be816ce7c49c2198eaef4214de97273740db6bd6bded1ffdc0e7e606d"
+  },
+  "limitations": [
+    "leanchecker uses the same Lean kernel; it is not an independent implementation.",
+    "Python enumeration cross-checks data; it is not the formal proof.",
+    "No independent human statement review or official prize verification is claimed."
+  ]
+}
