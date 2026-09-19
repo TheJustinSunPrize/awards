@@ -921,7 +921,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000794 | [For a sequence generated greedily to match cumulative additive representation targets, how small can the error be?](catalog-0701-0800.md#JSP-000794) | Open | No | No | Unavailable |
 | JSP-000795 | [If an integer set has density zero, must the integers whose proper-divisor sums lie in that set also have density zero?](catalog-0701-0800.md#JSP-000795) | Open | No | No | Unavailable |
 | JSP-000796 | [How many unit-distance pairs can occur between disjoint translated copies of a convex set?](catalog-0701-0800.md#JSP-000796) | Open | No | No | Unavailable |
-| JSP-000797 | [What uniform upper bound holds for the product of the multiplicities of the shortest and longest distances in a finite point set?](catalog-0701-0800.md#JSP-000797) | Solved | No | No | Unavailable |
+| JSP-000797 | [What uniform upper bound holds for the product of the multiplicities of the shortest and longest distances in a finite point set?](catalog-0701-0800.md#JSP-000797) | Solved | Yes | No | Unavailable |
 | JSP-000798 | [How large can the difference between the two largest distance multiplicities of a planar point set be?](catalog-0701-0800.md#JSP-000798) | Open | No | No | Unavailable |
 | JSP-000799 | [If a point set determines many ordinary lines, must it have a large subset whose every joining line is ordinary in the original set?](catalog-0701-0800.md#JSP-000799) | Solved | No | No | Unavailable |
 | JSP-000800 | [How long can a consecutive-integer interval be if each term has a prime factor larger than its length?](catalog-0701-0800.md#JSP-000800) | Open | No | No | Unavailable |
