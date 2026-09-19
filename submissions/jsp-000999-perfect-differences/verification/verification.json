@@ -1,0 +1,134 @@
+{
+  "steps": {
+    "environment": {
+      "command": [
+        "python3",
+        "tools/check_environment.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.663
+    },
+    "build": {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.704
+    },
+    "axioms": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.242
+    },
+    "evaluation": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Evaluation.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.499
+    },
+    "small_cases": {
+      "command": [
+        "python3",
+        "tools/check_small.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.428
+    },
+    "kernel_replay": {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "--verbose",
+        "PerfectDifference"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 65.465
+    }
+  },
+  "theorem_count": 36,
+  "inputs": {
+    "PerfectDifference.lean": {
+      "sha256": "fedd56b25decbcb5e1137612e68ccd756c621af95e9613bd435f6f4edcb424a3",
+      "bytes": 19322
+    },
+    "Audit.lean": {
+      "sha256": "9bb95dee47ff9297e4923478a0b7987b829b6c26a8bb8cf8ef40f07d2a92a904",
+      "bytes": 1777
+    },
+    "Evaluation.lean": {
+      "sha256": "bfd20b949ba4f7ff777923236a1c721fc40f235ca3c68355822d85d31fb17fc8",
+      "bytes": 888
+    },
+    "lean-toolchain": {
+      "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+      "bytes": 25
+    },
+    "lakefile.toml": {
+      "sha256": "c4d6973ac054f7f02bf7078afc6ebff4c799daacd2a8f780239251f086350169",
+      "bytes": 268
+    },
+    "lake-manifest.json": {
+      "sha256": "eae244c3e65e3eebe3a5b2bbfd811830c80d1469b9c16e37765e4ece9d4b0cc2",
+      "bytes": 3240
+    },
+    "tools/verify.py": {
+      "sha256": "eb5774b5a56eca96d4e34f806dd2d57d7222eaec3cf544f37417d451911e0f6f",
+      "bytes": 3985
+    },
+    "tools/check_environment.py": {
+      "sha256": "36ee937159dbc281859d45596f000d80bac6cfda4c2817557d8f5a488164fb60",
+      "bytes": 1165
+    },
+    "tools/check_small.py": {
+      "sha256": "ff28125f84008d801cda6c763c2d5ebe09102fcfd059a43ce185bfdd6b028be0",
+      "bytes": 4801
+    }
+  },
+  "logs": {
+    "axioms.log": {
+      "sha256": "d35a9f01bb518bd67d4ce15b6f6be11f7ba6d9109aee4d2a560ef5b359798696",
+      "bytes": 3425
+    },
+    "build.log": {
+      "sha256": "c0aa9b84b2d0fa7097efd85899e9e8947cf6f78a3408d454eab1f9e47d5fe247",
+      "bytes": 41
+    },
+    "environment.log": {
+      "sha256": "9e71f63faed14dcf66db7d9c822f47033e6fc101d86442ae2c3a287f586de8e1",
+      "bytes": 1336
+    },
+    "evaluation.log": {
+      "sha256": "3fb8b0dc6b3c5cf3ebfb81edd51f2ed4f5ff7340efdca558b12cb01265548457",
+      "bytes": 428
+    },
+    "kernel-replay.log": {
+      "sha256": "32c6fa91f08999b895d07dfe822f6e2fed948274bb1f2cafcdcf8f893c99f287",
+      "bytes": 41
+    },
+    "small-cases.log": {
+      "sha256": "19bbb74ef3780ff8b64ec0937aab5a9a2c62e400c431e97f559d76a62fca5f57",
+      "bytes": 1699
+    }
+  },
+  "limits": [
+    "Compiled dependency caches used; not all dependencies rebuilt from source.",
+    "Fresh replay uses Lean's official kernel, not an independent implementation.",
+    "Finite examples do not establish the universally quantified conclusions.",
+    "The Python checks are supplementary and not formally verified.",
+    "The bounds are cubic; no improvement to the known exponent is claimed.",
+    "The full optimal-growth answer to Erdos 1194 is not proved by this package.",
+    "No organizer-designated verification or award acceptance is claimed."
+  ]
+}
