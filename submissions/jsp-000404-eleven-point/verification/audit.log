@@ -1,0 +1,5 @@
+angle_statement : ∀ (s : Finset (EuclideanSpace ℝ (Fin 2))),
+  11 ≤ s.card → ∃ a ∈ s, ∃ b ∈ s, ∃ c ∈ s, a ≠ b ∧ a ≠ c ∧ b ≠ c ∧ 3 * Real.pi / 4 ≤ EuclideanGeometry.angle a b c
+@value_statement : ∀ {n : ℕ}, 11 ≤ n → n ≤ 16 → JSP404.alpha n = 3 * Real.pi / 4
+'SunPrize.Audit.angle_statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunPrize.Audit.value_statement' depends on axioms: [propext, Classical.choice, Quot.sound]

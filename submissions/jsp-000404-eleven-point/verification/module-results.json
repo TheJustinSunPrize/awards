@@ -1,0 +1,3323 @@
+[
+  {
+    "stage": "base",
+    "path": "SunPrize/Certificate/Meaning.lean",
+    "module": "SunPrize.Certificate.Meaning",
+    "source_sha256": "dd99e256cc4e931c1fba71d482c651b07958db7e1caed5201db6e8ee7507e2db",
+    "exit_code": 0,
+    "seconds": 79.87634189997334,
+    "trust": 1
+  },
+  {
+    "stage": "base",
+    "path": "SunPrize/Certificate/Inputs.lean",
+    "module": "SunPrize.Certificate.Inputs",
+    "source_sha256": "40a2c5bb0255408013a3946ab7dfa233b75ada22b4af94c256dc020a7bf32d0e",
+    "exit_code": 0,
+    "seconds": 51.58755319996271,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic000.lean",
+    "module": "SunPrize.Certificate.Logic000",
+    "source_sha256": "59494892d6182b771f5c6a0ff43c3e977ee5ccaed05ef803b32b71d4719f7fcc",
+    "exit_code": 0,
+    "seconds": 19.086026899982244,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic001.lean",
+    "module": "SunPrize.Certificate.Logic001",
+    "source_sha256": "8f511bd03f7157fd4e868676382204d297b08449fc3631f5d14b2fa5346a86ad",
+    "exit_code": 0,
+    "seconds": 28.757944999961182,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic002.lean",
+    "module": "SunPrize.Certificate.Logic002",
+    "source_sha256": "574ed00acf754b49601ef8ea42c278d04f6f945790d7267f4c2f611306404d19",
+    "exit_code": 0,
+    "seconds": 30.325479399994947,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic003.lean",
+    "module": "SunPrize.Certificate.Logic003",
+    "source_sha256": "9e606348a71c9360da33e2105fb233859ef0efb39a936e97f1a76f546dfe4bf5",
+    "exit_code": 0,
+    "seconds": 12.88017130002845,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic004.lean",
+    "module": "SunPrize.Certificate.Logic004",
+    "source_sha256": "986f36a2325403af991037f3971a4cec126d80f2aa106718e447075d9a3ad69e",
+    "exit_code": 0,
+    "seconds": 49.69544549996499,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic005.lean",
+    "module": "SunPrize.Certificate.Logic005",
+    "source_sha256": "ed3a8f00af3c3a3661c31cd6a861cff5650d32c131d15c3a91367c325889f06a",
+    "exit_code": 0,
+    "seconds": 30.054433799989056,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic006.lean",
+    "module": "SunPrize.Certificate.Logic006",
+    "source_sha256": "f2acf6424e28d5a707c0d6c0c4dac5b1fb1bcf91493bcded61555b0f2651d7e0",
+    "exit_code": 0,
+    "seconds": 28.627327700029127,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic007.lean",
+    "module": "SunPrize.Certificate.Logic007",
+    "source_sha256": "6f50638c33c20d3fe5737d024db19fefb3e6f3f030d05bf71c35b8aa31f6be21",
+    "exit_code": 0,
+    "seconds": 23.85879039997235,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic008.lean",
+    "module": "SunPrize.Certificate.Logic008",
+    "source_sha256": "428e8cadfbaa86002e901bf80f0a96154a8ca25e893bda3d67836047e1133250",
+    "exit_code": 0,
+    "seconds": 24.48778379999567,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic009.lean",
+    "module": "SunPrize.Certificate.Logic009",
+    "source_sha256": "cd7e4b5741a13fa27b167cdcf01d51e4e8a305c95e452517b0777931c61f5030",
+    "exit_code": 0,
+    "seconds": 28.275752899993677,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic010.lean",
+    "module": "SunPrize.Certificate.Logic010",
+    "source_sha256": "aff4dffe862b2e32f5d17b7b4c4b262aca5659674fc732d315a7ac3d7f5c95b9",
+    "exit_code": 0,
+    "seconds": 23.35144949995447,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic011.lean",
+    "module": "SunPrize.Certificate.Logic011",
+    "source_sha256": "69fb239318b6d520e1e35a1d8c648223baf3b18e8443385a0b1513863e0ee37b",
+    "exit_code": 0,
+    "seconds": 23.645360200025607,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic012.lean",
+    "module": "SunPrize.Certificate.Logic012",
+    "source_sha256": "a4f4dbab28c6f728e8d8a07d4a8f1bb61c3b0ad838ac96aa3fc21449276354b5",
+    "exit_code": 0,
+    "seconds": 42.67244799999753,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic013.lean",
+    "module": "SunPrize.Certificate.Logic013",
+    "source_sha256": "66fc8cc3da72620dde8d102387b85b735ff1b0fa4779d299c77ffb0ebc0c3e25",
+    "exit_code": 0,
+    "seconds": 43.70797110005515,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic014.lean",
+    "module": "SunPrize.Certificate.Logic014",
+    "source_sha256": "9eece936611e91ea424de2e91cca234441a3141f966bdb3380ebdce3d99822d3",
+    "exit_code": 0,
+    "seconds": 47.29634369997075,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic015.lean",
+    "module": "SunPrize.Certificate.Logic015",
+    "source_sha256": "f7ee3cab12934b728640d1112800295123cc13967eba51ff387e1e2ad99ee2f9",
+    "exit_code": 0,
+    "seconds": 19.605787099979352,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic016.lean",
+    "module": "SunPrize.Certificate.Logic016",
+    "source_sha256": "3417fedd65d7aff45fae40eb7c9c6ce46e6c4cd203d5c1bf1206689cf2db55b9",
+    "exit_code": 0,
+    "seconds": 18.787074699997902,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic017.lean",
+    "module": "SunPrize.Certificate.Logic017",
+    "source_sha256": "823f7e985ccd21b26c5772d5f2f998c7db4b2c6b339bd7fdfabbfadf8366e36d",
+    "exit_code": 0,
+    "seconds": 14.460828299983405,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic018.lean",
+    "module": "SunPrize.Certificate.Logic018",
+    "source_sha256": "6c2c6385f5f81917a98325077468bba7915168908768845bf504ae3fd5f40c5b",
+    "exit_code": 0,
+    "seconds": 22.725339099997655,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic019.lean",
+    "module": "SunPrize.Certificate.Logic019",
+    "source_sha256": "f53a8785974c8d2dc2e29f42c1dcfc227e9b9f1b449a27d3b9a1ec16e9804d3e",
+    "exit_code": 0,
+    "seconds": 22.463080899964552,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic020.lean",
+    "module": "SunPrize.Certificate.Logic020",
+    "source_sha256": "b558a9403134d3ac75ff7dc5fe4a5f4cf38277a3b7edf727e99a5be1012262e3",
+    "exit_code": 0,
+    "seconds": 22.838031799998134,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic021.lean",
+    "module": "SunPrize.Certificate.Logic021",
+    "source_sha256": "e40761064dcc8d3bc073da802de60c7b0ca390e5b4395b6c8ae40e15e8b8bfd0",
+    "exit_code": 0,
+    "seconds": 21.498550999967847,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic022.lean",
+    "module": "SunPrize.Certificate.Logic022",
+    "source_sha256": "9aa5a40312c9db5a3df370097671ac55aef882b8281e527e397f171103320b15",
+    "exit_code": 0,
+    "seconds": 23.551436299982015,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic023.lean",
+    "module": "SunPrize.Certificate.Logic023",
+    "source_sha256": "de659228e5d37d6cdbdc6c48f1213472e23ac78923ee420e9e8702c92ae9e864",
+    "exit_code": 0,
+    "seconds": 7.2500423999736086,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic024.lean",
+    "module": "SunPrize.Certificate.Logic024",
+    "source_sha256": "e46942c4c3b55cb79f07b3e45d40e17f210c866499261365d8d814a5f2ed9a39",
+    "exit_code": 0,
+    "seconds": 27.454054499976337,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic025.lean",
+    "module": "SunPrize.Certificate.Logic025",
+    "source_sha256": "a4b13b3ee011ab3e30acea7dd7935d93d1e768e5bbad8bb702a4d58ba81e3345",
+    "exit_code": 0,
+    "seconds": 188.16830859996844,
+    "trust": 0
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic026.lean",
+    "module": "SunPrize.Certificate.Logic026",
+    "source_sha256": "88c76649785c480d6550ff30d47e11325d858a6836d402145f4275b83d5a8547",
+    "exit_code": 0,
+    "seconds": 272.0857675000443,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic027.lean",
+    "module": "SunPrize.Certificate.Logic027",
+    "source_sha256": "ec714e67fee71acbe33042fcab5df914f67e99f626202d8f1adca68c6b2109b9",
+    "exit_code": 0,
+    "seconds": 262.57702789996983,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic028.lean",
+    "module": "SunPrize.Certificate.Logic028",
+    "source_sha256": "d8b3b1a46dbb3fa3c08dce0b47a9b1b289852f56fca6bd16659220c6078ee23d",
+    "exit_code": 0,
+    "seconds": 159.53724919998785,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic029.lean",
+    "module": "SunPrize.Certificate.Logic029",
+    "source_sha256": "e40f00ee5361d236bec99900c1c37b84aa1d5d2ecbcfafb7a9a5b701fd8fb3d9",
+    "exit_code": 0,
+    "seconds": 226.95766820001882,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic030.lean",
+    "module": "SunPrize.Certificate.Logic030",
+    "source_sha256": "63dcf76dc04b9c8e5d287bc76923c8d48104581360e77141ae1f6cb7822e22bb",
+    "exit_code": 0,
+    "seconds": 60.86650989996269,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic031.lean",
+    "module": "SunPrize.Certificate.Logic031",
+    "source_sha256": "bf45503288e25deabc40ffc65806ac54721b5621169bc68182d94c99f893b369",
+    "exit_code": 0,
+    "seconds": 64.71051409997744,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic032.lean",
+    "module": "SunPrize.Certificate.Logic032",
+    "source_sha256": "fb0e09f3790d6af2f3ae8cb13c12af6c175c6cd2125f6b72bb0784e5379c18f3",
+    "exit_code": 0,
+    "seconds": 24.908071900019422,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic033.lean",
+    "module": "SunPrize.Certificate.Logic033",
+    "source_sha256": "6e4941b9ae1a2a653bcddc022926767571fc9d1692bd52ac50dd85ecfe21b149",
+    "exit_code": 0,
+    "seconds": 26.565030700003263,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic034.lean",
+    "module": "SunPrize.Certificate.Logic034",
+    "source_sha256": "7d7f676d492d026b325827c0a2e6733202dfb0e1930fafe1ee28acf849387702",
+    "exit_code": 0,
+    "seconds": 20.977399400027934,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic035.lean",
+    "module": "SunPrize.Certificate.Logic035",
+    "source_sha256": "2af29c6c6a82f323d8d418760e4d4f17c59ccb90d4ae614bb1f69d5cde0afeeb",
+    "exit_code": 0,
+    "seconds": 16.97905930003617,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic036.lean",
+    "module": "SunPrize.Certificate.Logic036",
+    "source_sha256": "40bd8c1593acbdb12a788ba534115181d4ae5c22dde7f7dde9b7d408e40aa540",
+    "exit_code": 0,
+    "seconds": 18.42723799997475,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic037.lean",
+    "module": "SunPrize.Certificate.Logic037",
+    "source_sha256": "b400caffd90b61994d3220b48c9a23ff698c906c43a7f0e19cc1fed1ff283dcd",
+    "exit_code": 0,
+    "seconds": 20.549865799956024,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic038.lean",
+    "module": "SunPrize.Certificate.Logic038",
+    "source_sha256": "ea2d6afe78d0a9ef281ed6f1d0cdf5b3502f48e93df459e98381544c7cecabb5",
+    "exit_code": 0,
+    "seconds": 20.11294080002699,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic039.lean",
+    "module": "SunPrize.Certificate.Logic039",
+    "source_sha256": "5ed05027456b53afdf31cbce74f39f63a3cc24a117b6ad3d246f317f4381525c",
+    "exit_code": 0,
+    "seconds": 11.89615019998746,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic040.lean",
+    "module": "SunPrize.Certificate.Logic040",
+    "source_sha256": "0172e41587b1cdd03352db5b0d671350e6a413863eb6513b28570d848fcbfd3a",
+    "exit_code": 0,
+    "seconds": 12.214057100005448,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic041.lean",
+    "module": "SunPrize.Certificate.Logic041",
+    "source_sha256": "66923291eded5c6bd107d27096525f4ca5eb67cd56ba4634d520a488b91ec19c",
+    "exit_code": 0,
+    "seconds": 21.53183250001166,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic042.lean",
+    "module": "SunPrize.Certificate.Logic042",
+    "source_sha256": "2aa4eb461adce8bebf2282bb6231ca3abab0054477922bdd3c59a05f6d56a3b0",
+    "exit_code": 0,
+    "seconds": 20.554679799999576,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic043.lean",
+    "module": "SunPrize.Certificate.Logic043",
+    "source_sha256": "0f3e0ce38da2b64431dadb3529593845a66392d6a0a147d6c1d4d97dacf301a0",
+    "exit_code": 0,
+    "seconds": 33.45161580003332,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic044.lean",
+    "module": "SunPrize.Certificate.Logic044",
+    "source_sha256": "1042fdd6d5321fb504beee38aa496a2b86c5d5e37e1e9c36eb19ef61e923439b",
+    "exit_code": 0,
+    "seconds": 33.607348899997305,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic045.lean",
+    "module": "SunPrize.Certificate.Logic045",
+    "source_sha256": "3810f2f55e38b3c1e8ca63166aa864d5729aeb098b2b4216ae7e87fd2b29f6b7",
+    "exit_code": 0,
+    "seconds": 28.035086799995042,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic046.lean",
+    "module": "SunPrize.Certificate.Logic046",
+    "source_sha256": "f417174e91e5842ba6b7beb1260da0f38912383d5012af2e113c9fab56c5206b",
+    "exit_code": 0,
+    "seconds": 28.60769169998821,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic047.lean",
+    "module": "SunPrize.Certificate.Logic047",
+    "source_sha256": "89bf89b3ab389c66f5fcc82c8c92a8dc9d3b6b0dbfe2330385ec1ac45b93680a",
+    "exit_code": 0,
+    "seconds": 30.602191400015727,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic048.lean",
+    "module": "SunPrize.Certificate.Logic048",
+    "source_sha256": "d9263358fd739b755eb076a4f88ce57f8057cc483419c4b5f0fc3dc128186f68",
+    "exit_code": 0,
+    "seconds": 30.676509500015527,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic049.lean",
+    "module": "SunPrize.Certificate.Logic049",
+    "source_sha256": "22f20530d86b07cc30f715e9ef423a03407637711fb3a8a34f097fc3055ce12e",
+    "exit_code": 0,
+    "seconds": 18.15154110000003,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic050.lean",
+    "module": "SunPrize.Certificate.Logic050",
+    "source_sha256": "e1ed220fb883fd0cd97b09819551695f309729bf3c46c96b03bc95ef52d9040f",
+    "exit_code": 0,
+    "seconds": 33.11618690000614,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic051.lean",
+    "module": "SunPrize.Certificate.Logic051",
+    "source_sha256": "7a256ee1abad76be5222b978dfaa96f4f81da90b27e401b599ce9d55a9c4bcc8",
+    "exit_code": 0,
+    "seconds": 26.93657359998906,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic052.lean",
+    "module": "SunPrize.Certificate.Logic052",
+    "source_sha256": "dd89d107b828cb0d53c2e59893c844b4872ff596793ca7780d1204a4b2a2c111",
+    "exit_code": 0,
+    "seconds": 16.90977590001421,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic053.lean",
+    "module": "SunPrize.Certificate.Logic053",
+    "source_sha256": "0bb0857baa59de05fb67457e85b88e371ce15b2e50745773ebe67c97d2605af4",
+    "exit_code": 0,
+    "seconds": 13.494973499968182,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic054.lean",
+    "module": "SunPrize.Certificate.Logic054",
+    "source_sha256": "95779ec1184284c5ccbefd7e612272bf08231fbe3f571975b1493559a0cde30c",
+    "exit_code": 0,
+    "seconds": 10.786587700014934,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic055.lean",
+    "module": "SunPrize.Certificate.Logic055",
+    "source_sha256": "9fac8a252efe87b87e2406cb2e1ed12879150639a95eb55c5caf3db0ea970890",
+    "exit_code": 0,
+    "seconds": 16.62929209996946,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic056.lean",
+    "module": "SunPrize.Certificate.Logic056",
+    "source_sha256": "5abb3852d95f5f7f94516d6667bde0fd75ad692a6bdcace9dec9dd9844944e9e",
+    "exit_code": 0,
+    "seconds": 70.67252710001776,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic057.lean",
+    "module": "SunPrize.Certificate.Logic057",
+    "source_sha256": "9b5b9d185e88dba49d27eff269c0a4fbcfeffccd67b26c56623b800b84d42ab2",
+    "exit_code": 0,
+    "seconds": 146.04339629999595,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic058.lean",
+    "module": "SunPrize.Certificate.Logic058",
+    "source_sha256": "eda09ee9828e61dba91f32ef44b19b7ab190c5636bf8aeb657c11252b8bb16dd",
+    "exit_code": 0,
+    "seconds": 32.94650179997552,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic059.lean",
+    "module": "SunPrize.Certificate.Logic059",
+    "source_sha256": "19d05fca19d8465753d28802dab373ac9cc2e90e8fd5f3d436d74a1e11c2c585",
+    "exit_code": 0,
+    "seconds": 14.971972499974072,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic060.lean",
+    "module": "SunPrize.Certificate.Logic060",
+    "source_sha256": "159d43d0e762b39ce08e1c01c823ad79a4c07f9d640503ee023eba620a216dee",
+    "exit_code": 0,
+    "seconds": 9.527372199983802,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic061.lean",
+    "module": "SunPrize.Certificate.Logic061",
+    "source_sha256": "f2d45f03424fd616ea0dbadf8b4ab2caddd6bc0159c7eed8de2ee9d9373bc402",
+    "exit_code": 0,
+    "seconds": 8.98925710003823,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic062.lean",
+    "module": "SunPrize.Certificate.Logic062",
+    "source_sha256": "763b97dbae6ca34df699109a9223f634f1253502549aba400c2e9a15daa273f1",
+    "exit_code": 0,
+    "seconds": 8.980397599982098,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic063.lean",
+    "module": "SunPrize.Certificate.Logic063",
+    "source_sha256": "16397f732b72b2e3f84a2448fb2ed2d84020458d2e963a730df41e0d3791c79e",
+    "exit_code": 0,
+    "seconds": 9.41850509995129,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic064.lean",
+    "module": "SunPrize.Certificate.Logic064",
+    "source_sha256": "856f12bcd6127a4c0cad54ca25c28e9104036553d0af1305fd462b2fab08118b",
+    "exit_code": 0,
+    "seconds": 8.341210899990983,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic065.lean",
+    "module": "SunPrize.Certificate.Logic065",
+    "source_sha256": "3c6398cbab73ad72b41bcef8724b503f6aef7dd7415993e91d3c9bc466c6acb3",
+    "exit_code": 0,
+    "seconds": 68.49361060000956,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic066.lean",
+    "module": "SunPrize.Certificate.Logic066",
+    "source_sha256": "86966740be6891ccb106da4ef629723c6bc5c9b7646b800d0eae880532c03651",
+    "exit_code": 0,
+    "seconds": 33.387507000006735,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic067.lean",
+    "module": "SunPrize.Certificate.Logic067",
+    "source_sha256": "48d4ba62ec37e9ac212dee6a90c8a7732ecd5f41596c1124a1b2dcb25e731895",
+    "exit_code": 0,
+    "seconds": 8.77145359996939,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic068.lean",
+    "module": "SunPrize.Certificate.Logic068",
+    "source_sha256": "76d27e946b8a66edf4ecacebffde572332d2de6a1fa99ec9595adc4fed43d74c",
+    "exit_code": 0,
+    "seconds": 9.113185200025328,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic069.lean",
+    "module": "SunPrize.Certificate.Logic069",
+    "source_sha256": "69f256ca92444ea32ff7513db07fb1e2504b00c28260d8a563dfe34af84bcefb",
+    "exit_code": 0,
+    "seconds": 8.873641700018197,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic070.lean",
+    "module": "SunPrize.Certificate.Logic070",
+    "source_sha256": "883c43b3984ba0a56d950fd1e533d3f3fa309be297b6fef18e448a000009fa2e",
+    "exit_code": 0,
+    "seconds": 8.572632100025658,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic071.lean",
+    "module": "SunPrize.Certificate.Logic071",
+    "source_sha256": "29b1511ccace0364456bd74a6662b129cca567a0e640b0800a40337c8ad99b37",
+    "exit_code": 0,
+    "seconds": 8.629705199971795,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic072.lean",
+    "module": "SunPrize.Certificate.Logic072",
+    "source_sha256": "408f2260168bad1cdedf531f66450dce282715f45447691c1b14353fdde00ff6",
+    "exit_code": 0,
+    "seconds": 8.611188500013668,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic073.lean",
+    "module": "SunPrize.Certificate.Logic073",
+    "source_sha256": "5b0f4e5a8b65dcf9d59d6932ce39f38ba0fa56edd12aa3d219a494704b006c5b",
+    "exit_code": 0,
+    "seconds": 58.119060299999546,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic074.lean",
+    "module": "SunPrize.Certificate.Logic074",
+    "source_sha256": "563fcb68cf89e07cf07b9c2a1d08425693a28eaa2b895d401427f15f8e5ce5e0",
+    "exit_code": 0,
+    "seconds": 64.27255980001064,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic075.lean",
+    "module": "SunPrize.Certificate.Logic075",
+    "source_sha256": "9a4d56b4a72db284f27fdb7aa1517294df12c6fc400c8e573f1799083149eea3",
+    "exit_code": 0,
+    "seconds": 66.60669340001186,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic076.lean",
+    "module": "SunPrize.Certificate.Logic076",
+    "source_sha256": "079031ef1be1c10c5a0052485358c9ca20855804501dbac2673de32640f8696a",
+    "exit_code": 0,
+    "seconds": 66.18553010001779,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic077.lean",
+    "module": "SunPrize.Certificate.Logic077",
+    "source_sha256": "9f55c1993715e221608b5ad6c78e3349536eb21bf714b14f0402de802733d838",
+    "exit_code": 0,
+    "seconds": 50.93661410000641,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic078.lean",
+    "module": "SunPrize.Certificate.Logic078",
+    "source_sha256": "d1aa316f0fbdfded00d249c8021619e763c7ecedd4ccd9d05e2b0126417aa78b",
+    "exit_code": 0,
+    "seconds": 18.632848799985368,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic079.lean",
+    "module": "SunPrize.Certificate.Logic079",
+    "source_sha256": "fc20e10346f4416129ad81a3f6e6a76d35fcfb3376acdbad33fe5bdba8ea18de",
+    "exit_code": 0,
+    "seconds": 123.97049229999539,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic080.lean",
+    "module": "SunPrize.Certificate.Logic080",
+    "source_sha256": "0ce0efe3c6db4bb89c167355e5b48e03527cebe2a0080d5da54b4bd0e1cc69c1",
+    "exit_code": 0,
+    "seconds": 126.2882060999982,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic081.lean",
+    "module": "SunPrize.Certificate.Logic081",
+    "source_sha256": "077368e20b76f6ac1fcd5199906ed9d735f00933e54d26972233bb04e7b3050b",
+    "exit_code": 0,
+    "seconds": 74.60953379998682,
+    "trust": 1
+  },
+  {
+    "stage": "logic",
+    "path": "SunPrize\\Certificate\\Logic082.lean",
+    "module": "SunPrize.Certificate.Logic082",
+    "source_sha256": "487e2d2de9e001219d0f402f75b3846271c9287dee761019d8eb9995c866339e",
+    "exit_code": 0,
+    "seconds": 3.8973300000070594,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory000.lean",
+    "module": "SunPrize.Certificate.Theory000",
+    "source_sha256": "63a114784ecb9fc9f0a521e5aec67c1ccef2da8339894516ad740264324e3251",
+    "exit_code": 0,
+    "seconds": 95.1759960000054,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory001.lean",
+    "module": "SunPrize.Certificate.Theory001",
+    "source_sha256": "28f49e8e2be968871f84e26806284df9cfb4b1e896355f430745660549e809d4",
+    "exit_code": 0,
+    "seconds": 75.91602740000235,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory002.lean",
+    "module": "SunPrize.Certificate.Theory002",
+    "source_sha256": "53364244c28b55578bc6bdd0141e93140ab97440cbdcebc31c7fd07f7c472321",
+    "exit_code": 0,
+    "seconds": 31.30276039999444,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory003.lean",
+    "module": "SunPrize.Certificate.Theory003",
+    "source_sha256": "7ab172225da612200b0815117486bce73c96923e183076bfee3cca689dd8e0c5",
+    "exit_code": 0,
+    "seconds": 19.63889400003245,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory004.lean",
+    "module": "SunPrize.Certificate.Theory004",
+    "source_sha256": "4fb9e4ad71b221f8f15e96bf68dcbabb2a7e9e92b8b2f3501a649466911ea044",
+    "exit_code": 0,
+    "seconds": 100.23821979999775,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory005.lean",
+    "module": "SunPrize.Certificate.Theory005",
+    "source_sha256": "c4ec6da4e5a48949165bdfe359b74738f66a852e888a17c95498f2f47115a772",
+    "exit_code": 0,
+    "seconds": 54.7443396000308,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory006.lean",
+    "module": "SunPrize.Certificate.Theory006",
+    "source_sha256": "5efcce6b4324cf954ca3fadfe2f53196f056e9c376db5262030343e9199e1e94",
+    "exit_code": 0,
+    "seconds": 35.893756399978884,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory007.lean",
+    "module": "SunPrize.Certificate.Theory007",
+    "source_sha256": "d2fe0e5babbdd63c10ab0d94d642cf2e59f02722f3ecb99273831de16a5393ee",
+    "exit_code": 0,
+    "seconds": 47.75100469996687,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory008.lean",
+    "module": "SunPrize.Certificate.Theory008",
+    "source_sha256": "33fddfac543e00a41404fdfafa6c4be02bde8b6704133c10d11c96752fdd3d20",
+    "exit_code": 0,
+    "seconds": 81.28308940003626,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory009.lean",
+    "module": "SunPrize.Certificate.Theory009",
+    "source_sha256": "b49ed7e77fd1dea605e6bbe6daff8a510df3f5ca45e780cd5d0e84d74317b781",
+    "exit_code": 0,
+    "seconds": 58.04554810002446,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory010.lean",
+    "module": "SunPrize.Certificate.Theory010",
+    "source_sha256": "a5edf109d4d4a6feb4981c0024cd955cb74ec872c88e70261200ce10584c7561",
+    "exit_code": 0,
+    "seconds": 36.63057919999119,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory011.lean",
+    "module": "SunPrize.Certificate.Theory011",
+    "source_sha256": "d1402c2fa3817854d8b1cbb5924e92568b62dc0c2abe7da09afb84262f918842",
+    "exit_code": 0,
+    "seconds": 40.1827753999969,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory012.lean",
+    "module": "SunPrize.Certificate.Theory012",
+    "source_sha256": "04016f496a91285797cba403ed437d6a68c5d99a288cbeccabb466582cf6a7b9",
+    "exit_code": 0,
+    "seconds": 178.83301550004398,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory013.lean",
+    "module": "SunPrize.Certificate.Theory013",
+    "source_sha256": "a1587a35de69d3e8c37383a996eabfe008fd2f9789b0308c76914502070670ad",
+    "exit_code": 0,
+    "seconds": 100.82857870002044,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory014.lean",
+    "module": "SunPrize.Certificate.Theory014",
+    "source_sha256": "a2854ab86aa65ccd3468785ad0ac80a7a1c4313a367cb4492a095273ac3ff305",
+    "exit_code": 0,
+    "seconds": 36.827885500038974,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory015.lean",
+    "module": "SunPrize.Certificate.Theory015",
+    "source_sha256": "8ec9a5be3790fff02d9b7355e01a0e85a9e8dc47fdf396f9d08dd27bd0b6976e",
+    "exit_code": 0,
+    "seconds": 28.67589830001816,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory016.lean",
+    "module": "SunPrize.Certificate.Theory016",
+    "source_sha256": "fe28fd5bb31b95e2205f8320453a0600636eabd794fae71abee7bb7afebdc94e",
+    "exit_code": 0,
+    "seconds": 28.461130999960005,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory017.lean",
+    "module": "SunPrize.Certificate.Theory017",
+    "source_sha256": "9fa92faa28ba0357a7c078b9e313d4d42cf64a69323f84472aa04541dfec64dd",
+    "exit_code": 0,
+    "seconds": 21.658004899974912,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory018.lean",
+    "module": "SunPrize.Certificate.Theory018",
+    "source_sha256": "62f823e73e92497f99da342c90353a10d06e235f71ddcbe19e61254fdf39604b",
+    "exit_code": 0,
+    "seconds": 27.157705499965232,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory019.lean",
+    "module": "SunPrize.Certificate.Theory019",
+    "source_sha256": "2b6d62a0bbbe3fd62dbbee2e1d79a7ec102eb4b742283676d52e0b97b8f51abc",
+    "exit_code": 0,
+    "seconds": 26.142223199945875,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory020.lean",
+    "module": "SunPrize.Certificate.Theory020",
+    "source_sha256": "ff336f576175b5e03b38008d43a0c3d472fb64ada2b63e8f302375549587fe64",
+    "exit_code": 0,
+    "seconds": 20.82244149997132,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory021.lean",
+    "module": "SunPrize.Certificate.Theory021",
+    "source_sha256": "efa1999bb91be34ea2e0dfa71126a8f941adc5ec82a2532bd7c93fe94d70acb8",
+    "exit_code": 0,
+    "seconds": 21.06696580001153,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory022.lean",
+    "module": "SunPrize.Certificate.Theory022",
+    "source_sha256": "9308225c682972d4bb60e3a8addeab51c66e42743f93aa42673c3aa74e2d463d",
+    "exit_code": 0,
+    "seconds": 22.634026999992784,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory023.lean",
+    "module": "SunPrize.Certificate.Theory023",
+    "source_sha256": "bb5cd2e614c519a51e9578ef2b0d45655037fecb457718ac7e01cd0573b1e41b",
+    "exit_code": 0,
+    "seconds": 23.620410400035325,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory024.lean",
+    "module": "SunPrize.Certificate.Theory024",
+    "source_sha256": "41e6df58d645ecb2d954afe2159a8f733a793de1390a05a1b4ed8d9b428b0d32",
+    "exit_code": 0,
+    "seconds": 21.752708700019866,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory025.lean",
+    "module": "SunPrize.Certificate.Theory025",
+    "source_sha256": "9541994eb8ddefac8d82deea533fdba6115f491a1639c222afcc72b787fd91bc",
+    "exit_code": 0,
+    "seconds": 21.509602200007066,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory026.lean",
+    "module": "SunPrize.Certificate.Theory026",
+    "source_sha256": "3c8c2c93d4be9559a21170afe8ac0325287860f4928b0d55ca3cf3572455565f",
+    "exit_code": 0,
+    "seconds": 21.787291100015864,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory027.lean",
+    "module": "SunPrize.Certificate.Theory027",
+    "source_sha256": "6363f08f535e50a1bc6c75745ff7e351526a97b83e01d7c4f140d21a6e01c81e",
+    "exit_code": 0,
+    "seconds": 22.558832100010477,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory028.lean",
+    "module": "SunPrize.Certificate.Theory028",
+    "source_sha256": "b043fa25ddbff6155a8debc49a291dfb1b00634b3b54c5f24daeb0ba5dd07bd8",
+    "exit_code": 0,
+    "seconds": 22.409822000015993,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory029.lean",
+    "module": "SunPrize.Certificate.Theory029",
+    "source_sha256": "5a921e6451b51865c34782ee5491036537dfeccb884fbffb696289c29a7524a7",
+    "exit_code": 0,
+    "seconds": 20.545757599989884,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory030.lean",
+    "module": "SunPrize.Certificate.Theory030",
+    "source_sha256": "9111a897eaefc3aabb23fab2d48fdd59bac56830f836467bc93b13fad8dba2c7",
+    "exit_code": 0,
+    "seconds": 20.9127800000133,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory031.lean",
+    "module": "SunPrize.Certificate.Theory031",
+    "source_sha256": "074f52b5c418429d7abedfb2f87cced4fe9ec31c205e55a2894b78dfbeb8e198",
+    "exit_code": 0,
+    "seconds": 22.108176600013394,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory032.lean",
+    "module": "SunPrize.Certificate.Theory032",
+    "source_sha256": "89eddf50dceeb47a3bc8747a7b15763a8352b9e04a9aa52772df4b9278eae591",
+    "exit_code": 0,
+    "seconds": 24.967670999991242,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory033.lean",
+    "module": "SunPrize.Certificate.Theory033",
+    "source_sha256": "17658d419f8285bf0705d5edde472f20d52b6de4bf44dae7a0366c84f10b93c8",
+    "exit_code": 0,
+    "seconds": 25.917326499999035,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory034.lean",
+    "module": "SunPrize.Certificate.Theory034",
+    "source_sha256": "c9489a70b14625ab2f0dbecfb1f562b1bdad602485c39fcd7e5187e186e14852",
+    "exit_code": 0,
+    "seconds": 22.125084600003902,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory035.lean",
+    "module": "SunPrize.Certificate.Theory035",
+    "source_sha256": "ce676dbab658f212723ad5b15f9a83c9e1daca53555195edfc7d26eeecda511a",
+    "exit_code": 0,
+    "seconds": 21.54413900000509,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory036.lean",
+    "module": "SunPrize.Certificate.Theory036",
+    "source_sha256": "224430c7ce1786949b64df2d29cf45d8960d65c3919b6f6dd9eeb1d09d26175d",
+    "exit_code": 0,
+    "seconds": 20.54184219997842,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory037.lean",
+    "module": "SunPrize.Certificate.Theory037",
+    "source_sha256": "ab3c5cbbe293a7c0194207c6d9be3f0d9ffc75947ddce55eb8b59179917ce48d",
+    "exit_code": 0,
+    "seconds": 19.66370969999116,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory038.lean",
+    "module": "SunPrize.Certificate.Theory038",
+    "source_sha256": "8dc8bff1e783e6b52ff2adcdbf5935cf7ea2daa1885418d17b4d638d85701980",
+    "exit_code": 0,
+    "seconds": 19.184934200020507,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory039.lean",
+    "module": "SunPrize.Certificate.Theory039",
+    "source_sha256": "373445ec858bca9935d1c2992d6f6c3c23952bbf959ac6e56f58897005e54462",
+    "exit_code": 0,
+    "seconds": 20.057196200010367,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory040.lean",
+    "module": "SunPrize.Certificate.Theory040",
+    "source_sha256": "2d4cf8682eb7b19a77e541faacdf5e711694d8ccfecef2fab90200ad53d110fa",
+    "exit_code": 0,
+    "seconds": 19.900985299958847,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory041.lean",
+    "module": "SunPrize.Certificate.Theory041",
+    "source_sha256": "524f5d4a2596d3663a092ea95c4ad51164db09a3e5ff13d2595779c4200fd099",
+    "exit_code": 0,
+    "seconds": 20.884201899985783,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory042.lean",
+    "module": "SunPrize.Certificate.Theory042",
+    "source_sha256": "af5fa668b2cf018c254692af4020f1ec353ab309fca78062794efb7859ef9cae",
+    "exit_code": 0,
+    "seconds": 19.774786999973003,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory043.lean",
+    "module": "SunPrize.Certificate.Theory043",
+    "source_sha256": "e5f7e30ef01d22ee63d6536b55d8e3481032e69f8aa75a96428129b0b367e953",
+    "exit_code": 0,
+    "seconds": 22.012575400003698,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory044.lean",
+    "module": "SunPrize.Certificate.Theory044",
+    "source_sha256": "651cc58e2646627cc0340c876187679c149f5fe5fa0f8ab3beedf88afc5efbe1",
+    "exit_code": 0,
+    "seconds": 22.890313800016884,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory045.lean",
+    "module": "SunPrize.Certificate.Theory045",
+    "source_sha256": "e0f732d8d47b2890b2a09810d83ba4d0c37ce36aa2e79b1635999a604b03cbad",
+    "exit_code": 0,
+    "seconds": 25.923568900034297,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory046.lean",
+    "module": "SunPrize.Certificate.Theory046",
+    "source_sha256": "c67cf67fc8142993b9077750642efc8e810bc23b211015717e48fa1a896d4d55",
+    "exit_code": 0,
+    "seconds": 24.057116399984807,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory047.lean",
+    "module": "SunPrize.Certificate.Theory047",
+    "source_sha256": "59f2cc1919143d4e00499929009c82ce8997b13124d7616861b3bb4a3f1ff297",
+    "exit_code": 0,
+    "seconds": 25.38334090000717,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory048.lean",
+    "module": "SunPrize.Certificate.Theory048",
+    "source_sha256": "e147c24164d09a2c51d8099601ceefb3d844cc83f521cd1b643d5abc5abd6455",
+    "exit_code": 0,
+    "seconds": 24.14924230001634,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory049.lean",
+    "module": "SunPrize.Certificate.Theory049",
+    "source_sha256": "02e3e5f98568f67650adf5b033c0624d1e77d4de0c98d659efe0bcb8254bce38",
+    "exit_code": 0,
+    "seconds": 23.17552119999891,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory050.lean",
+    "module": "SunPrize.Certificate.Theory050",
+    "source_sha256": "e626895a007769c60bcf639c08a6170cc5246a72ceb5390ecab2099af67540c0",
+    "exit_code": 0,
+    "seconds": 21.730787999986205,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory051.lean",
+    "module": "SunPrize.Certificate.Theory051",
+    "source_sha256": "f7e397e91c0d7cee0077d797912d19f057883ad34cc332ce23610e944664ac38",
+    "exit_code": 0,
+    "seconds": 21.127509199955966,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory052.lean",
+    "module": "SunPrize.Certificate.Theory052",
+    "source_sha256": "ea02f7bb605dbdf0dbe6db61ce38a29993d1a2430c20e7702e00a7a2fdd5e156",
+    "exit_code": 0,
+    "seconds": 22.150782299984712,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory053.lean",
+    "module": "SunPrize.Certificate.Theory053",
+    "source_sha256": "5dd8163d2500bb4569eaddda4c9b1aa163a57f0d0231b1172d6abafc8744cd58",
+    "exit_code": 0,
+    "seconds": 22.82515940000303,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory054.lean",
+    "module": "SunPrize.Certificate.Theory054",
+    "source_sha256": "4e70deca9f1b8bb0348d5c5c0f7672075331e2b061c03f713d6a9732769534eb",
+    "exit_code": 0,
+    "seconds": 23.488722199981567,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory055.lean",
+    "module": "SunPrize.Certificate.Theory055",
+    "source_sha256": "933165fed43a07357868ae1d2d1d5874d6fee64764d87efccfca9c2b9395eef8",
+    "exit_code": 0,
+    "seconds": 23.34118660003878,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory056.lean",
+    "module": "SunPrize.Certificate.Theory056",
+    "source_sha256": "f7eb3cad67b14d9001bc1b8e0db2c1196442f0ddcd5857bee593c843f6a21bd3",
+    "exit_code": 0,
+    "seconds": 22.363528200017754,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory057.lean",
+    "module": "SunPrize.Certificate.Theory057",
+    "source_sha256": "45bfc4be0a0a0623605c17af47e2c53e3b5feb2dd622873e1a020b38072caa5e",
+    "exit_code": 0,
+    "seconds": 23.054112999991048,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory058.lean",
+    "module": "SunPrize.Certificate.Theory058",
+    "source_sha256": "bf81378293d942dad1713e96c3615a50c4fcb6a91e749c6917cc815b9698ed2b",
+    "exit_code": 0,
+    "seconds": 23.174902300001122,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory059.lean",
+    "module": "SunPrize.Certificate.Theory059",
+    "source_sha256": "f3d7a7d95d5fa6a5c25a011284f8aa1514fd31b23cc841cf8e4092967d8f8ccb",
+    "exit_code": 0,
+    "seconds": 21.72556190000614,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory060.lean",
+    "module": "SunPrize.Certificate.Theory060",
+    "source_sha256": "7575e4fd85b3ebc8bfd4dca08476edc9aec3e0a55aec0fd24dfc017e6312ff67",
+    "exit_code": 0,
+    "seconds": 21.674974900030065,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory061.lean",
+    "module": "SunPrize.Certificate.Theory061",
+    "source_sha256": "ebc1ea702be403b336c18d5d581000c51456b6e9483edcd1d5d1c9fc97ea7906",
+    "exit_code": 0,
+    "seconds": 24.202736899955198,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory062.lean",
+    "module": "SunPrize.Certificate.Theory062",
+    "source_sha256": "137071c1398c6b8143b9e20052e6a49d3b51a4e78694360f63ed9efb5bd3ab86",
+    "exit_code": 0,
+    "seconds": 23.514221800025553,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory063.lean",
+    "module": "SunPrize.Certificate.Theory063",
+    "source_sha256": "57f48db32d4303233026dc259efae6fb740b84176eef253dfaeeb50a40a99b8e",
+    "exit_code": 0,
+    "seconds": 22.563077000027988,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory064.lean",
+    "module": "SunPrize.Certificate.Theory064",
+    "source_sha256": "fb4a06a27c938d6b8cc6eb8c236f372dcd027e3a63213d1e5f82f2e0e452c945",
+    "exit_code": 0,
+    "seconds": 22.066072300018277,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory065.lean",
+    "module": "SunPrize.Certificate.Theory065",
+    "source_sha256": "784fd57bf8f1cbf777ed2c191eba3713c566a85445b1668bda8342e1733630f3",
+    "exit_code": 0,
+    "seconds": 24.96882100001676,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory066.lean",
+    "module": "SunPrize.Certificate.Theory066",
+    "source_sha256": "3230211fcbdbb19d8fde8529b469a384b9c49c97978ca328bcb0e9e0243934fa",
+    "exit_code": 0,
+    "seconds": 25.87029499997152,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory067.lean",
+    "module": "SunPrize.Certificate.Theory067",
+    "source_sha256": "67894405b458732b49f72bde4b8814e0d536e675d7a4b18ccddf0b56b5ea40a7",
+    "exit_code": 0,
+    "seconds": 23.181707400013693,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory068.lean",
+    "module": "SunPrize.Certificate.Theory068",
+    "source_sha256": "fbfb7e14b6a3d2d727840168eb9156a1847914e5f26d73e8ab0fbc4b011f2f41",
+    "exit_code": 0,
+    "seconds": 23.299722000025213,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory069.lean",
+    "module": "SunPrize.Certificate.Theory069",
+    "source_sha256": "caa26e44cfe0065707f5bc3a4382647f27875ecfe508f446d5cce21f16d0f62d",
+    "exit_code": 0,
+    "seconds": 24.156434900010936,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory070.lean",
+    "module": "SunPrize.Certificate.Theory070",
+    "source_sha256": "4463ebd44b4a274d1ed83930180811902da33431358d7015980318ae2787ec80",
+    "exit_code": 0,
+    "seconds": 32.77278800000204,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory071.lean",
+    "module": "SunPrize.Certificate.Theory071",
+    "source_sha256": "1cad54435950cf1353a88548519423a7096c0a3e7075fbe2215ce6f86d070d57",
+    "exit_code": 0,
+    "seconds": 65.54118550004205,
+    "trust": 1
+  },
+  {
+    "stage": "theory",
+    "path": "SunPrize\\Certificate\\Theory072.lean",
+    "module": "SunPrize.Certificate.Theory072",
+    "source_sha256": "5767df60c6639c75fc9cfa8d1c81919020eb2c5b9c3927e8334cfb2cdcf191e7",
+    "exit_code": 0,
+    "seconds": 22.555754199973308,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial000.lean",
+    "module": "SunPrize.Certificate.Initial000",
+    "source_sha256": "d614574c9a14d4a4e31f232f06be0d09d65542ad4d841007d1953bed2a46bdc8",
+    "exit_code": 0,
+    "seconds": 17.193221700028516,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial001.lean",
+    "module": "SunPrize.Certificate.Initial001",
+    "source_sha256": "2c5cbb316f78fef920d13080d642f7d8ddadddf2ceb4ab9376f8e5eadaa1e79e",
+    "exit_code": 0,
+    "seconds": 11.42133779998403,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial002.lean",
+    "module": "SunPrize.Certificate.Initial002",
+    "source_sha256": "3234c5aa36fbd25f2e6b6725257ece46c5d17ae2edba296f9e16df9541410111",
+    "exit_code": 0,
+    "seconds": 16.255312900000717,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial003.lean",
+    "module": "SunPrize.Certificate.Initial003",
+    "source_sha256": "044703fe4105aba9d4092e1812d042c1fbf6233954eb510be1c9b27c8ee3487d",
+    "exit_code": 0,
+    "seconds": 16.408140799961984,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial004.lean",
+    "module": "SunPrize.Certificate.Initial004",
+    "source_sha256": "a491ffe901a17efe72ca3f169438ca069251cb8ce41a0a344c82201533dc1c9d",
+    "exit_code": 0,
+    "seconds": 16.92902719997801,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial005.lean",
+    "module": "SunPrize.Certificate.Initial005",
+    "source_sha256": "50d33f30265bb17f9aedb42bb35847383c74354837e1843efe389feb808a54a5",
+    "exit_code": 0,
+    "seconds": 17.879022799956147,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial006.lean",
+    "module": "SunPrize.Certificate.Initial006",
+    "source_sha256": "22c1fc15f4829a176e12d40aa524bbde730b1c177aca4fc56a7fa5feb2f89cdf",
+    "exit_code": 0,
+    "seconds": 19.45743800001219,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial007.lean",
+    "module": "SunPrize.Certificate.Initial007",
+    "source_sha256": "c758cc57f87092fa283e65c1f57e44ce113801cf11665c10b2514edfac332af7",
+    "exit_code": 0,
+    "seconds": 19.609648499987088,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial008.lean",
+    "module": "SunPrize.Certificate.Initial008",
+    "source_sha256": "2db809150ec6deb5af4977eac9a2954e172c10a27740a8bfab056e4d3e123537",
+    "exit_code": 0,
+    "seconds": 19.37496079999255,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial009.lean",
+    "module": "SunPrize.Certificate.Initial009",
+    "source_sha256": "4b0756ae3135eaf886d8bc27160bff8f8af51b6d0865d2201bcbdbce2f5eacd5",
+    "exit_code": 0,
+    "seconds": 18.648219499969855,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial010.lean",
+    "module": "SunPrize.Certificate.Initial010",
+    "source_sha256": "db150d6fff44eea4543a4d3707f5d7ea25811622f452057bdcdc1dd9bc5cb823",
+    "exit_code": 0,
+    "seconds": 19.505782500025816,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial011.lean",
+    "module": "SunPrize.Certificate.Initial011",
+    "source_sha256": "d55f2d99a9eded4ea6cf829fca6c7aa337481f7099e25b078c7b1c812e1478f7",
+    "exit_code": 0,
+    "seconds": 18.69958700001007,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial012.lean",
+    "module": "SunPrize.Certificate.Initial012",
+    "source_sha256": "a2565bd887897c965cf44e91335c6d6c089f0a5f6294d06d0a01c6e5c3f96265",
+    "exit_code": 0,
+    "seconds": 18.898263400013093,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial013.lean",
+    "module": "SunPrize.Certificate.Initial013",
+    "source_sha256": "6490f3fa5663d101ab0f9789a368f5b075525693f76b125d3d4c1a06e5ca5f8b",
+    "exit_code": 0,
+    "seconds": 20.168038500007242,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial014.lean",
+    "module": "SunPrize.Certificate.Initial014",
+    "source_sha256": "84fe3668bfe7d995aa741e8f10e4a8087bf55c6fb0fa673e52f7d3366ab3c7c2",
+    "exit_code": 0,
+    "seconds": 31.168465599999763,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial015.lean",
+    "module": "SunPrize.Certificate.Initial015",
+    "source_sha256": "7966b855246e4dc58bbe6d5db7b693a18f89d3bd6d50875bd73e7c3ecadae74d",
+    "exit_code": 0,
+    "seconds": 33.73480680002831,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial016.lean",
+    "module": "SunPrize.Certificate.Initial016",
+    "source_sha256": "af9536024082768e440dc5f6afb143e26af0692275a23d1f3bde8207cd753f30",
+    "exit_code": 0,
+    "seconds": 38.9882841000217,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial017.lean",
+    "module": "SunPrize.Certificate.Initial017",
+    "source_sha256": "ddfdbf6566829853fb486517f754d6523c838b15ed6214f7ff146dbebbf62e8c",
+    "exit_code": 0,
+    "seconds": 43.321614900021814,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial018.lean",
+    "module": "SunPrize.Certificate.Initial018",
+    "source_sha256": "f1a765f00066e30e23241921d035beea225e7852f7001189959e6648b29b83aa",
+    "exit_code": 0,
+    "seconds": 50.757621600001585,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial019.lean",
+    "module": "SunPrize.Certificate.Initial019",
+    "source_sha256": "51538dbf6561527e9d3c96316e10e3a17d5d1c1f0ab94e45b58cfa5b486b736a",
+    "exit_code": 0,
+    "seconds": 55.81528450001497,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial020.lean",
+    "module": "SunPrize.Certificate.Initial020",
+    "source_sha256": "5707a5edc8af5ee82880b9bac42492b41b90ffde90d41b0106cb8aa129e0660e",
+    "exit_code": 0,
+    "seconds": 68.66396769997664,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial021.lean",
+    "module": "SunPrize.Certificate.Initial021",
+    "source_sha256": "98afa259575c15a5c6e1a9af4664c7c94fb684ee542dd99378fe1615e510eaee",
+    "exit_code": 0,
+    "seconds": 77.64667489996646,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial022.lean",
+    "module": "SunPrize.Certificate.Initial022",
+    "source_sha256": "83ef1df7bfedcf4af706a0194549588dc9a1b81794b53bad29adc68dc7fa754f",
+    "exit_code": 0,
+    "seconds": 39.78915670001879,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial023.lean",
+    "module": "SunPrize.Certificate.Initial023",
+    "source_sha256": "dec7fb92eb4699d501b7dbd646fbb6cb8554b18280ab2c1ddfb60f72829546ca",
+    "exit_code": 0,
+    "seconds": 23.0292560000089,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial024.lean",
+    "module": "SunPrize.Certificate.Initial024",
+    "source_sha256": "b05bc0425043d1e5117b2cc573caebe6e19ac802b5f403bb334f20a8d9215519",
+    "exit_code": 0,
+    "seconds": 23.337047200009692,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial025.lean",
+    "module": "SunPrize.Certificate.Initial025",
+    "source_sha256": "d6bec6bc3ac37889c01e26c98908c6310b1d1088a0422ca4476fea07b6ad3e62",
+    "exit_code": 0,
+    "seconds": 24.185442799993325,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial026.lean",
+    "module": "SunPrize.Certificate.Initial026",
+    "source_sha256": "e9af025981749ace5478d3e6a7349f94600d952c1d37325d0020bf26b959531c",
+    "exit_code": 0,
+    "seconds": 24.695472799998242,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial027.lean",
+    "module": "SunPrize.Certificate.Initial027",
+    "source_sha256": "8a27dbd7c3e9ff1b4649fa5aafe23c3f704b843213df9c8dd3564972edde8969",
+    "exit_code": 0,
+    "seconds": 39.161270099983085,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial028.lean",
+    "module": "SunPrize.Certificate.Initial028",
+    "source_sha256": "1bccf4e28c067342ec9a1fcfa30c1a18bad2cf91fa3f7ef5a433743f73efd58b",
+    "exit_code": 0,
+    "seconds": 43.544429300003685,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial029.lean",
+    "module": "SunPrize.Certificate.Initial029",
+    "source_sha256": "cb8f345fedc6918c2f28750b7a0cc81599cd227c1c2bec7dba22bcfff5906f8f",
+    "exit_code": 0,
+    "seconds": 57.76351480005542,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial030.lean",
+    "module": "SunPrize.Certificate.Initial030",
+    "source_sha256": "6befb0317fe605e6294fe46477b0930605d93db780d6b7e538d1ab93705fb9c0",
+    "exit_code": 0,
+    "seconds": 58.202596299990546,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial031.lean",
+    "module": "SunPrize.Certificate.Initial031",
+    "source_sha256": "33177aea119e6aca9626ccbbddf55d8ae7f91cdbd979792d4e72ffcf63c34b33",
+    "exit_code": 0,
+    "seconds": 57.876274800044484,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial032.lean",
+    "module": "SunPrize.Certificate.Initial032",
+    "source_sha256": "c04b2381be66afead1b868e41461294d10fc44fc6edf215312e6efbefadfc7d3",
+    "exit_code": 0,
+    "seconds": 58.23358759999974,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial033.lean",
+    "module": "SunPrize.Certificate.Initial033",
+    "source_sha256": "6fc1705be14fc09ab2a464af44028dbdac30f8feb126d01db7dd97cc015f3518",
+    "exit_code": 0,
+    "seconds": 56.67258399998536,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial034.lean",
+    "module": "SunPrize.Certificate.Initial034",
+    "source_sha256": "8187cf44daaeffbdfeeb06d3f03b282c4209e3266974b9fbdd6aee0ef0b53d1b",
+    "exit_code": 0,
+    "seconds": 60.49760399997467,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial035.lean",
+    "module": "SunPrize.Certificate.Initial035",
+    "source_sha256": "89ac5ac92460eb2b9205a1da2700b93e92f12e9b61006c24e477c32c954dc3b7",
+    "exit_code": 0,
+    "seconds": 55.351219700009096,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial036.lean",
+    "module": "SunPrize.Certificate.Initial036",
+    "source_sha256": "fee80a19b0d90e3e0ea49fd7cc88bbf35648603ae5be5dc34a36c293b9db6a74",
+    "exit_code": 0,
+    "seconds": 51.63546550000319,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial037.lean",
+    "module": "SunPrize.Certificate.Initial037",
+    "source_sha256": "382d4f12d09f94976f4627946514e5b91845d078f90b7a673b88e15c1848c2a2",
+    "exit_code": 0,
+    "seconds": 43.66182960005244,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial038.lean",
+    "module": "SunPrize.Certificate.Initial038",
+    "source_sha256": "133d4be0f5274e46c4b609c8e3cfa6ce1f2acc418b8b0747a84ab6b6fa9ff9d5",
+    "exit_code": 0,
+    "seconds": 46.03620440000668,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial039.lean",
+    "module": "SunPrize.Certificate.Initial039",
+    "source_sha256": "f031dfc786ba9a82a72076a806386a1130dc1e2fa775ad3c6277faf418086aa3",
+    "exit_code": 0,
+    "seconds": 45.34098579996498,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial040.lean",
+    "module": "SunPrize.Certificate.Initial040",
+    "source_sha256": "d1c208731ad5accc28bcd7d246050bf8a01ff9b273cc316c31fdb8e36a244565",
+    "exit_code": 0,
+    "seconds": 48.1900632000179,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial041.lean",
+    "module": "SunPrize.Certificate.Initial041",
+    "source_sha256": "40cae11b9e6b672ea8a2a27d3f5d3ffe13e7fc0583f51e69497a94aa0c3f76a0",
+    "exit_code": 0,
+    "seconds": 46.50827130000107,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial042.lean",
+    "module": "SunPrize.Certificate.Initial042",
+    "source_sha256": "39fcea5082b1c4200549a2fc6661ff9fd3dffdfd403123c47889ed441109b0a4",
+    "exit_code": 0,
+    "seconds": 41.96966869995231,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial043.lean",
+    "module": "SunPrize.Certificate.Initial043",
+    "source_sha256": "b115ebd38cf18b1826c3190f9da167afba92bffdbb7ae9f1e24016a0c8be60b6",
+    "exit_code": 0,
+    "seconds": 47.24972899997374,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial044.lean",
+    "module": "SunPrize.Certificate.Initial044",
+    "source_sha256": "9f15a34dc702496f7905032dfe27ba70e18e4ec00914b4b9ee3a1317fbecdf45",
+    "exit_code": 0,
+    "seconds": 30.942388199968264,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial045.lean",
+    "module": "SunPrize.Certificate.Initial045",
+    "source_sha256": "31b8993d2c88d66065d0b9b79fb8f90ec11f9a59ada5e126b87cb7078cfe792f",
+    "exit_code": 0,
+    "seconds": 38.28649670002051,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial046.lean",
+    "module": "SunPrize.Certificate.Initial046",
+    "source_sha256": "f38a75f5e11e36fdfadbb8dfc83a5b014b73c76a91fb3b9f9a52783972448ef1",
+    "exit_code": 0,
+    "seconds": 44.65302749996772,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial047.lean",
+    "module": "SunPrize.Certificate.Initial047",
+    "source_sha256": "55c470273839bb9882b4313fccb3b46be2e657662eb3ce6e9c622b5de1ca204b",
+    "exit_code": 0,
+    "seconds": 56.86680170003092,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial048.lean",
+    "module": "SunPrize.Certificate.Initial048",
+    "source_sha256": "68b92e928ee7174d7802bd6aa54daeab5e068446df8c034c77a6e9f1bffb7c65",
+    "exit_code": 0,
+    "seconds": 66.51424799999222,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial049.lean",
+    "module": "SunPrize.Certificate.Initial049",
+    "source_sha256": "470e44fcd2c219fa7e7463e97656fc0b19317aea8c771f3ab9fb70b725d9709e",
+    "exit_code": 0,
+    "seconds": 54.53055879997555,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial050.lean",
+    "module": "SunPrize.Certificate.Initial050",
+    "source_sha256": "c0780ab25d0b6d71959133d4ad99f038d56057d134dbc527f67e6ce8fbeec1e0",
+    "exit_code": 0,
+    "seconds": 58.84742740000365,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial051.lean",
+    "module": "SunPrize.Certificate.Initial051",
+    "source_sha256": "517b71c57123d77d550541c0e74afc109858e5bf1ab4f7e30ca4316229c3dd2a",
+    "exit_code": 0,
+    "seconds": 58.53001629997743,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial052.lean",
+    "module": "SunPrize.Certificate.Initial052",
+    "source_sha256": "28646669c5429df1ec2a8d24d5235442909718b6740d5cfdae3fe01addf7d76f",
+    "exit_code": 0,
+    "seconds": 65.77488069998799,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial053.lean",
+    "module": "SunPrize.Certificate.Initial053",
+    "source_sha256": "bcf44412373557a8341ecf0312f465ff6eba08e9eeaef1a0b36a4df9af4d610b",
+    "exit_code": 0,
+    "seconds": 90.33315780002158,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial054.lean",
+    "module": "SunPrize.Certificate.Initial054",
+    "source_sha256": "bd56c2f7753a6270cd8044e18849f3ca2d5a71a648607733c10b841e3d19b29c",
+    "exit_code": 0,
+    "seconds": 109.75361670000711,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial055.lean",
+    "module": "SunPrize.Certificate.Initial055",
+    "source_sha256": "460c183ba3036a7b55a3114d525efe3e963060346104fc38540a194d4c7027d7",
+    "exit_code": 0,
+    "seconds": 95.73448949999874,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial056.lean",
+    "module": "SunPrize.Certificate.Initial056",
+    "source_sha256": "cdab4551ed8b2c68e78cf28eeba4feb3c493d251b40eca9db18c68c6bb6c12d2",
+    "exit_code": 0,
+    "seconds": 68.56455359997926,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial057.lean",
+    "module": "SunPrize.Certificate.Initial057",
+    "source_sha256": "c06b16ec6d0f2f3f49d71a46c7d34e9600d8d089d425e6649267992e48af64e0",
+    "exit_code": 0,
+    "seconds": 48.06944609998027,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial058.lean",
+    "module": "SunPrize.Certificate.Initial058",
+    "source_sha256": "2ec8c1729a098ab08a56cf7e1f83b2b529e07cb21669f2a123df982881d959c0",
+    "exit_code": 0,
+    "seconds": 61.16301380004734,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial059.lean",
+    "module": "SunPrize.Certificate.Initial059",
+    "source_sha256": "64ce69b565775aa4f9a78fba5069010923651b519380bbddeb919604922cfa01",
+    "exit_code": 0,
+    "seconds": 55.05910110002151,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial060.lean",
+    "module": "SunPrize.Certificate.Initial060",
+    "source_sha256": "63db781da9c7b996fb3517b59926809e7b202c6ff53b0fea81fcbf40ec5cea81",
+    "exit_code": 0,
+    "seconds": 87.96366210002452,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial061.lean",
+    "module": "SunPrize.Certificate.Initial061",
+    "source_sha256": "e6795c76d703736c66bf858b5b525d34de0c42ada679266a04a80f82d5e6ce0f",
+    "exit_code": 0,
+    "seconds": 87.81313510000473,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial062.lean",
+    "module": "SunPrize.Certificate.Initial062",
+    "source_sha256": "a8649cd827d1a81f2e65be834d4d67b162a29e230422d413efdbb6818fa577e0",
+    "exit_code": 0,
+    "seconds": 98.00318030000199,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial063.lean",
+    "module": "SunPrize.Certificate.Initial063",
+    "source_sha256": "bdba007649fcf6b14c35fdda1f251bd8d10b7a3b76d3cf915a179ccb77c4e430",
+    "exit_code": 0,
+    "seconds": 67.79338409996126,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial064.lean",
+    "module": "SunPrize.Certificate.Initial064",
+    "source_sha256": "9259de9e55a4329b9e7a9c9a374bc1d85ea4b6564d547ba0ab6884fd9662d99e",
+    "exit_code": 0,
+    "seconds": 56.37532859999919,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial065.lean",
+    "module": "SunPrize.Certificate.Initial065",
+    "source_sha256": "eda7f779f96623625a66017828a983f0fe791900cd4306b2a286bf8107204715",
+    "exit_code": 0,
+    "seconds": 56.82495330000529,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial066.lean",
+    "module": "SunPrize.Certificate.Initial066",
+    "source_sha256": "827fc480cde51e73b37f517b5aab4f01945f170d6071d50eb823c66e3cf1057e",
+    "exit_code": 0,
+    "seconds": 58.3032344999956,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial067.lean",
+    "module": "SunPrize.Certificate.Initial067",
+    "source_sha256": "2fa05eafda69b2d9db0f5f6bb4eb98df088f3a425d8f199333b115e264a7a85a",
+    "exit_code": 0,
+    "seconds": 56.50565559999086,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial068.lean",
+    "module": "SunPrize.Certificate.Initial068",
+    "source_sha256": "5b01a193669cffe76e0ee419311bc64528e951c43919cc413ef7ad416b6764d4",
+    "exit_code": 0,
+    "seconds": 63.390967199986335,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial069.lean",
+    "module": "SunPrize.Certificate.Initial069",
+    "source_sha256": "fc6275f9ae0d87933c17c2f9af3b7d9c95391ff80ead26b317da0d0346ce32f2",
+    "exit_code": 0,
+    "seconds": 67.82157530001132,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial070.lean",
+    "module": "SunPrize.Certificate.Initial070",
+    "source_sha256": "de7d5bbaa031eda103495154bf4e5a7e7458c2e15f91f087049f05bf3b18236f",
+    "exit_code": 0,
+    "seconds": 70.44997849996435,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial071.lean",
+    "module": "SunPrize.Certificate.Initial071",
+    "source_sha256": "7d0da5ce46714266ed60f5b65af6c5a510b9cad45f23bef8eca2c076a7ab1b03",
+    "exit_code": 0,
+    "seconds": 90.48170669999672,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial072.lean",
+    "module": "SunPrize.Certificate.Initial072",
+    "source_sha256": "b65ac547b0914e45f1897162a27741d04f563a5c5aa456417aa3c062a11e5b2a",
+    "exit_code": 0,
+    "seconds": 76.2502947000321,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial073.lean",
+    "module": "SunPrize.Certificate.Initial073",
+    "source_sha256": "92f547832cdd83e040f4d351bc4bac2e29e790fbfe3f995592cd20163f7ed935",
+    "exit_code": 0,
+    "seconds": 82.78659919998609,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial074.lean",
+    "module": "SunPrize.Certificate.Initial074",
+    "source_sha256": "030b2dcb06d933511dfc424b8626b85338d05da699fe6963198e3ce37a564ba2",
+    "exit_code": 0,
+    "seconds": 62.99026610003784,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial075.lean",
+    "module": "SunPrize.Certificate.Initial075",
+    "source_sha256": "0ba7beadd68768a7c110d776e1ef1b4a17ca7d6ffb38d17e3cbda29ab1fb23cc",
+    "exit_code": 0,
+    "seconds": 60.08441370003857,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial076.lean",
+    "module": "SunPrize.Certificate.Initial076",
+    "source_sha256": "05b56efece6e470a862d602633eaf7c89fa18856fdf840ccc9285114fcdc1794",
+    "exit_code": 0,
+    "seconds": 60.20815680001397,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial077.lean",
+    "module": "SunPrize.Certificate.Initial077",
+    "source_sha256": "6ff6812eb06660ceaa87fcf58fe502d93d03cab0bcfe7a729cb65d445d6c321d",
+    "exit_code": 0,
+    "seconds": 61.50224970001727,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial078.lean",
+    "module": "SunPrize.Certificate.Initial078",
+    "source_sha256": "5df695ab849546f5a15356ddd23573db40bcfa082976172ff25fcb0a9fb90f58",
+    "exit_code": 0,
+    "seconds": 62.86346179997781,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial079.lean",
+    "module": "SunPrize.Certificate.Initial079",
+    "source_sha256": "4eb2a361bd1afd208784e38ee2a0add7648b43f08700a122afa16a7974b60058",
+    "exit_code": 0,
+    "seconds": 58.47263460000977,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial080.lean",
+    "module": "SunPrize.Certificate.Initial080",
+    "source_sha256": "376d77bd49addcae38acef5945fa36046fac444c92084966444ebfe0f17f9b6a",
+    "exit_code": 0,
+    "seconds": 55.38886679999996,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial081.lean",
+    "module": "SunPrize.Certificate.Initial081",
+    "source_sha256": "2af5828654b0998059081f0bf3f7b7e0d4e0d309031bf83d6ec9228646bca496",
+    "exit_code": 0,
+    "seconds": 64.13896980002755,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial082.lean",
+    "module": "SunPrize.Certificate.Initial082",
+    "source_sha256": "d96dbddd745449d1c6198346ac8ca4834aadc6025458c335bfd13331cdea8dff",
+    "exit_code": 0,
+    "seconds": 63.953581600042526,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial083.lean",
+    "module": "SunPrize.Certificate.Initial083",
+    "source_sha256": "8e539de617dda7fb23b480a7058067d1c50b8a7701734d4157d24918e4a25eb1",
+    "exit_code": 0,
+    "seconds": 66.36563569999998,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial084.lean",
+    "module": "SunPrize.Certificate.Initial084",
+    "source_sha256": "a827b333d37f98e35d3eb1ef18405b3d79ada55b8e75511b3b9e4897b600e30f",
+    "exit_code": 0,
+    "seconds": 65.35040239995578,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial085.lean",
+    "module": "SunPrize.Certificate.Initial085",
+    "source_sha256": "a61fce36e2ff662cd98cbd91afeefc711bae9880d8d0744bcb5523413ff7c925",
+    "exit_code": 0,
+    "seconds": 70.01554689998738,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial086.lean",
+    "module": "SunPrize.Certificate.Initial086",
+    "source_sha256": "6bc7d756283862c8587b94b74f91dc370e2f266f9eb12633ed095eb58eac613b",
+    "exit_code": 0,
+    "seconds": 64.45599330001278,
+    "trust": 1
+  },
+  {
+    "stage": "initial",
+    "path": "SunPrize\\Certificate\\Initial087.lean",
+    "module": "SunPrize.Certificate.Initial087",
+    "source_sha256": "aea215a66327713f92509b3391c88407c653b92fe8857a8ff8818fdd7dd0fafc",
+    "exit_code": 0,
+    "seconds": 26.469129999983124,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived000.lean",
+    "module": "SunPrize.Certificate.Derived000",
+    "source_sha256": "1a9f4efebca1357b067fd3e3d4a7692f20fa694954594903e5afa598e1e318c3",
+    "exit_code": 0,
+    "seconds": 6.37290859996574,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived001.lean",
+    "module": "SunPrize.Certificate.Derived001",
+    "source_sha256": "43b313efeb47a103bd72f45520ccf5032c9f8af893d270582957653ce1f3367a",
+    "exit_code": 0,
+    "seconds": 6.8944542000535876,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived002.lean",
+    "module": "SunPrize.Certificate.Derived002",
+    "source_sha256": "607001ed881b523a5306b0d0a059ec769be1fc2ab53bafe21fccc463bd0a15c5",
+    "exit_code": 0,
+    "seconds": 7.781853199994657,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived003.lean",
+    "module": "SunPrize.Certificate.Derived003",
+    "source_sha256": "69c75695ad29015af7ca9a76d27c5611dd603d9a3f1674564b8fcd43e71a6a20",
+    "exit_code": 0,
+    "seconds": 8.907334899995476,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived004.lean",
+    "module": "SunPrize.Certificate.Derived004",
+    "source_sha256": "d555301c27ca857cca89e8256ed2329912498bde6cfb0c4b79faafbbb3d10874",
+    "exit_code": 0,
+    "seconds": 7.663468000013381,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived005.lean",
+    "module": "SunPrize.Certificate.Derived005",
+    "source_sha256": "80f085ce2651efc68b44b2395d5f9458582425a111e893a207169f32c554e1ce",
+    "exit_code": 0,
+    "seconds": 7.34223850001581,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived006.lean",
+    "module": "SunPrize.Certificate.Derived006",
+    "source_sha256": "9165eeba68cd603ff76bf6ea085f1775a630f141903f6f00dca4444c3a1fe4d0",
+    "exit_code": 0,
+    "seconds": 7.256338200008031,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived007.lean",
+    "module": "SunPrize.Certificate.Derived007",
+    "source_sha256": "6b397d612c994b6303c3c33210fa445d0513f40336714225f7e32ad30f4851dc",
+    "exit_code": 0,
+    "seconds": 7.327027199964505,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived008.lean",
+    "module": "SunPrize.Certificate.Derived008",
+    "source_sha256": "06046da3b30d17748676941265252eaf090364cd3a141bde5c3ed5aa1d0112ab",
+    "exit_code": 0,
+    "seconds": 6.91658700001426,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived009.lean",
+    "module": "SunPrize.Certificate.Derived009",
+    "source_sha256": "723bd20c8de65426b9e172c40f2ada4e951c3a36fe62bc837a1544cc060164ca",
+    "exit_code": 0,
+    "seconds": 7.517528399999719,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived010.lean",
+    "module": "SunPrize.Certificate.Derived010",
+    "source_sha256": "24e8acea892eae25994b3da6d6724134aa677fff4460c7105a4a431254af0991",
+    "exit_code": 0,
+    "seconds": 7.163503399991896,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived011.lean",
+    "module": "SunPrize.Certificate.Derived011",
+    "source_sha256": "88773bde7c0bf4e19130a8ffb5c8accf1e99cbf837cafc3a3b2053544584a80b",
+    "exit_code": 0,
+    "seconds": 6.033568900020327,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived012.lean",
+    "module": "SunPrize.Certificate.Derived012",
+    "source_sha256": "933ebd349cd972e2bbb75ed590cb340a9af00d3daa7bd7c1111f86149cf56fbc",
+    "exit_code": 0,
+    "seconds": 6.227751900034491,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived013.lean",
+    "module": "SunPrize.Certificate.Derived013",
+    "source_sha256": "f5e6de9514a5dce1f6334e0f6b975f5acd9ee949f6456da6a23854e5e0965016",
+    "exit_code": 0,
+    "seconds": 6.51425049995305,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived014.lean",
+    "module": "SunPrize.Certificate.Derived014",
+    "source_sha256": "ab88d038c63a845260493831953204e7df5f7a217a2b1f198da26b4efbcd22a7",
+    "exit_code": 0,
+    "seconds": 7.117527199967299,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived015.lean",
+    "module": "SunPrize.Certificate.Derived015",
+    "source_sha256": "6b7a323f11b1ade5a1d204a086fe0cbf8b74b388256d12cc88bffb4e7ff75fb8",
+    "exit_code": 0,
+    "seconds": 7.149206199974287,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived016.lean",
+    "module": "SunPrize.Certificate.Derived016",
+    "source_sha256": "e6d27a43793f1ad5e30a3d42df70824482bd5b4cf3466b112832efaf4f892b03",
+    "exit_code": 0,
+    "seconds": 8.211094100028276,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived017.lean",
+    "module": "SunPrize.Certificate.Derived017",
+    "source_sha256": "1dbc2cb1de57c1f75518e2caf664d28d7cbc6cb4507c25b18dea440c6ad07e8f",
+    "exit_code": 0,
+    "seconds": 8.260582400020212,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived018.lean",
+    "module": "SunPrize.Certificate.Derived018",
+    "source_sha256": "0ce292394e5def4e4c1ecbb0965b92c614653a137962e3661aa1f800c50e66e9",
+    "exit_code": 0,
+    "seconds": 7.676061200036202,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived019.lean",
+    "module": "SunPrize.Certificate.Derived019",
+    "source_sha256": "186830644b3b5b3c998ac7f5096089d19cc4117ae24cb2a47d1573d0339f5112",
+    "exit_code": 0,
+    "seconds": 6.585825300018769,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived020.lean",
+    "module": "SunPrize.Certificate.Derived020",
+    "source_sha256": "40ae2c8614b835992d1c4131f98acb2787a5d1c1ef88d2fe3614334490b493dd",
+    "exit_code": 0,
+    "seconds": 6.902706600027159,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived021.lean",
+    "module": "SunPrize.Certificate.Derived021",
+    "source_sha256": "ea334b8ac48e0b11bb0df9882142b12db3cb18671eccc570a2678c8948f302dd",
+    "exit_code": 0,
+    "seconds": 7.684141199977603,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived022.lean",
+    "module": "SunPrize.Certificate.Derived022",
+    "source_sha256": "062fdb3521c3532231adeb1f11a3b799527a7baf47178fcd61f8741407345b92",
+    "exit_code": 0,
+    "seconds": 7.607981499982998,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived023.lean",
+    "module": "SunPrize.Certificate.Derived023",
+    "source_sha256": "37886b2791d3f041bc8649c1d6f40f8991bb671858bc219d9a589c0282103b4d",
+    "exit_code": 0,
+    "seconds": 6.5937197000021115,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived024.lean",
+    "module": "SunPrize.Certificate.Derived024",
+    "source_sha256": "5753257fdc26541be288f8e0bc8de6adb9727060cb0c9e293d2c87ce330136b7",
+    "exit_code": 0,
+    "seconds": 21.224863399984315,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived025.lean",
+    "module": "SunPrize.Certificate.Derived025",
+    "source_sha256": "3644d99c5e098e99f5ed398af20e2105d85bc865f431f199696e4bf56508683f",
+    "exit_code": 0,
+    "seconds": 63.121383899997454,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived026.lean",
+    "module": "SunPrize.Certificate.Derived026",
+    "source_sha256": "a17b1157729115ef5bb4dec4553e22895eb121a32d3ca37ff8e160c3c16c65ff",
+    "exit_code": 0,
+    "seconds": 92.115177700005,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived027.lean",
+    "module": "SunPrize.Certificate.Derived027",
+    "source_sha256": "6af8c5ddc102d4e07312b5f579ca93856d6f0732267966f7c8be179629d0a274",
+    "exit_code": 0,
+    "seconds": 135.08057510002982,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived028.lean",
+    "module": "SunPrize.Certificate.Derived028",
+    "source_sha256": "506a7ea42be6334ba8d58e96c5436939d5f1e5e231da105ff5e3865ffe5990a1",
+    "exit_code": 0,
+    "seconds": 59.055879799998365,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived029.lean",
+    "module": "SunPrize.Certificate.Derived029",
+    "source_sha256": "09b55a5a8877ed95e1d64d55fa17bbe7f0569abb0ddecb152de85d185fed94b1",
+    "exit_code": 0,
+    "seconds": 109.83206679997966,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived030.lean",
+    "module": "SunPrize.Certificate.Derived030",
+    "source_sha256": "de2f146782a1629d3a0d2900a27a10319a2fc44bb335afe29544b2bec9e94a83",
+    "exit_code": 0,
+    "seconds": 27.08116699999664,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived031.lean",
+    "module": "SunPrize.Certificate.Derived031",
+    "source_sha256": "d1bd5a467052813049ab7487f00c138ea51b09b56e51d01bcbf3855e52ada0f7",
+    "exit_code": 0,
+    "seconds": 30.52556119998917,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived032.lean",
+    "module": "SunPrize.Certificate.Derived032",
+    "source_sha256": "31adf61cb638071c4b041cf3d34f57446527235c59eb9ae75600d14d74c1a7fc",
+    "exit_code": 0,
+    "seconds": 4.431642499985173,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived033.lean",
+    "module": "SunPrize.Certificate.Derived033",
+    "source_sha256": "1fc3266311dc990fd5fc6f86cd353198fdca11e0b0ba9f3b82e659d1f6061c2b",
+    "exit_code": 0,
+    "seconds": 3.804712000011932,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived034.lean",
+    "module": "SunPrize.Certificate.Derived034",
+    "source_sha256": "067ed5e4b9fe8eb41c01e4378716e9f1d70b1d172a9a19e2529de06c0a85267c",
+    "exit_code": 0,
+    "seconds": 3.893078599998262,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived035.lean",
+    "module": "SunPrize.Certificate.Derived035",
+    "source_sha256": "a595a8f2f60468c058303ae119948028c36eff8fdc26454176b5ac4c1c1820e2",
+    "exit_code": 0,
+    "seconds": 3.9704804999637417,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived036.lean",
+    "module": "SunPrize.Certificate.Derived036",
+    "source_sha256": "d4534f2f83a9fa10511f9ceff1da1618b7495014bf48ac3ebb4038c8c58c15e1",
+    "exit_code": 0,
+    "seconds": 3.70764690003125,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived037.lean",
+    "module": "SunPrize.Certificate.Derived037",
+    "source_sha256": "a1ab1ebe2fcbea5638c14ba6d64c3cae783904ec73225dacf3468909fa0cf955",
+    "exit_code": 0,
+    "seconds": 3.878760499996133,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived038.lean",
+    "module": "SunPrize.Certificate.Derived038",
+    "source_sha256": "8b28ed8b8c92ede6dfb5e1ddb42f11545e613e53ae7b7424a4969b15f79d0348",
+    "exit_code": 0,
+    "seconds": 4.5659131000284106,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived039.lean",
+    "module": "SunPrize.Certificate.Derived039",
+    "source_sha256": "dd4b8427625bc1ddd580d9dd4bbb3e88171f4f636d64973c578e09ead417ea07",
+    "exit_code": 0,
+    "seconds": 4.049295600038022,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived040.lean",
+    "module": "SunPrize.Certificate.Derived040",
+    "source_sha256": "b35076ecc0216ec424814cd383ff6297f7eaacb7b014270711913b13034a20af",
+    "exit_code": 0,
+    "seconds": 3.726388600014616,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived041.lean",
+    "module": "SunPrize.Certificate.Derived041",
+    "source_sha256": "98b50c15edab21550cca4847bedbdc7e4a8ff1cb78b95bd23e4de5daddb577ca",
+    "exit_code": 0,
+    "seconds": 3.6574565999908373,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived042.lean",
+    "module": "SunPrize.Certificate.Derived042",
+    "source_sha256": "528cec4690749dfc1a6c3cf974a8844fcc02da47c9efef989c19b8c90e41b2f2",
+    "exit_code": 0,
+    "seconds": 3.3335230000084266,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived043.lean",
+    "module": "SunPrize.Certificate.Derived043",
+    "source_sha256": "4d9f7e43b39a6756450970406c16a04018d8b92ca1c305ffd0aa9bd585bea3e3",
+    "exit_code": 0,
+    "seconds": 3.863162999972701,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived044.lean",
+    "module": "SunPrize.Certificate.Derived044",
+    "source_sha256": "1076ed375b2bf31a34d8fd0dcac7e297dbc7f8be7016fa7a232607e73b46765e",
+    "exit_code": 0,
+    "seconds": 3.7783333000261337,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived045.lean",
+    "module": "SunPrize.Certificate.Derived045",
+    "source_sha256": "2265db73cb5c556431b0e9a54aa81d5ea96d10fd20e1a28cc51f8c575b85d391",
+    "exit_code": 0,
+    "seconds": 3.7551463000127114,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived046.lean",
+    "module": "SunPrize.Certificate.Derived046",
+    "source_sha256": "aaf3b2b4442a3f7028cd2a09d209083a39ddc9f4bc5eb548b65b3cc14398931a",
+    "exit_code": 0,
+    "seconds": 3.7319799000397325,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived047.lean",
+    "module": "SunPrize.Certificate.Derived047",
+    "source_sha256": "b3f0b06d7514f9da87d25162728527cfce684dc4cc2285538ed90d1b93067fa3",
+    "exit_code": 0,
+    "seconds": 3.8858060000347905,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived048.lean",
+    "module": "SunPrize.Certificate.Derived048",
+    "source_sha256": "86d2ea3fdb6ab6f662a84778ed63574ea4a2c64f7145da14b23b4ed69982998e",
+    "exit_code": 0,
+    "seconds": 3.9561935999663547,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived049.lean",
+    "module": "SunPrize.Certificate.Derived049",
+    "source_sha256": "e80fab0314b6acfdab94088b2a57e6ae948821c3d3108bf0d116a6c304c48bc9",
+    "exit_code": 0,
+    "seconds": 3.3573832000256516,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived050.lean",
+    "module": "SunPrize.Certificate.Derived050",
+    "source_sha256": "66906f9f9e24d383d0370be0a2d0898dc808ab4e254582cccabf8787c0fcf3ec",
+    "exit_code": 0,
+    "seconds": 3.2102618999779224,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived051.lean",
+    "module": "SunPrize.Certificate.Derived051",
+    "source_sha256": "f315abc7f38408dfd6349e9dc89d464e48568f1ed45e5c192c13b477bf65e32a",
+    "exit_code": 0,
+    "seconds": 3.1599041000008583,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived052.lean",
+    "module": "SunPrize.Certificate.Derived052",
+    "source_sha256": "dd84b127bbe41dacd785e3fd3724c2bf58042ad6ed26e80cedeac42895d12b91",
+    "exit_code": 0,
+    "seconds": 3.454935999994632,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived053.lean",
+    "module": "SunPrize.Certificate.Derived053",
+    "source_sha256": "ac5dc1ab7dc6b46da8c981b35a34d04ea063914d4bf8e22406ee5c8f03a97f48",
+    "exit_code": 0,
+    "seconds": 3.9428671000059694,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived054.lean",
+    "module": "SunPrize.Certificate.Derived054",
+    "source_sha256": "de78edfc7cf13b3dd31cdb1d0f1e33f647c4121c0a4977ca8c638007659977e6",
+    "exit_code": 0,
+    "seconds": 3.389175600023009,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived055.lean",
+    "module": "SunPrize.Certificate.Derived055",
+    "source_sha256": "d1f816e7729b008c24e990f39e90fdd0fe189e83e1a67a16627e7d18cc24fb94",
+    "exit_code": 0,
+    "seconds": 3.644051000010222,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived056.lean",
+    "module": "SunPrize.Certificate.Derived056",
+    "source_sha256": "9dde946dd5f860a1f1d021a1a8114fe1c65289fabbab54a44b4d83bcb9246129",
+    "exit_code": 0,
+    "seconds": 7.461197600001469,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived057.lean",
+    "module": "SunPrize.Certificate.Derived057",
+    "source_sha256": "c2c560576462cc98aebbf5436ce6150f32b9c7c927081ff9405231fad1be855d",
+    "exit_code": 0,
+    "seconds": 14.472850100020878,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived058.lean",
+    "module": "SunPrize.Certificate.Derived058",
+    "source_sha256": "9fe7ca05555fd5c428edf1dd4b937afb47bb692c2b78fd15724a196f3f150899",
+    "exit_code": 0,
+    "seconds": 3.6420286999782547,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived059.lean",
+    "module": "SunPrize.Certificate.Derived059",
+    "source_sha256": "f95b841084465426247ddd028b8840f3bd1c09050dd6f2bf6ace90678a3a077c",
+    "exit_code": 0,
+    "seconds": 3.1477289999602363,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived060.lean",
+    "module": "SunPrize.Certificate.Derived060",
+    "source_sha256": "386114a70b6a903314798ec777b4b9f59d22cbedb321ad2f41767f699addb508",
+    "exit_code": 0,
+    "seconds": 3.2814020999940112,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived061.lean",
+    "module": "SunPrize.Certificate.Derived061",
+    "source_sha256": "4d13c695c2b84b6a5d53173057395ee805b6b92af64e41cf18a5393b31b025f4",
+    "exit_code": 0,
+    "seconds": 3.6417925999849103,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived062.lean",
+    "module": "SunPrize.Certificate.Derived062",
+    "source_sha256": "e22642a304a73081ddf12e1136b8d97885b817be89dc4afe239e45a7d254f067",
+    "exit_code": 0,
+    "seconds": 3.565593799983617,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived063.lean",
+    "module": "SunPrize.Certificate.Derived063",
+    "source_sha256": "fb9e5b7a4b9c581e403e1bf227c817211b985609b67f620f83102a8b9dc70398",
+    "exit_code": 0,
+    "seconds": 3.649240099999588,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived064.lean",
+    "module": "SunPrize.Certificate.Derived064",
+    "source_sha256": "ea6dfe2e917cfb079a1f8c1d9bc701f101f6c08103b6e4b624e4e91d100b233a",
+    "exit_code": 0,
+    "seconds": 3.178748700011056,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived065.lean",
+    "module": "SunPrize.Certificate.Derived065",
+    "source_sha256": "6a6e0b8ccad20301fecc2821a12a9e8b325c895b5e48b87636df98443af950b5",
+    "exit_code": 0,
+    "seconds": 13.930509700032417,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived066.lean",
+    "module": "SunPrize.Certificate.Derived066",
+    "source_sha256": "fda5528487f1be7e2b2e763936295fdc89c24f2a30e7c0d5ff30a8a94daec19b",
+    "exit_code": 0,
+    "seconds": 8.119618600001559,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived067.lean",
+    "module": "SunPrize.Certificate.Derived067",
+    "source_sha256": "6effc769fd8ae71c3b3ad46bf51dbda1bb06605fc08188bba6879bf9a422caf5",
+    "exit_code": 0,
+    "seconds": 3.13825340004405,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived068.lean",
+    "module": "SunPrize.Certificate.Derived068",
+    "source_sha256": "f45fd80b417f506dd5da578c84c2c18255fafea02dcf89a85c2c97a29bcbfb63",
+    "exit_code": 0,
+    "seconds": 2.943727799982298,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived069.lean",
+    "module": "SunPrize.Certificate.Derived069",
+    "source_sha256": "4be96d22905172d4f3d88098057f4a506c95fb04ee295da0ed55bd7e8a95816a",
+    "exit_code": 0,
+    "seconds": 3.033081699977629,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived070.lean",
+    "module": "SunPrize.Certificate.Derived070",
+    "source_sha256": "26502f1e3c2788cb318925ac68754ad8bbd2316d7224ed8b698699c2cc31fd48",
+    "exit_code": 0,
+    "seconds": 3.0743319999892265,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived071.lean",
+    "module": "SunPrize.Certificate.Derived071",
+    "source_sha256": "e055c87c3af44534a727be5b2d51caa2a8d6092599e51f7b8fa93cc8e2124fe4",
+    "exit_code": 0,
+    "seconds": 3.094653100008145,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived072.lean",
+    "module": "SunPrize.Certificate.Derived072",
+    "source_sha256": "8e10920faad94790f5869ee1eee9511f139f2ae0f3f2725f74f08e26334af0a0",
+    "exit_code": 0,
+    "seconds": 2.9696248000254855,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived073.lean",
+    "module": "SunPrize.Certificate.Derived073",
+    "source_sha256": "ee5abda2075517d21ca67c67ed046a083849053161f458ffbae11e0e76369176",
+    "exit_code": 0,
+    "seconds": 11.656046500022057,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived074.lean",
+    "module": "SunPrize.Certificate.Derived074",
+    "source_sha256": "017736a928231f5039a95528f8d802a81fe99c3f7a5c3db0b24ed978c1a71bb2",
+    "exit_code": 0,
+    "seconds": 13.228713200020138,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived075.lean",
+    "module": "SunPrize.Certificate.Derived075",
+    "source_sha256": "c9d9fb728b80b8d79fa919770c1b36face9811fbd97973275f546924bd510406",
+    "exit_code": 0,
+    "seconds": 13.174410399980843,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived076.lean",
+    "module": "SunPrize.Certificate.Derived076",
+    "source_sha256": "e10b35a9d7d5ef104391259157e73f10f03d16229542014a546b54fc0098f411",
+    "exit_code": 0,
+    "seconds": 12.845438099990133,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived077.lean",
+    "module": "SunPrize.Certificate.Derived077",
+    "source_sha256": "6f1c457db03b09db534ec53e96e03699ca0659b7e1286926c2a2765ba7cebb32",
+    "exit_code": 0,
+    "seconds": 10.632192399993073,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived078.lean",
+    "module": "SunPrize.Certificate.Derived078",
+    "source_sha256": "97c298447635eeaf1ee526eedcf474f7ac64266c75843d9a480bdb5653774ab3",
+    "exit_code": 0,
+    "seconds": 4.538964999956079,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived079.lean",
+    "module": "SunPrize.Certificate.Derived079",
+    "source_sha256": "f7a1bc4657dcad86b75f5b1decbc359f61d4da6296b6837aa44bc0b372900620",
+    "exit_code": 0,
+    "seconds": 11.319686200004071,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived080.lean",
+    "module": "SunPrize.Certificate.Derived080",
+    "source_sha256": "a5996f9f2f9a36bb6225b9d0a6e0b08da81f5d622220b3f27aa2099d8c442831",
+    "exit_code": 0,
+    "seconds": 10.320316299970727,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived081.lean",
+    "module": "SunPrize.Certificate.Derived081",
+    "source_sha256": "9aedda0295094e747ce4092108bc8850e3fb01071e9b680daf2921f6c55badca",
+    "exit_code": 0,
+    "seconds": 9.51679729996249,
+    "trust": 1
+  },
+  {
+    "stage": "derived",
+    "path": "SunPrize\\Certificate\\Derived082.lean",
+    "module": "SunPrize.Certificate.Derived082",
+    "source_sha256": "ef29cdfbb41a81abb28cea6e72c5857067d5e8755155f149d46419aa6d366b95",
+    "exit_code": 0,
+    "seconds": 0.9958783999900334,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid000.lean",
+    "module": "SunPrize.Certificate.InputsValid000",
+    "source_sha256": "3ed44050637bbc8bffd3814ed90db270c009efd486cd1f321ac3c5d5ef169b19",
+    "exit_code": 0,
+    "seconds": 9.98201129998779,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid001.lean",
+    "module": "SunPrize.Certificate.InputsValid001",
+    "source_sha256": "787cfc9fa9ec6800a19f04f13c8fb492b1690e183c7ffc5ffbd7700ec28e1946",
+    "exit_code": 0,
+    "seconds": 10.100064600002952,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid002.lean",
+    "module": "SunPrize.Certificate.InputsValid002",
+    "source_sha256": "4b70826ae8671ab828bf23d0cae9e479f1267b35b5eba465b3c94bafbe2e55fb",
+    "exit_code": 0,
+    "seconds": 10.062791000003926,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid003.lean",
+    "module": "SunPrize.Certificate.InputsValid003",
+    "source_sha256": "4124fa3e3f1e8bbb6eecb68198be5174e7ef3607851239e52a4a405a2d173227",
+    "exit_code": 0,
+    "seconds": 10.107057199988049,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid004.lean",
+    "module": "SunPrize.Certificate.InputsValid004",
+    "source_sha256": "6e74716d3fa5131a63898280ec07f77727f8b28d0858f4c9c8d6cb71d45559c2",
+    "exit_code": 0,
+    "seconds": 10.150840700021945,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid005.lean",
+    "module": "SunPrize.Certificate.InputsValid005",
+    "source_sha256": "00def01efb6e199071111bc9c9f6a09a6051642383467e68718dde1632435879",
+    "exit_code": 0,
+    "seconds": 10.319429600029252,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid006.lean",
+    "module": "SunPrize.Certificate.InputsValid006",
+    "source_sha256": "ae5b1769fe8f23981ee7fdd99e58b30387bff8367a97bb682227a0ae63cd041a",
+    "exit_code": 0,
+    "seconds": 10.510020999994595,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid007.lean",
+    "module": "SunPrize.Certificate.InputsValid007",
+    "source_sha256": "670508a54eb4ce092298e54221ff1d5145396b44c92b709bf5ddf21bfbab3d3f",
+    "exit_code": 0,
+    "seconds": 10.385181199992076,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid008.lean",
+    "module": "SunPrize.Certificate.InputsValid008",
+    "source_sha256": "66298c71c351b5159a74978c34dbfe0f7afb39e498a0a62024605dfbbd83cb76",
+    "exit_code": 0,
+    "seconds": 10.408198299992364,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid009.lean",
+    "module": "SunPrize.Certificate.InputsValid009",
+    "source_sha256": "8bbeefc5b3e45b5d8a3927bad8df4aae00139261665374e39daaf1604232e53b",
+    "exit_code": 0,
+    "seconds": 10.685908099985681,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid010.lean",
+    "module": "SunPrize.Certificate.InputsValid010",
+    "source_sha256": "005dd49c3b8fbdbdc0bf98c4d75a47fbcbf3cd8cdaae513d20bc780a5e4965e6",
+    "exit_code": 0,
+    "seconds": 10.725672200031113,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid011.lean",
+    "module": "SunPrize.Certificate.InputsValid011",
+    "source_sha256": "24f0bcaf01e989d1b0623ffe8ee6587c74eb95dc5bc3a252d42146305252f07d",
+    "exit_code": 0,
+    "seconds": 10.628250100009609,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid012.lean",
+    "module": "SunPrize.Certificate.InputsValid012",
+    "source_sha256": "1df5ce8bcfd9973e05a85a492e4f1be47f0c5f74fce090c9ff3b8b5ce2b49907",
+    "exit_code": 0,
+    "seconds": 10.809908600000199,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid013.lean",
+    "module": "SunPrize.Certificate.InputsValid013",
+    "source_sha256": "eea71d720248089caa670903ff2146ac56fb451e4bd4ef60f5a986966c4d5908",
+    "exit_code": 0,
+    "seconds": 11.970046999980696,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid014.lean",
+    "module": "SunPrize.Certificate.InputsValid014",
+    "source_sha256": "16c45b42ace64f416812d26b3d0e2ac75b0daf82303f82d130de2ca2f0f69cc9",
+    "exit_code": 0,
+    "seconds": 11.875083999999333,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid015.lean",
+    "module": "SunPrize.Certificate.InputsValid015",
+    "source_sha256": "e520c546af320f9c869808a284136df087bc9ccffe3a8501e48ff58c98ed93a6",
+    "exit_code": 0,
+    "seconds": 10.617018199991435,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid016.lean",
+    "module": "SunPrize.Certificate.InputsValid016",
+    "source_sha256": "bf8463252b4b11efe06c767097b6e56c1c6a87c2f7fff55817a7380aa4a9ca90",
+    "exit_code": 0,
+    "seconds": 10.412153299956117,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid017.lean",
+    "module": "SunPrize.Certificate.InputsValid017",
+    "source_sha256": "cfc2ac44fee021e8d4605cbf7ac81d12083f9d4735c0711f94c57b049a06b52a",
+    "exit_code": 0,
+    "seconds": 10.31613589997869,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid018.lean",
+    "module": "SunPrize.Certificate.InputsValid018",
+    "source_sha256": "48f0a0a3761568d6a98a37b69f4b8e9440b5f72e0e442987f4612af72540e428",
+    "exit_code": 0,
+    "seconds": 10.396851299970876,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid019.lean",
+    "module": "SunPrize.Certificate.InputsValid019",
+    "source_sha256": "a7f3f84b95cbe3c54524ca1b4981360a18cd7ccac6503bdecb1ff40633727f3c",
+    "exit_code": 0,
+    "seconds": 11.695081699988805,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid020.lean",
+    "module": "SunPrize.Certificate.InputsValid020",
+    "source_sha256": "933e8b5a3a84bd8ed502917668ac18a72b1d5dcede35e2365d10cbc916ee1819",
+    "exit_code": 0,
+    "seconds": 11.775236700021196,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid021.lean",
+    "module": "SunPrize.Certificate.InputsValid021",
+    "source_sha256": "1c9dc018adfa8998f00381729d136e90a79cc0246f682b490f6ad597e8d6be5e",
+    "exit_code": 0,
+    "seconds": 12.063197100011166,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid022.lean",
+    "module": "SunPrize.Certificate.InputsValid022",
+    "source_sha256": "5b7398263885b099b0a2aef88a0ec9826691cbf4bf74f1b893c16f253b36c754",
+    "exit_code": 0,
+    "seconds": 12.169056400016416,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid023.lean",
+    "module": "SunPrize.Certificate.InputsValid023",
+    "source_sha256": "37d6b78741739d34acbb24555c7311de36f7b87402f94e7c15507f4616022769",
+    "exit_code": 0,
+    "seconds": 11.415539299952798,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid024.lean",
+    "module": "SunPrize.Certificate.InputsValid024",
+    "source_sha256": "cd62fa9c6abca553be81895c2639728c880ca7085357f8c854b1d3b0ec0c5d0b",
+    "exit_code": 0,
+    "seconds": 11.368376599973999,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid025.lean",
+    "module": "SunPrize.Certificate.InputsValid025",
+    "source_sha256": "d54d1c8972c893380ab66f0fcd45ca8adb6d819e6b243568d655df8466eb7851",
+    "exit_code": 0,
+    "seconds": 6.50943819998065,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid026.lean",
+    "module": "SunPrize.Certificate.InputsValid026",
+    "source_sha256": "a2c8632e415b70233b24293a12e958289db946c13a665796e5d0a56f06a7569c",
+    "exit_code": 0,
+    "seconds": 6.451917099999264,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid027.lean",
+    "module": "SunPrize.Certificate.InputsValid027",
+    "source_sha256": "896156e5c1eaa8a35f025150af3c606201550ca2b51c8009c8b381fbb25ed07f",
+    "exit_code": 0,
+    "seconds": 6.598472799989395,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid028.lean",
+    "module": "SunPrize.Certificate.InputsValid028",
+    "source_sha256": "48c19bc77e08528132bff276c12d4f07534363a022f223b75954fed53efa4385",
+    "exit_code": 0,
+    "seconds": 6.682354599994142,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid029.lean",
+    "module": "SunPrize.Certificate.InputsValid029",
+    "source_sha256": "479193b061b152e1908e64cc7893dcc7facb40d1a78e00cd67df2e0136783a92",
+    "exit_code": 0,
+    "seconds": 6.676449499966111,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid030.lean",
+    "module": "SunPrize.Certificate.InputsValid030",
+    "source_sha256": "e15ffb553228a5ad58347709409160edd49617c6a2fb73e34cc5c43420109239",
+    "exit_code": 0,
+    "seconds": 6.655928599997424,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid031.lean",
+    "module": "SunPrize.Certificate.InputsValid031",
+    "source_sha256": "1a64d497f0cb31375eb114870c69a23ee469f675cc5ab629490fdf18a362f5f7",
+    "exit_code": 0,
+    "seconds": 6.851165600004606,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid032.lean",
+    "module": "SunPrize.Certificate.InputsValid032",
+    "source_sha256": "9082a8090a3a100205408220b4bbfebd312539790eb74412c259ba94500d9dd6",
+    "exit_code": 0,
+    "seconds": 6.913019700034056,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid033.lean",
+    "module": "SunPrize.Certificate.InputsValid033",
+    "source_sha256": "c75fb1e7b7f6f9baccb902551769c54d2171739fefce5464f8eb9ceeea182644",
+    "exit_code": 0,
+    "seconds": 6.904210900014732,
+    "trust": 1
+  },
+  {
+    "stage": "inputs-valid",
+    "path": "SunPrize\\Certificate\\InputsValid034.lean",
+    "module": "SunPrize.Certificate.InputsValid034",
+    "source_sha256": "c70ca55121b08c55798639749d794bd277b56e4066684a1033bf0d0966460221",
+    "exit_code": 0,
+    "seconds": 6.159490899997763,
+    "trust": 1
+  },
+  {
+    "stage": "final",
+    "path": "SunPrize/Certificate/LogicClosure.lean",
+    "module": "SunPrize.Certificate.LogicClosure",
+    "source_sha256": "528e27ed00a55d34a9b0591235bbc85fecc0b2b47d8d36dbb36b81aedc0c46e8",
+    "exit_code": 0,
+    "seconds": 1.004808600002434,
+    "trust": 1
+  },
+  {
+    "stage": "final",
+    "path": "SunPrize/Certificate/InputsValid.lean",
+    "module": "SunPrize.Certificate.InputsValid",
+    "source_sha256": "4dca9f9b80acaf6a5eb0fd50fff2a7b1595c9f59d67e76ca3e5a99c6dbd4f02b",
+    "exit_code": 0,
+    "seconds": 6.104531800025143,
+    "trust": 1
+  },
+  {
+    "stage": "final",
+    "path": "SunPrize/ElevenModel.lean",
+    "module": "SunPrize.ElevenModel",
+    "source_sha256": "3387f780be7ada5ed8811ed0bbbebc39d4e768298ae362ae5b522cc8c7637d0a",
+    "exit_code": 0,
+    "seconds": 6.276575000025332,
+    "trust": 1
+  },
+  {
+    "stage": "final",
+    "path": "SunPrize/ElevenGeometry.lean",
+    "module": "SunPrize.ElevenGeometry",
+    "source_sha256": "f2a48ff923be1f0c0062468ddb3293efa97a6c11ff01a392df1c0b1dd0193ba1",
+    "exit_code": 0,
+    "seconds": 11.681852900015656,
+    "trust": 1
+  },
+  {
+    "stage": "final",
+    "path": "SunPrize.lean",
+    "module": "SunPrize",
+    "source_sha256": "de1d6d9e7411aef84fb404db264c2698d42ba47f967931b42ecc6032ac795fb6",
+    "exit_code": 0,
+    "seconds": 10.790212100022472,
+    "trust": 1
+  }
+]

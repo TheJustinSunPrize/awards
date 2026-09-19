@@ -1,0 +1,116 @@
+SunPrize\Certificate\Theory018.lean:138:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory018.lean:144:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory018.lean:146:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory018.lean:148:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory018.lean:150:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory018.lean:154:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory018.lean:156:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory018.lean:140:32: warning: Unused tactic linter: `(try simp only [not_lt, not_le] at h ⊢)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+SunPrize\Certificate\Theory018.lean:142:32: warning: Unused tactic linter: `(try simp only [not_lt, not_le] at h ⊢)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+SunPrize\Certificate\Theory018.lean:152:32: warning: Unused tactic linter: `(try simp only [not_lt, not_le] at h ⊢)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+SunPrize\Certificate\Theory018.lean:854:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory018.lean:856:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory018.lean:858:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory018.lean:860:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory018.lean:862:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory018.lean:866:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory018.lean:868:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory018.lean:850:32: warning: Unused tactic linter: `(try simp only [not_lt, not_le] at h ⊢)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+SunPrize\Certificate\Theory018.lean:852:32: warning: Unused tactic linter: `(try simp only [not_lt, not_le] at h ⊢)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+SunPrize\Certificate\Theory018.lean:864:32: warning: Unused tactic linter: `(try simp only [not_lt, not_le] at h ⊢)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`

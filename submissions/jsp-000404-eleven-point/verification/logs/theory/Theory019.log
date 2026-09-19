@@ -1,0 +1,58 @@
+SunPrize\Certificate\Theory019.lean:698:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory019.lean:700:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory019.lean:704:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory019.lean:706:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory019.lean:708:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory019.lean:714:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory019.lean:716:56: warning: This simp argument is unused:
+  not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [not_lt] at h ⊢
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SunPrize\Certificate\Theory019.lean:702:32: warning: Unused tactic linter: `(try simp only [not_lt, not_le] at h ⊢)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+SunPrize\Certificate\Theory019.lean:710:32: warning: Unused tactic linter: `(try simp only [not_lt, not_le] at h ⊢)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+SunPrize\Certificate\Theory019.lean:712:32: warning: Unused tactic linter: `(try simp only [not_lt, not_le] at h ⊢)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`

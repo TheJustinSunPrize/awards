@@ -1,0 +1,7 @@
+* text=auto eol=lf
+# 证明源码保留实际验证时的字节，防止换行转换改变校验摘要。
+*.lean -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+verification/**/*.log -text -eol whitespace=cr-at-eol
+verification/*.log -text -eol whitespace=cr-at-eol
+CLAUDE.md export-ignore
+lake-manifest.json -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

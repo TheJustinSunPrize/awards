@@ -1,0 +1,23 @@
+{
+  "base_commit": "f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+  "platform": "Windows, Python 3.13, UTF-8 mode",
+  "validate": "passed",
+  "links": "passed",
+  "build": "passed; generated content unchanged",
+  "check": "passed",
+  "tests": {
+    "total": 22,
+    "passed": 19,
+    "failed": [
+      "test_revocation_keeps_original_evidence",
+      "test_symlinks_and_misplaced_records_rejected",
+      "test_published_statement_immutable_and_superseded"
+    ],
+    "baseline_same_failures": true,
+    "reasons": [
+      "Windows path separators in upstream history validation",
+      "Windows symbolic-link creation privilege unavailable"
+    ]
+  },
+  "validators_modified": false
+}

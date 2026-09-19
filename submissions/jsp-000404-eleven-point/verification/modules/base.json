@@ -1,0 +1,10 @@
+[
+  {
+    "module": "SunPrize.Certificate.Meaning",
+    "path": "SunPrize/Certificate/Meaning.lean"
+  },
+  {
+    "module": "SunPrize.Certificate.Inputs",
+    "path": "SunPrize/Certificate/Inputs.lean"
+  }
+]
