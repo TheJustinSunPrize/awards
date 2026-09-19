@@ -528,7 +528,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000416 | [Do partial sums of a random multiplicative function satisfy the predicted law of the iterated logarithm and fluctuation scale?](catalog-0401-0500.md#JSP-000416) | Open | No | No | Unavailable |
 | JSP-000417 | [Does the number of real roots of a polynomial with independent random sign coefficients almost surely follow the specified asymptotic law?](catalog-0401-0500.md#JSP-000417) | Open | No | No | Unavailable |
 | JSP-000418 | [How many roots of a polynomial with random sign coefficients lie inside the unit circle?](catalog-0401-0500.md#JSP-000418) | Open | No | No | Unavailable |
-| JSP-000419 | [What is the typical maximum modulus on the unit circle of a polynomial with random sign coefficients?](catalog-0401-0500.md#JSP-000419) | Solved | No | No | Unavailable |
+| JSP-000419 | [What is the typical maximum modulus on the unit circle of a polynomial with random sign coefficients?](catalog-0401-0500.md#JSP-000419) | Solved | Yes | No | Unavailable |
 | JSP-000420 | [What is the typical maximum on the specified real interval of a polynomial with random sign coefficients?](catalog-0401-0500.md#JSP-000420) | Open | No | No | Unavailable |
 | JSP-000421 | [How small is the typical minimum modulus on the unit circle of a polynomial with random sign coefficients?](catalog-0401-0500.md#JSP-000421) | Solved | No | No | Unavailable |
 | JSP-000422 | [What conditions on arc lengths make randomly placed arcs cover the entire circle almost surely?](catalog-0401-0500.md#JSP-000422) | Solved | No | No | Unavailable |
