@@ -946,7 +946,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000824 | [Do spherical configurations maximizing the product of pairwise distances become uniformly distributed as their size grows?](catalog-0801-0900.md#JSP-000824) | Solved | No | No | Unavailable |
 | JSP-000825 | [For typical irrational scale factors, what is the discrepancy of fractional parts of a scaled integer sequence?](catalog-0801-0900.md#JSP-000825) | Solved | No | No | Unavailable |
 | JSP-000826 | [Is the sequence counting independent sets by size in a tree or forest unimodal?](catalog-0801-0900.md#JSP-000826) | Open | No | No | Unavailable |
-| JSP-000827 | [Under repeated irrational rotation of a circle, does the visiting frequency of a measurable set equal its measure?](catalog-0801-0900.md#JSP-000827) | Solved | No | No | Unavailable |
+| JSP-000827 | [Under repeated irrational rotation of a circle, does the visiting frequency of a measurable set equal its measure?](catalog-0801-0900.md#JSP-000827) | Solved | Yes | No | Unavailable |
 | JSP-000828 | [For a square-integrable function sampled along dilations from a sparse integer sequence, how fast do partial sums grow for typical inputs?](catalog-0801-0900.md#JSP-000828) | Open | No | No | Unavailable |
 | JSP-000829 | [Does sufficiently fast decay of Fourier approximation error ensure convergence of averages along the prescribed sparse sequence?](catalog-0801-0900.md#JSP-000829) | Open | No | No | Unavailable |
 | JSP-000830 | [Can the fractional parts of primes multiplied by an irrational number satisfy the specified stronger uniform-distribution property?](catalog-0801-0900.md#JSP-000830) | Solved | Yes | Yes | Unclaimed |
