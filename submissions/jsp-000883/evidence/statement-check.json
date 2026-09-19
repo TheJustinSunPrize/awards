@@ -1,0 +1,9 @@
+{
+  "exact_definition_match": true,
+  "upstream_commit": "40e7c98697de6f66b8cbdbf641749ab39ed9c152",
+  "upstream_path": "FormalConjectures/ErdosProblems/1063.lean",
+  "definition_sha256": "34523f1e515622399c8f2af0d80bfb4ae1520ab564cf340a54ded0d7579566c2",
+  "proof_source_sha256": "197a614e3200cb783eb9ea706c0dfa63880fc59b153f74b804a762c8bfd566ff",
+  "source_placeholder_and_execution_token_scan": "passed",
+  "package_markdown_local_links": "passed"
+}

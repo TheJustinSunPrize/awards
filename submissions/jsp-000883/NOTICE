@@ -1,0 +1,12 @@
+JSP-000883 / Erdős 1063: Monier's factorial upper bound
+
+Mathematical result: Jean-Marie Monier (1985), Problems and Solutions:
+Solutions of Advanced Problems: 6447, American Mathematical Monthly 92, 435–436.
+
+The definition Erdos1063.n is reproduced from FormalConjectures/ErdosProblems/1063.lean.
+Copyright 2026 The Formal Conjectures Authors, Apache License 2.0.
+Source revision: 40e7c98697de6f66b8cbdbf641749ab39ed9c152.
+
+The new Lean proofs were prepared by inoader with ChatGPT assistance,
+and are distributed under Apache-2.0. No mathematical discovery is claimed.
+The pinned mathlib dependency retains its own copyright notices and license.

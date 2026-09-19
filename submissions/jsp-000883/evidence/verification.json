@@ -1,0 +1,34 @@
+{
+  "source_file": "Prize1063.lean",
+  "source_sha256": "197a614e3200cb783eb9ea706c0dfa63880fc59b153f74b804a762c8bfd566ff",
+  "source_bytes": 4677,
+  "toolchain": "leanprover/lean4:v4.28.0",
+  "mathlib_revision": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+  "axioms": {
+    "Erdos1063.monier_upper_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos1063.factorial_witness": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos1063.threshold_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "build": "passed",
+  "warnings_as_errors": "passed",
+  "negative_controls": {
+    "false_arithmetic": "rejected by Lean",
+    "placeholder": "rejected by axiom audit",
+    "custom_axiom": "rejected by axiom audit"
+  },
+  "independent_checker": "not performed",
+  "designated_verification": "pending",
+  "award_eligibility": "not established"
+}
