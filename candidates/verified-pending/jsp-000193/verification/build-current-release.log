@@ -1,0 +1,4 @@
+JSP-000193 current-release verification build log
+Generated: 2026-09-19 by jsp193-verifier
+--- lake env lean Jsp193Scoped.lean ---
+LEAN_EXIT=0

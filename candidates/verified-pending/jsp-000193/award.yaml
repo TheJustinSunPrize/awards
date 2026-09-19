@@ -1,0 +1,26 @@
+id: jsp-000193
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 193
+  title_en: "Gaps between consecutive squarefree integers"
+  posed:
+    year: 1951
+    basis: earliest-reference
+    citation: "catalog JSP-000193 (Erdős problem, proposed no later than 1951, bibliographic evidence)"
+  resolved: null
+recipients:
+  - id: shiqiang-chen
+    affiliation: "Independent researcher"
+    contribution_en: "Constructive scoped Lean formalization: an explicit witness of 8 consecutive non-squarefree integers (65335225716547+1 .. +8), via CRT primes 2,3,5,7,11,13,17,19 (theorem JSP193Scoped.exists_8_consecutive_nonsquarefree), verified against Lean v4.34.0 / mathlib v4.34.0."
+    confirmation: "https://github.com/shunfeng8421"
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null
