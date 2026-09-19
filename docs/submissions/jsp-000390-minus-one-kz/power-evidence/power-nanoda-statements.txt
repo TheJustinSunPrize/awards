@@ -1,0 +1,23 @@
+def JSP000390.Solutions (k : Int) : Set Nat :=
+  Set.ofPred (fun (n : Nat) => And (LT.lt (OfNat.ofNat 0) n) (Int.ModEq (Nat.cast n) (HPow.hPow (OfNat.ofNat 2) n) k))
+
+theorem JSP000390Power.power_residue_infinite (a : Int) (i : Nat) (hi : LT.lt (OfNat.ofNat 0) i) :
+  Set.Infinite
+    (Set.ofPred
+      (fun (n : Nat) => And (LT.lt (OfNat.ofNat 0) n) (Int.ModEq (Nat.cast n) (HPow.hPow a n) (HPow.hPow a i)))) :=
+  _
+
+theorem JSP000390Power.powers_of_two_infinite (i : Nat) (hi : LT.lt (OfNat.ofNat 0) i) :
+  Set.Infinite (JSP000390.Solutions (HPow.hPow (OfNat.ofNat 2) i)) :=
+  _
+
+theorem JSP000390Power.combined_known_families :
+  And (Set.Infinite (JSP000390.Solutions (Neg.neg (OfNat.ofNat 1))))
+    (forall (i : Nat), LT.lt (OfNat.ofNat 0) i → Set.Infinite (JSP000390.Solutions (HPow.hPow (OfNat.ofNat 2) i))) :=
+  _
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α

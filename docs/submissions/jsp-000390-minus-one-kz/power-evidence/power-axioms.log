@@ -1,0 +1,7 @@
+'JSP000390Power.power_tail_periodic' depends on axioms: [propext, Quot.sound]
+'JSP000390Power.exists_zmod_power_period' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000390Power.power_residue_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000390Power.power_residue_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000390Power.powers_of_two_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000390Power.powers_of_two_infinite_unrestricted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000390Power.combined_known_families' depends on axioms: [propext, Classical.choice, Quot.sound]
