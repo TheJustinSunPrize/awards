@@ -4,3 +4,8 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+
+# build dirs / other-task workspaces (never commit)
+.lake/
+work/jsp-252/
+work/jsp-465/
