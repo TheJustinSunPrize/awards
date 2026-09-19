@@ -986,7 +986,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000854 | [How many vertex subsets meet every hyperedge while containing none of them in full?](catalog-0801-0900.md#JSP-000854) | Solved | No | No | Unavailable |
 | JSP-000855 | [Can the classical exponential lower bound for diagonal Ramsey numbers be improved by an unbounded factor?](catalog-0801-0900.md#JSP-000855) | Open | No | No | Unavailable |
 | JSP-000856 | [Does the ratio of off-diagonal to corresponding diagonal Ramsey numbers satisfy a uniform parameter-dependent growth lower bound?](catalog-0801-0900.md#JSP-000856) | Open | No | No | Unavailable |
-| JSP-000857 | [Must a graph with neither large cliques nor large independent sets contain a nontrivial regular induced subgraph?](catalog-0801-0900.md#JSP-000857) | Solved | No | No | Unavailable |
+| JSP-000857 | [Must a graph with neither large cliques nor large independent sets contain a nontrivial regular induced subgraph?](catalog-0801-0900.md#JSP-000857) | Solved | Yes | No | Unavailable |
 | JSP-000858 | [Can a four-chromatic-critical graph have minimum degree proportional to its order?](catalog-0801-0900.md#JSP-000858) | Open | No | No | Unavailable |
 | JSP-000859 | [How large a sum of ambient vertex degrees is guaranteed for some triangle in a dense graph?](catalog-0801-0900.md#JSP-000859) | Open | No | No | Unavailable |
 | JSP-000860 | [Does sufficiently high minimum degree force a spanning hypercube?](catalog-0801-0900.md#JSP-000860) | Open | No | No | Unavailable |
