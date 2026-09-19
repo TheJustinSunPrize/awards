@@ -1,0 +1,6 @@
+JSP-428 build log
+command: lake env lean Jsp428.lean
+status: SUCCESS (exit 0)
+theorems: Jsp428.evens20_pairwise_noncoprime/pair_gcd_div_two/two_divides_all
+10 even numbers {2..20} pairwise non-coprime (shared divisor 2)
+toolchain: Lean 4.34.0, mathlib 5ed2965256430c3649e86755f9576b54eca72435

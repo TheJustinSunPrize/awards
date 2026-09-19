@@ -1,0 +1,19 @@
+id: "STMT-jsp-000428-v1"
+status: active
+supersedes: null
+statement:
+  text: "Jsp428.evens20_pairwise_noncoprime : forall a in {2,...,20}, forall b in {2,...,20}, a != b -> not (Nat.Coprime a b)."
+  natural_language_source: "Large pairwise noncoprime subsets of an integer interval (catalog 000428; [Er73] Problems and results in combinatorial number theory (1973))"
+  definitions_reviewed:
+    - name: "Nat.Prime"
+      from_library: true
+      review: "Standard mathlib definition of primality."
+  library:
+    name: "mathlib"
+    commit: "5ed2965256430c3649e86755f9576b54eca72435"
+    meets_minimum_safe_version: true
+authorship:
+  signatories:
+    - "shiqiang-chen"
+    - "jsp428-verifier"
+  issued_at: "2026-09-18"

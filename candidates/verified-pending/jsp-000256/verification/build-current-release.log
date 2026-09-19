@@ -1,0 +1,6 @@
+JSP-256 build log
+command: lake env lean Jsp256.lean
+status: SUCCESS (exit 0)
+theorems: Jsp256.one_rep/five_fourths_rep/four_thirds_rep/three_halves_rep + _distinct
+unit-fraction representations of 1,5/4,4/3,3/2 with distinct denominators
+toolchain: Lean 4.34.0, mathlib 5ed2965256430c3649e86755f9576b54eca72435

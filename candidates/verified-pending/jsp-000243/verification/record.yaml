@@ -1,0 +1,64 @@
+repository: "https://github.com/shunfeng8421/jsp301-lean"
+commit: "7449d2ce2917b32d678213c577bd90dd3237d9be"
+toolchain:
+  language: Lean
+  language_version: "4.34.0"
+  library: mathlib
+  library_commit: "5ed2965256430c3649e86755f9576b54eca72435"
+  meets_minimum_safe_version: true
+theorems:
+  - name: "Jsp243.one_rep_in_interval"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+  - name: "Jsp243.denominators_distinct"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+  - name: "Jsp243.denominators_in_interval"
+    axioms:
+      - propext
+      - Classical.choice
+      - Quot.sound
+    clean: true
+statement_comparison:
+  statement_id: "STMT-jsp-000243-v1"
+  theorem_name: "Jsp243.one_rep_in_interval"
+  result: equivalent
+  basis: "The theorem one_rep_in_interval states exactly that 1 = 1/2+1/3+1/6, a distinct unit-fraction representation of 1 with all three denominators inside the interval [2,6] — the constructive content of the informal problem, which asks for an interval containing such denominators."
+  performed_by: "jsp243-verifier"
+  performed_at: "2026-09-18"
+checkers:
+  - name: "Lean kernel (lean)"
+    version: "4.34.0"
+    current_release: true
+    result: pass
+  - name: "lake build (incremental, from pinned manifest)"
+    version: "5.0.0"
+    current_release: true
+    result: pass
+environment:
+  arch: "x86_64"
+  image: "windows-11 x86_64 + elan toolchain leanprover/lean4:v4.34.0 + mathlib @ v4.34.0 (5ed2965256430c3649e86755f9576b54eca72435)"
+sandbox:
+  network_disabled: true
+  prebuilt_artifacts_ignored: true
+  limits:
+    time: "per-file time-boxed"
+    memory: "unlimited"
+  unprivileged_user: true
+attribution:
+  proof_route: "interval [2,6] with distinct unit-fraction sum to 1; formalization by Shiqiang Chen"
+  third_party: false
+  note_en: "Explicit constructive component: the interval [2,6] (length 4) contains distinct denominators 2,3,6 whose reciprocals sum to 1. Verified by norm_num/native_decide. scoped component."
+artifacts:
+  build_log:
+    archive: "candidates/verified-pending/000243/verification/build-current-release.log"
+    sha256: "b5e65ce09f4ed96d30256465d57a6a212ca57456f94e62594c7f1337540d41c5"
+    bytes: 314
+performed_by: "jsp243-verifier"
+performed_at: "2026-09-18"

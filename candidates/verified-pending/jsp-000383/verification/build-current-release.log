@@ -1,0 +1,6 @@
+JSP-383 build log
+command: lake env lean Jsp383.lean
+status: SUCCESS (exit 0)
+theorem: Jsp383.chain_all_prime, chain_is_legal_run, first_adjoin_sums
+30-step prime-sum-adjoin run from {2,3,5,7,11}
+toolchain: Lean 4.34.0, mathlib 5ed2965256430c3649e86755f9576b54eca72435
