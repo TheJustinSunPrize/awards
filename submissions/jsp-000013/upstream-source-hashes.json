@@ -1,0 +1,8 @@
+{
+  "Hadamard668/CompactDistanceProof.lean": "b37f5cd97cf82a182a08c9be144197c3aa5ffbbb0b1b72f6af85bb15e8989aff",
+  "Hadamard668/ListCompactCertificate.lean": "0b6faa3483a9c780a7d531405ffd47a44e82951cde93a9c4c8a610db84505230",
+  "Hadamard668/ListCorrelationProof.lean": "f29725774979deafc9a10c306c76be1e7a083bc8b94cd796eab251d2ac9b6cb3",
+  "Hadamard668/MatrixProof.lean": "1b5ccea3d812fd315a76bd98a4cfe24ba6e8ce45194a5002ab492ccecea7cb33",
+  "LICENSE": "17603fed6c2a3c50bf9422d1745a39bc8ccc22212932b4bafc3f8e469cf8eda9",
+  "Solution.lean": "ab7362cf397d19cfb45314fa852a98e1050a2eac376e66da6072a13465b6d135"
+}

@@ -1,0 +1,47 @@
+Local verification, 2026-09-17 Asia/Tokyo
+Lean 4.33.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, arm64-apple-darwin24.6.0
+Mathlib db584cd6d46c92f209a44c0f1c829460d327499d; tracked source checkout clean
+
+Fresh source compilation using cached Mathlib dependencies, single Lean worker:
+Command for each listed module: lean -j1 -DmaxRecDepth=100000 -DmaxHeartbeats=0 -o <module>.olean <module>.lean
+LEAN_PATH included src and pinned Mathlib/package .lake/build/lib/lean directories.
+The source compiler output is retained in compiler-output.json; empty output means no compiler diagnostics.
+A fresh Lake dependency download/build has not been performed.
+PASS Hadamard716.CertificateData
+PASS Hadamard716.CorrelationData
+PASS Hadamard716.ListCorrelationProof (192 finite correlation equalities)
+PASS Hadamard716.ListCompactCertificate
+PASS Hadamard716.CompactDistanceProof
+PASS Hadamard716.MatrixProof
+PASS Solution
+PASS StandardStatement
+
+Final axiom audit:
+'Hadamard716.hadamard_716_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Hadamard716.hadamard_716_exists_standard' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Source scan: no sorry/admit/custom axiom/native_decide/Lean.ofReduceBool in submitted Lean code.
+Independent Python check: source reconstruction matches all 512656 matrix entries.
+All 255970 distinct row pairs: exact Hamming distance 358.
+8592 direct integer dot-product checks: PASS.
+Single-entry corruption: rejected. Whole-row sign reversal: accepted.
+
+Repository checks on f4e7173d89dfe91022a185427d63452c8ffbf6ae plus this submission:
+validate: OK
+links: OK
+build: OK
+check: OK
+history: OK
+22 unit tests: OK
+Generated data unchanged.
+
+These are local verification results, not organizer acceptance, independent
+institutional review, a separately implemented kernel, or an award announcement.
+
+Additional exact-module replay with the same Lean kernel:
+replaying exact module Hadamard716.MatrixProof
+PASS Hadamard716.MatrixProof
+
+replaying exact module StandardStatement
+PASS StandardStatement
+Imported dependencies were reused; this is not full dependency replay or an independent kernel implementation.

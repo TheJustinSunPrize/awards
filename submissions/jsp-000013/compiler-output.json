@@ -1,0 +1,11 @@
+{
+  "Hadamard716.CorrelationData.log": "",
+  "Hadamard716.MatrixProof.log": "",
+  "Hadamard716.ListCompactCertificate.log": "",
+  "Hadamard716.CompactDistanceProof.log": "",
+  "Hadamard716.ListCorrelationProof.log": "",
+  "Hadamard716.CertificateData.log": "",
+  "Solution.log": "'Hadamard716.hadamard_716_exists' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "StandardStatement.log": "'Hadamard716.hadamard_716_exists_standard' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "replay.log": "replaying exact module Hadamard716.MatrixProof\nPASS Hadamard716.MatrixProof\n\nreplaying exact module StandardStatement\nPASS StandardStatement\n"
+}

@@ -1,0 +1,1706 @@
+{
+  "topic": "JSP-000013 / Hadamard matrices; target order 716",
+  "time_utc": "2026-09-16 15:16:12 UTC",
+  "issuesAndPrs": [
+    {
+      "number": 99,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/99",
+      "title": "JSP-000513: submit additional complete Lean formalization for review",
+      "updated": "2026-09-16T15:07:49Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 98,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/98",
+      "title": "Formalize JSP-000511: planar bipartite list coloring from ordinary drawings",
+      "updated": "2026-09-16T15:00:16Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 97,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/97",
+      "title": "JSP-000513: Lean formalization of a 4-choosable graph that is not (8:2)-choosable",
+      "updated": "2026-09-16T14:53:39Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 96,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/96",
+      "title": "[Recipient] JSP-000958: Lean formalization submission and eligibility review",
+      "updated": "2026-09-16T14:55:51Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 95,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/95",
+      "title": "JSP-000692: submit verified Lean proof of the linear intersection bound (question 2)",
+      "updated": "2026-09-16T14:50:10Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 94,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/94",
+      "title": "[Recipient] JSP-000301 formalization in Lean 4: consecutive powerful numbers counterexample (12167, 12168)",
+      "updated": "2026-09-16T14:48:19Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 93,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/93",
+      "title": "JSP-000248: submit Lean formalization and certificates for largest unit-fraction denominators",
+      "updated": "2026-09-16T14:47:50Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 92,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/92",
+      "title": "[Recipient] JSP-000866 mathematical solver — RECIPIENT-JSP-000866-A",
+      "updated": "2026-09-16T14:44:48Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 91,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/91",
+      "title": "[Problem] JSP-000558 / Erdős 686: Lean-verified restricted lemma for N=4, k=8",
+      "updated": "2026-09-16T14:43:12Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 90,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/90",
+      "title": "JSP-000895: Lean formalization of the locally sparse Brown–Erdős–Sós asymptotic (Erdős #1076)",
+      "updated": "2026-09-16T14:38:59Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 89,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/89",
+      "title": "[Correction] Further verification evidence for existing Lean proofs (batch 2, part 3)",
+      "updated": "2026-09-16T14:57:45Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 88,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/88",
+      "title": "JSP-000584: submit Lean formalization of Alon-Friedland-Kalai",
+      "updated": "2026-09-16T14:35:53Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 87,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/87",
+      "title": "JSP-000849: Lean formalization with genuine planarity (Erdős #1019)",
+      "updated": "2026-09-16T14:34:55Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 86,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/86",
+      "title": "[Correction] JSP-000301: Lean proof available (formalization evidence)",
+      "updated": "2026-09-16T14:37:54Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 85,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/85",
+      "title": "JSP-000226: counterexample to the TUZ universal exponent bound",
+      "updated": "2026-09-16T14:21:42Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 84,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/84",
+      "title": "[Recipient] JSP-000572 Lean formalization",
+      "updated": "2026-09-16T14:20:07Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 83,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/83",
+      "title": "[Correction] JSP-000831 / Erdős 998: distinguish the length criterion and correct solution chronology",
+      "updated": "2026-09-16T14:21:11Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 82,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/82",
+      "title": "[Recipient] JSP-000301 independent Lean formalization — RECIPIENT-JSP-000301-A",
+      "updated": "2026-09-16T14:11:52Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 81,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/81",
+      "title": "Submit JSP-000422 once-coverage Lean bridge for intake",
+      "updated": "2026-09-16T14:10:49Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 80,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/80",
+      "title": "JSP-000500: complete Lean proof of the r=7 case of Erdős 617",
+      "updated": "2026-09-16T14:08:59Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 79,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/79",
+      "title": "JSP-000572: submit Lean formalization of Frankl's singleton-intersection theorem",
+      "updated": "2026-09-16T14:07:54Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 78,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/78",
+      "title": "JSP-000600: submit Lean formalization of the block-compatible sequence upper bound",
+      "updated": "2026-09-16T14:36:18Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 77,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/77",
+      "title": "[Correction] JSP-000475 / Erdős 586: register reproduced covering-system proof and clarify nontrivial moduli",
+      "updated": "2026-09-16T14:06:37Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 76,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/76",
+      "title": "[Correction] JSP-000878 / Erdős 1058: replace unsupported 2004–2025 solution chronology",
+      "updated": "2026-09-16T14:02:38Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 75,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/75",
+      "title": "JSP-000620: Lean formalization of the lower bound and two-sided answer (Erdős #754)",
+      "updated": "2026-09-16T14:04:37Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 74,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/74",
+      "title": "JSP-000621: formally verify the known four-sevenths Sidon bound",
+      "updated": "2026-09-16T14:16:45Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 73,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/73",
+      "title": "Add Lean evidence for the Horton component of JSP-000198",
+      "updated": "2026-09-16T13:45:57Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 72,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/72",
+      "title": "[Correction] JSP-000827 / Erdős 994: restore fixed-set quantifiers and qualify Lean evidence",
+      "updated": "2026-09-16T13:45:48Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 71,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/71",
+      "title": "[Recipient] JSP-000198: Horton component formalization (k >= 7)",
+      "updated": "2026-09-16T13:44:32Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 70,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/70",
+      "title": "[Correction] Attributed Lean proof evidence for selected catalog entries (batch 3, part 2)",
+      "updated": "2026-09-16T14:15:36Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 69,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/69",
+      "title": "[Recipient] Formalization contribution - JSP-000598",
+      "updated": "2026-09-16T13:38:54Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 68,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/68",
+      "title": "[Recipient] Formalization contribution - JSP-000307",
+      "updated": "2026-09-16T13:38:51Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 67,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/67",
+      "title": "JSP-000387: submit Lean proof of the full-field distinct-sums lemma",
+      "updated": "2026-09-16T13:30:51Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 66,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/66",
+      "title": "[Problem] Erdős 499: doubly stochastic diagonal-product bound with reproduced Lean evidence",
+      "updated": "2026-09-16T13:37:23Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 65,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/65",
+      "title": "JSP-000780: Lean formalization of infinitely many 3-powerful triples (Erdos 939)",
+      "updated": "2026-09-16T13:21:31Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 64,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/64",
+      "title": "[Recipient] JSP-000301 formalization — RECIPIENT-JSP-000301-A",
+      "updated": "2026-09-16T13:16:31Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 63,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/63",
+      "title": "[Correction] JSP-000301 Lean proof and claim eligibility",
+      "updated": "2026-09-16T13:16:48Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 62,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/62",
+      "title": "[Recipient] Formalization contribution - JSP-000301",
+      "updated": "2026-09-16T13:12:14Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 61,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/61",
+      "title": "JSP-000388: submit Lean proof of the complete quadratic case",
+      "updated": "2026-09-16T13:11:59Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 60,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/60",
+      "title": "JSP-000226: submit Lean proof of the infinitude subproblem",
+      "updated": "2026-09-16T13:11:37Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 59,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/59",
+      "title": "[Recipient] JSP-000465 formalization — RECIPIENT-JSP-000465-A",
+      "updated": "2026-09-16T12:55:55Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 58,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/58",
+      "title": "[Correction] JSP-000465 Lean proof and claim eligibility",
+      "updated": "2026-09-16T12:56:00Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 57,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/57",
+      "title": "[Correction] JSP-000199 is missing general position constraints",
+      "updated": "2026-09-16T12:52:18Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 56,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/56",
+      "title": "JSP-000883: formalize Monier’s factorial upper bound",
+      "updated": "2026-09-16T12:51:48Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 55,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/55",
+      "title": "JSP-000301: additional Lean formalization for eligibility review",
+      "updated": "2026-09-16T12:45:04Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 54,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/54",
+      "title": "Add JSP-000641 finite descending-wave certificate",
+      "updated": "2026-09-16T12:32:34Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 53,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/53",
+      "title": "[Problem] JSP-000826: research proposal on tree/forest independent-set unimodality",
+      "updated": "2026-09-16T12:32:10Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 52,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/52",
+      "title": "JSP-000691: formalize the general composite-successor obstruction",
+      "updated": "2026-09-16T12:31:24Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 51,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/51",
+      "title": "[Problem] JSP-000099: proposed Lean certificate for G(7) ≥ 30",
+      "updated": "2026-09-16T12:29:12Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 50,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/50",
+      "title": "[Problem] JSP-000692: proposed Lean formalization of Alon’s hypergraph counterexample",
+      "updated": "2026-09-16T12:29:10Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 49,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/49",
+      "title": "[Problem] JSP-000621: proposed Lean formalization of the c ≤ 4/7 upper bound",
+      "updated": "2026-09-16T12:29:08Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 48,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/48",
+      "title": "Formal evidence for JSP-000653: N=48 counterexample to the additional exact formula",
+      "updated": "2026-09-16T12:30:57Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 47,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/47",
+      "title": "JSP-000387: mark literal full-set statement solved with scope qualification",
+      "updated": "2026-09-16T12:24:58Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 46,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/46",
+      "title": "[Correction] JSP-000387: current full-field statement has an elementary solution",
+      "updated": "2026-09-16T12:19:45Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 45,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/45",
+      "title": "problems, candidates: add Lean proof and observation candidate for JSP-001018",
+      "updated": "2026-09-16T13:18:40Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 44,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/44",
+      "title": "[Correction] Further verification evidence for existing Lean proofs (batch 2, part 2)",
+      "updated": "2026-09-16T14:39:32Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 43,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/43",
+      "title": "JSP-001014: formalize prime and squarefree translate counterexamples",
+      "updated": "2026-09-16T11:53:58Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 42,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/42",
+      "title": "JSP-000404: document formula discrepancy and add partial Lean proofs",
+      "updated": "2026-09-16T11:58:00Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 41,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/41",
+      "title": "WIP JSP-000622: Lean formalization plan for z(20) = 6",
+      "updated": "2026-09-16T11:48:26Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 40,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/40",
+      "title": "docs: register existing Lean evidence for 78 catalog records",
+      "updated": "2026-09-16T13:15:43Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 39,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/39",
+      "title": "JSP-000690: submit Lean 4.19 proof and full subhypergraph criticality evidence",
+      "updated": "2026-09-16T11:40:48Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 38,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/38",
+      "title": "[Problem] JSP-000038: An elementary proof of the quadratic case of Sendov's conjecture",
+      "updated": "2026-09-16T11:27:03Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 37,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/37",
+      "title": "[Correction] JSP-000943: document dated public announcements and completion-date limits",
+      "updated": "2026-09-16T11:20:09Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 36,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/36",
+      "title": "JSP-000307: submit first Lean formalization of the decreasing largest prime factors question",
+      "updated": "2026-09-16T11:01:33Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 35,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/35",
+      "title": "JSP-000690: submit Lean formalization of the 3-critical hypergraph construction",
+      "updated": "2026-09-16T10:55:07Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 34,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/34",
+      "title": "JSP-000359: independent Lean proof with real thresholds and sharp liminf",
+      "updated": "2026-09-16T11:11:29Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 33,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/33",
+      "title": "Jsp 000301 mathlib formalization",
+      "updated": "2026-09-16T10:39:32Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 32,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/32",
+      "title": "Submit JSP-000410 closed-lemniscate Lean extension for intake",
+      "updated": "2026-09-16T10:37:41Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 31,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/31",
+      "title": "[Proof] JSP-000733: leading asymptotic for primitive subset sums",
+      "updated": "2026-09-16T10:31:49Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 30,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/30",
+      "title": "[Correction] JSP-000884: reproduce existing totient-density proof and all local dependencies",
+      "updated": "2026-09-16T10:46:26Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 29,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/29",
+      "title": "[Correction] JSP-000641: existing cubic-bound Lean proof, reproduced and audited",
+      "updated": "2026-09-16T10:43:15Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 28,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/28",
+      "title": "Submit JSP-000865 zero-capacity Lean extension for intake",
+      "updated": "2026-09-16T10:18:55Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 27,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/27",
+      "title": "[Correction] JSP-001018: register existing Lean proof and replay evidence",
+      "updated": "2026-09-16T10:10:43Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 26,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/26",
+      "title": "JSP-000998: submit complete density counterexample formalization",
+      "updated": "2026-09-16T10:28:27Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 25,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/25",
+      "title": "[Correction] JSP-000301: add Lean formalization of the existing counterexample",
+      "updated": "2026-09-16T14:33:14Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 24,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/24",
+      "title": "[Correction] Batch 4: register reproduced existing Lean proof evidence",
+      "updated": "2026-09-16T14:43:11Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 23,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/23",
+      "title": "JSP-000399: formalize selected known set-recovery results in Lean",
+      "updated": "2026-09-16T09:59:38Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 22,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/22",
+      "title": "[Correction] Batch 1: register existing public Lean proof evidence",
+      "updated": "2026-09-16T13:44:26Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 21,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/21",
+      "title": "JSP-000690: submit Lean proof of the chromatic-critical hypergraph construction",
+      "updated": "2026-09-16T09:57:15Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 20,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/20",
+      "title": "[Correction] JSP-000598 and JSP-000945: restore missing infinitude requirements",
+      "updated": "2026-09-16T09:57:00Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 19,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/19",
+      "title": "[Correction] Attributed Lean proof evidence for selected catalog entries (batch 3)",
+      "updated": "2026-09-16T13:41:54Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 18,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/18",
+      "title": "[Problem] JSP-000746: Lean verification of Barber’s n ≥ 18 result and a 17-vertex counterexample",
+      "updated": "2026-09-16T09:50:59Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 17,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/17",
+      "title": "JSP-000301: submit an additional mathlib formalization",
+      "updated": "2026-09-16T09:48:39Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 16,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/16",
+      "title": "[Correction] Verification evidence for eighteen existing Lean proofs (batch 2)",
+      "updated": "2026-09-16T12:00:29Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 15,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/15",
+      "title": "[Problem] JSP-000690: Lean verification of Li’s 9-vertex chromatic-critical hypergraph",
+      "updated": "2026-09-16T09:32:21Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 14,
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/14",
+      "title": "[Correction] JSP-000307: restore the missing infinitude requirement",
+      "updated": "2026-09-16T09:18:03Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 13,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/13",
+      "title": "JSP-000301: submit Lean formalization of the known counterexample",
+      "updated": "2026-09-16T08:50:14Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 12,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/12",
+      "title": "docs: update Navier–Stokes problem title",
+      "updated": "2026-09-16T05:49:11Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 11,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/11",
+      "title": "docs: sync solver and Lean attributions for 66 problems",
+      "updated": "2026-09-16T04:42:02Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 10,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/10",
+      "title": "docs: capitalize claim status values",
+      "updated": "2026-09-14T15:27:44Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 9,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/9",
+      "title": "docs: explain Claim status and its lifecycle",
+      "updated": "2026-09-14T15:19:46Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 8,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/8",
+      "title": "docs: add claim status to problem index",
+      "updated": "2026-09-14T14:47:43Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 7,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/7",
+      "title": "docs: explain problem sources and restore catalog evidence links",
+      "updated": "2026-09-13T08:48:55Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 6,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/6",
+      "title": "docs: renumber the problem catalog consecutively",
+      "updated": "2026-09-13T02:56:28Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 5,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/5",
+      "title": "docs: correct problem evidence and consolidate duplicate entries",
+      "updated": "2026-09-13T02:34:23Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 4,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/4",
+      "title": "docs: update problem status and claim eligibility flags",
+      "updated": "2026-09-12T10:26:16Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 3,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/3",
+      "title": "docs: standardize name as The Justin Sun Prize",
+      "updated": "2026-09-12T06:26:10Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 2,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/2",
+      "title": "docs: add Fermat's Last Theorem, update evidence and renumber catalog",
+      "updated": "2026-09-12T03:42:42Z",
+      "bodyHasTopic": false
+    },
+    {
+      "number": 1,
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/1",
+      "title": "feat: add public prize records and mathematical problem bank",
+      "updated": "2026-09-11T12:59:14Z",
+      "bodyHasTopic": false
+    }
+  ],
+  "files": [
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/85/files?per_page=100",
+      "count": 32,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/81/files?per_page=100",
+      "count": 26,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/80/files?per_page=100",
+      "count": 53,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/79/files?per_page=100",
+      "count": 28,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/78/files?per_page=100",
+      "count": 13,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/75/files?per_page=100",
+      "count": 15,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/74/files?per_page=100",
+      "count": 14,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/73/files?per_page=100",
+      "count": 2,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/67/files?per_page=100",
+      "count": 12,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/65/files?per_page=100",
+      "count": 22,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/61/files?per_page=100",
+      "count": 25,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/60/files?per_page=100",
+      "count": 25,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/56/files?per_page=100",
+      "count": 22,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/55/files?per_page=100",
+      "count": 8,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/54/files?per_page=100",
+      "count": 10,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/52/files?per_page=100",
+      "count": 21,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/48/files?per_page=100",
+      "count": 20,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/47/files?per_page=100",
+      "count": 2,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/45/files?per_page=100",
+      "count": 15,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/43/files?per_page=100",
+      "count": 26,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/42/files?per_page=100",
+      "count": 26,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/41/files?per_page=100",
+      "count": 1,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/40/files?per_page=100",
+      "count": 12,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/39/files?per_page=100",
+      "count": 21,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/36/files?per_page=100",
+      "count": 8,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/35/files?per_page=100",
+      "count": 19,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/34/files?per_page=100",
+      "count": 14,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/33/files?per_page=100",
+      "count": 7,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/32/files?per_page=100",
+      "count": 10,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/31/files?per_page=100",
+      "count": 18,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/28/files?per_page=100",
+      "count": 14,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/26/files?per_page=100",
+      "count": 8,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/23/files?per_page=100",
+      "count": 9,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/21/files?per_page=100",
+      "count": 9,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/17/files?per_page=100",
+      "count": 17,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/13/files?per_page=100",
+      "count": 6,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/12/files?per_page=100",
+      "count": 2,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/11/files?per_page=100",
+      "count": 14,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/10/files?per_page=100",
+      "count": 1,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/9/files?per_page=100",
+      "count": 1,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/8/files?per_page=100",
+      "count": 1,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/7/files?per_page=100",
+      "count": 13,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/6/files?per_page=100",
+      "count": 12,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/5/files?per_page=100",
+      "count": 10,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/4/files?per_page=100",
+      "count": 15,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/3/files?per_page=100",
+      "count": 5,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/2/files?per_page=100",
+      "count": 13,
+      "matches": [
+        {
+          "file": "problems/catalog-0001-0100.md",
+          "match": "+<a id=\"JSP-000013\"></a>"
+        }
+      ]
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/1/files?per_page=100",
+      "count": 64,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/87/files?per_page=100&page=1",
+      "count": 19,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/88/files?per_page=100&page=1",
+      "count": 16,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=1",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/93/files?per_page=100&page=1",
+      "count": 5,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=2",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=3",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=4",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=5",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=6",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=7",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=8",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=9",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=10",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=11",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=12",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=13",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=14",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=15",
+      "count": 100,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/90/files?per_page=100&page=16",
+      "count": 36,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/95/files?per_page=100",
+      "count": 26,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/97/files?per_page=100",
+      "count": 5,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/98/files?per_page=100",
+      "count": 122,
+      "matches": []
+    },
+    {
+      "url": "https://api.github.com/repos/TheJustinSunPrize/awards/pulls/99/files?per_page=100",
+      "count": 5,
+      "matches": []
+    }
+  ],
+  "reviewCount": 15,
+  "reviewFailures": 0,
+  "scopeNote": "PR matches in initial catalog import, renumbering, and general index maintenance are bank listings, not a mathematical contribution for this topic. Searched changed-file paths and available patches; separately read prior omitted textual files. Not a proof of universal absence of prior art.",
+  "newPrReviewsChecked": [
+    95,
+    97,
+    98,
+    99
+  ],
+  "finalRefresh": {
+    "utc": "2026-09-16 15:28:50 UTC",
+    "issueCount": 108,
+    "issues": [
+      {
+        "n": 108,
+        "updated": "2026-09-16T15:27:15Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 107,
+        "updated": "2026-09-16T15:21:47Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 106,
+        "updated": "2026-09-16T15:21:25Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 105,
+        "updated": "2026-09-16T15:21:06Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 104,
+        "updated": "2026-09-16T15:19:45Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 103,
+        "updated": "2026-09-16T15:16:44Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 102,
+        "updated": "2026-09-16T15:16:23Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 101,
+        "updated": "2026-09-16T15:12:48Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 100,
+        "updated": "2026-09-16T15:10:12Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 99,
+        "updated": "2026-09-16T15:18:24Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 98,
+        "updated": "2026-09-16T15:00:16Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 97,
+        "updated": "2026-09-16T14:53:39Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 96,
+        "updated": "2026-09-16T14:55:51Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 95,
+        "updated": "2026-09-16T14:50:10Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 94,
+        "updated": "2026-09-16T14:48:19Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 93,
+        "updated": "2026-09-16T14:47:50Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 92,
+        "updated": "2026-09-16T14:44:48Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 91,
+        "updated": "2026-09-16T14:43:12Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 90,
+        "updated": "2026-09-16T14:38:59Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 89,
+        "updated": "2026-09-16T15:20:52Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 88,
+        "updated": "2026-09-16T14:35:53Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 87,
+        "updated": "2026-09-16T14:34:55Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 86,
+        "updated": "2026-09-16T14:37:54Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 85,
+        "updated": "2026-09-16T14:21:42Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 84,
+        "updated": "2026-09-16T14:20:07Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 83,
+        "updated": "2026-09-16T14:21:11Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 82,
+        "updated": "2026-09-16T14:11:52Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 81,
+        "updated": "2026-09-16T14:10:49Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 80,
+        "updated": "2026-09-16T14:08:59Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 79,
+        "updated": "2026-09-16T14:07:54Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 78,
+        "updated": "2026-09-16T14:36:18Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 77,
+        "updated": "2026-09-16T14:06:37Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 76,
+        "updated": "2026-09-16T14:02:38Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 75,
+        "updated": "2026-09-16T14:04:37Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 74,
+        "updated": "2026-09-16T14:16:45Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 73,
+        "updated": "2026-09-16T13:45:57Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 72,
+        "updated": "2026-09-16T13:45:48Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 71,
+        "updated": "2026-09-16T13:44:32Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 70,
+        "updated": "2026-09-16T15:18:49Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 69,
+        "updated": "2026-09-16T13:38:54Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 68,
+        "updated": "2026-09-16T13:38:51Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 67,
+        "updated": "2026-09-16T13:30:51Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 66,
+        "updated": "2026-09-16T13:37:23Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 65,
+        "updated": "2026-09-16T13:21:31Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 64,
+        "updated": "2026-09-16T13:16:31Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 63,
+        "updated": "2026-09-16T13:16:48Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 62,
+        "updated": "2026-09-16T13:12:14Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 61,
+        "updated": "2026-09-16T13:11:59Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 60,
+        "updated": "2026-09-16T13:11:37Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 59,
+        "updated": "2026-09-16T12:55:55Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 58,
+        "updated": "2026-09-16T12:56:00Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 57,
+        "updated": "2026-09-16T12:52:18Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 56,
+        "updated": "2026-09-16T12:51:48Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 55,
+        "updated": "2026-09-16T12:45:04Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 54,
+        "updated": "2026-09-16T12:32:34Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 53,
+        "updated": "2026-09-16T12:32:10Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 52,
+        "updated": "2026-09-16T12:31:24Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 51,
+        "updated": "2026-09-16T12:29:12Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 50,
+        "updated": "2026-09-16T12:29:10Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 49,
+        "updated": "2026-09-16T12:29:08Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 48,
+        "updated": "2026-09-16T12:30:57Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 47,
+        "updated": "2026-09-16T12:24:58Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 46,
+        "updated": "2026-09-16T12:19:45Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 45,
+        "updated": "2026-09-16T13:18:40Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 44,
+        "updated": "2026-09-16T14:39:32Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 43,
+        "updated": "2026-09-16T11:53:58Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 42,
+        "updated": "2026-09-16T11:58:00Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 41,
+        "updated": "2026-09-16T11:48:26Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 40,
+        "updated": "2026-09-16T13:15:43Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 39,
+        "updated": "2026-09-16T11:40:48Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 38,
+        "updated": "2026-09-16T11:27:03Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 37,
+        "updated": "2026-09-16T11:20:09Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 36,
+        "updated": "2026-09-16T11:01:33Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 35,
+        "updated": "2026-09-16T10:55:07Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 34,
+        "updated": "2026-09-16T11:11:29Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 33,
+        "updated": "2026-09-16T10:39:32Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 32,
+        "updated": "2026-09-16T10:37:41Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 31,
+        "updated": "2026-09-16T10:31:49Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 30,
+        "updated": "2026-09-16T10:46:26Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 29,
+        "updated": "2026-09-16T10:43:15Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 28,
+        "updated": "2026-09-16T10:18:55Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 27,
+        "updated": "2026-09-16T10:10:43Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 26,
+        "updated": "2026-09-16T10:28:27Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 25,
+        "updated": "2026-09-16T14:33:14Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 24,
+        "updated": "2026-09-16T14:43:11Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 23,
+        "updated": "2026-09-16T09:59:38Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 22,
+        "updated": "2026-09-16T13:44:26Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 21,
+        "updated": "2026-09-16T09:57:15Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 20,
+        "updated": "2026-09-16T09:57:00Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 19,
+        "updated": "2026-09-16T13:41:54Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 18,
+        "updated": "2026-09-16T09:50:59Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 17,
+        "updated": "2026-09-16T09:48:39Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 16,
+        "updated": "2026-09-16T12:00:29Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 15,
+        "updated": "2026-09-16T09:32:21Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 14,
+        "updated": "2026-09-16T09:18:03Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 13,
+        "updated": "2026-09-16T08:50:14Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 12,
+        "updated": "2026-09-16T05:49:11Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 11,
+        "updated": "2026-09-16T04:42:02Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 10,
+        "updated": "2026-09-14T15:27:44Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 9,
+        "updated": "2026-09-14T15:19:46Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 8,
+        "updated": "2026-09-14T14:47:43Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 7,
+        "updated": "2026-09-13T08:48:55Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 6,
+        "updated": "2026-09-13T02:56:28Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 5,
+        "updated": "2026-09-13T02:34:23Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 4,
+        "updated": "2026-09-12T10:26:16Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 3,
+        "updated": "2026-09-12T06:26:10Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 2,
+        "updated": "2026-09-12T03:42:42Z",
+        "bodyHasTopic": false
+      },
+      {
+        "n": 1,
+        "updated": "2026-09-11T12:59:14Z",
+        "bodyHasTopic": false
+      }
+    ],
+    "newPRChecks": [
+      {
+        "status": "fulfilled",
+        "value": {
+          "n": 100,
+          "files": 18,
+          "matches": [],
+          "reviewCount": 0,
+          "reviewMatches": []
+        }
+      },
+      {
+        "status": "fulfilled",
+        "value": {
+          "n": 101,
+          "files": 31,
+          "matches": [],
+          "reviewCount": 0,
+          "reviewMatches": []
+        }
+      },
+      {
+        "status": "fulfilled",
+        "value": {
+          "n": 103,
+          "files": 9,
+          "matches": [],
+          "reviewCount": 0,
+          "reviewMatches": []
+        }
+      },
+      {
+        "status": "fulfilled",
+        "value": {
+          "n": 105,
+          "files": 88,
+          "matches": [],
+          "reviewCount": 0,
+          "reviewMatches": []
+        }
+      },
+      {
+        "status": "fulfilled",
+        "value": {
+          "n": 107,
+          "files": 36,
+          "matches": [],
+          "reviewCount": 0,
+          "reviewMatches": []
+        }
+      },
+      {
+        "status": "fulfilled",
+        "value": {
+          "n": 108,
+          "files": 5,
+          "matches": [],
+          "reviewCount": 0,
+          "reviewMatches": []
+        }
+      },
+      {
+        "status": "fulfilled",
+        "value": {
+          "n": 99,
+          "files": 5,
+          "matches": [],
+          "reviewCount": 0,
+          "reviewMatches": []
+        }
+      }
+    ],
+    "comments": [
+      {
+        "status": "fulfilled",
+        "value": {
+          "kind": "issues/comments",
+          "count": 8,
+          "hits": []
+        }
+      },
+      {
+        "status": "fulfilled",
+        "value": {
+          "kind": "pulls/comments",
+          "count": 2,
+          "hits": []
+        }
+      }
+    ]
+  }
+}

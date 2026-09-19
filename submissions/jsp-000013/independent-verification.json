@@ -1,0 +1,14 @@
+{
+  "order": 716,
+  "entries": 512656,
+  "distinct_row_pairs": 255970,
+  "source_csv_sha256": "52028dbb9a937fdb82b8b09c29a0dcda9502d378550b99649e16185555c0007d",
+  "lean_certificate_sha256": "5d92be36788a9f769811178bb5e2999fab90767511bfc36ca1da2c13b21cfccd",
+  "reconstruction_matches_csv": true,
+  "all_signs": true,
+  "all_distinct_rows_orthogonal": true,
+  "direct_integer_dot_checks": 8592,
+  "negative_control_rejected": true,
+  "row_sign_change_control_accepted": true,
+  "limitation": "Independent exact computation; Lean status is recorded separately."
+}
