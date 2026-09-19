@@ -1,0 +1,6 @@
+*.olean
+*.ilean
+*.olean.server
+*.olean.private
+.lake/
+verification-local.log
