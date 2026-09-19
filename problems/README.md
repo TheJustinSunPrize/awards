@@ -1041,7 +1041,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000904 | [How many four-point subsets of a finite point set can have a repeated distance?](catalog-0901-1000.md#JSP-000904) | Open | No | No | Unavailable |
 | JSP-000905 | [How many points in higher dimensions force a prescribed-size subset with all pairwise distances distinct?](catalog-0901-1000.md#JSP-000905) | Open | No | No | Unavailable |
 | JSP-000906 | [In fixed dimension, how many points force a prescribed number of distinct distances?](catalog-0901-1000.md#JSP-000906) | Solved | No | No | Unavailable |
-| JSP-000907 | [Must every four-chromatic graph contain an odd cycle with the prescribed number of chords?](catalog-0901-1000.md#JSP-000907) | Solved | No | No | Unavailable |
+| JSP-000907 | [Must every four-chromatic graph contain an odd cycle with the prescribed number of chords?](catalog-0901-1000.md#JSP-000907) | Solved | Yes | No | Unavailable |
 | JSP-000908 | [If a binomial coefficient has no small prime factors, how many smooth terms must be absent from its corresponding consecutive-integer block?](catalog-0901-1000.md#JSP-000908) | Open | No | No | Unavailable |
 | JSP-000909 | [Can the least prime factor of a binomial coefficient be bounded by a uniform function of its two parameters?](catalog-0901-1000.md#JSP-000909) | Open | No | No | Unavailable |
 | JSP-000910 | [How large must the upper parameter be for a binomial coefficient to have no prime factor smaller than its lower parameter?](catalog-0901-1000.md#JSP-000910) | Open | No | No | Unavailable |
