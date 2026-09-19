@@ -591,7 +591,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000489 | [Property B](catalog-0401-0500.md#JSP-000489) | Open | No | No | Unavailable |
 | JSP-000490 | [How many colors suffice to avoid monochromatic members of a family of countably infinite sets whose pairwise intersections never have size two?](catalog-0401-0500.md#JSP-000490) | Solved | No | No | Unavailable |
 | JSP-000491 | [pinned distance problem](catalog-0401-0500.md#JSP-000491) | Open | No | No | Unavailable |
-| JSP-000492 | [Can the number of pairs at one distance in a finite spherical point set grow superlinearly?](catalog-0401-0500.md#JSP-000492) | Solved | No | No | Unavailable |
+| JSP-000492 | [Can the number of pairs at one distance in a finite spherical point set grow superlinearly?](catalog-0401-0500.md#JSP-000492) | Solved | Yes | No | Unavailable |
 | JSP-000493 | [Which total numbers of determined lines are possible for a planar set of a prescribed number of points?](catalog-0401-0500.md#JSP-000493) | Solved | No | No | Unavailable |
 | JSP-000494 | [How many different sets of line multiplicities can planar point configurations determine?](catalog-0401-0500.md#JSP-000494) | Solved | No | No | Unavailable |
 | JSP-000495 | [How long can the shortest guaranteed monochromatic odd cycle be in a multicolored complete graph?](catalog-0401-0500.md#JSP-000495) | Open | No | No | Unavailable |
