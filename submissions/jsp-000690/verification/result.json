@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-09-16T10:19:40.186755+00:00",
+  "lean_version": "4.34.0",
+  "lean_commit": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+  "clean_requested": true,
+  "elapsed_seconds": 21.035,
+  "axioms": {
+    "JSP690.not_bool_colorable": [
+      "propext",
+      "Quot.sound"
+    ],
+    "JSP690.not_colorable_of_lt_three": [
+      "propext",
+      "Quot.sound"
+    ],
+    "JSP690.edgeDeletionColor_proper": [
+      "propext",
+      "Quot.sound"
+    ],
+    "JSP690.vertexDeletionColor_proper": [
+      "propext",
+      "Quot.sound"
+    ],
+    "JSP690.edge_eq_iff_vertices": [
+      "propext",
+      "Quot.sound"
+    ],
+    "JSP690.strictSubgraphOn_colorable_of_deletions": [
+      "propext",
+      "Quot.sound"
+    ],
+    "JSP690.witness_chromatic_critical": [
+      "propext",
+      "Quot.sound"
+    ],
+    "JSP690.jsp_000690_nine_vertices": [
+      "propext",
+      "Quot.sound"
+    ],
+    "JSP690.jsp_000690": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "source_sha256": {
+    "JSP690/Certificates.lean": "c099164dec7cb7b5c4e9b7fa7fb5ef82ab6d9121030a81e004bb5f6311f7ef23",
+    "JSP690/Definitions.lean": "09219c9407da5e0a67087ae0dc5328916e36a0f3016baeb5ef7cdb7d1c3b2c33",
+    "JSP690/Encoding.lean": "d1d5962d195f8596f699804e93089225d4fcb424462b051111cb9c222f1776b5",
+    "JSP690/NonColorable.lean": "57a56cefee3db651fd61fcceea825fc846c0da9f91adb353fb89cb9e2711a1a9",
+    "JSP690/Result.lean": "9d78ef32292c9455eecb1faa715e57ab1e5f5428315b797b56a32df02b1cfc95",
+    "JSP690/Subgraph.lean": "1ace43302e1089d5725bd0680914c98d5f2c440deb6843bed535adb2f7e9b92c",
+    "JSP690/Witness.lean": "9b96c40802b9a90270a875fb3a3be0a85cf8e58b1661eb3bcb003be02b1204bf",
+    "JSP690.lean": "ba64f3f467474db6b5f690289314fe26cec72baf6476557c259cd34d06f64dd5",
+    "Audit.lean": "4490b37d20514cebcf93c18994f5659cb69fc18e5fd0ffc02eece26a989f08fe",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "lakefile.toml": "ebfc4c87e9a97c5375688c2429e2c1d071f50a673266979372aa0324fab180bf",
+    "lake-manifest.json": "6d5dc70dbe6f17b944604073424d9283dafbb632a07f627245049c9f5d9844ec",
+    "scripts/verify.py": "dbef8d552c19abba9e239e2cff879dfb3e32870459eec86c7f8b78200f9cee10"
+  }
+}
