@@ -1,0 +1,50 @@
+{
+  "scope": "Kernel-checked explicit counterexamples and boundary controls; no extra prize claims",
+  "production_verification_run_id": "06568604-a3fd-4fa2-a3d4-831c21267533",
+  "lean_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "network_access_denied": true,
+  "native_decide_used": false,
+  "results": [
+    {
+      "module": "NegativeControls",
+      "source_sha256": "07fb6e94a078cd1e460512bd970fa32af2a23252411fe92de8673a7597b56b07",
+      "started_at": "2026-09-16T21:54:21.249945+00:00",
+      "exit_code": 0,
+      "seconds": 78.946,
+      "command": [
+        "sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "NegativeControls.lean"
+      ],
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "ExtensionNegativeControls",
+      "source_sha256": "d6e3df27961311ddb17f0f0c061b657df818c8c60831fe89a3b278a5d35197ca",
+      "started_at": "2026-09-16T21:55:40.196625+00:00",
+      "exit_code": 0,
+      "seconds": 81.131,
+      "command": [
+        "sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "ExtensionNegativeControls.lean"
+      ],
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "all_passed": true
+}

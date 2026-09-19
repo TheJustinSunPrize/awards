@@ -1,0 +1,56 @@
+===== compile-Erdos882Korsky.stderr.log (0 original bytes) =====
+
+===== compile-Erdos882Korsky.stdout.log (190 original bytes) =====
+'Erdos882Korsky.korsky_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Korsky.original_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+===== compile-Erdos882Original.stderr.log (0 original bytes) =====
+
+===== compile-Erdos882Original.stdout.log (0 original bytes) =====
+
+===== compile-KorskyCount.stderr.log (0 original bytes) =====
+
+===== compile-KorskyCount.stdout.log (0 original bytes) =====
+
+===== compile-KorskyDefs.stderr.log (0 original bytes) =====
+
+===== compile-KorskyDefs.stdout.log (0 original bytes) =====
+
+===== compile-KorskyEndpoint.stderr.log (0 original bytes) =====
+
+===== compile-KorskyEndpoint.stdout.log (0 original bytes) =====
+
+===== compile-KorskyInject.stderr.log (0 original bytes) =====
+
+===== compile-KorskyInject.stdout.log (0 original bytes) =====
+
+===== compile-KorskyModular.stderr.log (0 original bytes) =====
+
+===== compile-KorskyModular.stdout.log (0 original bytes) =====
+
+===== export.stderr.log (0 original bytes) =====
+
+===== leanchecker.stderr.log (0 original bytes) =====
+
+===== leanchecker.stdout.log (0 original bytes) =====
+
+===== nanoda.stderr.log (0 original bytes) =====
+
+===== nanoda.stdout.log (735 original bytes) =====
+theorem Erdos882Korsky.korsky_sum_bound :
+  forall {k : Nat} (hk : LT.lt (OfNat.ofNat 0) k) (a : Fin k → Nat),
+  (forall (i : Fin k), LT.lt (OfNat.ofNat 0) (a i)) → Erdos882Korsky.NoDouble a → LE.le
+    (HMul.hMul k (HPow.hPow (OfNat.ofNat 2) (HSub.hSub k (OfNat.ofNat 1)))) (Erdos882Korsky.total a) :=
+  _
+
+theorem Erdos882Korsky.original_upper_bound (n : Nat) :
+  LE.le (Erdos882.maximumSize n) (HAdd.hAdd (Nat.log (OfNat.ofNat 2) n) (OfNat.ofNat 1)) :=
+  _
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
+Checked 7691 declarations with no errors

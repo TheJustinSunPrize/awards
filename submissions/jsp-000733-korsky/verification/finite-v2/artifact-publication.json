@@ -1,0 +1,8 @@
+{
+  "export_filename": "proof.ndjson",
+  "export_bytes": 39724522,
+  "export_sha256": "5a710a3e4fa610606afdbc2fd2171ed1315860d2ae43116010b3da4efdd83bf9",
+  "permanent_external_archive_confirmed": false,
+  "status": "Full proof export prepared in the local verification package. Source, small evidence, and export identity are published through PR #276; public binary attachment and permanent external archival remain unconfirmed.",
+  "attachment_filename": "JSP-000733-Korsky-finite-verification-v2.zip"
+}

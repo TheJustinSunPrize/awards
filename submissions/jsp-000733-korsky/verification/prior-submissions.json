@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-09-16T20:20:52.719598+00:00",
+  "all_issues_and_pr_count": 274,
+  "max_number": 275,
+  "relevant": [
+    {
+      "number": 264,
+      "title": "JSP-000733: refined half-log-log upper bound for primitive subset sums",
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/264",
+      "updated_at": "2026-09-16T19:42:41Z",
+      "state": "open"
+    },
+    {
+      "number": 191,
+      "title": "[Recipient] JSP-000127: Polynomial zeros on unit circle growth (Erd\u0151s #111) solver and Lean formalization",
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/191",
+      "updated_at": "2026-09-16T18:42:57Z",
+      "state": "open"
+    },
+    {
+      "number": 31,
+      "title": "[Proof] JSP-000733: leading asymptotic for primitive subset sums",
+      "url": "https://github.com/TheJustinSunPrize/awards/pull/31",
+      "updated_at": "2026-09-16T10:31:49Z",
+      "state": "open"
+    }
+  ],
+  "limits": "Bounded title/body scan of complete official issue listing, supplemented by pinned source scope reviews of PR31 and PR264. Not a global first-formalization certification."
+}

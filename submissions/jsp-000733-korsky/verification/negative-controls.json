@@ -1,0 +1,14 @@
+{
+  "exit_code": 0,
+  "seconds": 22.091,
+  "stdout": "",
+  "stderr": "",
+  "source_sha256": "07fb6e94a078cd1e460512bd970fa32af2a23252411fe92de8673a7597b56b07",
+  "scope": "Earlier standalone check of this identical NegativeControls source and identical four core modules; the final main theorem check is recorded separately.",
+  "core_sources": {
+    "KorskyDefs.lean": "3ed04ab8dc23987738a017d0d7192a269d06c8c72ec01e1e171f154720981bfa",
+    "KorskyCount.lean": "2649f1f1f17b7f2ae802515c5b8b81d78d1a2650d4b251e365059a53ab9f1131",
+    "KorskyInject.lean": "8ca0ea1111a50a1f6fe4a3e4afaad085410800bfaa2d5c60d063dbd52fe3f083",
+    "KorskyModular.lean": "a98f8711db09393265a63ac27c517aa2c528692efc7b4dc468a083b8b5abd9bf"
+  }
+}

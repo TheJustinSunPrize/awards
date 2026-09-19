@@ -1,0 +1,372 @@
+{
+  "run_id": "e1b7f288-c970-4f32-b09a-cd8f52f900cc",
+  "started_at": "2026-09-16T20:16:29.491332+00:00",
+  "phase": "complete",
+  "local_checks_passed": true,
+  "official_acceptance": false,
+  "module": "Erdos882Korsky",
+  "theorems": [
+    "Erdos882Korsky.korsky_sum_bound",
+    "Erdos882Korsky.original_upper_bound"
+  ],
+  "source_sha256": "d1a4946b8147a0f336710cb91a21b75772169c4b5595945abb476ecd208738d5",
+  "source_bytes": 1267,
+  "local_sources": [
+    {
+      "module": "KorskyDefs",
+      "path": "<project>/KorskyDefs.lean",
+      "sha256": "3ed04ab8dc23987738a017d0d7192a269d06c8c72ec01e1e171f154720981bfa"
+    },
+    {
+      "module": "KorskyCount",
+      "path": "<project>/KorskyCount.lean",
+      "sha256": "2649f1f1f17b7f2ae802515c5b8b81d78d1a2650d4b251e365059a53ab9f1131"
+    },
+    {
+      "module": "KorskyInject",
+      "path": "<project>/KorskyInject.lean",
+      "sha256": "8ca0ea1111a50a1f6fe4a3e4afaad085410800bfaa2d5c60d063dbd52fe3f083"
+    },
+    {
+      "module": "KorskyModular",
+      "path": "<project>/KorskyModular.lean",
+      "sha256": "a98f8711db09393265a63ac27c517aa2c528692efc7b4dc468a083b8b5abd9bf"
+    },
+    {
+      "module": "Erdos882Original",
+      "path": "<project>/Erdos882Original.lean",
+      "sha256": "a7d71df4cd28981cf040b9464ab63b027b4efc19d0153b134fd19b95c6a014dc"
+    },
+    {
+      "module": "KorskyEndpoint",
+      "path": "<project>/KorskyEndpoint.lean",
+      "sha256": "a92d2236ce73a8b30325cae902cf5efd01eefb7011a73b57f189d624aec99919"
+    },
+    {
+      "module": "Erdos882Korsky",
+      "path": "<project>/Erdos882Korsky.lean",
+      "sha256": "d1a4946b8147a0f336710cb91a21b75772169c4b5595945abb476ecd208738d5"
+    }
+  ],
+  "toolchain": "Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)",
+  "project_lean_toolchain": "leanprover/lean4:v4.34.0",
+  "verification_script_sha256": "677a8960ae534b2b4f9fa819a05e519a206ca5fc34e67c7c27208a4b93633caf",
+  "lean_bin": "<lean-bin>",
+  "lean_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "nanoda_path": "<nanoda>",
+  "nanoda_sha256": "cfd89798e7f5f984f852e2410694e8c4efe1463b613f75e85c8dc904b499e146",
+  "exporter_path": "<exporter>",
+  "exporter_sha256": "ad235f7ce3177ea0de2b66316f06361aff890683264c94cb31e91a46eeda60a2",
+  "commands": [
+    {
+      "name": "compile-KorskyDefs",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-o",
+        "<project>/.lake/build/lib/lean/KorskyDefs.olean",
+        "<project>/KorskyDefs.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 41.156
+    },
+    {
+      "name": "compile-KorskyCount",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-o",
+        "<project>/.lake/build/lib/lean/KorskyCount.olean",
+        "<project>/KorskyCount.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 37.49
+    },
+    {
+      "name": "compile-KorskyInject",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-o",
+        "<project>/.lake/build/lib/lean/KorskyInject.olean",
+        "<project>/KorskyInject.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 49.165
+    },
+    {
+      "name": "compile-KorskyModular",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-o",
+        "<project>/.lake/build/lib/lean/KorskyModular.olean",
+        "<project>/KorskyModular.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 46.507
+    },
+    {
+      "name": "compile-Erdos882Original",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-o",
+        "<project>/.lake/build/lib/lean/Erdos882Original.olean",
+        "<project>/Erdos882Original.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 31.19
+    },
+    {
+      "name": "compile-KorskyEndpoint",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-o",
+        "<project>/.lake/build/lib/lean/KorskyEndpoint.olean",
+        "<project>/KorskyEndpoint.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 28.578
+    },
+    {
+      "name": "compile-Erdos882Korsky",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-o",
+        "<project>/.lake/build/lib/lean/Erdos882Korsky.olean",
+        "<project>/Erdos882Korsky.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 22.985
+    },
+    {
+      "name": "leanchecker",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "Erdos882Korsky"
+      ],
+      "exit_code": 0,
+      "seconds": 233.687
+    },
+    {
+      "name": "export",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "<exporter>",
+        "Erdos882Korsky",
+        "--",
+        "Erdos882Korsky.korsky_sum_bound",
+        "Erdos882Korsky.original_upper_bound"
+      ],
+      "exit_code": 0,
+      "seconds": 25.185
+    },
+    {
+      "name": "nanoda",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<nanoda>",
+        "<verification-output>/nanoda.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.337
+    }
+  ],
+  "network_access_denied_for_check_commands": true,
+  "network_policy": "(version 1)(allow default)(deny network*)",
+  "network_policy_control_probe": [
+    {
+      "name": "control",
+      "exit_code": 0,
+      "stdout": "NETWORK_ACCESSIBLE\n",
+      "stderr": ""
+    },
+    {
+      "name": "denied",
+      "exit_code": 73,
+      "stdout": "NETWORK_DENIED 1\n",
+      "stderr": ""
+    }
+  ],
+  "filesystem_isolated": false,
+  "dependencies_rebuilt_from_source": false,
+  "precompiled_dependencies_used": true,
+  "lake_manifest_sha256": "2a4ac093ff9e6f16d731b27021cbfcc6623a3da0a4ffb1777eab435de1f84d66",
+  "lake_manifest": {
+    "version": "1.2.0",
+    "packagesDir": ".lake/packages",
+    "packages": [
+      {
+        "url": "https://github.com/leanprover-community/mathlib4.git",
+        "type": "git",
+        "subDir": null,
+        "scope": "",
+        "rev": "5ed2965256430c3649e86755f9576b54eca72435",
+        "name": "mathlib",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "5ed2965256430c3649e86755f9576b54eca72435",
+        "inherited": false,
+        "configFile": "lakefile.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/plausible",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+        "name": "plausible",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/LeanSearchClient",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+        "name": "LeanSearchClient",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/import-graph",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "e928b72544873815af278d38681b31c0293588e3",
+        "name": "importGraph",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/ProofWidgets4",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+        "name": "proofwidgets",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/aesop",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+        "name": "aesop",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "master",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/quote4",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+        "name": "Qq",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "master",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/batteries",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+        "name": "batteries",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover/lean4-cli",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover",
+        "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+        "name": "Cli",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "v4.34.0",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      }
+    ],
+    "name": "erdos882korsky",
+    "lakeDir": ".lake",
+    "fixedToolchain": false
+  },
+  "export_sha256": "5e46bd13762e25b67eb19caacee0756b18364ab8d7c67478c93ed750bcae21cb",
+  "export_bytes": 30509530,
+  "paths_redacted_for_publication": true
+}
