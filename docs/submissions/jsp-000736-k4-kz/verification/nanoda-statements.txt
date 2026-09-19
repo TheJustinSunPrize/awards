@@ -1,0 +1,39 @@
+def JSP000736.factorDifferenceSet (n : Nat) : Set Nat :=
+  Set.ofPred
+    (fun (d : Nat) =>
+    Exists
+      (fun (a : Nat) =>
+      Exists
+        (fun (b : Nat) => And (Eq n (HMul.hMul a b)) (Eq (Nat.cast d) (abs (HSub.hSub (Nat.cast a) (Nat.cast b)))))))
+
+def JSP000736.numbers :
+  Finset Nat :=
+  Insert.insert (OfNat.ofNat 26128575)
+    (Insert.insert (OfNat.ofNat 291722431)
+      (Insert.insert (OfNat.ofNat 561117375) (Singleton.singleton (OfNat.ofNat 713526975))))
+
+def JSP000736.differences :
+  Finset Nat :=
+  Insert.insert (OfNat.ofNat 126)
+    (Insert.insert (OfNat.ofNat 16110) (Insert.insert (OfNat.ofNat 33390) (Singleton.singleton (OfNat.ofNat 75390))))
+
+theorem JSP000736.erdos_885_k_eq_4 :
+  Exists
+    (fun (Ns : Finset Nat) =>
+    And (forall (n : Nat), Membership.mem Ns n → LE.le (OfNat.ofNat 1) n)
+      (And (Eq (Finset.card Ns) (OfNat.ofNat 4))
+        (GE.ge
+          (Set.ncard
+            (Set.iInter
+              (fun (n : Nat) =>
+              Set.iInter
+                (fun (h._@.JSP000736.2671777143._hygCtx._hyg.65 : Membership.mem Ns n) =>
+                JSP000736.factorDifferenceSet n)))) (OfNat.ofNat 4)))) :=
+  _
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
