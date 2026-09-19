@@ -1,0 +1,26 @@
+id: jsp-000391
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 391
+  title_en: "Floor recurrence generating digits of an algebraic number (Graham–Pollak)"
+  posed:
+    year: 1970
+    basis: stated
+    citation: "catalog JSP-000391 ([GrPo70] Note on a nonlinear recurrence related to sqrt 2, Math. Mag. 1970, 143–145; [St05] On families of nonlinear recurrences related to digits, J. Integer Seq. 2005)"
+  resolved: null
+recipients:
+  - id: shiqiang-chen
+    affiliation: "Independent researcher"
+    contribution_en: "Complete Lean 4 formalization of the Graham–Pollak digit phenomenon: with u_1=1 and u_{n+1}=⌊√2(u_n+1/2)⌋ (integer closed form step u = Nat.sqrt(2u(u+1))), the quantity d_n = u_{2n+1} − 2·u_{2n−1} is a binary digit (∈ {0,1}) — the nth digit of √2. Full proof chain (square_bound, step_le_2u_sub2, step_sq_bound/upper, step_step_digit, u_strict_mono, d_mem_zero_one), verified against Lean v4.34.0 / mathlib v4.34.0, 0 sorry/admit/axiom."
+    confirmation: "https://github.com/shunfeng8421"
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null

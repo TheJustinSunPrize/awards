@@ -1,0 +1,37 @@
+# Current-release (v4.34.0) verification log — JSP-000616
+Date: 2026-09-19
+Performed by: jsp616-verifier (aionrs automated verification run)
+
+## Purpose
+Current-release verification of the pinned Lean formalization for JSP-000616
+(constructive scoped component: exact counts of sum-free subsets of {1,...,n}).
+
+## Environment
+- Repository: https://github.com/shunfeng8421/jsp301-lean (public)
+- Pinned file: Jsp616.lean at commit a074c4213f261a8e0d07d0d3b1479ae3207f467b
+- Toolchain: leanprover/lean4:v4.34.0 (Lean v4.34.0, currently released)
+- mathlib: v4.34.0, commit 5ed2965256430c3649e86755f9576b54eca72435
+- OS: windows x86_64; elan-managed toolchain via lake
+
+## Build command
+  cd verify-current        # lakefile.lean: lean_lib Jsp616, require mathlib @ v4.34.0
+  lake build Jsp616
+
+Result: exit code 0. "✔ [910/911] Built Jsp616 (3.3s) — Build completed successfully (911 jobs)."
+Zero warnings, zero errors after final edit.
+
+## Theorems (all in module Jsp616)
+- IsSumFree : finite subset is sum-free (no element equals a sum of two members)
+- interval / countSumFree : count via finite powerset enumeration (decidable)
+- count_1 .. count_7 : exact counts c(n) = 2,3,6,9,16,24,42 for n=1..7,
+  each by native_decide (closed decision procedure)
+
+## Axiom audit
+All theorems depend only on [propext, Classical.choice, Quot.sound].
+No sorry, no admit, no axiom, no unsafe. native_decide is a closed decision
+procedure (kernel-verifiable), not an axiom.
+
+## Artifacts
+- Jsp616.lean (SHA-256 6cd9639c79d2e8d34c36216795b1bb21d3a1e7988d2c9fa2807781250a897f66, 2598 bytes)
+- Verified exact counts match independent brute-force enumeration
+  (OEIS A007865: 2,3,6,9,16,24,42,61,...).

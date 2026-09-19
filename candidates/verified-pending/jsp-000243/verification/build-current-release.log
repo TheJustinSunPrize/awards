@@ -1,0 +1,6 @@
+JSP-243 build log
+command: lake env lean Jsp243.lean
+status: SUCCESS (exit 0)
+theorems: Jsp243.one_rep_in_interval/denominators_distinct/denominators_in_interval/interval_realizes_one
+interval [2,6] contains 2,3,6 whose reciprocals sum to 1
+toolchain: Lean 4.34.0, mathlib 5ed2965256430c3649e86755f9576b54eca72435
