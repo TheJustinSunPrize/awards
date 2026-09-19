@@ -1,0 +1,13 @@
+Lean (version 4.24.0, arm64-apple-darwin23.6.0, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)
+'DescendingWaves.row_0' does not depend on any axioms
+'DescendingWaves.row_20' does not depend on any axioms
+'DescendingWaves.row_40' does not depend on any axioms
+'DescendingWaves.row_60' does not depend on any axioms
+'DescendingWaves.row_80' does not depend on any axioms
+'DescendingWaves.row_100' does not depend on any axioms
+'DescendingWaves.row_120' does not depend on any axioms
+'DescendingWaves.witness_no_twelve' depends on axioms: [propext, Quot.sound]
+'DescendingWaves.not_forces_133_12' depends on axioms: [propext, Quot.sound]
+'DescendingWaves.quadratic_threshold_false' depends on axioms: [propext, Quot.sound]
+
+Compiler exit status: 0
