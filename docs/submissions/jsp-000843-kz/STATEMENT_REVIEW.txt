@@ -1,0 +1,12 @@
+Statement audit (manual scope review)
+Target: forall k : Nat, 2 <= k -> exists finite V and SimpleGraph G on V,
+card V = 3*2^(k-2)-1 and G.CliqueFree 3 and G.chromaticNumber = k.
+Quantifiers: all k>=2; no fixed test range.
+Definitions: adjacency implements exactly original, cross and apex-shadow edges.
+Original finite graph: K2; recursion: one Mycielski step per iteration.
+TriangleFree is formally bridged to Mathlib CliqueFree 3.
+Upper coloring and color-deletion lower bound are separate proved lemmas.
+Non-colorability is inductive, not a finite color-assignment enumeration.
+No custom axioms, proof holes, compiler-trust shortcuts or external oracle imports.
+Scope: classical upper bound only; open sharp asymptotics and ratio conjecture excluded.
+Automated results must be taken from the completed CI run, not this note.

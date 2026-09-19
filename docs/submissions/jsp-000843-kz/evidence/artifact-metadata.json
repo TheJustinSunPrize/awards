@@ -1,0 +1,23 @@
+{
+  "artifacts": [
+    {
+      "archive_download_url": "https://api.github.com/repos/ketianzhang1-lang/jsp-000301-lean/actions/artifacts/10475906905/zip",
+      "created_at": "2026-09-17T01:07:00Z",
+      "digest": "sha256:b4c29318d947b6f74ece2c2d4126014b9f493d5e37573478c7955fad7fb9ec9b",
+      "expired": false,
+      "expires_at": "2026-12-16T01:04:05Z",
+      "id": 10475906905,
+      "name": "jsp-000843-evidence",
+      "size_in_bytes": 4136526,
+      "updated_at": "2026-09-17T01:07:00Z",
+      "url": "https://api.github.com/repos/ketianzhang1-lang/jsp-000301-lean/actions/artifacts/10475906905",
+      "workflow_run": {
+        "head_branch": "jsp-000843-mycielski",
+        "head_repository_id": 1373404416,
+        "head_sha": "d606af2009f85d5060008a1df249045c18ac34f3",
+        "id": 35169084966,
+        "repository_id": 1373404416
+      }
+    }
+  ]
+}
