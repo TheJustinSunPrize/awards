@@ -1,0 +1,226 @@
+[
+  {
+    "package": "mathlib",
+    "file": ".github/workflows/mk_build_yml.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/add_deprecations.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/bench/accumulate_profile.py",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/bench/fake-root/bin/lean",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/bench/fake-root/bin/leanc",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/bench/run",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/count-trans-deps.py",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/create-adaptation-pr.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/declarations_diff.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/downstream-tags.py",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/fix_unused.py",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/get_tlabel.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/import-graph-report.py",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/import_trans_difference.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/install_debian.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/install_macos.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/late_importers.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/lean-pr-testing-comments.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/lint-bib.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/lint-style.py",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/maintainer_merge_message.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/merge-lean-testing-pr.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/parse_lake_manifest_changes.py",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/print-style-errors.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/technical-debt-metrics.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/unused_in_pole.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/update_PR_comment.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "mathlib",
+    "file": "scripts/update_nolints_CI.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "batteries",
+    "file": "scripts/create-adaptation-pr.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "batteries",
+    "file": "scripts/lintWhitespace.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "batteries",
+    "file": "scripts/merge-lean-testing-pr.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  },
+  {
+    "package": "batteries",
+    "file": "scripts/updateBatteries.sh",
+    "before": "0o644",
+    "after": "0o755",
+    "content_unchanged": true
+  }
+]

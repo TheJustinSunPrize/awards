@@ -1,0 +1,8 @@
+SECCOMP_GUARD: IPv4 and IPv6 socket creation verified denied (EPERM).
+01_lean_version: exit=0, expected=0
+02_lake_version: exit=0, expected=0
+03_lake_build: exit=0, expected=0
+04_smoke_test: exit=0, expected=0
+05_source_compilation: exit=0, expected=0
+06_negative_control: exit=1, expected=1
+PASS: source compiled; expected axiom sets; false control rejected.

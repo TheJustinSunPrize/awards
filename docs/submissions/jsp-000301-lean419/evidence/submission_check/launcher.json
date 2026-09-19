@@ -1,0 +1,32 @@
+{
+  "started_utc": "2026-09-17T10:22:42.340811+00:00",
+  "command": [
+    "/usr/bin/python3",
+    "-S",
+    "/mnt/data/JSP301_Submission_20260917/PR_UPLOAD/docs/submissions/jsp-000301-lean419/scripts/seccomp_no_network_exec.py",
+    "/usr/bin/python3",
+    "/mnt/data/JSP301_Submission_20260917/PR_UPLOAD/docs/submissions/jsp-000301-lean419/scripts/verify.py",
+    "--log-dir",
+    "/mnt/data/JSP301_Submission_20260917/PR_UPLOAD/docs/submissions/jsp-000301-lean419/evidence/submission_check",
+    "--timeout",
+    "240",
+    "--also-lake-build"
+  ],
+  "environment": {
+    "PATH": "/mnt/data/jsp301_recheck_20260917/restored/Lean419_Offline_linux_x86_64/lean-4.19.0-linux/bin:/usr/bin:/bin",
+    "HOME": "/mnt/data/submission_work/fresh_home",
+    "XDG_CACHE_HOME": "/mnt/data/submission_work/fresh_home/.cache",
+    "ELAN_HOME": "/mnt/data/submission_work/fresh_home/.elan",
+    "LEAN_SYSROOT": "/mnt/data/jsp301_recheck_20260917/restored/Lean419_Offline_linux_x86_64/lean-4.19.0-linux",
+    "LD_LIBRARY_PATH": "/mnt/data/jsp301_recheck_20260917/restored/Lean419_Offline_linux_x86_64/lean-4.19.0-linux/lib",
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "GIT_CONFIG_NOSYSTEM": "1",
+    "GIT_CONFIG_GLOBAL": "/dev/null",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1",
+    "MATHLIB_CACHE_DIR": "/mnt/data/jsp301_recheck_20260917/restored/Lean419_Offline_linux_x86_64/mathlib_cache"
+  },
+  "isolation": "Process-inherited seccomp socket/network syscall restrictions; not a network namespace; normal imported-library trust.",
+  "exit_code": 0,
+  "completed_utc": "2026-09-17T10:23:03.306432+00:00"
+}

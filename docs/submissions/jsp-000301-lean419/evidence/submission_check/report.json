@@ -1,0 +1,167 @@
+{
+  "started_utc": "2026-09-17T10:22:42.409789+00:00",
+  "source_sha256": "20c09dc7edfefb64634da5f17962fd9c528662c615538400ad1bd744686f53dc",
+  "source_bytes": 3529,
+  "platform": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "python": "3.13.5"
+  },
+  "tests": [
+    {
+      "name": "01_lean_version",
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "seconds": 0.161809,
+      "stdout_file": "01_lean_version.stdout.log",
+      "stderr_file": "01_lean_version.stderr.log"
+    },
+    {
+      "name": "02_lake_version",
+      "command": [
+        "lake",
+        "--version"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "seconds": 0.073009,
+      "stdout_file": "02_lake_version.stdout.log",
+      "stderr_file": "02_lake_version.stderr.log"
+    },
+    {
+      "name": "03_lake_build",
+      "command": [
+        "lake",
+        "build",
+        "JSP301"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "seconds": 11.867258,
+      "stdout_file": "03_lake_build.stdout.log",
+      "stderr_file": "03_lake_build.stderr.log"
+    },
+    {
+      "name": "04_smoke_test",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "tests/SmokeTest.lean"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "seconds": 2.561973,
+      "stdout_file": "04_smoke_test.stdout.log",
+      "stderr_file": "04_smoke_test.stderr.log"
+    },
+    {
+      "name": "05_source_compilation",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-o",
+        "/mnt/data/JSP301_Submission_20260917/PR_UPLOAD/docs/submissions/jsp-000301-lean419/evidence/submission_check/JSP301.olean",
+        "JSP301.lean"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "seconds": 2.906492,
+      "stdout_file": "05_source_compilation.stdout.log",
+      "stderr_file": "05_source_compilation.stderr.log"
+    },
+    {
+      "name": "06_negative_control",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "tests/NegativeControl.lean"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "seconds": 3.239493,
+      "stdout_file": "06_negative_control.stdout.log",
+      "stderr_file": "06_negative_control.stderr.log"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "plausible",
+      "commit": "77e08eddc486491d7b9e470926b3dbe50319451a",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "commit": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "importGraph",
+      "commit": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "proofwidgets",
+      "commit": "c4919189477c3221e6a204008998b0d724f49904",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "aesop",
+      "commit": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "Qq",
+      "commit": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "batteries",
+      "commit": "f5d04a9c4973d401c8c92500711518f7c656f034",
+      "tracked_source_clean": true
+    },
+    {
+      "name": "Cli",
+      "commit": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+      "tracked_source_clean": true
+    }
+  ],
+  "axiom_audit": {
+    "JSP301.known_counterexample": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP301.catalog_statement_false": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "all_passed": true,
+  "scope": "Local source compilation and axiom audit; not official or independent prize verification.",
+  "trust": "Standard Lean import trust. Precompiled dependency artifacts are used; no separately certified independent checker or full imported-library recheck.",
+  "network_isolation": "Not asserted by this script. See a separately recorded launcher, if one is used.",
+  "generated_olean": {
+    "bytes": 121728,
+    "sha256": "2f07497c388270bf1d94d90af5fbb2128291b7e598474cc70d6373869bc37eba"
+  },
+  "completed_utc": "2026-09-17T10:23:03.289878+00:00"
+}

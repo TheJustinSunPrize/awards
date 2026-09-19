@@ -1,0 +1,25 @@
+{
+  "original_source_sha256": "7cef7bb2ddf381d92a6683e996e9db3acf95e4209540c2f93373dc1ab41247d2",
+  "submitted_source_sha256": "20c09dc7edfefb64634da5f17962fd9c528662c615538400ad1bd744686f53dc",
+  "prior_check_completed_utc": "2026-09-17T10:09:13.723020+00:00",
+  "changes": "Source comments only. A default-target attribute was added to the Lake configuration. Mathematical definitions, theorem statements and proof bodies are unchanged.",
+  "public_priority_timestamp": "Not established by local files or timestamps; maintainers must review the submitted public commit and competing records.",
+  "ai_assistance": "Lean code and documentation prepared with ChatGPT assistance. The submitter supplied an offline Lean/Mathlib environment prepared with DeepSeek assistance. No original discovery of the counterexample is claimed.",
+  "prior_archives": [
+    {
+      "name": "JSP301_ProofAttempt_20260916.zip",
+      "bytes": 8373,
+      "sha256": "264c895510ff55df72b9a6b99182ffc731b994b62eed740abd1f424dde9e3bcc"
+    },
+    {
+      "name": "JSP301_Lean_Verified_20260917.zip",
+      "bytes": 3314010,
+      "sha256": "a9a68c74812b4dbf81a044b73e1e6dbfc2c930ccbf6bf2095846b8ba281f92da"
+    },
+    {
+      "name": "JSP301_Second_Check_20260917.zip",
+      "bytes": 53143,
+      "sha256": "17b471697d83d68c8d9b73894a10d5b8bb3c86d2ca9fbf3a964fc4e3cccb273a"
+    }
+  ]
+}

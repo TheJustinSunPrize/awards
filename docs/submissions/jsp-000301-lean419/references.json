@@ -1,0 +1,41 @@
+{
+  "checked_on": "2026-09-17",
+  "sources": [
+    {
+      "name": "Catalog JSP-000301",
+      "url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000301"
+    },
+    {
+      "name": "Selection rules v1.0",
+      "url": "https://www.hejustinsun.com/prize/rules"
+    },
+    {
+      "name": "Contributing",
+      "url": "https://github.com/TheJustinSunPrize/awards/blob/main/CONTRIBUTING.md"
+    },
+    {
+      "name": "Verification guidance",
+      "url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/verification.md"
+    },
+    {
+      "name": "Record maintenance",
+      "url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/records.md"
+    },
+    {
+      "name": "Related submission 62",
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/62"
+    },
+    {
+      "name": "Related correction 63",
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/63"
+    },
+    {
+      "name": "Related submission 64",
+      "url": "https://github.com/TheJustinSunPrize/awards/issues/64"
+    },
+    {
+      "name": "Lean project setup",
+      "url": "https://leanprover-community.github.io/install/project.html"
+    }
+  ]
+}

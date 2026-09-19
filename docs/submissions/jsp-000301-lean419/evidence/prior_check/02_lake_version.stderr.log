@@ -1,0 +1,1 @@
+SECCOMP_GUARD: IPv4 and IPv6 socket creation verified denied (EPERM).

@@ -1,0 +1,2 @@
+tests/NegativeControl.lean:4:36: error: unsolved goals
+⊢ False

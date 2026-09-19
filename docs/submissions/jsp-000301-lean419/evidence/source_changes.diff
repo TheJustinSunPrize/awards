@@ -1,0 +1,30 @@
+--- original/JSP301.lean
++++ submitted/JSP301.lean
+@@ -2,14 +2,15 @@
+ import Mathlib.Tactic
+ 
+ /-!
+-# JSP-000301: a formalization draft of a KNOWN counterexample
++# JSP-000301: verified formalization of a KNOWN counterexample
+ 
+-Status: NOT COMPILED in the authoring session. This file must not be described
+-as kernel-verified until an actual successful Lean run and axiom audit exist.
++Verified on 2026-09-17 with Lean 4.19.0 on Linux x86_64 and mathlib v4.19.0.
++The original source passed unchanged before these comment-only status edits.
++Both final theorems report only propext, Classical.choice, and Quot.sound.
+ 
+ The pair 12167, 12168 and its factorization are already published in the
+ Justin Sun Prize catalog. No new mathematical discovery or first-formalization
+-priority is claimed. This addresses ONLY the catalog's finite yes/no statement,
++priority is claimed. This addresses ONLY the catalog's yes/no statement,
+ not the counting question in Erdos problem 365.
+ 
+ Intended environment: Lean 4.19.0, mathlib v4.19.0.
+@@ -94,6 +95,6 @@
+ 
+ end JSP301
+ 
+--- Inspect actual output after a successful run; no output has been obtained yet.
++-- Retain these commands to reproduce the axiom audit.
+ #print axioms JSP301.known_counterexample
+ #print axioms JSP301.catalog_statement_false

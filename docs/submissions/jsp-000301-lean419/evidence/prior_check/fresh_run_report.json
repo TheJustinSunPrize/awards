@@ -1,0 +1,106 @@
+{
+  "started_utc": "2026-09-17T10:08:59.416408+00:00",
+  "source_sha256": "7cef7bb2ddf381d92a6683e996e9db3acf95e4209540c2f93373dc1ab41247d2",
+  "proof_compiled_from_source": true,
+  "tests": [
+    {
+      "name": "01_lean_version",
+      "command": [
+        "/mnt/data/jsp301_recheck_20260917/restored/Lean419_Offline_linux_x86_64/lean-4.19.0-linux/bin/lean",
+        "--version"
+      ],
+      "wrapped_command": [
+        "/usr/bin/python3",
+        "-S",
+        "/mnt/data/jsp301_recheck_20260917/previous_evidence/seccomp_no_network_exec.py",
+        "/mnt/data/jsp301_recheck_20260917/restored/Lean419_Offline_linux_x86_64/lean-4.19.0-linux/bin/lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "seconds": 0.13227544899999089,
+      "stdout": "Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)\n",
+      "stderr": "SECCOMP_GUARD: IPv4 and IPv6 socket creation verified denied (EPERM).\n"
+    },
+    {
+      "name": "02_lake_version",
+      "command": [
+        "/mnt/data/jsp301_recheck_20260917/restored/Lean419_Offline_linux_x86_64/lean-4.19.0-linux/bin/lake",
+        "--version"
+      ],
+      "wrapped_command": [
+        "/usr/bin/python3",
+        "-S",
+        "/mnt/data/jsp301_recheck_20260917/previous_evidence/seccomp_no_network_exec.py",
+        "/mnt/data/jsp301_recheck_20260917/restored/Lean419_Offline_linux_x86_64/lean-4.19.0-linux/bin/lake",
+        "--version"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "seconds": 0.06576237400000196,
+      "stdout": "Lake version 5.0.0-6caaee8 (Lean version 4.19.0)\n",
+      "stderr": "SECCOMP_GUARD: IPv4 and IPv6 socket creation verified denied (EPERM).\n"
+    },
+    {
+      "name": "03_fresh_source",
+      "command": [
+        "/mnt/data/jsp301_recheck_20260917/restored/Lean419_Offline_linux_x86_64/lean-4.19.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--root=/mnt/data/jsp301_recheck_20260917/fresh_proof",
+        "-o",
+        "/mnt/data/jsp301_recheck_20260917/fresh_runs/JSP301.olean",
+        "/mnt/data/jsp301_recheck_20260917/fresh_proof/JSP301.lean"
+      ],
+      "wrapped_command": [
+        "/usr/bin/python3",
+        "-S",
+        "/mnt/data/jsp301_recheck_20260917/previous_evidence/seccomp_no_network_exec.py",
+        "/mnt/data/jsp301_recheck_20260917/restored/Lean419_Offline_linux_x86_64/lean-4.19.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--root=/mnt/data/jsp301_recheck_20260917/fresh_proof",
+        "-o",
+        "/mnt/data/jsp301_recheck_20260917/fresh_runs/JSP301.olean",
+        "/mnt/data/jsp301_recheck_20260917/fresh_proof/JSP301.lean"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "seconds": 11.759984783999982,
+      "stdout": "'JSP301.known_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]\n'JSP301.catalog_statement_false' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "SECCOMP_GUARD: IPv4 and IPv6 socket creation verified denied (EPERM).\nwarning: mathlib: repository '././.lake/packages/mathlib' has local changes\nwarning: batteries: repository '././.lake/packages/batteries' has local changes\n"
+    },
+    {
+      "name": "04_negative_control",
+      "command": [
+        "/mnt/data/jsp301_recheck_20260917/restored/Lean419_Offline_linux_x86_64/lean-4.19.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--root=/mnt/data/jsp301_recheck_20260917/fresh_proof",
+        "/mnt/data/jsp301_recheck_20260917/fresh_proof/NegativeControl.lean"
+      ],
+      "wrapped_command": [
+        "/usr/bin/python3",
+        "-S",
+        "/mnt/data/jsp301_recheck_20260917/previous_evidence/seccomp_no_network_exec.py",
+        "/mnt/data/jsp301_recheck_20260917/restored/Lean419_Offline_linux_x86_64/lean-4.19.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--root=/mnt/data/jsp301_recheck_20260917/fresh_proof",
+        "/mnt/data/jsp301_recheck_20260917/fresh_proof/NegativeControl.lean"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "seconds": 2.346946599000006,
+      "stdout": "/mnt/data/jsp301_recheck_20260917/fresh_proof/NegativeControl.lean:3:36: error: unsolved goals\n\u22a2 False\n",
+      "stderr": "SECCOMP_GUARD: IPv4 and IPv6 socket creation verified denied (EPERM).\nwarning: mathlib: repository '././.lake/packages/mathlib' has local changes\nwarning: batteries: repository '././.lake/packages/batteries' has local changes\n"
+    }
+  ],
+  "limits": "Standard Lean import trust; does not certify all imported libraries independently. Not an official prize review.",
+  "completed_utc": "2026-09-17T10:09:13.723020+00:00",
+  "all_passed": true
+}
