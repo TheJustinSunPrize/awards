@@ -1,0 +1,24 @@
+id: jsp-000737-rosenfeld-bound
+batch: null
+problem:
+  source: https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0701-0800.md#JSP-000737
+  number: JSP-000737
+  title_en: "JSP-000737: Verified Lean formalization of the known Erdős–Rosenfeld fourth-root divisor bound"
+  posed:
+    year: 1997
+    basis: earliest-reference
+    citation: "P. Erdős and M. Rosenfeld, The factor-difference set of integers, Acta Arithmetica 79 (1997), 353–359; Proposition 4.1 and its divisor-count consequence on page 356. https://doi.org/10.4064/aa-79-4-353-359"
+  resolved: null
+decision: null
+recipients:
+  - id: RECIPIENT-JSP-000737-LEAN-A
+    affiliation: ""
+    contribution_en: "AI-assisted Lean 4 formalization and reproducibility evidence for the known Erdős–Rosenfeld fourth-root divisor bound. The original mathematical proof is due to Erdős and Rosenfeld; no new mathematical solution of JSP-000737 or Erdős Problem 886 is claimed."
+    confirmation: null
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: draft
+revocation: null
