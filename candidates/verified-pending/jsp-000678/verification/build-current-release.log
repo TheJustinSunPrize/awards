@@ -1,0 +1,6 @@
+JSP-678 build log
+command: lake env lean Jsp678.lean
+status: SUCCESS (exit 0)
+theorems: Jsp678.value_2_attained ... value_8_attained, several_values_attained
+n+totient(n) values 3,5,6,9,8,13,12 attained
+toolchain: Lean 4.34.0, mathlib 5ed2965256430c3649e86755f9576b54eca72435
