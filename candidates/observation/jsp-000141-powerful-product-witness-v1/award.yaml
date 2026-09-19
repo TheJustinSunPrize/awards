@@ -1,0 +1,20 @@
+id: jsp-000141-powerful-product-witness-v1
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000141"
+  number: "JSP-000141"
+  title_en: "Can a product of consecutive positive integers have every prime factor occurring with exponent at least two?"
+  posed:
+    year: 1980
+    basis: earliest-reference
+    citation: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000141"
+  resolved: null
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
