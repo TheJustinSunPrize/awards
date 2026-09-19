@@ -950,7 +950,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000818 | [Does every prime modulus have a relatively small prime primitive root?](catalog-0801-0900.md#JSP-000818) | Open | No | No | Unavailable |
 | JSP-000819 | [What lower bounds hold for off-diagonal clique Ramsey numbers with one target fixed and the other growing?](catalog-0801-0900.md#JSP-000819) | Solved | No | No | Unavailable |
 | JSP-000820 | [For exponential sums from an arbitrary infinite real sequence, how much growth in partial sums is forced as frequency varies?](catalog-0801-0900.md#JSP-000820) | Solved | Yes | Yes | Unclaimed |
-| JSP-000821 | [As the number of spherical points grows, must discrepancies between cap counts and area predictions be unbounded?](catalog-0801-0900.md#JSP-000821) | Solved | No | No | Unavailable |
+| JSP-000821 | [As the number of spherical points grows, must discrepancies between cap counts and area predictions be unbounded?](catalog-0801-0900.md#JSP-000821) | Solved | Yes | No | Unavailable |
 | JSP-000822 | [Can an infinite discrete planar set have uniformly bounded differences between disk point counts and disk areas? What is the minimum discrepancy scale?](catalog-0801-0900.md#JSP-000822) | Solved | No | No | Unavailable |
 | JSP-000823 | [How far from uniform can the arguments of roots of a sparse polynomial be?](catalog-0801-0900.md#JSP-000823) | Solved | Yes | Yes | Unclaimed |
 | JSP-000824 | [Do spherical configurations maximizing the product of pairwise distances become uniformly distributed as their size grows?](catalog-0801-0900.md#JSP-000824) | Solved | No | No | Unavailable |
