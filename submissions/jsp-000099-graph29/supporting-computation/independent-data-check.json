@@ -1,0 +1,11 @@
+{
+  "witness_line_sha256": "464ffb9db0b700c3ba7104fabbd76e2e338e7276a1c4b1184f67bc9c6692033b",
+  "graph6_decode_agrees": true,
+  "n": 29,
+  "edges": 202,
+  "symmetry": true,
+  "loopless": true,
+  "enumeration_coverage_counts_agree_with_binomial_coefficients": true,
+  "expected_subsets": 536249296,
+  "status": "Supporting computation only; formal checks are separate."
+}

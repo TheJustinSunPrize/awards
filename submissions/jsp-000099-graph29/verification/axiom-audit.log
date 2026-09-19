@@ -1,0 +1,68 @@
+RegularCertificate
+'RegularCertificate.check_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+GraphBridge
+'Erdos82Finite.regular_correspondence' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+MaskCertificate
+'Erdos82Finite.mcheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+CheckpointCertificate
+'Erdos82Finite.fcheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Degree0
+'Erdos82Finite.no_regular_0' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Degree1
+'Erdos82Finite.no_regular_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Degree2
+'Erdos82Finite.no_regular_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Degree3
+'Erdos82Finite.no_regular_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Degree4
+'Erdos82Finite.no_regular_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Degree5
+'Erdos82Finite.no_regular_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Degree6
+'Erdos82Finite.no_regular_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Degree7
+'Erdos82Finite.no_regular_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Degree8
+'Erdos82Finite.no_regular_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Degree9
+'Erdos82Finite.no_regular_9' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Degree10
+'Erdos82Finite.no_regular_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+HighDegrees
+'Erdos82Finite.no_regular_11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_12' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_14' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_15' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_16' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_17' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_18' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_19' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_20' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_21' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_22' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_23' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_24' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_25' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_26' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_27' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.no_regular_28' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Erdos82Finite
+'Erdos82Finite.graph29_no_regular_induced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos82Finite.exists_graph29' depends on axioms: [propext, Classical.choice, Quot.sound]

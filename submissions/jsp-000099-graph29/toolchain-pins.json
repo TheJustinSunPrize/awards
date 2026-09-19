@@ -1,0 +1,27 @@
+{
+  "lean": {
+    "version": "4.34.0",
+    "source": "https://github.com/leanprover/lean4",
+    "commit": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+    "binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554"
+  },
+  "lean4export": {
+    "source": "https://github.com/leanprover/lean4export",
+    "commit": "076e8e57707e813375e8f9da8bf989799ace9680",
+    "binary_sha256": "ad235f7ce3177ea0de2b66316f06361aff890683264c94cb31e91a46eeda60a2"
+  },
+  "nanoda": {
+    "version": "0.4.17",
+    "source": "https://github.com/ammkrn/nanoda_lib",
+    "commit": "4c544ed4099c8227f07d5de77ad1e69fb0740a27",
+    "binary_sha256": "cfd89798e7f5f984f852e2410694e8c4efe1463b613f75e85c8dc904b499e146",
+    "binary_rebuilt_for_this_submission": false,
+    "binary_origin": "Existing local release binary, reused unmodified; source provenance recorded previously and binary hash checked again."
+  },
+  "dependencies": {
+    "manifest": "lake-manifest.json",
+    "mathlib_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+    "compiled_dependency_cache_used": true,
+    "all_dependencies_rebuilt_from_source": false
+  }
+}

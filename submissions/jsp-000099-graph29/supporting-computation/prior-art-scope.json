@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-09-16T17:51:25Z",
+  "official_snapshot": "Public GitHub REST /repos/TheJustinSunPrize/awards/issues?state=all&per_page=100, pages 1\u20132",
+  "official_records": 168,
+  "matching_dedicated_record": [
+    51
+  ],
+  "plby_main_Erdos82_file_found": false,
+  "other_read_source": "LeanGenius82.lean",
+  "limit": "Bounded source review only; does not establish global priority.",
+  "other_matching_record": [
+    24
+  ],
+  "additional_public_search_queries": [
+    "\"Erdos82\" Lean",
+    "\"regular induced subgraphs\" \"Lean\"",
+    "\"Dyson\" \"McKay\" \"Lean\" \"29\"",
+    "\"Pair-Trace Absorption Certificates for Regular Induced Subgraphs\"",
+    "\"Lean\" \"regular induced\" \"29\"",
+    "site:github.com \"Erdos82\" \"theorem\""
+  ],
+  "additional_sources_checked": [
+    {
+      "url": "https://github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/82.lean",
+      "sha256": "3fce8571205ae8828c9f102290b7aaacceaaadedaf99efbda9a87373c5d99bcf",
+      "finding": "Problem statements with placeholders; no 29-vertex witness proof."
+    },
+    {
+      "url": "https://github.com/rjwalters/lean-genius/blob/main/proofs/Proofs/Erdos82Problem.lean",
+      "sha256": "c65f00978224f05e748bbe852d8adc57c2ee89a1c6d8739544a69dae32f076e6",
+      "finding": "Uses assumed Ramsey/literature bounds; no 29-vertex witness proof."
+    }
+  ],
+  "additional_search_result": "No completed exact matching Lean witness located; not an exhaustive code search or global priority claim.",
+  "prepublication_refresh": {
+    "checked_at": "2026-09-16T18:17:28.538634+00:00",
+    "official_records": 176,
+    "matching_dedicated_records": [
+      51
+    ],
+    "other_matching_records": [
+      24
+    ],
+    "completed_matching_PR_found": false
+  }
+}

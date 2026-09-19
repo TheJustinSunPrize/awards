@@ -1,0 +1,7 @@
+# Attribution and tool provenance
+
+- The 29-vertex graph and mathematical lower bound are due to Paul W. Dyson and Brendan D. McKay. The selected factual graph encoding is from their [public data](https://users.cecs.anu.edu.au/~bdm/data/ramsey.html); the mathematical source is [arXiv:2604.08215v3](https://arxiv.org/html/2604.08215v3). Their graph and result are not claimed as new discoveries of this submission.
+- Lean and Mathlib retain their upstream Apache-2.0 licenses and contributor attribution. Dependency sources and binaries are not redistributed in this package; their revisions are pinned in `lean-toolchain` and `lake-manifest.json`.
+- [lean4export](https://github.com/leanprover/lean4export) retains its upstream Apache-2.0 license. The checker logic was not modified. The compatible executable used here is identified in `toolchain-pins.json`.
+- [Nanoda](https://github.com/ammkrn/nanoda_lib) retains its upstream Apache-2.0 license. An existing local executable was reused unmodified, not rebuilt for this submission. Its recorded source provenance and the checked executable hash are in `toolchain-pins.json`.
+- The certificate checker, proof composition, source-generation wrapper, and submission explanation were prepared as an AI-assisted formalization contribution. This package does not redistribute the original research paper or claim ownership of third-party work. Contribution licensing follows the receiving repository's applicable licenses, without expanding rights in third-party material.
