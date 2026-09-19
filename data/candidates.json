@@ -1,4 +1,46 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000690-critical-3chromatic-hypergraph",
+        "batch": null,
+        "problem": {
+          "source": "JSP problem bank",
+          "number": "JSP-000690",
+          "title_en": "Is there a three-uniform, three-chromatic-critical hypergraph with minimum degree at least seven?",
+          "posed": {
+            "year": 1974,
+            "basis": "earliest-reference",
+            "citation": "P. Erdos and L. Lovasz, \"Problems and results on 3-chromatic hypergraphs and some related questions\" (1975), 609--627; bibliographic evidence dates the question to no later than 1974."
+          },
+          "resolved": {
+            "year": 2026
+          }
+        },
+        "decision": null,
+        "recipients": [
+          {
+            "id": "RECIPIENT-JSP-000690-CRITICAL-3CHROMATIC-HYPERGRAPH-A",
+            "affiliation": "",
+            "contribution_en": "Reported solver of the problem in the 2025 preprint \"On an Erdos-Lovasz problem: 3-critical 3-graphs of minimum degree 7\" (arXiv:2512.24850); identity pending written confirmation.",
+            "confirmation": null
+          }
+        ],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "under-verification",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000690-critical-3chromatic-hypergraph",
+      "citation": "# Citation\n\nCandidate review narrative. This entry is a preliminary public candidate under verification. It does not constitute an award, a formal nomination, or a published decision.\n\n## English\n\nJSP-000690 asked whether there exists a 3-uniform, 3-chromatic-critical hypergraph with minimum degree at least seven. The problem bank records the question as posed no later than 1974, originating from P. Erdos and L. Lovasz, \"Problems and results on 3-chromatic hypergraphs and some related questions\" (1975), 609--627.\n\nThe problem bank records the problem as solved, citing the 2025 preprint \"On an Erdos-Lovasz problem: 3-critical 3-graphs of minimum degree 7\" ([arXiv:2512.24850](https://arxiv.org/abs/2512.24850)), with the solution year recorded as 2026. The solver is recorded under a placeholder pending written confirmation.\n\nFormalization evidence, published for substantive review:\n\n- A Lean 4 formalization of the result is publicly available at <https://github.com/klat58688-ui/jsp-000690-proof>, pinned at commit `570b8588d3ca7ede72357a5a4317f88acb285fba`. The proof constructs an explicit 3-uniform hypergraph on 9 vertices and 22 edges with minimum degree 7 that is 3-colorable, not 2-colorable, and critical under removal of any single edge or vertex, with all finite checks decided by computation.\n- Toolchain: Lean v4.15.0 with mathlib pinned at commit `9837ca9d65d9de6fad1ef4381750ca688774e608`.\n- The axiom audit of the top-level theorem reports the standard Lean axioms (propext, Classical.choice, Quot.sound) plus Lean.ofReduceBool, reflecting the use of native_decide for the finite enumerations; no sorry placeholders are present.\n- Two independent checks passed: the Lean kernel itself during a clean build, and the independent lean4checker re-checking tool run in both of its modes across all four modules of the proof.\n- The clean build log (SHA-256 `5725b26137eea93c1c15ab59ca99640d801287b8ab41ab2d617c505b9479c9cc`, 1097 bytes) is retained for permanent external archiving.\n- Formalization attribution: the formalization and its local verification were prepared with AI coding-assistant sessions (TRAE agent) under the direction of the account holder. Mathematical discovery credit remains with the preprint authors.\n\nA structured verification record and a signed formal statement require registered curator and verifier profiles in this repository. Those role directories are not yet populated, so `verification/record.yaml` is null and this candidate remains under verification. No award is claimed or announced by this record.\n",
+      "recipients": "# Recipients\n\n## English\n\nThe solver of JSP-000690 is recorded under the placeholder RECIPIENT-JSP-000690-CRITICAL-3CHROMATIC-HYPERGRAPH-A until written confirmation is received. Public evidence identifies the 2025 preprint \"On an Erdos-Lovasz problem: 3-critical 3-graphs of minimum degree 7\" (arXiv:2512.24850) as the recorded solution. The Lean formalization referenced in the citation was produced independently of the preprint author. No unconfirmed identity, affiliation, contact detail, or private confirmation material is recorded in this repository.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }

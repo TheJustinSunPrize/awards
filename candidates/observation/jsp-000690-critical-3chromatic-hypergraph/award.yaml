@@ -1,0 +1,25 @@
+id: jsp-000690-critical-3chromatic-hypergraph
+batch: null
+problem:
+  source: JSP problem bank
+  number: JSP-000690
+  title_en: Is there a three-uniform, three-chromatic-critical hypergraph with minimum degree at least seven?
+  posed:
+    year: 1974
+    basis: earliest-reference
+    citation: 'P. Erdos and L. Lovasz, "Problems and results on 3-chromatic hypergraphs and some related questions" (1975), 609--627; bibliographic evidence dates the question to no later than 1974.'
+  resolved:
+    year: 2026
+decision: null
+recipients:
+  - id: RECIPIENT-JSP-000690-CRITICAL-3CHROMATIC-HYPERGRAPH-A
+    affiliation: ""
+    contribution_en: 'Reported solver of the problem in the 2025 preprint "On an Erdos-Lovasz problem: 3-critical 3-graphs of minimum degree 7" (arXiv:2512.24850); identity pending written confirmation.'
+    confirmation: null
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
