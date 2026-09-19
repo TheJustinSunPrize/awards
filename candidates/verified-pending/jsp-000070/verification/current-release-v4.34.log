@@ -1,0 +1,62 @@
+# Current-release (v4.34.0) re-verification log — JSP-000070
+Date: 2026-09-17 (session tick 14)
+Performed by: jsp070-verifier (aionrs automated verification run)
+
+## Purpose
+The certification package checkers require `current_release: true` for the Lean
+kernel used to verify `Erdos42.CompactCayley.compact_cayley_clique`. The earlier
+verification used Lean 4.33.0 (pre-release at check time); this run re-verifies
+the same theorem file against the CURRENT released toolchain.
+
+## Environment
+- Toolchain: leanprover/lean4:v4.34.0 (Lean v4.34.0, released 2026-09-01)
+- mathlib: v4.34.0, commit 5ed2965256430c3649e86755f9576b54eca72435
+  (git dep pinned in verify-current/lakefile.lean: require mathlib @ "v4.34.0")
+- Note: mathlib v4.34.0 is NOT present on lakecache.blob.core.windows.net
+  (marker 404); built from source with MATHLIB_CACHE_DISABLE=1
+  (8712 olean modules, build green)
+- OS: windows x86_64; elan-managed toolchain via lake env
+
+## Breaking change addressed (v4.33 -> v4.34)
+`Finset.prod_le_one` / `Finset.prod_le_prod` in v4.34 require
+`[MulLeftMono N]` (CovariantClass N N (·*·) (·≤·)), which cannot be synthesized
+for ℝ (fails for negative multipliers). All 15 call sites in Erdos42.lean were
+rewritten to the nonneg variants `Finset.prod_le_one₀` / `Finset.prod_le_prod₀`
+from Mathlib/Algebra/Order/BigOperators/GroupWithZero/Finset.lean, which take an
+explicit `∀ i ∈ s, 0 ≤ f i` argument and only require
+`[CommMonoidWithZero R] [Preorder R] [ZeroLEOneClass R] [PosMulMono R]`
+(all satisfied by ℝ). No mathematical content changed; the added hypotheses are
+norm/abs nonnegativity and existing pointwise nonnegativity facts already in
+context.
+
+## Build command
+  cd verify-current
+  set MATHLIB_CACHE_DISABLE=1
+  lake env lean -o .lake/build/lib/lean/Erdos42.olean Erdos42.lean
+
+Result: exit code 0. Erdos42.olean produced.
+Only warnings: deprecated import path (Mathlib.Data.Real.Basic) and
+deprecation of if_neg usage (pre-existing in the upstream file, non-fatal).
+
+## Axiom audit (`#print axioms`, kernel-checked)
+All five entrypoints depend only on the standard library axioms:
+
+  Erdos42.CompactCayley.compact_cayley_clique
+    [propext, Classical.choice, Quot.sound]
+  Erdos42.CompactCayley.theorem_1_1_from_compact_cayley
+    [propext, Classical.choice, Quot.sound]
+  Erdos42.theorem_1_1_via_cayley
+    [propext, Classical.choice, Quot.sound]
+  Erdos42.erdos_42_via_cayley
+    [propext, Classical.choice, Quot.sound]
+  Erdos42.FormalConjecturesShape.erdos_42_via_cayley
+    [propext, Classical.choice, Quot.sound]
+
+No sorryAx, no user axioms, no unsafe declarations.
+
+## Artifacts
+- verify-current/Erdos42.olean (v4.34.0 build)
+- verify-current/ScratchTC.lean (typeclass sanity checks, v4.34.0)
+- Upstream pinned file: Erdos42.lean at repository commit
+  1268917deaaaa0d674f651287027baa26cea9920 (https://github.com/plby/lean-proofs),
+  mechanically patched for the v4.34 API change as described above.
