@@ -1,0 +1,26 @@
+id: jsp-000363
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 363
+  title_en: "Proportion of integers with a divisor in a short interval"
+  posed:
+    year: 1934
+    basis: stated
+    citation: "catalog JSP-000363 ([Be34] On the density of certain sequences of integers)"
+  resolved: null
+recipients:
+  - id: shiqiang-chen
+    affiliation: "Independent researcher"
+    contribution_en: "Constructive scoped Lean formalization: a positive integer has no divisor in [2,4] iff it is not divisible by 2 and not by 3 (4|n implies 2|n), giving the exact complementary set (theorems Jsp363.has_divisor24_iff_23, no_divisor24_iff), verified against Lean v4.34.0 / mathlib v4.34.0."
+    confirmation: "https://github.com/shunfeng8421"
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null

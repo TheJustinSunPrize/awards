@@ -1,0 +1,26 @@
+id: jsp-000678
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 678
+  title_en: "Positive density of the values of an integer plus its totient"
+  posed:
+    year: 2024
+    basis: stated
+    citation: "catalog JSP-000678 ([GIL24] Numbers of the form k+f(k), J. Number Theory 2024, 58–85)"
+  resolved: null
+recipients:
+  - id: shiqiang-chen
+    affiliation: "Independent researcher"
+    contribution_en: "Constructive scoped Lean formalization: explicit values attained by n+totient(n) — 2+phi(2)=3, 3+phi(3)=5, ..., 8+phi(8)=12 (theorems Jsp678.value_*_attained), verified by native_decide against Lean v4.34.0 / mathlib v4.34.0."
+    confirmation: "https://github.com/shunfeng8421"
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null

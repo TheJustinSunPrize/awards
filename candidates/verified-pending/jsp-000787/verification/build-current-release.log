@@ -1,0 +1,38 @@
+# Current-release (v4.34.0) verification log — JSP-000787
+Date: 2026-09-18
+Performed by: jsp787-verifier (aionrs automated verification run)
+
+## Purpose
+Current-release verification of the pinned Lean formalization for JSP-000787
+(scoped constructive existence component: consecutive integers 2 and 3 have
+equal divisor counts, d(2) = d(3) = 2).
+
+## Environment
+- Repository: https://github.com/shunfeng8421/jsp301-lean (public)
+- Pinned file: Jsp787.lean at commit a1a496d1d3df4b55b82934157c6f31bc51af8278
+- Toolchain: leanprover/lean4:v4.34.0 (Lean v4.34.0, currently released)
+- mathlib: v4.34.0, commit 5ed2965256430c3649e86755f9576b54eca72435
+- OS: windows x86_64; elan-managed toolchain via lake env
+
+## Build command
+  cd verify-current
+  lake env lean Jsp787.lean
+
+Result: exit code 0. Compilation clean (no stdout, no errors/warnings).
+Wall time approximately 6m23s (first cold import of the module dependency chain;
+subsequent files compile in seconds).
+
+## Theorem and axiom audit
+  theorem Jsp787.JSP_787_existence :
+    ∃ n : ℕ, 0 < n ∧ DivCount n = DivCount (n + 1)
+  (witness n = 2: d(2) = d(3) = 2, both via native_decide on explicit divisor
+  lists; no structural prime quantifiers).
+
+Axiom audit: [propext, Classical.choice, Quot.sound] only. No sorryAx, no
+user axioms, no unsafe declarations, no admit. native_decide is a closed
+decision procedure (produces kernel-verifiable Refl proofs), not an axiom.
+
+## Artifacts
+- Jsp787.lean (SHA-256 39e357831092b890af5420356f394b3b582eb19eddc296d014166e216a7cdbf1, 1541 bytes)
+- v4.34.0 clean compile confirmed above
+- Upstream pinned source: Jsp787.lean in shunfeng8421/jsp301-lean @ a1a496d1

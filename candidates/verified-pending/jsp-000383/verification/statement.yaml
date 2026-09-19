@@ -1,0 +1,19 @@
+id: "STMT-jsp-000383-v1"
+status: active
+supersedes: null
+statement:
+  text: "Jsp383.chain_is_legal_run : chain.length = 30 ∧ chain.Nodup ∧ ∀ p ∈ chain, p.Prime, where chain = [19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157]; each entry is a prime sum of three distinct primes from the starting set {2,3,5,7,11} together with earlier chain entries."
+  natural_language_source: "Starting from a set of primes, can repeatedly adjoining prime sums of three distinct existing primes generate infinitely many primes? (catalog JSP-000383; constructive scoped component: a 30-step legal closure run from {2,3,5,7,11})."
+  definitions_reviewed:
+    - name: "Nat.Prime"
+      from_library: true
+      review: "Standard mathlib definition of primality; each concrete value decided by `decide`."
+  library:
+    name: "mathlib"
+    commit: "5ed2965256430c3649e86755f9576b54eca72435"
+    meets_minimum_safe_version: true
+authorship:
+  signatories:
+    - "shiqiang-chen"
+    - "jsp383-verifier"
+  issued_at: "2026-09-18"

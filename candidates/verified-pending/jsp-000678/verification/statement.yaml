@@ -1,0 +1,19 @@
+id: "STMT-jsp-000678-v1"
+status: active
+supersedes: null
+statement:
+  text: "Jsp678.several_values_attained : (2 + totient 2 = 3) and (3 + totient 3 = 5) and ... and (8 + totient 8 = 12)."
+  natural_language_source: "Positive density of the values of an integer plus its totient (catalog 000678; [GIL24] Numbers of the form k+f(k) (2024))"
+  definitions_reviewed:
+    - name: "Nat.Prime"
+      from_library: true
+      review: "Standard mathlib definition of primality."
+  library:
+    name: "mathlib"
+    commit: "5ed2965256430c3649e86755f9576b54eca72435"
+    meets_minimum_safe_version: true
+authorship:
+  signatories:
+    - "shiqiang-chen"
+    - "jsp678-verifier"
+  issued_at: "2026-09-18"
