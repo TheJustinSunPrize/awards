@@ -1,0 +1,18 @@
+import ProductDeficit
+
+#check ProductDeficit.finite_bound
+#check ProductDeficit.sqrt_bound
+#check ProductDeficit.avoids_of_distinct_blocks
+#check ProductDeficit.sequence_sqrt_bound
+#check ProductDeficit.distinct_blocks_iff_injOn
+#check ProductDeficit.original_statement_bound
+#check ProductDeficit.coefficient_one_bound
+#check ProductDeficit.sequence_coefficient_one_bound
+#print axioms ProductDeficit.finite_bound
+#print axioms ProductDeficit.sqrt_bound
+#print axioms ProductDeficit.avoids_of_distinct_blocks
+#print axioms ProductDeficit.sequence_sqrt_bound
+#print axioms ProductDeficit.distinct_blocks_iff_injOn
+#print axioms ProductDeficit.original_statement_bound
+#print axioms ProductDeficit.coefficient_one_bound
+#print axioms ProductDeficit.sequence_coefficient_one_bound

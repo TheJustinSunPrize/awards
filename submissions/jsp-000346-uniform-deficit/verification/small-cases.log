@@ -1,0 +1,101 @@
+{
+  "cutoffs": [
+    {
+      "N": 0,
+      "qualifying_sets": 1,
+      "minimum_deficit": 0
+    },
+    {
+      "N": 1,
+      "qualifying_sets": 2,
+      "minimum_deficit": 0
+    },
+    {
+      "N": 2,
+      "qualifying_sets": 3,
+      "minimum_deficit": 1
+    },
+    {
+      "N": 3,
+      "qualifying_sets": 5,
+      "minimum_deficit": 1
+    },
+    {
+      "N": 4,
+      "qualifying_sets": 9,
+      "minimum_deficit": 1
+    },
+    {
+      "N": 5,
+      "qualifying_sets": 17,
+      "minimum_deficit": 1
+    },
+    {
+      "N": 6,
+      "qualifying_sets": 29,
+      "minimum_deficit": 2
+    },
+    {
+      "N": 7,
+      "qualifying_sets": 57,
+      "minimum_deficit": 2
+    },
+    {
+      "N": 8,
+      "qualifying_sets": 105,
+      "minimum_deficit": 2
+    },
+    {
+      "N": 9,
+      "qualifying_sets": 209,
+      "minimum_deficit": 2
+    },
+    {
+      "N": 10,
+      "qualifying_sets": 401,
+      "minimum_deficit": 2
+    },
+    {
+      "N": 11,
+      "qualifying_sets": 801,
+      "minimum_deficit": 2
+    },
+    {
+      "N": 12,
+      "qualifying_sets": 1377,
+      "minimum_deficit": 3
+    },
+    {
+      "N": 13,
+      "qualifying_sets": 2753,
+      "minimum_deficit": 3
+    },
+    {
+      "N": 14,
+      "qualifying_sets": 5441,
+      "minimum_deficit": 3
+    },
+    {
+      "N": 15,
+      "qualifying_sets": 10113,
+      "minimum_deficit": 3
+    },
+    {
+      "N": 16,
+      "qualifying_sets": 20097,
+      "minimum_deficit": 3
+    },
+    {
+      "N": 17,
+      "qualifying_sets": 40193,
+      "minimum_deficit": 3
+    },
+    {
+      "N": 18,
+      "qualifying_sets": 78081,
+      "minimum_deficit": 3
+    }
+  ],
+  "total_sets_enumerated": 524287,
+  "boundary_controls": 3
+}

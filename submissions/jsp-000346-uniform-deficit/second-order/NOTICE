@@ -1,0 +1,11 @@
+New Lean and Python source is released under MIT by public account green3sf,
+with GPT/Codex assistance. This continues the submitter's earlier PR #470.
+
+The adjacent-product obstruction originates in the prior mathematical work
+summarized by Kyle Pratt. The competing inverse-factorial improvement by KunHcz
+(PR #457) is explicitly credited. No code from that submission is incorporated.
+The claimed scope is the second-order refinement detailed in PRIOR_ART.md,
+without a worldwide originality claim.
+
+The verification harness adapts the submitter's earlier packages. Lean, Mathlib
+and transitive dependencies retain their own licenses and are obtained separately.
