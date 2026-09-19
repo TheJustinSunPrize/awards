@@ -1,4 +1,107 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000252-lean",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000252",
+          "number": "000252",
+          "title_en": "Lean 4 + Mathlib formalization for JSP-000252",
+          "posed": {
+            "year": 1980,
+            "basis": "earliest-reference",
+            "citation": "See catalog entry for JSP-000252"
+          },
+          "resolved": {
+            "year": 2026
+          }
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "draft",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000252-lean",
+      "citation": "# Citation\n\n## English\n\nPending Lean formalization submission for JSP-000252, contributed by TanHao (doge@tidalboundary.fun).\n\nContribution role: **Lean formalization**. This is a candidate record awaiting maintainer verification.\n\nLean proof repository: https://github.com/doge-th/jsp-lean-proofs\nTarget file: proofs/JSP-000252.lean\nToolchain: Lean 4.35.0-rc1 + Mathlib4\n\nNo award is claimed at this stage. The record awaits independent verification per the lean-verify skill.\n",
+      "recipients": "# Recipients\n\n## English\n\nRECIPIENT-jsp-000252-lean-A (placeholder pending written confirmation).\n\nContribution: Lean 4 + Mathlib formalization for JSP-000252.\n",
+      "verification_record": null,
+      "statement": null
+    },
+    {
+      "entry": {
+        "id": "jsp-000307-lean",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000307",
+          "number": "000307",
+          "title_en": "Lean 4 + Mathlib formalization for JSP-000307",
+          "posed": {
+            "year": 1980,
+            "basis": "earliest-reference",
+            "citation": "See catalog entry for JSP-000307"
+          },
+          "resolved": {
+            "year": 2026
+          }
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "draft",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000307-lean",
+      "citation": "# Citation\n\n## English\n\nPending Lean formalization submission for JSP-000307, contributed by TanHao (doge@tidalboundary.fun).\n\nContribution role: **Lean formalization**. This is a candidate record awaiting maintainer verification.\n\nLean proof repository: https://github.com/doge-th/jsp-lean-proofs\nTarget file: proofs/JSP-000307.lean\nToolchain: Lean 4.35.0-rc1 + Mathlib4\n\nNo award is claimed at this stage. The record awaits independent verification per the lean-verify skill.\n",
+      "recipients": "# Recipients\n\n## English\n\nRECIPIENT-jsp-000307-lean-A (placeholder pending written confirmation).\n\nContribution: Lean 4 + Mathlib formalization for JSP-000307.\n",
+      "verification_record": null,
+      "statement": null
+    },
+    {
+      "entry": {
+        "id": "jsp-000323-lean",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000323",
+          "number": "000323",
+          "title_en": "Lean 4 + Mathlib formalization for JSP-000323",
+          "posed": {
+            "year": 1980,
+            "basis": "earliest-reference",
+            "citation": "See catalog entry for JSP-000323"
+          },
+          "resolved": {
+            "year": 2026
+          }
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "draft",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000323-lean",
+      "citation": "# Citation\n\n## English\n\nPending Lean formalization submission for JSP-000323, contributed by TanHao (doge@tidalboundary.fun).\n\nContribution role: **Lean formalization**. This is a candidate record awaiting maintainer verification.\n\nLean proof repository: https://github.com/doge-th/jsp-lean-proofs\nTarget file: proofs/JSP-000323.lean\nToolchain: Lean 4.35.0-rc1 + Mathlib4\n\nNo award is claimed at this stage. The record awaits independent verification per the lean-verify skill.\n",
+      "recipients": "# Recipients\n\n## English\n\nRECIPIENT-jsp-000323-lean-A (placeholder pending written confirmation).\n\nContribution: Lean 4 + Mathlib formalization for JSP-000323.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }
