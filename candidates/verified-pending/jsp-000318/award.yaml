@@ -1,0 +1,27 @@
+id: jsp-000318
+batch: null
+problem:
+  source: "Erdos problems list"
+  number: 318
+  title_en: "How far beyond an interval's right endpoint can a composite integer in that interval plus its least prime factor lie?"
+  posed:
+    year: 1979
+    basis: earliest-reference
+    citation: "catalog JSP-000318 (Erdős problem, proposed no later than 1979, bibliographic evidence)"
+  resolved:
+    year: 2026
+recipients:
+  - id: shiqiang-chen
+    affiliation: "Independent researcher"
+    contribution_en: "Complete Lean formalization proving the excess is unbounded: for every interval length d and target T, pick a prime p > T with d < p; n = p^2 lies in [p^2-d, p^2], its least prime factor is p, and n + lpf(n) = p^2+p exceeds the right endpoint by p > T units (theorem JSP318.jsp000318_excess_unbounded), verified against Lean v4.34.0 / mathlib v4.34.0."
+    confirmation: "https://github.com/shunfeng8421"
+verification:
+  peer_review: null
+  formal:
+    record: verification/record.yaml
+    statement: verification/statement.yaml
+  independent_review: null
+conflicts: []
+status: pending-recipient-confirmation
+revocation: null
+decision: null

@@ -1,0 +1,16 @@
+JSP-000318 current-release verification build log
+Generated: 2026-09-20 by jsp318-verifier
+--- lake env lean Jsp318.lean ---
+Jsp318Local.lean:27:28: warning: Variable name `hp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Jsp318Local.lean:47:32: warning: Variable name `hd` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hd
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+LEAN_EXIT=0
