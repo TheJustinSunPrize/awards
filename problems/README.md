@@ -1063,7 +1063,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000926 | [How short can a path to infinity be along which a given entire function tends to infinity?](catalog-0901-1000.md#JSP-000926) | Solved | No | No | Unavailable |
 | JSP-000927 | [Under the stated conditions, can a meromorphic function's counts of taking two distinct values have arbitrarily extreme ratios?](catalog-0901-1000.md#JSP-000927) | Solved | No | No | Unavailable |
 | JSP-000928 | [At how many points of one circle can an entire function attain its maximum modulus?](catalog-0901-1000.md#JSP-000928) | Open | No | No | Unavailable |
-| JSP-000929 | [How fast must an entire function grow if the region above a prescribed modulus threshold has finite area?](catalog-0901-1000.md#JSP-000929) | Solved | No | No | Unavailable |
+| JSP-000929 | [How fast must an entire function grow if the region above a prescribed modulus threshold has finite area?](catalog-0901-1000.md#JSP-000929) | Solved | Yes | No | Unavailable |
 | JSP-000930 | [How large can a family of entire functions be if the number of possible values at each point is restricted?](catalog-0901-1000.md#JSP-000930) | Solved | No | No | Unavailable |
 | JSP-000931 | [Within the specified polynomial modulus region, how short a path joins the origin to the unit circle?](catalog-0901-1000.md#JSP-000931) | Open | No | No | Unavailable |
 | JSP-000932 | [If an additive arithmetic function is nondecreasing outside a zero-density exception set, must it be a constant multiple of the logarithm?](catalog-0901-1000.md#JSP-000932) | Open | No | No | Unavailable |
