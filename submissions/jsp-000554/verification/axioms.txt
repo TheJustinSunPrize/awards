@@ -1,0 +1,5 @@
+'jsp_000554' depends on axioms: [propext, Classical.choice, Quot.sound]
+'jsp_000554_not_forall' depends on axioms: [propext, Classical.choice, Quot.sound]
+'sexy_gap_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'jsp_000554_first_rough_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+No sorryAx present. decide calls are kernel-reduced.
