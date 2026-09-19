@@ -1,0 +1,13 @@
+{
+  "original_definition": "verbatim match with pinned Formal Conjectures source",
+  "definition_sha256": "79a211a8ac4f919fda1776eef47fdbabcc66c9ce4455ffbb3eff1b82b7a0dee7",
+  "proof_source_scan": "no placeholders, custom axioms, native_decide, or run_meta",
+  "local_markdown_links": [
+    "README.md:STATEMENT.md",
+    "README.md:PRIOR_ART.md",
+    "README.md:evidence/verification.json",
+    "README.md:evidence/kernel-replay.json"
+  ],
+  "mathlib_source_rebuild": "not performed; pinned upstream cache used",
+  "independent_human_review": "pending"
+}

@@ -1,0 +1,2 @@
+placeholder.lean:1:8: warning: declaration uses `sorry`
+'Erdos835.property_successor_prime' depends on axioms: [sorryAx]

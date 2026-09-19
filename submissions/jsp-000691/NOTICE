@@ -1,0 +1,11 @@
+JSP-000691 composite-successor obstruction formalization
+
+Mathematical result: Jie Ma and Quanyu Tang, On Problem 835.
+
+The definition Erdos835.Property is reproduced from FormalConjectures/ErdosProblems/835.lean.
+Copyright 2025 The Formal Conjectures Authors.
+Licensed under the Apache License, Version 2.0; see LICENSE.
+Source revision: 40e7c98697de6f66b8cbdbf641749ab39ed9c152.
+
+The remaining proof implementation is new code, distributed under Apache-2.0.
+The package uses mathlib; its copyright notices and licence remain in the pinned dependency.
