@@ -1,0 +1,4 @@
+'jsp_000697' depends on axioms: [propext, Classical.choice, Quot.sound]
+'jsp_000697_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'isLeast_squareProduct_40' depends on axioms: [propext, Classical.choice, Quot.sound]
+No sorryAx present. decide calls are kernel-reduced.
