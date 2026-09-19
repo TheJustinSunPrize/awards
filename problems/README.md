@@ -1060,7 +1060,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000933 | [Are the Boolean algebras of integer sets modulo zero natural density and modulo zero logarithmic density isomorphic?](catalog-0901-1000.md#JSP-000933) | Solved | No | No | Unavailable |
 | JSP-000934 | [Can a square and a disk of equal area be partitioned into finitely many pieces and reassembled into each other using the prescribed rigid motions?](catalog-0901-1000.md#JSP-000934) | Solved | No | No | Unavailable |
 | JSP-000935 | [Can Euclidean space be partitioned into countably many sets each having all pairwise distances distinct?](catalog-0901-1000.md#JSP-000935) | Solved | No | No | Unavailable |
-| JSP-000936 | [Which Lagrange interpolation nodes minimize the maximum amplification of input errors?](catalog-0901-1000.md#JSP-000936) | Solved | No | No | Unavailable |
+| JSP-000936 | [Which Lagrange interpolation nodes minimize the maximum amplification of input errors?](catalog-0901-1000.md#JSP-000936) | Solved | Yes | No | Unavailable |
 | JSP-000937 | [Which interpolation nodes maximize the smallest peak error-amplification factor among intervals between consecutive nodes?](catalog-0901-1000.md#JSP-000937) | Solved | No | No | Unavailable |
 | JSP-000938 | [What is the minimum sum of squared integrals of the Lagrange basis functions?](catalog-0901-1000.md#JSP-000938) | Open | No | No | Unavailable |
 | JSP-000939 | [For interpolation built from successive initial segments of an infinite node sequence, what lower bound must the amplification factor satisfy at a fixed point?](catalog-0901-1000.md#JSP-000939) | Open | No | No | Unavailable |
