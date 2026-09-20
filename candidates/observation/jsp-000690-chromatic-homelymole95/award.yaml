@@ -1,0 +1,25 @@
+id: jsp-000690-chromatic-homelymole95
+batch: null
+problem:
+  source: JSP problem bank
+  number: JSP-000690
+  title_en: Is there a three-uniform, three-chromatic-critical hypergraph with minimum degree at least seven?
+  posed:
+    year: 1974
+    basis: earliest-reference
+    citation: "The JSP-000690 catalog records 'No later than 1974 (bibliographic evidence)'; P. Erdős and L. Lovász, Problems and results on 3-chromatic hypergraphs and some related questions (1975), 609–627. The year is an upper bound, not an exact date."
+  resolved:
+    year: 2025
+decision: null
+recipients:
+  - id: RECIPIENT-JSP-000690-A
+    affiliation: ""
+    contribution_en: "Lean 4 and Mathlib formalization of the chromatic interpretation of JSP-000690, using Ruiliang Li's mathematical construction; the public proof is pinned at commit 4dc3c7ebce6bb7fbdff6575c14a77c1e068d18e5. Attribution and independent prize verification remain under review."
+    confirmation: null
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: under-verification
+revocation: null
