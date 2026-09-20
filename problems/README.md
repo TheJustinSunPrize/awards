@@ -577,7 +577,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000465 | [For a forbidden family containing a bipartite graph, can the asymptotic extremal problem be reduced to forbidding a single graph?](catalog-0401-0500.md#JSP-000465) | Solved | No | No | Unavailable |
 | JSP-000466 | [How many edges can a graph have while excluding a hypercube of prescribed dimension?](catalog-0401-0500.md#JSP-000466) | Open | No | No | Unavailable |
 | JSP-000467 | [What minimum degree forces a spanning collection of vertex-disjoint four-cycles?](catalog-0401-0500.md#JSP-000467) | Solved | No | No | Unavailable |
-| JSP-000468 | [Under suitable parameters, does a random graph contain a spanning hypercube with probability tending to one?](catalog-0401-0500.md#JSP-000468) | Solved | No | No | Unavailable |
+| JSP-000468 | [Under suitable parameters, does a random graph contain a spanning hypercube with probability tending to one?](catalog-0401-0500.md#JSP-000468) | Solved | Yes | No | Unavailable |
 | JSP-000469 | [Must a dense graph excluding a prescribed complete tripartite graph contain a sufficiently large independent set?](catalog-0401-0500.md#JSP-000469) | Open | No | No | Unavailable |
 | JSP-000470 | [If at least half the vertices have sufficiently large degree, must a graph contain every tree of a prescribed order?](catalog-0401-0500.md#JSP-000470) | Open | No | No | Unavailable |
 | JSP-000471 | [How many edges can always be retained in a bipartite subgraph of a triangle-free graph?](catalog-0401-0500.md#JSP-000471) | Solved | No | No | Unavailable |
