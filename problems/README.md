@@ -975,7 +975,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000849 | [Must every dense graph contain a nontrivial maximal planar subgraph?](catalog-0801-0900.md#JSP-000849) | Solved | No | No | Unavailable |
 | JSP-000850 | [Maximum edge counts in uniform hypergraphs with bounded matchings](catalog-0801-0900.md#JSP-000850) | Open | No | No | Unavailable |
 | JSP-000851 | [How many edges can a graph have while excluding a complete graph with every edge subdivided once?](catalog-0801-0900.md#JSP-000851) | Solved | No | No | Unavailable |
-| JSP-000852 | [How large an independent set is guaranteed in a three-uniform hypergraph whose edges intersect pairwise in at most one vertex?](catalog-0801-0900.md#JSP-000852) | Solved | No | No | Unavailable |
+| JSP-000852 | [How large an independent set is guaranteed in a three-uniform hypergraph whose edges intersect pairwise in at most one vertex?](catalog-0801-0900.md#JSP-000852) | Solved | Yes | No | Unavailable |
 | JSP-000853 | [How large a free set is guaranteed for the specified mapping from element pairs to sets?](catalog-0801-0900.md#JSP-000853) | Solved | No | No | Unavailable |
 | JSP-000854 | [How many vertex subsets meet every hyperedge while containing none of them in full?](catalog-0801-0900.md#JSP-000854) | Solved | No | No | Unavailable |
 | JSP-000855 | [Can the classical exponential lower bound for diagonal Ramsey numbers be improved by an unbounded factor?](catalog-0801-0900.md#JSP-000855) | Open | No | No | Unavailable |
