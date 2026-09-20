@@ -774,7 +774,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000658 | [Does a graph with small independence number contain a small but dense subgraph?](catalog-0601-0700.md#JSP-000658) | Solved | No | No | Unavailable |
 | JSP-000659 | [How large an independent set is guaranteed by average degree in a graph excluding a prescribed clique?](catalog-0601-0700.md#JSP-000659) | Open | No | No | Unavailable |
 | JSP-000660 | [Does every dense graph contain a sufficiently dense subgraph whose vertex degrees are comparable?](catalog-0601-0700.md#JSP-000660) | Solved | No | No | Unavailable |
-| JSP-000661 | [If every local part has a large independent set, how large an independent set must the whole graph have?](catalog-0601-0700.md#JSP-000661) | Solved | No | No | Unavailable |
+| JSP-000661 | [If every local part has a large independent set, how large an independent set must the whole graph have?](catalog-0601-0700.md#JSP-000661) | Solved | Yes | No | Unavailable |
 | JSP-000662 | [Can every medium-size subgraph of a graph contain both a large clique and a large independent set?](catalog-0601-0700.md#JSP-000662) | Open | No | No | Unavailable |
 | JSP-000663 | [Can an integer set of square-root-scale size be covered by the two-term sumset of a smaller set?](catalog-0601-0700.md#JSP-000663) | Solved | No | No | Unavailable |
 | JSP-000664 | [How many complete bipartite graphs are typically needed to partition a random graph's edges?](catalog-0601-0700.md#JSP-000664) | Solved | No | No | Unavailable |
