@@ -1,5 +1,5 @@
 repository: "https://github.com/shunfeng8421/jsp301-lean"
-commit: "e8872b9b405206ce100f5131a9ce744a6f0c9d32"
+commit: "8de5b93406f89c279034fe84a7ab140255f1e10d"
 toolchain:
   language: Lean
   language_version: "4.34.0"
@@ -29,9 +29,9 @@ statement_comparison:
   statement_id: "STMT-jsp-000391-v1"
   theorem_name: "Jsp391.d_mem_zero_one"
   result: equivalent
-  basis: "The theorem d_mem_zero_one states exactly that the Graham-Pollak quantity d_n = u_{2n+1} - 2*u_{2n-1} is a binary digit (0 or 1) for n >= 2 — the core of the Graham-Pollak digit phenomenon, where d_n is the nth binary digit of sqrt 2. This is the integer-only closed-form formalization (step u = Nat.sqrt(2u(u+1)) = floor(sqrt 2 (u + 1/2))), matching the informal problem statement."
+  basis: "The theorem d_mem_zero_one states exactly that the Graham-Pollak quantity d_n = u_{2n+1} - 2*u_{2n-1} is a binary digit (0 or 1) for n >= 2 — the core of the Graham-Pollak digit phenomenon, where d_n is the nth binary digit of sqrt 2. This is the integer-only closed-form formalization (step u = Nat.sqrt(2u(u+1)) = floor(sqrt 2 (u + 1/2))). At commit 8de5b93 the native_decide axiom was eliminated: u 3 = 3 is proved explicitly, so the target depends only on standard axioms [propext, Classical.choice, Quot.sound]."
   performed_by: "jsp391-verifier"
-  performed_at: "2026-09-18"
+  performed_at: "2026-09-20"
 checkers:
   - name: "Lean kernel (lean)"
     version: "4.34.0"
@@ -52,13 +52,13 @@ sandbox:
     memory: "unlimited"
   unprivileged_user: true
 attribution:
-  proof_route: "complete Graham-Pollak digit formalization (d_n in {0,1}); formalization by Shiqiang Chen"
+  proof_route: "complete Graham-Pollak digit formalization (d_n in {0,1}); formalization by Shiqiang Chen; verified at commit 8de5b93 after native_decide elimination"
   third_party: false
-  note_en: "Complete Lean 4 formalization of the Graham-Pollak digit phenomenon: d_n = u_{2n+1}-2*u_{2n-1} in {0,1} (binary digits of sqrt 2), with full proof chain, 0 sorry/admit. scoped to the core digit-binary claim."
+  note_en: "Complete Lean 4 formalization of the Graham-Pollak digit phenomenon: d_n = u_{2n+1}-2*u_{2n-1} in {0,1} (binary digits of sqrt 2), full proof chain, 0 sorry/admit, axioms [propext, Classical.choice, Quot.sound]."
 artifacts:
   build_log:
-    archive: "candidates/verified-pending/000391/verification/build-current-release.log"
+    archive: "candidates/verified-pending/jsp-000391/verification/build-current-release.log"
     sha256: "18fa968270543408a0c5b875dcbf8e3d9a630ab30fe198b7daf6fe04f1fbd677"
     bytes: 456
 performed_by: "jsp391-verifier"
-performed_at: "2026-09-18"
+performed_at: "2026-09-20"

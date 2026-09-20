@@ -38,11 +38,11 @@
         "decision": null
       },
       "source_path": "candidates/verified-pending/jsp-000391",
-      "citation": "# Candidate citation: 000391\n\n## English\n\nFloor recurrence generating digits of an algebraic number (Graham-Pollak) (catalog 000391; [GrPo70] Note on a nonlinear recurrence related to sqrt 2 (1970); [St05] J. Integer Seq. 2005).\n\nStatus of this candidate record:\n\n- Mathematical status: solved.\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `e8872b9b405206ce100f5131a9ce744a6f0c9d32`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nScoped constructive component (2026-09-18):\n\n1. Theorems Jsp391.d_mem_zero_one, Jsp391.step_step_digit, Jsp391.u_strict_mono are provided.\n2. Axiom audit reports exactly `[propext, Classical.choice, Quot.sound]`; no\n   `sorry`/`admit`/`axiom`.\n\nComplete Lean 4 formalization of the Graham-Pollak digit phenomenon: d_n = u_{2n+1}-2*u_{2n-1} in {0,1} (binary digits of sqrt 2), with full proof chain, 0 sorry/admit. scoped to the core digit-binary claim.\n\nSee `verification/record.yaml`, `verification/statement.yaml`, and\n`verification/build-current-release.log`.\n",
+      "citation": "# Candidate citation: 000391\n\n## English\n\nFloor recurrence generating digits of an algebraic number (Graham-Pollak) (catalog 000391; [GrPo70] Note on a nonlinear recurrence related to sqrt 2 (1970); [St05] J. Integer Seq. 2005).\n\nStatus of this candidate record:\n\n- Mathematical status: solved.\n- Lean formalization: available (formalization contributor: Shiqiang Chen,\n  independent researcher) in the public repository\n  `github.com/shunfeng8421/jsp301-lean` at commit `8de5b93406f89c279034fe84a7ab140255f1e10d`.\n- Eligible to claim: yes, subject to independent verification and review.\n\nScoped constructive component (2026-09-18):\n\n1. Theorems Jsp391.d_mem_zero_one, Jsp391.step_step_digit, Jsp391.u_strict_mono are provided.\n2. Axiom audit reports exactly `[propext, Classical.choice, Quot.sound]`; no\n   `sorry`/`admit`/`axiom`.\n\nComplete Lean 4 formalization of the Graham-Pollak digit phenomenon: d_n = u_{2n+1}-2*u_{2n-1} in {0,1} (binary digits of sqrt 2), with full proof chain, 0 sorry/admit. scoped to the core digit-binary claim.\n\nSee `verification/record.yaml`, `verification/statement.yaml`, and\n`verification/build-current-release.log`.\n",
       "recipients": "# Recipients — 000391\n\n## English\n\nConfirmed recipient (written confirmation provided 2026-09-18 via this\nrecords repository; public profile https://github.com/shunfeng8421):\n\n- **shiqiang-chen** — Shiqiang Chen (陈世强), independent researcher.\n  Contribution: Complete Lean 4 formalization of the Graham-Pollak digit phenomenon: d_n = u_{2n+1}-2*u_{2n-1} in {0,1} (binary digits of sqrt 2), with full proof chain, 0 sorry/admit. scoped to the core digit-binary claim.\n\n## 中文\n\n已书面确认收件人（2026-09-18，公开主页 https://github.com/shunfeng8421）：\n\n- **shiqiang-chen** — 陈世强（Shiqiang Chen），独立研究员。贡献：Complete Lean 4 formalization of the Graham-Pollak digit phenomenon: d_n = u_{2n+1}-2*u_{2n-1} in {0,1} (binary digits of sqrt 2), with full proof chain, 0 sorry/admit. scoped to the core digit-binary claim.\n",
       "verification_record": {
         "repository": "https://github.com/shunfeng8421/jsp301-lean",
-        "commit": "e8872b9b405206ce100f5131a9ce744a6f0c9d32",
+        "commit": "8de5b93406f89c279034fe84a7ab140255f1e10d",
         "toolchain": {
           "language": "Lean",
           "language_version": "4.34.0",
@@ -83,9 +83,9 @@
           "statement_id": "STMT-jsp-000391-v1",
           "theorem_name": "Jsp391.d_mem_zero_one",
           "result": "equivalent",
-          "basis": "The theorem d_mem_zero_one states exactly that the Graham-Pollak quantity d_n = u_{2n+1} - 2*u_{2n-1} is a binary digit (0 or 1) for n >= 2 — the core of the Graham-Pollak digit phenomenon, where d_n is the nth binary digit of sqrt 2. This is the integer-only closed-form formalization (step u = Nat.sqrt(2u(u+1)) = floor(sqrt 2 (u + 1/2))), matching the informal problem statement.",
+          "basis": "The theorem d_mem_zero_one states exactly that the Graham-Pollak quantity d_n = u_{2n+1} - 2*u_{2n-1} is a binary digit (0 or 1) for n >= 2 — the core of the Graham-Pollak digit phenomenon, where d_n is the nth binary digit of sqrt 2. This is the integer-only closed-form formalization (step u = Nat.sqrt(2u(u+1)) = floor(sqrt 2 (u + 1/2))). At commit 8de5b93 the native_decide axiom was eliminated: u 3 = 3 is proved explicitly, so the target depends only on standard axioms [propext, Classical.choice, Quot.sound].",
           "performed_by": "jsp391-verifier",
-          "performed_at": "2026-09-18"
+          "performed_at": "2026-09-20"
         },
         "checkers": [
           {
@@ -115,19 +115,19 @@
           "unprivileged_user": true
         },
         "attribution": {
-          "proof_route": "complete Graham-Pollak digit formalization (d_n in {0,1}); formalization by Shiqiang Chen",
+          "proof_route": "complete Graham-Pollak digit formalization (d_n in {0,1}); formalization by Shiqiang Chen; verified at commit 8de5b93 after native_decide elimination",
           "third_party": false,
-          "note_en": "Complete Lean 4 formalization of the Graham-Pollak digit phenomenon: d_n = u_{2n+1}-2*u_{2n-1} in {0,1} (binary digits of sqrt 2), with full proof chain, 0 sorry/admit. scoped to the core digit-binary claim."
+          "note_en": "Complete Lean 4 formalization of the Graham-Pollak digit phenomenon: d_n = u_{2n+1}-2*u_{2n-1} in {0,1} (binary digits of sqrt 2), full proof chain, 0 sorry/admit, axioms [propext, Classical.choice, Quot.sound]."
         },
         "artifacts": {
           "build_log": {
-            "archive": "candidates/verified-pending/000391/verification/build-current-release.log",
+            "archive": "candidates/verified-pending/jsp-000391/verification/build-current-release.log",
             "sha256": "18fa968270543408a0c5b875dcbf8e3d9a630ab30fe198b7daf6fe04f1fbd677",
             "bytes": 456
           }
         },
         "performed_by": "jsp391-verifier",
-        "performed_at": "2026-09-18"
+        "performed_at": "2026-09-20"
       },
       "statement": {
         "id": "STMT-jsp-000391-v1",

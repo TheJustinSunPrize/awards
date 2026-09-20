@@ -9,7 +9,7 @@ Status of this candidate record:
 - Mathematical status: solved.
 - Lean formalization: available (formalization contributor: Shiqiang Chen,
   independent researcher) in the public repository
-  `github.com/shunfeng8421/jsp301-lean` at commit `e8872b9b405206ce100f5131a9ce744a6f0c9d32`.
+  `github.com/shunfeng8421/jsp301-lean` at commit `8de5b93406f89c279034fe84a7ab140255f1e10d`.
 - Eligible to claim: yes, subject to independent verification and review.
 
 Scoped constructive component (2026-09-18):
