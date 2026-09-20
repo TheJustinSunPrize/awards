@@ -1020,7 +1020,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000894 | [Does exceeding the complete multipartite construction's edge density force a uniform hypergraph to have a noticeably denser local subgraph?](catalog-0801-0900.md#JSP-000894) | Open | No | No | Unavailable |
 | JSP-000895 | [How many edges can a three-uniform hypergraph have while excluding configurations with a prescribed vertex count and two fewer edges?](catalog-0801-0900.md#JSP-000895) | Solved | No | No | Unavailable |
 | JSP-000896 | [What minimum degree forces a transversal clique in a balanced multipartite graph?](catalog-0801-0900.md#JSP-000896) | Solved | No | No | Unavailable |
-| JSP-000897 | [At the corresponding Turán edge threshold, must some vertex neighborhood contain sufficiently many edges?](catalog-0801-0900.md#JSP-000897) | Solved | No | No | Unavailable |
+| JSP-000897 | [At the corresponding Turán edge threshold, must some vertex neighborhood contain sufficiently many edges?](catalog-0801-0900.md#JSP-000897) | Solved | Yes | No | Unavailable |
 | JSP-000898 | [What is the precise asymptotic count of integers representable as sums of two powerful numbers?](catalog-0801-0900.md#JSP-000898) | Solved | No | No | Unavailable |
 | JSP-000899 | [Must a planar set with no three collinear points determine at least half as many distinct distances as points?](catalog-0801-0900.md#JSP-000899) | Open | No | No | Unavailable |
 | JSP-000900 | [What is the minimum distinct-distance count for a prescribed number of points in fixed higher dimension?](catalog-0801-0900.md#JSP-000900) | Open | No | No | Unavailable |
