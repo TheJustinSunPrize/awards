@@ -1,4 +1,0 @@
-'JSP000746.resolution' depends on axioms: [propext, Classical.choice, Quot.sound]
-'JSP000746.independent_schur_triple_le_eighteen' depends on axioms: [propext, Classical.choice, Quot.sound]
-'JSP000746.erdos_895' depends on axioms: [propext, Classical.choice, Quot.sound]
-'JSP000746.erdos_895_finite_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
