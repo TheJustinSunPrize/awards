@@ -399,7 +399,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 
 | No. | Problem | Current status | Lean proof | Eligible to claim | Claim status |
 | --- | --- | --- | --- | --- | --- |
-| JSP-000301 | [If two consecutive positive integers are powerful, must at least one be a perfect square?](catalog-0301-0400.md#JSP-000301) | Solved | No | No | Unavailable |
+| JSP-000301 | [If two consecutive positive integers are powerful, must at least one be a perfect square?](catalog-0301-0400.md#JSP-000301) | Solved | Yes | Yes | Unclaimed |
 | JSP-000302 | [ambiguous statement](catalog-0301-0400.md#JSP-000302) | Open | No | No | Unavailable |
 | JSP-000303 | [How large can the product of the powerful parts of consecutive integers be?](catalog-0301-0400.md#JSP-000303) | Open | No | No | Unavailable |
 | JSP-000304 | [How large a prime factor must the product of two consecutive positive integers have?](catalog-0301-0400.md#JSP-000304) | Open | No | No | Unavailable |
