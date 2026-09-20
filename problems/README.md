@@ -1142,7 +1142,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | --- | --- | --- | --- | --- | --- |
 | JSP-001001 | [How large can the sum of reciprocal integer-logarithm weights be over a primitive set of large integers?](catalog-1001-1022.md#JSP-001001) | Solved | Yes | Yes | Unclaimed |
 | JSP-001002 | [Can integer dilates of a positive-measure real set cover all sufficiently distant lattice points along almost every prescribed ray?](catalog-1001-1022.md#JSP-001002) | Solved | Yes | Yes | Unclaimed |
-| JSP-001003 | [Does every two-coloring of the positive integers contain an infinite set with all the specified mixed sum-product structures monochromatic?](catalog-1001-1022.md#JSP-001003) | Solved | No | No | Unavailable |
+| JSP-001003 | [Does every two-coloring of the positive integers contain an infinite set with all the specified mixed sum-product structures monochromatic?](catalog-1001-1022.md#JSP-001003) | Solved | Yes | No | Unavailable |
 | JSP-001004 | [Does every two-coloring of the natural numbers contain an infinite set whose specified pairwise sums all have one color?](catalog-1001-1022.md#JSP-001004) | Open | No | No | Unavailable |
 | JSP-001005 | [Can prime residue classes with bounded reciprocal sum of moduli still cover a long initial integer interval?](catalog-1001-1022.md#JSP-001005) | Open | No | No | Unavailable |
 | JSP-001006 | [Does a consecutive-integer product typically have a prime factor comparable to the interval's location?](catalog-1001-1022.md#JSP-001006) | Open | No | No | Unavailable |
