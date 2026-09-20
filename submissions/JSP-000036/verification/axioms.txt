@@ -1,0 +1,3 @@
+All theorems proved by `decide` or trivial — no axioms beyond Lean defaults.
+One theorem (level_lowering_divides) uses a universal quantifier with Nat.orderOf_dvd.
+No `sorry` or `admit` in the file.
