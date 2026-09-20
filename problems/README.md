@@ -739,7 +739,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000623 | [How does the minimum number of clique or independent-set parts for graphs on a surface grow with the surface's complexity?](catalog-0601-0700.md#JSP-000623) | Solved | No | No | Unavailable |
 | JSP-000624 | [How does ordinary chromatic number relate to the number of acyclic vertex classes needed after orienting edges?](catalog-0601-0700.md#JSP-000624) | Open | No | No | Unavailable |
 | JSP-000625 | [Can cumulative two-term additive representation counts grow linearly with bounded error?](catalog-0601-0700.md#JSP-000625) | Solved | No | No | Unavailable |
-| JSP-000626 | [Can cumulative three-term additive representation counts grow linearly with bounded error?](catalog-0601-0700.md#JSP-000626) | Solved | No | No | Unavailable |
+| JSP-000626 | [Can cumulative three-term additive representation counts grow linearly with bounded error?](catalog-0601-0700.md#JSP-000626) | Solved | Yes | No | Unavailable |
 | JSP-000627 | [Among forbidden graphs with fixed vertex and edge counts, which minimizes the extremal function? Is this minimum strictly monotone in the forbidden graph's edge count?](catalog-0601-0700.md#JSP-000627) | Open | No | No | Unavailable |
 | JSP-000628 | [How many edges can a graph have if no vertex of a cycle is incident to several specified chords?](catalog-0601-0700.md#JSP-000628) | Solved | No | No | Unavailable |
 | JSP-000629 | [If each prime divisor of an integer has a divisor of that integer greater than one and congruent to one modulo the prime, does the density of such integers decay as predicted?](catalog-0601-0700.md#JSP-000629) | Open | No | No | Unavailable |
