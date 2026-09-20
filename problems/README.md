@@ -227,7 +227,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000136 | [How many colors are needed for the graph joining integer-distance pairs of planar points in general position?](catalog-0101-0200.md#JSP-000136) | Open | No | No | Unavailable |
 | JSP-000137 | [How large can a subset of a finite integer interval be if no element divides the sum of a prescribed number of other elements?](catalog-0101-0200.md#JSP-000137) | Open | No | No | Unavailable |
 | JSP-000138 | [How many distances determined by a finite planar point set must occur relatively infrequently?](catalog-0101-0200.md#JSP-000138) | Open | No | No | Unavailable |
-| JSP-000139 | [How large must the maximum degree of a triangle-free graph of diameter at most two be?](catalog-0101-0200.md#JSP-000139) | Solved | No | No | Unavailable |
+| JSP-000139 | [How large must the maximum degree of a triangle-free graph of diameter at most two be?](catalog-0101-0200.md#JSP-000139) | Solved | Yes | No | Unavailable |
 | JSP-000140 | [How many edge colors are necessary if every four-vertex clique must contain at least five colors?](catalog-0101-0200.md#JSP-000140) | Solved | No | No | Unavailable |
 | JSP-000141 | [Can a product of consecutive positive integers have every prime factor occurring with exponent at least two?](catalog-0101-0200.md#JSP-000141) | Open | No | No | Unavailable |
 | JSP-000142 | [How fast does the interval length forcing a monochromatic arithmetic progression of prescribed length in every two-coloring grow?](catalog-0101-0200.md#JSP-000142) | Open | No | No | Unavailable |
