@@ -777,7 +777,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000661 | [If every local part has a large independent set, how large an independent set must the whole graph have?](catalog-0601-0700.md#JSP-000661) | Solved | No | No | Unavailable |
 | JSP-000662 | [Can every medium-size subgraph of a graph contain both a large clique and a large independent set?](catalog-0601-0700.md#JSP-000662) | Open | No | No | Unavailable |
 | JSP-000663 | [Can an integer set of square-root-scale size be covered by the two-term sumset of a smaller set?](catalog-0601-0700.md#JSP-000663) | Solved | No | No | Unavailable |
-| JSP-000664 | [How many complete bipartite graphs are typically needed to partition a random graph's edges?](catalog-0601-0700.md#JSP-000664) | Solved | No | No | Unavailable |
+| JSP-000664 | [How many complete bipartite graphs are typically needed to partition a random graph's edges?](catalog-0601-0700.md#JSP-000664) | Solved | Yes | No | Unavailable |
 | JSP-000665 | [When sums and products are taken only along edges of a dense graph on integers, how large must one of the resulting value sets be?](catalog-0601-0700.md#JSP-000665) | Solved | No | No | Unavailable |
 | JSP-000666 | [How many edge colors are needed to make every odd cycle rainbow?](catalog-0601-0700.md#JSP-000666) | Open | No | No | Unavailable |
 | JSP-000667 | [Can a dense graph be edge-colored with linearly many colors so that every four-cycle is rainbow?](catalog-0601-0700.md#JSP-000667) | Open | No | No | Unavailable |
