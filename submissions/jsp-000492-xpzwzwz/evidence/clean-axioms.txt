@@ -1,4 +1,0 @@
-'JSP000492.sphere_grid' depends on axioms: [propext, Classical.choice, Quot.sound]
-'JSP000492.configuration_every_size' depends on axioms: [propext, Classical.choice, Quot.sound]
-'JSP000492.eventually_many_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
-'JSP000492.erdos605' depends on axioms: [propext, Classical.choice, Quot.sound]
