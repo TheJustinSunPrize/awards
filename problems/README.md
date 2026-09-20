@@ -297,7 +297,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000201 | [How large can gaps between consecutive integers representable as sums of two squares be?](catalog-0201-0300.md#JSP-000201) | Open | No | No | Unavailable |
 | JSP-000202 | [For a finite point set of fixed diameter in higher-dimensional space, how many pairs can attain that diameter?](catalog-0201-0300.md#JSP-000202) | Solved | No | No | Unavailable |
 | JSP-000203 | [How large can the specified integral of a trigonometric polynomial be under the problem's real-zero conditions?](catalog-0201-0300.md#JSP-000203) | Solved | No | No | Unavailable |
-| JSP-000204 | [For a transcendental entire function, determine the limiting ratio between its largest power-series term and its maximum modulus on a circle.](catalog-0201-0300.md#JSP-000204) | Solved | No | No | Unavailable |
+| JSP-000204 | [For a transcendental entire function, determine the limiting ratio between its largest power-series term and its maximum modulus on a circle.](catalog-0201-0300.md#JSP-000204) | Solved | Yes | No | Unavailable |
 | JSP-000205 | [What is the maximum density of a measurable planar set containing no pair at distance one?](catalog-0201-0300.md#JSP-000205) | Solved | No | No | Unavailable |
 | JSP-000206 | [What is the smallest upper bound for the sum of squared consecutive prime gaps in a prescribed range?](catalog-0201-0300.md#JSP-000206) | Open | No | No | Unavailable |
 | JSP-000207 | [Do prime gaps, normalized by their average scale, have a limiting distribution?](catalog-0201-0300.md#JSP-000207) | Open | No | No | Unavailable |
