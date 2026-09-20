@@ -1112,7 +1112,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000981 | [Can edges of an uncountable-chromatic graph be colored so that every prescribed vertex coloring has a color class realizing all edge colors?](catalog-0901-1000.md#JSP-000981) | Open | No | No | Unavailable |
 | JSP-000982 | [When does forbidding a finite three-uniform hypergraph still allow hypergraphs of uncountable chromatic number?](catalog-0901-1000.md#JSP-000982) | Open | No | No | Unavailable |
 | JSP-000983 | [What vertex threshold for forbidden uniform-hypergraph configurations forces a subquadratic extremal edge count?](catalog-0901-1000.md#JSP-000983) | Open | No | No | Unavailable |
-| JSP-000984 | [How many random elements of a finite abelian group make subset-sum representation counts approximately uniform?](catalog-0901-1000.md#JSP-000984) | Solved | No | No | Unavailable |
+| JSP-000984 | [How many random elements of a finite abelian group make subset-sum representation counts approximately uniform?](catalog-0901-1000.md#JSP-000984) | Solved | Yes | No | Unavailable |
 | JSP-000985 | [Do boundedly many sums of modular inverses of a short initial integer interval cover all residues modulo a prime?](catalog-0901-1000.md#JSP-000985) | Solved | No | No | Unavailable |
 | JSP-000986 | [How large is the smallest prime not dividing the product of a logarithmically short consecutive-integer interval?](catalog-0901-1000.md#JSP-000986) | Open | No | No | Unavailable |
 | JSP-000987 | [If a connected graph's Ramsey number against a triangle is twice its order minus one, what edge counts are possible?](catalog-0901-1000.md#JSP-000987) | Open | No | No | Unavailable |
