@@ -887,7 +887,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000766 | [If every finite local subgraph has an independent set of nearly half its vertices, is the whole graph's chromatic number bounded?](catalog-0701-0800.md#JSP-000766) | Solved | No | No | Unavailable |
 | JSP-000767 | [Can a graph exclude a larger clique while forcing a smaller monochromatic clique under every prescribed multicolor edge coloring?](catalog-0701-0800.md#JSP-000767) | Solved | No | No | Unavailable |
 | JSP-000768 | [If a graph admits an edge coloring with no monochromatic triangle, must it have a sufficiently large independent set?](catalog-0701-0800.md#JSP-000768) | Solved | No | No | Unavailable |
-| JSP-000769 | [How many edges can a graph have while excluding the specified complete-graph subdivision with a common center?](catalog-0701-0800.md#JSP-000769) | Solved | No | No | Unavailable |
+| JSP-000769 | [How many edges can a graph have while excluding the specified complete-graph subdivision with a common center?](catalog-0701-0800.md#JSP-000769) | Solved | Yes | No | Unavailable |
 | JSP-000770 | [What is the joint density distribution of the largest prime factors of consecutive integers in prescribed ranges?](catalog-0701-0800.md#JSP-000770) | Open | No | No | Unavailable |
 | JSP-000771 | [How large a small-prime range is necessary to supply a prime divisor for every integer in a consecutive interval?](catalog-0701-0800.md#JSP-000771) | Open | No | No | Unavailable |
 | JSP-000772 | [Can products of several long consecutive-integer intervals combine to form a perfect power?](catalog-0701-0800.md#JSP-000772) | Open | No | No | Unavailable |
