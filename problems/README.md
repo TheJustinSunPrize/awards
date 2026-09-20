@@ -972,7 +972,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000846 | [pancyclic graphs](catalog-0801-0900.md#JSP-000846) | Open | No | No | Unavailable |
 | JSP-000847 | [How many cliques are needed to partition all edges of a dense graph?](catalog-0801-0900.md#JSP-000847) | Open | No | No | Unavailable |
 | JSP-000848 | [Does superlinear edge count force a nonplanar subgraph of uniformly bounded order?](catalog-0801-0900.md#JSP-000848) | Solved | No | No | Unavailable |
-| JSP-000849 | [Must every dense graph contain a nontrivial maximal planar subgraph?](catalog-0801-0900.md#JSP-000849) | Solved | No | No | Unavailable |
+| JSP-000849 | [Must every dense graph contain a nontrivial maximal planar subgraph?](catalog-0801-0900.md#JSP-000849) | Solved | Yes | No | Unavailable |
 | JSP-000850 | [Maximum edge counts in uniform hypergraphs with bounded matchings](catalog-0801-0900.md#JSP-000850) | Open | No | No | Unavailable |
 | JSP-000851 | [How many edges can a graph have while excluding a complete graph with every edge subdivided once?](catalog-0801-0900.md#JSP-000851) | Solved | No | No | Unavailable |
 | JSP-000852 | [How large an independent set is guaranteed in a three-uniform hypergraph whose edges intersect pairwise in at most one vertex?](catalog-0801-0900.md#JSP-000852) | Solved | No | No | Unavailable |
