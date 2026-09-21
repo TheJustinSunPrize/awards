@@ -36,7 +36,7 @@ The catalogs retain solution status, Lean proof status, historical bounty, elaps
 
 <a id="attribution-conventions"></a>
 
-**Attribution conventions (updated 2026-09-16).** The 66 records with an **Attribution basis** row describe credits for the selected completed proof version. Each row provides sources and any problem-specific qualifications. **Solver attribution source** links to evidence supporting the listed solver credits; **Lean attribution source** links to evidence supporting the listed Lean credits.
+**Attribution conventions (updated 2026-09-16).** The 67 records with an **Attribution basis** row describe credits for the selected completed proof version. Each row provides sources and any problem-specific qualifications. **Solver attribution source** links to evidence supporting the listed solver credits; **Lean attribution source** links to evidence supporting the listed Lean credits.
 
 Short attribution notes mean:
 
