@@ -41,7 +41,7 @@ The catalogs retain solution status, Lean proof status, historical bounty, elaps
 
 <a id="attribution-conventions"></a>
 
-**Attribution conventions (updated 2026-09-16).** The 66 records with an **Attribution basis** row describe credits for the selected completed proof version. Each row provides sources and any problem-specific qualifications. **Solver attribution source** links to evidence supporting the listed solver credits; **Lean attribution source** links to evidence supporting the listed Lean credits.
+**Attribution conventions (updated 2026-09-16).** The 67 records with an **Attribution basis** row describe credits for the selected completed proof version. Each row provides sources and any problem-specific qualifications. **Solver attribution source** links to evidence supporting the listed solver credits; **Lean attribution source** links to evidence supporting the listed Lean credits.
 
 Short attribution notes mean:
 
@@ -560,7 +560,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000445 | [Compare the multicolor thresholds forcing a monochromatic odd cycle and a monochromatic triangle.](catalog-0401-0500.md#JSP-000445) | Open | No | No | Unavailable | Unavailable |
 | JSP-000446 | [What is the multicolor Ramsey number of an even cycle of prescribed length?](catalog-0401-0500.md#JSP-000446) | Open | No | No | Unavailable | Unavailable |
 | JSP-000447 | [What is the optimal upper bound for the three-color Ramsey number of a prescribed cycle?](catalog-0401-0500.md#JSP-000447) | Open | No | No | Unavailable | Unavailable |
-| JSP-000448 | [Does the multicolor Ramsey number of a tree grow linearly with its order?](catalog-0401-0500.md#JSP-000448) | Solved | No — reported; standalone source not located | Pending verification | Unavailable | Unavailable |
+| JSP-000448 | [Does the multicolor Ramsey number of a tree grow linearly with its order?](catalog-0401-0500.md#JSP-000448) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000449 | [What is the multicolor Ramsey number of a prescribed complete bipartite graph?](catalog-0401-0500.md#JSP-000449) | Open | No | No | Unavailable | Unavailable |
 | JSP-000450 | [Do graphs of bounded maximum degree have two-color size Ramsey numbers linear in their order?](catalog-0401-0500.md#JSP-000450) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000451 | [What is the minimum host edge count forcing a monochromatic prescribed balanced complete bipartite graph under every two-coloring?](catalog-0401-0500.md#JSP-000451) | Open | No | No | Unavailable | Unavailable |
