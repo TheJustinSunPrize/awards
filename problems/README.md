@@ -658,7 +658,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000543 | [orchard problems](catalog-0501-0600.md#JSP-000543) | Open | No | No | Unavailable | Unavailable |
 | JSP-000544 | [How large a diameter is forced in higher dimensions when all pairwise distances are distinct and separated by a prescribed amount?](catalog-0501-0600.md#JSP-000544) | Open | No | No | Unavailable | Unavailable |
 | JSP-000545 | [If interpolation amplification factors diverge at every point, can every continuous function still have a point of interpolation convergence?](catalog-0501-0600.md#JSP-000545) | Open | No | No | Unavailable | Unavailable |
-| JSP-000546 | [Can a product of consecutive terms of an arithmetic progression with coprime initial term and common difference be a perfect power?](catalog-0501-0600.md#JSP-000546) | Open | Yes | Yes | Unavailable | Unavailable |
+| JSP-000546 | [Can a product of consecutive terms of an arithmetic progression with coprime initial term and common difference be a perfect power?](catalog-0501-0600.md#JSP-000546) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000547 | [What is the typical growth of the sum of ratios of consecutive ordered divisors of an integer?](catalog-0501-0600.md#JSP-000547) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000548 | [Within special integer sets such as sums of two squares, must every occurring finite additive pattern recur after translation?](catalog-0501-0600.md#JSP-000548) | Open | No | No | Unavailable | Unavailable |
 | JSP-000549 | [Is every sufficiently large integer a positive multiple of a prime square plus a nonnegative remainder smaller than that prime?](catalog-0501-0600.md#JSP-000549) | Open | No | No | Unavailable | Unavailable |
