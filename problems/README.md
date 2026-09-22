@@ -1079,7 +1079,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000944 | [Among integers with at most two prime factors, are normalized consecutive gaps unbounded?](catalog-0901-1000.md#JSP-000944) | Open | No | No | Unavailable | Unavailable |
 | JSP-000945 | [Is there an integer whose differences from twice every permitted smaller square are all prime?](catalog-0901-1000.md#JSP-000945) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000946 | [Is there an integer whose differences from every sufficiently small square coprime to it are all prime?](catalog-0901-1000.md#JSP-000946) | Solved | Yes | Yes | Unclaimed | Unclaimed |
-| JSP-000947 | [Is there an integer whose differences from every permitted smaller power of two are all prime?](catalog-0901-1000.md#JSP-000947) | Open | No | No | Unavailable | Unavailable |
+| JSP-000947 | [Is there an integer whose differences from every permitted smaller power of two are all prime?](catalog-0901-1000.md#JSP-000947) | Open | Yes | Yes | Unavailable | Unavailable |
 | JSP-000948 | [How many multiples of primes from a specified set are guaranteed in every given short integer interval?](catalog-0901-1000.md#JSP-000948) | Open | No | No | Unavailable | Unavailable |
 | JSP-000949 | [Do partial sums of a random completely multiplicative function infinitely often exceed every fixed multiple of the square root of the summation range?](catalog-0901-1000.md#JSP-000949) | Open | No | No | Unavailable | Unavailable |
 | JSP-000950 | [If two complementary additive sets have asymptotically equal growth, must their cross-sum representation counts be unbounded?](catalog-0901-1000.md#JSP-000950) | Open | No | No | Unavailable | Unavailable |
