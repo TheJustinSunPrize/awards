@@ -1,0 +1,10 @@
+name = "erdos-550"
+version = "0.1.0"
+defaultTargets = ["erdos-550"]
+
+[[require]]
+name = "mathlib"
+scope = "mixed"
+
+[[lean_lib]]
+name = "erdos-550"
