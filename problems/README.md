@@ -799,7 +799,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000679 | [Which positive real numbers can be approximated arbitrarily closely by ratios of integers having equal divisor sums?](catalog-0601-0700.md#JSP-000679) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000680 | [How many coprime pairs of positive integers have equal divisor sums, and how does their count grow?](catalog-0601-0700.md#JSP-000680) | Open | No | No | Unavailable | Unavailable |
 | JSP-000681 | [Does a sufficiently large divisor sum ensure that an integer is a sum of some of its proper divisors?](catalog-0601-0700.md#JSP-000681) | Solved | Yes | Yes | Unclaimed | Unclaimed |
-| JSP-000682 | [Is there an integer whose succeeding positions have divisor counts bounded linearly in their distance from it?](catalog-0601-0700.md#JSP-000682) | Open | No | No | Unavailable | Unavailable |
+| JSP-000682 | [Is there an integer whose succeeding positions have divisor counts bounded linearly in their distance from it?](catalog-0601-0700.md#JSP-000682) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000683 | [How many planar points force a prescribed-size subset whose distinct triples have distinct circumradii?](catalog-0601-0700.md#JSP-000683) | Open | No | No | Unavailable | Unavailable |
 | JSP-000684 | [For a fixed constant, are there infinitely many integers whose totient divides the integer plus that constant?](catalog-0601-0700.md#JSP-000684) | Open | No | No | Unavailable | Unavailable |
 | JSP-000685 | [How many representations can one integer have as a sum of two integer cubes?](catalog-0601-0700.md#JSP-000685) | Open | No | No | Unavailable | Unavailable |
