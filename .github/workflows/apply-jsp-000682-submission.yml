@@ -1,0 +1,44 @@
+name: Apply JSP-000682 submission
+on:
+  push:
+    branches: [submission/jsp-000682-final]
+permissions:
+  contents: write
+jobs:
+  apply:
+    if: github.actor == 'asdfdev0'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: submission/jsp-000682-final
+      - name: Apply catalog and index changes
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          sha = 'b38560763b412ccf84cdc85963634ad3bd0dfafb'
+          p = Path('problems/catalog-0601-0700.md')
+          s = p.read_text()
+          anchor = '<a id="JSP-000682"></a>'
+          nxt = '<a id="JSP-000683"></a>'
+          before, rest = s.split(anchor, 1)
+          block, after = rest.split(nxt, 1)
+          block = block.replace('| Current status | Open |', '| Current status | Solved<br>Proof contributors: asdfdev0. |', 1)
+          block = block.replace('| Lean proof | No |', f'| Lean proof | Yes — [Lean source](https://github.com/asdfdev0/jsp-000682-lean/blob/{sha}/JSP000682/Solution.lean)<br>Formalization contributors: asdfdev0. |', 1)
+          block = block.replace('| Publication details |  |', f'| Attribution basis | Mathematical and Lean: repository-owner attribution. [Solver attribution source 1](https://github.com/asdfdev0/jsp-000682-lean/blob/{sha}/README.md) [Lean attribution source 1](https://github.com/asdfdev0/jsp-000682-lean/blob/{sha}/JSP000682/Solution.lean) |\n| Publication details | [Erdős #826](https://www.erdosproblems.com/826) — original infinitude formulation. |', 1)
+          p.write_text(before + anchor + block + nxt + after)
+
+          p = Path('problems/README.md')
+          s = p.read_text()
+          old = '| JSP-000682 | [Is there an integer whose succeeding positions have divisor counts bounded linearly in their distance from it?](catalog-0601-0700.md#JSP-000682) | Open | No | No | Unavailable | Unavailable |'
+          new = '| JSP-000682 | [Is there an integer whose succeeding positions have divisor counts bounded linearly in their distance from it?](catalog-0601-0700.md#JSP-000682) | Solved | Yes | No | Unavailable | Unavailable |'
+          if old not in s:
+              raise SystemExit('JSP-000682 index row not found')
+          p.write_text(s.replace(old, new, 1))
+          PY
+          rm .github/workflows/apply-jsp-000682-submission.yml
+          git config user.name 'asdfdev0'
+          git config user.email 'asdfdev0@users.noreply.github.com'
+          git add problems/catalog-0601-0700.md problems/README.md .github/workflows/apply-jsp-000682-submission.yml
+          git commit -m 'catalog: submit literal JSP-000682 solution and Lean proof'
+          git push origin HEAD:submission/jsp-000682-final
