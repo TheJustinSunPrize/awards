@@ -710,7 +710,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000595 | [Can the square of a factorial with index slightly above a reference value divide the factorial of twice that reference value?](catalog-0501-0600.md#JSP-000595) | Open | No | No | Unavailable | Unavailable |
 | JSP-000596 | [If one product of two factorials divides another, how far apart can the sums of their indices be?](catalog-0501-0600.md#JSP-000596) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000597 | [What restrictions on factorial indices follow when the reduced denominator of their ratio has only small prime factors?](catalog-0501-0600.md#JSP-000597) | Solved | Yes | Yes | Unclaimed | Unclaimed |
-| JSP-000598 | [Can two distinct central binomial coefficients have exactly the same prime divisors?](catalog-0501-0600.md#JSP-000598) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000598 | [Can two distinct central binomial coefficients have exactly the same prime divisors?](catalog-0501-0600.md#JSP-000598) | Solved | Yes | Yes | Unavailable | Unavailable |
 | JSP-000599 | [How large is the smallest positive integer not dividing a central binomial coefficient, typically?](catalog-0501-0600.md#JSP-000599) | Open | No | No | Unavailable | Unavailable |
 | JSP-000600 | [Which prescribed block-size sequences admit a pairwise balanced design in which every pair occurs exactly once?](catalog-0501-0600.md#JSP-000600) | Solved | No | No | Unavailable | Unavailable |
 
