@@ -806,7 +806,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000686 | [Are there infinitely many amicable pairs, in which each number's proper divisors sum to the other, and how fast does their count grow?](catalog-0601-0700.md#JSP-000686) | Open | No | No | Unavailable | Unavailable |
 | JSP-000687 | [How many distinct circumradii must the triples of a planar point set in general position determine?](catalog-0601-0700.md#JSP-000687) | Open | No | No | Unavailable | Unavailable |
 | JSP-000688 | [How many edges are needed for a uniform hypergraph to attain a prescribed chromatic number?](catalog-0601-0700.md#JSP-000688) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000689 | [Must a uniform hypergraph requiring three colors have maximum degree exponential in its edge size?](catalog-0601-0700.md#JSP-000689) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000689 | [Must a uniform hypergraph requiring three colors have maximum degree exponential in its edge size?](catalog-0601-0700.md#JSP-000689) | Solved | Yes | Yes | Unavailable | Unavailable |
 | JSP-000690 | [Is there a three-uniform, three-chromatic-critical hypergraph with minimum degree at least seven?](catalog-0601-0700.md#JSP-000690) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000691 | [Can fixed-size subsets be colored so that every set of the next larger size contains subsets of every color?](catalog-0601-0700.md#JSP-000691) | Open | No | No | Unavailable | Unavailable |
 | JSP-000692 | [What restrictions relate vertex count and pairwise edge-intersection sizes in intersecting three-chromatic uniform hypergraphs?](catalog-0601-0700.md#JSP-000692) | Open | No | No | Unavailable | Unavailable |
