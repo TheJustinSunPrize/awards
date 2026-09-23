@@ -332,7 +332,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000232 | [Stanley sequences](catalog-0201-0300.md#JSP-000232) | Open | No | No | Unavailable | Unavailable |
 | JSP-000233 | [How large can a family of sets be if every pairwise intersection is a nonempty arithmetic progression?](catalog-0201-0300.md#JSP-000233) | Open | No | No | Unavailable | Unavailable |
 | JSP-000234 | [Can the integers be covered by residue classes whose moduli are all one less than a prime?](catalog-0201-0300.md#JSP-000234) | Open | No | No | Unavailable | Unavailable |
-| JSP-000235 | [Herzog-Schönheim conjecture](catalog-0201-0300.md#JSP-000235) | Open | No | No | Unavailable | Unavailable |
+| JSP-000235 | [Herzog-Schönheim conjecture](catalog-0201-0300.md#JSP-000235) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000236 | [Is there a Lucas sequence consisting entirely of composite terms but with no fixed nontrivial divisor common to all terms?](catalog-0201-0300.md#JSP-000236) | Open | No | No | Unavailable | Unavailable |
 | JSP-000237 | [For prescribed moduli, what are the largest and smallest proportions of integers covered by a choice of corresponding residue classes?](catalog-0201-0300.md#JSP-000237) | Open | No | No | Unavailable | Unavailable |
 | JSP-000238 | [Can residue classes with prime moduli cover every sufficiently large integer?](catalog-0201-0300.md#JSP-000238) | Open | No | No | Unavailable | Unavailable |
