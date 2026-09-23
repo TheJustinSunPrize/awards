@@ -939,7 +939,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000809 | [How large a prime factor must a product of consecutive integer values of an irreducible polynomial have?](catalog-0801-0900.md#JSP-000809) | Open | No | No | Unavailable | Unavailable |
 | JSP-000810 | [Does the ratio of the largest prime factor of a power of two minus one to its exponent grow as predicted?](catalog-0801-0900.md#JSP-000810) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000811 | [Does an irreducible integer polynomial take infinitely many values free of a prescribed higher-power factor?](catalog-0801-0900.md#JSP-000811) | Open | No | No | Unavailable | Unavailable |
-| JSP-000812 | [Are representation counts as sums of prime powers unbounded when the number of summands equals the exponent?](catalog-0801-0900.md#JSP-000812) | Open | No | No | Unavailable | Unavailable |
+| JSP-000812 | [Are representation counts as sums of prime powers unbounded when the number of summands equals the exponent?](catalog-0801-0900.md#JSP-000812) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000813 | [What is the average least prescribed power nonresidue over prime moduli?](catalog-0801-0900.md#JSP-000813) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000814 | [For quadratic-character partial sums, what is the average initial range needed to reach the specified relative balance, over primes?](catalog-0801-0900.md#JSP-000814) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000815 | [Must every convex polygon have a vertex determining about half as many distinct distances as the total number of vertices?](catalog-0801-0900.md#JSP-000815) | Open | No | No | Unavailable | Unavailable |
