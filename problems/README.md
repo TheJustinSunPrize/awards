@@ -123,7 +123,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000033 | [Rational distances to the unit square](catalog-0001-0100.md#JSP-000033) | Open | No | No | Unavailable | Unavailable |
 | JSP-000034 | [Sidorenko conjecture](catalog-0001-0100.md#JSP-000034) | Open | No | No | Unavailable | Unavailable |
 | JSP-000035 | [Catalan conjecture](catalog-0001-0100.md#JSP-000035) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000036 | [Modularity theorem for rational elliptic curves (Taniyama–Shimura–Weil conjecture)](catalog-0001-0100.md#JSP-000036) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000036 | [Modularity theorem for rational elliptic curves (Taniyama–Shimura–Weil conjecture)](catalog-0001-0100.md#JSP-000036) | Solved | Yes | Yes | Unavailable | Unavailable |
 | JSP-000037 | [Jacobian conjecture](catalog-0001-0100.md#JSP-000037) | Open | No | No | Unavailable | Unavailable |
 | JSP-000038 | [Sendov conjecture](catalog-0001-0100.md#JSP-000038) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000039 | [DGG cost-preserving conjecture](catalog-0001-0100.md#JSP-000039) | Solved | Yes | Yes | Unclaimed | Unclaimed |
