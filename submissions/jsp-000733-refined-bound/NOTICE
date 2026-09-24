@@ -1,0 +1,24 @@
+Erdős 882 refined upper bound — attribution and modifications
+
+Primitive.lean adapts disjoint_equal_sums_impossible and
+subset_sum_injective_of_primitive from Erdos882Upper.lean in
+TheJustinSunPrize/awards PR #31, zifanersuotang/awards commit
+83f20bbe58d116a9a290c86821fa4ee1a29dd3eb:
+https://github.com/zifanersuotang/awards/blob/83f20bbe58d116a9a290c86821fa4ee1a29dd3eb/submissions/jsp-000733/Erdos882Upper.lean
+
+Relevant upstream NOTICE:
+"The Apache License in LICENSE applies to the added proof and reproduction
+files supplied by this package. It does not replace any upstream notice."
+"The added bridge and analytic assembly were produced using Codex."
+
+Changes: quantified-subset definitions, proved numerical-image equivalence,
+and application to an independently implemented second-moment bound. The
+maximum-size and real-logarithm modules complete the refined upper bound.
+The proof development and verifier adaptation were performed with Codex.
+The repaired verification lifecycle is reused from the prior Cambie package.
+
+The Apache-2.0 license text is included in LICENSE. No Erdos882Existing.lean
+lower-construction source or lean-genius source is included or relicensed.
+No first-formalization claim is made for the generic finite counting bound.
+The mathematical result is an existing Erdős 882 upper bound, with the
+classical distinct-subset-sums second-moment method credited in PROOF.md.

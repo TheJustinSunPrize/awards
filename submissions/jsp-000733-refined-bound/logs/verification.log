@@ -1,0 +1,422 @@
+# REDACTED COPY; not unmodified raw output.
+# Record role: final English-source verifier run 4e5e8a02c48f46739006c6dafd238531
+# Known environment paths replaced; see REDACTION.md.
+
+RUN ID: 4e5e8a02c48f46739006c6dafd238531
+STARTED UTC: 2026-09-16T18:31:47.394656+00:00
+
+$ <LEAN_BIN>\lake.EXE env lean --version
+CWD: <PROJECT>
+Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE --version
+CWD: <PROJECT>
+Lake version 5.0.0-src+819816b (Lean version 4.33.1)
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\mathlib
+0df444a360eaa60ab8c11dca51a86af692955474
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\mathlib
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\mathlib
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\plausible
+b7eb3304aeae834b12dda98993a37f6a41f6f0bb
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\plausible
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\plausible
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\LeanSearchClient
+5f4d51b81cbd3f6b32b156bfad9056621a040404
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\LeanSearchClient
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\LeanSearchClient
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\importGraph
+16f02aa7642864af59f1ff0e384a015994db9118
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\importGraph
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\importGraph
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\proofwidgets
+4be2e3d5087eeb272cf5a8853b8f9dd025ef5957
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\proofwidgets
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\proofwidgets
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\aesop
+3448c0bcc5ce01b2d1546e483ec3620e32df3d0e
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\aesop
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\aesop
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\Qq
+92c15be17b7caf78c2ad767ec40f89052d908d81
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\Qq
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\Qq
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\batteries
+4488d40d070b9700d4d5a6aa342f0d40c31b2a2d
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\batteries
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\batteries
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git rev-parse HEAD
+CWD: <PROJECT>\.lake\packages\Cli
+6130a47896ce867c6a4a55373441e59e565bad0f
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git diff --exit-code HEAD
+CWD: <PROJECT>\.lake\packages\Cli
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ git status --porcelain --untracked-files=normal
+CWD: <PROJECT>\.lake\packages\Cli
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE build
+CWD: <PROJECT>
+ℹ [2012/2019] Built Moment (15s)
+info: Moment.lean:38:0: @powerset_centered_sum_sq : ∀ {α : Type u_1} [DecidableEq α] (A : Finset α) (f : α → ℤ),
+  ∑ S ∈ A.powerset, (2 * ∑ a ∈ S, f a - ∑ a ∈ A, f a) ^ 2 = 2 ^ A.card * ∑ a ∈ A, f a ^ 2
+info: Moment.lean:39:0: 'Erdos882Trial.powerset_centered_sum_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2013/2019] Built Energy (15s)
+info: Energy.lean:48:0: 'Erdos882Trial.integer_energy_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2014/2019] Built Counting (4.7s)
+info: Counting.lean:66:0: 'Erdos882Trial.distinct_subset_sums_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2015/2019] Built Primitive (4.1s)
+info: Primitive.lean:123:0: @Erdos882Trial.admissible_squared_bound : ∀ {n : ℕ} {A : Finset ℕ},
+  Erdos882Trial.Admissible n A → 2 ≤ A.card → 4 ^ A.card ≤ 32 * A.card * n ^ 2
+info: Primitive.lean:124:0: 'Erdos882Trial.primitive_condition_iff_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Primitive.lean:125:0: 'Erdos882Trial.admissible_iff_interval_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Primitive.lean:126:0: 'Erdos882Trial.subset_sum_injective_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Primitive.lean:127:0: 'Erdos882Trial.admissible_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2016/2019] Built Maximum (4.1s)
+info: Maximum.lean:88:0: 'Erdos882Trial.maximumSize_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Maximum.lean:89:0: 'Erdos882Trial.maximumSize_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2017/2019] Built LogBound (21s)
+info: LogBound.lean:86:0: Erdos882Trial.refined_upper_bound : ∃ C,
+  ∀ᶠ (n : ℕ) in atTop, ↑(Erdos882Trial.maximumSize n) ≤ Real.logb 2 ↑n + 1 / 2 * Real.logb 2 (Real.logb 2 ↑n) + C
+info: LogBound.lean:87:0: 'Erdos882Trial.maximumSize_refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LogBound.lean:88:0: 'Erdos882Trial.refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2018/2019] Built Audit (5.1s)
+info: Audit.lean:19:0: def Erdos882Trial.HasPrimitiveSubsetSums : Finset ℕ → Prop :=
+fun A => ∀ S ⊆ A, S.Nonempty → ∀ T ⊆ A, T.Nonempty → ∑ a ∈ S, a ∣ ∑ a ∈ T, a → ∑ a ∈ S, a = ∑ a ∈ T, a
+info: Audit.lean:20:0: def Erdos882Trial.Admissible : ℕ → Finset ℕ → Prop :=
+fun n A => (∀ a ∈ A, 1 ≤ a ∧ a ≤ n) ∧ HasPrimitiveSubsetSums A
+info: Audit.lean:21:0: def Erdos882Trial.PrimitiveImageCondition : Finset ℕ → Prop :=
+fun A =>
+  have values := Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty});
+  ∀ x ∈ values, ∀ y ∈ values, x ∣ y → x = y
+info: Audit.lean:22:0: @admissible_squared_bound : ∀ {n : ℕ} {A : Finset ℕ}, Admissible n A → 2 ≤ A.card → 4 ^ A.card ≤ 32 * A.card * n ^ 2
+info: Audit.lean:23:0: finite_bound_explicit : ∀ (n : ℕ),
+  ∀ A ⊆ Finset.Icc 1 n,
+    (∀ x ∈ Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty}),
+        ∀ y ∈ Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty}), x ∣ y → x = y) →
+      2 ≤ A.card → 4 ^ A.card ≤ 32 * A.card * n ^ 2
+info: Audit.lean:24:0: @maximumSize_refined_upper_bound : ∀ {n : ℕ},
+  32 ≤ n → ↑(maximumSize n) ≤ Real.logb 2 ↑n + 1 / 2 * Real.logb 2 (Real.logb 2 ↑n) + 3
+info: Audit.lean:25:0: refined_upper_bound : ∃ C,
+  ∀ᶠ (n : ℕ) in Filter.atTop, ↑(maximumSize n) ≤ Real.logb 2 ↑n + 1 / 2 * Real.logb 2 (Real.logb 2 ↑n) + C
+info: Audit.lean:26:0: def Erdos882Trial.admissibleFamily : ℕ → Finset (Finset ℕ) :=
+fun n => Finset.filter (Admissible n) (Finset.Icc 1 n).powerset
+info: Audit.lean:27:0: def Erdos882Trial.maximumSize : ℕ → ℕ :=
+fun n => (admissibleFamily n).sup Finset.card
+info: Audit.lean:28:0: maximumSize_definition_alignment : ∀ (n : ℕ),
+  maximumSize n =
+    {A ∈ (Finset.Icc 1 n).powerset |
+          ∀ x ∈ Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty}),
+            ∀ y ∈ Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty}), x ∣ y → x = y}.sup
+      Finset.card
+info: Audit.lean:29:0: 'Erdos882Trial.powerset_centered_sum_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:30:0: 'Erdos882Trial.integer_energy_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:31:0: 'Erdos882Trial.distinct_subset_sums_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:32:0: 'Erdos882Trial.primitive_condition_iff_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:33:0: 'Erdos882Trial.admissible_iff_interval_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:34:0: 'Erdos882Trial.subset_sum_injective_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:35:0: 'Erdos882Trial.admissible_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:36:0: 'Erdos882Trial.finite_bound_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:37:0: 'Erdos882Trial.maximumSize_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:38:0: 'Erdos882Trial.maximumSize_characterization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:39:0: 'Erdos882Trial.maximumSize_definition_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:40:0: 'Erdos882Trial.logarithmic_bound_of_squared' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:41:0: 'Erdos882Trial.admissible_refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:42:0: 'Erdos882Trial.maximumSize_refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:43:0: 'Erdos882Trial.refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2019 jobs).
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE env lean -o .lake/build/lib/lean/Moment.olean Moment.lean
+CWD: <PROJECT>
+@powerset_centered_sum_sq : ∀ {α : Type u_1} [DecidableEq α] (A : Finset α) (f : α → ℤ),
+  ∑ S ∈ A.powerset, (2 * ∑ a ∈ S, f a - ∑ a ∈ A, f a) ^ 2 = 2 ^ A.card * ∑ a ∈ A, f a ^ 2
+'Erdos882Trial.powerset_centered_sum_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE env lean -o .lake/build/lib/lean/Energy.olean Energy.lean
+CWD: <PROJECT>
+'Erdos882Trial.integer_energy_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE env lean -o .lake/build/lib/lean/Counting.olean Counting.lean
+CWD: <PROJECT>
+'Erdos882Trial.distinct_subset_sums_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE env lean -o .lake/build/lib/lean/Primitive.olean Primitive.lean
+CWD: <PROJECT>
+@Erdos882Trial.admissible_squared_bound : ∀ {n : ℕ} {A : Finset ℕ},
+  Erdos882Trial.Admissible n A → 2 ≤ A.card → 4 ^ A.card ≤ 32 * A.card * n ^ 2
+'Erdos882Trial.primitive_condition_iff_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.admissible_iff_interval_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.subset_sum_injective_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.admissible_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE env lean -o .lake/build/lib/lean/Maximum.olean Maximum.lean
+CWD: <PROJECT>
+'Erdos882Trial.maximumSize_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.maximumSize_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE env lean -o .lake/build/lib/lean/LogBound.olean LogBound.lean
+CWD: <PROJECT>
+Erdos882Trial.refined_upper_bound : ∃ C,
+  ∀ᶠ (n : ℕ) in atTop, ↑(Erdos882Trial.maximumSize n) ≤ Real.logb 2 ↑n + 1 / 2 * Real.logb 2 (Real.logb 2 ↑n) + C
+'Erdos882Trial.maximumSize_refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE env lean -o .lake/build/lib/lean/Audit.olean Audit.lean
+CWD: <PROJECT>
+def Erdos882Trial.HasPrimitiveSubsetSums : Finset ℕ → Prop :=
+fun A => ∀ S ⊆ A, S.Nonempty → ∀ T ⊆ A, T.Nonempty → ∑ a ∈ S, a ∣ ∑ a ∈ T, a → ∑ a ∈ S, a = ∑ a ∈ T, a
+def Erdos882Trial.Admissible : ℕ → Finset ℕ → Prop :=
+fun n A => (∀ a ∈ A, 1 ≤ a ∧ a ≤ n) ∧ HasPrimitiveSubsetSums A
+def Erdos882Trial.PrimitiveImageCondition : Finset ℕ → Prop :=
+fun A =>
+  have values := Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty});
+  ∀ x ∈ values, ∀ y ∈ values, x ∣ y → x = y
+@admissible_squared_bound : ∀ {n : ℕ} {A : Finset ℕ}, Admissible n A → 2 ≤ A.card → 4 ^ A.card ≤ 32 * A.card * n ^ 2
+finite_bound_explicit : ∀ (n : ℕ),
+  ∀ A ⊆ Finset.Icc 1 n,
+    (∀ x ∈ Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty}),
+        ∀ y ∈ Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty}), x ∣ y → x = y) →
+      2 ≤ A.card → 4 ^ A.card ≤ 32 * A.card * n ^ 2
+@maximumSize_refined_upper_bound : ∀ {n : ℕ},
+  32 ≤ n → ↑(maximumSize n) ≤ Real.logb 2 ↑n + 1 / 2 * Real.logb 2 (Real.logb 2 ↑n) + 3
+refined_upper_bound : ∃ C,
+  ∀ᶠ (n : ℕ) in Filter.atTop, ↑(maximumSize n) ≤ Real.logb 2 ↑n + 1 / 2 * Real.logb 2 (Real.logb 2 ↑n) + C
+def Erdos882Trial.admissibleFamily : ℕ → Finset (Finset ℕ) :=
+fun n => Finset.filter (Admissible n) (Finset.Icc 1 n).powerset
+def Erdos882Trial.maximumSize : ℕ → ℕ :=
+fun n => (admissibleFamily n).sup Finset.card
+maximumSize_definition_alignment : ∀ (n : ℕ),
+  maximumSize n =
+    {A ∈ (Finset.Icc 1 n).powerset |
+          ∀ x ∈ Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty}),
+            ∀ y ∈ Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty}), x ∣ y → x = y}.sup
+      Finset.card
+'Erdos882Trial.powerset_centered_sum_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.integer_energy_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.distinct_subset_sums_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.primitive_condition_iff_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.admissible_iff_interval_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.subset_sum_injective_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.admissible_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.finite_bound_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.maximumSize_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.maximumSize_characterization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.maximumSize_definition_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.logarithmic_bound_of_squared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.admissible_refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.maximumSize_refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <PYTHON> <PROJECT>\verify.py --check-axioms-log <PROJECT>\logs\recompile-Audit.log
+CWD: <PROJECT>
+{"Erdos882Trial.powerset_centered_sum_sq": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.integer_energy_lower_bound": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.distinct_subset_sums_squared_bound": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.primitive_condition_iff_image": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.admissible_iff_interval_image": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.subset_sum_injective_of_primitive": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.admissible_squared_bound": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.finite_bound_explicit": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.maximumSize_attained": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.maximumSize_characterization": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.maximumSize_definition_alignment": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.logarithmic_bound_of_squared": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.admissible_refined_upper_bound": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.maximumSize_refined_upper_bound": ["Classical.choice", "Quot.sound", "propext"], "Erdos882Trial.refined_upper_bound": ["Classical.choice", "Quot.sound", "propext"]}
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <LEAN_BIN>\lake.EXE env lean <PROJECT>\verification-tmp\false-arithmetic.lean
+CWD: <PROJECT>
+<PROJECT>\verification-tmp\false-arithmetic.lean:1:34: error: Tactic `decide` proved that the proposition
+  2 + 2 = 5
+is false
+
+COMMAND STATUS: COMPLETED
+EXIT: 1
+
+$ <LEAN_BIN>\lake.EXE env lean <PROJECT>\verification-tmp\sorry.lean
+CWD: <PROJECT>
+<PROJECT>\verification-tmp\sorry.lean:1:8: warning: declaration uses `sorry`
+'negative' depends on axioms: [sorryAx]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <PYTHON> <PROJECT>\verify.py --check-axioms-log <PROJECT>\logs\negative-sorry.log --names negative
+CWD: <PROJECT>
+Rejected axioms for negative: ['sorryAx']
+
+COMMAND STATUS: COMPLETED
+EXIT: 2
+
+$ <LEAN_BIN>\lake.EXE env lean <PROJECT>\verification-tmp\custom-axiom.lean
+CWD: <PROJECT>
+'negative' depends on axioms: [unapproved]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+$ <PYTHON> <PROJECT>\verify.py --check-axioms-log <PROJECT>\logs\negative-custom-axiom.log --names negative
+CWD: <PROJECT>
+Rejected axioms for negative: ['unapproved']
+
+COMMAND STATUS: COMPLETED
+EXIT: 2
+
+$ <LEAN_BIN>\lake.EXE env leanchecker --fresh -v Audit
+CWD: <PROJECT>
+replaying Audit with --fresh
+
+COMMAND STATUS: COMPLETED
+EXIT: 0
+
+FINAL STATUS: PASS
+FINISHED UTC: 2026-09-16T18:36:09.986519+00:00

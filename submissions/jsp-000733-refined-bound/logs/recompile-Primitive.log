@@ -1,0 +1,13 @@
+# REDACTED COPY; not unmodified raw output.
+# Record role: final English-source verifier run 4e5e8a02c48f46739006c6dafd238531
+# Known environment paths replaced; see REDACTION.md.
+
+@Erdos882Trial.admissible_squared_bound : ∀ {n : ℕ} {A : Finset ℕ},
+  Erdos882Trial.Admissible n A → 2 ≤ A.card → 4 ^ A.card ≤ 32 * A.card * n ^ 2
+'Erdos882Trial.primitive_condition_iff_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.admissible_iff_interval_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.subset_sum_injective_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos882Trial.admissible_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+COMMAND STATUS: COMPLETED
+EXIT: 0

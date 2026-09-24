@@ -1,0 +1,72 @@
+# REDACTED COPY; not unmodified raw output.
+# Record role: earlier development attempt before the Chinese final verification; source may differ
+# Known environment paths replaced; see REDACTION.md.
+
+ℹ [887/999] Replayed Moment
+info: Moment.lean:38:0: @powerset_centered_sum_sq : ∀ {α : Type u_1} [DecidableEq α] (A : Finset α) (f : α → ℤ),
+  ∑ S ∈ A.powerset, (2 * ∑ a ∈ S, f a - ∑ a ∈ A, f a) ^ 2 = 2 ^ A.card * ∑ a ∈ A, f a ^ 2
+info: Moment.lean:39:0: 'Erdos882Trial.powerset_centered_sum_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [977/999] Replayed Energy
+info: Energy.lean:48:0: 'Erdos882Trial.integer_energy_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [978/999] Replayed Counting
+info: Counting.lean:66:0: 'Erdos882Trial.distinct_subset_sums_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [981/999] Replayed Primitive
+info: Primitive.lean:123:0: @Erdos882Trial.admissible_squared_bound : ∀ {n : ℕ} {A : Finset ℕ},
+  Erdos882Trial.Admissible n A → 2 ≤ A.card → 4 ^ A.card ≤ 32 * A.card * n ^ 2
+info: Primitive.lean:124:0: 'Erdos882Trial.primitive_condition_iff_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Primitive.lean:125:0: 'Erdos882Trial.admissible_iff_interval_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Primitive.lean:126:0: 'Erdos882Trial.subset_sum_injective_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Primitive.lean:127:0: 'Erdos882Trial.admissible_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2016/2019] Built Maximum (4.4s)
+info: Maximum.lean:88:0: 'Erdos882Trial.maximumSize_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Maximum.lean:89:0: 'Erdos882Trial.maximumSize_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2017/2019] Built LogBound (7.0s)
+info: LogBound.lean:86:0: Erdos882Trial.refined_upper_bound : ∃ C,
+  ∀ᶠ (n : ℕ) in atTop, ↑(Erdos882Trial.maximumSize n) ≤ Real.logb 2 ↑n + 1 / 2 * Real.logb 2 (Real.logb 2 ↑n) + C
+info: LogBound.lean:87:0: 'Erdos882Trial.maximumSize_refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LogBound.lean:88:0: 'Erdos882Trial.refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2018/2019] Built Audit (7.3s)
+info: Audit.lean:19:0: def Erdos882Trial.HasPrimitiveSubsetSums : Finset ℕ → Prop :=
+fun A => ∀ S ⊆ A, S.Nonempty → ∀ T ⊆ A, T.Nonempty → ∑ a ∈ S, a ∣ ∑ a ∈ T, a → ∑ a ∈ S, a = ∑ a ∈ T, a
+info: Audit.lean:20:0: def Erdos882Trial.Admissible : ℕ → Finset ℕ → Prop :=
+fun n A => (∀ a ∈ A, 1 ≤ a ∧ a ≤ n) ∧ HasPrimitiveSubsetSums A
+info: Audit.lean:21:0: def Erdos882Trial.PrimitiveImageCondition : Finset ℕ → Prop :=
+fun A =>
+  have values := Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty});
+  ∀ x ∈ values, ∀ y ∈ values, x ∣ y → x = y
+info: Audit.lean:22:0: @admissible_squared_bound : ∀ {n : ℕ} {A : Finset ℕ}, Admissible n A → 2 ≤ A.card → 4 ^ A.card ≤ 32 * A.card * n ^ 2
+info: Audit.lean:23:0: finite_bound_explicit : ∀ (n : ℕ),
+  ∀ A ⊆ Finset.Icc 1 n,
+    (∀ x ∈ Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty}),
+        ∀ y ∈ Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty}), x ∣ y → x = y) →
+      2 ≤ A.card → 4 ^ A.card ≤ 32 * A.card * n ^ 2
+info: Audit.lean:24:0: @maximumSize_refined_upper_bound : ∀ {n : ℕ},
+  32 ≤ n → ↑(maximumSize n) ≤ Real.logb 2 ↑n + 1 / 2 * Real.logb 2 (Real.logb 2 ↑n) + 3
+info: Audit.lean:25:0: refined_upper_bound : ∃ C,
+  ∀ᶠ (n : ℕ) in Filter.atTop, ↑(maximumSize n) ≤ Real.logb 2 ↑n + 1 / 2 * Real.logb 2 (Real.logb 2 ↑n) + C
+info: Audit.lean:26:0: def Erdos882Trial.admissibleFamily : ℕ → Finset (Finset ℕ) :=
+fun n => Finset.filter (Admissible n) (Finset.Icc 1 n).powerset
+info: Audit.lean:27:0: def Erdos882Trial.maximumSize : ℕ → ℕ :=
+fun n => (admissibleFamily n).sup Finset.card
+info: Audit.lean:28:0: maximumSize_definition_alignment : ∀ (n : ℕ),
+  maximumSize n =
+    {A ∈ (Finset.Icc 1 n).powerset |
+          ∀ x ∈ Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty}),
+            ∀ y ∈ Finset.image (fun S => ∑ a ∈ S, a) ({S ∈ A.powerset | S.Nonempty}), x ∣ y → x = y}.sup
+      Finset.card
+info: Audit.lean:29:0: 'Erdos882Trial.powerset_centered_sum_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:30:0: 'Erdos882Trial.integer_energy_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:31:0: 'Erdos882Trial.distinct_subset_sums_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:32:0: 'Erdos882Trial.primitive_condition_iff_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:33:0: 'Erdos882Trial.admissible_iff_interval_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:34:0: 'Erdos882Trial.subset_sum_injective_of_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:35:0: 'Erdos882Trial.admissible_squared_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:36:0: 'Erdos882Trial.finite_bound_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:37:0: 'Erdos882Trial.maximumSize_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:38:0: 'Erdos882Trial.maximumSize_characterization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:39:0: 'Erdos882Trial.maximumSize_definition_alignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:40:0: 'Erdos882Trial.logarithmic_bound_of_squared' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:41:0: 'Erdos882Trial.admissible_refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:42:0: 'Erdos882Trial.maximumSize_refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:43:0: 'Erdos882Trial.refined_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (2019 jobs).

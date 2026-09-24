@@ -1,0 +1,15 @@
+# REDACTED COPY; not unmodified raw output.
+# Record role: six Python verification-record regression tests; no Lean compilation
+# Known environment paths replaced; see REDACTION.md.
+
+test_atomic_replace_uses_complete_sibling_and_preserves_old_on_failure (__main__.VerificationRecordTests.test_atomic_replace_uses_complete_sibling_and_preserves_old_on_failure) ... ok
+test_command_launch_error_updates_final_and_command_records (__main__.VerificationRecordTests.test_command_launch_error_updates_final_and_command_records) ... ok
+test_initialization_error_is_recorded_before_tool_discovery (__main__.VerificationRecordTests.test_initialization_error_is_recorded_before_tool_discovery) ... ok
+test_missing_lake_replaces_old_pass_and_preserves_original_logs (__main__.VerificationRecordTests.test_missing_lake_replaces_old_pass_and_preserves_original_logs) ... ok
+test_running_record_is_visible_before_command_completes (__main__.VerificationRecordTests.test_running_record_is_visible_before_command_completes) ... ok
+test_timeout_is_a_new_failed_run_with_command_evidence (__main__.VerificationRecordTests.test_timeout_is_a_new_failed_run_with_command_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.498s
+
+OK
