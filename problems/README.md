@@ -1149,7 +1149,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-001004 | [Does every two-coloring of the natural numbers contain an infinite set whose specified pairwise sums all have one color?](catalog-1001-1022.md#JSP-001004) | Open | No | No | Unavailable | Unavailable |
 | JSP-001005 | [Can prime residue classes with bounded reciprocal sum of moduli still cover a long initial integer interval?](catalog-1001-1022.md#JSP-001005) | Open | No | No | Unavailable | Unavailable |
 | JSP-001006 | [Does a consecutive-integer product typically have a prime factor comparable to the interval's location?](catalog-1001-1022.md#JSP-001006) | Open | No | No | Unavailable | Unavailable |
-| JSP-001007 | [How many integers can simultaneously avoid about half the residue classes modulo each of several primes?](catalog-1001-1022.md#JSP-001007) | Solved | No | No | Unavailable | Unavailable |
+| JSP-001007 | [How many integers can simultaneously avoid about half the residue classes modulo each of several primes?](catalog-1001-1022.md#JSP-001007) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-001008 | [Must the maximum distance-weighted distinct-prime-factor count among positions following an integer tend to infinity?](catalog-1001-1022.md#JSP-001008) | Open | No | No | Unavailable | Unavailable |
 | JSP-001009 | [How small can the span and average position of admissible prime tuples be?](catalog-1001-1022.md#JSP-001009) | Open | No | No | Unavailable | Unavailable |
 | JSP-001010 | [Choosing one residue class for each permitted modulus, what minimum coverage multiplicity can be achieved throughout the specified integer interval?](catalog-1001-1022.md#JSP-001010) | Solved | No | No | Unavailable | Unavailable |
