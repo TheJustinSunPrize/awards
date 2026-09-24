@@ -1,0 +1,9 @@
+{
+  "version": "v4.34.0",
+  "archive_sha256": "69f263fa6e21bbc2466bbfb1affcd92479ee2714c883a07de548e099a5922932",
+  "bytes": 561666156,
+  "matches_official_asset_digest": true,
+  "initial_attempt": "curl exit 35 SSL_ERROR_SYSCALL on release-assets host",
+  "retry": "download=1 query retry succeeded with certificate validation enabled",
+  "installation_scope": "Temporary directory only; no shell profile or system toolchain changed"
+}
