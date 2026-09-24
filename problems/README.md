@@ -41,7 +41,7 @@ The catalogs retain solution status, Lean proof status, historical bounty, elaps
 
 <a id="attribution-conventions"></a>
 
-**Attribution conventions (updated 2026-09-16).** The 66 records with an **Attribution basis** row describe credits for the selected completed proof version. Each row provides sources and any problem-specific qualifications. **Solver attribution source** links to evidence supporting the listed solver credits; **Lean attribution source** links to evidence supporting the listed Lean credits.
+**Attribution conventions (updated 2026-09-16).** The 67 records with an **Attribution basis** row describe credits for the selected completed proof version. Each row provides sources and any problem-specific qualifications. **Solver attribution source** links to evidence supporting the listed solver credits; **Lean attribution source** links to evidence supporting the listed Lean credits.
 
 Short attribution notes mean:
 
@@ -207,7 +207,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000107 | [Are there essentially different geometric configurations minimizing the number of distinct distances among planar points?](catalog-0101-0200.md#JSP-000107) | Open | No | No | Unavailable | Unavailable |
 | JSP-000108 | [If every point has many neighbors at one common distance from it, how large a count can be guaranteed at every point? Is it smaller than every fixed positive power of the number of points?](catalog-0101-0200.md#JSP-000108) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000109 | [What is the maximum number of unit-distance pairs among the vertices of a convex polygon?](catalog-0101-0200.md#JSP-000109) | Open | No | No | Unavailable | Unavailable |
-| JSP-000110 | [Does every convex polygon have a vertex from which no distance to the other vertices repeats too often?](catalog-0101-0200.md#JSP-000110) | Open | No | No | Unavailable | Unavailable |
+| JSP-000110 | [Does every convex polygon have a vertex from which no distance to the other vertices repeats too often?](catalog-0101-0200.md#JSP-000110) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000111 | [How many distinct distances must a planar point set in general position determine?](catalog-0101-0200.md#JSP-000111) | Open | No | No | Unavailable | Unavailable |
 | JSP-000112 | [Must a minimum-diameter point set satisfying the prescribed distance constraints contain an equilateral triangle of side length one?](catalog-0101-0200.md#JSP-000112) | Open | No | No | Unavailable | Unavailable |
 | JSP-000113 | [How large must a planar point set's diameter be if its distinct distances have the prescribed separation?](catalog-0101-0200.md#JSP-000113) | Open | No | No | Unavailable | Unavailable |
