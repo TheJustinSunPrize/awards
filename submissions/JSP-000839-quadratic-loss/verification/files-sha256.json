@@ -1,0 +1,57 @@
+[
+  {
+    "path": "Audit.lean",
+    "sha256": "4149601a270e0e936525249934d8cda523fb42f14e6b3e48ea9ec8d29993cce1",
+    "bytes": 945
+  },
+  {
+    "path": "lakefile.toml",
+    "sha256": "541a5b2dc20a80eea4e36920fddd476d3a1d6962c923d0bbc82ea273a9775ddd",
+    "bytes": 227
+  },
+  {
+    "path": "lake-manifest.json",
+    "sha256": "cad36a4e0a5af77c0f3495c28677712f9a501ce75085a02ed946cce8a3630568",
+    "bytes": 3134
+  },
+  {
+    "path": "lean-toolchain",
+    "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "bytes": 25
+  },
+  {
+    "path": "TrianglePacking.lean",
+    "sha256": "105ec8ca83dcf83218996f1ea4131058743b4a7da20c017084d9ba9a643a12d0",
+    "bytes": 30
+  },
+  {
+    "path": "TrianglePacking/Basic.lean",
+    "sha256": "ba3c213cbe477c229bedbb9bb4e83a07e3bc53e1dd5d3b93c9b67664ba4ed786",
+    "bytes": 1949
+  },
+  {
+    "path": "TrianglePacking/Bounds.lean",
+    "sha256": "a0bb727eba7651cfc29e9d77345df03651d5b925db1a8c4793ac3b12751e785c",
+    "bytes": 5586
+  },
+  {
+    "path": "TrianglePacking/Construction.lean",
+    "sha256": "7025e0911d2cbfcc160fba19a5c2a27f2086949d2a2a308b0d64867d97d5a3cf",
+    "bytes": 3027
+  },
+  {
+    "path": "TrianglePacking/Parity.lean",
+    "sha256": "0b6db358ab41767845f3399951f19baee0ea07a95a3aa89f4a9fac3dc52003a0",
+    "bytes": 6092
+  },
+  {
+    "path": "TrianglePacking/TriangleWeight.lean",
+    "sha256": "2716b287a3c51549849b08385ea41218774c95d8846f5b879c0aa7c6032de726",
+    "bytes": 1441
+  },
+  {
+    "path": "TrianglePacking/WeightedPacking.lean",
+    "sha256": "536af8eee229ccb3177805083b60b7685c37843fac9e31c875726ae509dcec0b",
+    "bytes": 2213
+  }
+]
