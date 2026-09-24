@@ -1,0 +1,26 @@
+Historical failed compatibility attempt; not successful proof evidence.
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentProof.lean:82:18: warning: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentProof.lean:182:18: warning: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentProof.lean:761:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentProof.lean:851:4: error: 'change' tactic failed, pattern
+  (X ^ d - 1).factorization 2 + 1 = (X + 1).factorization 2 + (X - 1).factorization 2 + d.factorization 2
+is not definitionally equal to target
+  padicValNat 2 (X ^ d - 1) + 1 = padicValNat 2 (X + 1) + padicValNat 2 (X - 1) + padicValNat 2 d
+
+exit_code=1

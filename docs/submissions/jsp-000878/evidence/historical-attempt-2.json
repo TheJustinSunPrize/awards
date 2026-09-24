@@ -1,0 +1,137 @@
+[
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058Core",
+    "exit_code": 0,
+    "seconds": 59.33
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058PrimeGapBase",
+    "exit_code": 0,
+    "seconds": 6.45
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058PrimeBatch",
+    "exit_code": 0,
+    "seconds": 40.85
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData0",
+    "exit_code": 0,
+    "seconds": 77.63
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData1",
+    "exit_code": 0,
+    "seconds": 63.82
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData2",
+    "exit_code": 0,
+    "seconds": 133.17
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData3",
+    "exit_code": 0,
+    "seconds": 60.32
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058PrimeGapBatch210",
+    "exit_code": 0,
+    "seconds": 9.83
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058PeriodicSieve",
+    "exit_code": 0,
+    "seconds": 2.07
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058CharacterSieve",
+    "exit_code": 0,
+    "seconds": 2.0
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058CharacterData",
+    "exit_code": 0,
+    "seconds": 8.95
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058PeriodicData0",
+    "exit_code": 0,
+    "seconds": 46.24
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058PeriodicData1",
+    "exit_code": 0,
+    "seconds": 62.25
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058PeriodicData2",
+    "exit_code": 0,
+    "seconds": 67.61
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058PeriodicData3",
+    "exit_code": 0,
+    "seconds": 89.66
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058PeriodicCertificates",
+    "exit_code": 0,
+    "seconds": 19.05
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058Assembly",
+    "exit_code": 0,
+    "seconds": 75.93
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurent",
+    "exit_code": 0,
+    "seconds": 130.64
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentZero",
+    "exit_code": 0,
+    "seconds": 134.4
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentMod",
+    "exit_code": 0,
+    "seconds": 141.71
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentRectangle",
+    "exit_code": 0,
+    "seconds": 120.39
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentDeterminant",
+    "exit_code": 0,
+    "seconds": 174.1
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentVandermonde",
+    "exit_code": 0,
+    "seconds": 147.52
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentBoxes",
+    "exit_code": 0,
+    "seconds": 145.87
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentBalancedDeterminant",
+    "exit_code": 0,
+    "seconds": 155.76
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentSharpBound",
+    "exit_code": 0,
+    "seconds": 148.16
+  },
+  {
+    "module": "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentParameters",
+    "exit_code": "TIMEOUT",
+    "seconds": 180.16
+  }
+]

@@ -1,0 +1,291 @@
+{
+  "pin": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+  "roots": [
+    "ErdosProblems.Erdos1058"
+  ],
+  "modules": {
+    "ErdosProblems.Erdos1058": {
+      "source": "src/latest/ErdosProblems/Erdos1058.lean",
+      "git_blob": "d4725cd04fa33b5dd2c08e3ddb1560b64b34b95e",
+      "bytes": 1793,
+      "sha256": "d83d16cb9a0abc13d404f1c2d07edb1c89e84ecde0afbe043334ffbf0c7e2499",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058Assembly",
+        "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentProof"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058Assembly": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058Assembly.lean",
+      "git_blob": "432dc09ce12d5318b9ddd9621dc832cde84e600f",
+      "bytes": 149571,
+      "sha256": "bce016c2f44923b51692b3b5378be67d57ebd2f15b742a073f66c412344596e6",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058Core",
+        "ErdosProblems.Erdos1058.Erdos1058PrimeGapBatch210",
+        "ErdosProblems.Erdos1058.Erdos1058PeriodicCertificates"
+      ],
+      "patched_sha256": "beed459175a25fca365d86c200b849e83966f8c9221f2c734e36244936cb3666",
+      "patched_bytes": 149631
+    },
+    "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentProof": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentProof.lean",
+      "git_blob": "6a814a2a9e0c6e2dc8350c0d8765950e3d113ed9",
+      "bytes": 40366,
+      "sha256": "6976be2105b124e8e8c403aa5a6ecd186012e996336d07661ff0045504497cb7",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentParameters"
+      ],
+      "patched_sha256": "e95b0fc2ab43db2659afed8eb452788d493f5ffa745e89325fd5c12fd4bd2704",
+      "patched_bytes": 40471
+    },
+    "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentParameters": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentParameters.lean",
+      "git_blob": "267a6b2823e9b1cb3e00783835dbc2eb9f78d265",
+      "bytes": 29675,
+      "sha256": "5dedc67d1ba653de094bc6989ab063b5496da43f1ac0af51b8f97b2a0e024cdc",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentSharpBound"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058Core": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058Core.lean",
+      "git_blob": "4b10dffd7a9eb88641e5c3677cb5ca7b58b1aa18",
+      "bytes": 59915,
+      "sha256": "1d64d9a9142f54b3efce1978082ed2ca05e2105ed7864c0cf3d38dd2a0bce4ce",
+      "imports": []
+    },
+    "ErdosProblems.Erdos1058.Erdos1058PeriodicCertificates": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058PeriodicCertificates.lean",
+      "git_blob": "d46db0e349cad5401d4835e2d140dc4a7f4fa0df",
+      "bytes": 5505,
+      "sha256": "15e4f1ab5417723d20ef6e43091ec0e5e6d97014bc9e72f2e549547938a7750d",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058PeriodicData0",
+        "ErdosProblems.Erdos1058.Erdos1058PeriodicData1",
+        "ErdosProblems.Erdos1058.Erdos1058PeriodicData2",
+        "ErdosProblems.Erdos1058.Erdos1058PeriodicData3"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058PrimeGapBatch210": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058PrimeGapBatch210.lean",
+      "git_blob": "0e49b27ee61927317b239ad8bebc97015888c7a4",
+      "bytes": 1162,
+      "sha256": "ee213fe7d6eef332d45a0173f8b760a06e2eee6f3f05ac1db83cd7a06799bd5c",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData0",
+        "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData1",
+        "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData2",
+        "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData3"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentSharpBound": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentSharpBound.lean",
+      "git_blob": "0ad3eb834724c0814a45213a1ab95993d6a60e6d",
+      "bytes": 23606,
+      "sha256": "0c3e6cca4e75ddf4b31fd3dc66a9d4a454d3bf95cbcce0fa0e6a22d3b99971a4",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentBalancedDeterminant"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058PeriodicData0": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058PeriodicData0.lean",
+      "git_blob": "05f00236dc154b00dfccce8cb7888111b939b062",
+      "bytes": 16104,
+      "sha256": "84fb9f5a5414a9522957b0669c916d518c50ba54184d9eff9bd4b984f6603cfd",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058CharacterData",
+        "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData0"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058PeriodicData1": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058PeriodicData1.lean",
+      "git_blob": "d382d3a6b22cf6b31e0ae82d39369396fced81d3",
+      "bytes": 15465,
+      "sha256": "8f6ba50d2a6ba20dc23a700a17126f6107969ae13c8c1c05d89cf01469bcaada",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058CharacterData",
+        "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData1"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058PeriodicData2": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058PeriodicData2.lean",
+      "git_blob": "4f3b180bd29bb147188028da9381ae3bf7843aa4",
+      "bytes": 15895,
+      "sha256": "5e7f3619f44579708476fbf842095c01c75de2d4424ec88e3c1749d2f9b36d24",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058CharacterData",
+        "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData2"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058PeriodicData3": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058PeriodicData3.lean",
+      "git_blob": "7315286d5815f53d22462d5cdf8b35ca8c2cf44d",
+      "bytes": 20699,
+      "sha256": "f85768eb59eace143e00f35318480ca56309383e019030b5abcf56a3d11691d1",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058CharacterData",
+        "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData3"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData0": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058PrimeBatchData0.lean",
+      "git_blob": "458cb93eb18269ebfcf20645110ca729ab767118",
+      "bytes": 706360,
+      "sha256": "ffdf11bbfa275b043f7e351d9401c7c9cec72110d2ae60046f97a8c272712017",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058PrimeBatch"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData1": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058PrimeBatchData1.lean",
+      "git_blob": "f9b86e1eb7233373049cea52126814f9204b1b35",
+      "bytes": 752921,
+      "sha256": "22c9e9f31ff5a920881253308ab396ae9f215861b97f492377dd6e5b6cdd18d0",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058PrimeBatch"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData2": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058PrimeBatchData2.lean",
+      "git_blob": "358bf0ed2f576a9645f357a663981bb36a8e34ff",
+      "bytes": 757617,
+      "sha256": "571c980eb870bb5769aace6adc03fda40aaed1559c934e88e29b1e0ed7bf37ad",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058PrimeBatch"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentBalancedDeterminant": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentBalancedDeterminant.lean",
+      "git_blob": "09e7c93115966d7dbc8e9a149fc3d3d358170c26",
+      "bytes": 8652,
+      "sha256": "b9f3c45d8a2e52daf32074de3c3a6f509088f3ec869ca5274f48b0470051b52d",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentBoxes"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058CharacterData": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058CharacterData.lean",
+      "git_blob": "2438ae2aa9932e65b572cd54ef3848a27a827866",
+      "bytes": 17090,
+      "sha256": "9b6cacddbd03014cb9bcadfd79d6eb3fe424ad41ebd05adb35b37fbd9f23b1bd",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058CharacterSieve"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058PrimeBatch": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058PrimeBatch.lean",
+      "git_blob": "2e437dd8791776ff5ec9a1ed1cc5c3aea5f5437e",
+      "bytes": 2381,
+      "sha256": "9622e2ba9d12fe489ba82cca4d5e60aba36ea421ff56b4c11717b92a2fe15903",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058Core",
+        "ErdosProblems.Erdos1058.Erdos1058PrimeGapBase"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058PrimeBatchData3": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058PrimeBatchData3.lean",
+      "git_blob": "6c863d69573bfc66f35fddea78b04c3094115854",
+      "bytes": 749137,
+      "sha256": "f7846952ff27bae335af4c95494d24a95e392e8715c0bc3ffcce2a809f8b0862",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058PrimeBatch"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentBoxes": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentBoxes.lean",
+      "git_blob": "b9b704018c70b49f3dc510e4df01d2a84e293c06",
+      "bytes": 20700,
+      "sha256": "86abc8bd14c5456fdd6108bc8d06e42210d1c99af47df07d550a29c397e9b8a6",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentVandermonde"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058CharacterSieve": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058CharacterSieve.lean",
+      "git_blob": "5240330a60b685dac6a8d03b43cea95b445d4e94",
+      "bytes": 7626,
+      "sha256": "39652b13c40574489c6494cf11f95870417c900f4f4ff1d280b5983527f16e23",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058PeriodicSieve"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058PrimeGapBase": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058PrimeGapBase.lean",
+      "git_blob": "b42a0e02c26efde8f7f3c148979b7b8aed81c739",
+      "bytes": 4015,
+      "sha256": "fda2abc8296730f17b7030687d061cf42da378a53c382d8fd78f543ea23e6ea7",
+      "imports": []
+    },
+    "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentVandermonde": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentVandermonde.lean",
+      "git_blob": "232b094a13bc40b43cc2192b8c296e63ffdeca3f",
+      "bytes": 5731,
+      "sha256": "fd0842f04f4585785d2eb1e87fcedc0315ce7ef3ba098dadb1de08795d0ba531",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentDeterminant"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058PeriodicSieve": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058PeriodicSieve.lean",
+      "git_blob": "297c408769e905f1aaad8ef441c4e4c1fda4a450",
+      "bytes": 3707,
+      "sha256": "7635db334c10aeca09b608fe2e08476339bf41046663f936efa936eea6b7f255",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058Core"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentDeterminant": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentDeterminant.lean",
+      "git_blob": "a663b04dfa6fde967068babaaf1a39cdb0cfb9cb",
+      "bytes": 23179,
+      "sha256": "30155a143fbe6c337e00e8cbaebd225c6b43f6393a6567ac0b94314e89c871fe",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentRectangle"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentRectangle": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentRectangle.lean",
+      "git_blob": "c6c91e8d3529bcb45b7f5c05da6955a3eddf9597",
+      "bytes": 12393,
+      "sha256": "696d9f105de01f1d680b9af9a1ade04aedfdfda332025fe5c5d1f6932a1d63cd",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentZero",
+        "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentMod"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentMod": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentMod.lean",
+      "git_blob": "f9feea0c49cce77e36ff4ace9e8d84bcbce2823d",
+      "bytes": 5580,
+      "sha256": "a3137cbb9c3c25f7d576105b18d6061328054a353249756f61fc036a26b74c2f",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurent"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentZero": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentZero.lean",
+      "git_blob": "ec9fab9ba524dfb47d00f4b48911ad4aef4fbe18",
+      "bytes": 18542,
+      "sha256": "1fa750025d68f862ee1e31e91230013898bed2da8c53b8a1efd1ff307a10647e",
+      "imports": [
+        "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurent"
+      ]
+    },
+    "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurent": {
+      "source": "src/latest/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurent.lean",
+      "git_blob": "e6b77c13dfa6b9bf0b885b84ebccdc24227f59f8",
+      "bytes": 31118,
+      "sha256": "e73146314c94e491ad3c2fbc448b2ed49f86131ee42992a129b744203ad7c45c",
+      "imports": []
+    }
+  },
+  "pending": [],
+  "errors": [],
+  "complete_source_closure": true,
+  "certification": "Source identity and dependency closure only; proof verification is separately recorded in evidence/verification.json.",
+  "repository": "https://github.com/plby/lean-proofs",
+  "mathlib_commit": "5ed2965256430c3649e86755f9576b54eca72435",
+  "lean_version": "4.34.0",
+  "source_header_version": "4.33.0",
+  "access_date": "2026-09-17"
+}
