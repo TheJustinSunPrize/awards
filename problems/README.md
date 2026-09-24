@@ -1,7 +1,3 @@
-# Mathematical problem bank
-
-[Repository home](../README.md) · [Problem bank sources](../docs/problem-bank-sources.md)
-
 This catalog contains **1,022 mathematical problems**.
 
 Problems are numbered consecutively and grouped into volumes of 100 records (22 in the final volume), with a heading, a field table, and any review notes for each problem. The index shows **Current status**, **Lean proof**, **Eligible to claim**, **Solver claim status**, and **Lean claim status**. The index and detail tables both use **Current status: Open/Solved**; the two claim-status columns appear only in the index.
