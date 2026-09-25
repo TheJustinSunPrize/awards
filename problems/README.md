@@ -93,7 +93,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 
 | No. | Problem | Current status | Lean proof | Eligible to claim | Solver claim status | Lean claim status |
 | --- | --- | --- | --- | --- | --- | --- |
-| JSP-000001 | [Riemann hypothesis](catalog-0001-0100.md#JSP-000001) | Open | No | No | Unavailable | Unavailable |
+| JSP-000001 | [Riemann hypothesis](catalog-0001-0100.md#JSP-000001) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000002 | [P versus NP problem](catalog-0001-0100.md#JSP-000002) | Open | No | No | Unavailable | Unavailable |
 | JSP-000003 | [Birch–Swinnerton-Dyer conjecture (BSD)](catalog-0001-0100.md#JSP-000003) | Open | No | No | Unavailable | Unavailable |
 | JSP-000004 | [Hodge conjecture](catalog-0001-0100.md#JSP-000004) | Open | No | No | Unavailable | Unavailable |
