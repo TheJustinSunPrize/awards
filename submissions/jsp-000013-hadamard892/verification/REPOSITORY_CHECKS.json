@@ -1,0 +1,79 @@
+{
+  "checked_at": "2026-09-17T03:27:04.006063+00:00",
+  "base_commit": "f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+  "scope": "Repository structure, data and existing tests only; these commands do not verify the Lean mathematics. The official link command excludes submissions/; package-local links are separately reviewed.",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "exit_code": 0,
+      "seconds": 0.261,
+      "stdout": "validate: OK\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "links"
+      ],
+      "exit_code": 0,
+      "seconds": 1.058,
+      "stdout": "links: OK\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "build"
+      ],
+      "exit_code": 0,
+      "seconds": 0.14,
+      "stdout": "build: OK\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.144,
+      "stdout": "check: OK\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "history",
+        "--base",
+        "f4e7173d89dfe91022a185427d63452c8ffbf6ae"
+      ],
+      "exit_code": 0,
+      "seconds": 0.172,
+      "stdout": "history: OK\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 2.815,
+      "stdout": "",
+      "stderr": "test_alias_and_custom_tag_rejected (test_records.RecordTests.test_alias_and_custom_tag_rejected) ... ok\ntest_award_cannot_be_deleted (test_records.RecordTests.test_award_cannot_be_deleted) ... ok\ntest_candidate_cannot_publish_award_decision (test_records.RecordTests.test_candidate_cannot_publish_award_decision) ... ok\ntest_confirmed_states_need_verification (test_records.RecordTests.test_confirmed_states_need_verification) ... ok\ntest_draft_roundtrip_and_drift (test_records.RecordTests.test_draft_roundtrip_and_drift) ... ok\ntest_duplicate_entry_ids_rejected (test_records.RecordTests.test_duplicate_entry_ids_rejected) ... ok\ntest_duplicate_yaml_keys_rejected (test_records.RecordTests.test_duplicate_yaml_keys_rejected) ... ok\ntest_empty_indexes (test_records.RecordTests.test_empty_indexes) ... ok\ntest_formal_candidate_needs_statement (test_records.RecordTests.test_formal_candidate_needs_statement) ... ok\ntest_internal_record_fields_rejected (test_records.RecordTests.test_internal_record_fields_rejected) ... ok\ntest_local_links_and_anchors (test_records.RecordTests.test_local_links_and_anchors) ... ok\ntest_nonempty_english_sections (test_records.RecordTests.test_nonempty_english_sections) ... ok\ntest_pending_candidate_accepts_incomplete_evidence (test_records.RecordTests.test_pending_candidate_accepts_incomplete_evidence) ... ok\ntest_public_award_and_batch_membership (test_records.RecordTests.test_public_award_and_batch_membership) ... ok\ntest_published_decision_immutable (test_records.RecordTests.test_published_decision_immutable) ... ok\ntest_published_statement_immutable_and_superseded (test_records.RecordTests.test_published_statement_immutable_and_superseded) ... ok\ntest_revocation_keeps_original_evidence (test_records.RecordTests.test_revocation_keeps_original_evidence) ... ok\ntest_symlinks_and_misplaced_records_rejected (test_records.RecordTests.test_symlinks_and_misplaced_records_rejected) ... ok\ntest_unconfirmed_award_rejected (test_records.RecordTests.test_unconfirmed_award_rejected) ... ok\ntest_unconfirmed_names_and_duplicate_recipients_rejected (test_records.RecordTests.test_unconfirmed_names_and_duplicate_recipients_rejected) ... ok\ntest_unknown_payment_field_rejected (test_records.RecordTests.test_unknown_payment_field_rejected) ... ok\ntest_verification_requires_consistent_successful_evidence (test_records.RecordTests.test_verification_requires_consistent_successful_evidence) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 2.697s\n\nOK\n"
+    }
+  ]
+}

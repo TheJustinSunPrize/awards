@@ -1,0 +1,351 @@
+{
+  "run_id": "9e23b8a7-4d75-44b5-8372-516351569e07",
+  "started_at": "2026-09-17T03:07:01.557649+00:00",
+  "phase": "complete",
+  "local_checks_passed": true,
+  "official_acceptance": false,
+  "module": "Hadamard892",
+  "theorems": [
+    "Hadamard892.goethals_seidel_hadamard",
+    "Hadamard892.matrix892_isHadamard",
+    "Hadamard892.exists_hadamard892"
+  ],
+  "source_sha256": "bd31f72e5b7d0ff240fa2bdf584df6ad432dbbf746bc8f733559a1a0f787a162",
+  "source_bytes": 1317,
+  "local_sources": [
+    {
+      "module": "GenericGS",
+      "path": "<project>/GenericGS.lean",
+      "sha256": "d5fb54d9524e63b40c16f028437e13f5b7440c64df7ee47abf8dd63dcc1652fe"
+    },
+    {
+      "module": "CirculantBridge",
+      "path": "<project>/CirculantBridge.lean",
+      "sha256": "f8f8f73fa0d39747cecca6991d04a0eb026c4e7cbb8a9788623c01c7ef26405c"
+    },
+    {
+      "module": "GenericHadamard",
+      "path": "<project>/GenericHadamard.lean",
+      "sha256": "9cdf6e46f663d9e3d65e8756a83753fdc24a899efaa7f25daf78fd261d6592c3"
+    },
+    {
+      "module": "Hadamard892Data",
+      "path": "<project>/Hadamard892Data.lean",
+      "sha256": "c63ed4293f86bd35dcbd63fb3ab6c65d4b84fdbca8decb742aa5b217ce2e51c3"
+    },
+    {
+      "module": "Hadamard892Certificate",
+      "path": "<project>/Hadamard892Certificate.lean",
+      "sha256": "0818c0e92649ed41e57ef1bc746f70d74805dc56615e3f025af423ef7b2e2afa"
+    },
+    {
+      "module": "Hadamard892",
+      "path": "<project>/Hadamard892.lean",
+      "sha256": "bd31f72e5b7d0ff240fa2bdf584df6ad432dbbf746bc8f733559a1a0f787a162"
+    }
+  ],
+  "toolchain": "Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)",
+  "project_lean_toolchain": "leanprover/lean4:v4.34.0",
+  "verification_script_sha256": "677a8960ae534b2b4f9fa819a05e519a206ca5fc34e67c7c27208a4b93633caf",
+  "lean_bin": "<lean-bin>",
+  "lean_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "nanoda_path": "<nanoda>",
+  "nanoda_sha256": "cfd89798e7f5f984f852e2410694e8c4efe1463b613f75e85c8dc904b499e146",
+  "exporter_path": "<exporter>",
+  "exporter_sha256": "ad235f7ce3177ea0de2b66316f06361aff890683264c94cb31e91a46eeda60a2",
+  "commands": [
+    {
+      "name": "compile-GenericGS",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-o",
+        "<project>/.lake/build/lib/lean/GenericGS.olean",
+        "<project>/GenericGS.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 26.167
+    },
+    {
+      "name": "compile-CirculantBridge",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-o",
+        "<project>/.lake/build/lib/lean/CirculantBridge.olean",
+        "<project>/CirculantBridge.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 24.221
+    },
+    {
+      "name": "compile-GenericHadamard",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-o",
+        "<project>/.lake/build/lib/lean/GenericHadamard.olean",
+        "<project>/GenericHadamard.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 40.755
+    },
+    {
+      "name": "compile-Hadamard892Data",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-o",
+        "<project>/.lake/build/lib/lean/Hadamard892Data.olean",
+        "<project>/Hadamard892Data.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 29.766
+    },
+    {
+      "name": "compile-Hadamard892Certificate",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-o",
+        "<project>/.lake/build/lib/lean/Hadamard892Certificate.olean",
+        "<project>/Hadamard892Certificate.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 131.277
+    },
+    {
+      "name": "compile-Hadamard892",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "lean",
+        "-j",
+        "1",
+        "-o",
+        "<project>/.lake/build/lib/lean/Hadamard892.olean",
+        "<project>/Hadamard892.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 51.723
+    },
+    {
+      "name": "leanchecker",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "Hadamard892"
+      ],
+      "exit_code": 0,
+      "seconds": 417.865
+    },
+    {
+      "name": "export",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<lean-bin>/lake",
+        "env",
+        "<exporter>",
+        "Hadamard892",
+        "--",
+        "Hadamard892.goethals_seidel_hadamard",
+        "Hadamard892.matrix892_isHadamard",
+        "Hadamard892.exists_hadamard892"
+      ],
+      "exit_code": 0,
+      "seconds": 46.593
+    },
+    {
+      "name": "nanoda",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-p",
+        "(version 1)(allow default)(deny network*)",
+        "<nanoda>",
+        "<verification-output>/nanoda.json"
+      ],
+      "exit_code": 0,
+      "seconds": 33.327
+    }
+  ],
+  "network_access_denied_for_check_commands": true,
+  "network_policy": "(version 1)(allow default)(deny network*)",
+  "network_policy_control_probe": [
+    {
+      "name": "control",
+      "exit_code": 0,
+      "stdout": "NETWORK_ACCESSIBLE\n",
+      "stderr": ""
+    },
+    {
+      "name": "denied",
+      "exit_code": 73,
+      "stdout": "NETWORK_DENIED 1\n",
+      "stderr": ""
+    }
+  ],
+  "filesystem_isolated": false,
+  "dependencies_rebuilt_from_source": false,
+  "precompiled_dependencies_used": true,
+  "lake_manifest_sha256": "f18a5d74ebdccda5868798322630fc92839c52a487df3e30c1183f92e17cc839",
+  "lake_manifest": {
+    "version": "1.2.0",
+    "packagesDir": ".lake/packages",
+    "packages": [
+      {
+        "url": "https://github.com/leanprover-community/mathlib4.git",
+        "type": "git",
+        "subDir": null,
+        "scope": "",
+        "rev": "5ed2965256430c3649e86755f9576b54eca72435",
+        "name": "mathlib",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "5ed2965256430c3649e86755f9576b54eca72435",
+        "inherited": false,
+        "configFile": "lakefile.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/plausible",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+        "name": "plausible",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/LeanSearchClient",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+        "name": "LeanSearchClient",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/import-graph",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "e928b72544873815af278d38681b31c0293588e3",
+        "name": "importGraph",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/ProofWidgets4",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+        "name": "proofwidgets",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.lean"
+      },
+      {
+        "url": "https://github.com/leanprover-community/aesop",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "355695d523e41d0554926416cba2a2b3544fbbc9",
+        "name": "aesop",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "master",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/quote4",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+        "name": "Qq",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "master",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover-community/batteries",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover-community",
+        "rev": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+        "name": "batteries",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "main",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      },
+      {
+        "url": "https://github.com/leanprover/lean4-cli",
+        "type": "git",
+        "subDir": null,
+        "scope": "leanprover",
+        "rev": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+        "name": "Cli",
+        "manifestFile": "lake-manifest.json",
+        "inputRev": "v4.34.0",
+        "inherited": true,
+        "configFile": "lakefile.toml"
+      }
+    ],
+    "name": "hadamard892",
+    "lakeDir": ".lake",
+    "fixedToolchain": false
+  },
+  "export_sha256": "e9510f14f53a2fa9f1e2591cbda2708b8b72323c36175f97d2ca977898d62eb1",
+  "export_bytes": 41120305,
+  "paths_redacted_for_publication": true
+}
