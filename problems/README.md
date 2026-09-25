@@ -446,7 +446,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000336 | [When does iterating the map sending an integer to its totient plus one reach a prime, and what is its long-term behavior?](catalog-0301-0400.md#JSP-000336) | Open | No | No | Unavailable | Unavailable |
 | JSP-000337 | [How fast do iterates of the sum-of-divisors function grow?](catalog-0301-0400.md#JSP-000337) | Open | No | No | Unavailable | Unavailable |
 | JSP-000338 | [When does iteration of the map sending an integer to itself plus its totient eventually follow a doubling pattern?](catalog-0301-0400.md#JSP-000338) | Open | No | No | Unavailable | Unavailable |
-| JSP-000339 | [Do sum-of-divisors iteration trajectories from different starting integers eventually meet?](catalog-0301-0400.md#JSP-000339) | Open | No | No | Unavailable | Unavailable |
+| JSP-000339 | [Do sum-of-divisors iteration trajectories from different starting integers eventually meet?](catalog-0301-0400.md#JSP-000339) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000340 | [Are there infinitely many bounds such that every smaller integer plus its number of distinct prime factors stays below the bound? Does this remain true with any fixed positive multiplier on the prime-factor count?](catalog-0301-0400.md#JSP-000340) | Open | No | No | Unavailable | Unavailable |
 | JSP-000341 | [Do trajectories obtained by repeatedly adding an integer's divisor count eventually meet when started at different integers?](catalog-0301-0400.md#JSP-000341) | Open | No | No | Unavailable | Unavailable |
 | JSP-000342 | [Which orderings of totient values at consecutive integers occur, and with what frequencies?](catalog-0301-0400.md#JSP-000342) | Open | No | No | Unavailable | Unavailable |
