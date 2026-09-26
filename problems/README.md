@@ -255,7 +255,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000155 | [Is there an infinite Sidon set whose three-term sums represent every sufficiently large integer?](catalog-0101-0200.md#JSP-000155) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000156 | [How dense can an integer set be if each integer has at most two representations as a sum of two of its elements?](catalog-0101-0200.md#JSP-000156) | Open | No | No | Unavailable | Unavailable |
 | JSP-000157 | [How many vertices force a four-cycle in one color or a clique of prescribed size in the other color in every two-coloring of a complete graph?](catalog-0101-0200.md#JSP-000157) | Open | No | No | Unavailable | Unavailable |
-| JSP-000158 | [How many colors are needed to color consecutive integers so that every four-term arithmetic progression uses at least three colors?](catalog-0101-0200.md#JSP-000158) | Open | No | No | Unavailable | Unavailable |
+| JSP-000158 | [How many colors are needed to color consecutive integers so that every four-term arithmetic progression uses at least three colors?](catalog-0101-0200.md#JSP-000158) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000159 | [How does density affect the threshold for finding the specified color-balanced structure in a two-colored hypergraph?](catalog-0101-0200.md#JSP-000159) | Open | No | No | Unavailable | Unavailable |
 | JSP-000160 | [Locally balanced two-colorings of complete graphs](catalog-0101-0200.md#JSP-000160) | Open | No | No | Unavailable | Unavailable |
 | JSP-000161 | [Linear Ramsey bounds for graphs of bounded degeneracy](catalog-0101-0200.md#JSP-000161) | Solved | No | No | Unavailable | Unavailable |
