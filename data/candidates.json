@@ -1,4 +1,39 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000598-lean",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0501-0600.md#JSP-000598",
+          "number": "000598",
+          "title_en": "Lean 4 + Mathlib formalization for JSP-000598",
+          "posed": {
+            "year": 1975,
+            "basis": "earliest-reference",
+            "citation": "Erdős, Graham, Ruzsa and Straus, Math. Comp. 29 (1975) 83-92"
+          },
+          "resolved": {
+            "year": 2026
+          }
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "draft",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000598-lean",
+      "citation": "# Citation\n\n## English\n\nLean formalization submission for JSP-000598 (Erdős Problem #730), contributed by\nTanHao (doge@tidalboundary.fun).\n\nContribution role: **Lean formalization**. Candidate record awaiting maintainer verification.\n\nLean proof repository: https://github.com/doge-th/jsp-lean-proofs — file `proofs/JSP-000598.lean`.\nToolchain: Lean 4.35.0-rc1 + Mathlib4. No `native_decide`, no `sorry`;\n`#print axioms` on every theorem returns only propext, Classical.choice and\nQuot.sound.\n\nThe formalization proves the finite/existential content of the catalog\nquestion with both Erdős–Graham–Ruzsa–Straus examples `(87, 88)` and\n`(607, 608)`, together with Kummer's bound and the central-binomial\nrecurrence. The asymptotic density claim of the cited write-up is\nexplicitly out of scope and is not claimed here.\n\nNo award is claimed at this stage; mathematical review and solver\nregistration precede Lean verification per the documented process.\n",
+      "recipients": "# Recipients\n\n## English\n\nRECIPIENT-jsp-000598-lean-A (placeholder pending written confirmation).\n\nContribution: Lean 4 + Mathlib formalization for JSP-000598.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }

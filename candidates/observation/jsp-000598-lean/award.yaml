@@ -1,0 +1,21 @@
+id: jsp-000598-lean
+batch: null
+problem:
+  source: "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0501-0600.md#JSP-000598"
+  number: "000598"
+  title_en: "Lean 4 + Mathlib formalization for JSP-000598"
+  posed:
+    year: 1975
+    basis: earliest-reference
+    citation: "Erdős, Graham, Ruzsa and Straus, Math. Comp. 29 (1975) 83-92"
+  resolved:
+    year: 2026
+decision: null
+recipients: []
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: draft
+revocation: null
