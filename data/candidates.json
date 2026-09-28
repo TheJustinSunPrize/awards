@@ -1,4 +1,39 @@
 {
   "schema_version": 1,
-  "items": []
+  "items": [
+    {
+      "entry": {
+        "id": "jsp-000307-lean",
+        "batch": null,
+        "problem": {
+          "source": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0301-0400.md#JSP-000307",
+          "number": "000307",
+          "title_en": "Lean 4 + Mathlib formalization for JSP-000307",
+          "posed": {
+            "year": 1978,
+            "basis": "earliest-reference",
+            "citation": "See catalog entry for JSP-000307"
+          },
+          "resolved": {
+            "year": 2026
+          }
+        },
+        "decision": null,
+        "recipients": [],
+        "verification": {
+          "peer_review": null,
+          "formal": null,
+          "independent_review": null
+        },
+        "conflicts": [],
+        "status": "draft",
+        "revocation": null
+      },
+      "source_path": "candidates/observation/jsp-000307-lean",
+      "citation": "# Citation\n\n## English\n\nPending Lean formalization submission for JSP-000307, contributed by TanHao (doge@tidalboundary.fun).\n\nContribution role: **Lean formalization**. Candidate record awaiting maintainer verification.\n\nLean proof repository: https://github.com/doge-th/jsp-lean-proofs — file `proofs/JSP000307.lean`.\nToolchain: Lean 4.35.0-rc1 + Mathlib4. No `native_decide`; `#print axioms` on every\nclaimed theorem returns only propext, Classical.choice and Quot.sound.\n\nNo award is claimed at this stage; mathematical review and solver registration\nprecede Lean verification per the documented process.\n",
+      "recipients": "# Recipients\n\n## English\n\nRECIPIENT-jsp-000307-lean-A (placeholder pending written confirmation).\n\nContribution: Lean 4 + Mathlib formalization for JSP-000307.\n",
+      "verification_record": null,
+      "statement": null
+    }
+  ]
 }
