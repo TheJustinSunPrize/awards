@@ -1,0 +1,23 @@
+{
+  "checked_on": "2026-09-17",
+  "releases": {
+    "url": "https://api.github.com/repos/TheJustinSunPrize/awards/releases",
+    "result": []
+  },
+  "awards_directory": {
+    "url": "https://api.github.com/repos/TheJustinSunPrize/awards/contents/awards",
+    "entries": [
+      {
+        "name": "README.md",
+        "type": "file",
+        "sha": "924f49b4bb15821959048d0659e2f7b011c9c8cf"
+      }
+    ]
+  },
+  "about": {
+    "url": "https://api.github.com/repos/TheJustinSunPrize/awards/contents/docs/about.md?ref=main",
+    "git_blob_sha": "ccff8360fa69f1264f2e7aa98fcb7db173105b1c",
+    "local_snapshot": "official-about.txt"
+  },
+  "limitation": "These checked official repository endpoints do not establish whether other official announcement channels exist. Raw content host failed TLS hostname verification; no verification bypass was used."
+}
