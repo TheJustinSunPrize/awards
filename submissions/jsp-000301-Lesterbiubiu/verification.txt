@@ -1,0 +1,57 @@
+JSP-000301 — verification log
+generated: 2026-09-17T07:59:00Z (UTC)
+
+toolchain : leanprover/lean4:v4.34.0
+lean      : Lean (version 4.34.0, x86_64-w64-windows-gnu, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)
+lake      : Lake version 5.0.0-src+293d5d0 (Lean version 4.34.0)
+mathlib   : 5ed2965256430c3649e86755f9576b54eca72435
+
+imports (Main.lean):
+  import Mathlib.Algebra.Group.Even
+  import Mathlib.Data.Nat.Prime.Basic
+  import Mathlib.Tactic.NormNum
+  import Mathlib.Tactic.Linarith
+  import Mathlib.Tactic.Push
+
+grep -nE 'sorry|admit|^axiom|native_decide|unsafe' Main.lean Audit.lean
+  (no matches)
+
+$ lake exe cache get
+Decompressed 8714 already-cached file(s)
+Completed successfully in 48011 ms!
+
+$ lake build
+info: Audit.lean:30:0: 'JSP000301.powerful_12167' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:31:0: 'JSP000301.powerful_12168' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:32:0: 'JSP000301.not_isSquare_of_between' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:33:0: 'JSP000301.not_isSquare_12167' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:34:0: 'JSP000301.not_isSquare_12168' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:35:0: 'JSP000301.jsp_000301_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:36:0: 'JSP000301.jsp_000301' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:37:0: 'JSP000301.jsp_000301_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:38:0: 'witness_restated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:39:0: 'main_restated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Audit.lean:40:0: 'exists_restated' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (837 jobs).
+
+--------------------------------------------------------------------------
+Notes on the build environment
+--------------------------------------------------------------------------
+`Main` and `Audit` were compiled from source in a directory that contained only
+the submitted files: there was no pre-existing `.lake` tree, so the two modules
+were genuinely built here rather than replayed from an earlier build of this
+package.  Mathlib's own oleans were obtained through the upstream-published
+cache (`lake exe cache get`, the standard route); nothing else from the author's
+machine is involved.  The imports are limited to the five modules listed above,
+not a blanket `import Mathlib`.
+
+The committed `lake-manifest.json` pins all 9 dependency packages.  An
+independent `lake update`, run in a separate empty directory, regenerated a
+manifest identical to it — same root package name and the same 9 pinned
+revisions — so the committed manifest reproduces the exact environment.
+
+Eleven results are audited with `#print axioms`: the eight in `Main.lean` that
+carry mathematical content, plus the three typed restatements in `Audit.lean`.
+Every one of them depends only on `propext`, `Classical.choice` and
+`Quot.sound` — the three standard Lean/Mathlib axioms — and on no placeholder
+axiom of any kind.
