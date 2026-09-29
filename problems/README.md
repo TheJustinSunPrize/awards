@@ -640,7 +640,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000520 | [Must a graph of high chromatic number contain an odd cycle whose vertex-induced subgraph also has high chromatic number?](catalog-0501-0600.md#JSP-000520) | Open | No | No | Unavailable | Unavailable |
 | JSP-000521 | [Does sufficiently high chromatic number force several edge-disjoint cycles on the same vertex set?](catalog-0501-0600.md#JSP-000521) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000522 | [How many edges can a graph have if every cycle has fewer chords than vertices?](catalog-0501-0600.md#JSP-000522) | Open | No | No | Unavailable | Unavailable |
-| JSP-000523 | [How many edges force a uniform hypergraph to contain two distinct pairs of disjoint edges with the same union?](catalog-0501-0600.md#JSP-000523) | Open | No | No | Unavailable | Unavailable |
+| JSP-000523 | [How many edges force a uniform hypergraph to contain two distinct pairs of disjoint edges with the same union?](catalog-0501-0600.md#JSP-000523) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000524 | [If each prescribed local part of a set family has a two-point transversal, how many points suffice to meet the whole family?](catalog-0501-0600.md#JSP-000524) | Open | No | No | Unavailable | Unavailable |
 | JSP-000525 | [Does adding each integer's divisor count produce the specified new lower barriers or uncrossable numerical thresholds?](catalog-0501-0600.md#JSP-000525) | Open | No | No | Unavailable | Unavailable |
 | JSP-000526 | [For distinct given integers, how many distinct representatives divisible by their respective integers can be chosen in the specified interval?](catalog-0501-0600.md#JSP-000526) | Solved | Yes | Yes | Claimed | Claimed |
