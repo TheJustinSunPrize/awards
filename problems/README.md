@@ -730,7 +730,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000605 | [Must every graph of uncountable chromatic number have an edge lying on cycles of every sufficiently large length?](catalog-0601-0700.md#JSP-000605) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000606 | [Must every triangle-free graph of infinite chromatic number contain every prescribed tree as an induced subgraph?](catalog-0601-0700.md#JSP-000606) | Open | No | No | Unavailable | Unavailable |
 | JSP-000607 | [Does a graph of infinite chromatic number have subgraphs of every smaller infinite chromatic number?](catalog-0601-0700.md#JSP-000607) | Open | No | No | Unavailable | Unavailable |
-| JSP-000608 | [Can short-odd-cycle structures be removed from a graph of infinite chromatic number while preserving its chromatic number?](catalog-0601-0700.md#JSP-000608) | Open | No | No | Unavailable | Unavailable |
+| JSP-000608 | [Can short-odd-cycle structures be removed from a graph of infinite chromatic number while preserving its chromatic number?](catalog-0601-0700.md#JSP-000608) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000609 | [If an integer set's self-sumset has positive density, can it be partitioned into two parts whose self-sumsets both have positive density?](catalog-0601-0700.md#JSP-000609) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000610 | [How many edges can a diameter-two graph have if deleting any edge increases its diameter?](catalog-0601-0700.md#JSP-000610) | Open | No | No | Unavailable | Unavailable |
 | JSP-000611 | [tree packing conjecture](catalog-0601-0700.md#JSP-000611) | Open | No | No | Unavailable | Unavailable |
