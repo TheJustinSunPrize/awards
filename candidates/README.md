@@ -24,11 +24,11 @@ solution or Lean formalization. Problem IDs link to the problem bank for public
 contribution attribution and evidence. Publication is not an award or recipient
 identity confirmation; identity checks and written confirmation remain required.
 
-The existing entries retain their recorded public-notice date of **2026-09-19**.
-
 | Problem ID | Solver review start (UTC) | Mathematical solver | Lean review start (UTC) | Lean formalizer |
 | --- | --- | --- | --- | --- |
+| [JSP-000239](../problems/catalog-0201-0300.md#JSP-000239) | 2026-09-30 | Neel Somani | | |
 | [JSP-000305](../problems/catalog-0301-0400.md#JSP-000305) | | | 2026-09-19 | Wouter van Doorn |
+| [JSP-000327](../problems/catalog-0301-0400.md#JSP-000327) | 2026-09-30 | Neel Somani | | |
 | [JSP-000371](../problems/catalog-0301-0400.md#JSP-000371) | | | 2026-09-19 | Wouter van Doorn |
 | [JSP-000381](../problems/catalog-0301-0400.md#JSP-000381) | | | 2026-09-19 | Wouter van Doorn |
 | [JSP-000526](../problems/catalog-0501-0600.md#JSP-000526) | 2026-09-19 | Wouter van Doorn; Yanyang Li; Quanyu Tang | 2026-09-19 | Wouter van Doorn |
