@@ -690,7 +690,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000570 | [How small can the greatest common divisor of an integer and a binomial coefficient with that upper parameter be?](catalog-0501-0600.md#JSP-000570) | Open | No | No | Unavailable | Unavailable |
 | JSP-000571 | [In a hereditary set family, is a largest pairwise-intersecting subfamily always obtainable by taking all members containing one fixed element?](catalog-0501-0600.md#JSP-000571) | Open | No | No | Unavailable | Unavailable |
 | JSP-000572 | [Must every sufficiently large uniform set family contain two members intersecting in exactly one element?](catalog-0501-0600.md#JSP-000572) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000573 | [How large can a set family be if a prescribed pairwise intersection size is forbidden?](catalog-0501-0600.md#JSP-000573) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000573 | [How large can a set family be if a prescribed pairwise intersection size is forbidden?](catalog-0501-0600.md#JSP-000573) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000574 | [How fast does the chromatic number of Euclidean space grow with dimension when unit-distance pairs must receive different colors?](catalog-0501-0600.md#JSP-000574) | Open | No | No | Unavailable | Unavailable |
 | JSP-000575 | [Is every planar unit-distance graph of sufficiently large girth three-colorable?](catalog-0501-0600.md#JSP-000575) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000576 | [What uniform chromatic bound holds for planar graphs joining pairs whose distances lie in a prescribed finite set?](catalog-0501-0600.md#JSP-000576) | Open | No | No | Unavailable | Unavailable |
