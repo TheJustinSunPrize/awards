@@ -1,0 +1,28 @@
+--- ErdosProblems/Erdos1058/Erdos1058Assembly.lean
++++ ErdosProblems/Erdos1058/Erdos1058Assembly.lean
+@@ -1682,2 +1681,0 @@
+-      · intro s hs
+-        exact Nat.zero_le _
+@@ -1905 +1903 @@
+-  norm_num at hid
++  simp only [show (2 : ℕ) - 1 = 1 by decide, one_mul] at hid
+@@ -1990 +1988 @@
+-  norm_num at hid
++  simp only [show (2 : ℕ) - 1 = 1 by decide, one_mul] at hid
+@@ -2194 +2192 @@
+-  norm_num at hdivCast ⊢
++  norm_num only [Nat.cast_ofNat] at hdivCast
+--- ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentProof.lean
++++ ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentProof.lean
+@@ -851,2 +851,3 @@
+-    change (X ^ d - 1).factorization 2 + 1 =
+-      (X + 1).factorization 2 + (X - 1).factorization 2 + d.factorization 2 at hLTE
++    have hLTE : (X ^ d - 1).factorization 2 + 1 =
++        (X + 1).factorization 2 + (X - 1).factorization 2 + d.factorization 2 := by
++      simpa only [Nat.factorization_def _ Nat.prime_two] using hLTE
+@@ -858 +859 @@
+-      norm_num at hreal hminusC
++      simp only [Nat.cast_one] at hreal hminusC
+@@ -866 +867 @@
+-      norm_num at hreal hplusC
++      simp only [Nat.cast_one] at hreal hplusC

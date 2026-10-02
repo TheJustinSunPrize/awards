@@ -1,0 +1,3 @@
+<proof>/ErdosProblems/Erdos1058/Erdos1058PrimeBatch.lean:29:34: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+exit_code=0

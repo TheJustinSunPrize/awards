@@ -1,0 +1,9 @@
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentRectangle.lean:240:20: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentRectangle.lean:216:31: warning: Variable name `hb` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hb
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+exit_code=0

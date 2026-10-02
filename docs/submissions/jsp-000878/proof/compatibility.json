@@ -1,0 +1,36 @@
+{
+  "ErdosProblems.Erdos1058.Erdos1058Assembly": [
+    {
+      "old": "      · intro s hs\n        exact Nat.zero_le _\n      intro s hs\n      exact APPrimePowerProduct_le_twentyone_pow_progressionExponent (n / s)",
+      "new": "      intro s hs\n      exact APPrimePowerProduct_le_twentyone_pow_progressionExponent (n / s)",
+      "count": 1
+    },
+    {
+      "old": "  have hid := Nat.sub_one_mul_factorization_factorial (n := n) Nat.prime_two\n  norm_num at hid",
+      "new": "  have hid := Nat.sub_one_mul_factorization_factorial (n := n) Nat.prime_two\n  simp only [show (2 : ℕ) - 1 = 1 by decide, one_mul] at hid",
+      "count": 2
+    },
+    {
+      "old": "  norm_num at hdivCast ⊢\n  nlinarith",
+      "new": "  norm_num only [Nat.cast_ofNat] at hdivCast\n  nlinarith",
+      "count": 1
+    }
+  ],
+  "ErdosProblems.Erdos1058.Erdos1058BugeaudLaurentProof": [
+    {
+      "old": "    change (X ^ d - 1).factorization 2 + 1 =\n      (X + 1).factorization 2 + (X - 1).factorization 2 + d.factorization 2 at hLTE",
+      "new": "    have hLTE : (X ^ d - 1).factorization 2 + 1 =\n        (X + 1).factorization 2 + (X - 1).factorization 2 + d.factorization 2 := by\n      simpa only [Nat.factorization_def _ Nat.prime_two] using hLTE",
+      "count": 1
+    },
+    {
+      "old": "      norm_num at hreal hminusC",
+      "new": "      simp only [Nat.cast_one] at hreal hminusC",
+      "count": 1
+    },
+    {
+      "old": "      norm_num at hreal hplusC",
+      "new": "      simp only [Nat.cast_one] at hreal hplusC",
+      "count": 1
+    }
+  ]
+}
