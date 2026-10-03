@@ -517,7 +517,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000402 | [Under the specified measure restrictions on a set mapping, must there be a sufficiently large set whose elements avoid one another's images?](catalog-0401-0500.md#JSP-000402) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000403 | [How large can a point set in higher dimensions be if every three points form an isosceles triangle?](catalog-0401-0500.md#JSP-000403) | Open | No | No | Unavailable | Unavailable |
 | JSP-000404 | [Blumenthal's problem](catalog-0401-0500.md#JSP-000404) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000405 | [How many distinct circles must a planar point set determine if its points are not all concyclic?](catalog-0401-0500.md#JSP-000405) | Open | No | No | Unavailable | Unavailable |
+| JSP-000405 | [How many distinct circles must a planar point set determine if its points are not all concyclic?](catalog-0401-0500.md#JSP-000405) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000406 | [Heilbronn's triangle problem](catalog-0401-0500.md#JSP-000406) | Open | No | No | Unavailable | Unavailable |
 | JSP-000407 | [What is the minimum number of colors needed to color the plane so that points at distance one have different colors?](catalog-0401-0500.md#JSP-000407) | Open | No | No | Unavailable | Unavailable |
 | JSP-000408 | [How small can the total radii of disks covering the set where a polynomial has modulus at most one be?](catalog-0401-0500.md#JSP-000408) | Open | No | No | Unavailable | Unavailable |
