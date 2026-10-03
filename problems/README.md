@@ -1103,7 +1103,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000963 | [What extremal lower bounds can be constructed for uniform hypergraphs excluding a prescribed complete multipartite hypergraph?](catalog-0901-1000.md#JSP-000963) | Open | No | No | Unavailable | Unavailable |
 | JSP-000964 | [Does a finite projective plane have a blocking set meeting every line in a uniformly bounded number of points?](catalog-0901-1000.md#JSP-000964) | Open | No | No | Unavailable | Unavailable |
 | JSP-000965 | [Among group orders up to a bound, is the greatest number of nonisomorphic groups attained at a power-of-two order?](catalog-0901-1000.md#JSP-000965) | Open | No | No | Unavailable | Unavailable |
-| JSP-000966 | [Which element order is shared by the most permutations in a symmetric group?](catalog-0901-1000.md#JSP-000966) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000966 | [Which element order is shared by the most permutations in a symmetric group?](catalog-0901-1000.md#JSP-000966) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000967 | [How many subgroups does a symmetric group have, and how are their orders distributed?](catalog-0901-1000.md#JSP-000967) | Open | No | No | Unavailable | Unavailable |
 | JSP-000968 | [ambiguous statement](catalog-0901-1000.md#JSP-000968) | Open | No | No | Unavailable | Unavailable |
 | JSP-000969 | [How fast does the radius of a disk whose lattice points have all been visited by a planar random walk grow with the number of steps?](catalog-0901-1000.md#JSP-000969) | Solved | No | No | Unavailable | Unavailable |
