@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-09-17T03:44:54.912569+00:00",
+  "lean_version": "Lean (version 4.34.0, arm64-apple-darwin24.6.0, commit 293d5d0c0c3f3dded4688b3ccd6a33939ac5102b, Release)",
+  "lean_binary_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "source_sha256": "8849a0a8c2295e852c3ef5203a2b112b70a7d019471971bc9b4c75efc97b265a",
+  "source_bytes": 4008,
+  "build_log_sha256": "a7b8a4f70f47ba443d5440da7f41aff7f348edbc05bac675d316da947bce326e",
+  "exit_code": 0,
+  "produced_olean": true,
+  "olean_sha256": "c8bd50286dfd1e020c6902a3a8519f06c37190f959db22840fac913368725cf9",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "library": "Lean bundled libraries only; no mathlib",
+  "fresh_project_output": true,
+  "compiler_and_bundled_libraries_are_prebuilt": true,
+  "independent_checker": null,
+  "same_toolchain_leanchecker_exit_code": 0,
+  "network_disabled_by_runner": false,
+  "forbidden_source_tokens": []
+}

@@ -1,0 +1,4 @@
+12167: factors={23: 3}, powerful=True, isqrt=110, square=False
+12168: factors={2: 3, 3: 2, 13: 2}, powerful=True, isqrt=110, square=False
+PASS: consecutive powerful positive integers, neither a square
+exit_code=0
