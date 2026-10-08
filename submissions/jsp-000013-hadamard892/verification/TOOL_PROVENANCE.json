@@ -1,0 +1,25 @@
+{
+  "lean": {
+    "version": "4.34.0",
+    "commit": "293d5d0c0c3f3dded4688b3ccd6a33939ac5102b",
+    "release": "https://github.com/leanprover/lean4/releases/tag/v4.34.0"
+  },
+  "lean4export": {
+    "repository": "https://github.com/leanprover/lean4export",
+    "commit": "076e8e57707e813375e8f9da8bf989799ace9680",
+    "toolchain": "leanprover/lean4:v4.34.0",
+    "logic_edits": false,
+    "build_status": "passed",
+    "binary_sha256": "ad235f7ce3177ea0de2b66316f06361aff890683264c94cb31e91a46eeda60a2",
+    "binary_bytes": 179056496
+  },
+  "nanoda": {
+    "version": "0.4.17",
+    "repository": "https://github.com/ammkrn/nanoda_lib",
+    "commit": "4c544ed4099c8227f07d5de77ad1e69fb0740a27",
+    "binary_sha256": "cfd89798e7f5f984f852e2410694e8c4efe1463b613f75e85c8dc904b499e146",
+    "binary_bytes": 1462872,
+    "build_here": false
+  },
+  "scope": "Identity and provenance of reused checking tools only. No order-892 result is asserted by this file."
+}
