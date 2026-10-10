@@ -1,0 +1,74 @@
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:67:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:340:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:489:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:504:4: warning: Try `simp at hval` instead of `simpa using hval`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:730:15: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:714:41: warning: Variable name `hdgt` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hdgt
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:808:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:816:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:792:10: warning: This simp argument is unused:
+  hlogm_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:876:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:956:15: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:945:18: warning: Variable name `hdone` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hdone
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1209:19: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1217:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1251:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1314:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1596:2: warning: Unused tactic linter: `norm_num at hlog ⊢` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1665:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1756:18: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:1807:59: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:2192:2: warning: Unused tactic linter: `norm_num only [Nat.cast_ofNat] at hdivCast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Assembly.lean:3236:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+
+exit_code=0

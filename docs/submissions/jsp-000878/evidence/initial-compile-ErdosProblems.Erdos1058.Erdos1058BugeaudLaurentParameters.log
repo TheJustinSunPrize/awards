@@ -1,0 +1,38 @@
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentParameters.lean:19:36: warning: Variable name `hu` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hu
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentParameters.lean:19:49: warning: Variable name `hv` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hv
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentParameters.lean:26:36: warning: Variable name `hu` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hu
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentParameters.lean:26:49: warning: Variable name `hv` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hv
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentParameters.lean:255:8: warning: Unused tactic linter: `push_cast at hpair1 hpair2` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentParameters.lean:264:4: warning: Unused tactic linter: `push_cast at this ⊢` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentParameters.lean:334:2: warning: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentParameters.lean:390:2: warning: Unused tactic linter: `push_cast at hlog` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+
+exit_code=0

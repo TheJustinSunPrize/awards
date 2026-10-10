@@ -1,0 +1,38 @@
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentSharpBound.lean:106:37: warning: Variable name `ha` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentSharpBound.lean:196:37: warning: This simp argument is unused:
+  Finset.sum_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.sum_sub_distrib, Finset.sum_const, Finset.card_range, nsmul_eq_mul] at hsum
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentSharpBound.lean:198:2: warning: Unused tactic linter: `push_cast at hsum` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentSharpBound.lean:230:50: warning: This simp argument is unused:
+  Real.log_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.sum_range_one, Nat.cast_zero, zero_sub, sub_zero] at hsum
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentSharpBound.lean:230:65: warning: This simp argument is unused:
+  zero_sub
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.sum_range_one, Nat.cast_zero, Real.log_zero, sub_zero] at hsum
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058BugeaudLaurentSharpBound.lean:370:45: warning: Variable name `hN` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+exit_code=0

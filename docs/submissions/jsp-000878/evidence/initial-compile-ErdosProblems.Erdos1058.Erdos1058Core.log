@@ -1,0 +1,16 @@
+<proof>/ErdosProblems/Erdos1058/Erdos1058Core.lean:483:60: warning: `if_false` has been deprecated: Use `ite_false` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Core.lean:512:53: warning: `if_false` has been deprecated: Use `ite_false` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Core.lean:557:33: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Core.lean:563:13: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Core.lean:629:65: warning: `if_false` has been deprecated: Use `ite_false` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Core.lean:649:58: warning: `if_false` has been deprecated: Use `ite_false` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Core.lean:676:13: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Core.lean:712:10: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<proof>/ErdosProblems/Erdos1058/Erdos1058Core.lean:766:41: warning: `if_true` has been deprecated: Use `ite_true` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Core.lean:822:39: warning: `if_false` has been deprecated: Use `ite_false` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Core.lean:825:26: warning: `if_true` has been deprecated: Use `ite_true` instead
+<proof>/ErdosProblems/Erdos1058/Erdos1058Core.lean:829:26: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+exit_code=0
