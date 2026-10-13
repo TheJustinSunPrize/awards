@@ -142,7 +142,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000047 | [Can finitely many congruence classes with distinct odd moduli cover all integers?](catalog-0001-0100.md#JSP-000047) | Open | No | No | Unavailable | Unavailable |
 | JSP-000048 | [Do the positive odd integers not expressible as a prime plus two nonnegative powers of 2 have positive upper density?](catalog-0001-0100.md#JSP-000048) | Open | No | No | Unavailable | Unavailable |
 | JSP-000049 | [Is there a fixed bound on the number of powers of 2 needed, together with one prime, to represent every sufficiently large integer?](catalog-0001-0100.md#JSP-000049) | Open | No | No | Unavailable | Unavailable |
-| JSP-000050 | [Is every sufficiently large odd integer the sum of a squarefree positive integer and a power of 2?](catalog-0001-0100.md#JSP-000050) | Open | No | No | Unavailable | Unavailable |
+| JSP-000050 | [Is every sufficiently large odd integer the sum of a squarefree positive integer and a power of 2?](catalog-0001-0100.md#JSP-000050) | Open | Yes | Yes | Unavailable | Unavailable |
 | JSP-000051 | [How dense can an infinite integer set be if no element divides the sum of two larger elements? Must its reciprocal sum converge?](catalog-0001-0100.md#JSP-000051) | Open | No | No | Unavailable | Unavailable |
 | JSP-000052 | [How numerous, or how sparse, can the integers without a unique representation as a sum of two elements of a given positive-integer set be?](catalog-0001-0100.md#JSP-000052) | Open | No | No | Unavailable | Unavailable |
 | JSP-000053 | [Does the alternating series formed by weighting reciprocal primes by their indices converge?](catalog-0001-0100.md#JSP-000053) | Open | No | No | Unavailable | Unavailable |
