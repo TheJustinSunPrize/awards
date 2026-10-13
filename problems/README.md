@@ -114,7 +114,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000019 | [Existence of odd perfect numbers](catalog-0001-0100.md#JSP-000019) | Open | No | No | Unavailable | Unavailable |
 | JSP-000020 | [Infinitude of Mersenne primes](catalog-0001-0100.md#JSP-000020) | Open | No | No | Unavailable | Unavailable |
 | JSP-000021 | [Schanuel conjecture](catalog-0001-0100.md#JSP-000021) | Open | No | No | Unavailable | Unavailable |
-| JSP-000022 | [Černý conjecture](catalog-0001-0100.md#JSP-000022) | Open | No | No | Unavailable | Unavailable |
+| JSP-000022 | [Černý conjecture](catalog-0001-0100.md#JSP-000022) | Open | Yes | Yes | Unavailable | Unavailable |
 | JSP-000023 | [Inscribed square problem (Toeplitz conjecture)](catalog-0001-0100.md#JSP-000023) | Open | No | No | Unavailable | Unavailable |
 | JSP-000024 | [Invariant subspace problem for Hilbert spaces](catalog-0001-0100.md#JSP-000024) | Open | No | No | Unavailable | Unavailable |
 | JSP-000025 | [Lehmer–Mahler measure problem](catalog-0001-0100.md#JSP-000025) | Open | No | No | Unavailable | Unavailable |
