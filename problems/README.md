@@ -102,7 +102,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000007 | [Poincaré conjecture](catalog-0001-0100.md#JSP-000007) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000008 | [Goldbach conjecture (strong Goldbach)](catalog-0001-0100.md#JSP-000008) | Open | No | No | Unavailable | Unavailable |
 | JSP-000009 | [Twin prime conjecture](catalog-0001-0100.md#JSP-000009) | Open | No | No | Unavailable | Unavailable |
-| JSP-000010 | [abc conjecture](catalog-0001-0100.md#JSP-000010) | Open | No | No | Unavailable | Unavailable |
+| JSP-000010 | [abc conjecture](catalog-0001-0100.md#JSP-000010) | Open | Yes | Yes | Unavailable | Unavailable |
 | JSP-000011 | [Beal conjecture](catalog-0001-0100.md#JSP-000011) | Open | No | No | Unavailable | Unavailable |
 | JSP-000012 | [Legendre conjecture](catalog-0001-0100.md#JSP-000012) | Open | No | No | Unavailable | Unavailable |
 | JSP-000013 | [Hadamard matrix conjecture](catalog-0001-0100.md#JSP-000013) | Open | No | No | Unavailable | Unavailable |
