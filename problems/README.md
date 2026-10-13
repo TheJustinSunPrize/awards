@@ -111,7 +111,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000016 | [Littlewood conjecture](catalog-0001-0100.md#JSP-000016) | Open | No | No | Unavailable | Unavailable |
 | JSP-000017 | [Lonely runner conjecture](catalog-0001-0100.md#JSP-000017) | Open | No | No | Unavailable | Unavailable |
 | JSP-000018 | [Moving sofa problem (maximum area)](catalog-0001-0100.md#JSP-000018) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000019 | [Existence of odd perfect numbers](catalog-0001-0100.md#JSP-000019) | Open | No | No | Unavailable | Unavailable |
+| JSP-000019 | [Existence of odd perfect numbers](catalog-0001-0100.md#JSP-000019) | Open | Yes | Yes | Unavailable | Unavailable |
 | JSP-000020 | [Infinitude of Mersenne primes](catalog-0001-0100.md#JSP-000020) | Open | No | No | Unavailable | Unavailable |
 | JSP-000021 | [Schanuel conjecture](catalog-0001-0100.md#JSP-000021) | Open | No | No | Unavailable | Unavailable |
 | JSP-000022 | [Černý conjecture](catalog-0001-0100.md#JSP-000022) | Open | No | No | Unavailable | Unavailable |
