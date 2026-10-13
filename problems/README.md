@@ -105,7 +105,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000010 | [abc conjecture](catalog-0001-0100.md#JSP-000010) | Open | No | No | Unavailable | Unavailable |
 | JSP-000011 | [Beal conjecture](catalog-0001-0100.md#JSP-000011) | Open | No | No | Unavailable | Unavailable |
 | JSP-000012 | [Legendre conjecture](catalog-0001-0100.md#JSP-000012) | Open | No | No | Unavailable | Unavailable |
-| JSP-000013 | [Hadamard matrix conjecture](catalog-0001-0100.md#JSP-000013) | Open | No | No | Unavailable | Unavailable |
+| JSP-000013 | [Hadamard matrix conjecture](catalog-0001-0100.md#JSP-000013) | Open | Yes | Yes | Unavailable | Unavailable |
 | JSP-000014 | [Inverse Galois problem](catalog-0001-0100.md#JSP-000014) | Open | No | No | Unavailable | Unavailable |
 | JSP-000015 | [Kakeya dimension conjecture (general dimension)](catalog-0001-0100.md#JSP-000015) | Open | No | No | Unavailable | Unavailable |
 | JSP-000016 | [Littlewood conjecture](catalog-0001-0100.md#JSP-000016) | Open | No | No | Unavailable | Unavailable |
