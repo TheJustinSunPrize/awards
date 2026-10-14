@@ -1,0 +1,55 @@
+{
+  "scope": "Source hashes for the order-892 formalization; verification results are recorded separately",
+  "files": [
+    {
+      "path": "GenericGS.lean",
+      "bytes": 4834,
+      "sha256": "d5fb54d9524e63b40c16f028437e13f5b7440c64df7ee47abf8dd63dcc1652fe"
+    },
+    {
+      "path": "CirculantBridge.lean",
+      "bytes": 4919,
+      "sha256": "f8f8f73fa0d39747cecca6991d04a0eb026c4e7cbb8a9788623c01c7ef26405c"
+    },
+    {
+      "path": "GenericHadamard.lean",
+      "bytes": 2255,
+      "sha256": "9cdf6e46f663d9e3d65e8756a83753fdc24a899efaa7f25daf78fd261d6592c3"
+    },
+    {
+      "path": "Hadamard892Data.lean",
+      "bytes": 4200,
+      "sha256": "c63ed4293f86bd35dcbd63fb3ab6c65d4b84fdbca8decb742aa5b217ce2e51c3"
+    },
+    {
+      "path": "Hadamard892Certificate.lean",
+      "bytes": 22803,
+      "sha256": "0818c0e92649ed41e57ef1bc746f70d74805dc56615e3f025af423ef7b2e2afa"
+    },
+    {
+      "path": "Hadamard892.lean",
+      "bytes": 1317,
+      "sha256": "bd31f72e5b7d0ff240fa2bdf584df6ad432dbbf746bc8f733559a1a0f787a162"
+    },
+    {
+      "path": "NegativeControls.lean",
+      "bytes": 1097,
+      "sha256": "47d3944f7aa050f4b3e0217f8512d39594a44ae7e574b544f9efd4f9b3244b57"
+    },
+    {
+      "path": "lakefile.toml",
+      "bytes": 271,
+      "sha256": "2babd9c734587905520c844680b3edc53317849be252fa04ec894a7950435aef"
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632"
+    },
+    {
+      "path": "lake-manifest.json",
+      "bytes": 3545,
+      "sha256": "f18a5d74ebdccda5868798322630fc92839c52a487df3e30c1183f92e17cc839"
+    }
+  ]
+}

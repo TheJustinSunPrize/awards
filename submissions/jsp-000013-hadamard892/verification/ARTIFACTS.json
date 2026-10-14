@@ -1,0 +1,17 @@
+{
+  "source_commit": "6ae41219fcf50265f73b29df3f60afd922760c4c",
+  "source_url": "https://github.com/jinkaizhang236-sketch/awards/tree/6ae41219fcf50265f73b29df3f60afd922760c4c/submissions/jsp-000013-hadamard892",
+  "source_scope": "Seven Lean sources, toolchain, Lake configuration/manifest, notices and source-manifest; later evidence documentation is outside this source pin.",
+  "artifacts": [
+    {
+      "name": "proof.ndjson",
+      "sha256": "e9510f14f53a2fa9f1e2591cbda2708b8b72323c36175f97d2ca977898d62eb1",
+      "bytes": 41120305,
+      "archive_id": null,
+      "archive_url": null,
+      "status": "generated and checked locally; permanent external archival pending"
+    }
+  ],
+  "official_verification": false,
+  "award_confirmed": false
+}

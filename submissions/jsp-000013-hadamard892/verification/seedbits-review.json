@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-09-17T02:45:56.620751+00:00",
+  "scope": "Read-only Python audit of Lean source snapshot; no Lean run",
+  "source": "work/hadamard892-lean/Hadamard892Data.lean",
+  "source_bytes": 4200,
+  "source_sha256": "c63ed4293f86bd35dcbd63fb3ab6c65d4b84fdbca8decb742aa5b217ce2e51c3",
+  "seedBits_decimal": [
+    8916724570579155077110666842105660028244990848581463788822324844623,
+    3302137090408026754486609711994053678283030420190700350582283532563,
+    11191262287108911480313596411938537084614126663108676214580109913459,
+    8479913653472386788382916988734367421544746547637934943439340722759
+  ],
+  "bit_lengths": [
+    223,
+    221,
+    223,
+    223
+  ],
+  "index_convention": "Bit 0 is sequence index 0; little-endian bit significance",
+  "sign_convention": "testBit true \u2192 +1, false \u2192 -1",
+  "all_892_entries_equal_to_new_lean_lists_four_seed_certificate_original_compact_basis": true,
+  "all_values_less_than_2_pow_223": true,
+  "source_commit": "d825201089123126ce792d4921cba4ae1b8977a3",
+  "original_csv_sha256": "fa2b9b4bc0d2ab10f6c6422d427e24aefdc5be2c294e95b6476e332af4614ac5",
+  "prior_data_review": "data-review.json confirms compact witness reconstructs all 795664 CSV entries",
+  "limitations": "This checks source values; full formal matrix construction and final theorem still require Lean proof."
+}

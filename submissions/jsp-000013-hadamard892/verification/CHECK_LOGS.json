@@ -1,0 +1,41 @@
+{
+  "compile-CirculantBridge.stderr.log": "",
+  "compile-CirculantBridge.stdout.log": "",
+  "compile-GenericGS.stderr.log": "",
+  "compile-GenericGS.stdout.log": "'Hadamard892.gsBlocks_rowGram' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Hadamard892.gsMatrix_rowGram' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "compile-GenericHadamard.stderr.log": "",
+  "compile-GenericHadamard.stdout.log": "'Hadamard892.gs_circulant_signs' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Hadamard892.goethals_seidel_hadamard' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "compile-Hadamard892.stderr.log": "",
+  "compile-Hadamard892.stdout.log": "'Hadamard892.goethals_seidel_hadamard' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Hadamard892.matrix892_isHadamard' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Hadamard892.exists_hadamard892' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "compile-Hadamard892Certificate.stderr.log": "",
+  "compile-Hadamard892Certificate.stdout.log": "'Hadamard892.all_concrete_correlations' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Hadamard892.seed_correlations' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "compile-Hadamard892Data.stderr.log": "",
+  "compile-Hadamard892Data.stdout.log": "",
+  "export.stderr.log": "",
+  "leanchecker.stderr.log": "",
+  "leanchecker.stdout.log": "",
+  "nanoda.stderr.log": "",
+  "nanoda.stdout.log": "theorem Hadamard892.goethals_seidel_hadamard.{u_1} :\n  forall {I : Type u_1} [inst._@.GenericHadamard.789671846._hygCtx._hyg.3 : Fintype I]\n    [inst._@.GenericHadamard.789671846._hygCtx._hyg.6 : DecidableEq I]\n    [inst._@.GenericHadamard.789671846._hygCtx._hyg.9 : AddCommGroup I] (a : Fin (OfNat.ofNat 4) \u2192 I \u2192 Int),\n  (forall (i : Fin (OfNat.ofNat 4)) (x : I), Or (Eq (a i x) (OfNat.ofNat 1)) (Eq (a i x) (Neg.neg (OfNat.ofNat 1)))) \u2192\n  (forall (t : I),\n    Eq (Finset.sum Finset.univ (fun (i : Fin (OfNat.ofNat 4)) => Hadamard892.corr (a i) t))\n      (ite (Eq t (OfNat.ofNat 0)) (HMul.hMul (OfNat.ofNat 4) (Nat.cast (Fintype.card I))) (OfNat.ofNat 0))) \u2192\n  Ne (Fintype.card I) (OfNat.ofNat 0) \u2192 Matrix.IsHadamard\n    (Hadamard892.gsMatrix (fun (i : Fin (OfNat.ofNat 4)) => Matrix.circulant (a i)) (Hadamard892.reflection I)) :=\n  _\n\ntheorem Hadamard892.matrix892_isHadamard : Matrix.IsHadamard Hadamard892.matrix892 := _\n\ntheorem Hadamard892.exists_hadamard892 :\n  Exists (fun (H : Matrix (Fin (OfNat.ofNat 892)) (Fin (OfNat.ofNat 892)) Int) => Matrix.IsHadamard H) :=\n  _\n\naxiom propext {a b : Prop} : Iff a b \u2192 Eq a b\n\naxiom Quot.sound.{u} {\u03b1 : Sort u} {r : \u03b1 \u2192 \u03b1 \u2192 Prop} {a b : \u03b1} : r a b \u2192 Eq (Quot.mk r a) (Quot.mk r b)\n\naxiom Classical.choice.{u} {\u03b1 : Sort u} : Nonempty \u03b1 \u2192 \u03b1\n\nChecked 9340 declarations with no errors\n",
+  "negative-controls.stderr.log": "",
+  "negative-controls.stdout.log": "'Hadamard892.damaged_seed_fails_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "negative-controls-receipt": {
+    "checked_at": "2026-09-17T03:22:30.616117+00:00",
+    "source_sha256": "47d3944f7aa050f4b3e0217f8512d39594a44ae7e574b544f9efd4f9b3244b57",
+    "command": [
+      "sandbox-exec",
+      "-p",
+      "(version 1)(allow default)(deny network*)",
+      "<lean-bin>/lake",
+      "env",
+      "lean",
+      "-j",
+      "1",
+      "NegativeControls.lean"
+    ],
+    "exit_code": 0,
+    "seconds": 49.798,
+    "network_denied": true,
+    "fresh_production_modules_used": true,
+    "official_acceptance": false
+  }
+}
