@@ -362,7 +362,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000212 | [How large can a subset of an integer interval be if all distinct three-element subsets have different sums?](catalog-0201-0300.md#JSP-000212) | Open | No | No | Unavailable | Unavailable |
 | JSP-000213 | [Representing 4/n as a sum of three unit fractions](catalog-0201-0300.md#JSP-000213) | Open | No | No | Unavailable | Unavailable |
 | JSP-000214 | [What structure must a nearly quadratically growing integer sequence have if its reciprocal sum is rational?](catalog-0201-0300.md#JSP-000214) | Open | No | No | Unavailable | Unavailable |
-| JSP-000215 | [What is the density of integers representable as a prime plus the floor of the specified exponential expression?](catalog-0201-0300.md#JSP-000215) | Open | No | No | Unavailable | Unavailable |
+| JSP-000215 | [What is the density of integers representable as a prime plus the floor of the specified exponential expression?](catalog-0201-0300.md#JSP-000215) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000216 | [How much larger than a zero-density integer set can its sumset with itself be?](catalog-0201-0300.md#JSP-000216) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000217 | [Is the infinite series defined by sparse nonzero binary digits transcendental?](catalog-0201-0300.md#JSP-000217) | Open | No | No | Unavailable | Unavailable |
 | JSP-000218 | [Is the series with Euler totient values as numerators and powers of two as denominators irrational?](catalog-0201-0300.md#JSP-000218) | Open | No | No | Unavailable | Unavailable |
