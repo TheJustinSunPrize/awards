@@ -524,7 +524,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000369 | [How fast must an increasing prime sequence with nondecreasing gaps grow?](catalog-0301-0400.md#JSP-000369) | Open | No | No | Unavailable | Unavailable |
 | JSP-000370 | [How large can the smallest integer whose totient is divisible by a prescribed positive integer be?](catalog-0301-0400.md#JSP-000370) | Open | No | No | Unavailable | Unavailable |
 | JSP-000371 | [Can the product of a short run of consecutive integers contain every small prime in a prescribed range?](catalog-0301-0400.md#JSP-000371) | Solved | Yes | Yes | Unclaimed | Claimed |
-| JSP-000372 | [Is the least common multiple up to one less than the next prime always smaller than a given prime times the least common multiple up to that prime?](catalog-0301-0400.md#JSP-000372) | Open | No | No | Unavailable | Unavailable |
+| JSP-000372 | [Is the least common multiple up to one less than the next prime always smaller than a given prime times the least common multiple up to that prime?](catalog-0301-0400.md#JSP-000372) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000373 | [ambiguous statement](catalog-0301-0400.md#JSP-000373) | Open | No | No | Unavailable | Unavailable |
 | JSP-000374 | [How many distinct small-prime parts can occur among integers in a short interval?](catalog-0301-0400.md#JSP-000374) | Open | No | No | Unavailable | Unavailable |
 | JSP-000375 | [The sum over composites of least prime factor divided by the integer has known global asymptotics. Is there a uniform positive lower bound on the prescribed short intervals?](catalog-0301-0400.md#JSP-000375) | Open | No | No | Unavailable | Unavailable |
