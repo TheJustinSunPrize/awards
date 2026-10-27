@@ -737,7 +737,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000572 | [Must every sufficiently large uniform set family contain two members intersecting in exactly one element?](catalog-0501-0600.md#JSP-000572) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000573 | [How large can a set family be if a prescribed pairwise intersection size is forbidden?](catalog-0501-0600.md#JSP-000573) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000574 | [How fast does the chromatic number of Euclidean space grow with dimension when unit-distance pairs must receive different colors?](catalog-0501-0600.md#JSP-000574) | Open | No | No | Unavailable | Unavailable |
-| JSP-000575 | [Is every planar unit-distance graph of sufficiently large girth three-colorable?](catalog-0501-0600.md#JSP-000575) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000575 | [Is every planar unit-distance graph of sufficiently large girth three-colorable?](catalog-0501-0600.md#JSP-000575) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000576 | [What uniform chromatic bound holds for planar graphs joining pairs whose distances lie in a prescribed finite set?](catalog-0501-0600.md#JSP-000576) | Open | No | No | Unavailable | Unavailable |
 | JSP-000577 | [How few integers from the specified interval can have a product divisible by the product of a given integer set?](catalog-0501-0600.md#JSP-000577) | Open | No | No | Unavailable | Unavailable |
 | JSP-000578 | [How short an interval can contain distinct multiples representing every element of an arbitrary finite integer set?](catalog-0501-0600.md#JSP-000578) | Open | No | No | Unavailable | Unavailable |
