@@ -480,7 +480,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000325 | [What conditions on an interval's starting point make its consecutive-integer product divisible by a prescribed integer?](catalog-0301-0400.md#JSP-000325) | Open | No | No | Unavailable | Unavailable |
 | JSP-000326 | [Can a central binomial coefficient be divisible by the specified descending product of arbitrarily many consecutive integers?](catalog-0301-0400.md#JSP-000326) | Open | No | No | Unavailable | Unavailable |
 | JSP-000327 | [Under the stated restrictions, are there only finitely many equalities between products of distinct central binomial coefficients?](catalog-0301-0400.md#JSP-000327) | Solved | Yes | Yes | Claimed | Unclaimed |
-| JSP-000328 | [Brocard-Ramanujan conjecture](catalog-0301-0400.md#JSP-000328) | Open | No | No | Unavailable | Unavailable |
+| JSP-000328 | [Brocard-Ramanujan conjecture](catalog-0301-0400.md#JSP-000328) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000329 | [If a product of factorials divides another factorial, by how much can the sum of its indices exceed the latter index?](catalog-0301-0400.md#JSP-000329) | Open | No | No | Unavailable | Unavailable |
 | JSP-000330 | [Which otherwise invalid divisibility relations between factorial products can be obtained by inserting powers of specified small primes?](catalog-0301-0400.md#JSP-000330) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000331 | [Must every sufficiently large finite integer set contain two elements with relatively small greatest common divisor?](catalog-0301-0400.md#JSP-000331) | Solved | No | No | Unavailable | Unavailable |
