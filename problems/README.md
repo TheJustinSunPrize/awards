@@ -182,7 +182,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000042 | [Crouzeix conjecture](catalog-0001-0100.md#JSP-000042) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000043 | [Must the largest element of a positive-integer set with distinct subset sums be at least a fixed positive multiple of 2 raised to the set's size?](catalog-0001-0100.md#JSP-000043) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000044 | [Must a set of positive integers whose reciprocals have divergent sum contain arithmetic progressions of every finite length?](catalog-0001-0100.md#JSP-000044) | Solved | Yes | Yes | Unclaimed | Unclaimed |
-| JSP-000045 | [How large can gaps between consecutive primes be? Are infinitely many gaps larger than the proposed lower bound?](catalog-0001-0100.md#JSP-000045) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000045 | [How large can gaps between consecutive primes be? Are infinitely many gaps larger than the proposed lower bound?](catalog-0001-0100.md#JSP-000045) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000046 | [Can consecutive prime gaps, divided by the logarithm of the prime index, approach every prescribed nonnegative real number along a subsequence?](catalog-0001-0100.md#JSP-000046) | Open | No | No | Unavailable | Unavailable |
 | JSP-000047 | [Can finitely many congruence classes with distinct odd moduli cover all integers?](catalog-0001-0100.md#JSP-000047) | Open | No | No | Unavailable | Unavailable |
 | JSP-000048 | [Do the positive odd integers not expressible as a prime plus two nonnegative powers of 2 have positive upper density?](catalog-0001-0100.md#JSP-000048) | Open | No | No | Unavailable | Unavailable |
