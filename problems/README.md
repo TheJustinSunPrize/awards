@@ -257,7 +257,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000112 | [Must a minimum-diameter point set satisfying the prescribed distance constraints contain an equilateral triangle of side length one?](catalog-0101-0200.md#JSP-000112) | Open | No | No | Unavailable | Unavailable |
 | JSP-000113 | [How large must a planar point set's diameter be if its distinct distances have the prescribed separation?](catalog-0101-0200.md#JSP-000113) | Open | No | No | Unavailable | Unavailable |
 | JSP-000114 | [How many lines can contain exactly four points of a planar point set with no five collinear?](catalog-0101-0200.md#JSP-000114) | Open | No | No | Unavailable | Unavailable |
-| JSP-000115 | [If a planar point set determines many four-point lines, must more points lie on a common line?](catalog-0101-0200.md#JSP-000115) | Open | No | No | Unavailable | Unavailable |
+| JSP-000115 | [If a planar point set determines many four-point lines, must more points lie on a common line?](catalog-0101-0200.md#JSP-000115) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000116 | [For a given number of points and distance constraints, how many noncongruent configurations attain the minimum diameter?](catalog-0101-0200.md#JSP-000116) | Open | No | No | Unavailable | Unavailable |
 | JSP-000117 | [How many unit circles can pass through at least three points of a finite planar point set?](catalog-0101-0200.md#JSP-000117) | Open | No | No | Unavailable | Unavailable |
 | JSP-000118 | [What is the maximum sum of side lengths of nonoverlapping squares contained in the unit square?](catalog-0101-0200.md#JSP-000118) | Solved | Yes | Yes | Unclaimed | Unclaimed |
