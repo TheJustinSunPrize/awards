@@ -261,7 +261,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000116 | [For a given number of points and distance constraints, how many noncongruent configurations attain the minimum diameter?](catalog-0101-0200.md#JSP-000116) | Open | No | No | Unavailable | Unavailable |
 | JSP-000117 | [How many unit circles can pass through at least three points of a finite planar point set?](catalog-0101-0200.md#JSP-000117) | Open | No | No | Unavailable | Unavailable |
 | JSP-000118 | [What is the maximum sum of side lengths of nonoverlapping squares contained in the unit square?](catalog-0101-0200.md#JSP-000118) | Solved | Yes | Yes | Unclaimed | Unclaimed |
-| JSP-000119 | ['Happy Ending' problem](catalog-0101-0200.md#JSP-000119) | Open | No | No | Unavailable | Unavailable |
+| JSP-000119 | ['Happy Ending' problem](catalog-0101-0200.md#JSP-000119) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000120 | [Must a graph of sufficiently large chromatic number contain a subgraph with both large girth and large chromatic number?](catalog-0101-0200.md#JSP-000120) | Open | No | No | Unavailable | Unavailable |
 | JSP-000121 | [How many vertices are needed to find a finite subgraph of a prescribed chromatic number in a graph of uncountable chromatic number?](catalog-0101-0200.md#JSP-000121) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000122 | [Can every finite subgraph of a graph with uncountable chromatic number be made bipartite by deleting very few edges?](catalog-0101-0200.md#JSP-000122) | Open | No | No | Unavailable | Unavailable |
