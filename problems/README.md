@@ -715,7 +715,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000550 | [Must two disjoint equal-length intervals of consecutive integers have different least common multiples?](catalog-0501-0600.md#JSP-000550) | Open | No | No | Unavailable | Unavailable |
 | JSP-000551 | [Is there an integer such that distinct-prime-factor counts at all preceding positions are uniformly controlled by distance from it?](catalog-0501-0600.md#JSP-000551) | Open | No | No | Unavailable | Unavailable |
 | JSP-000552 | [Near every integer, is there another integer whose least prime factor exceeds the square of their distance?](catalog-0501-0600.md#JSP-000552) | Open | No | No | Unavailable | Unavailable |
-| JSP-000553 | [Near every integer, is there a composite integer whose least prime factor exceeds the square of their distance?](catalog-0501-0600.md#JSP-000553) | Open | No | No | Unavailable | Unavailable |
+| JSP-000553 | [Near every integer, is there a composite integer whose least prime factor exceeds the square of their distance?](catalog-0501-0600.md#JSP-000553) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000554 | [Between consecutive primes, is there an integer whose least prime factor is at least their gap?](catalog-0501-0600.md#JSP-000554) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000555 | [Large prime factors of binomial coefficients and runs of smooth integers](catalog-0501-0600.md#JSP-000555) | Open | No | No | Unavailable | Unavailable |
 | JSP-000556 | [When does the small-prime part of a binomial coefficient exceed the square of its upper parameter?](catalog-0501-0600.md#JSP-000556) | Open | No | No | Unavailable | Unavailable |
