@@ -900,7 +900,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000725 | [How large can an integer-interval subset be if subset sums using different numbers of terms are never equal?](catalog-0701-0800.md#JSP-000725) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000726 | [How large must gaps in an infinite integer sequence be if subset sums with different numbers of terms are always distinct?](catalog-0701-0800.md#JSP-000726) | Open | No | No | Unavailable | Unavailable |
 | JSP-000727 | [How small can consecutive gaps be in an infinite increasing integer sequence with no term a subset sum of earlier distinct terms?](catalog-0701-0800.md#JSP-000727) | Open | No | No | Unavailable | Unavailable |
-| JSP-000728 | [How many inclusion-maximal sum-free subsets does a finite integer interval have?](catalog-0701-0800.md#JSP-000728) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000728 | [How many inclusion-maximal sum-free subsets does a finite integer interval have?](catalog-0701-0800.md#JSP-000728) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000729 | [How does the sum of an integer's prime-power factors compare with the maximum sum of pairwise coprime divisors?](catalog-0701-0800.md#JSP-000729) | Open | No | No | Unavailable | Unavailable |
 | JSP-000730 | [What is the largest sum of pairwise coprime integers in a finite interval, and what are the extremizing sets?](catalog-0701-0800.md#JSP-000730) | Open | No | No | Unavailable | Unavailable |
 | JSP-000731 | [Must the distinct-element sumset of an additive basis have bounded gaps?](catalog-0701-0800.md#JSP-000731) | Solved | No | No | Unavailable | Unavailable |
