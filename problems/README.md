@@ -278,7 +278,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000133 | [How many distinct prime factors must occur in the product of all pairwise sums from an integer set?](catalog-0101-0200.md#JSP-000133) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000134 | [Must a graph contain a triangle if every induced subgraph on roughly half its vertices is sufficiently dense?](catalog-0101-0200.md#JSP-000134) | Open | No | No | Unavailable | Unavailable |
 | JSP-000135 | [ambiguous statement](catalog-0101-0200.md#JSP-000135) | Open | No | No | Unavailable | Unavailable |
-| JSP-000136 | [How many colors are needed for the graph joining integer-distance pairs of planar points in general position?](catalog-0101-0200.md#JSP-000136) | Open | No | No | Unavailable | Unavailable |
+| JSP-000136 | [How many colors are needed for the graph joining integer-distance pairs of planar points in general position?](catalog-0101-0200.md#JSP-000136) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000137 | [How large can a subset of a finite integer interval be if no element divides the sum of a prescribed number of other elements?](catalog-0101-0200.md#JSP-000137) | Open | No | No | Unavailable | Unavailable |
 | JSP-000138 | [How many distances determined by a finite planar point set must occur relatively infrequently?](catalog-0101-0200.md#JSP-000138) | Open | No | No | Unavailable | Unavailable |
 | JSP-000139 | [How large must the maximum degree of a triangle-free graph of diameter at most two be?](catalog-0101-0200.md#JSP-000139) | Solved | No | No | Unavailable | Unavailable |
