@@ -1098,7 +1098,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000913 | [How many consecutive ordered divisor pairs are coprime, and how does this count grow?](catalog-0901-1000.md#JSP-000913) | Open | No | No | Unavailable | Unavailable |
 | JSP-000914 | [Can a pairwise coprime integer sequence leave relatively small gaps after all its multiples are excluded?](catalog-0901-1000.md#JSP-000914) | Open | No | No | Unavailable | Unavailable |
 | JSP-000915 | [Is there an infinite integer sequence with every pairwise sum squarefree, and how slowly can it grow?](catalog-0901-1000.md#JSP-000915) | Open | No | No | Unavailable | Unavailable |
-| JSP-000916 | [How many edge colors can be used while avoiding the specified rainbow cycle or path?](catalog-0901-1000.md#JSP-000916) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000916 | [How many edge colors can be used while avoiding the specified rainbow cycle or path?](catalog-0901-1000.md#JSP-000916) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000917 | [How many distinct prime factors occur among a sequence of integer partition numbers?](catalog-0901-1000.md#JSP-000917) | Open | No | No | Unavailable | Unavailable |
 | JSP-000918 | [For each prescribed order, is every sufficiently large integer a sum of one more than that order many integers whose prime-factor exponents are all at least that order?](catalog-0901-1000.md#JSP-000918) | Open | No | No | Unavailable | Unavailable |
 | JSP-000919 | [Under the stated restrictions, are only finitely many sums of distinct factorials perfect powers or powerful numbers?](catalog-0901-1000.md#JSP-000919) | Open | No | No | Unavailable | Unavailable |
