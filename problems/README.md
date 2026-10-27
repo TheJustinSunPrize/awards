@@ -328,7 +328,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000183 | [Must an infinite walk in three-dimensional space using a finite set of step vectors visit three collinear points?](catalog-0101-0200.md#JSP-000183) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000184 | [How long a monotone arithmetic progression is guaranteed in every permutation of a finite interval of integers?](catalog-0101-0200.md#JSP-000184) | Open | No | No | Unavailable | Unavailable |
 | JSP-000185 | [Must every permutation of the natural numbers contain a four-term arithmetic progression appearing in monotone order?](catalog-0101-0200.md#JSP-000185) | Open | No | No | Unavailable | Unavailable |
-| JSP-000186 | [Can the natural numbers be partitioned into two sets and each set ordered to avoid monotone three-term arithmetic progressions?](catalog-0101-0200.md#JSP-000186) | Open | No | No | Unavailable | Unavailable |
+| JSP-000186 | [Can the natural numbers be partitioned into two sets and each set ordered to avoid monotone three-term arithmetic progressions?](catalog-0101-0200.md#JSP-000186) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000187 | [What upper bounds hold for the length of arithmetic progressions of primes in a prescribed range?](catalog-0101-0200.md#JSP-000187) | Open | No | No | Unavailable | Unavailable |
 | JSP-000188 | [How large a subset avoiding arithmetic progressions of a prescribed length must every finite integer set contain?](catalog-0101-0200.md#JSP-000188) | Open | No | No | Unavailable | Unavailable |
 | JSP-000189 | [How many pairwise disjoint residue classes with distinct moduli can be selected?](catalog-0101-0200.md#JSP-000189) | Solved | Yes | Yes | Unclaimed | Unclaimed |
