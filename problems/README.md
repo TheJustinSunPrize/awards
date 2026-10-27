@@ -558,7 +558,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 
 | No. | Problem | Current status | Lean proof | Eligible to claim | Solver claim status | Lean claim status |
 | --- | --- | --- | --- | --- | --- | --- |
-| JSP-000401 | [How many edges can a three-uniform hypergraph have while excluding the complete three-uniform hypergraph on four vertices?](catalog-0401-0500.md#JSP-000401) | Open | No | No | Unavailable | Unavailable |
+| JSP-000401 | [How many edges can a three-uniform hypergraph have while excluding the complete three-uniform hypergraph on four vertices?](catalog-0401-0500.md#JSP-000401) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000402 | [Under the specified measure restrictions on a set mapping, must there be a sufficiently large set whose elements avoid one another's images?](catalog-0401-0500.md#JSP-000402) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000403 | [How large can a point set in higher dimensions be if every three points form an isosceles triangle?](catalog-0401-0500.md#JSP-000403) | Open | No | No | Unavailable | Unavailable |
 | JSP-000404 | [Blumenthal's problem](catalog-0401-0500.md#JSP-000404) | Solved | No | No | Unavailable | Unavailable |
