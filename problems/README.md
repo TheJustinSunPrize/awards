@@ -1197,7 +1197,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-001007 | [How many integers can simultaneously avoid about half the residue classes modulo each of several primes?](catalog-1001-1022.md#JSP-001007) | Solved | No | No | Unavailable | Unavailable |
 | JSP-001008 | [Must the maximum distance-weighted distinct-prime-factor count among positions following an integer tend to infinity?](catalog-1001-1022.md#JSP-001008) | Open | No | No | Unavailable | Unavailable |
 | JSP-001009 | [How small can the span and average position of admissible prime tuples be?](catalog-1001-1022.md#JSP-001009) | Open | No | No | Unavailable | Unavailable |
-| JSP-001010 | [Choosing one residue class for each permitted modulus, what minimum coverage multiplicity can be achieved throughout the specified integer interval?](catalog-1001-1022.md#JSP-001010) | Solved | No | No | Unavailable | Unavailable |
+| JSP-001010 | [Choosing one residue class for each permitted modulus, what minimum coverage multiplicity can be achieved throughout the specified integer interval?](catalog-1001-1022.md#JSP-001010) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-001011 | [Must every collection of cubes contain a Sidon subset of fixed positive proportion?](catalog-1001-1022.md#JSP-001011) | Open | No | No | Unavailable | Unavailable |
 | JSP-001012 | [How large a subset with no isosceles triangle must every finite higher-dimensional point set contain?](catalog-1001-1022.md#JSP-001012) | Open | No | No | Unavailable | Unavailable |
 | JSP-001013 | [In fixed dimension, how large a subset with all pairwise distances distinct must every finite point set contain?](catalog-1001-1022.md#JSP-001013) | Open | No | No | Unavailable | Unavailable |
