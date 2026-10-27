@@ -222,7 +222,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000082 | [Does every graph of minimum degree at least three contain a cycle whose length is a power of 2?](catalog-0001-0100.md#JSP-000082) | Open | No | No | Unavailable | Unavailable |
 | JSP-000083 | [What lower bounds hold for the sum of reciprocals of a graph's distinct cycle lengths, and how does this sum reflect its structure?](catalog-0001-0100.md#JSP-000083) | Open | No | No | Unavailable | Unavailable |
 | JSP-000084 | [Can an integer set have a number of two-element sum representations growing asymptotically like a logarithm?](catalog-0001-0100.md#JSP-000084) | Open | No | No | Unavailable | Unavailable |
-| JSP-000085 | [Unbounded discrepancy on homogeneous arithmetic progressions](catalog-0001-0100.md#JSP-000085) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000085 | [Unbounded discrepancy on homogeneous arithmetic progressions](catalog-0001-0100.md#JSP-000085) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000086 | [Is the series obtained by summing the reciprocals of factorials minus one irrational?](catalog-0001-0100.md#JSP-000086) | Open | No | No | Unavailable | Unavailable |
 | JSP-000087 | [Is the specified generating series involving the number of distinct prime factors of an integer irrational?](catalog-0001-0100.md#JSP-000087) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000088 | [Does every two-coloring of triples from a set of continuum cardinality contain a monochromatic subset of the prescribed order type?](catalog-0001-0100.md#JSP-000088) | Open | No | No | Unavailable | Unavailable |
