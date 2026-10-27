@@ -978,7 +978,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 
 | No. | Problem | Current status | Lean proof | Eligible to claim | Solver claim status | Lean claim status |
 | --- | --- | --- | --- | --- | --- | --- |
-| JSP-000801 | [How large a subset with all subset sums distinct must every finite real set contain?](catalog-0801-0900.md#JSP-000801) | Open | No | No | Unavailable | Unavailable |
+| JSP-000801 | [How large a subset with all subset sums distinct must every finite real set contain?](catalog-0801-0900.md#JSP-000801) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000802 | [What is the density of indices where a prime divided by its index exceeds the corresponding ratio at the preceding index?](catalog-0801-0900.md#JSP-000802) | Open | No | No | Unavailable | Unavailable |
 | JSP-000803 | [What is the smallest possible order of the error in counting squarefree positive integers?](catalog-0801-0900.md#JSP-000803) | Open | No | No | Unavailable | Unavailable |
 | JSP-000804 | [Jacobsthal's function](catalog-0801-0900.md#JSP-000804) | Open | No | No | Unavailable | Unavailable |
