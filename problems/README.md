@@ -965,7 +965,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000790 | [For a fixed integer, how large is the reciprocal sum of its positive differences from preceding primes, and how does it vary?](catalog-0701-0800.md#JSP-000790) | Open | No | No | Unavailable | Unavailable |
 | JSP-000791 | [How dense can a real sequence be if all the specified distinct power products differ by at least one?](catalog-0701-0800.md#JSP-000791) | Open | No | No | Unavailable | Unavailable |
 | JSP-000792 | [Gaussian moat problem](catalog-0701-0800.md#JSP-000792) | Solved | Yes | Yes | Unclaimed | Unclaimed |
-| JSP-000793 | [What is the largest area of a measurable subset of a given disk containing no pair at a positive integer distance?](catalog-0701-0800.md#JSP-000793) | Open | No | No | Unavailable | Unavailable |
+| JSP-000793 | [What is the largest area of a measurable subset of a given disk containing no pair at a positive integer distance?](catalog-0701-0800.md#JSP-000793) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000794 | [For a sequence generated greedily to match cumulative additive representation targets, how small can the error be?](catalog-0701-0800.md#JSP-000794) | Open | No | No | Unavailable | Unavailable |
 | JSP-000795 | [If an integer set has density zero, must the integers whose proper-divisor sums lie in that set also have density zero?](catalog-0701-0800.md#JSP-000795) | Open | No | No | Unavailable | Unavailable |
 | JSP-000796 | [How many unit-distance pairs can occur between disjoint translated copies of a convex set?](catalog-0701-0800.md#JSP-000796) | Open | No | No | Unavailable | Unavailable |
