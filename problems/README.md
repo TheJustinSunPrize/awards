@@ -296,7 +296,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000151 | [For an integer set with distinct pairwise sums, how many elements of its sumset have neither neighboring integer in the sumset?](catalog-0101-0200.md#JSP-000151) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000152 | [For an integer set with distinct pairwise sums, determine the average squared gap between consecutive elements of its sumset.](catalog-0101-0200.md#JSP-000152) | Open | No | No | Unavailable | Unavailable |
 | JSP-000153 | [How much can the largest size of a Sidon set increase when the endpoint of its containing interval increases slightly?](catalog-0101-0200.md#JSP-000153) | Open | No | No | Unavailable | Unavailable |
-| JSP-000154 | [How small can an inclusion-maximal Sidon set in a finite integer interval be?](catalog-0101-0200.md#JSP-000154) | Open | No | No | Unavailable | Unavailable |
+| JSP-000154 | [How small can an inclusion-maximal Sidon set in a finite integer interval be?](catalog-0101-0200.md#JSP-000154) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000155 | [Is there an infinite Sidon set whose three-term sums represent every sufficiently large integer?](catalog-0101-0200.md#JSP-000155) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000156 | [How dense can an integer set be if each integer has at most two representations as a sum of two of its elements?](catalog-0101-0200.md#JSP-000156) | Open | No | No | Unavailable | Unavailable |
 | JSP-000157 | [How many vertices force a four-cycle in one color or a clique of prescribed size in the other color in every two-coloring of a complete graph?](catalog-0101-0200.md#JSP-000157) | Open | No | No | Unavailable | Unavailable |
