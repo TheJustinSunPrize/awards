@@ -405,7 +405,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000255 | [What is the minimum number of distinct positive unit fractions needed to represent a given positive rational number?](catalog-0201-0300.md#JSP-000255) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000256 | [How small can the largest denominator be in a representation of a given positive rational number by distinct unit fractions?](catalog-0201-0300.md#JSP-000256) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000257 | [Which positive rational numbers are sums of unit fractions whose denominators are products of two distinct primes?](catalog-0201-0300.md#JSP-000257) | Open | No | No | Unavailable | Unavailable |
-| JSP-000258 | [Can two finite sets of primes have reciprocal sums whose product is exactly one?](catalog-0201-0300.md#JSP-000258) | Open | No | No | Unavailable | Unavailable |
+| JSP-000258 | [Can two finite sets of primes have reciprocal sums whose product is exactly one?](catalog-0201-0300.md#JSP-000258) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000259 | [Which integers can be represented by sums of distinct unit fractions with denominators in a finite range?](catalog-0201-0300.md#JSP-000259) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000260 | [How closely can a subsum of positive unit fractions with denominators in a finite range approximate one?](catalog-0201-0300.md#JSP-000260) | Open | No | No | Unavailable | Unavailable |
 | JSP-000261 | [If a collection of positive unit fractions sums to more than one, how closely can a subsum approximate one from below?](catalog-0201-0300.md#JSP-000261) | Open | No | No | Unavailable | Unavailable |
