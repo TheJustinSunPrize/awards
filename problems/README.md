@@ -804,7 +804,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000634 | [How large a Sidon set can be chosen among squares in a prescribed range?](catalog-0601-0700.md#JSP-000634) | Open | No | No | Unavailable | Unavailable |
 | JSP-000635 | [If every finite part of a set contains a fixed proportion with distinct subset sums, can the whole set be partitioned into finitely many such sets?](catalog-0601-0700.md#JSP-000635) | Open | No | No | Unavailable | Unavailable |
 | JSP-000636 | [How many different set sizes can an antichain realize if each size must occur with prescribed multiplicity?](catalog-0601-0700.md#JSP-000636) | Open | No | No | Unavailable | Unavailable |
-| JSP-000637 | [How many edges can the containment graph of a set family have?](catalog-0601-0700.md#JSP-000637) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000637 | [How many edges can the containment graph of a set family have?](catalog-0601-0700.md#JSP-000637) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000638 | [In the game where players alternately color edges to build the largest monochromatic clique, what outcomes and optimal strategies can each guarantee?](catalog-0601-0700.md#JSP-000638) | Open | No | No | Unavailable | Unavailable |
 | JSP-000639 | [For a product of the first several primes, is there always a prime between its largest factor and the product whose sum with the product is also prime?](catalog-0601-0700.md#JSP-000639) | Open | No | No | Unavailable | Unavailable |
 | JSP-000640 | [What size of a multicolored uniform hypergraph forces a prescribed number of disjoint edges of one color?](catalog-0601-0700.md#JSP-000640) | Solved | No | No | Unavailable | Unavailable |
