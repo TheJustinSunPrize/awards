@@ -956,7 +956,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000781 | [How many integers are sums of a bounded number of higher-powerful numbers, and what density do they have?](catalog-0701-0800.md#JSP-000781) | Open | No | No | Unavailable | Unavailable |
 | JSP-000782 | [Is every sufficiently large integer a sum of three powerful numbers, each divisible by the square of every prime dividing it?](catalog-0701-0800.md#JSP-000782) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000783 | [How many powerful numbers can lie between consecutive squares?](catalog-0701-0800.md#JSP-000783) | Open | No | No | Unavailable | Unavailable |
-| JSP-000784 | [What upper bounds and growth laws govern the number of representations of an integer as a sum of two powerful numbers?](catalog-0701-0800.md#JSP-000784) | Open | No | No | Unavailable | Unavailable |
+| JSP-000784 | [What upper bounds and growth laws govern the number of representations of an integer as a sum of two powerful numbers?](catalog-0701-0800.md#JSP-000784) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000785 | [Can a graph be vertex-critical for chromatic number while deletion of any small number of edges never lowers its chromatic number?](catalog-0701-0800.md#JSP-000785) | Open | No | No | Unavailable | Unavailable |
 | JSP-000786 | [How long a run of consecutive integers can have pairwise distinct divisor counts?](catalog-0701-0800.md#JSP-000786) | Open | No | No | Unavailable | Unavailable |
 | JSP-000787 | [Are there infinitely many consecutive positive integers with equal divisor counts?](catalog-0701-0800.md#JSP-000787) | Solved | No | No | Unavailable | Unavailable |
