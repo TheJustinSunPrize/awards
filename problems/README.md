@@ -756,7 +756,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000591 | [Must the order of every finite projective plane be a prime power?](catalog-0501-0600.md#JSP-000591) | Open | No | No | Unavailable | Unavailable |
 | JSP-000592 | [How many mutually orthogonal Latin squares can always be constructed at a given order?](catalog-0501-0600.md#JSP-000592) | Open | No | No | Unavailable | Unavailable |
 | JSP-000593 | [What is the asymptotic number of Latin rectangles with prescribed dimensions?](catalog-0501-0600.md#JSP-000593) | Open | No | No | Unavailable | Unavailable |
-| JSP-000594 | [How large is the reciprocal sum of primes for which a given integer's residue lies in the upper half of the residue range?](catalog-0501-0600.md#JSP-000594) | Open | No | No | Unavailable | Unavailable |
+| JSP-000594 | [How large is the reciprocal sum of primes for which a given integer's residue lies in the upper half of the residue range?](catalog-0501-0600.md#JSP-000594) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000595 | [Can the square of a factorial with index slightly above a reference value divide the factorial of twice that reference value?](catalog-0501-0600.md#JSP-000595) | Open | No | No | Unavailable | Unavailable |
 | JSP-000596 | [If one product of two factorials divides another, how far apart can the sums of their indices be?](catalog-0501-0600.md#JSP-000596) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000597 | [What restrictions on factorial indices follow when the reduced denominator of their ratio has only small prime factors?](catalog-0501-0600.md#JSP-000597) | Solved | Yes | Yes | Unclaimed | Unclaimed |
