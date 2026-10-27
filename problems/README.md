@@ -455,7 +455,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | --- | --- | --- | --- | --- | --- | --- |
 | JSP-000301 | [If two consecutive positive integers are powerful, must at least one be a perfect square?](catalog-0301-0400.md#JSP-000301) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000302 | [ambiguous statement](catalog-0301-0400.md#JSP-000302) | Open | No | No | Unavailable | Unavailable |
-| JSP-000303 | [How large can the product of the powerful parts of consecutive integers be?](catalog-0301-0400.md#JSP-000303) | Open | No | No | Unavailable | Unavailable |
+| JSP-000303 | [How large can the product of the powerful parts of consecutive integers be?](catalog-0301-0400.md#JSP-000303) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000304 | [How large a prime factor must the product of two consecutive positive integers have?](catalog-0301-0400.md#JSP-000304) | Open | No | No | Unavailable | Unavailable |
 | JSP-000305 | [Are there arbitrarily long runs of consecutive integers whose prime factors all lie below the specified bound?](catalog-0301-0400.md#JSP-000305) | Solved | Yes | Yes | Unclaimed | Claimed |
 | JSP-000306 | [What is the density of integers whose largest prime factor is smaller than that of the next integer?](catalog-0301-0400.md#JSP-000306) | Solved | Yes | Yes | Unclaimed | Unclaimed |
