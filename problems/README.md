@@ -1105,7 +1105,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000920 | [How large can an integer-interval subset be if every pairwise sum is nonsquarefree?](catalog-0901-1000.md#JSP-000920) | Open | No | No | Unavailable | Unavailable |
 | JSP-000921 | [Which integers are sums of products of powers of two fixed bases when no chosen summand may divide another?](catalog-0901-1000.md#JSP-000921) | Open | No | No | Unavailable | Unavailable |
 | JSP-000922 | [Does high chromatic number and small clique number force two anticomplete vertex subsets each of high chromatic number?](catalog-0901-1000.md#JSP-000922) | Open | No | No | Unavailable | Unavailable |
-| JSP-000923 | [Can an integer sequence with bounded gaps have an iterated sumset entirely avoiding the prescribed sparse integer set?](catalog-0901-1000.md#JSP-000923) | Open | No | No | Unavailable | Unavailable |
+| JSP-000923 | [Can an integer sequence with bounded gaps have an iterated sumset entirely avoiding the prescribed sparse integer set?](catalog-0901-1000.md#JSP-000923) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000924 | [Sierpinski numbers](catalog-0901-1000.md#JSP-000924) | Open | No | No | Unavailable | Unavailable |
 | JSP-000925 | [For a real-rooted polynomial with equally spaced zeros, do gaps between consecutive derivative zeros satisfy the specified monotonicity?](catalog-0901-1000.md#JSP-000925) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000926 | [How short can a path to infinity be along which a given entire function tends to infinity?](catalog-0901-1000.md#JSP-000926) | Solved | No | No | Unavailable | Unavailable |
