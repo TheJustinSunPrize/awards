@@ -674,7 +674,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000509 | [Partitioning graphs with prescribed chromatic bounds](catalog-0501-0600.md#JSP-000509) | Open | No | No | Unavailable | Unavailable |
 | JSP-000510 | [How few vertices can a bipartite graph have if it is not colorable from lists of the prescribed size?](catalog-0501-0600.md#JSP-000510) | Open | No | No | Unavailable | Unavailable |
 | JSP-000511 | [Is every planar bipartite graph colorable from arbitrary lists of three colors per vertex?](catalog-0501-0600.md#JSP-000511) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000512 | [What list size guarantees proper list coloring of every planar graph?](catalog-0501-0600.md#JSP-000512) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000512 | [What list size guarantees proper list coloring of every planar graph?](catalog-0501-0600.md#JSP-000512) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000513 | [Does list multicolorability persist when both the available-list size and the required number of colors per vertex are doubled?](catalog-0501-0600.md#JSP-000513) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000514 | [Which triangles can be dissected into congruent triangles only when their number is a square?](catalog-0501-0600.md#JSP-000514) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000515 | [For a given triangle, which numbers of congruent smaller triangles can tile it?](catalog-0501-0600.md#JSP-000515) | Open | No | No | Unavailable | Unavailable |
