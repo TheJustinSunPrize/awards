@@ -315,7 +315,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000170 | [Which finite point configurations have a monochromatic congruent copy under every finite coloring in sufficiently high dimension?](catalog-0101-0200.md#JSP-000170) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000171 | [How small can one make the discrepancy of signed sums along arithmetic progressions?](catalog-0101-0200.md#JSP-000171) | Open | No | No | Unavailable | Unavailable |
 | JSP-000172 | [Can signs be assigned to the positive integers so that discrepancy along each arithmetic progression satisfies an optimal bound depending only on its common difference?](catalog-0101-0200.md#JSP-000172) | Open | No | No | Unavailable | Unavailable |
-| JSP-000173 | [How many short arithmetic progressions in an integer set force a longer arithmetic progression?](catalog-0101-0200.md#JSP-000173) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000173 | [How many short arithmetic progressions in an integer set force a longer arithmetic progression?](catalog-0101-0200.md#JSP-000173) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000174 | [How much can forbidding several subgraphs reduce the extremal edge count compared with forbidding just one of them?](catalog-0101-0200.md#JSP-000174) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000175 | [Is the Ramsey number of a high-dimensional hypercube bounded by a constant times its number of vertices?](catalog-0101-0200.md#JSP-000175) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000176 | [How many edges can a graph have if it contains no regular subgraph of a prescribed degree?](catalog-0101-0200.md#JSP-000176) | Solved | No | No | Unavailable | Unavailable |
