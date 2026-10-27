@@ -595,7 +595,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000435 | [How much must the triangle-versus-clique Ramsey number increase when the clique gains one vertex?](catalog-0401-0500.md#JSP-000435) | Open | No | No | Unavailable | Unavailable |
 | JSP-000436 | [Which graph with a prescribed number of edges has the largest Ramsey number?](catalog-0401-0500.md#JSP-000436) | Open | No | No | Unavailable | Unavailable |
 | JSP-000437 | [Can every graph's Ramsey number be bounded exponentially in the square root of its edge count?](catalog-0401-0500.md#JSP-000437) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000438 | [What is the optimal upper bound for the two-color Ramsey number of an arbitrary tree?](catalog-0401-0500.md#JSP-000438) | Open | No | No | Unavailable | Unavailable |
+| JSP-000438 | [What is the optimal upper bound for the two-color Ramsey number of an arbitrary tree?](catalog-0401-0500.md#JSP-000438) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000439 | [Does sufficiently large average degree force a graph to contain every tree of a prescribed order?](catalog-0401-0500.md#JSP-000439) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000440 | [What is the two-color Ramsey number of a tree whose bipartition sizes have ratio one to two?](catalog-0401-0500.md#JSP-000440) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000441 | [What is the Ramsey number of a prescribed tree versus a complete multipartite graph?](catalog-0401-0500.md#JSP-000441) | Open | No | No | Unavailable | Unavailable |
