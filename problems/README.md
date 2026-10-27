@@ -731,7 +731,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000566 | [How fast can prime chains grow when each prime divides one less than the next?](catalog-0501-0600.md#JSP-000566) | Open | No | No | Unavailable | Unavailable |
 | JSP-000567 | [How long an increasing chain of divisors can an integer have if each term is one modulo its predecessor?](catalog-0501-0600.md#JSP-000567) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000568 | [Does the density of integers having a divisor in a prescribed residue class exhibit a phase transition as parameters vary?](catalog-0501-0600.md#JSP-000568) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000569 | [Must two binomial coefficients in the same row have a sufficiently large common prime factor?](catalog-0501-0600.md#JSP-000569) | Open | No | No | Unavailable | Unavailable |
+| JSP-000569 | [Must two binomial coefficients in the same row have a sufficiently large common prime factor?](catalog-0501-0600.md#JSP-000569) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000570 | [How small can the greatest common divisor of an integer and a binomial coefficient with that upper parameter be?](catalog-0501-0600.md#JSP-000570) | Open | No | No | Unavailable | Unavailable |
 | JSP-000571 | [In a hereditary set family, is a largest pairwise-intersecting subfamily always obtainable by taking all members containing one fixed element?](catalog-0501-0600.md#JSP-000571) | Open | No | No | Unavailable | Unavailable |
 | JSP-000572 | [Must every sufficiently large uniform set family contain two members intersecting in exactly one element?](catalog-0501-0600.md#JSP-000572) | Solved | No | No | Unavailable | Unavailable |
