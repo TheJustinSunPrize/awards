@@ -143,7 +143,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000003 | [Birch–Swinnerton-Dyer conjecture (BSD)](catalog-0001-0100.md#JSP-000003) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000004 | [Hodge conjecture](catalog-0001-0100.md#JSP-000004) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000005 | [Existence and smoothness of the 3D Navier–Stokes equations](catalog-0001-0100.md#JSP-000005) | Solved | Yes | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
-| JSP-000006 | [Yang–Mills existence and mass gap](catalog-0001-0100.md#JSP-000006) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
+| JSP-000006 | [Yang–Mills existence and mass gap](catalog-0001-0100.md#JSP-000006) | Open | Yes | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000007 | [Poincaré conjecture](catalog-0001-0100.md#JSP-000007) | Solved | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000008 | [Goldbach conjecture (strong Goldbach)](catalog-0001-0100.md#JSP-000008) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000009 | [Twin prime conjecture](catalog-0001-0100.md#JSP-000009) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
