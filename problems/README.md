@@ -782,7 +782,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000612 | [How many edges must be deleted from a chromatic-critical graph to make it bipartite?](catalog-0601-0700.md#JSP-000612) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000613 | [How large is the second-largest component of a random graph in the critical transition window?](catalog-0601-0700.md#JSP-000613) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000614 | [What is the edge threshold for Hamilton cycles in a random graph?](catalog-0601-0700.md#JSP-000614) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000615 | [What is the density threshold for a perfect matching in a random three-uniform hypergraph?](catalog-0601-0700.md#JSP-000615) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000615 | [What is the density threshold for a perfect matching in a random three-uniform hypergraph?](catalog-0601-0700.md#JSP-000615) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000616 | [Counting sum-free subsets of integer intervals](catalog-0601-0700.md#JSP-000616) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000617 | [Can an integer set have uniformly bounded two-term representation counts while its sumset density is arbitrarily close to one?](catalog-0601-0700.md#JSP-000617) | Open | No | No | Unavailable | Unavailable |
 | JSP-000618 | [Can an infinite-chromatic graph have an independent set of nearly half the vertices in every finite subgraph?](catalog-0601-0700.md#JSP-000618) | Solved | Yes | Yes | Unclaimed | Unclaimed |
