@@ -164,7 +164,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000024 | [Invariant subspace problem for Hilbert spaces](catalog-0001-0100.md#JSP-000024) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000025 | [Lehmer–Mahler measure problem](catalog-0001-0100.md#JSP-000025) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000026 | [Decimal normality of pi](catalog-0001-0100.md#JSP-000026) | Open | No | No | Unavailable | Unavailable |
-| JSP-000027 | [Artin primitive root conjecture](catalog-0001-0100.md#JSP-000027) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000027 | [Artin primitive root conjecture](catalog-0001-0100.md#JSP-000027) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000028 | [Bateman–Horn conjecture](catalog-0001-0100.md#JSP-000028) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000029 | [Dickson conjecture](catalog-0001-0100.md#JSP-000029) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000030 | [Elliott–Halberstam conjecture](catalog-0001-0100.md#JSP-000030) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
