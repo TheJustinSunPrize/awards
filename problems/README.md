@@ -643,7 +643,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000483 | [Where does the specified Ramsey property differ between finitely many and countably infinitely many colors?](catalog-0401-0500.md#JSP-000483) | Open | No | No | Unavailable | Unavailable |
 | JSP-000484 | [Which order-isomorphic structures are forced in two-color partitions of uncountable ordinals after excluding the specified cliques?](catalog-0401-0500.md#JSP-000484) | Open | No | No | Unavailable | Unavailable |
 | JSP-000485 | [Can countable subsets be colored so that the countable subsets of every sufficiently large set realize all colors?](catalog-0401-0500.md#JSP-000485) | Open | No | No | Unavailable | Unavailable |
-| JSP-000486 | [Disjoint paths and separating sets in infinite graphs](catalog-0401-0500.md#JSP-000486) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000486 | [Disjoint paths and separating sets in infinite graphs](catalog-0401-0500.md#JSP-000486) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000487 | [How does the edge threshold forcing many triangles sharing one edge depend on the parameters?](catalog-0401-0500.md#JSP-000487) | Open | No | No | Unavailable | Unavailable |
 | JSP-000488 | [For which ordinals does every graph on the ordinal have an infinite path or an independent set of the full order type?](catalog-0401-0500.md#JSP-000488) | Open | No | No | Unavailable | Unavailable |
 | JSP-000489 | [Property B](catalog-0401-0500.md#JSP-000489) | Open | No | No | Unavailable | Unavailable |
