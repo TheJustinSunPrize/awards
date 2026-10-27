@@ -949,7 +949,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000774 | [How often do consecutive primes enclose at least two integers having only sufficiently small prime factors?](catalog-0701-0800.md#JSP-000774) | Open | No | No | Unavailable | Unavailable |
 | JSP-000775 | [How large can the part supported on powers of two and three in a product of consecutive integers be?](catalog-0701-0800.md#JSP-000775) | Open | No | No | Unavailable | Unavailable |
 | JSP-000776 | [Under a maximum-degree bound, how many edges force two edges sufficiently far apart in the graph?](catalog-0701-0800.md#JSP-000776) | Open | No | No | Unavailable | Unavailable |
-| JSP-000777 | [How small an upper bound controls the powerful part of a product of consecutive integers?](catalog-0701-0800.md#JSP-000777) | Open | No | No | Unavailable | Unavailable |
+| JSP-000777 | [How small an upper bound controls the powerful part of a product of consecutive integers?](catalog-0701-0800.md#JSP-000777) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000778 | [How often are powers of two or factorials plus or minus one powerful numbers?](catalog-0701-0800.md#JSP-000778) | Open | No | No | Unavailable | Unavailable |
 | JSP-000779 | [How often do three consecutive members of the ordered powerful numbers form an arithmetic progression?](catalog-0701-0800.md#JSP-000779) | Open | No | No | Unavailable | Unavailable |
 | JSP-000780 | [Can higher-powerful integers satisfying the required coprimality conditions obey an additive relation in which one is the sum of the other two?](catalog-0701-0800.md#JSP-000780) | Open | No | No | Unavailable | Unavailable |
