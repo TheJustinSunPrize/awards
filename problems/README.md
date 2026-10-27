@@ -585,7 +585,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000425 | [How fast does the mean endpoint distance of a random self-avoiding lattice walk grow with its length?](catalog-0401-0500.md#JSP-000425) | Open | No | No | Unavailable | Unavailable |
 | JSP-000426 | [How large a subset with distinct pairwise sums must every finite real set contain?](catalog-0401-0500.md#JSP-000426) | Open | No | No | Unavailable | Unavailable |
 | JSP-000427 | [How long an integer interval forces, under every two-coloring, a prescribed-size set whose nonempty subset sums are all the same color?](catalog-0401-0500.md#JSP-000427) | Open | No | No | Unavailable | Unavailable |
-| JSP-000428 | [How large can a pairwise noncoprime subset of an integer interval containing a specified integer be?](catalog-0401-0500.md#JSP-000428) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000428 | [How large can a pairwise noncoprime subset of an integer interval containing a specified integer be?](catalog-0401-0500.md#JSP-000428) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000429 | [How large can an integer set be if it contains no prescribed-size subset with all pairwise greatest common divisors equal?](catalog-0401-0500.md#JSP-000429) | Open | No | No | Unavailable | Unavailable |
 | JSP-000430 | [How large can an integer set be if it contains no three elements with equal pairwise least common multiples?](catalog-0401-0500.md#JSP-000430) | Open | No | No | Unavailable | Unavailable |
 | JSP-000431 | [How large can an integer set's reciprocal sum be if the number of representations of any integer as a prime times a set element is restricted?](catalog-0401-0500.md#JSP-000431) | Open | No | No | Unavailable | Unavailable |
