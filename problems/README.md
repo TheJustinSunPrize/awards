@@ -952,7 +952,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000777 | [How small an upper bound controls the powerful part of a product of consecutive integers?](catalog-0701-0800.md#JSP-000777) | Open | No | No | Unavailable | Unavailable |
 | JSP-000778 | [How often are powers of two or factorials plus or minus one powerful numbers?](catalog-0701-0800.md#JSP-000778) | Open | No | No | Unavailable | Unavailable |
 | JSP-000779 | [How often do three consecutive members of the ordered powerful numbers form an arithmetic progression?](catalog-0701-0800.md#JSP-000779) | Open | No | No | Unavailable | Unavailable |
-| JSP-000780 | [Can higher-powerful integers satisfying the required coprimality conditions obey an additive relation in which one is the sum of the other two?](catalog-0701-0800.md#JSP-000780) | Open | No | No | Unavailable | Unavailable |
+| JSP-000780 | [Can higher-powerful integers satisfying the required coprimality conditions obey an additive relation in which one is the sum of the other two?](catalog-0701-0800.md#JSP-000780) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000781 | [How many integers are sums of a bounded number of higher-powerful numbers, and what density do they have?](catalog-0701-0800.md#JSP-000781) | Open | No | No | Unavailable | Unavailable |
 | JSP-000782 | [Is every sufficiently large integer a sum of three powerful numbers, each divisible by the square of every prime dividing it?](catalog-0701-0800.md#JSP-000782) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000783 | [How many powerful numbers can lie between consecutive squares?](catalog-0701-0800.md#JSP-000783) | Open | No | No | Unavailable | Unavailable |
