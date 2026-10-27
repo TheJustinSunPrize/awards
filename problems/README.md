@@ -544,7 +544,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000389 | [How many distinct factorial residues occur modulo a prime?](catalog-0301-0400.md#JSP-000389) | Open | No | No | Unavailable | Unavailable |
 | JSP-000390 | [For a prescribed remainder, are there infinitely many positive integers whose corresponding powers of two have that remainder upon division by the integer?](catalog-0301-0400.md#JSP-000390) | Open | No | No | Unavailable | Unavailable |
 | JSP-000391 | [Can the specified floor recurrence generate the digits of an algebraic number in a prescribed base?](catalog-0301-0400.md#JSP-000391) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000392 | [How long an integer interval forces monochromatic integers satisfying the specified additive equation under every coloring with a given number of colors?](catalog-0301-0400.md#JSP-000392) | Open | No | No | Unavailable | Unavailable |
+| JSP-000392 | [How long an integer interval forces monochromatic integers satisfying the specified additive equation under every coloring with a given number of colors?](catalog-0301-0400.md#JSP-000392) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000393 | [What bounds relate the number of nonzero terms of a polynomial to that of its square?](catalog-0301-0400.md#JSP-000393) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000394 | [Must the integers remaining after removal of the specified residue classes have logarithmic density?](catalog-0301-0400.md#JSP-000394) | Open | No | No | Unavailable | Unavailable |
 | JSP-000395 | [How do the densities of multiples of a given finite integer set compare across different intervals?](catalog-0301-0400.md#JSP-000395) | Open | No | No | Unavailable | Unavailable |
