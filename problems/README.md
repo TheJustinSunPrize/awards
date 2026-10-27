@@ -928,7 +928,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000753 | [If every translation difference of a function is measurable, does the function decompose into parts with the specified regularity?](catalog-0701-0800.md#JSP-000753) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000754 | [Can a space and its Cartesian square have the same nontrivial finite dimension?](catalog-0701-0800.md#JSP-000754) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000755 | [Must a connected Euclidean set contain connected subsets of several distinct homeomorphism types?](catalog-0701-0800.md#JSP-000755) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000756 | [How does the size Ramsey number grow with the target graph's average degree?](catalog-0701-0800.md#JSP-000756) | Open | No | No | Unavailable | Unavailable |
+| JSP-000756 | [How does the size Ramsey number grow with the target graph's average degree?](catalog-0701-0800.md#JSP-000756) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000757 | [How many distinct exponent values occur in the prime factorization of a factorial?](catalog-0701-0800.md#JSP-000757) | Open | No | No | Unavailable | Unavailable |
 | JSP-000758 | [Can the product of consecutive integers have pairwise distinct prime-factor exponents?](catalog-0701-0800.md#JSP-000758) | Open | No | No | Unavailable | Unavailable |
 | JSP-000759 | [What edge count forces many internally disjoint paths between two vertices?](catalog-0701-0800.md#JSP-000759) | Solved | No | No | Unavailable | Unavailable |
