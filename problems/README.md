@@ -1018,7 +1018,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000838 | [Can every graph without triangles or four-cycles be acyclically oriented so that reversing any single edge still leaves it acyclic?](catalog-0801-0900.md#JSP-000838) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000839 | [Just above the maximum bipartite edge count, how many edge-disjoint triangles are guaranteed?](catalog-0801-0900.md#JSP-000839) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000840 | [How many triangles must a graph have once its edge count exceeds the maximum bipartite edge count?](catalog-0801-0900.md#JSP-000840) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000841 | [Under a high-chromatic-number condition, how many edges force a triangle?](catalog-0801-0900.md#JSP-000841) | Open | No | No | Unavailable | Unavailable |
+| JSP-000841 | [Under a high-chromatic-number condition, how many edges force a triangle?](catalog-0801-0900.md#JSP-000841) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000842 | [What graph density forces a cycle containing nearly all vertices?](catalog-0801-0900.md#JSP-000842) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000843 | [Chromatic number and minimum order of triangle-free graphs](catalog-0801-0900.md#JSP-000843) | Open | No | No | Unavailable | Unavailable |
 | JSP-000844 | [With one off-diagonal Ramsey parameter fixed, does the ratio of successive values in the other parameter tend to one?](catalog-0801-0900.md#JSP-000844) | Solved | Yes | Yes | Unclaimed | Unclaimed |
