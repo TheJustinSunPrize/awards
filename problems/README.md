@@ -393,7 +393,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000243 | [What is the shortest integer interval containing distinct denominators whose reciprocals sum to one?](catalog-0201-0300.md#JSP-000243) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000244 | [Must every representation of one by distinct positive unit fractions have two consecutive ordered denominators differing by at least three?](catalog-0201-0300.md#JSP-000244) | Open | No | No | Unavailable | Unavailable |
 | JSP-000245 | [How many pairs of integer intervals have reciprocal sums whose total is an integer?](catalog-0201-0300.md#JSP-000245) | Open | No | No | Unavailable | Unavailable |
-| JSP-000246 | [Can separated integer intervals be chosen so that the reciprocals of all their integers sum to one?](catalog-0201-0300.md#JSP-000246) | Open | No | No | Unavailable | Unavailable |
+| JSP-000246 | [Can separated integer intervals be chosen so that the reciprocals of all their integers sum to one?](catalog-0201-0300.md#JSP-000246) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000247 | [When can a finite harmonic sum, expressed over the least common multiple of its initial integers, be reduced further?](catalog-0201-0300.md#JSP-000247) | Open | No | No | Unavailable | Unavailable |
 | JSP-000248 | [Which positive integers can be the largest denominator in a representation of one by distinct unit fractions?](catalog-0201-0300.md#JSP-000248) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000249 | [ambiguous statement](catalog-0201-0300.md#JSP-000249) | Open | No | No | Unavailable | Unavailable |
