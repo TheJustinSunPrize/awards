@@ -397,7 +397,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000247 | [When can a finite harmonic sum, expressed over the least common multiple of its initial integers, be reduced further?](catalog-0201-0300.md#JSP-000247) | Open | No | No | Unavailable | Unavailable |
 | JSP-000248 | [Which positive integers can be the largest denominator in a representation of one by distinct unit fractions?](catalog-0201-0300.md#JSP-000248) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000249 | [ambiguous statement](catalog-0201-0300.md#JSP-000249) | Open | No | No | Unavailable | Unavailable |
-| JSP-000250 | [Within the prescribed finite denominator range, which initial denominators cannot occur in a representation of one, and where is the smallest exception?](catalog-0201-0300.md#JSP-000250) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000250 | [Within the prescribed finite denominator range, which initial denominators cannot occur in a representation of one, and where is the smallest exception?](catalog-0201-0300.md#JSP-000250) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000251 | [How many unit fractions are needed to represent one if every denominator must exceed a prescribed threshold?](catalog-0201-0300.md#JSP-000251) | Open | No | No | Unavailable | Unavailable |
 | JSP-000252 | [How many subsets of a finite integer range have reciprocal sum exactly one?](catalog-0201-0300.md#JSP-000252) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000253 | [How large can a subset of an integer interval be if no element's reciprocal is a sum of reciprocals of other elements?](catalog-0201-0300.md#JSP-000253) | Open | No | No | Unavailable | Unavailable |
