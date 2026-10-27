@@ -340,7 +340,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000195 | [If the number of points on any one line is bounded, how many distinct lines must a planar point set determine?](catalog-0101-0200.md#JSP-000195) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000196 | [Is there a dense subset of the plane in which every pairwise distance is rational?](catalog-0101-0200.md#JSP-000196) | Open | No | No | Unavailable | Unavailable |
 | JSP-000197 | [How many planar points in general position can have all pairwise distances integral?](catalog-0101-0200.md#JSP-000197) | Open | No | No | Unavailable | Unavailable |
-| JSP-000198 | [How many points in general position force an empty convex polygon of a prescribed size?](catalog-0101-0200.md#JSP-000198) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000198 | [How many points in general position force an empty convex polygon of a prescribed size?](catalog-0101-0200.md#JSP-000198) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000199 | [For which n do planar crescent configurations exist?](catalog-0101-0200.md#JSP-000199) | Open | No | No | Unavailable | Unavailable |
 | JSP-000200 | [Determine how consecutive prime gaps increase, decrease, or remain equal, and how frequently each pattern occurs.](catalog-0101-0200.md#JSP-000200) | Open | No | No | Unavailable | Unavailable |
 
