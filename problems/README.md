@@ -470,7 +470,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000315 | [Determine the growth of the counting function of highly composite numbers, whose divisor counts exceed those of all smaller positive integers.](catalog-0301-0400.md#JSP-000315) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000316 | [How long can a consecutive-integer interval be if its product's largest prime factor must occur repeatedly?](catalog-0301-0400.md#JSP-000316) | Open | No | No | Unavailable | Unavailable |
 | JSP-000317 | [Can a prime square be followed by several consecutive integers having no prime factor larger than that prime?](catalog-0301-0400.md#JSP-000317) | Open | No | No | Unavailable | Unavailable |
-| JSP-000318 | [How far beyond an interval's right endpoint can a composite integer in that interval plus its least prime factor lie?](catalog-0301-0400.md#JSP-000318) | Open | No | No | Unavailable | Unavailable |
+| JSP-000318 | [How far beyond an interval's right endpoint can a composite integer in that interval plus its least prime factor lie?](catalog-0301-0400.md#JSP-000318) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000319 | [Are infinitely many binomial coefficients products of consecutive primes?](catalog-0301-0400.md#JSP-000319) | Open | No | No | Unavailable | Unavailable |
 | JSP-000320 | [Must a binomial coefficient have a divisor close in size to its upper parameter?](catalog-0301-0400.md#JSP-000320) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000321 | [When can two disjoint intervals of consecutive positive integers have equal products?](catalog-0301-0400.md#JSP-000321) | Open | No | No | Unavailable | Unavailable |
