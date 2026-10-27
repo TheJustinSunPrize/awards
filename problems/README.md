@@ -943,7 +943,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000768 | [If a graph admits an edge coloring with no monochromatic triangle, must it have a sufficiently large independent set?](catalog-0701-0800.md#JSP-000768) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000769 | [How many edges can a graph have while excluding the specified complete-graph subdivision with a common center?](catalog-0701-0800.md#JSP-000769) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000770 | [What is the joint density distribution of the largest prime factors of consecutive integers in prescribed ranges?](catalog-0701-0800.md#JSP-000770) | Solved | Yes | Yes | Unclaimed | Unclaimed |
-| JSP-000771 | [How large a small-prime range is necessary to supply a prime divisor for every integer in a consecutive interval?](catalog-0701-0800.md#JSP-000771) | Open | No | No | Unavailable | Unavailable |
+| JSP-000771 | [How large a small-prime range is necessary to supply a prime divisor for every integer in a consecutive interval?](catalog-0701-0800.md#JSP-000771) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000772 | [Can products of several long consecutive-integer intervals combine to form a perfect power?](catalog-0701-0800.md#JSP-000772) | Open | No | No | Unavailable | Unavailable |
 | JSP-000773 | [Which disjoint consecutive-integer intervals have products with exactly the same prime-factor set?](catalog-0701-0800.md#JSP-000773) | Open | No | No | Unavailable | Unavailable |
 | JSP-000774 | [How often do consecutive primes enclose at least two integers having only sufficiently small prime factors?](catalog-0701-0800.md#JSP-000774) | Open | No | No | Unavailable | Unavailable |
