@@ -601,7 +601,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000441 | [What is the Ramsey number of a prescribed tree versus a complete multipartite graph?](catalog-0401-0500.md#JSP-000441) | Open | No | No | Unavailable | Unavailable |
 | JSP-000442 | [What is the exact Ramsey number of a prescribed cycle versus a clique?](catalog-0401-0500.md#JSP-000442) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000443 | [What is the Ramsey number of a four-cycle versus a prescribed star?](catalog-0401-0500.md#JSP-000443) | Open | No | No | Unavailable | Unavailable |
-| JSP-000444 | [How fast does the three-color Ramsey number grow for a triangle in either of the first two colors versus a large clique in the third?](catalog-0401-0500.md#JSP-000444) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000444 | [How fast does the three-color Ramsey number grow for a triangle in either of the first two colors versus a large clique in the third?](catalog-0401-0500.md#JSP-000444) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000445 | [Compare the multicolor thresholds forcing a monochromatic odd cycle and a monochromatic triangle.](catalog-0401-0500.md#JSP-000445) | Open | No | No | Unavailable | Unavailable |
 | JSP-000446 | [What is the multicolor Ramsey number of an even cycle of prescribed length?](catalog-0401-0500.md#JSP-000446) | Open | No | No | Unavailable | Unavailable |
 | JSP-000447 | [What is the optimal upper bound for the three-color Ramsey number of a prescribed cycle?](catalog-0401-0500.md#JSP-000447) | Open | No | No | Unavailable | Unavailable |
