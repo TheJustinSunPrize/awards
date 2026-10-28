@@ -694,7 +694,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000529 | [How many distinct values can the per-point counts of distinct distances have in a planar point set?](catalog-0501-0600.md#JSP-000529) | Open | No | No | Unavailable | Unavailable |
 | JSP-000530 | [If no four planar points are concyclic, must some point determine sufficiently many distinct distances?](catalog-0501-0600.md#JSP-000530) | Open | No | No | Unavailable | Unavailable |
 | JSP-000531 | [ambiguous statement](catalog-0501-0600.md#JSP-000531) | Open | No | No | Unavailable | Unavailable |
-| JSP-000532 | [Must every positive-density integer set contain a translate of all pairwise sums from some infinite set?](catalog-0501-0600.md#JSP-000532) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000532 | [Must every positive-density integer set contain a translate of all pairwise sums from some infinite set?](catalog-0501-0600.md#JSP-000532) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000533 | [Must a planar point set with no isosceles triangle determine superlinearly many distinct distances?](catalog-0501-0600.md#JSP-000533) | Open | No | No | Unavailable | Unavailable |
 | JSP-000534 | [If every four points determine at least three distances, how many distinct distances must the whole set determine?](catalog-0501-0600.md#JSP-000534) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000535 | [ambiguous statement](catalog-0501-0600.md#JSP-000535) | Open | No | No | Unavailable | Unavailable |
