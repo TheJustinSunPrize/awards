@@ -886,7 +886,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000711 | [How large can an integer set's reciprocal sum be when the specified pairs linked by large prime factors and divisibility are forbidden?](catalog-0701-0800.md#JSP-000711) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000712 | [What proportion of integers have a subset of distinct divisors summing to a prescribed target?](catalog-0701-0800.md#JSP-000712) | Open | No | No | Unavailable | Unavailable |
 | JSP-000713 | [How short an interval can contain a different multiple of each of the first several primes?](catalog-0701-0800.md#JSP-000713) | Open | No | No | Unavailable | Unavailable |
-| JSP-000714 | [How many Sidon subsets do the first several positive integers have?](catalog-0701-0800.md#JSP-000714) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000714 | [How many Sidon subsets do the first several positive integers have?](catalog-0701-0800.md#JSP-000714) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000715 | [How do extremal sizes compare between integer sets with bounded sum multiplicities and those with bounded difference multiplicities?](catalog-0701-0800.md#JSP-000715) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000716 | [How large can an integer-interval subset be if at most one sum has multiple representations?](catalog-0701-0800.md#JSP-000716) | Open | No | No | Unavailable | Unavailable |
 | JSP-000717 | [Must every sufficiently dense integer set contain three elements together with all their pairwise sums?](catalog-0701-0800.md#JSP-000717) | Solved | Yes | Yes | Unclaimed | Unclaimed |
