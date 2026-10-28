@@ -268,7 +268,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000123 | [How large must a directed graph be to force an independent set or a transitive tournament of a prescribed size?](catalog-0101-0200.md#JSP-000123) | Open | No | No | Unavailable | Unavailable |
 | JSP-000124 | [How long can the complex-plane curve where a monic polynomial has absolute value one be?](catalog-0101-0200.md#JSP-000124) | Open | No | No | Unavailable | Unavailable |
 | JSP-000125 | [If the size of a pairwise noncommuting subset of a group is bounded, how many abelian subgroups are needed to cover the group?](catalog-0101-0200.md#JSP-000125) | Open | No | No | Unavailable | Unavailable |
-| JSP-000126 | [If every two-coloring of an infinite graph's edges gives a monochromatic triangle, does the analogous property hold for every finite clique?](catalog-0101-0200.md#JSP-000126) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000126 | [If every two-coloring of an infinite graph's edges gives a monochromatic triangle, does the analogous property hold for every finite clique?](catalog-0101-0200.md#JSP-000126) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000127 | [If all zeros of a polynomial lie on the unit circle, how does its maximum modulus on the prescribed region grow with its degree?](catalog-0101-0200.md#JSP-000127) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000128 | [Avoiding affine copies of infinite real sets](catalog-0101-0200.md#JSP-000128) | Open | No | No | Unavailable | Unavailable |
 | JSP-000129 | [How strongly can values of integer sequences perturbed by arithmetic functions concentrate in short intervals?](catalog-0101-0200.md#JSP-000129) | Open | No | No | Unavailable | Unavailable |
