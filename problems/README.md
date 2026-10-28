@@ -336,7 +336,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000191 | [Can every sufficiently large integer be written as a power of two plus an integer with few prime factors?](catalog-0101-0200.md#JSP-000191) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000192 | [Are there Steiner triple systems avoiding all short cyclic configurations specified in the problem, with arbitrarily large girth of this kind?](catalog-0101-0200.md#JSP-000192) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000193 | [How large can the gap between consecutive positive squarefree integers be?](catalog-0101-0200.md#JSP-000193) | Open | No | No | Unavailable | Unavailable |
-| JSP-000194 | [How many ordinary lines, each containing exactly two of the points, must a finite noncollinear planar point set determine?](catalog-0101-0200.md#JSP-000194) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000194 | [How many ordinary lines, each containing exactly two of the points, must a finite noncollinear planar point set determine?](catalog-0101-0200.md#JSP-000194) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000195 | [If the number of points on any one line is bounded, how many distinct lines must a planar point set determine?](catalog-0101-0200.md#JSP-000195) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000196 | [Is there a dense subset of the plane in which every pairwise distance is rational?](catalog-0101-0200.md#JSP-000196) | Open | No | No | Unavailable | Unavailable |
 | JSP-000197 | [How many planar points in general position can have all pairwise distances integral?](catalog-0101-0200.md#JSP-000197) | Open | No | No | Unavailable | Unavailable |
