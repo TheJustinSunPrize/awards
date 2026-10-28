@@ -820,7 +820,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000650 | [How small can an integer set be if its two-term sums cover an initial integer interval?](catalog-0601-0700.md#JSP-000650) | Open | No | No | Unavailable | Unavailable |
 | JSP-000651 | [How large a sum-free subset must every finite integer set contain?](catalog-0601-0700.md#JSP-000651) | Open | No | No | Unavailable | Unavailable |
 | JSP-000652 | [How large can a subset of an integer interval be if no element divides the product of two others?](catalog-0601-0700.md#JSP-000652) | Solved | Yes | Yes | Unclaimed | Unclaimed |
-| JSP-000653 | [How large can a subset of an integer interval be if all subset products are distinct?](catalog-0601-0700.md#JSP-000653) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000653 | [How large can a subset of an integer interval be if all subset products are distinct?](catalog-0601-0700.md#JSP-000653) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000654 | [How large can an integer set be under a bound on each integer's number of multiplicative representations?](catalog-0601-0700.md#JSP-000654) | Open | No | No | Unavailable | Unavailable |
 | JSP-000655 | [How many colors are needed for an acyclic coloring of a bounded-maximum-degree graph, with every two color classes inducing a forest?](catalog-0601-0700.md#JSP-000655) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000656 | [Is the list chromatic number of a random graph sublinear in its number of vertices?](catalog-0601-0700.md#JSP-000656) | Solved | No | No | Unavailable | Unavailable |
