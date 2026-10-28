@@ -879,7 +879,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000704 | [Can a density-one set of integers be represented as a power of two plus a number with few prime factors?](catalog-0701-0800.md#JSP-000704) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000705 | [How long a run of pairwise distinct consecutive prime gaps can occur?](catalog-0701-0800.md#JSP-000705) | Open | No | No | Unavailable | Unavailable |
 | JSP-000706 | [How large is the smallest positive even number not yet seen among the prime gaps up to a given point?](catalog-0701-0800.md#JSP-000706) | Open | No | No | Unavailable | Unavailable |
-| JSP-000707 | [Which gaps occur among consecutive integers coprime to a primorial?](catalog-0701-0800.md#JSP-000707) | Open | No | No | Unavailable | Unavailable |
+| JSP-000707 | [Which gaps occur among consecutive integers coprime to a primorial?](catalog-0701-0800.md#JSP-000707) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000708 | [second Hardy-Littlewood conjecture](catalog-0701-0800.md#JSP-000708) | Open | No | No | Unavailable | Unavailable |
 | JSP-000709 | [How large can an integer set's reciprocal sum be if it has no prescribed-size subset with all pairwise least common multiples equal?](catalog-0701-0800.md#JSP-000709) | Open | No | No | Unavailable | Unavailable |
 | JSP-000710 | [weak sunflower problem](catalog-0701-0800.md#JSP-000710) | Open | No | No | Unavailable | Unavailable |
