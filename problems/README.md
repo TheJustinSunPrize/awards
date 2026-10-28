@@ -883,7 +883,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000708 | [second Hardy-Littlewood conjecture](catalog-0701-0800.md#JSP-000708) | Open | No | No | Unavailable | Unavailable |
 | JSP-000709 | [How large can an integer set's reciprocal sum be if it has no prescribed-size subset with all pairwise least common multiples equal?](catalog-0701-0800.md#JSP-000709) | Open | No | No | Unavailable | Unavailable |
 | JSP-000710 | [weak sunflower problem](catalog-0701-0800.md#JSP-000710) | Open | No | No | Unavailable | Unavailable |
-| JSP-000711 | [How large can an integer set's reciprocal sum be when the specified pairs linked by large prime factors and divisibility are forbidden?](catalog-0701-0800.md#JSP-000711) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000711 | [How large can an integer set's reciprocal sum be when the specified pairs linked by large prime factors and divisibility are forbidden?](catalog-0701-0800.md#JSP-000711) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000712 | [What proportion of integers have a subset of distinct divisors summing to a prescribed target?](catalog-0701-0800.md#JSP-000712) | Open | No | No | Unavailable | Unavailable |
 | JSP-000713 | [How short an interval can contain a different multiple of each of the first several primes?](catalog-0701-0800.md#JSP-000713) | Open | No | No | Unavailable | Unavailable |
 | JSP-000714 | [How many Sidon subsets do the first several positive integers have?](catalog-0701-0800.md#JSP-000714) | Solved | No | No | Unavailable | Unavailable |
