@@ -987,7 +987,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000807 | [For a complex number outside the unit circle, can sums of consecutive powers approach zero exponentially fast?](catalog-0801-0900.md#JSP-000807) | Open | No | No | Unavailable | Unavailable |
 | JSP-000808 | [How fast does the average divisor count of integer values of an irreducible polynomial grow?](catalog-0801-0900.md#JSP-000808) | Open | No | No | Unavailable | Unavailable |
 | JSP-000809 | [How large a prime factor must a product of consecutive integer values of an irreducible polynomial have?](catalog-0801-0900.md#JSP-000809) | Open | No | No | Unavailable | Unavailable |
-| JSP-000810 | [Does the ratio of the largest prime factor of a power of two minus one to its exponent grow as predicted?](catalog-0801-0900.md#JSP-000810) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000810 | [Does the ratio of the largest prime factor of a power of two minus one to its exponent grow as predicted?](catalog-0801-0900.md#JSP-000810) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000811 | [Does an irreducible integer polynomial take infinitely many values free of a prescribed higher-power factor?](catalog-0801-0900.md#JSP-000811) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000812 | [Are representation counts as sums of prime powers unbounded when the number of summands equals the exponent?](catalog-0801-0900.md#JSP-000812) | Open | No | No | Unavailable | Unavailable |
 | JSP-000813 | [What is the average least prescribed power nonresidue over prime moduli?](catalog-0801-0900.md#JSP-000813) | Solved | No | No | Unavailable | Unavailable |
