@@ -334,7 +334,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000189 | [How many pairwise disjoint residue classes with distinct moduli can be selected?](catalog-0101-0200.md#JSP-000189) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000190 | [Which integers remain composite after multiplication by arbitrary powers of two and three followed by addition of one?](catalog-0101-0200.md#JSP-000190) | Open | No | No | Unavailable | Unavailable |
 | JSP-000191 | [Can every sufficiently large integer be written as a power of two plus an integer with few prime factors?](catalog-0101-0200.md#JSP-000191) | Solved | Yes | Yes | Unclaimed | Unclaimed |
-| JSP-000192 | [Are there Steiner triple systems avoiding all short cyclic configurations specified in the problem, with arbitrarily large girth of this kind?](catalog-0101-0200.md#JSP-000192) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000192 | [Are there Steiner triple systems avoiding all short cyclic configurations specified in the problem, with arbitrarily large girth of this kind?](catalog-0101-0200.md#JSP-000192) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000193 | [How large can the gap between consecutive positive squarefree integers be?](catalog-0101-0200.md#JSP-000193) | Open | No | No | Unavailable | Unavailable |
 | JSP-000194 | [How many ordinary lines, each containing exactly two of the points, must a finite noncollinear planar point set determine?](catalog-0101-0200.md#JSP-000194) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000195 | [If the number of points on any one line is bounded, how many distinct lines must a planar point set determine?](catalog-0101-0200.md#JSP-000195) | Solved | No | No | Unavailable | Unavailable |
