@@ -1001,7 +1001,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000821 | [As the number of spherical points grows, must discrepancies between cap counts and area predictions be unbounded?](catalog-0801-0900.md#JSP-000821) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000822 | [Can an infinite discrete planar set have uniformly bounded differences between disk point counts and disk areas? What is the minimum discrepancy scale?](catalog-0801-0900.md#JSP-000822) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000823 | [How far from uniform can the arguments of roots of a sparse polynomial be?](catalog-0801-0900.md#JSP-000823) | Solved | Yes | Yes | Unclaimed | Unclaimed |
-| JSP-000824 | [Do spherical configurations maximizing the product of pairwise distances become uniformly distributed as their size grows?](catalog-0801-0900.md#JSP-000824) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000824 | [Do spherical configurations maximizing the product of pairwise distances become uniformly distributed as their size grows?](catalog-0801-0900.md#JSP-000824) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000825 | [For typical irrational scale factors, what is the discrepancy of fractional parts of a scaled integer sequence?](catalog-0801-0900.md#JSP-000825) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000826 | [Is the sequence counting independent sets by size in a tree or forest unimodal?](catalog-0801-0900.md#JSP-000826) | Open | No | No | Unavailable | Unavailable |
 | JSP-000827 | [Under repeated irrational rotation of a circle, does the visiting frequency of a measurable set equal its measure?](catalog-0801-0900.md#JSP-000827) | Solved | No | No | Unavailable | Unavailable |
