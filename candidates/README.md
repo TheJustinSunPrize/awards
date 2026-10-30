@@ -17,9 +17,11 @@ publication, challenges, replacements and review completion. Solver applications
 awaiting formalization remain in their claim issue or submission PR without an
 active review clock. Both claim statuses remain **Unavailable** unless the
 problem bank's shared **Eligible to claim** flag is **Yes**, requiring both a
-mathematical solution and a Lean proof. Once eligible, mark each role **Unclaimed**
-until its candidate is published here, then **Claimed**. Opening a claim issue
-alone does not mark a role **Claimed**. These statuses do not announce awards.
+mathematical solution and a Lean proof. Once eligible, each role remains
+**Unclaimed** while listed here for public review. Change only the awarded role
+to **Claimed** when its contribution moves from `candidates/` to a confirmed
+award record in `awards/`. Opening a claim issue, publishing a candidate or
+completing its review period alone does not mark a role **Claimed**.
 
 ## Candidate register
 
@@ -33,15 +35,18 @@ identity confirmation; identity checks and written confirmation remain required.
 
 | Problem ID | Solver review start (UTC) | Mathematical solver | Lean review start (UTC) | Lean formalizer |
 | --- | --- | --- | --- | --- |
+| [JSP-000110](../problems/catalog-0101-0200.md#JSP-000110) | 2026-10-30 | Liam Kruer; Jensen Kohlmeyer; Liam Price (equal coauthors) | 2026-10-30 | Liam Kruer; Jensen Kohlmeyer; Liam Price (equal coauthors) |
+| [JSP-000697](../problems/catalog-0601-0700.md#JSP-000697) |  |  | 2026-10-30 | [peilinliu66-dev](https://github.com/peilinliu66-dev) |
 
-No active legacy candidates remain. Contributions whose public-review periods ran
+Contributions whose public-review periods ran
 from 2026-09-19 to 2026-10-03 or from 2026-09-30 to 2026-10-14
 have moved to the [award register](../awards/README.md#award-register).
 
 When a role is awarded, replace its active candidate cell with a labeled link to
 the award record and retain its completed review dates in that record. The other
-role keeps its own clock. Keep the awarded role's claim status **Claimed** in
-the problem index, including after its candidate entry is removed.
+role keeps its own clock. Change the awarded role's claim status from
+**Unclaimed** to **Claimed** in the problem index when moving it to the award
+register, and retain that status after its candidate entry is removed.
 Remove a problem row once neither role remains a
 candidate. If a contribution is invalidated without an accepted replacement,
 remove its active candidate and review dates and retain the history. If no valid
