@@ -160,6 +160,66 @@ class AuditTests(unittest.TestCase):
         self.assertFalse(result["ready_for_target_checks"])
         self.assertIn("dependency_lock_missing", result["issues"])
 
+    def test_unpinned_lake_dependency_is_flagged_in_preflight(self):
+        (self.root / "lean-toolchain").write_text("leanprover/lean4:v4.32.0\n")
+        (self.root / "lakefile.lean").write_text("package fixture\n")
+        (self.root / "lake-manifest.json").write_text(json.dumps({
+            "version": "1.1.0",
+            "packagesDir": ".lake/packages",
+            "packages": [
+                {"name": "pinned_pkg", "git": {"url": "https://example.com/pinned", "rev": "0" * 40}},
+                {"name": "floating_pkg", "git": {"url": "https://example.com/floating", "rev": "main"}}
+            ]
+        }))
+        (self.root / "Fixture.lean").write_text("theorem good : True := True.intro\n")
+        data = manifest(self.root)
+        result = audit.preflight(data, self.root)
+        self.assertIn("unpinned_dependency:floating_pkg", result["issues"])
+        self.assertNotIn("unpinned_dependency:pinned_pkg", result["issues"])
+
+    def test_local_path_dependency_is_not_rejected(self):
+        (self.root / "lean-toolchain").write_text("leanprover/lean4:v4.32.0\n")
+        (self.root / "lakefile.lean").write_text("package fixture\n")
+        (self.root / "lake-manifest.json").write_text(json.dumps({
+            "version": "1.1.0",
+            "packagesDir": ".lake/packages",
+            "packages": [
+                {"name": "local_lib", "type": "path", "path": "local_lib"}
+            ]
+        }))
+        (self.root / "Fixture.lean").write_text("theorem good : True := True.intro\n")
+        data = manifest(self.root)
+        result = audit.preflight(data, self.root)
+        self.assertNotIn("unpinned_dependency:local_lib", result["issues"])
+
+    def test_declaration_type_is_extracted_from_check_output(self):
+        log_content = (
+            "@Fixture.good : True\n"
+            "Fixture.good : True :=\n"
+            "True.intro\n\n"
+            "'Fixture.good' does not depend on any axioms\n"
+        )
+        parsed_type = audit.parse_declaration_type(log_content, "Fixture.good")
+        self.assertEqual(parsed_type, "True")
+        missing_type = audit.parse_declaration_type(log_content, "Other.decl")
+        self.assertIsNone(missing_type)
+
+    def test_multiline_declaration_type_is_extracted(self):
+        multiline_log = (
+            "@Fixture.longThm :\n"
+            "  forall (n : Nat),\n"
+            "    n > 0\n"
+            "theorem Fixture.longThm :\n"
+            "  forall (n : Nat),\n"
+            "    n > 0 :=\n"
+            "fun n => sorry\n\n"
+            "'Fixture.longThm' depends on axioms: [sorryAx]\n"
+        )
+        extracted = audit.parse_declaration_type(multiline_log, "Fixture.longThm")
+        self.assertIn("forall (n : Nat)", extracted)
+        self.assertIn("n > 0", extracted)
+
+
 
 @unittest.skipUnless(os.environ.get("LEAN_AUDIT_TEST_LAKE"), "set LEAN_AUDIT_TEST_LAKE for actual Lean checks")
 class LeanIntegrationTests(unittest.TestCase):

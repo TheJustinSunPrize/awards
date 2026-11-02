@@ -20,6 +20,28 @@ NAME = re.compile(r"[^\W\d]\w*'*(?:\.[^\W\d]\w*'*)*\Z", re.UNICODE)
 ID = re.compile(r"[A-Za-z0-9_-]+\Z")
 
 
+def is_safe_relative(path, root):
+    """Check that path resolves safely inside root across Python versions."""
+    try:
+        if path.is_symlink():
+            try:
+                target_str = os.readlink(path)
+                if target_str.startswith("\\\\?\\"):
+                    target_str = target_str[4:]
+                target = Path(target_str)
+                if not target.is_absolute():
+                    target = (path.parent / target).resolve()
+                else:
+                    target = target.resolve()
+                target.relative_to(root.resolve())
+            except (ValueError, OSError, AttributeError):
+                return False
+        path.resolve().relative_to(root.resolve())
+        return True
+    except (ValueError, AttributeError, OSError):
+        return False
+
+
 def require(condition, message):
     if not condition:
         raise ValueError(message)
@@ -70,7 +92,7 @@ def load_manifest(path):
         declarations.add(target["declaration"])
         source = Path(text_field(target, "source"))
         require(not source.is_absolute() and ".." not in source.parts and source.suffix == ".lean", "source must be a relative .lean path")
-        require((root / source).resolve().is_relative_to(root), "source escapes project root")
+        require(is_safe_relative(root / source, root), "source escapes project root")
     covered = set()
     for problem in problems.values():
         text_field(problem, "source")
@@ -96,6 +118,23 @@ def audit_source(target):
     return (f"import {target['module']}\n\nset_option pp.all true\n"
             f"#check @{name}\n#print {name}\n"
             f"set_option pp.universes false in\n#print axioms {name}\n")
+
+
+def parse_declaration_type(output, declaration):
+    """Parse declaration type signature from #check @declaration output.
+
+    Handles single-line and multiline type signatures formatted by Lean.
+    """
+    pattern = (r"^@" + re.escape(declaration) +
+               r"\s*:\s*(.*?)(?=\n(?:theorem\s+|def\s+|lemma\s+|axiom\s+)?" +
+               re.escape(declaration) + r"\s*:|\n'" + re.escape(declaration) + r"'|\Z)")
+    match = re.search(pattern, output, re.DOTALL | re.MULTILINE)
+    if match:
+        sig = match.group(1).strip()
+        if sig:
+            return sig
+    simple = re.search(r"^@" + re.escape(declaration) + r"\s*:\s*(.+)$", output, re.MULTILINE)
+    return simple.group(1).strip() if simple else None
 
 
 def parse_axioms(output, declaration):
@@ -124,6 +163,29 @@ def save_json(path, data):
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def terminate_process_tree(proc):
+    """Terminate process and any child processes across platforms."""
+    if hasattr(os, "killpg"):
+        try:
+            os.killpg(proc.pid, signal.SIGKILL)
+        except (ProcessLookupError, OSError):
+            pass
+    elif sys.platform == "win32":
+        try:
+            subprocess.run(["taskkill", "/F", "/T", "/PID", str(proc.pid)],
+                           capture_output=True, timeout=5)
+        except (subprocess.SubprocessError, OSError):
+            try:
+                proc.kill()
+            except OSError:
+                pass
+    else:
+        try:
+            proc.kill()
+        except OSError:
+            pass
+
+
 def capture(argv, cwd, log, timeout):
     started = time.monotonic()
     result = {"argv": list(map(str, argv)), "cwd": str(cwd), "log": str(log), "exit_code": None}
@@ -139,12 +201,12 @@ def capture(argv, cwd, log, timeout):
                 result["exit_code"] = proc.wait(timeout=timeout)
                 result["status"] = "ok" if proc.returncode == 0 else "command_failed"
             except subprocess.TimeoutExpired:
-                os.killpg(proc.pid, signal.SIGKILL)
+                terminate_process_tree(proc)
                 proc.wait()
                 result["exit_code"] = proc.returncode
                 result["status"] = "timeout"
             except BaseException:
-                os.killpg(proc.pid, signal.SIGKILL)
+                terminate_process_tree(proc)
                 proc.wait()
                 raise
         except OSError as exc:
@@ -184,6 +246,21 @@ def preflight(data, root):
         issues.append("lake_config_missing")
     if not hashes["lake-manifest.json"]:
         issues.append("dependency_lock_missing")
+    else:
+        try:
+            lock = json.loads((root / "lake-manifest.json").read_text(encoding="utf-8"))
+            for pkg in lock.get("packages", []):
+                name = pkg.get("name", "unknown")
+                if "git" in pkg and isinstance(pkg["git"], dict):
+                    rev = pkg["git"].get("rev")
+                    if not rev or not re.fullmatch(r"[0-9a-f]{40}", str(rev)):
+                        issues.append(f"unpinned_dependency:{name}")
+                elif pkg.get("type") == "git" or ("url" in pkg and "path" not in pkg):
+                    rev = pkg.get("rev")
+                    if not rev or not re.fullmatch(r"[0-9a-f]{40}", str(rev)):
+                        issues.append(f"unpinned_dependency:{name}")
+        except (json.JSONDecodeError, OSError, UnicodeDecodeError):
+            issues.append("corrupted_dependency_lock")
     for target in data["targets"]:
         if hashes[target["source"]] is None:
             issues.append("source_missing:" + target["id"])
@@ -259,8 +336,12 @@ def execute(data, root, out, lake, timeout):
                 break
         else:
             try:
-                axioms = parse_axioms(Path(records[-1]["log"]).read_text(encoding="utf-8"), target["declaration"])
+                raw_log = Path(records[-1]["log"]).read_text(encoding="utf-8")
+                axioms = parse_axioms(raw_log, target["declaration"])
+                decl_type = parse_declaration_type(raw_log, target["declaration"])
                 row.update(axioms=axioms, status=classify(axioms))
+                row["type"] = decl_type
+                row["type_status"] = "extracted" if decl_type else "unparsed_signature"
             except (ValueError, UnicodeError) as exc:
                 row["reason"] = str(exc)
         row["commands"] = records
@@ -297,7 +378,7 @@ def main(argv=None):
         require(args.timeout > 0 and args.timeout < float("inf"), "timeout must be finite and positive")
         data, root = load_manifest(args.manifest)
         out = args.out.resolve()
-        require(not out.is_relative_to(root) and not root.is_relative_to(out), "output and project must be separate directories")
+        require(not is_safe_relative(out, root) and not is_safe_relative(root, out), "output and project must be separate directories")
         require(not args.out.exists(), "output already exists; use a fresh directory")
         if args.action == "run":
             require(args.lake is not None and args.lake.is_absolute() and args.lake.is_file(), "run requires an absolute trusted --lake binary")
