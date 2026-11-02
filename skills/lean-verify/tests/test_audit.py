@@ -219,6 +219,81 @@ class AuditTests(unittest.TestCase):
         self.assertIn("forall (n : Nat)", extracted)
         self.assertIn("n > 0", extracted)
 
+    def test_polymorphic_declaration_with_universe_parameters(self):
+        """Test extraction of declarations with universe parameters like @Fixture.poly.{u_1}"""
+        log_with_universes = (
+            "@Fixture.poly.{u_1} : Type u_1 -> Type u_1\n"
+            "theorem Fixture.poly.{u_1} : Type u_1 -> Type u_1 :=\n"
+            "fun α => α\n\n"
+            "'Fixture.poly' does not depend on any axioms\n"
+        )
+        extracted = audit.parse_declaration_type(log_with_universes, "Fixture.poly")
+        self.assertEqual(extracted, "Type u_1 -> Type u_1")
+
+    def test_declaration_with_defeq_attribute(self):
+        """Test that @[defeq] attributes and proof bodies are not included in type"""
+        log_with_attribute = (
+            "@Fixture.good : True\n"
+            "@[defeq] theorem Fixture.good : True :=\n"
+            "True.intro\n\n"
+            "'Fixture.good' does not depend on any axioms\n"
+        )
+        extracted = audit.parse_declaration_type(log_with_attribute, "Fixture.good")
+        self.assertEqual(extracted, "True")
+        self.assertNotIn("@[defeq]", extracted)
+        self.assertNotIn("True.intro", extracted)
+
+    def test_malformed_lock_file_prevents_target_checks(self):
+        """Test that [], null, or {"packages":[null]} causes corrupted_dependency_lock"""
+        (self.root / "lean-toolchain").write_text("leanprover/lean4:v4.32.0\n")
+        (self.root / "lakefile.lean").write_text("package fixture\n")
+        (self.root / "Fixture.lean").write_text("theorem good : True := True.intro\n")
+        
+        # Initialize git
+        subprocess.run(["git", "init", "-q"], cwd=self.root, check=True, capture_output=True)
+        subprocess.run(["git", "config", "user.name", "Test"], cwd=self.root, check=True, capture_output=True)
+        subprocess.run(["git", "config", "user.email", "test@test.test"], cwd=self.root, check=True, capture_output=True)
+        
+        def test_case(content, case_name):
+            """Helper to test each malformed lock file case"""
+            (self.root / "lake-manifest.json").write_text(content)
+            subprocess.run(["git", "add", "."], cwd=self.root, check=True, capture_output=True)
+            subprocess.run(["git", "commit", "-qm", case_name], cwd=self.root, check=True, capture_output=True)
+            sha = subprocess.run(["git", "rev-parse", "HEAD"], cwd=self.root, 
+                                capture_output=True, text=True, check=True).stdout.strip()
+            
+            data = manifest(self.root, sha=sha)
+            result = audit.preflight(data, self.root)
+            self.assertIn("corrupted_dependency_lock", result["issues"], 
+                         f"Failed for case: {case_name}")
+            self.assertFalse(result["ready_for_target_checks"],
+                            f"Should not be ready for case: {case_name}")
+        
+        # Test case 1: JSON array []
+        test_case("[]", "test-array")
+        
+        # Test case 2: JSON null
+        test_case("null", "test-null")
+        
+        # Test case 3: {"packages": [null]}
+        test_case(json.dumps({"packages": [None]}), "test-packages-with-null")
+        
+        # Test case 4: {"packages": null}
+        test_case(json.dumps({"packages": None}), "test-packages-null")
+
+    def test_taskkill_fallback_on_windows(self):
+        """Test that nonzero taskkill exit triggers fallback termination"""
+        if sys.platform != "win32":
+            self.skipTest("Windows-specific test")
+        
+        # Create a long-running process that we'll timeout
+        log = Path(self.tmp.name) / "timeout-test.log"
+        row = audit.capture([sys.executable, "-c", "import time; time.sleep(60)"], 
+                           self.root, log, 0.1)
+        self.assertEqual(row["status"], "timeout")
+        # Process should be terminated (can't assert exact returncode, but should complete)
+        self.assertIsNotNone(row["exit_code"])
+
 
 
 @unittest.skipUnless(os.environ.get("LEAN_AUDIT_TEST_LAKE"), "set LEAN_AUDIT_TEST_LAKE for actual Lean checks")

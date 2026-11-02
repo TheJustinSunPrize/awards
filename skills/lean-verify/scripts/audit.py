@@ -123,17 +123,26 @@ def audit_source(target):
 def parse_declaration_type(output, declaration):
     """Parse declaration type signature from #check @declaration output.
 
-    Handles single-line and multiline type signatures formatted by Lean.
+    Handles single-line and multiline type signatures, universe parameters,
+    attributes, and all formatting produced by Lean 4.32.0+.
     """
-    pattern = (r"^@" + re.escape(declaration) +
-               r"\s*:\s*(.*?)(?=\n(?:theorem\s+|def\s+|lemma\s+|axiom\s+)?" +
-               re.escape(declaration) + r"\s*:|\n'" + re.escape(declaration) + r"'|\Z)")
+    # Match: "@Declaration.name" or "@Declaration.name.{u_1, u_2}" followed by " : Type"
+    # Stop at the next declaration start (theorem/def/lemma/@[attribute]) or #print output
+    escaped_name = re.escape(declaration)
+    # Capture the type signature up to (but not including) the next declaration,
+    # attribute, or the start of #print output (which starts with theorem/def/axiom or the quoted name)
+    pattern = (r"^@" + escaped_name + r"(?:\.{[^}]+})?" +  # Handle universe parameters
+               r"\s*:\s*(.*?)(?=\n(?:@\[|theorem\s+|def\s+|lemma\s+|axiom\s+)?" +
+               escaped_name + r"|\n'" + escaped_name + r"'|\Z)")
     match = re.search(pattern, output, re.DOTALL | re.MULTILINE)
     if match:
         sig = match.group(1).strip()
+        # Remove any attribute markers or proof bodies that may have leaked in
+        sig = re.sub(r'\n@\[.*', '', sig, flags=re.DOTALL)
         if sig:
             return sig
-    simple = re.search(r"^@" + re.escape(declaration) + r"\s*:\s*(.+)$", output, re.MULTILINE)
+    # Fallback: simple single-line match
+    simple = re.search(r"^@" + escaped_name + r"(?:\.{[^}]+})?\s*:\s*(.+)$", output, re.MULTILINE)
     return simple.group(1).strip() if simple else None
 
 
@@ -172,8 +181,14 @@ def terminate_process_tree(proc):
             pass
     elif sys.platform == "win32":
         try:
-            subprocess.run(["taskkill", "/F", "/T", "/PID", str(proc.pid)],
-                           capture_output=True, timeout=5)
+            result = subprocess.run(["taskkill", "/F", "/T", "/PID", str(proc.pid)],
+                                    capture_output=True, timeout=5, check=False)
+            # If taskkill failed, perform fallback termination
+            if result.returncode != 0:
+                try:
+                    proc.kill()
+                except OSError:
+                    pass
         except (subprocess.SubprocessError, OSError):
             try:
                 proc.kill()
@@ -202,12 +217,19 @@ def capture(argv, cwd, log, timeout):
                 result["status"] = "ok" if proc.returncode == 0 else "command_failed"
             except subprocess.TimeoutExpired:
                 terminate_process_tree(proc)
-                proc.wait()
+                # Bounded wait after termination
+                try:
+                    proc.wait(timeout=5)
+                except subprocess.TimeoutExpired:
+                    pass  # Process tree cleanup did not complete
                 result["exit_code"] = proc.returncode
                 result["status"] = "timeout"
             except BaseException:
                 terminate_process_tree(proc)
-                proc.wait()
+                try:
+                    proc.wait(timeout=5)
+                except subprocess.TimeoutExpired:
+                    pass
                 raise
         except OSError as exc:
             result["status"] = "launch_failed"
@@ -249,16 +271,32 @@ def preflight(data, root):
     else:
         try:
             lock = json.loads((root / "lake-manifest.json").read_text(encoding="utf-8"))
-            for pkg in lock.get("packages", []):
-                name = pkg.get("name", "unknown")
-                if "git" in pkg and isinstance(pkg["git"], dict):
-                    rev = pkg["git"].get("rev")
-                    if not rev or not re.fullmatch(r"[0-9a-f]{40}", str(rev)):
-                        issues.append(f"unpinned_dependency:{name}")
-                elif pkg.get("type") == "git" or ("url" in pkg and "path" not in pkg):
-                    rev = pkg.get("rev")
-                    if not rev or not re.fullmatch(r"[0-9a-f]{40}", str(rev)):
-                        issues.append(f"unpinned_dependency:{name}")
+            # Validate structure to prevent AttributeError
+            if not isinstance(lock, dict):
+                issues.append("corrupted_dependency_lock")
+            else:
+                packages = lock.get("packages")
+                if packages is None:
+                    # Missing packages key or null value - both are invalid
+                    issues.append("corrupted_dependency_lock")
+                elif not isinstance(packages, list):
+                    # packages exists but is not a list
+                    issues.append("corrupted_dependency_lock")
+                else:
+                    # packages is a list, validate entries
+                    for pkg in packages:
+                        if not isinstance(pkg, dict):
+                            issues.append("corrupted_dependency_lock")
+                            continue
+                        name = pkg.get("name", "unknown")
+                        if "git" in pkg and isinstance(pkg["git"], dict):
+                            rev = pkg["git"].get("rev")
+                            if not rev or not re.fullmatch(r"[0-9a-f]{40}", str(rev)):
+                                issues.append(f"unpinned_dependency:{name}")
+                        elif pkg.get("type") == "git" or ("url" in pkg and "path" not in pkg):
+                            rev = pkg.get("rev")
+                            if not rev or not re.fullmatch(r"[0-9a-f]{40}", str(rev)):
+                                issues.append(f"unpinned_dependency:{name}")
         except (json.JSONDecodeError, OSError, UnicodeDecodeError):
             issues.append("corrupted_dependency_lock")
     for target in data["targets"]:
