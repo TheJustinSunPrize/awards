@@ -1,0 +1,72 @@
+name: Lean verification tooling tests
+
+on:
+  push:
+    paths:
+      - 'skills/lean-verify/**'
+      - '.github/workflows/lean-verify-tests.yml'
+  pull_request:
+    paths:
+      - 'skills/lean-verify/**'
+      - '.github/workflows/lean-verify-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  unit-tests:
+    name: Unit tests (Python ${{ matrix.python-version }}, ${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ['3.8', '3.9', '3.10', '3.11', '3.12']
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      
+      - name: Run unit tests
+        run: python -m unittest discover -s skills/lean-verify/tests -v
+      
+      - name: Verify audit.py can be imported
+        run: python -c "import sys; from pathlib import Path; sys.path.insert(0, str(Path('skills/lean-verify/scripts').resolve())); import audit; print(f'audit.py version OK')"
+
+  integration-test:
+    name: Integration test with Lean 4.14.0
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      
+      - name: Install Lean 4.14.0 with elan
+        run: |
+          curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y --default-toolchain leanprover/lean4:v4.14.0
+          echo "$HOME/.elan/bin" >> $GITHUB_PATH
+      
+      - name: Verify Lean and Lake installation
+        run: |
+          lean --version
+          lake --version
+          which lake
+      
+      - name: Run integration test with real Lean
+        env:
+          LEAN_AUDIT_TEST_LAKE: ${{ github.workspace }}/../.elan/bin/lake
+        run: |
+          export LEAN_AUDIT_TEST_LAKE="$(which lake)"
+          echo "Using Lake at: $LEAN_AUDIT_TEST_LAKE"
+          python -m unittest skills.lean-verify.tests.test_audit.LeanIntegrationTests.test_actual_lean_targets_and_failures -v
