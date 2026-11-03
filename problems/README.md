@@ -246,7 +246,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000101 | [Is the minimum-degree threshold forcing a quadrilateral monotone in the relevant size parameter?](catalog-0101-0200.md#JSP-000101) | Open | No | No | Unavailable | Unavailable |
 | JSP-000102 | [What proportion of the edges of a high-dimensional hypercube can be retained without creating a quadrilateral?](catalog-0101-0200.md#JSP-000102) | Open | No | No | Unavailable | Unavailable |
 | JSP-000103 | [How strong a lower bound on a graph's Ramsey number follows from its chromatic number?](catalog-0101-0200.md#JSP-000103) | Open | No | No | Unavailable | Unavailable |
-| JSP-000104 | [If a graph has neither a large clique nor a large independent set, how many distinct edge counts do its induced subgraphs attain?](catalog-0101-0200.md#JSP-000104) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000104 | [If a graph has neither a large clique nor a large independent set, how many distinct edge counts do its induced subgraphs attain?](catalog-0101-0200.md#JSP-000104) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000105 | [Distinct distances determined by planar point sets](catalog-0101-0200.md#JSP-000105) | Open | No | No | Unavailable | Unavailable |
 | JSP-000106 | [unit distance problem](catalog-0101-0200.md#JSP-000106) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000107 | [Are there essentially different geometric configurations minimizing the number of distinct distances among planar points?](catalog-0101-0200.md#JSP-000107) | Open | No | No | Unavailable | Unavailable |
