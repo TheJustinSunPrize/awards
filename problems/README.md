@@ -750,7 +750,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000585 | [How does a graph's chromatic number relate to the order of its largest complete-graph subdivision?](catalog-0501-0600.md#JSP-000585) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000586 | [What average degree forces a subdivision of a complete graph of prescribed order?](catalog-0501-0600.md#JSP-000586) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000587 | [How many complete uniform hypergraphs suffice to partition the edges of an arbitrary uniform hypergraph?](catalog-0501-0600.md#JSP-000587) | Open | No | No | Unavailable | Unavailable |
-| JSP-000588 | [How fast do the two-color size Ramsey numbers of prescribed paths and cycles grow?](catalog-0501-0600.md#JSP-000588) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000588 | [How fast do the two-color size Ramsey numbers of prescribed paths and cycles grow?](catalog-0501-0600.md#JSP-000588) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000589 | [How long an interval forces a three-term arithmetic progression in one color or a prescribed longer progression in the other?](catalog-0501-0600.md#JSP-000589) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000590 | [For sufficiently large order satisfying the necessary divisibility conditions, do designs exist in which each prescribed-size point subset lies in exactly one fixed-size block?](catalog-0501-0600.md#JSP-000590) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000591 | [Must the order of every finite projective plane be a prime power?](catalog-0501-0600.md#JSP-000591) | Open | No | No | Unavailable | Unavailable |
