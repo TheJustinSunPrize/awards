@@ -1207,7 +1207,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-001017 | [In the lattice graph of coprime coordinate pairs, is there an infinite path avoiding every point with both coordinates prime?](catalog-1001-1022.md#JSP-001017) | Open | No | No | Unavailable | Unavailable |
 | JSP-001018 | [Must every sufficiently long integer sequence with bounded gaps have two distinct consecutive blocks with equal sums?](catalog-1001-1022.md#JSP-001018) | Solved | No | No | Unavailable | Unavailable |
 | JSP-001019 | [If corresponding powers of two bases minus one always have identical prime-factor sets, must the bases be equal?](catalog-1001-1022.md#JSP-001019) | Solved | No | No | Unavailable | Unavailable |
-| JSP-001020 | [For a polynomial whose zeros all lie on the unit circle, is there a uniformly bounded-length path in the specified modulus region?](catalog-1001-1022.md#JSP-001020) | Solved | No | No | Unavailable | Unavailable |
+| JSP-001020 | [For a polynomial whose zeros all lie on the unit circle, is there a uniformly bounded-length path in the specified modulus region?](catalog-1001-1022.md#JSP-001020) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-001021 | [How large a transitive subtournament must every tournament of prescribed order contain?](catalog-1001-1022.md#JSP-001021) | Solved | No | No | Unavailable | Unavailable |
 | JSP-001022 | [Must every integer set of positive lower logarithmic density contain an infinite divisibility chain, with controlled growth?](catalog-1001-1022.md#JSP-001022) | Solved | No | No | Unavailable | Unavailable |
 | JSP-001023 | [Global Langlands functoriality conjecture](catalog-1001-1022.md#JSP-001023) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
