@@ -579,7 +579,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000419 | [What is the typical maximum modulus on the unit circle of a polynomial with random sign coefficients?](catalog-0401-0500.md#JSP-000419) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000420 | [What is the typical maximum on the specified real interval of a polynomial with random sign coefficients?](catalog-0401-0500.md#JSP-000420) | Open | No | No | Unavailable | Unavailable |
 | JSP-000421 | [How small is the typical minimum modulus on the unit circle of a polynomial with random sign coefficients?](catalog-0401-0500.md#JSP-000421) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000422 | [What conditions on arc lengths make randomly placed arcs cover the entire circle almost surely?](catalog-0401-0500.md#JSP-000422) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000422 | [What conditions on arc lengths make randomly placed arcs cover the entire circle almost surely?](catalog-0401-0500.md#JSP-000422) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000423 | [Does a power series with randomly signed coefficients converge at some point of the unit circle?](catalog-0401-0500.md#JSP-000423) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000424 | [What exponential growth constant governs the number of self-avoiding lattice walks of a given length?](catalog-0401-0500.md#JSP-000424) | Open | No | No | Unavailable | Unavailable |
 | JSP-000425 | [How fast does the mean endpoint distance of a random self-avoiding lattice walk grow with its length?](catalog-0401-0500.md#JSP-000425) | Open | No | No | Unavailable | Unavailable |
