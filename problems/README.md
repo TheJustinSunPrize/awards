@@ -905,7 +905,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000730 | [What is the largest sum of pairwise coprime integers in a finite interval, and what are the extremizing sets?](catalog-0701-0800.md#JSP-000730) | Open | No | No | Unavailable | Unavailable |
 | JSP-000731 | [Must the distinct-element sumset of an additive basis have bounded gaps?](catalog-0701-0800.md#JSP-000731) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000732 | [After deleting infinitely many elements of a minimal additive basis, can every sufficiently large integer still be represented using one additional summand?](catalog-0701-0800.md#JSP-000732) | Open | No | No | Unavailable | Unavailable |
-| JSP-000733 | [How large can an integer-interval subset be if its distinct subset sums never divide one another?](catalog-0701-0800.md#JSP-000733) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000733 | [How large can an integer-interval subset be if its distinct subset sums never divide one another?](catalog-0701-0800.md#JSP-000733) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000734 | [Which odd cycles and complete multipartite graphs must occur in the coprimality graph of a dense integer set?](catalog-0701-0800.md#JSP-000734) | Open | No | No | Unavailable | Unavailable |
 | JSP-000735 | [How does the reciprocal sum of all distinct divisor differences compare with that of consecutive divisor differences?](catalog-0701-0800.md#JSP-000735) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000736 | [Can the divisor-difference sets of two distinct integers have arbitrarily many common values?](catalog-0701-0800.md#JSP-000736) | Open | No | No | Unavailable | Unavailable |
