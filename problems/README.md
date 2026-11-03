@@ -411,7 +411,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000261 | [If a collection of positive unit fractions sums to more than one, how closely can a subsum approximate one from below?](catalog-0201-0300.md#JSP-000261) | Open | No | No | Unavailable | Unavailable |
 | JSP-000262 | [Which finite sums of reciprocals of primes equal one minus the reciprocal of a positive integer?](catalog-0201-0300.md#JSP-000262) | Open | No | No | Unavailable | Unavailable |
 | JSP-000263 | [How close to zero can a nonzero signed subsum of a finite harmonic series be?](catalog-0201-0300.md#JSP-000263) | Open | No | No | Unavailable | Unavailable |
-| JSP-000264 | [Does every assignment of signs to the specified reciprocal set admit a nonempty zero-sum subset?](catalog-0201-0300.md#JSP-000264) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000264 | [Does every assignment of signs to the specified reciprocal set admit a nonempty zero-sum subset?](catalog-0201-0300.md#JSP-000264) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000265 | [How large can a minimal nonempty zero-sum collection of signed integer reciprocals be?](catalog-0201-0300.md#JSP-000265) | Open | No | No | Unavailable | Unavailable |
 | JSP-000266 | [How many distinct subset sums do the reciprocals of the first several positive integers have?](catalog-0201-0300.md#JSP-000266) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000267 | [How many integers can be selected from a finite range so that all subset sums of their reciprocals are distinct?](catalog-0201-0300.md#JSP-000267) | Solved | No | No | Unavailable | Unavailable |
