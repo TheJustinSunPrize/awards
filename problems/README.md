@@ -852,7 +852,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000682 | [Is there an integer whose succeeding positions have divisor counts bounded linearly in their distance from it?](catalog-0601-0700.md#JSP-000682) | Open | No | No | Unavailable | Unavailable |
 | JSP-000683 | [How many planar points force a prescribed-size subset whose distinct triples have distinct circumradii?](catalog-0601-0700.md#JSP-000683) | Open | No | No | Unavailable | Unavailable |
 | JSP-000684 | [For a fixed constant, are there infinitely many integers whose totient divides the integer plus that constant?](catalog-0601-0700.md#JSP-000684) | Open | No | No | Unavailable | Unavailable |
-| JSP-000685 | [How many representations can one integer have as a sum of two integer cubes?](catalog-0601-0700.md#JSP-000685) | Open | No | No | Unavailable | Unavailable |
+| JSP-000685 | [How many representations can one integer have as a sum of two integer cubes?](catalog-0601-0700.md#JSP-000685) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000686 | [Are there infinitely many amicable pairs, in which each number's proper divisors sum to the other, and how fast does their count grow?](catalog-0601-0700.md#JSP-000686) | Open | No | No | Unavailable | Unavailable |
 | JSP-000687 | [How many distinct circumradii must the triples of a planar point set in general position determine?](catalog-0601-0700.md#JSP-000687) | Open | No | No | Unavailable | Unavailable |
 | JSP-000688 | [How many edges are needed for a uniform hypergraph to attain a prescribed chromatic number?](catalog-0601-0700.md#JSP-000688) | Solved | No | No | Unavailable | Unavailable |
