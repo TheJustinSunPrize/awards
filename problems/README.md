@@ -395,7 +395,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000245 | [How many pairs of integer intervals have reciprocal sums whose total is an integer?](catalog-0201-0300.md#JSP-000245) | Open | No | No | Unavailable | Unavailable |
 | JSP-000246 | [Can separated integer intervals be chosen so that the reciprocals of all their integers sum to one?](catalog-0201-0300.md#JSP-000246) | Open | No | No | Unavailable | Unavailable |
 | JSP-000247 | [When can a finite harmonic sum, expressed over the least common multiple of its initial integers, be reduced further?](catalog-0201-0300.md#JSP-000247) | Open | No | No | Unavailable | Unavailable |
-| JSP-000248 | [Which positive integers can be the largest denominator in a representation of one by distinct unit fractions?](catalog-0201-0300.md#JSP-000248) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000248 | [Which positive integers can be the largest denominator in a representation of one by distinct unit fractions?](catalog-0201-0300.md#JSP-000248) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000249 | [ambiguous statement](catalog-0201-0300.md#JSP-000249) | Open | No | No | Unavailable | Unavailable |
 | JSP-000250 | [Within the prescribed finite denominator range, which initial denominators cannot occur in a representation of one, and where is the smallest exception?](catalog-0201-0300.md#JSP-000250) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000251 | [How many unit fractions are needed to represent one if every denominator must exceed a prescribed threshold?](catalog-0201-0300.md#JSP-000251) | Open | No | No | Unavailable | Unavailable |
