@@ -1094,7 +1094,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000909 | [Can the least prime factor of a binomial coefficient be bounded by a uniform function of its two parameters?](catalog-0901-1000.md#JSP-000909) | Open | No | No | Unavailable | Unavailable |
 | JSP-000910 | [How large must the upper parameter be for a binomial coefficient to have no prime factor smaller than its lower parameter?](catalog-0901-1000.md#JSP-000910) | Open | No | No | Unavailable | Unavailable |
 | JSP-000911 | [How many distinct common differences can three-term arithmetic progressions in a finite integer set have?](catalog-0901-1000.md#JSP-000911) | Open | No | No | Unavailable | Unavailable |
-| JSP-000912 | [What bounds hold for the sum of prescribed powers of consecutive divisor ratios minus one?](catalog-0901-1000.md#JSP-000912) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000912 | [What bounds hold for the sum of prescribed powers of consecutive divisor ratios minus one?](catalog-0901-1000.md#JSP-000912) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000913 | [How many consecutive ordered divisor pairs are coprime, and how does this count grow?](catalog-0901-1000.md#JSP-000913) | Open | No | No | Unavailable | Unavailable |
 | JSP-000914 | [Can a pairwise coprime integer sequence leave relatively small gaps after all its multiples are excluded?](catalog-0901-1000.md#JSP-000914) | Open | No | No | Unavailable | Unavailable |
 | JSP-000915 | [Is there an infinite integer sequence with every pairwise sum squarefree, and how slowly can it grow?](catalog-0901-1000.md#JSP-000915) | Open | No | No | Unavailable | Unavailable |
