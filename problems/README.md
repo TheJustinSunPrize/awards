@@ -971,7 +971,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000796 | [How many unit-distance pairs can occur between disjoint translated copies of a convex set?](catalog-0701-0800.md#JSP-000796) | Open | No | No | Unavailable | Unavailable |
 | JSP-000797 | [What uniform upper bound holds for the product of the multiplicities of the shortest and longest distances in a finite point set?](catalog-0701-0800.md#JSP-000797) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000798 | [How large can the difference between the two largest distance multiplicities of a planar point set be?](catalog-0701-0800.md#JSP-000798) | Open | No | No | Unavailable | Unavailable |
-| JSP-000799 | [If a point set determines many ordinary lines, must it have a large subset whose every joining line is ordinary in the original set?](catalog-0701-0800.md#JSP-000799) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000799 | [If a point set determines many ordinary lines, must it have a large subset whose every joining line is ordinary in the original set?](catalog-0701-0800.md#JSP-000799) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000800 | [How long can a consecutive-integer interval be if each term has a prime factor larger than its length?](catalog-0701-0800.md#JSP-000800) | Open | No | No | Unavailable | Unavailable |
 
 ### Problems 801–900
