@@ -845,7 +845,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000675 | [For a square-root-size subset of an integer interval, how many distinct two-term sums can still lie in that interval?](catalog-0601-0700.md#JSP-000675) | Open | No | No | Unavailable | Unavailable |
 | JSP-000676 | [How does the smallest base satisfying the prescribed coprimality of like powers minus one depend on the exponent?](catalog-0601-0700.md#JSP-000676) | Open | No | No | Unavailable | Unavailable |
 | JSP-000677 | [Which numbers of positive-integer preimages can a totient value have?](catalog-0601-0700.md#JSP-000677) | Open | No | No | Unavailable | Unavailable |
-| JSP-000678 | [Does the set of values of an integer plus its totient have positive density?](catalog-0601-0700.md#JSP-000678) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000678 | [Does the set of values of an integer plus its totient have positive density?](catalog-0601-0700.md#JSP-000678) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000679 | [Which positive real numbers can be approximated arbitrarily closely by ratios of integers having equal divisor sums?](catalog-0601-0700.md#JSP-000679) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000680 | [How many coprime pairs of positive integers have equal divisor sums, and how does their count grow?](catalog-0601-0700.md#JSP-000680) | Open | No | No | Unavailable | Unavailable |
 | JSP-000681 | [Does a sufficiently large divisor sum ensure that an integer is a sum of some of its proper divisors?](catalog-0601-0700.md#JSP-000681) | Solved | Yes | Yes | Unclaimed | Unclaimed |
