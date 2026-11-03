@@ -799,7 +799,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000629 | [If each prime divisor of an integer has a divisor of that integer greater than one and congruent to one modulo the prime, does the density of such integers decay as predicted?](catalog-0601-0700.md#JSP-000629) | Open | No | No | Unavailable | Unavailable |
 | JSP-000630 | [Into how many smaller axis-parallel cubes can a higher-dimensional cube be dissected?](catalog-0601-0700.md#JSP-000630) | Open | No | No | Unavailable | Unavailable |
 | JSP-000631 | [What conditions on bases or exponent ensure the prescribed coprimality relations among like powers minus one?](catalog-0601-0700.md#JSP-000631) | Open | No | No | Unavailable | Unavailable |
-| JSP-000632 | [How large a subset of an arbitrary finite integer set can have every subset sum avoid a prescribed target?](catalog-0601-0700.md#JSP-000632) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000632 | [How large a subset of an arbitrary finite integer set can have every subset sum avoid a prescribed target?](catalog-0601-0700.md#JSP-000632) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000633 | [If two-term representation counts are bounded, how large a Sidon subset is guaranteed?](catalog-0601-0700.md#JSP-000633) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000634 | [How large a Sidon set can be chosen among squares in a prescribed range?](catalog-0601-0700.md#JSP-000634) | Open | No | No | Unavailable | Unavailable |
 | JSP-000635 | [If every finite part of a set contains a fixed proportion with distinct subset sums, can the whole set be partitioned into finitely many such sets?](catalog-0601-0700.md#JSP-000635) | Open | No | No | Unavailable | Unavailable |
