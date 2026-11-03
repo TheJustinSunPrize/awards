@@ -445,7 +445,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000295 | [How long can an increasing integer sequence in a prescribed range be if all sums of consecutive terms are distinct?](catalog-0201-0300.md#JSP-000295) | Open | No | No | Unavailable | Unavailable |
 | JSP-000296 | [How many representations can an integer have as a sum of consecutive terms of a given increasing integer sequence?](catalog-0201-0300.md#JSP-000296) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000297 | [segmented numbers](catalog-0201-0300.md#JSP-000297) | Open | No | No | Unavailable | Unavailable |
-| JSP-000298 | [How many colors are needed to color the positive integers so that a prescribed integer is not a monochromatic subset sum?](catalog-0201-0300.md#JSP-000298) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000298 | [How many colors are needed to color the positive integers so that a prescribed integer is not a monochromatic subset sum?](catalog-0201-0300.md#JSP-000298) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000299 | [How large can a subset of a finite integer range be if none of its subset sums equals a prescribed target?](catalog-0201-0300.md#JSP-000299) | Open | No | No | Unavailable | Unavailable |
 | JSP-000300 | [Are there three consecutive powerful positive integers, each divisible by the square of every prime dividing it?](catalog-0201-0300.md#JSP-000300) | Open | No | No | Unavailable | Unavailable |
 
