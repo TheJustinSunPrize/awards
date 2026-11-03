@@ -762,7 +762,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000597 | [What restrictions on factorial indices follow when the reduced denominator of their ratio has only small prime factors?](catalog-0501-0600.md#JSP-000597) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000598 | [Can two distinct central binomial coefficients have exactly the same prime divisors?](catalog-0501-0600.md#JSP-000598) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000599 | [How large is the smallest positive integer not dividing a central binomial coefficient, typically?](catalog-0501-0600.md#JSP-000599) | Open | No | No | Unavailable | Unavailable |
-| JSP-000600 | [Which prescribed block-size sequences admit a pairwise balanced design in which every pair occurs exactly once?](catalog-0501-0600.md#JSP-000600) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000600 | [Which prescribed block-size sequences admit a pairwise balanced design in which every pair occurs exactly once?](catalog-0501-0600.md#JSP-000600) | Solved | Yes | No | Unavailable | Unavailable |
 
 ### Problems 601–700
 
