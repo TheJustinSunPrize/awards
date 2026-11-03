@@ -936,7 +936,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000761 | [How many edges can a graph critical under the specified chromatic-reducing deletions have?](catalog-0701-0800.md#JSP-000761) | Open | No | No | Unavailable | Unavailable |
 | JSP-000762 | [Can a large graph have uncountable chromatic number while all subgraphs of the specified smaller size have countable chromatic number?](catalog-0701-0800.md#JSP-000762) | Open | No | No | Unavailable | Unavailable |
 | JSP-000763 | [Can a graph's high chromatic number be absent from all subgraphs whose vertex sets have restricted order type?](catalog-0701-0800.md#JSP-000763) | Open | No | No | Unavailable | Unavailable |
-| JSP-000764 | [What is the largest chromatic number at a prescribed order when a fixed clique is forbidden?](catalog-0701-0800.md#JSP-000764) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000764 | [What is the largest chromatic number at a prescribed order when a fixed clique is forbidden?](catalog-0701-0800.md#JSP-000764) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000765 | [What is the largest odd girth of a graph with prescribed order and chromatic number?](catalog-0701-0800.md#JSP-000765) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000766 | [If every finite local subgraph has an independent set of nearly half its vertices, is the whole graph's chromatic number bounded?](catalog-0701-0800.md#JSP-000766) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000767 | [Can a graph exclude a larger clique while forcing a smaller monochromatic clique under every prescribed multicolor edge coloring?](catalog-0701-0800.md#JSP-000767) | Solved | No | No | Unavailable | Unavailable |
