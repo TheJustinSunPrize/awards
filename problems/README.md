@@ -914,7 +914,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000739 | [How large can an integer set be if every square product of four elements forces equality of the corresponding cross products?](catalog-0701-0800.md#JSP-000739) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000740 | [How many previously unseen prime factors can each successive term of a consecutive-integer interval introduce?](catalog-0701-0800.md#JSP-000740) | Open | No | No | Unavailable | Unavailable |
 | JSP-000741 | [What are the largest and smallest possible numbers of distinct prime factors in a short consecutive-integer interval?](catalog-0701-0800.md#JSP-000741) | Open | No | No | Unavailable | Unavailable |
-| JSP-000742 | [Must every interval of primorial length contain an integer with more distinct prime factors than that primorial?](catalog-0701-0800.md#JSP-000742) | Open | No | No | Unavailable | Unavailable |
+| JSP-000742 | [Must every interval of primorial length contain an integer with more distinct prime factors than that primorial?](catalog-0701-0800.md#JSP-000742) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000743 | [Which growth rates and densities can primitive integer sequences, with no term dividing another, realize?](catalog-0701-0800.md#JSP-000743) | Open | No | No | Unavailable | Unavailable |
 | JSP-000744 | [How does the cumulative divisor count of powers of two minus one grow as the range expands?](catalog-0701-0800.md#JSP-000744) | Open | No | No | Unavailable | Unavailable |
 | JSP-000745 | [Can the integers be finitely colored so that no same-colored pair has difference in a prescribed sparse set?](catalog-0701-0800.md#JSP-000745) | Solved | No | No | Unavailable | Unavailable |
