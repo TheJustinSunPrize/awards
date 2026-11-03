@@ -399,7 +399,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000249 | [ambiguous statement](catalog-0201-0300.md#JSP-000249) | Open | No | No | Unavailable | Unavailable |
 | JSP-000250 | [Within the prescribed finite denominator range, which initial denominators cannot occur in a representation of one, and where is the smallest exception?](catalog-0201-0300.md#JSP-000250) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000251 | [How many unit fractions are needed to represent one if every denominator must exceed a prescribed threshold?](catalog-0201-0300.md#JSP-000251) | Open | No | No | Unavailable | Unavailable |
-| JSP-000252 | [How many subsets of a finite integer range have reciprocal sum exactly one?](catalog-0201-0300.md#JSP-000252) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000252 | [How many subsets of a finite integer range have reciprocal sum exactly one?](catalog-0201-0300.md#JSP-000252) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000253 | [How large can a subset of an integer interval be if no element's reciprocal is a sum of reciprocals of other elements?](catalog-0201-0300.md#JSP-000253) | Open | No | No | Unavailable | Unavailable |
 | JSP-000254 | [How large can a subset of an integer interval be if no element's reciprocal equals the sum of two other elements' reciprocals?](catalog-0201-0300.md#JSP-000254) | Open | No | No | Unavailable | Unavailable |
 | JSP-000255 | [What is the minimum number of distinct positive unit fractions needed to represent a given positive rational number?](catalog-0201-0300.md#JSP-000255) | Solved | Yes | Yes | Unclaimed | Unclaimed |
