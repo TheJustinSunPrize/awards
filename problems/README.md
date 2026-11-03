@@ -909,7 +909,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000734 | [Which odd cycles and complete multipartite graphs must occur in the coprimality graph of a dense integer set?](catalog-0701-0800.md#JSP-000734) | Open | No | No | Unavailable | Unavailable |
 | JSP-000735 | [How does the reciprocal sum of all distinct divisor differences compare with that of consecutive divisor differences?](catalog-0701-0800.md#JSP-000735) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000736 | [Can the divisor-difference sets of two distinct integers have arbitrarily many common values?](catalog-0701-0800.md#JSP-000736) | Open | No | No | Unavailable | Unavailable |
-| JSP-000737 | [How many divisors can an integer have in a short interval near its square root?](catalog-0701-0800.md#JSP-000737) | Open | No | No | Unavailable | Unavailable |
+| JSP-000737 | [How many divisors can an integer have in a short interval near its square root?](catalog-0701-0800.md#JSP-000737) | Open | Yes | No | Unavailable | Unavailable |
 | JSP-000738 | [Is there a uniform constant bound on the number of divisors in a fourth-root-length interval near an integer's square root?](catalog-0701-0800.md#JSP-000738) | Open | No | No | Unavailable | Unavailable |
 | JSP-000739 | [How large can an integer set be if every square product of four elements forces equality of the corresponding cross products?](catalog-0701-0800.md#JSP-000739) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000740 | [How many previously unseen prime factors can each successive term of a consecutive-integer interval introduce?](catalog-0701-0800.md#JSP-000740) | Open | No | No | Unavailable | Unavailable |
