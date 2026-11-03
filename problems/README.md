@@ -567,7 +567,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000407 | [What is the minimum number of colors needed to color the plane so that points at distance one have different colors?](catalog-0401-0500.md#JSP-000407) | Open | No | No | Unavailable | Unavailable |
 | JSP-000408 | [How small can the total radii of disks covering the set where a polynomial has modulus at most one be?](catalog-0401-0500.md#JSP-000408) | Open | No | No | Unavailable | Unavailable |
 | JSP-000409 | [Chowla's cosine problem](catalog-0401-0500.md#JSP-000409) | Open | No | No | Unavailable | Unavailable |
-| JSP-000410 | [How many components of the region where a polynomial has modulus at most one can exceed a prescribed diameter?](catalog-0401-0500.md#JSP-000410) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000410 | [How many components of the region where a polynomial has modulus at most one can exceed a prescribed diameter?](catalog-0401-0500.md#JSP-000410) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000411 | [What is the optimal guaranteed liminf of the ratio of the largest series term of a transcendental entire function to its maximum modulus on a circle?](catalog-0401-0500.md#JSP-000411) | Open | No | No | Unavailable | Unavailable |
 | JSP-000412 | [Does every transcendental entire function have a path to infinity along which its modulus grows faster than every polynomial?](catalog-0401-0500.md#JSP-000412) | Open | No | No | Unavailable | Unavailable |
 | JSP-000413 | [Does a transcendental entire function have a path to infinity on which a specified negative power of its modulus is integrable?](catalog-0401-0500.md#JSP-000413) | Solved | No | No | Unavailable | Unavailable |
