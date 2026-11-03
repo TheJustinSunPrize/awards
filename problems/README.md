@@ -919,7 +919,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000744 | [How does the cumulative divisor count of powers of two minus one grow as the range expands?](catalog-0701-0800.md#JSP-000744) | Open | No | No | Unavailable | Unavailable |
 | JSP-000745 | [Can the integers be finitely colored so that no same-colored pair has difference in a prescribed sparse set?](catalog-0701-0800.md#JSP-000745) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000746 | [Must every triangle-free graph on the integers have three independent vertices, one equal to the sum of the other two?](catalog-0701-0800.md#JSP-000746) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000747 | [Under the stated restrictions, how many uniquely represented products can two integer sets have?](catalog-0701-0800.md#JSP-000747) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000747 | [Under the stated restrictions, how many uniquely represented products can two integer sets have?](catalog-0701-0800.md#JSP-000747) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000748 | [Just above the giant-component threshold, how long a path proportional to the vertex count does a random graph contain?](catalog-0701-0800.md#JSP-000748) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000749 | [How many edges must a uniform hypergraph have to force a monochromatic edge under every two-coloring?](catalog-0701-0800.md#JSP-000749) | Open | No | No | Unavailable | Unavailable |
 | JSP-000750 | [How small can a tournament be if every small vertex set has a common external vertex dominating it?](catalog-0701-0800.md#JSP-000750) | Open | No | No | Unavailable | Unavailable |
