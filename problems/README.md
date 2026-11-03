@@ -633,7 +633,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000473 | [Must a dense graph contain a large subgraph in which every two edges lie on a common short cycle?](catalog-0401-0500.md#JSP-000473) | Open | No | No | Unavailable | Unavailable |
 | JSP-000474 | [How many edges can a graph have if no two edge-disjoint cycles have the same vertex set?](catalog-0401-0500.md#JSP-000474) | Open | No | No | Unavailable | Unavailable |
 | JSP-000475 | [Can finitely many residue classes cover all integers with no modulus dividing another?](catalog-0401-0500.md#JSP-000475) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000476 | [How large can a subset of an integer interval be if none of its nonempty subset sums is a square?](catalog-0401-0500.md#JSP-000476) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000476 | [How large can a subset of an integer interval be if none of its nonempty subset sums is a square?](catalog-0401-0500.md#JSP-000476) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000477 | [How many rich lines can a planar point set determine when the number of points on each line is bounded?](catalog-0401-0500.md#JSP-000477) | Open | No | No | Unavailable | Unavailable |
 | JSP-000478 | [How large a subset with no three collinear points must every planar set with no four collinear points contain?](catalog-0401-0500.md#JSP-000478) | Open | No | No | Unavailable | Unavailable |
 | JSP-000479 | [Does every red-blue coloring of pairs from the prescribed countable ordinal contain a red clique of the same order type or a blue triangle?](catalog-0401-0500.md#JSP-000479) | Solved | No | No | Unavailable | Unavailable |
