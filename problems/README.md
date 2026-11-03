@@ -512,7 +512,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000357 | [How large can a subset of an integer interval be if no two elements sum to a square?](catalog-0301-0400.md#JSP-000357) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000358 | [Must every finite coloring of the positive integers contain two same-colored integers whose sum is a perfect power?](catalog-0301-0400.md#JSP-000358) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000359 | [How often can consecutive terms of the specified integer sequence have a small least common multiple?](catalog-0301-0400.md#JSP-000359) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000360 | [How large can an integer set be if every pairwise least common multiple is bounded by a prescribed value?](catalog-0301-0400.md#JSP-000360) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000360 | [How large can an integer set be if every pairwise least common multiple is bounded by a prescribed value?](catalog-0301-0400.md#JSP-000360) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000361 | [For a fixed infinite integer set, how many divisors of a single integer can belong to that set?](catalog-0301-0400.md#JSP-000361) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000362 | [Must a sufficiently short integer interval contain two numbers whose product is one modulo a prime?](catalog-0301-0400.md#JSP-000362) | Open | No | No | Unavailable | Unavailable |
 | JSP-000363 | [What proportion of integers have a divisor in the specified interval with endpoint ratio two?](catalog-0301-0400.md#JSP-000363) | Solved | No | No | Unavailable | Unavailable |
