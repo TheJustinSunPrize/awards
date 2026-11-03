@@ -1152,7 +1152,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000967 | [How many subgroups does a symmetric group have, and how are their orders distributed?](catalog-0901-1000.md#JSP-000967) | Open | No | No | Unavailable | Unavailable |
 | JSP-000968 | [ambiguous statement](catalog-0901-1000.md#JSP-000968) | Open | No | No | Unavailable | Unavailable |
 | JSP-000969 | [How fast does the radius of a disk whose lattice points have all been visited by a planar random walk grow with the number of steps?](catalog-0901-1000.md#JSP-000969) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000970 | [What is the probability that multiple sites tie for most visited in a planar random walk?](catalog-0901-1000.md#JSP-000970) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000970 | [What is the probability that multiple sites tie for most visited in a planar random walk?](catalog-0901-1000.md#JSP-000970) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000971 | [How many distinct sites have ever been most visited during a planar random walk?](catalog-0901-1000.md#JSP-000971) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000972 | [Does a partition relation for an infinite cardinal imply a corresponding relation for smaller subset sizes?](catalog-0901-1000.md#JSP-000972) | Open | No | No | Unavailable | Unavailable |
 | JSP-000973 | [Can the specified negative partition relations at successors of singular cardinals be proved without the generalized continuum hypothesis?](catalog-0901-1000.md#JSP-000973) | Open | No | No | Unavailable | Unavailable |
