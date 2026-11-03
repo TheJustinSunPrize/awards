@@ -483,7 +483,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000328 | [Brocard-Ramanujan conjecture](catalog-0301-0400.md#JSP-000328) | Open | No | No | Unavailable | Unavailable |
 | JSP-000329 | [If a product of factorials divides another factorial, by how much can the sum of its indices exceed the latter index?](catalog-0301-0400.md#JSP-000329) | Open | No | No | Unavailable | Unavailable |
 | JSP-000330 | [Which otherwise invalid divisibility relations between factorial products can be obtained by inserting powers of specified small primes?](catalog-0301-0400.md#JSP-000330) | Solved | Yes | Yes | Unclaimed | Unclaimed |
-| JSP-000331 | [Must every sufficiently large finite integer set contain two elements with relatively small greatest common divisor?](catalog-0301-0400.md#JSP-000331) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000331 | [Must every sufficiently large finite integer set contain two elements with relatively small greatest common divisor?](catalog-0301-0400.md#JSP-000331) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000332 | [How high a power of a prescribed prime can divide a sum of distinct factorials?](catalog-0301-0400.md#JSP-000332) | Open | No | No | Unavailable | Unavailable |
 | JSP-000333 | [Are there only finitely many powers of two whose ternary expansions contain no digit two?](catalog-0301-0400.md#JSP-000333) | Open | No | No | Unavailable | Unavailable |
 | JSP-000334 | [How many representations can an integer have as a sum of powers of two, powers of three, and their products?](catalog-0301-0400.md#JSP-000334) | Solved | No | No | Unavailable | Unavailable |
