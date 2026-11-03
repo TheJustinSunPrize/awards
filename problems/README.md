@@ -838,7 +838,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000668 | [Which rainbow subgraphs are forced by the specified balanced restrictions on edge-color usage?](catalog-0601-0700.md#JSP-000668) | Open | No | No | Unavailable | Unavailable |
 | JSP-000669 | [How much must the ratio and difference of successive clique Ramsey thresholds grow when the target order increases by one?](catalog-0601-0700.md#JSP-000669) | Open | No | No | Unavailable | Unavailable |
 | JSP-000670 | [If every seven vertices contain a triangle, how large a clique is guaranteed?](catalog-0601-0700.md#JSP-000670) | Open | No | No | Unavailable | Unavailable |
-| JSP-000671 | [Does slightly exceeding the specified edge threshold force a small subgraph of high minimum degree?](catalog-0601-0700.md#JSP-000671) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000671 | [Does slightly exceeding the specified edge threshold force a small subgraph of high minimum degree?](catalog-0601-0700.md#JSP-000671) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000672 | [Do sufficiently large critical graphs satisfying the specified local minimum-degree restrictions contain every fixed cycle length?](catalog-0601-0700.md#JSP-000672) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000673 | [Must a dense graph of odd order have two equal-degree vertices joined by a three-edge path?](catalog-0601-0700.md#JSP-000673) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000674 | [How large a containing interval is necessary if all subset sums avoid arithmetic progressions of a prescribed length?](catalog-0601-0700.md#JSP-000674) | Open | No | No | Unavailable | Unavailable |
