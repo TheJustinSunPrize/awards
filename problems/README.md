@@ -628,7 +628,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000468 | [Under suitable parameters, does a random graph contain a spanning hypercube with probability tending to one?](catalog-0401-0500.md#JSP-000468) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000469 | [Must a dense graph excluding a prescribed complete tripartite graph contain a sufficiently large independent set?](catalog-0401-0500.md#JSP-000469) | Open | No | No | Unavailable | Unavailable |
 | JSP-000470 | [If at least half the vertices have sufficiently large degree, must a graph contain every tree of a prescribed order?](catalog-0401-0500.md#JSP-000470) | Open | No | No | Unavailable | Unavailable |
-| JSP-000471 | [How many edges can always be retained in a bipartite subgraph of a triangle-free graph?](catalog-0401-0500.md#JSP-000471) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000471 | [How many edges can always be retained in a bipartite subgraph of a triangle-free graph?](catalog-0401-0500.md#JSP-000471) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000472 | [Can the edges of every connected graph be decomposed into at most about half its number of vertices many paths?](catalog-0401-0500.md#JSP-000472) | Open | No | No | Unavailable | Unavailable |
 | JSP-000473 | [Must a dense graph contain a large subgraph in which every two edges lie on a common short cycle?](catalog-0401-0500.md#JSP-000473) | Open | No | No | Unavailable | Unavailable |
 | JSP-000474 | [How many edges can a graph have if no two edge-disjoint cycles have the same vertex set?](catalog-0401-0500.md#JSP-000474) | Open | No | No | Unavailable | Unavailable |
