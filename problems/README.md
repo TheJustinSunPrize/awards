@@ -786,7 +786,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000616 | [Counting sum-free subsets of integer intervals](catalog-0601-0700.md#JSP-000616) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000617 | [Can an integer set have uniformly bounded two-term representation counts while its sumset density is arbitrarily close to one?](catalog-0601-0700.md#JSP-000617) | Open | No | No | Unavailable | Unavailable |
 | JSP-000618 | [Can an infinite-chromatic graph have an independent set of nearly half the vertices in every finite subgraph?](catalog-0601-0700.md#JSP-000618) | Solved | Yes | Yes | Unclaimed | Unclaimed |
-| JSP-000619 | [How many distinct cycle lengths are forced by large minimum degree and large girth?](catalog-0601-0700.md#JSP-000619) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000619 | [How many distinct cycle lengths are forced by large minimum degree and large girth?](catalog-0601-0700.md#JSP-000619) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000620 | [In a finite four-dimensional point set, how many other points can be at the same distance from one point?](catalog-0601-0700.md#JSP-000620) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000621 | [If all local parts of a real set have many differences, must it contain a Sidon subset of fixed positive proportion?](catalog-0601-0700.md#JSP-000621) | Open | No | No | Unavailable | Unavailable |
 | JSP-000622 | [For a prescribed small graph order, what is the worst-case minimum number of clique or independent-set parts in a vertex partition?](catalog-0601-0700.md#JSP-000622) | Solved | No | No | Unavailable | Unavailable |
