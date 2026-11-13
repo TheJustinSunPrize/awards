@@ -224,7 +224,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000084 | [Can an integer set have a number of two-element sum representations growing asymptotically like a logarithm?](catalog-0001-0100.md#JSP-000084) | Open | No | No | Unavailable | Unavailable |
 | JSP-000085 | [Unbounded discrepancy on homogeneous arithmetic progressions](catalog-0001-0100.md#JSP-000085) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000086 | [Is the series obtained by summing the reciprocals of factorials minus one irrational?](catalog-0001-0100.md#JSP-000086) | Open | No | No | Unavailable | Unavailable |
-| JSP-000087 | [Is the specified generating series involving the number of distinct prime factors of an integer irrational?](catalog-0001-0100.md#JSP-000087) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000087 | [Is the specified generating series involving the number of distinct prime factors of an integer irrational?](catalog-0001-0100.md#JSP-000087) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000088 | [Does every two-coloring of triples from a set of continuum cardinality contain a monochromatic subset of the prescribed order type?](catalog-0001-0100.md#JSP-000088) | Open | No | No | Unavailable | Unavailable |
 | JSP-000089 | [Is there a density-zero set of positive integers such that every sufficiently dense graph has a cycle with length in that set?](catalog-0001-0100.md#JSP-000089) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000090 | [If local subgraphs have large independent sets, must the whole graph be close to bipartite after few modifications?](catalog-0001-0100.md#JSP-000090) | Solved | No | No | Unavailable | Unavailable |
