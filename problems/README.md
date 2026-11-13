@@ -621,7 +621,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000461 | [Which rational numbers occur as extremal exponents of bipartite graphs?](catalog-0401-0500.md#JSP-000461) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000462 | [How many edges can a graph excluding a prescribed even cycle have? Seek constructions attaining the predicted order of growth.](catalog-0401-0500.md#JSP-000462) | Open | No | No | Unavailable | Unavailable |
 | JSP-000463 | [What is the maximum edge count of a graph containing neither triangles nor four-cycles?](catalog-0401-0500.md#JSP-000463) | Open | No | No | Unavailable | Unavailable |
-| JSP-000464 | [How many edges can a graph have while excluding an odd cycle and an even cycle of adjacent lengths?](catalog-0401-0500.md#JSP-000464) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000464 | [How many edges can a graph have while excluding an odd cycle and an even cycle of adjacent lengths?](catalog-0401-0500.md#JSP-000464) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000465 | [For a forbidden family containing a bipartite graph, can the asymptotic extremal problem be reduced to forbidding a single graph?](catalog-0401-0500.md#JSP-000465) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000466 | [How many edges can a graph have while excluding a hypercube of prescribed dimension?](catalog-0401-0500.md#JSP-000466) | Open | No | No | Unavailable | Unavailable |
 | JSP-000467 | [What minimum degree forces a spanning collection of vertex-disjoint four-cycles?](catalog-0401-0500.md#JSP-000467) | Solved | No | No | Unavailable | Unavailable |
