@@ -1042,7 +1042,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000862 | [How large a disk can lie in the region where a polynomial has modulus at most one?](catalog-0801-0900.md#JSP-000862) | Open | No | No | Unavailable | Unavailable |
 | JSP-000863 | [Under restrictions on polynomial zeros, how do the area and transfinite diameter of a modulus sublevel set relate?](catalog-0801-0900.md#JSP-000863) | Open | No | No | Unavailable | Unavailable |
 | JSP-000864 | [Can two polynomial zeros be joined within its unit-modulus sublevel set by a path of uniformly bounded length?](catalog-0801-0900.md#JSP-000864) | Open | No | No | Unavailable | Unavailable |
-| JSP-000865 | [How does the transfinite diameter of the zero set bound the number of components of a polynomial sublevel set?](catalog-0801-0900.md#JSP-000865) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000865 | [How does the transfinite diameter of the zero set bound the number of components of a polynomial sublevel set?](catalog-0801-0900.md#JSP-000865) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000866 | [Among the allowed polynomials, how small can the maximum boundary length of their sublevel sets be?](catalog-0801-0900.md#JSP-000866) | Solved | Yes | Yes | Claimed | Unclaimed |
 | JSP-000867 | [For a complex point set of fixed diameter, how large can the product of all pairwise distances be?](catalog-0801-0900.md#JSP-000867) | Open | No | No | Unavailable | Unavailable |
 | JSP-000868 | [If a polynomial's unit-modulus sublevel set is connected, must it lie in a disk of radius two?](catalog-0801-0900.md#JSP-000868) | Solved | No | No | Unavailable | Unavailable |
