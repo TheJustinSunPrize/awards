@@ -510,7 +510,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000355 | [How small can the starting point of a run of consecutive prescribed power residues modulo a prime be?](catalog-0301-0400.md#JSP-000355) | Open | No | No | Unavailable | Unavailable |
 | JSP-000356 | [How many initial products of an increasing integer sequence can be squares?](catalog-0301-0400.md#JSP-000356) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000357 | [How large can a subset of an integer interval be if no two elements sum to a square?](catalog-0301-0400.md#JSP-000357) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000358 | [Must every finite coloring of the positive integers contain two same-colored integers whose sum is a perfect power?](catalog-0301-0400.md#JSP-000358) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000358 | [Must every finite coloring of the positive integers contain two same-colored integers whose sum is a perfect power?](catalog-0301-0400.md#JSP-000358) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000359 | [How often can consecutive terms of the specified integer sequence have a small least common multiple?](catalog-0301-0400.md#JSP-000359) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000360 | [How large can an integer set be if every pairwise least common multiple is bounded by a prescribed value?](catalog-0301-0400.md#JSP-000360) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000361 | [For a fixed infinite integer set, how many divisors of a single integer can belong to that set?](catalog-0301-0400.md#JSP-000361) | Solved | No | No | Unavailable | Unavailable |
