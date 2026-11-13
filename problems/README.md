@@ -768,7 +768,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 
 | No. | Problem | Current status | Lean proof | Eligible to claim | Solver claim status | Lean claim status |
 | --- | --- | --- | --- | --- | --- | --- |
-| JSP-000601 | [How many distinct line-multiplicity counting sequences can planar point sets determine?](catalog-0601-0700.md#JSP-000601) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000601 | [How many distinct line-multiplicity counting sequences can planar point sets determine?](catalog-0601-0700.md#JSP-000601) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000602 | [Which pairwise balanced designs exist when repeated block sizes have bounded multiplicity?](catalog-0601-0700.md#JSP-000602) | Open | No | No | Unavailable | Unavailable |
 | JSP-000603 | [When can a planar point set receive positive weights so that every line containing at least two points has the same total weight?](catalog-0601-0700.md#JSP-000603) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000604 | [Can graphs of arbitrarily high chromatic number be constructed without changing the finite subgraph types that occur?](catalog-0601-0700.md#JSP-000604) | Open | No | No | Unavailable | Unavailable |
