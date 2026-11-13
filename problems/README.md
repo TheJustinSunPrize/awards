@@ -303,7 +303,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000158 | [How many colors are needed to color consecutive integers so that every four-term arithmetic progression uses at least three colors?](catalog-0101-0200.md#JSP-000158) | Open | No | No | Unavailable | Unavailable |
 | JSP-000159 | [How does density affect the threshold for finding the specified color-balanced structure in a two-colored hypergraph?](catalog-0101-0200.md#JSP-000159) | Open | No | No | Unavailable | Unavailable |
 | JSP-000160 | [Locally balanced two-colorings of complete graphs](catalog-0101-0200.md#JSP-000160) | Open | No | No | Unavailable | Unavailable |
-| JSP-000161 | [Linear Ramsey bounds for graphs of bounded degeneracy](catalog-0101-0200.md#JSP-000161) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000161 | [Linear Ramsey bounds for graphs of bounded degeneracy](catalog-0101-0200.md#JSP-000161) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000162 | [What is the precise asymptotic growth of the Ramsey number for a triangle versus a large clique?](catalog-0101-0200.md#JSP-000162) | Open | No | No | Unavailable | Unavailable |
 | JSP-000163 | [How many vertices can a two-colored complete graph have while avoiding a four-vertex clique in one color and a prescribed large clique in the other?](catalog-0101-0200.md#JSP-000163) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000164 | [How does the minimum number of edges needed to make a graph triangle-free compare with its maximum number of edge-disjoint triangles?](catalog-0101-0200.md#JSP-000164) | Open | No | No | Unavailable | Unavailable |
