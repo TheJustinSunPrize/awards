@@ -472,7 +472,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000317 | [Can a prime square be followed by several consecutive integers having no prime factor larger than that prime?](catalog-0301-0400.md#JSP-000317) | Open | No | No | Unavailable | Unavailable |
 | JSP-000318 | [How far beyond an interval's right endpoint can a composite integer in that interval plus its least prime factor lie?](catalog-0301-0400.md#JSP-000318) | Open | No | No | Unavailable | Unavailable |
 | JSP-000319 | [Are infinitely many binomial coefficients products of consecutive primes?](catalog-0301-0400.md#JSP-000319) | Open | No | No | Unavailable | Unavailable |
-| JSP-000320 | [Must a binomial coefficient have a divisor close in size to its upper parameter?](catalog-0301-0400.md#JSP-000320) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000320 | [Must a binomial coefficient have a divisor close in size to its upper parameter?](catalog-0301-0400.md#JSP-000320) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000321 | [When can two disjoint intervals of consecutive positive integers have equal products?](catalog-0301-0400.md#JSP-000321) | Open | No | No | Unavailable | Unavailable |
 | JSP-000322 | [When does the product of the first half of a consecutive-integer interval divide the product of the second half?](catalog-0301-0400.md#JSP-000322) | Open | No | No | Unavailable | Unavailable |
 | JSP-000323 | [When a factorial is a product of distinct integers all larger than its index, how small can the largest factor be?](catalog-0301-0400.md#JSP-000323) | Open | No | No | Unavailable | Unavailable |
