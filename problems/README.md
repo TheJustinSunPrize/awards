@@ -824,7 +824,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000654 | [How large can an integer set be under a bound on each integer's number of multiplicative representations?](catalog-0601-0700.md#JSP-000654) | Open | No | No | Unavailable | Unavailable |
 | JSP-000655 | [How many colors are needed for an acyclic coloring of a bounded-maximum-degree graph, with every two color classes inducing a forest?](catalog-0601-0700.md#JSP-000655) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000656 | [Is the list chromatic number of a random graph sublinear in its number of vertices?](catalog-0601-0700.md#JSP-000656) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000657 | [If all high-degree vertices are pairwise nonadjacent, is the graph's Ramsey number linear in its size?](catalog-0601-0700.md#JSP-000657) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000657 | [If all high-degree vertices are pairwise nonadjacent, is the graph's Ramsey number linear in its size?](catalog-0601-0700.md#JSP-000657) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000658 | [Does a graph with small independence number contain a small but dense subgraph?](catalog-0601-0700.md#JSP-000658) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000659 | [How large an independent set is guaranteed by average degree in a graph excluding a prescribed clique?](catalog-0601-0700.md#JSP-000659) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000660 | [Does every dense graph contain a sufficiently dense subgraph whose vertex degrees are comparable?](catalog-0601-0700.md#JSP-000660) | Solved | No | No | Unavailable | Unavailable |
