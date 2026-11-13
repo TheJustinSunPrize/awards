@@ -607,7 +607,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000447 | [What is the optimal upper bound for the three-color Ramsey number of a prescribed cycle?](catalog-0401-0500.md#JSP-000447) | Open | No | No | Unavailable | Unavailable |
 | JSP-000448 | [Does the multicolor Ramsey number of a tree grow linearly with its order?](catalog-0401-0500.md#JSP-000448) | Solved | Reported; standalone source not located | Yes | Unclaimed | Unclaimed |
 | JSP-000449 | [What is the multicolor Ramsey number of a prescribed complete bipartite graph?](catalog-0401-0500.md#JSP-000449) | Open | No | No | Unavailable | Unavailable |
-| JSP-000450 | [Do graphs of bounded maximum degree have two-color size Ramsey numbers linear in their order?](catalog-0401-0500.md#JSP-000450) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000450 | [Do graphs of bounded maximum degree have two-color size Ramsey numbers linear in their order?](catalog-0401-0500.md#JSP-000450) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000451 | [What is the minimum host edge count forcing a monochromatic prescribed balanced complete bipartite graph under every two-coloring?](catalog-0401-0500.md#JSP-000451) | Open | No | No | Unavailable | Unavailable |
 | JSP-000452 | [What is the minimum host edge count forcing the corresponding monochromatic copy of one of two prescribed star forests?](catalog-0401-0500.md#JSP-000452) | Open | No | No | Unavailable | Unavailable |
 | JSP-000453 | [How many levels in an exponential tower are needed to describe the growth of uniform-hypergraph Ramsey numbers?](catalog-0401-0500.md#JSP-000453) | Open | No | No | Unavailable | Unavailable |
