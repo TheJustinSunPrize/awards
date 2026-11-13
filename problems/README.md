@@ -724,7 +724,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000559 | [How long a consecutive-integer interval can be covered by choosing one residue class for each small prime?](catalog-0501-0600.md#JSP-000559) | Open | No | No | Unavailable | Unavailable |
 | JSP-000560 | [Using only large prime moduli, how wide a prime range is needed to cover an initial integer interval?](catalog-0501-0600.md#JSP-000560) | Open | No | No | Unavailable | Unavailable |
 | JSP-000561 | [Can one residue class per prescribed prime be chosen to cover each integer in a given interval at least twice?](catalog-0501-0600.md#JSP-000561) | Open | No | No | Unavailable | Unavailable |
-| JSP-000562 | [Is the density distribution of the prime factor at a prescribed position among ordered distinct prime factors unimodal?](catalog-0501-0600.md#JSP-000562) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000562 | [Is the density distribution of the prime factor at a prescribed position among ordered distinct prime factors unimodal?](catalog-0501-0600.md#JSP-000562) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000563 | [What conditions on an integer set are equivalent to its multiples having density one?](catalog-0501-0600.md#JSP-000563) | Open | No | No | Unavailable | Unavailable |
 | JSP-000564 | [How large are the maximum gaps among integers having a divisor in a prescribed size range?](catalog-0501-0600.md#JSP-000564) | Open | No | No | Unavailable | Unavailable |
 | JSP-000565 | [How large can the ratio of the largest to smallest positive integer with a common totient value be?](catalog-0501-0600.md#JSP-000565) | Solved | Yes | Yes | Unclaimed | Unclaimed |
