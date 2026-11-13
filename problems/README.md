@@ -665,7 +665,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | --- | --- | --- | --- | --- | --- | --- |
 | JSP-000501 | [How many edges must be added to a triangle-free graph to reduce its diameter to at most four while keeping it triangle-free?](catalog-0501-0600.md#JSP-000501) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000502 | [Large triangle-free induced subgraphs in K4-free graphs](catalog-0501-0600.md#JSP-000502) | Open | No | No | Unavailable | Unavailable |
-| JSP-000503 | [How many vertex subsets of a high-degree regular graph are exactly the vertex sets of cycles?](catalog-0501-0600.md#JSP-000503) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000503 | [How many vertex subsets of a high-degree regular graph are exactly the vertex sets of cycles?](catalog-0501-0600.md#JSP-000503) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000504 | [Must the specified set mapping on a set of singular cardinality have an infinite free set?](catalog-0501-0600.md#JSP-000504) | Open | No | No | Unavailable | Unavailable |
 | JSP-000505 | [How small a starting subset suffices to cover the whole set by applying the given mapping to it and its small subsets?](catalog-0501-0600.md#JSP-000505) | Open | No | No | Unavailable | Unavailable |
 | JSP-000506 | [In a random graph, how much smaller than the chromatic number is the minimum number of parts in a partition into cliques and independent sets?](catalog-0501-0600.md#JSP-000506) | Solved | No | No | Unavailable | Unavailable |
