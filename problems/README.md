@@ -515,7 +515,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000360 | [How large can an integer set be if every pairwise least common multiple is bounded by a prescribed value?](catalog-0301-0400.md#JSP-000360) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000361 | [For a fixed infinite integer set, how many divisors of a single integer can belong to that set?](catalog-0301-0400.md#JSP-000361) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000362 | [Must a sufficiently short integer interval contain two numbers whose product is one modulo a prime?](catalog-0301-0400.md#JSP-000362) | Open | No | No | Unavailable | Unavailable |
-| JSP-000363 | [What proportion of integers have a divisor in the specified interval with endpoint ratio two?](catalog-0301-0400.md#JSP-000363) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000363 | [What proportion of integers have a divisor in the specified interval with endpoint ratio two?](catalog-0301-0400.md#JSP-000363) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000364 | [What proportion of an integer's divisors can be paired with divisors of comparable size?](catalog-0301-0400.md#JSP-000364) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000365 | [How many integers in a short interval have a divisor in a prescribed size range?](catalog-0301-0400.md#JSP-000365) | Open | No | No | Unavailable | Unavailable |
 | JSP-000366 | [How large must the starting point be for a consecutive-integer product to have no prime factor in a prescribed interval?](catalog-0301-0400.md#JSP-000366) | Open | No | No | Unavailable | Unavailable |
