@@ -197,7 +197,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000057 | [sunflower conjecture](catalog-0001-0100.md#JSP-000057) | Open | No | No | Unavailable | Unavailable |
 | JSP-000058 | [Can every triangle-free graph on 5k vertices be made bipartite by deleting at most k² edges?](catalog-0001-0100.md#JSP-000058) | Open | No | No | Unavailable | Unavailable |
 | JSP-000059 | [Do the integers remaining after successively avoiding the prescribed congruence classes necessarily have logarithmic density?](catalog-0001-0100.md#JSP-000059) | Open | No | No | Unavailable | Unavailable |
-| JSP-000060 | [Can congruence classes cover almost all integers when their moduli are restricted to a prescribed range?](catalog-0001-0100.md#JSP-000060) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000060 | [Can congruence classes cover almost all integers when their moduli are restricted to a prescribed range?](catalog-0001-0100.md#JSP-000060) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000061 | [If every sufficiently large integer is a sum of two elements of a set, must the numbers of such representations be unbounded?](catalog-0001-0100.md#JSP-000061) | Open | No | No | Unavailable | Unavailable |
 | JSP-000062 | [How large can a set with distinct two-element sums in a finite integer interval be, and how large is the error from the leading term?](catalog-0001-0100.md#JSP-000062) | Open | No | No | Unavailable | Unavailable |
 | JSP-000063 | [How sparse can an additive complement of the primes be if every sufficiently large integer must be a prime plus an element of that complement?](catalog-0001-0100.md#JSP-000063) | Open | No | No | Unavailable | Unavailable |
