@@ -214,7 +214,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000074 | [For each value attained by Euler's totient, study the ratio of its smallest preimage to that value.](catalog-0001-0100.md#JSP-000074) | Open | No | No | Unavailable | Unavailable |
 | JSP-000075 | [sum-product problem](catalog-0001-0100.md#JSP-000075) | Open | No | No | Unavailable | Unavailable |
 | JSP-000076 | [How sparse can a set be if every two-coloring represents every sufficiently large integer as a sum of distinct same-colored elements? Improve the growth bounds.](catalog-0001-0100.md#JSP-000076) | Solved | No | No | Unavailable | Unavailable |
-| JSP-000077 | [How fast must a set grow if every coloring with more than two colors represents all sufficiently large integers as sums of distinct same-colored elements?](catalog-0001-0100.md#JSP-000077) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000077 | [How fast must a set grow if every coloring with more than two colors represents all sufficiently large integers as sums of distinct same-colored elements?](catalog-0001-0100.md#JSP-000077) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000078 | [How does the number of distinct odd cycle lengths constrain a graph's chromatic number?](catalog-0001-0100.md#JSP-000078) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000079 | [How many quadrilaterals are forced when a graph's edge count exceeds the threshold for containing one?](catalog-0001-0100.md#JSP-000079) | Open | No | No | Unavailable | Unavailable |
 | JSP-000080 | [Must a graph excluding a prescribed induced subgraph contain a sufficiently large clique or independent set?](catalog-0001-0100.md#JSP-000080) | Open | No | No | Unavailable | Unavailable |
