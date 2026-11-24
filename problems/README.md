@@ -235,7 +235,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000095 | [Can explicit graphs or colorings attain the predicted exponential lower bounds for diagonal Ramsey numbers?](catalog-0001-0100.md#JSP-000095) | Open | No | No | Unavailable | Unavailable |
 | JSP-000096 | [Which minimal graphs prevent Ramsey numbers from growing linearly with the number of edges? Characterize these obstructions.](catalog-0001-0100.md#JSP-000096) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000097 | [How many triangles sharing one edge must a sufficiently dense graph contain?](catalog-0001-0100.md#JSP-000097) | Open | No | No | Unavailable | Unavailable |
-| JSP-000098 | [What is the minimum number of cliques whose edge sets partition all edges of a chordal graph?](catalog-0001-0100.md#JSP-000098) | Open | No | No | Unavailable | Unavailable |
+| JSP-000098 | [What is the minimum number of cliques whose edge sets partition all edges of a chordal graph?](catalog-0001-0100.md#JSP-000098) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000099 | [How large a regular induced subgraph is guaranteed in an arbitrary graph of given size?](catalog-0001-0100.md#JSP-000099) | Open | No | No | Unavailable | Unavailable |
 | JSP-000100 | [How many different sets of cycle lengths occur among graphs with a given number of vertices?](catalog-0001-0100.md#JSP-000100) | Open | No | No | Unavailable | Unavailable |
 
