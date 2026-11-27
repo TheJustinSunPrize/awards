@@ -427,7 +427,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000277 | [How small a prime-factor bound suffices to express an integer as a sum of two integers having only small prime factors?](catalog-0201-0300.md#JSP-000277) | Open | No | No | Unavailable | Unavailable |
 | JSP-000278 | [What structure is forced when the density of a sumset equals the sum of the densities of its two summand sets?](catalog-0201-0300.md#JSP-000278) | Open | No | No | Unavailable | Unavailable |
 | JSP-000279 | [How much can the required order differ between additive bases allowing at most a prescribed number of summands and those requiring exactly that number?](catalog-0201-0300.md#JSP-000279) | Open | No | No | Unavailable | Unavailable |
-| JSP-000280 | [What conditions make a set an additive basis of prescribed order when summands must be distinct?](catalog-0201-0300.md#JSP-000280) | Open | No | No | Unavailable | Unavailable |
+| JSP-000280 | [What conditions make a set an additive basis of prescribed order when summands must be distinct?](catalog-0201-0300.md#JSP-000280) | Solved | Yes | No | Unavailable | Unavailable |
 | JSP-000281 | [Must the set of sums of distinct elements of an additive basis have positive lower density?](catalog-0201-0300.md#JSP-000281) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000282 | [How fast does the greedy Sidon sequence grow?](catalog-0201-0300.md#JSP-000282) | Open | No | No | Unavailable | Unavailable |
 | JSP-000283 | [Does the sequence obtained by repeatedly adjoining the smallest integer not expressible as a sum of two existing terms eventually become periodic?](catalog-0201-0300.md#JSP-000283) | Open | No | No | Unavailable | Unavailable |
