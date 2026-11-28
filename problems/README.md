@@ -1040,7 +1040,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000860 | [Does sufficiently high minimum degree force a spanning hypercube?](catalog-0801-0900.md#JSP-000860) | Open | No | No | Unavailable | Unavailable |
 | JSP-000861 | [For a monic real-rooted polynomial, how long in total can the real intervals on which its absolute value is less than one be?](catalog-0801-0900.md#JSP-000861) | Open | No | No | Unavailable | Unavailable |
 | JSP-000862 | [How large a disk can lie in the region where a polynomial has modulus at most one?](catalog-0801-0900.md#JSP-000862) | Open | No | No | Unavailable | Unavailable |
-| JSP-000863 | [Under restrictions on polynomial zeros, how do the area and transfinite diameter of a modulus sublevel set relate?](catalog-0801-0900.md#JSP-000863) | Solved | Yes | No | Unavailable | Unavailable |
+| JSP-000863 | [Under restrictions on polynomial zeros, how do the area and transfinite diameter of a modulus sublevel set relate?](catalog-0801-0900.md#JSP-000863) | Open | No | No | Unavailable | Unavailable |
 | JSP-000864 | [Can two polynomial zeros be joined within its unit-modulus sublevel set by a path of uniformly bounded length?](catalog-0801-0900.md#JSP-000864) | Open | No | No | Unavailable | Unavailable |
 | JSP-000865 | [How does the transfinite diameter of the zero set bound the number of components of a polynomial sublevel set?](catalog-0801-0900.md#JSP-000865) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000866 | [Among the allowed polynomials, how small can the maximum boundary length of their sublevel sets be?](catalog-0801-0900.md#JSP-000866) | Solved | Yes | Yes | Claimed | Unclaimed |
